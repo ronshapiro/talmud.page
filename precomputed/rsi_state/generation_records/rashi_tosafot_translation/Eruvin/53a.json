@@ -137,6 +137,49 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כאצבע בבירה לשכחה</strong> - כשם שהאצבע נוח ליכנס בפי הבור כך אנו מהירין לשכוח:"
   },
+  "Rashi on Eruvin 53a:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 53a:1:1",
+      "Rashi on Eruvin 53a:1:2",
+      "Rashi on Eruvin 53a:1:3"
+    ],
+    "generatedAt": "2026-11-06T20:17:53.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או גשרים או נפשות</strong> - כעין שעושין על הקבר:"
+  },
+  "Rashi on Eruvin 53a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:18:40.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 53a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוציאין את המדה כנגדן</strong> - אם בליטות הללו אצל קרן מזרחית צפונית רואין כאילו יש בליטה אחרת כנגדה בקרן מזרחית דרומית וחוט מתוח מזו לזו ומודד מן החוט ולחוץ כדי שיהא התחום שוה לשתי קרנות ולא יהא כאן קצר וכאן ארוך:"
+  },
+  "Rashi on Eruvin 53a:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 53a:1:1",
+      "Rashi on Eruvin 53a:1:2",
+      "Rashi on Eruvin 53a:1:3",
+      "Eruvin 53a:1",
+      "Rashi on Eruvin 56b:1:2",
+      "Tosafot on Eruvin 53a:1:1",
+      "Rashba on Eruvin 53a:1:1",
+      "Rashba on Eruvin 53a:1"
+    ],
+    "generatedAt": "2026-11-06T20:20:52.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 53a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועושין אותן</strong> - את התחומין מרובעין כדי שיהא אלפים לצדדין כבאמצע ולא עגולין שיהא להן אלפים באמצען ובצדדין הן מתמעטין כדרך כל עגול ובעיר מרובעת עסקינן שאין בה אלא אלפים על אלפים דהוו נמי תחומין מרובעים ואם אינה מרובעת כגון שהיא יתירה על אלפים לאורכה או פחותה מאלפים לא הוו מרובעין דתחומין מרובעין לאו דווקא שיהא ארכן כרחבן שהרי רחבן למידת העיר היא אם קטנה אם גדולה וארכן אלפים אלא מרובעין דקתני למעוטי עגולין כדי שיהא נשכר את הזויות:"
+  },
   "Rashi on Eruvin 53a:20:1": {
     "dependsOn": [
       "Rashi on Eruvin 53a:20:1",
@@ -219,6 +262,32 @@
       "Rashi on Eruvin 53a:24:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דוד דגלי מסכתא</strong> - כדאמר בברכות <span class=\"parenthesized\">(דף ד.)</span> שהיה יגע בתורה ומורה הוראות כדאמר ידי מלוכלכות בדם ושפיר ושיליא ואומר מפיבושת רבי יפה דנתי יפה זכיתי כו' ואמרינן נמי במועד קטן <span class=\"parenthesized\">(דף טז.)</span> עדינו העצני יושב בשבת תחכמוני זה דוד כו':"
+  },
+  "Rashi on Eruvin 53a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 53a:2:1"
+    ],
+    "generatedAt": "2026-11-06T20:23:38.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 53a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד תני מאברין</strong> - באלף:"
+  },
+  "Rashi on Eruvin 53a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 53a:3:1",
+      "Eruvin 53a:3",
+      "Eruvin 53a:1"
+    ],
+    "generatedAt": "2026-11-06T20:24:45.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 53a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבר אבר</strong> - שמוסיפין לה אברים שאם יש אבר שיוצא מן העיר בקרן מזרחית דרומית רואין כאילו אבר גם בקרן מזרחית צפונית ומודדין משם:"
   },
   "Rashi on Eruvin 53a:4:1": {
     "dependsOn": [
@@ -311,6 +380,24 @@
       "Tosafot on Eruvin 53a:19:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כי אצבעתא בבירא לשכחא</strong> - ור\"ח גרס בביזרי פירש כשוקע אצבעו בזרעונים כמו בחרדל וכיוצא בו נראה כמו גומא וכשמסיר אצבעו חוזרת ומתמלאת הגומא מיד כך אנו כשאנו מסיימין המסכתא ומתחילין האחרת מיד שוכחין הראשונה:"
+  },
+  "Tosafot on Eruvin 53a:1:1": {
+    "dependsOn": [
+      "Eruvin 53a:1",
+      "Rashi on Eruvin 53a:1:1",
+      "Rashi on Eruvin 53a:1:2",
+      "Rashi on Eruvin 53a:1:3",
+      "Eruvin 55b:8",
+      "Tosafot on Eruvin 55b:8:1",
+      "Rashi on Eruvin 55b:8:1"
+    ],
+    "generatedAt": "2026-11-06T20:22:58.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגשרים ונפשות שיש בהן בית דירה</strong> - הא דקתני שיש להן בית דירה לא קאי אנפשות כדמוכח בברייתא דנפשות גופיה סתמא לדירת שומר קבר עביד הלכך אף ע\"ג דלא דייר בה דירה היא דנפש בנין שעל הקבר כדפ\"ה בגמרא אלא אגשרים קאי דגשר וקבר ובית הכנסת וכל הנהו דקתני בגמ' בברייתא שיש להם בית דירה לאו לבית דירה עביד ואי לית ביה בית דירה לאו דירה הוא בערוך מפרש נפש ציון כדאמרינן בירושלמי אמר רשב\"ג אין עושין נפשות לצדיקי' אלא דבריהם הם זכרונם וכן הביא מפ\"ב דשקלים <span class=\"parenthesized\">(דף ו:)</span>:"
   },
   "Tosafot on Eruvin 53a:22:1": {
     "dependsOn": [],

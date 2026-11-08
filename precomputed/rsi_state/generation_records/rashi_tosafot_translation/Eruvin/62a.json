@@ -1,4 +1,108 @@
 {
+  "Rashi on Eruvin 62a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:10:2",
+      "Rashi on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:6:2",
+      "Rashi on Eruvin 61b:1:1"
+    ],
+    "generatedAt": "2026-11-06T20:39:11.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן נח נהרג על הגזל</strong> - דהיא מז' מצות כדאמר בד' מיתות בסנהדרין <span class=\"parenthesized\">(דף נו.)</span> ואמר אזהרה שלהן זו היא מיתתן ואשמועינן ר' יוחנן דעכו\"ם לא מחיל אפילו אפחות משוה פרוטה והוי גזל לדידהו:"
+  },
+  "Rashi on Eruvin 62a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:10:1",
+      "Rashi on Sanhedrin 57a:20:1",
+      "Steinsaltz on Eruvin 62a:10",
+      "Tosafot on Eruvin 62a:10:1"
+    ],
+    "generatedAt": "2026-11-06T20:40:46.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ניתן להישבון</strong> - דגבי ישראל כתיב והשיב את הגזלה אבל בנכרי לא כתיב השבה הלכך כיון שעבר נהרג ואינו משלם:"
+  },
+  "Rashi on Eruvin 62a:11:1": {
+    "dependsOn": [
+      "Eruvin 62a:10",
+      "Tosafot on Eruvin 62a:11:1",
+      "Jastrow, מוֹהַרְקֵי 1",
+      "Jastrow, *אַבּוּרְגְּנָא 1",
+      "Eruvin 62a:11",
+      "Rashi on Eruvin 62a:10:1",
+      "Rashi on Eruvin 62a:10:2",
+      "Rashi on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:6:2",
+      "Rashi on Eruvin 62a:7:1",
+      "Rashi on Eruvin 62a:7:2",
+      "Ritva on Eruvin 62a:3",
+      "Rashba on Eruvin 62a:2",
+      "Steinsaltz on Eruvin 62a:11",
+      "Sefer HeArukh, Letter Alef 67",
+      "Sefer HeArukh, Letter Mem 90",
+      "Rashi on Eruvin 62a:1:1",
+      "Rashi on Eruvin 62a:2:1",
+      "Rashi on Eruvin 62a:3:1",
+      "Rashi on Eruvin 62a:4:1"
+    ],
+    "generatedAt": "2026-11-06T20:46:04.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במוהרקי ואבורגני</strong> - למלאות החצר בספסלין וקתידראות אם ירצה:"
+  },
+  "Rashi on Eruvin 62a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:49:54.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצירו של עכו\"ם</strong> - אע\"ג שסתם חצירות פתוחין לתוכן בתים הרבה אין רשות נכרי חלוקה להיחשב רשות לכל אחד ואחד לבדו דדירת עכו\"ם לא שמה דירה וישראל שאינו דר עמהן שנכנס לאחד מן הבתים בשבת מותר להוציא מן הבתים לחצר ולא הוי מוציא מרשות המיוחדת לעכו\"ם זה לרשות שהיא לכולן:"
+  },
+  "Rashi on Eruvin 62a:14:1": {
+    "dependsOn": [
+      "Eruvin 62a:14",
+      "Rashi on Eruvin 62a:13:1"
+    ],
+    "generatedAt": "2026-11-06T20:50:41.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם יש שם ישראל אחד</strong> - דר עמהן אוסר על כל ישראל להוציא מן הבתים לחצר מפני שהיא כחצירו:"
+  },
+  "Rashi on Eruvin 62a:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:13:1",
+      "Rashi on Eruvin 62a:14:1",
+      "Rashi on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:7:1",
+      "Rashi on Eruvin 62a:10:1",
+      "Rashi on Eruvin 61b:11:1",
+      "Tosafot on Eruvin 61b:11:1",
+      "Rashi on Eruvin 62a:3:1",
+      "Rashi on Eruvin 62a:4:1"
+    ],
+    "generatedAt": "2026-11-06T20:54:07.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"א בן יעקב אומר עד שיהו שני ישראלים</strong> - דרין בשני בתים ואוסרין זה על זה רשות העכו\"ם חלוקה מהן ואוסר העכו\"ם על בתיהם והן אוסרין על בתי העכו\"ם מלהוציא לחצר דשויוה רבנן לדירת עכו\"ם דירה כדאמר לעיל אבל בישראל יחידי לא שויוה רבנן לדירת עכו\"ם דירה ולא הוה אוסר על ביתו של ישראל ולא ישראל אוסר על ביתו שאין חילוק רשות בעכו\"ם:"
+  },
   "Rashi on Eruvin 62a:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-04T09:01:18.520Z",
@@ -33,5 +137,146 @@
       "Rashi on Eruvin 62a:3:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כדיר של בהמה</strong> - ואין לו כח לאסור ור\"מ קאמר לה לקמן בברייתא בשמעתין ורמינן מתני' עלה ומוקמינן בדליתיה וישראל אפי' כי ליתיה אוסר אלמא דירת עכו\"ם לאו שמה דירה:"
+  },
+  "Rashi on Eruvin 62a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:27:26.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דכ\"ע לאו שמה דירה</strong> - אלא משום גזרה שמא ילמוד ישראל מעשיו של עכו\"ם הטריחוהו והפסידוהו חכמים לישראל הדר עמו כדי שיקשה בעיניו ליתן שכר בכל שבת ושבת ויצא משם ובההיא גזרה פליגי ר\"מ ור\"א בן יעקב אי גזרינן ליה על ישראל יחיד הדר עם העכו\"ם או לא:"
+  },
+  "Rashi on Eruvin 62a:6:1": {
+    "dependsOn": [
+      "Eruvin 62a:6"
+    ],
+    "generatedAt": "2026-11-06T20:29:57.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"א סבר כיון דעכו\"ם חשוד על שפיכות דמים</strong> - לא שכיח יחידי דדייר בהדיה ומילתא דלא שכיחא לא גזור בה רבנן ור\"מ סבר יחידי נמי זימנין דדייר ומש\"ה אמור רבנן אין עירוב מועיל כו':"
+  },
+  "Rashi on Eruvin 62a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:6:1",
+      "Tosafot on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:3:1",
+      "Rashi on Eruvin 62a:4:1",
+      "Rashi on Eruvin 62a:7:1",
+      "Eruvin 62a:7"
+    ],
+    "generatedAt": "2026-11-06T20:31:31.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועכו\"ם לא מוגר</strong> - לא יהא רוצה לשכור ויצא ישראל זה משם:"
+  },
+  "Rashi on Eruvin 62a:7:1": {
+    "dependsOn": [
+      "Eruvin 62a:7",
+      "Rashi on Eruvin 62a:6:2",
+      "Rashi on Eruvin 62a:6:1"
+    ],
+    "generatedAt": "2026-11-06T20:35:48.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא</strong> - לא מוגר עכו\"ם:"
+  },
+  "Rashi on Eruvin 62a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:7:1",
+      "Eruvin 62a:7",
+      "Rashi on Eruvin 62a:10:1",
+      "Rashi on Eruvin 62a:10:2"
+    ],
+    "generatedAt": "2026-11-06T20:37:53.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בריאה</strong> - חזקה שיתנה ישראל עמו למלאות כל המבוי כלים אם ירצה:"
+  },
+  "Tosafot on Eruvin 62a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:10:1",
+      "Rashi on Eruvin 62a:10:2",
+      "Avodah Zarah 71b:16",
+      "Tosafot on Avodah Zarah 71b:16:2",
+      "Avodah Zarah 72a:1",
+      "Avodah Zarah 72a:2",
+      "Avodah Zarah 72a:3",
+      "Chokhmat Shlomo on Eruvin 62a:1",
+      "Chokhmat Shlomo on Eruvin 62a:2",
+      "Chidushei Halachot on Avodah Zarah 71b:2"
+    ],
+    "generatedAt": "2026-11-06T20:44:02.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן נח נהרג על פחות משוה פרוטה ולא ניתן להשבון</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דגבי ישראל כתיב והשיב את הגזלה אשר גזל אבל בעובד כוכבים לא כתיב הלכך כיון שעבר נהרג ואין משלם משמע מתוך פירושו דאפילו בגזל מעכו\"ם חבירו לא מיחייב בהשבה ולא יתכן לומר כן לפי אותה שיטה דפרק בתרא דעכו\"ם <span class=\"parenthesized\">(דף עא:)</span> דבעי למידק דמשיכה בעכו\"ם קונה דאי אינה קונה אמאי נהרג אבל בהא דנהרג על שוה פרוטה לא קשיא ליה דבדין הוא שיהרג אע\"ג דלא קני ביה משיכה כיון דהוי ממון חשוב אבל בפחות משוה פרוטה דלאו ממון הוא ובמשיכה נמי לא קני אמאי נהרג ואי בגוזל מעכו\"ם איירי א\"כ אפי' בפחות משוה פרוטה ממון חשוב הוא לגבי עכו\"ם דלא מחיל על פחות משוה פרוטה ובדין הוא שיהרג אף על גב דלא קני ליה כיון דחשיב ממון לגביה כמו שוה פרוטה לישראל וכל הגזלנים דמיחייבי על הגזילה אע\"ג דלא קנו ליה אבל מהא דנהרג על גזל פחות משוה פרוטה מישראל דייק שפיר כדפרשתי ומשמע ליה דאיירי בגוזל מישראל מדקתני ולא ניתן להשבון כלומר דאינו חייב להחזיר ובגוזל מעכו\"ם היה חייב כיון דקפיד ולא כפ\"ה דפטר בגוזל מן העכו\"ם משום דלא כתיבא ביה השבה ומשום קם ליה בדרבה מיניה לא מיפטר דלא שייך גבי עכו\"ם דהא נטלו לסטין כסותו בהגוזל בתרא <span class=\"parenthesized\">(ב\"ק דף קיד.)</span> משמע דלא קנו אלא בייאוש ומוקמינן בלסטים עכו\"ם ועוד דאפילו בישראל אי הוי בעין חייב להחזיר ולא אמרינן קים ליה בדרבה מיניה כדמוכח בפרק בן סורר <span class=\"parenthesized\">(סנהדרין דף עב.)</span> גבי בא במחתרת ומשני דהא דמיחייב מיתה משום דמצער לישראל כלומר שהוא חשוב ממון ביד עכו\"ם דאין סברא לומר שאם ציערו בשום ענין שיתחייב מיתה ומאי לא ניתן להשבון כלומר כיון דלא קניא במשיכה א\"כ כל היכא דאיתיה של ישראל הוא דאי משום דמייאש זימנין דלא מייאש ומפרש שאינו בתורת השבון כלומר אם אכלו שאינו בעין לא מיחייב ליתן דמיו אבל כל זמן שהוא בעין ודאי חייב להחזיר אבל אין לפרש אינו בתורת השבון לענין שיפטר בהשבתו ממיתה כמו ישראל ממלקות דהוי בכך ניתק לעשה דאם כן דחק בחנם להעמידה בישראל ומשום דמצערינא דלוקמה בגוזל מעכום:"
+  },
+  "Tosafot on Eruvin 62a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:11:1",
+      "Sefer HeArukh, Letter Mem 90",
+      "Jastrow, מוֹהַרְקֵי 1",
+      "Jastrow, *אַבּוּרְגְּנָא 1"
+    ],
+    "generatedAt": "2026-11-06T20:48:51.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוהרקי ואבורגני</strong> - פירוש מוהרקי כתיבה וחותמות כמו מוהרקייהו דהני בטפסא דמלכא מנח בסוף החולץ <span class=\"parenthesized\">(יבמות דף מו:)</span> ואבורגני שלוחים ור\"ח פירש מוהרקי ואבורגני כמו בניין:"
+  },
+  "Tosafot on Eruvin 62a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62a:3:1",
+      "Steinsaltz on Eruvin 62a:3",
+      "Eruvin 62a:3",
+      "Eruvin 62a:13",
+      "Rashi on Eruvin 62a:13:1"
+    ],
+    "generatedAt": "2026-11-06T20:26:19.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצירו של עכו\"ם הרי הוא כדיר של בהמה</strong> - ואם יש בתים הרבה של עכו\"ם פתוחין בחצר מותר לישראל להכניס ולהוציא לשם מאחר שאין ישראל דר שם:"
+  },
+  "Tosafot on Eruvin 62a:6:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 62a:3:1",
+      "Tosafot on Eruvin 61b:7:1",
+      "Tosafot on Eruvin 61b:4:1",
+      "Tosafot on Eruvin 61a:7:1",
+      "Tosafot on Eruvin 62a:10:1",
+      "Tosafot on Eruvin 62a:11:1",
+      "Rashi on Eruvin 62a:6:1",
+      "Rashi on Eruvin 62a:6:2",
+      "Rashi on Eruvin 62a:1:1",
+      "Rashi on Eruvin 62a:3:1"
+    ],
+    "generatedAt": "2026-11-06T20:33:48.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועכו\"ם לא מוגר</strong> - וא\"ת ומעיקרא דס\"ד דטעמא משום דדירת עכו\"ם שמה דירה מ\"ט דעירוב לא מהני ושכירות מהני וי\"ל דעירוב וביטול בדין הוא דלא מהני שאין העכו\"ם מכיר בהן אבל יודע הוא שישראל קונה רשותו בשכירות אבל השתא דאסיקנא שהוא כדיר של בהמה ומן הדין לא בעי מידי צריך הוא לפרש מ\"ט תקינו רבנן שכירות טפי מעירוב וביטול:"
   }
 }

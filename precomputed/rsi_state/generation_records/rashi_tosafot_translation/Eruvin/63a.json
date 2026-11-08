@@ -1,0 +1,414 @@
+{
+  "Rashi on Eruvin 63a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:42:53.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתחילו בכבודו</strong> - מאחר שנאמר לו דניחוש לסבא והתחילו לדבר בכבודו לא היה לו לזלזל בדבר:"
+  },
+  "Rashi on Eruvin 63a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:10:1",
+      "Rashi on Eruvin 63a:12:1"
+    ],
+    "generatedAt": "2026-11-06T21:43:48.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואב\"א שאני רב אחא בר יעקב דמפליג</strong> - הרבה מאד היה זקן וחכם:"
+  },
+  "Rashi on Eruvin 63a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:12:2"
+    ],
+    "generatedAt": "2026-11-06T21:44:41.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאפרושי מאיסורא</strong> - ראה תלמיד אדם רוצה לעבור עבירה ורבו שם ושותק מותר לתלמיד לקפוץ ולגעור:"
+  },
+  "Rashi on Eruvin 63a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:12:1"
+    ],
+    "generatedAt": "2026-11-06T21:45:34.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בצינתא</strong> - בדקל ואין משתמשין באילן משום שבות:"
+  },
+  "Rashi on Eruvin 63a:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:13:2",
+      "Rashi on Eruvin 63a:12:1",
+      "Rashi on Eruvin 63a:12:2",
+      "Rashi on Eruvin 62a:4:1"
+    ],
+    "generatedAt": "2026-11-06T21:47:30.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - רבינא לרב אשי הא מילתא דעבידת קמך השתא מי הויא אפקירותא חוצפה או לא:"
+  },
+  "Rashi on Eruvin 63a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:13:1",
+      "Rashi on Eruvin 63a:13:2",
+      "Rashi on Eruvin 63a:21:1",
+      "Rashi on Eruvin 63a:22:1"
+    ],
+    "generatedAt": "2026-11-06T21:48:40.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין חכמה וגו'</strong> - אין תורת חכמה וכבוד ותבונה ויועץ עומדת כנגד חילול השם:"
+  },
+  "Rashi on Eruvin 63a:14:1": {
+    "dependsOn": [
+      "Eruvin 63a:13"
+    ],
+    "generatedAt": "2026-11-06T21:49:16.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפניו אסור</strong> - להורות וחייב מיתה בידי שמים והא דרבא לאו לאפרושי מאיסור קאי אלא על הבא לישאל:"
+  },
+  "Rashi on Eruvin 63a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:52:57.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפניו הוה</strong> - והאי דקתני רחוק ממנו שהיה רחוק מקומו ממקום רבו שלש פרסאות ומיהו כי אורי קמיה אורי:"
+  },
+  "Rashi on Eruvin 63a:19:2": {
+    "dependsOn": [
+      "Eruvin 63a:19",
+      "Rashi on Eruvin 63a:19:1"
+    ],
+    "generatedAt": "2026-11-06T21:55:15.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רחוק ממנו קאמר</strong> - ואי הוראה לאו רחוק ממנו הוה מאי אתא רבי יוחנן לאשמועינן:"
+  },
+  "Rashi on Eruvin 63a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:32:49.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרתא</strong> - שם העיר:"
+  },
+  "Rashi on Eruvin 63a:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:1:1",
+      "Steinsaltz comment #1 on Eruvin 63a:1",
+      "Steinsaltz on Eruvin 63a:1",
+      "Shabbat 75a:3",
+      "Rashi on Shabbat 75a:3:1"
+    ],
+    "generatedAt": "2026-11-06T21:34:55.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דארגז</strong> - שם האיש שבנאה והוה אמגושי כך ראיתי בתשובת הגאונים:"
+  },
+  "Rashi on Eruvin 63a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:21:1"
+    ],
+    "generatedAt": "2026-11-06T21:56:31.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צפנתי אמרתך</strong> - כנסתי דברי מלהורות במקום שאהא חוטא עליהן:"
+  },
+  "Rashi on Eruvin 63a:22:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:22:1"
+    ],
+    "generatedAt": "2026-11-06T21:56:59.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צדק</strong> - דברי תורה:"
+  },
+  "Rashi on Eruvin 63a:22:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:22:1"
+    ],
+    "generatedAt": "2026-11-06T21:58:51.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירא היאירי</strong> - רבו הוה כדכתיב היה כהן לדוד רב לדוד:"
+  },
+  "Rashi on Eruvin 63a:24:1": {
+    "dependsOn": [
+      "Eruvin 63a:24"
+    ],
+    "generatedAt": "2026-11-06T22:01:39.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מורידין אותו מגדולתו</strong> - לעיל קאי אדזעירי במורה הלכה בפני רבו:"
+  },
+  "Rashi on Eruvin 63a:24:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T22:02:49.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את אחי אבא צוה</strong> - דחלק כבוד למשה דכתיב אשר צוה ה' את משה והורה הלכות גיעול אך את הזהב:"
+  },
+  "Rashi on Eruvin 63a:24:3": {
+    "dependsOn": [
+      "Eruvin 63a:24"
+    ],
+    "generatedAt": "2026-11-06T22:03:24.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:24:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איענש</strong> - לירד מגדולה שפסקו לו מקמי הכי:"
+  },
+  "Rashi on Eruvin 63a:25:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:24:1",
+      "Rashi on Eruvin 63a:24:2",
+      "Rashi on Eruvin 63a:25:2"
+    ],
+    "generatedAt": "2026-11-06T22:04:12.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב ולפני אלעזר הכהן יעמוד ושאל לו</strong> - שהיה עתיד יהושע להיות צריך לישאל דבר הלכה מאלעזר:"
+  },
+  "Rashi on Eruvin 63a:25:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:25:1"
+    ],
+    "generatedAt": "2026-11-06T22:04:57.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:25:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אשכחן</strong> - לאחר מיתת משה דאיצטריך ליה יהושע לאלעזר לשאול כלום:"
+  },
+  "Rashi on Eruvin 63a:26:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:26:1",
+      "Rashi on Eruvin 63a:26:2",
+      "Rashi on Eruvin 63a:26:3",
+      "Eruvin 63a:26"
+    ],
+    "generatedAt": "2026-11-06T22:07:40.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותיב</strong> - משיב דבר מורה הלכה:"
+  },
+  "Rashi on Eruvin 63a:26:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:26:1",
+      "Rashi on Eruvin 63a:26:3"
+    ],
+    "generatedAt": "2026-11-06T22:08:12.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשאול</strong> - למיתה:"
+  },
+  "Rashi on Eruvin 63a:26:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:26:1",
+      "Rashi on Eruvin 63a:26:2",
+      "Eruvin 63a:26"
+    ],
+    "generatedAt": "2026-11-06T22:09:20.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:26:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאם</strong> - ראויים הם לכך דהוי ליה כמורה הלכה:"
+  },
+  "Rashi on Eruvin 63a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:2:1",
+      "Eruvin 63a:2"
+    ],
+    "generatedAt": "2026-11-06T21:35:49.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סר סכינא</strong> - בדק סכין לטבח ולא אמרו להראות סכין לחכם אלא מפני כבודו של חכם ונמצא רבינא נוטל לו עטרת כבוד העיר ורב אשי רבו במתא מחסיא הוה והיא מבבל:"
+  },
+  "Rashi on Eruvin 63a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:36:31.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא רב המנונא אורי בחרתא דארגז</strong> - הואיל ולא היה רבו דר בה אע\"פ שהיתה בבבל ואני לא הוריתי במתא מחסיא שהיא מקומך:"
+  },
+  "Rashi on Eruvin 63a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:38:28.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמיד חבר</strong> - חכם כמותו אלא שלמד ממנו דבר אחד או יותר:"
+  },
+  "Rashi on Eruvin 63a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:39:09.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנפשיה</strong> - בודק סכין לשחוט בו הוא עצמו בהמה שלו ואין צריך להראות לרבו:"
+  },
+  "Rashi on Eruvin 63a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:39:37.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למחוזא</strong> - אתריה דרבא:"
+  },
+  "Rashi on Eruvin 63a:6:1": {
+    "dependsOn": [
+      "Eruvin 63a:6"
+    ],
+    "generatedAt": "2026-11-06T21:40:12.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנא מיזבן זבינא</strong> - כי אכילנא מהאי בישרא בדמי אנא זבין לה מינך הלכך לאו לנפשאי אלא כשאר טבחא הוית לי:"
+  },
+  "Rashi on Eruvin 63a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 63a:1:1",
+      "Rashi on Eruvin 63a:5:1"
+    ],
+    "generatedAt": "2026-11-06T21:41:07.749Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עגלא תילתא</strong> - גדל שליש ואז הוא עומד בעיקר טעם בשרו כדתנן <span class=\"parenthesized\">(ב\"מ דף סח.)</span> ומגדלין אותן עד שיהו משולשין ואמרינן נמי <span class=\"parenthesized\">(שם דף סט.)</span> מותר שליש בשכרך אלמא אורחיה עד שליש ל\"א שלישי לבטן וקשה לי הא דאמר בעלמא <span class=\"parenthesized\">(סנהדרין דף סה:)</span> רב חנינא ורב אושעיא הוו עסקי בספר יצירה וכל מעלי שבתא איברי להו עגלא תילתא דהתם מאי שלישי לבטן איכא הא לא היה בבטן מעולם:"
+  },
+  "Rashi on Eruvin 63a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:42:30.385Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 63a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ליחוש לסבא</strong> - לרב אחא בר יעקב ובתמיהה קאמר:"
+  },
+  "Tosafot on Eruvin 63a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:50:55.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 63a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי דרוש ונתנו בני אהרן הכהן אש על המזבח אע\"פ שהאש יורדת מן השמים מצוה להביא מן ההדיוט</strong> - לכאורה משמע שהקטרת שהקטירו על מזבח החיצון היה והוראת שעה היתה כדאשכחנא בקטרת של נשיאים כדאמרינן בשילהי התכלת <span class=\"parenthesized\">(מנחות דף נ:)</span> דאי על מזבח הפנימי הקטירו מאי שייכא אותה דרשה לשם והא לא היה יורד אש על מזבח הפנימי לשם קטרת דהא קי\"ל בפרק אמר להן הממונה <span class=\"parenthesized\">(יומא דף לג.)</span> דמערכה שניה שעל מזבח החיצון לקטרת מיהו בתורת כהנים משמע שלבית קדשי הקדשים נכנסו להקטיר ולשם נשרפו וצ\"ע:"
+  },
+  "Tosafot on Eruvin 63a:23:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 63a:5",
+      "Tosafot on Eruvin 63a:23:2",
+      "Tosafot on Eruvin 63a:23:1"
+    ],
+    "generatedAt": "2026-11-06T22:00:09.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 63a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הנותן מתנותיו לכהן אחד כו'</strong> - הא דקרי ליה עירא היאירי אף על פי שהיה כהן שמא אביו מאהרן ואמו ממנשה כדאמר במגילה <span class=\"parenthesized\">(דף יב:)</span> אביו מבנימין ואמו מיהודה ופשטיה דקרא כהן לדוד לאו כהן ממש הוא אלא שר כמו דאמר ובני דוד כהנים היו <span class=\"parenthesized\">(שמואל ב ח׳:י״ח)</span>:"
+  },
+  "Tosafot on Eruvin 63a:23:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 63a:23:1"
+    ],
+    "generatedAt": "2026-11-06T22:00:53.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 63a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מביא רעב לעולם</strong> - ואף על גב דכתיב על שאול ועל בית הדמים הא והא גרם וסמוכין קדרש:"
+  },
+  "Tosafot on Eruvin 63a:3:1": {
+    "dependsOn": [
+      "Kiddushin 25a:2"
+    ],
+    "generatedAt": "2026-11-06T21:37:52.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 63a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב המנונא אורי בחרתא דארגז</strong> - תרי רב המנונא הוו חד שהיה תלמידו של רב חסדא כדמשמע הכא ובפרק קמא דקדושין <span class=\"parenthesized\">(דף כה.)</span> גבי סבי דנזוניא דאמר ליה רב חסדא לרב המנונא זיל צנעינהו ועוד היה אחר שהיה תלמידו של רב כדלעיל בפרק כיצד מעברין <span class=\"parenthesized\">(עירובין דף נד.)</span> דאמר ליה רב לרב המנונא ברי מדאית לך אוטיב לך:"
+  }
+}

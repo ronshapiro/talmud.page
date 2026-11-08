@@ -1,0 +1,373 @@
+{
+  "Rashi on Eruvin 82a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:10:1",
+      "Rashi on Eruvin 82a:10:2"
+    ],
+    "generatedAt": "2026-11-06T10:58:37.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד משתתפין כו' וכל מי שמקבל מבעוד יום</strong> - לסמוך על עירוב זה ולילך מותר:"
+  },
+  "Rashi on Eruvin 82a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:10:1",
+      "Steinsaltz on Eruvin 82a:10",
+      "Eruvin 82a:11"
+    ],
+    "generatedAt": "2026-11-06T10:59:30.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מערבין</strong> - לא התירו חכמים לצאת חוץ לתחום ע\"י עירוב אלא לדבר מצוה:"
+  },
+  "Rashi on Eruvin 82a:14:1": {
+    "dependsOn": [
+      "Eruvin 82a:14"
+    ],
+    "generatedAt": "2026-11-06T11:10:59.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הודיעוהו מבעוד יום ולא הודיעוהו קתני</strong> - הודיעוהו אע\"פ שלא נתרצה מבעוד יום ונתרצה משחשיכה אמרינן הוברר שקודם זמן קניית עירוב דעתו לכך היה לא הודיעוהו עד שחשיכה מאי ברירה איכא הא לא הוה ידע דאיכא עירוב דנימא דעתיה עליה הואי:"
+  },
+  "Rashi on Eruvin 82a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:11:30.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצא בעירוב אמו</strong> - עירבה אמו לעצמה ולא זיכתה לו בעירוב מוליכתו עמה דכגופה דמי דמסתמא דעתה עליה דלא סגי ליה בלאו אמו:"
+  },
+  "Rashi on Eruvin 82a:16:1": {
+    "dependsOn": [
+      "Eruvin 82a:16"
+    ],
+    "generatedAt": "2026-11-06T11:12:40.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנן נמי גבי סוכה</strong> - כלומר וכי תימא בן שש צריך לאמו קרי ליה הא ליכא למימר דתנן נמי גבי סוכה כי האי גוונא ופרשינן התם הי קטן צריך לאמו:"
+  },
+  "Rashi on Eruvin 82a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:16:2",
+      "Rashi on Eruvin 82a:16:1"
+    ],
+    "generatedAt": "2026-11-06T11:13:24.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב בסוכה</strong> - מחנכינן ליה מדרבנן:"
+  },
+  "Rashi on Eruvin 82a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:13:55.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו קורא אימא</strong> - כיון דלא קרי ההיא שעתא לאו צריך הוא:"
+  },
+  "Rashi on Eruvin 82a:18:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:14:50.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופרכינן אימא סלקא דעתך גדול נמי קרי</strong> - כלומר לא משוית ליה אין צריך לאמו עד שיהא ניעור משנתו ולא יקרא אימא הא אי קרא אימא צריך לאמו משוית ליה הא אפילו גדול דרכו בכך:"
+  },
+  "Rashi on Eruvin 82a:18:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:18:1",
+      "Rashi on Eruvin 82a:18:2",
+      "Rashi on Eruvin 82a:18:3"
+    ],
+    "generatedAt": "2026-11-06T11:15:23.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כל שניעור משנתו ואינו קורא אימא אימא</strong> - דלא צוח עד דאתיא לקמיה הוי אינו צריך לאמו:"
+  },
+  "Rashi on Eruvin 82a:19:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:19:1",
+      "Rashi on Eruvin 82a:19:2",
+      "Rashi on Eruvin 82a:18:1",
+      "Rashi on Eruvin 82a:18:2",
+      "Rashi on Eruvin 82a:18:3"
+    ],
+    "generatedAt": "2026-11-06T11:16:19.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכמה</strong> - בר כמה שני הוי:"
+  },
+  "Rashi on Eruvin 82a:19:2": {
+    "dependsOn": [
+      "Eruvin 82a:19",
+      "Rashi on Eruvin 82a:19:1",
+      "Eruvin 82a:17"
+    ],
+    "generatedAt": "2026-11-06T11:17:36.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבר ארבע כבר חמש</strong> - קרי ליה אין צריך לאמו כל חד לפום חורפיה אלמא מכי הוי בר חמש בעי לזכוייה וטפי מבר ד' לא קרי ליה צריך לאמו דליפוק:"
+  },
+  "Rashi on Eruvin 82a:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:3:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Eruvin 82a:1"
+    ],
+    "generatedAt": "2026-11-06T10:35:30.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גברא אגברא</strong> - דר' יהושע בן לוי אדשמואל שמואל דאמר הלכה סבר פליגי ור' יהושע סבר לא פליגי:"
+  },
+  "Rashi on Eruvin 82a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:3:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Rashi on Eruvin 82a:3:3",
+      "Rashi on Eruvin 82a:3:4"
+    ],
+    "generatedAt": "2026-11-06T10:36:11.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפסולין</strong> - לעדות דכולן גזלנין מדבריהן הן דאסמכתא לא קנייא ומגזל גזיל ליה:"
+  },
+  "Rashi on Eruvin 82a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:3:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Rashi on Eruvin 82a:3:3",
+      "Rashi on Eruvin 82a:3:4",
+      "Rashi on Eruvin 82a:1:1",
+      "Rashi on Eruvin 81b:1:1"
+    ],
+    "generatedAt": "2026-11-06T10:37:28.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקוביא</strong> - בעירבון:"
+  },
+  "Rashi on Eruvin 82a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:3:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Rashi on Eruvin 82a:3:4",
+      "Sanhedrin 25a:1",
+      "Sanhedrin 25a:2",
+      "Sanhedrin 25a:13",
+      "Rashi on Sanhedrin 25a:13:1",
+      "Eruvin 82a:3",
+      "Rashi on Eruvin 82a:4:1",
+      "Rashi on Sanhedrin 24b:15:1",
+      "Rashi on Sanhedrin 24b:15:2",
+      "Rashi on Sanhedrin 24b:15:3"
+    ],
+    "generatedAt": "2026-11-06T10:39:50.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפריחי יונים</strong> - אי תיקדמה יונך ליוני:"
+  },
+  "Rashi on Eruvin 82a:3:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:3:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Rashi on Eruvin 82a:3:3"
+    ],
+    "generatedAt": "2026-11-06T10:40:54.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוחרי שביעית</strong> - דרחמנא אמר לאכלה ולא לסחורה וזה שחומד ממון לעבור עבירה על הממון רשע הוא והתורה אמרה אל תשת רשע עד <span class=\"parenthesized\">(שמות כג)</span>:"
+  },
+  "Rashi on Eruvin 82a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:43:00.845Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שאין להם אומנות אלא היא</strong> - דקסבר ר' יהודה אסמכתא שהוא נסמך על דעתו שהוא ינצחנו ועל אותה אסמכתא הוא מתנה קניא ולאו גזלנין נינהו ופסולייהו לפי שאין עסוקין בישובו של עולם דכיון דאין מכירין ובקיאין בטורח וצער בני אדם אינן חסין על חבריהן מלהפסידן ממון:"
+  },
+  "Rashi on Eruvin 82a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:51:04.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וח\"א כו'</strong> - קא ס\"ד היינו ת\"ק דמתניתין אלמא אימתי לחלוק:"
+  },
+  "Rashi on Eruvin 82a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:51:38.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא</strong> - ברייתא משום ר\"ט היא דאמר אסמכתא לא קניא אבל במתניתין לא פליג רבי יהודה אדתנא קמא אלא מפרש לטעמיה:"
+  },
+  "Rashi on Eruvin 82a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:53:30.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אחד מהן נזיר</strong> - שנים שיושבין וראו אחד בא ואמר אחד מהן הריני נזיר שזה נזיר ואמר חבירו הריני נזיר שאין זה נזיר:"
+  },
+  "Rashi on Eruvin 82a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:7:1"
+    ],
+    "generatedAt": "2026-11-06T10:53:58.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להפלאה</strong> - שיהא נדרו מפורש על הודאי ולא בתורת ספק אי נזיר אותו הבא כנגדו:"
+  },
+  "Rashi on Eruvin 82a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 82a:7:1",
+      "Rashi on Eruvin 82a:7:2",
+      "Rashi on Eruvin 82a:10:1",
+      "Rashi on Eruvin 82a:3:2",
+      "Rashi on Eruvin 82a:3:3"
+    ],
+    "generatedAt": "2026-11-06T10:57:51.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 82a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קני</strong> - אי נצח:"
+  },
+  "Tosafot on Eruvin 82a:10:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 82a:10:1"
+    ],
+    "generatedAt": "2026-11-06T11:00:15.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד משתתפין מניח את החבית</strong> - כל פירותיהם היו רגילים להניח בחבית כדתניא לעיל [עירובין דף פ] מביאין אח החבית של יין ושל שמן ושל גרוגרות ושל שאר כל מיני פירות:"
+  },
+  "Tosafot on Eruvin 82a:11:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 82a:11:1",
+      "Rosh on Eruvin 8:1:2",
+      "Ritva on Eruvin 82a:4",
+      "Steinsaltz on Eruvin 82a:11",
+      "Steinsaltz comment #1 on Eruvin 82a:11",
+      "Eruvin 45a:1",
+      "Eruvin 35b:14",
+      "Eruvin 35b:15",
+      "Eruvin 35b:16",
+      "Rashi on Eruvin 82a:10:2"
+    ],
+    "generatedAt": "2026-11-06T11:08:04.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מערבין אלא לדבר מצוה</strong> - לעול דתנן אם באו נכרים למזרח וכו' ומוקי לה בגמ' בחרי מתא ופי' שם <span class=\"rashi-quotation\">בקונטרס</span> שצריך לצעוק לפניו הוי נמי דבר מצוה שהולך לצורך בני עירו ומפקח על עסקי רבים:"
+  },
+  "Tosafot on Eruvin 82a:13:1": {
+    "dependsOn": [
+      "Ritva on Eruvin 82a:5",
+      "Eruvin 37b:9",
+      "Tosafot on Eruvin 37b:9:1",
+      "Eruvin 82a:14",
+      "Tosafot on Eruvin 82b:6:1"
+    ],
+    "generatedAt": "2026-11-06T11:10:10.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה אין ברירה</strong> - דלא מסתבר דאחילו בעירובי תחומין דרבנן אין ברירה כדאמרינן פרק בכל מערבין <span class=\"parenthesized\">(לעיל עירובין דף לז:)</span> מאן האי תנא דאפילו בדרבנן לית ליה ברירה:"
+  },
+  "Tosafot on Eruvin 82a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:12:01.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטן בן שש יוצא בעירוב אמו</strong> - אף על גב דאין מערבין אלא לדבר מצוה מכל מקום יוצא קטן בעירוב אמו דאי אפשר לה להניחו משום דכרוך אחריה א\"נ בקטן נמי איכא מצוה לחנכו:"
+  },
+  "Tosafot on Eruvin 82a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T10:42:18.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלו הן הפסולין</strong> - מפורש בפרק זה בורר <span class=\"parenthesized\">(סנהדרין דף כד:)</span>:"
+  },
+  "Tosafot on Eruvin 82a:4:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 24b:19:1",
+      "Maharshal: Chokhmat Shlomo on Eruvin 82a:1"
+    ],
+    "generatedAt": "2026-11-06T10:48:30.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 82a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' יהודה אימתי כו' בזמן שאין לו אומנות כו'</strong> - אע\"ג דמסקינן דפליגי רבנן עליה דרבי יהודה הלכה כרבי יהודה כדפסיק בפרק זה בורר <span class=\"parenthesized\">(סנהדרין דף כו:)</span> א\"ר אבהו הלכה כרבי יהודה ומכאן משמע דשרי לשחוק בקוביא דאפילו לרמי בר חמא דמפרש טעמא דמשחק בקוביא פסול משום דאסמכתא לא קניא היינו לרבנן אבל לר' יהודה דמכשר היכא דגמיר אומנות אחריתי קסבר דכה\"ג לאו אסמכתא היא וטעם דלא הוי אסמכתא <span class=\"rashi-quotation\">כדפירש הקונטרס</span> בפ' זה בורר <span class=\"parenthesized\">(סנהדרין דף כד:)</span> משום דלא דמי לההיא דב\"ע <span class=\"parenthesized\">(ד' קד:)</span> אם אוביר ולא איעביד אכלם אלפא זוזי דהתם הוי בידו ולהכי לא גמר ומקני דמעיקרא כי אתני ארעתא דלא יהיב ליה אסמכתא קמתני דטועה וסבור שלא יבא לידי כן. אבל הכא לא סמיך אמידי משום דלא ידע אי נצח או לא ובפרק זה בורר <span class=\"parenthesized\">(סנהדרין דף כה.)</span> משמע גבי מפריחי יונים דקאמר וצריכא דאי תנא דתולה בדעת עצמו התם הוא דאמר קים לי בנפשאי דידענא ספי ולהכי הוי אסמכתא משמע היכא דבידו הויא אסמכתא טפי וקשה לר\"ת דבסוף איזהו נשך <span class=\"parenthesized\">(ב\"מ דף עג:)</span> גבי האי דיהיב זוזי לחבריה למזבן ליה חמרא כו' ופריך מ\"ש דאם אוביר ולא איעביד אשלם במיטבא ומשני התם בידו הכא לאו בידו אלמא משום דלאו בידי הויא אסמכתא טפי ונראה היכא דבידו לגמרי ולא גזים כי ההוא דאם אוביר ולא איעביד אשלם במיטבא לא הויא אסמכתא וכן היכא דאין בידו כלל ואפילו הכי גמיר ומקני כגון קוביא וכה\"ג אבל היכא דבידו ולא בידו כי ההוא חמרא דפשע ולא זבן ליה ואע\"ג דיין מצוי הרבה לקנות מ\"מ כיון דתלוי באחרים דאם לא ירצו למכור לו ממי יקנה הלכך לא גמר ומקני והוי אסמכתא גמורה ועוד פר\"ת טעם אחר דדווקא כי ההוא דאם אני חוזר בי ערבוני מחול דפרק הזהב <span class=\"parenthesized\">(בבא מציעא דף מח:)</span> ומי שפרע מקצת חובו והשליש את שטרו דגט פשוט <span class=\"parenthesized\">(ב\"ב דף קסח.)</span> וכל כה\"ג חשיב אסמכתא שאינו מתכוין אלא להסמיך חבירו על דבריו שיאמינוהו אבל הכא אדעתא דהכי קעבדו שירויחו או זה או זה ואותם המשחקים באמנה אומר ר\"י דאינו חייב לשלם דבמה יקנה דלמ\"ד אסמכתא היא לא קני אפילו בקנין אלא בב\"ד חשוב כדמוכח בנדרים <span class=\"parenthesized\">(דף כו:)</span> ולמ\"ד לאו אסמכתא היא היאך יקנה בדברים בלא קנין בשביל שנוצח חבירו:"
+  }
+}

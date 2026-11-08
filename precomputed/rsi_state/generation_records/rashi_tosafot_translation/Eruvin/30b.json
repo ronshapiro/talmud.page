@@ -208,6 +208,31 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שמיה אוהל</strong> - וחוצץ ובגדולה עסקינן שמחזקת מ' סאה בלח שהם כוריים ביבש דאי קטנה כלי היא ומקבלת טומאה ולא חייצא ורבנן דמתני' כרבי סבירא להו ובין לרבי יהודה ובין לרבנן כסומכוס סבירא להו דאמר מידי דחזי ליה למיכליה בההיא שעתא בעינן:"
   },
+  "Rashi on Eruvin 30b:1:1": {
+    "dependsOn": [
+      "Eruvin 30b:1"
+    ],
+    "generatedAt": "2026-11-05T22:10:39.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמערבין לגדול</strong> - למי שהוא גדול שהביא שתי שערות שחייב בענוי ואע\"ג דלמחר לא חזי ליה הואיל וחזי לקטן שאינו בר עונשין:"
+  },
+  "Rashi on Eruvin 30b:2:1": {
+    "dependsOn": [
+      "Eruvin 30b:1",
+      "Eruvin 30b:2"
+    ],
+    "generatedAt": "2026-11-05T22:11:20.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - אמת:"
+  },
   "Rashi on Eruvin 30b:3:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-02T19:28:21.322Z",

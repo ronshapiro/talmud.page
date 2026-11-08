@@ -1,0 +1,336 @@
+{
+  "Rashi on Eruvin 77b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:49:13.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקצת עלין מגולין</strong> - משום שבת נקט ליה דבעי למיתני ניטלין בשבת שנוטלן ואוחזן בעלין שלהן:"
+  },
+  "Rashi on Eruvin 77b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:1:1",
+      "Rashi on Eruvin 77b:1:3"
+    ],
+    "generatedAt": "2026-11-06T04:49:41.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חושש</strong> - משום כלאי הכרם:"
+  },
+  "Rashi on Eruvin 77b:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:1:1",
+      "Rashi on Eruvin 77b:1:2",
+      "Rashi on Eruvin 77b:1:3",
+      "Rashi on Eruvin 77b:1:4"
+    ],
+    "generatedAt": "2026-11-06T04:50:15.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא משום שביעית</strong> - אם שנה שביעית היא:"
+  },
+  "Rashi on Eruvin 77b:1:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:1:1",
+      "Rashi on Eruvin 77b:1:2",
+      "Rashi on Eruvin 77b:1:3",
+      "Rashi on Eruvin 77b:1:4"
+    ],
+    "generatedAt": "2026-11-06T04:50:46.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא משום מעשר</strong> - לשמא נשרש וניתוסף ואם היה חושש למעשר צריך לעשר את תוספתו ליכא למיחש להכי דלא נשרש:"
+  },
+  "Rashi on Eruvin 77b:2:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 77b:2:2"
+    ],
+    "generatedAt": "2026-11-06T04:59:28.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרא</strong> - פושייר:"
+  },
+  "Rashi on Eruvin 77b:2:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 77b:2:1"
+    ],
+    "generatedAt": "2026-11-06T05:02:09.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצינא</strong> - דולדוייר\"א:"
+  },
+  "Rashi on Eruvin 77b:3:1": {
+    "dependsOn": [
+      "Eruvin 77b:3"
+    ],
+    "generatedAt": "2026-11-06T05:02:46.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סולם המצרי</strong> - הואיל וקטן הוא ונוח ליטלו משם אינו ממעט:"
+  },
+  "Rashi on Eruvin 77b:3:2": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-06T05:03:29.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חווקין</strong> - אישקלוניי\"ש:"
+  },
+  "Rashi on Eruvin 77b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:03:56.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כובדו קובעו</strong> - ומתוך שהוא כבד אין נוטלין אותו משם ולא משום איסור אלא משום שקשה ליטלו:"
+  },
+  "Rashi on Eruvin 77b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:10:02.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סולם רחב ד' מכאן</strong> - בחצר זו וכן בזו ובהן עולין ויורדין מזו לזו:"
+  },
+  "Rashi on Eruvin 77b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:6:1",
+      "Rashi on Eruvin 77b:1:1",
+      "Rashi on Eruvin 77b:1:2"
+    ],
+    "generatedAt": "2026-11-06T05:11:33.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין בין זה לזה ג'</strong> - כלומר אפי' אינן מכוונין זה כנגד זה אבל אין מרוחקין זה מכנגד זה ג' הוו כמכוונין והוי פתח ואם רצו מערבין אחד אבל מרוחקין זה מכנגד זה ג' טפחים לאו פתח הוא:"
+  },
+  "Rashi on Eruvin 77b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:7:2"
+    ],
+    "generatedAt": "2026-11-06T05:12:00.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אמרן</strong> - אלא בכותל צר שאין נוח להלך עליו:"
+  },
+  "Rashi on Eruvin 77b:7:2": {
+    "dependsOn": [
+      "Eruvin 77b:7",
+      "Rashi on Eruvin 77b:7:1"
+    ],
+    "generatedAt": "2026-11-06T05:12:54.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - יש ברוחבו ד' אפילו מופלג טובא שהרי עולה לראשו ומהלך בראשו עד שמגיע לסולם חבירו:"
+  },
+  "Rashi on Eruvin 77b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T05:13:58.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנה איצטבא</strong> - של עץ:"
+  },
+  "Rashi on Eruvin 77b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:8:1",
+      "Rashi on Eruvin 77b:8:2",
+      "Rashi on Eruvin 77b:8:3"
+    ],
+    "generatedAt": "2026-11-06T05:14:44.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי האיצטבא</strong> - סמוך לכותל ויש אויר מפסיק בין זו לזו שהיה לעליונה רגלים:"
+  },
+  "Rashi on Eruvin 77b:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:8:1",
+      "Rashi on Eruvin 77b:8:2",
+      "Rashi on Eruvin 77b:8:3",
+      "Rashi on Eruvin 77b:8:4",
+      "Rashi on Eruvin 77b:8:5"
+    ],
+    "generatedAt": "2026-11-06T05:15:20.804Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יש</strong> - בתחתונה אורך ד' ובה נתמעט גובהו של כותל מי':"
+  },
+  "Rashi on Eruvin 77b:8:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:8:1",
+      "Rashi on Eruvin 77b:8:2",
+      "Rashi on Eruvin 77b:8:3",
+      "Rashi on Eruvin 77b:8:4",
+      "Rashi on Eruvin 77b:8:5"
+    ],
+    "generatedAt": "2026-11-06T05:16:06.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממעט</strong> - דל עליונה מהכא:"
+  },
+  "Rashi on Eruvin 77b:8:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:8:1",
+      "Rashi on Eruvin 77b:8:2",
+      "Rashi on Eruvin 77b:8:3",
+      "Rashi on Eruvin 77b:8:4",
+      "Rashi on Eruvin 77a:1:1",
+      "Rashi on Eruvin 77a:2:1"
+    ],
+    "generatedAt": "2026-11-06T05:17:50.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי אין בה ד' ויש בעליונה ד' ואין בין זה לזה ג'</strong> - חשבינן להו כחד ואע\"פ שהמיעוט הזה קצר מלמטה הואיל ומתמלא שיעורו מלמעלה שפיר דמי אבל יש ביניהן שלשה תרי נינהו ומיעוט באויר לאו שמיה מיעוט:"
+  },
+  "Rashi on Eruvin 77b:9:1": {
+    "dependsOn": [
+      "[",
+      "Chokhmat Shlomo on Eruvin 77b:2"
+    ],
+    "generatedAt": "2026-11-06T05:35:33.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששליבותיו פורחות</strong> - שליבות חוקין שקלוני\"ש בלע\"ז מדרגות שלנו שקורין גרדי\"ץ קרי ליה נמי סולם וסולם שאינו עשוי כעין מדריגה אלא כעין שליבות שלנו שיש אויר בין חווקיהן והיינו פורחות שפורחות זו על זו וזקפו אצל הכותל:"
+  },
+  "Rashi on Eruvin 77b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:9:1",
+      "Rashi on Eruvin 77b:9:3",
+      "Steinsaltz on Eruvin 77b:9"
+    ],
+    "generatedAt": "2026-11-06T05:37:26.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יש בשליבה התחתונה ארבעה</strong> - ובה נתמעט הכותל מעשרה ממעט:"
+  },
+  "Rashi on Eruvin 77b:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 77b:9:1",
+      "Rashi on Eruvin 77b:9:2",
+      "Rashi on Eruvin 77b:8:1",
+      "Rashi on Eruvin 77b:8:2",
+      "Rashi on Eruvin 77b:8:3",
+      "Rashi on Eruvin 77b:8:4",
+      "Rashi on Eruvin 77b:8:5",
+      "Rashi on Eruvin 77b:1:1"
+    ],
+    "generatedAt": "2026-11-06T05:38:23.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי כו'</strong> - כדפרישית גבי איצטבא ושליבה תחתונה נמי כשאין מובדלת מן הקרקע שלשה קאמר:"
+  },
+  "Tosafot on Eruvin 77b:1:1": {
+    "dependsOn": [
+      "Eruvin 77b:1",
+      "Rashi on Eruvin 77b:1:1"
+    ],
+    "generatedAt": "2026-11-06T04:58:30.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקצת עלין מגולין</strong> - משום שבת נקט לה <span class=\"rashi-quotation\">כך פי' בקונטרס</span> ופריך כיון דכל העב מכוסה ואין מגולה אלא מקצת עלין דומה לספל שיש לו אוגנים וא\"ת והא משמע בריש כל הכלים <span class=\"parenthesized\">(שבת דף קבג.)</span> דלרבנן דר\"א בן תדאי דאית להו טלטול מן הצד שמיה טלטול פוגלא מלמטה למעלה אסור שהעב הוא למטה מ\"ש מצנון שמקצת עלין מגולין דשרי ולא חשיב אפי' טלטול מן הצד אע\"פ שהעב תחת העלין כולו מכוסה וי\"ל דמ\"מ קל להגביהו ולנערו מן העפר יותר מכשהוא מונח מלמטה למעלה וא\"ת דמשמע הכא דניעור לא חשיב טלטול מן הצד מדשרינן מקנתה מגולה אפילו לרבנן וכמה משניות דשרו לנער כדתנן פרק במה טומנין <span class=\"parenthesized\">(שבת מט.)</span> נוער את הכסוי והן נופלות ומעות שעל גבי הכר מנער את הכר והן נופלות ואבן שעל פי החבית מטה על צידה והיא נופלת וא\"כ אמאי אסר רב בפרק כירה <span class=\"parenthesized\">(שבת דף מג:)</span> גבי מת המוטל בחמה להופכו ממיטה למיטה משום דטלטול מן הצד שמיה טלטול אע\"ג דבמניח אסרינן בפרק נוטל <span class=\"parenthesized\">(שבת דף קמב:)</span> מטעם בסיס לדבר האסור מת בשבת הוי כמו שכח וכל דבר שדעתו ליטלו בשבת ולא להניחו בו כל השבת אכי' מניח חשיב כשוכח כי ההוא דנוער את הכסוי והן נופלות אע\"פ שבמתכוין כיסה בדבר שאינו ניטל ואומר ר\"י דשאני טלטול דמת שעיקר טלטול לצורך המת עצמו שהוא איסור ולא דמי לכל הני שעושה הטלטול לצורך היתר ולא לצורך איסור כמו לפת וצנון שאין צריך לטלטול עפר וכן גבי גיזי צמר ומעות ואבן א\"צ לטלטולם להכי לא מייתי בפרק כירה <span class=\"parenthesized\">(שבת דף מג:)</span> גבי פלוגתא דרב ושמואל אלא ההיא דר' יהודה בן לקיש דדמיא ליה ולא מייתי עלה פלוגתא דר\"א בן תדאי ורבנן והשתא אתי שפיר דלא תיקשי ההיא דרב אאמרי בי רב בפרק תולין <span class=\"parenthesized\">(שבת דף קמא.)</span> דמשמע דסברי דלא שמיה טלטול כי זה אינו נראה לומר דפליגי ואור\"י אע\"ג דקי\"ל בעלמא דטלטול מן הצד לא שמיה טלטול דבריש כל הכלים <span class=\"parenthesized\">(שם דף קבג.)</span> פסיק רב נחמן כר\"א בן תדאי בההוא דמת הלכה כרב דאסר דקי\"ל הלכה כרב באיסורי ומדמסיק עלה דכולי עלמא טלטול מן הצד שמיה טלטול פירוש ר' יהודה בן לקיש ורבנן והוה מצי למימר לא שמיה טלטול ולאוקמי פלוגתייהו בטלטול גמור ואין להאריך כאן:"
+  },
+  "Tosafot on Eruvin 77b:5:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 77b:5"
+    ],
+    "generatedAt": "2026-11-06T05:09:37.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי אכי' צורי נמי</strong> - משמע הכא דכל סולמות ניטלין בשבת בין מצרי ובין צורי וחימה דבפ\"ק דביצה <span class=\"parenthesized\">(דף ט:)</span> משמע דסולם של עלייה אסור לטלטל ולא שרי התם אלא סולם של שובך משום דשובכו מוכיח עליו ואפי' הטוי סולם של עלייה אסר התם ללישנא בתרא דבני ר' חייא ועוד דר' חייא גופיה דאסר התם משמע בשמעתין דשרי דס\"ל סולמות של בבל צריכין קבע ודוחק להעמיד בסולם של שובך ואין נראה נמי להעמיד הך דשמעתין כרב חנן בר אמי דמפרש התם דברה\"ר פליגי אבל ברה\"י מותר דלית הלכתא הכי אלא כרב קי\"ל דאמר כל מקום שאסרו חכמים מפני מראית העין אפי' בחדרי חדרים אסור וכן פסק במגילת סתרים ואור\"ת דהכא בסולמות של בית שדרך לטלטל מזוית לזוית ולא דמי לסולמות של עלייה שהם גדולים וחזו להטיח בהן גגו וכן סולמות של שובך וה\"ר אברהם מפרש דהתם בי\"ט שמוליך הסולם ברה\"ר ורואין אותו ואומר להטיח גגו הוא צריך וכיון דאסור ברה\"ר אסור בחדרי חדרים אבל בשבת דאין רגילות להוליכו ברה\"ר לא גזור בחצר ולפי פירוש זה אסור לטלטל סולמות שלנו בי\"ט:"
+  },
+  "Tosafot on Eruvin 77b:8:1": {
+    "dependsOn": [
+      "Maharshal on Eruvin 77b:6",
+      "Maharsha on Eruvin 77b:1",
+      "Maharsha on Eruvin 77b:2",
+      "Chidushei Halachot on Eruvin 77b:1",
+      "Chidushei Halachot on Eruvin 77b:2",
+      "Chokhmat Shlomo on Eruvin 77b:6",
+      "Rosh on Eruvin 7:3:1",
+      "Rosh on Eruvin 7:3:2",
+      "Rashba on Eruvin 77b:5",
+      "Ritva on Eruvin 77b:3",
+      "Tosafot on Eruvin 77b:1:1",
+      "Eruvin 78a:1",
+      "Eruvin 78a:2",
+      "Eruvin 78a:3",
+      "Eruvin 78a:6",
+      "Eruvin 78a:7",
+      "Eruvin 78a:8"
+    ],
+    "generatedAt": "2026-11-06T05:28:23.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יש באיצטבא התחתונה ארבעה ממעט</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> אורך ארבעה ובה נתמעט גובהו של כותל מעשרה ומשמע דלא בעי ד' על ד' וכן פירש סולם ששליבותיו פורחות כעין סולמות שלנו אורך החווקים יכול להיות ארבעה אבל אין רחבים ארבעה שעושין כמין מקלות דקים ותימה דבסמוך בעינן שיגיע סולם עד ראש הכותל דבעי סולם י\"ד אי ז' ומשהו ואין לומר דהתם בדלית ביה ד' דסתם סולם ברחב ד' איירי אלא היכא דקאמר כל שהוא כמו גבי זיז דמשום זיז לא בעי רוחב ד' וכן משמע דקאמר לקמן [עירובין דף עח.] סולם מכאן וסולם מכאן וקשין באמצע מהו חקק להשלים בכותל בכמה משמע דבעי רחב ארבעה ודוחק לומר דהא דבעינן שיגיע לראש הכותל ולא סגי במה שמיעטו איירי כשיש בין זה לזה ג' ושליבה התחתונה נמי גבוה מן הארץ שלשה דהוי מיעוט באויר ולא שמיה מיעוט ומפרש ר\"י דהכא בעינן ארבעה על ארבעה שיהא ראוי לעמוד ולהתעכב עליו ולעלות על הכותל . ולהכי לא בעינן אלא שיתמעט הכותל מעשרה אבל לקמן בעי שיגיע עד ראש הכותל לא איירי ברחב ד' על ד' וסולם ששליבות פורחות לא כעין סולמות אלא כעין מדרגות שקורין גרד\"ש ולא כעין מדרגות של אבנים שעושין כמין סטיו לפנים מסטיו אלא המדרגות בולטין זה על גב זה שיש חלל ואויר בין שליבה לשליבה וזהו ל' פורחות כמו נמצא כבש פורח על גבי אמה יסוד ואמה סובב דפרק קדשי קדשים <span class=\"parenthesized\">(זבחים סב:)</span> והשליבות רחבות ארבעה על ארבעה ולהכי ממעט ואיצטריך לאכמעינן באיצטבא ובסולם ששליבותיה פורחות דאי אשמעינן באיצטבא הוה אמינא דסולם שאין התחתונה ארבעה ויש בעליונה ארבעה אפי' יש בין זה לזה שלשה ממעט דלא חשיב מיעוט באויר כיין דמאחורי הסולם מחובר הכל יחד דהוי כאיצטבא אחת ואי אשמעינן סולם הוה אמינא דאיצטבא אפי' אין בין זה לזה ג' הוי מיעוט באויר דאין האיצטבא התחתונה מבטלת האויר ולא חשיבא כסולם כל שהוא דחזי לעלייה ומבטל האויר שתחת הזיז ור\"ת מפרש דהא דבעי שיגיע סולם על ראש הכותל היינו בסולם שאין קבוע ואין נראה לר\"י דגבי לול הפתוח לעלייה מיבעיא לן לעיל אי צריך סולם קבוע או לאו משמע דבכל דוכתא בעינן סולם קבוע ועוד שאינו קבוע כיון דניטל בשבת אתי' מגיע עד ראש הכותל אין לו להועיל כמו חריץ שבין שתי חצירות דתנן לקמן אפי' מלא קש או תבן מערבין שנים ואין מערבין אחד לפי שאין קבוע שם ועתיד ליטלו:"
+  }
+}

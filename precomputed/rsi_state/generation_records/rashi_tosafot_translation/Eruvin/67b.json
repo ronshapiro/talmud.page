@@ -1,0 +1,399 @@
+{
+  "Rashi on Eruvin 67b:10:1": {
+    "dependsOn": [
+      "Eruvin 67b:10"
+    ],
+    "generatedAt": "2026-11-07T22:27:01.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם ארישא</strong> - ולאו אמתוכו לים קאי אלא אדיוקא קאי והכי קא דייק הא בתוכו מטלטלין דהא רה\"י היא עד כמה עד בית סאתים אבל טפי לא דשויוה רבנן ככרמלית לענין טלטול משום דמחוסר דירה ומיחלף ברה\"ר מיהו לענין מתוכו לים רה\"י היא:"
+  },
+  "Rashi on Eruvin 67b:11:1": {
+    "dependsOn": [
+      "Eruvin 67b:11",
+      "Rashi on Eruvin 67b:10:1",
+      "Rashi on Eruvin 67b:12:1"
+    ],
+    "generatedAt": "2026-11-07T22:27:50.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר לעולם ארישא</strong> - ולאו אדיוקא קאי ואפי' לענין מתוכו לים נמי כרמלית שויוה ושרי מיהו לר' יוחנן לא תיקשי דודאי לענין חיובא מדאורייתא רה\"י היא ומאי טעמא שרו רבנן לטלטולי מניה לכרמלית משום דאיסור טלטול מרשות היחיד לכרמלית מדרבנן הוא דהם אמרו זאת והם אמרו עוד איסור אחר וראו שאין שניהם עומדים כאן וביטלו זה מפני זה וכדמפרש:"
+  },
+  "Rashi on Eruvin 67b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:12:2"
+    ],
+    "generatedAt": "2026-11-07T22:28:37.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הם אמרו קרפף יותר מבית סאתים אין מטלטלין בו</strong> - דשויוה כרמלית לענין טלטול משום דמיחלף ברה\"ר ומיהו אסור לטלטל מרה\"ר לתוכו ומתוכו לרה\"ר כדר' יוחנן דמדאורייתא רה\"י היא:"
+  },
+  "Rashi on Eruvin 67b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:12:1",
+      "Eruvin 67b:12",
+      "Rashi on Eruvin 67b:6:1",
+      "Rashi on Eruvin 67b:6:2",
+      "Rashi on Eruvin 67b:7:1",
+      "Rashi on Eruvin 67b:8:1"
+    ],
+    "generatedAt": "2026-11-07T22:29:56.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והם אמרו אין מטלטלין מרה\"י לכרמלית</strong> - משום דלא ליתי לטלטולי מרה\"י לרה\"ר ובהאי רה\"י שהיא ביותר מבית סאתים לא גזור מאי טעמא בית סאתים דשרי לטלטולי בכוליה כי אסרינן ליה לטלטולי מיניה לכרמלית לא אתיא מיניה חורבה אבל טפי מבית סאתים אי אסרת מתוכו לים תוך ד' אמות אתי למימר רה\"י גמורה היא אפי' מדרבנן ומטלטלי בכולה ומיעקרא אידך תקנתא דרבנן ובטלו הא מקמי הא:"
+  },
+  "Rashi on Eruvin 67b:15:1": {
+    "dependsOn": [
+      "Eruvin 67b:15",
+      "Rashi on Eruvin 67b:15:2",
+      "Rashi on Eruvin 67b:15:3"
+    ],
+    "generatedAt": "2026-11-07T22:31:27.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי שנא</strong> - דאלים הך תקנתא טפי מהך השתא נמי קא מטלטלי מרשות היחיד לכרמלית:"
+  },
+  "Rashi on Eruvin 67b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:15:1",
+      "Rashi on Eruvin 67b:15:2",
+      "Rashi on Eruvin 67b:15:3",
+      "Eruvin 67b:15"
+    ],
+    "generatedAt": "2026-11-07T22:32:11.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוכו שכיח</strong> - וכי שרי ליה לטלטולי בגווה חזו ליה עלמא ומיחלף ברה\"ר:"
+  },
+  "Rashi on Eruvin 67b:15:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:15:1",
+      "Rashi on Eruvin 67b:15:2",
+      "Rashi on Eruvin 67b:15:3"
+    ],
+    "generatedAt": "2026-11-07T22:32:41.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוכו לים לא שכיח</strong> - ולא גזרו רבנן במלתא דלא שכיחא ואע\"ג דבשאר רה\"י לכרמלית גזור רבנן הנהו שכיחן אבל הני תרתי כחדא יותר מבית סאתים ומתוכו לכרמלית לא שכיח:"
+  },
+  "Rashi on Eruvin 67b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:33:01.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאישתפך חמימיה</strong> - שהיו רוצין למולו והחמו לו חמין מבערב ונשפכו היום:"
+  },
+  "Rashi on Eruvin 67b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:33:19.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגו ביתאי</strong> - מביתיה דרבה והתינוק היה בבית אחר באותה חצר:"
+  },
+  "Rashi on Eruvin 67b:17:1": {
+    "dependsOn": [
+      "Eruvin 73a:1",
+      "Eruvin 73a:2",
+      "Eruvin 73a:3",
+      "Eruvin 71b:1"
+    ],
+    "generatedAt": "2026-11-07T22:36:06.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נסמוך אשיתוף</strong> - דמבוי דתנן <span class=\"parenthesized\">(לקמן עירובין עג.)</span> במתני' אם נשתתפו במבוי מותר כאן וכאן במבוי ובחצירות אף על פי שלא עירבו:"
+  },
+  "Rashi on Eruvin 67b:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:18:2"
+    ],
+    "generatedAt": "2026-11-07T22:39:18.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדאורייתא מותבינן תיובתא</strong> - באיסור של תורה וחכם מורה בו היתר ויש בתלמידים שיודע להשיב ישיב קודם מעשה שלא נעבור על דברי תורה אבל בדרבנן כגון עירובי חצירות שבקינן לחכם לעשות כהוראתו:"
+  },
+  "Rashi on Eruvin 67b:18:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:18:1"
+    ],
+    "generatedAt": "2026-11-07T22:39:47.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדר מותבינן</strong> - ליה ללמוד אם יפה הורה:"
+  },
+  "Rashi on Eruvin 67b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:40:11.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזאה</strong> - על הטמא אינה אסורה בשבת אלא משום שבות:"
+  },
+  "Rashi on Eruvin 67b:1:1": {
+    "dependsOn": [
+      "Eruvin 67b:1"
+    ],
+    "generatedAt": "2026-11-07T22:14:35.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' פתוח לקרפף</strong> - ניחא ליה ביה טפי דאיכא אוירא טפי ממבוי ואינו אוסר על בני מבוי:"
+  },
+  "Rashi on Eruvin 67b:2:1": {
+    "dependsOn": [
+      "Eruvin 67b:2",
+      "Rashi on Eruvin 67b:1:1",
+      "Rashi on Eruvin 67b:3:1"
+    ],
+    "generatedAt": "2026-11-07T22:15:34.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נכרי בית סאתים אוסר</strong> - אם היה לו פתח לקרפף בית סאתים ופתח למבוי עדיין אוסר על בני מבוי דאוירא דקרפף לא נפיש אבל אם יותר מבית סאתים נפיש אוירא ובההיא ניחא ליה ואינו אוסר:"
+  },
+  "Rashi on Eruvin 67b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:2:1"
+    ],
+    "generatedAt": "2026-11-07T22:16:31.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישראל</strong> - שיש לו פתח לקרפף ופתח למבוי ושכח ולא עירב במבוי אם קרפף בית סאתים הוא שראוי להשתמש בו אינו אוסר על בני מבוי ואע\"ג דלגבי נכרי חשיב זוטרא לגבי ישראל נפיש דהא בשבת ליכא הוצאת משואות יתירין וסגי בהכי ונפיש אוירא ממבוי אבל יותר מבית סאתים דכרמלית הוא כגון שלא הוקף לדירה כיון דאסיר ליה לאישתמושי לא ניחא ליה ביה ואוסר על בני מבוי:"
+  },
+  "Rashi on Eruvin 67b:5:1": {
+    "dependsOn": [
+      "Eruvin 67b:5",
+      "Eruvin 67b:1"
+    ],
+    "generatedAt": "2026-11-07T22:18:34.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתוח לקרפף מהו</strong> - אנכרי קאי ואמילתיה דרב יהודה:"
+  },
+  "Rashi on Eruvin 67b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:6:2"
+    ],
+    "generatedAt": "2026-11-07T22:19:04.622Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזורק לתוכו</strong> - מרה\"ר:"
+  },
+  "Rashi on Eruvin 67b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:6:1"
+    ],
+    "generatedAt": "2026-11-07T22:21:00.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - חטאת ואע\"ג דלענין איסור טלטול שויוה רבנן כרמלית שאסרו לטלטל בתוכו אלא בד' מדאורייתא רה\"י גמורה היא דמחיצה היא אלא שמחוסרת דיורין ומש\"ה אסרי רבנן לטלטולי:"
+  },
+  "Rashi on Eruvin 67b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:21:18.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ים</strong> - כרמלית הוא:"
+  },
+  "Rashi on Eruvin 67b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:7:1",
+      "Rashi on Eruvin 67b:7:2",
+      "Rashi on Eruvin 67b:7:3"
+    ],
+    "generatedAt": "2026-11-07T22:22:00.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מטלטלין לא מתוכו לים</strong> - אפילו בד' אמות משום דכל גבוה עשרה ורוחב ד' הוי רה\"י:"
+  },
+  "Rashi on Eruvin 67b:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:7:1",
+      "Rashi on Eruvin 67b:7:2",
+      "Rashi on Eruvin 67b:7:3",
+      "Rashi on Eruvin 67b:7:4",
+      "Rashi on Eruvin 67b:7:5"
+    ],
+    "generatedAt": "2026-11-07T22:22:40.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מכאן</strong> - שאינו גבוה עשרה כרמלית היא כים ומטלטלין מזה לזה תוך ד' אמות:"
+  },
+  "Rashi on Eruvin 67b:7:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:7:3",
+      "Rashi on Eruvin 67b:7:4",
+      "Rashi on Eruvin 67b:7:5"
+    ],
+    "generatedAt": "2026-11-07T22:23:27.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כמה</strong> - יהא רחב סלע:"
+  },
+  "Rashi on Eruvin 67b:7:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:23:48.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד בית סאתים</strong> - אבל טפי לא ולקמיה מפרש אהייא קאי:"
+  },
+  "Rashi on Eruvin 67b:8:1": {
+    "dependsOn": [
+      "Eruvin 67b:7",
+      "Rashi on Eruvin 67b:8:2"
+    ],
+    "generatedAt": "2026-11-07T22:24:33.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא אסיפא</strong> - אפחות מעשרה תרוייהו כרמלית נינהו לא שנא רחב ולא שנא קצר:"
+  },
+  "Rashi on Eruvin 67b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:8:1",
+      "Eruvin 67b:7",
+      "Eruvin 67b:8",
+      "Eruvin 67b:6"
+    ],
+    "generatedAt": "2026-11-07T22:26:00.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 67b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא יותר מבית סאתים</strong> - בטל תורת רה\"י מיניה והוי כרמלית אפי' לקולא ואף על גב דגבוה עשרה:"
+  },
+  "Tosafot on Eruvin 67b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:30:38.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 67b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי טעמא דלמא אמרי רה\"י גמורה היא</strong> - מכאן התיר ר\"ת בגינה אחת יתירה מבית סאתים שלא הוקפה לדירה לטלטל מתוכה לחוץ הואיל ולא היתה רה\"ר גמורה כגון סרטיא ופלטיא עוברת לפניה והתיר להטמין המפתח בתוך הגינה אע\"פ שעומד בחוץ ונותן בתוך הגינה או ליטול מתוכה לחוץ ואין לחלק בין סלע דהתם משום דלא שכיח שהרי כל עיקר גזירה זו שלא יבא לטלטל בכולו והאי טעמא שייך נמי הכא ועוד יש לדקדק מהא דתניא בפ\"ק דשבת <span class=\"parenthesized\">(דף ו.)</span> ארבע רשויות לשבת ואם היה אסור לטלטל משאר כרמלית לקרפף יותר מבית סאתים משכחת להו חמשה:"
+  },
+  "Tosafot on Eruvin 67b:16:1": {
+    "dependsOn": [
+      "Eruvin 67b:16",
+      "Rashi on Eruvin 67b:16:1",
+      "Rashi on Eruvin 67b:16:2",
+      "Eruvin 68a:1",
+      "Rashi on Eruvin 68a:1:1"
+    ],
+    "generatedAt": "2026-11-07T22:34:38.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 67b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא ערבינן כו'</strong> - קודם מילה היה <span class=\"rashi-quotation\">כדפירש בקונט'</span> וכן משמע מדמדמה הך אמירה להזאה שהיא משום מצוה לעשות פתח אבל לאחר מילה ומשום סכנה על זה לא היה אומר והא לא ערבינן דבפקוח נפש הזריז הרי זה משובח כדאמרינן פרק בתרא דיומא <span class=\"parenthesized\">(דף פד:)</span>:"
+  },
+  "Tosafot on Eruvin 67b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:17:1",
+      "Tosafot on Eruvin 67b:3:1",
+      "Tosafot on Eruvin 67b:14:1",
+      "Tosafot on Eruvin 67b:16:1",
+      "Eruvin 71b:8",
+      "Eruvin 71b:9",
+      "Eruvin 73b:1",
+      "Eruvin 73b:2",
+      "Eruvin 73b:3",
+      "Eruvin 73b:4",
+      "Eruvin 73b:5",
+      "Eruvin 73b:6",
+      "Eruvin 73b:7"
+    ],
+    "generatedAt": "2026-11-07T22:38:48.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 67b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נסמוך אשיתוף</strong> - דמבוי <span class=\"rashi-quotation\">פירש בקונט'</span> דתנן במתני' אם נשתתפו במבוי מותרין כאן וכאן ולא היה לו להביא מאותה משנה דלקמן בגמ' מוקמינן לה כולה כר\"מ דבעינן עירוב ובעינן שיתוף ואם נשתתפו נמי קאמר אלא היה לו להביא ראיה מהא דתניא לקמן בפירקין <span class=\"parenthesized\">(עירובין דף עא:)</span> וחכמים אומרים מערבין או משתתפין ואע\"ג דפסיק רב לקמן הלכה כר\"מ דבעי תרתי סבר לה כר' יוחנן דאמר נהגו כר\"מ אבל לכתחלה לא עבדינן כוותיה אי נמי סבר כמאן דאמר בפת כולי עלמא לא פליגי. דבחדא סגי ונסמוך אשיתוף דקאמר היינו אם נשתתפו בפת:"
+  },
+  "Tosafot on Eruvin 67b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 67b:2:1",
+      "Rashi on Eruvin 67b:3:1"
+    ],
+    "generatedAt": "2026-11-07T22:17:51.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 67b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישראל בית סאתים אינו אוסר כו'</strong> - אומר ר\"י דאם הוקף לדירה אפי' בית סאתים אוסר דכיון שהוקף לדירה הוה כביתו ואינו עומד במקום אויר של מבוי ואוסר עדיין פתח הפתוח למבוי ו<span class=\"rashi-quotation\">בקונט'</span> לא פירש כן דאדרבה פירש יותר מבית סאתים דוקא כשלא הוקף לדירה אבל הוקף לדירה אינו אוסר:"
+  }
+}

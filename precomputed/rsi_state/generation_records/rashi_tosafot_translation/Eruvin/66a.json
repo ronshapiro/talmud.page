@@ -1,0 +1,248 @@
+{
+  "Rashi on Eruvin 66a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:00:23.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מה מערב אפי' בפחות כו'</strong> - דלקולא אקשינהו רבי יוחנן ולא לחומרא דכל בעירובין להקל:"
+  },
+  "Rashi on Eruvin 66a:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:2:1",
+      "Rashi on Eruvin 66a:2:3",
+      "Eruvin 64a:4",
+      "Rashi on Eruvin 64a:4:2",
+      "Rashi on Eruvin 63b:1:1",
+      "Rashi on Eruvin 63b:1:2"
+    ],
+    "generatedAt": "2026-11-07T21:06:08.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה מערב אפי' שכירו ולקיטו</strong> - דנכרי אם ישראל הוא כדאמר לעיל <span class=\"parenthesized\">(עירובין דף סד.)</span> נותן עירובו ודיו:"
+  },
+  "Rashi on Eruvin 66a:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:2:1",
+      "Rashi on Eruvin 66a:2:2"
+    ],
+    "generatedAt": "2026-11-07T21:06:44.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף שוכר אפי' שכירו ולקיטו</strong> - דנכרי אם נכרי הוא משכיר רשות אדוניו לדיורי החצר:"
+  },
+  "Rashi on Eruvin 66a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:2:1",
+      "Rashi on Eruvin 66a:3:2",
+      "Rashi on Eruvin 65b:1:1",
+      "Rashi on Eruvin 65b:3:1",
+      "Rashi on Eruvin 65b:4:1",
+      "Rashi on Eruvin 65b:8:1",
+      "Mishnah Eruvin 6:6",
+      "Eruvin 72b:11"
+    ],
+    "generatedAt": "2026-11-07T21:09:59.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד מערב ע\"י כולן</strong> - כגון ב' חצירות ופתח ביניהן ובאו לערב זו עם זו אחד מוליך עירובה של זו לתוך של זו והוי שליח לחביריו כדתני' בהאי פירקא <span class=\"parenthesized\">(דף עב:)</span> חמשה שגבו את עירובן כשהן מוליכין אותו למקום אחר. אחד מוליך ע\"י כולן:"
+  },
+  "Rashi on Eruvin 66a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:10:19.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמשה</strong> - ישראל ששרויין עם הנכרי בחצר אחת אחד מהן שוכר מן הנכרי בשביל כולן:"
+  },
+  "Rashi on Eruvin 66a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:2:1",
+      "Rashi on Eruvin 66a:3:1"
+    ],
+    "generatedAt": "2026-11-07T21:11:20.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תהי בה ר\"א</strong> - בהא מילתא דאמרן לעיל ששכרו מן הנכרי ואח\"כ ביטלו ותהי לשון מריח כמו בת תיהא דמסכת ע\"ז <span class=\"parenthesized\">(דף סו:)</span> כלומר מעיין ומחשב לדעת טעמו של דבר:"
+  },
+  "Rashi on Eruvin 66a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:5:2"
+    ],
+    "generatedAt": "2026-11-07T21:12:04.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום שאוסרין</strong> - זה על זה בלא עירוב ואם היו רוצין לערב יכולין לערב:"
+  },
+  "Rashi on Eruvin 66a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:5:1"
+    ],
+    "generatedAt": "2026-11-07T21:12:46.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבטלין</strong> - אם שכחו ולא עירבו מבטלין רשותן לאחד מהן והוי כוליה חצר דידיה ותהא מותרת לטלטל בכולה ובלבד שלא יוציאו מן הבתים לחצר אלא מביתו של אותו יחיד בלבד:"
+  },
+  "Rashi on Eruvin 66a:6:1": {
+    "dependsOn": [
+      "Eruvin 66a:6",
+      "Rashi on Eruvin 66a:6:2"
+    ],
+    "generatedAt": "2026-11-07T21:15:44.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום לאתויי שתי חצירות זו לפנים מזו</strong> - דהיכא דלא עירבה פנימית לעצמה אסרה אחיצונה אפילו לרבנן דפליגי עליה דר\"ע מודו דרגל האוסרת במקומה אוסרת שלא במקומה כגון בחיצונה משום דריסת הרגל שיש לה עליה ואם רצתה לערב עמה מערבין ואם שכחו ולא עירבו מבטלין בני פנימית רשותן לבני חיצונה אותו דריסת הרגל שיש לה עליה:"
+  },
+  "Rashi on Eruvin 66a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66a:6:1",
+      "Eruvin 66a:6",
+      "Rashi on Eruvin 66a:7:1"
+    ],
+    "generatedAt": "2026-11-07T21:16:30.353Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי חצירות</strong> - פתוחות למבוי או לרשות הרבים ופתח ביניהן מערבין אם רוצין ואם לא עירבו זו עם זו זו מותרת לעצמה וזו מותרת לעצמה:"
+  },
+  "Rashi on Eruvin 66a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:17:23.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מבטלין</strong> - אם הוצרכו לטלטל מזו לזו אין מבטלין רשות של זו לזו דלא תקון רבנן ביטול רשות אלא היכא דאסרי עלייהו:"
+  },
+  "Rashi on Eruvin 66a:8:1": {
+    "dependsOn": [
+      "Eruvin 66a:8"
+    ],
+    "generatedAt": "2026-11-07T21:17:51.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו לאתויי נכרי</strong> - שדר עם שני ישראלים בחצר שאוסרין אותו שני ישראלים זה על זה ואין יכולין לערב בשביל הנכרי וקאמרינן דאין מבטלין:"
+  },
+  "Rashi on Eruvin 66a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:18:25.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אתא נכרי מאתמול</strong> - אמאי קרי להו אוסרין ואין מערבין הא מצו לעירובי ולמיגר:"
+  },
+  "Tosafot on Eruvin 66a:1:1": {
+    "dependsOn": [
+      "Eruvin 66a:2",
+      "Eruvin 66a:5",
+      "Eruvin 70b:6",
+      "Eruvin 70b:7",
+      "Eruvin 70b:8"
+    ],
+    "generatedAt": "2026-11-07T20:58:28.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יפה עשיתם ששכרתם</strong> - רבינו חננאל פסק כר' יוחנן אע\"ג דשמואל פליג עליה בסמוך דקסבר דכל מקום שאוסרין אין מערבין ואין מבטלין דבכל דוכתא קיימא לן כר' יוחנן לגבי שמואל וכדברי המיקל בעירוב ואומר ר\"י דלקמן בפירקין <span class=\"parenthesized\">(עירובין דף ע:)</span> דייק ברייתא כשמואל דתניא כל שנאסר למקצת שבת נאסר לכל השבת כולה כגון שני בתים בשני צידי רשות הרבים והקיפום נכרים מחיצה בשבת זה הכלל לאתויי מת נכרי בשבת דאין מבטלין ולקמן בסוף שמעתא אמרינן דמת נכרי בשבת אליבא דמ\"ד שוכרין לא תיבעי לך השתא תרתי עבדינן חדא מיבעיא ש\"מ לא מיתוקמא ההיא ברייתא כר' יוחנן דאמר שוכרין ודוחק לומר דלאתויי מת נכרי בשבת איירי דלא ביטלו דלא משתרו כשמת הנכרי אע\"פ שעירבו מע\"ש אבל ביטול מהני שהרי הקיפום נכרים מחיצה איירי אפי' ע\"י ביטול כדאמרינן בסוף שמעתא דאין מבטלין ודומיא דהכי קאמר לאתויי מת נכרי בשבת דאין מבטלין ואפי' את\"ל שר' יוחנן היה מעמיד זה הכלל דברייתא לאתויי מילתא אחריתי מ\"מ מדנקט סתמא דהש\"ס הכי שמע מינה דהכי הלכתא:"
+  },
+  "Tosafot on Eruvin 66a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:59:50.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יפה עשיתם ששכרתם</strong> - לא דמי למקח וממכר ליאסר בשבת דלא הוי אלא כמתנה בעלמא שאין עושין אלא להתיר טלטול:"
+  },
+  "Tosafot on Eruvin 66a:2:1": {
+    "dependsOn": [
+      "Eruvin 66a:1",
+      "Rashi on Eruvin 66a:2:1",
+      "Rashi on Eruvin 66a:2:2",
+      "Rashi on Eruvin 66a:2:3"
+    ],
+    "generatedAt": "2026-11-07T21:08:28.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערב אפי' שכירו ולקיטו</strong> - פירוש כדאמר שמואל לעיל אפי' שכירו ולקיטו של נכרי נותן עירובו ודיו ואם תאמר דהכא אליבא דר' יוחנן קיימא ובירושלמי משמע דלית ליה לרבי יוחנן האי סברא דקאמר ר' יוחנן התם ישראל ונכרי שהיו דרים בבית אחד צריך ישראל לבטל והנכרי להשכיר ויש לומר דהתם ששניהם שותפים בבית ישראל ונכרי דלא הוי כשכירו ולקיטו דהכא ועוד יש לחלק דאם ייחד הנכרי לישראל שהוא שכירו ולקיטו חדר אחד שלא יוכל הנכרי להשתמש בו דהוי השתא הנכרי מסולק מישראל ואין יכול לסלק הישראל בכה\"ג לא אמרינן נותן עירובו ודיו ובכי האי גוונא איכא לאוקמי ההיא דירושלמי:"
+  },
+  "Tosafot on Eruvin 66a:5:1": {
+    "dependsOn": [
+      "Eruvin 66a:5",
+      "Tosafot on Eruvin 64a:1:1",
+      "Eruvin 66b:3",
+      "Eruvin 66b:7",
+      "Eruvin 66b:8",
+      "Eruvin 66b:10",
+      "Eruvin 66b:11",
+      "Eruvin 66b:12"
+    ],
+    "generatedAt": "2026-11-07T21:14:46.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל מקום שאוסרין ומערבין מבטלין</strong> - האי כללא לאו דוקא בכל מקום דהרי חורבה שאמר שמואל בסמוך אין ביטול רשות בחורבה ואפי' בחצר מסיק רבא לקמן אליבא דשמואל דאפי' ב' חצירות זו לפנים מזו פעמים מבטלין ופעמים אין מבטלין ומה שמפרש כאן כגון שתי חצירות זו לפנים מזו היינו לאביי ורבא לאותו ענין שמפרש לקמן והוה מצי למימר כגון אנשי חצר ששכח אחד מהם ולא עירב אבל הא מתניתין היא לקמן ולא אצטריך ליה לאשמעינן האי:"
+  },
+  "Tosafot on Eruvin 66a:9:1": {
+    "dependsOn": [
+      "Eruvin 66a:9",
+      "Rashi on Eruvin 66a:8:1",
+      "Rashi on Eruvin 66a:9:1",
+      "Tosafot on Eruvin 66a:5:1",
+      "Chidushei Halachot on Eruvin 66a:3",
+      "Eruvin 66a:1",
+      "Eruvin 66a:2",
+      "Eruvin 66a:3",
+      "Eruvin 65b:17",
+      "Eruvin 65b:18"
+    ],
+    "generatedAt": "2026-11-07T21:21:13.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי דאתא מאתמול לוגר מאתמול</strong> - דאם אין הנכרי רוצה להשכיר מה יכול ביטול להועיל אע\"ג דשמואל אית ליה לעיל הלכה כראב\"י דשרי יחיד במקום נכרי הא אמרינן לעיל דאין הביטול עושהו יחיד במקום נכרי משום דא\"כ בטלת תורת עירוב מאותו מבוי ואפילו מתרצה היום להשכיר או שמת ועל זה קאמרינן דאין מבטלין משום דמאתמול לא היו יכולים לערב לפי שלא נתרצה להם מאתמול להשכיר אכתי מערבין קרינא ביה דכיון דאם היה אתמול מתרצה היו יכולין לערב וכששכרו היום ממנו או שמת יכולין לבטל שפיר:"
+  }
+}

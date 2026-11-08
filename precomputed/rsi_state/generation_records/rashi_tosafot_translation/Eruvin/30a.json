@@ -1,0 +1,377 @@
+{
+  "Rashi on Eruvin 30a:10:1": {
+    "dependsOn": [
+      "Eruvin 30a:10"
+    ],
+    "generatedAt": "2026-11-05T21:56:38.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באומר כל הזן עלי</strong> - מתני' דאסר ליה בכל מילי לאו דאמר יאסר עלי מזון דודאי לא מיקרי מזון אלא ה' מינין דהוו מין דגן דזייני וסעדי ליבא אלא כגון דאמר יאסר עלי כל הזן דמשמע כל דבר המשביע דכל מילי זייני חוץ ממים ומלח אבל מיסעד לא סעדי ולא מיקרו מזון:"
+  },
+  "Rashi on Eruvin 30a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:11:1"
+    ],
+    "generatedAt": "2026-11-05T21:57:37.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גינוסר</strong> - ארץ ים כינרת ופירותיה מתוקין:"
+  },
+  "Rashi on Eruvin 30a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:57:57.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא טעים לי זיונא</strong> - לא אכלתי לשובע ועדיין אני רעב:"
+  },
+  "Rashi on Eruvin 30a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:11:1",
+      "Rashi on Eruvin 30a:11:2"
+    ],
+    "generatedAt": "2026-11-05T21:58:42.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיונא ס\"ד</strong> - לא גרסינן הכא אלא במס' ברכות והכא גרסינן אימא מזונא:"
+  },
+  "Rashi on Eruvin 30a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:12:2"
+    ],
+    "generatedAt": "2026-11-05T21:59:23.488Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערבין לו בה</strong> - דלא נדר אלא מאכילה ואי משום דלא חזיא ליה הא חזיא לאחריני מידי דהוה אנזיר ביין:"
+  },
+  "Rashi on Eruvin 30a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:12:1"
+    ],
+    "generatedAt": "2026-11-05T22:00:03.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר זו עלי</strong> - משמע כל דבר הנאתה קאסר עליה:"
+  },
+  "Rashi on Eruvin 30a:13:1": {
+    "dependsOn": [
+      "Eruvin 30a:13",
+      "Rashi on Eruvin 30a:13:2"
+    ],
+    "generatedAt": "2026-11-05T22:03:41.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו דאמר עלי</strong> - ושמע מינה דלא אסר איניש אדעתיה אלא דרך עיקר הנאתה וכי נדר אדעתא דאכילה נדר:"
+  },
+  "Rashi on Eruvin 30a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:13:1",
+      "Eruvin 30a:13",
+      "Rashi on Eruvin 30a:12:1",
+      "Rashi on Eruvin 30a:12:2"
+    ],
+    "generatedAt": "2026-11-05T22:04:59.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא דאמר הרי זו</strong> - שבועה שלא אוכל ככר זו:"
+  },
+  "Rashi on Eruvin 30a:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:14:1",
+      "Rashi on Eruvin 30a:15:1",
+      "Rashi on Eruvin 30a:15:2",
+      "Eruvin 30a:15"
+    ],
+    "generatedAt": "2026-11-05T22:05:49.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקדש</strong> - ודאי אסר בכל הנאות ואינו ראוי לשום אדם:"
+  },
+  "Rashi on Eruvin 30a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:15:1"
+    ],
+    "generatedAt": "2026-11-05T22:06:26.309Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדידיה</strong> - בככר של חולין:"
+  },
+  "Rashi on Eruvin 30a:16:1": {
+    "dependsOn": [
+      "Eruvin 30a:15",
+      "Eruvin 30a:16",
+      "Rashi on Eruvin 30a:16:1",
+      "Rashi on Eruvin 30a:16:2"
+    ],
+    "generatedAt": "2026-11-05T22:06:54.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מאי כל היכא דאמר עלי מערבין</strong> - דלא משמע אלא אכילה:"
+  },
+  "Rashi on Eruvin 30a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:16:1",
+      "Eruvin 30a:15",
+      "Eruvin 30a:16",
+      "Eruvin 30a:17"
+    ],
+    "generatedAt": "2026-11-05T22:07:50.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא רישא</strong> - דקתני אימתי בזמן שאמר שבועה שלא אטעמנה דמשמע הא אמר עלי לא ומשני הא לא קשיא דחסורי מיחסרא כו' עד נעשה כאומר כו' דלא מסיק אדעתיה לאסור עליו אלא דרך הנאתה דהיינו אכילה:"
+  },
+  "Rashi on Eruvin 30a:19:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:19:2",
+      "Rashi on Eruvin 30a:19:3"
+    ],
+    "generatedAt": "2026-11-05T22:08:20.909Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם אוסר עצמו באוכל</strong> - שתלה הנדר במעשה שהוא עושה בעצמו דהיינו שלא אוכל:"
+  },
+  "Rashi on Eruvin 30a:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:19:1",
+      "Rashi on Eruvin 30a:19:2",
+      "Rashi on Eruvin 30a:19:3"
+    ],
+    "generatedAt": "2026-11-05T22:08:52.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערבין לו בה</strong> - דהא הנאה דממילא היא ולאו איהו עביד:"
+  },
+  "Rashi on Eruvin 30a:19:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:19:1",
+      "Rashi on Eruvin 30a:19:2"
+    ],
+    "generatedAt": "2026-11-05T22:10:03.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכל הנאסר על האדם</strong> - כגון ככר זו תיאסר עלי או שבועה שלא אהנה מככר זו דהשתא לא תלה האיסור במעשה שבגופו אלא אפילו הנאה דממילא אין מערבין לו בה. ל\"א ככר זו עלי מערבין לו בה דאמר לקמן <span class=\"parenthesized\">(עירובין דף לא.)</span> אין מערבין אלא לדבר מצוה ומצות לאו ליהנות ניתנו הלכך משום הנאה לא איכפת לן ואי משום דלא חזיא ליה הא חזיא לאחרים דומיא דנזיר ביין ככר זו הקדש לא חזיא לא לדידיה ולא לאחריני ואנן סעודה הראויה בעינן כדלקמן זה עיקר:"
+  },
+  "Rashi on Eruvin 30a:1:1": {
+    "dependsOn": [
+      "Eruvin 30a:1"
+    ],
+    "generatedAt": "2026-11-05T21:37:15.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אבל בגדי עשירים לעניים לא</strong> - כלומר לעניים לא בעינן בגדי עשירים אלא כיון דלדידהו חזו אזלי בתרייהו הכא נמי אע\"ג דלפרסאי לאו ליפתן הוא כיון דלדידן הוי ליפתן ניסגי בשיעור זוטא:"
+  },
+  "Rashi on Eruvin 30a:2:1": {
+    "dependsOn": [
+      "Eruvin 30a:2",
+      "Rashi on Eruvin 30a:2:1",
+      "Rashi on Eruvin 30a:2:2",
+      "Rashi on Eruvin 30a:2:3"
+    ],
+    "generatedAt": "2026-11-05T21:38:00.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא לחומרא</strong> - דכיון דחזו להו מקבלי טומאה:"
+  },
+  "Rashi on Eruvin 30a:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:2:1",
+      "Rashi on Eruvin 30a:2:3",
+      "Eruvin 30a:2"
+    ],
+    "generatedAt": "2026-11-05T21:39:01.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא לחומרא</strong> - דעד דהוי ליפתן לכ\"ע ליבעי שיעורא רבה:"
+  },
+  "Rashi on Eruvin 30a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:39:31.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - גבי עירוב דכיון דחזו לזקן ולחולה אף על גב דלכל אדם לא הוי מזון שתי סעודות מערבין מיהא למאן דחזי וגבי רעבתן דאכיל טפי סגי בבינונית אלמא לקולא אזלינן:"
+  },
+  "Rashi on Eruvin 30a:3:1": {
+    "dependsOn": [
+      "Eruvin 30a:3"
+    ],
+    "generatedAt": "2026-11-05T21:40:21.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתחו כמלואו</strong> - להציל על שאר פתחים ואי ליכא פתח דחזי ליה כל חור מלא אגרוף שבכתלים טמאין:"
+  },
+  "Rashi on Eruvin 30a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:41:24.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדומי ניהדמיה</strong> - ינתחוהו לאיברין:"
+  },
+  "Rashi on Eruvin 30a:5:1": {
+    "dependsOn": [
+      "Eruvin 30a:5",
+      "Rashi on Eruvin 30a:3:1"
+    ],
+    "generatedAt": "2026-11-05T21:42:10.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פליגי רבנן</strong> - במת בבית:"
+  },
+  "Rashi on Eruvin 30a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:43:00.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתחים קטנים</strong> - פחותין מד':"
+  },
+  "Rashi on Eruvin 30a:6:2": {
+    "dependsOn": [
+      "Eruvin 30a:6",
+      "Rashi on Eruvin 30a:5:1",
+      "Rashi on Eruvin 30a:6:1",
+      "Eruvin 30a:1",
+      "Eruvin 30a:3",
+      "Beitzah 38a:1",
+      "Beitzah 38a:2",
+      "Beitzah 38a:3",
+      "Beitzah 37b:11",
+      "Beitzah 37b:12",
+      "Beitzah 37b:13"
+    ],
+    "generatedAt": "2026-11-05T21:47:39.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בההוא מרווח</strong> - הלכך מציל על כולן אבל כולן שוין בד' או בי' אמות כולן טמאין דלא ידעי בהי מרווח ומפיק ואפילו נפתח אחד מהן והאחרים סגורין או חישב עליו להוציאו באחד מהן דתנן בגמרא במסכת ביצה <span class=\"parenthesized\">(דף לז:)</span> הוא טמא וכולן טהורים ה\"מ היכי דהאי חזי ליה ואפילו כולהו חזי ליה אבל היכא דליכא חד חזי ליה ובעי מרווח וכולן שוין לא ידעינן בהי מרווח:"
+  },
+  "Rashi on Eruvin 30a:7:1": {
+    "dependsOn": [
+      "Steinsaltz on Eruvin 30a:7:1"
+    ],
+    "generatedAt": "2026-11-05T21:48:26.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיני</strong> - קרי רב יוסף לפי שהיה בקי במשניות ובברייתות:"
+  },
+  "Rashi on Eruvin 30a:9:1": {
+    "dependsOn": [
+      "Eruvin 30a:8",
+      "Eruvin 30a:9",
+      "Rashi on Eruvin 30a:6:2",
+      "Tosafot on Eruvin 29b:5:2",
+      "Rashi on Eruvin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-05T21:55:46.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 30a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאו אותביניה חדא זימנא</strong> - בכיצד מברכין <span class=\"parenthesized\">(דף לה:)</span>:"
+  },
+  "Tosafot on Eruvin 30a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 30a:12:1",
+      "Rashi on Eruvin 30a:12:2",
+      "Eruvin 30a:12",
+      "Eruvin 30a:18",
+      "Eruvin 30a:19",
+      "Eruvin 30a:20",
+      "Maharsha: Chidushei Halachot on Eruvin 30a:2"
+    ],
+    "generatedAt": "2026-11-05T22:02:57.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 30a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר זו עלי אין מערבין לו בה</strong> - תימה לר\"י אמאי נקט בהאי שבועה ובהאי נדר בשבועה גופה או בנדר גופיה הוה מצי לפלוגי דהיכא דאסר עליה באכילה מערבין לו בה בהנאה אין מערבין לו בה ועוד דאמר לקמן <span class=\"parenthesized\">(עירובין דף לא.)</span> לכ\"ע אין מערבין אלא לדבר מצוה ומצות לאו ליהנות ניתנו משמע דליכא תנא דפליג והא רבי אליעזר דבסמוך דאמר ככר זו עלי דאין מערבין לו בה משום דאסור בהנאה אם כן סבר דמערבין לו לדבר הרשות או מצות ליהנות ניתנו ונראה כרשב\"ם דמפרש דאין מערבין לו בה אפי' אמר קונם אכילת ככר זו עלי משום דקונם הוי כעין הקדש ואתי לאחלופי בהקדש אבל אמר שבועה אפילו אמר שבועה שלא אהנה מככר זו כיון דלא מיחלף בהקדש מערבין לו בה דאין מערבין אלא לדבר מצוה ומצות לאו ליהנות ניתנו ונקט שבועה שלא אוכל דאפי' הכי בקונם אין מערבין לו בה וקשה לפירושו דכי פריך בסמוך לרב הונא ליפלוג וליתני בדידיה לישני דהכי קאמר אבל אמר עלי נעשה כאומר ככר זו הקדש ואין מערבין לו בה ול<span class=\"rashi-quotation\">פי' הקונטרס</span> ניחא דאין לו לתלות בהקדשות דאסירי לדידיה ולאחריני ויש לומר דלא מצי לשנויי הכי משום דמסיים בה לפי שאין מערבין בהקדשות משמע דווקא בהקדשות אבל בקונמות מערבין:"
+  },
+  "Tosafot on Eruvin 30a:8:1": {
+    "dependsOn": [
+      "Berakhot 40b:12",
+      "Berakhot 40b:13",
+      "Berakhot 40b:14",
+      "Chokhmat Shlomo on Eruvin 30a:2"
+    ],
+    "generatedAt": "2026-11-05T21:52:14.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 30a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא תהוי תיובתא</strong> - ואם תאמר והא מאן דפליג ארב ושמואל לא פליג אלא באורז ודוחן וא\"כ תקשה לכולהו ועוד תיקשי ליה מתניתין דכיצד מברכין <span class=\"parenthesized\">(ברכות דף מ:)</span> דיש כמה דברים דמברכין עליו שהכל או בפ\"ה וי\"ל דדווקא לרב ושמואל פריך דלא חשיבי אורז ודוחן אף על גב דקבעי נמי סעודתא עלייהו א\"כ סבירא להו דכל מילי לא מיקרו מזון אלא ה' מינין בלבד אבל מאן דפליג עלייהו סבר שפיר דכל מילי איקרו מזון אך דלא תקנו בורא מיני מזונות אלא הך דקבעי סעודתא עלייהו ואאורז ודוחן קבעי נמי:"
+  }
+}

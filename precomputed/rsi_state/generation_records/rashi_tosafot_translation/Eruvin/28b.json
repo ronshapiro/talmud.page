@@ -1,4 +1,146 @@
 {
+  "Rashi on Eruvin 28b:10:1": {
+    "dependsOn": [
+      "Eruvin 28b:10"
+    ],
+    "generatedAt": "2026-11-05T19:50:23.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויכול למתקן</strong> - אף על פי שעכשיו בקטנותן מרין הן אבל לענין עירוב בעינן מידי דחזי בההיא שעתא והני הא לא מתקינהו ולענין מעשר משום דלא גמר פירא הוא:"
+  },
+  "Rashi on Eruvin 28b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:11:2"
+    ],
+    "generatedAt": "2026-11-05T19:52:32.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטנים חייבין</strong> - משום שהוא גמר פרי שלהן שכשגדלין נעשין מרים:"
+  },
+  "Rashi on Eruvin 28b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:11:1",
+      "Rashi on Eruvin 28b:11:2",
+      "Rashi on Eruvin 28b:11:3",
+      "Rashi on Eruvin 28b:11:4"
+    ],
+    "generatedAt": "2026-11-05T19:53:01.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגדולים פטורין</strong> - ממעשר דלאו אוכל נינהו:"
+  },
+  "Rashi on Eruvin 28b:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:11:1",
+      "Rashi on Eruvin 28b:11:2",
+      "Rashi on Eruvin 28b:11:4"
+    ],
+    "generatedAt": "2026-11-05T19:53:48.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוקין קטנים פטורין</strong> - דלא נגמרו:"
+  },
+  "Rashi on Eruvin 28b:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:11:1",
+      "Rashi on Eruvin 28b:11:2",
+      "Rashi on Eruvin 28b:11:3",
+      "Rashi on Eruvin 28b:11:4"
+    ],
+    "generatedAt": "2026-11-05T19:54:23.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה וזה לפטור</strong> - מרים בין גדולים ובין קטנים גדולים דלא אוכלא קטנים דלא פירא:"
+  },
+  "Rashi on Eruvin 28b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:14:1",
+      "Rashi on Eruvin 28b:14:2"
+    ],
+    "generatedAt": "2026-11-05T19:55:51.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלקו</strong> - מבושל הרבה:"
+  },
+  "Rashi on Eruvin 28b:14:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 28a:6:1",
+      "Rashi on Eruvin 28a:6:2"
+    ],
+    "generatedAt": "2026-11-05T19:58:32.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטיגנו</strong> - בשמן פרי\"ט בלע\"ז לרבי יהודה אפי' שלקו וטיגנו אינו טמא ותנא קמא אם שלקו וטיגנו מטמא דלא אמרי הרי הוא כעץ:"
+  },
+  "Rashi on Eruvin 28b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:59:50.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עור ששלקו מטמא</strong> - אבל במחשבה גרידתא לא:"
+  },
+  "Rashi on Eruvin 28b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:15:1"
+    ],
+    "generatedAt": "2026-11-05T20:00:24.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושיליא</strong> - אפי' במחשבה גרידתא וכיון דמהניא שליקה לעור כ\"ש לקור דחזי לאכילה מעיקרא:"
+  },
+  "Rashi on Eruvin 28b:16:1": {
+    "dependsOn": [
+      "Eruvin 28b:16"
+    ],
+    "generatedAt": "2026-11-05T20:01:16.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברכה איכא בינייהו</strong> - לתנא קמא בורא פרי האדמה לרבי יהודה שהכל דסופו להקשות:"
+  },
+  "Rashi on Eruvin 28b:19:1": {
+    "dependsOn": [
+      "Steinsaltz on Eruvin 28b:19",
+      "Rashi on Eruvin 28b:16:1"
+    ],
+    "generatedAt": "2026-11-05T20:03:52.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדעתא דפוגלא</strong> - לאוכלו כשהוא רך:"
+  },
   "Rashi on Eruvin 28b:1:1": {
     "dependsOn": [
       "Eruvin 28b:1"
@@ -10,6 +152,61 @@
       "Rashi on Eruvin 28b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בדגנונייתא</strong> - בחזיז שגדל בגינה דכולי עלמא אכלי להו:"
+  },
+  "Rashi on Eruvin 28b:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:20:1",
+      "Rashi on Eruvin 28b:19:1",
+      "Rashi on Eruvin 28b:21:1",
+      "Rashi on Eruvin 28b:5:1",
+      "Rashi on Eruvin 28b:5:2",
+      "Rashi on Eruvin 28b:5:3",
+      "Rashi on Eruvin 28a:1:1",
+      "Rashi on Eruvin 28a:2:1"
+    ],
+    "generatedAt": "2026-11-05T20:05:12.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשות בכמה</strong> - הויא לה מזון ב' סעודות דאמרינן לקמן <span class=\"parenthesized\">(עירובין דף פ:)</span> מזון שתי סעודות לעירוב:"
+  },
+  "Rashi on Eruvin 28b:21:1": {
+    "dependsOn": [
+      "[",
+      "Jastrow, אִיזְלָא 1",
+      "Steinsaltz on Eruvin 28b:21"
+    ],
+    "generatedAt": "2026-11-05T20:07:03.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוזילתא</strong> - ווי\"ל בלע\"ז אגודות ירק שכורכין האיכרים:"
+  },
+  "Rashi on Eruvin 28b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:07:39.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קליא</strong> - קלח של עשב וקשה כעץ:"
+  },
+  "Rashi on Eruvin 28b:23:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-05T20:08:24.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקרייתא</strong> - כפרים לראות בתבואתו:"
   },
   "Rashi on Eruvin 28b:5:1": {
     "dependsOn": [],
@@ -140,6 +337,130 @@
       "Rashi on Eruvin 28b:8:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - דקתני מטמאות:"
+  },
+  "Rashi on Eruvin 28b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:8:1",
+      "Jastrow, נִיסְחָנָא 1"
+    ],
+    "generatedAt": "2026-11-05T19:44:23.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדניסחני</strong> - דקלים זכרים שעושין כפניות ואינם נעשים תמרים לעולם וכפניות הוא גמר פירן ולוקטים אותן בניסן והנהו אוכלא נינהו וכי קאמר רב בדקלים נקיבות שכפניות שלהן נעשים תמרים הלכך אכתי לא גמר פרי הוא:"
+  },
+  "Rashi on Eruvin 28b:9:1": {
+    "dependsOn": [
+      "Pesachim 52b:11",
+      "Pesachim 53a:1",
+      "Pesachim 52b:7",
+      "Pesachim 52b:8",
+      "Pesachim 52b:9",
+      "Pesachim 52b:10",
+      "Pesachim 53a:2",
+      "Pesachim 53a:3",
+      "Pesachim 53a:4",
+      "Pesachim 53a:5",
+      "Tosefta Sheviit (Lieberman) 7:14"
+    ],
+    "generatedAt": "2026-11-05T19:47:02.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הוזכרו וכו'</strong> - בתוספתא דשביעית <span class=\"parenthesized\">(פ\"ז)</span> היא ומייתי בגמרא דפסחים בפרק מקום שנהגו אוכלים בתאנים עד שיכלו פגי ביתוני רבי יהודה אומר כו':"
+  },
+  "Rashi on Eruvin 28b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:47:23.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביתוני</strong> - מקום:"
+  },
+  "Rashi on Eruvin 28b:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:9:1",
+      "Rashi on Eruvin 28b:9:2",
+      "Rashi on Eruvin 28b:9:4"
+    ],
+    "generatedAt": "2026-11-05T19:47:52.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פגי</strong> - תאנים הן שלא נתבשלו:"
+  },
+  "Rashi on Eruvin 28b:9:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:9:1",
+      "Rashi on Eruvin 28b:9:2",
+      "Rashi on Eruvin 28b:9:3",
+      "Eruvin 28b:9",
+      "Rashi on Eruvin 28b:8:1",
+      "Rashi on Eruvin 28b:8:2",
+      "Rashi on Eruvin 28b:5:1",
+      "Rashi on Eruvin 28b:5:2",
+      "Rashi on Eruvin 28b:5:3"
+    ],
+    "generatedAt": "2026-11-05T19:49:36.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהיני</strong> - הן כפניות והנך דטובינא כולם זכרים הן ומשום הכי חייבין במעשר דגמר פירא. הוא וכל שכן דגמר פירא הוא לשאר מילי:"
+  },
+  "Tosafot on Eruvin 28b:10:1": {
+    "dependsOn": [
+      "Eruvin 28b:10",
+      "Eruvin 28b:7"
+    ],
+    "generatedAt": "2026-11-05T19:51:48.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וראוי למתקן ע\"י האור</strong> - וקור אף על גב דחזי ע\"י שליקה וטיגון לא מטמא טומאת אוכלין משום דהוי כעץ בעלמא אלא דחזי ע\"י שליקה כמו עור דבסמוך אבל הכא דבקל יכול למתקן חשיב אוכל ואף קודם מיתוק מטמא טומאת אוכלין:"
+  },
+  "Tosafot on Eruvin 28b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28b:11:1",
+      "Rashi on Eruvin 28b:11:2",
+      "Rashi on Eruvin 28b:11:3",
+      "Rashi on Eruvin 28b:11:4",
+      "Chullin 25b:6",
+      "Chullin 25b:7",
+      "Chullin 25b:8"
+    ],
+    "generatedAt": "2026-11-05T19:55:22.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה וזה לפטור ואמרי לה זה וזה לחיוב</strong> - אמרים גדולים וקטנים קאי אבל אין לפרש דקאי אקטנים מרים ומתוקים דבסוף פ\"ק דחולין <span class=\"parenthesized\">(דף כה:)</span> גרסינן ברוב ספרים ולמ\"ד זה וזה לחיוב גדולים למאי חזו:"
+  },
+  "Tosafot on Eruvin 28b:16:1": {
+    "dependsOn": [
+      "Eruvin 28b:16",
+      "Eruvin 28b:14",
+      "Rashi on Eruvin 28b:16:1"
+    ],
+    "generatedAt": "2026-11-05T20:02:13.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו ברכה</strong> - דלתנא קמא מברך בפה\"א ואע\"ג דלענין ברכה מיקרי פרי מכל מקום לא חשיב לטמא טומאת אוכלין:"
   },
   "Tosafot on Eruvin 28b:2:1": {
     "dependsOn": [

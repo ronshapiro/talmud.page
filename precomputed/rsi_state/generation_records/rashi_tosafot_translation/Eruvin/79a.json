@@ -1,0 +1,477 @@
+{
+  "Rashi on Eruvin 79a:10:1": {
+    "dependsOn": [
+      "Eruvin 79a:10",
+      "Rashi on Eruvin 79a:10:2",
+      "Rashi on Eruvin 79a:9:1"
+    ],
+    "generatedAt": "2026-11-06T07:14:07.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאוקמי</strong> - בהמתו על התבן כדי לאכול שרי ולא גזרינן דילמא שקיל בידים וספי לה אלמא חמיר עליה איסור דרבנן ולא עבר עליה:"
+  },
+  "Rashi on Eruvin 79a:10:2": {
+    "dependsOn": [
+      "Eruvin 79a:10",
+      "Rashi on Eruvin 79a:10:1"
+    ],
+    "generatedAt": "2026-11-06T07:14:54.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא א\"ר חנינא מעמיד אדם את בהמתו ע\"ג עשבים</strong> - מחוברים לאכול ולא חיישינן דלמא עקר בידים ומאכיל לה דהא חמיר עליה איסור שבת אבל איסור מוקצה קיל ליה וחיישינן דלמא שקיל בידים וספי לה ה\"נ כיון דאיסורא דרבנן הוא דאיכא ניחוש:"
+  },
+  "Rashi on Eruvin 79a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:15:33.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקאים באפה</strong> - מתני' לאו דמוקים לה עלה בידים אלא קאי באפה שלא תלך במקום אחר ואיהי אזלה ואכלה וכולי האי לא גזור רבנן:"
+  },
+  "Rashi on Eruvin 79a:12:1": {
+    "dependsOn": [
+      "Eruvin 79a:12",
+      "Rashi on Eruvin 79a:13:1",
+      "Rashi on Eruvin 79a:13:2"
+    ],
+    "generatedAt": "2026-11-06T07:18:47.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית שבין שתי חצירות</strong> - ושני בתים משתי החצירות פתוחין לו:"
+  },
+  "Rashi on Eruvin 79a:13:1": {
+    "dependsOn": [
+      "Eruvin 79a:13",
+      "Rashi on Eruvin 79a:10:1",
+      "Rashi on Eruvin 79a:10:2",
+      "Eruvin 79b:1",
+      "Eruvin 79b:2",
+      "Eruvin 79b:6"
+    ],
+    "generatedAt": "2026-11-06T07:22:18.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד הוא עושה</strong> - להתיר מיהת את האחד נועל את ביתו הפתוח לאותו בית ומבטל את רשותו ולקמן [עמו' ב'] פריך תרתי למה לי נעילה וביטול:"
+  },
+  "Rashi on Eruvin 79a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:13:1",
+      "Steinsaltz on Eruvin 79a:13:1"
+    ],
+    "generatedAt": "2026-11-06T07:23:17.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אסור</strong> - להוציא מאותו בית לחצר שלו שהרי ביטל רשותו וכל הבית כחצר אחרת הוא:"
+  },
+  "Rashi on Eruvin 79a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:14:1",
+      "Eruvin 79a:14",
+      "Tosafot on Eruvin 79a:14:1",
+      "Chokhmat Shlomo on Eruvin 79a:5",
+      "Steinsaltz on Eruvin 79a:14",
+      "Versions on Eruvin 79a:14"
+    ],
+    "generatedAt": "2026-11-06T07:24:47.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגוב שבין שני תחומי שבת</strong> - בור רחב להכניס בו תבן ואם בין שני תחומין הוא חציו בתחום עיר זו וחציו בתחום עיר זו אלו נוטלין ואוכלין מתוך תחומן ביום טוב וכן אלו ואין חוששין שמא אלו יקחו מן התחום השני:"
+  },
+  "Rashi on Eruvin 79a:15:1": {
+    "dependsOn": [
+      "Eruvin 79a:15",
+      "Eruvin 79a:12",
+      "Rashi on Eruvin 79a:9:1",
+      "Rashi on Eruvin 79a:10:1",
+      "Rashi on Eruvin 79a:10:2"
+    ],
+    "generatedAt": "2026-11-06T07:27:11.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאיכא תקרה</strong> - ניכר שגג הגדיש מתרחק מן התקרה ואי מפחית מעשרה רמי אנפשיה ופריש וללישנא דמוקצה נמי אין אסור משום מוקצה אלא מי' ולמטה דכל מעשרה ולמעלה לאו צורת מחיצה היא אבל מתני' דקאי מתבן בחצר ואין עליו תקרה לא מינכרא מילתא:"
+  },
+  "Rashi on Eruvin 79a:16:1": {
+    "dependsOn": [
+      "Eruvin 72a:8",
+      "Eruvin 72a:1",
+      "Eruvin 72a:2"
+    ],
+    "generatedAt": "2026-11-06T07:28:26.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעת מינה מחיצות</strong> - המפסיקות בבית ואין מגיעות לתקרה שמן מחיצות ותיובתא דמאן דאמר בפרק הדר <span class=\"parenthesized\">(לעיל עירובין דף עב.)</span> גבי ה' חבורות ששבתו בטרקלין דבמחיצות י' שרו ב\"ה ומשום דאין מגיעות לתקרה לא מפלגי דיורין:"
+  },
+  "Rashi on Eruvin 79a:1:1": {
+    "dependsOn": [
+      "Eruvin 79a:1",
+      "Rashi on Eruvin 78b:18:1",
+      "Rashi on Eruvin 78b:18:2"
+    ],
+    "generatedAt": "2026-11-06T06:48:47.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ביטלו</strong> - לא בטיל ואין הטומאה בוקעת למעלה מן הגג שיש לה אהל לעצמה:"
+  },
+  "Rashi on Eruvin 79a:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:1:1",
+      "Eruvin 79a:1",
+      "Steinsaltz on Eruvin 79a:1",
+      "Ritva on Eruvin 79a:1"
+    ],
+    "generatedAt": "2026-11-06T06:50:02.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי היא</strong> - משום דאיירי בה רבי יוסי כדאמרינן לקמן נקיט לה:"
+  },
+  "Rashi on Eruvin 79a:2:1": {
+    "dependsOn": [
+      "Eruvin 79a:2",
+      "Rashi on Eruvin 79a:2:2",
+      "Rashi on Eruvin 79a:2:3",
+      "Rashi on Eruvin 79a:2:4"
+    ],
+    "generatedAt": "2026-11-06T06:52:44.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תבן</strong> - מלאוהו תבן ויודעין אנו שאינו צריך לו מכל מקום לא ביטלו בפירוש:"
+  },
+  "Rashi on Eruvin 79a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:53:23.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כסתם עפר</strong> - כעפר שאין אנו יודעין אם עתיד לפנותו אי לא דסתמיה בטיל אלמא לר' יוסי עפר סתם בטיל סתם תבן שאין אנו יודעין אם יצטרך ליטלו לא בטיל:"
+  },
+  "Rashi on Eruvin 79a:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:2:1",
+      "Rashi on Eruvin 79a:2:2",
+      "Rashi on Eruvin 79a:2:4"
+    ],
+    "generatedAt": "2026-11-06T06:54:03.108Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עפר</strong> - ויודעין אנו שיפנהו דלאו סתמא הוא:"
+  },
+  "Rashi on Eruvin 79a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:54:33.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כסתם תבן</strong> - שאין אנו יודעין אם יפנהו אם לאו דסתמא לא בטיל:"
+  },
+  "Rashi on Eruvin 79a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T06:57:19.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנח איסור שבת</strong> - כגון מתני' כיון דעפר אינו ניטל בשבת סתמיה בטיל:"
+  },
+  "Rashi on Eruvin 79a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:4:1",
+      "Rashi on Eruvin 79a:4:2",
+      "Eruvin 79a:4",
+      "Steinsaltz on Eruvin 79a:4"
+    ],
+    "generatedAt": "2026-11-06T06:58:12.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו ארנקי</strong> - כיס מלא מעות בטיל שם אבל תבן וקש ניטל למאכל בהמה:"
+  },
+  "Rashi on Eruvin 79a:5:1": {
+    "dependsOn": [
+      "Eruvin 79a:5",
+      "Rashi on Eruvin 79a:5:1",
+      "Rashi on Eruvin 79a:5:2",
+      "Eruvin 79a:1"
+    ],
+    "generatedAt": "2026-11-06T06:58:58.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיטיימיה קאי</strong> - הלכך סתם עפר בטיל ליה ואפילו לרבנן:"
+  },
+  "Rashi on Eruvin 79a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:00:28.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית למיטיימיה קאי</strong> - בתמיה:"
+  },
+  "Rashi on Eruvin 79a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:6:1",
+      "Rashi on Eruvin 79a:6:2",
+      "Rashi on Eruvin 79a:6:3",
+      "Rashi on Eruvin 79a:6:4",
+      "Rashi on Eruvin 79a:1:1",
+      "Rashi on Eruvin 79a:2:1",
+      "Rashi on Eruvin 78a:1:1",
+      "Rashi on Eruvin 78a:2:1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-06T07:02:10.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דבעי נסר ד':"
+  },
+  "Rashi on Eruvin 79a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:02:33.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שנתנו לרחבו</strong> - ארכו של דף לרוחב החריץ משפה לשפה כעין גשר:"
+  },
+  "Rashi on Eruvin 79a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:6:1",
+      "Rashi on Eruvin 79a:6:2",
+      "Rashi on Eruvin 79a:6:3",
+      "Rashi on Eruvin 79a:6:4",
+      "Chokhmat Shlomo on Eruvin 79a:3"
+    ],
+    "generatedAt": "2026-11-06T07:05:29.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לארכו</strong> - שנתן לארכו של חריץ דף ד' אורך על גבי יתדות אצל שפתו סתם קצת רוחב החריץ ומיעטו מד':"
+  },
+  "Rashi on Eruvin 79a:6:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:6:1",
+      "Rashi on Eruvin 79a:6:2",
+      "Rashi on Eruvin 79a:6:3"
+    ],
+    "generatedAt": "2026-11-06T07:06:23.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו כל שהוא</strong> - שהיתה דף קצרה אפילו אינה אלא כאצבע הרי מיעטו לרוחב החריץ מארבעה במשך מדת הפתח ומתני' רחב ד' תנן:"
+  },
+  "Rashi on Eruvin 79a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:06:47.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו שלא כנגד זו</strong> - שהיתה זו בולטת לרה\"ר יותר מחברתה לא סגי להו בנסר ארבעה:"
+  },
+  "Rashi on Eruvin 79a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:7:1"
+    ],
+    "generatedAt": "2026-11-06T07:07:29.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בין זו לזו ג'</strong> - אין רחוקה זו מזו שלשה:"
+  },
+  "Rashi on Eruvin 79a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:07:56.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתבן</strong> - גדיש של תבן ומפסיק על פני רוחב כל החצירות:"
+  },
+  "Rashi on Eruvin 79a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:08:39.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאכילין</strong> - מן התבן לבהמתן ולא חיישינן דילמא ממעיט תבן מי' דהויא לה חדא רשותא ואסרי אהדדי ולא מסקי אדעתייהו ומטלטלי בחצר להא לא חיישינן דהא אפילו אימעיט אי לא הוי מיעוט על פני עשר אמות ויותר לא אסרי דהא עד עשר פיתחא הוי ואין בהמה ממעטת כל כך באכילתה בשבת אחד:"
+  },
+  "Rashi on Eruvin 79a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:09:36.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמעט התבן</strong> - על כל החצר או במשך י' אמות ועוד:"
+  },
+  "Rashi on Eruvin 79a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:10:14.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מערבין אחד</strong> - אם נתמעט בחול:"
+  },
+  "Rashi on Eruvin 79a:9:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 79a:4",
+      "Eruvin 79a:8"
+    ],
+    "generatedAt": "2026-11-06T07:11:03.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 79a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא יתן</strong> - בידים לתוך קופתו דלמא שקיל טובא וממעיט ליה מעשרה וקא מטלטל בחצר האוסרת ומאכילין דקתני במתניתין שהבהמה באה ואוכלת והתם לא חיישינן לדלמא ממעיט דבהמה קלי קלי אכלה לישנא אחרינא לא יתן לתוך קופתו משום דמוקצ' מאתמול למחיצה זו:"
+  },
+  "Tosafot on Eruvin 79a:11:1": {
+    "dependsOn": [
+      "Eruvin 79a:11"
+    ],
+    "generatedAt": "2026-11-06T07:18:10.985Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 79a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקאים לה באפה ואזלה</strong> - ואם תאמר אם כן מאי איריא דנקט רב הונא שלא יתן לתוך קופתו ויאכיל כיון דאסור אפילו להעמידה אע\"נ דלא מטלטל וי\"ל דאי הוה נקט ליה אסור להעמיד לא הוה ידעינן מאי טעמא כל כמה דלא אשמעינן שאסור לטלטל הלכך אשמעינן שאסור ליתן לתוך קופתו משום דלמא מיפחית ולאו אדעתא וממילא ידעינן דאסור להעמיד:"
+  },
+  "Tosafot on Eruvin 79a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 79a:14:1",
+      "Tosafot on Eruvin 78a:12:1"
+    ],
+    "generatedAt": "2026-11-06T07:26:03.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 79a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן אתה מוצא בגוב של תבן</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> גוב בור ולא שייך בור גבי תבן ויש מפרשים לשון קש וגבבא:"
+  },
+  "Tosafot on Eruvin 79a:16:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 72b:1:1",
+      "Tosafot on Eruvin 72b:2:1",
+      "Tosafot on Eruvin 72b:3:1",
+      "Eruvin 72b:1",
+      "Tosafot on Eruvin 72b:1:2",
+      "Tosafot on Eruvin 72b:1:3",
+      "Tosafot on Eruvin 72b:8:1",
+      "Rashi on Eruvin 79a:16:1",
+      "Eruvin 79a:17",
+      "Eruvin 79a:18",
+      "Steinsaltz on Eruvin 79a:16:1",
+      "Steinsaltz on Eruvin 79a:16",
+      "Tosafot on Eruvin 72a:8:1"
+    ],
+    "generatedAt": "2026-11-06T07:31:09.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 79a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה מחיצות שאין מגיעות לתקרה שמן מחיצות</strong> - בתמיה פי' במחיצות עראי כי הך ולעיל <span class=\"parenthesized\">(עירובין עב:)</span> פסקינן כרבי יהודה הסבר דאמר לב\"ה עירוב אחד לכולן במחיצות שאינן מגיעות לתקרה והתם נמי במחיצות עראי איירי כדפי' התם:"
+  },
+  "Tosafot on Eruvin 79a:1:1": {
+    "dependsOn": [
+      "Eruvin 79a:1",
+      "Tosafot on Yoma 14b:3:1",
+      "Tosafot on Eruvin 79a:2:1",
+      "Tosafot on Eruvin 78b:7:1",
+      "Tosafot on Eruvin 77b:1:1",
+      "Tosafot on Eruvin 76b:1:1"
+    ],
+    "generatedAt": "2026-11-06T06:51:37.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 79a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן תנא אהלות ר' יוסי היא</strong> - אע\"פ שלא היה יודע ברייתא זו דקא מייתי יודע היה שרבי יוסי דיבר על ההיא משנה דאהלות וכי האי גוונא איכא בפרק קמא דיומא <span class=\"parenthesized\">(דף יד:)</span> גבי מאן תנא תמיד ר\"ש איש המצפה היא:"
+  },
+  "Tosafot on Eruvin 79a:2:1": {
+    "dependsOn": [
+      "Mishnah Oholot 15:3",
+      "Mishnah Oholot 15:6",
+      "Mishnah Oholot 15:7",
+      "Chullin 125b:14-18",
+      "Tosafot on Chullin 125b:13:1",
+      "Tosafot on Eruvin 79a:1:1"
+    ],
+    "generatedAt": "2026-11-06T06:56:53.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 79a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כסתם עפר ובטל</strong> - וטומאה בוקעת ועולה כדקתני באהלות וא\"ת והא ר' יוסי קסבר דטומאה טמונה אינה בוקעת בפ' העור והרוטב <span class=\"parenthesized\">(חולין דף קכה:)</span> דקאמר ר' יוסי חבילי המטה וסריגי החלונות שפירשו על פני המת באויר הנוגע שלא כנגד הנקב טהור ומוקי לה בסמוכין לו בפחות מטפח ואומר ר\"י דמ\"מ מהני ביטול לענין שלא יבא טומאה לכלים שבצידו והא דא\"ר יוסי בפרק הישן <span class=\"parenthesized\">(סוכה כא:)</span> במקומו היה עומד וממלא מפני קבר התהום היינו דוקא בקבר דכתיב קרא <span class=\"parenthesized\">(במדבר יט)</span> או בקבר שהמאהיל על הקבר טמא אבל בעלמא קסבר ר' יוסי דאינה בוקעת וטהור:"
+  }
+}

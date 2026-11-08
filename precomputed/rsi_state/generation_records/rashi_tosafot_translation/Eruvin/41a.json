@@ -222,6 +222,19 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">חזי אנא דבתר רישא גופא אזיל</strong> - רואה אני בדין ובדת שצריכין אנו להלך אחר דברי הראשונים:"
   },
+  "Rashi on Eruvin 41a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 41a:6:1",
+      "Rashi on Eruvin 41a:6:2"
+    ],
+    "generatedAt": "2026-11-05T22:11:53.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 41a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא היה אדם כו'</strong> - אלמא אין משלימין:"
+  },
   "Rashi on Eruvin 41a:7:1": {
     "dependsOn": [
       "Rashi on Eruvin 41a:7:1",

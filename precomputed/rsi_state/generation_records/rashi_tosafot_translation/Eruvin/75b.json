@@ -1,0 +1,457 @@
+{
+  "Rashi on Eruvin 75b:11:1": {
+    "dependsOn": [
+      "Eruvin 75b:11"
+    ],
+    "generatedAt": "2026-11-06T03:08:32.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כרבים</strong> - אם דר נכרי בפנימית ושני ישראלים בחיצונה אוסרת דריסת רגלו עליהן עד שישכיר ואליבא דשמואל אמרה ר\"א למילתיה דאי לרב אדא מאי איריא נכרי אפילו ישראל נמי אסר כי הוו שנים בחיצונה והא ליכא למימר דביחיד בחיצונה אסר דהשתא אפילו דר עמו בחצר עצמה הא קי\"ל כר\"א בן יעקב דאמר עד שיהו שני ישראלים אוסרין זה על זה דריסת רגלו לא כל שכן דלא אסרה:"
+  },
+  "Rashi on Eruvin 75b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:11:1"
+    ],
+    "generatedAt": "2026-11-06T03:09:04.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידע</strong> - שהוא שם יחידי וידע שאין רגל המותרת אוסרת ולא נפקא מינה חורבה:"
+  },
+  "Rashi on Eruvin 75b:12:1": {
+    "dependsOn": [
+      "Eruvin 75b:12"
+    ],
+    "generatedAt": "2026-11-06T03:12:24.017Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפעא פעי</strong> - קלא אית ליה והני לא איגור ומאן דלא ידע שהוא דר שם יחידי סבר דאין דריסת הרגל אוסרת א\"נ עירוב של פנימים וחיצונים מועיל במקום נכרי בלא שכירות:"
+  },
+  "Rashi on Eruvin 75b:13:1": {
+    "dependsOn": [
+      "Eruvin 72b:15",
+      "Eruvin 73a:1",
+      "Eruvin 75b:8",
+      "Eruvin 75b:6",
+      "Eruvin 75b:7",
+      "Steinsaltz on Eruvin 75b:13"
+    ],
+    "generatedAt": "2026-11-06T03:15:10.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">י' בתים זה לפנים מזה</strong> - חיצון פתוח לחצר וכולן דריסת רגלו עליו ופנימי דורס על כולן שאין לו יציאה אלא דרך זו כולן נעשין בית שער לו ואינן אוסרין על בני חצר אלא פנימי לבדו כדאמרן בפירקין <span class=\"parenthesized\">(דף עב:)</span> והדר שם אינו אוסר הלכך כשבאין שאר דיורין הפתוחין לחצר ולערב את חצירן פנימי זה נותן פת והשאר אין צריכין:"
+  },
+  "Rashi on Eruvin 75b:14:1": {
+    "dependsOn": [
+      "Eruvin 75b:14",
+      "Rashi on Eruvin 75b:13:1",
+      "Rashi on Eruvin 75b:14:2"
+    ],
+    "generatedAt": "2026-11-06T03:15:53.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו חיצון</strong> - צריך ליתן את הפת:"
+  },
+  "Rashi on Eruvin 75b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:14:1",
+      "Eruvin 75b:14",
+      "Steinsaltz on Eruvin 75b:14"
+    ],
+    "generatedAt": "2026-11-06T03:16:47.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיצון של פנימית</strong> - בית התשיעי לחצר:"
+  },
+  "Rashi on Eruvin 75b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:16:2"
+    ],
+    "generatedAt": "2026-11-06T03:19:33.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ג' בתים ביניהן</strong> - בית זה פתוח לחצר זו וזה לזו ובית אמצעי פתוח לב' הבתים:"
+  },
+  "Rashi on Eruvin 75b:16:2": {
+    "dependsOn": [
+      "Eruvin 75b:16",
+      "Rashi on Eruvin 75b:16:1",
+      "Rashi on Eruvin 76a:1:1",
+      "Steinsaltz on Eruvin 75b:16",
+      "Shulchan Arukh, Orach Chayim 379:1",
+      "Tosafot on Eruvin 76a:1:1",
+      "Tosafot on Eruvin 76a:1:2",
+      "Rabbeinu Chananel on Eruvin 76a:1",
+      "Steinsaltz comment #1 on Eruvin 75b:16",
+      "Steinsaltz comment #2 on Eruvin 75b:16",
+      "Steinsaltz comment #3 on Eruvin 75b:16",
+      "Mishneh Torah, Eruvin 4:10",
+      "Rosh on Eruvin 6:22:1"
+    ],
+    "generatedAt": "2026-11-06T03:23:15.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה בא בדרך זה</strong> - בן חצר זו בא דרך בית הפתוח לו ונתן עירובו באמצעי ועשה בית הפתוח לו כבית שער לעבור דרך עליו לאמצעי וכן בן חצר האחרת עשה בית הפתוח לו כבית שער ועירב באמצעי חצר האחרת אין אחד מדיורי הבתים האלה צריך ליתן פת אלו משום בית שער ואמצעי משום בית שמניחין בו עירוב:"
+  },
+  "Rashi on Eruvin 75b:1:1": {
+    "dependsOn": [
+      "Eruvin 75b:1"
+    ],
+    "generatedAt": "2026-11-06T02:39:30.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא נמי הכי</strong> - כרב יהודה דהא מקום אחד דמתני' בחיצונה קאמר:"
+  },
+  "Rashi on Eruvin 75b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:1:1",
+      "Rashi on Eruvin 75b:1:3",
+      "Rashi on Eruvin 75b:1:4",
+      "Rashi on Eruvin 75b:1:5"
+    ],
+    "generatedAt": "2026-11-06T02:40:19.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובין מן הפנימית כו' שתיהן אסורות</strong> - כדפרשינן:"
+  },
+  "Rashi on Eruvin 75b:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:1:1",
+      "Rashi on Eruvin 75b:1:2",
+      "Rashi on Eruvin 75b:1:3",
+      "Rashi on Eruvin 75b:1:4",
+      "Rashi on Eruvin 75b:1:5"
+    ],
+    "generatedAt": "2026-11-06T02:40:59.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו את עירובן בפנימית ושכח אחד מן הפנימית שתיהן אסורות</strong> - דחיצונה מיתסרא בשכחה דפנימית דלא מצי אסתלוקי מינה ועוד דליתיה לעירובה גבה:"
+  },
+  "Rashi on Eruvin 75b:1:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:1:1",
+      "Rashi on Eruvin 75b:1:2",
+      "Rashi on Eruvin 75b:1:3",
+      "Rashi on Eruvin 75b:1:5",
+      "Rashi on Eruvin 75b:4:1",
+      "Eruvin 75b:1"
+    ],
+    "generatedAt": "2026-11-06T02:42:39.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתיהן אסורות דברי ר\"ע</strong> - ולא אמרי' תסתלק פנימית מינה כדמפרש לקמיה דעירוב החיצונה המונח לתוכה מרגילה שם:"
+  },
+  "Rashi on Eruvin 75b:1:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:1:1",
+      "Rashi on Eruvin 75b:1:2",
+      "Rashi on Eruvin 75b:1:3",
+      "Rashi on Eruvin 75b:1:4"
+    ],
+    "generatedAt": "2026-11-06T02:43:17.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזו פנימית מותרת</strong> - דמשום שכחה דחיצונה לא מיתסרא אלא אחדא דשא ומסתלקא מינה:"
+  },
+  "Rashi on Eruvin 75b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:4:1",
+      "Rashi on Eruvin 75b:4:2",
+      "Eruvin 75b:4"
+    ],
+    "generatedAt": "2026-11-06T02:44:05.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבטלינן לך</strong> - וכי אמר ר\"ע פנימית אסורה עד שתבטל לה חיצונה רשות הרגל עירובה קאמר:"
+  },
+  "Rashi on Eruvin 75b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:4:1",
+      "Eruvin 75b:4"
+    ],
+    "generatedAt": "2026-11-06T02:45:00.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ביטול רשות מחצר לחצר</strong> - ואי אמרת תיסר עלה מעוותא לה הלכך אמרה לה לתקוני שיתפתיך ולא לעוותי:"
+  },
+  "Rashi on Eruvin 75b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T02:46:01.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמואל ורבי יוחנן</strong> - דאיפלגו לעיל בפרקין <span class=\"parenthesized\">(עירובין דף סח.)</span> בבטול מחצר לחצר:"
+  },
+  "Rashi on Eruvin 75b:6:1": {
+    "dependsOn": [
+      "Eruvin 75b:6",
+      "Rashi on Eruvin 75b:5:1",
+      "Tosafot on Eruvin 75b:6:1",
+      "Rashi on Eruvin 66a:6:1",
+      "Rashi on Eruvin 66a:6:2",
+      "Rashi on Eruvin 66a:7:1"
+    ],
+    "generatedAt": "2026-11-06T02:47:48.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאסרן אהדדי</strong> - ע\"י הרגל העירוב ומתוך שאוסרין מבטלין וכי אמרי אנא בשתי חצירות ופתח ביניהן ולא עירבו והוצרכה זו לטלטל לרשות של זו אין מבטלין:"
+  },
+  "Rashi on Eruvin 75b:7:1": {
+    "dependsOn": [
+      "Eruvin 75b:7"
+    ],
+    "generatedAt": "2026-11-06T02:56:40.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו לרבנן</strong> - דרבנן נמי מודו דיש ביטול ואפילו הכי עיוות קרי ליה:"
+  },
+  "Rashi on Eruvin 75b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:7:1",
+      "Rashi on Eruvin 75b:7:3"
+    ],
+    "generatedAt": "2026-11-06T02:57:30.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמרה לה</strong> - פנימית:"
+  },
+  "Rashi on Eruvin 75b:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:7:1",
+      "Rashi on Eruvin 75b:7:2",
+      "Rashi on Eruvin 75b:7:3",
+      "Rashi on Eruvin 75b:7:4"
+    ],
+    "generatedAt": "2026-11-06T02:58:12.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדמבטלית לי</strong> - בעוד שלא בטלתה את אוסרת עלי הלכך דל אנת ודל ביטולך דלא בעינא ליה:"
+  },
+  "Rashi on Eruvin 75b:7:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:7:1",
+      "Rashi on Eruvin 75b:7:2",
+      "Rashi on Eruvin 75b:7:3",
+      "Rashi on Eruvin 75b:7:4",
+      "Eruvin 75b:7",
+      "Rashi on Eruvin 75b:6:1",
+      "Eruvin 75b:1",
+      "Eruvin 75a:18",
+      "Eruvin 75b:4",
+      "Rashi on Eruvin 75b:4:1",
+      "Rashi on Eruvin 75b:4:2"
+    ],
+    "generatedAt": "2026-11-06T03:00:51.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי קאסרת</strong> - חצר על חברתה בפתח שביניהן בלא עירוב דאי אמרת תבטיל ניהוי עיוות:"
+  },
+  "Rashi on Eruvin 75b:8:1": {
+    "dependsOn": [
+      "Eruvin 75b:7",
+      "Eruvin 75b:8",
+      "Eruvin 75b:9",
+      "Rashi on Eruvin 75b:8:1",
+      "Rashi on Eruvin 75b:9:1",
+      "Rashi on Eruvin 75b:9:2",
+      "Rashi on Eruvin 75b:9:3",
+      "Eruvin 75a:1"
+    ],
+    "generatedAt": "2026-11-06T03:02:22.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יוסף תני רבי אם היו ג'</strong> - בין ב' החצירות אוסרין ולא מיבעיא שנים בפנימית דהויא רגל האסורה אלא אפי' שנים בחיצונה אסור עד שעירבו שתיהן יחד גזירה משום רבים בפנימית:"
+  },
+  "Rashi on Eruvin 75b:9:1": {
+    "dependsOn": [
+      "Eruvin 75b:9",
+      "Rashi on Eruvin 75b:9:2",
+      "Rashi on Eruvin 75b:9:3"
+    ],
+    "generatedAt": "2026-11-06T03:03:21.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תציתו ליה</strong> - למאי דתני לה משמיה דרבי דלאו מתני' היא אלא שמעתא <span class=\"parenthesized\">(דרב יוסף)</span> היא:"
+  },
+  "Rashi on Eruvin 75b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T03:04:02.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנא אמריתה ניהלה משמיה דרב אדא</strong> - ומן הטעם הזה אמרתי לו הואיל ואני קורא רבים בחיצונה גזרי' משום רבים בפנימית. רב יוסף חלה ושכח תלמודו:"
+  },
+  "Rashi on Eruvin 75b:9:3": {
+    "dependsOn": [
+      "Eruvin 75b:9",
+      "Rashi on Eruvin 75b:9:1",
+      "Rashi on Eruvin 75b:9:2",
+      "Rashi on Eruvin 75b:9:3",
+      "Rashi on Eruvin 75b:7:1",
+      "Rashi on Eruvin 75b:7:2"
+    ],
+    "generatedAt": "2026-11-06T03:05:14.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 75b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבים ברבי אחלף לי</strong> - הטעם שאמר לי רבים בחיצונה נתחלף לי ברבי כששכחתי הדבר בחליי וחזרתי לגירסתי הראשונה נזכרתי שהוזכר לי רבים בדבר וסבור הייתי שנאמר לי בשם רבי:"
+  },
+  "Tosafot on Eruvin 75b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 75b:11:1",
+      "Rashi on Eruvin 75b:11:2",
+      "Tosafot on Eruvin 75b:6:1",
+      "Tosafot on Eruvin 75b:9:1",
+      "Tosafot on Eruvin 75b:15:1",
+      "Eruvin 75b:7",
+      "Eruvin 75b:8",
+      "Eruvin 75b:9",
+      "Eruvin 75b:10"
+    ],
+    "generatedAt": "2026-11-06T03:11:48.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 75b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נכרי הרי הוא כרבים</strong> - אליבא דשמואל קאמר <span class=\"rashi-quotation\">כדפי' בקונט'</span> דליכא למימר דביחיד בחיצונה נמי אסר דאפי' היה דר עמו בחצר לא אסר דקיימא לן כראב\"י כ\"ש דריסת רגל דלא אסרה וכן מוכחא בהדיא לעיל גבי ישראל ונכרי בפנימית וישראל בחיצונה דאי ליכא ישראל בפנימית אלא נכרי לחודיה לא אסר וא\"ת ולמה ליה למימר הרי הוא כרבים אפילו לא הוו כרבים אסר דכיון דיש שני ישראלים בחיצונה ואוסרין זה על זה ויש לו דריסת רגל עליהן וי\"ל כיון דישראל לא אסר נכרי נמי לא אסר דאין להחמיר בנכרי יותר מבישראל אי לאו דהוו כרבים:"
+  },
+  "Tosafot on Eruvin 75b:15:1": {
+    "dependsOn": [
+      "Eruvin 85b:11",
+      "Rashi on Eruvin 85b:11:1",
+      "Eruvin 75b:14",
+      "Eruvin 75b:15",
+      "Eruvin 75b:16",
+      "Rashi on Eruvin 85b:10:1",
+      "Rashi on Eruvin 85b:10:2",
+      "Rashi on Eruvin 85b:10:3"
+    ],
+    "generatedAt": "2026-11-06T03:18:48.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 75b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוחנן סבר בית שער דיחיד לא הוי בית שער</strong> - והא דאמר בפ' כיצד משתתפין <span class=\"parenthesized\">(לקמן עירובין דף פה:)</span> כל מקום שאמרו חכמים הדר שם אינו אוסר הנותן שם עירובו אינו עירוב חוץ מבית שער דיחיד פי' דאף על גב דהדר שם אינו אוסר הנותן שם עירובו הוי עירוב אתי נמי כר' יוחנן דהתם איירי בבית שער דחצר כדפי' שם <span class=\"rashi-quotation\">בקונטרס</span> דאינו עשוי לדירה אבל הכא העשוי לדירה אוסר:"
+  },
+  "Tosafot on Eruvin 75b:6:1": {
+    "dependsOn": [
+      "Eruvin 66a:4",
+      "Eruvin 66a:5",
+      "Eruvin 66b:11",
+      "Eruvin 75b:6",
+      "Eruvin 75b:7",
+      "Eruvin 75b:8",
+      "Chokhmat Shlomo on Eruvin 75b:6",
+      "Chidushei Halachot on Eruvin 75b:1",
+      "Rashi on Eruvin 75b:6:1",
+      "Eruvin 75b:4",
+      "Eruvin 75b:5",
+      "Rashi on Eruvin 75b:5:1",
+      "Rashi on Eruvin 75b:4:1",
+      "Rashi on Eruvin 75b:4:2",
+      "Eruvin 66b:10",
+      "Rashi on Eruvin 66b:10:1"
+    ],
+    "generatedAt": "2026-11-06T02:52:26.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן לא קאמר ר\"ע הכא אלא בב' חצירות זו לפנים מזו דאסרן אהדדי</strong> - יש לישב הך סוגיא נמי אליבא דרבא דאמר לעיל <span class=\"parenthesized\">(עירובין דף סו.)</span> לשמואל דבשתי חצירות זו לפנים מזו פעמים אין מבטלין אע\"ג דאסרן אהדדי דהכא קאמר דאסרן אהדדי בפשיעות בני חיצונה שהורגלו עירובן בפנימית דשכח א' מהן ולא עירב אבל בכל הנהו דאמר שמואל אין מבטלין מי אסרן אהדדי בפשיעה דכי נתנו עירובן בחיצונה ושכח אחד מהן ולא עירב אין האיסור בא ע\"י שפשעו במה שהרגילו עירובן ושכח אחד מהם ולא עירב דבלאו הכי היה להם דריסת הרגל ואין לתמוה היאך מתוקם לרבא שמואל כר\"ע וכרבנן הא ע\"כ כר\"ע דוקא ס\"ל <span class=\"rashi-quotation\">כדפי' בקונטרס</span> לעיל דמ\"מ בעיקר פלוגתייהו דאין ביטול רשות מחצר לחצר מוקמי נפשיה בכולהו וא\"ת ולאביי דאמר שתי חצירות זו לפנים מזו דמבטלין בכל ענין לשמואל <span class=\"parenthesized\">(מי נימא)</span> שמואל כר\"ע ולא כרבנן דלרבנן ב' חצירות זו לפנים מזו אין מבטלין וי\"ל דהוה מפרש כר' יוחנן דבסמוך עד כאן לא קאמרי רבנן התם אלא דאמר' לה אדמבטלת לי קאסרת עלי בפשיעותא שהרגלת עירובך ושכח אחד מכם:"
+  },
+  "Tosafot on Eruvin 75b:9:1": {
+    "dependsOn": [
+      "Eruvin 75b:9",
+      "Rashi on Eruvin 75b:9:1",
+      "Rashi on Eruvin 75b:9:2",
+      "Rashi on Eruvin 75b:9:3",
+      "Tosafot on Eruvin 75b:6:1",
+      "Rashba on Eruvin 75b:8:1",
+      "Ritva on Eruvin 75b:8:1",
+      "Steinsaltz on Eruvin 75b:8",
+      "Steinsaltz comment #1 on Eruvin 75b:8",
+      "Steinsaltz on Eruvin 75b:9"
+    ],
+    "generatedAt": "2026-11-06T03:07:06.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 75b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואני קורא בהם רבים בחיצונה</strong> - ויסברו שיש כמו כן שנים בפנימית ולא עירבו אבל כשיש שנים בפנימית ועירבו לא גזרינן אטו לא עירבו דעירבו אטו לא עירבו לא גזרינן אבל כשיש אחד בפנימית ולא עירבו יסברו שהם שנים כמו בחיצונה והרי לא עירבו:"
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "Rashi on Eruvin 86b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:10:2",
+      "Rashi on Eruvin 86b:10:3",
+      "Rashi on Eruvin 86b:10:4"
+    ],
+    "generatedAt": "2026-11-07T03:34:45.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם תאמר</strong> - הואיל ור' יוסי לגבי שבת לית ליה מחיצה תלויה:"
+  },
+  "Rashi on Eruvin 86b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:48:39.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה שנעשה בציפורי</strong> - על ידי מחיצה תלויה כדאמר לקמן:"
+  },
+  "Rashi on Eruvin 86b:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:10:1",
+      "Rashi on Eruvin 86b:10:2",
+      "Rashi on Eruvin 86b:10:4",
+      "Sanhedrin 32b:10"
+    ],
+    "generatedAt": "2026-11-06T17:50:05.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"פ מי נעשה</strong> - והלא ר' יוסי ראש של ציפורי הוה ועל פיו היו עושין כולן כדאמר בסנהדרין <span class=\"parenthesized\">(דף לב:)</span> אחר ר' יוסי לציפורי:"
+  },
+  "Rashi on Eruvin 86b:10:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:10:1",
+      "Rashi on Eruvin 86b:10:2",
+      "Rashi on Eruvin 86b:10:3",
+      "Rashi on Eruvin 86b:5:1",
+      "Rashi on Eruvin 86b:5:2",
+      "Eruvin 86b:10",
+      "Eruvin 86b:12"
+    ],
+    "generatedAt": "2026-11-06T17:52:45.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג לא ע\"פ ר' יוסי נעשה אלא על פי רבי ישמעאל בר ר' יוסי נעשה</strong> - שכבר נפטר ר' יוסי ול\"ג לא ע\"פ רבי יהודה דרבי יהודה לאו בציפורי הוה ועוד דלר' יהודה שרי דהא רשויות דרבנן הוו כדלקמן:"
+  },
+  "Rashi on Eruvin 86b:11:1": {
+    "dependsOn": [
+      "Eruvin 86b:11"
+    ],
+    "generatedAt": "2026-11-06T17:53:33.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הביאו ספר תורה</strong> - לבית הכנסת ובחצר אחרת הוה והיו מביאין אותו דרך חצר שאינה מעורבת ופרסו סדינין על גבי עמודין להיות מחיצה מפסקת אצל מחיצות החצר מבית שהיה ספר תורה מונח בו ועד בית הכנסת וכעין מבוי קטן כדי הילוך בין סדינים למחיצות החצר ולא היו בני החצר אוסרים שם שלא היה פתח פתוח לו אלא אותו פתח לבדו והנך סדינים מחיצה תלויה הואי:"
+  },
+  "Rashi on Eruvin 86b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:54:22.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל מודים</strong> - ר\"א ומחלוקתו שנחלקו בתוספת אהל עראי גבי פקק חלון דאיכא למ\"ד פוקקין בו ואע\"ג דמוסיף על אהל עראי הוא מודים שאין עושין את כל האהל לכתחלה בשבת בפ' כל הכלים <span class=\"parenthesized\">(שבת דף קכה:)</span>:"
+  },
+  "Rashi on Eruvin 86b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:54:39.353Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו דבר אחד</strong> - הקילו הרבה במים:"
+  },
+  "Rashi on Eruvin 86b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:55:14.232Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזוזטרא</strong> - שהיא למעלה מן הים:"
+  },
+  "Rashi on Eruvin 86b:14:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:14:1",
+      "Rashi on Eruvin 86b:14:2"
+    ],
+    "generatedAt": "2026-11-06T17:56:00.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש בה ארבעה</strong> - מרובעות שהן כ\"ד טפחים על כ\"ד טפחים:"
+  },
+  "Rashi on Eruvin 86b:1:1": {
+    "dependsOn": [
+      "Eruvin 86b:1",
+      "Steinsaltz on Eruvin 86b:1:1"
+    ],
+    "generatedAt": "2026-11-06T17:22:13.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתרת במים</strong> - בבור שבין ב' חצירות ונתונה על רחבה באמצע הבור למעלה:"
+  },
+  "Rashi on Eruvin 86b:2:1": {
+    "dependsOn": [
+      "Eruvin 86b:2"
+    ],
+    "generatedAt": "2026-11-06T17:22:49.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאידך גיסא</strong> - תחת כל רוחב הקורה חוץ לקורה בחלק חבירו:"
+  },
+  "Rashi on Eruvin 86b:3:1": {
+    "dependsOn": [
+      "Eruvin 86b:3",
+      "Eruvin 86b:1",
+      "Rashi on Eruvin 86b:1:1",
+      "Rashi on Eruvin 86b:3:1",
+      "Rashi on Eruvin 86b:3:2",
+      "Rashi on Eruvin 86b:3:3"
+    ],
+    "generatedAt": "2026-11-06T17:27:26.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עריבי מיא</strong> - ורב יהודה הפסק מחיצה בעי:"
+  },
+  "Rashi on Eruvin 86b:3:2": {
+    "dependsOn": [
+      "Eruvin 86b:3",
+      "Rashi on Eruvin 86b:1:1",
+      "Rashi on Eruvin 86b:2:1",
+      "Rashi on Eruvin 86b:3:1"
+    ],
+    "generatedAt": "2026-11-06T17:29:27.528Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא קל הוא שהקילו חכמים במים</strong> - וליתא לדרב יהודה אלא כדרב הונא דב\"ה למעלה ממש קאמרי ה\"ג אלא קל הוא כו':"
+  },
+  "Rashi on Eruvin 86b:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:3:1",
+      "Rashi on Eruvin 86b:3:2",
+      "Rashi on Eruvin 86b:3:3",
+      "Eruvin 86b:3"
+    ],
+    "generatedAt": "2026-11-06T17:30:22.613Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחצה תלויה מתרת אף ביבשה</strong> - הלכך במים נמי אין צריך שתראה המחיצה עשויה בשביל המים ובתוך אוגני הבור:"
+  },
+  "Rashi on Eruvin 86b:5:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-06T17:36:54.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המשלשל</strong> - טריציי\"ר בלע\"ז:"
+  },
+  "Rashi on Eruvin 86b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:37:23.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמעלה למטה</strong> - שהתחיל לארוג מחיצות הסוכה למעלה ואורג ובא למטה:"
+  },
+  "Rashi on Eruvin 86b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:5:1",
+      "Rashi on Eruvin 86b:5:2",
+      "Rashi on Eruvin 86b:5:4",
+      "Rashi on Eruvin 86b:5:5",
+      "Eruvin 86b:6",
+      "Rashi on Eruvin 86b:6:1"
+    ],
+    "generatedAt": "2026-11-06T17:38:41.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבוהות מן הארץ שלשה</strong> - דגדיים בוקעים בה הויא לה תלויה ופסולה:"
+  },
+  "Rashi on Eruvin 86b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:39:05.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמטה למעלה</strong> - שנוגעות בקרקע:"
+  },
+  "Rashi on Eruvin 86b:5:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:5:1",
+      "Rashi on Eruvin 86b:5:2",
+      "Rashi on Eruvin 86b:5:3",
+      "Rashi on Eruvin 86b:5:4"
+    ],
+    "generatedAt": "2026-11-06T17:40:16.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם גבוהות עשרה טפחים כשירה</strong> - ואע\"פ שאינן מגיעות לסכך והכא לא גרס גבוהות מן הארץ אלא אם גבוהות עשרה טפחים:"
+  },
+  "Rashi on Eruvin 86b:6:1": {
+    "dependsOn": [
+      "Eruvin 86b:6",
+      "Rashi on Eruvin 86b:6:2"
+    ],
+    "generatedAt": "2026-11-06T17:41:07.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שמלמטה למעלה</strong> - מכשרת ליה ואף על גב דלא מטיא לסכך:"
+  },
+  "Rashi on Eruvin 86b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 86b:6:1"
+    ],
+    "generatedAt": "2026-11-06T17:41:51.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך מלמעלה למטה</strong> - די לה באריג עשרה ואע\"פ שאינה מגעת לארץ:"
+  },
+  "Rashi on Eruvin 86b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:43:25.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 86b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל שבת דאיסור סקילה</strong> - אע\"ג דברשויות דרבנן ליכא סקילה כל דתקון רבנן כעין דאורייתא תקון:"
+  },
+  "Tosafot on Eruvin 86b:14:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 86b:14:1",
+      "Chidushei Halachot on Eruvin 86b:6",
+      "Chidushei Halachot on Eruvin 86b:7",
+      "Tosafot on Eruvin 86b:2:1",
+      "Tosafot on Eruvin 86b:3:1",
+      "Tosafot on Eruvin 86b:8:1"
+    ],
+    "generatedAt": "2026-11-06T17:59:03.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 86b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזוזטרא שיש בה ארבעה על ארבעה כו'</strong> - משמע דכי אין בה ארבעה על ארבעה אינו ממלא אבל גזוזטרא עצמה הויא רה\"י וכן גזוזטרא דמתני' דקתני אין ממלאין הימנה אא\"כ עשה לה מחיצה עשרה אבל גזוזטרא גופה הויא רה\"י ומטלטל בכולה ותימה כיון דאין לה מחיצות אמאי הויא רה\"י והא טרסקל לא הוי רה\"י אפילו לר' יוסי בר יהודה אלא משום דהדרא מחיצתא כדאמרינן בפרק בכל מערבין <span class=\"parenthesized\">(לעיל עירובין דף לג:)</span> וי\"ל דבקיעת דגים לא הויא בקיעה ואמרינן גוד אחית אבל בטרסקל איכא בקיעת גדיים א\"נ סתמא פתוח לרה\"י והויא כחור היחיד ור\"י האריך בזה בריש כל גגות גבי מחיצות שאינן ניכרות וא\"ת כי אין בה ד' אמות על ד' אמות לישתרי למלאות לפ\"ה שפירש בסוף כל גגות <span class=\"parenthesized\">(לקמן עירובין דף צד:)</span> דאמר פי תקרה בכל ארבע הרוחות וי\"ל דהכא איירי דעבידא כי ארזילא באלכסון כעין גגין שלנו דלא אמרינן פי תקרה יורד כדאמרינן בעושין פסין <span class=\"parenthesized\">(לעיל עירובין דף כה:)</span> אי נמי כגון שהגזוזטרא אינה שוה ומליאה פגימות כל סביבותיה דאין פי תקרה אי נמי כשאין טפח בעובי הגזוזטרא דמשמע מפירוש <span class=\"rashi-quotation\">הקונטרס</span> דסוף פרק קמא דסוכה <span class=\"parenthesized\">(דף יח:)</span> בשמעתא דאכסדרה שיש לה פצימין דלא אמר פי תקרה יורד וסותם אלא אם כן יש בעובי התקרה טפח:"
+  },
+  "Tosafot on Eruvin 86b:2:1": {
+    "dependsOn": [
+      "Eruvin 86b:2",
+      "Rashi on Eruvin 86b:2:1",
+      "Eruvin 86a:14",
+      "Eruvin 86a:15",
+      "Rashi on Eruvin 86a:14:1",
+      "Rashi on Eruvin 86a:15:1",
+      "Eruvin 86a:12",
+      "Rashi on Eruvin 86a:12:1",
+      "Rashi on Eruvin 86a:12:2",
+      "Rashi on Eruvin 86b:1:1",
+      "Rashi on Eruvin 86a:12:8",
+      "Rashi on Eruvin 86a:12:9",
+      "Eruvin 86a:11",
+      "Eruvin 86a:10",
+      "Chidushei Halachot on Eruvin 86b:3",
+      "Chokhmat Shlomo on Eruvin 86b:3",
+      "Chidushei Halachot on Eruvin 86b:4",
+      "Chokhmat Shlomo on Eruvin 86b:4"
+    ],
+    "generatedAt": "2026-11-06T17:26:03.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 86b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קאזיל דלי לאידך גיסא</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דלרב יהודה דוקא פריך שמצריך לשקע ראשי קנים במים שלא ידלה מרשות חבירו אבל רב הונא לא בעי רק שיש היכר קצת שלא יטלטל שם להדיא <span class=\"parenthesized\">(ולא)</span> מצי למימר דרב נחמן כת\"ק דשרי מתוך אוגנו דהא מתוך אוגנו דת\"ק היינו מלמעלן דרשב\"ג דכי היכי דבעי רב יהודה שיקוע לרשב\"ג ה\"ה לת\"ק וכן הא דפריך תחת הקורה מיהא עריבי מיא לרב יהודה פריך ולא מצי לשנויי דקורה מתרת מחודה ולפנים ולא תחת הקורה דכיון דרשות שניהן שולטת בהם תחת הקורה א\"כ בסמוך לקורה נמי ליתסר משום שעריבי מיא שתחת הקורה ועוד דמשמע ליה דמתרת לגמרי אף תחת הקורה:"
+  },
+  "Tosafot on Eruvin 86b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T17:34:03.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 86b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא קל הוא שהקילו חכמים במים</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> וליתא לדרב יהודה אלא כרב הונא דב\"ה למעלה ממש קאמרי ועל זה סומכין העולם שיש להן בתי כסאות על המים אע\"פ שאין המחיצות מגיעות עד המים והא דאמר בפירקין <span class=\"parenthesized\">(דף פח.)</span> אמתניתין דגזוזטרא שהיא למעלה מן המים ועשו לה מחיצה גבוה י' כו' לא שנו אלא למלאות אבל לשפוך אסור דהלכתא כאיכא דאמרי דאפי' לשפוך נמי שרי דבשל סופרים הלך אחר המיקל ומיהו נראה דאינה מועלת המחיצה העשויה לצניעות בית הכסא ולא לשם מחיצת מים דאין הלכה כרבי יהודה דאמר לא תהא מחיצה גדולה מן הכותל שביניהן ודבר תימה הוא <span class=\"rashi-quotation\">שפירש בקונטרס</span> מסקנא דשמעתין דלא כרב יהודה דהא רב ורבי חייא קיימי כוותיה וברייתא דיעקב קרחאה ומצינו לפרש קל הוא שהקילו חכמים במים דקורה מתרת בלא שיקוע אבל מחיצה התלויה מצינו למימר כרב יהודה דבעי שיקוע ור\"ח פירש דקיימא לן כרב יהודה ול\"ג אלא ור\"ת נמי לא גרס אלא ומפרש דפריך לרב נחמן אפילו אליבא דרב הונא דלא מצריך שיקוע וה\"פ קורה ד' מתרת במים פי' אמת המים או ים עובר אצל כותלו דהוי ככרמלית ויש חלון למטה מן הקורה והקורה מונחת על גבי הזיזין היוצאין מן הכותל ופריך הא קאזיל לאידך גיסא בשלמא בור שבין שתי חצירות סגי במחיצות למר כדאית ליה ולמר כדאית ליה דליתיה כרמלית אלא רה\"י אבל כרמלית גמורה דלאו בר איערובי הוא אית לן למיחש דילמא אתי לאידך גיסא ומשני גמירי כו' ופריך תחת קורה מיהא עריבי מיא בהדי הנך ומכרמלית הוא דולה ומשני קל הוא שהקילו חכמים במים ולא גרס אלא דשינויא דאין דלי מהלך יותר מארבעה כדקאי קאי וה\"פ כיון שהדלי לא ילך בכרמלית לערובי מיא נמי לא חיישינן משום דהקילו במים ע\"י מחיצת תקרה כדאמר לקמן <span class=\"parenthesized\">(עירובין פז.)</span> באמת המים שעשו לה מחיצה עשרה דלא חיישינן לאיערובי מיא הכי נמי גבי תקרה:"
+  },
+  "Tosafot on Eruvin 86b:8:1": {
+    "dependsOn": [
+      "Eruvin 86b:8",
+      "Eruvin 86b:5"
+    ],
+    "generatedAt": "2026-11-06T17:43:02.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 86b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן לא קאמר ר' יהודה אלא בעירובי חצירות</strong> - וא\"ת ולימא משום דבמים הקילו חכמים ועוד אמאי קאמר ר' יהודה בשיטת ר' יוסי אמרה לימא דכולהו תנאי דמכשרי במחיצה תלויה בשיטת ר' יוסי אמרו וי\"ל דאשאר תנאי איכא למימר משום דבמים הקילו אבל ר' יהודה משום מים לא היה מיקל כל כך שמתיר אף במחיצה שלא נעשית לשם מים ולהכי קאמר משום דבעירובי חצירות דרבנן:"
+  }
+}

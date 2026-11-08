@@ -1,0 +1,468 @@
+{
+  "Rashi on Eruvin 100a:10:1": {
+    "dependsOn": [
+      "Eruvin 100a:10",
+      "Rashi on Eruvin 100a:9:1",
+      "Eruvin 100a:6"
+    ],
+    "generatedAt": "2026-11-07T18:44:13.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דצדו אחד שוה לארץ</strong> - שהקרקע גבוה בצדו האחד מודה רבה היכא דשלשת צדדיו גבוהין מן הארץ דאסורה צד השוה לארץ:"
+  },
+  "Rashi on Eruvin 100a:11:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 100a:4:1",
+      "Rashi on Eruvin 100a:4:2",
+      "Rashi on Eruvin 100a:4:3",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:4:6",
+      "Rashi on Eruvin 99b:18:1"
+    ],
+    "generatedAt": "2026-11-07T18:45:36.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין ניתלין באילן</strong> - אשטנדליי\"ר:"
+  },
+  "Rashi on Eruvin 100a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:46:02.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בור ושיח ומערה</strong> - בין שיש בהן מים בין שאין בהם מים:"
+  },
+  "Rashi on Eruvin 100a:12:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 100a:12:1",
+      "Tosefta Kifshutah on Beitzah 1:9:1",
+      "Steinsaltz on Eruvin 100a:12",
+      "Sefer HeArukh, Letter Tet 164"
+    ],
+    "generatedAt": "2026-11-07T18:47:37.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטפס</strong> - דנפיי\"ר מטפס ויורד דטעמא. לאו משום דטרחא אלא שלא יתלוש מן המחובר במתכוין:"
+  },
+  "Rashi on Eruvin 100a:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:13:2"
+    ],
+    "generatedAt": "2026-11-07T18:48:06.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם עלה</strong> - באילן אסור לירד דכל דרך ירידתו הוא משתמש במחובר:"
+  },
+  "Rashi on Eruvin 100a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:13:1"
+    ],
+    "generatedAt": "2026-11-07T18:48:34.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עלה מבעוד יום</strong> - וקדש עליו היום לא קנסינן ליה ויורד:"
+  },
+  "Rashi on Eruvin 100a:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:16:2",
+      "Rashi on Eruvin 100a:16:3"
+    ],
+    "generatedAt": "2026-11-07T18:49:03.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניתנין במתנה אחת וכו'</strong> - כגון דם הבכור שנתערב בדם בכור אחר:"
+  },
+  "Rashi on Eruvin 100a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:16:1",
+      "Rashi on Eruvin 100a:16:2",
+      "Rashi on Eruvin 100a:16:3"
+    ],
+    "generatedAt": "2026-11-07T18:49:40.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינתנו במתנה אחת</strong> - ועולה אותה מתנה לזה ולזה:"
+  },
+  "Rashi on Eruvin 100a:16:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:16:1",
+      "Rashi on Eruvin 100a:16:2",
+      "Rashi on Eruvin 100a:16:3",
+      "Eruvin 100a:17",
+      "Rashi on Eruvin 100a:17:1",
+      "Rashi on Eruvin 100a:17:2",
+      "Eruvin 100a:21",
+      "Eruvin 100a:22"
+    ],
+    "generatedAt": "2026-11-07T18:50:59.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינתנו במתן ארבע</strong> - דקסבר קום עשה מצוה עדיף אע\"ג דבהאי מצוה איכא צד עבירה דעבר אבכור אבל תוסיף אתי עשה דחטאת דכתיב <span class=\"parenthesized\">(ויקרא ד׳:כ״ה)</span> ונתן על קרנות ודחי לבל תוסיף דבכור:"
+  },
+  "Rashi on Eruvin 100a:17:1": {
+    "dependsOn": [
+      "Eruvin 100a:17",
+      "Rashi on Eruvin 100a:16:1",
+      "Rashi on Eruvin 100a:16:2",
+      "Rashi on Eruvin 100a:16:3",
+      "Rashi on Eruvin 100a:17:1",
+      "Rashi on Eruvin 100a:17:2"
+    ],
+    "generatedAt": "2026-11-07T18:51:45.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתן ארבע במתן ארבע</strong> - דם חטאת זו נשפך לדם חטאת זו ינתנו ד' מתנות ועולה לזו ולזו:"
+  },
+  "Rashi on Eruvin 100a:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:17:1",
+      "Eruvin 100a:16",
+      "Eruvin 100a:17",
+      "Eruvin 100a:18",
+      "Eruvin 100a:19",
+      "Eruvin 100a:20",
+      "Eruvin 100a:21",
+      "Rashi on Eruvin 100a:16:3"
+    ],
+    "generatedAt": "2026-11-07T18:53:03.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהושע אומר נותנו במתנה אחת</strong> - כיון דקיימא לן כל הניתנין על מזבח החיצון שנתנן במתנה אחת כיפר הכא דלא אפשר סמכינן עלה אפילו לכתחילה ולא עברינן אבל תוסיף ואי משום בל תגרע דחטאת כדקאמר טעמא מוטב שיעקר בל תגרע מאליו שהוא יושב ואינו עוקר הלאו בידים מעבור על בל תוסיף שהוא עוקרו בידים:"
+  },
+  "Rashi on Eruvin 100a:1:1": {
+    "dependsOn": [
+      "Eruvin 100a:1"
+    ],
+    "generatedAt": "2026-11-07T18:15:19.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דהוי דירה שתשמישה לאויר</strong> - אינה לדור בה תמיד אלא להסתופף בה שומרי <span class=\"parenthesized\">(אויר)</span> השדה:"
+  },
+  "Rashi on Eruvin 100a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:56:19.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"נ יורד</strong> - דהך ירידה מצוה היא דהא כל זמן שהוא יושב משתמש והרי זה תשמיש הלכך אע\"ג דהשתא משתמש תשמיש אחר כשיורד יותר ויותר עדיף משישב שם:"
+  },
+  "Rashi on Eruvin 100a:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:56:41.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא עביד מצוה</strong> - דמקיים עשה:"
+  },
+  "Rashi on Eruvin 100a:22:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:22:1"
+    ],
+    "generatedAt": "2026-11-07T18:57:16.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קא עביד מצוה</strong> - פורש מן העבירה הוא ע\"י עבירה אבל קיום מצוה אין כאן:"
+  },
+  "Rashi on Eruvin 100a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:2:1",
+      "Eruvin 100a:2"
+    ],
+    "generatedAt": "2026-11-07T18:16:14.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמעלה מג' לתוך ג'</strong> - דלאחר שהגביהו שלשה חזרו וכפפו:"
+  },
+  "Rashi on Eruvin 100a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:4:1",
+      "Rashi on Eruvin 100a:4:2",
+      "Rashi on Eruvin 100a:4:3",
+      "Eruvin 100a:4",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:4:6"
+    ],
+    "generatedAt": "2026-11-07T18:17:30.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דדמו כי משוניתא</strong> - כשן סלע כהר זה שמשופע לצדדין כך יוצאין שרשיו קטנים מתוך הגדולין לצדדין וכפופין לארץ מכאן ומכאן הגדולים הולכין ומגביהין באלכסון יותר מג' כזה: <span class=\"image-ref-container\"><span class=\"image-ref-text\">(*):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,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\"></span></span><span class=\"image-pointer\">(*)</span>"
+  },
+  "Rashi on Eruvin 100a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:4:1",
+      "Rashi on Eruvin 100a:4:2",
+      "Rashi on Eruvin 100a:4:3",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:4:6",
+      "Eruvin 100a:4"
+    ],
+    "generatedAt": "2026-11-07T18:18:25.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסלקי לעילאי</strong> - הגדילים משהגביה למעלה מג':"
+  },
+  "Rashi on Eruvin 100a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:19:19.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסורין</strong> - לדברי הכל:"
+  },
+  "Rashi on Eruvin 100a:4:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:4:1",
+      "Rashi on Eruvin 100a:4:2",
+      "Rashi on Eruvin 100a:4:3",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:4:6",
+      "Steinsaltz on Eruvin 100a:4",
+      "Sefer HeArukh, Letter Mem 610",
+      "Steinsaltz comment #1 on Eruvin 100a:4",
+      "Steinsaltz comment #2 on Eruvin 100a:4"
+    ],
+    "generatedAt": "2026-11-07T18:20:51.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנחתי לתתאי</strong> - הגדילים לראשו של צד האילן כל שלא גבוה ג' וכן קטנים היוצאין מן הגדילים בשיפולו:"
+  },
+  "Rashi on Eruvin 100a:4:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:4:3",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:4:6"
+    ],
+    "generatedAt": "2026-11-07T18:21:28.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרו</strong> - לדברי הכל דאכתי לאו לכלל איסור אתו:"
+  },
+  "Rashi on Eruvin 100a:4:6": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:4:5"
+    ],
+    "generatedAt": "2026-11-07T18:23:11.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לצדדין</strong> - השרשים הקטנים היוצאים מתוך גובה של גדולים ומטין לארץ לתוך ג' לרב ששת אסירי דמכח איסורא אתו לרבה שרו:"
+  },
+  "Rashi on Eruvin 100a:5:1": {
+    "dependsOn": [
+      "Eruvin 100a:5",
+      "Rashi on Eruvin 100a:5:2",
+      "Rashi on Eruvin 100a:4:6",
+      "Steinsaltz on Eruvin 100a:5:1",
+      "Steinsaltz on Eruvin 100a:5"
+    ],
+    "generatedAt": "2026-11-07T18:24:57.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן אניגרא</strong> - אילן היוצא מתוך חריץ קצר העשוי להוליך המים לשדות ושני צידי האילן של צד גידודי החריץ נכנסין בגידודיו ואם בא למדוד מצדדין שבתוך הנגר הרי הוא גבוה ג' ויותר ואם בא למדוד מצדדיו השניים שהן מגידודי החריץ ולמעלה אין גבוה ג' לרבה דמודד הגידודים שרו דכל פחות מג' לארעא כארעא לרב ששת מעומקו מודד והרי גבוה ג' ומכח איסורא אתו:"
+  },
+  "Rashi on Eruvin 100a:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:5:1",
+      "Eruvin 100a:4"
+    ],
+    "generatedAt": "2026-11-07T18:27:42.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן קרן זוית</strong> - אילן העולה במקצוע שני כותלים של חצר וג' צדדיו נכנסין בתוך המקצוע שבכותלים ואין נראה אלא צדו שמבחוץ והולך ועולה עד למעלה לכותל פחות מג' לרבה כל פחות מג' לאו אילן הוא דמעולם לא גבוה שלשה ולרב ששת מארעא משחינן ומכח איסורא אתו ודוקא קרן זוית אבל אצל כותל בעלמא מודה רבה דהואיל ושלשת צדדיו גבוהין והרביעי שוה לארץ או לכותל דאסור אפי' צדו דשוה לכותל:"
+  },
+  "Rashi on Eruvin 100a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:6:2",
+      "Eruvin 100a:6",
+      "Rashi on Eruvin 100a:8:1",
+      "Rashi on Eruvin 100a:4:1",
+      "Rashi on Eruvin 100a:4:2",
+      "Tosafot on Eruvin 100a:5:1"
+    ],
+    "generatedAt": "2026-11-07T18:37:38.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה סליק באיפומא</strong> - בתוך הבית היה עומד ועולה דרך פי ארובה למעלה מן הגג פחות מג':"
+  },
+  "Rashi on Eruvin 100a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100a:6:1",
+      "Eruvin 100a:6",
+      "Rashi on Eruvin 100a:7:1",
+      "Rashi on Eruvin 100a:8:1"
+    ],
+    "generatedAt": "2026-11-07T18:38:24.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושרא ליה</strong> - דאינו נראה מן הגג ג' אפי' באחד מצדדיו:"
+  },
+  "Rashi on Eruvin 100a:7:1": {
+    "dependsOn": [
+      "Eruvin 100a:7",
+      "Rashi on Eruvin 100a:4:3",
+      "Rashi on Eruvin 100a:4:4",
+      "Rashi on Eruvin 100a:4:5",
+      "Rashi on Eruvin 100a:6:1",
+      "Rashi on Eruvin 100a:6:2",
+      "Rashi on Eruvin 100a:4:6",
+      "Rashi on Eruvin 100a:5:1",
+      "Rashi on Eruvin 100a:5:2",
+      "Rashi on Eruvin 100a:8:1",
+      "Steinsaltz on Eruvin 100a:4:1",
+      "Steinsaltz on Eruvin 100a:5:1"
+    ],
+    "generatedAt": "2026-11-07T18:39:43.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבה שרא לך</strong> - דאמר לא אמרי' מכח איסורא אתי דהא הכא בתוך הבית הוא דאסור שגובהו נראה שם:"
+  },
+  "Rashi on Eruvin 100a:8:1": {
+    "dependsOn": [
+      "Eruvin 100a:8"
+    ],
+    "generatedAt": "2026-11-07T18:41:10.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמלי</strong> - כארעא סמיכתא היא דהא אמרן לעיל חלון שבין שני בתים למעלה מי' כמאן דמלי דמי:"
+  },
+  "Rashi on Eruvin 100a:9:1": {
+    "dependsOn": [
+      "Eruvin 100a:9",
+      "Tosafot on Eruvin 99b:8:1"
+    ],
+    "generatedAt": "2026-11-07T18:43:09.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהדרי כיפי</strong> - ואשמעינן דלא ישב על הכפופין דאי על הגבוהין פשיטא אכתי לא אשמעינן אלו הן משום שבות לא עולין באילן במס' ביצה <span class=\"parenthesized\">(דף לז:)</span>:"
+  },
+  "Tosafot on Eruvin 100a:17:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 100a:5:1",
+      "Tosafot on Eruvin 100a:17:2",
+      "Chidushei Halachot on Eruvin 100a:2",
+      "Chidushei Halachot on Eruvin 100a:3",
+      "Eruvin 100a:16",
+      "Eruvin 100a:18"
+    ],
+    "generatedAt": "2026-11-07T18:55:01.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 100a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתן ד' במתן אחת</strong> - פי' עולה שהיא מתן שתים שהן ד' בבכור או בפסח אבל אין לפרש מתן ד' היינו חטאת דאם נתערבה מתן חטאת בפסח או בבכור אין להם תקנה לפי שזה למעלה מחוט הסיקרא וזה למטה וא\"ת וליתי עשה ולידחי לאו דבל תוסיף וי\"ל דלא דמי כלל לכלאים בציצית דהכא ע\"י פשיעה הוא בא והיה יכול להתקיים בלא דחיית הלאו:"
+  },
+  "Tosafot on Eruvin 100a:17:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 100a:17:1",
+      "Tosafot on Eruvin 100a:17:2",
+      "Maharsha on Eruvin 100a:4"
+    ],
+    "generatedAt": "2026-11-07T18:55:50.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 100a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינתנו במתנה אחת</strong> - דקיימא לן כל הניתנין שנתנו במתנה אחת כפר:"
+  },
+  "Tosafot on Eruvin 100a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T18:35:18.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 100a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן בקרן זוית</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שג' צדדיו נכנסין תוך המקצוע ואין נראה מבחוץ אלא צד רביעי ואיצטריך למימר תרוייהו קרן זוית להודיעך כחו דרב ששת ונגר דמשני צדדיו להודיעך כחו דרבה דשרי ומיהו מודה רבה בסמוך לכותל שאינו שוה לארץ אלא מצד אחד דאסור והא דנקט ברייתא בסמוך וצדו אחד שוה לארץ לא תקשי לרב ששת דלדידיה לאו דוקא נקט צדו אחד דהוא הדין משני צדדין:"
+  }
+}

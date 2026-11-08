@@ -1,0 +1,350 @@
+{
+  "Rashi on Eruvin 80a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:11:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4"
+    ],
+    "generatedAt": "2026-11-06T08:34:18.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בריה דבת יעקב</strong> - אביו לא היה הגון לפיכך לא הזכירו:"
+  },
+  "Rashi on Eruvin 80a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:11:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4",
+      "Eruvin 80a:11",
+      "Steinsaltz on Eruvin 80a:11",
+      "Versions on Eruvin 80a:11"
+    ],
+    "generatedAt": "2026-11-06T08:36:32.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקיף</strong> - הרבה עלי הדרך בשבילו:"
+  },
+  "Rashi on Eruvin 80a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:11:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4"
+    ],
+    "generatedAt": "2026-11-06T08:37:05.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזיל אסולמא דצור</strong> - דרך מסילת צור:"
+  },
+  "Rashi on Eruvin 80a:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:11:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4",
+      "Eruvin 80a:11",
+      "Rashi on Eruvin 80a:8:1",
+      "Rashi on Eruvin 80a:9:1",
+      "Rashi on Eruvin 80a:14:1",
+      "Steinsaltz comment #1 on Eruvin 80a:11",
+      "Steinsaltz comment #2 on Eruvin 80a:11",
+      "Eruvin 80a:1",
+      "Eruvin 80a:4",
+      "Eruvin 80a:5",
+      "Eruvin 80a:6",
+      "Eruvin 80a:7",
+      "Eruvin 80a:8",
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:6:2",
+      "Rashi on Eruvin 80a:7:1"
+    ],
+    "generatedAt": "2026-11-06T08:41:13.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:11:4"
+    ],
+    "sourceText": "ר' חייא קאי כרב בתחומין וגבי חצירות טעמא דרב משום דכיון דקאסר עליה גמר ומקני ואין צריך זכייה ואע\"ג דמתני' פליגא עליה דרב רב תנא ופליג:"
+  },
+  "Rashi on Eruvin 80a:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:11:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4"
+    ],
+    "generatedAt": "2026-11-06T08:42:54.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי איכא למאן דפליג</strong> - מי אשכחן דפליג איניש עליה:"
+  },
+  "Rashi on Eruvin 80a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T08:43:13.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טורזינא</strong> - נכרי היה ממונה על כלי זיין העשויין לשמירת העיר להלחם על הצרים ודר בעיר:"
+  },
+  "Rashi on Eruvin 80a:1:1": {
+    "dependsOn": [
+      "Eruvin 80a:1"
+    ],
+    "generatedAt": "2026-11-06T08:10:04.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין טועמין מפירותיה</strong> - דאי לאו דפלחוה לא הוו פרשי מינה:"
+  },
+  "Rashi on Eruvin 80a:22:1": {
+    "dependsOn": [
+      "Eruvin 80a:22"
+    ],
+    "generatedAt": "2026-11-06T08:45:02.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דאסר</strong> - על בני המבוי לא בעינן דעתיה ומתניתין בדלא אסר כגון חצר שבין שני מבואות ורגילה עם זה ולא עם זה:"
+  },
+  "Rashi on Eruvin 80a:23:1": {
+    "dependsOn": [
+      "Eruvin 80a:23",
+      "Rashi on Eruvin 80a:22:1",
+      "Rashi on Eruvin 80a:23:2"
+    ],
+    "generatedAt": "2026-11-06T08:45:40.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי מסתברא</strong> - דמודה שמואל היכי דלא אסר:"
+  },
+  "Rashi on Eruvin 80a:23:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:23:1"
+    ],
+    "generatedAt": "2026-11-06T08:46:13.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא נשתתף</strong> - אינו רוצה ומתכוין לאסור עליהן:"
+  },
+  "Rashi on Eruvin 80a:2:1": {
+    "dependsOn": [
+      "Eruvin 80a:2",
+      "Steinsaltz on Eruvin 80a:2"
+    ],
+    "generatedAt": "2026-11-06T08:10:47.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נצרפי</strong> - שם ע\"ז שהיתה באותה מדינה:"
+  },
+  "Rashi on Eruvin 80a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T08:11:22.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך להודיע</strong> - אם חפצין בכך שמא מקפידין בעירובין ואמר <span class=\"parenthesized\">(בפ\"ק)</span> המקפיד על עירובו אינו עירוב שעינו צרה באותה פת ליתן לחביריו אבל משלו אין צריך להודיעו דזכין לו לאדם שלא בפניו:"
+  },
+  "Rashi on Eruvin 80a:6:1": {
+    "dependsOn": [
+      "Eruvin 80a:6",
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:6:2",
+      "Chokhmat Shlomo on Eruvin 80a:2:1"
+    ],
+    "generatedAt": "2026-11-06T08:17:18.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא תנן</strong> - בעירובי חצירות ומזכה להן:"
+  },
+  "Rashi on Eruvin 80a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:2:1",
+      "Rashi on Eruvin 80a:4:1"
+    ],
+    "generatedAt": "2026-11-06T08:19:04.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא לא תנן</strong> - בעירובי תחומין קתני לקמן <span class=\"parenthesized\">(עירובין דף פב.)</span> כיצד משתתפין בתחומין וכו'. ולא קתני ומזכה להן:"
+  },
+  "Rashi on Eruvin 80a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:7:1",
+      "Eruvin 80a:7"
+    ],
+    "generatedAt": "2026-11-06T08:19:44.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהלכה לבית המרחץ</strong> - מבעוד יום חוץ לתחום עירה וחשכה לה ואסר לה לחזור:"
+  },
+  "Rashi on Eruvin 80a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:8:1",
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:6:2",
+      "Rashi on Eruvin 80a:7:1",
+      "Rashi on Eruvin 80a:4:1",
+      "Rashi on Eruvin 80a:9:1",
+      "Rashi on Eruvin 80a:11:1",
+      "Rabbeinu Chananel on Eruvin 80a:8",
+      "Rav Nissim Gaon on Eruvin 80a:8",
+      "Steinsaltz on Eruvin 80a:8",
+      "Rashi on Eruvin 80a:18:1",
+      "Rashi on Eruvin 80a:11:2",
+      "Rashi on Eruvin 80a:11:3",
+      "Rashi on Eruvin 80a:11:4",
+      "Rashi on Eruvin 80a:1:1",
+      "Rashi on Eruvin 80a:2:1",
+      "Rashi on Eruvin 79a:1:1",
+      "Tosafot on Eruvin 80a:7:1"
+    ],
+    "generatedAt": "2026-11-06T08:32:39.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:8:1"
+    ],
+    "sourceText": "ר' חייא בבלי היה כדאמרינן במסכת סוכה <span class=\"parenthesized\">(דף כ.)</span> עלו ר' חייא ובניו ויסדוה:"
+  },
+  "Rashi on Eruvin 80a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T08:33:49.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעיא להו</strong> - גרסינן:"
+  },
+  "Tosafot on Eruvin 80a:14:1": {
+    "dependsOn": [
+      "Eruvin 80a:14"
+    ],
+    "generatedAt": "2026-11-06T08:42:08.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב נחמן נקיטינן אחד עירובי תחומין ואחד שיתופי מבואות צריך לזכות</strong> - וכן הלכה וכן פסק בשאלתות בפרשת ויהי בשלח דכולם צריכין לזכות עירובי תחומין וחצירות ושיתופי מבואות ועירובי תבשילין ואע\"ג דבעי רב נחמן עירובי תבשילין מאי הא מסיק אביי דלא שמיע ליה דשמואל דאי שמיע ליה לא הוה מיבעיא ליה:"
+  },
+  "Tosafot on Eruvin 80a:20:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 80a:20:1",
+      "Gilyon HaShas on Eruvin 80a:2",
+      "Gilyon HaShas on Eruvin 80a:3"
+    ],
+    "generatedAt": "2026-11-06T08:44:26.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתו לקמיה דרב יהודה אמר להו הכי אמר שמואל אשתו של אדם כו'</strong> - ואם תאמר ואמאי לא מייתי מדרב יהודה דאמר בריש כדר <span class=\"parenthesized\">(לע. ל דף סד.)</span> משמיה דשמואל שכירו ולקיטי של נכרי נותן עירובו ודיו וכל שכן אשתו והוה מייתי מנכרי אנכרי ויש לומר דאשתו אאשתו ניחא ליה לאתויי:"
+  },
+  "Tosafot on Eruvin 80a:24:1": {
+    "dependsOn": [
+      "Maharshal on Eruvin 80a:6",
+      "Maharsha on Eruvin 80a:4",
+      "Eruvin 80a:24",
+      "Rashi on Eruvin 80a:22:1",
+      "Rashi on Eruvin 80a:23:1",
+      "Rashi on Eruvin 80a:23:2",
+      "Chokhmat Shlomo on Eruvin 80a:6",
+      "Chidushei Halachot on Eruvin 80a:4"
+    ],
+    "generatedAt": "2026-11-06T08:48:02.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רגיל אין שאינו רגיל לא</strong> - דרגיל אסר כמו פתח הרגיל אבל שאינו רגיל אינו אוסר ונוטלים שיתופו בעל כרחו דקאמר היינו של בעל הבית אבל דעת אשתו צריך ואף על גב דאסיקנא דאשתו של אדם מערבת שלא מדעתו אין ללמוד מכאן שתוכל לזכות לבני המבוי ולבני חצר לתת פת עבורם נהי דבשביל עצמה יכולה ליתן שלא מדעת בעלה אין לה כח לזכות לשכיניה שלא מדעת וצריך ליזהר שלא תזכה האשה לשכיניה כשאין בעלה בעיר ואף על גב דאם כל אחד ואחד נותן פת נראה דשרי אפילו לא אסרי אהדדי כל זמן שלא מיחה הבעל דמסתמא לא קפיד מכל מקום אין לסמוך על זה לענין שתוכל לזכות לאחרים ואם אין הבעל זה אשה בעיר אלא בני ביתו צריך לדקדק אם יכולין לערב בני ביתו בלא רשות משל בעל הבית דהא בסמוך [עמוד ב] תנן ניתוספו עליהן מוסיף וצדיך להודיע וכשכלה האוכל נמי קתני דצריך להודיע ממין אחר:"
+  },
+  "Tosafot on Eruvin 80a:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:6:2",
+      "Rashi on Eruvin 80a:4:1",
+      "Eruvin 80a:6",
+      "Rashi on Eruvin 80a:7:1",
+      "Eruvin 80a:7",
+      "Rashi on Eruvin 80a:2:1",
+      "Maharsha on Eruvin 80a:1",
+      "Maharsha on Eruvin 80a:2",
+      "Maharshal on Eruvin 80a:3",
+      "Chidushei Halachot on Eruvin 80a:1",
+      "Chidushei Halachot on Eruvin 80a:2",
+      "Chokhmat Shlomo on Eruvin 80a:3",
+      "Rashi on Eruvin 49a:19:1",
+      "Tosafot on Eruvin 49a:19:1",
+      "Rashi on Eruvin 80a:1:1"
+    ],
+    "generatedAt": "2026-11-06T08:15:32.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אמר א\"ל לזכות</strong> - דכיון דאסר עליה גמר ומקני ליה ובתחומין צריך לזכות דלא אסר עליה ולא נמר ומקני <span class=\"rashi-quotation\">כדפירש בקונטרס</span> ולשמואל במבוי צריך לזכות דלמקני רשות הוא דקסבר עירוב משים קנין בפ' מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מט.)</span> אפילו למ\"ד עירוב משום דירה צריך לזכות כדי שיהא קונה דירה בבית חבירו ובתחומין סבר שמואל דאין צריך לזכות דלא קני רשות אחרים הוא אי נמי כיון דאין מערבין עירובי תחומין אלא לדבר מצוה משום מצוה גמר ומקני ועוד כיון דעירובי תחומין אין מערבין אלא מדעתו אמירתו כשהוא אומר צא וערב לי חשובה כזכייה והשתא יש דברים שאנו מחמירין בחצירות מתחומין דחצירות צריך לזכות לשמואל ובפי פח ובתחומין אין צריך לזכות ואין צריך פת ויש דברים שאנו מחמירין בתחומין טפי דבתחומין בעי ב' סעודות לכל אחד ובחצירות בזמן שהן מרובין סגי [במזון ב' סעודות לכולם ובזמן שהן מועטין סגי] בגרוגרת לכל אחד כדאמרינן סוף פירקין והשולח עירוב ביד חרש שוטה וקטן אינו עירוב בתחומין ובחצירות קטן גובה אח העירוב:"
+  },
+  "Tosafot on Eruvin 80a:7:1": {
+    "dependsOn": [
+      "Eruvin 80a:7",
+      "Rashi on Eruvin 80a:7:1",
+      "Rashi on Eruvin 80a:6:1",
+      "Rashi on Eruvin 80a:6:2",
+      "Chokhmat Shlomo on Eruvin 80a:4",
+      "Chokhmat Shlomo on Eruvin 80a:5",
+      "Rabbeinu Chananel on Eruvin 80a:1",
+      "Rabbeinu Chananel on Eruvin 80a:4"
+    ],
+    "generatedAt": "2026-11-06T08:28:22.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה בכלתו כו'</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דהאי עובדא בתחומין היה ואע\"ג דבחצירות פליגא מתני' עליה דרב רב תנא הוא ופליג וקשיא דעיקר הקושיא לא היתה אלא מחצירות ומהא לא משני מידי וי\"ל דבעירובי חצירות היה המעשה וכן פירש רבינו חננאל ורב סבר כרבי ישמעאל וקסבר רב דתנא דיק תנא בחצירות דבעינן זיכוי כל שכן בתחומין דתחומין לכולי עלמא בעי זכיה ולפירוש <span class=\"rashi-quotation\">הקונטרס</span> דמוקי לה בתחומין יש לומר דרבי חייא ורבי ישמעאל בר' יוסי משום אביו אזדו לטעמייהו דר' חייא אית ליה לפיל בספ\"ק דתחומין דאורייתא ולהכי מחמיר בהו ור' יוסי דמיקל לטעמיה דאמר לעיל <span class=\"parenthesized\">(עירובין דף צה.)</span> ספק עירוב כשר:"
+  }
+}

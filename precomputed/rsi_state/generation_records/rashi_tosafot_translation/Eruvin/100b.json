@@ -1,0 +1,607 @@
+{
+  "Rashi on Eruvin 100b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:10:1",
+      "Rashi on Eruvin 100b:10:2"
+    ],
+    "generatedAt": "2026-11-07T19:06:02.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיים מסאני</strong> - שרי:"
+  },
+  "Rashi on Eruvin 100b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:10:1"
+    ],
+    "generatedAt": "2026-11-07T19:06:33.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא סיים מסאני</strong> - אסור שעשבים נדבקין בקשרי אצבעותיו ונתלשין:"
+  },
+  "Rashi on Eruvin 100b:11:1": {
+    "dependsOn": [
+      "[",
+      "Jastrow, עוּקְצָא 1",
+      "Steinsaltz on Eruvin 100b:11",
+      "Sefer HeArukh, Letter Ayin 240",
+      "Steinsaltz comment #1 on Eruvin 100b:11",
+      "Steinsaltz comment #2 on Eruvin 100b:11"
+    ],
+    "generatedAt": "2026-11-07T19:08:20.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוקצא</strong> - אשפי\"א כפול מתחתיו והעשבים נדבקים שם ותולשן:"
+  },
+  "Rashi on Eruvin 100b:12:1": {
+    "dependsOn": [
+      "Jastrow, שְׂרָכָא 1",
+      "Steinsaltz on Eruvin 100b:12",
+      "Eruvin 100b:11",
+      "Rashi on Eruvin 100b:11:1",
+      "Rashi on Eruvin 100b:10:1",
+      "Rashi on Eruvin 100b:10:2"
+    ],
+    "generatedAt": "2026-11-07T19:09:51.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרכא</strong> - פתילה ארוכה שהעשב ארוך אסור:"
+  },
+  "Rashi on Eruvin 100b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:10:24.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר\"ש</strong> - דאמר דבר שאין מתכוין מותר:"
+  },
+  "Rashi on Eruvin 100b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:14:1",
+      "Rashi on Eruvin 100b:14:2"
+    ],
+    "generatedAt": "2026-11-07T19:13:15.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבר מצוה</strong> - תשמיש:"
+  },
+  "Rashi on Eruvin 100b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:14:1",
+      "Rashi on Eruvin 100b:15:1",
+      "Rashi on Eruvin 100b:15:2",
+      "Rashi on Eruvin 100b:29:2",
+      "Rashi on Eruvin 100a:16:3"
+    ],
+    "generatedAt": "2026-11-07T19:14:38.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברגלים</strong> - לשון תשמיש דכתיב <span class=\"parenthesized\">(שופטים ה׳:כ״ז)</span> בין רגליה כרע נפל שכב:"
+  },
+  "Rashi on Eruvin 100b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:15:2",
+      "Eruvin 100b:15",
+      "Rashi on Eruvin 100b:14:1",
+      "Rashi on Eruvin 100b:14:2"
+    ],
+    "generatedAt": "2026-11-07T19:17:15.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גם בלא דעת</strong> - רישא דהאי קרא אץ ברגלים הוא:"
+  },
+  "Rashi on Eruvin 100b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:15:1",
+      "Eruvin 100b:16"
+    ],
+    "generatedAt": "2026-11-07T19:17:54.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפש לא טוב</strong> - לא טובים הבנים הנעשים בלא דעת האשה שהיה בעלה אץ ברגלים:"
+  },
+  "Rashi on Eruvin 100b:16:1": {
+    "dependsOn": [
+      "Eruvin 100b:16",
+      "Rashi on Eruvin 100b:17:1",
+      "Rashi on Eruvin 100b:17:2"
+    ],
+    "generatedAt": "2026-11-07T19:18:39.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבועל ושונה</strong> - שמטריחה:"
+  },
+  "Rashi on Eruvin 100b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:19:02.558Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יבעול וישנה</strong> - שמחמת ביאה ראשונה נתאוה האשה והולבשה תאוה וכשבא ביאה שניה היא מזרעת תחילה והיכא דהיא מזרעת תחילה יולדת זכר:"
+  },
+  "Rashi on Eruvin 100b:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:17:1"
+    ],
+    "generatedAt": "2026-11-07T19:19:30.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדעת</strong> - האשה:"
+  },
+  "Rashi on Eruvin 100b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:19:54.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבר מצוה</strong> - תשמיש:"
+  },
+  "Rashi on Eruvin 100b:18:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:18:2",
+      "Rashi on Eruvin 100b:18:1"
+    ],
+    "generatedAt": "2026-11-07T19:20:43.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נבונים</strong> - מבינים דבר מתוך דבר:"
+  },
+  "Rashi on Eruvin 100b:19:1": {
+    "dependsOn": [
+      "Eruvin 100b:18",
+      "Rashi on Eruvin 100b:18:1",
+      "Rashi on Eruvin 100b:18:2"
+    ],
+    "generatedAt": "2026-11-07T19:21:28.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יששכר</strong> - לאה תבעה את יעקב לדבר מצוה ותאמר אלי תבוא כי שכר שכרתיך וגו':"
+  },
+  "Rashi on Eruvin 100b:1:1": {
+    "dependsOn": [
+      "Eruvin 100b:1"
+    ],
+    "generatedAt": "2026-11-07T18:58:00.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא קא עביד איסורא</strong> - כשהוא יושב ואינו נותן הלאו דבל תגרע והעשה דונתן על קרנות נעקרין מאליהן אבל זה ישיבתו תשמיש הוא שהוא משתמש באילן:"
+  },
+  "Rashi on Eruvin 100b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:21:46.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צער עבור</strong> - עוברות חולות הן:"
+  },
+  "Rashi on Eruvin 100b:21:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:22:04.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמשמעו</strong> - צער הלידה:"
+  },
+  "Rashi on Eruvin 100b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:22:23.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתוקקת</strong> - מתאוה לתשמיש:"
+  },
+  "Rashi on Eruvin 100b:22:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:22:1",
+      "Rashi on Eruvin 100b:22:2",
+      "Rashi on Eruvin 100b:22:3"
+    ],
+    "generatedAt": "2026-11-07T19:22:51.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא ימשל בך</strong> - שהוא מושל לומר בפה תאות לבו והאשה בלב ובושה להוציא בפה:"
+  },
+  "Rashi on Eruvin 100b:22:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:22:1",
+      "Rashi on Eruvin 100b:22:2",
+      "Rashi on Eruvin 100b:22:3",
+      "Eruvin 100b:22",
+      "Rashi on Eruvin 100b:18:1",
+      "Rashi on Eruvin 100b:18:2",
+      "Rashi on Eruvin 100b:21:1"
+    ],
+    "generatedAt": "2026-11-07T19:23:37.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:22:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמרצייא ארצויי קמיה</strong> - מראה לפניו עניני חיבה:"
+  },
+  "Rashi on Eruvin 100b:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:24:20.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עטופה כאבל</strong> - בושה לצאת בראשה פרוע:"
+  },
+  "Rashi on Eruvin 100b:24:2": {
+    "dependsOn": [
+      "Eruvin 100b:24",
+      "Rashi on Eruvin 100b:24:1",
+      "Rashi on Eruvin 100b:24:2",
+      "Rashi on Eruvin 100b:24:3"
+    ],
+    "generatedAt": "2026-11-07T19:24:58.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנודה לכל אדם</strong> - לקמיה מפרש שאסורה לכל אדם חוץ מבעלה והאיש נושא נשים הרבה:"
+  },
+  "Rashi on Eruvin 100b:24:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:24:1",
+      "Rashi on Eruvin 100b:24:2"
+    ],
+    "generatedAt": "2026-11-07T19:25:45.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:24:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחבושה בבית האסורים</strong> - כל כבודה בת מלך פנימה:"
+  },
+  "Rashi on Eruvin 100b:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:26:01.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלילית</strong> - שד:"
+  },
+  "Rashi on Eruvin 100b:26:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:26:1",
+      "Rashi on Eruvin 100b:26:3"
+    ],
+    "generatedAt": "2026-11-07T19:26:42.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבהמה</strong> - שכורעת כשהיא משתנת ודרך פרידה לעשות כן:"
+  },
+  "Rashi on Eruvin 100b:26:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:26:59.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:26:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר לבעלה</strong> - שהוא למעלה בשעת תשמיש:"
+  },
+  "Rashi on Eruvin 100b:27:1": {
+    "dependsOn": [
+      "Eruvin 100b:27"
+    ],
+    "generatedAt": "2026-11-07T19:27:28.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבח הוא לה</strong> - יושבת ומשתנת בצניעות ואינה חסרה כלום בדבר ונעשית כר לבעלה אין לה טורח כל כך טורחו מרובה משלה:"
+  },
+  "Rashi on Eruvin 100b:28:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:28:28.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:28:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלפנו</strong> - מלמדנו:"
+  },
+  "Rashi on Eruvin 100b:28:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:28:2",
+      "Rashi on Eruvin 100b:28:1",
+      "Rashi on Eruvin 100b:28:3"
+    ],
+    "generatedAt": "2026-11-07T19:29:12.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:28:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבהמות ארץ</strong> - שנתן בהם חכמה להורות לנו:"
+  },
+  "Rashi on Eruvin 100b:28:3": {
+    "dependsOn": [
+      "Eruvin 100b:28",
+      "Rashi on Eruvin 100b:28:1",
+      "Rashi on Eruvin 100b:28:2",
+      "Rashi on Eruvin 100b:28:3",
+      "Rashi on Eruvin 100b:30:1",
+      "Rashi on Eruvin 100b:30:2",
+      "Rashi on Eruvin 100b:30:3"
+    ],
+    "generatedAt": "2026-11-07T19:29:58.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:28:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמפייס</strong> - הולך ופושט כנפיו והוא פיוס כדאמר לקמן שאומר לה לקנות מלבוש. שמגיע לארץ:"
+  },
+  "Rashi on Eruvin 100b:29:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:30:19.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צניעות מחתול</strong> - שאינו מטיל רעי בפני אדם ומכסה צואתו:"
+  },
+  "Rashi on Eruvin 100b:29:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:29:1",
+      "Rashi on Eruvin 100b:29:2",
+      "Rashi on Eruvin 100b:29:3"
+    ],
+    "generatedAt": "2026-11-07T19:31:35.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:29:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגזל מנמלה</strong> - דכתיב <span class=\"parenthesized\">(משלי ו׳:ח׳)</span> <span class=\"parenthesized\">(אגרה)</span> בקיץ לחמה ואין אחת גוזלת מאכל חברתה:"
+  },
+  "Rashi on Eruvin 100b:29:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:31:58.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:29:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועריות מיונה</strong> - שאינו נזקק אלא לבת זוגו:"
+  },
+  "Rashi on Eruvin 100b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:2:1",
+      "Eruvin 100b:2"
+    ],
+    "generatedAt": "2026-11-07T18:58:36.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יבש</strong> - שאין בו לחלוח ולאו מחובר הוא:"
+  },
+  "Rashi on Eruvin 100b:30:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-07T19:33:13.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:30:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיגא</strong> - מלבוש שקורין קוט\"ה:"
+  },
+  "Rashi on Eruvin 100b:30:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:33:34.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:30:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבתר הכי</strong> - לאחר בעילה שמנענע וכופף ראשו לה לארץ:"
+  },
+  "Rashi on Eruvin 100b:30:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:30:1",
+      "Rashi on Eruvin 100b:30:2",
+      "Rashi on Eruvin 100b:30:3"
+    ],
+    "generatedAt": "2026-11-07T19:34:05.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:30:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אית ליה</strong> - במה ליקח:"
+  },
+  "Rashi on Eruvin 100b:4:1": {
+    "dependsOn": [
+      "Eruvin 100b:4",
+      "Tosafot on Eruvin 77b:5:1"
+    ],
+    "generatedAt": "2026-11-07T18:59:40.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימות החמה</strong> - יבש מותר דליכא אפי' משום מראית העין שהרי ניכר לכל שהוא יבש שאינו מוציא עלין והא דקתני אסור בימות הגשמים שאין ניכר בין לח בין יבש ואיכא משום מראית העין:"
+  },
+  "Rashi on Eruvin 100b:5:1": {
+    "dependsOn": [
+      "Eruvin 100b:5",
+      "Rashi on Eruvin 100b:4:1"
+    ],
+    "generatedAt": "2026-11-07T19:00:40.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא נתרי פירי</strong> - שנשארו בו משנה שעברה ואתי למשרי ביה תלישה דלח נהי דעליה דיבש אטו עליה דלח לא גזרי' דהיא גופא גזירה מיהו תלישה אטו תלישה נגזר:"
+  },
+  "Rashi on Eruvin 100b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:6:2",
+      "Steinsaltz on Eruvin 100b:6:1",
+      "Eruvin 100b:6",
+      "Rashi on Eruvin 100b:5:1"
+    ],
+    "generatedAt": "2026-11-07T19:01:40.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדודא</strong> - יחור שנשרו ענפיו כולם:"
+  },
+  "Rashi on Eruvin 100b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:6:1"
+    ],
+    "generatedAt": "2026-11-07T19:02:29.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקעה מצא</strong> - כלומר אינן בני תורה שידעו להזהר כבקעה זו שאין לה שומר והכל פרוץ:"
+  },
+  "Rashi on Eruvin 100b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 100b:7:1"
+    ],
+    "generatedAt": "2026-11-07T19:03:03.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואץ ברגלים חוטא</strong> - אלמא הלוך נמי חטא קרי ליה והכא איכא חטא שתולש עשבים:"
+  },
+  "Rashi on Eruvin 100b:8:1": {
+    "dependsOn": [
+      "Steinsaltz on Eruvin 100b:8:1",
+      "Steinsaltz on Eruvin 100b:8",
+      "Tosafot on Eruvin 100b:8:1"
+    ],
+    "generatedAt": "2026-11-07T19:03:53.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחים</strong> - אסור דהוי תולש יבשין כתלושין דמי:"
+  },
+  "Rashi on Eruvin 100b:9:1": {
+    "dependsOn": [
+      "Eruvin 100b:9",
+      "Rashi on Eruvin 100b:8:1"
+    ],
+    "generatedAt": "2026-11-07T19:05:27.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 100b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימות החמה</strong> - זרע יש בגבעולין ומשירן:"
+  },
+  "Tosafot on Eruvin 100b:13:1": {
+    "dependsOn": [
+      "Eruvin 100b:13",
+      "Eruvin 100b:11",
+      "Rabbeinu Chananel on Eruvin 100b:3",
+      "Rabbeinu Chananel on Eruvin 100b:4",
+      "Rashba on Eruvin 100b:2",
+      "Rosh on Eruvin 10:14:1",
+      "Tosafot on Eruvin 100b:8:1",
+      "Tosafot on Eruvin 99b:3:1"
+    ],
+    "generatedAt": "2026-11-07T19:12:43.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 100b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאידנא דקי\"ל כר\"ש כולהו שרי</strong> - פי' ר\"ח דהאי היתר לא קאי אלא אעשבים דשרי בכל ענין אבל באילן אין להוכיח שם שום היתר אפילו יבש דשייך למיגזר טפי משום דמנכרא מילתא:"
+  },
+  "Tosafot on Eruvin 100b:8:1": {
+    "dependsOn": [
+      "Eruvin 100b:8",
+      "Rashi on Eruvin 100b:8:1"
+    ],
+    "generatedAt": "2026-11-07T19:04:46.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 100b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא הא בלחים הא ביבשים</strong> - וא\"ת והא לעיל אסרינן ביבש דפריך והא נתרי קינסי כו' וי\"ל דבאילן שהוא גבוה שייך למגזר טפי משום דמינכר ביה ניתרי קינסי:"
+  }
+}

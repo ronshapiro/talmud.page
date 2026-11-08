@@ -1,0 +1,299 @@
+{
+  "Rashi on Eruvin 69a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:10:1",
+      "Rashi on Eruvin 69a:10:2"
+    ],
+    "generatedAt": "2026-11-07T00:45:27.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזהו ישראל מומר</strong> - דחשבינן ליה מומר לכל מילי:"
+  },
+  "Rashi on Eruvin 69a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:10:1",
+      "Rashi on Eruvin 68b:1:1"
+    ],
+    "generatedAt": "2026-11-07T00:46:53.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' מאיר ורבנן</strong> - במס' בכורות בפר' עד כמה <span class=\"parenthesized\">(בכורות דף ל:)</span>:"
+  },
+  "Rashi on Eruvin 69a:2:1": {
+    "dependsOn": [
+      "Eruvin 69a:2"
+    ],
+    "generatedAt": "2026-11-07T00:08:04.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא אינו אוסר</strong> - לר\"מ:"
+  },
+  "Rashi on Eruvin 69a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:16:1",
+      "Eruvin 69a:3",
+      "Rashi on Eruvin 69a:3:2",
+      "Rashi on Eruvin 69a:3:3",
+      "Rashi on Eruvin 69a:3:4"
+    ],
+    "generatedAt": "2026-11-07T00:09:47.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא:"
+  },
+  "Rashi on Eruvin 69a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:3:1",
+      "Rashi on Eruvin 69a:3:3",
+      "Rashi on Eruvin 69a:3:4"
+    ],
+    "generatedAt": "2026-11-07T00:10:15.934Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שלא נתן כו'</strong> - אישראל שלא עירב קאי:"
+  },
+  "Rashi on Eruvin 69a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:3:1",
+      "Rashi on Eruvin 69a:3:2",
+      "Rashi on Eruvin 69a:3:4"
+    ],
+    "generatedAt": "2026-11-07T00:11:06.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול לבטל</strong> - אע\"ג דמומר הוא לחלל שבת יכול לבטל:"
+  },
+  "Rashi on Eruvin 69a:3:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:3:3",
+      "Rashi on Eruvin 69a:3:1",
+      "Rashi on Eruvin 69a:3:2",
+      "Rashi on Eruvin 68b:17:1"
+    ],
+    "generatedAt": "2026-11-07T00:12:36.974Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במזיד אין יכול לבטל</strong> - קסבר ר' יהודה מחלל שבת אין יכול לבטל בלא שכירות:"
+  },
+  "Rashi on Eruvin 69a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:4:2"
+    ],
+    "generatedAt": "2026-11-07T00:19:22.781Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסר</strong> - דהדר שקליה לרשותיה ובשוגג נמי קנסו שוגג אטו מזיד:"
+  },
+  "Rashi on Eruvin 69a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:4:1",
+      "Eruvin 69a:3",
+      "Eruvin 69a:2",
+      "Eruvin 69a:1",
+      "Eruvin 69a:5"
+    ],
+    "generatedAt": "2026-11-07T00:21:53.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים</strong> - ר\"מ קאמר לה דאילו ר' יהודה ללישנא דמתני' קאמר דלא מהניא חזקה וללישנא דברייתא דקאמר ר' יהודה עד שלא תחשך טעמא לאו משום דלא מהניא חזקה הוא אלא משום דקסבר הרי הוא כעובד כוכבים וגבי ישראל שביטל איכא למימר דאפי' לר' יהודה מהניא חזקה ובמה דברים אמורים דברי הכל הוא:"
+  },
+  "Rashi on Eruvin 69a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T00:24:04.089Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן</strong> - לר' יהודה עד שלא יוציא אלמא מהני ביטול כל כמה דלא הדר ביה ובחזקה הוא דפליג דקסבר לא מהניא:"
+  },
+  "Rashi on Eruvin 69a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T00:27:05.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - מתני' דמשמע צדוקי מבטל במומר לחלל בצנעא:"
+  },
+  "Rashi on Eruvin 69a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:7:2"
+    ],
+    "generatedAt": "2026-11-07T00:33:39.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גילוי פנים</strong> - חצוף:"
+  },
+  "Rashi on Eruvin 69a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:7:1",
+      "Rashi on Eruvin 69a:8:1",
+      "Rashi on Eruvin 69a:8:2"
+    ],
+    "generatedAt": "2026-11-07T00:35:27.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומר הוי</strong> - בתמיה וכי משום גילוי פנים חשיב ליה מומר:"
+  },
+  "Rashi on Eruvin 69a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T00:35:51.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומר בגילוי פנים</strong> - בפרהסיא:"
+  },
+  "Rashi on Eruvin 69a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:8:1",
+      "Eruvin 69a:8",
+      "Eruvin 69a:6",
+      "Rashi on Eruvin 69a:3:1",
+      "Rashi on Eruvin 69a:3:2",
+      "Rashi on Eruvin 69a:4:1",
+      "Rashi on Eruvin 69a:4:2",
+      "Rashi on Eruvin 69a:5:1",
+      "Rashi on Eruvin 69a:6:1",
+      "Rashi on Eruvin 69a:7:1"
+    ],
+    "generatedAt": "2026-11-07T00:37:28.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' יהודה</strong> - דלר\"מ מומר לחלל שבת בפרהסיא מבטל:"
+  },
+  "Rashi on Eruvin 69a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:9:2"
+    ],
+    "generatedAt": "2026-11-07T00:41:02.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחומרתא דמדושא</strong> - טבעת שחותמה ממין אחר ואמרי' במסכת שבת <span class=\"parenthesized\">(דף נט:)</span> היא של אלמוג וחותמה של מתכת אסור לצאת בה חומרתא חותם מדושא לא אתפרש ובדקתי במס' שבת ולא נשנית שם לענין שבת אלא לענין טומאה ואומר אני חומרתא דמדושא קשר של בושם אחד ממיני הבשמים וכי האי גוונא אמרי' בשבת <span class=\"parenthesized\">(דף סב.)</span> דאין יוצאין בחומרתא דפילון וחייב עליו חטאת משום דמשאוי הוא ואינו תכשיט אדם:"
+  },
+  "Rashi on Eruvin 69a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T00:42:21.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 69a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון זה</strong> - שמחלל שבת בצנעא:"
+  },
+  "Tosafot on Eruvin 69a:10:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Eruvin 69a:8",
+      "Maharshal: Chokhmat Shlomo on Eruvin 69b:1"
+    ],
+    "generatedAt": "2026-11-07T00:48:41.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 69a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי כר\"מ אפי' בא' מכל איסורין נמי</strong> - וה\"נ תניא בהדיא בבכורות בפ' עד כמה <span class=\"parenthesized\">(בכורות ד' ל.)</span> נחשד לדבר אחד נחשד לכל התורה כולה דברי ר\"מ ותימה דבפ' זה בורר <span class=\"parenthesized\">(סנהדרין דף כז.)</span> גבי פלוגתא דאביי ורבא דאוכל נבלות להכעיס ורבא אמר כשר בעי לאוקומי רבא כר' יוסי דאמר הוזם בדיני ממונות כשר בדיני נפשות ומשני דרבא אפי' כר\"מ דאמר עד זומם פסול לכל התורה כולה דע\"כ לא קאמר ר\"מ התם אלא גבי עד זומם דממון דרע לשמים ולבריות אבל הכא דרע לשמים ולא לבריות לא שמע מיניה דלית ליה לר\"מ חשוד לאחד מכל האסורין להוי חשוד לכל התורה כולה לרבא דלא אמר מקילתא לחמירתא אלא בעד זומם דממון דווקא דרע לשמים ורע לבריות ומיהו לאביי דהתם ניחא וקיי\"ל כוותיה וי\"ל דאפי' לרבא חשוד לדבר אחד דרע לשמים ולא לבריות חשוד לכל התורה כולה בכיוצא בה דרע לשמים ולא לבריות אפי' מקילתא לחמירתא וחשוד לדבר אחד דרע לשמים ורע לבריות חשוד לכל התורה כולה אפילו רע לשמים ורע לבריות:"
+  },
+  "Tosafot on Eruvin 69a:1:1": {
+    "dependsOn": [
+      "Eruvin 69a:1"
+    ],
+    "generatedAt": "2026-11-07T00:07:18.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 69a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנן מי שנתן רשות כו'</strong> - הא דפריך אברייתא טפי מאמתני' משום דבברייתא מסיים בה דברי ר\"מ:"
+  },
+  "Tosafot on Eruvin 69a:3:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 69a:1:1",
+      "Tosafot on Eruvin 68b:1:1",
+      "Tosafot on Eruvin 68b:2:1"
+    ],
+    "generatedAt": "2026-11-07T00:18:47.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 69a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוציא בין בשוגג בין במזיד יכול לבטל</strong> - <span class=\"rashi-quotation\">פירש בקונט'</span> אע\"ג דמומר הוא לחלל שבת יכול לבטל ר' יהודה אומר במזיד אינו יכול לבטל קסבר מומר לחלל שבת אינו יכול לבטל בלא שכירות ומדתולה טעם <span class=\"rashi-quotation\">בקונטרס</span> משום מומר צריך לומר דבפרהסיא קאמר כדמסיק דדוקא בפרהסיא לר' יהודה אינו יכול לבטל רשות ואפ\"ה לר\"מ מבטל רשות ובסמוך נמי דקאמר מומר בגילוי פנים אינו מבטל רשות כמאן כר' יהודה <span class=\"rashi-quotation\">פירש בקונט'</span> דלר\"מ במומר לחלל שבת בפרהסיא מבטל ותימה דבמתני' קתני צדוקי הרי הוא כנכרי כדמסיק לעיל ומשמע בריש פירקין דרישא דמתני' ר\"מ וי\"ל דודאי כולה מתניתא עד ר' יהודה ר\"מ קתני לה כדמסיים בה בברייתא דברי ר\"מ דר\"מ שונה דברי רבותיו דברי חכמים ודברי ר\"ג ואפשר דסבר כר\"ג דאמר צדוקי אינו כנכרי ועוד מדפליגי ר\"מ ור' יהודה אליבא דר\"ג משמע נמי דכר\"ג סבירא ליה ומיהו לא משמע כלל לפרש ברייתא זו מטעם מומר חדא דלמה ליה למנקט הוציא הוה ליה למימר שחילל שבת בכל מלאכה שחילל ועוד דמשמע דמשום דהוציא בשבת זו דקתני עד שלא נתן רשותו הוציא ועוד דמשמע סתם הוציא בכל ענין בין בצנעא בין בפרהסיא כמו מי שנתן רשותו והוציא דסיפא ומפרש ר\"י דהכא לאו מטעם מומר קאמר דמומר לא שייך אלא באדם הרגיל לחלל שבתות ואינו נזהר כלל אבל הכא לא ברגיל איירי אלא שבמקרה בעלמא אירע כך שהוציא שהיה דחוק לפי שעה ואם בשבת שעברה עשה כן אפי' במזיד לא היה מזיק כלום אפי' לר' יהודה דלאו מומר הוא כדפירשתי אלא דוקא בשבת זו דמאחר שהחזיק ברשותו אינו יכול לבטל כמו החזיק אחר ביטול דאין יכול עוד לבטל ור\"מ סבר דיכול לבטל משום דלא חשיב מחזיק כיון שאחר הנתינה לא החזיק:"
+  },
+  "Tosafot on Eruvin 69a:6:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 69a:6:1",
+      "Rashi on Eruvin 69a:4:1",
+      "Rashi on Eruvin 69a:4:2",
+      "Rashi on Eruvin 69a:3:1",
+      "Rashi on Eruvin 69a:3:2",
+      "Rashi on Eruvin 69a:3:3",
+      "Rashi on Eruvin 69a:3:4"
+    ],
+    "generatedAt": "2026-11-07T00:32:32.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן במומר לחלל שבתות בפרהסיא</strong> - לפירוש <span class=\"rashi-quotation\">הקונט'</span> שהוציא במזיד דלעיל חשיב מומר אפי' במילי דרבנן וכן משמע מדלא משני הא והא בפרהסיא הא בדאורייתא הא בדרבנן ותימה דהא סתם צדוקי אינו נזהר כלל במילי דרבנן אפי' בפרהסיא וכותים נמי שהיו מבטלים ונותנים רשות קודם שגזרו עליהם ר' אמי ור' אסי בפ\"ק דחולין <span class=\"parenthesized\">(דף ו:)</span> הא סתם כותים אינם מאמינים בדברי חכמים ואפי' בפרהסיא ולא מזדהרי וי\"ל שרגילים הם ליזהר לפי שיראים מחכמים כדאשכחן בנדה פרק בנות כותים <span class=\"parenthesized\">(נדה דף לג: אע\"פ שצדוקים אנו מתיראין אנו מפני הפרושים:"
+  },
+  "Tosafot on Eruvin 69a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 69a:9:1",
+      "Rashi on Eruvin 69a:9:2",
+      "Moed Katan 12b:12",
+      "Moed Katan 12b:13",
+      "Tosafot on Shabbat 46b:1:1"
+    ],
+    "generatedAt": "2026-11-07T00:44:31.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 69a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דחזיה לר' יהודה נשיאה כסייה</strong> - וא\"ת והא ר' יהודה נשיאה גופיה נפק בחומרתא דמדושא כדאמרי' במועד קטן בפרק מי שהפך <span class=\"parenthesized\">(מועד קטן דף יב:)</span> ותירץ ר\"ח דהאי גברא דהכא נפק ברשות הרבים והתם בחצר ותימה אפי' בחצר משמע התם דאסור דקאמר על ר' אמי דאיקפד מאי טעמא איקפד אי משום חומרתא דמדושא והא תניא השירים והנזמים והטבעות הרי הן ככל הכלים הניטלין בחצר ואמר עלה דההיא ברייתא בסוף פרק כירה <span class=\"parenthesized\">(שבת דף מו:)</span> אמר עולא מאי טעמא הואיל ואיכא תורת כלי עליהן ומדנקט טעמא דתורת כלי משמע דאסור להתקשט בהם בחצר דלא חזו בשבת ואפ\"ה שרי לצורך גופו ולצורך מקומו כמו כל דבר שיש תורת כלי עליו אע\"פ שמלאכתו לאיסור כדאמר בפרק במה אשה <span class=\"parenthesized\">(שבת דף סד:)</span> כל מקום שאסרו חכמים לצאת בו לרה\"ר אסור לצאת בו לחצר חוץ מכבול ופאה נכרית ואור\"י דודאי שירים ונזמים וטבעות אסור להתקשט בהם בחצר שמא יצא בהן לרה\"ר וברשות הרבים אסור דילמא שליף ומחוי ולא חשיב גזירה לגזירה אבל חומרתא דמדושא אינו תכשיט כלל ואפי' הוציאה באצבעו לחצר ליכא איסור משום תכשיט דלאו תכשיט הוא אלא איסור טלטול בעלמא הוא דאיכא כלשון ראשון <span class=\"rashi-quotation\">שפירש בקונט'</span> טבעת שחותמה ממין אחר ולא כלשון ב' שפירש קשר של בשמים וכן במועד קטן <span class=\"parenthesized\">(דף יב:)</span> דמדמה להו לשירים ונזמים וטבעות ור' יהודה נשיאה לצורך גופו ולצורך מקומו אפקינהו כגון לטייל בהם את התינוק או שאר עניינים ומשום הכי קאמר מ\"ט איקפד דאיסור טלטול ליכא שהרי יש עליה תורת כלי כדתניא השירים והנזמים שהם כשאר כלים שמלאכתן לאיסור שניטלין לצורך גופן וכיון דאיסור טלטול ליכא איסור תכשיט פשיטא דליכא דאינו עשוי לתכשיט אלא כמו עץ בעלמא שעשוי לחתום בה חותמות ור\"ת מפרש דתרוייהו נפקי לרה\"ר ר' יהודה נשיאה באצבעותיו וההוא גברא בקומצו ואם היה מותר לטלטל היה יכול להתקשט בו לרה\"ר שתכשיט הוא ולא שייך למגזר באיש שליף ומחוי לכך לא הוצרך להביא ראיה אלא על הטלטול דלא חשיב כחתיכה של מתכת או של עץ דעלמא ומיהו קשה לר\"י דזה היה יכול לדקדק מן מתני' דפ' במה אשה יוצאה <span class=\"parenthesized\">(שבת דף נז.)</span> דתנן בטבעת שאין עליה חותם לא תצא ואם יצאה אינה חייבת חטאת ש\"מ דחשיב ראויות לתכשיט ועוד דלישנא דנפק לא משמע בקומצו:"
+  }
+}

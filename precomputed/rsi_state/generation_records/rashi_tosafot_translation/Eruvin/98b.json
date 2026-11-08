@@ -1,0 +1,435 @@
+{
+  "Rashi on Eruvin 98b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:25:36.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתמש בכל הכותל</strong> - אם הזיז מוטל לארכו אצל הכותל על פני כולו משתמש בכל הזיז:"
+  },
+  "Rashi on Eruvin 98b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:26:20.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד עשרה התחתונים</strong> - כלומר כל מקום שהוא בין סמוך לחלון מיד בין מופלג הימנו הרבה ובלבד שלא יהא בתוך עשרה תחתונים שברשות הרבים:"
+  },
+  "Rashi on Eruvin 98b:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:26:59.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה הימנו</strong> - למעלה מעשרה:"
+  },
+  "Rashi on Eruvin 98b:10:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:27:33.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתמש בו</strong> - בתחתון ע\"פ כל הכותל אם מונח לאורכו אצל הכותל:"
+  },
+  "Rashi on Eruvin 98b:11:1": {
+    "dependsOn": [
+      "Eruvin 98b:11",
+      "Rashi on Eruvin 98b:11:2",
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:29:34.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי זיז</strong> - עליון היכי דמי:"
+  },
+  "Rashi on Eruvin 98b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:11:2",
+      "Rashi on Eruvin 98b:11:1"
+    ],
+    "generatedAt": "2026-11-07T16:30:41.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דלית ביה ארבעה מקום פטור הוא</strong> - ואפילו כנגד חלונו לא לשתמש נהי דמקום פטור הוא ומותר לכתף עליו כדקי\"ל מקום שאין בו ארבעה מותר לבני רה\"ר ולבני רה\"י לכתף עליו מיהו תשמיש תדיר לא משתרי ביה דלא חזי לתשמישתא ושכיחי כלים למיפל לרה\"ר ואע\"ג דאוקמינן בכלים הנשברים הני מילי בדאית ביה ד' דלא שכיחי למיפל כולי האי אבל הכא דרובא נפלי מחזי כמאן דשדי להדיא לרשות הרבים:"
+  },
+  "Rashi on Eruvin 98b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:12:1"
+    ],
+    "generatedAt": "2026-11-07T16:34:35.433Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חורי חלון הוא</strong> - כלומר זוית החלון והרחבתו הוא ולשון חורי דנקט משום דגבי שבת שייך למימר חורי רשות הרבים כרשות הרבים וכן חורי רה\"י כרה\"י דמי כגון כותל הסמוכה לרה\"ר ויש בה חורין פתוחין לרה\"ר למטה מיו\"ד הוי רה\"ר:"
+  },
+  "Rashi on Eruvin 98b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:13:2"
+    ],
+    "generatedAt": "2026-11-07T16:36:13.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עומד אדם ברה\"י</strong> - בבית או על הגג ושוחה ונוטל חפץ ברה\"ר כאן ומניחו כאן:"
+  },
+  "Rashi on Eruvin 98b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:13:1"
+    ],
+    "generatedAt": "2026-11-07T16:36:53.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יוציאנו מארבע אמותיו</strong> - ממקום שהיה מונח בו ואשמועי' מתניתין דלא גזרינן שמא יכניסנו אצלו:"
+  },
+  "Rashi on Eruvin 98b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:37:15.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישתין ברה\"ר</strong> - דמפיק מרה\"י לרה\"ר:"
+  },
+  "Rashi on Eruvin 98b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:15:2",
+      "Steinsaltz on Eruvin 98b:15",
+      "Eruvin 99a:13",
+      "Eruvin 99a:14",
+      "Rashi on Eruvin 99a:13:1",
+      "Rashi on Eruvin 99a:14:1",
+      "Eruvin 98b:13",
+      "Eruvin 98b:14",
+      "Rashi on Eruvin 98b:14:1"
+    ],
+    "generatedAt": "2026-11-07T16:40:35.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משנתלש רוקו בפיו</strong> - משנתגאל ונאסף לצאת:"
+  },
+  "Rashi on Eruvin 98b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:40:56.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יהלך ארבע אמות עד שירוק</strong> - דכיון דלמשדייא קאי משאוי הוא:"
+  },
+  "Rashi on Eruvin 98b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:16:2",
+      "Rashi on Eruvin 98b:13:2"
+    ],
+    "generatedAt": "2026-11-07T16:45:25.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתני ליה רב כו'</strong> - גזירה שמא יכניסנו אצלו:"
+  },
+  "Rashi on Eruvin 98b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:16:1",
+      "Rashi on Eruvin 98b:13:1",
+      "Rashi on Eruvin 98b:13:2",
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2",
+      "Rashi on Eruvin 2a:1:3",
+      "Rashi on Eruvin 2b:1:1",
+      "Rashi on Eruvin 2b:2:1"
+    ],
+    "generatedAt": "2026-11-07T16:47:32.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועבדת כר\"מ</strong> - דאיהו הוא דגזר שמא יביא אצלו כדלקמן בפירקין [עירובין דף קא.] לא יעמוד ברשות היחיד ויפתח ברשות הרבים שיטול מפתח ברשות הרבים ויפתח בו פתח הסמוך לרשות הרבים שמא יכניס אצלו במקום שהוא:"
+  },
+  "Rashi on Eruvin 98b:1:1": {
+    "dependsOn": [
+      "Eruvin 98b:1"
+    ],
+    "generatedAt": "2026-11-07T16:04:39.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה משלשה</strong> - הגיע ראש הספר לשלשה סמוך לקרקע ארעא סמיכתא הוא והרי הוא כמונח:"
+  },
+  "Rashi on Eruvin 98b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:3:2",
+      "Rashi on Eruvin 98b:3:3",
+      "Rashi on Eruvin 98a:1:1",
+      "Rashi on Eruvin 98a:2:1",
+      "Rashi on Eruvin 98b:1:1"
+    ],
+    "generatedAt": "2026-11-07T16:07:47.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא דאמר רבא</strong> - בפ' הזורק במס' שבת <span class=\"parenthesized\">(דף ק.)</span>:"
+  },
+  "Rashi on Eruvin 98b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:3:1",
+      "Rashi on Eruvin 98b:3:3"
+    ],
+    "generatedAt": "2026-11-07T16:08:59.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך שלשה לרבנן</strong> - דפליגי עליה דר\"ע בקלוטה כמי שהונחה ואמרי דהזורק מרשות היחיד לרשות היחיד דרך רשות הרבים למטה מעשרה לא אמרינן הואיל ונקלטה ביו\"ד תחתונים שהן רה\"ר הרי היא כמי שהונחה לחייבו אפי' זרק למטה משלשה לא מיחייב אם עד שלא הגיע לארץ נשרף או בלעו כלב אלא אם כן נח על גבי משהו ואפילו לא הוי מקום ארבעה הויא הנחה ולמעלה משלשה אם נח פטור ואפי' לר\"ע דאי מקום ארבעה הוא כרמלית הוא ואי לית ביה ארבעה מקום פטור הוא:"
+  },
+  "Rashi on Eruvin 98b:3:3": {
+    "dependsOn": [
+      "Eruvin 98b:3",
+      "Rashi on Eruvin 98b:3:1",
+      "Rashi on Eruvin 98b:3:2"
+    ],
+    "generatedAt": "2026-11-07T16:10:58.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא כתנאי אמרה לשמעתיה</strong> - דהא תנא קמא אפילו כי לא נח נמי גזר למטה מג' משום דילמא זמנין דאין אגדו בידו ולרבא כי אין אגדו בידו נמי כי האי גוונא דלא נח לא מיחייב אם קלטו והחזירו קודם שנח:"
+  },
+  "Rashi on Eruvin 98b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:6:1"
+    ],
+    "generatedAt": "2026-11-07T16:17:35.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיז שלפני החלון</strong> - בולט מן הכותל גבוה י' ורחב ד':"
+  },
+  "Rashi on Eruvin 98b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:6:1",
+      "Rashi on Eruvin 98b:6:2",
+      "Eruvin 98b:7"
+    ],
+    "generatedAt": "2026-11-07T16:19:55.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותנין עליו</strong> - בני עלייה דרה\"י הוא:"
+  },
+  "Rashi on Eruvin 98b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:7:1",
+      "Rashi on Eruvin 98b:7:2"
+    ],
+    "generatedAt": "2026-11-07T16:20:24.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמפיק להיכן</strong> - להיכן בולט:"
+  },
+  "Rashi on Eruvin 98b:7:2": {
+    "dependsOn": [
+      "Eruvin 98b:6",
+      "Rashi on Eruvin 98b:7:1"
+    ],
+    "generatedAt": "2026-11-07T16:21:08.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמפיק לרה\"י</strong> - לחצר:"
+  },
+  "Rashi on Eruvin 98b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:24:33.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלים הנשברים</strong> - כלי חרס וזכוכית שאם נפלו ישברו דליכא למימר דילמא אזיל ומייתי להו:"
+  },
+  "Rashi on Eruvin 98b:9:1": {
+    "dependsOn": [
+      "Eruvin 98b:9"
+    ],
+    "generatedAt": "2026-11-07T16:25:06.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קערות וכוסות וקיתוניות</strong> - כולם כלים הנשברים הם דסתמייהו דחרס:"
+  },
+  "Tosafot on Eruvin 98b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:10:1",
+      "Rashi on Eruvin 98b:10:2",
+      "Rashi on Eruvin 98b:10:3",
+      "Rashi on Eruvin 98b:10:4"
+    ],
+    "generatedAt": "2026-11-07T16:28:25.154Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשתמש בכל הכותל עד עשרה תחתונים</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> אם הזיז מוטל לארכו על פני כל הכותל משתמש בכל הזיז וקשה לר\"י דהיינו סיפא דקתני אם יש זיז למטה הימנו משתמש בו ומפרש ר\"י דבחורין שבכותל קאמר דמשתמש ולשון משתמש בכל הכותל משמע נמי כן:"
+  },
+  "Tosafot on Eruvin 98b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98b:11:1",
+      "Rashi on Eruvin 98b:11:2",
+      "Eruvin 98b:11",
+      "Tosafot on Eruvin 98b:10:1",
+      "Tosafot on Eruvin 98b:3:1",
+      "Tosafot on Eruvin 98b:4:1",
+      "Rashi on Eruvin 98b:6:1",
+      "Rashi on Eruvin 98b:6:2",
+      "Tosafot on Eruvin 2a:1:1",
+      "Tosafot on Eruvin 2a:2:1",
+      "Tosafot on Eruvin 2a:3:1",
+      "Tosafot on Eruvin 2b:1:1",
+      "Tosafot on Eruvin 3a:1:1",
+      "Maharsha on Eruvin 98b:4"
+    ],
+    "generatedAt": "2026-11-07T16:33:23.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי דלית ליה ארבע אפי' כנגד חלונו נמי לא ישתמש</strong> - משמע מפירוש <span class=\"rashi-quotation\">הקונט'</span> דברחב ד' משתמש בכלים הנשברים אבל שאין רחב לא ישתמש אפי' כלים הנשברים דהוי כאילו שדי להו להדיא וקשה לר\"י דכיון דאפילו ברחב ד' לא ישתמש בכלים שאין נשברין א\"כ אפילו רחב מאה אמה נמי דלענין שבת חשיב רחב ד' כרחב אלף ונראה לר\"י דברחב ד' שרי ליתן אפילו כלים שאינן נשברים ומתני' ברחב כל שהוא והא דלא מוקי לה ברחב ד' ובכל כלים משום דסתם זיז אינו רחב ד' וכי פריך הש\"ס אי דלית ביה ארבעה אפילו כנגד חלונו לא ישתמש ה\"מ למיפרך אפי' בשלמטה הימנו לא ישתמש והא דלא משני ליה דבכלים הנשברים איירי היינו משום דלא מיתוקמא בהכי ע\"כ מדלא שרי בשאר הכותל אלא כנגד חלונו בלבד:"
+  },
+  "Tosafot on Eruvin 98b:12:1": {
+    "dependsOn": [
+      "Eruvin 98b:12",
+      "Tosafot on Eruvin 98b:10:1",
+      "Tosafot on Eruvin 98b:11:1",
+      "Tosafot on Eruvin 98b:3:1",
+      "Tosafot on Eruvin 98b:4:1",
+      "Tosafot on Eruvin 98b:7:1"
+    ],
+    "generatedAt": "2026-11-07T16:35:40.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחתון דאית ביה ד'</strong> - ק\"ק דמעליון שמעינן ליה דשרינן כנגד חלונו משום דחלון משלימתו לד' ויש לומר דאיצטריך לאשמועינן בתחתון אף על גב דלא ניחא תשמישתא דהא איכא עליון דמפסיק:"
+  },
+  "Tosafot on Eruvin 98b:3:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Eruvin 98b:2",
+      "Chidushei Halachot on Eruvin 98b:1"
+    ],
+    "generatedAt": "2026-11-07T16:13:13.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא כתנאי אמרה לשמעתיה</strong> - אע\"ג דלא ניחא הכא לאוקמי מילתא דרבא בפלוגתא דתנאי דמתני' מ\"מ ע\"כ אשכחן ברייתא דפליגא עליה במסכת שבת בפ' הזורק <span class=\"parenthesized\">(שבת דף צז.)</span> גבי הזורק מרה\"י לרה\"י ורה\"ר באמצע דקתני בברייתא תוך ג' ד\"ה חייב אי נמי יש לחלק דהכא שבא החפץ מלמעלה מג' למטה לתוך ג' הוא דבעי רבא הנחה על גבי משהו אבל התם איירי שהיה החפץ תוך ג' משיצא מתחת ידו להכי חשיב כמונח דהא מודה רבא דהמעביר בתוך שלשה דכמונח בקרקע דמי כדמוכח בפרק המוציא יין <span class=\"parenthesized\">(שבת דף פ.)</span> והא דלא חשבינן מתגלגל כמונח בסוף הזורק <span class=\"parenthesized\">(שבת דף ק.)</span> התם איירי כשהיתה תחילת זריקה למעלה מג':"
+  },
+  "Tosafot on Eruvin 98b:4:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 98b:3:1",
+      "Shabbat 97b:6-10",
+      "Shabbat 97b:11-15"
+    ],
+    "generatedAt": "2026-11-07T16:16:58.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כולה רבי יהודה היא</strong> - תימה דבשבת בפרק הזורק <span class=\"parenthesized\">(שבת דף צז:)</span> בעי למימר דסבר ר' יהודה קלוטה כמו שהונחה גבי הזורק מרה\"י לרה\"ר ועבר ד' אמות ברה\"ר ולמסקנא דהתם ניחא דמוקי לה כגון דאמר כדנפקא לרה\"ר תנוח דמסתבר טפי למימר התם קלוטה כמו שהונחה כיון שהיה דעתו ורצונו שתנוח שם אבל הכא דאין רצונו . שיפול שם הספר אין לנו לומר שיהא כמונח אבל למאי דס\"ד התם מעיקרא דמיחייב שתים ובאומר כל מקום שתרצה שם תנוח קשה ויש לחלק דהתם אינו מקפיד על החפץ אנה שינוח אבל הכא מקפיד ומרצונו היה חפץ שלא היה שם מונח אבל לרבא קשיא דאפי' באומר כל מקום שתרצה תנוח בעי רבא הנחה על גבי משהו דמקפיד אפילו נח על גבי משהו לא מיחייב דלא נעשית מחשבתו וצריך לומר דלמאי דס\"ד התם מעיקרא לית ליה דרבא ועוד יש לומר כדפרישית לעיל דהתם כשתחילת זריקתו תוך שלשה:"
+  },
+  "Tosafot on Eruvin 98b:7:1": {
+    "dependsOn": [
+      "Eruvin 98b:7",
+      "Tosafot on Eruvin 98b:3:1",
+      "Tosafot on Eruvin 98b:4:1",
+      "Tosafot on Eruvin 84a:15:1",
+      "Tosafot on Eruvin 84a:15:2",
+      "Maharsha on Eruvin 98b:2",
+      "Chidushei Halachot on Eruvin 98b:2",
+      "Eruvin 84a:15",
+      "Tosafot on Eruvin 98a:5:1"
+    ],
+    "generatedAt": "2026-11-07T16:24:08.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניחוש דילמא נפיל ואתי לאיתויי</strong> - ואי דמפיק לכרמלית או לחצר שאינה מעורבת לרבא דלית ליה לקמן <span class=\"parenthesized\">(עירובין צט.)</span> גזירה לגזירה פשיטא דשרי דלא איצטריך למיתני ולאביי דגזר אסור כמו במפיק לרה\"ר ועוד נראה מדמשני אביי לעולם דמפיק לרה\"ר משמע דבמפיק לכרמלית או לחצר שאינה מעורבת שרי אפילו כלים שאינן נשברים ואע\"ג דלקמן גזר אביי גזירה לגזירה יש לחלק כמו שפירשתי לעיל ובפרק כיצד משתתפין <span class=\"parenthesized\">(לעיל עירובין דף פד.)</span> גבי אנשי חצר. ואנשי עלייה ששכחו ולא עירבו דקתני זיז היוצא מן הכותל בעשרה דעלייה הוי לעלייה אפילו הניח שם כלים שאינם נשברים:"
+  }
+}

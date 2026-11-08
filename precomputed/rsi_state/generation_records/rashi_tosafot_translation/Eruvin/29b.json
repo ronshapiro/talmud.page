@@ -1,0 +1,541 @@
+{
+  "Rashi on Eruvin 29b:10:1": {
+    "dependsOn": [
+      "Eruvin 29b:10",
+      "Rashi on Eruvin 29b:4:1"
+    ],
+    "generatedAt": "2026-11-05T21:17:46.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל אביי</strong> - מהא לא תשמע דתמרים עדיפי לעולם גרוגרות עדיפי ולפי דמים משלם ומאי ברכה. דקפיץ עליה זבינא. לוקחים ולענין עירוב בעינן טפי מקב:"
+  },
+  "Rashi on Eruvin 29b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:11:2"
+    ],
+    "generatedAt": "2026-11-05T21:19:28.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתיתא</strong> - מאכל שעושין מקמח קלי שנתייבש בתנור ונותנין דבש לתוך התבשיל:"
+  },
+  "Rashi on Eruvin 29b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:11:1",
+      "Rashi on Eruvin 29b:11:3",
+      "Jastrow, שַׁרְגּוּשָׁא 1",
+      "Eruvin 29b:11",
+      "Rashi on Eruvin 29b:11:4"
+    ],
+    "generatedAt": "2026-11-05T21:21:06.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרגושי</strong> - תרוודין:"
+  },
+  "Rashi on Eruvin 29b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:21:20.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיסני</strong> - קליות:"
+  },
+  "Rashi on Eruvin 29b:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:11:4",
+      "Rashi on Eruvin 29b:11:1",
+      "Rashi on Eruvin 29b:11:2",
+      "Rashi on Eruvin 29b:11:3"
+    ],
+    "generatedAt": "2026-11-05T21:21:54.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בוני</strong> - מדות:"
+  },
+  "Rashi on Eruvin 29b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:22:17.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחשבתא</strong> - דאגה:"
+  },
+  "Rashi on Eruvin 29b:13:1": {
+    "dependsOn": [
+      "Jastrow, *כְּבוּיָא 1",
+      "Rashi on Eruvin 29b:13:1"
+    ],
+    "generatedAt": "2026-11-05T21:23:19.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבויי דרעייתא דניסן</strong> - צפיעי בקר:"
+  },
+  "Rashi on Eruvin 29b:13:2": {
+    "dependsOn": [
+      "Jastrow, סוּגְיָינָא 1",
+      "Rashi on Eruvin 29b:13:1",
+      "Rashi on Eruvin 29b:13:3"
+    ],
+    "generatedAt": "2026-11-05T21:24:24.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוגייני דערבתא</strong> - קיסמין של ערבה:"
+  },
+  "Rashi on Eruvin 29b:13:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:13:1",
+      "Rashi on Eruvin 29b:13:2",
+      "Rashi on Eruvin 29b:13:3",
+      "Rashi on Eruvin 29b:13:4",
+      "Steinsaltz on Eruvin 29b:13",
+      "Jastrow, *כְּבַב 1"
+    ],
+    "generatedAt": "2026-11-05T21:26:30.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונכבביה</strong> - יעשה מהן גחלת ויצלה בהן אותו בשר וניכול:"
+  },
+  "Rashi on Eruvin 29b:13:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:13:1",
+      "Rashi on Eruvin 29b:13:2",
+      "Rashi on Eruvin 29b:13:3",
+      "Rashi on Eruvin 29b:13:4",
+      "Jastrow, מָרְקָא 1",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T21:28:05.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמרא מרקא</strong> - יין מזוג:"
+  },
+  "Rashi on Eruvin 29b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:28:27.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לאכול בו</strong> - כל שהוא לפתן שיעורו כדי לאכול בו ללפת בו את הפת מזון ב' סעודות:"
+  },
+  "Rashi on Eruvin 29b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:14:1"
+    ],
+    "generatedAt": "2026-11-05T21:29:01.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לאכול הימנו</strong> - שיהו כל שתי הסעודות ממנו:"
+  },
+  "Rashi on Eruvin 29b:14:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:14:1",
+      "Rashi on Eruvin 29b:14:2",
+      "Rashi on Eruvin 29b:14:4"
+    ],
+    "generatedAt": "2026-11-05T21:29:36.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשר חי</strong> - אינו לפתן ובעינן כדי לאכול ממנו:"
+  },
+  "Rashi on Eruvin 29b:14:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:14:1",
+      "Rashi on Eruvin 29b:14:2",
+      "Rashi on Eruvin 29b:14:3",
+      "Rashi on Eruvin 29b:14:4"
+    ],
+    "generatedAt": "2026-11-05T21:30:40.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשר צלי</strong> - פליגי ביה אי הוי ליפתן אי לא:"
+  },
+  "Rashi on Eruvin 29b:15:1": {
+    "dependsOn": [
+      "Jastrow, טַבְהַק 1",
+      "Rashi on Eruvin 29b:15:2",
+      "Rashi on Eruvin 29b:15:3",
+      "Rashi on Eruvin 29b:14:4"
+    ],
+    "generatedAt": "2026-11-05T21:32:16.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טבהקי</strong> - חתיכות:"
+  },
+  "Rashi on Eruvin 29b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:15:1",
+      "Rashi on Eruvin 29b:15:2",
+      "Rashi on Eruvin 29b:15:3"
+    ],
+    "generatedAt": "2026-11-05T21:33:11.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עניים</strong> - שלש על שלש מקבלין טומאה לעניים:"
+  },
+  "Rashi on Eruvin 29b:15:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:15:1",
+      "Rashi on Eruvin 29b:15:2",
+      "Rashi on Eruvin 29b:15:3",
+      "Eruvin 29b:15",
+      "Rashi on Eruvin 30a:1:1"
+    ],
+    "generatedAt": "2026-11-05T21:34:26.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עשירים</strong> - שלשה על שלשה מקבלין טומאה אף לעשירים:"
+  },
+  "Rashi on Eruvin 29b:1:1": {
+    "dependsOn": [
+      "Eruvin 29b:1",
+      "Chokhmat Shlomo on Eruvin 29b:2",
+      "Steinsaltz on Eruvin 29b:1",
+      "Rashi on Eruvin 29a:19:1"
+    ],
+    "generatedAt": "2026-11-05T20:52:08.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא אבצל זרתא</strong> - שלא גדלו זרת [יש להם ארס] בבצל:"
+  },
+  "Rashi on Eruvin 29b:3:1": {
+    "dependsOn": [
+      "Jastrow, נָחָשׁ 1",
+      "Jastrow, בְּצַל 1"
+    ],
+    "generatedAt": "2026-11-05T20:52:43.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחש שבו</strong> - ארס שרף הבצל:"
+  },
+  "Rashi on Eruvin 29b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:54:04.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופוסל את המקוה</strong> - כשאר מים שאובין:"
+  },
+  "Rashi on Eruvin 29b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:4:1",
+      "Rashi on Eruvin 29b:4:3",
+      "Steinsaltz on Eruvin 29b:4:1"
+    ],
+    "generatedAt": "2026-11-05T20:55:41.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקיף לה רב כהנא מה בין זה למי צבע</strong> - ופשיטא דפוסל:"
+  },
+  "Rashi on Eruvin 29b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:56:09.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיכרא מיקרי</strong> - וסד\"א אין עליו שם מים:"
+  },
+  "Rashi on Eruvin 29b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:57:33.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרין ריבעי שיכרא</strong> - תרי לוגין דלוג רובע קב:"
+  },
+  "Rashi on Eruvin 29b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:57:55.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המוציא יין</strong> - בשבת:"
+  },
+  "Rashi on Eruvin 29b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:58:29.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי מזיגת כוס</strong> - כמו שנותנין יין חי בכוס כדי למוזגו במים:"
+  },
+  "Rashi on Eruvin 29b:5:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:5:1",
+      "Rashi on Eruvin 29b:5:2",
+      "Rashi on Eruvin 29b:5:3",
+      "Rashi on Eruvin 29b:5:4",
+      "Rashi on Eruvin 29b:6:1",
+      "Rashi on Eruvin 29b:6:2"
+    ],
+    "generatedAt": "2026-11-05T21:03:57.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רובע רביעית</strong> - רובע לוג יין חי:"
+  },
+  "Rashi on Eruvin 29b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:6:1",
+      "Rashi on Eruvin 29b:6:2",
+      "Rashi on Eruvin 29b:6:3",
+      "Eruvin 29b:6",
+      "Rashi on Eruvin 29b:5:1",
+      "Rashi on Eruvin 29b:5:2",
+      "Rashi on Eruvin 29b:5:3",
+      "Rashi on Eruvin 29b:5:4",
+      "Steinsaltz on Eruvin 29b:6",
+      "Versions on Eruvin 29b:6",
+      "Tosafot on Eruvin 29b:5:2"
+    ],
+    "generatedAt": "2026-11-05T21:11:15.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני סיפא</strong> - דהמוציא יין ושאר כל המשקין הוצאתן ברביעית דהיינו לוג:"
+  },
+  "Rashi on Eruvin 29b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:12:04.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומדהתם</strong> - בהוצאת שבת בעינן על חד דיין ארבע דשיכרא דביין תני רובע רביעית ובשאר כל המשקין תני רביעית:"
+  },
+  "Rashi on Eruvin 29b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:13:36.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נמי</strong> - גבי עירוב בעינן ארבע ואמר רב לעיל מערבין בשני רביעית יין אלמא בשיכרא תרי לוגי בעינן:"
+  },
+  "Rashi on Eruvin 29b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:13:57.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשתי כסא</strong> - של רביעית לוג שכר בצפרא וכסא בפניא וסמיך עלייהו:"
+  },
+  "Rashi on Eruvin 29b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:7:1",
+      "Rashi on Eruvin 29b:9:1"
+    ],
+    "generatedAt": "2026-11-05T21:14:57.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכל גרוגרות</strong> - של תרומה בשוגג:"
+  },
+  "Rashi on Eruvin 29b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:15:35.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזוזא</strong> - בשוה זוז:"
+  },
+  "Rashi on Eruvin 29b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:9:1",
+      "Rashi on Eruvin 29b:9:3",
+      "Eruvin 29b:8"
+    ],
+    "generatedAt": "2026-11-05T21:16:24.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקא משלם ליה</strong> - תמרים היקרים מגרוגרת ולא שילם לו לפי מדה אלא לפי דמים:"
+  },
+  "Rashi on Eruvin 29b:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:16:53.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 29b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא תמרים עדיפי</strong> - ותנן לעיל גבי עני בגורן קב גרוגרות ואמר רב וכן לעירוב וכ\"ש תמרים דודאי סגי להו בהכי:"
+  },
+  "Tosafot on Eruvin 29b:10:1": {
+    "dependsOn": [
+      "Eruvin 29b:10"
+    ],
+    "generatedAt": "2026-11-05T21:18:43.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא תמרים עדיפי</strong> - ואם תאמר כיון דעדיפן דילמא לא בעינן קב ויש לומר דמייתי ראיה דיותר מקב לא בעי:"
+  },
+  "Tosafot on Eruvin 29b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:15:1",
+      "Rashi on Eruvin 29b:15:2",
+      "Rashi on Eruvin 29b:15:3",
+      "Tosafot on Shabbat 47a:4:1"
+    ],
+    "generatedAt": "2026-11-05T21:36:13.144Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עניים</strong> - דווקא בטומאת מדרס יש חילוק בין עניים לעשירים דביחוד תליא מילתא ואין דרך עשיר לייחד פחות משלשה על שלשה טפחים ואם ייחד בטלה דעתו אבל בטומאת מת אין חילוק ואף לעשירים הוי בשלש על שלש דבפרק במה מדליקין <span class=\"parenthesized\">(שבת דף כו:)</span> תניא שלש על שלש מניין תלמוד לומר והבגד ולא מפליג בין עניים לעשירים ועוד דבמסכת כלים פרק כ\"ז <span class=\"parenthesized\">(משנה ב)</span> תנן דבגד מטמא שלשה על שלשה למדרס ושלש על שלש למת ועל כרחך בעשירים מיירי דבעניים תנן פכ\"ח <span class=\"parenthesized\">(משנה ח)</span> בגדי עניים אף על פי שאין בהם שלשה על שלשה טמאין מדרס כך פר\"ת ודלא כפ\"ה דסוף כירה <span class=\"parenthesized\">(שבת דף מז.)</span> שלש על שלש לא מטמא ביד עשיר כלל:"
+  },
+  "Tosafot on Eruvin 29b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 29b:3:1",
+      "Tosafot on Eruvin 29b:4:1",
+      "Tosafot on Eruvin 29b:15:1"
+    ],
+    "generatedAt": "2026-11-05T20:53:44.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני נחש שבו</strong> - פ\"ה ארס של שרף בצל ור\"ח פי' העמוד שבתוכו שמתעגל בתוכו כמין גבעול ומתקבצין בו זרע הבצל אותו העמוד נקרא נחש של בצל:"
+  },
+  "Tosafot on Eruvin 29b:4:1": {
+    "dependsOn": [
+      "Makkot 3b:16"
+    ],
+    "generatedAt": "2026-11-05T20:57:06.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא שכר איקרי</strong> - ואפ\"ה פוסל המקוה והא דאמר בפ\"ק דמכות דיין מזוג אינו פוסל את המקוה אפילו כשיש בו ג' לוגין מים שאובין משום דחמרא מזיגא מיקרי שאני שכר דכל עיקרו אינו אלא מים ועוד דהתם מיקרי חמרא מזיגא ושם חמרא עילוי' ופירי לא פסיל המקוה:"
+  },
+  "Tosafot on Eruvin 29b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:04:51.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שימזגנו ויעמוד על רביעית</strong> - משמע דכוס של ברכה טעון מזיגה וכן בפרק ג' שאכלו <span class=\"parenthesized\">(ברכות נ:)</span> ובהמוכר פירות <span class=\"parenthesized\">(ב\"ב דף צז:)</span> אמר ואין מברכין עליו עד שיתן לתוכו מים ותימה דבפרק שלשה שאכלו <span class=\"parenthesized\">(ברכות נא.)</span> אמרינן עשרה דברים נאמרו בכוס של ברכה וחשיב חי ותירץ רש\"י דחי דקאמר היינו שיתננו חי בכוס ואחר כך ימזוג לאפוקי שלא ימזגנו בכוס זה ויתננו בכוס אחר שמברך עליו ור\"ת מפרש דחי היינו מזוג ולא מזוג דאמר בפרק בן סורר ומורה <span class=\"parenthesized\">(סנהדרין דף ע.)</span> אינו חייב עד שישתה יין חי ומוקי לה במזוג ולא מזוג ונותן בו קצת מים בתחילת הברכה ובברכת הארץ מוסיף עליו מים עד שיהא מזוג כראוי כדאמר בפ' ג' שאכלו <span class=\"parenthesized\">(ברכות נא.)</span> שמוסיף בברכת הארץ והיינו מים ולא כמו שפירש שם <span class=\"rashi-quotation\">בקונט'</span> שמוסיף יין ובני נרבונה מפרשים דחי קאי אכוס ולאפוקי כוס שבור דכולהו עשרה דברים קאי אכוס ושייך חי בכוס כדאמר <span class=\"parenthesized\">(ב\"ק נד.)</span> שבירתן זו היא מיתתן ובפרק בתרא דמכות <span class=\"parenthesized\">(דף טז:)</span> אמר ריסק ט' נמלין ואחד חי ר\"ל אותו חי שלם:"
+  },
+  "Tosafot on Eruvin 29b:5:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 29b:5:1",
+      "Tosafot on Eruvin 29b:5:3",
+      "Rashi on Eruvin 29b:5:1",
+      "Rashi on Eruvin 29b:5:2",
+      "Rashi on Eruvin 29b:5:3",
+      "Rashi on Eruvin 29b:5:4",
+      "Nazir 38a:7",
+      "Nazir 38a:8",
+      "Nazir 38a:9"
+    ],
+    "generatedAt": "2026-11-05T21:07:12.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויעמוד על רביעית</strong> - נראה כמו שפי' רש\"י בהמוציא <span class=\"parenthesized\">(שבת דף עו:)</span> דכוס של ברכה צריך שיהא בה רובע רביעית הלוג כדי שימזגנו ויעמוד על רביעית הלוג ולא כטועים שמפרשים רובע רביעית הקב דהיינו רביעית הלוג כדי שימזגנו ויעמוד על רביעית הקב דהיינו לוג דהא בנזיר בפרק שלשה מינים <span class=\"parenthesized\">(נזיר דף לח.)</span> חשיב הך דשאר משקין ברביעית דמייתי הכא ומשמע הכא ובהמוציא <span class=\"parenthesized\">(שבת דף עו.)</span> דהיינו שיעור כוס יפה אחר מזיגתו והנהו דחשיב בנזיר הוי רביעית הלוג מדחשיב רביעית שמן לנזיר דיליף מקרא בהתודה דהוי חצי שיעור של תודה ותנן בפ' שתי מדות <span class=\"parenthesized\">(מנחות דף פח:)</span> חצי לוג שמן לתודה ועוד תני התם ז' מדות של לח היו במקדש רביעית הלוג מה היא משמשת רביעית מים למצורע רביעית שמן לנזיר וחשיב נמי רביעית דם מטמא באהל דהיינו רביעית הלוג כדמשמע בפרק כ\"ג בנזיר <span class=\"parenthesized\">(דף נג.)</span> דאמר חצי קב עצמות וחצי לוג דם לכל רובע קב עצמות ורביעית דם לא לכל ופריך נמי התם ותו ליכא והאיכא מי רביעית נוטלין מהן לידים והיינו מי רביעית הלוג כדמוכח במס' ידים <span class=\"parenthesized\">(פ\"א מ\"א)</span>:"
+  },
+  "Tosafot on Eruvin 29b:5:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 37a:4:2",
+      "Sanhedrin 37a:4",
+      "Tosafot on Eruvin 28a:4:1"
+    ],
+    "generatedAt": "2026-11-05T21:09:07.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 29b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל חמרא דלא דרי על חד תלת</strong> - והא דאמר בדיני ממונות <span class=\"parenthesized\">(סנהדרין דף לז.)</span> אל יחסר המזג שאם נצרך אחד מהם לצאת רואין אם יש שם כ\"ג דמשמע דמזוג הוי שני חלקים מים אומר ר\"י דקרא איירי ביין השרוני דהוי ב' חלקים מים דליכא לאוקמא קרא בסתם מזוג רביעית דסנהדרין למאי חזי אבל שליש חזי לדיני נפשות ליהוי סנהדרי קטנה:"
+  }
+}

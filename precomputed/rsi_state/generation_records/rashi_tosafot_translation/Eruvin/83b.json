@@ -1,0 +1,300 @@
+{
+  "Rashi on Eruvin 83b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:10:2",
+      "Rashi on Eruvin 83b:4:1"
+    ],
+    "generatedAt": "2026-11-06T13:32:42.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה בשלשול ולזה בזריקה</strong> - כגון חצר זו גבוהה מזה התל י' וזו נמוכה ממנו י':"
+  },
+  "Rashi on Eruvin 83b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:10:1",
+      "Eruvin 83b:10"
+    ],
+    "generatedAt": "2026-11-06T13:33:41.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי</strong> - לשניהם בקשה הוא והרי הן שוין בו ואוסרין זה על זה דהא כל שלשול אמרינן דקשה הוא או דילמא לגבי זריקה הוה שלשול תשמישו בנחת הוא ומותר וזה שבזריקה אסור אם לא עירבו אלו עם אלו אלא אלו לעצמן ואלו לעצמן:"
+  },
+  "Rashi on Eruvin 83b:1:1": {
+    "dependsOn": [
+      "Eruvin 83b:1",
+      "Rashi on Eruvin 83b:2:1"
+    ],
+    "generatedAt": "2026-11-06T13:05:27.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי עיסותיכם</strong> - שאתם לשים במדבר עומר לגולגולת: איפה ג' סאין במנחות יליף לה בפרק התודה <span class=\"parenthesized\">(מנחות דף עז.)</span> דכתיב <span class=\"parenthesized\">(יחזקאל מ״ה:י״ד)</span> האיפה והבת תוכן אחד <span class=\"parenthesized\">(להם)</span> [יהיה] וכתיב <span class=\"parenthesized\">(שם)</span> מעשר הבת מן הכור וכור שלשים סאין מעשר דידיה כמה הוי ג' סאין והעומר עשירית של ג' סאין שהן י\"ח קבין שהן ע\"ב לוגין עשירית דע' לוגין ז' לוגין עשירית של ב' לוגין חומש הלוג והוא ביצה וחומשא והיינו דקאמר ז' רבעים ועוד רבעים רבעי הקב דהיינו ז' לוגין ועוד ביצה וחומשא:"
+  },
+  "Rashi on Eruvin 83b:2:1": {
+    "dependsOn": [
+      "Eruvin 83b:2",
+      "Rashi on Eruvin 83b:1:1",
+      "Rashi on Eruvin 83b:2:1"
+    ],
+    "generatedAt": "2026-11-06T13:08:26.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן ו' ירושלמית</strong> - שהרי ו' מדבריות נעשו ה' ירושלמיות נשאר לנו לוג מדברי וחומשו דביצה וחומשא הוי חומש הלוג ביצה חומש לחמש ביצים והחומש ביצה הוא תוספת לביצה הששית הרי לוג וחומשו והן נעשין לוג ירושלמי שהרי ו' חומשין אלו נעשו ה':"
+  },
+  "Rashi on Eruvin 83b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:14:50.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה בריא</strong> - שאוכל כל צרכו:"
+  },
+  "Rashi on Eruvin 83b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:3:1",
+      "Rashi on Eruvin 83b:2:1",
+      "Rashi on Eruvin 83b:1:1"
+    ],
+    "generatedAt": "2026-11-06T13:15:57.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומבורך</strong> - שאינו אוכל יותר מדאי וכתיב <span class=\"parenthesized\">(משלי י״ג:כ״ה)</span> ובטן רשעים תחסר:"
+  },
+  "Rashi on Eruvin 83b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:4:1",
+      "Rashi on Eruvin 83b:4:2",
+      "Ritva on Eruvin 83b:4:1",
+      "Versions on Eruvin 83b:4:1",
+      "Eruvin 83b:4",
+      "Eruvin 83b:12",
+      "Eruvin 83b:13"
+    ],
+    "generatedAt": "2026-11-06T13:18:40.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:4:1"
+    ],
+    "sourceText": "ה\"ג במתני' אנשי חצר ואנשי מרפסת כו' ולא עירבו אלו עם אלו אבל עירבו אלו לעצמן ואלו לעצמן מרפסת ארוכה היא והרבה פתחי עליות פתוחין לה וכולן יוצאין בסולם א' לחצר וממנה לרה\"ר ואעפ\"כ אין אוסרין הואיל וגבוה מרפסת י' שלא הלכו בסולם אלא להקל ואמרינן תורת מחיצה עליו ואינן אוסרין כדאמרינן בכיצד מעברין <span class=\"parenthesized\">(לעיל עירובין דף נט:)</span> סולם תורת פתח עליו ותורת מחיצה עליו והכל להקל ומ\"מ שני רשויות הן ואין מוציאין מזו לזו:"
+  },
+  "Rashi on Eruvin 83b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:4:1"
+    ],
+    "generatedAt": "2026-11-06T13:20:02.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שגבוה י'</strong> - אם יש בחצר תל או עמוד גבוה י' סמוך למרפסת רשות מרפסת שולטת בו ומשתמשין הן בו אבל לא בני חצר:"
+  },
+  "Rashi on Eruvin 83b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:20:26.700Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוליית הבור</strong> - קרקע שנטלו בחפירת הבור והקיפו בו פי הבור סביב:"
+  },
+  "Rashi on Eruvin 83b:6:1": {
+    "dependsOn": [
+      "Eruvin 83b:4",
+      "Eruvin 83b:5"
+    ],
+    "generatedAt": "2026-11-06T13:20:51.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסמוכה</strong> - שהחוליא סמוכה למרפסת:"
+  },
+  "Rashi on Eruvin 83b:7:1": {
+    "dependsOn": [
+      "Eruvin 83b:7",
+      "Rashi on Eruvin 83b:7:2"
+    ],
+    "generatedAt": "2026-11-06T13:21:36.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה בפתח ולזה בפתח</strong> - ב' חצירות שלא עירבו יש רשות אחת סמוכה להן ונוחה לשתיהן להשתמש בה כפתח זה שהוא נוח ליכנס:"
+  },
+  "Rashi on Eruvin 83b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:7:1",
+      "Chidushei Halachot on Eruvin 83b:3",
+      "Eruvin 83b:7"
+    ],
+    "generatedAt": "2026-11-06T13:23:18.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו חלון שבין שתי חצירות</strong> - כלומר הא לא מיבעיא לן מאי דיניה אם אסור לשתיהן או מותר דהיינו חלון שבין ב' חצירות דתנן ביה רצו אחד מערבין רצו שנים מערבין ואם לא עירבו ביחד שניהם אסורים להשתמש בה אם רשות של ארבעה היא דאין רשות פחות מד' ומנלן דאסורים בה דהא גבי כותל שבין שתי חצירות תנן <span class=\"parenthesized\">(לעיל עירובין דף עו:)</span> היו בראשו פירות אלו עולין מכאן ואוכלין וכן אלו ובלבד שלא יורידו למטה אלמא כל היכא דשוי לתרוייהו אסרי אהדדי וגם ברשות נמוכה מי' אמרינן מקום שאין בו ד' על ד' מותר לבני רה\"י ולבני רה\"ר לכתף עליו דמקום פטור הוא הא אית ביה ד' אסור לתרוייהו כל זריקה למעלה מי' טפחים וכל שלשול עמוק מי' טפחים וכל תשמיש נוח דקרינן ליה פתח לא גבוה קרקעיתו י' טפחים ולא נמוך עשרה טפחים:"
+  },
+  "Rashi on Eruvin 83b:8:1": {
+    "dependsOn": [
+      "Eruvin 83b:8",
+      "Rashi on Eruvin 83b:7:1",
+      "Rashi on Eruvin 83b:7:2",
+      "Rashi on Eruvin 83b:8:2"
+    ],
+    "generatedAt": "2026-11-06T13:24:14.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה בזריקה ולזה בזריקה</strong> - כל רשות שהיא בין שתי רשויות וקשה תשמישה לשתיהן לזה גבוה י' ולזה גבוה עשרה ואינן יכולים להשתמש אלא בזריקה הא לא מיבעיא לי דהיינו כותל שבין ב' חצירות ואיסורן מפורש במשנה דקתני ובלבד שלא יורידו למטה אלמא אסורים עם שניהן:"
+  },
+  "Rashi on Eruvin 83b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:8:1",
+      "Chokhmat Shlomo on Eruvin 83b:2",
+      "Eruvin 77a:9",
+      "Rashi on Eruvin 83b:7:2",
+      "Rashi on Eruvin 83b:4:1",
+      "Rashi on Eruvin 77a:16:3",
+      "Eruvin 83b:8",
+      "Rashi on Eruvin 83b:9:1",
+      "Rashi on Eruvin 83b:9:2",
+      "Rashi on Eruvin 83b:9:3",
+      "Rashi on Eruvin 83b:9:4"
+    ],
+    "generatedAt": "2026-11-06T13:26:59.365Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו חריץ</strong> - דהוי נמי אסור לתרוייהו דהא הפסק רשות חשיב וכיון דתשמישו שוה לשניהם אסורין בו דאמר רב <span class=\"parenthesized\">(לעול דף עז.)</span> חריץ שבין ב' חצירות עמוק מזו י' ולזה שוה לארץ נותנין אותו לזה ששוה לארץ דהוה לזה תשמיש בנחת ולזה בקשה כו' שמעינן מינה דאי לשניהן בנחת או לשניהן בקשה שניהן אסורין בו:"
+  },
+  "Rashi on Eruvin 83b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:8:1",
+      "Rashi on Eruvin 83b:8:2",
+      "Rashi on Eruvin 83b:9:2"
+    ],
+    "generatedAt": "2026-11-06T13:27:39.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה בפתח ולזה בזריקה</strong> - כגון שחצר זו נמוכה וחצר זו גבוהה ותל ביניהם גבוה מזו י' ולזו שוה לארץ:"
+  },
+  "Rashi on Eruvin 83b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:9:1",
+      "Rashi on Eruvin 83b:9:2",
+      "Rashi on Eruvin 83b:9:3",
+      "Rashi on Eruvin 83b:9:4"
+    ],
+    "generatedAt": "2026-11-06T13:29:14.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דרבה בר רב הונא</strong> - בפרק חלון <span class=\"parenthesized\">(שם)</span> דאמר כותל שבין ב' חצירות גבוה י' וצדו אחד שוה לארץ נותנין אותו לזה ששוה לארץ:"
+  },
+  "Rashi on Eruvin 83b:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:9:1",
+      "Rashi on Eruvin 83b:9:2",
+      "Rashi on Eruvin 83b:9:4",
+      "Rashi on Eruvin 83b:8:1",
+      "Rashi on Eruvin 83b:8:2",
+      "Steinsaltz on Eruvin 83b:9",
+      "Eruvin 77a:9"
+    ],
+    "generatedAt": "2026-11-06T13:31:07.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה בפתח ולזה בשלשול</strong> - כגון חצר גבוהה מן התל י' דאינה משתמשת עליו בחול אלא בשלשול וחברתה שוה לה:"
+  },
+  "Rashi on Eruvin 83b:9:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:9:1",
+      "Rashi on Eruvin 83b:9:2",
+      "Rashi on Eruvin 83b:9:3"
+    ],
+    "generatedAt": "2026-11-06T13:31:47.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 83b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דרב שיזבי</strong> - בפרק חלון <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Tosafot on Eruvin 83b:13:1": {
+    "dependsOn": [
+      "Eruvin 83b:13",
+      "Tosafot on Eruvin 83b:13:1",
+      "Rashi on Eruvin 83b:4:1",
+      "Rashi on Eruvin 83b:4:2",
+      "Rashi on Eruvin 83b:4:3",
+      "Rashi on Eruvin 83b:4:4",
+      "Maharsha: Chidushei Halachot on Eruvin 83b:4",
+      "Maharshal: Chokhmat Shlomo on Eruvin 83b:4",
+      "Versions on Eruvin 83b:13"
+    ],
+    "generatedAt": "2026-11-06T13:36:40.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 83b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא סלקא דעתיך מאי מרפסת בני עלייה</strong> - מפרש ר\"י סתם פתח עלייה גבוה עשרה מן מרפסת והמרפסת גבוה מן החצר י' ודרך סולמות יורדין מעלייה למו. פסת וממרפסת לחצר ודרך חצר יוצאים לרשות הרבים והמרפסת היא של בני עלייה ואין בני החצר אוסרים אותה לבני עליות לפי שהמרפסת היא שלהם והא דקאמר בסמוך בשתי גזוזטראות כשבאין בני תחתונה דרך עליונה למלאות שאוסרת התחתונה על העליונה היינו כדמפרש בפירקין משום שעשו מחיצה בשותפות וכשלא עירבו בני עליות יחד אוסרים המרפסת זה על זה משום לזה בשלשול ולזה בשלשול אבל מחמת הסולמות שיורדין בהם מן העליות לא היו אוסרין זה על זה דסולם תורת מחיצה עליו והשתא פריך לרב שפיר כיון דפתחי עליות וחלונותיהם גבוהים מן החצר כ' או יותר אמאי נותנין תל ועמוד שבחצר הגבוהים י' והם כנגד החלונות דגבוהים לבני עליות בשלשול י' יאסרו לרב בני חצר על בני עליות ע\"י זריקה כיין דתל ועמוד הוי של שניהם ולא דמי למרפסת שהיא לבני עליות לברה ואע\"פ שתל ועמוד הוא שוה למרפסת ויכול להשתמש מן המרפסת בתל ועמוד בפתח מ\"מ לא מיקרי לבני עליות בפתח אלא בשלשול כי במרפסת אין בה דיורין ואינה יכולה לאסור את התל לחצר אלא ע\"י עליות ואע\"פ שיורדין בה מן העליות ומשתמשין בה אינה אוסרת כיון דסולם תורת מחיצה עליו והא דאמרינן בשמעתין דכשבאין בני התחתונה למלאות לא חשיב לבני התחתונה כזריקה לאו משום דסולם חשיב עליו כפתח לאסור אלא דע\"י סולם חשיב לבני התחתונה תשמישן בנחת כמו בשלשול אבל כפתח לא חשיב ולא עדיף טפי משלשול לאסור ומשני לאותן הדרים במרפסת פירוש שפתח עליות תוך עשרה למרפסת דתו ליכא בסולם תורת מחיצה:"
+  },
+  "Tosafot on Eruvin 83b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 83b:2:1",
+      "Chidushei Halachot on Eruvin 83b:4",
+      "Eruvin 83a:13",
+      "Eruvin 83a:14",
+      "Eruvin 83a:15",
+      "Eruvin 83a:16",
+      "Eruvin 83a:1",
+      "Eruvin 83a:2",
+      "Eruvin 83a:3",
+      "Eruvin 83a:4",
+      "Eruvin 83a:5",
+      "Tosafot on Eruvin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-06T13:14:25.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 83b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבעת רבעים קמח ועוד חייבין בחלה</strong> - פי' ז' לוגין ועוד דהיינו ביצה וחומש ביצה <span class=\"rashi-quotation\">כדפי' בקונטרס</span> והם שש ירושלמיות וה' ציפוריות ובסוף כלל גדול <span class=\"parenthesized\">(שבין דף עו:)</span> היה כתוב בספרים והתנן ה' רבעים קמח ועוד חייבים בחלה ל\"ג רש\"י ועוד התם משמע דבשל ציפורי איירי והתם ליכא ועוד אלא ה' בצמצום ור\"ת מפרש דאתיא כרבי יוסי וגרסינן ליה שפיר דתנן במס' עדיות <span class=\"parenthesized\">(פ\"א משנה ב)</span> ומייתי לה בפ\"ק דשבת <span class=\"parenthesized\">(דף טו.)</span> שמאי אומר מקב לחלה כו' וחכ\"א חמש רבעים קמח חייבין בחלה ור' יוסי אומר חמש פטורים חמש ועוד חייבים ומפרש ר\"ת דסבר רבי יוסי דראשית עריסותיכם היינו דלאחר הפרשת ראשית דהוא חלה ישאר שיעור עריסותיכם דהיינו עיסת מדברית וההוא ועוד היינו כדי חלה ומהר\"י מפרש דר' יוסי לטעמיה דשמעתין דקאמר חצי פרס ב' ביצים שוחקות ושיער רבי ב' ביצים ועוד א' מכ' בביצה א\"כ מז' רבעים קמח ועוד שהם מ\"ג ביצים וחומש ביצה כמנין חלה יעלה ועודות ב' ביצים ושלשה ועודות הרי לרבי יוסי מ\"ה ביצים וחומש ביצה וג' ועודות אע\"פ שהסאין והקבין ניתוספו מנין הביצים כדקאי קאי כדמוכח בשמעתין ולכאורה נראה דאין הלכה כרבי יוסי כדאמרינן במי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מו:)</span> דהלכה כר' יוסי מחבירו ולא מחביריו ואמרינן נמי אמר ליה ר' אלעזר לרב אסי מה אמור רבנן בבי מדרשא א\"ל הכי אמר ר' יוחנן הלכה כר' יוסי וקאמר הש\"ס מכלל דיחידאה פליג עליה משמע דאי רבים פליני עליה אין הלכה כר' יוסי אבל לפום ריהטא דגרסינן בפ' כלל גדול <span class=\"parenthesized\">(שכת דף עו:)</span> ובפרק אלו עוברין <span class=\"parenthesized\">(פסחים דף מח:)</span> דנקסו הש\"ס חמש רבעים ועוד חייבין בחלה משמע דהלכה כר' יוסי:"
+  }
+}

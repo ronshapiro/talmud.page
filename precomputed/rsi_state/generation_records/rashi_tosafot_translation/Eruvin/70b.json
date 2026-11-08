@@ -1,0 +1,300 @@
+{
+  "Rashi on Eruvin 70b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:28:19.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבעוד יום</strong> - שעדיין לא קנה עירובו של ראשון הרי זה מן השוק אוסר ואע\"פ שאינו דר כאן כדתניא לקמן בהאי פירקא מי שיש לו בית התבן ובית הבקר בחצר חבירו אוסר עליו:"
+  },
+  "Rashi on Eruvin 70b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:10:1",
+      "Eruvin 70b:10",
+      "Rashi on Eruvin 70b:1:1",
+      "Rashi on Eruvin 70b:1:2",
+      "Rashi on Eruvin 70b:3:1",
+      "Eruvin 70b:3"
+    ],
+    "generatedAt": "2026-11-07T23:29:15.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משחשיכה אינו אוסר עליו</strong> - שהרי הותר למקצת שבת:"
+  },
+  "Rashi on Eruvin 70b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:11:1",
+      "Rashi on Eruvin 70b:11:2",
+      "Rashi on Eruvin 70b:11:3"
+    ],
+    "generatedAt": "2026-11-07T23:31:05.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחד מן השוק</strong> - שהיה לו בית דירה בחצר זו:"
+  },
+  "Rashi on Eruvin 70b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:11:1",
+      "Rashi on Eruvin 70b:11:2",
+      "Rashi on Eruvin 70b:11:3"
+    ],
+    "generatedAt": "2026-11-07T23:31:53.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבעוד יום אינו אוסר</strong> - שהרי יערב זה עם שכניו:"
+  },
+  "Rashi on Eruvin 70b:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:11:1",
+      "Rashi on Eruvin 70b:11:2",
+      "Rashi on Eruvin 70b:11:3",
+      "Eruvin 70b:11",
+      "Rashi on Eruvin 70b:1:2",
+      "Rashi on Eruvin 70b:8:1",
+      "Rashi on Eruvin 70b:9:1"
+    ],
+    "generatedAt": "2026-11-07T23:33:19.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משחשיכה</strong> - דאינו יכול לערב אוסר ואי יורש מבטל רשות אמאי אוסר:"
+  },
+  "Rashi on Eruvin 70b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:13:2"
+    ],
+    "generatedAt": "2026-11-07T23:34:02.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישראל וגר גרסינן</strong> - גר שמת ואין לו יורשין המחזיק בנכסיו זכה בהן:"
+  },
+  "Rashi on Eruvin 70b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:13:1",
+      "Steinsaltz on Eruvin 70b:13:1",
+      "Steinsaltz on Eruvin 70b:13",
+      "Tosafot on Eruvin 70b:13:1",
+      "Sefer HeArukh, Letter Mem 49"
+    ],
+    "generatedAt": "2026-11-07T23:35:10.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגורה</strong> - גורן הוא וחלוק בחדרים והיה לכל אחד פתחו בחצר ואוסרין זה על זה:"
+  },
+  "Rashi on Eruvin 70b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:1:2",
+      "Rashi on Eruvin 70a:14:1",
+      "Rashi on Eruvin 70a:13:1"
+    ],
+    "generatedAt": "2026-11-07T02:04:26.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דאי בעי לעירובי כו'</strong> - כלומר אביו שהיה אתמול ראוי לערב היה יכול לבטל:"
+  },
+  "Rashi on Eruvin 70b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:1:1"
+    ],
+    "generatedAt": "2026-11-07T02:05:03.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל האי דלא מצי לערובי אתמול</strong> - דלא היה לו חלק בה לא:"
+  },
+  "Rashi on Eruvin 70b:3:1": {
+    "dependsOn": [
+      "Eruvin 70b:3",
+      "Rashi on Eruvin 70b:3:1"
+    ],
+    "generatedAt": "2026-11-07T02:07:40.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שהותר למקצת שבת כו'</strong> - מפרש לה ואזיל:"
+  },
+  "Rashi on Eruvin 70b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:4:2",
+      "Eruvin 70b:4",
+      "Rashi on Eruvin 70b:5:1",
+      "Eruvin 70b:5"
+    ],
+    "generatedAt": "2026-11-07T02:09:31.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:4:1"
+    ],
+    "sourceText": "ה\"ג כגון עירב דרך הפתח כו' זה הכלל לאתויי מבוי שניטלה קורתו או לחייו:"
+  },
+  "Rashi on Eruvin 70b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T02:10:15.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירב דרך הפתח</strong> - שתי חצירות ופתח אחד ביניהם ועירבו ע\"י אותו פתח ובשבת נפלה כנגדו מפולת ונסתם מותרים להשתמש מזו לזו ע\"י זריקה ודרך חורין קטנים דאע\"ג דאין עירוב בין ב' חצירות בלא פתח כדתנן <span class=\"parenthesized\">(לקמן עו א)</span> בחלון שבין ב' חצירות הכא שבת הואיל והותרה הותרה:"
+  },
+  "Rashi on Eruvin 70b:5:1": {
+    "dependsOn": [
+      "Eruvin 70b:5"
+    ],
+    "generatedAt": "2026-11-07T02:10:58.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה הכלל לאתויי מבוי שניטלה קורתו או לחייו</strong> - בשבת אע\"ג דאשתקול מחיצות דידיה שרי הואיל ואישתרי בין השמשות ומרישא לא שמעינן לה דהתם איתנהו למחיצות אבל הכא לא והכי אמרינן לה בשילהי פירקא קמא <span class=\"parenthesized\">(דף יז:)</span>:"
+  },
+  "Rashi on Eruvin 70b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T02:11:32.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקיפום נכרים מחיצה</strong> - דאסורין לבטל זה לזה כדי שישתמש בה אחד מהן דהואיל ואי הוו בעו ערובי מאתמול לא מצו מערבי אבל אי לא הוה התם אלא חד בית שרי דמחיצה הנעשית בשבת מחיצה היא:"
+  },
+  "Rashi on Eruvin 70b:7:1": {
+    "dependsOn": [
+      "Eruvin 70b:7",
+      "Rashi on Eruvin 70b:5:1",
+      "Rashi on Eruvin 70b:6:1",
+      "Eruvin 70b:4"
+    ],
+    "generatedAt": "2026-11-07T02:12:56.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה הכלל</strong> - דרישא נמי קאי אסיפא לאתויי מת נכרי בשבת דכיון דאי בעו לערובי מאתמול לא מצו מערבי השתא נמי לא מבטלי ומרישא דסיפא לא שמעינן לה אי לא אתי' בזה הכלל דהתם לא מצו לערובי מאתמול כלל אבל הכא מצו לערובי ע\"י שכירות:"
+  },
+  "Rashi on Eruvin 70b:8:1": {
+    "dependsOn": [
+      "Eruvin 70b:8",
+      "Steinsaltz on Eruvin 70b:8",
+      "Tosafot on Eruvin 70b:8:1"
+    ],
+    "generatedAt": "2026-11-07T02:20:00.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מן המבטל רשות</strong> - ששכח ולא עירב אע\"פ שנאסר למקצת שבת יש לו תקנה בשבת ומדלא קתני חוץ משביטל רשות ויורש שמע מינה יורש לא:"
+  },
+  "Rashi on Eruvin 70b:9:1": {
+    "dependsOn": [
+      "Eruvin 70b:9"
+    ],
+    "generatedAt": "2026-11-07T23:27:50.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא חוץ מתורת ביטול רשות</strong> - ויורש בכלל דכרעיה דאבוה הוא ותורת ביטול נוהגת בו:"
+  },
+  "Tosafot on Eruvin 70b:10:1": {
+    "dependsOn": [
+      "Eruvin 70b:10",
+      "Rashi on Eruvin 70b:10:1",
+      "Rashi on Eruvin 70b:10:2"
+    ],
+    "generatedAt": "2026-11-07T23:30:38.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד מבני חצר שמת והניח רשותו לא' מן השוק מבעוד יום אוסר כו'</strong> - הך ברייתא איירי בהכי דבן חצר מערב עם חבריו אבל בן השוק אין מערב עמהם אפי' כשירש מבעוד יום ולא משום שלא יוכל לערב עמהן לפי שאינו דר שם דמסתמא לא גרע בהכי לענין עירוב וביטול רשות כיון דאסר עלייהו כדקתני מבעוד יום אוסר אלא אורחא דמילתא היא דבן חצר רגיל לערב עם חבריו שהוא צריך להשתמש בחצר כיון שהוא דר שם אבל אותו שבשוק אין יכול לערב לפי שאינו רגיל להשתמש וקסבר האי תנא כמ\"ד לקמן בפירקין <span class=\"parenthesized\">(עירובין דף עב:)</span> בית התבן ובית הבקר הרי זה אוסר עליו:"
+  },
+  "Tosafot on Eruvin 70b:13:1": {
+    "dependsOn": [
+      "Eruvin 70b:13"
+    ],
+    "generatedAt": "2026-11-07T02:23:16.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע ישראל וגר כו'</strong> - קסבר רבא דמכח הגר חשיב כמו יורש דהוי כרעיה דאבוה דאי לאו הכי לא קשה מידי לרב נחמן:"
+  },
+  "Tosafot on Eruvin 70b:1:1": {
+    "dependsOn": [
+      "Eruvin 70b:1"
+    ],
+    "generatedAt": "2026-11-07T02:06:51.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל האי כיון דאי בעי לערובי מאתמול לא מצי לערב</strong> - אפילו למ\"ד לעיל <span class=\"parenthesized\">(עירובין דף סז.)</span> מבטלין גבי מת נכרי בשבת יכול להיות דאין מבטלין כיון דהתם הוא דאותו רשות שהוא מבטל עכשיו היה לו כח לבטל מאתמול אלא . שלא היה מועיל מפני הנכרי דאוסר אבל הכא האי רשות דמבטל השתא אין לו כח לבטל מאתמול אלא משעה שירש והוי כב' בתים בשני צידי רה\"ר דאין מבטלין דלא היה בידו רשות זה מאתמול ולמאן דאמר לעיל נמי אין מבטלין יכול להיות דזה מבטל כדאמר יורש כרעיה דאבוה הוא:"
+  },
+  "Tosafot on Eruvin 70b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70b:7:1",
+      "Eruvin 70b:7",
+      "Tosafot on Eruvin 70b:1:1",
+      "Tosafot on Eruvin 67a:11:1"
+    ],
+    "generatedAt": "2026-11-07T02:19:12.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאתויי מת נכרי בשבת</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> כיון דאי בעו לערובי מאתמול לא מצו מערבי השתא נמי לא מצו מבטלי ומרישא סיפא לא שמעינן ליה אי לא אתי בזה הכלל דהתם לא מצו מערבי מאתמול כלל אבל הכא מצו מערבי ע\"י שכירות משמע מתוך פירושו דאיירי דאתא נכרי מערב שבת ובעי למימר דאין מבטלין כשמת וכ\"ש דאם לא מת דבעי תרתי שכירות וביטול ולא יתכן לפי מה שפיר' לעיל דהתם כולי עלמא מודו דמבטלין גבי מת נכרי בשבת מהו אלא בדאתא נכרי בשבת איירי הכא ואי לאו זה הכלל הוי אמינא דהכא מבטל כיון דהאי רשותא דקמבטל הוי בידו מאתמול ולא דמי לב' בתים:"
+  },
+  "Tosafot on Eruvin 70b:8:1": {
+    "dependsOn": [
+      "Eruvin 70b:8",
+      "Rashi on Eruvin 70b:8:1",
+      "Rabbeinu Chananel on Eruvin 70b:1",
+      "Chokhmat Shlomo on Eruvin 70b:1",
+      "Chidushei Halachot on Eruvin 70b:2",
+      "Chidushei Halachot on Eruvin 70b:3"
+    ],
+    "generatedAt": "2026-11-07T23:27:19.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני חוץ ממבטל רשות</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דפריך לר\"נ דאמר דמבטלין מדלא קתני חוץ ממבטל רשות ויורש שמע מינה יורש לא ודבר תימה הוא מה דיוק הוא זה ור\"ח פירש דפריך לשמואל דאמר אין מבטלין וזה לשונו זה הכלל כל שנאסר למקצת שבת כגון שני בתים בשני צידי רה\"ר חוץ ממבטל רשות אע\"פ שנאסר למקצת שבת משעה שביטל רשותו הותרה שאר שבת לא שנא הוא ל\"ש יורש מדקתני חוץ מן המבטל רשות דייקי מיניה כל מי שיש לו רשות עכשיו יכול לבטל ופריק לה לברייתא הכי חוץ מתורת ביטול דכי איתא לאוסר מעיקרא והשתא בטל רשות הותרה לשאר שבת לאפוקי יורש דלא הוי ליה רשות הכא בעידנא דקדש היום ולא הוי ליה לערובי דלא איתמר תורת ביטול אלא היכא דליכא עירוב ומאן דלא יכול לערובי לא יכול לבטל רשותו עכ\"ל אע\"פ שהקושיות אחרות לר\"נ אין לחוש אם זאת לשמואל ורבינו חננאל בעצמו פירש דמותבינן לר\"נ משמע מתוך פירושו דחוץ ממבטל רשות קאי אשני בתים משני צידי רשות הרבים והקיפום נכרים מחיצות בשבת שמועיל שם ביטול והיכא דלא ביטלו זה לזה קאמר דנאסר לכל השבת כולה וקשה דאם כן מאי נאסר למקצת שבת דקאמר ונראה לומר לפירושו דאיירי בעירבו וכיון שלא חל העירוב בתחילת השבת תו לא חייל כשבאו אחרי כן והקיפום בשבת וכן מת נכרי בשבת איירי כשעירבו מערב שבת ובטל עירובן מפני הנכרי דכשמת תו לא חייל אבל ביטול מועיל בתרוייהו כדקתני חוץ ממבטל רשות ומדמהני ביטול ב' בתים אע\"פ שלא היה לו כח לבטל רשות של חצר זה מאתמול דרה\"ר היה כל שכן יורש דיש לו כח לבטל וקשה לדבי שמואל דאמרי אין מבטלין והוא הדין דהוה מצי למיפרך מהך ברייתא לרב חסדא ורב ששת דאמרי לעיל אין מבטלין גבי ב' בתים ונראה דלמאי דמשני אימא חוץ מתורת ביטול לא קאי אב' בתים אלא אבני חצר ששכח אחד מהן ולא עירב שיכול לבטל רשות באמצע השבת ומיהו אם נאמר לפי המסקנא כן גם לדברי המקשה לדחוק על חנם לומר דקאי אב' בתים דבלאו הכי יכול להקשות כמו שפירש ר\"ח דחוץ ממבטל רשות דמשמע דכל מי שיש לו רשות עכשיו יכול לבטל:"
+  }
+}

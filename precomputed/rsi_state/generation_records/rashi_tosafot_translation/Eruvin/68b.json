@@ -1,0 +1,345 @@
+{
+  "Rashi on Eruvin 68b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:22:51.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שנתן רשותו</strong> - לבני חצר מפני ששכח ולא עירב ולאחר שביטל הוציא מביתו לחצר אוסר על בני חצר דהדר שקליה לרשותיה:"
+  },
+  "Rashi on Eruvin 68b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:10:1",
+      "Eruvin 68b:10",
+      "Rashi on Eruvin 68b:12:1",
+      "Rashi on Eruvin 68a:1:1",
+      "Rashi on Eruvin 68a:1:2"
+    ],
+    "generatedAt": "2026-11-06T23:49:15.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"מ</strong> - דאמר אפילו בשוגג הדרא ליה רשותיה סבר לא מסולק הוא וגבי ביטול נמי חוזרין ומבטלין והדרא ליה:"
+  },
+  "Rashi on Eruvin 68b:12:1": {
+    "dependsOn": [
+      "Eruvin 68b:12",
+      "Rashi on Eruvin 68b:10:1",
+      "Rashi on Eruvin 68b:10:2"
+    ],
+    "generatedAt": "2026-11-06T23:51:10.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא דכ\"ע אין חוזרין ומבטלין</strong> - דאיסתלק ליה ובדין הוא דבשוגג לא הדרא ליה אלא ר\"מ קניס שוגג אטו מזיד ובמזיד כולהו מודו דאף על גב דאיסתלק ליה כיון דהדר הדר דהא לא זבניה וכגון שלא החזיקו בני מבוי במבוי לאחר ביטול קודם חזרה:"
+  },
+  "Rashi on Eruvin 68b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:1:1",
+      "Rashi on Eruvin 68b:4:1",
+      "Rashi on Eruvin 68b:7:1",
+      "Tosafot on Eruvin 68a:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:55:28.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צדוקי מאן דכר שמיה</strong> - מי קאמר ת\"ק דבעי למיגר דפליג רבן גמליאל ואמר דיכול לבטל:"
+  },
+  "Rashi on Eruvin 68b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:15:2"
+    ],
+    "generatedAt": "2026-11-06T23:56:48.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כנכרי</strong> - דאינו יכול לבטל בלא שכירות:"
+  },
+  "Rashi on Eruvin 68b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:15:1",
+      "Eruvin 68b:16"
+    ],
+    "generatedAt": "2026-11-06T23:57:46.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוציאו את הכלים</strong> - והחזיקו במבוי ושוב לא יוכל לחזור מביטולו וכשקדש היום עסקינן דחזקה דמבעוד יום לא מוכחא:"
+  },
+  "Rashi on Eruvin 68b:16:1": {
+    "dependsOn": [
+      "Eruvin 68b:16"
+    ],
+    "generatedAt": "2026-11-06T23:58:49.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא דפליגי רבנן בצדוקי:"
+  },
+  "Rashi on Eruvin 68b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:16:1"
+    ],
+    "generatedAt": "2026-11-06T23:59:20.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שלא יוציא</strong> - כליו במבוי ויחזור ויטול את רשותו:"
+  },
+  "Rashi on Eruvin 68b:17:1": {
+    "dependsOn": [
+      "Eruvin 68b:17",
+      "Eruvin 69a:1",
+      "Rashi on Eruvin 69a:5:1"
+    ],
+    "generatedAt": "2026-11-07T00:04:15.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועשו צורכיכם</strong> - מבעוד יום עד שלא תחשך קסבר ר' יהודה דלא פליג רבן גמליאל אלא צדוקי כנכרי ס\"ל ואין יכול לבטל ולקמן פריך והתנן לרבי יהודה עד שלא יוציא אלמא לר' יהודה אליבא דרבן גמליאל יכול הוא לבטל ובהא הוא דפליג רבי יהודה דקסבר לאחר חזקה נמי יכול לחזור בו:"
+  },
+  "Rashi on Eruvin 68b:1:1": {
+    "dependsOn": [
+      "Eruvin 68b:1"
+    ],
+    "generatedAt": "2026-11-07T23:14:21.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניתיב מר אדוכתיה</strong> - דמדקאמרת פנו לי מאני גלית אדעתך דמאחר שתבטל רשותך אין לך היום היתר בחצר והיינו כשמואל דאמר לקמן אין מבטלין וחוזרין ומבטלין דאי לאו כשמואל סבירא לך ליתיב מר אדוכתיה ובטל להם רשות חצרך שעה אחת עד שיקחו החמין ויחזרו הם ויבטלו לך אותו הרשות ויחזירו לך חצרך:"
+  },
+  "Rashi on Eruvin 68b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:14:42.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא אמר רב מבטלין וחוזרין ומבטלין</strong> - שנים הדרין בחצר אחת ולא עירבו מבטל זה רשותו לזה עד שיעשה צרכיו ויחזור זה ויבטל לזה:"
+  },
+  "Rashi on Eruvin 68b:3:1": {
+    "dependsOn": [
+      "Eruvin 68b:3",
+      "Rashi on Eruvin 68b:1:1",
+      "Rashi on Eruvin 68b:1:2",
+      "Steinsaltz on Eruvin 68b:3"
+    ],
+    "generatedAt": "2026-11-07T23:15:44.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר נמי לא ליבטיל</strong> - דהא מחצר לחצר הוא:"
+  },
+  "Rashi on Eruvin 68b:4:1": {
+    "dependsOn": [
+      "Eruvin 68b:4",
+      "Rashi on Eruvin 68b:4:1",
+      "Rashi on Eruvin 68b:4:2",
+      "Rashi on Eruvin 68b:4:3"
+    ],
+    "generatedAt": "2026-11-07T23:16:24.917Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - דאין חוזרין ומבטלין טעמא לאו משום דה\"ל כבן חצר אחרת אלא משום דלא ליהוי מילי דרבנן:"
+  },
+  "Rashi on Eruvin 68b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:4:1",
+      "Rashi on Eruvin 68b:4:2",
+      "Rashi on Eruvin 68b:4:3"
+    ],
+    "generatedAt": "2026-11-07T23:16:54.196Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחוכא</strong> - שחוק:"
+  },
+  "Rashi on Eruvin 68b:4:3": {
+    "dependsOn": [
+      "Jastrow, אִטְלוּלָא 1"
+    ],
+    "generatedAt": "2026-11-07T23:17:35.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואטלולא</strong> - ליצנות:"
+  },
+  "Rashi on Eruvin 68b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:7:2"
+    ],
+    "generatedAt": "2026-11-07T23:18:18.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב דאמר כרבנן</strong> - דאמרי במתני' ביתו אסור להכניס ולהוציא לו ולהם דאמרי המבטל רשות חצירו לא ביטל רשות ביתו אלמא לא מסתלק ליה לגמרי ולא הוה ליה כבן חצר אחרת:"
+  },
+  "Rashi on Eruvin 68b:7:2": {
+    "dependsOn": [
+      "Eruvin 26b:15",
+      "Eruvin 26b:16",
+      "Rashi on Eruvin 68b:7:1",
+      "Eruvin 26a:13",
+      "Eruvin 26a:14",
+      "Rashi on Eruvin 68b:4:1",
+      "Rashi on Eruvin 68b:4:2",
+      "Rashi on Eruvin 68b:4:3"
+    ],
+    "generatedAt": "2026-11-07T23:19:53.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל כרבי אליעזר</strong> - דאמר בפרק עושין פסין <span class=\"parenthesized\">(לעיל עירובין דף כו:)</span> ביתו מותר להכניס ולהוציא להם מאחר שביטל רשותו דרשות ביתו נמי ביטל:"
+  },
+  "Rashi on Eruvin 68b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:20:51.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לענין איסתלוקי</strong> - לשוויה נפשיה כבן חצר אחרת דלא לימצי למהדר וקבולי רשותיה מי אמר:"
+  },
+  "Rashi on Eruvin 68b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68b:9:1"
+    ],
+    "generatedAt": "2026-11-07T23:22:25.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מאי דבטיל מיהא איסתלק לגמרי</strong> - מן החצר שביטל בפירוש ודאי איסתלק וה\"ל כבן חצר אחרת:"
+  },
+  "Tosafot on Eruvin 68b:12:1": {
+    "dependsOn": [
+      "Eruvin 68b:12",
+      "Maharsha: Chidushei Halachot on Eruvin 68b:1"
+    ],
+    "generatedAt": "2026-11-06T23:52:22.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנסו שוגג אטו מזיד</strong> - לא שייך לקנסו שוגג אטו מזיד דעלמא דהכא לא קנסי' לדידיה מידי דבלאו הכי הוה אסיר אלא כלומר גזרו שוגג אטו מזיד:"
+  },
+  "Tosafot on Eruvin 68b:13:1": {
+    "dependsOn": [
+      "Eruvin 68b:13",
+      "Tosafot on Eruvin 68b:8:1",
+      "Tosafot on Eruvin 68b:12:1"
+    ],
+    "generatedAt": "2026-11-06T23:54:01.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר רב ושמואל בפלוגתא דרבי אליעזר כו'</strong> - לית ליה לרב אשי הא דאמר רבא לעיל אליבא דשמואל פעמים מבטלין ופעמים אין מבטלין דהא מסיק לעיל כי קאמר לרבנן והכא לרב אשי הוה שמואל כרבי אליעזר:"
+  },
+  "Tosafot on Eruvin 68b:14:1": {
+    "dependsOn": [
+      "Eruvin 68b:14"
+    ],
+    "generatedAt": "2026-11-06T23:56:13.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבן גמליאל מעשה בצדוקי כו'</strong> - פירשתי במשנתנו:"
+  },
+  "Tosafot on Eruvin 68b:16:1": {
+    "dependsOn": [
+      "Eruvin 68b:16",
+      "Rashi on Eruvin 68b:16:1",
+      "Rashi on Eruvin 68b:16:2",
+      "Tosafot on Eruvin 68b:16:2",
+      "Maharsha: Chidushei Halachot on Eruvin 68b:4",
+      "Tosafot on Eruvin 68b:14:1",
+      "Ritva on Eruvin 68b:7"
+    ],
+    "generatedAt": "2026-11-07T00:01:29.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא ומייתי סיועא דפליגי רבנן בצדוקי אבל מכל מקום בברייתא זו צ\"ל חסורי מיחסרא שלא יהא מעשה לסתור ואינו נראה כלל לחלק משום דמתני' סתמא קתני אבל בברייתא מסיים בה דברי ר\"מ שהיה שונה דברי רבותיו:"
+  },
+  "Tosafot on Eruvin 68b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T00:03:04.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוציאו מה שאתם מוציאין והכניסו מה כו'</strong> - פירוש או הכניסו דבחד מינייהו הוי חזקה כשעושה דבר שהיה נאסר בלא ביטול והא דקתני בסמוך מי שנתן רשותו והוציא בין בשוגג בין במזיד אוסר לאו דוקא הוציא אלא אפילו הכניס:"
+  },
+  "Tosafot on Eruvin 68b:18:1": {
+    "dependsOn": [
+      "Eruvin 68b:18",
+      "Eruvin 69a:1",
+      "Chidushei Halachot on Eruvin 68b:6",
+      "Chidushei Halachot on Eruvin 68b:7"
+    ],
+    "generatedAt": "2026-11-07T00:05:49.298Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למימרא דכי מפקי אינהו כו'</strong> - מתוך הלשון משמע דמסיק אדעתיה שפיר לחלק בין מפיק אינהו והדר מפיק איהו למפיק איהו ברישא ותימה דאם כן מאי קא קשיא ליה הא איכא לאוקומי מתני' דמי שנתן רשותו כו' כגון דמפיק איהו ברישא כדמשני אביי כאן שהחזיקו ואין לומר דמי שנתן רשותו והוציא משמע ליה בכל ענין שהוציא אפילו דמפקי ליה אינהו ברישא דהא כי משני רב יוסף אימא אינו אוסר ע\"כ לאו בכל ענין קתני דהא בעי למימר כי מפיק איהו ברישא אוסר ומפרש ר\"י דמי שנתן רשותו משמע ליה שנגמרה לגמרי מתנתו דהיינו כי החזיקו דאפקי אינהו ברישא מדלא קתני מי שביטל דמשמע אמירה בעלמא כדקתני לעיל שהרי ביטל לכם רשותו ואביי דמוקי לה בשלא החזיקו קא סבר דשייך למיתני מי שנתן אף על גב דאיירי בלא החזיקו ומייתי סייעתא מברייתא דקתני מי שנתן וקתני סיפא בד\"א בשלא החזיקו אבל להא לא אצטריכא ליה לאביי לאתויי ראיה לחלק בין החזיקו ללא החזיקו דמברייתא דלעיל שמעי' ליה דקתני מהרו והוציאו כו' עד שלא יוציא הוא כו' ומאי אולמיה דהא מהאי:"
+  },
+  "Tosafot on Eruvin 68b:8:1": {
+    "dependsOn": [
+      "Eruvin 68b:8"
+    ],
+    "generatedAt": "2026-11-07T23:21:26.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנא דאמרי אפילו כרבנן</strong> - הוה מצי למימר טעמא דלעיל דלא ליהוו מילי דרבנן כי חוכא ואטלולא:"
+  }
+}
