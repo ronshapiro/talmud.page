@@ -53,7 +53,7 @@ jobs:
           echo "Changed files in PR #${PULL_REQUEST_NUMBER}:"
           echo "$CHANGED_FILES"
 
-          NON_IGNORED_FILES=$(echo "$CHANGED_FILES" | grep -v -E '^(precomputed/ai_additions/|precomputed/rsi_state/|precomputed/test_data/)|(^|/)__tests__(/|$)|(^|/)\.?pre-commit|\.test\.(ts|tsx)$' | grep -v '^[[:space:]]*$' || true)
+          NON_IGNORED_FILES=$(echo "$CHANGED_FILES" | grep -v -E '^(precomputed/ai_additions/|precomputed/rsi_state/)|(^|/)(test_data|__tests__)(/|$)|(^|/)\.?pre-commit|\.test\.(ts|tsx)$' | grep -v '^[[:space:]]*$' || true)
 
           if [ -z "$NON_IGNORED_FILES" ]; then
             echo "PR #${PULL_REQUEST_NUMBER} only modifies ignored files (data, tests, or pre-commit) (or diff is empty)."
