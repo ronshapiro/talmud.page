@@ -1,4 +1,90 @@
 {
+  "Rashi on Sukkah 6b:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 6b:10:1",
+      "Rashi on Sukkah 6b:10:2"
+    ],
+    "generatedAt": "2026-11-05T12:57:43.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגופיה</strong> - דאין דורשין תחילות פסוק הנאמר ראשון אינו לדרשה אלא למשמעי אתא:"
+  },
+  "Rashi on Sukkah 6b:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 6b:10:1",
+      "Sukkah 6b:10",
+      "Sukkah 5b:11",
+      "Sukkah 5b:12",
+      "Sukkah 5b:14",
+      "Sukkah 6a:1",
+      "Rashi on Sukkah 6a:1:1"
+    ],
+    "generatedAt": "2026-11-05T12:59:50.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הילכתא</strong> - הא דאמרינן לעיל הלכה למשה מסיני להכי נמי אתמר ליה הלכתא למחיצות למיגרעיה לשלישית דופן סוכה ולמיסגי ליה בטפח:"
+  },
+  "Rashi on Sukkah 6b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T13:00:19.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סככה לא בעי קרא</strong> - דממשמעותא דגופיה נפקא דסוכה בלא סכך לא מקרייא:"
+  },
+  "Rashi on Sukkah 6b:14:1": {
+    "dependsOn": [
+      "Sukkah 6b:14",
+      "Rashi on Sukkah 6b:8:1",
+      "Rashi on Sukkah 6b:9:1",
+      "Rashi on Sukkah 6b:10:1"
+    ],
+    "generatedAt": "2026-11-05T13:01:28.073Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דורשין תחילות</strong> - לדרשה הוו להו ארבעה:"
+  },
+  "Rashi on Sukkah 6b:15:1": {
+    "dependsOn": [
+      "Translation on Rashi on Sukkah 6b:15:1"
+    ],
+    "generatedAt": "2026-11-05T13:05:59.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למחסה ולמסתור וגו'</strong> - ובלא ארבע מחיצות לאו מחסה מזרם הוא שהרוח משיב את הזרם דרך דופן הפרוץ:"
+  },
+  "Rashi on Sukkah 6b:16:1": {
+    "dependsOn": [
+      "Sukkah 6b:16",
+      "Sukkah 6b:17",
+      "Chokhmat Shlomo on Sukkah 6b:3",
+      "Meir Lublin on Sukkah 6b:3",
+      "Steinsaltz on Sukkah 6b:16:1",
+      "Steinsaltz on Sukkah 6b:16",
+      "Rashi on Sukkah 7a:1:1"
+    ],
+    "generatedAt": "2026-11-05T13:11:52.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד היוצא</strong> - מקום שהמחיצה כלה באיזה שירצה אם השתים מזרחית צפונית יעשה הטפח בסוף הצפונית במקצועו לצד מערב <span class=\"image-ref-container\"><span class=\"image-ref-text\">(1):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAAB5CAYAAAAUES4zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVHhe7dHBCcAwEANB99+0A8EFHPnFOwMqQOza5IgeJHqQ6EGiB4keJHrQKPpay36wKdEv2pToF21K9Is29Sk6/yZ6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHiR6kOhBogeJHvQp+o0rEf2sRPSzEtHPSlpveYkeJHqQ6EGiB4keJHqQ6EGi5+z9AA8MUO4mDfC+AAAAAElFTkSuQmCC\"></span></span><span class=\"image-pointer\">(1)</span> או במזרחית לצד דרום: <span class=\"image-ref-container\"><span class=\"image-ref-text\">(2):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAByCAYAAACCw/U6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFuSURBVHhe7dHBacAAEMRA99+08zeEyzMrRqAK5nmVCmgsoLGAxvoV9HkeD/wN6PjfgI7/Dej43/4Mqv/R5QJ0rMsF6FiXC9CxLhegY10uQMe6XICOdbkAHetyATrW5QJ0rMsF6FiXC9CxLhegY10uQMe6XICOdbkAHetyATrW5QJ0rMsF6FiXC9CxLhegY10uQMe6XICOdbkAHetyATrW5QJ0rMsF6FiXC9CxLhegY10uQMe6XICOdbkAHetyATrW5QJ0rMsF6FiXC9CxLhegsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsYDGAhoLaCygsUjFAhoLaCygsYCmet8fh46EI6+5nD8AAAAASUVORK5CYII=\"></span></span><span class=\"image-pointer\">(2)</span>"
+  },
   "Rashi on Sukkah 6b:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-10-27T09:48:28.313Z",
@@ -139,6 +225,89 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">יש אם למסורת</strong> - כמה שכתב משה ומסר בספר תורה לישראל היא האם והעיקר ולא כמו שהוא נקרא:"
   },
+  "Rashi on Sukkah 6b:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 6b:9:1",
+      "Rashi on Sukkah 6b:9:2",
+      "Sukkah 6b:9",
+      "Rashi on Sukkah 6b:1:1",
+      "Rashi on Sukkah 6b:1:2",
+      "Rashi on Sukkah 6b:1:3",
+      "Rashi on Sukkah 6b:4:1",
+      "Rashi on Sukkah 6b:4:2",
+      "Rashi on Sukkah 6b:5:1",
+      "Rashi on Sukkah 6b:7:1",
+      "Rashi on Sukkah 6b:7:2",
+      "Rashi on Sukkah 6b:8:1",
+      "Rashi on Sukkah 6b:10:1",
+      "Rashi on Sukkah 6b:10:2",
+      "Steinsaltz on Sukkah 6b:9:1",
+      "Steinsaltz on Sukkah 6b:9",
+      "Steinsaltz comment #1 on Sukkah 6b:9",
+      "Rashi on Sukkah 6a:1:1",
+      "Rashi on Sukkah 6a:2:1",
+      "Community Translation: Translation on Rashi on Sukkah 6b:9:1",
+      "Translation on Rashi on Sukkah 6b:9:1"
+    ],
+    "generatedAt": "2026-11-05T12:54:26.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:9:1"
+    ],
+    "sourceText": "בסכת תשבו ישבו בסכת כי בסכות הושבתי חד מלא ותרין חסרין:"
+  },
+  "Rashi on Sukkah 6b:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 6b:9:1",
+      "Rashi on Sukkah 6b:8:1",
+      "Rashi on Sukkah 6b:10:1",
+      "Rashi on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-05T12:56:41.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 6b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסכת</strong> - משמע חדא:"
+  },
+  "Tosafot on Sukkah 6b:14:1": {
+    "dependsOn": [
+      "Sanhedrin 3b:2",
+      "Sanhedrin 3b:3",
+      "Sanhedrin 3b:4",
+      "Sanhedrin 3b:5",
+      "Rashi on Sanhedrin 3b:3:1",
+      "Rashi on Sanhedrin 3b:4:1",
+      "Rashi on Sanhedrin 3b:4:2",
+      "Maharam on Sukkah 6b:8:1",
+      "Tosafot on Sukkah 6b:8:1",
+      "Rashi on Sanhedrin 3b:5:1"
+    ],
+    "generatedAt": "2026-11-05T13:05:10.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 6b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדורשין תחילות קמיפלגי</strong> - ומשמע דלכולי עלמא סככה לא בעי קרא ואפילו הכי דל חד לגופיה ולא מוקמינן ליה למנינא למאן דלא דריש תחילות ולא <span class=\"rashi-quotation\">כמו שפי' הקונטרס</span> בריש סנהדרין <span class=\"parenthesized\">(דף ג:)</span> גבי תלתא אלהים כתיבי בפרשה דפי' אין דורשין תחילות משום דאצטריך למומחה ועוד קשיא לפי' למאי דמסיק התם דלכולי עלמא אין דורשין תחילות ואמר ליה ר' יאשיה א\"כ נכתוב קרא אל השופט דאי משופט לא הוה ידעינן מומחה כמו שפי' שם <span class=\"rashi-quotation\">בקונטרס</span> עצמו ור' <span class=\"parenthesized\">(יוחנן)</span> <span class=\"parenthesized\">(עצמו)</span> לישנא דעלמא נקט כדאמרי אינשי מאן דאית ליה דינא ליקרב לגבי דיינא הרגיל ולא לגבי הדיוט וכיון דמשופט לא ממעט הדיוט א\"כ הוי אתי למניינא אלא ודאי אפילו לא איצטריך למומחה אפילו הכי דל חד לגופיה דאין דורשין תחילות וכל הני דבריש סנהדרין <span class=\"parenthesized\">(דף ד:)</span> דקרנות קרנת לטוטפות לטטפת ועשרה כהנים דסוף פרק קמא דסנהדרין <span class=\"parenthesized\">(דף יד:)</span> צריך לדקדק דדרשינן כולהו למניינא ולא אמרינן דאין דורשין תחילות:"
+  },
+  "Tosafot on Sukkah 6b:15:1": {
+    "dependsOn": [
+      "Sukkah 6b:15",
+      "Rashi on Sukkah 6b:15:1",
+      "Steinsaltz In-Depth on Sukkah 6b:15:1",
+      "Steinsaltz comment #1 on Sukkah 6b:15"
+    ],
+    "generatedAt": "2026-11-05T13:07:43.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 6b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסוכה תהיה לצל</strong> - בירושלמי אמרינן טעמא דר\"ש מן הדא קרייה וסוכה תהיה לצל יומם מחורב הרי אחת למחסה ולמסתור הרי שנים מזרם וממטר שנים ורבנן אמרי מזרם וממטר אחת:"
+  },
   "Tosafot on Sukkah 6b:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-10-27T09:51:29.518Z",
@@ -148,5 +317,17 @@
       "Tosafot on Sukkah 6b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">דבר תורה רובו ומקפיד עליו חוצץ</strong> - י\"מ דהכא איירי בשער אבל בבשר חוצץ אפילו מיעוטו שאינו מקפיד וקשה לר\"ת מהא דאמרינן פרק הערל <span class=\"parenthesized\">(יבמות דף עח. שם)</span> נכרית מעוברת שנתגיירה בנה אין צריך טבילה ופריך אמאי וכי תימא משום דרבי יצחק האמר רב כהנא לא שנו אלא רובו אבל כולו חוצץ והשתא דעדיפא הוה ליה לאקשויי דבבשר אפילו משהו ואפילו אינו מקפיד חוצץ ועוד מדקיהיב שיעורא בחציצה במסכת מקואות <span class=\"parenthesized\">(פ\"ט מ\"ה)</span> ומייתי לה בסוף אלו קשרים <span class=\"parenthesized\">(שבת דף קיד.)</span> על המרדעת רשב\"ג אומר עד כאיסר האיטלקי עוד מייתי התם של בנאים של תלמידי חכמים מצד אחד חוצץ ושל בור משני צדדין ובזבחים בסוף דם חטאת <span class=\"parenthesized\">(זבחים דף צח:)</span> דם על בגדו חוצץ ואם טבח הוא אינו חוצץ רבב על בגדו חוצץ ואם מוכר רבב הוא אינו חוצץ וא\"ת כיון דאתא הלכתא לרובו ולא למעוטו א\"כ קרא למאי אתא דדרשינן בשרו שלא יהא דבר חוצץ בינו לבין המים וי\"ל דאצטריך לבית הסתרים כדאיתא בפרק קמא דקדושין <span class=\"parenthesized\">(דף כה.)</span>:"
+  },
+  "Tosafot on Sukkah 6b:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 6b:1:1"
+    ],
+    "generatedAt": "2026-11-05T12:50:53.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 6b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי שמעון סבר יש אם למקרא</strong> - כולהו מודו דדרשינן מקרא ומסורת דלא על חנם נכתב כן אלא במילתא דמיכחשי אהדדי פליגי דמר סבר מקרא עיקר כדאשכחן ר\"ע בריש סנהדרין <span class=\"parenthesized\">(דף ד.)</span> דסבר יש אם למקרא ובפ' כל שעה <span class=\"parenthesized\">(פסחים דף לו.)</span> גבי לחם עוני דדריש מקרא ומסורת ובפ' לולב הגזול <span class=\"parenthesized\">(לקמן סוכה דף לד:)</span> תנן ר\"ע אומר כשם שלולב אחד ואתרוג אחד כך כו' ודרשינן בגמרא [דף לב.] לולב אחד מדכתיב כפת חסר וי\"ו וכן ר\"ש דסבר הכא יש אם למקרא ובפ' קמא דקדושין <span class=\"parenthesized\">(דף יח:)</span> גבי בבגדו בה דריש מקרא ומסורת ומיהו קשה דלרבי עקיבא דלא דריש התם אלא מקרא לחוד ואמאי לא דריש תרוייהו כר' שמעון כדאמרינן גבי לחם עוני ועוד אשכחן ר\"ע דסבר יש אם למקרא ולקמן בסמוך [סוכה דף ז:] מכשיר ר\"ע סוכה בראש הספינה ומוכח שמעתא משום דקסבר סוכה דירת עראי בעינן אלמא לא בעי ג' כהלכתן דחד טעמא הוא כדקאמרי' בההוא שמעתא <span class=\"parenthesized\">(דרשב\"ג)</span> דפליג אדר ע שוין בסוכה דדירת קבע בעינן א\"כ סבר ר\"ע יש אם למסורת ומיהו בזה יש לומר כמו שאפרש לקמן דהאי דקאמר כולהו סבירא להו סוכה דירת קבע בעינן לא בשביל שיהו שוין אבל עוד קשה דהא ר\"ע ור\"ש דסברי יש אם למקרא ומחייבי אחתיכה אחת בפרק דם שחיטה <span class=\"parenthesized\">(בכריתות דף כב:)</span> גבי חתיכה של חולין וחתיכה של קדש בא אחד ואכל את הראשונה ובא אחר ואכל את השניה זה מביא אשם תלוי וזה מביא אשם תלוי דברי ר\"ע ר\"ש אומר שניהם מביאין אשם אחד וכן גבי חלב ושומן אלמא לא בעינן חתיכה משתי חתיכות ומאן דבעי חתיכה משתי חתיכות אמרינן בפרק ספק אכל <span class=\"parenthesized\">(שם דף יז:)</span> משום דמצות קרינא ביה ומאן דמחייב סבר יש אם למסורת מצת כתיב ואין לפרש ההיא דדם שחיטה בשתי חתיכות גדולות שאכל זה מזו כזית וזה מזו כזית דתרווייהו שתי מצות דעל כרחך טעמא משום דלא בעי חתיכה משתי חתיכות כדמוכח התם בשילהי פירקין בגמרא גבי ר' יוסי דקאמר חתיכה משתי חתיכות איכא בינייהו ואין לומר דכיון דהוו לכתחילה שנים חשוב מצות משום דאיקבע איסורא דהא רב נחמן הוא דקאמר הכי בריש פרק ספק אכל <span class=\"parenthesized\">(שם יח.)</span> אבל רבה דמפרש טעמא משום דמצות קרינן בה לית ליה כלל כדמוכח התם ועוד קשיא מדר' שמעון להאי לישנא דאמרינן הכא דכולי עלמא יש אם למסורת ובסוף פרק כיצד צולין <span class=\"parenthesized\">(פסחים דף פו:)</span> גבי בבית אחד יאכל קסבר יש אם למקרא ועוד קשה דלקמן <span class=\"parenthesized\">(סוכה דף ט:)</span> פסלינן לכ\"ע סוכה תחת סוכה מדכתיב בסכת ולא אמרינן יש אם למקרא: [וע\"ע תוס' לקמן <span class=\"parenthesized\">(סוכה לב.)</span> ד\"ה כפת ותוס' סנהדרין ד. ד\"ה כולהו ותוס' זבחים מ. ד\"ה לא נצרכה ותוס' נדה טו. ד\"ה לא ותוס' פסחים לו. ד\"ה עוני]"
   }
 }

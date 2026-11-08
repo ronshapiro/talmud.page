@@ -1,0 +1,338 @@
+{
+  "Rashi on Sukkah 49a:1:1": {
+    "dependsOn": [
+      "Sukkah 49a:1",
+      "Chokhmat Shlomo on Sukkah 49a:2",
+      "Rashi on Sukkah 49a:1:2",
+      "Zevachim 62a:10",
+      "Rashi on Zevachim 62a:10:1",
+      "Rashi on Zevachim 62a:10:2",
+      "Rashi on Zevachim 62a:10:3",
+      "Rashi on Sukkah 48b:12:1",
+      "Rashi on Sukkah 48b:12:2",
+      "Rashi on Sukkah 48b:12:3",
+      "Rashi on Sukkah 47b:4:3",
+      "Tosafot on Sukkah 49a:1:1"
+    ],
+    "generatedAt": "2026-11-08T05:11:53.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכל מזבח כו'</strong> - להכי אין כשר לעבודה שכל המזבח שאין לו קרן וכבש ויסוד וריבוע פסול לעבודה הכי גרסינן קרן אבן אמה על אמה ברום אמה לכל קרן ויסוד דהיינו אמה כניסה ראשונה וריבוע שאינו מרובע אם חסר אחד מכל אלו פסול וטעמא אמר רב הונא בשחיטת קדשים <span class=\"parenthesized\">(זבחים סב.)</span> כל מקום שנאמר המזבח לעכב דהכי משמע המזבח זהו המזבח העשוי כן והנך בכולהו כתיב המזבח על קרנות המזבח באצבעך במלואים <span class=\"parenthesized\">(שמות כ״ט:י״ב)</span> ובכבש כתיב אל פני המזבח <span class=\"parenthesized\">(ויקרא ו׳:ז׳)</span> והכבש הוא פניו של מזבח שהוא פתחו ועלייתו וביסוד כתיב אל יסוד המזבח <span class=\"parenthesized\">(שם ח)</span> ובריבוע כתיב רבוע יהיה המזבח <span class=\"parenthesized\">(שמות כ״ז:א׳)</span>:"
+  },
+  "Rashi on Sukkah 49a:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:1:1",
+      "Zevachim 62a:9",
+      "Zevachim 62a:10"
+    ],
+    "generatedAt": "2026-11-08T05:13:35.562Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי בר יהודה אומר אף הסובב</strong> - מעכבו דקסבר כרכוב המזבח זהו הסובב והרי נאמר בו המזבח ורבנן סבירא להו זהו הכיור והכי אמרינן בזבחים בפרק קדשי קדשים <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Sukkah 49a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:2:1",
+      "Sukkah 49a:2",
+      "Rashi on Sukkah 49a:2:2",
+      "Rashi on Sukkah 49a:2:3",
+      "Rashi on Sukkah 48b:1:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-08T05:33:40.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיתין</strong> - חלל שתחת המזבח כנגד מקום הנסכים:"
+  },
+  "Rashi on Sukkah 49a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:2:1",
+      "Rashi on Sukkah 49a:2:3"
+    ],
+    "generatedAt": "2026-11-08T05:35:25.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמוקי</strong> - סתרי לשון חמק עבר <span class=\"parenthesized\">(שיר השירים ה׳:ו׳)</span> נסתר ונכסה ממני וכן עד מתי תתחמקין <span class=\"parenthesized\">(ירמיהו ל״א:כ״ב)</span> תסתרי ממני שאת בושה ליקרב אלי על שמעלת בי חמוקי ירכיך לשון ירך המזבח <span class=\"parenthesized\">(ויקרא א)</span>:"
+  },
+  "Rashi on Sukkah 49a:2:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:2:1",
+      "Rashi on Sukkah 49a:2:2",
+      "Tosafot on Sukkah 49a:2:1",
+      "Sukkah 49a:3",
+      "Tosefta Sukkah 3:4",
+      "Tosefta Sukkah (Lieberman) 3:13",
+      "Rashi on Sukkah 49a:3:1",
+      "Rashi on Sukkah 49a:3:2",
+      "Rashi on Sukkah 49a:3:3",
+      "Rashi on Sukkah 49a:3:4",
+      "Rashi on Sukkah 49a:3:5",
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7",
+      "Rashi on Sukkah 49a:3:8",
+      "Sukkah 49a:4",
+      "Chidushei Agadot on Sukkah 49a:2"
+    ],
+    "generatedAt": "2026-11-08T05:37:21.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעשה ידי אומנותו של הקב\"ה</strong> - גרסינן ועליהם כרה דוד וכו' לא גרסינן ליה בתוספתא והכא נמי לא גרסינן ליה דמאן דאית ליה שכראן לית ליה שמששת ימי בראשית נבראו:"
+  },
+  "Rashi on Sukkah 49a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:2"
+    ],
+    "generatedAt": "2026-11-08T05:40:49.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לידידי</strong> - הקב\"ה בשבילו אני משוררו ובמקומו אני לקבול על זאת:"
+  },
+  "Rashi on Sukkah 49a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T05:41:17.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שירת דודי לכרמו</strong> - על כרמו:"
+  },
+  "Rashi on Sukkah 49a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:1",
+      "Rashi on Sukkah 49a:3:2",
+      "Rashi on Sukkah 49a:3:3",
+      "Rashi on Sukkah 49a:3:4"
+    ],
+    "generatedAt": "2026-11-08T05:42:43.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרם היה לידידי בקרן בן שמן</strong> - בארץ ישראל זוית השמינה מכל הארצות:"
+  },
+  "Rashi on Sukkah 49a:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:3",
+      "Rashi on Sukkah 49a:3:4",
+      "Rashi on Sukkah 49a:3:5",
+      "Rashi on Sukkah 49a:3:1",
+      "Rashi on Sukkah 49a:3:2",
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7",
+      "Rashi on Sukkah 49a:3:8",
+      "Rashi on Sukkah 48b:3:1",
+      "Rashi on Sukkah 48b:3:2"
+    ],
+    "generatedAt": "2026-11-08T05:45:33.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויעזקהו</strong> - בנה להם ערים בצורות מוקפות דלתים ובריח כטבעת דמתרגמינן עיזקא <span class=\"parenthesized\">(שמות כה)</span>:"
+  },
+  "Rashi on Sukkah 49a:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T05:46:12.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויסקלהו</strong> - כאדם המפנה אבנים מכרמו כלומר פינה האומות מפניהם שלא ישבו בארצם פן יחטיאו אותם:"
+  },
+  "Rashi on Sukkah 49a:3:6": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:5",
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7",
+      "Rashi on Sukkah 49a:3:1",
+      "Rashi on Sukkah 49a:3:2",
+      "Rashi on Sukkah 49a:3:3",
+      "Rashi on Sukkah 49a:3:4",
+      "Rashi on Sukkah 49a:2:1",
+      "Rashi on Sukkah 49a:2:2",
+      "Rashi on Sukkah 49a:2:3",
+      "Tosafot on Sukkah 49a:3:1"
+    ],
+    "generatedAt": "2026-11-08T05:48:08.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויטעהו שורק</strong> - נטעו גפנים משובחות ולא זמורה אלא שרשין עצמן זה בית המקדש שהוא שורשן ועיקרן שמחבבם לפני המקום:"
+  },
+  "Rashi on Sukkah 49a:3:7": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7",
+      "Rashi on Sukkah 49a:3:8"
+    ],
+    "generatedAt": "2026-11-08T05:48:46.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויבן מגדל בתוכו זה מזבח</strong> - העשוי כמגדל עוז:"
+  },
+  "Rashi on Sukkah 49a:3:8": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7"
+    ],
+    "generatedAt": "2026-11-08T05:50:51.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגם יקב חצב בו</strong> - באותו מגדל יקב הוא בור חפור וכן עד יקבי המלך <span class=\"parenthesized\">(זכריה י״ד:י׳)</span> בית שיחא דמלכא לשון שיח ומערה פושיי\"ן בלע\"ז:"
+  },
+  "Rashi on Sukkah 49a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:4:2",
+      "Rashi on Sukkah 49a:4:3",
+      "Rashi on Sukkah 49a:4:4",
+      "Rashi on Sukkah 49a:4:5",
+      "Sukkah 49a:4"
+    ],
+    "generatedAt": "2026-11-08T05:55:26.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין כבש למזבח</strong> - הכבש ארכו ל\"ב ומשפע ועולה ט' אמות עד ששוה למזבח ולא היה ראשו מחובר למזבח אלא אויר מעט מפסיק בינתים כדאמר בזבחים <span class=\"parenthesized\">(דף קד.)</span> ועשית עולותיך הבשר והדם מה דם בזריקה אף בשר בזריקה הא למדת אויר יש בין כבש למזבח ואותו אויר קרוי בין כבש למזבח ולול היה באותו אויר במערבו של כבש בשמונה אמות מערבית של כבש שהכבש רחבו ט\"ז אמה ממזרח למערב ואותו חלל שהנסכים יורדין לתוכו שהן נעשין בדרומית מערבית של מזבח ומוקף ארבע מחיצות עד קרקעיתו וקרקעיתו של רצפת שייש ואין היין נבלע שם וכל נסכי יין של כל השנה יורדין שם והאי תנא לית ליה שהיו שיתין יורדין עד תהום והכי אמרינן לקמן דלית ליה ופליג אדרבנן:"
+  },
+  "Rashi on Sukkah 49a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:4:2"
+    ],
+    "generatedAt": "2026-11-08T05:56:25.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרחי כהונה</strong> - ילדים כהנים:"
+  },
+  "Rashi on Sukkah 49a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T05:56:49.221Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יין קרוש</strong> - שנעפש ונקרש:"
+  },
+  "Rashi on Sukkah 49a:4:4": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 49a:3:1",
+      "Chokhmat Shlomo on Sukkah 49a:3:2",
+      "Rashi on Sukkah 49a:4:1",
+      "Rashi on Sukkah 49a:4:2",
+      "Rashi on Sukkah 49a:4:3",
+      "Rashi on Sukkah 49a:4:5",
+      "Sukkah 48b:9",
+      "Sukkah 49a:1"
+    ],
+    "generatedAt": "2026-11-08T05:58:05.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושורפין אותו בקדושה</strong> - במקום קדוש בעזרה ומתוך השיתין מוציאין אותו שלא יתמלאו השיתין מן הנסכין שכל קרבנות הצבור והיחיד טעונין נסכים חוץ מחטאת ואשם ושורפין אותם שאסורין בהנאה דקדש הוא:"
+  },
+  "Rashi on Sukkah 49a:4:5": {
+    "dependsOn": [
+      "Sukkah 49a:4",
+      "Rashi on Sukkah 49b:1:1"
+    ],
+    "generatedAt": "2026-11-08T05:59:27.033Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 49a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר בקדש הסך</strong> - הקיש שריפה לניסוכו:"
+  },
+  "Tosafot on Sukkah 49a:1:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 49a:1:1",
+      "Tosafot on Sukkah 48b:2:1",
+      "Tosafot on Sukkah 49a:2:1",
+      "Tosafot on Sukkah 49a:3:1"
+    ],
+    "generatedAt": "2026-11-08T05:31:57.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכל מזבח שאין לו קרן</strong> - וזה שקרנו נפגמה הוה ליה קרן כמאן דליתיה ולכך נפסל לעבודה דאין לו קרן דפגימה פוסלת באבני מזבח כדי שתחגור בה צפורן כדאמר פ\"ק דחולין <span class=\"parenthesized\">(דף יח. ושם)</span> וטעמא פירש שם <span class=\"rashi-quotation\">בקונט'</span> משום דכתיב אבנים שלמות תבנה [ובסידא] פליגי בה תנאי התם ר\"ש בן יוחי אומר טפח ר' אליעזר בן יעקב אומר כזית וי\"ל דהטעם משום דלא חשיב ריבוע למר בהאי שיעורא ולמר בהאי שיעורא וריבוע מעכב כדקתני הכא ומיהו במזבח ניחא דכתיב רבוע יהיה המזבח אבל קרן מנלן דסיד היה בקרן דאע\"פ שפירש כאן <span class=\"rashi-quotation\">בקונט'</span> קרן אבן מרובע אמה על אמה ברום אמה לא יתכן דע\"י מלבן נעשה כדאי' בפ' איזהו מקומן <span class=\"parenthesized\">(זבחים נד.)</span> ושמא רבוע דקרן ילפינן ממזבח וא\"ת ואבני מזבח מאי איריא משום דנפגמה תיפוק ליה משום דחסרה האבן ואפילו לא נפגמה לא קרינן בהו שלמות כדמוכח פ' איזהו מקומן <span class=\"parenthesized\">(שם)</span> גבי מזרחית דרומית שלא היה לו יסוד דפריך היכי עבדי לה אי דגייז לה אבנים שלמות אמר רחמנא וי\"ל דהכי קאמר ליה התם אי גייז לשבר האבן אי אפשר [לשבר] בלא פגימה ואין כאן שלמות ואם בא לפחות ולהחליק בסכין בלא פגימה איכא איסורא דלא תניף עליהן ברזל וכן משמע במסכת ע\"ז פ' ר' ישמעאל <span class=\"parenthesized\">(עבודה זרה דף נב:)</span> גבי אבני מזבח. שקצצום וגנזום בית חשמונאי דקאמר היכי נעביד ניתברינהו אבנים שלמות אמר רחמנא נסרינהו פי' לעשות בלא פגימות לא תניף עליהם ברזל כתיב וא\"ת וליעבדו על ידי שמיר דבבית שני הוה שמיר כדמוכח במסכת סוטה בפ' עגלה ערופה <span class=\"parenthesized\">(סוטה דף מח.)</span> דקאמר משמתו נביאים הראשונים בטלו אורים ותומים משחרב בית המקדש בטל שמיר והיינו בית שני דאי בית ראשון ליערבינהו משחרב בית המקדש בטלו אורים ותומים ושמיר דמשמתו נביאים הראשונים היה חורבן הבית כדתניא בגמ' משחרב בהמ\"ק בטלו אורים ותומים והיינו בית ראשון דחמשה דברים חסר בית שני מבית ראשון כדאיתא ביומא <span class=\"parenthesized\">(דף כא:)</span> אלא בטל השמיר היינו לאחר בית שני וכן הא דקאמר רשב\"ג התם משחרב בהמ\"ק ניטל טעם הפירות מסתמא לאחר חורבן בית שני קאמר שחרב בימיו תדע דאשכחן בבית שני שהיו פירות מתברכין בימי שמעון בן שטח. שנעשין חטין ככליות של שור הגדול ועוד יש להביא ראיה דהוה שמיר בבית שני מעובדא דדמא בן נתינה דפ\"ק דקידושין <span class=\"parenthesized\">(דף לא.)</span> ודפ\"ב דע\"ז <span class=\"parenthesized\">(דף כג: ושם)</span> שבקשו ממנו חכמי ישראל אבנים לאפוד ואבני אפוד בעו שמיר כדקאמר ר' נחמיה פ' עגלה ערופה <span class=\"parenthesized\">(סוטה מח:)</span> כדכתיב במלואותם ואפי' ר' יהודה דפליג עליה ואמר שמיר שבו בנה שלמה את בהמ\"ק מודה נמי דאבני אפוד בעו שמיר כדמוכח פ' מי שאחזו <span class=\"parenthesized\">(גיטין סח. ושם)</span> גבי בנין בהמ\"ק שעשה שלמה דקאמרינן היכי נעביד איכא שמיר דאייתי משה לאבני אפוד וההיא על כרחך רבי יהודה היא דלר' נחמיה לא הוה שמיר לבית המקדש ועובדא דדמא בן נתינה בבית שני הוה דקאמרינן התם לשנה נולדה לו פרה אדומה בעדרו ושבע פרות היו הראשונה שעשה משה שניה שעשה עזרא כדתנן במסכת פרה <span class=\"parenthesized\">(פ\"ג מ\"ה)</span> וכיון שהיה שמיר בבית שני כדפרישית אמאי גנזום בית חשמונאי וי\"ל שמיר אין עושה אותן שלמות שלא תחגור בה צפורן וא\"ת א\"כ היאך בנו את המזבח דלא אפשר לומר שהיה מתקן מבחוץ ומכניסו מבפנים דאפילו כי האי גוונא במזבח אסור כדתניא במכילתא בסוף פרשת וישמע יתרו לא תבנה אתהן גזית בו אין אתה בונה גזית אבל אתה בונה גזית בהיכל ובקודש הקדשים ומה אני מקיים ומקבות והגרזן וכל כלי ברזל לא נשמע בבית בהבנותו בבית אינו נשמע אלמא במזבח אפילו בחוץ אינו נשמע וכן יסד רבינו אליהו הזקן באזהרת אמת יהגה חיכי אבני מזבח תוך ובר כן נגוזו ועבר והיינו יכולין לחלק בין קודם שהוקדשו אבנים למזבח דעודן חולין לאחר שהוקדשו אבל אין צריך דמשמע בפ' איזהו מקומן <span class=\"parenthesized\">(זבחים נד. ושם)</span> שבנו אותו באבנים החלוקות כגון חלוקי אבנים מן הנחל שבחול הים ובחול הים נבראו חלקות מששת ימי בראשית ומיהו קשה דגבי בית המקדש כתיב אבן שלמה מסע נבנה ואמר ר' יהודה דהוה שמיר לבהמ\"ק.:"
+  },
+  "Tosafot on Sukkah 49a:2:1": {
+    "dependsOn": [
+      "Sukkah 49a:3",
+      "Sukkah 49a:4",
+      "Rashi on Sukkah 49a:2:1",
+      "Rashi on Sukkah 49a:2:2",
+      "Rashi on Sukkah 49a:2:3",
+      "Rashi on Sukkah 49a:3:1",
+      "Tosefta Sukkah 3:4",
+      "Maharam on Sukkah 49a:9",
+      "Chidushei Agadot on Sukkah 49a:1",
+      "Chidushei Agadot on Sukkah 49a:2"
+    ],
+    "generatedAt": "2026-11-08T05:40:11.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תיקרי בראשית אלא ברא שית</strong> - האי תנא ור' יוחנן סברי מששת ימי בראשית נבראו אבל אידך תנא דדריש וגם יקב חצב לית ליה דמההוא קרא דריש מזבח ושיתין למזבח בידי אדם הוה ובמילתיה גרסינן ועליו כרה דוד ומיהו קשה דר' יוחנן אדר' יוחנן דהכא סבר מששת ימי בראשית נבראו דדריש מעשה ידי אמן מעשה אומנותו של מקום ולקמן בפרק החליל <span class=\"parenthesized\">(סוכה נג.)</span> א\"ר יוחנן בשעה שכרה דוד שיתין קפא תהומא ושמא אמוראי נינהו ואליבא דר' יוחנן:"
+  },
+  "Tosafot on Sukkah 49a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 49a:3:5",
+      "Rashi on Sukkah 49a:3:6",
+      "Rashi on Sukkah 49a:3:7",
+      "Rashi on Sukkah 49a:3:8",
+      "Tosafot on Sukkah 49a:1:1",
+      "Tosefta Sukkah 3:14",
+      "Tosefta Sukkah 3:4",
+      "Tosafot on Sukkah 2a:4:1"
+    ],
+    "generatedAt": "2026-11-08T05:53:26.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 49a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויטעהו שורק זה בית המקדש ויבן מגדל בתוכו זה מזבח וגם יקב חצב בו אלו השיתין</strong> - כך כתוב בכל הספרים וזה גרסת <span class=\"rashi-quotation\">הקונט'</span> אבל בתוספתא גריס ויבן מגדל בתוכו זה היכל וגם יקב חצב בו זה מזבח וקרי למזבח יקב לפי שמנסכין עליו את היין שמוציאין מן היקבים ומריבויא דגם דרשינן שיתין:"
+  }
+}

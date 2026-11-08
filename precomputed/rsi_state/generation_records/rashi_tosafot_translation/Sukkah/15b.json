@@ -1,0 +1,107 @@
+{
+  "Rashi on Sukkah 15b:1:1": {
+    "dependsOn": [
+      "Sukkah 15b:1",
+      "Rashi on Sukkah 15b:1:2",
+      "Rashi on Sukkah 15a:14:1",
+      "Rashi on Sukkah 15a:15:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T23:06:33.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אפשר לצמצם</strong> - קס\"ד דהאי דקמתרץ בנכנס ויוצא הכי מתרץ כל כמותו בנכנס ויוצא הוא סתמא הוא בנכנס ויוצא דאין דרך לצמצם ולכוין כמותן ממש לא פחות ולא יותר ופרכינן והא אם יתן דעתו לכך אפשר לצמצם וקתני מתניתין כמותן כשרה והוה ליה פרוץ כעומד:"
+  },
+  "Rashi on Sukkah 15b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 15b:1:1",
+      "Rashi on Sukkah 15a:15:1"
+    ],
+    "generatedAt": "2026-11-05T23:07:49.644Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני אמר רבי אמי במעדיף</strong> - מתניתין לא אכשר במצמצם אלא במעדיף ריוח שבינתים על רחב השפודין וכמותן דקתני בנכנס ויוצא:"
+  },
+  "Rashi on Sukkah 15b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:12:22.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר</strong> - אפילו במצמצם ואם היו נתונין השפודין שתי נותנן לקנים של סכך ערב דע\"כ אם אינו נותן ראשי הקנים על שפודין הרי הן נופלין לארץ והלכך הוה ליה כשר מרובה על הפסול ומבטלן:"
+  },
+  "Rashi on Sukkah 15b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:13:19.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבלאי כלים</strong> - לקמן מפרש במטלניות שאין בהן שלש על שלש דאף על גב דהשתא לא מקבלי טומאה כיון דמכלי אתו גזור בה רבנן ארוכות נמי השתא לא מקבלי טומאה דלא חזו למידי אלא מכלי קאתו:"
+  },
+  "Rashi on Sukkah 15b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T23:14:01.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארוכה ושתי כרעים עמה</strong> - ולקמן מפרש למאי חזו:"
+  },
+  "Rashi on Sukkah 15b:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 15b:4:1"
+    ],
+    "generatedAt": "2026-11-05T23:14:37.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 15b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קצרה</strong> - אותם אשר ברוחב המטה לצד מראשותיה ומרגלותיה:"
+  },
+  "Tosafot on Sukkah 15b:1:1": {
+    "dependsOn": [
+      "Sukkah 15b:1",
+      "Rashi on Sukkah 15a:15:1",
+      "Rashi on Sukkah 15b:1:1",
+      "Rashi on Sukkah 15b:1:2",
+      "Rashi on Sukkah 15b:2:1",
+      "Tosafot on Sukkah 15a:14:1",
+      "Maharsha on Sukkah 15b:5",
+      "Maharshal on Sukkah 15b:2",
+      "Tosafot on Sukkah 15a:1:1",
+      "Rashi on Sukkah 15a:5:1"
+    ],
+    "generatedAt": "2026-11-05T23:11:47.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 15b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אפשר לצמצם</strong> - קא סלקא דעתך דהא דקמתרץ בנכנס ויוצא הכי קמתרץ כל כמותו בנכנס ויוצא הוא דאין דרך לצמצם והא כו' וקתני מתני' כמותן כשרה והוה ליה פרוץ כעומד ומשני אמר ר' אמי במעדיף ומתני' לא אכשר במצומצמין <span class=\"rashi-quotation\">כך פי' בקונט'</span> וקשה דאין זו סוגיא דהש\"ס שאינו אלא כמשיב דאינו חושש בקושיא שלו דלעולם איירי בנכנס ויוצא וי\"ל במעדיף שמרבה בפסל עד שמכסה השפודים ונמצא סכך כשר רבה על סכך פסול ומבטלו ובענין זה <span class=\"rashi-quotation\">פי' בקונטרס</span> בדרבא אם היו נתונין שתי נותנן ערב ולהאי פירושא קא משמע לן רבא דבמעדיף לא מהני משום דזימנין דלאו אדעתיה לא ירבה בכשר אבל כשמשנה להניח כעין שתי וערב אי אפשר שלא ירבה ומיהו קשה להאי פירושא דאין דומה שיתבטל סכך פסול בכשר אע\"פ שהכשר רוב כיון דאין מעורבין זה בזה וניכר כל אחד בפני עצמו <span class=\"rashi-quotation\">כמו שפי' בקונטרס</span> דכשחבטן דלעיל <span class=\"parenthesized\">(סוכה דף ט:)</span> שעירבן ואינו ניכר הי ניהו פסול והי ניהו כשר וגירסת ר\"ת עיקר דגרס והא אי אפשר לצמצם כדפרישית וניחא לפי גירסתו דלא קיימא השתא רבי אמי ורבא לשנויי כמאן דאמר פרוץ כעומד אסור דלכולהו קאמרינן הכא הך פירכא דאי אפשר לצמצם אבל לגירסת <span class=\"rashi-quotation\">הקונטרס</span> קיימי השתא לשנויי כמאן דאמר פרוץ כעומד אסור והיינו דלא כהלכתא דפרק קמא דעירובין <span class=\"parenthesized\">(דף טז:)</span> פסקינן הלכה כמאן דאמר מותר:"
+  },
+  "Tosafot on Sukkah 15b:4:1": {
+    "dependsOn": [
+      "Berakhot 50b:2"
+    ],
+    "generatedAt": "2026-11-05T23:16:19.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 15b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארוכה ושתי כרעים בקצרה ושתי כרעים</strong> - סוגיא דשמעתין כרבי נחמיה דרבנן לא מטמאה בארוכה ושתי כרעים דתנן במסכת כלים פרק י\"ח <span class=\"parenthesized\">(מ\"ה)</span> מטה שהיתה טמאה מדרס ניטלה קצרה ושתי כרעים טמאה ארוכה ושתי כרעים טהורה ורבי נחמיה מטמא ודוקא כשכל המטה קיימת וכולה של אדם אחד שסופו לחזור ולחברה אבל אם נאבד מקצתה או של שני בני אדם הואיל ואין סופן לחזור ולחברה טפי אפילו איכא ארוכה ושתי כרעים קצרה ושתי כרעים טהורה כדתנן במסכת כלים פרק י\"ח <span class=\"parenthesized\">(מ\"ט)</span> ובפרק שלשה שאכלו <span class=\"parenthesized\">(ברכות דף נ:)</span> מייתינן לה מטה שנגנבה חציה או שאבדה חציה חלקוה אחין או שותפין טהורה החזירוה מקבלת טומאה מכאן ולהבא והא דתנן התם כרע שהיתה טמאה מדרס וחברה למטה שלה טמאה פירשה היא טמאה מדרס והמטה מגע מדרס אלמא דכרע לחודיה טמא היינו לאחר שחברו למטה חוזר לטומאה ישנה אפילו במטה טהורה אבל כל זמן שלא חברו טהורה אע\"פ שפירש ממטה טמאה:"
+  }
+}

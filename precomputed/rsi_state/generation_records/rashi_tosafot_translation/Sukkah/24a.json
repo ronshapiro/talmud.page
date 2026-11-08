@@ -1,0 +1,214 @@
+{
+  "Rashi on Sukkah 24a:10:1": {
+    "dependsOn": [
+      "Sukkah 24a:10",
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3"
+    ],
+    "generatedAt": "2026-11-06T11:31:23.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העומדת ברוח</strong> - על ידי רוח:"
+  },
+  "Rashi on Sukkah 24a:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3"
+    ],
+    "generatedAt": "2026-11-06T11:31:57.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו מחיצה היא</strong> - דעיקר עמידתה דבר שאין בו ממש הוא:"
+  },
+  "Rashi on Sukkah 24a:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3",
+      "Steinsaltz on Sukkah 24a:10",
+      "Steinsaltz comment #1 on Sukkah 24a:10",
+      "Rashi on Sukkah 24a:8:1",
+      "Rashi on Sukkah 24a:8:2",
+      "Rashi on Sukkah 24a:8:3",
+      "Rashi on Sukkah 24a:9:1",
+      "Rashi on Sukkah 24a:11:1",
+      "Sukkah 24a:11",
+      "Rashi on Sukkah 24b:1:1"
+    ],
+    "generatedAt": "2026-11-06T11:35:04.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:10:3"
+    ],
+    "sourceText": "רוח חיים לאו בידי אדם הוא שהרי אין רוח בידו לנפחו:"
+  },
+  "Rashi on Sukkah 24a:11:1": {
+    "dependsOn": [
+      "Sukkah 24a:11",
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3"
+    ],
+    "generatedAt": "2026-11-06T11:36:00.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאוקמה בנוד תפוח</strong> - סמך הדופן על הנוד תפוח ברוח:"
+  },
+  "Rashi on Sukkah 24a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:00:54.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסרין</strong> - ואמרינן גזרה שמא יבקע הנוד ולא יבא לידי ברירה ונמצא שותה טבלים אלמא ר' יהודה חייש לבקיעת הנוד וכל שכן למיתת אדם ור' מאיר לא חייש:"
+  },
+  "Rashi on Sukkah 24a:2:1": {
+    "dependsOn": [
+      "Sukkah 24a:2",
+      "Rashi on Sukkah 24a:1:1",
+      "Sukkah 24a:1",
+      "Rashi on Sukkah 24a:9:1"
+    ],
+    "generatedAt": "2026-11-06T11:09:45.539Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איפוך</strong> - לא שנינהו אביי כדקאמרת אלא איפכא שנינהו אביי הא דלא חייש ר' יהודה והא דחייש ר\"מ ולאו מהלוקח יין שנינהו אביי אלא מהך דסוכה דר' יהודה לא חייש ור' מאיר חייש:"
+  },
+  "Rashi on Sukkah 24a:3:1": {
+    "dependsOn": [
+      "Sukkah 24a:3",
+      "Rashi on Sukkah 24a:2:1",
+      "Rashi on Sukkah 24a:5:1"
+    ],
+    "generatedAt": "2026-11-06T11:10:55.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרבי מאיר</strong> - דבקיעת נוד ארבי מאיר דסוכה:"
+  },
+  "Rashi on Sukkah 24a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:11:30.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלית ליה ברירה</strong> - ואפי' אינו נבקע אסור:"
+  },
+  "Rashi on Sukkah 24a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:12:01.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכשיבקע</strong> - נבין בדבר כלומר דלא חיישינן לה:"
+  },
+  "Rashi on Sukkah 24a:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 2b:7:1",
+      "Steinsaltz on Sukkah 24a:8:1",
+      "Rashi on Sukkah 24a:8:2",
+      "Rashi on Sukkah 24a:8:3"
+    ],
+    "generatedAt": "2026-11-06T11:13:58.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקינין לו</strong> - מזמנין לכהן גדול לערב יוה\"כ:"
+  },
+  "Rashi on Sukkah 24a:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 24a:8:1",
+      "Rashi on Sukkah 24a:8:3",
+      "Rashi on Sukkah 2a:8:1",
+      "Rashi on Sukkah 24a:9:1",
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3",
+      "Rashi on Sukkah 24a:11:1",
+      "Mishnah Yoma 1:1",
+      "Leviticus 16:6"
+    ],
+    "generatedAt": "2026-11-06T11:16:28.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא תמות אשתו</strong> - וכתיב <span class=\"parenthesized\">(ויקרא טז)</span> וכפר בעדו ובעד ביתו ביתו זו היא אשתו:"
+  },
+  "Rashi on Sukkah 24a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:17:00.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכפרה</strong> - בכפרת יום הכפורים עשה בו מעלה זו שחשש בה במידי דלא חייש בעלמא:"
+  },
+  "Rashi on Sukkah 24a:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 24a:8:1",
+      "Rashi on Sukkah 24a:8:2",
+      "Rashi on Sukkah 24a:8:3",
+      "Rashi on Sukkah 24a:9:1",
+      "Rashi on Sukkah 24a:10:1",
+      "Rashi on Sukkah 24a:10:2",
+      "Rashi on Sukkah 24a:10:3",
+      "Sukkah 24a:10",
+      "Rashi on Sukkah 24a:11:1",
+      "Rashi on Sukkah 23b:1:1",
+      "Rashi on Sukkah 23b:2:1",
+      "Rashi on Sukkah 24a:1:1",
+      "Rashi on Sukkah 24a:2:1",
+      "Rashi on Sukkah 24a:3:1",
+      "Rashi on Sukkah 24a:5:1",
+      "Rashi on Sukkah 24a:6:1",
+      "Steinsaltz on Sukkah 24a:9",
+      "Rashi on Sukkah 22b:1:1",
+      "Rashi on Sukkah 23a:1:1"
+    ],
+    "generatedAt": "2026-11-06T11:29:12.953Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 24a:9:1"
+    ],
+    "sourceText": "ופרכינן בין למ\"ד טעמא דר' מאיר משום שמא תברח בין למ\"ד משום שמא תמות תרוייהו מפרשי לרבי מאיר דמדאורייתא מחיצה היא ורבנן גזור שמא תברח או תמות תינח גבי סוכה מבוי וביראות דר' מאיר לחומרא אבל גבי גולל ר' מאיר מקיל וכיון דמדאורייתא בטיל היאך יכול לטהרו מידי טומאת גולל אלמה תנן בעירובין דבר שיש בו רוח חיים מטמא משום גולל ור' מאיר מטהר וה\"ה דמצי למיפרך ממתנית' דלעיל דקתני ולא גולל לקבר אלא ממתני' אלימא ליה לאקשויי ועוד משום דקתני מטהר בהדיא לשון קולא:"
+  },
+  "Tosafot on Sukkah 24a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T11:08:13.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 24a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה ורבי יוסי ור\"ש אוסרין</strong> - הא דבעי למימר בשמעתין ובעירובין <span class=\"parenthesized\">(דף לו:)</span> ובגיטין <span class=\"parenthesized\">(דף כה.)</span> ובמרובה <span class=\"parenthesized\">(ב\"ק דף סט.)</span> טעמא דר' יהודה משום דלית ליה ברירה אע\"ג דקתני בהדיא משום בקיעת הנוד דכוותי' אשכחן טובא שאין הגמרא חושב עיקר טעם אותו טעם המפורש במשנה פרק התערובות <span class=\"parenthesized\">(זבחים דף עז:)</span> גבי אברי תמימה שנתערבו באברי בעל מום ובפרק שלישי דשבועות <span class=\"parenthesized\">(דף כא:)</span> גבי שבועה שלא אוכל ואכל כל שהוא חייב דברי ר\"ע ובפרק שני דמכות <span class=\"parenthesized\">(דף יז.)</span> גבי כמה יאכל מן הטבל ויהא חייב ר' שמעון אומר כל שהוא וא\"ת אי רבי יהודה לית ליה ברירה אלמא סבירא ליה כר' יוחנן דבריש כל הגט <span class=\"parenthesized\">(גיטין דף כה.)</span> ובפרק מעשר בהמה <span class=\"parenthesized\">(בכורות דף נז.)</span> דאמרינן האחין שחלקו לקוחות הן ומחזירין זה לזה ביובל אם כן היאך מצא ידיו ורגליו בבית המדרש דלא משכחת דמייתי בכורים אלא חד בר חד עד יהושע בן נון דבפרק החובל <span class=\"parenthesized\">(ב\"ק דף צ.)</span> אית ליה לר' יהודה קנין פירות לאו כקנין הגוף דמי גבי דין יום או יומים וכן נמי לר' יוסי דמספקא ליה התם אי כקנין הגוף דמי או לאו והכא לית ליה ברירה וכי האי גוונא דייק בסוף השולח בגיטין <span class=\"parenthesized\">(דף מח.)</span> וי\"ל דמדין יום או יומים אין ללמוד בעלמא אלא גבי מילי דעבד לחוד דהתם כתיבי קראי דכספו ותחת ידו ומהאי טעמא לא מייתי לה בהשולח כי מייתי ההיא דשדה אחוזה ועוד יש לומר דדוקא ר' יוחנן הוא דאית ליה הך סברא דמשום דלקוחות הן מחזירין זה לזה אבל אינך אמוראי הוו אמרי דאע\"ג דאין ברירה אין מחזירין כדקאמרי' בריש כל הגט <span class=\"parenthesized\">(גיטין דף כה.)</span> ובפרק מעשר בהמה <span class=\"parenthesized\">(בכורות דף נז.)</span> דמכר הוא דאמר רחמנא דליהדרי' ביובל ירושה ומתנה לא ור' יוחנן לא קשיא מרבי יהודה דהוה מפרש טעמא משום בקיעת הנוד מיהו לא יתכן טעם זה לר' יוסי דע\"כ לית ליה כמו שאפרש וא\"ת דהכא לית ליה לר' יוסי ברירה ובפרק מי שאחזו <span class=\"parenthesized\">(גיטין דף עג:)</span> אית ליה ברירה דתנן ר' יוסי אומר מגורשת ואינה מגורשת ולכי מיית הוי גיטא ולמאן דמחלק בריש כל הגט <span class=\"parenthesized\">(שש דף כה.)</span> בין תולה בדעת עצמו לתולה בדעת אחרים ניחא ורבא דלא מפליג התם מפרש טעמא [משום בקיעת הנוד ורבה מפרש טעמא] פרק בכל מערבין <span class=\"parenthesized\">(עירובין דף לז:)</span> משום דבעינן ראשית ששיריה ניכרין ומיהו אכתי קשה דבפרק בכל מערבין <span class=\"parenthesized\">(שם)</span> משמע דלית ליה ברירה לר' יוסי גבי מעשר שיש לי בבית מחולל על סלע שתעלה בידי מן הכיס ר' יוסי אומר לא חילל ויש לחלק משום דבההיא דמי שאחזו הדבר עומד להתברר בודאי שהרי או יחיה או ימות ויש ליה ברירה טפי מההיא דסלע שתעלה בידי מן הכיס שמא לא יתברר הדבר לעולם דכי האי גוונא נוכל לתרץ דשמואל אדשמואל:"
+  }
+}

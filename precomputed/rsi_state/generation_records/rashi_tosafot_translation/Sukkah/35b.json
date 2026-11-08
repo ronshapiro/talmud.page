@@ -1,0 +1,403 @@
+{
+  "Rashi on Sukkah 35b:10:1": {
+    "dependsOn": [
+      "Sukkah 35b:10",
+      "Sukkah 35b:5",
+      "Rashi on Sukkah 35b:5:1"
+    ],
+    "generatedAt": "2026-11-07T07:04:07.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי מכשירה</strong> - ומעשר שני בעי שימור דקודש איקרי דכתיב <span class=\"parenthesized\">(ויקרא כ״ז:ל׳)</span> וכל מעשר הארץ וגו':"
+  },
+  "Rashi on Sukkah 35b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:12:15.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למ\"ד</strong> - בערלה לפי שאין בה היתר אכילה אבל אי הוה בה היתר אכילה הוה מתכשרא ואפילו לית בה דין ממון הא יש בו נמי היתר אכילה ומתני' דתני כשר דברי הכל היא ואפילו לר\"מ דאמר מעשר שני ממון גבוה הוא מיתוקמא דהא בהא דין ממון לא בעינן דכיון דאכיל לה לכם קרינא ביה:"
+  },
+  "Rashi on Sukkah 35b:11:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:11:1",
+      "Rashi on Sukkah 35b:11:3"
+    ],
+    "generatedAt": "2026-11-07T07:13:33.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומ\"ד</strong> - בערלה לפי שאין בה דין ממון דאי נמי הוה בה היתר אכילה הוה פסיל לה משום דליתיה ממון לשאר הנאות כגון מעשר שני בירושלים לר\"מ:"
+  },
+  "Rashi on Sukkah 35b:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:11:1",
+      "Rashi on Sukkah 35b:11:2",
+      "Rashi on Sukkah 35b:11:3",
+      "Rashi on Sukkah 35b:7:2"
+    ],
+    "generatedAt": "2026-11-07T07:14:50.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין רבנן היא</strong> - דאמרי מעשר ממון הדיוט הוא ולא ר\"מ דאילו לר\"מ פסול:"
+  },
+  "Rashi on Sukkah 35b:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:13:1",
+      "Rashi on Sukkah 35b:13:2",
+      "Rashi on Sukkah 35b:13:3",
+      "Rashi on Sukkah 34a:6:4",
+      "Sukkah 35b:13",
+      "Tosafot on Sukkah 35b:12:1",
+      "Ritva on Sukkah 35b:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Sukkah 35b:1:1"
+    ],
+    "generatedAt": "2026-11-07T07:24:15.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:13:1"
+    ],
+    "sourceText": "ה\"ג אלא אי אתמר אסיפא אתמר:"
+  },
+  "Rashi on Sukkah 35b:13:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:13:1",
+      "Rashi on Sukkah 35b:13:2",
+      "Rashi on Sukkah 35b:13:3",
+      "Shulchan Arukh, Orach Chayim 648:9",
+      "Shulchan Arukh, Orach Chayim 648:12",
+      "Steinsaltz on Sukkah 35b:13"
+    ],
+    "generatedAt": "2026-11-07T07:25:23.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובחוטמו</strong> - בעובי גבהו שמשפע משם ויורד לצד ראשו:"
+  },
+  "Rashi on Sukkah 35b:13:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:13:1",
+      "Rashi on Sukkah 35b:13:2"
+    ],
+    "generatedAt": "2026-11-07T07:26:07.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו כל שהוא פסול</strong> - שנראה שם לעינים יותר משאר מקומות שבו שבאותו עובי אדם נותן עיניו:"
+  },
+  "Rashi on Sukkah 35b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:27:15.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תני רבי יצחק בר אלעזר נטלה בוכנתו</strong> - במתניתיה הוה תני להאי נטלה פטמתו בוכנתו לפי שהוא חד ועשוי כמין בוכנא זה לשון מורי הזקן רבינו יעקב אבל רבינו יצחק הלוי היה מפרש פטמתו ועוקצו שניהם בזנב עוקצו שניטל העץ מה שחוץ לגומא שבאתרוג כשר פטמתו שנתלש העוקץ מתוך האתרוג וחסרו לפיכך פסול והיינו דתני רבי יצחק בר אלעזר נטלה בוכנתו מה שנכנס בתוך האתרוג כבוכנא הנכנס ומכה באסיתא ולשון רבינו יעקב נראה לי שלא מצינו בכל מקום פטמא עוקץ:"
+  },
+  "Rashi on Sukkah 35b:15:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:15:2",
+      "Rashi on Sukkah 35b:14:1",
+      "Steinsaltz on Sukkah 35b:15"
+    ],
+    "generatedAt": "2026-11-07T07:32:41.749Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי אתרוג דאגליד</strong> - נקלף:"
+  },
+  "Rashi on Sukkah 35b:15:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:15:1"
+    ],
+    "generatedAt": "2026-11-07T07:33:31.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאהינא סומקא</strong> - תמרה אדומה ואף זה לאחר שנקלף נהפך לאדמומית כדרך כל הנקלפים בפירות:"
+  },
+  "Rashi on Sukkah 35b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:7:1"
+    ],
+    "generatedAt": "2026-11-07T06:38:06.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה באכלכם</strong> - גבי חלה כתיב:"
+  },
+  "Rashi on Sukkah 35b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:38:49.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא היא</strong> - ודאי מסייע ליה ומאי לימא:"
+  },
+  "Rashi on Sukkah 35b:3:1": {
+    "dependsOn": [
+      "Sukkah 35b:3",
+      "Rashi on Sukkah 35b:2:1",
+      "Rashi on Sukkah 35b:3:2",
+      "Rashi on Sukkah 35a:11:1",
+      "Rashi on Sukkah 35a:12:1",
+      "Rashi on Sukkah 34b:1:1",
+      "Rashi on Sukkah 34b:2:1"
+    ],
+    "generatedAt": "2026-11-07T06:41:28.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא ודאי</strong> - בהא מסייעא ולימא דקאמרינן אסייעתא דאתרוג ומצה קאמר והכי קאמר לימא מסייע לרבי אסי בכולהו דמדבהא פליגי באתרוג ומצה נמי פליגי דהא חד טעמא הוא דהתם נמי לכם כתיב ומצה נמי מחלה ילפא:"
+  },
+  "Rashi on Sukkah 35b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:3:1",
+      "Rashi on Sukkah 35a:1:1",
+      "Rashi on Sukkah 35b:5:1"
+    ],
+    "generatedAt": "2026-11-07T06:42:40.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא שאני עיסה</strong> - בהא הוא דקאמר ר\"מ פטורה דכתיב מיעוטא יתירא אבל בחד מיעוטא לא נפקא לן דכיון דמשתרי לאכילה אע\"ג דלית בה דין ממון לכם קרינא ביה:"
+  },
+  "Rashi on Sukkah 35b:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:3:1",
+      "Rashi on Sukkah 35b:5:2",
+      "Rashi on Sukkah 35a:1:1",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:3:1",
+      "Rashi on Sukkah 35a:4:1",
+      "Rashi on Sukkah 34a:2:1",
+      "Rashi on Sukkah 34a:3:1",
+      "Rashi on Sukkah 34b:1:1",
+      "Tosafot on Sukkah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-07T06:46:37.644Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמכשירה</strong> - לקבל טומאה דאמרינן במתני' <span class=\"parenthesized\">(דף מב.)</span> מקבלת אשה מיד בנה ומיד בעלה ומחזרת למים בשבת שהיו שורין האגודה בשבת כדי שלא ייבשו וכשנוגעים באתרוג הוכשר לטומאה דכתיב <span class=\"parenthesized\">(ויקרא י״א:ל״ח)</span> וכי יתן מים על זרע ואסור לגרום טומאה לתרומה דכתיב <span class=\"parenthesized\">(במדבר י״ח:ח׳)</span> משמרת תרומתי אמר רחמנא עשה לה שימור:"
+  },
+  "Rashi on Sukkah 35b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:5:1",
+      "Rashi on Sukkah 35b:2:1",
+      "Rashi on Sukkah 35b:7:1",
+      "Rashi on Sukkah 35b:7:2"
+    ],
+    "generatedAt": "2026-11-07T06:47:48.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמפסידה</strong> - קליפתה החיצונה נמאסת במשמוש הידים ואסור להפסיד תרומה כדפרישית:"
+  },
+  "Rashi on Sukkah 35b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:7:2",
+      "Steinsaltz on Sukkah 35b:7",
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:7:2",
+      "Rashi on Sukkah 35a:8:1",
+      "Sukkah 35b:7",
+      "Tosafot on Sukkah 35b:3:1"
+    ],
+    "generatedAt": "2026-11-07T06:50:17.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי יש בה היתר אכילה</strong> - לכהן וישראל נמי נפיק בה אם לקחה מכהן הואיל ויכול להאכילה לבן בתו כהן אבל פדיון אין לה להיות ניתרת לאכילת ישראל והאומר כן רשע הוא:"
+  },
+  "Rashi on Sukkah 35b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:51:08.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי יש בה דין ממון</strong> - כהן מקדש בה את האשה וישראל נמי אם נתנה לו הכהן מקדש בה את האשה ומוכרה לכהנים והדמים שלו:"
+  },
+  "Rashi on Sukkah 35b:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:8:1",
+      "Rashi on Sukkah 35b:8:2",
+      "Rashi on Sukkah 35b:8:3",
+      "Rashi on Sukkah 35b:8:4"
+    ],
+    "generatedAt": "2026-11-07T06:52:15.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של דמאי</strong> - לקחם מעם הארץ וסתם פירותיהן ספק אינן מעושרין:"
+  },
+  "Rashi on Sukkah 35b:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:8:1",
+      "Rashi on Sukkah 35b:8:3",
+      "Rashi on Sukkah 35b:8:4",
+      "Rashi on Sukkah 34b:8:5"
+    ],
+    "generatedAt": "2026-11-07T06:53:16.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמייהו דבית הלל</strong> - הא לית בה היתר אכילה:"
+  },
+  "Rashi on Sukkah 35b:8:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:8:1",
+      "Rashi on Sukkah 35b:8:2",
+      "Rashi on Sukkah 35b:8:4"
+    ],
+    "generatedAt": "2026-11-07T06:54:04.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחזי ליה</strong> - דרוב עמי הארץ מעשרין הן וחומרא בעלמא הוא שהעמידו בספק טבל וגבי עניים ואכסניא לא העמידו דבריהם:"
+  },
+  "Rashi on Sukkah 35b:8:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:8:3",
+      "Steinsaltz on Sukkah 35b:8",
+      "Rashi on Sukkah 35b:1:1",
+      "Rashi on Sukkah 35b:2:1",
+      "Rashi on Sukkah 35b:5:1",
+      "Rashi on Sukkah 35b:7:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Tosafot on Sukkah 35b:8:2"
+    ],
+    "generatedAt": "2026-11-07T06:55:56.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכסניא</strong> - חיילותיו של מלך ומטיל מזונותיהן על בני המדינה:"
+  },
+  "Tosafot on Sukkah 35b:12:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 29b:5:1"
+    ],
+    "generatedAt": "2026-11-07T07:16:31.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עלתה חזזית על רובו</strong> - בירושל' משמע קצת דבי\"ט [ראשון] דווקא מיפסל כדפרישית בריש פירקין:"
+  },
+  "Tosafot on Sukkah 35b:14:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35b:14:1",
+      "Tosafot on Niddah 47a:18:1"
+    ],
+    "generatedAt": "2026-11-07T07:31:16.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטלה בוכנתו</strong> - במתני' <span class=\"rashi-quotation\">פי' בקונטרס</span> בשם ר' יעקב הזקן ניטלה פטמתו ראש האתרוג ודוגמתו הפיטמא של רמון וכאן <span class=\"rashi-quotation\">פי' בקונטרס</span> דר' יצחק בן אלעזר קרי במתני' להאי פטמתו בוכנתו לפי שהוא חד ועשוי כמו בוכנא ובשם רבו רבינו יצחק הלוי פירש דפטמתו ועוקצו שניהם בזנב עוקצו שניטל העץ מה שחוץ לגומא שבאתרוג כשר פטמתו שנתלש העוקץ מתוך האתרוג וחסרו לפיכך פסול והיינו דתני ר' יצחק בן אלעזר נטלה בוכנתו מה שנכנס בתוך האתרוג כבוכנא הנכנס ומכה באסיתא והקשה <span class=\"rashi-quotation\">בקונטרס</span> על זה שלא מצינו בכל מקום פיטמא עוקץ ור\"ת מפרש שמצינו עוקץ ופיטמא במקום אחד בסוף פ' יוצא דופן <span class=\"parenthesized\">(נדה דף מז. ושם)</span> גבי סימני בוגרת דתנן בן עזאי אומר משתשחיר פטמתו רבי יוסי אומר כדי שיהא נותן ידו על העוקץ והוא שוקע ושוהה לחזור דעוקץ הוא חודו של דד שהתינוק מכניס לתוך פיו ופיטמא הוא הבשר שתחת העוקץ שמשחיר סביב וקצת היה נראה מדמזכיר כאן גבי אתרוג פטמתו ועוקצו וחוטמו וכן נמי התם גבי דדי אשה משמע ששלשה במקום אחד לצד ראשו של אתרוג דעוקץ פעמים שיוצא מחודו שבראשו כמין עוקץ בולט וקשה כעץ ולכך קרי ליה עוקץ ונטלה פטמתו דהיינו בוכנתו היינו שנתלש אותו עוקץ ממקום חיבורו ונשאר כמין גומא בראש האתרוג ובפרק יוצא דופן <span class=\"parenthesized\">(ג\"ז שם)</span> <span class=\"rashi-quotation\">פירש בקונטרס</span> חוטמו ספק וכאן פירש בחוטמו אפילו במשהו הנראה בעובי גובהו שמשפע ויורד לצד ראשו ובירושלמי אמר נטלה פטמתו תמן אמרי שושנתו משמע שהוא לצד ראשו כעין פרח שושן ובערוך פירש בשם ר\"ח נטלה פטמתו נראין הדברים שהוא דד של חוטם כמין פיטמא של דד כדתנן <span class=\"parenthesized\">(עוקצין פ\"ב מ\"ג)</span> פיטמא של רימון אבל [הא] דאמר רבי יצחק נטלה בוכנתו הוא קצה העץ הנתון באתרוג כאותו דשחיטת חולין <span class=\"parenthesized\">(דף מב:)</span> האי <span class=\"parenthesized\">(בוכנא)</span> דאטמא דשף מדוכתיה טריפה מתוך פירושו משמע דפטמתו ובוכנתו תרי מיני נינהו זה בעוקץ וזה בראשו ולא בא ר' אליעזר בר יצחק לפרש אלא להוסיף על המשנה ובשם רבינו גרשום מאור הגולה פירש בערוך כפירוש רבינו יצחק בר יהודה הלוי:"
+  },
+  "Tosafot on Sukkah 35b:3:1": {
+    "dependsOn": [
+      "Menachot 67a:6",
+      "Tosafot on Menachot 67a:6:1"
+    ],
+    "generatedAt": "2026-11-07T06:44:41.073Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב עריסותיכם תרי זימני</strong> - אע\"ג דתרוייהו דרשינן במנחות פרק ר' ישמעאל <span class=\"parenthesized\">(מנחות דף סז.)</span> למעוטי עיסת נכרי ועיסת הקדש ועוד דריש ליה בפרק ראשית הגז <span class=\"parenthesized\">(חולין דף קלה:)</span> לכדי עריסותיכם כשיעור עיסת מדבר הכא דחוי בעלמא הוא:"
+  },
+  "Tosafot on Sukkah 35b:5:1": {
+    "dependsOn": [
+      "Sukkah 35b:5"
+    ],
+    "generatedAt": "2026-11-07T06:48:51.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שמכשירה</strong> - שהלולב כמו שהוא אגוד נותנין אותו במים כדי שלא יכמוש כדתנן בפירקין <span class=\"parenthesized\">(דף מב.)</span> ומחזירו למים וכשנוטלו נוטפין מימיו על האתרוג והוה מצי למימר איכא בינייהו שכבר הוכשר:"
+  },
+  "Tosafot on Sukkah 35b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:57:28.793Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי בעי מפקר נכסיה</strong> - לא הוה צריך להאי טעמא אלא משום דיש בו היתר אכילה לעני כמו לישראל דנפיק בשל תרומה דחזי לכהן ודכוותה בפרק מפנין <span class=\"parenthesized\">(שבת דף קכז: ושם)</span> תרומה ודמאי פריך בגמ' דמאי הא לא חזי ליה ומשני כיון דאי בעי מפקר לנכסיה והוה מצי למימר הואיל וחזי לעני כי היכי דשרי התם תרומה ביד ישראל הואיל וחזיא לכהן ובההיא דפרק בכל מערבין <span class=\"parenthesized\">(עירובין דף לא.)</span> דתנן מערבין בדמאי ומפרש בגמרא משום דאי בעי מפקר נכסיה התם ניחא דאיצטריך לההוא טעמא לישבה אפילו כסומכוס דפליג על ישראל בתרומה ואהא לא פליג:"
+  },
+  "Tosafot on Sukkah 35b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:58:40.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאכילין את העניים דמאי ואת האכסנאים דמאי</strong> - משנה בפרק ג' דדמאי ופליגי בגמ' דירושלמי דרבי יונה אמר בעניים חברים ובאכסניא כרבי יהושע כדמפרש התם שהם ישראל ור' יוסי אמר בעניים עמי הארץ היא ובאכסניא נכרי:"
+  },
+  "Tosafot on Sukkah 35b:9:1": {
+    "dependsOn": [
+      "Maharam on Sukkah 35b:4"
+    ],
+    "generatedAt": "2026-11-07T07:02:57.985Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב הונא תנא ב\"ש אומרים אין מאכילין</strong> - וסתם מתני' במס' דמאי דמאכילין ותימה מאי קמ\"ל רב הונא במאי דב\"ש פליגי ואיכא לשנויי הכא כדמשני פ' בתרא דיבמות <span class=\"parenthesized\">(דף קכב.)</span> דתנן ומשיאין על פי בת קול אמר רבה בר שמואל בגמרא ב\"ש אומרים אין משיאין וב\"ה אומרים משיאין ופריך מאי קמ\"ל ומשני דהא קמ\"ל דאי משכחת סתמא דתניא אין משיאין ב\"ש היא ולא סמכינן עלה:"
+  }
+}

@@ -1,4 +1,236 @@
 {
+  "Rashi on Sukkah 14a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:11:52.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסככין בנסרים</strong> - בגמרא מפרש פלוגתייהו:"
+  },
+  "Rashi on Sukkah 14a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:12:23.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתן עליה נסר שהוא רחב ארבעה</strong> - בגמרא מפרש מאן קתני לה:"
+  },
+  "Rashi on Sukkah 14a:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:10:1",
+      "Rashi on Sukkah 14a:10:2",
+      "Sukkah 14a:10"
+    ],
+    "generatedAt": "2026-11-05T21:14:27.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יישן תחתיו</strong> - דנסר רחב ד' סכך פסול הוא כדאמר בגמרא לרב אליבא דר' מאיר ולשמואל לדברי הכל וסוכה כשרה וכגון דיהביה אצל הדופן דסכך פסול אינו פוסל מן הצד אלא בד' אמות דאמרינן דופן עקומה:"
+  },
+  "Rashi on Sukkah 14a:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:11:1",
+      "Rashi on Sukkah 14a:11:2",
+      "Rashi on Sukkah 14a:11:3"
+    ],
+    "generatedAt": "2026-11-05T21:15:11.740Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת בנסרים שיש בהן ארבעה</strong> - שרוב תקרות הבית עשויות מהן:"
+  },
+  "Rashi on Sukkah 14a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:16:34.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' מאיר</strong> - דפסיל אית ליה גזרת תקרה אי מכשרת בהו אתי למימר מה לי לסכך באלו מה לי לישב תחת קורות ביתי אף היא בנסרים מקורה וההוא ודאי פסול דסוכה אמר רחמנא ולא ביתו של כל ימות השנה:"
+  },
+  "Rashi on Sukkah 14a:11:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:11:1",
+      "Rashi on Sukkah 14a:11:2"
+    ],
+    "generatedAt": "2026-11-05T21:18:07.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בנסרים שאין בהם ד'</strong> - שאין רוב תקרות עשויות מהן:"
+  },
+  "Rashi on Sukkah 14a:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:18:40.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי הכל כשרה</strong> - דלא דמי לתקרה דלגזור בהו:"
+  },
+  "Rashi on Sukkah 14a:11:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:21:37.015Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשאין בהן ד' מחלוקת</strong> - בההוא מכשר ר' יהודה משום דאין רוב תקרות עשויות מהן לא גזרינן בהו ור' מאיר חייש למיעוט שיש מיעוט העושין תקרה מהן:"
+  },
+  "Rashi on Sukkah 14a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:10:1",
+      "Rashi on Sukkah 14a:11:1",
+      "Rashi on Sukkah 14a:11:2",
+      "Rashi on Sukkah 14a:11:5",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:2:1",
+      "Sukkah 14a:11",
+      "Rashi on Sukkah 14a:12:1",
+      "Rashi on Sukkah 14a:12:2",
+      "Rashi on Sukkah 14a:12:3"
+    ],
+    "generatedAt": "2026-11-05T21:23:47.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בהן ארבעה</strong> - קפסיל ר' מאיר:"
+  },
+  "Rashi on Sukkah 14a:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:12:1",
+      "Rashi on Sukkah 14a:12:2",
+      "Rashi on Sukkah 14a:12:3"
+    ],
+    "generatedAt": "2026-11-05T21:24:29.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו בפחותות משלש</strong> - בתמיה:"
+  },
+  "Rashi on Sukkah 14a:12:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:12:1",
+      "Rashi on Sukkah 14a:12:2",
+      "Sukkah 14a:12",
+      "Rashi on Sukkah 14a:10:1",
+      "Rashi on Sukkah 14a:10:2",
+      "Rashi on Sukkah 14a:10:3",
+      "Steinsaltz on Sukkah 14a:12",
+      "Maharam on Sukkah 14a:1",
+      "Rashi on Sukkah 14a:11:1",
+      "Rashi on Sukkah 14a:11:2",
+      "Rashi on Sukkah 14a:11:3",
+      "Rashi on Sukkah 14a:11:4",
+      "Rashi on Sukkah 14a:11:5"
+    ],
+    "generatedAt": "2026-11-05T21:26:32.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קנים בעלמא נינהו</strong> - וא\"כ במאי מכשר:"
+  },
+  "Rashi on Sukkah 14a:13:1": {
+    "dependsOn": [
+      "Sukkah 14a:13",
+      "Rashi on Sukkah 14a:13:2",
+      "Rashi on Sukkah 14a:13:3",
+      "Rashi on Sukkah 14a:13:4",
+      "Rashi on Sukkah 14a:11:1",
+      "Rashi on Sukkah 14a:11:2",
+      "Rashi on Sukkah 14a:11:3",
+      "Rashi on Sukkah 14a:11:4",
+      "Rashi on Sukkah 14a:11:5",
+      "Rashi on Sukkah 14a:10:3"
+    ],
+    "generatedAt": "2026-11-05T21:28:47.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר פפא הכי קאמר</strong> - שמואל יש בהן ארבעה דברי הכל פסולה כו':"
+  },
+  "Rashi on Sukkah 14a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:29:16.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיעור מקום</strong> - דאין רשות בפחות מארבעה:"
+  },
+  "Rashi on Sukkah 14a:13:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:13:1",
+      "Rashi on Sukkah 14a:13:2",
+      "Rashi on Sukkah 14a:13:4"
+    ],
+    "generatedAt": "2026-11-05T21:29:48.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא גזרינן</strong> - משום תקרה דלא חשיבי לעשות תקרה מהן:"
+  },
+  "Rashi on Sukkah 14a:13:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:13:1",
+      "Rashi on Sukkah 14a:13:2",
+      "Rashi on Sukkah 14a:13:3",
+      "Rashi on Sukkah 14a:13:4"
+    ],
+    "generatedAt": "2026-11-05T21:30:31.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דנפקי מתורת לבוד</strong> - שאם היה אויר במקום אחד מהם לא מצי למימר לבוד חשיבי להיות דומות לתקרה וגזרי':"
+  },
+  "Rashi on Sukkah 14a:14:1": {
+    "dependsOn": [
+      "Sukkah 14a:14"
+    ],
+    "generatedAt": "2026-11-05T21:31:28.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן נתן עליה נסר כו'</strong> - קא סלקא דעתיה דברי הכל היא וכשרה וכגון שנתנו מן הצד דאמרינן דופן עקומה ולא חשיב סכך למיפסלה:"
+  },
+  "Rashi on Sukkah 14a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:32:05.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני סדינין מצטרפין</strong> - לארבעה טפחים לפסול בסוכה משום סכך פסול שסיכך בדבר המקבל טומאה וסכך פסול באמצע פוסל בארבעה:"
+  },
   "Rashi on Sukkah 14a:1:1": {
     "dependsOn": [
       "Sukkah 14a:1",
@@ -193,5 +425,244 @@
       "Rashi on Sukkah 14a:2:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">טהורות</strong> - דגלי דעתיה דלא ניחא ליה בהו וטהרו מלקבל טומאה הידות האלה עוד ולא הביאה טומאה על האוכל עד שיגיע טומאה באוכל עצמו:"
+  },
+  "Rashi on Sukkah 14a:2:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:5:1",
+      "Rashi on Sukkah 14a:11:2",
+      "Rashi on Sukkah 14a:12:1"
+    ],
+    "generatedAt": "2026-11-05T20:42:30.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יוסי מטמא</strong> - טעמא מפרש לקמן:"
+  },
+  "Rashi on Sukkah 14a:3:1": {
+    "dependsOn": [
+      "Sukkah 14a:3",
+      "Rashi on Sukkah 14a:3:1",
+      "Rashi on Sukkah 14a:3:2",
+      "Jastrow, בָּסַס 1",
+      "Steinsaltz on Sukkah 14a:3",
+      "Steinsaltz comment #1 on Sukkah 14a:3",
+      "Steinsaltz comment #2 on Sukkah 14a:3",
+      "Rashi on Sukkah 14a:3:3",
+      "Rashi on Sukkah 14a:9:1"
+    ],
+    "generatedAt": "2026-11-05T20:47:46.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא למאן דאמר</strong> - האי בססן היינו שהתיר אגדן של עומרין לשון מתבוססת בדמיך <span class=\"parenthesized\">(יחזקאל ט״ז:ו׳)</span> מתגוללת כלומר כיון שהתיר אגדן השבלין מתגוללין בגורן לפי שנוחין להתפזר או לשון כנה דמתרגמינן ואת כנו וית בסיסיה <span class=\"parenthesized\">(שמות ל)</span> כלומר הכנו לדשן:"
+  },
+  "Rashi on Sukkah 14a:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:3:1"
+    ],
+    "generatedAt": "2026-11-05T20:48:56.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפיר</strong> - לא קשיא לך דאליביה מצית למימר דקיימי רבנן כוותיה כיון שהתיר אגדן דלא הוי אלא כמחשבה בעלמא דגלי דעתיה דלא ניחא ליה בידות שלהן שאין הידות ראויות לשבלין אלא כדי לאוגדן בהם והאי מוכח דלא בעי לאוגדן:"
+  },
+  "Rashi on Sukkah 14a:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:3:1",
+      "Rashi on Sukkah 14a:3:2",
+      "Rashi on Sukkah 14a:3:4",
+      "Sukkah 14a:3"
+    ],
+    "generatedAt": "2026-11-05T20:50:40.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למאן דאמר בססן ממש</strong> - שדשן לידות ברגלי בהמה או במקבת כמו בשמך נבוס קמינו <span class=\"parenthesized\">(תהילים מ״ד:ו׳)</span> בוססו את חלקתי <span class=\"parenthesized\">(ירמיהו י״ב:י׳)</span> והכא דאיכא מעשה רבה הוא דאמר דקא מטהרי רבנן אבל במחשבה לא אמר:"
+  },
+  "Rashi on Sukkah 14a:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:3:1",
+      "Rashi on Sukkah 14a:3:2",
+      "Rashi on Sukkah 14a:3:3",
+      "Sukkah 14a:2",
+      "Sukkah 14a:1"
+    ],
+    "generatedAt": "2026-11-05T20:51:25.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא למימר</strong> - אי בקוצר לאכילה מוקמת לה לההיא דלעיל מאי טעמא דרבנן:"
+  },
+  "Rashi on Sukkah 14a:4:1": {
+    "dependsOn": [
+      "Sukkah 14a:4",
+      "Rashi on Sukkah 14a:3:1",
+      "Rashi on Sukkah 14a:3:2",
+      "Rashi on Sukkah 14a:3:3",
+      "Rashi on Sukkah 14a:3:4"
+    ],
+    "generatedAt": "2026-11-05T20:52:40.984Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא נמי</strong> - פלוגתא דאחרים ורבנן כשבססן ממש כשנמלך לסיכוך:"
+  },
+  "Rashi on Sukkah 14a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T20:57:53.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי מאי</strong> - בשלמא גבי פלוגתא דר' יוסי דקא מיירי בגורן איכא למימר טעמא דרבי יוסי דאע\"ג דבססן חזו למיהוי ידות וניחא ליה שיהו מחוברות באוכל כמו שהן בוססות מרציא\"ה בלע\"ז:"
+  },
+  "Rashi on Sukkah 14a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:5:1",
+      "Rashi on Sukkah 14a:5:2",
+      "Rashi on Sukkah 14a:5:3"
+    ],
+    "generatedAt": "2026-11-05T20:59:14.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וראויות להפך</strong> - ראשי השבלים:"
+  },
+  "Rashi on Sukkah 14a:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:5:1",
+      "Rashi on Sukkah 14a:5:2",
+      "Steinsaltz on Sukkah 14a:5",
+      "Sukkah 14a:5",
+      "Tosafot on Sukkah 14a:5:1",
+      "Sefer HeArukh, Letter Ayin 338"
+    ],
+    "generatedAt": "2026-11-05T21:00:51.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעתר</strong> - על ידי הידות עתר פורק\"א ואלמלא הידות אין נוחין להפכן בה דמתוך שהם קצרים יוצאין מבין ב' עוקציה של עתר ונשמטין ממנה והוא כשבססן תחלתן לא לבטלן נתכוון אלא לרככן:"
+  },
+  "Rashi on Sukkah 14a:6:1": {
+    "dependsOn": [
+      "Sukkah 14a:6",
+      "Rashi on Sukkah 14a:10:3",
+      "Rashi on Sukkah 14a:1:1"
+    ],
+    "generatedAt": "2026-11-05T21:05:06.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכא</strong> - דבעי להו לסכך:"
+  },
+  "Rashi on Sukkah 14a:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:5:1",
+      "Rashi on Sukkah 14a:5:2",
+      "Rashi on Sukkah 14a:5:3",
+      "Rashi on Sukkah 14a:6:1",
+      "Rashi on Sukkah 14a:6:2",
+      "Rashi on Sukkah 14a:6:3",
+      "Sukkah 14a:4",
+      "Sukkah 14a:5"
+    ],
+    "generatedAt": "2026-11-05T21:06:31.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי חזו</strong> - ידות אוכלים משבססן ואינן אגודות בהן:"
+  },
+  "Rashi on Sukkah 14a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T21:07:08.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגילייהו</strong> - בקשין שלהם יאחזום וינטלו ראשי השבלים עמהם:"
+  },
+  "Rashi on Sukkah 14a:8:1": {
+    "dependsOn": [
+      "Sukkah 14a:8",
+      "Steinsaltz on Sukkah 14a:8"
+    ],
+    "generatedAt": "2026-11-05T21:09:21.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום הכי מטמא רבי יוסי</strong> - דקסבר מעשה זוטא לא בטלה תורת ידות מינייהו שאלתי את מורי מגופה דמשנה דמייתי אגב גררא בשמעתין מי שייך למיתני גופא כדגר' במימרות האמוראים ואמר לי רבי משום דהך משנה מן הטהרות שאין מהם שום גמרא בעולם ולא מפורשת כשאר המשניות לפיכך נוהג הש\"ס לומר גופא כדי לפרש:"
+  },
+  "Rashi on Sukkah 14a:9:1": {
+    "dependsOn": [
+      "Sukkah 14a:9",
+      "Rashi on Sukkah 14a:8:1",
+      "Rashi on Sukkah 14a:6:1",
+      "Rashi on Sukkah 14a:6:2",
+      "Rashi on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-05T21:11:09.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 14a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה נמשלה כו'</strong> - אגב דאמר הואיל וראויות להפך בעתר נקט נמי הא מלתא למה נמשלה כו' דכתיב ויעתר <span class=\"parenthesized\">(אל ה')</span> <span class=\"parenthesized\">(בראשית כה, כא)</span> ויעתר לו <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Tosafot on Sukkah 14a:2:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 12b:5:1",
+      "Rashi on Sukkah 14a:2:3",
+      "Rashi on Sukkah 14a:2:2",
+      "Rashi on Sukkah 14a:2:1",
+      "Mishnah Oktzin 1:5",
+      "Jastrow, בָּסַס 1"
+    ],
+    "generatedAt": "2026-11-05T20:45:20.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 14a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל ידות האוכלין שבססן בגורן טהורות</strong> - משנה היא פ\"ק דעוקצין <span class=\"parenthesized\">(מ\"ה)</span>:"
+  },
+  "Tosafot on Sukkah 14a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 14a:5:1",
+      "Rashi on Sukkah 14a:5:2",
+      "Rashi on Sukkah 14a:5:3",
+      "Tosafot on Sukkah 13b:5:1",
+      "Sukkah 14a:5"
+    ],
+    "generatedAt": "2026-11-05T21:04:10.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 14a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעתר</strong> - בפרק הבא על יבמתו <span class=\"parenthesized\">(יבמות דף סד.)</span> <span class=\"rashi-quotation\">פי' בקונטרס</span> עתר פל\"א בלע\"ז ולא יתכן דבלא ידות נמי יכול להפך בה את התבואה והיא נקראת רחת שמטהרין בה את התבואה מן המוץ שלה כדכתיב <span class=\"parenthesized\">(ישעיהו ל׳:כ״ד)</span> אשר זורה ברחת ובמזרה וכאן פירש פורק\"א וכן עיקר:"
   }
 }

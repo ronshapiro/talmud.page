@@ -1,0 +1,302 @@
+{
+  "Rashi on Sukkah 21b:10:1": {
+    "dependsOn": [
+      "Sukkah 21b:10",
+      "Rashi on Sukkah 21b:10:1",
+      "Rashi on Sukkah 21b:10:2",
+      "Ritva on Sukkah 21b:3",
+      "Steinsaltz on Sukkah 21b:10:1",
+      "Steinsaltz on Sukkah 21b:10",
+      "Rosh on Sukkah 2:1:2",
+      "Steinsaltz comment #1 on Sukkah 21b:10",
+      "Rashi on Sukkah 21b:11:1",
+      "Rashi on Sukkah 21b:11:2"
+    ],
+    "generatedAt": "2026-11-06T07:42:06.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכרעי המט'</strong> - מטה שלמה:"
+  },
+  "Rashi on Sukkah 21b:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:10:1",
+      "Tosafot on Sukkah 21a:3:2",
+      "Sukkah 21b:11"
+    ],
+    "generatedAt": "2026-11-06T07:43:22.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה אומר כו'</strong> - טעמא מפרש בגמרא:"
+  },
+  "Rashi on Sukkah 21b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:49:09.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעמידה כו'</strong> - ואע\"פ שלא למדנו פסול אלא לסכך הואיל ועיקרו של סכך אלו מעמידין הוי כאילו סיכך בדבר המקבל טומאה:"
+  },
+  "Rashi on Sukkah 21b:13:1": {
+    "dependsOn": [
+      "Sukkah 21b:13",
+      "Rashi on Sukkah 21b:11:1",
+      "Rashi on Sukkah 21b:11:2",
+      "Sukkah 21b:10"
+    ],
+    "generatedAt": "2026-11-06T08:02:26.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל סיכך על המטה</strong> - ולא סמך הסיכוך בכרעים אלא על גבי יתידות אבל כל דופני הסוכה אינן אלא מטות משלשה צדדין לא פסיל ר' יהודה דהא לא גמרי' פסול מיניה לסוכה אלא לסיכוך וזה לא הוא ולא מעמידו בפסולי' ולענין קבע נמי יש קבע לסיכוך:"
+  },
+  "Rashi on Sukkah 21b:1:1": {
+    "dependsOn": [
+      "Sukkah 21b:1"
+    ],
+    "generatedAt": "2026-11-06T07:11:19.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקבר התהום</strong> - כלומר בספק קבר:"
+  },
+  "Rashi on Sukkah 21b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:11:48.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיש כמה אגרופים</strong> - מן החבלים לקרקע:"
+  },
+  "Rashi on Sukkah 21b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:13:02.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוהגין היינו</strong> - אלמא אהל עראי לאו אהל הוא:"
+  },
+  "Rashi on Sukkah 21b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:13:38.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל ולגבה עשויה</strong> - לישן על גבה ולא תחתיה לפיכך אין לה שם אהל:"
+  },
+  "Rashi on Sukkah 21b:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:4:2"
+    ],
+    "generatedAt": "2026-11-06T07:18:03.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על הרועים</strong> - שמכניסין ראשיהן תחת כריסם:"
+  },
+  "Rashi on Sukkah 21b:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:4:1",
+      "Rashi on Sukkah 21b:4:2",
+      "Bava Batra 58a:2",
+      "Rashi on Sukkah 21b:3:1",
+      "Rashi on Sukkah 21b:3:2",
+      "Rashi on Sukkah 21b:3:3",
+      "Rashi on Sukkah 21b:5:1",
+      "Rashi on Sukkah 21b:5:2",
+      "Rashi on Sukkah 21a:1:1",
+      "Rashi on Sukkah 21a:1:2",
+      "Rashi on Sukkah 21a:2:1",
+      "Rashbam on Bava Batra 58a:3:1",
+      "Rashbam on Bava Batra 58a:3:2"
+    ],
+    "generatedAt": "2026-11-06T07:21:45.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:4:2"
+    ],
+    "sourceText": "להכי נקט גבי מטה מנעלים וסנדלים דאמרי' בבבא בתרא <span class=\"parenthesized\">(דף נח.)</span> איזהו מטה של תלמידי חכמים כל שאין תחתיה אלא מנעלים של בעל הבית בימות החמה וסנדלים בימות הגשמים שנותנים שם כשהוא בא לשכב ולישן חולץ מנעליו ונותנן תחת מטתו אבל לתת תחתיה דברים אחרים גנאי הוא לו שמרגיל בני הבית לשם:"
+  },
+  "Rashi on Sukkah 21b:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:5:1",
+      "Rashi on Sukkah 21b:5:2"
+    ],
+    "generatedAt": "2026-11-06T07:22:43.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על בני מעיין</strong> - גג ששדרה שלהן מגין עליהן:"
+  },
+  "Rashi on Sukkah 21b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:5:1",
+      "Rashi on Sukkah 21b:3:1",
+      "Rashi on Sukkah 21b:3:2",
+      "Rashi on Sukkah 21b:3:3",
+      "Rashi on Sukkah 21b:6:1",
+      "Rashi on Sukkah 21b:6:2",
+      "Rashi on Sukkah 21a:1:1",
+      "Rashi on Sukkah 20b:1:1",
+      "Rashi on Sukkah 20a:1:1"
+    ],
+    "generatedAt": "2026-11-06T07:24:12.194Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תסוככני</strong> - אלמא סכך קרי ליה:"
+  },
+  "Rashi on Sukkah 21b:6:1": {
+    "dependsOn": [
+      "Sukkah 21b:6",
+      "Rashi on Sukkah 21b:6:2",
+      "Rashi on Sukkah 21b:5:1",
+      "Rashi on Sukkah 21b:8:1",
+      "Rashi on Sukkah 21b:6:1"
+    ],
+    "generatedAt": "2026-11-06T07:28:27.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - לר' יהודה מטה אהל היא אלא היינו טעמא דשרי משום דסוכה אהל קבוע הוא:"
+  },
+  "Rashi on Sukkah 21b:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:6:1"
+    ],
+    "generatedAt": "2026-11-06T07:29:04.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אתי עראי ומבטל קבע</strong> - להסיר שם הסוכה מכאן:"
+  },
+  "Rashi on Sukkah 21b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:6:1",
+      "Rashi on Sukkah 21b:6:2",
+      "Rashi on Sukkah 21b:5:1",
+      "Rashi on Sukkah 21b:5:2",
+      "Rashi on Sukkah 21b:4:1",
+      "Rashi on Sukkah 20b:10:1",
+      "Rashi on Sukkah 20b:10:2",
+      "Rashi on Sukkah 20b:11:1",
+      "Steinsaltz on Sukkah 21b:7",
+      "Sukkah 7b:10"
+    ],
+    "generatedAt": "2026-11-06T07:35:31.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא ר' שמעון דאמר נמי סוכה קבע</strong> - דבעי ארבע' דפנות ואמרי' בפרק קמא <span class=\"parenthesized\">(דף ז:)</span> ר' יהודה ור' שמעון ורבן גמליאל ור' אליעזר ואחרים כולהו סבירא להו סוכה דירת קבע בעינן וקאמר במתניתין לפי דרכינו למדנו שהישן תחת המטה לא יצא ידי חובתו:"
+  },
+  "Rashi on Sukkah 21b:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:8:1",
+      "Rashi on Sukkah 20b:11:2"
+    ],
+    "generatedAt": "2026-11-06T07:36:17.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משיחתו</strong> - לשון שיחת חולין ושמחה:"
+  },
+  "Rashi on Sukkah 21b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:38:56.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלתא</strong> - חדתא אגב אורחיה דאזיל לאשמועינן שני דברים שלמדנו הולך בלשונו בדבר שתוכל להבין בו דבר חידוש דאי אמרת מדבריו לא שמעינן מינה שתהא שיחת חולין צריכה ליתן לב ללומדה אבל השתא אשמעינן דצריך להטות אוזן אף לשיחתן שאף היא סופה להבין בה דבר תורה מדבריו משמע דברי תורה שהוא מתכוין ללמדן לתלמידים:"
+  },
+  "Rashi on Sukkah 21b:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 21b:9:1",
+      "Rashi on Sukkah 21b:9:2",
+      "Rashi on Sukkah 21b:9:3"
+    ],
+    "generatedAt": "2026-11-06T07:39:32.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכה לימוד</strong> - צריך לשומעם שיתנו להן לב:"
+  },
+  "Rashi on Sukkah 21b:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:40:31.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 21b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועלהו</strong> - דבר קל שבו:"
+  },
+  "Tosafot on Sukkah 21b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T08:00:46.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין לה קבע</strong> - שמטלטלת על ידי המטה ורבי יהודה לטעמיה דאמר סוכה דירת קבע <span class=\"rashi-quotation\">כך פירש בקונטרס</span> לפי סברא זו מצינו למימר דפליגי נמי בסוכה שבראש העגלה וגריס שפיר לעיל בפרק קמא <span class=\"parenthesized\">(דף ז:)</span> ולקמן בפירקין <span class=\"parenthesized\">(סוכה דף כג.)</span> בראש העגלה גבי פלוגתא דרבן גמליאל ור' עקיבא בראש הספינה דבראש העגלה נמי פליגי והא דמודה רבן גמליאל בראש הספינה דכשרה היכא דיכולה לעמוד ברוח שאינה מצויה דיבשה כדאמרי' לקמן <span class=\"parenthesized\">(שם)</span> אע\"ג דמטלטלת ע\"י הספינה שאני ספינה דאורחא בהכי וחשיבא קבע אע\"ג דמטלטלת ואפילו למאן דמפרש הכא טעמא דמתניתין משום דבר המקבל טומאה מכל מקום מודה הוא דפליגי נמי בטעמא דדירת קבע תדע מדלא קאמר איכא בינייהו כגון שסמכ' בשידה תיבה ומגדל המחזיקים ארבעים סאה בלח שהם כוריים ביבש דלמאן דאמר לפי שאין לה קבע הכא נמי אין לה קבע דמטלטלת ולמאן דאמר לפי שמעמידה בדבר המקבל טומאה הני כיון דבאין במדה טהורים כדתנן פרק ט\"ו דכלים <span class=\"parenthesized\">(מ\"א)</span> ומיהו קשה דלקמן <span class=\"parenthesized\">(סוכה דף כג.)</span> דפסיל ר' יהודה סוכה על גבי בהמה מאי טעמא משום דכתיב חג הסכות תעשה לך שבעת ימים סוכה הראויה לשבעה וזו אינה ראויה לפי שאין עולין לה בי\"ט והשתא תיפוק ליה משום דמטלטלת ע\"י בהמה ואינה קבע מידי דהוה אסומך בכרעי המטה ובירושלמי משמע דטעמא לפי שאין לה קבע שאין לה י' טפחים מן המטה עד לגג דהך פלוגתא דר' זירא ור' אבא דהכא מתני לה בירושלמי בר' אמי ור' אבא וזה לשונו אמר רבי אמי על שם שאין מכרעי המטה לסכך עשרה טפחים אמר ר' אבא משום שאין מעמידין בדבר טמא הא תני מעשה בירושלים שהיו משלשלין מטותיהן לפני חלונותיהן והיו מסככין על גביהן אין תימא משום שאין מעמידין על דבר טמא הא לית ליה טעמא אלא משום שאין מכרעי המטה לסכך י' טפחים עד כאן ירושלמי ואותן של אנשי ירושלים היה עשרה מכרעי המטה לסכך והא דקתני מתניתין רבי יהודה אומר אם אינה יכולה לעמוד מעצמה אסורה דמשמע הא יכולה לעמוד כמו שסמכה על יתידות כשרה אע\"פ שאין מכרעי המטה לסכך עשרה לא חשיב עראי כיון דאי שקיל לה למטה איכא אויר עשרה והסוכה מתקיימת כדאמר אביי בשמעתין למאן דאמר אין לה קבע הרי יש לה קבע כלומר אי שקיל לה למטה דמטה לחודה קיימא ואין הסוכה נפסלת בשביל שהכניס בה מטה ומיעט אוירה מידי דהוה אכרים וכסתות דפרק קמא <span class=\"parenthesized\">(דף ג:)</span> לא הוי מיעוט לא לענין עשרה ולא לענין עשרים:"
+  },
+  "Tosafot on Sukkah 21b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T07:27:00.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובעצמות וגידים תשוככני</strong> - אף על גב דהאי קרא באדם כתיב כל שכן בהמה שכריסה למטה כעין אהל:"
+  },
+  "Tosafot on Sukkah 21b:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 28b:1:1",
+      "Sukkah 28b:1"
+    ],
+    "generatedAt": "2026-11-06T07:38:01.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למדנו שעבדים פטורים מן הסוכה</strong> - ואע\"ג דהאי מצות עשה שהזמן גרמא אצטריך לאשמועינן דלא תימא דחייבין משום דכתיב תשבו כעין תדורו כדלקמן בשילהי פירקין <span class=\"parenthesized\">(סוכה דף כח:)</span>:"
+  }
+}

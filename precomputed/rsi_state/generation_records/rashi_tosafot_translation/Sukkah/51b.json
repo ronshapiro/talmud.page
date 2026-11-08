@@ -1,0 +1,642 @@
+{
+  "Rashi on Sukkah 51b:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:10:1",
+      "Rashi on Sukkah 51b:10:2"
+    ],
+    "generatedAt": "2026-11-08T09:18:33.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלקה היתה</strong> - העזרת נשים בראשונה ולא היו זיזין יוצאין מן הכתלים:"
+  },
+  "Rashi on Sukkah 51b:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:10:1"
+    ],
+    "generatedAt": "2026-11-08T09:20:23.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקיפוה גזוזטרא</strong> - נתנו זיזין בכתלים בולטין מן הכותל סביב סביב וכל שנה מסדרין שם גזוזטראות לווחין שקורין בלנ\"ק כדי שיהו נשים עומדות שם בשמחת בית השואבה ורואות וזהו תיקון גדול דקתני מתניתין שמתקנין בכל שנה:"
+  },
+  "Rashi on Sukkah 51b:11:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:11:2"
+    ],
+    "generatedAt": "2026-11-08T09:20:50.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבפנים</strong> - בעזרת נשים:"
+  },
+  "Rashi on Sukkah 51b:11:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:11:1",
+      "Steinsaltz on Sukkah 51b:11"
+    ],
+    "generatedAt": "2026-11-08T09:21:37.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבחוץ</strong> - ברחבה של הר הבית ובחיל:"
+  },
+  "Rashi on Sukkah 51b:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:12:1",
+      "Rashi on Sukkah 51b:12:2",
+      "Rashi on Sukkah 51b:12:3"
+    ],
+    "generatedAt": "2026-11-08T09:22:29.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי עביד הכי</strong> - שהוסיפו ושינו כלום על בנין שלמה:"
+  },
+  "Rashi on Sukkah 51b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:23:03.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכתיב</strong> - גבי דוד המלך כשצוה את שלמה על מדת הבית ובניינו:"
+  },
+  "Rashi on Sukkah 51b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:23:41.273Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל בכתב מיד ה' עלי השכיל</strong> - כל מלאכת התבנית שהודיעו הקב\"ה ע\"י גד החוזה ונתן הנביא:"
+  },
+  "Rashi on Sukkah 51b:13:1": {
+    "dependsOn": [
+      "Sukkah 51b:13",
+      "Sukkah 51b:14"
+    ],
+    "generatedAt": "2026-11-08T09:24:41.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרא אשכחו</strong> - שצריך להבדיל אנשים מנשים ולעשות גדר בישראל שלא יבאו לידי קלקול:"
+  },
+  "Rashi on Sukkah 51b:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 51b:1:1"
+    ],
+    "generatedAt": "2026-11-08T08:24:57.539Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באבוקות של אור</strong> - זורקין אותם כלפי מעלה ומקבלין אותם ויש שבקיאין לעשות כן בארבע אבוקות או בשמונה וזורק זו ומקבל זו וזורק זו ומקבל זו:"
+  },
+  "Rashi on Sukkah 51b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:1:1",
+      "Rashi on Sukkah 51b:1:2",
+      "Rashi on Sukkah 51b:1:3"
+    ],
+    "generatedAt": "2026-11-08T08:25:45.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי תושבחות</strong> - מפרש בגמרא:"
+  },
+  "Rashi on Sukkah 51b:1:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:1:2",
+      "Rashi on Sukkah 51b:1:3",
+      "Rashi on Yoma 16a:6:1",
+      "Tosafot on Sukkah 51b:2:1",
+      "Rashi on Sukkah 51a:16:6"
+    ],
+    "generatedAt": "2026-11-08T08:27:49.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ט\"ו מעלות</strong> - אורך המעלה ברוחב העזרה ורוחב המעלה חצי אמה ורומה חצי אמה כדאמרינן במסכת מדות <span class=\"parenthesized\">(פ\"ב מ\"ג)</span> ובסדר יומא <span class=\"parenthesized\">(דף טז.)</span>:"
+  },
+  "Rashi on Sukkah 51b:1:4": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 51b:4",
+      "Rashi on Sukkah 51b:1:1",
+      "Rashi on Sukkah 51b:1:2",
+      "Rashi on Sukkah 51b:1:3",
+      "Steinsaltz on Sukkah 51b:1"
+    ],
+    "generatedAt": "2026-11-08T08:29:23.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעליהן הלוים עומדין [בכלי] שיר</strong> - לשמחת בית השואבה אבל דוכן לשיר הקרבן אצל המזבח היה:"
+  },
+  "Rashi on Sukkah 51b:2:1": {
+    "dependsOn": [
+      "Sukkah 48b:3",
+      "Rashi on Sukkah 51b:2:1",
+      "Rashi on Sukkah 51b:2:2",
+      "Rashi on Sukkah 51b:2:3"
+    ],
+    "generatedAt": "2026-11-08T08:32:58.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקעו והריעו</strong> - זה סימן לילך למלאות המים לניסוך מן השילוח:"
+  },
+  "Rashi on Sukkah 51b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:2:1",
+      "Rashi on Sukkah 51b:2:3"
+    ],
+    "generatedAt": "2026-11-08T08:33:30.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגיעו לעזרה</strong> - לקרקע עזרת נשים:"
+  },
+  "Rashi on Sukkah 51b:2:3": {
+    "dependsOn": [
+      "Rosh Hashanah 33b:13"
+    ],
+    "generatedAt": "2026-11-08T08:34:33.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקעו והריעו ותקעו</strong> - ובראש השנה <span class=\"parenthesized\">(דף לג:)</span> יליף בכל תקיעות פשוטה לפניה ופשוטה לאחריה ותרועה באמצע:"
+  },
+  "Rashi on Sukkah 51b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T08:40:45.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיו תוקעין והולכין</strong> - באלו שלש אחרונות מאריכין עד שמגיעין לשער היוצא מעזרת נשים להר הבית לשיפולו למזרח והשער ההוא מכוון כנגד שער שמעזרת ישראל לעזרת נשים ויורדין ממערב למזרח וכשהיו נכנסין למקדש היו הולכין ממזרח למערב דרך עלייה:"
+  },
+  "Rashi on Sukkah 51b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:3:1",
+      "Rashi on Sukkah 51b:3:2",
+      "Rashi on Sukkah 51b:3:3",
+      "Rashi on Sukkah 51b:3:4"
+    ],
+    "generatedAt": "2026-11-08T08:41:15.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפכו פניהם</strong> - למערב לצד העזרות וההיכל לומר דבר זה:"
+  },
+  "Rashi on Sukkah 51b:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:3:1",
+      "Rashi on Sukkah 51b:3:2",
+      "Rashi on Sukkah 51b:3:4"
+    ],
+    "generatedAt": "2026-11-08T08:42:09.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבותינו</strong> - בבית הראשון היו כופרין ולא היו פניהם לבית אלא אחוריהם אל היכל ה' וגו' פסוק הוא ביחזקאל <span class=\"parenthesized\">(ח)</span>:"
+  },
+  "Rashi on Sukkah 51b:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T08:42:53.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שונין אותה</strong> - כופלין אותה כדמפרש אנו ליה וליה עינינו:"
+  },
+  "Rashi on Sukkah 51b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T08:44:05.349Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי היא</strong> - איזה מן הבנינים של שלמה או של נחמיה בן חכליה או של הורדוס שסתרו ובנאו:"
+  },
+  "Rashi on Sukkah 51b:5:1": {
+    "dependsOn": [
+      "Jastrow, שַׁיִשׁ ² 1",
+      "Chokhmat Shlomo on Sukkah 51b:1",
+      "Rashi on Sukkah 51b:5:2",
+      "Rashi on Sukkah 51b:5:3",
+      "Rashi on Sukkah 51b:5:4",
+      "Rashi on Sukkah 51b:5:5",
+      "Rashi on Sukkah 51b:3:1",
+      "Rashi on Sukkah 51b:4:1",
+      "Rashi on Bava Batra 4a:6:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-08T08:48:57.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[שיישא]</strong> - שייש צבוע לא לבן ולא שחור אלא כעין ירוק בלע\"ז בי\"ש:"
+  },
+  "Rashi on Sukkah 51b:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:5:1",
+      "Rashi on Sukkah 51b:5:2",
+      "Rashi on Sukkah 51b:5:3",
+      "Rashi on Sukkah 51b:4:1",
+      "Rashi on Sukkah 51b:5:4",
+      "Rashi on Sukkah 51b:5:5",
+      "Rashi on Sukkah 51b:6:1",
+      "Rashi on Bava Batra 4a:6:2",
+      "Rashi on Sukkah 51a:1:1",
+      "Rashi on Sukkah 51a:1:2",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 53b:1:1",
+      "Rashi on Sukkah 53b:1:2",
+      "Rashi on Sukkah 53b:1:3",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-08T08:50:47.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ומרמרא]</strong> - שייש לבן:"
+  },
+  "Rashi on Sukkah 51b:5:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:5:1",
+      "Rashi on Sukkah 51b:5:2",
+      "Rashi on Sukkah 51b:5:3",
+      "Rashi on Sukkah 51b:5:4",
+      "Rashi on Sukkah 51b:5:5",
+      "Rashi on Sukkah 51b:1:1",
+      "Rashi on Sukkah 51b:2:1",
+      "Rashi on Sukkah 51a:1:1",
+      "Jastrow, כּוֹחֲלָא 1",
+      "Rashi on Bava Batra 4a:6:3"
+    ],
+    "generatedAt": "2026-11-08T08:54:05.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוחלא</strong> - שישא צבוע ככחול:"
+  },
+  "Rashi on Sukkah 51b:5:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:5:3",
+      "Rashi on Sukkah 51b:5:4",
+      "Rashi on Sukkah 51b:5:5",
+      "Steinsaltz on Sukkah 51b:5"
+    ],
+    "generatedAt": "2026-11-08T08:55:15.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפיק שפה</strong> - שורה של אבנים נכנסה ושורה יוצאה:"
+  },
+  "Rashi on Sukkah 51b:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T08:56:13.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיחזי כאדותא דימא</strong> - כגלי הים שהאבנים משונים במראיהן זו מזו והעינים המסתכלות בהן שוטטות ונראות כאילו גלי הים הם נדים ונעים:"
+  },
+  "Rashi on Sukkah 51b:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:6:1",
+      "Taanit 18b:14",
+      "Taanit 18b:15",
+      "Taanit 18b:16",
+      "Rashi on Taanit 18b:10:1",
+      "Rashi on Sukkah 51b:6:2",
+      "Rashi on Sukkah 51b:6:3",
+      "Rashi on Sukkah 51b:5:1",
+      "Rashi on Sukkah 51b:5:2",
+      "Rashi on Sukkah 51b:5:3"
+    ],
+    "generatedAt": "2026-11-08T08:58:01.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיופלוסטון</strong> - לשון יונית דיו שנים פלו לשון שרים כמו מטרפולין וכמו דיופולין מרומי דתענית <span class=\"parenthesized\">(דף יח:)</span> סטון לשון סטיו שני סטוין:"
+  },
+  "Rashi on Sukkah 51b:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:6:1",
+      "Rashi on Sukkah 51b:6:3",
+      "Sukkah 51b:6",
+      "Rashi on Sukkah 51b:6:4",
+      "Rashi on Sukkah 51b:6:5",
+      "Rashi on Sukkah 51b:6:6",
+      "Rashi on Sukkah 51b:6:7",
+      "Rashi on Sukkah 51b:6:8"
+    ],
+    "generatedAt": "2026-11-08T08:59:16.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סטיו כפול</strong> - לישיבת שרים של אלכסנדריא שהלכו שם יוחנן בן קרח ושרי החיילים לאחר חורבן בית ראשון בימי ירמיה ונתיישבו שם ואף על פי שעלה שם נבוכדנצר והחריב את מצרים ונהרגו מישראל שהלכו שם כמו שנתנבא עליהם ירמיה <span class=\"parenthesized\">(מב)</span> עלו בניהם שם לגדולה ועושר עד שהחריבם אלכסנדרוס:"
+  },
+  "Rashi on Sukkah 51b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T08:59:44.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסילקי</strong> - פלטירין גבוהים נקראים בסילקאות:"
+  },
+  "Rashi on Sukkah 51b:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:00:09.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד שבעים ואחד זקנים</strong> - שעשו להם סנהדרין:"
+  },
+  "Rashi on Sukkah 51b:6:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:6:4",
+      "Rashi on Sukkah 51b:6:5",
+      "Rashi on Sukkah 51b:6:6",
+      "Steinsaltz comment #1 on Sukkah 51b:6",
+      "Steinsaltz comment #2 on Sukkah 51b:6",
+      "Steinsaltz comment #3 on Sukkah 51b:6",
+      "Tosafot on Sukkah 51b:6:1",
+      "Tosafot on Sukkah 51b:6:2",
+      "Tosefta Sukkah 4:4",
+      "Tosefta Sukkah (Lieberman) 4:6",
+      "Rashi on Sukkah 51a:7:2"
+    ],
+    "generatedAt": "2026-11-08T09:01:33.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:5"
+    ],
+    "sourceText": "ככרי זהב גרסינן:"
+  },
+  "Rashi on Sukkah 51b:6:6": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 51b:6",
+      "Rashi on Sukkah 51b:6:5",
+      "Rashi on Sukkah 51b:6:6",
+      "Rashi on Sukkah 51b:6:7",
+      "Sefer HeArukh, Letter Bet 215"
+    ],
+    "generatedAt": "2026-11-08T09:03:27.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימה</strong> - כעין אלמימבר\"א שלנו:"
+  },
+  "Rashi on Sukkah 51b:6:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:03:57.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזן הכנסת</strong> - שמש הצבור:"
+  },
+  "Rashi on Sukkah 51b:6:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:04:21.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:6:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענות אמן</strong> - שהיה שליח שלפני התיבה גומר ברכתו והן לא היו יכולין כולן לשמוע קולו:"
+  },
+  "Rashi on Sukkah 51b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T09:09:34.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהבין כספין</strong> - צורפי זהב צורפי כסף:"
+  },
+  "Rashi on Sukkah 51b:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:7:2",
+      "Rashi on Sukkah 51b:7:1",
+      "Rashi on Sukkah 51b:7:3",
+      "Sukkah 51b:7",
+      "Rashi on Sukkah 51b:7:4",
+      "Rashi on Sukkah 51b:7:5",
+      "Rashi on Sukkah 51b:1:1",
+      "Rashi on Sukkah 51b:6:1"
+    ],
+    "generatedAt": "2026-11-08T09:10:58.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפחים</strong> - חרשי ברזל:"
+  },
+  "Rashi on Sukkah 51b:7:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:7:1",
+      "Rashi on Sukkah 51b:7:2",
+      "Rashi on Sukkah 51b:7:4",
+      "Rashi on Sukkah 51b:7:5",
+      "Rashi on Sukkah 51b:6:1",
+      "Rashi on Sukkah 51b:6:2",
+      "Jastrow, טַרְסִי I 1",
+      "Rashi on Sukkah 51a:1:1",
+      "Rashi on Sukkah 51a:2:1",
+      "Rashi on Sukkah 50b:1:1",
+      "Rashi on Sukkah 52a:1:1",
+      "Steinsaltz on Sukkah 51b:7:1",
+      "Steinsaltz on Sukkah 51b:7",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:2:1"
+    ],
+    "generatedAt": "2026-11-08T09:13:17.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרסיים</strong> - חרשי נחושת:"
+  },
+  "Rashi on Sukkah 51b:7:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:7:3"
+    ],
+    "generatedAt": "2026-11-08T09:13:47.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרדיים</strong> - אורגין:"
+  },
+  "Rashi on Sukkah 51b:7:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:7:1",
+      "Rashi on Sukkah 51b:7:2",
+      "Rashi on Sukkah 51b:7:3",
+      "Rashi on Sukkah 51b:7:4"
+    ],
+    "generatedAt": "2026-11-08T09:14:15.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפנה לשם</strong> - ונשכר להם למלאכתם:"
+  },
+  "Rashi on Sukkah 51b:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:9:1",
+      "Rashi on Sukkah 51b:9:2",
+      "Sukkah 51b:9"
+    ],
+    "generatedAt": "2026-11-08T09:15:21.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא גברא הוה</strong> - עליו נאמר מקרא זה וגזרת מלך היא להחריבה:"
+  },
+  "Rashi on Sukkah 51b:9:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:9:1",
+      "Steinsaltz on Sukkah 51b:9",
+      "Rashi on Sukkah 51b:6:1",
+      "Rashi on Sukkah 51b:6:2",
+      "Rashi on Sukkah 51a:1:1",
+      "Rashi on Sukkah 52a:1:1",
+      "Chidushei Agadot on Sukkah 51b:5"
+    ],
+    "generatedAt": "2026-11-08T09:17:43.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 51b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודלי זיקא</strong> - גבה הרוח:"
+  },
+  "Tosafot on Sukkah 51b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 51b:1:4",
+      "Tosafot on Sukkah 51a:5:1",
+      "Yoma 16a:7",
+      "Mishnah Middot 2:6"
+    ],
+    "generatedAt": "2026-11-08T08:32:04.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 51b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעליהן הלוים עומדין בכלי שיר</strong> - לשמחת בית השואבה אבל דוכן לשיר דקרבן אצל המזבח היה <span class=\"rashi-quotation\">כך פירש בקונט'</span> ובמס' מדות <span class=\"parenthesized\">(פ\"ב מ\"ו)</span> תנן ומייתי לה בפ\"ק דיומא <span class=\"parenthesized\">(דף טז.)</span> ראב\"י אומר מעלה היתה שם גבוהה אמה ודוכן נתון עליה ואותה מעלה היתה בין עזרת ישראל לעזרת כהנים:"
+  },
+  "Tosafot on Sukkah 51b:2:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 51b:2:1",
+      "Tosafot on Sukkah 51b:1:1",
+      "Tosafot on Sukkah 51a:1:1",
+      "Tosafot on Sukkah 51b:6:1"
+    ],
+    "generatedAt": "2026-11-08T08:40:04.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 51b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרא הגבר תקעו והריעו ותקעו</strong> - תימה דמשמע שמקרות הגבר הולכין לשאוב מים וא\"כ היו נפסלין בלינה דע\"כ לא פליגי פ\"ב דזבחים <span class=\"parenthesized\">(דף כ.)</span> אלא לענין קידוש ידים ורגלים מקרות הגבר ועד צפרא [אי] פסלא בלינה או לא אבל מי הכיור <span class=\"parenthesized\">(עצמו)</span> נפסלין בעמוד השחר כדמוכח התם ואפי' סילקן מן הכיור אחר קרות הגבר הדר משקע ליה וי\"ל דשוהין היו בתקיעות ובתרועות ובהפיכת פניהם למערב וגם בחזרה לאחר מילוי והיה מאיר היום קודם שיגיעו לעזרה ועד שיקדשן בכלי לא הוכשרו ליפסל בלינה כדתנן פרק חטאת העוף במסכת מעילה <span class=\"parenthesized\">(דף י.)</span> גבי נסכים ואף על פי שהצלוחית היתה מקודשת מכל מקום אין כלי שרת מקדשין בחוץ אלא בפנים:"
+  },
+  "Tosafot on Sukkah 51b:6:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 51b:6:1",
+      "Chokhmat Shlomo on Sukkah 51b:16",
+      "Chokhmat Shlomo on Sukkah 51b:17",
+      "Chokhmat Shlomo on Sukkah 51b:18",
+      "Tosafot on Sukkah 51b:1:1",
+      "Tosafot on Sukkah 51b:2:1"
+    ],
+    "generatedAt": "2026-11-08T09:07:33.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 51b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיו בה ע\"א קתדראות של זהב כנגד ע\"א זקנים</strong> - פירוש סנהדרין תימה הא דתנן פרק קמא דסנהדרין <span class=\"parenthesized\">(דף ב. ושם)</span> סנהדרי גדולה היתה של שבעים ואחד רבי יהודה אומר שבעים [וא\"כ ה\"ל לעשות רק שבעים קתדראות] ומתוך כך צריך לפרש שאותה קתדרא היתה למופלא שבב\"ד ולא היה מן החשבון דאי לאו הכי קשיא דרבי יהודה אדרבי יהודה:"
+  },
+  "Tosafot on Sukkah 51b:6:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 51b:6:2"
+    ],
+    "generatedAt": "2026-11-08T09:09:09.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 51b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכיון שהגיע לענות אמן מניף בסודר וכל העם עונין אמן</strong> - בערוך קשיא ליה לרבינו נסים הא דאמר בריש גמרא דשלשה שאכלו <span class=\"parenthesized\">(ברכות דף מו.)</span> אין עונין אמן יתומה והא הכא לא שמעו הברכה אלא בהנפת הסודרין יודעין שהגיע עונת אמן והן עונין אמן יתומה ומפרש בשם רבנן דבני מערבא שעל מי שהוא חייב ברכה קאמר ובענייתו אמן רוצה לצאת ידי חובתו צריך שישמע ואחר כך יענה אמן ולא יענה אמן יתומה והא דעונין אמן בהנפת סודרין היינו בקריאת ספר תורה ולא בתפלה ולא בדבר ששליח מוציא רבים ידי חובתן וכן מפרש בגמרא דפירקין בירושלמי בימה של עץ באמצע וחזן הכנסת עליה עמד אחד מהן לקרות היה הממונה מניף בסודרין והם עונין אמן על כל ברכה וברכה ובברכות ירושלמי בסוף אלו דברים קאמר איזו היא אמן יתומה הונא אמר רב הן הן דחייב לומר ברכה ולא ידע מה הוא עונה ורב כהן צדק גאון אמר חייב צבור לשתוק ולשמוע כל ברכה וברכה מפי החזן ואח\"כ יענה אמן לאחר שתכלה הברכה מפי המברך ועוד יש לומר יודעים היו לכוון סדר הברכות שזו אחר זו במנין שמונין כסדרן:"
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "Rashi on Sukkah 35a:11:1": {
+    "dependsOn": [
+      "Sukkah 35a:11",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Rashi on Sukkah 35a:2:3",
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:7:2",
+      "Rashi on Sukkah 35a:8:1",
+      "Rashi on Sukkah 35a:9:1",
+      "Rashi on Sukkah 35a:9:2",
+      "Rashi on Sukkah 35a:9:3",
+      "Rashi on Sukkah 35a:1:1",
+      "Rashi on Sukkah 34b:1:1",
+      "Rashi on Sukkah 34b:2:1"
+    ],
+    "generatedAt": "2026-11-07T06:31:09.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תסתיים דר' אסי הוא דאמר לפי שאין בה דין ממון</strong> - וא\"נ איכא היתר אכילה דין ממון נמי בעינן ושל מעשר לר' מאיר פסול:"
+  },
+  "Rashi on Sukkah 35a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:12:2",
+      "Sukkah 35a:13",
+      "Rashi on Sukkah 35a:11:1",
+      "Rashi on Sukkah 34b:4:1",
+      "Rashi on Sukkah 34b:5:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-07T06:32:37.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין יוצא בה ידי חובתו בפסח</strong> - ידי חובת אכילת מצה לילה הראשון ולקמן פריך מי כתיב מצתכם:"
+  },
+  "Rashi on Sukkah 35a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:33:31.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטורה מן החלה</strong> - דכתיב עריסותיכם והאי דגבוה היא ואע\"ג דאיכא היתר אכילה כיון דלית בה דין שאר ממון לאו דידיה הוא:"
+  },
+  "Rashi on Sukkah 35a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T05:58:02.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרי עץ</strong> - שהעץ כפרי בטעם שוה:"
+  },
+  "Rashi on Sukkah 35a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T05:58:49.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממשמע שנאמר ונטעתם</strong> - וכתיב בסופיה לא יאכל איני יודע דבעץ מאכל משתעי קרא:"
+  },
+  "Rashi on Sukkah 35a:2:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:3"
+    ],
+    "generatedAt": "2026-11-07T05:59:43.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייבין בערלה</strong> - דלא. תימא מין ירק הוא מפני שהוא עץ שפל כמין רותם שאינו גבוה מן הארץ:"
+  },
+  "Rashi on Sukkah 35a:2:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Ritva on Sukkah 35a:2",
+      "Rashi on Yoma 81b:6:1",
+      "Rashi on Yoma 81b:6:2"
+    ],
+    "generatedAt": "2026-11-07T06:01:27.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תחסר כל בה</strong> - ולמדך האי עץ מאכל דאפילו פלפלין בכלל:"
+  },
+  "Rashi on Sukkah 35a:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:3:2",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Rashi on Sukkah 35a:2:3"
+    ],
+    "generatedAt": "2026-11-07T06:05:22.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ננקוט חדא</strong> - גרעין אחד:"
+  },
+  "Rashi on Sukkah 35a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:05:49.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מינכרא לקיחתה</strong> - מתוך קוטנה:"
+  },
+  "Rashi on Sukkah 35a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:07:31.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדיר</strong> - פרי עץ שדומה אילנו לדיר של צאן:"
+  },
+  "Rashi on Sukkah 35a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:4:1",
+      "Rashi on Sukkah 35a:4:2",
+      "Rashi on Sukkah 35a:4:3"
+    ],
+    "generatedAt": "2026-11-07T06:08:26.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו כולהו אילני לית בהו פירות גדולים וקטנים</strong> - והלא כל תפוחי אילן אחד אינן שוות:"
+  },
+  "Rashi on Sukkah 35a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:09:40.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק עד שבאים קטנים כו'</strong> - כלומר האי גדולים וקטנים לאו של שנה אחת קאמר אלא גדולים של אשתקד וקטנים של שנה זו שהאתרוג דר וגדל באילנו שתים ושלש שנים וכשבאין וחונטין של עכשיו עדיין גדולים דאשתקד קיימין בו:"
+  },
+  "Rashi on Sukkah 35a:5:1": {
+    "dependsOn": [
+      "Sukkah 35a:5",
+      "Rashi on Sukkah 35a:4:1",
+      "Rashi on Sukkah 35a:4:2",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Rashi on Sukkah 34b:1:1",
+      "Rashi on Sukkah 34b:2:1",
+      "Rashi on Sukkah 34b:3:1"
+    ],
+    "generatedAt": "2026-11-07T06:11:15.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר</strong> - והיא היא דרבי אלא במשמעותא פליגי מר דריש ליה לשון דיר ומר דריש ליה לשון דירה:"
+  },
+  "Rashi on Sukkah 35a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:7:2",
+      "Rashi on Sukkah 34b:8:5",
+      "Rashi on Sukkah 35a:1:1",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 30a:1:1"
+    ],
+    "generatedAt": "2026-11-07T06:12:21.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאין בה היתר אכילה</strong> - ורחמנא אמר לכם הראוי לכם בכל דרכי הנאתו:"
+  },
+  "Rashi on Sukkah 35a:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:7:1"
+    ],
+    "generatedAt": "2026-11-07T06:13:25.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאין בה דין ממון</strong> - שאינו שוה פרוטה דאיסורי הנאה הוא הלכך לאו שלכם הוא:"
+  },
+  "Rashi on Sukkah 35a:8:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:8:2",
+      "Steinsaltz on Sukkah 35a:8",
+      "Rashi on Sukkah 35a:8:3",
+      "Rashi on Sukkah 35a:8:4"
+    ],
+    "generatedAt": "2026-11-07T06:17:37.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא סלקא דעתיה מאן דבעי היתר אכילה</strong> - אי הוי ביה היתר אכילה כגון מעשר שני בירושלים לא בעי דין ממון דאע\"פ שאין ממונו לרבי מאיר דאמר בקדושין <span class=\"parenthesized\">(דף נב:)</span> מעשר שני ממון גבוה הוא ואינו נכסי הדיוט לקדש בו אשה כשר לצאת בו:"
+  },
+  "Rashi on Sukkah 35a:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:8:1",
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:7:2",
+      "Rashi on Sukkah 34b:1:1"
+    ],
+    "generatedAt": "2026-11-07T06:18:31.433Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאן דבעי דין ממון לא בעי היתר אכילה</strong> - ומכשיר אתרוג של טבל שאסור באכילה ומותר בהנאה:"
+  },
+  "Rashi on Sukkah 35a:8:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:8:1",
+      "Rashi on Sukkah 35a:8:2",
+      "Rashi on Sukkah 35a:8:4"
+    ],
+    "generatedAt": "2026-11-07T06:19:27.016Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד לפי שאין בה דין ממון</strong> - אבל היתר אכילה לא בעינן ומשום דין ממון קרינא ביה לכם:"
+  },
+  "Rashi on Sukkah 35a:8:4": {
+    "dependsOn": [
+      "Shabbat 25a:1",
+      "Shabbat 25a:2",
+      "Shabbat 25a:3",
+      "Shabbat 25a:4",
+      "Shabbat 25a:5",
+      "Shabbat 25a:6",
+      "Shabbat 25a:7",
+      "Shabbat 25a:8",
+      "Shabbat 25b:1",
+      "Shabbat 25b:2",
+      "Maharshal on Sukkah 35a:5:1",
+      "Rashi on Sukkah 35a:8:1",
+      "Rashi on Sukkah 35a:8:2",
+      "Rashi on Sukkah 35a:8:3",
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:7:2",
+      "Rashi on Sukkah 34b:10:1",
+      "Rashi on Sukkah 34b:11:1"
+    ],
+    "generatedAt": "2026-11-07T06:21:23.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי מסיקה לזו תחת תבשילו</strong> - כדאמרינן <span class=\"parenthesized\">(בשבת דף כה:)</span> תתן לו ולא לאורו מכלל דבת אורו הוא:"
+  },
+  "Rashi on Sukkah 35a:9:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:8:1",
+      "Rashi on Sukkah 35a:8:2",
+      "Rashi on Sukkah 35a:9:2",
+      "Rashi on Sukkah 35a:9:3",
+      "Rashi on Sukkah 35a:7:1"
+    ],
+    "generatedAt": "2026-11-07T06:22:37.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בהיתר אכילה דכ\"ע בעינן</strong> - ואפילו יש בה דין ממון לא מתכשרין בלא היתר אכילה דכיון דלא חזיא לכל דרכי הנאה לאו לכם הוא:"
+  },
+  "Rashi on Sukkah 35a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:25:05.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דין ממון לא בעינן</strong> - אם מותרת באכילה כגון מעשר שני בירושלים ואליבא דרבי מאיר כשר ומתניתין דקתני של מעשר שני בירושלים כשר אפילו כר' מאיר דאמר מעשר שני ממון גבוה הוא מתוקמא:"
+  },
+  "Rashi on Sukkah 35a:9:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:9:1",
+      "Rashi on Sukkah 35a:9:2",
+      "Rashi on Sukkah 35a:9:3",
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Rashi on Sukkah 35a:2:3",
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:8:1"
+    ],
+    "generatedAt": "2026-11-07T06:27:12.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 35a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דין ממון נמי בעינן</strong> - ומעשר שני לר' מאיר פסול ומתני' דקתני כשר רבנן היא דאמרי ממון הדיוט הוא ומקדשין בו את האשה:"
+  },
+  "Tosafot on Sukkah 35a:13:1": {
+    "dependsOn": [
+      "Chullin 135b:1",
+      "Chullin 135b:2",
+      "Chullin 135b:3",
+      "Chullin 135b:4",
+      "Chullin 135b:5",
+      "Chullin 135b:14",
+      "Chullin 135b:15",
+      "Chullin 135b:16",
+      "Chullin 135b:17",
+      "Chullin 135b:18",
+      "Chullin 135b:10",
+      "Chullin 135b:11",
+      "Chullin 135b:12",
+      "Chullin 135b:13",
+      "Chullin 135b:7",
+      "Chullin 135b:8",
+      "Chullin 135b:9"
+    ],
+    "generatedAt": "2026-11-07T06:37:00.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא לחם לחם</strong> - תימה בפרק כל שעה <span class=\"parenthesized\">(פסחים דף לה:)</span> דאין יוצאין ידי מצה בטבל מדכתיב לא תאכל עליו חמץ שבעת ימים תאכל עליו מצות יצא מי שאיסורו עליה משום בל תאכל טבל תיפוק ליה משום דבעינן מצה משלכם וטבל לא חשיב לכם כדמוכח הכא גבי אתרוג דעד כאן לא פליגי בית שמאי ובית הילל אלא בדמאי משום דאי בעי מפקר ליה לנכסיה והוי עני וחזי ליה אבל בטבל ודאי כולהו מודו וי\"ל דלא דמי דהא דאין יכול לצאת באתרוג של טבל דהוי כמו אתרוג דשותפין שיש לכהן וללוי בו חלק ודמי לאחין שקנו אתרוג בתפיסת הבית בסוף יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קלז: ושם)</span> אבל גבי מצה כשאכל ממנה כמה זיתים אם יש משלו כזית יצא ומהאי טעמא נמי ניחא דעיסה של טבל חייבת בחלה כדמוכח בירושלמי דדמאי פרק חמישי דתניא הרוצה להפריש תרומה ותרומת מעשר וחלה כאחת ובודאי איירי מדזקוק להפריש תרומה גדולה ולא פטרינן ליה מדכתיב עריסותיכם דמיירי בשיש שם חמשת רבעים בלא חלקו של כהן <span class=\"parenthesized\">(אע\"ג)</span> דבפרק ראשית הגז <span class=\"parenthesized\">(חולין דף קלה:)</span> ילפינן עיסה דשותפין:"
+  },
+  "Tosafot on Sukkah 35a:2:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:2:1",
+      "Rashi on Sukkah 35a:2:2",
+      "Rashi on Sukkah 35a:2:3",
+      "Maharam on Sukkah 35a:3",
+      "Tosafot on Sukkah 35a:7:1",
+      "Tosafot on Sukkah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-07T06:03:46.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ללמדך שהפלפלין חייבין בערלה</strong> - דלא תימא מין ירק הוא מפני שהוא עץ שפל כמו רותם שאינו גבוה <span class=\"rashi-quotation\">כך פי' בקונטרס</span> וקשיא דלא בהכי תליא מלתא וכמה עצים שפלים הם שיש להם תורת אילן אלא היינו טעמא משום דאמרינן פ' בתרא דיומא <span class=\"parenthesized\">(דף פא: ושם)</span> כס פלפלי ביומא דכיפורי פטור ופריך מהך דפלפלין חייבין בערלה ומשני הא ברטיבתא הא ביבשתא וס\"ד כיון דסופו ליבש אפילו רטיבתא פטורין וא\"ת ומנלן דקרא בפלפלין אימא אתרוג ואימא תלתן דאתרוג טעם עצו ופריו שוה כדאמר הכא וכן תלתן כדאמרינן בשילהי פ' קמא דביצה <span class=\"parenthesized\">(דף יג.)</span> וי\"ל אתרוג אין זה חידוש אם הוא חייב בערלה ותלתן מין ירק הוא מדחשיב כלאים בכרם כדתנן במס' ערלה <span class=\"parenthesized\">(פ\"ג מ\"ו)</span> ומייתי לה בריש ביצה <span class=\"parenthesized\">(דף ג.)</span> ובשילהי הערל <span class=\"parenthesized\">(יבמות דף פא. ושם)</span> מי שהיו לו חבילי תלתן של כלאי הכרם:"
+  },
+  "Tosafot on Sukkah 35a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 35a:7:1",
+      "Rashi on Sukkah 35a:7:2"
+    ],
+    "generatedAt": "2026-11-07T06:16:16.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 35a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאין בו היתר אכילה</strong> - ורחמנא אמר לכם הראוי לכם בכל דרכי הנאתן ואף על גב דגבי תרומה טמאה דרשינן פ' במה מדליקין <span class=\"parenthesized\">(שבת דף כה.)</span> מדכתיב לך שלך תהא להסיקה תחת תבשילך כיון דנטמאת ואסרה הכתוב שייך לדרוש לך דידיה לגבי שאר הנאות כמו לכם דלולב דלא שייך ביה אכילה וא\"ת גבי לולב של אשרה ושל עיר הנדחת <span class=\"parenthesized\">(לעיל סוכה לא.)</span> למה לן טעמא דמיכתת שיעוריה תיפוק ליה משום דבעינן דין ממון דאפילו מאן דלא חייש הכא גבי אתרוג לדין ממון היינו משום דעיקרו לאכילה אבל לולב דלית ביה אכילה כתיב לכם דידיה לענין דין ממון וי\"ל דנקט דמיכתת שיעוריה כדי לפסול בי\"ט שני וא\"ת אתרוג של ערלה תיפוק ליה דמיכתת שיעוריה דמצותו בשרפה דקחשיב ליה בתמורה פרק בתרא <span class=\"parenthesized\">(דף לג:)</span> בהדי נשרפין ואמרינן התם הנשרפין לא יקברו ואפשר דאפילו מדאורייתא הויא ערלה בשרפה דילפינן לה מכלאי הכרם דכתיב בה פן תקדש ודרשינן <span class=\"parenthesized\">(חולין דף קטו.)</span> פן תוקד אש ומהאי טעמא נמי פסול אתרוג של תרומה טמאה דמצותה בשרפה ולמה לן טעמא דהיתר אכילה וי\"ל דודאי לא היה צריך אלא נחלקו בהנך טעמי לענין ערלה משום דנפקא מינה לענין מעשר שני כדמסקינן איכא בינייהו מעשר שני ואליבא דרבי מאיר <span class=\"parenthesized\">(ומאן דמכשיר היינו אליבא דרבנן)</span> והוה מצי למימר נמי מעשר שני בגבולין ואליבא דכולי עלמא כדמוכח בסוף חלק <span class=\"parenthesized\">(סנהדרין דף קיב:)</span> שהוא ממון גבוה:"
+  }
+}

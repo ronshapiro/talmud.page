@@ -1,0 +1,313 @@
+{
+  "Rashi on Sukkah 40a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:45:00.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבשעת לקיטתו עישורו</strong> - שאם חנט בשנה שניה שמעשרותיה מעשר ראשון ומעשר שני ונלקט בשלישית לשמיטה שמעשרותיה מעשר ראשון ומעשר עני מתעשר כדין מעשר שלישית ואילו שאר אילנות שחנטו פירותיהן בשניה ונלקטו בשלישית מתעשרין כדין שניה ולענין מעשר השוו אתרוג לירק דמעשר פירות האילן וירקות דרבנן ומעשר גורן ויקב דאורייתא ובגורן ויקב ילפינן בראש השנה <span class=\"parenthesized\">(דף יג:)</span> שמתעשר אחר השנה שהביאו שליש מקראי ואסמכו רבנן מעשר דבריהם אגורן ויקב מה גורן ויקב מיוחדים שגדילים על רוב מים דהיינו מי גשמים ומתעשרין לשנה שעברה אף כל הגדילין על רוב מים כגון פירות האילן מתעשרין לשנה שעברה יצאו ירקות שגדילין על כל מים שמתעשרים לשנה הבאה ואתרוג נמי גדל על כל מים כירק:"
+  },
+  "Rashi on Sukkah 40a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:45:21.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכל דבר</strong> - אף למעשרות:"
+  },
+  "Rashi on Sukkah 40a:2:1": {
+    "dependsOn": [
+      "Sukkah 40a:2",
+      "Sukkah 40a:1",
+      "Rashi on Sukkah 40a:2:2",
+      "Rashi on Sukkah 39a:1:1"
+    ],
+    "generatedAt": "2026-11-07T13:47:31.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא דאמר</strong> - תנא דמתני' דמקפיד אאתרוג:"
+  },
+  "Rashi on Sukkah 40a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:2:1",
+      "Rashi on Sukkah 40a:1:1",
+      "Rashi on Sukkah 40a:1:2",
+      "Rashi on Sukkah 39b:6:1",
+      "Rashi on Sukkah 39b:7:1",
+      "Rashi on Sukkah 39b:7:2",
+      "Rashi on Sukkah 38b:3:1",
+      "Tosafot on Sukkah 38b:3:1",
+      "Rashi on Sukkah 2a:1:1",
+      "Rashi on Sukkah 2a:1:2",
+      "Rashi on Sukkah 2a:1:3"
+    ],
+    "generatedAt": "2026-11-07T13:49:20.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(דאמר)</span> כי האי תנא</strong> - דקתני ורבותינו נמנו באושא ואמרו אתרוג אחר לקיטה בין למעשר בין לשביעית:"
+  },
+  "Rashi on Sukkah 40a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:51:49.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעמא דלולב בר ששית כו'</strong> - קושיא היא כלומר לעיל אמר דהיינו טעמא דלולב ניקח משום דבר ששית הוא הא שביעית הוא אסור ונפקא מינה שלולבי שביעית קדושת שביעית נוהג בהו שלא ליקח בדמיהן חלוק וטלית:"
+  },
+  "Rashi on Sukkah 40a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:4:1",
+      "Rashi on Sukkah 40a:4:2",
+      "Rashi on Sukkah 40a:4:3"
+    ],
+    "generatedAt": "2026-11-07T13:52:23.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגבבן</strong> - שכינסן לאוצרן:"
+  },
+  "Rashi on Sukkah 40a:4:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:4:1",
+      "Rashi on Sukkah 40a:4:2",
+      "Rashi on Sukkah 40a:4:4",
+      "Jastrow, חֵבָה 1"
+    ],
+    "generatedAt": "2026-11-07T13:53:29.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחובה</strong> - לשון מחבא:"
+  },
+  "Rashi on Sukkah 40a:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:53:56.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקטן לאכילה</strong> - למאכל בהמה:"
+  },
+  "Rashi on Sukkah 40a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:5:1",
+      "Rashi on Sukkah 40a:5:2",
+      "Rashi on Sukkah 40a:5:3"
+    ],
+    "generatedAt": "2026-11-07T13:57:23.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם</strong> - גבי עצי הסקה להכי לא נוהגין בהן שביעית דאמר קרא והיתה שבת וגו' ומשמע לכם לכל צרכיכם וכתיב לאכלה למימרא דאין מותר ליהנות מפירות שביעית אלא הנאה הדומה לאכילה:"
+  },
+  "Rashi on Sukkah 40a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:59:12.812Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהנאתו וביעורו שוה</strong> - כלומר שהנאתו וביעורו שמתבער מן העולם באין כאחד כגון סיכה ושתיה והדלקת הנר ומהך דרשה נמי ילפינן שאין שביעית נוהג אלא בפרי העומד להנאות הללו דה\"נ מידרש קרא והיתה שבת הארץ נוהגת במה שלכם לאכלה שהנאתו דומה לאכילה:"
+  },
+  "Rashi on Sukkah 40a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:59:57.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יצאו עצי הסקה שהנאתן אחר ביעורן</strong> - משנעשו גחלים אופין בהן אבל לולב עיקר הנאתו לכבד את הבית והוא שעת ביעורו וקלקולו ודמי להנאת אכילה ועלי קנים וגפנים קיימי להכי ולהכי הלכך בתר מחשבה אזלי:"
+  },
+  "Rashi on Sukkah 40a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:6:2",
+      "Jastrow, מִשְׁחָן 1",
+      "Beitzah 33a:2",
+      "Beitzah 33a:3",
+      "Bava Kamma 101b:7",
+      "Rashi on Bava Kamma 101b:7:1"
+    ],
+    "generatedAt": "2026-11-07T14:02:21.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא איכא עצים דמשחן</strong> - עץ שמן שהעץ עצמו מדליקין בו להאיר כמו באבוקות והוי הנאתו וביעורו שוה נימא השתא מיהא אם לקטן להדלקת אורה דנהגא בהו שביעית:"
+  },
+  "Rashi on Sukkah 40a:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:6:1"
+    ],
+    "generatedAt": "2026-11-07T14:03:29.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני סתם עצים</strong> - של היסק להסקה ניתנו לבריות וסתמן לאו להאיר קיימו הלכך לא נחתא בהו קדושת שביעית מעיקרא ואפילו לקטן להאיר:"
+  },
+  "Rashi on Sukkah 40a:7:1": {
+    "dependsOn": [
+      "Sukkah 40a:7",
+      "Maharsha: Chidushei Halachot on Sukkah 40a:1"
+    ],
+    "generatedAt": "2026-11-07T14:06:46.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג עצים דהסקה תנאי היא</strong> - ועצים דהסקה גופייהו שהנאתן אחר ביעורן תנאי היא אי נהגא בהו שביעית אי לא דאיכא תנא דדריש לכם דומיא דלאכילה למעוטי כל שהנאתו אחר ביעורו כדדרשינן לעיל ומההיא דרשה אימעוט עצים ואיכא דלא ממעט מיניה אלא דבר שאין הנאתו שוה בכל אדם כגון מלוגמא וזילוף ואפיקטויזין ואני שמעתי מרבותי שהיו גורסים וסתם עצים להסקה נינהו תנאי היא וכן כתוב בכל הספרים וטרחתי מנעורי בכל צידי שיטת הש\"ס לישבה כפי דבריהם ואיני יכול ומצאתי גירסא זו בספר כתב ידו של רבינו גרשום בן יהודה מנוחתו כבוד ובסדר ישועות של רבינו יצחק בר מנחם כתוב ואינו מוגה וכן נראה בעיני:"
+  },
+  "Rashi on Sukkah 40a:7:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:7:1",
+      "Rashi on Sukkah 40a:7:2",
+      "Rashi on Sukkah 40a:7:3",
+      "Rashi on Sukkah 40a:6:1",
+      "Rashi on Sukkah 40a:6:2",
+      "Rashi on Sukkah 39b:1:1",
+      "Rashi on Sukkah 39a:1:1"
+    ],
+    "generatedAt": "2026-11-07T14:07:46.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוסרין פירות שביעית לא לתוך משרה</strong> - לשרות פשתן ביין של שביעית:"
+  },
+  "Rashi on Sukkah 40a:7:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:7:1",
+      "Rashi on Sukkah 40a:7:2"
+    ],
+    "generatedAt": "2026-11-07T14:08:38.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לכבוסה</strong> - לכבוס בגדי' ביין של שביעית משרה וכבוסה הנאתן אחר ביעורן שמשעה ששורה הבגדים או הפשתן ביין שעה אחת נתבער ואבד לו והנאתו אינה עד שילבש הבגדים:"
+  },
+  "Rashi on Sukkah 40a:9:1": {
+    "dependsOn": [
+      "Steinsaltz on Sukkah 40a:9",
+      "Rashi on Sukkah 40a:2:1",
+      "Rashi on Sukkah 40a:2:2",
+      "Rashi on Sukkah 39b:1:1",
+      "Rashi on Sukkah 39b:2:1",
+      "Jastrow, מְלוּגְמָא 1"
+    ],
+    "generatedAt": "2026-11-07T14:16:30.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 40a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למלוגמא</strong> - לרפואה:"
+  },
+  "Tosafot on Sukkah 40a:2:1": {
+    "dependsOn": [
+      "Tosafot on Rosh Hashanah 15b:1:1"
+    ],
+    "generatedAt": "2026-11-07T13:50:57.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 40a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבותינו נמנו באושא</strong> - אית דגרסי פ\"ק דר\"ה <span class=\"parenthesized\">(דף טו:)</span> אתרוג אחר חנטה בין למעשר בין לשביעית וסברי כרבי אליעזר דלעיל ואי אפשר לומר כן כדמוכח בשמעתין דגרס אחר לקיטה ושלש מחלוקות בדבר:"
+  },
+  "Tosafot on Sukkah 40a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:4:1",
+      "Rashi on Sukkah 40a:4:2",
+      "Rashi on Sukkah 40a:4:3",
+      "Rashi on Sukkah 40a:4:4",
+      "Tosafot on Sukkah 40a:4:2"
+    ],
+    "generatedAt": "2026-11-07T13:54:58.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 40a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגבבן לחובה</strong> - יש לפרש דווקא נקט ויש לפרש אורחא דמלתא נקט:"
+  },
+  "Tosafot on Sukkah 40a:4:2": {
+    "dependsOn": [
+      "Tosafot on Sukkah 40a:4:1",
+      "Sukkah 40a:4",
+      "Rashi on Sukkah 40a:6:1",
+      "Rashi on Sukkah 40a:6:2"
+    ],
+    "generatedAt": "2026-11-07T13:56:12.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 40a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקטן לאכילה</strong> - אי בסתם היו לעצים לא היה מועיל מפרש לאכילה מידי דהוה אעצים דמשחן שליקטן להאיר לרבא דאמר סתם עצים להסקה ושמא הני סתמייהו להכי ולהכי הלכך אזלינן בתר מפרש:"
+  },
+  "Tosafot on Sukkah 40a:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 40a:7:1",
+      "Rashi on Sukkah 40a:7:2",
+      "Rashi on Sukkah 40a:7:3",
+      "Rashi on Bava Kamma 102a:2:1",
+      "Rashi on Bava Kamma 102a:4:2",
+      "Bava Kamma 102a:1",
+      "Bava Kamma 101b:14",
+      "Bava Kamma 102a:2"
+    ],
+    "generatedAt": "2026-11-07T14:12:03.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 40a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועצים דהסקה תנאי היא</strong> - אי נהגא בהו שביעית או לא דאיכא תנא דדריש לכם דומיא דלאכילה למעוטי כל שהנאתו אחר ביעורו וממעט עצי הסקה ואית דלא ממעט אלא דבר שהנאתו אין שוה בכל אדם כגון מלוגמא וזילוף ואפיקטויזין <span class=\"rashi-quotation\">כך פירש בקונט'</span> ורבותינו היו גורסין וסתם עצים להסקה ניתנו תנאי היא ו<span class=\"rashi-quotation\">פי' בקונט'</span> דטרח עלה לישבה ולא יכול ובהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף קב.)</span> <span class=\"rashi-quotation\">פי' בקונט'</span> וזה לשונו תנאי היא איכא למאן דאית ליה סתם עצים להסקה ניתנו ולא חיילא שביעית ואפילו אעצים דמשחן ואיכא דסבר אעצים דמשחן מיהא חיילא והיינו תנאי רבנן סברי סתם פירות לאכילה ניתנו וחיילא עלייהו קדושת שביעית כדאמרי' דאכל דבר שהם וביעורן שוה חיילא הלכך אפילו לקטן למשרה ולכבוסה לא מהניא מחשבה למיהוי כעלי קנים שלקטן לעצים ומשתרו דהכא סתמייהו להכי ולהכי אבל פירות סתמייהו לאכילה ומשעת יצירתן חיילא קדושה עלייהו ותו לא מהניא מחשבה לאפקועי למשרה ולכבוסה דאין נוהגין בקדושת שביעית וגבי עצים נמי סתם עצים להסקה ניתנו ולא חיילא אפילו אעצים דמשחן ור' יוסי סבר לא אמרי' סתם פירות לאכילה ניתנו ומהניא בהו מחשבה כעלי קנים וגפנים והיכא דלקטן למשרה הוי דבר שהנאתו אחר ביעורו ולא חל עליה שביעית:"
+  },
+  "Tosafot on Sukkah 40a:8:1": {
+    "dependsOn": [
+      "Tosafot on Sukkah 40a:7:1",
+      "Tosafot on Sukkah 40a:2:1",
+      "Rashi on Sukkah 40a:7:1",
+      "Rashi on Sukkah 40a:7:2",
+      "Rashi on Sukkah 40a:7:3",
+      "Rashi on Bava Kamma 101b:6:2",
+      "Rashi on Bava Kamma 102a:4:2",
+      "Tosafot on Sukkah 39b:2:1"
+    ],
+    "generatedAt": "2026-11-07T14:15:14.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 40a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יצאו משרה וכבוסה שהנאתן אחר ביעורן</strong> - שמשעת ששרה הפשתן או הבגדים ביין שעה אחת נתבער ואבד והנאתו אינה עד שילבש אותן בגדים <span class=\"rashi-quotation\">כך פי' בקונט'</span> ותימה דבהגוזל קמא <span class=\"parenthesized\">(ב\"ק דף קא: ושם)</span> קא חשיב מין הצבועין הנאתן וביעורן שוה ומהאי טעמא הוה ליה לאחשובי הנאתו אחר ביעורו שביעור בשעת צביעה ולבישה אחר כך ולמאי דבעי למימר' התם יש שבח סמנין על גבי הצמר ניחא דאין זה שייך גבי משרה וכבוסה <span class=\"rashi-quotation\">ובקונטרס פירש</span> שם דמיני צבעים בשעת רתיחת היורה כלה השורש וקולט הצבע בבגד נמצא הנאתו וביעורו שוה אבל משרה וכבוסה משעה שמטילין פשתן או בגד ביין נתקלקל ונבער והנאתו אינה עד שלשה ימים או ארבעה שיהא הפשתן שרוי:"
+  }
+}

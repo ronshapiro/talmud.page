@@ -1,0 +1,355 @@
+{
+  "Rashi on Sukkah 39a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:03:41.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משה</strong> - גדול הדור:"
+  },
+  "Rashi on Sukkah 39a:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:1:1",
+      "Rashi on Sukkah 39a:1:2",
+      "Rashi on Sukkah 39a:1:3"
+    ],
+    "generatedAt": "2026-11-07T12:06:29.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[שפיר קאמרת]</strong> - בתמיה:"
+  },
+  "Rashi on Sukkah 39a:1:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:1:1",
+      "Rashi on Sukkah 39a:1:2",
+      "Rashi on Sukkah 39a:1:3",
+      "Sukkah 39a:1",
+      "Chokhmat Shlomo on Sukkah 39a:1",
+      "Maharam on Sukkah 39a:1",
+      "Jastrow, נְסַק 1",
+      "Steinsaltz on Sukkah 39a:1",
+      "Shulchan Arukh, Orach Chayim 56:1",
+      "Rashi on Sukkah 38b:8:1",
+      "Tosafot on Sukkah 38b:8:1",
+      "Rashi on Sukkah 39a:2:1",
+      "Rashi on Sukkah 39a:2:2",
+      "Rashi on Sukkah 39a:2:3",
+      "Ritva on Sukkah 39a:1",
+      "Rashi on Sukkah 38a:9:1",
+      "Rashi on Sukkah 38a:8:3",
+      "Rashi on Sukkah 38a:8:4"
+    ],
+    "generatedAt": "2026-11-07T12:10:17.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:1:3"
+    ],
+    "sourceText": "כל אסוקי מלתא הואיל וכוונתו לגמור לית לן בה:"
+  },
+  "Rashi on Sukkah 39a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:10:52.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופל בה דברים</strong> - מאנא והלאה:"
+  },
+  "Rashi on Sukkah 39a:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:2:1",
+      "Rashi on Sukkah 39a:2:2",
+      "Rashi on Sukkah 39a:2:3"
+    ],
+    "generatedAt": "2026-11-07T12:11:25.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוסיף בה</strong> - בהלל מוסיף לכפול על כפילתו של רבי:"
+  },
+  "Rashi on Sukkah 39a:2:3": {
+    "dependsOn": [
+      "Sukkah 39a:2",
+      "Rashi on Sukkah 39a:2:1",
+      "Rashi on Sukkah 39a:2:2",
+      "Rashi on Sukkah 38a:8:4"
+    ],
+    "generatedAt": "2026-11-07T12:12:27.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאודך ולמטה</strong> - כדפרי' לעיל שכל המזמור כפול מראשו ועד כאן:"
+  },
+  "Rashi on Sukkah 39a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:13:48.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ל\"ש</strong> - דתליא ברכה במנהג אלא ברכה שלאחריו:"
+  },
+  "Rashi on Sukkah 39a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:14:20.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עובר</strong> - קודם:"
+  },
+  "Rashi on Sukkah 39a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:14:49.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויעבור את הכושי</strong> - קדמו לרוץ לפניו:"
+  },
+  "Rashi on Sukkah 39a:4:1": {
+    "dependsOn": [
+      "Sukkah 39a:4",
+      "Rashi on Sukkah 39a:4:1",
+      "Rashi on Sukkah 39a:4:2",
+      "Rashi on Sukkah 39a:4:3",
+      "Rashi on Sukkah 38a:4:1"
+    ],
+    "generatedAt": "2026-11-07T12:26:18.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלוקח לולב מחבירו</strong> - לי נראה דהלוקח לולב מעם הארץ גרסי' דהא בעם הארץ קמיירי כדאמרי' בגמ' ועם הארץ לגבי חבר לא קרי ליה חבירו ואי לוקח נמי עם הארץ מי ציית לן להחזיק חבירו בחשוד:"
+  },
+  "Rashi on Sukkah 39a:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:4:1",
+      "Rashi on Sukkah 39a:4:3"
+    ],
+    "generatedAt": "2026-11-07T12:27:51.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן לו אתרוג במתנה</strong> - חבר שקונה הושענא כולה מעם הארץ בשביעית יבקש ממנו ליתן לו אתרוג במתנה:"
+  },
+  "Rashi on Sukkah 39a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:29:38.017Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שאין רשאי כו'</strong> - בגמ' מפרש טעמא:"
+  },
+  "Rashi on Sukkah 39a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:33:06.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבליע ליה דמי אתרוג בלולב</strong> - ימכור לולב ביוקר עד שיתן לו אתרוג במתנה:"
+  },
+  "Rashi on Sukkah 39a:5:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:5:1"
+    ],
+    "generatedAt": "2026-11-07T12:33:54.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליתיב ליה</strong> - דמי אתרוג בהדיא מ\"ט אין רשאי ללוקחו בשביעית:"
+  },
+  "Rashi on Sukkah 39a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:38:17.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוסרין דמי פירות כו'</strong> - דהתורה אמרה <span class=\"parenthesized\">(ויקרא כה)</span> לאכלה ולא לסחורה שכל פירות שביעית חייבין להתבער בשביעית הן ודמיהן ולא שיעשה בהם סחורתו להצניע לאחר שביעית ולהעשיר ועמי הארץ חשודין על כך לפיכך אין מוסרין להם דמים ליקח מהם כלום בדמים דקעבר אלפני עור לא תתן מכשול <span class=\"parenthesized\">(ויקרא י״ט:י״ד)</span>:"
+  },
+  "Rashi on Sukkah 39a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:39:00.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יותר ממזון שלש סעודות</strong> - אבל מזון ג' מוסרים כדי חייו דאיכא למימר לסעודת שבת הוא צריך וכיון שהותר בערב שבת הותר לכל ימות השבת:"
+  },
+  "Rashi on Sukkah 39a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:39:21.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם מסר</strong> - ששכח ומסר לו:"
+  },
+  "Rashi on Sukkah 39a:6:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:6:1",
+      "Rashi on Sukkah 39a:6:2",
+      "Rashi on Sukkah 39a:6:3",
+      "Rashi on Sukkah 39a:6:5"
+    ],
+    "generatedAt": "2026-11-07T12:40:04.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יאמר</strong> - חבר זה שמסר לו:"
+  },
+  "Rashi on Sukkah 39a:6:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:6:4",
+      "Rashi on Sukkah 39a:6:5",
+      "Rashi on Sukkah 39a:6:6",
+      "Rashi on Sukkah 39a:6:1",
+      "Rashi on Sukkah 39a:6:2",
+      "Rashi on Sukkah 39a:6:3"
+    ],
+    "generatedAt": "2026-11-07T12:41:46.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעות הללו</strong> - שמסרתי לעם הארץ זה <span class=\"parenthesized\">(וכו')</span> וחלה עליהם קדושת שביעית כדאמרינן לקמן שביעית תופסת דמיה בקדושת' מקראי:"
+  },
+  "Rashi on Sukkah 39a:6:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:42:12.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 39a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהו מחוללין על פירות שיש לי בתוך ביתי</strong> - שאינם של שביעית ויכנסו הפירות לקדושה תחתיהן:"
+  },
+  "Tosafot on Sukkah 39a:3:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 51b:20:1",
+      "Tosafot on Sukkah 38b:1:1",
+      "Tosafot on Sukkah 38b:3:1"
+    ],
+    "generatedAt": "2026-11-07T12:17:38.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לפניו מצוה לברך</strong> - כי האי גוונא אמרי' גבי מגילה פ' הקורא את המגילה עומד <span class=\"parenthesized\">(מגילה דף כא:)</span> וכן תנן פרק בא סימן <span class=\"parenthesized\">(נדה נא:)</span> ויש שטעון ברכה לפניו ואין טעון ברכה לאחריו ומפרש בגמ' לאתויי ריחני הוה מצי למימר לאתויי הלל ומגילה במקום שנהגו שלא לברך אחריהן אלא ריחני פסיקא ליה וכמו כן הוה מצי למימר מצות טובא כגון ציצית ושופר וסוכה ולולב למאי דפי' ר\"ת דאין מברכין לשמור חוקיו אלא אתפילין לחודייהו ודוקא כשמסלקן משום לילה וכמאן דאמר לילה לאו זמן תפילין הוא:"
+  },
+  "Tosafot on Sukkah 39a:3:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 39a:3",
+      "Tosafot on Sukkah 39a:3:1",
+      "Sukkah 42a:1",
+      "Sukkah 42a:2",
+      "Tosafot on Sukkah 42a:1:1"
+    ],
+    "generatedAt": "2026-11-07T12:21:42.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עובר לעשייתן</strong> - מטעם זה צריך לברך אלולב קודם שיטלנו דאי לאחר שנטלו מדאגבהיה נפק ביה כדאמרי' בסוף פירקין <span class=\"parenthesized\">(סוכה דף מב.)</span> ומיהו לא מסתבר כלל דהיאך יברך עליו והוא מונח בכלי הא אמר בהקומץ רבה <span class=\"parenthesized\">(מנחות לה: ושם)</span> תפילין מאימתי מברך עליהן משעת הנחה עד שעת קשירה וכל שעה שאין המצוה מזומנת בידו לעשות לא מיסתבר כלל לברך עליו ושמא משיתחיל ליטול לולב קודם שיטול האתרוג מברך והיינו עובר לעשייתן שמעכבים זה את זה אי נמי לאחר שנוטל שניהם אלא שהופך אחד מהן כדאמרינן בסוף פירקין <span class=\"parenthesized\">(סוכה דף מב.)</span> כשהפכו דאין יוצא במצות אלא דרך גדילתן כדדרשינן פרק לולב וערבה <span class=\"parenthesized\">(לקמן סוכה מה:)</span> מדכתיב עצי שטים עומדים ואפי' נקיט להו כדרך גדילתן אפשר שיתכוין שלא לצאת בו עד אחר ברכה דאע״ג דאמרי' בסוף ראוהו ב״ד <span class=\"parenthesized\">(ר״ה כח:)</span> דמצות אינן צריכין כוונה מ״מ בעל כרחו לא נפיק והא דלא משני הכא בסוף פירקין <span class=\"parenthesized\">(סוכה דף מב.)</span> דמיירי באדם שאינו בקי שהולך אצל בקי ללמוד אי נמי משום דלא גמרה מצותו עד אחר ניענוע דמהאי טעמא נמי מברכין אנטילת ידים אחר נטילה דלא גמר מצותו עד אחר ניגוב כדאמרי' פ״ק דסוטה <span class=\"parenthesized\">(דף ד:)</span> דאסור לאכול בלא ניגוב ידים ומיהו לא דמי כולי האי דניענוע אינו אלא מכשירי מצוה בעלמא ולא מעכב כדאמרי' <span class=\"parenthesized\">(פ״ק דסוטה)</span> בסוף פירקין מדאגביה נפק ביה ומשני כשהפכו ולא משני בשלא ניענע ומיהו אמת הוא דלבתר דנפק ביה מברך כדמוכח פ״ק דפסחים <span class=\"parenthesized\">(דף ז: ושם)</span> דפליגי בעל ביעור חמץ דמר סבר לשעבר משמע טפי ומר סבר להבא נמי משמע ופריך מהעושה לולב לעצמו דקתני נטלו לצאת בו אומר על נטילת לולב וקשיא למאן דמברך לבער ומשני שאני התם דבעידנא דאגבהינהו נפק ביה ופריך אי הכי לצאת יצא בו מיבעי לי' ומשני משום דקבעי למיתני סיפא לישב בה תנא רישא לצאת בו וצריך לומר על כרחך הואיל והמצוה לא נגמר עדיין לגמרי דבעי ניענוע מברך ועוד כדאמרי' בסוף פירקין <span class=\"parenthesized\">(סוכה דף מא:)</span> מנהגן של אנשי ירושלים אדם יוצא מתוך ביתו ולולבו בידו נכנס לבית הכנסת ולולבו בידו קורא ק״ש ולולבו בידו אע״פ שכל אלו הדברים אין מעכבין מ״מ הואיל ויש בדבר מצוה מן המובחר חשיב כעובר לעשייתן ובהדיא אמר בירושלמי דברכות פרק הרואה גבי ציצית העושה ציצית לעצמו אומר בא״י אמ״ה אקב״ו לעשות ציצית נתעטף בה אומר אקב״ו להתעטף בציצית והיינו טעמא לפי שהמצוה מושכת כל זמן שהוא מעוטף ועומד ומ״מ לא לגמרי דמי ללולב דהתם מברך על נטילת לולב ומשנטל עברה כבר עיקר מצוה והתם בירו' פליגי מצות מאימתי מברך עליהן רבי יוחנן אמר עובר לעשייתן רב הונא אמר בשעת עשייתן:"
+  },
+  "Tosafot on Sukkah 39a:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:4:1",
+      "Rashi on Sukkah 39a:4:2",
+      "Tosafot on Sukkah 38b:2:2",
+      "Tosafot on Sukkah 38b:1:1",
+      "Tosafot on Sukkah 39a:3:1",
+      "Sukkah 39a:5",
+      "Sukkah 39a:6"
+    ],
+    "generatedAt": "2026-11-07T12:32:19.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלוקח לולב מחבירו בשביעית</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דמעם הארץ מוקמי לה בגמרא ועם הארץ לגבי חבר לא קרי חבירו ועל חנם דחק דאשכחן בדוכתי טובא דקרי ליה חבירו דתנן בפ' הניזקין <span class=\"parenthesized\">(גיטין סא. ושם)</span> משאלת אשה לחברתה החשודה על השביעית ובפרק בכל מערבין <span class=\"parenthesized\">(עירובין לב. ושם)</span> האומר לחבירו צא ולקט לך תאנים מתאנתי אוכל מהן עראי ומעשרן ודאי וקתני סיפא בד\"א בעם הארץ ובשבת פרק שואל <span class=\"parenthesized\">(שבת דף קנ.)</span> לא יאמר אדם לחבירו שכור לי פועלים ומוקי לה בחבירו נכרי:"
+  },
+  "Tosafot on Sukkah 39a:5:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:5:1",
+      "Rashi on Sukkah 39a:5:2",
+      "Sukkah 39a:6",
+      "Tosafot on Sukkah 39a:3:1",
+      "Tosafot on Sukkah 39a:4:1"
+    ],
+    "generatedAt": "2026-11-07T12:37:07.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליתיב ליה דמי האתרוג בהדיא</strong> - מ\"ט אין רשאי ללוקחו דאי משום דאסור לעשות סחורה בפירות שביעית לא חשיב סחורה אלא כי ההיא דמסכת שביעית פ\"ז <span class=\"parenthesized\">(מ\"ג)</span> לא יהא לוקח ירקות שדה ומוכר בשוק אבל הוא לוקט ובנו מוכר על ידו לקח לעצמו והותיר מותר למכור פי' היינו לוקח היינו לוקט כדקתני סיפא אבל הוא לוקט ובהדיא קתני בתוספתא ולא יהא לוקט וכשמוכר בשוק הוא הלוקט עצמו אסור [דללקט] לאכלה אמר רחמנא ולא ללקט לסחורה דהיינו למכור אבל הוא לוקט ובנו מוכר על ידו דלא חשיב סחורה כיון דהוא לא ליקטם ובירושל' אמרי' האחין מלקטין ואחד מוכר על ידיהן דעל ידי הבלעה מוכר שלו ושל חבירו א\"ר יוסי בר בון ובלבד שלא יעשו פלטר פי' ולא יהא מוכר בההוא אתרא כל שעה וסוחרי שביעית דתנן פ\"ק דר\"ה <span class=\"parenthesized\">(דף כב. ושם)</span> ופ' זה בורר <span class=\"parenthesized\">(סנהדרין כד:)</span> היינו כי האי גוונא ואפשר הקונה מחבירו כדי להרויח למכור ביוקר היינו נמי סחורה ובפ' ז' דשביעית <span class=\"parenthesized\">(מ\"ג)</span> תנן שאין עושין סחורה בפירות שביעית ולא בבכורות ולא בתרומות ולא בנבלות ולא בטרפו' ולא בשקצים ולא ברמשי' לא משכחת שיהו כולם שוים לענין סחורה אלא כי האי גוונא דבהדיא שרא רחמנא למכור כדכתיב או מכור לנכרי:"
+  },
+  "Tosafot on Sukkah 39a:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 39a:6:1",
+      "Chokhmat Shlomo on Sukkah 39a:6",
+      "Sukkah 39a:6"
+    ],
+    "generatedAt": "2026-11-07T12:44:52.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין מוסרין לעם הארץ דמי פירות שביעית</strong> - <span class=\"rashi-quotation\">פי' הקונט'</span> דהתורה אמרה לאכלה ולא לסחורה שכל פירות שביעית חייבין להתבער בשביעית הן ודמיהן ולא יעשה בהן סחורתו להצניע לאחר שביעית ולהעשיר וקשה דא\"כ לישתרו כל אותן דתנן במס' שביעית פ\"ז <span class=\"parenthesized\">(מ\"ה)</span> שיש להן שביעית ואין להם ביעור ובהדיא פריך בשמעתין אי הכי לולב אין לו ביעור דמתקיים הוא וקא אסר למסור דמיו לע\"ה אלא ה\"ט דאיכא איסורי טובא שאין ע\"ה נזהר לאסור לקנות בהן בהמה טמאה עבדי' וקרקעו' חלוק וטלית ומנעלי' ואין נותנין לא לבייר ולא לבלן ולא לספן ולא לספר דשביעית לאכילה ולשתיה ולסיכה ולא לשאר דברים ואסור לפרוע מהן חובו ואין מספר לדינים ולאיסורים שיש בפירות שביעית שצריך לנהוג בהן קדושת שביעית:"
+  },
+  "Tosafot on Sukkah 39a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:46:05.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יותר ממזון שלש סעודות</strong> - משמע שיש בדמי אתרוג יותר ממזון שלש סעודות והא דתנן פ\"ו דמעילה <span class=\"parenthesized\">(דף כא.)</span> נתן לו שתי פרוטות ואמר לו לך והבא לי אתרוג באחת ובאחת רמון התם באתרוג פסול דלא בעי ליה אלא לאכילה אבל הכא כשר והדר לברכה דמיו יקרים:"
+  },
+  "Tosafot on Sukkah 39a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:47:35.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 39a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעות הללו מחוללין על פירות שיש לי בביתי</strong> - פלוגתא היא בשמעתא דצנועין במרובה <span class=\"parenthesized\">(ב\"ק סח: ושם)</span> גבי כרם אם יכול לחלל מה שביד חבירו ולמאן דאסר קשה מה מועיל כאן וי\"ל דהכא קנסא בעלמא הוא ודכוותה אשכחן פרק האיש מקדש <span class=\"parenthesized\">(קדושין דף נה: ושם)</span> דאין לוקחין בהמה טמאה ועבדים וקרקעות במעות מעשר שני ואם לקח יאכל כנגדם ומפרש התם קנסא:"
+  }
+}

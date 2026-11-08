@@ -1,0 +1,474 @@
+{
+  "Rashi on Sukkah 43b:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:10:2",
+      "Steinsaltz on Sukkah 43b:10",
+      "Sukkah 43b:10"
+    ],
+    "generatedAt": "2026-11-07T20:18:17.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואותו היום</strong> - בשביעי מדקתני פעם אחת ושבע פעמים ש\"מ הקפה ברגל סביב המזבח הוא ובמה מקיפין לאו בערבה:"
+  },
+  "Rashi on Sukkah 43b:10:2": {
+    "dependsOn": [
+      "Sukkah 43b:10",
+      "Rashi on Sukkah 43b:10:1",
+      "Rashi on Sukkah 43b:10:2",
+      "Chokhmat Shlomo on Sukkah 43b:2",
+      "Sukkah 45a:1",
+      "Sukkah 45a:2",
+      "Sukkah 45a:3",
+      "Sukkah 45a:4",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:4:3",
+      "Rashi on Sukkah 44a:1:1",
+      "Rashi on Sukkah 44a:2:1"
+    ],
+    "generatedAt": "2026-11-07T20:21:43.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בלולב</strong> - מקיפים לאחר שזקפו הערבה סביב המזבח:"
+  },
+  "Rashi on Sukkah 43b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:22:09.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחילתו</strong> - בי\"ט ראשון:"
+  },
+  "Rashi on Sukkah 43b:12:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:12:1"
+    ],
+    "generatedAt": "2026-11-07T20:22:37.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וערבה בסופו</strong> - בשביעי:"
+  },
+  "Rashi on Sukkah 43b:12:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:12:1",
+      "Rashi on Sukkah 43b:12:2",
+      "Rashi on Sukkah 43b:12:4",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:2",
+      "Rashi on Sukkah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-07T20:24:20.445Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרביות</strong> - נטיעות:"
+  },
+  "Rashi on Sukkah 43b:12:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:12:4"
+    ],
+    "generatedAt": "2026-11-07T20:25:08.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכירו בהן בייתוסין</strong> - הרגישו תלמידי בייתוס והן צדוקים ואינם מודים בערבה שאינה מפורשת מן התורה:"
+  },
+  "Rashi on Sukkah 43b:12:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:12:1",
+      "Rashi on Sukkah 43b:12:2",
+      "Rashi on Sukkah 43b:12:3",
+      "Rashi on Sukkah 43b:12:4",
+      "Rashi on Sukkah 43b:12:6",
+      "Steinsaltz on Sukkah 43b:12",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:2:2",
+      "Rashi on Sukkah 43b:4:1",
+      "Berakhot 10a:11",
+      "Berakhot 10a:29",
+      "Rashi on Berakhot 10a:29:1"
+    ],
+    "generatedAt": "2026-11-07T20:27:55.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכבשום</strong> - טמנום כמו בהדי כבשי דרחמנא למה לך במסכת ברכות <span class=\"parenthesized\">(דף י.)</span> וי\"מ כמו יכבוש עונותינו <span class=\"parenthesized\">(מיכה ז)</span> יכסה כסית כל חטאתם סלה <span class=\"parenthesized\">(תהילים פ״ה:ג׳)</span>:"
+  },
+  "Rashi on Sukkah 43b:12:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:28:37.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחת האבנים</strong> - ויודעים הם בחכמים שלא יטלטלו למחר האבנים:"
+  },
+  "Rashi on Sukkah 43b:13:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:13:2",
+      "Rashi on Sukkah 43b:12:1",
+      "Rashi on Sukkah 43b:12:6"
+    ],
+    "generatedAt": "2026-11-07T20:37:11.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמי הארץ</strong> - שלא היו בקיאים באיסור טלטול והם היתה ידם עם הפרושים:"
+  },
+  "Rashi on Sukkah 43b:13:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:13:1",
+      "Rashi on Sukkah 43b:12:1"
+    ],
+    "generatedAt": "2026-11-07T20:38:22.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והביאום הכהנים וזקפום כו'</strong> - אבל ישראל לא היה נכנס בין האולם ולמזבח ומדקתני חיבוט ערבה מכלל דביד נוטלין אותה ומנענעים ומקיפין בה הכהנים את המזבח ברגליהם ואחר כך זוקפין אותה:"
+  },
+  "Rashi on Sukkah 43b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:38:56.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא לידחי</strong> - כיון דבנטילה הוה יש לו לעשות זכר למקדש ולידחי שביעי דילה שבת:"
+  },
+  "Rashi on Sukkah 43b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:39:32.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאנן</strong> - בגולה לא דחינן משום דלא קים לן בקביעא דירחא:"
+  },
+  "Rashi on Sukkah 43b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:1:1",
+      "Sukkah 43b:1",
+      "Rashi on Sukkah 43a:12:1",
+      "Tosafot on Sukkah 43b:1:1",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:2:2",
+      "Rashi on Sukkah 42b:1:1",
+      "Rashi on Sukkah 42b:2:1",
+      "Translation on Rashi on Sukkah 43b:1:1"
+    ],
+    "generatedAt": "2026-11-07T19:49:39.392Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשבו</strong> - יומם ולילה ולולב מצותו שעה אחת שלא נאמר בו אלא לקיחה:"
+  },
+  "Rashi on Sukkah 43b:2:1": {
+    "dependsOn": [
+      "Sukkah 43b:2",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:2:2",
+      "Rashi on Sukkah 43b:2:3"
+    ],
+    "generatedAt": "2026-11-07T19:53:14.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דוחה</strong> - ולא גזור בה כי היכי דגזור בלולב דהא הכא נמי ליתא מן התורה בגבולין כשאר ימי החג לגבי לולב ואמאי לא גזור בה במקדש:"
+  },
+  "Rashi on Sukkah 43b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:53:44.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפרסמה שהיא מן התורה</strong> - לפי שאינה מפורשת מן התורה בהדיא שבקו לה רווחא למידחי שבת חד יומא כדי לפרסמה שמן התורה היא:"
+  },
+  "Rashi on Sukkah 43b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:54:37.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לולב נמי נידחו</strong> - בשאר ימים במקדש כדי לפרסמו שהוא מן התורה כל שבעה דהא לא מפרשא בהדיא דאיכא למיטעי ולמימר דהאי ושמחתם לפני ה' שבעת ימים לאו שמחת לולב קאמר:"
+  },
+  "Rashi on Sukkah 43b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:55:11.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלוחי בית דין מייתי לה</strong> - מע\"ש ולמחרת אינה מצוה לכל אדם אלא כהנים המקיפין בה את המזבח:"
+  },
+  "Rashi on Sukkah 43b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:58:32.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דליכא למיגזר בה מידי והוא כל שבעה במקדש מן התורה:"
+  },
+  "Rashi on Sukkah 43b:4:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:3"
+    ],
+    "generatedAt": "2026-11-07T19:59:19.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל יומא נמי</strong> - דאיקלע בשבת נידחי מאי שנא חד יומא ותו לא:"
+  },
+  "Rashi on Sukkah 43b:4:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sukkah 43b:4:3",
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:2",
+      "Rashi on Sukkah 43b:4:4",
+      "Rashi on Sukkah 43b:4:5"
+    ],
+    "generatedAt": "2026-11-07T20:00:44.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתי לפקפוקי בלולב</strong> - לזלזולי בלולב משום דלא דחי בלולב אלא בחד יומא והא דחי כל יומא אתי למימר לולב לאו מצוה חשובה היא:"
+  },
+  "Rashi on Sukkah 43b:4:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:4:4",
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:2",
+      "Rashi on Sukkah 43b:4:3",
+      "Rashi on Sukkah 43b:4:5"
+    ],
+    "generatedAt": "2026-11-07T20:01:50.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולידחי</strong> - ערבה בי\"ט ראשון כלולב:"
+  },
+  "Rashi on Sukkah 43b:4:5": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:2",
+      "Rashi on Sukkah 43b:4:3",
+      "Rashi on Sukkah 43b:4:4"
+    ],
+    "generatedAt": "2026-11-07T20:03:11.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו מוכחא מילתא</strong> - דמשום ערבה הוא דמיפרסם שהיא מה\"ת דאמרי משום דנתנה לדחות אצל לולב נדחית אף אצל ערבה ועיקר משום לולב הוא:"
+  },
+  "Rashi on Sukkah 43b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:03:32.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחד מהנך</strong> - באחד משאר הימים:"
+  },
+  "Rashi on Sukkah 43b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:04:05.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוקמה אשביעי</strong> - יום מסויים או ראשון או אחרון:"
+  },
+  "Rashi on Sukkah 43b:6:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:5:1",
+      "Rashi on Sukkah 43b:5:2",
+      "Rashi on Sukkah 43b:6:1",
+      "Rashi on Sukkah 43b:6:2",
+      "Rashi on Sukkah 43b:4:1",
+      "Rashi on Sukkah 43b:4:2",
+      "Rashi on Sukkah 43b:4:3",
+      "Rashi on Sukkah 43b:4:4",
+      "Rashi on Sukkah 43b:4:5",
+      "Tosafot on Sukkah 43b:1:1",
+      "Tosafot on Sukkah 43a:7:1",
+      "Rashi on Sukkah 44a:3:1",
+      "Rashi on Sukkah 43b:2:1",
+      "Rashi on Sukkah 43b:2:2",
+      "Rashi on Sukkah 43b:2:3",
+      "Rashi on Sukkah 43b:3:1"
+    ],
+    "generatedAt": "2026-11-07T20:06:27.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האידנא נמי</strong> - לאחר חורבן דעבדינן ערבה חד יומא כדאמרינן לקמן <span class=\"parenthesized\">(סוכה ד' מד.)</span> מנהג נביאים היא בגבולין כיון דליכא למיחש מידי לידחי בשביעי ויטלוה ויחבטוה שלוחי בית דין לפרסמה שהיא במקדש מן התורה שהרי לא גזרו עליה בשביעי ולאחר חורבן מי גזר עליה:"
+  },
+  "Rashi on Sukkah 43b:6:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:6:1"
+    ],
+    "generatedAt": "2026-11-07T20:07:02.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ידעינן בקביעא דירחא</strong> - ושמא אין שביעי שלנו שביעי:"
+  },
+  "Rashi on Sukkah 43b:7:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:7:2"
+    ],
+    "generatedAt": "2026-11-07T20:07:39.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא איקלע</strong> - הם מעברים את אלול או אחד מן החדשים כשרואין שיארע שביעי בשבת:"
+  },
+  "Rashi on Sukkah 43b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:08:19.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל נחותי</strong> - כל הסיעה שירדו מא\"י לבבל ושעלו מבבל לא\"י וחזרו:"
+  },
+  "Rashi on Sukkah 43b:8:1": {
+    "dependsOn": [
+      "Sukkah 43b:8",
+      "Rashi on Sukkah 43b:8:1",
+      "Rashi on Sukkah 43b:8:2",
+      "Rashi on Sukkah 43b:7:1",
+      "Rashi on Sukkah 43b:7:2",
+      "Sukkah 43b:2",
+      "Sukkah 43b:3",
+      "Rashi on Sukkah 43b:2:1",
+      "Steinsaltz comment #1 on Sukkah 43b:8",
+      "Ritva on Sukkah 43b:6"
+    ],
+    "generatedAt": "2026-11-07T20:13:20.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן לימא לן</strong> - דערבה במקדש בנטילה דלידחי השתא ערבה איסורא מדרבנן זכר למקדש דנידחי שבת:"
+  },
+  "Rashi on Sukkah 43b:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:8:1",
+      "Rashi on Sukkah 43a:2:1",
+      "Rashi on Sukkah 43a:8:1",
+      "Rashi on Sukkah 43b:2:1"
+    ],
+    "generatedAt": "2026-11-07T20:14:29.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 43b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא בזקיפה</strong> - לא היו נוטלין אותה ביד אלא זוקפין אותן בצידי המזבח לחוד כדתנן במתני' והשתא ליכא מזבח היכא נזקפה:"
+  },
+  "Tosafot on Sukkah 43b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T20:36:16.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 43b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והביאו מרביות של ערבה מע\"ש</strong> - כאן לא היו מתנין כל מי שיגיע בערבה של חבירו הרי הוא במתנה כדתנן גבי לולב למ\"ד בפירקין דלעיל <span class=\"parenthesized\">(סוכה דף לד.)</span> ערבה הלכה למשה מסיני לא גמרי משלכם ולאבא שאול נמי דדרש מדכתיב ערבי אחת ללולב ואחת למקדש אלמא בעי משלכם גבי מקדש כמו לולב מ\"מ גבי לולב שכל אחד מביא לולבו להר הבית והחזנים מקבלין מידם היו צריכין להתנות אבל ערבה שלוחי ב\"ד מייתו לה ואין אחד מהן זוכה בה עד למחרת בשבת ועוד דהכהנים מקיפין את המזבח ולא היו כל כך מרובים ועוד דזריזין הן:"
+  },
+  "Tosafot on Sukkah 43b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:1:1"
+    ],
+    "generatedAt": "2026-11-07T19:51:45.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 43b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשבו תשבו לגזרה שוה</strong> - לא לגמרי יליף ממלואים דהתם אי אפשר לישן בעזרה כמו בחצר שהיה במקום עזרה דגמירי <span class=\"parenthesized\">(סוטה ד' מא:)</span> אין ישיבה בעזרה אלא למלכי בית דוד בלבד ואילו כאן אסור לישן חוץ לסוכה:"
+  },
+  "Tosafot on Sukkah 43b:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 43b:3:1",
+      "Sukkah 43b:3",
+      "Sukkah 43b:5",
+      "Rashi on Sukkah 43b:6:1",
+      "Rashi on Sukkah 43b:6:2",
+      "Tosafot on Sukkah 43a:4:2"
+    ],
+    "generatedAt": "2026-11-07T19:57:53.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 43b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלוחי בית דין מייתי לה</strong> - מע\"ש ולמחרת אינה מצוה לכל אדם אלא הכהנים מקיפין בה את המזבח <span class=\"rashi-quotation\">כדפי' בקונטרס</span> דישראל אין יכולין להקיף כדתנן פ\"ק דכלים <span class=\"parenthesized\">(מ\"ח)</span> דאין ישראל נכנס בין האולם ולמזבח ולכך הוצרך <span class=\"rashi-quotation\">בקונטרס</span> לטעם זה שהכהנים מקיפין ואין ישראל שכן מוכח הלשון דקאמר לולב לכל מסור ועוד הבאת שלוחי ב\"ד מה יש לו להועיל ועוד דא\"כ ליתקן נמי בלולב שיביאום שלוחי ב\"ד ולידחו אלא ודאי הדבר תלוי בזה שהכהנים זריזין הן ולא אתו לידי חילול שבת אבל לולב דלכל מסור כיון דלא דחי בישראל בכהנים נמי לא דחי ומיהו קשה דפריך האידנא נמי לידחי והאידנא ערבה לכל מסורה ו<span class=\"rashi-quotation\">בקונטרס</span> דחק לפרש לידחי ויטלוה ויחבטוה שלוחי ב\"ד:"
+  },
+  "Tosafot on Sukkah 43b:7:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sukkah 43b:5"
+    ],
+    "generatedAt": "2026-11-07T20:10:01.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 43b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא איקלע</strong> - שהיו מעברין אלול או אחד מן החדשים כשהיו רואים שאירע בשבת שביעי של ערבה והכי אמר בירושלמי ר' סימון מפקד לאלין דמחשבין הבון דעתכון דלא אתי תקעתא בשבתא ודלא אתא ערבתא בשבתא ואי דחיקתון עבדון תקעתא ולא תעבדון ערבתא משמע דחייש טפי יום ערבה מתקיעת שופר ולולב וגם עכשיו אנו מחשבין דלא מיקלע יום ערבה בשבת ואשופר ואלולב לא חיישינן אע\"פ שיום ראשון דאורייתא ותימה דאיום ערבה שהוא זכר למקדש בעלמא חיישינן ואהני דאורייתא לא חיישינן וי\"ל דאין הכי נמי דהני דכתיבי בהדיא לא אתי לפקפוקי בהו בשאר שנים אבל ערבה דרבנן אתי לפקפוקי בה ועוד דמספק עבדינן תרי יומי וכי מיקלע יום ראשון בשבת אין שופר בטל לגמרי דתוקעין בשני אע\"ג דכי באו עדים קודם המנחה לא עבדי בא\"י אלא חד יומא מ\"מ בחוצה לארץ עבדינן תרי יומי אבל שביעי של ערבה דליתא אלא חד יומא דלא אפשר למיעבד השמיני על הספק לפי שהוא י\"ט אם היה בטל לגמרי משתכח תורת ערבה:"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "Rashi on Sukkah 25b:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:9:1",
+      "Rashi on Sukkah 25a:1:1"
+    ],
+    "generatedAt": "2026-11-06T14:05:30.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטורין מן התפלה</strong> - דבעיא כוונה:"
+  },
+  "Rashi on Sukkah 25b:10:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:10:1",
+      "Rashi on Sukkah 25b:10:3"
+    ],
+    "generatedAt": "2026-11-06T14:06:18.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומן התפילין</strong> - משום דשכיחא שכרות וקלות ראש:"
+  },
+  "Rashi on Sukkah 25b:10:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:10:1",
+      "Rashi on Sukkah 25b:10:2"
+    ],
+    "generatedAt": "2026-11-06T14:07:08.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין בקרית שמע</strong> - דמצות כוונתה אינו אלא פסוק ראשון ויכולים ליישב דעתן שעה קטנה כדי לקרוא פסוק ראשון:"
+  },
+  "Rashi on Sukkah 25b:1:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:1:1",
+      "Sukkah 25b:1",
+      "Rashi on Sukkah 25b:1:2",
+      "Rashi on Sukkah 25a:11:1",
+      "Rashi on Sukkah 25a:1:1",
+      "Rashi on Sukkah 25a:2:1",
+      "Rashi on Sukkah 25a:3:1",
+      "Rashi on Sukkah 25a:4:1",
+      "Rashi on Sukkah 25a:5:1",
+      "Tosafot on Sukkah 25b:1:1",
+      "Rashi on Sukkah 25b:2:1",
+      "Rashi on Sukkah 25b:2:2",
+      "Tosafot on Sukkah 25b:2:1",
+      "Rashi on Sukkah 24b:1:1",
+      "Rashi on Sukkah 24b:2:1",
+      "Rashi on Sukkah 24b:3:1"
+    ],
+    "generatedAt": "2026-11-06T13:20:34.940Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:1:1"
+    ],
+    "sourceText": "הכי גרסינן בברייתא בסיפרי ר\"ע אומר מישאל ואלצפן היו שנטמאו בנדב ואביהוא ר' יצחק אומר אם נושאי ארונו של יוסף היו יכולין היו ליטהר ואם מישאל ואלצפן היו יכולין היו ליטהר אלא מי היו טמאי מת מצוה היו שחל שביעי שלהן להיות בערב פסח שנאמר ולא יכלו וגו':"
+  },
+  "Rashi on Sukkah 25b:1:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:1:2",
+      "Rashi on Sukkah 25b:1:1",
+      "Rashi on Sukkah 25a:1:1",
+      "Rashi on Sukkah 25b:3:1",
+      "Rashi on Sukkah 25b:4:1"
+    ],
+    "generatedAt": "2026-11-06T13:23:19.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם נושאי ארונו של יוסף או מישאל ואלצפן היו יכולין היו ליטהר</strong> - שהרי באחד בניסן הוקם המשכן ושני לו שרף אלעזר את הפרה שיזו על טמאי מת שבהן לעשות פסחיהן בטהרה כדאמר במסכת גיטין <span class=\"parenthesized\">(דף ס.)</span> שמנה פרשיות נאמרו ביום שהוקם המשכן ופרה אדומה אחת מהן ובאחד בניסן הוקם המשכן והוא ח' למלואים כדקיימא לן <span class=\"parenthesized\">(שבת דף פז:)</span> אותו היום נטל עשר עטרות ובו מתו נדב ואביהוא הלכך מראש חדש ועד הפסח היו יכולין ליטהר וקרא אמר ולא יכלו ונושאי ארונו של יוסף נמי כבר עברו עליהם עשרה חדשים ויותר שלא נשאוהו משחנו בהר חורב בראש חדש סיון כדכתיב <span class=\"parenthesized\">(שמות י״ט:א׳-ב׳)</span> ביום הזה באו מדבר סיני ולא נסעו משם עד עשרים באייר של שנה הבאה דכתיב ויהי בשנה השנית בחדש השני בעשרים בחדש נעלה הענן מעל וגו' ויסעו מהר ה':"
+  },
+  "Rashi on Sukkah 25b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:26:59.485Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמאי מת מצוה</strong> - לאו מת מצוה דווקא קאמר דאפי' מתיהן נמי מת מצוה קרי להו דמצוה להתעסק בהן כגון האמורים בפרשת כהנים <span class=\"parenthesized\">(ויקרא כא)</span> שהכהן מטמא בו:"
+  },
+  "Rashi on Sukkah 25b:2:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:2:1",
+      "Rashi on Sukkah 25b:2:2"
+    ],
+    "generatedAt": "2026-11-06T13:28:44.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחל שביעי שלהן</strong> - ואע\"ג דחזו לאורתא לא אישתרו דקסבר אין שוחטין וזורקין על טמא שרץ מכל מקום שמעינן מיניה דעוסק במצוה פטור מן המצוה שהרי נטמאו במתיהן שבעה ימים לפני הפסח ואף על פי שטומאה זו תעכב על ידם אכילת פסחיהן אלמא מצוה קלה הבאה לידך אינך צריך לדחותה מפני חמורה העתידה לבוא:"
+  },
+  "Rashi on Sukkah 25b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:31:59.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא מטא זמן חיובא</strong> - כשנטמאו עדיין לא הגיע זמן אכילת פסח:"
+  },
+  "Rashi on Sukkah 25b:3:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:3:1",
+      "Rashi on Sukkah 25b:3:2",
+      "Rashi on Sukkah 25b:3:3",
+      "Rashi on Sukkah 25b:3:4"
+    ],
+    "generatedAt": "2026-11-06T13:34:04.045Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל</strong> - קריאת שמע דמטא זמן חיוב' בתוך החופה והוא ראוי לכך אימא ליחייב:"
+  },
+  "Rashi on Sukkah 25b:3:3": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:3:1",
+      "Rashi on Sukkah 25b:3:2",
+      "Rashi on Sukkah 25b:3:4"
+    ],
+    "generatedAt": "2026-11-06T13:35:12.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל פסח דבכרת הוא אימא לא</strong> - יטמאו במת כל שבעה לפני הפסח:"
+  },
+  "Rashi on Sukkah 25b:3:4": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:3:1",
+      "Rashi on Sukkah 25b:3:2",
+      "Rashi on Sukkah 25b:3:3",
+      "Sukkah 25b:3",
+      "Sukkah 25b:2",
+      "Rashi on Sukkah 25a:11:1",
+      "Rashi on Sukkah 25a:11:2"
+    ],
+    "generatedAt": "2026-11-06T13:36:57.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכא</strong> - למיכתב ביום ההוא לאשמועינן דנטמאו תוך שבעה דעוסק במצוה פטור מן המצוה:"
+  },
+  "Rashi on Sukkah 25b:4:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:4:1"
+    ],
+    "generatedAt": "2026-11-06T13:43:27.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדאמר ליה רחמנא ליחזקאל כו'</strong> - דקאמר ליה רחמנא הנני לוקח ממך את מחמד עיניך במגפה וגו' האנק דום מתים אבל לא תעשה לא תתאבל עליה פארך חבוש על ראשך שלא כדרך שאר אבלים לפי שאני עושה אותך אות ומופת לישראל שכך עתידין למות מתיהן ואין איש מתאבל עליהם אלמא אבל אסור בתפילין:"
+  },
+  "Rashi on Sukkah 25b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:44:28.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והני מילי ביום ראשון</strong> - דעיקר מררא חד יומא כדכתיב ואחריתה כיום מר:"
+  },
+  "Rashi on Sukkah 25b:6:1": {
+    "dependsOn": [
+      "Sukkah 25b:6"
+    ],
+    "generatedAt": "2026-11-06T13:45:29.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - מאי שנא הא משאר מצות דאשמעינן רב לעיל דאבל חייב בכל המצות:"
+  },
+  "Rashi on Sukkah 25b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:46:02.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צערא דממילא</strong> - שהסוכה מצערתו כגון חמה או צינה או סירחה בדברים שסיכך בהן:"
+  },
+  "Rashi on Sukkah 25b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:46:22.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיבעי ליה ליתובי דעתיה</strong> - חובה עליו ליישב דעתו למצוה:"
+  },
+  "Rashi on Sukkah 25b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:47:15.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיחדי</strong> - לשמוח:"
+  },
+  "Rashi on Sukkah 25b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:01:46.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום ייחוד</strong> - דסתם סוכה היו עושין בגגותיהן ואין דרך ביאה ויציאה שם לרבים תמיד מפני הטורח ושמא ירד החתן לעשות צרכיו ויתייחד אחר עם הכלה:"
+  },
+  "Rashi on Sukkah 25b:8:2": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:8:1"
+    ],
+    "generatedAt": "2026-11-06T14:02:36.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צער חתן</strong> - שהמקום צר ופתוח שאין לה אלא שלש דפנות ובוש לשחק עם כלתו:"
+  },
+  "Rashi on Sukkah 25b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T14:04:41.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sukkah 25b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי</strong> - שתי מצות סוכה ומצות נישואין וכגון שנשא ערב הרגל אבל בתוך הרגל קיימא לן במועד קטן <span class=\"parenthesized\">(דף ח:)</span> דאין נושאין נשים במועד:"
+  },
+  "Tosafot on Sukkah 25b:10:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:10:1",
+      "Rashi on Sukkah 25b:10:2",
+      "Rashi on Sukkah 25b:10:3",
+      "Tosafot on Sukkah 25a:4:1",
+      "Tosafot on Sukkah 25a:5:1"
+    ],
+    "generatedAt": "2026-11-06T14:09:20.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 25b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין בק\"ש</strong> - <span class=\"rashi-quotation\">כדפירש בקונט'</span> דמצות כוונתה אינו אלא פסוק ראשון ויכולין ליישב דעתן שעה קטנה כדי לקרוא פסוק ראשון:"
+  },
+  "Tosafot on Sukkah 25b:1:1": {
+    "dependsOn": [
+      "Niddah 27b:16",
+      "Rashi on Niddah 27b:16:2",
+      "Tosafot on Sanhedrin 52a:16:1"
+    ],
+    "generatedAt": "2026-11-06T13:25:40.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 25b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מישאל ואלצפן היו</strong> - וא\"ת ולמאן דאמר פרק ד' מיתות <span class=\"parenthesized\">(סנהדרין דף נב.)</span> דשריפה ממש הואי שנשרפו גופיהן וכן נמי דריש בתורת כהנים אקרא דותאכל אש אותם אמאי נטמאו וי\"ל דשמא שלדן היתה קיימת כאילו נשרפו על גבי קטבלא כדאמר פרק המפלת <span class=\"parenthesized\">(נדה דף כז:)</span> מת שנשרף ושלדו קיימת טמא:"
+  },
+  "Tosafot on Sukkah 25b:2:1": {
+    "dependsOn": [
+      "Tosafot on Gittin 60a:17:1"
+    ],
+    "generatedAt": "2026-11-06T13:31:31.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 25b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחל שביעי שלהן בערב הפסח</strong> - מכאן קשה להא דא\"ר לוי בשילהי הניזקין <span class=\"parenthesized\">(גיטין דף ס. ושם)</span> ח' פרשיות נאמרו באותו יום שהוקם המשכן וקא חשיב פרשת טמאים ופירש שם <span class=\"rashi-quotation\">בקונט'</span> ויהי אנשים אשר היו טמאים לנפש וגו' ולא יתכן כדמוכח הכא שהיה בערב הפסח והמשכן הוקם באחד בניסן ואפילו לר\"ע לא יתכן לפי הספרים דגרסינן בפסחים בפ' האשה <span class=\"parenthesized\">(דף צ:)</span> רב סבר לה כר\"ע דאמר מישאל ואלצפן היו שחל שביעי שלהן להיות בערב הפסח ומיהו אותה גירסא ליתא אלא ר' יצחק גרס התם ונראה לפרש פרשת טמאים דשרץ ונבלה וזב וזבה ונדה לפי שהוצרכו ליזהר על טומאת מקדש וקדשיו:"
+  },
+  "Tosafot on Sukkah 25b:3:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 25b:3:1",
+      "Rashi on Sukkah 25b:3:2",
+      "Rashi on Sukkah 25b:3:3",
+      "Rashi on Sukkah 25b:3:4",
+      "Sukkah 25b:2",
+      "Rashi on Sukkah 25b:2:1",
+      "Rashi on Sukkah 25b:2:2",
+      "Zevachim 100a:5",
+      "Zevachim 100a:6",
+      "Zevachim 100a:7",
+      "Zevachim 100a:8",
+      "Zevachim 100a:9",
+      "Zevachim 100a:10",
+      "Chokhmat Shlomo on Sukkah 25b:1"
+    ],
+    "generatedAt": "2026-11-06T13:41:58.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דלא מטא זמן חיובא</strong> - ואין להקשות מהא דדרשינן בריש טבול יום <span class=\"parenthesized\">(בזבחים דף ק. ושם)</span> דהולך לשחוט את פסחו מטמא למת מצוה מולאחותו אפי' לאחר חצות דמת מצוה שאני והא דדייק הכא מברייתא דקתני למת מצוה נטמאו לא מת מצוה ממש אלא כלומר לקרובים <span class=\"rashi-quotation\">כדפירש בקונטרס</span> ולאחר חצות הוא דאינו מטמא כדקתני התם אמרת לא יטמא אבל קודם חצות יטמא כדקאמרינן התם ביוסף הכהן שמתה אשתו בערב הפסח ונמנו אחיו הכהנים וטמאוהו בעל כרחו אבל קשה <span class=\"parenthesized\">(לרבה)</span> דאמר התם אידי ואידי לאחר חצות כאן קודם ששחטו וזרקו עליו כאן לאחר ששחטו וזרקו עליו אלמא מטמא לקרובים אפי' היכא דמטא זמן חיובא זמן הפסח מאחר שלא שחטו וזרקו עליו ואין לומר דהיא גופא ילפינן מחתן דפטור מק\"ש דדלמא שאני ק\"ש דלית ביה כרת כדקאמר הכא ולא אתי מיניה פסח דאיכא כרת ומטיא זמן חיובא:"
+  },
+  "Tosafot on Sukkah 25b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T13:58:04.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sukkah 25b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין שמחה אלא בחופה</strong> - משמע מכאן דאם יצא חתן מחופתו אפי' כלתו עמו והולכים לאכול בבית אחר דאין מברכין שהשמחה במעונו ולא ברכת חתנים כיון דאין שמחה אלא בחופה ובפ\"ק דכתובות <span class=\"parenthesized\">(דף ז: ושם)</span> אמרינן נמי מברכין ברכת חתנים בבית חתנים משמע דוקא במקום חופה דהוא בית חתנים ומיהו אין ראיה משם דדלמא לאפוקי מדרבי יהודה קא אתי דאמר אף בבית האירוסין מברכין אותה וצריך לדקדק מה היא חופה דאי במקום שברכו תחלה ברכת נישואין קרי ליה חופה פעמים שאפי' ברחוב העיר מברכין אותה כשהעם מרובין ואין יכולין ליכנס בבית אלא מקום עיקר ישיבת חתן וכלה קרי ליה חופה ולא מקום העשוי לאקראי בעלמא ושם מברכין ברכת חתנים כל שבעה:"
+  }
+}
