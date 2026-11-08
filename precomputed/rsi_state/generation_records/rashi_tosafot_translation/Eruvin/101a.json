@@ -1,0 +1,577 @@
+{
+  "Rashi on Eruvin 101a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:10:1",
+      "Rashi on Eruvin 101a:10:2"
+    ],
+    "generatedAt": "2026-11-07T23:42:21.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חידקאה</strong> - משול כקוץ:"
+  },
+  "Rashi on Eruvin 101a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:42:43.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טובם כחדק</strong> - טובים שבהם כקוצים:"
+  },
+  "Rashi on Eruvin 101a:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:10:1",
+      "Rashi on Eruvin 101a:10:2",
+      "Rashi on Eruvin 101a:10:3",
+      "Rashi on Eruvin 101a:10:4"
+    ],
+    "generatedAt": "2026-11-07T23:44:01.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפיל לסיפיה דקרא</strong> - השפל עיניך לשפלו של מקרא לסופו תראה שלשבח הוא:"
+  },
+  "Rashi on Eruvin 101a:10:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:10:1",
+      "Rashi on Eruvin 101a:10:2",
+      "Rashi on Eruvin 101a:10:3",
+      "Rashi on Eruvin 101a:10:4",
+      "Rashi on Eruvin 101a:10:5",
+      "Rashi on Eruvin 101a:10:6",
+      "Rashi on Eruvin 101a:1:1",
+      "Rashi on Eruvin 101a:7:1",
+      "Rashi on Eruvin 101a:8:1"
+    ],
+    "generatedAt": "2026-11-07T23:45:42.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישר ממסוכה</strong> - הישרים שבנו מגינים עלינו כסוכה מהדקין כמו ושחקת ממנה הדק <span class=\"parenthesized\">(שמות ל׳:ל״ו)</span>:"
+  },
+  "Rashi on Eruvin 101a:10:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:10:1",
+      "Rashi on Eruvin 101a:10:2",
+      "Rashi on Eruvin 101a:10:3",
+      "Rashi on Eruvin 101a:10:4",
+      "Rashi on Eruvin 101a:10:5",
+      "Rashi on Eruvin 101a:10:6",
+      "Rashi on Eruvin 101a:7:1",
+      "Rashi on Eruvin 101a:7:2",
+      "Rashi on Eruvin 101a:7:3"
+    ],
+    "generatedAt": "2026-11-07T23:46:59.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהדקין</strong> - כמו ושחקת ממנה הדק <span class=\"parenthesized\">(שמות ל׳:ל״ו)</span>:"
+  },
+  "Rashi on Eruvin 101a:10:6": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:10:1",
+      "Rashi on Eruvin 101a:10:2",
+      "Rashi on Eruvin 101a:10:3",
+      "Rashi on Eruvin 101a:10:4",
+      "Rashi on Eruvin 101a:10:5",
+      "Rashi on Eruvin 100b:1:1",
+      "Rashi on Eruvin 100b:2:1",
+      "Rashi on Eruvin 100b:3:1",
+      "Rashi on Eruvin 100b:4:1",
+      "Rashi on Eruvin 100b:5:1"
+    ],
+    "generatedAt": "2026-11-07T23:48:30.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:10:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קומי ודושי כו'</strong> - סיפיה דקרא והדיקות עמים:"
+  },
+  "Rashi on Eruvin 101a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:11:2",
+      "Eruvin 101a:11"
+    ],
+    "generatedAt": "2026-11-07T23:49:35.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יעמוד ברשות היחיד</strong> - ויטול מפתח המונח ברשות הרבים ויפתח בו פתח חנות שברשות הרבים ואע\"פ שאין ממקום מפתח לפתח ארבע אמות גזירה שמא יכניס המפתח אצלו וכן לא יעמוד אדם ברשות הרבים ויושיט ידו למעלה גבוה מעשרה ורוחב ארבעה כגון מפתח חנות המונח על גגו ויטול שם המפתח ויפתח בה החנות והוא גבוה למעלה מעשרה גזירה שמא יביאנה אצלו לתוך עשרה:"
+  },
+  "Rashi on Eruvin 101a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:11:1",
+      "Eruvin 101a:12"
+    ],
+    "generatedAt": "2026-11-07T23:50:20.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"כ עשו לה מחיצה</strong> - ויעמוד בתוכה ואסיפא קאי:"
+  },
+  "Rashi on Eruvin 101a:12:1": {
+    "dependsOn": [
+      "Jastrow, פַּטָּם 1"
+    ],
+    "generatedAt": "2026-11-07T23:50:54.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטמין</strong> - קצבים:"
+  },
+  "Rashi on Eruvin 101a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:12:1",
+      "Rashi on Eruvin 101a:12:2",
+      "Rashi on Eruvin 101a:12:3",
+      "Eruvin 101a:11",
+      "Rashi on Eruvin 101a:11:1",
+      "Rashi on Eruvin 101a:11:2"
+    ],
+    "generatedAt": "2026-11-07T23:51:40.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נועלין</strong> - פתח חנותן ועומדין ברשות הרבים והמנעול למעלה מעשרה:"
+  },
+  "Rashi on Eruvin 101a:12:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:12:1",
+      "Rashi on Eruvin 101a:12:2",
+      "Rashi on Eruvin 101a:12:3"
+    ],
+    "generatedAt": "2026-11-07T23:52:05.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צמרים</strong> - מוכרי צמר:"
+  },
+  "Rashi on Eruvin 101a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:52:30.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומהדרו ליה אינהו כרמלית</strong> - בתמיה דהא ירושלים כולה כרמלית היא שהיא כולה כחצר של רבים שלא עירבו דהואיל ודלתותיה ננעלות בלילה מערבין את כולה:"
+  },
+  "Rashi on Eruvin 101a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:13:1"
+    ],
+    "generatedAt": "2026-11-07T23:53:13.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייבין עליה</strong> - דעיר של רבים היא שאוכלוסין הרבה באין לה אבל עכשיו דדלתותיה ננעלות לאו רשות הרבים שאינה כדגלי מדבר שהוא דרך פתוח כל שעה וכיון דכרמלית לית לן למיגזר שלא יעמוד בה ויפתח ברשות היחיד דילמא מייתי ליה דאי נמי מייתי לגביה שבות בעלמא היא וגזירה לגזירה לא גזרינן:"
+  },
+  "Rashi on Eruvin 101a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:14:1",
+      "Chokhmat Shlomo on Eruvin 101a:1",
+      "Steinsaltz on Eruvin 101a:14",
+      "Eruvin 101a:14",
+      "Rashi on Eruvin 101a:13:1",
+      "Rashi on Eruvin 101a:13:2",
+      "Rashi on Eruvin 101a:15:1"
+    ],
+    "generatedAt": "2026-11-07T23:56:24.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:14:1"
+    ],
+    "sourceText": "מתניתין לאחר שנפרצה בה פרצות הוא:"
+  },
+  "Rashi on Eruvin 101a:15:1": {
+    "dependsOn": [
+      "Eruvin 101a:15",
+      "Rashi on Eruvin 101a:15:1",
+      "Rashi on Eruvin 101a:15:2",
+      "Rashi on Eruvin 101a:3:2"
+    ],
+    "generatedAt": "2026-11-07T23:58:06.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיפא אתאן</strong> - רבנן אתו לאיפלוגי אשערי גינה לשער גינה שהיא כרמלית וקאסר ר' מאיר לעמוד בה ולהושיט ידו על מקום גבוה עשרה ורוחב ארבעה שהוא רשות היחיד ויטול מפתח המנעול הגבוה מי':"
+  },
+  "Rashi on Eruvin 101a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:15:1"
+    ],
+    "generatedAt": "2026-11-07T23:58:41.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יעמוד ברה\"י</strong> - כגון בחצירו ויושיט ידו לגנות דרך חור או סדק ויטול בו מפתח ויפתח בה מנעול מתוך הגינה שמא ימשך המפתח אליו ומחמיר רבי מאיר אפילו ברשויות דרבנן וכן לא יעמוד בגינה ויושיט ידו למקום גבוה עשרה ורוחב ארבעה שהוא רשות היחיד ומפתח מונח בו ויפתח מנעול למעלה מעשרה. גינה כרמלית היא דהויא יותר מבית סאתים שלא הוקף לדירה:"
+  },
+  "Rashi on Eruvin 101a:1:1": {
+    "dependsOn": [
+      "Eruvin 101a:1",
+      "Rashi on Eruvin 101a:1:2",
+      "Rashi on Eruvin 101a:1:3",
+      "Rashi on Eruvin 101a:1:4"
+    ],
+    "generatedAt": "2026-11-07T19:34:59.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדלת שבמוקצה</strong> - רחבה שאחורי הבתים ומשום הכי נקט לה משום שאין משתמשין בה תדיר ואין בעל הבית חושש לעשות לה דלת תלויה כראוי וקבועה אלא זקופה כנגד הפתח וכשהוא פותח מטילה לארץ ויש שתלויות אבל נגררות לארץ:"
+  },
+  "Rashi on Eruvin 101a:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:1:1",
+      "Rashi on Eruvin 101a:1:2",
+      "Rashi on Eruvin 101a:1:3",
+      "Rashi on Eruvin 101a:1:4",
+      "Eruvin 101a:1",
+      "Steinsaltz on Eruvin 101a:1:1",
+      "Rabbeinu Chananel on Eruvin 101a:1",
+      "Mishneh Torah, Sabbath 26:8"
+    ],
+    "generatedAt": "2026-11-07T19:36:11.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין נועלין בה</strong> - בשבת משום דעביד בנין או אפילו כשהיא תלויה ונגררת אין זה קבועה וכשהוא מגביהה על המשקוף כיון דאינה קבועה שם מחזי כבונה:"
+  },
+  "Rashi on Eruvin 101a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:36:37.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחדקים שבפרצה</strong> - קוצים שעשאם חבילות והתקינם לסתום בהם פרצה ופעמים שהוא פותחה:"
+  },
+  "Rashi on Eruvin 101a:1:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 101a:2:1",
+      "Rashi on Eruvin 101a:2:2"
+    ],
+    "generatedAt": "2026-11-07T19:37:57.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומחצלת</strong> - של קנים שקורין גליד\"א:"
+  },
+  "Rashi on Eruvin 101a:2:1": {
+    "dependsOn": [
+      "[",
+      "Jastrow, קַנְקָל 1",
+      "Steinsaltz on Eruvin 101a:2",
+      "Steinsaltz comment #1 on Eruvin 101a:2",
+      "Rashi on Eruvin 101a:2:2",
+      "Rabbeinu Chananel on Eruvin 101a:2",
+      "Ritva on Eruvin 101a:2",
+      "Sefer HeArukh, Letter Kof 321"
+    ],
+    "generatedAt": "2026-11-07T19:39:30.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנקן</strong> - הוא כלי שאוחזין בו מאחורי המחרישה כשהן חורשין יש שנועלים ומעמידים אותו במקום דלת כנגד הפתח:"
+  },
+  "Rashi on Eruvin 101a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:40:00.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שקשורים ותלויין</strong> - אלמא אתלויין הוא דקפיד אבל אגבוהים מן הארץ לא חייש:"
+  },
+  "Rashi on Eruvin 101a:3:1": {
+    "dependsOn": [
+      "Eruvin 101a:3",
+      "Rashi on Eruvin 101a:3:2"
+    ],
+    "generatedAt": "2026-11-07T19:40:39.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשיש להן ציר</strong> - דמוכחא מילתא דדלת גמורה היא והרי היא קשורה ותלויה ולא מחזי כבונה:"
+  },
+  "Rashi on Eruvin 101a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:3:1",
+      "Eruvin 101a:3",
+      "Rashi on Eruvin 101a:2:1",
+      "Rashi on Eruvin 101a:2:2",
+      "Maharsha on Eruvin 101a:10:1",
+      "Chidushei Halachot on Eruvin 101a:1",
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:8:3",
+      "Rashi on Eruvin 101a:8:4"
+    ],
+    "generatedAt": "2026-11-07T19:42:45.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשהיה להן ציר</strong> - ואע\"ג דהשתא ליכא היכירא הוא דאיכא ל\"א טעמא דמתני' משום דחופר בארץ וקשיא ליה בגוה דא\"כ מאי תרצתיה דרבא דאמר כשהיה להם ציר כיון דהשתא ליכא הא קא עביד חריץ ועוד אם כן כר' יהודה בעי לאוקומיה דאמר דבר שאין מתכוין אסור:"
+  },
+  "Rashi on Eruvin 101a:4:1": {
+    "dependsOn": [
+      "Eruvin 101a:4"
+    ],
+    "generatedAt": "2026-11-07T19:43:14.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגבוהין</strong> - אלמא תרוייהו בעינן:"
+  },
+  "Rashi on Eruvin 101a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:7:2",
+      "Rashi on Eruvin 101a:7:3",
+      "Steinsaltz on Eruvin 101a:7",
+      "Rashi on Eruvin 100b:1:1",
+      "Rashi on Eruvin 100b:2:1"
+    ],
+    "generatedAt": "2026-11-07T19:46:08.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלת אלמנה</strong> - דלת שהיא אלמנה מתקוניה:"
+  },
+  "Rashi on Eruvin 101a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:7:1",
+      "Rashi on Eruvin 101a:7:2",
+      "Rashi on Eruvin 101a:7:3",
+      "Tosafot on Eruvin 101a:7:1",
+      "Ritva on Eruvin 101a:7",
+      "Eruvin 101a:7",
+      "Rashi on Eruvin 101a:1:1",
+      "Rashi on Eruvin 101a:1:2"
+    ],
+    "generatedAt": "2026-11-07T19:47:07.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחד שיפא</strong> - עשויה מקרש אחד דהכא ודאי מחזי כבונה ונתן קרש בכותל שאין בה היכר דלת:"
+  },
+  "Rashi on Eruvin 101a:7:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 101a:7:1",
+      "Rashi on Eruvin 101a:7:2",
+      "Rashi on Eruvin 101a:2:1",
+      "Rashi on Eruvin 101a:2:2",
+      "Jastrow, גְּשָׁמָה 1",
+      "Eruvin 101a:7"
+    ],
+    "generatedAt": "2026-11-07T19:50:14.718Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גשמה</strong> - דילי\"ש בריחים המחברין אותה:"
+  },
+  "Rashi on Eruvin 101a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T19:52:04.053Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדורתא</strong> - היסק גדול:"
+  },
+  "Rashi on Eruvin 101a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:8:3",
+      "Rashi on Eruvin 101a:8:4"
+    ],
+    "generatedAt": "2026-11-07T19:52:40.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמעלה למטה</strong> - לאחוז העצים העליונים באויר ולתת תחתונים מלמטה:"
+  },
+  "Rashi on Eruvin 101a:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:8:3",
+      "Rashi on Eruvin 101a:8:4",
+      "Rashi on Eruvin 101a:9:2",
+      "Rashi on Eruvin 101a:1:1",
+      "Rashi on Eruvin 101a:1:2",
+      "Rashi on Eruvin 101a:2:1"
+    ],
+    "generatedAt": "2026-11-07T19:53:35.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי</strong> - ביו\"ט דאין זה בנין אהלים:"
+  },
+  "Rashi on Eruvin 101a:8:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:8:3",
+      "Rashi on Eruvin 101a:8:4"
+    ],
+    "generatedAt": "2026-11-07T19:54:20.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמטה למעלה אסור</strong> - לתת התחתונים תחלה לצדדין ברבוע כדרך שעושין לפני השרים ולסדר עליונים למעלה דהיינו כעין בנין אהל וגגו אסור הכי גרסי' מלמעלה למטה שרי מלמטה למעלה אסור וכך מצאתי בתשובת הגאונים וכן עיקר:"
+  },
+  "Rashi on Eruvin 101a:9:1": {
+    "dependsOn": [
+      "[",
+      "Eruvin 101a:9",
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:9:1",
+      "Rashi on Eruvin 101a:9:2",
+      "Rashi on Eruvin 101a:9:3"
+    ],
+    "generatedAt": "2026-11-07T23:36:07.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן ביעתא</strong> - לסדר הביצים על הגחלים על כלי ברזל שקורין גרדי\"ל או על גבי שני עצים שמקיפין זה אצל זה צריך לאחוז ביצים בידו על האור וחברו יתן העצים תחתיהן:"
+  },
+  "Rashi on Eruvin 101a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:38:10.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן פוריא</strong> - מטה שנושאין שרים בדרכים ושל פרקים היא ויש להם עור ארוך מוקף לולאות וקושר הלולאות בארוכות המטה וכשהוא פורקן מתיר הלולאות והעור נופל והמתקנו ביו\"ט צריך לאחוז העור שטוח מלמעלה ואח\"כ יביאו הרגלים עם הארוכות ויושיבוהו תחתיו אבל לא יושיבוהו תחלה על רגליו ואח\"כ ישטח העור:"
+  },
+  "Rashi on Eruvin 101a:9:3": {
+    "dependsOn": [
+      "Eruvin 101a:9",
+      "Rashi on Eruvin 101a:8:1",
+      "Rashi on Eruvin 101a:8:2",
+      "Rashi on Eruvin 101a:8:3",
+      "Rashi on Eruvin 101a:8:4",
+      "Rashi on Eruvin 101a:9:1",
+      "Rashi on Eruvin 101a:9:2",
+      "Eruvin 101a:1",
+      "Rashi on Eruvin 101a:1:1",
+      "Rashi on Eruvin 101a:1:2",
+      "Rashi on Eruvin 101a:1:3"
+    ],
+    "generatedAt": "2026-11-07T23:39:20.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 101a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן חביתא</strong> - כשמסדר חביות במרתף שורה על שורה חביות של חרס הן כעין כדין גדולים ומדנקט לרב יהודה הכא גבי מתני' ש\"מ טעמא דמתני' משום בנין ולא משום חופר:"
+  },
+  "Tosafot on Eruvin 101a:4:1": {
+    "dependsOn": [
+      "Eruvin 101a:4",
+      "Rashba on Eruvin 101a:4"
+    ],
+    "generatedAt": "2026-11-07T19:44:54.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 101a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי דלת הנגררת</strong> - בלאו הכי הוה מצי לאקשויי רישא לסיפא דקרי לה נגררת וקרי לה גבוהין מן הארץ והוה מצי למימר וליטעמיך:"
+  },
+  "Tosafot on Eruvin 101a:7:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 101a:4:1",
+      "Tosafot on Eruvin 101a:9:1"
+    ],
+    "generatedAt": "2026-11-07T19:51:47.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 101a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלת אלמנה הנגררת אין נועלין בה</strong> - פי' ר\"י דאיירי כשיש להן ציר דאי אין להן ציר מאי איריא דלת אלמנה אפי' דלת אחרינא נמי:"
+  },
+  "Tosafot on Eruvin 101a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 101a:9:1",
+      "Rashi on Eruvin 101a:9:2",
+      "Rashi on Eruvin 101a:9:3",
+      "Eruvin 101a:9",
+      "Tosafot on Beitzah 32b:15:1",
+      "Tosafot on Eruvin 101a:4:1",
+      "Tosafot on Eruvin 101a:7:1",
+      "Otzar Laazei Rashi on Eruvin 101a:2:1"
+    ],
+    "generatedAt": "2026-11-07T23:41:42.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 101a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן ביעתא</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> שמסדר ביצים על כלי ברזל שקורין גרדי\"ל בלע\"ז ואין נראה לר\"י דרך בנין בכך שהרי כל המחיצות עשויות כבר ולא דמו לחבית ופוריא דמסדר זו אצל זו ותדע שהרי היתר פשוט הוא להניח קדירה על גבי טרפידא ונראה לר\"י לפרש שמסדר עצים או ביצים ומניח ביצה על גביהן ומה שאנו מסדרין ככר מכאן וככר מכאן וככר על גביהם או בספר ליכא איסורא אלא כשצריך לאויר שתחתיהם אי נמי לא דמי לבנין אלא כשעושה על גבי הקרקע ולא על השלחן:"
+  }
+}

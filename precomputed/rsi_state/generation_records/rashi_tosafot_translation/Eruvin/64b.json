@@ -1,0 +1,387 @@
+{
+  "Rashi on Eruvin 64b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:09:31.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסולמא של צור</strong> - מעלות הר גבוה:"
+  },
+  "Rashi on Eruvin 64b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:09:57.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל יותר מרביעית כו'</strong> - וכיון דיין האיטלקי הוה ומשכר טפי הוה ליה כיותר מרביעית:"
+  },
+  "Rashi on Eruvin 64b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:14:2",
+      "Eruvin 64b:14"
+    ],
+    "generatedAt": "2026-11-06T23:10:38.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רכוב שאני</strong> - דאין לו טורח הדרך:"
+  },
+  "Rashi on Eruvin 64b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:14:1"
+    ],
+    "generatedAt": "2026-11-06T23:11:32.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרמי בר אבא נמי</strong> - דאמר דרך מיל והכא תני שלש מילין לא תיקשי דרכוב שאני דאין לו טורח ולפיכך אין מפיגו כל כך:"
+  },
+  "Rashi on Eruvin 64b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:13:15.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי היא</strong> - במסכת נדרים:"
+  },
+  "Rashi on Eruvin 64b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:16:1",
+      "Eruvin 64b:16",
+      "Rashi on Eruvin 64b:17:1"
+    ],
+    "generatedAt": "2026-11-06T23:14:20.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פותחין בחרטה</strong> - צריך לחכם למצוא פתח לשואל שיהא לו פתחון פה לומר לדעת כן לא נדרתי ואילו הייתי יודע שכן הוא לא הייתי נודר ונמצא נדר נעקר מאליו:"
+  },
+  "Rashi on Eruvin 64b:17:1": {
+    "dependsOn": [
+      "Eruvin 64b:17",
+      "Rashi on Eruvin 64b:16:1",
+      "Rashi on Eruvin 64b:16:2",
+      "Chokhmat Shlomo on Eruvin 64b:2",
+      "Tosafot on Eruvin 64b:16:1"
+    ],
+    "generatedAt": "2026-11-06T23:17:18.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין פותחין</strong> - אין צריך לפתוח לו בחרטה אלא החכם עוקרו אע\"פ שאינו מוצא לו טעם עקירה רבן גמליאל סבר כמאן דאמר פותחין לפיכך הוצרך ישוב הדעת לחשב איזה פתח ימצא לו:"
+  },
+  "Rashi on Eruvin 64b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:17:53.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הבוטה</strong> - הנודר נדר:"
+  },
+  "Rashi on Eruvin 64b:18:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:18:29.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראוי לדוקרו</strong> - דלמא לא מקיים ליה והיינו פתח דקאמר ליה אילו היית יודע שאסור לנדור וחייב מיתה אתה עליו כלום היית נודר ואמר ליה האיך לא:"
+  },
+  "Rashi on Eruvin 64b:18:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:18:1",
+      "Rashi on Eruvin 64b:18:2"
+    ],
+    "generatedAt": "2026-11-06T23:18:56.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לשון חכמים מרפא</strong> - שמתירין לו נדרו:"
+  },
+  "Rashi on Eruvin 64b:1:1": {
+    "dependsOn": [
+      "Eruvin 64b:1"
+    ],
+    "generatedAt": "2026-11-06T22:54:28.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל בנכסי אשתו</strong> - בעי למיעבד בהו מצוה דמילתא דתווהו בה אינשי נמי היא ושלטא בהו עינא בישא:"
+  },
+  "Rashi on Eruvin 64b:20:1": {
+    "dependsOn": [
+      "Eruvin 64b:20",
+      "Rashi on Eruvin 64b:19:1",
+      "Rashi on Eruvin 64b:20:2",
+      "Rashi on Eruvin 64b:20:3",
+      "Rashi on Eruvin 64b:18:1",
+      "Rashi on Eruvin 64b:17:1",
+      "Rashi on Eruvin 64a:1:1",
+      "Rashi on Eruvin 64a:2:1"
+    ],
+    "generatedAt": "2026-11-06T23:21:25.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתיתין אין מעבירין עליהן</strong> - אלא נוטלין אותן דליכא למיחש לכשפים:"
+  },
+  "Rashi on Eruvin 64b:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:22:00.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפתיתין לא עבדן</strong> - כשפים:"
+  },
+  "Rashi on Eruvin 64b:20:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:20:1",
+      "Rashi on Eruvin 64b:20:2"
+    ],
+    "generatedAt": "2026-11-06T23:22:57.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשקלן באגרייהו</strong> - פתיתי לחם לעשות כשפים מדברים אחרים והכי קאמר נביא בשביל פיתותי לחם שנותנים לכן בשכרכן חיללתן את שמי בתוך עמי שהייתן עושות בהן כשפים לנביאי הבעל להטעות את עמי:"
+  },
+  "Rashi on Eruvin 64b:2:1": {
+    "dependsOn": [
+      "Eruvin 64b:2",
+      "Rashi on Eruvin 64a:12:2"
+    ],
+    "generatedAt": "2026-11-06T22:56:07.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו כותב בהו תפילין</strong> - נמי מיקיימו בידיה:"
+  },
+  "Rashi on Eruvin 64b:3:1": {
+    "dependsOn": [
+      "Eruvin 64b:3"
+    ],
+    "generatedAt": "2026-11-06T22:57:16.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קראה</strong> - דעל ידי דעבד בהו מצוה מיקיימי בידיה דכתיב וידר ישראל וגו' והחרמתי לשון הקדש ועל ידי כך נשמעת תפלתם ונפלו בידם:"
+  },
+  "Rashi on Eruvin 64b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T22:57:40.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושינה כל שהוא</strong> - או זו או זו:"
+  },
+  "Rashi on Eruvin 64b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:6:1",
+      "Rashi on Eruvin 64b:6:2"
+    ],
+    "generatedAt": "2026-11-06T22:58:33.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניטפל לו רבי אלעאי</strong> - נתקרב אצל הנכרי:"
+  },
+  "Rashi on Eruvin 64b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T22:59:12.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבגאי שמני</strong> - כך שמי:"
+  },
+  "Rashi on Eruvin 64b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:7:1",
+      "Tosafot on Eruvin 64b:7:1",
+      "Rashi on Eruvin 64b:8:1",
+      "Rashi on Eruvin 64b:8:2"
+    ],
+    "generatedAt": "2026-11-06T22:59:58.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מעבירין על האוכלין</strong> - המוצא אוכלין בדרך אינו רשאי לעבור עליהן ולהניחן שם:"
+  },
+  "Rashi on Eruvin 64b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:7:1",
+      "Rashi on Eruvin 64b:8:2",
+      "Rashi on Eruvin 64b:8:3",
+      "Tosafot on Eruvin 64b:8:1",
+      "Eruvin 64b:8"
+    ],
+    "generatedAt": "2026-11-06T23:03:02.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהולכין אחרי רוב עוברי דרכים</strong> - מדלא שרא ליה לר' אלעאי למיכלינהו דאחזקינהו בחזקת פיתן של נכרים שרוב עוברי דרכים נכרים הן:"
+  },
+  "Rashi on Eruvin 64b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T23:03:59.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחמצו של נכרי</strong> - שאחר הפסח היה:"
+  },
+  "Rashi on Eruvin 64b:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:8:1",
+      "Rashi on Eruvin 64b:8:2",
+      "Rashi on Eruvin 64b:8:3",
+      "Eruvin 64b:8",
+      "Tosafot on Eruvin 64b:8:1",
+      "Tosafot on Eruvin 64b:8:2",
+      "Steinsaltz on Eruvin 64b:8"
+    ],
+    "generatedAt": "2026-11-06T23:05:21.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר בהנאה</strong> - כגון הכא דאיכא טובת הנאה לנכרי:"
+  },
+  "Rashi on Eruvin 64b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:8:1",
+      "Rashi on Eruvin 64b:8:2",
+      "Rashi on Eruvin 64b:8:3"
+    ],
+    "generatedAt": "2026-11-06T23:09:15.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 64b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזה שעמו</strong> - לר' אלעאי:"
+  },
+  "Tosafot on Eruvin 64b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:16:1",
+      "Rashi on Eruvin 64b:16:2",
+      "Eruvin 64b:16",
+      "Chokhmat Shlomo on Eruvin 64b:4",
+      "Chokhmat Shlomo on Eruvin 64b:5",
+      "Eruvin 64b:10",
+      "Eruvin 64b:9"
+    ],
+    "generatedAt": "2026-11-06T23:16:10.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 64b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פותחין בחרטה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> צריך לחכם למצוא פתח לשואל שיהא לו פתחון פה לומר על דעת כן לא נדרתי ואילו הייתי יודע שכן לא הייתי נודר ונמצא נדר נעקר מאליו אין פותחין אין צריך לפתוח לו בחרטה אלא החכם עוקר אע\"פ שאינו מוצא לו טעם עקירה ר\"ג סבר כמ\"ד פותחין לפיכך הוצרך יישוב הדעת לחשב איזה פתח ימצא לו ע\"כ לשון <span class=\"rashi-quotation\">הקונטרס</span> וקשיא לר\"ת דהא רב נחמן גופיה שמעינן ליה בהדיא בפרק ד' נדרים <span class=\"parenthesized\">(נדרים דף כב:)</span> דאמר הלכה פותחין בחרטה ונזקקין לאלהי ישראל ובפ' נערה המאורסה <span class=\"parenthesized\">(נדרים דף עז:)</span> נקאמר רב נחמן הלכה נשאלין לנדרים מעומד יחיד ובלילה ופריך עלה מהא דר\"ג וכתוב בכל הספרים ר\"ג סבר אין פותחין בחרטה למיעקר נדרא בעינן ובעי לעיוני להכי ישב ורב נחמן סבר פותחין בחרטה ואפילו מעומד אלא שיש ספרים שהגיהו איפכא על פי פירוש <span class=\"rashi-quotation\">הקונטרס</span> דהכא בשמעתא ועוד דאמר בסוף אלו מותרין <span class=\"parenthesized\">(נדרים כ.)</span> בא מחמירין עליו דלא פתחינן ליה בחרטה משמע דאין פותחין היא חומרא ועוד אמר בריש ד' נדרים <span class=\"parenthesized\">(נדרים דף כא:)</span> דרב הונא סבר פותחין בחרטה מההוא דאתא לקמיה ואמר ליה לבך עלך ורבה בר בר חנה דאמר ליה לההוא דאתא אלו אתו י' בני אדם שיפייסוך קסבר אין פותחין בחרטה מפרש ר\"ת פותחין בחרטה היינו ששואלין אותו אם הוא מתחרט על מה שנדר שאומר לו כדו תהית או לבך עלך או בעית נדר <span class=\"parenthesized\">(שם)</span> ושרינן ליה בהכי ור\"ג סבר אין פותחין להתיר לו בחרטה לחוד שמתחרט בו על מה שנדר אלא צריך למצוא פתח לנדרו כגון שאומר לו אילו באו עשרה בני אדם שיפייסוך וכדפתח ר\"ג לההוא טייעא ששואלין אותו אדעתא דהכי נדרת שצריך לטרוח הרבה ולחשוב באיזה ענין ימצאו לו פתח לנדרו:"
+  },
+  "Tosafot on Eruvin 64b:18:1": {
+    "dependsOn": [
+      "Nedarim 22a:10-14",
+      "Nedarim 22a:3-6",
+      "Rashi on Nedarim 22a:3:1-22a:4:3",
+      "Rashi on Nedarim 22a:4:2"
+    ],
+    "generatedAt": "2026-11-06T23:20:25.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 64b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הבוטה ראוי לדוקרו בחרב</strong> - בפרק ד' נדרים <span class=\"parenthesized\">(נדרים דף כב.)</span> אמר דלא פתחינן ליה בהא דמתוך יראה יאמר אדעתא דהא לא נדר אף על פי שמשקר ועוד פסקינן התם הלכה פותחין בחרטה:"
+  },
+  "Tosafot on Eruvin 64b:7:1": {
+    "dependsOn": [
+      "Eruvin 64b:7"
+    ],
+    "generatedAt": "2026-11-06T23:01:05.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 64b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכוון רבן גמליאל ברוח הקדש</strong> - אע\"פ שהיה שם זה רגיל באומות כדאמרינן בפרק שני דמכות <span class=\"parenthesized\">(דף יא.)</span> תמן אמרין שכם נסיב מבגאי גזר מכל מקום חשיב ליה כוונה ברוח הקדש וההיא דסוף יבמות <span class=\"parenthesized\">(דף קכב:)</span> שאמר ליה יפה כוונת שאריה שמי כך קורין אותי בעירי לא שכוון אותו האיש ברוח הקדש שלא קראו אריה אלא על שם כחו:"
+  },
+  "Tosafot on Eruvin 64b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 64b:8:1",
+      "Rashi on Eruvin 64b:8:2",
+      "Rashi on Eruvin 64b:8:3",
+      "Tosafot on Eruvin 64b:8:2",
+      "Maharsha: Chidushei Halachot on Eruvin 64b:2"
+    ],
+    "generatedAt": "2026-11-06T23:06:28.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 64b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהולכין אחר רוב עוברי דרכים</strong> - <span class=\"rashi-quotation\">כדפירש בקונטרס</span> מדלא שרי ליה לר' אלעאי למכלינהו דאחזקינהו בחזקת פתן של נכרים שרוב עוברי דרכים נכרים הם דאם היינו תולין בשל ישראל היה מותר אף על פי שאחר הפסח היה בסמוך דבישראל יש לומר דאחר הפסח נעשה:"
+  },
+  "Tosafot on Eruvin 64b:8:2": {
+    "dependsOn": [
+      "Avodah Zarah 20a:4",
+      "Avodah Zarah 20a:5",
+      "Avodah Zarah 20a:6",
+      "Maharsha: Chidushei Halachot on Eruvin 64b:3",
+      "Rashi on Eruvin 64b:8:1",
+      "Rashi on Eruvin 64b:8:2",
+      "Rashi on Eruvin 64b:8:3",
+      "Tosafot on Eruvin 64b:8:1",
+      "Tosafot on Eruvin 64b:7:1",
+      "Tosafot on Eruvin 64b:16:1"
+    ],
+    "generatedAt": "2026-11-06T23:08:34.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 64b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמדנו שחמצו של עכו\"ם אחר הפסח מותר בהנאה</strong> - מדנתנו לעכו\"ם דאיכא טובת הנאה דעכו\"ם <span class=\"rashi-quotation\">כדפירש בקונטרס</span> דאי ס\"ל דאסור בהנאה היה לו לאסור מספק דשמא בפסח נעשה וא\"ת והיאך נתן ר\"ג והא דריש ר\"י בסוף פ\"ק דע\"ז <span class=\"parenthesized\">(דף כ.)</span> לא תחנם לא תתן להם מתנת חנם ואע\"ג דלעכו\"ם המכירו שרי אפילו לר\"י דהא מוקמינן כר\"י ההוא דשולח אדם ירך לעכו\"ם בפסחים בפרק כל שעה <span class=\"parenthesized\">(פסחים דף כב.)</span> ותניא בתוספתא [דע\"ז פ\"ג] דאם היא שכינו מותר מפני שהוא כמוכרו לו מ\"מ הכא הא אמרינן שלא היה מכירו רבן גמליאל מעולם ויש לומר דשמא לא סבר לה ר\"ג להא דר\"י אי נמי כיון שהיה העכו\"ם מתלוה עמהן בדרך שרי דחשיב כמוכרו לו והא דתניא בהניזקין <span class=\"parenthesized\">(גיטין דף סא.)</span> מפרנסין עניי עכו\"ם עם עניי ישראל מפני דרכי שלום ההיא נמי שרי משום דרכי שלום:"
+  }
+}

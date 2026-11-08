@@ -1,0 +1,367 @@
+{
+  "Rashi on Eruvin 95b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:03:00.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו זמן תפילין הוא</strong> - ושרו ליה רבנן דרך מלבוש משום דתכשיט הוא לגביה ולא משאוי ואע\"ג דלאו אורחיה הכא משום הצלה שרי:"
+  },
+  "Rashi on Eruvin 95b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:11:1",
+      "Rashi on Eruvin 95b:10:1",
+      "Rashi on Eruvin 95b:13:1"
+    ],
+    "generatedAt": "2026-11-07T13:03:48.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום תפילין</strong> - הראוי להניח בו תפילין שאין כל הראש כשר להניח תפילין אלא קדקד לבד וחריץ יש שם שהתפילין יושבים בו ואינן בולטין כל כך כדלקמן ובשבת נמי באתרא דלא חזו ליה לאו תכשיט הוא שבולטין יותר מדאי והוי כמשאוי:"
+  },
+  "Rashi on Eruvin 95b:13:1": {
+    "dependsOn": [
+      "Eruvin 95b:13",
+      "Rashi on Eruvin 95b:15:1",
+      "Rashi on Eruvin 95b:17:1",
+      "Rashi on Eruvin 95b:17:2",
+      "Rashi on Eruvin 95b:1:1",
+      "Rashi on Eruvin 95b:2:1",
+      "Rashi on Eruvin 95b:3:1",
+      "Rashi on Eruvin 95b:8:1",
+      "Rashi on Eruvin 95b:9:1",
+      "Rashi on Eruvin 95b:10:1"
+    ],
+    "generatedAt": "2026-11-07T13:05:59.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיד</strong> - אין כל הזרוע כשר לתפילין אלא קיבורת כדלקמן:"
+  },
+  "Rashi on Eruvin 95b:15:1": {
+    "dependsOn": [
+      "Eruvin 95b:15",
+      "Rashi on Eruvin 95b:15:2"
+    ],
+    "generatedAt": "2026-11-07T13:06:44.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנהג בזיון</strong> - להניח חבילה עליהן שרי ליה למנטרינהו התם:"
+  },
+  "Rashi on Eruvin 95b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:15:1"
+    ],
+    "generatedAt": "2026-11-07T13:07:28.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראוי מי אמר</strong> - דגבי שבת לימא דתכשיט הוא:"
+  },
+  "Rashi on Eruvin 95b:17:1": {
+    "dependsOn": [
+      "[",
+      "Jastrow, קִיבּוֹרֶת 1",
+      "Tosafot on Eruvin 95b:17:1",
+      "Rashi on Eruvin 95b:13:1",
+      "Tosafot on Menachot 37a:6:1"
+    ],
+    "generatedAt": "2026-11-07T13:13:57.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיבורת</strong> - אבר אמצעי שבזרוע ובלע\"ז רבדי\"ן:"
+  },
+  "Rashi on Eruvin 95b:17:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 95b:17:1"
+    ],
+    "generatedAt": "2026-11-07T13:15:12.962Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רופף</strong> - רך ובלע\"ז פונטינ\"א:"
+  },
+  "Rashi on Eruvin 95b:19:1": {
+    "dependsOn": [
+      "Eruvin 95b:19",
+      "Rashi on Eruvin 95b:20:1"
+    ],
+    "generatedAt": "2026-11-07T13:17:36.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא קמא סבר שבת זמן תפילין הוא</strong> - ומשום הצלה לא מישרו ביה טפי מן המצוה דלאו תכשיט נינהו וכל שכן דכיון דזמן תפילין הוא ואיכא בל תוסיף אתי איסור בל תוסיף ומשוי להו עליה כמשאוי:"
+  },
+  "Rashi on Eruvin 95b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:1:1",
+      "Eruvin 95b:1"
+    ],
+    "generatedAt": "2026-11-07T12:53:16.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובסכנה</strong> - שאינו יכול להמתין שם ומתיירא מפני הליסטים:"
+  },
+  "Rashi on Eruvin 95b:20:1": {
+    "dependsOn": [
+      "Eruvin 95b:20",
+      "Rashi on Eruvin 95b:19:1",
+      "Rashi on Eruvin 95b:22:1"
+    ],
+    "generatedAt": "2026-11-07T13:19:24.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ג סבר לאו זמן תפילין הוא</strong> - והיינו טעמא דשרו ליה רבנן להצלה משום דתכשיט הוא הלכך כל כמה דהוי תכשיט שרי ומשום בל תוסיף ליכא הכא דאין כאן מצות תפילין כלל אלא כשאר מלבוש בעלמא:"
+  },
+  "Rashi on Eruvin 95b:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:21:2",
+      "Rashi on Eruvin 95b:19:1",
+      "Rashi on Eruvin 95b:20:1"
+    ],
+    "generatedAt": "2026-11-07T13:20:07.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית אימא דכ\"ע שבת זמן תפילין הוא</strong> - ודכולי עלמא אינה תכשיט ובמצות צריכות כוונה קא מיפלגי:"
+  },
+  "Rashi on Eruvin 95b:21:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:21:1",
+      "Rashi on Eruvin 95b:20:1",
+      "Rashi on Eruvin 95b:22:1"
+    ],
+    "generatedAt": "2026-11-07T13:21:03.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ק סבר מצות צריכות כוונה</strong> - שהעושה מצוה צריך שיכוין בה הלכך זוג אחד אין טפי לא דאי מכוין למצוה איכא בל תוסיף בחד ואי לא מכוין למצוה תרוייהו משאוי נינהו ואין כאן מצוה:"
+  },
+  "Rashi on Eruvin 95b:22:1": {
+    "dependsOn": [
+      "Eruvin 95b:22",
+      "Rashi on Eruvin 95b:21:1",
+      "Rashi on Eruvin 95b:21:2"
+    ],
+    "generatedAt": "2026-11-07T13:23:41.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבן גמליאל סבר מצות אין צריכות כוונה</strong> - הלכך מצוה איכא בל תוסיף ליכא דאין עובר על בל תוסיף אא\"כ נתכוון למצוה וזה לא נתכוון ובכל חד אמרי האי למצוה ולבי מגמגם לומר דכיון דלאו תכשיט נינהו נהי דבל תוסיף ליכא איסור שבת מיהא לא פקע והא ליכא למימר דלכולי עלמא תכשיט הם דאם כן לתנא קמא אמאי אסור לא ליכוין ולא ליתסר וליכא למימר נמי דלתנא קמא לא הוו תכשיט ולרבן גמליאל הוו תכשיט דאם כן לוקי פלוגתייהו בהכי ועוד היינו פלוגתא דלעיל דזמן ולאו זמן ונראה לי דהכי גרסינן תנא קמא סבר מצות אין צריכות כוונה ולכולי עלמא תכשיט הן הלכך כיון דלענין מיפק ידי חובתיה נפיק בלא כונה לענין בל תוסיף נמי אף על גב דלא מכוין להו למצוה איכא בל תוסיף כיון דזמן תפילין הוא ור\"ג סבר צריכות כוונה לצאת ידי חובתו הלכך. בבל תוסיף נמי לא עבר עד דמיכוין למצוה:"
+  },
+  "Rashi on Eruvin 95b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:2:1",
+      "Rashi on Eruvin 95b:2:2"
+    ],
+    "generatedAt": "2026-11-07T12:53:53.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותנן לחבירו וחבירו לחבירו</strong> - דכל חד וחד לא ממטי להו ארבע אמות:"
+  },
+  "Rashi on Eruvin 95b:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:2:1"
+    ],
+    "generatedAt": "2026-11-07T12:54:17.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחצר החיצונה</strong> - של עיר שהוא מקום המשתמר ראשון:"
+  },
+  "Rashi on Eruvin 95b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:54:38.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן בנו</strong> - שילדתו אמו שם בשדה בשבת:"
+  },
+  "Rashi on Eruvin 95b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:55:03.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תהלך זו יותר מרגלי בעליה</strong> - אינן יכולין להרחיקה מתחום שביתת בעלים הכל לפי מה שעירבו הבעלים:"
+  },
+  "Rashi on Eruvin 95b:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:5:2"
+    ],
+    "generatedAt": "2026-11-07T12:57:25.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לובש כל מה שיכול ללבוש</strong> - לענין הצלת דליקה תנן בכל כתבי הקודש <span class=\"parenthesized\">(שבת דף קכ.)</span>:"
+  },
+  "Rashi on Eruvin 95b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:5:1"
+    ],
+    "generatedAt": "2026-11-07T12:57:52.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשם הוא מוציא</strong> - לחצר שסמוכה לדליקה:"
+  },
+  "Rashi on Eruvin 95b:7:1": {
+    "dependsOn": [
+      "Eruvin 95b:7"
+    ],
+    "generatedAt": "2026-11-07T12:58:21.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - דקאי בשאר מלבושין דכמה דבעי לביש בחול:"
+  },
+  "Rashi on Eruvin 95b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T12:58:53.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זוג אחד אין</strong> - דקסבר שבת זמן תפילין הוא ומשום הכי שרי ובלאו הצלה נמי אם בא להניח תפילין מניח ומשום הצלה לא שרינן ליה טפי:"
+  },
+  "Rashi on Eruvin 95b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:9:2"
+    ],
+    "generatedAt": "2026-11-07T12:59:40.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קסבר</strong> - דקא שרי שנים שנים אבל טפי לא:"
+  },
+  "Rashi on Eruvin 95b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:9:1",
+      "Rashi on Eruvin 95b:8:1",
+      "Rashi on Eruvin 95b:7:1",
+      "Rashi on Eruvin 95b:5:1"
+    ],
+    "generatedAt": "2026-11-07T13:00:54.740Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 95b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קסבר שבת זמן תפילין הוא</strong> - משום הכי שרי אבל לאצולי טפי מן המצוה לא:"
+  },
+  "Tosafot on Eruvin 95b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:11:1"
+    ],
+    "generatedAt": "2026-11-07T13:04:53.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 95b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי שרו רבנן לענין הצלה דרך מלבוש במקום תפילין</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דשלא במקום תפילין הן בולטין יותר מדאי ונראה משאוי ולכך אסור ואין זו סברא אלא נראה דהטעם משום דלא מיקרי מלבוש אלא במקום שרגיל להניחו בחול:"
+  },
+  "Tosafot on Eruvin 95b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T13:11:54.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 95b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום יש בראש שראוי להניח בו ב' תפילין</strong> - מסופק היה ר\"י איזה שיעור יש ברוחב תפילין דיש עושין גדולים מחבריהם ויש שעושין אותם קטנים ביותר ומדקאמר מקום יש בראש להניח ב' תפילין משמע דשיעור רחבו שיתמלא מקום השנים ואור\"י דמצא במדרש דשיעורן כב' אצבעות וסמך לדבר דציץ רוחבו ב' אצבעות כדאמר בפ' קמא דסוכה <span class=\"parenthesized\">(ד' ה.)</span> ואמרי' בפ\"ק דערכין <span class=\"parenthesized\">(דף ג:)</span> שערו היה נראה בין ציץ למצנפת ששם מניח תפילין ודומה דציץ היה במקום הראוי להניח תפילין אע\"ג דגבי ציץ כתיב <span class=\"parenthesized\">(שמות כח)</span> מצחו ומתרגמינן בין עינוהי גבי תפילין נמי כתיב <span class=\"parenthesized\">(דברים יא)</span> בין עיניכם ודרשינן בגובה שבראש:"
+  },
+  "Tosafot on Eruvin 95b:17:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:17:1",
+      "Rashi on Eruvin 95b:17:2",
+      "Mishnah Oholot 1:8"
+    ],
+    "generatedAt": "2026-11-07T13:16:53.707Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 95b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידך זו קיבורת</strong> - הוא קבוצת בשר שבזרוע שבין המרפק שקורין קודא בלע\"ז ובין הכתף וקיבורת כמו קיבורת דאהיני ולא כמו שמפרש קיבורית הוא קביצת בשר שבין פיסת היד למרפק סמוך למרפק דבכל מקום משמע דתפילין הן בזרוע ובמסכת אהלות <span class=\"parenthesized\">(פ\"א משנה ח)</span> משמע דזרוע הוא בין המרפק ולכתף דקאמר שלשים בפיסת יד כו' שנים בקנה ושנים במרפק אחד בזרוע וארבע בכתף ובהקומץ רבה <span class=\"parenthesized\">(מנחות ד' לז:)</span> נמי אמרי' דבעינן שתהא שימה כנגד הלב:"
+  },
+  "Tosafot on Eruvin 95b:4:1": {
+    "dependsOn": [
+      "Eruvin 95b:4",
+      "Eruvin 96b:16",
+      "Rashba on Eruvin 95b:1"
+    ],
+    "generatedAt": "2026-11-07T12:56:43.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 95b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא תנן סתמא דלא כרבי מאיר</strong> - אברייתא דלקמן דקתני בהדיא רבי מאיר אומר מכניסן זוג זוג הוי מצי למפרך דר\"מ אדר' מאיר אלא דניחא ליה טפי לאקשויי אמתניתין ומכח דקתני עלה בברייתא ר' מאיר אומר מכניסן זוג זוג לא היה יכול להוכיח דמתני' רבי מאיר כדמוכח בסמוך אההיא דשבת ולאקשויי דר\"מ אדרבי מאיר דאדרבה לקמן מוכח דמתניתין דלא כר\"מ דמתני' קתני במה דברים אמורים בישנות וברייתא קתני רבי מאיר אומר אחד חדשות ואחד ישנות:"
+  },
+  "Tosafot on Eruvin 95b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 95b:9:1",
+      "Rashi on Eruvin 95b:9:2",
+      "Eruvin 95b:9",
+      "Tosafot on Eruvin 95b:4:1",
+      "Tosafot on Eruvin 96a:13:1"
+    ],
+    "generatedAt": "2026-11-07T13:02:24.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 95b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קסבר שבת זמן תפילין</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> משום הכי שרי אבל לאצולי טפי מן המצוה לא וקשה דאם מכח זה בא לדקדק דזוג אין טפי לא אם כן בסמוך דקאמר לעולם לאו זמן תפילין הוא ה\"נ דמצי למימר לעולם זמן תפילין הוא אלא י\"ל דאי זמן תפילין הוא איכא בל תוסיף אע\"ג דלא מיכוון כדמסיק רבא בפרק ראוהו בית דין <span class=\"parenthesized\">(ר\"ה דף כח:)</span> ולהכי זוג אחד אין טפי לא:"
+  }
+}

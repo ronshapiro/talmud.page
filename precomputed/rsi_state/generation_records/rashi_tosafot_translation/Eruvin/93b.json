@@ -1,0 +1,311 @@
+{
+  "Rashi on Eruvin 93b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:06:36.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיורין הבאין בשבת</strong> - כגון כותל שבין שתי חצירות שנפל בשבת דהיינו דיורייהו השתא כי הדדי:"
+  },
+  "Rashi on Eruvin 93b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:10:1"
+    ],
+    "generatedAt": "2026-11-07T11:07:13.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו שיאסרו</strong> - זה על זה:"
+  },
+  "Rashi on Eruvin 93b:11:1": {
+    "dependsOn": [
+      "Eruvin 93b:11",
+      "Rashi on Eruvin 93b:10:1",
+      "Rashi on Eruvin 93b:10:2",
+      "Rashi on Eruvin 93b:12:1"
+    ],
+    "generatedAt": "2026-11-07T11:08:14.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקטנה אסורה</strong> - [וס\"ד] שנפרצה בשבת:"
+  },
+  "Rashi on Eruvin 93b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:08:45.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא ודאי</strong> - על כורחיך הכי תוקמא דהא את אמרת דיורין הבאין בשבת אין אוסרין:"
+  },
+  "Rashi on Eruvin 93b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:12:1",
+      "Rashi on Eruvin 93b:12:2",
+      "Rashi on Eruvin 93b:12:3"
+    ],
+    "generatedAt": "2026-11-07T11:09:17.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמרת בעאי מיניה מרב הונא עירב דרך הפתח</strong> - שתי חצירות שעירבו יחד על ידי פתח שביניהם:"
+  },
+  "Rashi on Eruvin 93b:12:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:12:1",
+      "Rashi on Eruvin 93b:12:2",
+      "Rashi on Eruvin 93b:12:4"
+    ],
+    "generatedAt": "2026-11-07T11:09:54.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונסתם</strong> - בשבת שנפלה מפולת כנגדו:"
+  },
+  "Rashi on Eruvin 93b:12:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:12:1",
+      "Rashi on Eruvin 93b:12:2",
+      "Rashi on Eruvin 93b:12:3",
+      "Rashi on Eruvin 93b:10:2"
+    ],
+    "generatedAt": "2026-11-07T11:11:48.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - לטלטל מזו לזו דרך גובה הכותל וחורין וסדקין מי אמרינן הואיל והותר למקצת שבת הותר לכולה או לא:"
+  },
+  "Rashi on Eruvin 93b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:13:2"
+    ],
+    "generatedAt": "2026-11-07T11:14:00.804Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כותל שבין שתי חצירות</strong> - שלא היה פתח ביניהם ולא עירבו בו יחד ונפל:"
+  },
+  "Rashi on Eruvin 93b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:13:2",
+      "Rashi on Eruvin 93b:13:1"
+    ],
+    "generatedAt": "2026-11-07T11:14:51.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אמר אין מטלטלין בו אלא בארבע</strong> - רב לית ליה הואיל והותרה הותרה וכחד חצר לא משוינן ליה דקי\"ל חצר שלא עירבה דברי הכל מטלטלין כלים ששבתו באוירא דההיא כולה חדא רשותא היא אבל הכא ב' רשויות האסורות זו עם זו היו ונמצאת כל אחת פרוצה במלואה למקום האסור לה אע\"ג דקי\"ל דחצירות רשות אחת הן הכא בשעירבה כל אחת לעצמה עסקינן ורב לטעמיה דאמר הלכה כר\"ש והוא שלא עירבו אבל עירבו שתי רשויות הן:"
+  },
+  "Rashi on Eruvin 93b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:51:19.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידוד חמשה</strong> - חצר שקרקעיתה גבוה חמשה טפחים והוסיפו על אותו גובה מחיצה ה':"
+  },
+  "Rashi on Eruvin 93b:3:1": {
+    "dependsOn": [
+      "Eruvin 93b:3"
+    ],
+    "generatedAt": "2026-11-07T10:52:11.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה רב חסדא בתחתונה</strong> - דלגבה הויא מחיצה אבל לגבי עליונה לאו מחיצה היא שאינה רואה את פני עשרה למחיצתה ואי הויא כוליה בגידוד שפיר טפי משום דמשתמשא להדיא עד סוף הגידוד ורואה גובהה יותר על חברתה עשרה ומינכרא מחיצתה:"
+  },
+  "Rashi on Eruvin 93b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:3:1"
+    ],
+    "generatedAt": "2026-11-07T10:52:49.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחתונה תרי תערב</strong> - כלומר לעצמה תיערב דיוריה ולא עם עליונה שהרי מחיצה ביניהם אבל עליונה אפילו לעצמה אסורה שהתחתונה אוסרתה שאין כאן מחיצה ולא חד נמי תערב עם תחתונה שהרי אין כאן פתח דלגבי תחתונה הכל סתום:"
+  },
+  "Rashi on Eruvin 93b:4:1": {
+    "dependsOn": [
+      "Eruvin 93b:4",
+      "Chokhmat Shlomo on Eruvin 93b:2"
+    ],
+    "generatedAt": "2026-11-07T10:53:55.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במגופפת</strong> - מחיצה עשרה על הגידוד עד עשר אמות אמצעיות שהניחוה כעין פתח ולא הניחו שם המחיצה עשרה אלא מחיצה חמשה והגידוד חמשה הלכך שתיהן מערבות לעצמן ואין זו אוסרת על זו דלגבי תחתונה כולה סתומה היא ולגבי עליונה [מחיצה] ופתחא היא ומיהו כי הדדי לא מצו מערבי משום דלגבי תחתונה הכל סתום:"
+  },
+  "Rashi on Eruvin 93b:5:1": {
+    "dependsOn": [
+      "Eruvin 93b:5",
+      "Rashi on Eruvin 93b:4:1",
+      "Rashi on Eruvin 93b:5:1",
+      "Rashi on Eruvin 93b:5:2"
+    ],
+    "generatedAt": "2026-11-07T10:54:38.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא סיפא כו'</strong> - ועל כרחך האי פחות מכאן אמחיצת חמשה שבעשר האמות קאי דהא בכל ההיקף מחיצה עשרה איכא:"
+  },
+  "Rashi on Eruvin 93b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:5:1",
+      "Steinsaltz on Eruvin 93b:5",
+      "Ritva on Eruvin 93b:3",
+      "Eruvin 93b:5",
+      "Rashi on Eruvin 93b:4:1"
+    ],
+    "generatedAt": "2026-11-07T10:58:20.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בעי חד תערב</strong> - דה\"א פתח גמור הוא אצל שתיהן:"
+  },
+  "Rashi on Eruvin 93b:6:1": {
+    "dependsOn": [
+      "Eruvin 93b:6",
+      "Chidushei Halachot on Eruvin 93b:2",
+      "Rashi on Eruvin 93b:5:1",
+      "Rashi on Eruvin 93b:5:2",
+      "Rashi on Eruvin 93b:7:1",
+      "Steinsaltz on Eruvin 93b:6",
+      "Versions on Eruvin 93b:6",
+      "Tosafot on Eruvin 93b:8:1",
+      "Rashi on Eruvin 93b:7:2"
+    ],
+    "generatedAt": "2026-11-07T11:01:18.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במלואה</strong> - שאין ברחבה אלא עשר אמות הלכך אסרה עליונה עליה ולא מערבה בהדה כדתנן גדולה מותרת וקטנה אסורה:"
+  },
+  "Rashi on Eruvin 93b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T11:01:45.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי תחתונה חד תיערב</strong> - עם העליונה:"
+  },
+  "Rashi on Eruvin 93b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:7:1",
+      "Rashi on Eruvin 93b:2:1"
+    ],
+    "generatedAt": "2026-11-07T11:02:39.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 93b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי לא תערב</strong> - בפני עצמה דעליונה אוסרת אא\"כ עירבה עמה:"
+  },
+  "Tosafot on Eruvin 93b:12:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 17a:11:1",
+      "Tosafot on Eruvin 17a:7:1",
+      "Tosafot on Eruvin 93b:8:1",
+      "Tosafot on Eruvin 93a:1:1",
+      "Tosafot on Eruvin 92a:1:1"
+    ],
+    "generatedAt": "2026-11-07T11:13:13.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 93b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבת כיון שהותרה הותרה</strong> - פירשתי בפרק קמא <span class=\"parenthesized\">(דף יז. ד\"ה עירוב)</span>:"
+  },
+  "Tosafot on Eruvin 93b:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 93b:13:1",
+      "Rashi on Eruvin 93b:13:2",
+      "Eruvin 93b:14",
+      "Maharsha on Eruvin 93b:4:1",
+      "Tosafot on Eruvin 93b:12:1",
+      "Steinsaltz comment #1 on Eruvin 93b:13",
+      "Steinsaltz on Eruvin 93b:13",
+      "Rashba on Eruvin 93b:5",
+      "Tosafot on Eruvin 91a:8:1",
+      "Chidushei Halachot on Eruvin 93b:4"
+    ],
+    "generatedAt": "2026-11-07T11:17:05.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 93b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מטלטלין בה אלא בארבע</strong> - בכלים ששבתו בבית לר\"ש:"
+  },
+  "Tosafot on Eruvin 93b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T10:51:00.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 93b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידוד חמשה ומחיצה חמשה אין מצטרפין</strong> - בפרק שני דגיטין <span class=\"parenthesized\">(דף טו:)</span> <span class=\"rashi-quotation\">פי' בקונטרס</span> כגון בית עמוק חמשה ויש לו מחיצות חמשה אין מצטרפין להיות תוכו רה\"י וקשיא לר\"ת דהא אמר בפרק בתרא <span class=\"parenthesized\">(דף צט:)</span> דבור וחוליתה מצטרפין ובשמעתא נמי אמר דמודה רב חסדא בתחתונה הואיל ורואה פני י' אלא יש לפרש גידוד חמשה גבוה חמשה ונפקא מינה בשתי חצירות זו למעלה מזו ולעליונה כדאמר הכא וצ\"ע לענין שבת אם יש <span class=\"parenthesized\">(לפרש כשיש)</span> תל ברה\"ר גבוה חמשה ורחב ארבעה ועל גביו עשו מחיצה חמשה שהזורק מרה\"ר לתוכו חייב ומתוכו לרה\"ר פטור:"
+  },
+  "Tosafot on Eruvin 93b:8:1": {
+    "dependsOn": [
+      "Eruvin 93b:8"
+    ],
+    "generatedAt": "2026-11-07T11:03:19.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 93b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי קתני פחות מכאן מערבין אחד ואין מערבין שנים אתחתונה</strong> - וא\"ת לעיל כדפריך עליונה לא תערב לא חד ולא תרי אמאי לא משני הא דקתני מערבין שנים ואין מערבין אחד אתחתונה ויש לומר משום דמשמע ליה מערבין שנים אתרוייהו:"
+  },
+  "Tosafot on Eruvin 93b:9:1": {
+    "dependsOn": [
+      "Eruvin 93b:9",
+      "Eruvin 93b:12",
+      "Chokhmat Shlomo on Eruvin 93b:5"
+    ],
+    "generatedAt": "2026-11-07T11:06:18.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 93b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תימא אימר אלא ודאי מבעוד יום נפרצה</strong> - קשה דהכא אמר אביי דרבה סבר כשמואל דאמר שבת הואיל והותרה הותרה וא\"כ תיקשי דאביי גופיה אמר <span class=\"parenthesized\">(שבת דף כב.)</span> כל מילי דמר עביד כחומרי דרב בר מהני תלת דעביד כשמואל מתירין מבגד לבגד כו' ואין לומר דמש\"ה לא חשיב הא דהכא משום דרב הונא ורב יהודה נמי סברי כשמואל דהא בגרירא איכא דסברי כשמואל דהא בפרק המוציא <span class=\"parenthesized\">(שבת פא.)</span> משמע דסבר רבי יוחנן כסתם משנה דנזיר חופף ומפספס ומיהו י\"ל דהכי פריך בהמוציא ומי מצי ר' יוחנן למימר דבר שאין מתכוין אסור דלא כסתם משנה דנזיר אפילו איכא סתמא אחרינא כדאשכחן בביצה <span class=\"parenthesized\">(דף כג:)</span> מאי אולמיה האי סתמא מהאי ואין לרבי יוחנן נמי לפסוק כשום אחת בלא ראייה אי נמי יש לומר הא דעביד כחומרי דרב היינו בעלמא לבד מעירוב ואבל דהלכה כדברי המיקל בהם או שמא כיון דזימנין הך קולא הויא חומרא כגון דנאסר במקצת שבת דמהאי טעמא נאסר לכל השבת לא חשיב ליה מחומרי דרב דלרב לית ליה הואיל והותרה הותרה ולית ליה נמי הואיל ונאסר נאסר:"
+  }
+}

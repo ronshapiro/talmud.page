@@ -1,0 +1,320 @@
+{
+  "Rashi on Eruvin 87a:10:1": {
+    "dependsOn": [
+      "Eruvin 87a:9",
+      "Rashi on Eruvin 87a:10:2",
+      "Rashi on Eruvin 87a:9:1",
+      "Rashi on Eruvin 87a:9:2"
+    ],
+    "generatedAt": "2026-11-06T18:16:14.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של אבל</strong> - שם העיר והיתה עוברת בתוך החצירות וממלאין הימנה בחצירות דמהניא לה מחיצת כותל בחצר תלויה עליה ורבי יהודה לטעמיה דפליג נמי במתני' אבור:"
+  },
+  "Rashi on Eruvin 87a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:10:1",
+      "Rashi on Eruvin 87a:10:2"
+    ],
+    "generatedAt": "2026-11-06T18:17:32.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא היתה כשיעור</strong> - כרמלית או בעומק י' או ברוחב ד' שאין מים נעשין רשות לעצמן בפחות מעומק י' ברוחב ד' ואם עוברת ברה\"ר הויין רה\"ר כדתנן בהזורק <span class=\"parenthesized\">(שבת דף ק:)</span> הזורק ד' אמות בים פטור דכרמלית היא ואם היה רקק מים ורה\"ר מהלכת בו חייב דרה\"ר הוא וכמה הוא רקק מים פחות מי' טפחים אלמא מים שאינן עמוקין י' אינם רשות לעצמן וכי הוו נמי בחצר הוו להו רה\"י:"
+  },
+  "Rashi on Eruvin 87a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:18:42.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשו לה בכניסה ולא עשו לה ביציאה</strong> - לא מהני מידי דהא מחוברת למים שחוץ לחצר ביציאתה ונעשית הכל כרמלית אבל כי עשו בכניסה וביציאה אינה כרמלית דומה כמי שמתחלת בחצר זו:"
+  },
+  "Rashi on Eruvin 87a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:19:18.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא היתה עמוקה י'</strong> - או לא היתה רחבה ד' דלא חשיב פחות מד' למיהוי רשותא לנפשיה:"
+  },
+  "Rashi on Eruvin 87a:14:1": {
+    "dependsOn": [
+      "Eruvin 87a:14",
+      "Eruvin 87a:9",
+      "Rashi on Eruvin 87a:14:2"
+    ],
+    "generatedAt": "2026-11-06T18:20:18.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין החלונות</strong> - למבוי או לחצר ובתים מכאן ומכאן על שפתו וחלונות פתוחין להן למלאות:"
+  },
+  "Rashi on Eruvin 87a:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:14:1",
+      "Eruvin 87a:15"
+    ],
+    "generatedAt": "2026-11-06T18:22:02.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מג'</strong> - מפרש ואזיל במאי קאמר:"
+  },
+  "Rashi on Eruvin 87a:15:1": {
+    "dependsOn": [
+      "Eruvin 87a:15"
+    ],
+    "generatedAt": "2026-11-06T18:24:06.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי עסקינן</strong> - האי שיעורא דג' וד':"
+  },
+  "Rashi on Eruvin 87a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:15:1",
+      "Rashi on Eruvin 87a:15:2",
+      "Eruvin 87a:14"
+    ],
+    "generatedAt": "2026-11-06T18:24:58.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא ברוחב אמת המים</strong> - דקאמר ת\"ק ג' רוחב הויא כרמלית ואין ממלאין ממנה לרה\"י:"
+  },
+  "Rashi on Eruvin 87a:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:16:1",
+      "Eruvin 87a:16",
+      "Rashi on Eruvin 87a:15:1",
+      "Rashi on Eruvin 87a:15:2",
+      "Chokhmat Shlomo on Eruvin 87a:1"
+    ],
+    "generatedAt": "2026-11-06T18:26:53.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא כתנאי אמרה</strong> - דהא רבנן בג' רוחב קרו לה כרמלית <span class=\"parenthesized\">(ואין ממלאין ממנה ברה\"י)</span>:"
+  },
+  "Rashi on Eruvin 87a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:28:25.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא באגפיה ולהחליף</strong> - דיש באמה שיעור כרמלית והכא בשיש לה אגפים גבוהים ומהני למיהוי הנך אגפים מקום פטור כי לית להו רוחב ג' ומשלשלין את הדלי ומניחו על אגפים ומשם מחליפו לאמה וממלאהו וחוזר ומניחו על אגפים ומשמחליפו לרה\"י דהשתא מהני אגפים להחליף המשאוי מכרמלית לרה\"י ומרשות היחיד לכרמלית וקאמרי רבנן דאי אית בהו רוחב ג' תו לא הוי מקום פטור אלא רשותא באנפי נפשיה ולא בטיל להכא ולהכא:"
+  },
+  "Rashi on Eruvin 87a:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:18:1",
+      "Eruvin 87a:18",
+      "Rashi on Eruvin 87a:17:1",
+      "Rashi on Eruvin 87a:14:1",
+      "Rashi on Eruvin 87a:14:2",
+      "Rashi on Eruvin 87a:15:1",
+      "Rashi on Eruvin 86a:1:1",
+      "Rashi on Eruvin 86b:1:1"
+    ],
+    "generatedAt": "2026-11-07T03:36:18.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא כי אתא רב דימי גופיה אמר ובלבד שלא יחליפו</strong> - דרך מקום פטור דהא כיון דאמרינן מותר לאלו ולאלו לכתף עליו מקום פטור חשיב ליה וקאמר לא יחליפו:"
+  },
+  "Rashi on Eruvin 87a:19:1": {
+    "dependsOn": [
+      "Eruvin 87a:19",
+      "Rashi on Eruvin 87a:18:1",
+      "Eruvin 87a:14",
+      "Eruvin 87a:15",
+      "Rashi on Eruvin 87a:15:1",
+      "Rashi on Eruvin 87a:17:1"
+    ],
+    "generatedAt": "2026-11-07T03:37:51.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם רשויות דאורייתא</strong> - רשות היחיד ורבים איסורא דאורייתא להוציא מזה לזה אשתכח דמתעבדא איסורא דאורייתא דרך מקום פטור אבל מכרמלית לרה\"י רשויות דרבנן ומחליפין דרך מקום פטור ואע\"ג דחשיב רב דימי מקום פטור בפחות מארבעה והכא קאמרי רבנן דשלשה לא הוי מקום פטור ליכא למימר דהא שמעתא בתרייתא דרב דימי כתנאי אמרה דאיכא למימר דגבי רשויות דאורייתא דחשיבי הוי פחות מד' הסמוך להו בטל אצלן אבל לגבי כרמלית לא בטיל מכי הוי רוחב שלשה:"
+  },
+  "Rashi on Eruvin 87a:1:1": {
+    "dependsOn": [
+      "Eruvin 87a:1"
+    ],
+    "generatedAt": "2026-11-06T17:59:52.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוקק בה</strong> - נקב באמצעיתה ואפילו אין לה מחיצות סביב הויין לה י' טפחים הנשארים סביב הנקב לכל צד ורואין אותן כאילו היו כפופין למטה כעין מחיצה תלויה על המים ואמר נמי גוד אחית כאילו יורדות וסותמות עד המים והויין מים שכנגד הנקב רשות היחיד ובציר מהכי לא סגי דאין מחיצה פחות מי' גובה ואין מחיצה פחות מד' טפחים חלל שביניהם:"
+  },
+  "Rashi on Eruvin 87a:2:1": {
+    "dependsOn": [
+      "Eruvin 87a:2",
+      "Rashi on Eruvin 87a:1:1"
+    ],
+    "generatedAt": "2026-11-06T18:00:43.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוף</strong> - רוחב הנסר שיהא כפוף למטה כמחיצה ואכתי הויא מחיצה תלויה ומבעי לן למימר תו גוד אחית:"
+  },
+  "Rashi on Eruvin 87a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:01:16.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בימה של טבריא</strong> - דהכי אמר לקמן דלאנשי טבריא התיר:"
+  },
+  "Rashi on Eruvin 87a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:03:08.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוגנים</strong> - שפה גבוה דהויא כמחיצות סביב לה דאיכא קצת הכירא דהיתר דהא כרמלית מדרבנן היא גזרה משום הוצאה מרה\"י לרה\"ר הואיל ויש לה קצת היתר ואע\"ג דאכתי כרמלית היא דהא קרפף יותר מבית סאתים שלא הוקף לדירה הוא מיהו בתקנתא פורתא כי הא סגי:"
+  },
+  "Rashi on Eruvin 87a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:4:1",
+      "Steinsaltz on Eruvin 87a:4:1",
+      "Rashi on Eruvin 87a:2:1",
+      "Rashi on Eruvin 87a:5:1",
+      "Rabbeinu Chananel on Eruvin 87a:4",
+      "Eruvin 87a:7",
+      "Rashi on Eruvin 87a:7:1"
+    ],
+    "generatedAt": "2026-11-06T18:06:11.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה סמוכה</strong> - שהיתה כותל העליה על שפת המים ואותו הנסר נתון על שני זיזין היוצאים מן הכותל ושפת הנסר פחות מג' סמוך לכותל הויא לה האי כותל חדא מן המחיצות והאויר פחות משלשה שבינה ולכותל מהני לנקב ומוסיף עליו טפח ומשהו פגם ברוחב הנסר על פני ד' לארכה להשלים הנקב לד' על ד' וצריך להיות בה רוחב עוד י' טפחים למימר בהו כוף למחיצה שנייה כנגד הכותל הרי י\"א רוחב ומשהו וארכה ד' אמות להיות י' טפחים לב' ראשיה עד הנקב דנימא כוף וכשאתה כופף את ב' הראשים אע\"פ שהנסר רחב י\"א ומשהו אין מועיל למחיצות חלל הנקב אלא טפח ומשהו מזה וטפח ומשהו מזה שהרי י' טפחים בולטין מן המחיצה האמצעית ולחוץ לצד המים שהרי המחיצה האמצעית כשכפפנו אותה נמצאת עומדת בשפת הפגם ואין מחיצות הראשין נמשכין ממנה לצד הכותל אלא טפח ומשהו והוא מצטרף עם פחות משלשה לבוד והויא מחיצה ד':"
+  },
+  "Rashi on Eruvin 87a:5:1": {
+    "dependsOn": [
+      "Eruvin 87a:5",
+      "Rashi on Eruvin 87a:4:1",
+      "Rashi on Eruvin 87a:6:1"
+    ],
+    "generatedAt": "2026-11-06T18:07:18.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה זקופה</strong> - לארכה צריך שיהא ארכה י' ורחבה ו' ושני משהויין וזקופה רחבה כנגד הכותל מופלג ד' מן הכותל וכוף שפת רחב טפח ומשהו לכאן לצד הכותל והרי שפתה עכשיו בפחות מג' סמוך לכותל והוא לבוד הרי מחיצת ד' לכאן ועוד כוף טפח ומשהו בשפת רחבה השני לצד הכותל הרי טפח ומשהו מחיצה ופחות מג' לבוד הרי מחיצת ד' מכאן ומחיצה הג' שכנגד הכותל רחבה ד' שלימין הרי חלל ד' במחיצותיו וגובהן י' ופותח חלון בכותלו וממלא:"
+  },
+  "Rashi on Eruvin 87a:6:1": {
+    "dependsOn": [
+      "Eruvin 87a:6",
+      "Rashi on Eruvin 87a:5:1"
+    ],
+    "generatedAt": "2026-11-06T18:08:26.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתה עומדת בקרן זוית</strong> - ששני כתלים מחיצות למים ואינה צריכה אלא שתי מחיצות צריך שיהא גובה ארכה כשהיא זקופה י' טפחים ורחבה ב' טפחים ושני משהויין ומעמידה זקופה שפת עוביה כנגד כותל האחד מופלג ממנו פחות מג' והוא לבוד נמצאת כאן מחיצה רחבה ה' ומשהו וכותל השני מכוון כנגד רחבה מופלג ממנו ד' כוף טפח ומשהו היתירין על מדת רחבה והטה אותם לצד כותל המופלג ד' נמצאת שפת הנסר עומדת בפחות מג' והוא לבוד הרי ב' מחיצות של ד':"
+  },
+  "Rashi on Eruvin 87a:7:1": {
+    "dependsOn": [
+      "Eruvin 87a:7",
+      "Rashi on Eruvin 87a:7:1",
+      "Rashi on Eruvin 87a:6:1"
+    ],
+    "generatedAt": "2026-11-06T18:11:50.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא הא דבעי ר' חנניא</strong> - כ\"ד על כ\"ד היכי משכחת לה:"
+  },
+  "Rashi on Eruvin 87a:8:1": {
+    "dependsOn": [
+      "[",
+      "Eruvin 87a:8",
+      "Rashi on Eruvin 87a:6:1"
+    ],
+    "generatedAt": "2026-11-06T18:13:10.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעבידא כאסיתא</strong> - שאין כותל סמוך לה וקבועה על יתידות וצריך להיות כל חללה וכל מחיצותיה ממנה ונעשה כעין מדוכה. אסיתא מורטי\"ר:"
+  },
+  "Rashi on Eruvin 87a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 87a:9:2",
+      "Eruvin 87a:10",
+      "Rashi on Eruvin 87a:10:1",
+      "Rashi on Eruvin 87a:9:1"
+    ],
+    "generatedAt": "2026-11-06T18:14:32.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמת המים</strong> - אפילו ברה\"י כרמלית היא:"
+  },
+  "Rashi on Eruvin 87a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T18:15:01.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 87a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשו לה מחיצה</strong> - בתוך אוגניה על פני רוחבה שיהא ניכר שבשביל המים נעשית ומחיצת החצר התלויה ועוברת על גבה אינה מועלת לה ואע\"ג דמחיצה תלויה מתרת במים ה\"מ היכא דנראית מחיצה שנעשית בשביל המים כגון גזוזטרא דמתני' וכגון מחיצה שבתוך הבור:"
+  },
+  "Tosafot on Eruvin 87a:10:1": {
+    "dependsOn": [
+      "Eruvin 87a:10"
+    ],
+    "generatedAt": "2026-11-06T18:18:16.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 87a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' יהודה מעשה כו'</strong> - אין זה מעשה לסתור דאמילתיה דלעיל קאי דלא בעי מחיצה לשם מים:"
+  }
+}

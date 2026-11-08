@@ -1,0 +1,342 @@
+{
+  "Rashi on Eruvin 52b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:4:1",
+      "Rashi on Eruvin 52b:6:1",
+      "Rashi on Eruvin 52b:8:1",
+      "Rashi on Eruvin 52a:1:1",
+      "Rashi on Eruvin 51b:1:1"
+    ],
+    "generatedAt": "2026-11-06T20:01:24.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא דאמר</strong> - ר' חנינא:"
+  },
+  "Rashi on Eruvin 52b:12:1": {
+    "dependsOn": [
+      "Eruvin 52b:12",
+      "Rashi on Eruvin 52b:12:2",
+      "Rashi on Eruvin 52b:6:1",
+      "Rashi on Eruvin 52b:8:1"
+    ],
+    "generatedAt": "2026-11-06T20:03:00.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעקר חדא</strong> - שיצא מן האחת ועומד בשניה והכי קאמר אם בשתים עומד יכנס וברייתא דקתני שתים לא יכנס שיצא מכל השתים:"
+  },
+  "Rashi on Eruvin 52b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:12:1",
+      "Steinsaltz on Eruvin 52b:12",
+      "Mishnah Eruvin 5:9",
+      "Rashi on Eruvin 61a:4:1",
+      "Rashi on Eruvin 61a:23:1",
+      "Eruvin 52b:12",
+      "Tosafot on Eruvin 52b:12:1",
+      "Maharshal on Eruvin 52b:10",
+      "Chokhmat Shlomo on Eruvin 52b:1",
+      "Ritva on Eruvin 52b:1"
+    ],
+    "generatedAt": "2026-11-06T20:05:22.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למודד</strong> - שחשכה לו ואמר שביתתי במקומי ומודד אלפים פסיעות בינוניות אולי יכנס לתחום העיר וכלו אלפים שלו אמה אחת חוץ לתחום לא יכנס שאפילו האלפים מוליכות אותו לתוכו אינו מותר לצאת מאלפים כדתנן ולמודד שאמרו נותנין לו אלפים אפילו סוף מדתו כלה במערה לא יהלך להלן מאלפים דכיון שמדד אלפים לבד מקום שביתתו שהן ארבע אינו יכול לעבור חוץ לאלפים:"
+  },
+  "Rashi on Eruvin 52b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:09:06.180Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שהחשיך</strong> - שהוא בא בדרך וחשכה לו חוץ לתחום:"
+  },
+  "Rashi on Eruvin 52b:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:13:1",
+      "Rashi on Eruvin 52b:13:2",
+      "Rashi on Eruvin 52b:13:3"
+    ],
+    "generatedAt": "2026-11-06T20:09:50.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו חמש עשרה אמה כו'</strong> - לאו דווקא ט\"ו אמה:"
+  },
+  "Rashi on Eruvin 52b:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:10:22.812Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המשוחות</strong> - מודדי התחומין לעיירות ועושין סימן לתוך התחום:"
+  },
+  "Rashi on Eruvin 52b:13:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:13:1",
+      "Rashi on Eruvin 52b:13:2",
+      "Rashi on Eruvin 52b:13:3",
+      "Rashi on Eruvin 52b:13:4",
+      "Rashi on Eruvin 52b:13:5"
+    ],
+    "generatedAt": "2026-11-06T20:11:20.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינן ממצין את המדות</strong> - להציב הסימן בסוף אלפים אלא כונסין אותן לתוך אלפים:"
+  },
+  "Rashi on Eruvin 52b:13:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:13:3",
+      "Rashi on Eruvin 52b:13:4"
+    ],
+    "generatedAt": "2026-11-06T20:12:45.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני הטועין</strong> - מפני טועי המדה שאין מכירין את הסימן ופעמים הולכין להלן ממנו וחוזרין ולאו אדעתייהו ל\"א ולא שמעתיו דדוקא ט\"ו נקט וטועי המדה הן המשוחות הקובעין התחומין ואמרינן לקמן בכיצד מעברין <span class=\"parenthesized\">(עירובין דף נז:)</span> אין מודדין אלא בחבל של חמשים אמה ארבעים חבלים יש לאלפים וכל חבל וחבל מתמעט שני אחיזות שזה תופס מכאן וזה תופס מכאן והאחיזה טפח וחצי אצבע הרי פ' טפחים ומ' אצבעות העולין ליו\"ד טפחים הרי תשעים טפחים שהן חמש עשרה אמות:"
+  },
+  "Rashi on Eruvin 52b:16:1": {
+    "dependsOn": [
+      "Eruvin 52b:16",
+      "Rashi on Eruvin 52b:16:2"
+    ],
+    "generatedAt": "2026-11-06T20:14:25.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד מעברין</strong> - מפרש בגמרא לשון אשה עוברה דתנן לקמן הנותן עירובו בעיבורה של עיר אלמא יש עיבור לעיר ומפרש השתא כיצד יש לה עיבור:"
+  },
+  "Rashi on Eruvin 52b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:16:1",
+      "Eruvin 52b:16",
+      "Eruvin 57a:11"
+    ],
+    "generatedAt": "2026-11-06T20:15:58.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית נכנס ובית יוצא או פגום נכנס ופגום יוצא או היו גדודיות כו' מוציאין המדה כנגדו</strong> - כלומר כשבא לציין סימן תחום העיר ובא למדוד אלפים חוצה לה אם הוה מחיצתה שור איגר שאינה חומה חלקה אלא בתים סמוכין ומחוברין ויש בית נכנס לתוך העיר יותר מחבירו ונראית כניסתו פגומה מבחוץ ויש בית בולט ויוצא לחוץ יותר מחבירו או פגום נכנס או פגום יוצא שהיתה עיר מוקפת חומה ויש מגדלין עגולין בולטין בחומה פעמים שבולטין בפנים פעמים שבולטין בחוץ או שהיו שם לאחת הקרנות של עיר גדודיות שברי חומה של חרבות בתים וישנן בתוך שבעים אמה ושירים לעיר כדמפרש לקמן:"
+  },
+  "Rashi on Eruvin 52b:1:1": {
+    "dependsOn": [
+      "Eruvin 52b:1",
+      "Rashi on Eruvin 52a:17:4",
+      "Tosafot on Eruvin 52b:1:1",
+      "Versions on Eruvin 52b:1",
+      "Rashi on Eruvin 52a:16:1",
+      "Rashi on Eruvin 52a:16:2",
+      "Eruvin 52a:13",
+      "Rashi on Eruvin 52a:13:1",
+      "Rabbeinu Chananel on Eruvin 52b:1",
+      "Rosh on Eruvin 52b:1",
+      "Steinsaltz on Eruvin 52b:1",
+      "Maharsha on Eruvin 52b:3:1",
+      "Maharsha on Eruvin 52b:3:2"
+    ],
+    "generatedAt": "2026-11-06T19:37:59.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן</strong> - בעינן החזיק בדרך ולין פה וללישנא אחרינא הכי גרסינן כמאן דסגי ליה בהכי ואע\"ג דלא אמר שביתתי במקום פלוני כרב יוסף אליבא דר' יוסי בר' יהודה לא כרבה ואליבא דרבי <span class=\"parenthesized\">(יוסי ברבי)</span> יהודה וה\"פ כמאן הוי כרב יוסף ואליבא דרבי יוסי בר' יהודה דלא בעי אלא להחזיק והאי נמי החזיק ולא אמר ומשני לא דאמר עסקינן וכרבה אליבא דר' יהודה דבעי תרתי והוא הדין נמי לרב יוסף ואליבא דרבי יהודה אלא אליבא דרבה עדיפא ליה לאוקמי משום דרבה ורב יוסף הילכתא כרבה לבר מתלת שדה ענין ומחצה:"
+  },
+  "Rashi on Eruvin 52b:4:1": {
+    "dependsOn": [
+      "Eruvin 52b:4",
+      "Rashi on Eruvin 52b:4:2",
+      "Rashi on Eruvin 52a:16:1",
+      "Rashi on Eruvin 52a:16:2"
+    ],
+    "generatedAt": "2026-11-06T19:48:24.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק</strong> - בפרק בכל מערבין <span class=\"parenthesized\">(לעיל עירובין לה.)</span> נתגלגל חוץ לתחום נשרף מבעוד יום אינו עירוב משחשיכה הרי זה עירוב ספק מבעוד יום ספק משחשיכה ר' מאיר ור' יהודה אומרים כו' אלמא כל ספיקא חמר גמל הוא ומתני' נמי ספיקא הוא וללישנא בתרא הכי קשיא ליה תנינא חדא זימנא לר\"מ דהיכא דעירב במקום שאינו עירוב הוה חמר גמל:"
+  },
+  "Rashi on Eruvin 52b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:4:1"
+    ],
+    "generatedAt": "2026-11-06T19:50:21.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תימא</strong> - התם הוא דספק עירב וקנה שם שביתה וספק לא עירב וקנה בביתו הוא דהוי חמר גמל אבל היכא דודאי לא עירב כגון חוזר זה שהיה לו לערב בפת שקרוב לביתו היה. ל\"א שהיה לו לומר שביתתי במקום פלוני לא הוי חמר גמל דאין כאן ספק אלא לגמרי נתכוון אביתו ויהא כאנשי עירו:"
+  },
+  "Rashi on Eruvin 52b:5:1": {
+    "dependsOn": [
+      "Eruvin 52b:5",
+      "Rashi on Eruvin 52b:4:1",
+      "Rashi on Eruvin 52b:4:2"
+    ],
+    "generatedAt": "2026-11-06T19:52:42.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אפילו ודאי לא עירב</strong> - שלא אמר שביתתי לשם נמי מחזקינן ליה בספק משום גלויי דעתא וללישנא בתרא דפרשינן דרבי מאיר עשיר משוי ליה ואפילו הכי הוי חמר גמל ולא כבני עירו ש\"מ דאפילו במקום שאין ספק כגון נתגלגל חוץ לתחום מבעוד יום דודאי לאו עירוב הוא אפילו הכי לרבי מאיר חמר גמל הוא דסילק עצמו בכוונתו מאלפים של צד שני לביתו וההיא סתמא דקתני התם מבעוד יום אינו עירוב דמשמע והרי הוא כבני עירו ר' יהודה היא והא דלא עריב להו ותני בהדי סיפא דקתני הרי זה חמר גמל משום דר' יהודה בסיפא מודה לר' מאיר אבל ברישא כבני עירו שוי להו ורישא ר' יהודה היא:"
+  },
+  "Rashi on Eruvin 52b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T19:53:10.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שיצא חוץ לתחום</strong> - במזיד ומדעת שלא לשם מצוה:"
+  },
+  "Rashi on Eruvin 52b:6:2": {
+    "dependsOn": [
+      "Eruvin 45a:1",
+      "Rashi on Eruvin 52b:6:1",
+      "Rashi on Eruvin 45a:1:1",
+      "Rashi on Eruvin 52b:1:1",
+      "Eruvin 45a:2",
+      "Eruvin 41b:12",
+      "Eruvin 41b:1",
+      "Eruvin 41b:11",
+      "Eruvin 41b:13"
+    ],
+    "generatedAt": "2026-11-06T19:55:37.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים יכנס</strong> - משום הבלעת תחומין כדאמרינן בפירקין <span class=\"parenthesized\">(לעיל עירובין דף מה.)</span> ר' אליעזר לטעמיה דאמר והוא באמצען:"
+  },
+  "Rashi on Eruvin 52b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:8:1",
+      "Rashi on Eruvin 52b:8:2",
+      "Rashi on Eruvin 52b:8:3",
+      "Eruvin 52b:8",
+      "Rashi on Eruvin 52b:1:1",
+      "Rashi on Eruvin 52b:4:1",
+      "Rashi on Eruvin 52b:4:2",
+      "Rashi on Eruvin 52b:5:1"
+    ],
+    "generatedAt": "2026-11-06T19:58:19.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:8:1"
+    ],
+    "sourceText": "ה\"ג הא מני אחרים היא:"
+  },
+  "Rashi on Eruvin 52b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:8:1",
+      "Rashi on Eruvin 52b:8:2",
+      "Rashi on Eruvin 52b:8:3",
+      "Jastrow, זָקַר 1"
+    ],
+    "generatedAt": "2026-11-06T19:59:04.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למקום שרובו שם הוא נזקר</strong> - ורובו בתוך התחום הוא:"
+  },
+  "Rashi on Eruvin 52b:8:3": {
+    "dependsOn": [
+      "Jastrow, זָקַר 1",
+      "Rashi on Eruvin 52b:8:1",
+      "Rashi on Eruvin 52b:8:2"
+    ],
+    "generatedAt": "2026-11-06T20:00:45.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 52b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזקר</strong> - כלומר בתר רובו שדינן ליה וכיון דלא הויא אלא רגלו אחת חוץ לתחום עדיין רובו בתוך התחום הילכך יכנס:"
+  },
+  "Tosafot on Eruvin 52b:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:12:1",
+      "Rashi on Eruvin 52b:12:2",
+      "Maharsha on Eruvin 52b:2"
+    ],
+    "generatedAt": "2026-11-06T20:08:34.637Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 52b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי תניא ההיא למודד</strong> - שאפילו כלה מדתו במערה לא יכנס אמה אחת יותר ופ\"ה לא נראה והא דלא קאמר כי תניא להחשיך אמה חוץ לתחום לא יכנס דמילתא דפשיטא הוא דאין לו לצאת חוץ לתחומו אבל בכלה למערה איצטריך לאשמועינן:"
+  },
+  "Tosafot on Eruvin 52b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T20:16:59.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 52b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד מעברין פגום נכנס</strong> - פי' ר\"ח פגום נכנס בנין העשוי כעין שובך כדאמרי' בזה בורר <span class=\"parenthesized\">(סנהדרין דף כה:)</span> גבי מפריחי יונים משישברו את פגמיהם ומיהו שובך ממש אין מתעבר עם העיר כדאמרינן בגמ':"
+  },
+  "Tosafot on Eruvin 52b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 52b:1:1",
+      "Eruvin 52b:1",
+      "Maharsha on Eruvin 52b:1:1",
+      "Maharsha on Eruvin 52b:1:2",
+      "Rashi on Eruvin 52a:16:1",
+      "Rashi on Eruvin 52a:16:2",
+      "Tosafot on Eruvin 52a:14:1"
+    ],
+    "generatedAt": "2026-11-06T19:40:56.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 52b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן כרב יוסף ואליבא דרבי יוסי</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> דמאע\"פ דייק דמשמע דמוחזק מלקנות שביתה ואם כן לא אמר אי נמי הכי דייק אי בעי תרתי דהחזיק וגם אמירה א\"כ לימא הילכתא כרבי יהודה דבין לרב יוסף ובין לרבה לרבי יהודה בעי תרתי:"
+  },
+  "Tosafot on Eruvin 52b:3:1": {
+    "dependsOn": [
+      "Eruvin 52b:3",
+      "Eruvin 51b:6"
+    ],
+    "generatedAt": "2026-11-06T19:42:28.788Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 52b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא חדא זימנא</strong> - דכל ספיקא לר\"מ חמר גמל הוא ומתניתין נמי ספיקא הוא וקשה דמההיא היכא הויא שמעינן דהוי הכא ספק לרבי מאיר ואומר ר\"י דפריך דהוה ליה למיתני כל שיכול וכו' ספק וממילא ידענא דהוי חמר גמל ומשני דה\"א דהיכא דודאי לא עירב כי הכא לא הוי חמר גמל דאפילו אם הוה תנן ספק הוה מפרשינן ספק אם חשוב בכך עני כשאר בא בדרך אם לאו ולכך לא קנה עירוב דודאי עני אמרו שמערב ברגליו במקום פלוני ולא בספק עני ודינו כודאי עשיר ויהיה כבני עירו קא משמע לן:"
+  }
+}

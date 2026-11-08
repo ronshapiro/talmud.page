@@ -1,0 +1,315 @@
+{
+  "Rashi on Eruvin 98a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:55:53.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם כתבי הקדש עיוני מעייני בהו</strong> - כי מטי באסקופה והרי עומד בכרמלית:"
+  },
+  "Rashi on Eruvin 98a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:10:1",
+      "Eruvin 98a:11"
+    ],
+    "generatedAt": "2026-11-07T15:56:46.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא</strong> - נפיל כוליה לרה\"ר ושקיל ליה ומעיין ביה התם ומעייל להו להדיא לבית ולא קאי אאיסקופה מידי:"
+  },
+  "Rashi on Eruvin 98a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:57:21.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהלך כעומד דמי</strong> - הלכך ליכא למיגזר מידי דאי נפיל כוליה ומעייל ליה כיון דדריס על האיסקופה הרי הוא כעומד בכרמלית ואין כאן חיוב חטאת:"
+  },
+  "Rashi on Eruvin 98a:11:2": {
+    "dependsOn": [
+      "Shabbat 6a:12",
+      "Shabbat 6a:13",
+      "Shabbat 5b:10",
+      "Shabbat 5b:11",
+      "Shabbat 5b:12",
+      "Shabbat 6a:1",
+      "Shabbat 6a:2",
+      "Shabbat 6a:3",
+      "Shabbat 6a:4",
+      "Shabbat 6a:5",
+      "Shabbat 6a:6",
+      "Shabbat 6a:7",
+      "Shabbat 6a:8",
+      "Shabbat 6a:9"
+    ],
+    "generatedAt": "2026-11-07T15:58:57.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דא\"ר יוחנן</strong> - בפ\"ק דשבת <span class=\"parenthesized\">(דף ו.)</span> דזורק לאו כעומד דמי:"
+  },
+  "Rashi on Eruvin 98a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:59:18.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להפוך</strong> - יריעת קלף על פניה להגין עליה שלא יעלה אבק על האותיות:"
+  },
+  "Rashi on Eruvin 98a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:59:57.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אפשר</strong> - שאין לו בגד לפרוס:"
+  },
+  "Rashi on Eruvin 98a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T16:01:27.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא נח</strong> - ואפי' שבות ליכא:"
+  },
+  "Rashi on Eruvin 98a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:15:1"
+    ],
+    "generatedAt": "2026-11-07T16:02:01.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכותל משופע</strong> - דכיון דבולט למטה נח על בליטתו:"
+  },
+  "Rashi on Eruvin 98a:1:1": {
+    "dependsOn": [
+      "Eruvin 98a:1",
+      "Rashi on Eruvin 98a:1:1",
+      "Rashi on Eruvin 98a:1:2"
+    ],
+    "generatedAt": "2026-11-07T15:40:14.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מני</strong> - מתני' דלא גזר:"
+  },
+  "Rashi on Eruvin 98a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:40:58.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"ש היא דאמר</strong> - לא גזרו שבות בכתבי הקדש דאי ר' יהודה הא אמר אם מסולק מן הארץ מלא החוט דלא נח הוא דגוללו אצלו דליכא למגזר מידי דלא דמי לנפילה כלל אבל הונח כל דהו אסור דגזרינן איגודו בידו אטו היכא דנפל כוליה:"
+  },
+  "Rashi on Eruvin 98a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:41:39.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנדרסת</strong> - לעולם איסקופה רה\"י היא אבל נדרסת דרגל הרבים עוברת דרך לה ובמקום דדריסת רגלי בני אדם עומדין איכא בזיון כתבי הקדש ולהכי שריוה לגוללו אצלו דלא דמיא לקורא בגג דהתם ליכא בזיון כולי האי משום הכי היכא דנח גזר רבי יהודה אבל בהא מודה דכיון דאוגדו בידו ושבות בעלמא הוא לא גזרינן:"
+  },
+  "Rashi on Eruvin 98a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:4:1",
+      "Rashi on Eruvin 98a:4:2",
+      "Eruvin 98a:4",
+      "Eruvin 98a:1",
+      "Eruvin 97b:19",
+      "Tosafot on Eruvin 98a:4:1",
+      "Steinsaltz on Eruvin 98a:4",
+      "Maharshal on Eruvin 98a:3",
+      "Chokhmat Shlomo on Eruvin 98a:1",
+      "Rashi on Eruvin 98a:3:1",
+      "Rashba on Eruvin 98a:2",
+      "Ritva on Eruvin 98a:2"
+    ],
+    "generatedAt": "2026-11-07T15:43:52.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך ארבע אמות</strong> - אקורא על האסקופה קאי ולא ידענא היכא הוא תוך ארבע אמות שלא נתגלגל הספר עד ארבע אמות בקרקע:"
+  },
+  "Rashi on Eruvin 98a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:4:1",
+      "Eruvin 98a:4",
+      "Maharshal on Eruvin 98a:2"
+    ],
+    "generatedAt": "2026-11-07T15:44:45.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לי חוץ לארבע</strong> - הא כולה שבות היא דאוגדו בידו ומה לי מעביר ד' אמות ברשות הרבים מה לי מכניס מרשות הרבים לאיסקופה רשות היחיד דהא קשרית לה משום דאוגדו בידו ויש כאן משום בזיון וכי היכי דשרית להכניס מרשות הרבים לאיסקופה הכי נמי אית לן למישרי להעביר ד' אמות ברה\"ר:"
+  },
+  "Rashi on Eruvin 98a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T15:45:38.417Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איסקופה כרמלית</strong> - רחבה ארבעה ואין גובהה עשרה וחוצה לה רשות הרבים ולפנים הימנה רשות היחיד:"
+  },
+  "Rashi on Eruvin 98a:6:1": {
+    "dependsOn": [
+      "Eruvin 98a:6"
+    ],
+    "generatedAt": "2026-11-07T15:50:08.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומייתי ליה</strong> - מרה\"ר לאיסקופה אין כאן חיוב חטאת ואפילו אין אוגדו בידו דהא מרשות הרבים לכרמלית מעייל הכא דאוגדו בידו שרי ליה לכתחלה:"
+  },
+  "Rashi on Eruvin 98a:7:1": {
+    "dependsOn": [
+      "Eruvin 98a:7",
+      "Rashi on Eruvin 98a:6:1"
+    ],
+    "generatedAt": "2026-11-07T15:51:05.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב חטאת</strong> - שמעביר ארבע אמות ברה\"ר הכא דאוגדו בידו לא שרו ליה לכתחלה:"
+  },
+  "Rashi on Eruvin 98a:8:1": {
+    "dependsOn": [
+      "Eruvin 98a:8",
+      "Rashi on Eruvin 98a:8:2"
+    ],
+    "generatedAt": "2026-11-07T15:51:54.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמי נגזר</strong> - לרבי יהודה דגזר שבות אף בכתבי הקדש נגזר דילמא נפל כוליה מידו ואזיל ושקיל ליה ברשות הרבים ומייתי ליה ברגליו בתוך הבית דרך האיסקופה וקא מעייל מרשות הרבים לרשות היחיד:"
+  },
+  "Rashi on Eruvin 98a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:8:1"
+    ],
+    "generatedAt": "2026-11-07T15:52:51.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא וכו' דרך עליו</strong> - למעלה מראשו שעקרו מרשות הרבים והוליכו דרך למעלה מראשו והניחו לסוף ארבע חייב ואע\"ג דאוירא מקום פטור דגבוה ואין בו מקום רוחב ארבע אלמא כיון דלא נח במקום פטור לא מהני הכא נמי לא מהני כיון דלא נח באיסקופה אע\"ג דדריס עלה לאו הנחת גופו הוא אלא א\"כ עמד לפוש:"
+  },
+  "Rashi on Eruvin 98a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:9:1",
+      "Eruvin 98a:9",
+      "Rashi on Eruvin 98a:8:1",
+      "Rashi on Eruvin 98a:8:2"
+    ],
+    "generatedAt": "2026-11-07T15:55:29.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 98a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באיסקופה ארוכה</strong> - שיש לה משך גדול ברחבה מרשות הרבים עד תוך הבית דאי נמי נפיל כוליה מידו לא אתי לידי חיוב חטאת דאדהכי נזכר ועומד לפוש על האיסקופה והדר מעייל ליה:"
+  },
+  "Tosafot on Eruvin 98a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:14:1"
+    ],
+    "generatedAt": "2026-11-07T16:00:41.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא לא אפשר</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> משום דאין לו בגד מזומן ובחנם פי' כן דאפי' יש לו מאותו טעם דאסור לגוללו אצלו אסור לפרוש שום בגד:"
+  },
+  "Tosafot on Eruvin 98a:15:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 98a:4:1",
+      "Tosafot on Eruvin 98a:5:1",
+      "Tosafot on Eruvin 98a:8:1",
+      "Tosafot on Eruvin 98a:14:1",
+      "Tosafot on Shabbat 4a:1:1"
+    ],
+    "generatedAt": "2026-11-07T16:03:55.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא נח</strong> - הוה מצי לאוקמא כר\"ע דאית ליה קלוטה כמי שהונחה דמיא אלא ניחא ליה לאוקמא אפי' כרבנן ואע\"ג דאם הוציא ידו מליאה פירות לחוץ אמר בריש מסכת שבת <span class=\"parenthesized\">(דף ג:)</span> דאסור להחזירה לא דמי להכא דהתם גזרינן גופו ברה\"י וידו ברה\"ר אטו גופו וידו ברה\"ר דאז איכא איסורא דאורייתא אי הדר מעייל לה דהרי נח אבל הכא אפי' הוה כוליה ספר התם אכתי לא נח:"
+  },
+  "Tosafot on Eruvin 98a:4:1": {
+    "dependsOn": [
+      "Eruvin 98a:4"
+    ],
+    "generatedAt": "2026-11-07T15:45:16.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי אמרת באיסקופה הנדרסת מה לי תוך ארבע אמות מה לי חוץ לארבע אמות</strong> - משום דקאי עליה דרבה מקשי לרבה והוא הדין דהאי פירכא נמי הויא לרב יהודה דאוקי רישא כר\"ש:"
+  },
+  "Tosafot on Eruvin 98a:5:1": {
+    "dependsOn": [
+      "Eruvin 98a:5",
+      "Tosafot on Eruvin 98a:4:1",
+      "Tosafot on Eruvin 98a:8:1",
+      "Tosafot on Eruvin 97a:2:1"
+    ],
+    "generatedAt": "2026-11-07T15:49:25.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר אביי הכא באיסקופת כרמלית עסקינן</strong> - וא\"ת והא לא מפליג אביי בין כרמלית לרה\"ר לקמן <span class=\"parenthesized\">(עירובין צט.)</span> גבי לא יעמוד אדם ברה\"י וישתה ברה\"ר ואיבעיא להו כרמלית מאי ואמר אביי היא היא ואין לומר דדוקא בכתבי הקדש שרי הכא משום בזיון אבל בשאר מילי אסור דלקמן <span class=\"parenthesized\">(עירובין דף קג.)</span> משמע דליכא שבות כלל באיסקופה כרמלית גבי דחותכין יבלת דקאמר ולאו מי אוקימנא באיסקופה כרמלית ורה\"ר לפניה וכיון דאגודו בידו אפילו שבות נמי ליכא משמע דאי הוי שבות לא הוה שרינן גבי כתבי הקדש משום דשבות דמקדש במדינה לא התירו ואור\"י דגבי שתיה שייך למיגזר טפי שמא יביא אצלו וכן מחט התחובה לו בבגדו דאסרינן לצאת בה מבעוד יום שמא יצא משחשיכה דמייתי לה אההיא דלקמן בפ\"ק דשבת <span class=\"parenthesized\">(עירובין דף יא:)</span> בהנהו שייך למגזר טפי גזירה לגזירה מההיא דהכא וא\"ת כיון דפרישית דספר דהכא לאו דוקא מאי איריא דנקט ספר משאר מילי ולפי ההוא לישנא דמסקינן דסתם כתבי הקדש עיוני מעיין בהו ניחא דספר הוי דווקא וי\"ל דנקט ספר לאשמועינן דבראש הגג לא יגלול אצלו לאפוקי מדרבי שמעון דאמר שאין לך דבר משום שבות עומד בפני כתבי הקדש:"
+  },
+  "Tosafot on Eruvin 98a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 98a:8:2"
+    ],
+    "generatedAt": "2026-11-07T15:54:39.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 98a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר רבא המעביר חפץ מתחלת ארבע לסוף ארבע והעבירו דרך עליו חייב</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דרך עליו למעלה מיו\"ד שהוא מקום פטור ותימה לר\"י דאדמייתי מדרבא הוה ליה לאיתויי מת\"ק דבן עזאי דאמר בפ\"ק דשבת <span class=\"parenthesized\">(דף ה:)</span> המוציא מחנות לפלטיא דרך סטיו חייב דהיינו דרך מקום פטור וע\"כ שמיע ליה ההיא ברייתא דבסמוך מייתי מילתא דבן עזאי וכן קשה לקמן <span class=\"parenthesized\">(עירובין צט.)</span> גבי עומד אדם ברה\"י ומטלטל ברה\"ר ובלבד שלא יוציא חוץ לד' אמות וקאמר בגמרא הא הוציא חייב חטאת לימא מסייע לרבא דאמר המעביר חפץ כו' ופירש שם <span class=\"rashi-quotation\">הקונטרס</span> דמתני' נמי מיירי בעומד על הגג שלמעלה מי' דהוי כעין ההיא דרבא דאיירי במעביר דרך עליו וקשה לפירושו דגג מאן דכר שמיה דרשות היחיד קתני במתני' ולא גג וע\"ק דבפ\"ק דשבת <span class=\"parenthesized\">(דף ח:)</span> גבי עומד אדם על האיסקופה כו' מסיק ובלבד שלא יטול מבעל הבית ויתן לעני ומעני ויתן לבעל הבית ואם נטל ונתן שלשתן פטורין וקאמר ליהוי תיובתא דרבא דאמר רבא המעביר חפץ כו' ומאי קושיא ה\"ל למימר דרבא סבר כרבנן דבן עזאי לכך נראה לר\"י לפרש דרך עליו כפי' ר\"ח שפירש בפ\"ק דשבת דרך עליו היינו מימינו לשמאלו דהוה סלקא דעתך דמעביר מצד ימינו לשמאלו דרך גופו דהוי חשובה כמונחת אפ\"ה חייב דחשובה כמהלכת דהא מהלכת היא והשתא אתי שפיר דההיא עומד אדם על האיסקופה דהכא ודלקמן איירי שעומד במקום אחד ואינו זז ממקומו ומעביר מכאן לכאן דרך גופו ואיירי <span class=\"parenthesized\">(לקמן)</span> כגון שמשלים ארבע על ידי זריקה ולהכי לא מייתי אלא מדרבא אע\"ג דידע לברייתא דבן עזאי:"
+  }
+}

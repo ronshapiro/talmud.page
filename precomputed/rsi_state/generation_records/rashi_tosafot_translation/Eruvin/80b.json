@@ -1,0 +1,490 @@
+{
+  "Rashi on Eruvin 80b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:08:44.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מב' מינין</strong> - שעירב בשניה ממין אחר:"
+  },
+  "Rashi on Eruvin 80b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:10:1"
+    ],
+    "generatedAt": "2026-11-06T09:09:34.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריך להודיע</strong> - וקא סלקא דעתך והוא הדין לנתמעט:"
+  },
+  "Rashi on Eruvin 80b:11:1": {
+    "dependsOn": [
+      "Jastrow, מָעַט 1",
+      "Steinsaltz on Eruvin 80b:11"
+    ],
+    "generatedAt": "2026-11-06T09:12:14.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמטמט</strong> - כלה לגמרי:"
+  },
+  "Rashi on Eruvin 80b:12:1": {
+    "dependsOn": [
+      "Eruvin 80b:12",
+      "Rashi on Eruvin 80b:11:1",
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 80b:5:1",
+      "Rashi on Eruvin 80b:10:1",
+      "Rashi on Eruvin 80a:1:1",
+      "Rashi on Eruvin 80a:3:1",
+      "Rashi on Eruvin 80a:4:1"
+    ],
+    "generatedAt": "2026-11-06T09:14:06.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעית אימא מב' מינין</strong> - ודוקא נקט נתמעט ודקא קשיא לך מברייתא כלה שאני דברייתא כלה דווקא נקט אבל נתמעט אפילו מב' מינין אין צריך להודיע:"
+  },
+  "Rashi on Eruvin 80b:13:1": {
+    "dependsOn": [
+      "Eruvin 80b:13",
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:2",
+      "Rashi on Eruvin 80b:14:3",
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 80b:4:2",
+      "Rashi on Eruvin 80b:5:1",
+      "Rashi on Eruvin 80b:5:2",
+      "Rashi on Eruvin 80b:5:3",
+      "Steinsaltz on Eruvin 80b:13:1"
+    ],
+    "generatedAt": "2026-11-06T09:15:29.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת אומרת חלוקין כו'</strong> - דלא תימא האי במה דברים אמורים לפרושי אתי:"
+  },
+  "Rashi on Eruvin 80b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:2",
+      "Rashi on Eruvin 80b:14:3"
+    ],
+    "generatedAt": "2026-11-06T09:16:25.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים</strong> - דצריך דעת:"
+  },
+  "Rashi on Eruvin 80b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:14:2",
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:3",
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 80b:10:1"
+    ],
+    "generatedAt": "2026-11-06T09:17:49.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירובי תחומין</strong> - שמא אין נוח לו לקנות כאן כדי להפסיד לרוח שכנגדה:"
+  },
+  "Rashi on Eruvin 80b:14:3": {
+    "dependsOn": [
+      "Eruvin 80b:14",
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:2",
+      "Rashi on Eruvin 80b:14:3"
+    ],
+    "generatedAt": "2026-11-06T09:18:35.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דשמעינן מינה דחלוקין דהא בעירובי חצירות נקיט ואתי וקתני צריך להודיעו:"
+  },
+  "Rashi on Eruvin 80b:15:1": {
+    "dependsOn": [
+      "Eruvin 80b:15",
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:2",
+      "Rashi on Eruvin 80b:14:3"
+    ],
+    "generatedAt": "2026-11-06T09:19:43.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא</strong> - לעולם רבי יהודה בההוא מפרש הוא ומתניתין דהכא בחצר שבין שני מבואות דלא ידעינן בהי ניחא ליה:"
+  },
+  "Rashi on Eruvin 80b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:20:05.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותו לא</strong> - בתמיה כ\"ש דטפי מהכי הוו מרובין:"
+  },
+  "Rashi on Eruvin 80b:17:1": {
+    "dependsOn": [
+      "Eruvin 80b:17",
+      "Rashi on Eruvin 80b:17:1",
+      "Rashi on Eruvin 80b:17:2",
+      "Rashi on Eruvin 80b:17:3"
+    ],
+    "generatedAt": "2026-11-06T09:21:08.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידי מיפרשא לי מיניה דאבא</strong> - דלקולא קתני בזמן שהם מרובים דגרוגרת דידהו הוי יותר מב' סעודות סגי בב' סעודות ולא בעינן גרוגרת לכל חד וחד כשהן מועטים דלא מטי גרוגרת דידהו לב' סעודות סגי בגרוגרת לכל אחד ולקולא:"
+  },
+  "Rashi on Eruvin 80b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:21:49.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שאילו מחלק מזון ב' סעודות ביניהן ואין גרוגרת לכל א'</strong> - שיש בהן בני אדם יותר ממנין גרוגרות של שתי סעודות מרובין נינהו ותנן במתני' דלא בעי כגרוגרת לכל אחד אלא כשיש בו מזון שתי סעודות סגי:"
+  },
+  "Rashi on Eruvin 80b:17:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:17:1",
+      "Rashi on Eruvin 80b:17:2"
+    ],
+    "generatedAt": "2026-11-06T09:22:40.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי לא</strong> - שאין מנינם רב כמנין גרוגרות של שתי סעודות לא בעי שתי סעודות אלא כגרוגרת לכל אחד היינו פירוש דמתניתין ורב יהודה דנקט שמנה עשרה ולא תנא כדאמרינן אגב אורחיה דבעי לפרושי מתני' נקט חושבנא ולאשמעינן דמזון שתי סעודות הוו שמנה עשרה גרוגרות:"
+  },
+  "Rashi on Eruvin 80b:19:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:19:2",
+      "Rashi on Eruvin 80b:19:3",
+      "Rashi on Eruvin 80b:19:4"
+    ],
+    "generatedAt": "2026-11-06T09:26:38.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר</strong> - שלם:"
+  },
+  "Rashi on Eruvin 80b:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:19:1",
+      "Rashi on Eruvin 80b:19:3"
+    ],
+    "generatedAt": "2026-11-06T09:27:14.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאפה סאה</strong> - שאפה סאה בככר אחד ונטל ממנו מעט ושוייה פרוסה אין מערבין בה וטעמא מפרש בגמרא:"
+  },
+  "Rashi on Eruvin 80b:19:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:19:1",
+      "Rashi on Eruvin 80b:19:2",
+      "Rashi on Eruvin 80b:19:3",
+      "Rashi on Eruvin 80b:19:4",
+      "Eruvin 80b:19",
+      "Rashi on Eruvin 80b:14:1",
+      "Rashi on Eruvin 80b:14:2"
+    ],
+    "generatedAt": "2026-11-06T09:28:24.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר</strong> - קטן כמדת איסר:"
+  },
+  "Rashi on Eruvin 80b:19:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:19:1",
+      "Rashi on Eruvin 80b:19:2",
+      "Rashi on Eruvin 80b:19:3"
+    ],
+    "generatedAt": "2026-11-06T09:28:55.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא שלם מערבין בו</strong> - ובלבד שיהיו שם ככרות הרבה כגרוגרת לכל אחד ואחד:"
+  },
+  "Rashi on Eruvin 80b:1:1": {
+    "dependsOn": [
+      "Eruvin 80b:1",
+      "Rashi on Eruvin 80a:23:1",
+      "Rashi on Eruvin 80a:23:2",
+      "Eruvin 80a:23"
+    ],
+    "generatedAt": "2026-11-06T08:49:16.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם דליכא מחיצות</strong> - ומבוי מגולה הוא ואינו נוח לשומרו הילכך כופין אותו אבל להתיר בטלטול לעולם אימא לך דבעינן דעת:"
+  },
+  "Rashi on Eruvin 80b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:4:2",
+      "Rashi on Eruvin 80b:1:1"
+    ],
+    "generatedAt": "2026-11-06T08:51:17.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כ\"ש לחי</strong> - דאין לו שיעור לרחבו ועוביו:"
+  },
+  "Rashi on Eruvin 80b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 79b:6:1",
+      "Rashi on Eruvin 81a:1:1",
+      "Tosafot on Eruvin 79a:2:1"
+    ],
+    "generatedAt": "2026-11-06T08:52:35.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל קורה</strong> - צריכה טפח לקבל אריח ובריאה כדי לקבל אריח והאי אשירה כיון דבעי שריפה דכתיב <span class=\"parenthesized\">(דברים יב)</span> ואשריהם תשרפון באש שיעורה לאו שיעורא היא דכשרופה דמיא:"
+  },
+  "Rashi on Eruvin 80b:5:1": {
+    "dependsOn": [
+      "Eruvin 80b:19"
+    ],
+    "generatedAt": "2026-11-06T08:56:22.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמעט האוכל</strong> - משיעורו ולקמן מפרש שיעורא במתני':"
+  },
+  "Rashi on Eruvin 80b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T08:57:42.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו צריך להודיע</strong> - שהרי כולן נתרצו בתחלה:"
+  },
+  "Rashi on Eruvin 80b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:5:1",
+      "Rashi on Eruvin 80b:5:2",
+      "Eruvin 80b:6",
+      "Eruvin 80b:8",
+      "Eruvin 80b:9"
+    ],
+    "generatedAt": "2026-11-06T08:59:14.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך להודיע</strong> - לדיורין שניתוספו אם דעתן בעירוב וכגון שמערב משלהן וטעמא פרישית לעיל ותרתי קתני מוסיף ומזכה אם משלו מערב וצריך להודיע אם משלהן מערב:"
+  },
+  "Rashi on Eruvin 80b:6:1": {
+    "dependsOn": [
+      "Eruvin 80b:6"
+    ],
+    "generatedAt": "2026-11-06T08:59:45.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרובין ומועטין</strong> - מפרש בגמרא:"
+  },
+  "Rashi on Eruvin 80b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:7:2",
+      "Rashi on Eruvin 80b:5:1",
+      "Rashi on Eruvin 80b:6:1",
+      "Rashi on Eruvin 80a:1:1",
+      "Rashi on Eruvin 80a:2:1",
+      "Rashi on Eruvin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-06T09:00:43.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שירי עירוב</strong> - שנתמעט משעורו:"
+  },
+  "Rashi on Eruvin 80b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:7:1",
+      "Rashi on Eruvin 80b:7:2",
+      "Chokhmat Shlomo on Eruvin 80b:1",
+      "Eruvin 80b:5",
+      "Eruvin 80b:6",
+      "Eruvin 80b:7",
+      "Rashi on Eruvin 80b:5:1",
+      "Rashi on Eruvin 80b:5:2",
+      "Rashi on Eruvin 80b:5:3"
+    ],
+    "generatedAt": "2026-11-06T09:01:56.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שהוא</strong> - אין צריך להוסיף [ורבי יוסי פליג את\"ק]:"
+  },
+  "Rashi on Eruvin 80b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 80b:8:2",
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 80b:5:1",
+      "Chokhmat Shlomo on Eruvin 80b:1"
+    ],
+    "generatedAt": "2026-11-06T09:03:04.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרו לערב בחצרות</strong> - לאחר שנשתתפו:"
+  },
+  "Rashi on Eruvin 80b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:05:08.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שלא לשכח</strong> - תורת עירובי חצירות מהתינוקות הבאין הלכך מקילינן ביה:"
+  },
+  "Rashi on Eruvin 80b:9:1": {
+    "dependsOn": [
+      "Eruvin 80b:9",
+      "Rashi on Eruvin 80b:9:2",
+      "Eruvin 80b:7"
+    ],
+    "generatedAt": "2026-11-06T09:06:06.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי עסקינן</strong> - דקתני בנתמעט אין צריך להודיע הא כלה לגמרי צריך להודיע אם בא לערב:"
+  },
+  "Rashi on Eruvin 80b:9:2": {
+    "dependsOn": [
+      "Eruvin 80b:9",
+      "Rashi on Eruvin 80b:9:1",
+      "Rashi on Eruvin 80b:9:2"
+    ],
+    "generatedAt": "2026-11-06T09:06:52.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 80b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במין אחד</strong> - שחוזר ומערב מן המין הראשון:"
+  },
+  "Tosafot on Eruvin 80b:10:1": {
+    "dependsOn": [
+      "Eruvin 80b:10",
+      "Rashi on Eruvin 80b:10:1",
+      "Rashi on Eruvin 80b:10:2"
+    ],
+    "generatedAt": "2026-11-06T09:11:26.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בב' מינין אפילו נתמעט נמי דתניא כו'</strong> - ס\"ד דכלה דנקט בברייתא משום מין א' נקטיה דאפילו בכלה אין צריך להודיע:"
+  },
+  "Tosafot on Eruvin 80b:18:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 80b:5",
+      "Chokhmat Shlomo on Eruvin 80b:6",
+      "Chokhmat Shlomo on Eruvin 80b:7",
+      "Chidushei Halachot on Eruvin 80b:3",
+      "Tosafot on Eruvin 80b:1:1",
+      "Tosafot on Eruvin 80b:4:1",
+      "Tosafot on Eruvin 80b:10:1",
+      "Tosafot on Yoma 80a:5:1"
+    ],
+    "generatedAt": "2026-11-06T09:25:56.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב אורחא קמ\"ל דב' סעודות הויין י\"ח גרוגרות</strong> - הקשה ר\"ת דבפרק כיצד משתתפין <span class=\"parenthesized\">(לקמן דף פנ:)</span> תנן רבי שמעון אומר ב' ידות לככר משלש לקב דהיינו שיעור שתי סעודות ה' ביצים ושליש ביצה שהככר הוא ח' ביצים כשתחלק י\"ת גרוגרות לחמש ביצים ושליש ביצה דזה וזה הוי שיעור שתי סעודות תמצא לכל ביצה שלש גרוגרות וג' שמינית של גרוגרות דבחמש ביצים ושליש ביצה יש י\"ו שלישי ביצה וגרוגרת גדולה מכזית כדמוכח בריש המצניע <span class=\"parenthesized\">(שבת דף צא.)</span> ובתורת כהנים קתני ובפרק בתרא דיומא <span class=\"parenthesized\">(דף פ.)</span> דשיערו חכמים דאין בית הבליעה מחזקת יותר מכ. ביצת תרנגולת ובכריתות פרק. אמרו לו <span class=\"parenthesized\">(דף יד.)</span> אמרינן גבי יש אוכל אכילה אחת כו' דאין בית הבליעה מחזיק יותר מב' זיתים ואע\"ג דפליגי תנאי לקמן אכר' שמעון כר\"ש קי\"ל דבכל דוכתי אמר כביצה לטמא טומאת אוכלין דהיינו כר\"ש כדקתני לקמן בגמ' <span class=\"parenthesized\">(דף פג.)</span> וחצי [חצי] חציה לטמא טומאת אוכלין ולר\"ש עולה השיעור כביצה אבל לשאר תנאי אינו כן ואכולהו תנאי קאי כדמוכח הסוגיא לקמן ואומר ר\"י דלכולהו תנאי הוי כביצה לטמא אוכלים והא דקתני לקמן בברייתא וחצי חצי חציה כו' לא קאי אר\"מ ואר' יהודה אלא ארבי שמעון ור' יוחנן בן ברוקה שהזכירו שיעור ככר תדע דהא קתני בברייתא בגמ' כמה שיעור חצי פרס שתי ביצים חסר קימעא דברי ר' יהודה משמע דקאי בשיטתיה דר\"ש דחשיב חצי חציה לפסול את הגוויה בשתי ביצים והשתא לא קשה מידי דבשתי סעודות של עירוב לא קי\"ל כר\"ש אלא כר\"מ או כרבי יהודה כדמוכח לקמן דרב יוסף ורנה כר\"מ בריש כיצד משתתפין <span class=\"parenthesized\">(לקמן עירובין דף פב.)</span> ותרתי ריפתא נמי דקאמר רב יהודה ורב אדא בר אהבה היינו כר\"מ או כר' יהודה:"
+  },
+  "Tosafot on Eruvin 80b:1:1": {
+    "dependsOn": [
+      "Eruvin 80b:1",
+      "Rashi on Eruvin 80b:1:1"
+    ],
+    "generatedAt": "2026-11-06T08:50:44.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם דאיכא מחיצה</strong> - פר\"ת דין הוא דכופין אותו לעשות לחי וקורה דמהני מחיצות להתיר לטלטל בתוכו אע\"פ שנעשו בעל כרחו של ארם ולא דמי לעירוב דבין הוה משום דירה ובין משום קנין אין לו להועיל בעל כרחו של ארם ו<span class=\"rashi-quotation\">בקונטרס</span> לא פירש כן ובספרים דגרס שאני התם דליכא מחיצות יש לפרש כן דכי ליכא מחיצות דאסור לטלטל בתוכו דין הוא שנכוף אותו לעשות תקנה להתיר לטלטל אבל אין לנו לכופו לעשות תקנה לטלטל מן הבתים ומן החצירות לתוכו:"
+  },
+  "Tosafot on Eruvin 80b:4:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 80b:1:1",
+      "Tosafot on Eruvin 2a:10:1",
+      "Maharsha: Chidushei Halachot on Eruvin 80b:2",
+      "Rashi on Eruvin 80b:4:1",
+      "Rashi on Eruvin 80b:4:2",
+      "Eruvin 80b:4"
+    ],
+    "generatedAt": "2026-11-06T08:55:48.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 80b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל קורה כתותי מכתת שיעוריה</strong> - אע\"ג דלחי נמי בעי שיעור גובה וגם רוחב משהו מיהא בעי מכל מקום כיון דלא בעי אלא שיעור זוטא לא החמירו בו וה\"ר אברהם פירש לחי אם היה מדבק הכתיתים בכותל הוי לחי ובלבד שלא יהו ניטלות ברוח ואין להקשות מהא דפסלינן לולב של אשירה אפילו ביו\"ט שני דמשמע דכמאן דליתיה דמי דגבי לולב של מצוה החמירו וא\"ת דמכשרינן לעיל סולם של אשירה אע\"ג דבעי רחב ד' ולא אמר מיכתת שיעורא כמו קורה ואור\"י דהתם חשיב פתח כיון דחזי לעלייה אי לאו איסורא דאשירה אבל קורה הצריכו חכמים שיעורא של חשיבות:"
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "Rashi on Eruvin 66b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:33:38.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוך שאוסרין</strong> - אם לא עירבה פנימית לעצמה דהויא רגל האסורה במקומה אפי' רבנן מודו דאוסרת שלא במקומה:"
+  },
+  "Rashi on Eruvin 66b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:10:1"
+    ],
+    "generatedAt": "2026-11-07T21:34:00.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבטלין</strong> - דריסת רגלם לחיצונה ומותרין בני חיצונה לעצמן:"
+  },
+  "Rashi on Eruvin 66b:11:1": {
+    "dependsOn": [
+      "Eruvin 66b:11",
+      "Rashi on Eruvin 66b:11:1",
+      "Rashi on Eruvin 66b:11:2"
+    ],
+    "generatedAt": "2026-11-07T21:34:34.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופעמים אין מבטלין</strong> - ואע\"ג דאוסרין:"
+  },
+  "Rashi on Eruvin 66b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:11:1",
+      "Rashi on Eruvin 66b:11:3"
+    ],
+    "generatedAt": "2026-11-07T21:35:18.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו את עירובן בחיצונה</strong> - כן דרך כשמערבין שתי חצירות יחד עירוב שעירבו חצר זה לעצמה להתיר דיורין שבתוכה מוליכין לתוך חבירתה ואין עושין עירוב אחר:"
+  },
+  "Rashi on Eruvin 66b:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:11:1",
+      "Rashi on Eruvin 66b:11:2",
+      "Rashi on Eruvin 66b:11:4"
+    ],
+    "generatedAt": "2026-11-07T21:36:15.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתיהן אסורות</strong> - ולא מהני להו ביטול וטעמא מפרש לקמן ואזיל:"
+  },
+  "Rashi on Eruvin 66b:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:11:1",
+      "Rashi on Eruvin 66b:11:2",
+      "Rashi on Eruvin 66b:11:3",
+      "Rashi on Eruvin 66b:11:4",
+      "Rashi on Eruvin 66b:11:5",
+      "Rashi on Eruvin 66b:11:6"
+    ],
+    "generatedAt": "2026-11-07T21:36:44.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו עירובן בפנימית</strong> - בני חיצונה מוליכין עירוב שביניהן המתירן לחצירן ונתנוהו לתוך הפנימית:"
+  },
+  "Rashi on Eruvin 66b:11:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:11:4",
+      "Rashi on Eruvin 66b:11:5",
+      "Rashi on Eruvin 66b:11:6"
+    ],
+    "generatedAt": "2026-11-07T21:37:25.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתיהן אסורות</strong> - ואין ביטול מועיל:"
+  },
+  "Rashi on Eruvin 66b:11:6": {
+    "dependsOn": [
+      "Eruvin 66b:11",
+      "Rashi on Eruvin 66b:11:1",
+      "Rashi on Eruvin 66b:11:2",
+      "Rashi on Eruvin 66b:11:3",
+      "Rashi on Eruvin 66b:11:4",
+      "Rashi on Eruvin 66b:11:5",
+      "Rashi on Eruvin 66b:11:6",
+      "Rashi on Eruvin 66b:15:1",
+      "Rashi on Eruvin 66b:15:2",
+      "Rashi on Eruvin 66b:15:3",
+      "Rashi on Eruvin 66b:16:1",
+      "Rashi on Eruvin 66b:16:2"
+    ],
+    "generatedAt": "2026-11-07T21:38:25.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנימית מותרת</strong> - על ידי ביטול שביטלו להן אותן בני חיצונה שנתנו עירובן לתוכה והרגילה עירובן להיחשב כדיורי פנימית ואוסרין עליהם משום דהויא רגל האסורה במקומה בשביל ההוא דשכח ולא עירב ואוסרת שלא במקומה הואיל והרגילה העירוב שם ומודה שמואל בהא דמבטלין אותו הרגל שהרגילו עירובן לתוך הפנימית ומשתריא פנימית לעצמה:"
+  },
+  "Rashi on Eruvin 66b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:2",
+      "Rashi on Eruvin 66b:14:3",
+      "Rashi on Eruvin 66a:5:1",
+      "Rashi on Eruvin 66a:5:2",
+      "Rashi on Eruvin 66b:5:1",
+      "Rashi on Eruvin 66b:5:2",
+      "Rashi on Eruvin 66b:5:3",
+      "Rashi on Eruvin 66a:9:1"
+    ],
+    "generatedAt": "2026-11-07T21:40:36.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי בר פנימית</strong> - ששכח ולא נתן בעירוב למאן ניבטיל:"
+  },
+  "Rashi on Eruvin 66b:14:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:3",
+      "Eruvin 66b:14"
+    ],
+    "generatedAt": "2026-11-07T21:41:18.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליבטיל לבני פנימית</strong> - רשות חצירו דתיהוי פנימית מיהא שריא לעצמה וחיצונה תיאסר מפני דריסת רגלו של זה שאסורה במקומה:"
+  },
+  "Rashi on Eruvin 66b:14:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:2"
+    ],
+    "generatedAt": "2026-11-07T21:41:56.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתא לעירובייהו גבייהו</strong> - ולכשיבדלו מן החיצונה הרי הן בלא עירוב וכולן אוסרין זה על זה:"
+  },
+  "Rashi on Eruvin 66b:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:15:1",
+      "Rashi on Eruvin 66b:15:2",
+      "Rashi on Eruvin 66b:15:3",
+      "Eruvin 66b:15",
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:2",
+      "Rashi on Eruvin 66b:14:3"
+    ],
+    "generatedAt": "2026-11-07T21:45:35.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליבטיל</strong> - נמי דריסת רגלו לבני חיצונה ורשותו לבני חיצונה דאסתלק ליה לגמרי והרי כולן מותרין:"
+  },
+  "Rashi on Eruvin 66b:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:15:1",
+      "Rashi on Eruvin 66b:15:3"
+    ],
+    "generatedAt": "2026-11-07T21:46:11.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא פנימית דאסרה עלה</strong> - שהרי בטל העירוב בשביל זה והוי לה פנימית רגל האסורה במקומה דליתיה לעירובה לגבה:"
+  },
+  "Rashi on Eruvin 66b:15:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:15:1",
+      "Rashi on Eruvin 66b:15:2",
+      "Eruvin 66b:14"
+    ],
+    "generatedAt": "2026-11-07T21:47:04.760Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ביטול רשות</strong> - מבן חצר זו לבן חצר אחרת לשמואל ואע\"ג דאסר עלייהו ואי קשיא ליבטלו בני פנימית רשות חצירן לגבי האי דלא עירב ויהא הוא רגל המותר במקומו דהא יחיד הוא ואינו אוסר על חיצונה ותשתרי חיצונה לאו מילתא היא דהא דכיון דבטלי רשותייהו לגביה הוי להו אינהו רגל האסורה במקומה כדתנן נתנו לו רשותן הוא מותר והן אסורין ואסרי החיצונה ואע\"ג דעירבו בהדה הא בטיל עירובייהו מכי איסתלקו להו מרשותא דפנימית ונהי דאין להן רשות להוציא מבתיהן לחצר מ\"מ דריסת הרגל יש להן בפנימית ובחיצונה וא\"ת יבטלו אף דריסת רגלם לחיצונה אין ביטול רשות מחצר לחצר:"
+  },
+  "Rashi on Eruvin 66b:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:16:1",
+      "Rashi on Eruvin 66b:16:2",
+      "Rashi on Eruvin 66b:16:3",
+      "Eruvin 66b:15",
+      "Rashi on Eruvin 66b:15:1",
+      "Rashi on Eruvin 66b:15:2",
+      "Rashi on Eruvin 66b:15:3",
+      "Steinsaltz on Eruvin 66b:16",
+      "Rashba on Eruvin 66b:4",
+      "Ritva on Eruvin 66b:4",
+      "Eruvin 66b:14",
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:2",
+      "Rashi on Eruvin 66b:14:3"
+    ],
+    "generatedAt": "2026-11-07T21:48:50.833Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליבטיל לבני פנימית</strong> - אף לבני פנימית:"
+  },
+  "Rashi on Eruvin 66b:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:16:1",
+      "Rashi on Eruvin 66b:16:3",
+      "Rashi on Eruvin 66a:1:1",
+      "Rashi on Eruvin 66a:2:1"
+    ],
+    "generatedAt": "2026-11-07T21:49:38.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי בר פנימית למאן ניבטיל כו' איכא חיצונה דאסרה עלה</strong> - שעירוב מרגילה לתוכה:"
+  },
+  "Rashi on Eruvin 66b:16:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:16:1",
+      "Rashi on Eruvin 66b:16:2"
+    ],
+    "generatedAt": "2026-11-07T21:50:16.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ביטול רשות מחצר לחצר</strong> - כלומר אין ביטול רשות מבן חצר זו לבן חצר אחרת כיון דפנימית אסורה חיצונה נמי אסורה מפני רגל האסורה במקומה שאוסרת עליה ועוד שאין עירובה אצלה:"
+  },
+  "Rashi on Eruvin 66b:1:1": {
+    "dependsOn": [
+      "Eruvin 66b:1",
+      "Rashi on Eruvin 66a:8:1"
+    ],
+    "generatedAt": "2026-11-07T21:22:07.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו דאתא בשבתא</strong> - אלמא ביטול רשות לא תקון אלא היכא דחזו לערובי מאתמול:"
+  },
+  "Rashi on Eruvin 66b:2:1": {
+    "dependsOn": [
+      "Eruvin 66b:2",
+      "Rashi on Eruvin 66b:2:2"
+    ],
+    "generatedAt": "2026-11-07T21:24:12.809Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא שמעתא</strong> - דשמואל דאמר בשתי חצירות זו לפנים מזו שיוכל לבטל דריסת רגלם לחיצונה:"
+  },
+  "Rashi on Eruvin 66b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:24:29.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את אמרת ניהלן</strong> - רב יוסף חלה ושכח תלמודו וקא מדכר ליה אביי תלמידו:"
+  },
+  "Rashi on Eruvin 66b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:24:58.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין ביטול רשות בחורבה</strong> - בית מכאן ובית מכאן וחורבה ביניהן וב' הבתים פתוחים לה ואסור להשתמש בה אא\"כ עירבו אין מבטלין רשותן זה לזה להתיר את האחד להכניס ולהוציא מביתו לחורבה דלא שרו רבנן ביטול רשות אלא בחצר שלפני הבית דאקילו בה רבנן דהוי עיקר תשמישתייהו התם:"
+  },
+  "Rashi on Eruvin 66b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:25:36.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוך שאוסרין</strong> - בני פנימית על בני חיצונה משום דריסת הרגל מבטלין להם דריסת רגלם אם לא עירבו בני פנימית אפילו לעצמה דהויא רגל האסורה במקומה ואוסרת שלא במקומה עד שתבטל:"
+  },
+  "Rashi on Eruvin 66b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:26:11.433Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנא אמינא משמיה דשמואל הכי</strong> - בתמיה:"
+  },
+  "Rashi on Eruvin 66b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:5:1",
+      "Rashi on Eruvin 66b:5:2",
+      "Rashi on Eruvin 66b:5:3"
+    ],
+    "generatedAt": "2026-11-07T21:27:23.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר שמואל אין לנו בעירובין</strong> - להוסיף היתר:"
+  },
+  "Rashi on Eruvin 66b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:5:1",
+      "Rashi on Eruvin 66b:5:2",
+      "Rashi on Eruvin 66b:5:3",
+      "Eruvin 66b:5",
+      "Rashi on Eruvin 66a:7:1",
+      "Rashi on Eruvin 66a:8:1"
+    ],
+    "generatedAt": "2026-11-07T21:28:27.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כלשון משנתנו</strong> - ובמשנתנו <span class=\"parenthesized\">(דף סט:)</span> תנן אנשי חצר ששכח אחד מהם כו' נתנו לו רשותן כו' אלמא בחד חצר תנן ביטול ולא בשתי חצרות והאי סיומא דאנשי חצר ולא אנשי חצירות לאו שמואל קאמר לה אלא רב יוסף קא דייק לה ממילתא דשמואל:"
+  },
+  "Rashi on Eruvin 66b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T21:28:50.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהמבוי לחצירות כחצר לבתים</strong> - במתניתין דפירקין היא וקא דייק שמואל בלישנא דחצירות ובתים ויליף מיניה לקמן דלא מיקרי מבוי להיות ניתר בלחי וקורה עד שיהיו בתים וחצירות פתוחין לתוכו שתי חצירות למבוי ושני בתים לחצר:"
+  },
+  "Rashi on Eruvin 66b:8:1": {
+    "dependsOn": [
+      "Eruvin 66b:8"
+    ],
+    "generatedAt": "2026-11-07T21:33:14.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 66b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל חורבא דחדא תשמישתא לתרוייהו</strong> - ואסרי אהדדי אימא ליבטלו:"
+  },
+  "Tosafot on Eruvin 66b:11:1": {
+    "dependsOn": [
+      "Eruvin 66b:11"
+    ],
+    "generatedAt": "2026-11-07T21:39:05.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד נתנו עירובן בחיצונה כו' שתיהן אסורות</strong> - וא\"ת אביי היכי פליג עליה ואמר יש בטול מחצר לחצר הא בהדיא תנא הכי לקמן בסוף פירקין וי\"ל דאביי הוה מפרש שתיהן אסורות עד שיבטל:"
+  },
+  "Tosafot on Eruvin 66b:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 66b:14:1",
+      "Rashi on Eruvin 66b:14:2",
+      "Rashi on Eruvin 66b:14:3",
+      "Tosafot on Eruvin 66b:14:2",
+      "Eruvin 66b:14"
+    ],
+    "generatedAt": "2026-11-07T21:42:50.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו עירובן בחיצונה כו' האי בר פנימית למאן ניבטיל</strong> - הא פשיטא לן דכולן יכולין לבטל אצלו דהוא מותר למקומן ורבא לא איירי אלא בשריותא דהנך דעירבו:"
+  },
+  "Tosafot on Eruvin 66b:14:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 66b:14:1",
+      "Tosafot on Eruvin 65b:15:1"
+    ],
+    "generatedAt": "2026-11-07T21:44:18.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליבטיל לבני פנימית ליתא לעירובייהו גבייהו</strong> - דכיון שאין יכול לבטל לבני חיצונה משום שאין ביטול רשות מחצר לחצר לא מצי שקלי בני פנימית לעירובייהו בחיצונה דאסרי עלייהו ולא דמי להא דאמרינן במי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מח:)</span> רשות אחת משתמש לשתי רשויות ואין שתי רשויות משתמשות לרשות אחת מפרש ר\"ת דכשנתנה אמצעית עירובה בזו ובזו מותרת עם שתיהן ושתיהן אסורות עמה דהתם כל חיצונה וחיצונה לעצמה מותרת במקומה אבל הכא דבני חיצונה נמי אסרי במקומן מפני הפנימית שלא עירבו דאוסרת עליהם אתו אינהו נמי ואסרי חצירן נמי לבני הפנימית כמו שעירבו עמהם ובטל עירובן:"
+  },
+  "Tosafot on Eruvin 66b:1:1": {
+    "dependsOn": [
+      "Eruvin 66b:1",
+      "Rashi on Eruvin 66a:8:1",
+      "Rashi on Eruvin 66a:9:1",
+      "Rashi on Eruvin 66b:1:1",
+      "Maharsha on Eruvin 66b:8:1"
+    ],
+    "generatedAt": "2026-11-07T21:23:23.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו דאתא בשבתא</strong> - להכי חשיב אין מערבין אפי' עירבו מאתמול לפי שאין הנכרי אוסר כי ליתיה כרבי יהודה מכל מקום כשבא הנכרי נתבטל העירוב לגמרי ושוב אינו חוזר למקומו אע\"פ שחזרו ושכרו ממנו אוסרין ואין מערבין קרינא ביה:"
+  },
+  "Tosafot on Eruvin 66b:6:1": {
+    "dependsOn": [
+      "Eruvin 74a:6-10",
+      "Eruvin 74a:1-5",
+      "Eruvin 73b:18-20",
+      "Maharsha on Eruvin 66b:4:1",
+      "Eruvin 74a:10-18",
+      "Eruvin 74b:1-3",
+      "Tosafot on Eruvin 74a:1:1",
+      "Tosafot on Eruvin 74a:1:2",
+      "Rashi on Eruvin 74a:1:2",
+      "Tosafot on Eruvin 12b:16:1",
+      "Rashi on Eruvin 66b:6:1",
+      "Maharsha on Eruvin 66b:8:1"
+    ],
+    "generatedAt": "2026-11-07T21:32:43.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 66b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהמבוי לחצירות כחצר לבתים</strong> - דייקינן מינה בסוף פירקין דאין מבוי ניתר בלחי וקורה עד שיהו בתים וחצירות פתוחים לתוכו שתי חצירות למבוי ושני בתים לחצר ומיהו בההוא שמעתא קאמר שמואל אפילו בית אחד וחצר אחת וחד מינייהו באחריתא:"
+  }
+}

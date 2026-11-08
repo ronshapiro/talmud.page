@@ -1,0 +1,253 @@
+{
+  "Rashi on Eruvin 90b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:57:16.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשתמצא לומר</strong> - כשתעמוד על סוף דעתן זהו גמר דבריהן:"
+  },
+  "Rashi on Eruvin 90b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:10:1",
+      "Rashi on Eruvin 90b:10:2",
+      "Rashi on Eruvin 90b:10:3"
+    ],
+    "generatedAt": "2026-11-07T07:58:04.539Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדברי ר\"מ גגין רשו לעצמן</strong> - ומטלטלין מגגו של ראובן לגגו של שמעון:"
+  },
+  "Rashi on Eruvin 90b:10:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:10:1",
+      "Rashi on Eruvin 90b:10:2"
+    ],
+    "generatedAt": "2026-11-07T07:58:41.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחצירות רשות לעצמן</strong> - ומטלטלין מחצירו של ראובן לחצירו של שמעון כלים ששבתו בחצר וכן מחצר של רבים לחצר של רבים:"
+  },
+  "Rashi on Eruvin 90b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:33:05.821Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להבריח מים</strong> - ולא לדירה:"
+  },
+  "Rashi on Eruvin 90b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:3:2",
+      "Rashi on Eruvin 90b:1:1"
+    ],
+    "generatedAt": "2026-11-07T07:34:41.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומודה רב שאם כפאה על פיה</strong> - וגובהה יותר מעשרה אין מטלטלין בה אלא בארבע:"
+  },
+  "Rashi on Eruvin 90b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:36:06.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא מגג יחידי</strong> - דאמר רב אפילו לרבנן מותר לטלטל בכולו ואפילו יותר מבית סאתים דכיון דמחיצות לדירה נעשו אע\"פ שלא לדירת מעלה עשאום כי אמרינן בהו גוד אסיק הוי כהיקף לדירה ה\"נ כיון דכפאה לדור כפייתה זו היא עשיית מחיצתה לדירת מטן כי אמרת בהו גוד אסיק הוי היקף לדירה:"
+  },
+  "Rashi on Eruvin 90b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:36:41.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכפאה לזפתה</strong> - שבטל מחיצותיה מתורת דירה דאינן עומדות כל זמן כפייתה לא לדירת מעלן ולא לדירת מטן והוו כעמוד בעלמא וכי אמרת בהו גוד אסיק הוי היקף יותר מבית סאתים שלא הוקף לדירה וכרמלית היא:"
+  },
+  "Rashi on Eruvin 90b:5:1": {
+    "dependsOn": [
+      "Eruvin 90b:5",
+      "Rashi on Eruvin 90b:5:2"
+    ],
+    "generatedAt": "2026-11-07T07:38:34.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתני לה</strong> - להא דרב חייא בר יוסף אאכסדרה:"
+  },
+  "Rashi on Eruvin 90b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:39:17.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכסדרה בבקעה</strong> - הבקעה כרמלית כדאמרינן ביציאות השבת <span class=\"parenthesized\">(שבת ו:)</span> ואכסדרה זו פרוצה מד' רוחותיה ועומד קירויה על ד' יתידות ונותנין ד' קורות מיתד ליתד ועליהן מסדרין הנסרין ואותן הקורות קרי פי תקרה והאי דנקט בקעה משום דבעיר סתם אכסדראות סמוכות להקיף בית או חצר ואיכא מחיצה אחת או שתים ומודה שמואל התם דמטלטלין כדאמרינן לקמן:"
+  },
+  "Rashi on Eruvin 90b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:41:18.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב אליבא דר\"מ</strong> - כיון דאמר בגגין השוין מטלטלין בכולן אלמא לאו כרמלית נינהו ליטלטל מגג לחצר אלמה אמרינן לקמן לדברי ר\"מ גגין רשות לעצמן חצירות רשות לעצמן דאין מטלטלין מגג לחצר ואליבא דרבנן בגג יחידי ליכא למיפרך ליה לרב ליטלטל מיניה לחצר דלרבנן הכי נמי שרי דאמרי' לקמן <span class=\"parenthesized\">(עירובין צא.)</span> לדברי חכמים גגין וחצירות רשות אחת ומטלטלין מגג יחידי לחצר של רבים שיש לו רשות בה ולשמואל לא מצי למיפרך אליבא דר' מאיר ליטלטל מגג לחצר דהא שמואל גגין השוין לר' מאיר כרמלית משוי להו לפיכך אין מטלטלין מהן לחצר של רבים דהויא רשות היחיד דאפילו לא עירבה קי\"ל במס' שבת בפ' אם לא הביא כלי <span class=\"parenthesized\">(דף קל:)</span> דמטלטלין בכולה והא דאמר לקמן לדברי חכמים גגין וחצירות רשות אחת שמואל מוקי לה בגג בין הגגין דלשמואל דאית ליה גוד אסיק במחיצות שביניהן ליכא לכל אחד יותר מבית סאתים א\"נ בגג יחידי דליכא יותר מבית סאתים ואשמעינן אע\"ג דגג לרבנן רשות מיוחדת וחצר הוא רשות שותפות מטלטלין דלא גזור רבנן מרה\"י לרשות שותפין אלא בבתים כגון מבית לחצר:"
+  },
+  "Rashi on Eruvin 90b:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:7:1",
+      "Eruvin 89a:8",
+      "Rashi on Eruvin 89a:8:1"
+    ],
+    "generatedAt": "2026-11-07T07:42:58.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דרב יצחק</strong> - בריש פירקין גזירה משום תל ברה\"ר:"
+  },
+  "Rashi on Eruvin 90b:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 90b:1",
+      "Chidushei Halachot on Eruvin 90b:4",
+      "Chidushei Halachot on Eruvin 90b:5"
+    ],
+    "generatedAt": "2026-11-07T07:51:39.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אליבא דרבנן</strong> - בגג יחידי יותר מבית סאתים כיון דאמר דהאי גוד אסיק לא הוי היקף לדירה וכרמלית היא ליטלטל מיניה לקרפף יותר מבית סאתים שתי אמות בזה וב' אמות בזה אלמה אמרי' לקמן לדברי חכמים גגין וחצירות רשות אחת וקרפיפות רשות אחת דאין מטלטלין מהן לקרפף ואליבא דר\"מ ליכא למיפרך ליטלטל מגג לקרפף דהא תרוייהו כרמלית נינהו דהא גג יחידי יותר מבית סאתים אוקימנא גזירה משום תל ברה\"ר ולרב נמי אליבא דרבנן ליכא למיפרך דהא רב גג יחידי יותר מבית סאתים רה\"י משוי ליה ובגגין השוין לרב אליבא דרבי מאיר דמותר לטלטל בכולן ליכא למיפרך ליטלטל מינייהו לקרפף פחות מסאתים גזירה משום תל ולרבנן מגג יחידי אליבא דרב דמשוי ליה רה\"י נמי לא פרכינן ליטלטל מיניה לקרפף פחות מבית סאתים וכן מחצר לקרפף בין לר\"מ בין לרבנן משום דקרפף חלוק מחצר דקרפף מוקצה לתשמיש שאינו תדיר אבל חצר וגגין שוה תשמישן ולרב לא פרכינן בגגין השוין לרבנן דמשוי להו רב אליבייהו כרמלית ליטלטל מינייהו לקרפף יותר מבית סאתים דאע\"ג דמשוי להו רב כרמלית מפני שפרוצין זה לזה ה\"מ להחמיר לאסור טלטול של כל אחד ואחד ביותר מד' אבל לא משוי ליה כרמלית גמורה להקל לטלטל מתוכן לכרמלית גמורה דאמרן לעיל לגבי גג בין הגגין לרב דאסור לטלטל ממנו לחורבה ולאכסדרה ואע\"ג דשניהן אסורין לטלטל בתוכן אלא בד' אמות מ\"מ הואיל ואין רשותייהו דומות דגג חזי לדירה טפי מחצר ואכסדרה לטלטל ממנו לחורבה ולאכסדרה וכ\"ש הכא דגג חזי לדירה טפי מקרפף אבל לשמואל דמשוי גג יחידי כרמלית גמור דיותר מבית סאתים הוא פרכינן:"
+  },
+  "Rashi on Eruvin 90b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:8:1"
+    ],
+    "generatedAt": "2026-11-07T07:52:42.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזירה שמא יפחת הגג</strong> - ויחסר מבית סאתים ויקצרו גם את הבית למדת הגג מלמטה ויתנו המחיצה כנגד שפת הגג דהשתא ליכא יותר מבית סאתים והוי רה\"י ואתי לטלטולי מיניה לקרפף כמעיקרא:"
+  },
+  "Rashi on Eruvin 90b:9:1": {
+    "dependsOn": [
+      "Eruvin 90b:9",
+      "Rashi on Eruvin 90b:8:1",
+      "Rashi on Eruvin 90b:8:2",
+      "Rashi on Eruvin 90b:9:2",
+      "Ritva on Eruvin 90b:2",
+      "Rashba on Eruvin 90b:1"
+    ],
+    "generatedAt": "2026-11-07T07:56:03.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ה מקרפף</strong> - יותר מבית סאתים לקרפף יותר מבית סאתים נמי לא ליטלטל אפילו בתוך ד' דילמא מפחית חד מינייהו והוי רה\"י מעלייתא ואתי לטלטולי כמעיקרא מיני לחורבה והוי כרמלית:"
+  },
+  "Rashi on Eruvin 90b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:9:1",
+      "Rashi on Eruvin 90b:8:1"
+    ],
+    "generatedAt": "2026-11-07T07:56:52.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מיפחית לא מינכרא מילתא</strong> - כיון דליכא מחיצות על הגג לא מינכרא מילתא ולא מיחזי כפחות מבית סאתים דבר שאין לו מחיצות לא סליק ליה אומדנא שפיר וסברי אכתי טפי מבית סאתים הוא:"
+  },
+  "Tosafot on Eruvin 90b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:00:15.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדברי ר\"מ גגין רשות אחת הן כו'</strong> - גגין הוא בפירוש במתני' וה\"ה חצירות או קרפיפות הואיל ותשמישן שוה כמו גגין אבל בתים לא דתשמישן תדיר ועוד דכי היכי דלרבנן הוי קרפיפות או חצירות רשות אחת דהא אפילו גג וחצר הוי רשות אחת כ\"ש חצר וחצר ה\"נ לר\"מ דר\"מ לא פליג ארבנן אלא בגג וחצר משום דרב יצחק בר אבדימי:"
+  },
+  "Tosafot on Eruvin 90b:1:1": {
+    "dependsOn": [
+      "Eruvin 43a:1"
+    ],
+    "generatedAt": "2026-11-07T07:34:05.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא איכא מחיצתא</strong> - ואפילו לר' זירא דאמר בריש מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מג.)</span> מחיצות להבריח מים עשויות היינו דוקא לענין יוצא חוץ לתחום דלא שרי להלך את כולה:"
+  },
+  "Tosafot on Eruvin 90b:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:7:1",
+      "Rashi on Eruvin 90b:7:2",
+      "Maharshal on Eruvin 90b:4:1",
+      "Maharshal on Eruvin 90b:5:1",
+      "Tosafot on Eruvin 90b:1:1"
+    ],
+    "generatedAt": "2026-11-07T07:45:01.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב אליבא דר\"מ ליטלטל מגג לחצר</strong> - לשמואל אליבא דר' מאיר לא מצי למיפרך <span class=\"rashi-quotation\">כדפי' בקונטרס</span> דלשמואל גגין השוין לר\"מ הוי כרמלית לפיכך אין מטלטלין מהן לחצר ופחות מבית סאתים נמי אע\"ג דלא הוי כרמלית מ\"מ כיון דחשיב ליה לשמואל אין מוקף לדירה ליכא למיפרך דליטלטל מגג לחצר אע\"ג דלרבנן בגג יתר מבית סאתים אסור לטלטל ממנו לחצר לשמואל בפחות מבית סאתים שרי מ\"מ יאמר שמואל דלר\"מ יש לגג תורת קרפף בין ביתר מבית סאתים בין בפחות:"
+  },
+  "Tosafot on Eruvin 90b:7:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 90b:7:1",
+      "Rashi on Eruvin 90b:7:1",
+      "Rashi on Eruvin 90b:7:2",
+      "Eruvin 89a:8"
+    ],
+    "generatedAt": "2026-11-07T07:46:13.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטלטל מגג לחצר</strong> - אע\"ג דידע טעמא דר\"מ דגג גבוה ונמוך דהוי משום דרב יצחק בר אבדימי מגג לחצר עניניהם חלוקים ס\"ד דלא דמו לתל ברה\"ר:"
+  },
+  "Tosafot on Eruvin 90b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90b:8:1",
+      "Rashi on Eruvin 90b:8:2",
+      "Eruvin 90b:8",
+      "Rashi on Eruvin 90b:9:1"
+    ],
+    "generatedAt": "2026-11-07T07:54:26.196Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשמואל אליבא דרבנן לטלטל מגג לקרפף</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> בגג יתר מבית סאתים לקרפף יתר מבית סאתים כיון דחשיב ליה אין מוקף לדירה והוו תרווייהו כרמלית וא\"ת ומנא ליה דאסור דאי משום דאמרי רבנן לקמן דגגין וחצירות רשות אחת וקרפיפות רשות אחת התם ע\"כ באין יתירים מבית סאתים כדפירש בסמוך <span class=\"rashi-quotation\">בקונטרס</span> דביתירים לא יאמר ר\"ש דחצר וקרפף רשות אחת דבהדיא מוכח בפ' עושין פסין <span class=\"parenthesized\">(לעיל עירובין דף כג:)</span> גבי נזרע רובו דקרפף יתר מבית סאתים לר\"ש הוי כרמלית ונראה לר\"י דבגג דלא הוי יתר מבית סאתים פריך דליטלטל לקרפף שאינו יתר מבית סאתים לרבנן אע\"ג דדירת גג חשיב טפי משל קרפף שמותר לטלטל מגג לחצר ומקרפף לחצר אסור מ\"מ הוי לן למישרי מגג לקרפף דטפי דמי לקרפף מלחצר דכשהוא יתר מבית סאתים הוי כרמלית כמו קרפף וחצר אפילו בית עשרה כורים שריא ומשני גזירה שמא יפחת פי' שמא יפחת הגג באמצעיתו וישתמשו בני הבית על הגג דרך הפחת ואז הוי הגג חשוב מוקף לדירה ואסור לטלטל ממנו לקרפף כמו מחצר אע\"ג דהוי מוקף ולבסוף פתח דלא חשיב מוקף לדירה דדוקא בקרפף שלא הוקף לדירה לא מהני הוקף ולבסוף פתח אבל בגג דבלאו הכי חשיב קצת מוקף לדירה דהא מותר לטלטל ממנו לחצר מהני ליה הפחת לשוויה מוקף לדירה לגמרי כחצר ופריך א\"ה מקרפף בית סאתים לקרפף בית סאתים נמי לא ליטלטל שמא יפחת פירוש יפרוץ האחד יתר מעשר במילואו לרה\"ר או לבקעה ומשום דנקט לשון פחת גבי גג נקט נמי האי לישנא גבי פירצת קרפף ומשני התם אי פחות מינכר אבל הכא גג לא מינכרא מילתא לעומד בקרפף ולעומד על הגג נמי לא מינכרא שיהא אסור לטלטל ממנו לקרפף מחמת פחת זה:"
+  }
+}

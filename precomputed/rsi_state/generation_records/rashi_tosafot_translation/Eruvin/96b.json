@@ -1,0 +1,323 @@
+{
+  "Rashi on Eruvin 96b:10:1": {
+    "dependsOn": [
+      "Eruvin 96b:10",
+      "Rashi on Eruvin 96b:9:1",
+      "Rashi on Eruvin 96b:9:2",
+      "Rashi on Eruvin 96b:10:1",
+      "Rashi on Eruvin 96b:10:2",
+      "Rashi on Eruvin 96b:10:3"
+    ],
+    "generatedAt": "2026-11-07T14:27:09.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגלימא טוואתיה</strong> - לארוג מהן טלית ולא לעשות מהן ציצית:"
+  },
+  "Rashi on Eruvin 96b:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:10:1",
+      "Rashi on Eruvin 96b:10:2",
+      "Rashi on Eruvin 96b:10:3",
+      "Eruvin 96b:10",
+      "Rosh on Menachot, Hilchot Tzitzit, Making Tzitzit 1"
+    ],
+    "generatedAt": "2026-11-07T14:31:24.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שזרנהו</strong> - טוואם:"
+  },
+  "Rashi on Eruvin 96b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T14:31:44.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשזורים</strong> - שאין דרך לארגם:"
+  },
+  "Rashi on Eruvin 96b:11:1": {
+    "dependsOn": [
+      "[",
+      "Jastrow, שָׁזַר 1",
+      "Rashi on Eruvin 96b:11:2",
+      "Eruvin 96b:10",
+      "Rashi on Eruvin 96b:10:1",
+      "Rashi on Eruvin 96b:10:2",
+      "Rashi on Eruvin 96b:10:3",
+      "Steinsaltz on Eruvin 96b:11"
+    ],
+    "generatedAt": "2026-11-07T14:33:46.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשיפתא דגלימא</strong> - שכן דרך להסך שזורים בשפתו שהוא גדיל ונקרא בלע\"ז צימוש\"י והחוטים נקראים אורי\"ל:"
+  },
+  "Rashi on Eruvin 96b:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:11:1",
+      "Jastrow, שָׁזַר 1",
+      "["
+    ],
+    "generatedAt": "2026-11-07T14:35:22.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במופסקין דכולי האי לא טרח</strong> - לחזור ולקשרם ולהסך אותן:"
+  },
+  "Rashi on Eruvin 96b:12:1": {
+    "dependsOn": [
+      "Eruvin 96b:12",
+      "Rashi on Eruvin 95a:22:6",
+      "Rashi on Eruvin 96b:1:1",
+      "Rashi on Eruvin 96b:6:1",
+      "Rashi on Eruvin 96b:10:1"
+    ],
+    "generatedAt": "2026-11-07T14:36:52.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אדם טורח לעשות קמיע כעין תפילין</strong> - ואפ\"ה חיישינן לה במתני' דקתני חדשות פטור דילמא קמיע נינהו ולא מחללין שבתא עלייהו:"
+  },
+  "Rashi on Eruvin 96b:13:1": {
+    "dependsOn": [
+      "Eruvin 96b:13",
+      "Rashi on Eruvin 96b:9:1",
+      "Rashi on Eruvin 96b:10:1",
+      "Rashi on Eruvin 96b:11:1",
+      "Rashi on Eruvin 96a:8:3",
+      "Rashi on Eruvin 96b:1:1",
+      "Rashi on Eruvin 96b:1:2",
+      "Rashi on Eruvin 96b:6:1",
+      "Rashi on Eruvin 96b:6:2"
+    ],
+    "generatedAt": "2026-11-07T14:39:48.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוק תני להו</strong> - להנך רבנן דבי מדרשא דקשי להו בדר' אלעזר צא ושנה להם שיש בידי ברייתא דמסייע ליה ומפרשת טעמא בהדיא לפי שאין אדם טורח:"
+  },
+  "Rashi on Eruvin 96b:14:1": {
+    "dependsOn": [
+      "Jastrow, כֵּיף ² 1",
+      "Rashi on Eruvin 96b:10:1",
+      "Rashi on Eruvin 96b:10:2"
+    ],
+    "generatedAt": "2026-11-07T14:41:28.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיפי</strong> - מרגליות ל\"א נזמים וכן עיקר:"
+  },
+  "Rashi on Eruvin 96b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:1:1",
+      "Rashi on Eruvin 96b:1:2",
+      "Eruvin 96b:1",
+      "Eruvin 96b:7",
+      "Rashi on Eruvin 96b:6:1",
+      "Rashi on Eruvin 96b:7:1"
+    ],
+    "generatedAt": "2026-11-07T14:03:09.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דר' יוסי</strong> - לקמן:"
+  },
+  "Rashi on Eruvin 96b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T14:04:57.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים סומכות רשות</strong> - ואע\"ג דכתיב <span class=\"parenthesized\">(ויקרא א)</span> דבר אל בני ישראל ואמרת אליהם אדם כי יקריב מכם וסמיך ליה וסמך ידו בני ישראל סומכים ולא בנות ישראל סומכות:"
+  },
+  "Rashi on Eruvin 96b:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:3:1"
+    ],
+    "generatedAt": "2026-11-07T14:05:27.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסר בחדשות</strong> - לחלל עליהן שבת דילמא קמיע בעלמא נינהו:"
+  },
+  "Rashi on Eruvin 96b:5:1": {
+    "dependsOn": [
+      "Eruvin 96b:5",
+      "Tosafot on Eruvin 96b:5:1",
+      "Steinsaltz on Eruvin 96b:5",
+      "Rashi on Eruvin 95b:22:1",
+      "Chagigah 16b:15",
+      "Rashi on Eruvin 95b:20:1"
+    ],
+    "generatedAt": "2026-11-07T14:09:25.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים סומכות רשות</strong> - דאין כאן בל תוסיף ומשום איסורא נמי ליכא דקסבר תכשיט נינהו:"
+  },
+  "Rashi on Eruvin 96b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:6:1",
+      "Rashi on Eruvin 96b:6:2"
+    ],
+    "generatedAt": "2026-11-07T14:17:07.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מעכבין</strong> - אין ב\"ד מוזהרין למונען מלתקוע ביום טוב של ר\"ה דבעו לחנוכינהו במצות:"
+  },
+  "Rashi on Eruvin 96b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:6:1",
+      "Tosafot on Eruvin 96b:4:1",
+      "Tosafot on Eruvin 96b:5:1",
+      "Rashi on Rosh Hashanah 33a:5:2",
+      "Rosh Hashanah 29b:13",
+      "Rosh Hashanah 29b:9"
+    ],
+    "generatedAt": "2026-11-07T14:18:50.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא נשים מעכבין</strong> - אע\"ג דלא חלול י\"ט הוא כדתנא דבי שמואל <span class=\"parenthesized\">(ר\"ה דף כט:)</span> יצאה תקיעת שופר ורדיית הפת שהיא חכמה ואינה מלאכה מיהו נראות כמוסיפות:"
+  },
+  "Rashi on Eruvin 96b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T14:21:26.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם סיפרא</strong> - תורת כהנים:"
+  },
+  "Rashi on Eruvin 96b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:9:2",
+      "Steinsaltz on Eruvin 96b:9",
+      "Jastrow, לָשׁוֹן 1"
+    ],
+    "generatedAt": "2026-11-07T14:23:34.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשונות</strong> - צמר סרוק וצבוע:"
+  },
+  "Rashi on Eruvin 96b:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 96b:9:1",
+      "Rashi on Eruvin 96b:9:2"
+    ],
+    "generatedAt": "2026-11-07T14:24:02.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 96b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולות</strong> - שמא לא צבע לשם ציצית ואנן עשייה לשמן בעינן:"
+  },
+  "Tosafot on Eruvin 96b:12:1": {
+    "dependsOn": [
+      "Eruvin 96b:12",
+      "Eruvin 96b:14",
+      "Eruvin 97a:1"
+    ],
+    "generatedAt": "2026-11-07T14:38:02.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 96b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אדם טורח לעשות קמיע כמין תפילין</strong> - השתא לא מסיק אדעתיה טעמא דמקושרות ואין מקושרין דבסמוך וס\"ד דתרוייהו אין מקושרות אלא שבישנות ניכר רושם הקשר שבהם ובחדשות אינו ניכר וחיישינן בחדשות שמא קמיע היה אבל בישנות אין לחוש לקמיע דאם היה קמיע לא היה עושה קשר דכולי האי ודאי לא הוה עביד ביה כעין תפילין ואם תאמר כיון דאין מקושרות היאך מכניסן דבשבת אסור לקשור וי\"ל דס\"ד דבלא קשירה נמי הוי דרך מלבוש אי נמי עונבן אפי' לר' יהודה דס\"ד דמסתמא דעתו להתיר העניבה ולעשות קשירה גמורה ולא הוי של קיימא:"
+  },
+  "Tosafot on Eruvin 96b:4:1": {
+    "dependsOn": [
+      "Shabbat 61a:12",
+      "Shabbat 61a:13",
+      "Shabbat 61a:14",
+      "Shabbat 62a:9",
+      "Shabbat 62a:10",
+      "Shabbat 62a:11",
+      "Shabbat 62a:12",
+      "Shabbat 62a:13"
+    ],
+    "generatedAt": "2026-11-07T14:07:15.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 96b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל באשה לא פליגי</strong> - וא\"ת דילמא משום דהוי מלבוש לאיש כדאמר בפרק במה אשה <span class=\"parenthesized\">(שבת דף סא.)</span> דתפילין דרך מלבוש עביד וי\"ל דהיינו דוקא לאיש משום דרגיל ללובשן בחול אבל לאשה לא כדאמרי' התם וחלופיהן באיש דמידי דחזי לאיש לא חזי לאשה ומידי דחזי לאשה לא חזי לאיש:"
+  },
+  "Tosafot on Eruvin 96b:5:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 96b:4:1"
+    ],
+    "generatedAt": "2026-11-07T14:16:15.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 96b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ס\"ד לא ר\"מ ס\"ל כר' יוסי כו'</strong> - משמע דר\"מ ור' יהודה תרוייהו אית להו דנשים חייבות בתפילין דלאו זמן גרמא הוא ותימה דבפרק מי שמתו <span class=\"parenthesized\">(ברכות דף כ:)</span> תנן נשים ועבדים וקטנים פטורין מן התפילין ופריך עלה בגמרא פשיטא ומשני דאיצטריך משום דאיתקש תפילין למזוזה והשתא הא איצטריך לאפוקי מדר\"מ ור' יהודה וי\"ל דלמאן דחשיב תפילין זמן גרמא הוי פשיטא דנשים פטורות ומשום הכי איצטריך לשנויי טעמא דאיתקש הקשה ה\"ר יום טוב מווין היכי דייק בסמוך דר\"מ לא סבר לה כר' יוסי מכח ההיא סתמא דאין מעכבין את התינוקות מלתקוע ומתוך כך אנן צריכין לומר דההיא דפרק מי שמתו דלא כר\"מ אדרבה נימא דההוא סתמא כר\"מ דקסבר נשים פטורות והא דקתני הכא ר\"מ אחד האיש ואחד האשה משום דסבר לה כר' יוסי דאמר נשים סומכות רשות וסתם מתני' דאין מעכבין דלא כר\"מ ותירץ לו ר\"י דמה נפשך סתמא דברכות דלא כר\"מ דקא סבר ההוא מתני' דנשים סומכות לאו רשות דקתני התם נשים ועבדים וקטנים פטורים מק\"ש ותפילין וחייבין בתפלה ובבהמ\"ז ובמזוזה והנהו קטנים על כרחין בלא הגיעו לחינוך איירי דבהגיעו לחינוך בתפילין נמי חייבין כדאמר בסוף לולב הגזול <span class=\"parenthesized\">(סוכה דף מב.)</span> קטן היודע לשמור תפילין אביו חייב ליקח לו תפילין אלא בלא הגיעו לחינוך איירי ולא קאי וחייבין אקטנים אלא אנשים ועבדים ולא נקט קטנים אלא לענין פטור והא נמי אינו שום חידוש דפטירי בלא הגיע לחינוך ולא תני להו אלא לאשמועינן דנשים ועבדים כקטנים לענין תפילין דאי בעי לאנוחי לא שבקינן להו משום בזיון תפילין היכא דלא הגיעו לחינוך ועוד י\"ל דניחא ליה טפי למימר דההיא דברכות דלא כר\"מ משום דלא מיתרצא מילתיה דר\"מ דאמר זוג אין טפי לא אא\"כ סבר שבת זמן תפילין הוא כדאסיקנא לעיל אם לא נאמר דלית ליה דרב שמואל בר רב יצחק דאמר מקום יש בראש להניח בו ב' תפילין:"
+  },
+  "Tosafot on Eruvin 96b:8:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 96b:4:1",
+      "Tosafot on Eruvin 96b:5:1"
+    ],
+    "generatedAt": "2026-11-07T14:22:45.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 96b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסתם סיפרא ר' יהודה</strong> - בפ' בתרא דר\"ה <span class=\"parenthesized\">(דף לג.)</span> אית דגרסי בה דברי ר' יהודה והכא מוכח דלא גרסי' ליה:"
+  },
+  "Tosafot on Eruvin 96b:9:1": {
+    "dependsOn": [
+      "Eruvin 96b:9",
+      "Menachot 42b:15",
+      "Chokhmat Shlomo on Eruvin 96b:1"
+    ],
+    "generatedAt": "2026-11-07T14:25:18.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 96b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המוצא תכלת בשוק וכו' חוטין כשרין</strong> - כדמסיק בשזורין ומופסקין דכולי האי לא טרח וא\"ת ואע\"ג דלציצית נעשה אמאי כשירה הא אמר בפ' התכלת <span class=\"parenthesized\">(מנחות דף מב:)</span> דאין תכלת ניקחת אלא מן המומחה שיודע שטעימה פסולה אבל ממי שאינו מומחה לא דאיכא למיחש לטעימה וי\"ל דכשמצאן שזורין ומופסקין שאנו יודעים שלצורך ציצית נפסקו יש לתלות דמן המומחה נפלו דכשאינו מומחה אינו רגיל להתעסק בדבר שיודע שלא יקנו ממנו ואפי' לעצמו אינו רגיל לעשות כיון שיודע בעצמו שאינו בקי בהלכות צביעה:"
+  }
+}

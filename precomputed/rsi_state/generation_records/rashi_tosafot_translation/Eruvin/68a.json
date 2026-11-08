@@ -1,0 +1,326 @@
+{
+  "Rashi on Eruvin 68a:10:1": {
+    "dependsOn": [
+      "Eruvin 68a:10",
+      "Rashi on Eruvin 68a:10:2",
+      "Chokhmat Shlomo on Eruvin 68a:1"
+    ],
+    "generatedAt": "2026-11-07T23:07:40.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שלא ימות</strong> - דלא נחתא להו טומאה אשאר פתחים אבל משימות המת כבר נטמאו הכלים ולא אמרינן הוברר הדבר דמעיקרא נמי דעתיה לאפוקי בהאי פיתחא אלא נחתא להו טומאה ואפי' כלים הבאין <span class=\"parenthesized\">(לשאר פתחים)</span> שם לאחר מחשבה טמאים דכיון דנחתא להו טומאה תו לא סלקא מינייהו במחשבה עד דעביד להו מעשה ממש דפתח ליה להאי ומהני לטהר את האחרים מכאן ולהבא כדקתני לעיל נפתח אחד מהן כו':"
+  },
+  "Rashi on Eruvin 68a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:10:1",
+      "Tosafot on Eruvin 68a:6:2"
+    ],
+    "generatedAt": "2026-11-07T23:08:50.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב\"ה אומרים אף משימות המת</strong> - דאמרינן יש ברירה דמאתמול דעתיה בהאי פיתחא ולא נחתא טומאה לאחריני ואפי' כלים דקודם מחשבה טהורין:"
+  },
+  "Rashi on Eruvin 68a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:09:24.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נישיילה לאימיה אם צריכה</strong> - לצורכה חמין נחים ליה נכרי אגב אימיה דקי\"ל חיה אחר שבעה אפי' אמרה צריכה אני אין מחללין עליה את השבת אבל עושין לה ע\"י ארמאי:"
+  },
+  "Rashi on Eruvin 68a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:11:36.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אכלה תמרי</strong> - כלומר הא חזינן דאינה צריכה חמין לשתות דהא צונן נמי אכלה:"
+  },
+  "Rashi on Eruvin 68a:12:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 68a:12:1"
+    ],
+    "generatedAt": "2026-11-07T23:12:21.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תונבא</strong> - אשדורדישי\"ן ואוכלת ואינה יודעת מה:"
+  },
+  "Rashi on Eruvin 68a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:13:29.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנו לי מאני</strong> - בחצירו של רבא היו חמין והתינוק נשפכו חמיו בחצר אחרת ופתח ביניהן ולא עירבו שתי חצירות יחד ולרבא היו בביתו חדרים פנימיים שאינן פתוחין לחצר והן לצניעות והנשים יושבות שם ובי גברי הוה פתוח לחצר <span class=\"image-ref-container\"><span class=\"image-ref-text\">(*):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,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\"></span></span><span class=\"image-pointer\">(*)</span> ותנן במתני' המבטל רשות חצירו אסור להוציא מביתו לחצר דהא לאו דידיה הוא. הלכך פינה כליו מבי גברי כדי שלא יבא להוציא משם לחצר והלך וישב בחדרים הפנימיים וביטל רשות חצרו לבני חצר האחרת ויביאו חמין מחצירו לחצירן:"
+  },
+  "Rashi on Eruvin 68a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:42:17.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הזאה שבות ואינה דוחה שבת</strong> - ואפי' במקום מצוה כגון לשחוט פסחו כדתנן בפסחים בפרק אלו דברים <span class=\"parenthesized\">(ד סה:)</span>:"
+  },
+  "Rashi on Eruvin 68a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:3:1",
+      "Rashi on Eruvin 68a:3:2",
+      "Rashi on Eruvin 68a:3:3"
+    ],
+    "generatedAt": "2026-11-07T22:45:13.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי גברי רברבי כרבנן</strong> - כגון אתה ורבה דדייריתו ביה:"
+  },
+  "Rashi on Eruvin 68a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:45:45.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר</strong> - רבה אין כבודו לחזר על בני המבוי ולגבות:"
+  },
+  "Rashi on Eruvin 68a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:3:3",
+      "Rashi on Eruvin 68a:3:1",
+      "Rashi on Eruvin 68a:3:2"
+    ],
+    "generatedAt": "2026-11-07T22:46:29.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינהו</strong> - שאר בני המבוי לא משגחי:"
+  },
+  "Rashi on Eruvin 68a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:4:2",
+      "Rashi on Eruvin 68a:3:1",
+      "Rashi on Eruvin 68a:3:2",
+      "Rashi on Eruvin 68a:3:3",
+      "Rashi on Eruvin 68a:1:1",
+      "Rashi on Eruvin 68a:5:1"
+    ],
+    "generatedAt": "2026-11-07T22:47:24.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקני להו</strong> - משלי ריפתא בסלא בדיבורא דליכא טרחא ויהו כולן זוכין בו לשם שיתוף:"
+  },
+  "Rashi on Eruvin 68a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:4:1"
+    ],
+    "generatedAt": "2026-11-07T22:48:07.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאי בעו מינאי</strong> - אם אחד מהן היה צריך לאכול מן השיתוף והיה שואלו ממני אין יכולת בידי לוותר משלי בכל שבת לכך נמצא שאין בלבי להיות בו חלק גמור ובטל השיתוף:"
+  },
+  "Rashi on Eruvin 68a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:49:43.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שביקש יין ושמן</strong> - משל שיתוף:"
+  },
+  "Rashi on Eruvin 68a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T22:50:14.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביעתא דחלא</strong> - חומץ:"
+  },
+  "Rashi on Eruvin 68a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:6:1",
+      "Rashi on Eruvin 68a:6:3",
+      "Eruvin 68a:6"
+    ],
+    "generatedAt": "2026-11-07T22:51:26.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחביתא</strong> - באחת מחביותיך דמידי דלית ביה קפידא הוא ועיקר שיתוף ביין כדאמר בהאי פירקא <span class=\"parenthesized\">(דף עא:)</span> ויניח החבית בחצר ויסמוך על רביעית שבה לשום שיתוף לצורך כל השנה כולה שמניחין שיתוף בחצר:"
+  },
+  "Rashi on Eruvin 68a:6:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:6:1",
+      "Rashi on Eruvin 68a:6:2"
+    ],
+    "generatedAt": "2026-11-07T22:52:21.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין משתתפין באוצר</strong> - בדבר האצור כגון חבית של יין או פירות המכונסין אין סומכין על מה שבתוכן משום דאין ברירה איזהו של שיתוף וכי מסתפק ממנו איכא למימר אזל ליה שיתוף:"
+  },
+  "Rashi on Eruvin 68a:8:1": {
+    "dependsOn": [
+      "Eruvin 68a:8"
+    ],
+    "generatedAt": "2026-11-07T23:03:01.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן טמאין</strong> - כל הכלים הנתונין בעובי האסקופה טמאין ואע\"פ שאינם באהל המת מפני שאין אנו יודעין באיזו פתח יוציאנו ופתח שעתיד לצאת בו מיטמא מיד וטעמא ליכא אלא הלכות טומאה הכי גמירי לה ואפי' חלונות של טפח על טפח טמאין דכיון דכולן סתומין לא מוכחא מילתא בהי מפיק ליה:"
+  },
+  "Rashi on Eruvin 68a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:9:2",
+      "Rashi on Eruvin 68a:8:1"
+    ],
+    "generatedAt": "2026-11-07T23:03:44.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפתח אחד מהן</strong> - ודאי בההוא מפיק ליה:"
+  },
+  "Rashi on Eruvin 68a:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 68a:9:1",
+      "Rashi on Eruvin 68a:9:2",
+      "Steinsaltz on Eruvin 68a:9",
+      "Rashi on Eruvin 68a:8:1",
+      "Rashi on Eruvin 68a:10:1",
+      "Rashi on Eruvin 68a:10:2",
+      "Eruvin 68a:9"
+    ],
+    "generatedAt": "2026-11-07T23:06:27.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 68a:9:2"
+    ],
+    "sourceText": "פחות מד' על ד' אינו חשוב להציל על השאר:"
+  },
+  "Tosafot on Eruvin 68a:11:1": {
+    "dependsOn": [
+      "Tosafot on Gittin 8b:13:1"
+    ],
+    "generatedAt": "2026-11-07T23:10:34.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי צריכה ניחממו ליה אגב אימיה</strong> - פירשנו בפרק קמא דגיטין <span class=\"parenthesized\">(דף ח: ד\"ה אע\"ג)</span>:"
+  },
+  "Tosafot on Eruvin 68a:2:1": {
+    "dependsOn": [
+      "Tosafot on Gittin 8b:5:1",
+      "Eruvin 68a:2",
+      "Eruvin 68a:3",
+      "Eruvin 68a:7",
+      "Maharsha: Chidushei Halachot on Eruvin 68a:1",
+      "Maharshal: Chokhmat Shlomo on Eruvin 68a:3",
+      "Rashba on Eruvin 68a:1",
+      "Ritva on Eruvin 68a:1"
+    ],
+    "generatedAt": "2026-11-07T22:44:40.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשבות דלית ביה מעשה</strong> - וא\"ת דבההוא ינוקא דלקמן דאמר להו רבא נשיילה לאימיה אי צריכא ניחיימוה ליה אגב אימיה כי לא צריכא נמי וכי לא היה נכרי בכל העיר שיאמרו לו שיחם בשביל הקטן למולו ובפ\"ק דגיטין <span class=\"parenthesized\">(דף ח: ד\"ה אע\"ג)</span> פירשתי:"
+  },
+  "Tosafot on Eruvin 68a:4:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Eruvin 68a:4"
+    ],
+    "generatedAt": "2026-11-07T22:49:07.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאי בעו מינאי ולא יהיבנא להו</strong> - צריך ליזהר כשאדם עושה עירוב שלא יערב בדבר שהוא מקפיד עליו כגון אותן דברים שתיקן לכבוד שבת או אם יש לו ככר נאה שקורין גשטי\"ל או פשטיד\"א וכיוצא בהן דאי בעו ליה מיניה ולא יהיב להו בטל עירוב:"
+  },
+  "Tosafot on Eruvin 68a:6:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 68a:4:1",
+      "Tosafot on Eruvin 68a:6:2",
+      "Tosafot on Eruvin 68a:2:1",
+      "Tosafot on Eruvin 68a:7:1",
+      "Tosafot on Eruvin 68a:11:1",
+      "Tosafot on Eruvin 2a:1:1",
+      "Tosafot on Eruvin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-07T22:53:45.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונקני להו מר רביעתא דחלא בחביתא</strong> - לכאורה משמע לצורך שיתוף מבוי קאמר דלעירובי חצירות בעי פת אע\"ג דאמר לקמן בפרק חלון <span class=\"parenthesized\">(עירובין דף פא.)</span> מאן שמעת ליה דאמר פת אין מידי אחרינא לא ר' יהושע הא קי\"ל כר' יהושע לגבי ר\"א דפליג עליה התם ולקמן בפירקא בין ר\"מ בין רבנן סבירא להו דעירובי חצירות אינו אלא בפת ולכאורה כולהו אמוראי דההיא שמעתא הכי אית להו ואור\"י דצ\"ל דההיא חביתא דחלא דהכא בחצר הוה ולא בבית דהא אמר לקמן בפרק כיצד משתתפין <span class=\"parenthesized\">(עירובין דף פה:)</span> דעירובי חצירות בבית שבחצר ושיתופי מבואות בחצר שבמבוי ותרוייהו דוקא כמו שאפרש לקמן וכן ההיא דבעל הבית שהיה שותף עם שכיניו לזה ביין כו' איירי כגון דמונח בחצר:"
+  },
+  "Tosafot on Eruvin 68a:6:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 68a:6:1",
+      "Eruvin 68a:6",
+      "Chokhmat Shlomo on Eruvin 68a:5",
+      "Beitzah 37b:13",
+      "Beitzah 37b:14"
+    ],
+    "generatedAt": "2026-11-07T22:55:45.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא אין משתתפין באוצר</strong> - וא\"ת ואביי כב\"ש דהא כב\"ש מסיק לה וי\"ל דאביי לא חשיב הא דקאמר רב אושעיא הא ב\"ש הא ב\"ה וקסבר אביי לא נחלקו ב\"ש וב\"ה בדבר זה דכמה פלוגתא דתנאי ואמוראי אשכחן לענין ברירה ועוד אומר ר\"י דאביי הוה מוקים כולהו אליביה ולמפרע כולן טמאין דאין ברירה והוה מפרש <span class=\"parenthesized\">(כרבה)</span> דמסיק במסכת ביצה <span class=\"parenthesized\">(דף י. ולז.)</span> לטהר את הפתחים מכאן ולהבא:"
+  },
+  "Tosafot on Eruvin 68a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T23:00:32.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 68a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב אושעיא לא קשיא כו'</strong> - הקשה ר\"ת דהכא מוקי רב אושעיא פלוגתייהו בברירה ובפ\"ק דביצה <span class=\"parenthesized\">(דף י.)</span> וגם בסוף ביצה <span class=\"parenthesized\">(דף לז:)</span> מסיק רב אושעיא דפליגי לטהר את הפתחים מכאן ולהבא דכיון דנחתא להו טומאה לא נפקא לב\"ש אלא בשינוי מעשה ולב\"ה סגי במחשבה ואור\"ת דרב אושעיא לחוד ורבי אושעיא לחוד דהכא גרס בכל הספרים רב אושעיא והתם גרסינן רבי אושעיא ומצינו רב אושעיא שהיה באמוראים אחרונים בתר ההיא שמעתא דפ' בתרא דביצה <span class=\"parenthesized\">(דף לח:)</span> גבי ליבטיל מים ומלח גבי עיסה דקאמר רב אושעיא דשפיר עביד דאחיכו עליה וביבמות בריש כיצד <span class=\"parenthesized\">(דף יח:)</span> על מילתיה דרב אושעיא דאמר חלוק היה ר\"ש אף בראשונה אמר מתיב ר' אושעיא ובפרק כל הגט <span class=\"parenthesized\">(גיטין דף כה.)</span> בעא מיניה רב אושעיא מרב יהודה וה\"ר מנחם מיונ\"י פי' דלא פליגי הכא בברירה אלא לטהר את הפתחים מכאן ולהבא כדאמר בביצה וה\"ק הא ב\"ש דלא מהניא מחשבה לטהר את הפתחים ה\"נ לא מהני לענין עירוב ואע\"פ שמזכה להו כיון דמתחילה לא הונח בחבית לשם עירוב ולב\"ה דמהניא מחשבה התם מהני נמי הכא והא דתנן לקמן בעל הבית שהיה שותף עם שכניו והא דתנן נמי בכיצד משתתפין <span class=\"parenthesized\">(לקמן עירובין דף פב.)</span> מניח את החבית כו' כב\"ה דלא בעו הנחה לשם עירוב וניחא השתא דשבק שאר פלוגתייהו דתנאי דפליגי לענין ברירה בהלוקח יין מבין הכותים ובשאר מקומות ואף על גב דקאי השתא אביי כב\"ש לא היה חושש לכך להשיבו דבלאו הכי היה יכול להקשות לו וליקני להו רביעתא דחלא במנא אלא לא היה חושש לטרוח כל כך לערב ואין זו סברא תמוה כל כך אם אינו מועיל זכוי לב\"ש אם לא הונח בכלי לשם עירוב דהא בסוף פירקין נמי פרכינן אלא מעתה הקנה לו פת בסלו ה\"נ דלא הוי שיתוף פירוש ולא יועיל שיתוף משום דלא אפקי ועיילי דרך פתחים למבוי מיהו זה קשיא דאדפריך מברייתא דתניא משתתפין באוצר הוה ליה למיפרך ממתני' דבעה\"ב שהיה שותף עם שכיניו וכמה משניות דלא בעו הנחה בכלי לשם עירוב ועוד קשיא דמה ענין מחשבה לטהר את הפתחים למחשבה דעירוב:"
+  }
+}

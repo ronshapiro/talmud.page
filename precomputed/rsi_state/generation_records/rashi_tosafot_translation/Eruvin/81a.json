@@ -1,0 +1,353 @@
+{
+  "Rashi on Eruvin 81a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:11:2"
+    ],
+    "generatedAt": "2026-11-06T09:44:53.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תפרה בקיסם</strong> - ככר שנפרסה ותפר הפרוסות בקיסם ונראית שלימה:"
+  },
+  "Rashi on Eruvin 81a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:11:1",
+      "Rashi on Eruvin 81a:11:2"
+    ],
+    "generatedAt": "2026-11-06T09:45:27.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיע תיפרה</strong> - ניכר מקום תפירתה והויא כפרוסה:"
+  },
+  "Rashi on Eruvin 81a:14:1": {
+    "dependsOn": [
+      "Eruvin 81a:14",
+      "Tosafot on Eruvin 81a:14:1",
+      "Rashi on Eruvin 81a:16:1",
+      "Rashi on Eruvin 81a:16:2",
+      "Rashi on Eruvin 81a:11:1",
+      "Rashi on Eruvin 81a:11:2",
+      "Rashi on Eruvin 80b:4:2"
+    ],
+    "generatedAt": "2026-11-06T09:49:07.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשאר מיני הוה</strong> - מינין הרבה היו מעורבין בה דההיא ודאי לאו פת היא דכתיב גבי יחזקאל ואתה קח לך חטין וגו' וכתיב <span class=\"parenthesized\">(שם כד)</span> לחם אנשים לא תאכל אלמא לאו לחם הוא:"
+  },
+  "Rashi on Eruvin 81a:16:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:16:2"
+    ],
+    "generatedAt": "2026-11-06T09:51:18.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועוגת שעורים תאכלנה אמר רב חסדא</strong> - האי שעורים לאו דווקא דהא שאר מינין טובא הוו בה אלא לשיעורין תאכלנה במשקל דרך רעבון ולא לשובע:"
+  },
+  "Rashi on Eruvin 81a:16:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 81a:16:1"
+    ],
+    "generatedAt": "2026-11-06T09:52:37.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עריבתה כעריבת שעורין</strong> - מגונה ולא יפה כתיקון עריבת חטים שמייפה תיקון העוגה עגולה ונאה:"
+  },
+  "Rashi on Eruvin 81a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:53:38.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן אדם מעה לחנוני</strong> - שהוא מוכר יין ודר עמו במבוי:"
+  },
+  "Rashi on Eruvin 81a:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:54:37.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או לנחתום</strong> - מוכר ככרות ודר עמו בחצר שיזכה לו בעירוב עם חבריו אם יבואו בני המבוי לקחת ממך ככר לעירוב או יין לשיתוף יהא לי חלק בו:"
+  },
+  "Rashi on Eruvin 81a:18:1": {
+    "dependsOn": [
+      "Eruvin 81a:18",
+      "Rashi on Eruvin 81b:1:1",
+      "Rashi on Eruvin 81b:1:2"
+    ],
+    "generatedAt": "2026-11-06T09:55:39.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא זכו לו מעותיו</strong> - שאין מעות קונות עד שימשוך ואפי' עירב החנוני הזה לכל האחרים וזיכה גם לזה אינו עירוב שהרי לא נתכוון לזכות לו במתנת חנם כשאר מזכין בעירוב אלא לקנות המעה והרי אינה קנויה לו דכיון דמעות אינן קונות לא סמכה דעתיה דהאי ולא הוי דעתיה לאקנויי ונמצא מערב לו במעותיו שלא מדעתו:"
+  },
+  "Rashi on Eruvin 81a:2:1": {
+    "dependsOn": [
+      "Eruvin 81a:2",
+      "Eruvin 81a:1"
+    ],
+    "generatedAt": "2026-11-06T09:30:04.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי מדר' יהושע דאמר פת אין מידי אחרינא לא קא משמע לן מתני' בכל</strong> - אפילו יין ופירות ואי מההיא הוה אמינא התם הוא דבעירובי תחומין עסקינן והתם מודה רבי יהושע דליכא למיחש משום איבה כי הכא בעירובי חצירות דטעמא משום איבה כדלקמן אבל בעירובי חצירות אימא לא להכי הדר תנייה גבי חצירות לישנא אחרינא גרסינן לאפוקי מדר' מאיר דאמר בפת אין במידי אחרינא לא בפרק הדר <span class=\"parenthesized\">(לעיל עירובין דף עא:)</span> קמ\"ל בכל והיא היא:"
+  },
+  "Rashi on Eruvin 81a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:3:1",
+      "Rashi on Eruvin 81a:3:2",
+      "Rashi on Eruvin 81a:3:3",
+      "Rashi on Eruvin 81a:3:4",
+      "Eruvin 81a:3",
+      "Rashi on Eruvin 80a:9:1",
+      "Eruvin 81a:2",
+      "Eruvin 81a:1",
+      "Eruvin 81a:10"
+    ],
+    "generatedAt": "2026-11-06T09:31:58.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה אביי בכל מערבין עירובי חצירות גרסינן ובכל משתתפין שיתופי מבוי</strong> - בין בפת ובין ביין בין בשאר פירות:"
+  },
+  "Rashi on Eruvin 81a:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:3:1"
+    ],
+    "generatedAt": "2026-11-06T09:32:49.707Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אמרו לערב בפת כו'</strong> - ובכל מערבין דרישא הכי קאמר בכל מיני פת מערבין עירובי חצירות:"
+  },
+  "Rashi on Eruvin 81a:3:3": {
+    "dependsOn": [
+      "Eruvin 81a:3",
+      "Rashi on Eruvin 81a:3:1",
+      "Rashi on Eruvin 81a:3:2",
+      "Rashi on Eruvin 81a:2:1",
+      "Rashi on Eruvin 81a:4:1"
+    ],
+    "generatedAt": "2026-11-06T09:33:52.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן שמעת ליה דאמר פת אין מידי אחרינא לא רבי יהושע</strong> - וללישנא אחרינא ר' מאיר:"
+  },
+  "Rashi on Eruvin 81a:3:4": {
+    "dependsOn": [
+      "Eruvin 81a:3",
+      "Rashi on Eruvin 81a:3:1",
+      "Rashi on Eruvin 81a:3:2",
+      "Rashi on Eruvin 81a:3:3",
+      "Rashi on Eruvin 81a:3:4",
+      "Rashi on Eruvin 81a:1:1",
+      "Rashi on Eruvin 81a:2:1",
+      "Rashi on Eruvin 81a:4:1"
+    ],
+    "generatedAt": "2026-11-06T09:34:59.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני בכל</strong> - אפת ומתניתין נמי ממאי דבכל דתני אכל מילי קאמר ולאפוקי מהא דר' יהושע אתא דילמא בכל דקתני אפת קאי כברייתא והכי קאמר בכל מיני פת מערבין בחצירות ומשתתפין במבוי בכל מילי חוץ ממים ומלח:"
+  },
+  "Rashi on Eruvin 81a:4:1": {
+    "dependsOn": [
+      "Eruvin 81a:4",
+      "Rashi on Eruvin 81a:3:1",
+      "Rashi on Eruvin 81a:3:2",
+      "Rashi on Eruvin 81a:3:3",
+      "Rashi on Eruvin 81a:3:4"
+    ],
+    "generatedAt": "2026-11-06T09:39:07.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבה בר בר חנה</strong> - אי איכא למימר דאפקא מתני' מדרבי יהושע אסיפא דמלתא פליגא דאמר פרוסה לא קא משמע לן בכל:"
+  },
+  "Rashi on Eruvin 81a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:39:50.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום איבה</strong> - שבאין לידי מחלוקת שאומר אני נותן שלימה ואתה פרוסה:"
+  },
+  "Rashi on Eruvin 81a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T09:40:44.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקלקולו</strong> - זה פרוס וזה שלם:"
+  },
+  "Rashi on Eruvin 81a:7:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 81a:7:1"
+    ],
+    "generatedAt": "2026-11-06T09:41:19.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלתה</strong> - אינו חסרון שזהו תיקונו:"
+  },
+  "Rashi on Eruvin 81a:8:1": {
+    "dependsOn": [
+      "Eruvin 81a:8",
+      "Rashi on Eruvin 81a:7:1"
+    ],
+    "generatedAt": "2026-11-06T09:43:41.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי דימועה</strong> - אם נדמעת שנפלה תרומה בחולין ועשו ממנה ככר זו ונטלו ממנה דימועה אחד ממאה לתקנה:"
+  },
+  "Rashi on Eruvin 81a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:8:1",
+      "Rashi on Eruvin 81a:9:1"
+    ],
+    "generatedAt": "2026-11-06T09:44:17.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 81a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלת נחתום</strong> - קטנה היא ואין זה חסרון:"
+  },
+  "Tosafot on Eruvin 81a:13:1": {
+    "dependsOn": [
+      "Eruvin 81a:13",
+      "Maharsha: Chidushei Halachot on Eruvin 81a:3",
+      "Tosafot on Eruvin 81a:14:1",
+      "Rashi on Eruvin 81a:14:1",
+      "Chidushei Halachot on Eruvin 81a:1",
+      "Chidushei Halachot on Eruvin 81a:2",
+      "Chidushei Halachot on Eruvin 81a:3",
+      "Steinsaltz on Eruvin 81a:13",
+      "Steinsaltz on Eruvin 81a:14"
+    ],
+    "generatedAt": "2026-11-06T09:47:32.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 81a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא ההיא דהואי בשני דמר שמואל כו'</strong> - עשו לנסות מה טעמא לפי שצוה הקב\"ה ליחזקאל לעשות:"
+  },
+  "Tosafot on Eruvin 81a:14:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:14:1",
+      "Tosafot on Eruvin 81a:3:1",
+      "Tosafot on Eruvin 81a:7:1",
+      "Tosafot on Eruvin 81a:13:1",
+      "Tosafot on Eruvin 81a:18:1",
+      "Tosafot on Eruvin 80b:1:1",
+      "Tosafot on Eruvin 80b:18:1"
+    ],
+    "generatedAt": "2026-11-06T09:50:37.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 81a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב ואתה קח לך כו'</strong> - פ\"ה וכתיב בתריה לחם אנשים לא תאכל אלמא לאו לחם הוא והגיה ר\"ת דהאי לחם אנשים בהבראה כתיב רחוק מפרשה זו כמה דפין והכי פירושא ההיא דשאר מינין הואי דכתיב ואתה קח לך ולימי המצור ושעת הדחק נאכל ולא פת הוא אלא לנפש רעבה דכלבא בכפניה גלליה בלע [ב\"ק צב:]:"
+  },
+  "Tosafot on Eruvin 81a:18:1": {
+    "dependsOn": [
+      "Eruvin 81a:17",
+      "Rashi on Eruvin 81a:17:1",
+      "Rashi on Eruvin 81a:17:2",
+      "Rashi on Eruvin 81a:18:1",
+      "Maharsha: Chidushei Halachot on Eruvin 81a:4",
+      "Chidushei Halachot on Eruvin 81a:1",
+      "Eruvin 81a:18",
+      "Rashi on Eruvin 81b:1:1",
+      "Rashi on Eruvin 81b:1:2",
+      "Rashi on Eruvin 81b:1:3"
+    ],
+    "generatedAt": "2026-11-06T09:58:00.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 81a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא זכו לו מעותיו</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> ואפילו עירב החנוני הוה לכל האחרים וזכה גם לזה אינו עירוב שהרי לא נתכוון לזכות לו במתנת חנם כשאר מזכין בעירוב אלא לקנות המעה והרי אינה קנויה לו ובחנם פירש כן דאפילו מתכוין לו להקנות לו בחנם ואפילו זיכה לו ע\"י אחר או לקח המעה וקנה לו מן השוק אינו עירוב כיון שהנותן מתכוין לקנות לו מן החנוני ואין המעה קונה לו וכל הזכיות שעושה החנוני של מדעת בעל הבית קא עביד ואין מערבין אלא לדעתו ולשון <span class=\"rashi-quotation\">הקונטרס</span> נמי מוכיח כן בסמוך:"
+  },
+  "Tosafot on Eruvin 81a:3:1": {
+    "dependsOn": [
+      "Eruvin 81a:3",
+      "Eruvin 81a:1",
+      "Rashi on Eruvin 81a:3:1",
+      "Rashi on Eruvin 81a:3:2",
+      "Rashi on Eruvin 81a:3:3",
+      "Rashi on Eruvin 81a:3:4",
+      "Rabbeinu Chananel on Eruvin 81a:1",
+      "Ritva on Eruvin 81a:3",
+      "Rashi on Eruvin 81a:2:1",
+      "Rosh on Eruvin 7:12:2",
+      "Ritva on Eruvin 81a:4"
+    ],
+    "generatedAt": "2026-11-06T09:38:04.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 81a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה אביי בכל מערבין עירובי תחומין כו'</strong> - כך היא הגירסא בספרים ישנים וכן גרס ר\"ח ופירש ה\"ר אברהם כולה סוגיא דה\"ק תנינא חדא זימנא בכל מערבין כו' משמע סתמא בין בעירובי חצירות בין בעירובי תחומין אמר רבה לאפוקי מר' יהושע דאמר פת אין כו' והאי בכל מערבין אכולהו עירובין קאי ואכולהו פליג ר' יהושע ואומר פת אין מידי אחרינא לא ולהכי איצטריך תרי זימני דאי לא הדר ותנא בבא דהכא הוה מוקמינן ההיא דלעיל בתחומין דאיירי בהו כולי פירקא ומילתא דר' יהושע דהכא הוה מוקמינן בחצירות דמיירי בהו לעיל ולא מפקא ההיא דלעיל כלל מרבי יהושע דהכא אבל השתא דמיתניא נמי גבי מלתיה דרבי יהושע מפקא מדידיה דלאיפלוגי קאתי איתיביה אביי אביי פריך על מה שאמר שסבר רבי יהושע דאפילו בתחומין אין מערבין אלא בפת והכי גרסינן בכל הספרים הישנים בכל מערבין עירובי תחומין קאמר כו' קס\"ד דהאי בכל מערבין בכל מיני פירות קאמר מאן שמעת ליה דאמר פת אין מידי אחרינא לא רבי יהושע דהא אמרינן דר' אליעזר בכל מערבין בין בחצירות בין בתחומין קאמר וקתני לה גבי תחומין בכל דבר אלמא תחומין בכל דבר לרבי יהושע אלא לאפוקי מרבי יהושע כו' אלא האי בכל מערבין ה\"ק בכל עניני פת מערבין בין בשלמין בין בחסרין והשתא מיירי מתני' בכל מערבין דווקא בחצירות דאיירי בהו לעיל ופליג על ר' יהושע דבעי שלמין בחצירות והא דלא שני אפירכא דאביי דודאי רבי יהושע מודה דתחומין בכל דבר ובמתניתין תנן בכל מערבין אפילו בחצירות ור' יהושע פליג בחצירות לחודייהו היינו משום דאי ר' אליעזר איירי בתרוייהו ור' יהושע לא פליג אלא אחצירות הוה ליה לפרושי דאחצירות לחודייהו קאי:"
+  },
+  "Tosafot on Eruvin 81a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 81a:7:1",
+      "Rashba on Eruvin 81a:4",
+      "Ritva on Eruvin 81a:6"
+    ],
+    "generatedAt": "2026-11-06T09:42:49.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 81a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי חלתה וכדי דימועה מערבין לו בה</strong> - ונראה לר\"י דווקא בטבולה לחלה ובמדומע איירי דאי לא בעיא תיקון איכא איבה אפילו בחסרון מועט דלישנא דמתניתין משמע דשלמים לגמרי בעי ומיהו לשון כדי קשה דהוה ליה למימר חלתה ודמועתה ואור\"י דנקט כדי לאשמועינן דאפילו נטל לשם חלה אם הפריש יותר מכדי צורך איכא איבה ואם תאמר כיון דאשמעינן כדי חלתה דהוה אחד מארבעים ושמונה כל שכן כדי דימועה דהוה יותר ממאה ואור\"י דס\"ד דדימוע כיון דחזי הכי לכהן אפילו בפורתא איכא איבה:"
+  }
+}

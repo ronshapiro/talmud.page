@@ -102,6 +102,87 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מודדין לו מן הצפון</strong> - שמא ד' אמות של סוף האילן לצד ביתו בחר לו ומשם עד מקום רגליו יש לו אלפים ואין יכול לחזור לאחריו אפילו פסיעה אבל ארבע' אלפים יש לו ממקום רגליו לצד ביתו פחות שלשים אמה ממה נפשך ומקום רוחב האילן הוא מפסיד מפני שלא פירש: ל\"א ושמואל אמר לא אמר כלום לביתו שאין לו מן האילן לצד ביתו כלום אבל לתחתיו של אילן מצי אזיל דקסבר שמואל דקנה לו שביתה בב' המקומות הואיל ולא סיים ד' אמותיו אין לו מקום המיוחד לו לא תחת האילן ולא במקום רגליו אלא או כאן או כאן וממה נפשך אלפים שממקום רגליו עד האילן יש לו וכשהגיע לתחת האילן נעשה לו חמר גמל בא למדוד לו מן הצפון מן האילן לביתו מודדין לו מן הדרום ממקום רגליו בא למדוד ממקום רגליו כדי לחזור לאחריו אלפים מודדין לו מן האילן זה שמעתי. ויש תשובות וגימגומין יותר מדאי לפי לשון הש\"ס והילוכו חדא דקא משייל מ\"ט דרב הוה לשיוליה טפי טעמא דשמואל דמילתיה דרב מסתבר טפי דבמקום רגליו לא רצה לקנות ותחת האילן לא קנה דלא ידעי' מאי סיים אבל שמואל מאי סבירא ליה אי קנייה היא בלא סיום לקני התם ואי לאו קנייה היא לא ליקני לא הכא ולא התם דהא כאן לא רצה לקנות ואפי' ר' יוחנן בן נורי לא קאמר אלא חפצי הפקר או ישן אבל זה שאמר בפירוש איני רוצה לקנות כאן היאך יקנה ועוד מאי נעשה תחתיו של אילן חמר גמל הכי איבעי ליה למימר ושמואל אמר הרי זה חמר גמל ועוד מאי מן הצפון ומן הדרום במקום אחד יש לומר מצפונו ומדרומו אבל בשני מקומות לא שייך האי לישנא:"
   },
+  "Rashi on Eruvin 49b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:40:24.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למקום אחר</strong> - שרצו לערב עם חצר אחרת נותנין בתוכה עירובן זה שגבו להתיר חצירן:"
+  },
+  "Rashi on Eruvin 49b:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49b:2:1"
+    ],
+    "generatedAt": "2026-11-05T22:41:14.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד מהן מוליך ע\"י כולן</strong> - בשביל כולן ואפי' נתן הוא לבדו פת אחת בשבילן הואיל והוא כבר עירב עם חביריו קונה לצורך כולן:"
+  },
+  "Rashi on Eruvin 49b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:41:42.488Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר\"ש</strong> - דהיא מותרת עמהן והן מותרין עמה:"
+  },
+  "Rashi on Eruvin 49b:5:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49b:5:2"
+    ],
+    "generatedAt": "2026-11-05T22:42:45.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שבא בדרך וחשכה לו</strong> - גרסינן:"
+  },
+  "Rashi on Eruvin 49b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49b:5:1"
+    ],
+    "generatedAt": "2026-11-05T22:43:26.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה מכיר אילן או גדר</strong> - והוא בסוף אלפים ממקום רגליו ומהאילן לביתו אלפים:"
+  },
+  "Rashi on Eruvin 49b:5:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 49b:5:1",
+      "Rashi on Eruvin 49b:5:2",
+      "Rashi on Eruvin 49b:5:4",
+      "Rashi on Eruvin 49b:5:5"
+    ],
+    "generatedAt": "2026-11-05T22:44:55.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר שביתתי תחתיו</strong> - ומשם יהיו לי אלפים דאע\"ג דהשתא קדיש יומא מצי למיזל אלפים עד התם דהוא מקום שביתתו ומשום הכי יש לו אלפים לכאן ואלפים לצד ביתו:"
+  },
+  "Rashi on Eruvin 49b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:45:16.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמר כלום</strong> - טעמא מפרש בגמ':"
+  },
   "Rashi on Eruvin 49b:5:5": {
     "dependsOn": [],
     "generatedAt": "2026-11-03T19:45:12.152Z",
@@ -224,6 +305,19 @@
       "Tosafot on Eruvin 49b:11:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו לתחתיו של אילן לא מצי אזיל</strong> - דממקום רגליו עקר דעתיה ותחת האילן נמי לא קנה לכך לא יזוז ממקומו ואם תאמר בפרק בכל מערבין <span class=\"parenthesized\">(לעיל עירובין דף לה.)</span> גבי נתגלגל חוץ לתחום קאמר ספק הרי זה חמר גמל ויש לו מביתו עד עירובו אלפים ולא אמר ולא יזוז ממקומו ואומר ר\"י דהתם בעומד בעירו לא עקר דעתיה מעירו ודעתו שאם לא יקנה שם שביתה שיהיה לו תחום ביתו:"
+  },
+  "Tosafot on Eruvin 49b:1:1": {
+    "dependsOn": [
+      "Eruvin 49b:1",
+      "Rashi on Eruvin 49a:24:1"
+    ],
+    "generatedAt": "2026-11-05T22:39:54.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 49b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקטן</strong> - פ\"ה דלמ\"ד משום קנין אין קטן יכול לעשות שליח לערב עליו עירובי חצירות דלאו בר קנין הוא וקשה לפי' דלהוי כנשתתפו כמו בעל הבית שנעשה שותף לחבירו ועוד דבפרק בכל מערבין <span class=\"parenthesized\">(לעיל עירובין דף לח:)</span> אמר רב הונא קטן גובה העירוב ודוחק לומר דפליג ועוד דשמואל גופיה דאמר הכא משום קנין קאמר בפ' התקבל <span class=\"parenthesized\">(גיטין דף סד:)</span> דקטן זוכה לאחרים בשיתופי מבואות דרבנן ויש לדחות דהכא בקטן לגמרי והתם נמי מחלק בין קטן גמור ובין שאינו קטן גמור ונראה לר\"ת כמו שפר\"ח דבבית של קטן מיירי הכא ונראה דהלכה כרבה דאמר עירוב משום דירה דבפ' הדר <span class=\"parenthesized\">(לקמן עירובין דף סו.)</span> קאמר ר' יוחנן שוכר כמערב דמי ומפרש מה מערב בפחות משוה פרוטה וקיימא לן כרבי יוחנן לגבי דשמואל ועוד דהתם מפרש הש\"ס הכי ואם כן כך הלכה:"
   },
   "Tosafot on Eruvin 49b:5:1": {
     "dependsOn": [

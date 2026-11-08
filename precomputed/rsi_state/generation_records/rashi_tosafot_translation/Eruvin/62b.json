@@ -1,0 +1,281 @@
+{
+  "Rashi on Eruvin 62b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:16:04.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו לאורויי תלמיד במקום רבו</strong> - כיון דלא תליא בסברא ומילתא פשיטא היא שרי או דילמא חוצפא הוא:"
+  },
+  "Rashi on Eruvin 62b:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:11:1",
+      "Rashi on Eruvin 62b:11:2",
+      "Rashi on Eruvin 62b:11:3",
+      "Rashi on Eruvin 62b:11:4"
+    ],
+    "generatedAt": "2026-11-06T21:17:47.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביעתא</strong> - ביצה לאוכלה:"
+  },
+  "Rashi on Eruvin 62b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:18:12.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכותח</strong> - שיש בו ניסיובי דחלבא דמלתא פשיטא הוא:"
+  },
+  "Rashi on Eruvin 62b:11:3": {
+    "dependsOn": [
+      "Eruvin 62b:11",
+      "Rashi on Eruvin 62b:11:1",
+      "Rashi on Eruvin 62b:11:2",
+      "Rashi on Eruvin 62b:11:4"
+    ],
+    "generatedAt": "2026-11-06T21:18:53.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעו מיניה מרב חסדא</strong> - אם מותר אם אסור ולנסותו היה מתכוין אם יורה במקום רבו:"
+  },
+  "Rashi on Eruvin 62b:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:19:16.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אורי</strong> - בשני דרב הונא רביה:"
+  },
+  "Rashi on Eruvin 62b:12:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 62b:12:1"
+    ],
+    "generatedAt": "2026-11-06T21:26:41.861Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון מגלת תענית דכתיבא ומנחא</strong> - אלו ימים אסורין להתענות להכי נקט מגילת תענית שלא היתה דבר הלכה כתובה בימיהן אפילו אות אחת חוץ ממגילת תענית ולהכי קרי לה מגלה:"
+  },
+  "Rashi on Eruvin 62b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:29:42.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכפרי</strong> - שם מקום ולא היה מקומו של רב הונא ומקומו בפומבדיתא ושתיהן בבבל:"
+  },
+  "Rashi on Eruvin 62b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:1:1"
+    ],
+    "generatedAt": "2026-11-06T20:56:49.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מר הרי הוא כדיר של בהמה</strong> - דנכרי לא אסר מידי וכי דייר ישראל גביה קאמר ר' מאיר דישראל אוסר על ביתו של עכו\"ם אבל עכו\"ם אינו אוסר על ביתו של ישראל והתנן כו':"
+  },
+  "Rashi on Eruvin 62b:2:1": {
+    "dependsOn": [
+      "Eruvin 62b:2",
+      "Rashi on Eruvin 62b:1:1",
+      "Eruvin 62a:8",
+      "Eruvin 62a:13",
+      "Eruvin 62a:14"
+    ],
+    "generatedAt": "2026-11-06T20:58:51.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דליתיה</strong> - לעכו\"ם לא אסר ואם יש שם ישראל אחר אוסר על ביתו של עכו\"ם ואפי' ליתא לישראל:"
+  },
+  "Rashi on Eruvin 62b:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:4:1",
+      "Rashi on Eruvin 62b:4:2",
+      "Rashi on Eruvin 62b:4:3",
+      "Eruvin 62b:4",
+      "Steinsaltz on Eruvin 62b:4"
+    ],
+    "generatedAt": "2026-11-06T21:01:07.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:4:1"
+    ],
+    "sourceText": "ה\"ג לעולם קסבר דירה בלא בעלים לאו שמה דירה:"
+  },
+  "Rashi on Eruvin 62b:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:4:1",
+      "Rashi on Eruvin 62b:4:3"
+    ],
+    "generatedAt": "2026-11-06T21:01:38.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישראל דכי איתיה אסר</strong> - משום דירה דדירת ישראל שמה דירה:"
+  },
+  "Rashi on Eruvin 62b:4:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:4:1",
+      "Rashi on Eruvin 62b:4:2"
+    ],
+    "generatedAt": "2026-11-06T21:02:25.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי ליתיה גזרו רבנן</strong> - משום כי איתיה אבל עכו\"ם דאפילו כי איתיה לאו שמה דירה אלא משום שמא ילמד כו':"
+  },
+  "Rashi on Eruvin 62b:7:1": {
+    "dependsOn": [
+      "Eruvin 62b:7",
+      "Eruvin 62b:1",
+      "Rashi on Eruvin 62a:4:1",
+      "Rashi on Eruvin 62b:1:1",
+      "Rashi on Eruvin 62b:4:1"
+    ],
+    "generatedAt": "2026-11-06T21:04:49.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתי ביומיה</strong> - שהלך למקום קרוב ויבא בו ביום ואי שרית להו קודם שיבא מטלטלי נמי אחר שיבא ולא מסקי אדעתייהו: ל\"א הכי גרסינן ואם יש שם ישראל אחר שדר ישראל עם ישראל אחר בבית אחד הרי זה העכו\"ם אוסר עליו דהכי שכיח דדייר ורישא דקתני הרי הוא כדיר של בהמה בישראל הדר יחידי עמו דלא שכיח דדייר ואתא ר' אליעזר למימר עד שיהו דרין בשני בתים ומשום הכי מותבינן לר\"מ וביחידי לא אסר והתנן כו' ואי אפשר לומר כן דהא משנינן הא דאיתיה הא דליתיה וכיון דבליתיה מוקמינן לה כי יש שם ישראל אחר דר עם חבירו בבית מאי טעמא אסר עכו\"ם ועוד דבתוספת' <span class=\"parenthesized\">(פ\"ה)</span> הכי גרסינן ואם יש שם ישראל אחר הרי זה אוסר מפני שהוא כחצירו ואי האי אוסר בעכו\"ם קאמר מאי מפני שהוא כחצירו ועוד הא טעמא משום שמא ילמד הוא:"
+  },
+  "Rashi on Eruvin 62b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:8:2"
+    ],
+    "generatedAt": "2026-11-06T21:05:27.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה</strong> - דדרשינן לה בפירקא ברבים:"
+  },
+  "Rashi on Eruvin 62b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:06:15.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנהג</strong> - בפירקא לא דרשינן אבל אורויי מורינן לה בבא לישאל ומאן דאמר נהגו אורוי נמי לא מורינן אבל אי עבדי לא מחינן בידייהו:"
+  },
+  "Rashi on Eruvin 62b:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 62b:8:1",
+      "Rashi on Eruvin 62b:8:2",
+      "Rashi on Eruvin 62b:11:1",
+      "Rashi on Eruvin 62b:7:1",
+      "Tosafot on Eruvin 62b:8:1",
+      "Eruvin 62b:9"
+    ],
+    "generatedAt": "2026-11-06T21:15:27.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 62b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיימא לן</strong> - ביבמות פ' החולץ בסופיה <span class=\"parenthesized\">(דף מט:)</span> משנת ר' אליעזר בן יעקב קב ונקי כלומר במקומות מועטין מוזכר במשנה אבל נקי הוא. דהלכה כמותו בכל מקום והכא אמר שמואל דהלכה כמותו ומשמע דפשיטא לן דהכי הילכתא:"
+  },
+  "Tosafot on Eruvin 62b:10:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 62b:8:1"
+    ],
+    "generatedAt": "2026-11-06T21:17:11.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו לאורויי במקום רביה</strong> - אומר ר\"י כל הני הוראות כגון שבא מעשה לפניו ומורה לעשות כן אבל אם שואלין לתלמיד הלכה כדברי מי יכול לומר כל מה שבדעתו ובלבד שלא יורה על מעשה שבא:"
+  },
+  "Tosafot on Eruvin 62b:11:1": {
+    "dependsOn": [
+      "Mishnah Eduyot 5:1"
+    ],
+    "generatedAt": "2026-11-06T21:26:01.959Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו ביעתא בכותחא</strong> - מפרש בערוך דלאו בסתם ביצים איירי דאותן אין צריכין היתר דאין לך עם הארץ שלא ידע שמותרות בחלב אלא כששוחט את התרנגולת ומצא בה ביצים גמורות שמותר לאוכלן בחלב כדתניא בפ\"ק דביצה <span class=\"parenthesized\">(דף ו:)</span> ואם תאמר אמאי מותר לאוכלן בחלב מ\"ש מביצת נבילה דאסרינן אפי' כמוה נמכרת בשוק כדתנן במס' עדיות <span class=\"parenthesized\">(פ\"ה מ\"א)</span> ותירץ בהלכות גדולות דגבי איסור נבילה דאורייתא החמירו אבל בבשר עוף בחלב דרבנן הקילו ואם תאמר אם כן מאי אפילו דקאמרינן אפילו ביעתא בכותחא דאטו מי פשיט היתר טפי משאר דברים הא פלוגתא היא דלמ\"ד בשר עוף בחלב דאורייתא אסירי מידי דהוה אביצת נבילה ואומר ר\"י דלהכי קאמר אפי' שאע\"פ שכל העולם נוהגין בו היתר ובפ\"ק דביצה <span class=\"parenthesized\">(דף ו:)</span> נמי פשיטא ליה להש\"ס דשרייא גבי הא דאמר רב ביצה עם יציאתה נגמרה דקאמרינן למאי אילימא דשרי לאוכלה בחלב הא במעי אמו אסורה והא תניא השוחט את התרנגולת כו' משמע דפשיטא ליה דלא הוה פליג רב ולפירוש. רבינו תם אתי שפיר שפי' דבביצת נבילה החמירו משום דנבילה דבר האסור הוא אבל בבשר בחלב לא החמירו דכל חד וחד באפי נפשיה שרי:"
+  },
+  "Tosafot on Eruvin 62b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T21:29:16.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון מגלת תענית</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דכתיבא ומנחא אלין ימים האסורין להתענות וא\"א לומר הכי דאפרושי מאיסורא שרי במקום רביה כדאמרינן לקמן אין חכמה ואין תבונה כו' אלא בימים המותרים איירי אי שרי לאורויי וכי ההוא דמקצתן הוו דלא למספד בהון דמורי הי מינייהו שרי ולפניו אסור ולאחריו מותר ובזמן שהיה מגלת תענית נוהגת קאמרינן כי האידנא בטלה מגלת תענית כדפסיק בפ\"ק דר\"ה <span class=\"parenthesized\">(דף יט:)</span>:"
+  },
+  "Tosafot on Eruvin 62b:13:1": {
+    "dependsOn": [
+      "Eruvin 62b:13",
+      "Rashi on Eruvin 62b:13:1",
+      "Eruvin 63a:4",
+      "Eruvin 63a:9",
+      "Eruvin 63a:14",
+      "Eruvin 63a:17"
+    ],
+    "generatedAt": "2026-11-06T21:32:26.941Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב חסדא אורי בכפרי בשני דרב הונא</strong> - כדמפרש <span class=\"rashi-quotation\">הקונטרס</span> שלא היה שם מקומו של רב הונא ובפומבדיתא היתה מקומו וצ\"ל דתלמיד חבר דרב הונא הוה כמו רב המנונא דאורי בחרתא דארגז בשני דרב חסדא דמפרש בסמוך משום דתלמיד חבר דיליה היה אבל תלמיד גמור אין יכול להורות אפילו שלא במקום רביה כדאמרינן בשני דרב הונא לא אורי רב המנונא בחרתא דארגז אע\"פ שהיה מקומו של רב הונא בפומבדיתא ואפילו רחוק ממנו שלש פרסאות או אפילו טפי אסור ואינו חייב מיתה דפריך עלה מאותו תלמיד שנתחייב מיתה על שהורה ברחוק שלש פרסאות מר\"א אבל אם לא נתחייב מיתה לא הוה קשיא מידי אפילו איכא איסורא במילתיה ורבינא דסר סכינא בבבל משמע שהיה רחוק הרבה מרב אשי והיה אסור שם אם היה תלמידו גמור כו' והא דאמרינן בפ\"ק דסנהדרין <span class=\"parenthesized\">(דף ה:)</span> תנחום בריה דר' אמי איקלע לאתרא דרש להו מותר ללתות חטין בפסח אמרו ליה לאו ר' מני דמן צור איכא הכא ותנא תלמיד לא יורה הלכה במקום רבו אא\"כ רחוק ממנו שלש פרסאות כנגד מחנה ישראל צריך לומר דתלמיד חבר הוה ומש\"ה חוץ לג' פרסאות שרי והא דאמרינן בפניו אסור וחייב מיתה כל תוך שלש פרסאות חשיב בפניו כדמשמע באותו תלמיד שהורה לפני ר\"א דאם היה תוך שלש פרסאות בדין היה חייב מיתה ומסתמא נמי לא בפניו ממש היה וכן בני אהרן מסתמא לא הורו בפני משה ממש ועיקר שיעור דגמרינן שלש פרסאות כנגד מחנה ישראל מבני אהרן גמרינן לה והתם חייבי מיתה הוו ואומר ר\"י דווקא בדבר שנראה חידוש לשואל ואפילו ביעתא בכותחא ומגלת תענית בכי האי גוונא איירי ולא נקטינהו אלא לאשמועינן דאפילו בהני שהתלמיד בעצמו יודע שאינו טועה אסור להורות אבל דבר שהשואל יודע שידוע מנהגו של דבר זה כגון נותן טעם לפגם וכיוצא בו דכשמורה לו היתר אין דומה לו דבר חידוש שרי ורבינא דסר סכינא בבבל כעין דבר חידוש הוא שנוטל שררה כדאמרינן <span class=\"parenthesized\">(חולין דף יז:)</span> לא אמרו להראות סכין לחכם אלא מפני כבודו של חכם:"
+  },
+  "Tosafot on Eruvin 62b:8:1": {
+    "dependsOn": [
+      "Eruvin 62b:8",
+      "Eruvin 63b:11",
+      "Eruvin 63b:14",
+      "Maharsha: Chidushei Halachot on Eruvin 62b:2",
+      "Maharshal: Chokhmat Shlomo on Eruvin 62b:2",
+      "Tosafot on Eruvin 61b:11:1",
+      "Tosafot on Eruvin 2a:1:1",
+      "Tosafot on Eruvin 2a:2:1",
+      "Eruvin 46a:4-8",
+      "Eruvin 46b:1-3"
+    ],
+    "generatedAt": "2026-11-06T21:12:05.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 62b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוחנן אמר נהגו העם כר' אליעזר בן יעקב</strong> - במסכת תענית בפ' שלשה פרקים <span class=\"parenthesized\">(תענית דף כו:)</span> מפרש דהלכה דרשינן בפרקא ומנהגא בפרקא לא דרשינן אבל אורויי מורינן ומ\"ד נהגו אורויי נמי לא מורינן אבל אי עבדי לא מחינן בידייהו ואע\"ג דבכל דוכתא קיימא לן כר' יוחנן לגבי שמואל בהא קי\"ל כשמואל דאמר הלכה אפילו בפירקא דריש לה דקי\"ל הלכה כדברי המיקל בעירוב כדפסיק ריב\"ל לעיל וקי\"ל כוותיה לגבי ר\"י ואפי' כביעתא בכותחא חשבי ליה אביי ורב יוסף להא דראב\"י ורבא נמי מודה לאביי גבי עובדא דהמן בר ריסתק אי לא משום דביטלת תורת עירוב מאותו מבוי ואומר ר\"י דאותן ישראלים הדרים יחידים בכרכים המוקפים חומה שיש להם מחיצות גמורות ודלתותיהן נעולות בלילה שרי לטלטל בכולה בשבת כיון דליכא ישראל אחר דאסר עליה:"
+  }
+}

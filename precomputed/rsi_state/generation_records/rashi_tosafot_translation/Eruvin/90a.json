@@ -1,0 +1,512 @@
+{
+  "Rashi on Eruvin 90a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:9:1",
+      "Eruvin 90a:10"
+    ],
+    "generatedAt": "2026-11-07T07:28:13.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם ליכא יותר מבית סאתים</strong> - כיון דאית ליה לשמואל גוד אסיק אף במחיצות שבינתים ואע\"פ שאינן ניכרים ופלוגתייהו קמייתא אליבא דרבנן היא דמשוו לכל חד רשותא באנפי נפשיה הוי כל גג וגג מוקף בפני עצמו ובכל חדא ליכא יותר מבית סאתים אבל הכא דפלגינן אליבא דר' מאיר דמשוי לכולהו כחד וכולן ניתרין במחיצות חיצונות יש כאן יותר מבית סאתים והיקף זה דגוד אסיק אינו היקף לדירה דהנך מחיצות של מטה אף על פי שנעשו לדירה למטה עבידן לדור בחללו למטה ולא לדירת גג הלכך כי מסקינן להו הוי מוקף יותר מבית סאתים שלא הוקף לדירה וגג יחידי לרבנן נמי בדאיכא טפי מבית סאתים דומיא דגגין השוין לרבי מאיר:"
+  },
+  "Rashi on Eruvin 90a:11:1": {
+    "dependsOn": [
+      "Eruvin 90a:11",
+      "Rashi on Eruvin 90a:10:1"
+    ],
+    "generatedAt": "2026-11-07T07:30:31.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לטלטל בכולה</strong> - ואפילו ישנה יותר מבית סאתים דהוקף לדירה הוא:"
+  },
+  "Rashi on Eruvin 90a:1:1": {
+    "dependsOn": [
+      "Eruvin 90a:1",
+      "Rashi on Eruvin 89b:13:1",
+      "Rashi on Eruvin 89b:13:2",
+      "Rashi on Eruvin 89b:13:3"
+    ],
+    "generatedAt": "2026-11-07T06:41:23.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנטורי תרביצא עבידא</strong> - וסילק עצמו מן הגגין:"
+  },
+  "Rashi on Eruvin 90a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3",
+      "Rashi on Eruvin 89a:14:2"
+    ],
+    "generatedAt": "2026-11-07T06:43:22.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב' אמות בגג זה</strong> - כרב סבירא ליה דאמר גג שבין הגגין אין מטלטלין בו אלא בד' דאסרי אהדדי:"
+  },
+  "Rashi on Eruvin 90a:2:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3"
+    ],
+    "generatedAt": "2026-11-07T06:44:17.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - לטלטל מאחת מהן לעמוד העומד ברה\"ר סמוך לו גבוה י' ורחב ד':"
+  },
+  "Rashi on Eruvin 90a:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:1:1",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Rashi on Eruvin 90a:3:3",
+      "Rashi on Eruvin 2a:1:1",
+      "Steinsaltz on Eruvin 90a:2"
+    ],
+    "generatedAt": "2026-11-07T06:47:22.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרמלית ורה\"י קא מיבעיא ליה</strong> - בתמיה כלומר פשיטא דאסיר דהא גג כרמלית הוא כדאמר' אין מטלטלין בו אלא בד' ועמוד רשות היחיד:"
+  },
+  "Rashi on Eruvin 90a:3:1": {
+    "dependsOn": [
+      "Eruvin 90a:3"
+    ],
+    "generatedAt": "2026-11-07T06:50:38.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורמי בר חמא אגב חורפיה כו'</strong> - התלמוד קאמר ורמי בר חמא נמי ודאי לא איבעי ליה למיבעי הכי אלא אגב חורפיה מיהר בשאילתו ולא עיין בה יפה:"
+  },
+  "Rashi on Eruvin 90a:3:2": {
+    "dependsOn": [
+      "Eruvin 90a:3",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Rashi on Eruvin 90a:3:3",
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3"
+    ],
+    "generatedAt": "2026-11-07T06:51:46.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכי הוא דמיבעיא ליה ב' אמות בגג</strong> - שבין הגגין:"
+  },
+  "Rashi on Eruvin 90a:3:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Eruvin 25b:1",
+      "Rashi on Eruvin 25b:1:1",
+      "Rashi on Eruvin 25b:1:2"
+    ],
+    "generatedAt": "2026-11-07T06:53:07.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וב' אמות באכסדרה</strong> - של בעלים אחרים ע\"ג תקרה של אכסדרה יותר מבית סאתים ואין לה מחיצה ואין לה פי תקרה דנימא יורד וסותם דעבידא כי אורזילא בשפוע כגגין שלנו וכדאמרן בעושין פסין <span class=\"parenthesized\">(לעיל עירובין כה:)</span> דהשתא הויא לה נמי כרמלית מהו לטלטל מזה לזה:"
+  },
+  "Rashi on Eruvin 90a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T06:56:47.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדא רשותא הוא</strong> - ואף ע\"פ שאינן של איש אחד אין בהם חלוק רשותא ואפי' לרבנן דלא דמו לשני גגין דהתם איכא דיורין למטה בשניהם וי\"ל כשם שיש חלוק רשות למטה בבתים כך יש חלוק למעלה דחלוק למטה סליק ואזיל לעיל אבל באכסדרה ליכא למימר הכי:"
+  },
+  "Rashi on Eruvin 90a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:4:1",
+      "Steinsaltz on Eruvin 90a:4:1",
+      "Steinsaltz on Eruvin 90a:4"
+    ],
+    "generatedAt": "2026-11-07T06:58:00.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא כיון דמגג לגג אסיר</strong> - טעמייהו דרבנן משום דקפדי אשינוי בעלים הוא ומגג לאכסדרה נמי:"
+  },
+  "Rashi on Eruvin 90a:5:1": {
+    "dependsOn": [
+      "Eruvin 90a:5",
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Tosafot on Eruvin 88a:5:1"
+    ],
+    "generatedAt": "2026-11-07T07:00:21.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחורבה</strong> - של אחרים ופרוצה לרה\"ר דהויא נמי כרמלית כגג בין הגגין:"
+  },
+  "Rashi on Eruvin 90a:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:6:2",
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:4:1",
+      "Rashi on Eruvin 89b:1:1",
+      "Rashi on Eruvin 89b:2:1",
+      "Rashi on Eruvin 88a:1:1"
+    ],
+    "generatedAt": "2026-11-07T07:03:09.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו היינו דרמי</strong> - מה בין חורבה לאכסדרה:"
+  },
+  "Rashi on Eruvin 90a:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:6:1",
+      "Eruvin 90a:6"
+    ],
+    "generatedAt": "2026-11-07T07:04:16.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי מאחר אתאי ונצאי</strong> - מפי אחר באתי וחלקתי בשאלה ששאלה אחר באתי לקנתר בתמיה:"
+  },
+  "Rashi on Eruvin 90a:7:1": {
+    "dependsOn": [
+      "Eruvin 90a:7",
+      "Eruvin 90a:5",
+      "Rashi on Eruvin 90a:7:1",
+      "Rashi on Eruvin 90a:7:2"
+    ],
+    "generatedAt": "2026-11-07T07:07:20.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קא מיבעיא ליה</strong> - הא לא דמי לגג ואסיר:"
+  },
+  "Rashi on Eruvin 90a:7:2": {
+    "dependsOn": [
+      "Eruvin 90a:7",
+      "Rashi on Eruvin 90a:7:1"
+    ],
+    "generatedAt": "2026-11-07T07:08:13.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תימצי לומר קאמר</strong> - כלומר לא פשיטא לרב ביבי דתיהוי חורבה חזיא לדירה ולא פשיטא ליה נמי דתיהוי כי אכסדרה דהא עדיפא מינה פורתא ובא להוסיף על שאילתו של רמי בר חמא על ידי את\"ל והכי קאמר אם פשיטא לרמי בר חמא דשרי הכא מאי התם הוא דאכסדרה לא חזיא מידי לדירה אבל חורבה חזיא לדירה בתיקון מועט או דילמא כו':"
+  },
+  "Rashi on Eruvin 90a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:08:57.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גגין השוין</strong> - שאין בהן גג גבוה מחבירו עשרה ויש הרבה סמוכין יחד:"
+  },
+  "Rashi on Eruvin 90a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:8:3",
+      "Rashi on Eruvin 90a:8:4",
+      "Rashi on Eruvin 89b:8:1",
+      "Rashi on Eruvin 89b:8:2"
+    ],
+    "generatedAt": "2026-11-07T07:10:08.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר\"מ</strong> - דמשוי להו כולהו חדא רשותא ולא אסרי אהדדי:"
+  },
+  "Rashi on Eruvin 90a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T07:10:34.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וגג יחידי לרבנן</strong> - שאינו סמוך לאחרים דאפילו לרבנן ליכא דליסר עליה:"
+  },
+  "Rashi on Eruvin 90a:8:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:8:2",
+      "Rashi on Eruvin 90a:8:3",
+      "Rashi on Eruvin 89b:1:1",
+      "Rashi on Eruvin 89b:2:1",
+      "Rashi on Eruvin 89a:1:1",
+      "Rashi on Eruvin 89a:11:3",
+      "Tosafot on Eruvin 89a:4:1",
+      "Rashi on Eruvin 90a:8:4",
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Rashi on Eruvin 90a:3:3"
+    ],
+    "generatedAt": "2026-11-07T07:15:31.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אמר אין מטלטלין בו אלא בד'</strong> - והא דקאמר ר' מאיר רשות אחת הן לטלטל ב' אמות בזה וב' אמות בזה וטעמייהו דרב ושמואל מפרשא ואזלא:"
+  },
+  "Rashi on Eruvin 90a:9:1": {
+    "dependsOn": [
+      "Eruvin 90a:9",
+      "Rashi on Eruvin 90a:9:1",
+      "Rashi on Eruvin 90a:9:2",
+      "Rashi on Eruvin 90a:9:3",
+      "Rashi on Eruvin 90a:9:4",
+      "Maharshal: Chokhmat Shlomo on Eruvin 90a:3"
+    ],
+    "generatedAt": "2026-11-07T07:18:21.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרב אדרב</strong> - דא\"ר לעיל <span class=\"parenthesized\">(עירובין פט.)</span> בגגין השוין לרבנן דאסרי אהדדי אלמא לא אמר גוד אסיק מחיצות שביניהם להיות מובדלת ה\"נ בגגין השוין לר\"מ נהי נמי דהאי לא אסר אחבריה דחדא רשותא משוי להו מיהו בני רה\"ר העוברת לפניהם ולאחריהם ולצידי החיצונות אמאי לא אסרי עלייהו הא ליכא מחיצות לגגין ומחיצות תחתונות אמר רב דלא מהני להו וכן בגג יחידי לרבנן ליתסרו עליה בני רה\"ר וחצירות שסביבותיו:"
+  },
+  "Rashi on Eruvin 90a:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:9:1",
+      "Rashi on Eruvin 90a:9:2",
+      "Rashi on Eruvin 90a:9:3",
+      "Rashi on Eruvin 90a:9:4",
+      "Rashi on Eruvin 90a:1:1",
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3",
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Rashi on Eruvin 90a:3:3",
+      "Rashi on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:8:2",
+      "Rashi on Eruvin 90a:8:3",
+      "Rashi on Eruvin 90a:8:4",
+      "Eruvin 90a:9",
+      "Eruvin 89a:5",
+      "Eruvin 89a:6"
+    ],
+    "generatedAt": "2026-11-07T07:21:08.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:9:2"
+    ],
+    "sourceText": "ומשני התם בין גג לגג לא אמרינן גוד אסיק דלא מינכרן מחיצתא שהן מכוסות בגגין הלכך כיון דאמרו רבנן יש חלוק רשויות למעלה וגוד אסיק נמי בכי הני לא אמרי הרי הן פרוצים כל אחד לרשות האסורה לו לפיכך אסור לטלטל בו:"
+  },
+  "Rashi on Eruvin 90a:9:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:9:1",
+      "Rashi on Eruvin 90a:9:2",
+      "Rashi on Eruvin 90a:9:4",
+      "Rashi on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:8:2",
+      "Rashi on Eruvin 90a:8:3",
+      "Rashi on Eruvin 90a:8:4",
+      "Rashi on Eruvin 89b:9:1",
+      "Rashi on Eruvin 89b:8:1"
+    ],
+    "generatedAt": "2026-11-07T07:22:27.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הכא מחיצות מינכרן</strong> - וקאמרינן בהו גוד אסיק הלכך לר' מאיר דמשוי להו חדא רשותא ליכא דליסר דהא מחיצות חיצונות אית להו והוו כולהו כחד גג מוקף מחיצות וכן גג יחידי לרבנן:"
+  },
+  "Rashi on Eruvin 90a:9:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:9:1",
+      "Rashi on Eruvin 90a:9:2",
+      "Rashi on Eruvin 90a:9:3",
+      "Rashi on Eruvin 90a:9:4",
+      "Rashi on Eruvin 30a:11:3"
+    ],
+    "generatedAt": "2026-11-07T07:24:12.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 90a:9:4"
+    ],
+    "sourceText": "הכי גרסינן התם לא מינכרא מחיצתא הכא מינכרא מחיצתא:"
+  },
+  "Tosafot on Eruvin 90a:10:1": {
+    "dependsOn": [
+      "Eruvin 90a:10",
+      "Tosafot on Eruvin 90a:9:1",
+      "Eruvin 90a:8",
+      "Rashi on Eruvin 90a:10:1"
+    ],
+    "generatedAt": "2026-11-07T07:29:55.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא דהוי יותר מבית סאתים</strong> - ולא אמרינן גוד אסיק לר' מאיר בגגין הרבה אלא במחיצות החיצונות כיון דכולן רשות אחת הן אע\"ג דלענין כלים ששבתו בבית אינו רשות אחת ואמרינן גוד אסיק לשמואל ואם תאמר כיון דשמואל חשיב גג כקרפף לאסור ביתר מבית סאתים אם כן בבית סאתים או בפחות נמי יחשב כקרפף בית סאתים שלא הוקף לדירה ויאסר לטלטל מגג לחצר לרבנן כמו מקרפף לחצר ולקמן <span class=\"parenthesized\">(עירובין צא.)</span> אמרי' דלרבנן גג וחצר רשות אחת וקרפיפות רשות אחת וי\"ל דדירת גג הויא טפי דירה מבקרפף לענין כשאינו יותר מבית סאתים:"
+  },
+  "Tosafot on Eruvin 90a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:11:1",
+      "Eruvin 42b:6",
+      "Eruvin 42b:7",
+      "Eruvin 42b:8",
+      "Eruvin 42b:9",
+      "Eruvin 42b:10",
+      "Eruvin 43a:1",
+      "Eruvin 43a:2",
+      "Eruvin 43a:3",
+      "Eruvin 43a:4",
+      "Eruvin 42b:13",
+      "Eruvin 42b:14",
+      "Eruvin 42b:15"
+    ],
+    "generatedAt": "2026-11-07T07:32:47.884Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתמר ספינה</strong> - ביתירה מבית סאתים איירי <span class=\"rashi-quotation\">כדפי' בקונטרס</span> ופליגי אי חשיבי מחיצה דספינה כמוקפת לדירה אי לא אבל בפחות מבית סאתים לכולי עלמא הויא מחיצה ומטלטל בה דהא נעשה כולה כד\"א דפסקי רב ושמואל כרבן גמליאל בספינה בפ' מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מב:)</span> ואי אפילו בפחות מבית סאתים אין מטלטלין בה אלא בד' לא היתה נחשבת כד\"א כמו בשבת בתל ונקע דדוקא מד' אמות ועד בית סאתים אבל יותר מבית סאתים לא:"
+  },
+  "Tosafot on Eruvin 90a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:2:1",
+      "Rashi on Eruvin 90a:2:2",
+      "Rashi on Eruvin 90a:2:3",
+      "Chidushei Halachot on Eruvin 90a:3",
+      "Rashba on Eruvin 90a:1",
+      "Ritva on Eruvin 90a:1",
+      "Eruvin 87a:18",
+      "Eruvin 87a:19",
+      "Rashi on Eruvin 87a:18:1",
+      "Rashi on Eruvin 87a:19:1",
+      "Steinsaltz on Eruvin 90a:2",
+      "Steinsaltz comment #1 on Eruvin 90a:2"
+    ],
+    "generatedAt": "2026-11-07T06:50:06.011Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרמלית ורה\"י קמבעיא ליה</strong> - וכגון שהעמוד מופלג מן הגג ד' דאי בסמוך לו לא הוי עמוד רה\"י דנפרץ במילואו לגג וכגג דמי אבל כשהוא מופלג אסור אע\"ג דדרך למעלה מעשרה משתמש דהוי מקום פטור מ\"מ אסור להחליף ואפילו מאן דשרי לעיל הכא מודה כיון דאין נח במקום פטור:"
+  },
+  "Tosafot on Eruvin 90a:3:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:3:1",
+      "Rashi on Eruvin 90a:3:2",
+      "Rashi on Eruvin 90a:3:3",
+      "Eruvin 90a:3",
+      "Rashi on Eruvin 90a:4:1",
+      "Rashi on Eruvin 90a:4:2",
+      "Rashi on Eruvin 90a:5:1",
+      "Tosafot on Eruvin 90a:2:1",
+      "Chokhmat Shlomo on Eruvin 90a:4:1",
+      "Ritva on Eruvin 90a:2:1"
+    ],
+    "generatedAt": "2026-11-07T06:56:18.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא ב' אמות בגג ושתי אמות באכסדרה מהו</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> ע\"ג תקרה של אכסדרה של בעלים אחרים יותר מבית סאתים דהשתא הוי ליה כרמלית אבל תוך אכסדרה לא רצה לפרש דכיון דמקורה לא הוי כרמלית במה שהוא יותר מבית סאתים כדמוכח בפרק עושין פסין <span class=\"parenthesized\">(לעיל עירובין דף כה.)</span> דאמר קרפף יותר מבית סאתים וקירה בו בית סאה כו' ומיבעיא ליה באכסדרה דלא שייך בה כל כך. כשם שדיורין חלוקין למטה דלית בה דיורין כל <span class=\"rashi-quotation\">כך כדפי' בקונטרס</span> ובתר הכי בעי בחורבה דחזי' לדירה טפי ובעי נמי בגג דחורבה כמו באכסדרה ומלשון <span class=\"rashi-quotation\">הקונטרס</span> משמע דבחורבה לא בעי בגג אלא בקרקע החורבה ור\"ת פי' ב' אמות בגג דהוי רה\"י וב' אמות בעמוד שהוא כרמלית שאינו גבוה י' והוא רחב ד' וחשיבא לגג כרה\"י משום דמהני ביה עירוב לטלטל בכולו ולא הוי כשאר כרמלית:"
+  },
+  "Tosafot on Eruvin 90a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:4:1",
+      "Rashi on Eruvin 90a:4:2"
+    ],
+    "generatedAt": "2026-11-07T06:59:08.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא כיון דמגג לגג אסיר</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> וטעמא דרבנן משום דקפדי אשינוי בעלים קצת קשה דלקמן <span class=\"parenthesized\">(עירובין צא:)</span> אמרינן גג וחצר ומרפסת רשות אחת לרבנן משמע אע\"פ שהן של בעלים הרבה:"
+  },
+  "Tosafot on Eruvin 90a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:8:2",
+      "Rashi on Eruvin 90a:8:3",
+      "Rashi on Eruvin 90a:8:4",
+      "Eruvin 90a:8"
+    ],
+    "generatedAt": "2026-11-07T07:17:06.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אמר אין מטלטלין בו אלא בד'</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> והא דקאמר ר\"מ רשות אחת היינו לטלטל ב' אמות בזה וב' אמות בזה אע\"ג דלפי המסקנא דמוקי שמואל ביתר מב' סאתים אתי שפיר דאיכא לאוקומי מתני' דלא הוי יותר מבית סאתים מ\"מ הוצרך לפרש <span class=\"rashi-quotation\">הקונטרס</span> למאי דסלקא דעתיה השתא:"
+  },
+  "Tosafot on Eruvin 90a:9:1": {
+    "dependsOn": [
+      "Eruvin 90a:9",
+      "Tosafot on Eruvin 90a:8:1",
+      "Rashi on Eruvin 90a:9:1",
+      "Rashi on Eruvin 90a:9:2",
+      "Rashi on Eruvin 90a:9:3",
+      "Rashi on Eruvin 90a:9:4",
+      "Maharsha: Chidushei Halachot on Eruvin 90a:3"
+    ],
+    "generatedAt": "2026-11-07T07:26:54.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 90a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרב אדרב</strong> - דס\"ד דבלא מינכר מחיצה איירי דאי מינכר מחיצתא לא היה שמואל אומר אין מטלטלין בו אלא בארבע:"
+  }
+}

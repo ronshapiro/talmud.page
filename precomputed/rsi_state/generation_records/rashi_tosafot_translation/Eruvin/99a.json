@@ -1,0 +1,554 @@
+{
+  "Rashi on Eruvin 99a:10:1": {
+    "dependsOn": [
+      "Eruvin 99a:10",
+      "Rashi on Eruvin 99a:9:1",
+      "Rashi on Eruvin 99a:9:2",
+      "Rashi on Eruvin 99a:11:1",
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Rashi on Eruvin 99a:11:4",
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 99a:7:3"
+    ],
+    "generatedAt": "2026-11-07T17:10:09.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"ג דלא היפך</strong> - בתמיה דמשום תליש' לחודיה אמר ר' יהודה דאסור דלמיפק קאי ואפי' דלא היפך בה בתוך פיו:"
+  },
+  "Rashi on Eruvin 99a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Rashi on Eruvin 99a:11:4"
+    ],
+    "generatedAt": "2026-11-07T17:10:44.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה אוכל דבילה</strong> - של תרומה:"
+  },
+  "Rashi on Eruvin 99a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:11:08.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בידים מסואבות</strong> - סתם ידים שלא נטלו הוו שניות ופוסלות את התרומה:"
+  },
+  "Rashi on Eruvin 99a:11:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:11:1",
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Rashi on Eruvin 99a:11:4",
+      "Rashi on Eruvin 99a:1:1",
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-07T17:12:01.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"מ מטמא</strong> - שהרי הוכשרה התרומה ברוק שבפיו:"
+  },
+  "Rashi on Eruvin 99a:11:4": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:11:1",
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-07T17:13:56.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יוסי מטהר</strong> - דקסבר כל זמן שהרוק בתוך פיו לאו משקה הוא והרי הוא כגופו של אדם ואינו מכשיר:"
+  },
+  "Rashi on Eruvin 99a:12:1": {
+    "dependsOn": [
+      "Eruvin 99a:12"
+    ],
+    "generatedAt": "2026-11-07T17:21:27.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היפך</strong> - ברוק להוציאו לחוץ טמא דלמשדייה קאי ומכשיר:"
+  },
+  "Rashi on Eruvin 99a:13:1": {
+    "dependsOn": [
+      "Eruvin 99a:13",
+      "Rashi on Eruvin 99a:10:1",
+      "Rabbeinu Chananel on Eruvin 99a:4",
+      "Rosh on Eruvin 10:7:1",
+      "Steinsaltz on Eruvin 99a:13",
+      "Chokhmat Shlomo on Eruvin 99a:1",
+      "Tosafot on Eruvin 99a:11:1",
+      "Tosafot on Eruvin 99a:11:2"
+    ],
+    "generatedAt": "2026-11-07T17:23:36.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוחלפת השיטה</strong> - החליף ר' יהודה שיטתו ויצא הימנה:"
+  },
+  "Rashi on Eruvin 99a:14:1": {
+    "dependsOn": [
+      "[",
+      "Eruvin 99a:14",
+      "Rashi on Eruvin 99a:13:1",
+      "Rashi on Eruvin 99a:11:1",
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Rashi on Eruvin 99a:11:4",
+      "Eruvin 99a:11",
+      "Eruvin 99a:1",
+      "Eruvin 99a:2",
+      "Rashi on Eruvin 99a:10:1"
+    ],
+    "generatedAt": "2026-11-07T17:25:25.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תחליף</strong> - לא תימא מוחלפת היא דמתניתין דקאמר אע\"ג דלא היפך קאי למשדיי' בכיחו עסקינן ליחה שנתלשה מן הגוף ע\"י חולי שקורין טו\"ש:"
+  },
+  "Rashi on Eruvin 99a:15:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:15:1",
+      "Rashi on Eruvin 99a:15:2",
+      "Rashi on Eruvin 99a:15:3"
+    ],
+    "generatedAt": "2026-11-07T17:26:02.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיחו ונתלש</strong> - לא יהלך ד' אמות עד שירוק:"
+  },
+  "Rashi on Eruvin 99a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:15:1",
+      "Rashi on Eruvin 99a:15:2",
+      "Rashi on Eruvin 99a:15:3",
+      "Eruvin 99a:15",
+      "Rashi on Eruvin 99a:14:1",
+      "Steinsaltz on Eruvin 99a:15"
+    ],
+    "generatedAt": "2026-11-07T17:27:06.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו</strong> - תרתי קתני כיחו וכן רוקו:"
+  },
+  "Rashi on Eruvin 99a:15:3": {
+    "dependsOn": [
+      "Eruvin 99a:15",
+      "Rashi on Eruvin 99a:13:1"
+    ],
+    "generatedAt": "2026-11-07T17:28:31.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדשנינן מעיקרא</strong> - מוחלפת השיטה:"
+  },
+  "Rashi on Eruvin 99a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:28:46.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב מיתה</strong> - בידי שמים:"
+  },
+  "Rashi on Eruvin 99a:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:29:19.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל משנאי אהבו מות</strong> - תורה אמרה להאי קרא בפרשת ה' קנני:"
+  },
+  "Rashi on Eruvin 99a:16:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:16:1",
+      "Rashi on Eruvin 99a:16:2",
+      "Rashi on Eruvin 99a:16:3",
+      "Steinsaltz on Eruvin 99a:16",
+      "Steinsaltz comment #1 on Eruvin 99a:16",
+      "Rashi on Shabbat 114a:3:3",
+      "Rashi on Megillah 28a:4:1",
+      "Rabbeinu Chananel on Eruvin 99a:5",
+      "Sefer HeArukh, Letter Kaf 84",
+      "Jastrow, אֲנִינוּת",
+      "Jastrow, אנינות",
+      "Jastrow, כִּיחַ 1",
+      "Jastrow, כָּחַח 1"
+    ],
+    "generatedAt": "2026-11-07T17:31:52.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למשניאי</strong> - למשניאים דעתו באנינות:"
+  },
+  "Rashi on Eruvin 99a:17:1": {
+    "dependsOn": [
+      "Eruvin 99a:17",
+      "Rashi on Eruvin 99a:17:2"
+    ],
+    "generatedAt": "2026-11-07T17:32:32.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מינס אניס</strong> - שעל כרחו הוא ע\"י חולי או הצינה:"
+  },
+  "Rashi on Eruvin 99a:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:17:1",
+      "Eruvin 99a:16",
+      "Jastrow, כִּיחַ 1",
+      "Jastrow, כָּחַח 1"
+    ],
+    "generatedAt": "2026-11-07T17:33:34.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיח ורק קאמרינן</strong> - שרקק אותו בפני רבו והיה לו להסתלק משם או להבליעו בכסותו:"
+  },
+  "Rashi on Eruvin 99a:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:18:1",
+      "Rashi on Eruvin 99a:18:2",
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 99a:7:3",
+      "Rashi on Eruvin 98b:16:1"
+    ],
+    "generatedAt": "2026-11-07T17:34:46.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישתה ברה\"ר</strong> - ויושיט צוארו לרה\"ר וישתה גזירה שמא יכניס הכלי אצלו:"
+  },
+  "Rashi on Eruvin 99a:18:2": {
+    "dependsOn": [
+      "Eruvin 99a:18"
+    ],
+    "generatedAt": "2026-11-07T17:35:18.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן בגת</strong> - מפרש בגמ' לענין מעשר:"
+  },
+  "Rashi on Eruvin 99a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:37:07.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רישא רבנן</strong> - לעיל אוקימנא להא דקתני עומד אדם ברה\"י ומטלטל ברה\"ר כרבנן דפליגי עליה דר\"מ במתני' גבי מפתח ולא גזרינן שמא יכניס והכא גזר שמא יכניס כר\"מ והא ליכא למימר דשתיית המים תהוי הכנסה כמשתין ורוק דלא דמי דהתם קא עקר מרשות זו וקא עבד הנחה לרשות זו אבל שותה עביד עקירה והנחה בחדא רשותא דהא ברשות שהוא שותה בה פיו עומד ובפיו הן נחין מיד:"
+  },
+  "Rashi on Eruvin 99a:1:1": {
+    "dependsOn": [
+      "Eruvin 99a:1",
+      "Eruvin 98b:14",
+      "Tosafot on Eruvin 99a:1:1",
+      "Ritva on Eruvin 99a:1",
+      "Chokmat Shlomo on Eruvin 99a:1",
+      "Maharshal on Eruvin 99a:1"
+    ],
+    "generatedAt": "2026-11-07T16:49:20.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדסיפא ר\"מ</strong> - הא דלא יפתח דאיירי ר\"מ בהו:"
+  },
+  "Rashi on Eruvin 99a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T17:37:35.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחפיצין הצריכין לו</strong> - אפי' רבנן מודו דגזר בהו דמתוך שהוא צריך להם יכניסם אצלו הלכך משקין הללו צריכין לו וגזרינן:"
+  },
+  "Rashi on Eruvin 99a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:21:2",
+      "Rashi on Eruvin 99a:21:3"
+    ],
+    "generatedAt": "2026-11-07T17:38:10.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרמלית מאי</strong> - מהו שיעמוד בכרמלית וישתה ברה\"י או ברה\"ר:"
+  },
+  "Rashi on Eruvin 99a:21:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:21:1",
+      "Rashi on Eruvin 99a:21:3"
+    ],
+    "generatedAt": "2026-11-07T17:38:48.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא היא</strong> - כי היכי דלא יעמוד ברה\"ר וישתה ברה\"י כך לא יעמוד בכרמלית וישתה ברה\"י:"
+  },
+  "Rashi on Eruvin 99a:21:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:21:1",
+      "Rashi on Eruvin 99a:21:2",
+      "Eruvin 99a:18",
+      "Rashi on Eruvin 99a:18:1",
+      "Rashi on Eruvin 99a:20:1"
+    ],
+    "generatedAt": "2026-11-07T17:40:32.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא גופה גזירה</strong> - אי דעייל לגביה כלי ליכא איסורא דאורייתא אלא גזירה דרבנן דלא ליתי לאפוקי מרה\"י לרה\"ר ואנן ניקום ונגזר שתיה אטו הכנסת כלי:"
+  },
+  "Rashi on Eruvin 99a:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:1:1",
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 99a:7:3",
+      "Eruvin 99a:2"
+    ],
+    "generatedAt": "2026-11-07T16:57:22.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא הוציא</strong> - החפץ מד' אמות חייב אע\"ג דהוא עומד בגבוה והגביהו למעלה מי' והעבירו לא אמרי' העברת מקום פטור הוא אלמא בתר הנחה ועקירה אזלינן והרי נטלו מתחילת ארבע והניחו לסוף ארבע:"
+  },
+  "Rashi on Eruvin 99a:3:1": {
+    "dependsOn": [
+      "Eruvin 99a:3",
+      "Rashi on Eruvin 99a:2:1"
+    ],
+    "generatedAt": "2026-11-07T16:58:08.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור אבל אסור</strong> - מדרבנן דילמא אתי לעבורי דרך למטה מעשרה:"
+  },
+  "Rashi on Eruvin 99a:7:1": {
+    "dependsOn": [
+      "Eruvin 99a:7",
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 99a:7:3"
+    ],
+    "generatedAt": "2026-11-07T16:59:16.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחשבתו</strong> - שהוא צריך לכך משווא לה הוצאה חשובה:"
+  },
+  "Rashi on Eruvin 99a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2",
+      "Rashi on Eruvin 99a:7:3",
+      "Eruvin 99a:5",
+      "Eruvin 99a:6",
+      "Eruvin 99a:7",
+      "Tosafot on Eruvin 99a:7:1",
+      "Steinsaltz on Eruvin 99a:7"
+    ],
+    "generatedAt": "2026-11-07T17:01:11.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרק</strong> - מתחילת ד' לסוף ד':"
+  },
+  "Rashi on Eruvin 99a:7:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:7:1",
+      "Rashi on Eruvin 99a:7:2"
+    ],
+    "generatedAt": "2026-11-07T17:01:54.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפי הכבשן</strong> - שקלטה שלהבת ונשרפה:"
+  },
+  "Rashi on Eruvin 99a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:9:2"
+    ],
+    "generatedAt": "2026-11-07T17:08:18.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתר עקירה</strong> - מן הגוף אזלינן והן נעקרין מן החלל של הגוף וחייב דמוציא מן הגוף שהוא רה\"י לרה\"ר:"
+  },
+  "Rashi on Eruvin 99a:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:9:1"
+    ],
+    "generatedAt": "2026-11-07T17:09:01.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 99a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או בתר יציאה</strong> - שיוצא מן הגוף ממנו והרי פי אמה ברה\"ר ואין כאן עקירה מרה\"י:"
+  },
+  "Tosafot on Eruvin 99a:11:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:11:1",
+      "Rashi on Eruvin 99a:11:2",
+      "Rashi on Eruvin 99a:11:3",
+      "Rashi on Eruvin 99a:11:4"
+    ],
+    "generatedAt": "2026-11-07T17:20:04.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה אוכל דבילה בידים מסואבות</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> דבילה של תרומה ור\"י אומר דאפי' בשל חולין ניחא דידים הפוסלות תרומה מטמאין את הרוק שהוא משקה להיות תחילה וחוזר ומטמא את הדבילה וגם מכשירה דהוו להו חולין טמאים דפוסלין את הגוייה דמשקין כל שהוא מטמאין כדאמרינן בברכות פרק אלו דברים <span class=\"parenthesized\">(ברכות דף נב.)</span> שמא יצאו מים אחורי הכוס ויחזרו ויטמאו את הידים וסתמא דמאחורי הכוס ליכא רביעית דבכל נטילתו ליכא אלא רביעית ובפ\"ק דפסחים <span class=\"parenthesized\">(דף יד:)</span> נמי משמע שהבשר מטמא מחמת המשקין שעליו וסתמא ליכא בהו רביעית והא דקאמר בכמה דוכתי לטמא טומאת משקין ברביעית גבי יין ובנזיר [לח:] גבי עשר רביעי' היינו לפסול את הגוייה כדתנן במעילה <span class=\"parenthesized\">(דף יז:)</span> כל המשקין מצטרפין לפסול את הגוייה ברביעית אבל ליטמא ולטמא אוכלים בכל שהוא [משקין] טימאו ומטמו ורוק חשיב משקה לקבל טומאה כמו שחשוב משקה להכשיר הדבילה והשתא ההיא דחגיגה <span class=\"parenthesized\">(דף כ:)</span> נימא נפסקה לי וקשרתיה בפה לפי מה שפירשתי ניחא אפי' ברוק של טהור וכן פי' הר\"ר י\"ט נימא נפסקה לי וקשרתיה בפה ובשעה שנארג בה כדי לקבל טומאה עדיין היה רוק לח עליה שניטמא מחמת הידים וטימא את המפה שהמשקה מטמא בכל שהוא כדפרישית ולא כמו שמפרש ר\"ת דאיירי ברוק של נדה כמו שפירש שם <span class=\"rashi-quotation\">בקונטרס</span> לפי שלא היה נראה לו להעמיד ברוק של טהור משום דלא חשיב רוק משקה לקבל טומאה דחשיב שפיר משקה כדפרישית:"
+  },
+  "Tosafot on Eruvin 99a:11:2": {
+    "dependsOn": [
+      "Tosafot on Eruvin 99a:11:1",
+      "Tosafot on Eruvin 99a:1:1"
+    ],
+    "generatedAt": "2026-11-07T17:20:53.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מאיר מטמא</strong> - אית ספרים דגרסי רבי מאיר מטהר:"
+  },
+  "Tosafot on Eruvin 99a:18:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 99a:18:1",
+      "Rashi on Eruvin 99a:18:2",
+      "Eruvin 99a:18",
+      "Eruvin 99a:20",
+      "Eruvin 99b:1"
+    ],
+    "generatedAt": "2026-11-07T17:36:18.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן בגת</strong> - לענין מעשר פירוש צריך שיכניס ראשו ורובו על הגת ועל ידי כן מותר לשתות בכל ענין והיינו כרבי מאיר:"
+  },
+  "Tosafot on Eruvin 99a:1:1": {
+    "dependsOn": [
+      "Tosafot on Eruvin 99a:1:1",
+      "Tosafot on Eruvin 99a:7:1",
+      "Tosafot on Eruvin 99a:8:1",
+      "Tosafot on Eruvin 99a:11:1",
+      "Eruvin 99a:1",
+      "Rashi on Eruvin 99a:1:1",
+      "Eruvin 99a:11",
+      "Eruvin 99a:12",
+      "Eruvin 99a:13",
+      "Eruvin 99a:10",
+      "Maharsha: Chidushei Halachot on Eruvin 99a:1",
+      "Rashi on Eruvin 98b:15:1",
+      "Rashi on Eruvin 99a:13:1",
+      "Tosafot on Eruvin 98b:13:1",
+      "Tosafot on Eruvin 96a:1:1",
+      "Tosafot on Eruvin 97a:1:1"
+    ],
+    "generatedAt": "2026-11-07T16:55:33.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא סבר מדסיפא ר\"מ כו'</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> סיפא ההיא דלא יפתח דאיירי בה ר\"מ וק\"ק דהיא רחוקה יותר מדאי ונראה לר\"י דסיפא דלא ישתין ולא ירוק דפליג עליה ר' יהודה וסתם בר פלוגתא דר' יהודה ר\"מ ומיהו קשה דא\"כ הוה ליה למיפרך נמי בגמרא ר\"מ אדר\"מ למאי דגרסי' ברוב ספרים ר' מאיר מטמא וכן גרס ר\"ח ולמאי דמסיק מוחלפת השיטה נמי ניחא דלא תיקשי דר\"מ אדר\"מ ושמא מש\"ה הניח מלהקשות דר\"מ אדר\"מ משום דאיכא דמהפכי דרבי מאיר לדברי רבי יוסי:"
+  },
+  "Tosafot on Eruvin 99a:7:1": {
+    "dependsOn": [
+      "Shabbat 5a:13"
+    ],
+    "generatedAt": "2026-11-07T17:06:23.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרק ונח ברה\"ר בפי כלב כו'</strong> - אור\"י דלא גרסי' ונח דונח משמע דלא נתכוין לכך. כדמוכח בפ\"ק דשבת <span class=\"parenthesized\">(דף ה.)</span> גבי הא דא\"ר יוחנן זרק חפץ והלך ונח בתוך ידו של חבירו חייב הכא איירי במתכוין לכך ומיהו ר\"ח גריס ונח דמצי למימר דונח משמע שפיר מתכוין דסתם זרק נח החפץ במקום שמתכוין אבל הלך ונח משמע שהלך בלא כוונת האדם ועוד י\"ל דבפ\"ק דשבת מיתורא דמימרא דייק דאיירי בלא מתכוין:"
+  },
+  "Tosafot on Eruvin 99a:8:1": {
+    "dependsOn": [
+      "Eruvin 99a:8"
+    ],
+    "generatedAt": "2026-11-07T17:07:13.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 99a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחשבתו משוי' ליה מקום</strong> - דוקא בכי האי גוונא דנהנה באותו מקום טפי מבמקום אחר כגון בפי כלב שיאכלנה ובפי הכבשן שתשרף שם וכן השתין ורק אבל זרק על המקלות או על שום דבר אפי' במתכוין לא אמרו מחשבתו משויא ליה מקום:"
+  }
+}

@@ -1,4 +1,105 @@
 {
+  "Rashi on Eruvin 28a:10:1": {
+    "dependsOn": [
+      "Eruvin 28a:10",
+      "Rashi on Eruvin 28a:6:3",
+      "Rashi on Eruvin 28a:7:1",
+      "Rashi on Eruvin 28a:8:1",
+      "Rashi on Eruvin 28a:5:1",
+      "Jastrow, הִנְדְּקוֹקֵי 1",
+      "Steinsaltz on Eruvin 28a:10"
+    ],
+    "generatedAt": "2026-11-05T19:34:16.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנדקוקי מדאי</strong> - גודגדניות שבמדי יפות הן:"
+  },
+  "Rashi on Eruvin 28a:11:1": {
+    "dependsOn": [
+      "[",
+      "Eruvin 28a:11",
+      "Rashi on Eruvin 28a:12:1",
+      "Rashi on Eruvin 28a:7:1",
+      "Rashi on Eruvin 28a:7:2",
+      "Rashi on Eruvin 28a:6:1",
+      "Rashi on Eruvin 28a:6:2"
+    ],
+    "generatedAt": "2026-11-05T19:36:03.661Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשות</strong> - הומלין: בבבל אוכלין חזיז וכי אתא רב לבבל וחזא דאכלי להו אמר מערבין ומעיקרא אמר דאין מערבין:"
+  },
+  "Rashi on Eruvin 28a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T19:36:25.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לירק</strong> - לאכול בירקן:"
+  },
+  "Rashi on Eruvin 28a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28a:13:1",
+      "Rashi on Eruvin 28a:13:3"
+    ],
+    "generatedAt": "2026-11-05T19:37:00.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרען חייב</strong> - במעשר ואע\"פ שלא זרען מתחילה לכך:"
+  },
+  "Rashi on Eruvin 28a:13:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 28a:13:1",
+      "Rashi on Eruvin 28a:13:2"
+    ],
+    "generatedAt": "2026-11-05T19:37:53.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וירקן פטור</strong> - דלאו מידי הוא:"
+  },
+  "Rashi on Eruvin 28a:13:4": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-05T19:38:51.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחליים</strong> - קרישו\"ן:"
+  },
+  "Rashi on Eruvin 28a:13:5": {
+    "dependsOn": [
+      "[",
+      "Rashi on Eruvin 28a:7:1",
+      "Rashi on Eruvin 28a:7:2",
+      "Rashi on Eruvin 28a:6:1",
+      "Rashi on Eruvin 28a:13:1",
+      "Rashi on Eruvin 28a:13:3"
+    ],
+    "generatedAt": "2026-11-05T19:40:39.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגרגיר</strong> - אורוגא נאכל בין זרע ובין ירק:"
+  },
   "Rashi on Eruvin 28a:14:1": {
     "dependsOn": [
       "Eruvin 28a:14",
@@ -187,6 +288,73 @@
       "Rashi on Eruvin 28a:6:5"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כפניות</strong> - תמרים רעות שלא בישלו כל צרכן:"
+  },
+  "Rashi on Eruvin 28a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28a:7:2",
+      "[",
+      "Jastrow, גַּדְגַּדְנִיּוֹת 1",
+      "Rashi on Eruvin 28a:6:1",
+      "Rashi on Eruvin 28a:6:2",
+      "Rashi on Eruvin 28a:6:3",
+      "Rashi on Eruvin 28a:6:4",
+      "Rashi on Eruvin 28a:6:5",
+      "Rashi on Eruvin 2a:1:1",
+      "Rashi on Eruvin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-05T19:31:15.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גודגדניות</strong> - ממעיטין את הזרע:"
+  },
+  "Rashi on Eruvin 28a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 28a:7:1"
+    ],
+    "generatedAt": "2026-11-05T19:32:02.656Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם הוקשו</strong> - הקלחין כעץ שכבר צמח בהן זרעו קשין הקלחין לכל אדם:"
+  },
+  "Rashi on Eruvin 28a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 28a:8:1"
+    ],
+    "generatedAt": "2026-11-05T19:32:56.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 28a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרגמא</strong> - להא דאמר רב מערבין אשלא הוקשו וזה המערב בהן יש לו בנים דהשתא חזו ליה:"
+  },
+  "Tosafot on Eruvin 28a:13:1": {
+    "dependsOn": [
+      "Shabbat 144b:7",
+      "Shabbat 144b:8",
+      "Shabbat 144b:9",
+      "Shabbat 144b:10",
+      "Shabbat 144b:4",
+      "Shabbat 144b:5",
+      "Shabbat 144b:6",
+      "Eruvin 29b:15",
+      "Eruvin 29b:16",
+      "Tosafot on Shabbat 92b:1:1",
+      "Maharsha: Chidushei Halachot on Eruvin 28a:2"
+    ],
+    "generatedAt": "2026-11-05T19:43:22.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 28a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובבל הויא רובא דעלמא והתניא כו'</strong> - תימה אמאי לא משני כדמשני בפ' חבית <span class=\"parenthesized\">(שבת קמד, ב)</span> מי דמי ערביא אתרא הכא בטלה דעתו אצל כל אדם וי\"ל דהתם ודאי שייך לחלק דכולי עלמא נמי אם היו להם גמלים הרבה כמו בערביא היו מקיימין קוצים בשדותיהן ולכך יש חשיבות באתרא אבל בית מנשיא אע\"פ שכל העולם נמי אם היו להם רמונים היו סוחטין כיון דלא הוי אלא חד גברא בטלה דעתו אבל הכא שבכל העולם יש חזיז ולא אכלי אין לחלק בין אתרא לגברא ולהכי נמי לקמן <span class=\"parenthesized\">(עירובין דף כט:)</span> דפריך ופרסאי הוו רובא דעלמא ולא מייתי מהך ברייתא דליבטלו פרסאי לגבי רובא דעלמא דאין לי לבטלם כיון דרוב בשר יש להם ושאר העולם נמי אם הוי להם רוב בשר היו אוכלים בלא לחם דומיא דערביא ומייתי שפיר מבגדי עניים דלא בעי שיעור עשירים כיון שפחות חשוב בעיניהן ועוד דמדמי השיעורים להדדי ולא שייך נמי לאתויי לקמן ההיא דחבית: [וע\"ע תוס' שבת צב: ד\"ה ואת\"ל]"
   },
   "Tosafot on Eruvin 28a:13:2": {
     "dependsOn": [

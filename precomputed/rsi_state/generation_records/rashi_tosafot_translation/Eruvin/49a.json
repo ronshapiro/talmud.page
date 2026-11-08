@@ -1,4 +1,163 @@
 {
+  "Rashi on Eruvin 49a:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:10:2",
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:4:1",
+      "Rashi on Eruvin 49a:5:1"
+    ],
+    "generatedAt": "2026-11-05T22:20:10.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקפיד על עירובו</strong> - אם יאכל אחד מבני חבורה את הפת שנתן הוא:"
+  },
+  "Rashi on Eruvin 49a:10:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:10:1"
+    ],
+    "generatedAt": "2026-11-05T22:20:53.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירוב שמו</strong> - שיהו כולן מעורבין ומרוצין בו שלא ימחה זה בחברו אלא שותפות נוחה ועריבה:"
+  },
+  "Rashi on Eruvin 49a:11:1": {
+    "dependsOn": [
+      "Jastrow, וַרְדִּינָא II 1",
+      "Rashi on Eruvin 49a:11:1"
+    ],
+    "generatedAt": "2026-11-05T22:21:47.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנשי וורדינא</strong> - ציקנין היו:"
+  },
+  "Rashi on Eruvin 49a:12:1": {
+    "dependsOn": [
+      "Eruvin 49a:12"
+    ],
+    "generatedAt": "2026-11-05T22:22:34.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החולק</strong> - בשני כלים אינו עירוב משום האי טעמא גופיה דמה שמו עירוב שמו:"
+  },
+  "Rashi on Eruvin 49a:13:1": {
+    "dependsOn": [
+      "Eruvin 49a:13",
+      "Rashi on Eruvin 49a:10:1",
+      "Rashi on Eruvin 49a:10:2",
+      "Rashi on Eruvin 49a:12:1",
+      "Rashi on Eruvin 49a:13:1",
+      "Rashi on Eruvin 49a:14:1",
+      "Eruvin 49a:9",
+      "Rashi on Eruvin 49a:9:1",
+      "Rashi on Eruvin 49a:9:2",
+      "Eruvin 49a:1",
+      "Eruvin 49a:2",
+      "Eruvin 49a:17",
+      "Rashi on Eruvin 49a:17:1",
+      "Rashi on Eruvin 49a:17:2"
+    ],
+    "generatedAt": "2026-11-05T22:24:32.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמניחין בו עירוב</strong> - ארבעה שגבו עירובן ונתנוהו בבית חמישי אין צריך להניח שם פיתו:"
+  },
+  "Rashi on Eruvin 49a:14:1": {
+    "dependsOn": [
+      "Eruvin 49a:14"
+    ],
+    "generatedAt": "2026-11-05T22:25:12.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמלא למנא ואייתר</strong> - שלא יכול הכלי להחזיק כל העירוב ולא חילקו מדעת וכי קאמר שמואל כגון שחילקו מדעת:"
+  },
+  "Rashi on Eruvin 49a:15:1": {
+    "dependsOn": [
+      "Eruvin 49a:15",
+      "Rashi on Eruvin 49a:14:1",
+      "Rashi on Eruvin 49a:16:1"
+    ],
+    "generatedAt": "2026-11-05T22:26:07.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותרתי למה לי</strong> - לשמואל הואיל ותרוייהו חד טעמא דקפיד וחולק:"
+  },
+  "Rashi on Eruvin 49a:16:1": {
+    "dependsOn": [
+      "Eruvin 49a:16",
+      "Rashi on Eruvin 49a:14:1",
+      "Rashi on Eruvin 49a:15:1"
+    ],
+    "generatedAt": "2026-11-05T22:27:16.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמיפלג פלגיה</strong> - ובטל שמיה דעירוב משמע מעורב:"
+  },
+  "Rashi on Eruvin 49a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:27:43.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמניחין בו עירוב</strong> - ארבעה שגבו עירובן ונתנוהו בבית חמישי אין צריך להניח שם פיתו:"
+  },
+  "Rashi on Eruvin 49a:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:17:1"
+    ],
+    "generatedAt": "2026-11-05T22:28:23.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו משום דכיון דמנח ליה</strong> - לבעל הבית ריפתא בסלא דידיה שהוא אוכל ממנו כמאן דמנח בכלי עם העירוב דמי:"
+  },
+  "Rashi on Eruvin 49a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:28:46.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולהו הכא דיירי</strong> - משום פיתן הויא להו דירתן וכ\"ש בעל הבית שהוא דר שם ממש בתוכו ואפילו אין לו פת בכל הבית שפיר דמי:"
+  },
+  "Rashi on Eruvin 49a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:29:10.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירוב</strong> - שהוא מצרפן טעמא משום קנין שמקנה להו בעל הבית רשותו ונמצאו כולם בעלים בבית זה שהעירוב מונח בו וכל חצר משועבדת לרשותם זו ואחת היא:"
+  },
   "Rashi on Eruvin 49a:1:1": {
     "dependsOn": [
       "Eruvin 49a:1",
@@ -14,6 +173,50 @@
       "Rashi on Eruvin 49a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אף זו דברי ר' שמעון</strong> - אפילו להשתמש שתיהן עמה ר' שמעון הוא דשרי דהא אפילו אמצעית בשתיהן נמי שרי אבל לרבנן פליגי בכולה ואמרו שלשתן אסורין זו עם זו ל\"א אף זו דברי ר\"ש ר' שמעון גופיה לא שרי אלא חיצונות באמצעית וקשיא לי הא תנן במתניתין היא מותרת עמהן ועוד מאי אף הכי איבעי ליה למימר זו דברי ר\"ש אף משמע דבתרוייהו שרי ולשון אחרון זה שמעתי וכן עיקר והיא מותרת עמהן דמתניתין מתרץ לך שמואל דבהיתר שימוש שבאמצעית קאמר דומיא דהוא מותר עמהן דרישא ואיידי דתנא רישא הוא מותר עמהן תני נמי סיפא ואף זו הכי משמע אף ר' שמעון המיקל אוסר בזו דאין אמצעית מותרת בחיצונות אף איסור זה ר\"ש נמי אמרו כרבנן ואלישנא קמא קשיא מאי ואזדא שמואל לטעמיה אי נמי הוה אמר כרב הוה מצי נמי למימר לרבנן עירבה עם שתיהן אסורה עם שתיהן דאין ב' רשויות משתמשות לרשות אחת:"
+  },
+  "Rashi on Eruvin 49a:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:19:1"
+    ],
+    "generatedAt": "2026-11-05T22:31:21.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני מה אין מערבין במעה</strong> - ליתן כל אחד ואחד מעה ומעותיו יקנו לו רשות חבירו:"
+  },
+  "Rashi on Eruvin 49a:22:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:20:1"
+    ],
+    "generatedAt": "2026-11-05T22:32:33.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאיקלקולי</strong> - להשתכח תורת עירוב:"
+  },
+  "Rashi on Eruvin 49a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:33:16.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דירה</strong> - שדעתו של אדם על פיתו והוו להו כאילו דיירי בההוא ביתא ואין בחצר זו אלא דירה אחת והרי כל רשות החצר מיוחדת לבית זה:"
+  },
+  "Rashi on Eruvin 49a:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:33:49.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדי גרסינן איכא בינייהו כלי ושאין בו שוה פרוטה וקטן</strong> - למאן דאמר משום קנין יכולין ליקנות בסודר כדרך שאר קנין ואין יכולין לקנות בפת שאין בו שוה פרוטה ואפילו הויא מזון ב' סעודות ואין יכול לעשות הקטן שליח לערב עליו עירובי חצירות דלאו בר מקנה ואקנויי הוא ולמ\"ד משום דירה לא מהני קנין סודר ומערבין באוכל שאין בו שוה פרוטה וקטן גובה את העירוב דפת משויא להו חדא דירה וקטן לאו מידי עביד:"
   },
   "Rashi on Eruvin 49a:2:1": {
     "dependsOn": [
@@ -148,6 +351,106 @@
       "Rashi on Eruvin 49a:7:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הותר רגילה לעצמו</strong> - דהא סלקא נפשה מיניה:"
+  },
+  "Rashi on Eruvin 49a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:8:2",
+      "Rashi on Eruvin 49a:8:3"
+    ],
+    "generatedAt": "2026-11-05T22:12:28.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזה שאינה רגילה בו לא עירב</strong> - אפילו בפני עצמו:"
+  },
+  "Rashi on Eruvin 49a:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:8:2"
+    ],
+    "generatedAt": "2026-11-05T22:13:04.328Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיא נמי לא עירבה</strong> - לא עם זה ולא עם זה:"
+  },
+  "Rashi on Eruvin 49a:8:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:8:1",
+      "Rashi on Eruvin 49a:8:2",
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:4:1",
+      "Rashi on Eruvin 48b:1:1"
+    ],
+    "generatedAt": "2026-11-05T22:14:00.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דוחין אותה אצל שאינה רגילה</strong> - שלא לאסור על זה שעירב הואיל והאי לא מפסדא מידי דהא לא עירב:"
+  },
+  "Rashi on Eruvin 49a:9:1": {
+    "dependsOn": [
+      "Eruvin 49a:9",
+      "Rashi on Eruvin 49a:9:2"
+    ],
+    "generatedAt": "2026-11-05T22:18:29.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדת סדום</strong> - דאפילו מידי דלא חסר ביה לא מהני לחבריה והכא על כרחיה דחינן ליה גביה:"
+  },
+  "Rashi on Eruvin 49a:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 49a:9:1",
+      "Rashi on Eruvin 49a:9:2"
+    ],
+    "generatedAt": "2026-11-05T22:19:24.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 49a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדת סדום</strong> - שלי שלי:"
+  },
+  "Tosafot on Eruvin 49a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:30:32.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 49a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירוב משום קנין</strong> - פירוש דבהאי פת מיקני רשות להדדי אע\"ג דפירי לא עבדי חליפין מ\"מ קנו בתורת דמים וא\"ת והתנן לקמן בהדר <span class=\"parenthesized\">(עירובין דף עא.)</span> בעל הבית שהיה שותף לשכיניו לזה ביין ולזה בשמן אין צריך לערב ואמר בהדר <span class=\"parenthesized\">(דף עג:)</span> נמי בני חבורה שהיו מסובין וקדש עליהם היום סומכין על הפת שעל השולחן משום עירוב ולמ\"ד משום דירה אתי שפיר וי\"ל דכיון שיש קירוב דעת ביניהן עשאוה חכמים כאילו הקנו זה לזה:"
+  },
+  "Tosafot on Eruvin 49a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-05T22:31:57.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 49a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שאינה מצויה</strong> - ובשאר דברים נמי אין מערבין עירובי חצירות אלא בפת דשכיח טפי וגבי שיתוף הקילו שלא להצריך פת ושרי בשאר דברים דשכיחי קצת אבל במעה דלא שכיח כלל לא:"
+  },
+  "Tosafot on Eruvin 49a:24:1": {
+    "dependsOn": [
+      "Eruvin 49a:24",
+      "Rashi on Eruvin 49a:24:1"
+    ],
+    "generatedAt": "2026-11-05T22:35:14.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 49a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו כלים ופחות משוה פרוטה</strong> - דלמ\"ד משום קנין אין מערבין בפחות משוה פרוטה אע\"ג דאיכא מזון ב' סעודות וא\"ת וכי איכא שוה פרוטה להוי עירוב אע\"ג דליכא מזון ב' סעודות דהא אפילו בכלי הוי עירוב למ\"ד משום קנין אם כן מה צריך ב' סעודות וי\"ל כשמפרש ועושה דרך קנין לא בעי חזי לאכילה וקונה אפילו בכלי אבל בסתם כמו שרגילין לערב שאין מפרשין ומדקדקין לעשות דרך קנין בעי נמי שיהא בו חשיבות אוכל:"
   },
   "Tosafot on Eruvin 49a:2:1": {
     "dependsOn": [

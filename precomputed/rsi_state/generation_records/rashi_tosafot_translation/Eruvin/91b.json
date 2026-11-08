@@ -1,0 +1,432 @@
+{
+  "Rashi on Eruvin 91b:10:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:10:1",
+      "Eruvin 91b:10",
+      "Rashi on Eruvin 91b:11:1"
+    ],
+    "generatedAt": "2026-11-07T08:52:55.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרי לה רבנן לא</strong> - בגג וחצר ואכסדרה ומרפסת מודינן לך אבל בקרפף ובמבוי לא הא דר' זירא בפרק ר\"א דמילה <span class=\"parenthesized\">(שבת קל:)</span>:"
+  },
+  "Rashi on Eruvin 91b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:53:20.242Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא ולמבוי אסור</strong> - להוציא כלי החצר:"
+  },
+  "Rashi on Eruvin 91b:12:1": {
+    "dependsOn": [
+      "Eruvin 91b:12",
+      "Eruvin 91b:10",
+      "Rashi on Eruvin 91b:12:2",
+      "Rashi on Eruvin 91b:12:3",
+      "Eruvin 91a:3",
+      "Eruvin 91b:1",
+      "Eruvin 91b:5"
+    ],
+    "generatedAt": "2026-11-07T08:55:06.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו רישא</strong> - הא תנא ליה אסור להכניס ולהוציא מן החצר למבוי:"
+  },
+  "Rashi on Eruvin 91b:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:12:1",
+      "Rashi on Eruvin 91b:12:3",
+      "Eruvin 91b:12",
+      "Eruvin 91b:10",
+      "Eruvin 91b:5",
+      "Rashi on Eruvin 91b:8:1",
+      "Rashi on Eruvin 91b:8:2"
+    ],
+    "generatedAt": "2026-11-07T08:56:11.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא</strong> - הא דתנא רישא אסור בעירבו לעצמן קאסרי רבנן ומשום כלי בתים והאי דקתני לא עירבו לא נשתתפו הוא:"
+  },
+  "Rashi on Eruvin 91b:12:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:12:1",
+      "Rashi on Eruvin 91b:12:2"
+    ],
+    "generatedAt": "2026-11-07T08:56:47.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא עירבו לעצמן אימא מודו</strong> - אשמעינן משנה יתירה דעל כרחך חדא לעירבו וחדא ללא עירבו ואפילו הכי אסור:"
+  },
+  "Rashi on Eruvin 91b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:1:2"
+    ],
+    "generatedAt": "2026-11-07T08:28:23.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנשי מרפסת</strong> - דיורי עליות הרבה פתוחין לה:"
+  },
+  "Rashi on Eruvin 91b:1:10": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:1:8",
+      "Rashi on Eruvin 91b:1:9"
+    ],
+    "generatedAt": "2026-11-07T08:34:57.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינן צריכין לערב</strong> - לעצמן והשתא שכיחי מאני דבית בחצר ומאני דעלייה במרפסת דליכא דליסר עלייהו הלכך גזרו בהו רבנן דלא לישתרו בהדי הדדי גזרה משום מאני דבתים:"
+  },
+  "Rashi on Eruvin 91b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:28:52.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא עירבו</strong> - בני חצר עם בני מרפסת אבל עירבו אלו לעצמן ואלו לעצמן ובני מרפסת אין אוסרים על בני חצר אע\"פ שיורדין לה בסולם ודריסת רגלם עליה לרה\"ר דאמרינן לעיל בפ' כיצד מעברין <span class=\"parenthesized\">(עירובין דף נט:)</span> סולם תורת פתח עליו ותורת מחיצה עליו והכל להקל והכא אמרינן תורת מחיצה עליו:"
+  },
+  "Rashi on Eruvin 91b:1:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:1:1",
+      "Rashi on Eruvin 91b:1:2",
+      "Rashi on Eruvin 91b:1:4"
+    ],
+    "generatedAt": "2026-11-07T08:29:23.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שגבוה י' טפחים</strong> - כגון עמוד או תל:"
+  },
+  "Rashi on Eruvin 91b:1:4": {
+    "dependsOn": [
+      "Eruvin 84a:5",
+      "Eruvin 84a:6",
+      "Rashi on Eruvin 84a:5:1",
+      "Rashi on Eruvin 84a:5:2",
+      "Rashi on Eruvin 84a:5:3",
+      "Rashi on Eruvin 84a:5:4",
+      "Rashi on Eruvin 91b:1:1",
+      "Rashi on Eruvin 91b:1:2",
+      "Rashi on Eruvin 91b:1:3",
+      "Rashi on Eruvin 91b:1:5",
+      "Rashi on Eruvin 91b:1:6"
+    ],
+    "generatedAt": "2026-11-07T08:32:01.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למרפסת</strong> - מותר להשתמש בו ולחצר אסור דה\"ל לזה בפתח ולזה בזריקה ובסמוכה למרפסת בתוך ד' עסקינן וכדמוקמי לה בפירקין דלעיל <span class=\"parenthesized\">(עירובין דף פד.)</span>:"
+  },
+  "Rashi on Eruvin 91b:1:5": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:1:1",
+      "Rashi on Eruvin 91b:1:2",
+      "Rashi on Eruvin 91b:1:3",
+      "Rashi on Eruvin 91b:1:4"
+    ],
+    "generatedAt": "2026-11-07T08:32:36.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מכאן לחצר</strong> - כלומר: אף לחצר ושניהן אסורים בו והכי אוקמינן התם:"
+  },
+  "Rashi on Eruvin 91b:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:33:00.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - דמחלקין רשות חצר ומרפסת דלא מישתרו בהדי הדדי:"
+  },
+  "Rashi on Eruvin 91b:1:7": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:1:6",
+      "Rashi on Eruvin 91b:1:7",
+      "Rashi on Eruvin 91b:1:8"
+    ],
+    "generatedAt": "2026-11-07T08:33:26.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שהיו אלו של רבים כו'</strong> - שדיורין הרבה בחצר ודיורין הרבה במרפסת:"
+  },
+  "Rashi on Eruvin 91b:1:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:33:52.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועירבו אלו לעצמן ואלו לעצמן</strong> - דהשתא מפקי בני חצר מאני דבתים לחצירן ובני עליות מאני דעלייה למרפסת ואי שרית ליה כלים ששבתו בחצר לטלטל במרפסת אתי לטלטל בה נמי כלי הבית:"
+  },
+  "Rashi on Eruvin 91b:1:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T08:34:11.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:1:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שהיו של יחידים</strong> - שאין בחצר אלא בית אחד ואין במרפסת אלא עלייה אחת:"
+  },
+  "Rashi on Eruvin 91b:2:1": {
+    "dependsOn": [
+      "Eruvin 91b:2",
+      "Rashi on Eruvin 91b:1:9",
+      "Rashi on Eruvin 91b:1:10",
+      "Rashi on Eruvin 91b:2:1",
+      "Rashi on Eruvin 91b:2:2"
+    ],
+    "generatedAt": "2026-11-07T08:35:37.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושכחו ולא עירבו</strong> - לעצמן דלא שכיחי מאני דבתים בחצר ומאני דעלייה במרפסת:"
+  },
+  "Rashi on Eruvin 91b:2:2": {
+    "dependsOn": [
+      "Eruvin 91b:2",
+      "Rashi on Eruvin 91b:2:1",
+      "Rashi on Eruvin 91b:2:2",
+      "Rashi on Eruvin 91b:3:1"
+    ],
+    "generatedAt": "2026-11-07T08:36:36.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן רשות אחת הן</strong> - לכלים ששבתו בתוכם מאן שמעת ליה האי סברא ר\"ש וקאמר עירבו לא:"
+  },
+  "Rashi on Eruvin 91b:3:1": {
+    "dependsOn": [
+      "Eruvin 91b:3",
+      "Eruvin 49a:2",
+      "Rashi on Eruvin 49a:2:1",
+      "Rashi on Eruvin 49a:2:2"
+    ],
+    "generatedAt": "2026-11-07T08:39:52.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן היא</strong> - דמודו בגגין וחצירות דרשות אחת הן ואינהו ודאי לא שרו היכא דעירבו דגזרי כדאמרינן בפרק מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין מט.)</span> גבי ג' חצירות הפתוחות זו לזו דפליגי אדר\"ש ואמרו שלשתן אסורין דגזרי דילמא אתי לאפוקי מאני דבתים דחיצונה שבאמצעית לחיצונה חברתה אבל ר\"ש לא גזר:"
+  },
+  "Rashi on Eruvin 91b:4:1": {
+    "dependsOn": [
+      "Eruvin 91b:4"
+    ],
+    "generatedAt": "2026-11-07T08:40:18.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא קתני</strong> - גג וחצר ואכסדרה ומרפסת וקרפף ומבוי דאי ר\"ש כולהו חדא רשותא נינהו:"
+  },
+  "Rashi on Eruvin 91b:5:1": {
+    "dependsOn": [
+      "Eruvin 91b:5",
+      "Rashi on Eruvin 91b:3:1",
+      "Rashi on Eruvin 91b:4:1",
+      "Rashi on Eruvin 91b:5:2"
+    ],
+    "generatedAt": "2026-11-07T08:41:08.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור להוציא מן החצר למבוי</strong> - כרבנן דאסר במבוי כקרפף:"
+  },
+  "Rashi on Eruvin 91b:5:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:5:1",
+      "Eruvin 91b:5",
+      "Eruvin 91b:11",
+      "Eruvin 91b:12",
+      "Rashi on Eruvin 91b:11:1",
+      "Rashi on Eruvin 91b:1:1",
+      "Rashi on Eruvin 91b:1:2",
+      "Rashi on Eruvin 91b:8:1"
+    ],
+    "generatedAt": "2026-11-07T08:43:26.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במבוי אסור</strong> - ולקמן מפרש קס\"ד השתא דאפילו כלים ששבתו בתוכו אסור לטלטולי ביה דכרמלית משוי ליה כל זמן שלא נשתתפו בו:"
+  },
+  "Rashi on Eruvin 91b:6:1": {
+    "dependsOn": [
+      "Eruvin 91b:6",
+      "Rashi on Eruvin 91b:5:1",
+      "Rashi on Eruvin 91b:5:2",
+      "Rashi on Eruvin 91b:6:2"
+    ],
+    "generatedAt": "2026-11-07T08:46:09.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ש מתיר</strong> - אף להוציא כלי חצר למבוי:"
+  },
+  "Rashi on Eruvin 91b:6:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:6:1",
+      "Rashi on Eruvin 91b:6:2",
+      "Eruvin 91b:6",
+      "Rashi on Eruvin 91b:7:1"
+    ],
+    "generatedAt": "2026-11-07T08:47:37.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל זמן שהן של רבים</strong> - קס\"ד דה\"ק הואיל ובכולן יש דיורין הרבה ושכחו ולא עירבו לעצמן כיון דהשתא לא שכיחי כלי הבתים בחצירות כולן מותרים זה עם זה:"
+  },
+  "Rashi on Eruvin 91b:7:1": {
+    "dependsOn": [
+      "Eruvin 91b:7",
+      "Rashi on Eruvin 91b:6:1",
+      "Rashi on Eruvin 91b:6:2"
+    ],
+    "generatedAt": "2026-11-07T08:48:21.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא עירבו חצירות בהדדי</strong> - וכל חצר עירבה לעצמה והאי כל זמן שהן של רבים דאמר לאו טעמא להיתרא הוא אלא רבותא הוא ואע\"ג דלא עירבו חצירות בהדדי וכל חצר עירבה לעצמה וכל חדא אית בה דיורין טובא ומפקי מאני דבתים לחצר ואיכא למיגזר דאיידי דאוושי דיורין ולא מיזדהרי שפיר ומפקי מאני דבתים לחצר האחרת אפ\"ה לא גזר:"
+  },
+  "Rashi on Eruvin 91b:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:8:1",
+      "Rashi on Eruvin 91b:8:2"
+    ],
+    "generatedAt": "2026-11-07T08:49:00.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא עירבו</strong> - לגמרי משמע:"
+  },
+  "Rashi on Eruvin 91b:8:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 91b:8:1",
+      "Eruvin 91b:8"
+    ],
+    "generatedAt": "2026-11-07T08:49:46.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 91b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לא עירבו</strong> - דמשמע לגמרי אשיתוף דמבוי קאי ובעירוב דחצירות לא איירי מידי דלא איכפת ליה בהו בין עירבה כל אחת לעצמה בין לא עירבו קאמר דמותרים במבוי בלא שיתוף:"
+  },
+  "Tosafot on Eruvin 91b:12:1": {
+    "dependsOn": [
+      "Eruvin 91b:12",
+      "Rashi on Eruvin 91b:12:1",
+      "Rashi on Eruvin 91b:12:2",
+      "Rashi on Eruvin 91b:12:3",
+      "Tosafot on Eruvin 91b:2:1",
+      "Tosafot on Eruvin 91b:5:1",
+      "Chidushei Halachot on Eruvin 91b:4",
+      "Chidushei Halachot on Eruvin 91b:5"
+    ],
+    "generatedAt": "2026-11-07T08:58:23.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 91b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו דתימא כי פליגי רבנן עליה דר\"ש היכא דעירבו</strong> - ואסור לטלטל מחצר למבוי משום דשכיחי מאני דבתים בחצר ומיהו מחצר לחצר לא אסרי אע\"ג דעירבו דאין תשמיש דחצר זה רגילין בחצר אחרת אבל רגילות הוא להוציא מחצר למבוי ואע\"ג דרבנן דשלש חצירות <span class=\"parenthesized\">(לעיל עירובין מה:)</span> גזרו וגם בברייתא דגג וחצר אכסדרה ומרפסת אמרינן דוקא לא עירבו הא עירבו גזרינן שמא רבנן דהכא אינם רבנן דהתם ובלאו הכי צ\"ל כן דבפרק מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין דף מו:)</span> אמר דתנא דפליג אדרבי שמעון היינו ר' יהודה ובברייתא המסייעה לרב יהודה אית ליה לרבי יהודה דגג וקרפף רשות אחת ולרבנן דהכא לית להו קמשמע לן דבלא עירבו פליגי וטעמא דאסור מחצר למבוי דהוי מבוי כמו קרפף דלא הוי רשות אחת עם החצר:"
+  },
+  "Tosafot on Eruvin 91b:2:1": {
+    "dependsOn": [
+      "Eruvin 91b:2",
+      "Rashi on Eruvin 91b:1:1",
+      "Rashi on Eruvin 91b:1:2",
+      "Rashi on Eruvin 91b:1:3",
+      "Rashi on Eruvin 91b:1:4",
+      "Rashi on Eruvin 91b:1:5",
+      "Rashi on Eruvin 91b:1:6",
+      "Rashi on Eruvin 91b:1:7",
+      "Rashi on Eruvin 91b:1:8",
+      "Tosafot on Eruvin 84a:5:1",
+      "Tosafot on Eruvin 90b:10:1"
+    ],
+    "generatedAt": "2026-11-07T08:38:44.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 91b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גג וחצר ואכסדרה ומרפסת כולן רשות אחת הן</strong> - לרב דאוקי מתני' בכיצד משתתפין <span class=\"parenthesized\">(לעיל עירובין דף פד.)</span> לאותם הדרים במרפסת אתי הכא שפיר דכשעירבו בני מרפסת לעצמן ובני חצר לעצמן דשכיחי מאני דבתים בחצר ומאני דעליות במרפסת כשהסלע גבוה י' הוי למרפסת שהסלע שוה להן ולבני חצר אסור להשתמש על הסלע אפילו כלים ששבתו בחצר אטו כלים ששבתו בבית ופחות מכאן אסורין לשניהם וכשלא עירבו דלא שכיחי מאני דבתים ודעליות שם הוי מרפסת וחצר רשות אחת ואין אוסרין זה על זה אבל לשמואל דקרי מרפסת לבני עליות ומיירי כשהסלע כנגד חלונות ומשתמשין שם בני עליות דרך חלונות כשלא עירבו ותימה היאך משתמשין בפחות מי' בני עליות על הסלע כלים ששבתו בעליות דרך חלונותיהן והלא אין חצר ומרפסת רשות אחת אלא לכלים ששבתו בתוכן ולא לכלים ששבתו בתוך הבית ועליות וי\"ל דלשמואל דוקא ארישא קאי דמיירי בגבוה עשרה הוא דמפליג בין עירבו בין לא עירבו כדפרשינן לעיל אליבא דשמואל אבל סיפא דקתני פחות מיכן לחצר דהוי דוקא לחצר לשמואל מיירי ודאי בין עירבו בני עלייה לעצמן ובני חצר לעצמן בין לא עירבו ובין הכי ובין הכי בני חצר מותרין ובני עלייה אסורין לשלשל מחלונותיהם:"
+  },
+  "Tosafot on Eruvin 91b:5:1": {
+    "dependsOn": [
+      "Eruvin 91b:5",
+      "Rashi on Eruvin 91b:5:1",
+      "Rashi on Eruvin 91b:5:2",
+      "Eruvin 91b:1",
+      "Eruvin 91b:2",
+      "Eruvin 91b:3",
+      "Eruvin 91b:11",
+      "Eruvin 91b:12",
+      "Shabbat 130b:8",
+      "Rashi on Shabbat 130b:8:1",
+      "Rashi on Shabbat 130b:8:2",
+      "Rashi on Shabbat 130b:8:3",
+      "Rashi on Shabbat 130b:8:4"
+    ],
+    "generatedAt": "2026-11-07T08:45:30.651Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 91b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכלים ששבתו בחצר מותר לטלטל בחצר</strong> - פי' בכל חצירות דאי באותו חצר ותו לא אפילו שבתו בבית נמי ומיירי לרב כשלא עירבו חצירות עם הבתים וקשיא דא\"כ היכי מייתי סייעתא בסמוך לרב דאמר מבוי שלא נשתתפו בו אין מטלטלין בו אלא בד' הא רב גופיה לא אסר אלא כשעירבו בתים עם החצירות אבל כשלא עירבו לא אסר כדמוכח בפרק אם לא הביא <span class=\"parenthesized\">(שבת דף קל:)</span> ואדרבה קשיא מינה לרב דבכה\"ג לא אסר רב ועוד דרב פסק כר\"ש והכא קאמר דר\"ש מתיר וי\"ל דמייתי דכמו שעירבו לרב אליבא דר\"ש אין מטלטלין בו אלא בד' וטעמא כדמפרש שם רש\"י משום דשעירבו אסור לטלטל מחצר למבוי אפילו כלים ששבתו בתוכה אטו כלים ששבתו בבית ואין במבוי שום תשמיש ודמיא לכרמלית כיון דאין בו אלא ג' מחיצות ולכך אין מטלטלין בו אלא בד' ה\"נ לרבנן אפילו בלא עירבו אין מטלטלין בו אלא בד' דאסרי לטלטל מאני דחצר למבוי דחצר ומבוי לדידהו לאו רשות אחת הן:"
+  }
+}

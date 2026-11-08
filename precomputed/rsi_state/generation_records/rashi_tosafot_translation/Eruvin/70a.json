@@ -1,0 +1,428 @@
+{
+  "Rashi on Eruvin 70a:12:1": {
+    "dependsOn": [
+      "Eruvin 70a:12",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:12:2",
+      "Rashi on Eruvin 70a:12:3",
+      "Eruvin 70a:10"
+    ],
+    "generatedAt": "2026-11-07T01:39:55.218Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תדע</strong> - מרישא דהוה ומית עסקינן דאי איתיה צריך להאי לבטוליה ליה:"
+  },
+  "Rashi on Eruvin 70a:12:2": {
+    "dependsOn": [
+      "Eruvin 70a:12",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:12:3",
+      "Eruvin 69b:25",
+      "Eruvin 70a:4",
+      "Eruvin 70a:5"
+    ],
+    "generatedAt": "2026-11-07T01:40:46.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיפא דרישה</strong> - מרישא דמתניתא עד אבל כו' חדא בבא היא הלכך סיפא דההיא קרי ליה סיפא דרישא:"
+  },
+  "Rashi on Eruvin 70a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:42:18.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחד לא</strong> - דצריך לבטל לכל אחד ואחד:"
+  },
+  "Rashi on Eruvin 70a:13:1": {
+    "dependsOn": [
+      "Eruvin 70a:13",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:12:2",
+      "Rashi on Eruvin 70a:12:3",
+      "Rashi on Eruvin 70a:13:2"
+    ],
+    "generatedAt": "2026-11-07T01:43:02.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי ליתני לאחד שעירב</strong> - כדתנא ברישא ואנא ידענא דתרי נינהו דאין עירוב בלא שנים:"
+  },
+  "Rashi on Eruvin 70a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:13:1",
+      "Eruvin 70a:12",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:12:2",
+      "Rashi on Eruvin 70a:12:3",
+      "Eruvin 70a:7"
+    ],
+    "generatedAt": "2026-11-07T01:45:57.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או לאחד שלא עירב</strong> - סיפא דההיא היא דהכי תנא: לשנים שעירבו או לא' שלא עירב:"
+  },
+  "Rashi on Eruvin 70a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:46:21.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד שלא עירב כו'</strong> - השתא מפרש לה לכולה אמאי אצטריך למיתנייהו לכולהו:"
+  },
+  "Rashi on Eruvin 70a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:47:45.332Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא גזרינן כו'</strong> - כלומר אי קשיא כיון דמית פשיטא דמבטל ליה להאי דפייש דהא קתני לה סיפא דאפי' שנים מבטלין ליחיד:"
+  },
+  "Rashi on Eruvin 70a:15:1": {
+    "dependsOn": [
+      "Eruvin 70a:15",
+      "Rashi on Eruvin 70a:15:2",
+      "Rashi on Eruvin 70a:14:1",
+      "Rashi on Eruvin 70a:14:2",
+      "Steinsaltz on Eruvin 70a:15",
+      "Rashi on Eruvin 70a:19:1",
+      "Rashi on Eruvin 69b:19:1"
+    ],
+    "generatedAt": "2026-11-07T01:50:41.722Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושנים שעירבו כו'</strong> - פשיטא דהכא ליכא למגזר דלמא אתי יחיד לבטולי להו דאי מבטל להו שפיר דמי דהא עירבו וכיון דאורי ביחיד דמצי לבטולי מה לי חד מה לי תרי:"
+  },
+  "Rashi on Eruvin 70a:15:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:15:1",
+      "Eruvin 70a:15"
+    ],
+    "generatedAt": "2026-11-07T01:51:16.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דלא עירב ליקנסיה</strong> - דמרישא לא נפקא לן דרישא איירי דהאי דלא עירב בטיל להנך דעירבו:"
+  },
+  "Rashi on Eruvin 70a:16:1": {
+    "dependsOn": [
+      "Eruvin 70a:16",
+      "Rashi on Eruvin 70a:16:2"
+    ],
+    "generatedAt": "2026-11-07T01:52:01.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא הך סיפא לגלויי רישא</strong> - דבדהוה ומית עסקינן רישא דקתני לאחד שעירב דאילו איתיה לאידך בעי לבטולי ליה כדקתני בהך סיפא:"
+  },
+  "Rashi on Eruvin 70a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:16:1",
+      "Eruvin 70a:15",
+      "Eruvin 70a:13",
+      "Rashi on Eruvin 70a:13:1",
+      "Rashi on Eruvin 70a:13:2",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:12:2"
+    ],
+    "generatedAt": "2026-11-07T01:53:11.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאביי</strong> - דמתרץ הך סיפא מאי לשנים לאחד משנים למה לי דתנייה הא תנא ליה רישא דיחיד מבטל לאחד משנים מה לי חד מבטל מה לי תרין מבטלין:"
+  },
+  "Rashi on Eruvin 70a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:53:36.221Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני מילי כו'</strong> - דכל הני בטולין דלעיל איכא מקצתייהו דעירבו:"
+  },
+  "Rashi on Eruvin 70a:17:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:17:1"
+    ],
+    "generatedAt": "2026-11-07T01:54:06.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורת עירוב</strong> - תורת עירוב מן התינוקות הבאים אחרי כן:"
+  },
+  "Rashi on Eruvin 70a:18:1": {
+    "dependsOn": [
+      "Eruvin 70a:18",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 70a:16:1",
+      "Rashi on Eruvin 70a:18:2",
+      "Eruvin 69b:1",
+      "Eruvin 70a:4",
+      "Eruvin 70a:5"
+    ],
+    "generatedAt": "2026-11-07T01:55:46.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאביי תנא הך סיפא</strong> - דלא איצטריך דהא פשיטא דאיכא חד דלא בטיל ליה רשותיה אלא להכי תנייה לאשמועינן דכולה מתניתא בדאיתנהו לתרוייהו המערבין עסקינן ואפילו הכי קתני רישא דרישא אחד שלא עירב נותן רשותו לאחד שעירב דאין צריך לבטל רשותיה לכל אחד ואיהו לא אסר אחבריה:"
+  },
+  "Rashi on Eruvin 70a:18:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:18:1"
+    ],
+    "generatedAt": "2026-11-07T01:56:29.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איידי דתנא רישא</strong> - אחד שלא עירב נותן רשותו לאחד שעירב תנא הך סיפא דאיפכא לא ולעולם רישא בדהוה ומית וסיפא בדאיתנהו:"
+  },
+  "Rashi on Eruvin 70a:19:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:19:2",
+      "Eruvin 70a:18"
+    ],
+    "generatedAt": "2026-11-07T01:57:07.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא תו למה לי</strong> - פשיטא דאסרי אהדדי:"
+  },
+  "Rashi on Eruvin 70a:19:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:19:1",
+      "Rashi on Eruvin 69b:19:5"
+    ],
+    "generatedAt": "2026-11-07T01:58:50.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן כיון דבעידנא דבטיל להו הנך כו'</strong> - ולעיל פרישנא לה:"
+  },
+  "Rashi on Eruvin 70a:1:1": {
+    "dependsOn": [
+      "Eruvin 70a:1"
+    ],
+    "generatedAt": "2026-11-07T01:27:45.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליגזר</strong> - דאי מבטלי אינהו ליחיד אתו למימר נמי יחיד מבטל לשנים:"
+  },
+  "Rashi on Eruvin 70a:20:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:16:1",
+      "Rashi on Eruvin 70a:16:2",
+      "Rashi on Eruvin 70a:17:1",
+      "Rashi on Eruvin 70a:18:1",
+      "Rashi on Eruvin 70a:19:1",
+      "Rashi on Eruvin 70a:2:2"
+    ],
+    "generatedAt": "2026-11-07T01:59:48.528Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קני על מנת להקנות</strong> - ממשנה יתירה נפקא לן דאי לאו הכי לא איצטריך למיתנייה ולעיל פרישנא לה:"
+  },
+  "Rashi on Eruvin 70a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:20:1",
+      "Tosafot on Eruvin 70a:21:1",
+      "Rashi on Eruvin 69b:10:1",
+      "Rashi on Eruvin 69b:11:1"
+    ],
+    "generatedAt": "2026-11-07T02:00:33.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורש</strong> - ששכח אביו ולא עירב ומת בשבת ולא ביטל רשותו מהו שיבטל היורש:"
+  },
+  "Rashi on Eruvin 70a:2:1": {
+    "dependsOn": [
+      "Eruvin 70a:2",
+      "Rashi on Eruvin 70a:2:2",
+      "Eruvin 69b:11",
+      "Rashi on Eruvin 70a:1:1",
+      "Rashi on Eruvin 70a:4:1",
+      "Rashi on Eruvin 69b:19:1",
+      "Rashi on Eruvin 70a:16:2",
+      "Rashi on Eruvin 70a:3:1",
+      "Rashi on Eruvin 70a:5:1",
+      "Rashi on Eruvin 70a:12:1",
+      "Rashi on Eruvin 69b:21:1",
+      "Eruvin 69b:19"
+    ],
+    "generatedAt": "2026-11-07T01:30:37.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין נוטלין רשות למה לי</strong> - הא תנא ליה היו שנים אוסרין זה על זה:"
+  },
+  "Rashi on Eruvin 70a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T01:31:47.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא צריכא</strong> - משנה יתירה לאשמועינן דאפי' אמרו ליה קמאי קני על מנת להקנות והדר איהו ובטיל לחבריה לא משתרי האי בתרא דמהו דתימא שליחא שווינהו קא משמע לן כיון דלא קנה איהו לאשתרויי לא מצי לאקנויי:"
+  },
+  "Rashi on Eruvin 70a:4:1": {
+    "dependsOn": [
+      "Eruvin 70a:4",
+      "Rashi on Eruvin 70a:4:2"
+    ],
+    "generatedAt": "2026-11-07T01:34:26.033Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד שלא עירב כו'</strong> - כגון ג' דיורין בחצר השנים עירבו והשלישי לא עירב מבטל לאחד מן המערבין ומותר דהאי בהדי חבריה עירב אלמא אין צריך לבטל אלא לאחד דכולהו הוו כחד:"
+  },
+  "Rashi on Eruvin 70a:4:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:4:1"
+    ],
+    "generatedAt": "2026-11-07T01:35:04.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושנים שלא עירבם נותנין רשותן לשנים</strong> - הדרים עמהן ועירבו או ליחיד שלישי הדר עמהן ולא עירב לא הוא ולא הן:"
+  },
+  "Rashi on Eruvin 70a:5:1": {
+    "dependsOn": [
+      "Eruvin 70a:5",
+      "Rashi on Eruvin 70a:4:1",
+      "Rashi on Eruvin 70a:4:2",
+      "Rashi on Eruvin 70a:5:1",
+      "Rashi on Eruvin 70a:5:2"
+    ],
+    "generatedAt": "2026-11-07T01:35:59.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אין אחד שעירב</strong> - עם אחד נותן רשותו ליחיד שלישי שדר עמהן ולא עירב דכי בטיל ליה איהו רשותיה אכתי איכא חבריה דאסר עליה:"
+  },
+  "Rashi on Eruvin 70a:5:2": {
+    "dependsOn": [
+      "Eruvin 70a:5",
+      "Rashi on Eruvin 70a:5:1"
+    ],
+    "generatedAt": "2026-11-07T01:36:36.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשנים שלא עירבו</strong> - כדאמרינן לעיל שנים אין נוטלין רשות:"
+  },
+  "Rashi on Eruvin 70a:8:1": {
+    "dependsOn": [
+      "Eruvin 70a:8"
+    ],
+    "generatedAt": "2026-11-07T01:37:15.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 70a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה ומית</strong> - ועל כרחך דרבה בשיירא שחנתה בבקעה והקיפוה חצר ונטו שם איש אהלו מוקי לה דכי מת אין ליורשיו שם כלום דאי בחצר ממש הא איכא יורשין וכיון דאילו הוה אבוהון קיים הוה אסר אינהו נמי אסרי:"
+  },
+  "Tosafot on Eruvin 70a:21:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:21:1",
+      "Eruvin 70a:21",
+      "Eruvin 70b:5",
+      "Eruvin 70b:10",
+      "Chidushei Halachot on Eruvin 70a:4",
+      "Chidushei Halachot on Eruvin 70a:5",
+      "Chidushei Halachot on Eruvin 70a:6"
+    ],
+    "generatedAt": "2026-11-07T02:03:18.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורש מהו שיבטל</strong> - בשלא עירב האב מיירי <span class=\"rashi-quotation\">כדפי' בקונט'</span> דאם עירב הא תני לקמן <span class=\"parenthesized\">(עמוד ב')</span> א' מבני חצר שמת והניח רשותו לאחד מן השוק משחשיכה אינו אוסר ואיירי כגון שבא היורש לדור שם בשבת דאם לא כן לא בעי ביטול דהוי כמו בית התבן ובית הבקר דלא אסר כדאמר רבי יהודה לקמן בפירקין <span class=\"parenthesized\">(עירובין עב:)</span> דאינו אוסר אלא מקום דירה ור\"ש דפסיק פרק מי שהוציאוהו <span class=\"parenthesized\">(לעיל עירובין מז.)</span> כוותיה קאמר דאפילו הלך לשבות אצל בתו באותה העיר אינו אוסר ומיהו אם היה היורש דר באותה חצר שמא היה אוסר להם בית אביו כשירש בשבת אע\"פ שלא בא לדור שם אפילו עירב עם חביריו בערב שבת אפילו הכי בעי ביטול ולא מהני עירובן לגבי אותה חצר שירש בשבת כדתניא לקמן בשמעתין אחד מן השוק שמת והניח רשותו לאחד מבני חצר מבעוד יום אינו אוסר פי' לפי שבן חצר מערב עם חביריו משחשיכה אוסר פי' דלא מהני עירוב לענין אותו חצר שירש בשבת ומיהו הא לא אפשר לומר דמיירי כשהיה היורש דר עם אביו דאם כן אי בעו לאיערובי מאתמול מצו מערבין קרינן ביה דאם נותן פת משלו הוי עירוב אף ע\"פ שלא זיכה לאביו כדאמר לעיל פרק מי שהוציאוהו <span class=\"parenthesized\">(עירובין דף מט:)</span> חמשה שגבו את עירובן כשהן מוליכין את עירובן למקום אחר א' מוליכו ע\"י כולן דאם לקח הפת משלו ונתן בחצר של שיתוף מועיל לכולם כדפירש התם <span class=\"rashi-quotation\">בקונטרס</span> דשליחות דכולהו קעביד הואיל ועירבו יחד ועוד תניא לקמן בפירקין חמשה חבורות ששבתו בטרקלין ב\"ה אומר עירוב אחד לכולם אע\"פ שיש לחלק דהתם כולם שוים בבית זה כמו זה ואין זה טפל לזה אבל הכא שהבן טפל לאביו אם נתן הבן פת אינו מועיל מ\"מ אינו דומה כלל לחלק ומהא דאמר לעיל <span class=\"parenthesized\">(עירובין דף סד.)</span> אפילו שכירו ולקיטו נותן את עירובו אין ראיה לכאן דלמא הני מילי בנכרי אבל בישראל לא:"
+  },
+  "Tosafot on Eruvin 70a:3:1": {
+    "dependsOn": [
+      "Eruvin 70a:3",
+      "Maharsha: Chidushei Halachot on Eruvin 70a:1",
+      "Eruvin 26b:5",
+      "Eruvin 26b:6",
+      "Eruvin 26b:7",
+      "Eruvin 26b:8"
+    ],
+    "generatedAt": "2026-11-07T01:33:43.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעא מיניה אביי מרבה כו'</strong> - לא שמיע ליה ברייתא דלעיל דסוף פ\"ב <span class=\"parenthesized\">(דף כו:)</span> כשהוא מבטל רשותו אין צריך לבטל לכל אחד ומשמע התם דפלוגתא היא דר\"א ורבנן וההוא ברייתא כר\"א ואין לומר דלרבנן מיבעיא ליה ופשט ליה דצריך לבטל דאם כן מאי פריך מברייתא דבסמוך:"
+  },
+  "Tosafot on Eruvin 70a:8:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 70a:8:1"
+    ],
+    "generatedAt": "2026-11-07T01:38:51.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 70a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן דהוה ומית</strong> - פירש רש\"י דעל כרחך דרבה בשיירא שחנתה בבקעה והקיפוה חצר ונטו בה איש אהלו מוקי לה דכי מת אין ליורשיו שם כלום דאי בחצר ממש איכא יורשין וכיון דאילו הוה אבוהון קיים הוה אסר אינהו נמי אסרי ובחנם דחק דאין היורש אוסר אלא א\"כ הולך לדור שם דלעיל בפ' מי שהוציאוהו <span class=\"parenthesized\">(עירובין דף מז.)</span> פסקינן כר\"ש דתנן לקמן פרק כיצד משתתפין <span class=\"parenthesized\">(עירובין דף פו.)</span> ר\"ש אומר אפי' הניח את ביתו והלך לשבות אצל בתו באותה העיר אינו אוסר שכבר הסיח מלבו ומיהו אי בעו לאוקומי כר\"מ דאמר כשהלך לשבות בעיר אחרת א' נכרי ואחד ישראל אוסר וקאמרינן נמי לקמן בפירקין <span class=\"parenthesized\">(עירובין דף עב:)</span> בית התבן ובית הבקר ובית העצים ובית האוצרות הרי זה אוסר עליו צריך לאוקומי בשיירא שחנתה בבקעה א\"נ כגון שזה עצמו שעירב הוא יורש:"
+  }
+}

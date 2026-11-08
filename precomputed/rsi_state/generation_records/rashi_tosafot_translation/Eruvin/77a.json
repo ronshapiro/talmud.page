@@ -1,0 +1,410 @@
+{
+  "Rashi on Eruvin 77a:10:1": {
+    "dependsOn": [
+      "Eruvin 77a:10"
+    ],
+    "generatedAt": "2026-11-06T04:36:04.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא לא</strong> - משתרי דלדידיה נמי תשמישו בקשה הוא:"
+  },
+  "Rashi on Eruvin 77a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:36:24.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בעיתא תשמישתיה</strong> - מה שמניח בו משתמר:"
+  },
+  "Rashi on Eruvin 77a:11:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:11:1"
+    ],
+    "generatedAt": "2026-11-06T04:37:01.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעיתא תשמישתיה</strong> - שנופלים החפצים:"
+  },
+  "Rashi on Eruvin 77a:12:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:12:2",
+      "Eruvin 77a:13",
+      "Rashi on Eruvin 77a:13:1",
+      "Rashi on Eruvin 77a:13:2",
+      "Rashi on Eruvin 77a:13:3"
+    ],
+    "generatedAt": "2026-11-06T04:38:32.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא למעט</strong> - אכותל קאי וקס\"ד שעשה תל עפר למטה בקרקע סמוך לכותל או בנה איצטבא או הניח שם פספסים:"
+  },
+  "Rashi on Eruvin 77a:12:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:12:1",
+      "Rashi on Eruvin 77a:4:1",
+      "Rashi on Eruvin 77a:4:2",
+      "Rashi on Eruvin 77a:5:1",
+      "Rashi on Eruvin 75b:1:1",
+      "Rashi on Eruvin 75b:1:2",
+      "Rashi on Eruvin 2a:1:1",
+      "Steinsaltz on Eruvin 77a:12",
+      "Rabbeinu Chananel on Eruvin 77a:4",
+      "Eruvin 77a:13",
+      "Rashi on Eruvin 77a:13:1",
+      "Rashi on Eruvin 77a:13:2",
+      "Rashi on Eruvin 77a:13:3"
+    ],
+    "generatedAt": "2026-11-06T04:40:34.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יש במעוטו ד'</strong> - אורך בצד משך הכותל הוי כפתח וכיון דממנו ולמעלה לא גבוה עשרה משתמש בכל הכותל שהרי תשמישו בנחת שעולה לו דרך פתחו:"
+  },
+  "Rashi on Eruvin 77a:13:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:13:2",
+      "Rashi on Eruvin 77a:13:3"
+    ],
+    "generatedAt": "2026-11-06T04:41:03.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אהני מעוטא</strong> - למיהוי פתחא כוליה שרי:"
+  },
+  "Rashi on Eruvin 77a:13:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:13:1",
+      "Rashi on Eruvin 77a:13:2",
+      "Rashi on Eruvin 77a:13:3"
+    ],
+    "generatedAt": "2026-11-06T04:41:30.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי לא אהני</strong> - הא בטיל ליה:"
+  },
+  "Rashi on Eruvin 77a:13:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:13:1",
+      "Rashi on Eruvin 77a:13:2",
+      "Eruvin 77a:12"
+    ],
+    "generatedAt": "2026-11-06T04:42:14.788Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבינא</strong> - לאו מלמטה עסקינן דהתם ודאי בציר מד' לא מהני למידי אלא כגון שעקר חוליא מראשו מגובהו של כותל קרי ראשו כדתנן היו בראשו פירות הלכך אי הוי מעוטא ארבעה אורך הוי פיתחא לכל הכותל בציר מהכא פיתחא הוא דלא הוי אבל לאשתמושי ביה שרי דכיון דלא גבוה י' לא הוי רשותא:"
+  },
+  "Rashi on Eruvin 77a:14:1": {
+    "dependsOn": [
+      "Eruvin 77a:14",
+      "Rashi on Eruvin 77a:12:1",
+      "Rashi on Eruvin 77a:13:1"
+    ],
+    "generatedAt": "2026-11-06T04:43:08.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפה ספל</strong> - סמוך לכותל ומיעט גובהו מעשרה כל הני מיעוטי כגון דליכא י' מראשו לראש הכותל:"
+  },
+  "Rashi on Eruvin 77a:16:1": {
+    "dependsOn": [
+      "Eruvin 77a:16"
+    ],
+    "generatedAt": "2026-11-06T04:43:49.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי</strong> - אכתי ניטל בשבת הוא:"
+  },
+  "Rashi on Eruvin 77a:16:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:16:1",
+      "Rashi on Eruvin 77a:16:3"
+    ],
+    "generatedAt": "2026-11-06T04:44:18.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פגה</strong> - תאנה בוסר שטומנין אותה בתבן להתבשל ותבן מוקצה הוא ואסור לטלטלו כגון שהקצהו ללבון לבנים:"
+  },
+  "Rashi on Eruvin 77a:16:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:16:1",
+      "Rashi on Eruvin 77a:16:2"
+    ],
+    "generatedAt": "2026-11-06T04:45:04.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחררה שהטמינה</strong> - אתמול בגחלים ועכשיו כבו ומ\"מ מוקצין הן אבל לא כבו לא דמתוך שנהפכים מכבה את התחתונות ומבעיר את העליונות כדאמרינן בכריתות <span class=\"parenthesized\">(דף כ.)</span>:"
+  },
+  "Rashi on Eruvin 77a:17:1": {
+    "dependsOn": [
+      "Eruvin 77a:17"
+    ],
+    "generatedAt": "2026-11-06T04:45:38.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאית להו אוגניים</strong> - כעין ספלים שלנו דעכשיו עפר מונח עליהן והוי מזיז עפר ממקומו ודומה לחופר:"
+  },
+  "Rashi on Eruvin 77a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:45:58.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הטומן</strong> - להצניע:"
+  },
+  "Rashi on Eruvin 77a:1:1": {
+    "dependsOn": [
+      "Eruvin 77a:1"
+    ],
+    "generatedAt": "2026-11-06T04:19:10.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעלין</strong> - מחצירן לראשו והוא הדין דמורידין דמקום פטור הוא ובטיל לכאן ולכאן להקל:"
+  },
+  "Rashi on Eruvin 77a:4:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:4:1",
+      "Rashi on Eruvin 77a:4:2",
+      "Rashi on Eruvin 76b:1:1",
+      "Rashi on Eruvin 76b:2:1"
+    ],
+    "generatedAt": "2026-11-06T04:23:47.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום שאין בו ד'</strong> - רוחב ועומד בין רה\"י לרה\"ר ויש לנו היכר כגון גבוה מן הארץ ג' ואילו היה רוחב ד' היה נקרא רשות לעצמו והויא כרמלית ואסור לכאן ולכאן אבל עכשיו נקרא מקום פטור ומותר לכאן ולכאן לכתף עליו משאוי שלהן:"
+  },
+  "Rashi on Eruvin 77a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:24:10.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יחליפו</strong> - דרבנן היא דאילו חיובא ליכא דבעינן עקירה מרשות זו והנחה לרשות זו והכא עקירה מרה\"י גמורה והנחה למקום פטור ועקירה ממקום פטור והנחה לרה\"ר גמורה:"
+  },
+  "Rashi on Eruvin 77a:5:1": {
+    "dependsOn": [
+      "Eruvin 77a:5"
+    ],
+    "generatedAt": "2026-11-06T04:24:57.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב לית ליה דרב דימי</strong> - בתמיה והא מתניתא היא במסכת שבת בפ\"ק [דף ו.] עומד אדם על האסקופה נוטל מעני ונותן לו מבעל הבית ונותן לו ובלבד שלא יטול מזה ויתן לזה:"
+  },
+  "Rashi on Eruvin 77a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:25:15.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשויות דאורייתא</strong> - כגון רשות רבים ויחיד:"
+  },
+  "Rashi on Eruvin 77a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:25:38.984Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבנן</strong> - חצירות דרשות יחיד ויחיד הוא ומדרבנן הוא דאסור:"
+  },
+  "Rashi on Eruvin 77a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-06T04:31:19.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצידו אחד שוה לארץ</strong> - כלומר גבוה הוא מן האחת ונמוך הוא לחברתה כגון שקרקעיתה של זו גבוה. כל כמה דלא גבוה י' קרי ליה שוה לארץ:"
+  },
+  "Rashi on Eruvin 77a:7:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:7:1"
+    ],
+    "generatedAt": "2026-11-06T04:31:51.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותנין אותו</strong> - להעלות ולהוריד מעליו וחבירו אסור:"
+  },
+  "Rashi on Eruvin 77a:9:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:9:1",
+      "Rashi on Eruvin 77a:9:2",
+      "Eruvin 77a:9"
+    ],
+    "generatedAt": "2026-11-06T04:34:59.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חריץ</strong> - על פני אורך החצירות מבדיל בין זו לזו הוי מחיצה מעלייתא:"
+  },
+  "Rashi on Eruvin 77a:9:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:9:1"
+    ],
+    "generatedAt": "2026-11-06T04:35:33.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 77a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוה לארץ</strong> - שאינו עמוק ממנה י' כגון שקרקעיתה נמוך:"
+  },
+  "Tosafot on Eruvin 77a:18:1": {
+    "dependsOn": [
+      "Eruvin 77a:18",
+      "Tosafot on Eruvin 77a:6:1",
+      "Tosafot on Eruvin 77a:6:2",
+      "Rashi on Eruvin 77a:18:1",
+      "Mishnah Kilayim 1:9",
+      "Shabbat 113a:7",
+      "Shabbat 113a:8",
+      "Shabbat 113a:9",
+      "Shabbat 113a:10",
+      "Rashi on Shabbat 113a:9:1",
+      "Rashi on Shabbat 113a:9:3",
+      "Rashi on Shabbat 113a:9:4",
+      "Tosafot on Eruvin 2a:10:1"
+    ],
+    "generatedAt": "2026-11-06T04:48:48.354Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הטומן לפת וצנון כו'</strong> - בשלא השרישו איירי דכשהשרישו לא היו ניטלין בשבת וא\"ת בשלמא גבי כלאים ושביעית אצטריך לאשמועי' דלא גזרינן כשמתכוון להטמין אמו דילמא אתי ליטע אבל מעשר מה שייך כאן אפי' השריש כיון דליכא תוספת ואי נקטינן לענין דשרי לעשר עליו מן התלוש או ממנו על התלוש ולא חיישינן דילמא אתי לפרושי מן התלוש על המחובר ומן המחובר על התלוש א\"כ הוה ליה למנקט תרומה דגבי מחובר ותלוש רגיל להזכיר תרומה בכל מקום אין תורמין מן התלוש על המחובר פירות ערוגה זו תלושין יהיו תרומה על פירות מחוברין ואור\"י דרגילות הוא שמתוספין מחמת ליחלוחית הקרקע כעין שאנו רואין שומין ובצלים שמתוספין אפילו כשמונחים בחלון ועל אותה תוספת קאמר דאין צריך לעשר הואיל והיו מתוקנים מקודם לכן ודוקא נקט הטומן אבל אם לשם נטיעה עושה חושש משום כולם:"
+  },
+  "Tosafot on Eruvin 77a:1:1": {
+    "dependsOn": [
+      "Eruvin 77a:1",
+      "Rashi on Eruvin 77a:1:1",
+      "Eruvin 92a:1",
+      "Eruvin 92a:2"
+    ],
+    "generatedAt": "2026-11-06T04:20:50.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוחנן אמר אלו מעלין כו'</strong> - פירוש מן הבית דמן החצר אפילו ברחב ד' שרי דכר\"ש מוקי לה רבי יוחנן לקמן בריש כל גגות <span class=\"parenthesized\">(עירובין דף צב.)</span>:"
+  },
+  "Tosafot on Eruvin 77a:3:1": {
+    "dependsOn": [
+      "Eruvin 77a:3",
+      "Tosafot on Eruvin 77a:1:1",
+      "Eruvin 77a:1",
+      "Maharsha: Chidushei Halachot on Eruvin 77a:2"
+    ],
+    "generatedAt": "2026-11-06T04:22:21.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולין אין מעלין לא</strong> - תימה דמאי קס\"ד וכי לא ידע דרבי יוחנן איירי באין לו ארבעה וי\"ל דס\"ד דטעמא דרבי יוחנן משום דאין רגילות להשתמש שם ולא אסרי אהדדי והוא הדין ברוחב ד' כיון שהוא גבוה י' ואין נח להשתמש שם ולהכי לא פריך אלא לר' יוחנן אבל לרב דטעמא משום דבטל הוא לא שייך אלא באין בו ד' על ד':"
+  },
+  "Tosafot on Eruvin 77a:6:1": {
+    "dependsOn": [
+      "Eruvin 77a:6",
+      "Eruvin 9a:11",
+      "Eruvin 9a:12",
+      "Eruvin 9a:13",
+      "Eruvin 9a:14",
+      "Maharsha: Chidushei Halachot on Eruvin 77a:3"
+    ],
+    "generatedAt": "2026-11-06T04:28:07.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן ברשויות דרבנן</strong> - נראה דוקא כי הכא שהכל רה\"י אלא שלא עירבו אבל מקום שאין בו ד' על ד' שבין רה\"י לכרמלית אין נראה שיחלוק רב אלא מותר לבני רה\"י ולבני כרמלית לכתף עליו וקצת מוכח כן בפ\"ק <span class=\"parenthesized\">(דף ט.)</span> דמוקי רבא הא דאמר רב תוך הפתח אע\"פ שאין בו ד' על ד' צריך לחי אמר להתירו הפתוח לכרמלית משום דמצא מין את מינו ולרה\"ר שרי ולא קאמר משום דעשו חיזוק אלא ודאי אף לרב בין כרמלית לרה\"י לא עשו חיזוק ומיהו מצינו למימר דהתם לא נקט טעמא דחיזוק משום דאית ליה טעמא אחרינא:"
+  },
+  "Tosafot on Eruvin 77a:6:2": {
+    "dependsOn": [
+      "Eruvin 85b:5",
+      "Eruvin 77a:6",
+      "Tosafot on Eruvin 77a:6:1"
+    ],
+    "generatedAt": "2026-11-06T04:30:46.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברשויות דרבנן</strong> - בפרק כיצד משתתפין מיקל רב דימי טפי משמיה דרבי יוחנן ברשויות דרבנן ושרי אחילו להחליף כשיש בין רשות היחיד לכרמלית מקום שאין בו ד' על ד' והא דאמר ר' יוחנן הכא אלו מעלין מכאן ואוכלין מסיק דזעירי אמרה:"
+  },
+  "Tosafot on Eruvin 77a:7:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 77a:7:1",
+      "Rashi on Eruvin 77a:7:2",
+      "Tosafot on Eruvin 93b:1:1",
+      "Eruvin 93b:1",
+      "Eruvin 93b:2",
+      "Tosafot on Eruvin 77a:1:1"
+    ],
+    "generatedAt": "2026-11-06T04:34:24.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 77a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כותל שבין ב' חצירות גבוה עשרה וצדו אחד שוה לארץ</strong> - לאו שוה ממש קאמר דאם כן לאו היינו כותל אלא הכל היא קרקעית חצר אלא כל שאין גבוה י' שוה לארץ קרי ליה <span class=\"rashi-quotation\">כך פי' בקונטרס</span> וא\"ת לרב חסדא דאמר בפרק כל גגות <span class=\"parenthesized\">(לקמן עירובין דף צג:)</span> גידוד ה' ומחיצה ה' אין מצטרפין מאי קאמר נותנין אותו לזה ששוה לארץ הא אין מטלטלין בעליונה אלא בד' וי\"ל דמכל מקום נפקא מינה דתוך ד' מיהא שרי לטלטל מן הכותל לעליונה:"
+  }
+}

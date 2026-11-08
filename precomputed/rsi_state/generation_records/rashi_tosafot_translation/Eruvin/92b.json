@@ -1,0 +1,209 @@
+{
+  "Rashi on Eruvin 92b:1:1": {
+    "dependsOn": [
+      "Eruvin 92b:1"
+    ],
+    "generatedAt": "2026-11-07T09:43:21.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גפנים מותרין</strong> - דהא אין דיורי קטנה מושלין בגדולה:"
+  },
+  "Rashi on Eruvin 92b:1:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:1:1",
+      "Rashi on Eruvin 92b:1:2"
+    ],
+    "generatedAt": "2026-11-07T09:44:42.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גפנים בקטנה מותר לזרוע את הגדולה</strong> - לכתחלה דלגבי גדולה פיתחא וכל פתח כמחיצה הוא ואפילו סמוך לגפנים מותר לזרוע את הגדולה לכתחלה כדתנן <span class=\"parenthesized\">(ב\"ב דף כו.)</span> היה גדר בנתיים זה סומך לגדר מכאן וזה סומך לגדר מכאן וכשיגדלו הזרעים אע\"ג דדיורי גדולה בקטנה אין אוסרים את הגפנים דאמר במנחות פ\"ב <span class=\"parenthesized\">(דף טו.)</span> מעשה באחד שזרע את כרם של חבירו ובא מעשה לפני חכמים ואסרו את הזרעים והתירו את הגפנים ואמר מאי טעמא קנבוס ולוף אסרה תורה שאר זרעים מדרבנן אסירי הך דלא עבד איסורא לא קנסו רבנן הכי נמי הואיל וכשזרע את הגדולה בהיתר זרעה אפילו שתיהם שלו ליכא למקנסיה וכ\"ש אם קטנה של אחרים וגפנים שלה קדמו:"
+  },
+  "Rashi on Eruvin 92b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T09:46:45.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשה</strong> - עומדת בגדולה וזרק לה בעלה גט לתוך קטנה ושתיהן שלה ואיכא למאן דאמר במסכת גיטין <span class=\"parenthesized\">(דף עז:)</span> דהא דתנן הזורק גט לאשתו והיא בתוך ביתה או בתוך חצירה הרי זו מגורשת דוקא עומדת לתוכה באותה שעה אבל אם אינה עומדת לתוכה באותה שעה לא ואע\"ג דשלה היא:"
+  },
+  "Rashi on Eruvin 92b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T09:47:04.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתגרשת היא</strong> - שהרי היא כעומדת בקטנה דכולה קטנה בתר גדולה שייכא:"
+  },
+  "Rashi on Eruvin 92b:2:3": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:2:1",
+      "Rashi on Eruvin 92b:2:2",
+      "Tosafot on Eruvin 92b:2:1",
+      "Steinsaltz on Eruvin 92b:2",
+      "Eruvin 92b:1",
+      "Rashi on Eruvin 92b:1:1",
+      "Rashi on Eruvin 92b:1:2",
+      "Eruvin 92b:3",
+      "Rashi on Eruvin 92b:3:1"
+    ],
+    "generatedAt": "2026-11-07T09:49:03.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה מתגרשת</strong> - דגדולה לאו בתר קטנה אזלא וגט לא קני לאשה דנימא נשדי אשה בתר גט דאשה לא בעיא למקני גיטא:"
+  },
+  "Rashi on Eruvin 92b:3:1": {
+    "dependsOn": [
+      "Eruvin 92b:3",
+      "Rashi on Eruvin 92b:3:2",
+      "Rashi on Eruvin 92b:1:1",
+      "Rashi on Eruvin 92b:1:2",
+      "Rashi on Eruvin 92b:2:1"
+    ],
+    "generatedAt": "2026-11-07T09:50:49.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצאין</strong> - דשליח ציבור דקאי בקטנה הכא שייך:"
+  },
+  "Rashi on Eruvin 92b:3:2": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:3:1"
+    ],
+    "generatedAt": "2026-11-07T09:52:21.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין יוצאין</strong> - דהשתא לא שייך בתרייהו וצבור דקיימי בקטנה לא מצינן למימר דשייכי בתריה דרובה בתר חד לא משתדו:"
+  },
+  "Rashi on Eruvin 92b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T09:53:58.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לקרות קריאת שמע בגדולה</strong> - דגבי גדולה כמחיצה היא ולא מצי קטנה מקלקלא בשום מידי:"
+  },
+  "Rashi on Eruvin 92b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:5:1"
+    ],
+    "generatedAt": "2026-11-07T09:55:00.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאילמלי אין מחיצה</strong> - אי לאו הנך גיפופי שעודפין בגדולה היו הגדולה והקטנה שוות הוו להו כחצר אחת ומותר לזרוע שם עם הגפנים ומרחיק ד' אמות השתא משום הנך גיפופי שדינן לכולה קטנה בתר גדולה ומיתסרא כולה מצינו מחיצה שאוסרת:"
+  },
+  "Rashi on Eruvin 92b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T09:59:34.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואילו השוה את גיפופיה</strong> - שבנה מחיצות בתוך הגדולה מכאן ומכאן עד שיקצרנה כמדת הקטנה וסילק את הגיפופין על ידי מחיצות הללו <span class=\"image-ref-container\"><span class=\"image-ref-text\">(*):</span><span class=\"image-ref\"><img src=\"data:image/png;base64,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\"></span></span><span class=\"image-pointer\">(*)</span> אף גדולה אסורה ועכשיו שתיהן שוות נמצאו מחיצות הללו באות לאיסור:"
+  },
+  "Rashi on Eruvin 92b:9:1": {
+    "dependsOn": [
+      "Eruvin 92b:9",
+      "Eruvin 92b:7"
+    ],
+    "generatedAt": "2026-11-07T10:00:12.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Eruvin 92b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סילוק מחיצות</strong> - האחרונות סילקו את הראשונות אבל גבי זריעה אסר עודף הגיפופין על הקטנה משום יתור מחיצה:"
+  },
+  "Tosafot on Eruvin 92b:10:1": {
+    "dependsOn": [
+      "Eruvin 92b:10",
+      "Eruvin 92b:8",
+      "Eruvin 92b:1",
+      "Eruvin 93a:1"
+    ],
+    "generatedAt": "2026-11-07T10:01:57.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 92b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רבא לאביי</strong> - ר\"ת הגיה רבה שהרי רבה ור' זירא ורבה בר רב תנן הוו יתבי ומדקדקו שלשתן ממתני' ש\"מ דיורין כו' ואביי הקשה על דקדוק שלהן וכל אחד ואחד בא לקיים דבריו דמצינו מחיצה לאיסור אע\"ג דקצת נראה דרבא היה לו לגרוס מדקאמר בתר הכי לדידי כשירה ולדידך הוי סילוק מחיצות ורבא ואביי פליגי בהא בסוכה בפ\"ק <span class=\"parenthesized\">(דף יח.)</span> שמזכירו אחר אביי ולקמן נמי מייתי לה מ\"מ נראה טפי כמו שהגיה ר\"ת:"
+  },
+  "Tosafot on Eruvin 92b:1:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:1:1",
+      "Rashi on Eruvin 92b:1:2",
+      "Eruvin 92b:1"
+    ],
+    "generatedAt": "2026-11-07T09:46:16.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 92b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גפנים בקטנה מותר לזרוע את הגדולה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> וכשיגדלו הזרעים אע\"ג דדיורי גדולה בקטנה אין אוסרין את הגפנים כדאמרינן במנחות בפ' שני <span class=\"parenthesized\">(דף טו.)</span> מעשה בא' שזרע כרמו של חבירו ובא מעשה לפני חכמים ואסרו הזרעים והתירו הגפנים מ\"ט קנבוס ולוף אסרה תורה שאר זרעים דרבנן הך דעביד איסורא קנסו הך דלא עביד איסורא לא קנסו וה\"נ הואיל וכשזרע את הגדולה בהיתר זרעה אפילו שתיהן שלו ליכא למיקנסיה ולפירושו מיירי הכא בשאר זרעים ותימה דהיכי שרי להניח הזרעים כשיגדלו כיון דדיורי גדולה בקטנה דאפילו עלו מאיליהן תנן במסכת כלאים <span class=\"parenthesized\">(פ\"ה משנה ו)</span> היה עובר בכרם וראה ירק בתוך כרמו ואמר לכשאחזור אלקטנו אם הוסיף מאתים אסור כיון שמתייאש מללוקטו וע\"כ ההיא דמנחות איירי שלא ידע בעל הכרם שהזרעים בכרמו לכך נראה לר\"י לפרש טעמא דשמעתין משום דשם גדולה על הקטנה ואין שם קטנה על הגדולה ולהכי גפנים בגדולה הוי שם כרם על הקטנה ואע\"ג דאין גפנים בקטנה אסור לזורעה דרחמנא קפיד על שם כרם דכתיב לא תזרע כרמך כלאים אבל גפנים בקטנה מותר לזרוע בגדולה אע\"ג דלכשיזרענה יהיה שם שדה על הקטנה אין לחוש דרחמנא לא קפיד אשם שדה דהא לא כתיב שדך לא תטע כרם דהוה משמע דקפיד אשם שדה:"
+  },
+  "Tosafot on Eruvin 92b:2:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:2:1",
+      "Rashi on Eruvin 92b:2:2",
+      "Rashi on Eruvin 92b:2:3"
+    ],
+    "generatedAt": "2026-11-07T09:49:58.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 92b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשה בגדולה וגט בקטנה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> ושתיהן שלה דאיכא למאן דאמר בגיטין <span class=\"parenthesized\">(דף עז:)</span> הא דתנן הזורק גט לאשתו והיא בתוך ביתה או בתוך חצירה הרי זו מגורשת דדוקא דעומדת בתוכה באותה שעה אבל אינה עומדת בתוכה לא אע\"ג דשלה היא וצריך לומר הא דקאמרינן התם בגמרא והוא שעמדה בצד ביתה לאו אצל ביתה קאמר אלא בתוך ביתה ממש קאמר כדקתני התם במתני' בתוך ביתה דהא הכא אמרינן אשה בקטנה וגט בגדולה אינה מגורשת אע\"פ שעומדת אצל הגדולה ולר\"י נראה דהכא מיירי בשהשאילו להאשה חצר אחת וקאמרינן דכשהשאילו לה גדולה הוי שמה גם על הקטנה אשה בקטנה שהשאילו לה הקטנה לא הוי בהכי שמה על גדולה:"
+  },
+  "Tosafot on Eruvin 92b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-07T09:53:38.934Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 92b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשעה בגדולה ויחיד בקטנה מצטרפין</strong> - דוקא ביחיד בקטנה אבל חמשה בקטנה וחמשה בגדולה אין מצטרפין וסיפא דנקט תשעה בקטנה ה\"ה חמשה בקטנה אלא אגב רישא נקט האי לישנא והא דתנן בפרק כיצד צולין <span class=\"parenthesized\">(פסחים דף פה:)</span> מן האגף ולפנים כלפנים ומן האגף ולחוץ כלחוץ וקאמר התם רב בגמרא וכן לתפלה וריב\"ל אמר אפילו מחיצה של ברזל אינה מפסקת בין ישראל לאביהם שבשמים לכאורה נראה דלענין צירוף פליגי דלענין לצאת מודה רב דיוצא אפילו חוץ לבית הכנסת כדתנן בפרק ראוהו ב\"ד <span class=\"parenthesized\">(ר\"ה דף כז:)</span> היה עובר אחורי בית הכנסת ושמע קול שופר וקול מגילה אם כוון לבו יצא וקשיא דאם כן סוגיא דהכא כרב ובפ' אלו נאמרין <span class=\"parenthesized\">(סוטה דף לח:)</span> משמע דקי\"ל כריב\"ל גבי עם שאחורי הכהנים ומייתי סתמא דהש\"ס ממילתא דריב\"ל ונראה לפרש דלצירוף מודה ריב\"ל דאין מצטרפין כדאמרינן הכא ופליגי לענין לענות קדושה או ברכו דקי\"ל במגילה <span class=\"parenthesized\">(דף כג:)</span> דאין דבר שבקדושה פחות מעשרה וקסבר רב מן האגף ולחוץ אינו יכול לענות דלא הוי בכלל צבור שבפנים וריב\"ל סבר דאפילו מחיצה של ברזל אינה מפסקת והוי בכלל צבור לעניית ברכת כהנים ולענות דבר שבקדושה:"
+  },
+  "Tosafot on Eruvin 92b:6:1": {
+    "dependsOn": [
+      "Rashi on Eruvin 92b:6:1",
+      "Eruvin 92b:6",
+      "Eruvin 92b:8",
+      "Eruvin 93a:1",
+      "Tosafot on Eruvin 92b:1:1"
+    ],
+    "generatedAt": "2026-11-07T09:56:56.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Eruvin 92b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאילמלי אין מחיצה מרחיק ארבע אמות וזורע</strong> - מגיפופי גדולה פריך <span class=\"rashi-quotation\">כדפי' בקונטרס</span> דאי לא הוה גיפופי לצד הקטנה אלא השוה גיפופיה והוי ליה שתיהן חצר אחת מרחיק ד' אמות וזורע אם יש בין כרם ולכותל י\"ב אמות כדין מחול הכרם ועכשיו שיש גיפופי וראויות בכך ליחלק יותר זו מזו מגרע גרע ואסור לזרוע בקטנה ואפילו היא מאה אמה כדמשמע לישנא מפני שהיא כפתחה של גדולה דהוי כאילו היא תוך הפתח ודוקא מכותל הגדולה פריך אבל מקטנה אינו רוצה להקשות שאם אין כלל מחיצות של קטנה אין צריך להרחיק אלא זורע סמוך לגדולה דהפתח הוי כמחיצה ועכשיו נאסר ע\"י מחיצות הקטנות דאין זה תימה דכשאין מחיצות הקטנות נראה הגיפוף וע\"י מחיצות הקטנות אין ניכרין גיפופי גדולה והוי סילוק מחיצות ואומר ר\"י דלכאורה היה נראה מתוך הסברא דאין להחמיר בקטנה שנפרצה לגדולה יותר מאילו היא תוך מחיצת גדולה שמרחיק ד' אמות וזורע כדין מחול הכרם ושיש בין הכרם ולכותל י\"ב אמות והא דמשוינן לה כפתחה של גדולה היינו לעשות הקטנה כאילו היא תוך מחיצות הגדולה שלא להביא זרע לשם אא\"כ ירחיק ד' אמות אבל להחמיר יותר ממה שהיתה תוך מחיצות הגדולה אינה סברא לכאורה והיה נראה דה\"פ מצינו מחיצה לאיסור שאם אין מחיצה כלל לגדולה מרחיק ד' אמות בקטנה וזורע אפילו אין י\"ב אמות מהכרם שבחוץ לצד הכותל שבחוץ של קטנה ולא דמי למחול הכרם דהתם גם הכרם מוקף מחיצות להכי צריך י\"ב אמות אבל הכא דסביב הכרם אין מחיצה ולא שייך כותל קטנה לכרם אין צריך י\"ב אמה ועכשיו שיש מחיצות לגדולה צריך י\"ב אמה כדין מחול הכרם אבל אומר ר\"י דא\"א לפרש כן דא\"כ למה מקשה בסמוך ממחול הכרם דהא אמחול הכרם קיימא השתא שאם אין מחיצה לא יהא שם דין מחול הכרם ואם יש מחיצות יהא שם דין מחול הכרם ונראה לי פירוש רש\"י עיקר:"
+  }
+}
