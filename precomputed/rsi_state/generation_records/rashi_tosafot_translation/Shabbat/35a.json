@@ -1,0 +1,367 @@
+{
+  "Rashi on Shabbat 35a:1:1": {
+    "dependsOn": [
+      "Shabbat 35a:1",
+      "Rashi on Shabbat 35a:2:1",
+      "Rashi on Shabbat 35a:2:2",
+      "Rashi on Shabbat 34b:5:1",
+      "Rashi on Shabbat 34b:5:2"
+    ],
+    "generatedAt": "2026-11-09T16:18:53.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלגא דדנקא</strong> - אחד מי\"ב במיל דשיעורא דרבה תלת ריבעי מילא היינו תשעה פלגי דנקא ושיעורא דרב יוסף שמונה פלגי דנקא. דנקא שתות:"
+  },
+  "Rashi on Shabbat 35a:2:1": {
+    "dependsOn": [
+      "Shabbat 35a:2",
+      "Shabbat 35a:1"
+    ],
+    "generatedAt": "2026-11-09T16:28:42.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחילופה</strong> - איפליגו רבה ורב יוסף בחלתא דהתם שיעורא דרב יוסף נפיש מדרבה רבה דאמר הכא תלתא אמר התם תרי ורב יוסף דאמר הכא תרי אמר התם תלתא:"
+  },
+  "Rashi on Shabbat 35a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:2:1",
+      "Rashi on Shabbat 35a:2:3",
+      "Rashi on Shabbat 35a:2:4",
+      "Jastrow, חַלְתָּא 1",
+      "Steinsaltz on Shabbat 35a:2:1",
+      "Sefer HeArukh, Letter Chet 197",
+      "Shulchan Arukh, Orach Chayim 308:2"
+    ],
+    "generatedAt": "2026-11-09T16:29:54.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלתא</strong> - כוורת:"
+  },
+  "Rashi on Shabbat 35a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:30:31.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי לטלטולה</strong> - דתורת כלי עליה:"
+  },
+  "Rashi on Shabbat 35a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:30:55.718Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת תלתא</strong> - גדולה יותר מדאי ואין תורת כלי עליה:"
+  },
+  "Rashi on Shabbat 35a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:31:22.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעי מיניה דמר</strong> - רבה:"
+  },
+  "Rashi on Shabbat 35a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:3:1",
+      "Rashi on Shabbat 35a:3:2",
+      "Rashi on Shabbat 35a:3:3"
+    ],
+    "generatedAt": "2026-11-09T16:32:29.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת מעשה</strong> - שהייתי צריך לדבר:"
+  },
+  "Rashi on Shabbat 35a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:3:1",
+      "Rashi on Shabbat 35a:3:2",
+      "Rashi on Shabbat 35a:3:3",
+      "Rashi on Shabbat 35a:3:4"
+    ],
+    "generatedAt": "2026-11-09T16:33:24.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן</strong> - הא דאפי' בתרתי כורי לא שרא:"
+  },
+  "Rashi on Shabbat 35a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:34:35.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קש</strong> - זנבות שבולין אשטריי\"ס:"
+  },
+  "Rashi on Shabbat 35a:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:35:13.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובור ספינה אלכסנדרית</strong> - ספינה גדולה שפורשים בה לים הגדול ומי הים מלוחין ועושין כלי גדול כמין בור ונותנין לתוכו מים יפים:"
+  },
+  "Rashi on Shabbat 35a:3:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:3:5",
+      "Rashi on Shabbat 35a:3:6",
+      "Rashi on Shabbat 35a:3:7"
+    ],
+    "generatedAt": "2026-11-09T16:35:48.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לח</strong> - אין בו גודש:"
+  },
+  "Rashi on Shabbat 35a:3:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:3:6",
+      "Rashi on Shabbat 35a:3:7",
+      "Rashi on Shabbat 35a:3:8",
+      "Tosafot on Shabbat 35a:3:1",
+      "Rashi on Eruvin 14b:9:5"
+    ],
+    "generatedAt": "2026-11-09T16:37:20.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהן כוריים</strong> - ששים סאה ביבש שהגודש מחזיק שליש בכלים שלהם שהיו עשויין כים שעשה שלמה גובהן כחצי רחבן והם עגולים:"
+  },
+  "Rashi on Shabbat 35a:3:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:37:58.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהורין</strong> - דאיתקש כלי עץ לשק דמיטלטל מלא וריקן וזהו אינו מיטלטל מלא דגדול יותר מדאי ואם יטלטלוהו ישבר בידיהם:"
+  },
+  "Rashi on Shabbat 35a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:43:01.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאוי</strong> - מביט ערב שבת לראות אם יש שם אדמומית חמה:"
+  },
+  "Rashi on Shabbat 35a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:4:1",
+      "Rashi on Shabbat 35a:4:3"
+    ],
+    "generatedAt": "2026-11-09T16:43:49.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנים המאדימים את המזרח</strong> - לערב חמה שוקעת במערב וזהרורי החמה מאדימין את המזרח כחלון דכשהחמה נכנסת בה מאדמת כותל שכנגדה:"
+  },
+  "Rashi on Shabbat 35a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:4:1",
+      "Rashi on Shabbat 35a:4:2",
+      "Rashi on Shabbat 35a:2:1",
+      "Rashi on Shabbat 35a:3:1"
+    ],
+    "generatedAt": "2026-11-09T16:45:02.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסימנך כוותא</strong> - חלון כמו שפירשתי:"
+  },
+  "Rashi on Shabbat 35a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:45:56.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרמל</strong> - הר שעל שפת הים וחמה סמוך לשקיעתה נראית על ראשי ההרים ובכדי שירד ויטבול ויעלה הוי לילה:"
+  },
+  "Rashi on Shabbat 35a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:49:14.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמין כברה</strong> - סלע עגול ועשוי ככברה:"
+  },
+  "Rashi on Shabbat 35a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:6:1",
+      "Rashi on Shabbat 35a:6:3",
+      "Shabbat 30b:3"
+    ],
+    "generatedAt": "2026-11-09T16:51:44.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהו בארה של מרים</strong> - שהיה מתגלגל עם ישראל במדבר בזכותה של מרים דכתיב <span class=\"parenthesized\">(במדבר כ׳:ב׳)</span> ותמת שם מרים וסמיך ליה ולא היה מים לעדה:"
+  },
+  "Rashi on Shabbat 35a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:6:1",
+      "Rashi on Shabbat 35a:6:2"
+    ],
+    "generatedAt": "2026-11-09T16:52:40.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהור</strong> - מלקבל טומאה וטובלין בו דלאו ככלי דמי להיות המים הנובעין ממנו כשאובין ואין לך מעין מיטלטל אלא בארה של מרים:"
+  },
+  "Rashi on Shabbat 35a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:53:27.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים טובלין בו</strong> - ואע\"פ שצריכין הערב שמש אחר טבילה לאכול בתרומתן קסבר יממא הוא ויש שהות אחריו לשקיעת החמה:"
+  },
+  "Rashi on Shabbat 35a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:54:54.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק הוא</strong> - לדידיה הואיל וקרי ליה בין השמשות כוליה ספקא הוא ושמא טבלו בלילה ואין כאן הערב שמש:"
+  },
+  "Rashi on Shabbat 35a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:7:1",
+      "Rashi on Shabbat 35a:7:2",
+      "Shabbat 35a:7",
+      "Rashi on Shabbat 35a:8:1",
+      "Rashi on Shabbat 35a:8:2",
+      "Rashi on Shabbat 35a:9:1",
+      "Rashi on Shabbat 35a:9:2",
+      "Steinsaltz on Shabbat 35a:7",
+      "Rashi on Pesachim 2a:2:2",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2"
+    ],
+    "generatedAt": "2026-11-09T17:00:42.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:7:3"
+    ],
+    "sourceText": "אלא בין השמשות דרבי יוסי לרבי יהודה לא גרסינן דהא בהדיא אמר שמואל בין השמשות דר' יהודה כהנים טובלין בו ומאן דגריס ליה מפרש הכי אלא בין השמשות דר' יוסי לרבי יהודה והכי אתמר בין השמשות דר' יוסי לרבי יהודה כהנים טובלין בו ואשמעינן שמואל דבין השמשות דר' יוסי קדים לדר' יהודה ותחילת בין השמשות דר' יהודה לר' יוסי ליליא הוא ודר' יוסי לר' יהודה יממא הוא והא בעי הערב שמש נהי דלר' יהודה יממא הוא מיהו היכי טביל הא בין השמשות דר' יהודה ספק לילה הוא וכיון דבין השמשות דר' יוסי כהרף עין מקמי דסליק מטבילה שלים ועייל בין השמשות דר' יהודה וספק לילה הוא ואין כאן הערב שמש ולאו מילתא היא דליכא למימר דר' יוסי קדים מדקאמר בסיפא אלא דרבי יהודה לר' יוסי ופרכינן פשיטא ואי הוה לן לספוקי דדילמא דר' יוסי קדים מאי פשיטותא טובא אשמעינן שמואל דאשמעינן דבין השמשות דר' יהודה קדים:"
+  },
+  "Rashi on Shabbat 35a:8:1": {
+    "dependsOn": [
+      "Shabbat 35a:8",
+      "Rashi on Shabbat 35a:8:1",
+      "Rashi on Shabbat 35a:8:2",
+      "Rashi on Shabbat 35a:1:1",
+      "Rashi on Shabbat 35a:2:1",
+      "Rashi on Shabbat 35a:3:1",
+      "Rashi on Shabbat 34b:1:4"
+    ],
+    "generatedAt": "2026-11-09T17:05:47.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - דלר' יוסי כהנים טובלים בו בדר' יהודה דהא ספקא דר' יוסי כהרף עין וכל למעלה הימנו יממא הוא ושיעוריה דר' יהודה נפיש טובא ומעריב שמשיה:"
+  },
+  "Rashi on Shabbat 35a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:8:1",
+      "Rashi on Shabbat 35a:3:1",
+      "Rashi on Shabbat 35a:7:1"
+    ],
+    "generatedAt": "2026-11-09T17:08:28.110Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין השמשות דר' יוסי מישך שייך בדר' יהודה</strong> - בסופו הוא נכלל וכי שלים דר' יהודה ליליא הוא אפי' לר' יוסי וכי טביל בסוף בין השמשות דר' יהודה תו ליכא הערב שמש קא משמע לן שמואל דכל בין השמשות דר' יהודה לר' יוסי יממא הוא וכשר לטבילה והדר מתחיל דר' יוסי והוא הערב שמש:"
+  },
+  "Tosafot on Shabbat 35a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T16:27:29.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 35a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי תילתי מיל</strong> - קשה דהכא משמע דמשקיעת החמה עד הלילה ליכא אלא תלתא ריבעי מיל ור' יהודה גופיה בפסחים בפרק מי שהיה טמא <span class=\"parenthesized\">(פסחים דף צד. ושם)</span> סבר דמשקיעת החמה עד צאת הכוכבים ארבע מילין וצאת הכוכבים לילה הוא כדאמרינן בריש פ\"ק דפסחים <span class=\"parenthesized\">(דף ב. ושם)</span> וכדמוכח קרא <span class=\"parenthesized\">(נחמיה ד׳:ט״ו)</span> ואנחנו עושים במלאכה וגו' דמיניה מפיק בפ\"ב דמגילה <span class=\"parenthesized\">(דף כ:)</span> דמעלות השחר יממא הוא ואומר ר\"ת דהתם מיירי בתחילת שקיעה והכא משתשקע מסוף שקיעה אחר שנכנסה חמה בעובי הרקיע אבל תימה לר\"י דבמאי פליגי דהא ודאי משעת צאת הכוכבים הוי לילה כדפי' וי\"ל דאמרינן לקמן לא גדולים הנראים ביום ולא קטנים כו' אלא בינונים והשתא פליגי דלר' יהודה מספקא ליה בכל כוכבים הנראים משקיעת החמה עד שהכסיף העליון אם הם בינונים אם לאו וע\"ק דניחזי אנן באדם בינוני שילך מתחילת שקיעת החמה ד' מילין כדאמר בפסחים י\"ל דמספקא להו מהו אדם בינוני:"
+  },
+  "Tosafot on Shabbat 35a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 121b:11:1",
+      "Shabbat 121b:11",
+      "Shabbat 121b:12"
+    ],
+    "generatedAt": "2026-11-09T16:42:10.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 35a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו בת תרי כורי לא שרא לי</strong> - לית הילכתא הכי שיתבטל ממנו תורת כלי משום כובדו דאמר בפ\"ב דעירובין <span class=\"parenthesized\">(דף קב. ושם)</span> ההיא שריתא דהוה בי רבי פדת דהוי שקלי לה עשרה ושדי לה אדשא אמר תורת כלי עליה אפילו אביי גופיה לא קיבלה כדאמרינן בפרק כירה <span class=\"parenthesized\">(לקמן שבת דף מה:)</span> מנרתא שאני שאדם קובע לה מקום א\"ל אביי והרי כילת חתנים דאדם קובע לה מקום ומותר לנטותה ולפורקה בשבת אלא אמר אביי כו' והא דאמרינן בשילהי כל כתבי <span class=\"parenthesized\">(לקמן שבת קכא:)</span> פמוטות של בית רבי מותר לטלטלן בשבת א\"ל ר' זירא בניטלין בידו אחת או בשתי ידים אמר ליה כאותן של בית אביך פירוש שהן גדולות ולא כר\"ח ורש\"י שפירשו כאותן של בית אביך שהם קטנות דהא מוכח בהדיא בפ' כירה <span class=\"parenthesized\">(לקמן שבת מו.)</span> דמנורות דלית להו חדקי דכולי עלמא שרי דהיינו פמוטות גדולות:"
+  },
+  "Tosafot on Shabbat 35a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:5:1",
+      "Shabbat 35a:5",
+      "Shabbat 34b:5",
+      "Tosafot on Shabbat 34b:4:1",
+      "Maharshal: Chokhmat Shlomo on Shabbat 35a:2"
+    ],
+    "generatedAt": "2026-11-09T16:48:43.708Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 35a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וירד ויטבול ויעלה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> ובתוך כדי שירד ויעלה הוי לילה וקשה דלא ה\"ל למינקט סימנא דטבילה אי לאו דאתא לאשמעינן דטבילה מעליא היא ובירוש' משמע בפ' <span class=\"parenthesized\">(ב')</span> [א'] דברכות דמשיעלה מתחיל בין השמשות והשתא קמ\"ל דשפיר טבל ועלה לו הערב שמש וה\"ה דלפי זה הוה ליה למינקט הרוצה לידע בין השמשות דרבי יהודה אלא שמא סבר כרב יוסף דבין השמשות דרבי יהודה אינו מתחיל משתשקע החמה אלא משהכסיף התחתון:"
+  }
+}

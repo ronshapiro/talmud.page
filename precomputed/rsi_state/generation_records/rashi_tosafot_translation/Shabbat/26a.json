@@ -600,6 +600,16 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו דרב ברונא</strong> - דאמר צריך לתת לתוכו שמן כל שהוא אי נמי דאכשר חלב מהותך בתערובת שמן כל שהוא חד מהנך תנאי סבר לדרב ברונא דחלב ניתר בתערובת אבל שמן דגים אפילו בעיניה וחד סבר שמן דגים על ידי תערובת אבל חלב כלל וכלל לא:"
   },
+  "Rashi on Shabbat 26a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T05:39:37.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 26a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בו משום שלש על שלש</strong> - לקבל טומאה בג' אצבעות:"
+  },
   "Rashi on Shabbat 26a:9:2": {
     "dependsOn": [],
     "generatedAt": "2026-10-29T02:06:50.341Z",
@@ -807,6 +817,46 @@
       "Tosafot on Shabbat 26a:8:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון שזורי אומר מדליקין בשמן פקועות ובנפט</strong> - קשה לרשב\"א מה בא לומר רבי שמעון שזורי דהא לרבי יוחנן בן נורי נמי מדליקין בהן מדקאמר אין לך אלא מה שאמרו חכמים אין מדליקין משמע דוקא הנהו אבל שמן פקועות ונפט מכשיר ועוד דנפט מכשיר בהדיא רבי יוחנן ואין לומר דרבי שמעון שזורי איירי בנפט לבן דהא אפי' בחול אמר לעיל אין מדליקין בו ואי גרסינן אין מדליקין במילתיה דרבי שמעון שזורי אתי שפיר:"
+  },
+  "Tosafot on Shabbat 26a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 26a:8:1",
+      "Rashi on Shabbat 26a:8:2",
+      "Rashi on Shabbat 26a:8:3",
+      "Rashi on Shabbat 26a:8:4",
+      "Shabbat 26a:8",
+      "Tosafot on Shabbat 26a:1:1",
+      "Tosafot on Shabbat 26a:4:1",
+      "Tosafot on Shabbat 26a:8:1",
+      "Tosafot on Shabbat 26a:8:3",
+      "Bava Batra 73b:4",
+      "Chokhmat Shlomo on Shabbat 26a:2",
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-11-09T05:33:22.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 26a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו דרב ברונא</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דחד מינייהו סבר דחלב מהותך שרי בתערובות אבל שמן דגים אפילו בעיניה וחד סבר שמן דגים בתערובות אבל חלב כלל וכלל לא והשתא תרוייהו לא סברי בכולה מילתא כרב ברונא ולא משמע הכי ו<span class=\"rashi-quotation\">בקונטרס</span> דחק לפי שפירש במתניתין דשמן דגים היינו קרבי דגים שנימוחו ונראה לר\"ת דשמן דגים היינו שמן שבא מעינו של דג כדאמר בהמוכר את הספינה <span class=\"parenthesized\">(ב\"ב דף עג:)</span> נגדו מגלגלתא דעינא תלת מאה גרבי מישחא ובשמן דגים מודה רב ברונא דשרי בעיניה והשתא חד מינייהו סבר לגמרי כרב ברונא:"
+  },
+  "Tosafot on Shabbat 26a:8:3": {
+    "dependsOn": [
+      "Tosafot on Shabbat 26a:8:1",
+      "Tosafot on Shabbat 26a:8:2",
+      "Tosafot on Shabbat 26a:8:3",
+      "Maharam on Shabbat 26a:3",
+      "Shabbat 26a:7",
+      "Rashi on Shabbat 26a:7:1"
+    ],
+    "generatedAt": "2026-11-09T05:38:49.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 26a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מסיימי</strong> - ולא שייך הכא תנא בתרא לטפויי אתא דמוכח קצת דת\"ק להחמיר מדקאמר אין לך אלא מה כו' ומדליקין בשמן דגים ובעטרן משמע דווקא הנך מדנחת לפרושי ולא פי' נמי דרב ברונא:"
   },
   "Tosafot on Shabbat 26a:9:1": {
     "dependsOn": [

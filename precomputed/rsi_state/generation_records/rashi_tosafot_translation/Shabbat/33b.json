@@ -1,0 +1,527 @@
+{
+  "Rashi on Shabbat 33b:10:1": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 33b:10:1"
+    ],
+    "generatedAt": "2026-11-09T14:40:35.408Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתקין מילתא</strong> - כדרך שעשה יעקב כשניצול מיד עשו:"
+  },
+  "Rashi on Shabbat 33b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:10:2",
+      "Translation on Rashi on Shabbat 33b:10:2",
+      "Rashi on Shabbat 33b:10:1",
+      "Rashi on Shabbat 33b:10:3",
+      "Rashi on Shabbat 33b:10:4"
+    ],
+    "generatedAt": "2026-11-09T14:41:33.781Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלם בתורתו</strong> - שלא שכח תלמודו מפני טורח הדרך:"
+  },
+  "Rashi on Shabbat 33b:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:10:3",
+      "Translation on Rashi on Shabbat 33b:10:3"
+    ],
+    "generatedAt": "2026-11-09T14:42:17.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלם בגופו</strong> - שנתרפא מצלעתו:"
+  },
+  "Rashi on Shabbat 33b:10:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:10:3",
+      "Rashi on Shabbat 33b:10:4",
+      "Translation on Rashi on Shabbat 33b:10:4",
+      "Chidushei Agadot on Shabbat 33b:12",
+      "Chidushei Agadot on Shabbat 33b:13"
+    ],
+    "generatedAt": "2026-11-09T14:44:02.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיקן להם</strong> - דברי חן וחנייה ולי נראה מויקן את חלקת השדה לשון תיקון:"
+  },
+  "Rashi on Shabbat 33b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T13:52:35.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על המעשר</strong> - האוכל פירותיו טבלים והוא במיתה בידי שמים וזוהי מיתתו מדה במדה דדרך גרונו נכנס במעיו:"
+  },
+  "Rashi on Shabbat 33b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:1:1",
+      "Shabbat 33a:16"
+    ],
+    "generatedAt": "2026-11-09T13:54:01.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יסכר</strong> - אסכרה:"
+  },
+  "Rashi on Shabbat 33b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T13:54:26.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכרם</strong> - זה בית המדרש שיושבין שורות שורות ככרם כך מפורש בירושלמי בברכות:"
+  },
+  "Rashi on Shabbat 33b:2:2": {
+    "dependsOn": [
+      "Shabbat 33b:2",
+      "Rashi on Shabbat 33b:2:1",
+      "Rashi on Shabbat 33a:13:2",
+      "Rashi on Shabbat 33b:2:3"
+    ],
+    "generatedAt": "2026-11-09T13:55:45.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכה זו</strong> - אסכרה:"
+  },
+  "Rashi on Shabbat 33b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T13:56:28.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראש המדברים</strong> - במצות המלך שצוה עליו לדבר תחלה בכל מקום כדלקמן:"
+  },
+  "Rashi on Shabbat 33b:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:2:2",
+      "Rashi on Shabbat 33b:2:3",
+      "Rashi on Shabbat 33b:2:5"
+    ],
+    "generatedAt": "2026-11-09T13:57:38.745Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פה גומר</strong> - לשון הרע והוא בא על כך לפיכך מתחיל במעיים ומסיים בפה שהלב מבין לספר לשון הרע ובודה הדברים מלבו:"
+  },
+  "Rashi on Shabbat 33b:2:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:2:3",
+      "Rashi on Shabbat 33b:2:4",
+      "Rashi on Shabbat 33b:2:5",
+      "Rashi on Shabbat 33b:2:6",
+      "Rashi on Shabbat 33b:2:7",
+      "Rashi on Shabbat 33b:2:8",
+      "Chidushei Agadot on Shabbat 33b:2",
+      "Rashi on Berakhot 61a:29:3",
+      "Rashi on Berakhot 61a:29:4"
+    ],
+    "generatedAt": "2026-11-09T13:58:49.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פה גומר</strong> - הכל יוצא מן הגרון:"
+  },
+  "Rashi on Shabbat 33b:2:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:4:2",
+      "Rashi on Shabbat 33b:8:1",
+      "Rashi on Shabbat 33b:8:2"
+    ],
+    "generatedAt": "2026-11-09T14:00:34.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברים טמאים סלקא דעתך</strong> - וכי עונשה מיתה דבשלמא לשון הרע עונשה מיתה דכתיב <span class=\"parenthesized\">(תהילים ק״א:ה׳)</span> מלשני בסתר רעהו אותו אצמית:"
+  },
+  "Rashi on Shabbat 33b:2:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:2:7",
+      "Rashi on Shabbat 33b:2:6",
+      "Rashi on Shabbat 33b:1:1",
+      "Rashi on Shabbat 33b:1:2"
+    ],
+    "generatedAt": "2026-11-09T14:01:31.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוקנין</strong> - מעושרים שהטבל במיתה בידי שמים כדיליף באלו הן הנשרפים <span class=\"parenthesized\">(סנהדרין דף פג.)</span>:"
+  },
+  "Rashi on Shabbat 33b:2:8": {
+    "dependsOn": [
+      "Shabbat 33b:2",
+      "Rashi on Shabbat 32b:4:1",
+      "Rashi on Shabbat 32b:4:2",
+      "Rashi on Shabbat 33b:2:1",
+      "Rashi on Shabbat 33b:2:2",
+      "Rashi on Shabbat 33b:2:7",
+      "Shabbat 32b:3",
+      "Shabbat 32b:4"
+    ],
+    "generatedAt": "2026-11-09T14:04:13.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:2:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעון בטול תורה</strong> - דענוש נמי מיתה כדאמרן מקרא נדרש לפני פניו למען ירבו ימיכם הא אם לא תלמדו יתמעטו:"
+  },
+  "Rashi on Shabbat 33b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:2:1",
+      "Rashi on Shabbat 33b:2:2",
+      "Rashi on Shabbat 33b:4:1",
+      "Rashi on Shabbat 33b:3:2",
+      "Rashi on Shabbat 33b:3:3",
+      "Rashi on Shabbat 33a:1:1",
+      "Rashi on Shabbat 33a:2:1",
+      "Rashi on Shabbat 33a:3:1",
+      "Rashi on Shabbat 32b:1:1",
+      "Rashi on Shabbat 32b:2:1"
+    ],
+    "generatedAt": "2026-11-09T14:05:54.309Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים יוכיחו</strong> - שאינן מצוות על דברי תורה דכתיב ולמדתם אותם את בניכם ולא בנותיכם ומתות באסכרה אמר להן אף הן מבטלות את בעליהן:"
+  },
+  "Rashi on Shabbat 33b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:3:1",
+      "Rashi on Shabbat 33b:3:3"
+    ],
+    "generatedAt": "2026-11-09T14:06:51.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תינוקות יוכיחו</strong> - שאינן בני לימוד אמר להן אף הן בעון שמבטלים את אביהם להוליכן לחמה ולצונן ולפייסן באגוזים:"
+  },
+  "Rashi on Shabbat 33b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:3:1",
+      "Rashi on Shabbat 33b:3:2",
+      "Shabbat 33b:4",
+      "Shabbat 119b:8",
+      "Rashi on Shabbat 119b:10:1"
+    ],
+    "generatedAt": "2026-11-09T14:08:49.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של בית רבן</strong> - לא בטלין ולא מבטלין:"
+  },
+  "Rashi on Shabbat 33b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:4:2"
+    ],
+    "generatedAt": "2026-11-09T14:10:01.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם לא תדעי לך</strong> - לשמור מצותי צאי לך ובקשי רחמים בזכות עקבי הצאן אבות הראשונים שהיו רגלי הצאן וחזוקם ורעי בזכותן את גדיותיך תינוקות שלך שלא יתפשו על משכנות הרועים רועי הדור ופרנסיו:"
+  },
+  "Rashi on Shabbat 33b:4:2": {
+    "dependsOn": [
+      "Shabbat 33b:4",
+      "Rashi on Shabbat 33b:4:1"
+    ],
+    "generatedAt": "2026-11-09T14:11:10.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ אף על לשון הרע</strong> - ולא פליג אמעשר דהא קאמר הכא שהם אוכלין דברים שאינן מתוקנין:"
+  },
+  "Rashi on Shabbat 33b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:5:1",
+      "Translation on Rashi on Shabbat 33b:5:1"
+    ],
+    "generatedAt": "2026-11-09T14:11:52.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן גרים</strong> - בן גר וגיורת היה:"
+  },
+  "Rashi on Shabbat 33b:5:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:5:2",
+      "Rashi on Shabbat 33b:5:1"
+    ],
+    "generatedAt": "2026-11-09T14:12:41.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של אומה זו</strong> - רומיים:"
+  },
+  "Rashi on Shabbat 33b:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:5:3",
+      "Rashi on Shabbat 33b:5:1",
+      "Rashi on Shabbat 33b:5:2",
+      "Rashi on Shabbat 33b:5:4",
+      "Rashi on Shabbat 33b:5:5"
+    ],
+    "generatedAt": "2026-11-09T14:13:26.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שווקין</strong> - סדר מושב שווקי עיירות וחוצותיהן:"
+  },
+  "Rashi on Shabbat 33b:5:4": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:5:4"
+    ],
+    "generatedAt": "2026-11-09T14:14:14.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסיפר דבריהם</strong> - לתלמידים או לאביו ואמו ולא להשמיען למלכות ונשמעו על ידו למלכות:"
+  },
+  "Rashi on Shabbat 33b:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:5:5"
+    ],
+    "generatedAt": "2026-11-09T14:14:42.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתעלה</strong> - להיות ראש המדברים:"
+  },
+  "Rashi on Shabbat 33b:6:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:6:1",
+      "Rashi on Shabbat 33b:6:2",
+      "Rashi on Shabbat 33b:4:1",
+      "Rashi on Shabbat 33b:5:1"
+    ],
+    "generatedAt": "2026-11-09T14:19:30.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איברי להו חרובא</strong> - לאכול פירותיו ועינא דמיא לשתות:"
+  },
+  "Rashi on Shabbat 33b:6:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:6:2",
+      "Rashi on Shabbat 33b:6:1",
+      "Rashi on Shabbat 33b:5:1",
+      "Rashi on Shabbat 33b:5:2"
+    ],
+    "generatedAt": "2026-11-09T14:20:36.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחלא</strong> - בחול שהיו פושטין בגדיהם שלא יבלו ומכסין ערותן בחול:"
+  },
+  "Rashi on Shabbat 33b:7:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:7:1",
+      "Rashi on Shabbat 33b:7:2",
+      "Rashi on Shabbat 33b:7:3",
+      "Rashi on Shabbat 33b:7:4",
+      "Rashi on Shabbat 33b:1:1",
+      "Rashi on Shabbat 33b:1:2"
+    ],
+    "generatedAt": "2026-11-09T14:25:30.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי</strong> - חורשים:"
+  },
+  "Rashi on Shabbat 33b:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:7:2",
+      "Translation on Rashi on Shabbat 33b:7:2"
+    ],
+    "generatedAt": "2026-11-09T14:27:41.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועוסקין בחיי שעה</strong> - דאפשר על ידי נכרים והקב\"ה הוא מחלק מזון וריוח לעושי רצונו:"
+  },
+  "Rashi on Shabbat 33b:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:7:3",
+      "Rashi on Shabbat 33b:7:1",
+      "Rashi on Shabbat 33b:7:2",
+      "Rashi on Shabbat 33b:7:4",
+      "Rashi on Shabbat 33b:5:1",
+      "Rashi on Shabbat 33b:5:2",
+      "Rashi on Shabbat 33b:6:1",
+      "Rashi on Shabbat 33b:6:2",
+      "Rashi on Shabbat 33a:9:1",
+      "Rashi on Shabbat 33a:9:2",
+      "Rashi on Shabbat 33a:9:3",
+      "Rashi on Shabbat 33b:8:1",
+      "Rashi on Shabbat 33b:8:2",
+      "Rashi on Shabbat 33b:10:1",
+      "Rashi on Shabbat 33b:4:1",
+      "Rashi on Shabbat 33b:4:2"
+    ],
+    "generatedAt": "2026-11-09T14:31:45.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משפט רשעים בגיהנם י\"ב חודש</strong> - שנאמר <span class=\"parenthesized\">(ישעיהו ס״ו:כ״ג)</span> ואשם לא תכבה והיה מדי חדש בחדשו ומדי שבת בשבתו יבא כל בשר אף הנדונים בו במשמע מה שבתות למינוי שלהם אף חדשים למינוי שלהן והאי ודאי בפושעי גיהנם משתעי דכתיב לעיל מיניה ויצאו וראו בפגרי האנשים הפושעים בי הכי תני לה בסדר עולם <span class=\"parenthesized\">(פ\"ו)</span>:"
+  },
+  "Rashi on Shabbat 33b:7:4": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 33b:7:4"
+    ],
+    "generatedAt": "2026-11-09T14:32:31.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">די לעולם</strong> - בעוסקי תורה אני ואתה:"
+  },
+  "Rashi on Shabbat 33b:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:8:1",
+      "Translation on Rashi on Shabbat 33b:8:1"
+    ],
+    "generatedAt": "2026-11-09T14:33:14.888Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרי מדאני</strong> - חבילות של הדס להריח בשבת:"
+  },
+  "Rashi on Shabbat 33b:8:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 33b:8:2",
+      "Rashi on Shabbat 33b:8:1",
+      "Job 38:31",
+      "Steinsaltz on Shabbat 33b:8"
+    ],
+    "generatedAt": "2026-11-09T14:34:53.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדאני</strong> - כמו מעדנות כימה <span class=\"parenthesized\">(איוב לח)</span>:"
+  },
+  "Rashi on Shabbat 33b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:9:1",
+      "Jastrow, אָרֵיךְ 1",
+      "Steinsaltz on Shabbat 33b:9"
+    ],
+    "generatedAt": "2026-11-09T14:36:02.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אריך</strong> - מתקן ומחליק:"
+  },
+  "Rashi on Shabbat 33b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:9:2",
+      "Translation on Rashi on Shabbat 33b:9:2"
+    ],
+    "generatedAt": "2026-11-09T14:36:44.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פילי</strong> - בקעים סדקים מחמת החול:"
+  },
+  "Rashi on Shabbat 33b:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 33b:9:3",
+      "Community Translation: Translation on Rashi on Shabbat 33b:9:3",
+      "Rashi on Shabbat 33b:9:1",
+      "Rashi on Shabbat 33b:9:2"
+    ],
+    "generatedAt": "2026-11-09T14:39:57.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 33b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקמצווחו ליה</strong> - לר' שמעון שהדמעות מלוחין ומכאיבין את המכה בתחלתן:"
+  },
+  "Tosafot on Shabbat 33b:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 33b:5:1",
+      "Translation on Tosafot on Shabbat 33b:5:1",
+      "Tosafot on Shabbat 33a:1:1",
+      "Rashi on Shabbat 33b:5:1",
+      "Rashi on Shabbat 33b:5:2",
+      "Rashi on Shabbat 34a:9:3",
+      "Rashi on Shabbat 34a:10:1"
+    ],
+    "generatedAt": "2026-11-09T14:18:13.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 33b:5:1"
+    ],
+    "sourceText": "ה\"ג ר\"ת הלך רבי יהודה בן גרים וסיפר דברים ונשמעו למלכות ויש ספרים שכתב בהן יהודה ואין נראה לרבינו תם דאמרינן בפרק קמא דמועד קטן <span class=\"parenthesized\">(דף ט.)</span> כי הוו מיפטרי ר' יהודה בן גרים ור\"ש בן חלפתא מר' שמעון בן יוחי אמר ליה לבריה אנשים הללו אנשי צורה הם זיל גבייהו דליברכוך מכלל דגברא רבה היה ובסוף שמעתא ל\"ג גל של עצמות בלשון גנאי אלא נח נפשיה:"
+  }
+}

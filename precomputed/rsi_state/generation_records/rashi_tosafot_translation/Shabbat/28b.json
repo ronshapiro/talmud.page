@@ -1,4 +1,98 @@
 {
+  "Rashi on Shabbat 28b:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:10:1",
+      "Rashi on Shabbat 28b:10:2"
+    ],
+    "generatedAt": "2026-11-09T06:14:16.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצומצמות</strong> - דאי הוה טפי פורתא לכולי עלמא מדליקין:"
+  },
+  "Rashi on Shabbat 28b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:10:1",
+      "Rashi on Shabbat 28b:10:3",
+      "Rashi on Shabbat 28b:10:4",
+      "Rashi on Shabbat 28b:10:5",
+      "Rashi on Shabbat 21b:8:4",
+      "Rashi on Shabbat 44a:3:2"
+    ],
+    "generatedAt": "2026-11-09T06:16:41.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובי\"ט שחל להיות בע\"ש</strong> - דשייך ביה איסור מוקצה עסקינן:"
+  },
+  "Rashi on Shabbat 28b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:17:58.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מסיקין בשברי כלים</strong> - שנשברו בו ביום דהוו להו נולד אבל בכלים מסיקין דהא חזו לטלטלן:"
+  },
+  "Rashi on Shabbat 28b:10:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:10:1",
+      "Rashi on Shabbat 28b:10:2",
+      "Rashi on Shabbat 28b:10:3",
+      "Rashi on Shabbat 28b:10:5",
+      "Shabbat 29a:7"
+    ],
+    "generatedAt": "2026-11-09T06:19:47.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודכולי עלמא אית להו</strong> - צריך המדליק להדליק בידים קודם סילוק ידיו רוב היוצא מן הפתילה חוץ לנר הלכך על כרחך צריך לעסוק בו לאחר שנפחת משלש הלכך טעמא דר\"א דאסר קסבר קיפול אינו מועיל והוה ליה כלי שנשבר ביו\"ט וכי קמדליק ביה פורתא כיון דמצומצמות היו הוו שברי כלי דפחות משלש לאו כלי הוא והוה ליה כלי שנשבר בי\"ט וכי קמדליק בידים להשלים רוב היוצא בשבר כלי קמדליק והא דאמרינן מסיקין בכלים דוקא שלא יגע בו אחר שנפחת אלא אם כן ריבה עליו עצים מוכנים כדלקמן <span class=\"parenthesized\">(שבת דף כט.)</span>:"
+  },
+  "Rashi on Shabbat 28b:10:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:20:32.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיפול מועיל</strong> - ועל כרחך מעי\"ט קיפלה דאין גודלין פתילה בי\"ט כדתניא בהמביא <span class=\"parenthesized\">(ביצה לב:)</span> וכבר נתבטל הכלי מבע\"י ואין כאן שבר כלי:"
+  },
+  "Rashi on Shabbat 28b:11:1": {
+    "dependsOn": [
+      "Shabbat 28b:11",
+      "Rashi on Shabbat 28b:10:1",
+      "Rashi on Shabbat 28b:10:2"
+    ],
+    "generatedAt": "2026-11-09T06:23:04.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דתנינא</strong> - שהייתי שונה מרבותי משנה ג' על ג' מצומצמות ולא הוה ידענא למאי הלכתא איתמר דאי לענין טמויי כל שכן דאי איכא טפי דמטמא:"
+  },
+  "Rashi on Shabbat 28b:12:1": {
+    "dependsOn": [
+      "Shabbat 28b:12",
+      "Steinsaltz on Shabbat 28b:12",
+      "Steinsaltz comment #1 on Shabbat 28b:12"
+    ],
+    "generatedAt": "2026-11-09T06:25:52.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומדקא מתרץ כו'</strong> - מילתא באפי נפשיה היא בתמיה למירמי דרב אדא אדרב אדא מדקא מתרץ למתניתין ואוקי דכולי עלמא אית להו אין מסיקין בשברים דהיינו אליבא דר\"י דאית ליה נולד ש\"מ כו':"
+  },
   "Rashi on Shabbat 28b:1:1": {
     "dependsOn": [
       "Rashi on Shabbat 28b:1:1"
@@ -30,6 +124,189 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מטמא באהל המת</strong> - אם עשאו אהל דהא ממשכן גמר ליה ועיקר אהל דכתיב במשכן ביריעות עזים כתיב הא דכתיב בספרים כל מעשה עזים ל\"ג ליה דמהכא לא נפקא לן אהל דבכלים הוא דכתיב וכדאמר בעלמא להביא דבר הבא מן העזים מן הקרנים ומן הטלפים:"
   },
+  "Rashi on Shabbat 28b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T05:43:34.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא דתני רב יוסף כו'</strong> - כיון דרבינן עור בהמה טמאה לאהל המת הא דתני רב יוסף למאי הלכתא מאי דהוה הוה אי לאו למילף מיניה לטומאה:"
+  },
+  "Rashi on Shabbat 28b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:2:1"
+    ],
+    "generatedAt": "2026-11-09T05:44:19.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לתפילין</strong> - איתמר דהיא נמי מלאכת שמים:"
+  },
+  "Rashi on Shabbat 28b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T05:54:59.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעורן</strong> - עור דפוס שלהן שהכתבים של פרשיות מונחים בו דהאי לא מלמען תהיה נפקא דהא לאו תורה כתיבא ביה:"
+  },
+  "Rashi on Shabbat 28b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:3:1",
+      "Shabbat 28b:2",
+      "Shabbat 28b:4"
+    ],
+    "generatedAt": "2026-11-09T05:56:45.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שי\"ן של תפילין</strong> - שיהא העור נקמט מבחוץ ג' קמטין ודומה לשי\"ן והרצועה נקשרת כמין דלית ויש רצועה כפופה כמין י' דהיינו שדי וכיון דאות השם נכתב בקמטין שלו מותר בפיך בעינן ומקרא נפיק:"
+  },
+  "Rashi on Shabbat 28b:4:1": {
+    "dependsOn": [
+      "Shabbat 28b:4",
+      "Rashi on Shabbat 28b:4:2",
+      "Rashi on Shabbat 28b:2:1",
+      "Rashi on Shabbat 28b:2:2",
+      "Rashi on Shabbat 28b:3:1",
+      "Rashi on Shabbat 28b:3:2",
+      "Chokhmat Shlomo on Shabbat 28b:2"
+    ],
+    "generatedAt": "2026-11-09T05:58:17.049Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לנכרכות בשערן</strong> - תניא לההיא דרב יוסף שצריך לקשור איגרות הפרשיות בשער עור בהמה טהורה ולתופרן בגיד בהמה טהורה:"
+  },
+  "Rashi on Shabbat 28b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:4:1"
+    ],
+    "generatedAt": "2026-11-09T05:59:01.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשערן</strong> - בשער מן הקלף כלומר בשל טהורה:"
+  },
+  "Rashi on Shabbat 28b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:05:25.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרצועותיהן</strong> - שיהיו מעור בהמה טהורה:"
+  },
+  "Rashi on Shabbat 28b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:5:1"
+    ],
+    "generatedAt": "2026-11-09T06:07:19.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הל\"מ</strong> - וכיון דהלכתא רצועות מסיני טהורות נמי הל\"מ ומתניתא דרב יוסף לאו הל\"מ קאמר:"
+  },
+  "Rashi on Shabbat 28b:6:1": {
+    "dependsOn": [
+      "Shabbat 28b:6",
+      "Shabbat 28a:3"
+    ],
+    "generatedAt": "2026-11-09T06:08:21.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה דתחש</strong> - הואיל ולרב יוסף לאו לענין מלאכה דמשכן איתמר לא איפשיט בעיין:"
+  },
+  "Rashi on Shabbat 28b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:09:11.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרין תרתי משמע</strong> - דסתם מקרין כל קרניו:"
+  },
+  "Rashi on Shabbat 28b:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:8:2",
+      "Rashi on Shabbat 28b:8:3",
+      "Rashi on Shabbat 28b:8:4"
+    ],
+    "generatedAt": "2026-11-09T06:09:54.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקיפלה</strong> - כמו שגודלין פתילות:"
+  },
+  "Rashi on Shabbat 28b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:8:1",
+      "Rashi on Shabbat 28b:8:2"
+    ],
+    "generatedAt": "2026-11-09T06:10:40.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבהבה</strong> - על השלהבת כדי שתהא מחורכת ותדליק יפה:"
+  },
+  "Rashi on Shabbat 28b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:11:21.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמאה היא</strong> - דבגד כלי הוא ומקבל טומאה אם היה שלש על שלש דקפול אין מבטלה מתורת בגד הואיל ולא הבהבה:"
+  },
+  "Rashi on Shabbat 28b:8:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 28b:8:4",
+      "Rashi on Shabbat 28b:8:1",
+      "Rashi on Shabbat 28b:8:2",
+      "Rashi on Shabbat 28b:8:3"
+    ],
+    "generatedAt": "2026-11-09T06:13:02.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מדליקין בה</strong> - כדמפרש טעמא בגמ':"
+  },
+  "Rashi on Shabbat 28b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T06:13:30.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 28b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קפול מועיל</strong> - לבטולה מתורת בגד:"
+  },
   "Tosafot on Shabbat 28b:1:1": {
     "dependsOn": [
       "Shabbat 28b:1",
@@ -58,5 +335,71 @@
       "Tosafot on Shabbat 28b:1:2"
     ],
     "sourceText": "ור\"י אומר דליכא למימר שתי וערב יוכיח דהכי עביד ק\"ו ומה נוצה של עזים שאין מטמא בנגעים מטמא באהל המת ככלי העשוי מנוצה של עזים עור בהמה טמאה שטמא בנגעים אינו דין שיטמא באהל המת ככליו דהשתא לא שייך למימר שתי וערב יוכיח שמטמא בנגעים ולא באהל המת דשתי וערב אין שייך בו כלי ואין לומר דכל היוצא מן העץ ועצם יוכיח שמטמא בנגעים ואינו מטמא במת דמה שמטמא בנגעים אינו מחמת עצמו אלא מחמת הבית דהא בית שסיככו בזרעים אמר בהעור והרוטב דמטמא בנגעים אבל נוצה והעור מטמא מחמת עצמו. ומהר\"ם כתב דליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין לא במת ולא בש\"ז תאמר בעור בהמה טמאה דמטמא דהא כתיב במת ובש\"ז כל בגד וכל כלי עור. ולעיל כי פריך מה לשרצים ליכא למימר נגיעת מת וש\"ז יוכיח דמה לכולהו שכן פחות מכזית דנגיעת מת בכשעורה וש\"ז במשהו או בחתימת פי האמה <span class=\"parenthesized\">(והוא תי' דאיצטריך קרא בשרצים לאפוקי מהיקש דשק)</span> וזה אין נראה דע\"כ דגם לענין אהל הוי שיעורו בכזית להביא טומאה על כל הכלים ועל עצמן אפי' יוצא מן העץ דזהו תלוש קיי\"ל דמביא ונ\"ל דלא שייך כלל למימר אהל תלוש יוכיח כיון דלא אתינא למילף אלא לענין אהל המחובר דלא מטמא אלא מאי דילפי' ממשכן וכי האי גוונא איכא בפ\"ק דמנחות גבי טריפה שהיתה לה שעת הכושר דלא ילפינן מטריפה שלא היתה לה שעת הכושר אפ' במה הצד [ת\"י]:"
+  },
+  "Tosafot on Shabbat 28b:1:3": {
+    "dependsOn": [
+      "Tosafot on Shabbat 28b:1:1",
+      "Tosafot on Shabbat 28b:1:2",
+      "Shabbat 28b:2",
+      "Shabbat 28b:4",
+      "Shabbat 28b:5",
+      "Shabbat 28b:6",
+      "Shabbat 28b:1",
+      "Rashi on Shabbat 28a:6:1",
+      "Tosafot on Shabbat 28a:6:1",
+      "Rashi on Shabbat 28a:5:1",
+      "Rashi on Shabbat 28a:5:2",
+      "Rashi on Shabbat 28a:5:3"
+    ],
+    "generatedAt": "2026-11-09T05:41:55.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 28b:1:3"
+    ],
+    "sourceText": "והקשה השר מקוצי מאי בעי בסמוך מאי הוי עלה דתחש תיפוק ליה דטהור היה מדאיצטריך קרא בשרצי' לטמא עור בהמה טמאה דאי טמא היה לשתוק קרא בשרצים ותיתי בק\"ו מנגעים דהשתא ליכא למימר שתי וערב יוכיח דמה לשתי וערב שכן אין מטמאין באהל המת תאמר בעור בהמה טמאה דמיטמא באהל המת כיון דתחש טמא היה וי\"ל דמהכא ליכא למיפשט דטהור היה דאפילו טמא היה כתיב בשרצים דמילתא דאתיא בק\"ו טרח וכתב לה קרא ועוד אומר רש\"י דשרצים לא אתו מק\"ו מנגעים דאיכא למיפרך פשוטי כלי עור יוכיח דמטמא בנגעים ולא בשרצים:"
+  },
+  "Tosafot on Shabbat 28b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T05:46:53.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 28b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי הלכתא</strong> - לא בעי למימר לאשמעינן דתחש טהור היה דמשמע דאתא לאשמעינן שום צורך הוראה:"
+  },
+  "Tosafot on Shabbat 28b:2:2": {
+    "dependsOn": [
+      "Shabbat 28b:2",
+      "Tosafot on Shabbat 28b:2:1"
+    ],
+    "generatedAt": "2026-11-09T05:54:15.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 28b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תפילין בהדיא כתיב בהו למען תהיה וגו'</strong> - תימה לר\"י וכי אין לברייתא לשנות מה שדורש מן הפסוק וכל הנך דמייתי בסמוך וכי לית ליה לרב יוסף לשנות הברייתא לפי שזה אמרו אמורא אחד או ברייתא ואומר רבינו יצחק דהכי פריך תפילין בהדיא כתיב בהו ואי הא הוה אתי לאשמעי' הוה ליה לאתויי קרא אע\"כ מילתא אחריתי אתא לאשמעי' ודרשה דמן המותר בפיך היתה פשוטה ולא איצטריך לאשמעי' וקאמר אלא לעורן והאמר אביי שין של תפילין כו' ובזה הלשון הוה ליה לרב יוסף למימר והוה ידעינן שפיר דבעי עור בהמה טהורה דדרשה דמן המותר בפיך היא פשוטה אלא לכורכן בשערן צריך בהמה טהורה הא נמי הל\"מ דתניא כו' מדלא קתני רב יוסף בהאי לישנא ונכרכות בשערן ש\"מ דמילתא אחריתא אתא לאשמעינן אלא לרצועותיהן והא\"ר יצחק רצועות שחורות הל\"מ וכיון דמצריך שיהו הרצועות שחורות כמו הקציצה כל שכן דבעינן שיהו טהורות כמו הקציצה דסברא הוא להקפיד על הטהרה מעל השחרות ואי הא אתא רב יוסף לאשמעי' לישמעינן שיהיו שחורות דהוה שמעינן מינה תרתי שחורות וטהורות ומשני נהי דגמירי שחורות טהורות מי גמירי דמשחורות ליכא למיגמר טהורות:"
+  },
+  "Tosafot on Shabbat 28b:4:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 28b:2:1",
+      "Tosafot on Shabbat 28b:2:2",
+      "Tosafot on Shabbat 28b:1:1",
+      "Tosafot on Shabbat 28b:1:2",
+      "Tosafot on Shabbat 28b:1:3",
+      "Tosafot on Shabbat 28b:4:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Rashi on Shabbat 28b:4:1",
+      "Rashi on Shabbat 28b:4:2"
+    ],
+    "generatedAt": "2026-11-09T06:04:57.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 28b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא צריכא אלא לכורכן בשערן</strong> - קשה לרשב\"א אי הא אתא לאשמעי' אמאי נקט עור במילתיה:"
   }
 }

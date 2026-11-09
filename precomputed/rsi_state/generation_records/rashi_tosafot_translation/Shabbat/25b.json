@@ -157,96 +157,74 @@
   },
   "Rashi on Shabbat 25b:3:1": {
     "dependsOn": [
-      "Shabbat 25b:3",
       "Rashi on Shabbat 25b:3:1",
       "Rashi on Shabbat 25b:3:2",
-      "Rashi on Shabbat 25b:1:1",
-      "Rashi on Shabbat 25b:1:2",
-      "Rashi on Shabbat 25b:1:3"
+      "Rashi on Shabbat 25b:3:3",
+      "Rashi on Shabbat 25b:3:4",
+      "Shabbat 25b:3",
+      "Shabbat 25b:5",
+      "Rashi on Shabbat 25b:5:1"
     ],
-    "generatedAt": "2026-10-16T02:38:37.706Z",
-    "model": "gemini-3.8-flash-high",
-    "promptVersion": "v2",
+    "generatedAt": "2026-11-09T05:23:37.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
+    "sourceText": "הדלקת נר בשבת. שלא היה לו ממה להדליק ובמקום שאין נר אין שלום שהולך ונכשל והולך באפילה:"
   },
   "Rashi on Shabbat 25b:3:2": {
     "dependsOn": [
-      "Shabbat 25b:3",
       "Rashi on Shabbat 25b:3:1",
-      "Rashi on Shabbat 25b:3:2",
       "Rashi on Shabbat 25b:3:3",
-      "Yoma 74b:10",
-      "Yoma 74b:11",
-      "Yoma 75a:1",
-      "Yoma 74b:3",
-      "Yoma 74b:4",
-      "Yoma 74b:5",
-      "Yoma 74b:15",
-      "Yoma 74b:16",
-      "Yoma 74b:17",
-      "Yoma 74b:18",
-      "Yoma 74b:19",
-      "Rashi on Shabbat 25b:3:4",
-      "Rashi on Shabbat 25b:4:1",
-      "Rashi on Shabbat 25b:4:2",
-      "Rashi on Shabbat 23a:1",
-      "Rashi on Shabbat 23b:1",
-      "Rashi on Shabbat 24a:1",
-      "Rashi on Shabbat 25a:1",
-      "Rashi on Shabbat 25b:1:1",
-      "Rashi on Shabbat 25b:1:2",
-      "Rashi on Shabbat 25b:1:3",
-      "Rashi on Shabbat 25b:2:1",
-      "Rashi on Shabbat 25b:2:2",
-      "Tosafot on Shabbat 25b:2:1",
-      "Tosafot on Shabbat 25b:3:1",
-      "Tosafot on Shabbat 25b:3:2"
+      "Rashi on Shabbat 25a:1:1"
     ],
-    "generatedAt": "2026-10-16T02:41:10.954Z",
-    "model": "gemini-3.8-flash-high",
-    "promptVersion": "v2",
+    "generatedAt": "2026-11-09T05:25:49.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
   },
   "Rashi on Shabbat 25b:3:3": {
     "dependsOn": [
-      "Shabbat 25b:3",
+      "Rashi on Shabbat 25b:3:3",
+      "Rashi on Shabbat 25b:3:1",
+      "Rashi on Shabbat 25b:3:2",
+      "Rashi on Shabbat 25b:3:4",
+      "Rashi on Shabbat 25b:4:1",
+      "Rashi on Shabbat 25b:4:2"
+    ],
+    "generatedAt": "2026-11-09T05:27:13.867Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 25b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
+  },
+  "Rashi on Shabbat 25b:3:4": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 25b:3:4",
       "Rashi on Shabbat 25b:3:1",
       "Rashi on Shabbat 25b:3:2",
       "Rashi on Shabbat 25b:3:3",
       "Rashi on Shabbat 25b:3:4",
-      "Shabbat 25b:4",
+      "Shabbat 25b:3",
       "Rashi on Shabbat 25b:4:1",
       "Rashi on Shabbat 25b:4:2",
-      "Rashi on Shabbat 25b:4:3",
-      "Rashi on Shabbat 25b:4:4",
-      "Rashi on Shabbat 25b:4:5",
-      "Rashi on Shabbat 25a:1:1",
-      "Rashi on Shabbat 25b:2:1",
       "Tosafot on Shabbat 25b:3:1",
-      "Tosafot on Shabbat 25b:3:2",
-      "Tosafot on Shabbat 25b:3:3",
       "Rashba on Shabbat 25b:3:1",
-      "Rabbeinu Chananel on Shabbat 25b:3:1",
-      "Rashi on Berakhot 2a:1:1",
-      "Rashi on Berakhot 2a:1:2",
-      "Rashi on Shabbat 2a:1:1",
-      "Steinsaltz In-Depth on Shabbat 25b:3:1",
-      "Steinsaltz In-Depth on Shabbat 25b:3:2",
-      "Rashi on Shabbat 23b:1:1",
-      "Rashi on Shabbat 24a:1:1",
-      "Rashi on Shabbat 24b:1:1"
+      "Steinsaltz on Shabbat 25b:3",
+      "Rashi on Shabbat 25a:1:1",
+      "Rashi on Shabbat 25a:2:1"
     ],
-    "generatedAt": "2026-10-16T02:43:45.902Z",
-    "model": "gemini-3.8-flash-high",
-    "promptVersion": "v2",
+    "generatedAt": "2026-11-09T05:29:35.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
     "sourceRefs": [
-      "Rashi on Shabbat 25b:3:3"
+      "Rashi on Shabbat 25b:3:4"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רחיצת ידים ורגלים</strong> - ערבית ליל שבת:"
   },
