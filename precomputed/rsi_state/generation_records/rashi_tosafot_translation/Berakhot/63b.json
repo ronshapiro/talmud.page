@@ -1,0 +1,416 @@
+{
+  "Rashi on Berakhot 63b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:53:57.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הסכת</strong> – עשו כתות כתות. דריש הס כמו עשו:"
+  },
+  "Rashi on Berakhot 63b:14:1": {
+    "dependsOn": [
+      "Berakhot 63b:14",
+      "Rashi on Berakhot 63b:12:1",
+      "Rashi on Berakhot 63b:14:2",
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:8:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-09T01:55:32.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתתו עצמכם</strong> – ודרשי נמי הס כמו עשה עשו עצמכם כתותים להצטער על דברי תורה:"
+  },
+  "Rashi on Berakhot 63b:14:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:14:1"
+    ],
+    "generatedAt": "2026-11-09T01:56:10.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת התורה</strong> – היכן מצויה באדם שימות באהלי תורה:"
+  },
+  "Rashi on Berakhot 63b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:57:00.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הס ואחר כך כתת</strong> – שתוק כמו ויהס כלב <span class=\"parenthesized\">(במדבר י״ג:ל׳)</span> שתוק והאזן לשמועתך עד שתהא שגורה בפיך ואף על פי שאינה מיושבת לך ואחר כך כתתנה והקשה עליה מה שיש לך להקשות ותרץ תרוצין עד שתתיישב לך:"
+  },
+  "Rashi on Berakhot 63b:15:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:15:1",
+      "Rashi on Avodah Zarah 19a:9:2"
+    ],
+    "generatedAt": "2026-11-09T01:58:03.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהגה</strong> – יעיין:"
+  },
+  "Rashi on Berakhot 63b:16:1": {
+    "dependsOn": [
+      "Berakhot 63b:16"
+    ],
+    "generatedAt": "2026-11-09T01:59:15.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיץ חלב יוציא חמאה</strong> – המוציא את החלב שמצץ משדי אמו על דברי התורה חמאה היא לו:"
+  },
+  "Rashi on Berakhot 63b:18:1": {
+    "dependsOn": [
+      "Berakhot 63b:18",
+      "Steinsaltz on Berakhot 63b:18",
+      "Rashi on Berakhot 63b:19:1"
+    ],
+    "generatedAt": "2026-11-09T02:00:41.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומיץ אף</strong> – המוצץ כעס רבו וסובלו יוציא הלכות דם לעומתם:"
+  },
+  "Rashi on Berakhot 63b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T02:01:14.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן</strong> – שדיני ממונות עמוקים הם והרוצה שיתחכם יעסוק בדיני ממונות שאין מקצוע בתורה גדול מהם:"
+  },
+  "Rashi on Berakhot 63b:1:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:1:2",
+      "Rashi on Berakhot 63b:1:3",
+      "Berakhot 63b:1"
+    ],
+    "generatedAt": "2026-11-09T01:24:51.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרו לאחינו שבגולה</strong> – שלא ישמעו לו:"
+  },
+  "Rashi on Berakhot 63b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:25:17.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יעלו להר</strong> – לאחד ההרים להתנהג בחוקות העמים לבנות במות:"
+  },
+  "Rashi on Berakhot 63b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:25:39.412Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחיה יבנה מזבח</strong> – אדם גדול היה וראש לבני הגולה:"
+  },
+  "Rashi on Berakhot 63b:1:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:1:1",
+      "Rashi on Berakhot 63b:1:2",
+      "Rashi on Berakhot 63b:1:3",
+      "Rashi on Berakhot 63b:1:4",
+      "Rashi on Berakhot 63b:1:5",
+      "Berakhot 63b:1",
+      "Berakhot 63a:22",
+      "Berakhot 63a:23",
+      "Berakhot 63a:24",
+      "Rashi on Berakhot 63a:23:1"
+    ],
+    "generatedAt": "2026-11-09T01:29:18.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חנניה</strong> – הוא חנניה אחי רבי יהושע:"
+  },
+  "Rashi on Berakhot 63b:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:30:18.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ינגן בכנור</strong> – לפני הבמה לפי שחנניה לוי היה כדתנן במסכת ערכין <span class=\"parenthesized\">(ד' יא:)</span> מעשה ברב יהושע בן חנניה שהלך לסייע את רב יוחנן בן גודגדא בהגפת דלתות אמר לו חזור בך שאתה מן המשוררים ואני מן השוערים:"
+  },
+  "Rashi on Berakhot 63b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T02:01:51.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המנבל עצמו</strong> – ששואל לרבו כל ספקותיו ואף על פי שיש בהם שחבריו מלעיגים עליו:"
+  },
+  "Rashi on Berakhot 63b:20:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:20:1",
+      "Jastrow, זָמַם II 1",
+      "Jastrow, זְמַם I 1",
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:7:1",
+      "Rashi on Berakhot 63b:8:1"
+    ],
+    "generatedAt": "2026-11-09T02:04:46.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם זמות</strong> – שסתמת פיך מלשאול לשון זמם טבעת של רצועה שתוחבים בחוטם בהמה שעסקיה רעים ונותנים אותו בשפתיה לתופרם יחד ולסותמן סופך שתתן יד לפה כשישאלוך ולא תדע להשיב:"
+  },
+  "Rashi on Berakhot 63b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T02:06:04.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשית חסד</strong> – שהאכילם שנאמר ויבא אהרן וכל זקני ישראל לאכל לחם וגו' <span class=\"parenthesized\">(שמות י״ח:י״ב)</span>:"
+  },
+  "Rashi on Berakhot 63b:24:1": {
+    "dependsOn": [
+      "Steinsaltz on Berakhot 63b:24:1",
+      "Steinsaltz on Berakhot 63b:24",
+      "Rashi on Berakhot 63b:24:2"
+    ],
+    "generatedAt": "2026-11-09T02:07:24.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמות</strong> – אשתו של עובד אדום:"
+  },
+  "Rashi on Berakhot 63b:24:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:24:1"
+    ],
+    "generatedAt": "2026-11-09T02:08:25.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וח' כלותיה</strong> – שהיו לה מח' בניה:"
+  },
+  "Rashi on Berakhot 63b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T01:30:41.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכרם</strong> – על שם שהיו יושבים שורות שורות ככרם זה הנטוע שורות שורות:"
+  },
+  "Rashi on Berakhot 63b:5:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:5:1",
+      "Rashi on Berakhot 63b:5:2",
+      "Jastrow, אַכְסַנְיָא 1",
+      "Steinsaltz on Berakhot 63b:5",
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:6:3"
+    ],
+    "generatedAt": "2026-11-09T01:32:38.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכבוד אכסניא</strong> – מכניסי אורחים בבתים:"
+  },
+  "Rashi on Berakhot 63b:6:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:6:3",
+      "Rashi on Berakhot 63b:1:5",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:5:9",
+      "Berakhot 63b:6",
+      "Rashi on Berakhot 63b:5:1",
+      "Rashi on Berakhot 63b:5:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-09T01:39:18.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראש המדברים</strong> – במסכת שבת מפרש לה בבמה מדליקין <span class=\"parenthesized\">(ד' לג:)</span>:"
+  },
+  "Rashi on Berakhot 63b:6:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:6:3",
+      "Steinsaltz on Berakhot 63b:6"
+    ],
+    "generatedAt": "2026-11-09T01:40:39.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים עשר מיל</strong> – שלש פרסאות מחנה ישראל מבית הישימות עד אבל השטים תלתא פרסי:"
+  },
+  "Rashi on Berakhot 63b:6:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2"
+    ],
+    "generatedAt": "2026-11-09T01:41:27.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרה תורה כו'</strong> – כלומר קראו הכתוב מבקש ה':"
+  },
+  "Rashi on Berakhot 63b:7:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63a:1:1",
+      "Rashi on Berakhot 63a:1:2"
+    ],
+    "generatedAt": "2026-11-09T01:42:57.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשם שאני הסברתי לך פנים כך אתה הסבר פנים</strong> – והיינו דכתיב פנים בפנים:"
+  },
+  "Rashi on Berakhot 63b:8:1": {
+    "dependsOn": [
+      "Berakhot 32b:17",
+      "Rashi on Berakhot 32b:17:2",
+      "Rashi on Berakhot 63b:8:2",
+      "Rashi on Berakhot 63b:8:3"
+    ],
+    "generatedAt": "2026-11-09T01:44:20.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרב בכעס</strong> – עליהם משום מעשה העגל:"
+  },
+  "Rashi on Berakhot 63b:8:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:8:1",
+      "Rashi on Berakhot 63b:8:3"
+    ],
+    "generatedAt": "2026-11-09T01:45:04.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותלמיד בכעס</strong> – וגם אתה מראה להם כעס שהרחקת אהלך ממחנה:"
+  },
+  "Rashi on Berakhot 63b:8:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:8:1",
+      "Rashi on Berakhot 63b:8:2",
+      "Rashi on Berakhot 63b:8:3",
+      "Rashi on Berakhot 63b:9:2"
+    ],
+    "generatedAt": "2026-11-09T01:46:04.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:8:3"
+    ],
+    "sourceText": "אם אתה מחזיר האהל למקומו גרסינן:"
+  },
+  "Rashi on Berakhot 63b:9:1": {
+    "dependsOn": [
+      "Berakhot 63b:9",
+      "Rashi on Berakhot 63b:9:1",
+      "Rashi on Berakhot 63b:9:2",
+      "Rashi on Berakhot 63b:8:1",
+      "Rashi on Berakhot 63b:8:2",
+      "Rashi on Berakhot 63b:8:3"
+    ],
+    "generatedAt": "2026-11-09T01:47:52.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיינו דכתיב ושב אל המחנה</strong> – השב האהל למחנה ואם לאו משרתך יהושע בן נון נער לא ימיש מתוכה שישמש תחתיך ואף על פי שהשיבו לאחר שנתרצה הקב\"ה לישראל והוקם המשכן לא יצא דבר לבטלה:"
+  },
+  "Rashi on Berakhot 63b:9:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 63b:9:1",
+      "Rashi on Berakhot 61b:12:3",
+      "Rashi on Berakhot 63b:5:1",
+      "Rashi on Berakhot 63b:6:1",
+      "Rashi on Berakhot 63b:7:1",
+      "Rashi on Berakhot 63b:8:1",
+      "Rashi on Berakhot 63b:6:2",
+      "Rashi on Berakhot 63b:6:3",
+      "Rashi on Berakhot 63b:8:2",
+      "Rashi on Berakhot 63b:8:3",
+      "Berakhot 63b:8",
+      "Rashi on Pesachim 2a:2:2",
+      "Tosafot on Bava Kamma 2a:9:2",
+      "Rashi on Bava Kamma 2a:1:1",
+      "Rashi on Bava Kamma 2a:1:2",
+      "Rashi on Bava Kamma 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 63b:1:1",
+      "Rashi on Berakhot 63b:1:2",
+      "Rashi on Berakhot 63b:1:3",
+      "Rashi on Berakhot 63b:1:4",
+      "Rashi on Berakhot 63b:1:5"
+    ],
+    "generatedAt": "2026-11-09T01:52:48.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 63b:9:2"
+    ],
+    "sourceText": "לא גרסינן ומשרתו יהושע וגו':"
+  }
+}

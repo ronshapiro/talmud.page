@@ -1,0 +1,163 @@
+{
+  "Rashi on Berakhot 64a:10:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:3:1",
+      "Rashi on Berakhot 64a:12:1"
+    ],
+    "generatedAt": "2026-11-09T02:30:22.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנפטר מן המת</strong> – כשהיו מוליכים ארונות ממקום למקום לקבורה היו מלוים אותו מעיר לעיר וחוזרים אלו ואחרים מלוים אותו משם והלאה והחוזרים קרי נפטרים נוטלין רשות להפטר ממנו:"
+  },
+  "Rashi on Berakhot 64a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T02:30:57.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין להם מנוחה</strong> – מישיבה לישיבה וממדרש למדרש:"
+  },
+  "Rashi on Berakhot 64a:1:1": {
+    "dependsOn": [
+      "Berakhot 64a:1"
+    ],
+    "generatedAt": "2026-11-09T02:09:32.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר פעלתי השמיני</strong> – בני עובד אדום קא חשיב בדברי הימים וקא חשיב תמניא והיא תשיעית כל אחת ילדה ששה הם חמשים וארבע הוסיף עליהם שמונה בנים הראשונים הרי ששים ושנים לעובד אדום:"
+  },
+  "Rashi on Berakhot 64a:2:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:2:1",
+      "Translation on Rashi on Berakhot 64a:2:1",
+      "Rashi on Berakhot 64a:1:1",
+      "Rashi on Berakhot 64a:3:1"
+    ],
+    "generatedAt": "2026-11-09T02:10:23.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדוחק את השעה</strong> – כגון אבשלום שבקש למלוך בחזקה:"
+  },
+  "Rashi on Berakhot 64a:3:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:3:1",
+      "Rashi on Berakhot 64a:3:2",
+      "Steinsaltz on Berakhot 64a:3"
+    ],
+    "generatedAt": "2026-11-09T02:12:07.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אצטריכא להו שעתא</strong> – להיות אחד מהם ראש ישיבה. אצטריכא להו גרסי' הוצרכו להם חכמים:"
+  },
+  "Rashi on Berakhot 64a:3:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:3:2",
+      "Rashi on Berakhot 64a:3:3"
+    ],
+    "generatedAt": "2026-11-09T02:18:55.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיני</strong> – היו קורין לרב יוסף שהיה בקי בברייתות הרבה:"
+  },
+  "Rashi on Berakhot 64a:3:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:3:2",
+      "Steinsaltz on Berakhot 64a:3"
+    ],
+    "generatedAt": "2026-11-09T02:20:25.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוקר הרים</strong> – לרבה בר נחמני שהיה מחודד יותר בפלפול"
+  },
+  "Rashi on Berakhot 64a:3:4": {
+    "dependsOn": [
+      "Jastrow, חִיטָּא 1",
+      "Rashi on Berakhot 64a:3:1",
+      "Rashi on Berakhot 64a:3:2",
+      "Rashi on Berakhot 64a:3:3",
+      "Rashi on Berakhot 64a:3:4",
+      "Rashi on Berakhot 64a:3:5"
+    ],
+    "generatedAt": "2026-11-09T02:21:11.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למרי חטיא</strong> – למי שקבץ תבואה למכור כלומר למי שקבץ שמועות:"
+  },
+  "Rashi on Berakhot 64a:3:5": {
+    "dependsOn": [
+      "Rashi on Berakhot 64a:3:4",
+      "Rashi on Berakhot 64a:3:6",
+      "Rashi on Berakhot 64a:3:1",
+      "Rashi on Berakhot 64a:3:2",
+      "Rashi on Berakhot 64a:3:3",
+      "Rashi on Berakhot 63b:15:2"
+    ],
+    "generatedAt": "2026-11-09T02:25:02.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמרי ליה כלדאי</strong> – לרב יוסף:"
+  },
+  "Rashi on Berakhot 64a:3:6": {
+    "dependsOn": [
+      "Berakhot 64a:3"
+    ],
+    "generatedAt": "2026-11-09T02:25:51.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלכת תרתין שנין</strong> – אמר אם אמלוך תחלה אמות לסוף שנתים ונדחה מפני השעה ולא אבה למלוך והשעה עמדה לו שלא הפסיד שנותיו בכך:"
+  },
+  "Rashi on Berakhot 64a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T02:27:05.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אומנא לביתיה לא קרא</strong> – לא נהג כל אותן השנים שום צד שררה וכשהיה צריך להקיז דם היה הולך לבית הרופא ולא היה שולח לבא אליו:"
+  },
+  "Rashi on Berakhot 64a:6:1": {
+    "dependsOn": [
+      "Steinsaltz on Berakhot 64a:6",
+      "Steinsaltz comment #1 on Berakhot 64a:6",
+      "Chokhmat Shlomo on Berakhot 64a:1",
+      "Radak on Psalms 20:2:3"
+    ],
+    "generatedAt": "2026-11-09T02:29:09.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 64a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיאחז בעובי הקורה</strong> – אם בא לטלטלה ממקום למקום לתתה בבנין כלומר יעקב שכל הבנים שלו וטרח בגידולם יבקש עליהם רחמים:"
+  }
+}
