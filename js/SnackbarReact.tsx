@@ -114,6 +114,34 @@ export function SnackbarHost({
   const [colors, setColors] = useState([COLORS[0]]);
   const [contentsByColor, setContentsByColor] = useState({} as Record<string, string | undefined>);
   const setContentForColor = recordStateSetter(setContentsByColor);
+
+  const colorsRef = useRef(colors);
+  colorsRef.current = colors;
+
+  const contentsByColorRef = useRef(contentsByColor);
+  contentsByColorRef.current = contentsByColor;
+
+  const temporaryColorRef = useRef<string | undefined>(undefined);
+
+  const findNextAvailableColor = (
+    currentColors: string[],
+    currentContents: Record<string, string | undefined>,
+  ): string | undefined => {
+    for (const color of currentColors) {
+      const content = currentContents[color];
+      if (!content || content === "") {
+        return color;
+      }
+    }
+    for (const color of COLORS) {
+      if (!currentColors.includes(color)) {
+        return color;
+      }
+    }
+    return undefined;
+  };
+
+  const hasAvailableColor = findNextAvailableColor(colors, contentsByColor) !== undefined;
   const canAddMoreColors = colors.length !== COLORS.length;
 
   const button = (kind: string, onClick: () => void) => {
@@ -126,41 +154,102 @@ export function SnackbarHost({
       </button>
     );
   };
-  const addNewSearch = (initialText?: string) => {
-    for (const color of COLORS) {
-      if (!colors.includes(color)) {
-        setColors([...colors, color]);
-        setContentForColor(color, initialText);
-        break;
+
+  const setTemporarySearch = (queryText: string): string | undefined => {
+    let color = temporaryColorRef.current;
+    if (!color) {
+      color = findNextAvailableColor(colorsRef.current, contentsByColorRef.current);
+      if (!color) {
+        return undefined;
+      }
+      temporaryColorRef.current = color;
+    }
+    updateSearchQuery(color, queryText);
+    return color;
+  };
+
+  const clearTemporarySearch = (): void => {
+    const color = temporaryColorRef.current;
+    if (color) {
+      temporaryColorRef.current = undefined;
+      const existingContent = contentsByColorRef.current[color];
+      if (!existingContent || existingContent === "") {
+        updateSearchQuery(color, "");
       }
     }
   };
+
+  const getTemporarySearchColor = (): string | undefined => {
+    return temporaryColorRef.current;
+  };
+
+  const addNewSearch = (initialText?: string) => {
+    const nextColor = findNextAvailableColor(colorsRef.current, contentsByColorRef.current);
+    if (nextColor) {
+      if (!colorsRef.current.includes(nextColor)) {
+        setColors([...colorsRef.current, nextColor]);
+      }
+      setContentForColor(nextColor, initialText);
+    }
+  };
+
   const newSearchWithText = (initialText: string) => {
     setShowing(true);
 
-    const latestColor = colors.slice(-1)[0];
-    const latestContent = contentsByColor[latestColor];
-    if (latestColor && (latestContent === undefined || latestContent === "")) {
-      setContentForColor(latestColor, initialText);
-    } else {
-      addNewSearch(initialText);
+    const temporaryColor = temporaryColorRef.current;
+    temporaryColorRef.current = undefined;
+
+    const targetColor = temporaryColor || findNextAvailableColor(
+      colorsRef.current,
+      contentsByColorRef.current,
+    );
+    if (!targetColor) {
+      return;
     }
+
+    if (!colorsRef.current.includes(targetColor)) {
+      setColors([...colorsRef.current, targetColor]);
+    }
+    setContentForColor(targetColor, initialText);
+    updateSearchQuery(targetColor, initialText);
   };
-  (window as any).SEARCH = canAddMoreColors && newSearchWithText;
+
+  (window as any).SEARCH = (hasAvailableColor || temporaryColorRef.current !== undefined)
+    ? newSearchWithText
+    : undefined;
+  (window as any).SET_TEMPORARY_SEARCH = setTemporarySearch;
+  (window as any).CLEAR_TEMPORARY_SEARCH = clearTemporarySearch;
+  (window as any).GET_TEMPORARY_SEARCH_COLOR = getTemporarySearchColor;
+
+  useEffect(() => {
+    return () => {
+      delete (window as any).SEARCH;
+      delete (window as any).SET_TEMPORARY_SEARCH;
+      delete (window as any).CLEAR_TEMPORARY_SEARCH;
+      delete (window as any).GET_TEMPORARY_SEARCH_COLOR;
+    };
+  }, []);
+
   const removeSearch = (color: string) => {
     setColors(oldColors => {
-      const newColors = oldColors.filter(x => x !== color);
+      const newColors = oldColors.filter(existingColor => existingColor !== color);
       setShowing(newColors.length > 0);
       return newColors;
     });
+    setContentsByColor(oldContents => {
+      const newContents = {...oldContents};
+      delete newContents[color];
+      return newContents;
+    });
+    updateSearchQuery(color, "");
   };
 
   const onSearchShowHideClick = () => {
-    setShowing(previous => {
-      if (!previous && colors.length === 0) {
+    setShowing(previousShowing => {
+      if (!previousShowing && colors.length === 0) {
         setColors([COLORS[0]]);
       }
-      return !previous;
+      return !previousShowing;
     });
   };
 
