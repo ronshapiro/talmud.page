@@ -243,4 +243,41 @@ describe("temporary search query from selected text", () => {
     const fixedColors = foundTerms(app).map(x => [...x.classList][1]);
     expect(fixedColors.sort()).toEqual(["purple", "yellow"]);
   });
+
+  test("preserves the actively selected element during temporary search without replacing its innerHTML", () => {
+    const multiSegmentPage = page({
+      id: "2a",
+      sections: [
+        segment({ref: "Berakhot 2a:1", he: "מאימתי קורין את שמע", en: "First"}),
+        segment({ref: "Berakhot 2a:2", he: "שמע ישראל", en: "Second"}),
+      ],
+    });
+    const app = mountRenderer([multiSegmentPage]);
+    const firstCell = app.find("[sefaria-ref='Berakhot 2a:1'] .hebrew");
+    const originalFirstCellChild = firstCell.firstChild;
+
+    const originalGetSelection = document.getSelection;
+    document.getSelection = () => ({
+      type: "Range",
+      anchorNode: firstCell,
+      focusNode: firstCell,
+      containsNode: () => true,
+    } as any);
+
+    try {
+      setTemporarySearch("שמע");
+
+      expect(firstCell.firstChild).toBe(originalFirstCellChild);
+      expect(firstCell.querySelectorAll(".foundTerm")).toHaveLength(0);
+
+      const secondCell = app.find("[sefaria-ref='Berakhot 2a:2'] .hebrew");
+      expect(secondCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+
+      search("שמע");
+      expect(firstCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+      expect(secondCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+    } finally {
+      document.getSelection = originalGetSelection;
+    }
+  });
 });

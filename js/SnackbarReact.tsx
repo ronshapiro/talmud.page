@@ -81,7 +81,7 @@ function unescapeHtml(text: string): string {
   );
 }
 
-type UpdateSearchQuery = (key: string, query: string) => void;
+type UpdateSearchQuery = (key: string, query: string, isTemporary?: boolean) => void;
 
 interface SearchProps {
   queryCount: number;
@@ -164,7 +164,7 @@ export function SnackbarHost({
       }
       temporaryColorRef.current = color;
     }
-    updateSearchQuery(color, queryText);
+    updateSearchQuery(color, queryText, true);
     return color;
   };
 
@@ -174,7 +174,7 @@ export function SnackbarHost({
       temporaryColorRef.current = undefined;
       const existingContent = contentsByColorRef.current[color];
       if (!existingContent || existingContent === "") {
-        updateSearchQuery(color, "");
+        updateSearchQuery(color, "", false);
       }
     }
   };
@@ -211,7 +211,7 @@ export function SnackbarHost({
       setColors([...colorsRef.current, targetColor]);
     }
     setContentForColor(targetColor, initialText);
-    updateSearchQuery(targetColor, initialText);
+    updateSearchQuery(targetColor, initialText, false);
   };
 
   (window as any).SEARCH = (hasAvailableColor || temporaryColorRef.current !== undefined)

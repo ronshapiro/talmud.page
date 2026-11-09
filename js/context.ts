@@ -28,6 +28,7 @@ export interface Configuration {
   highlightedIds: LocalStorageLru;
   toggleHighlightedId: (newState: boolean, sectionId: string) => void;
   searchQueryRegex?: Record<string, string | undefined>;
+  temporarySearchColor?: string;
   isFake?: boolean;
   selectedView?: HTMLElement;
   selectedCommentaryView?: HTMLElement;
