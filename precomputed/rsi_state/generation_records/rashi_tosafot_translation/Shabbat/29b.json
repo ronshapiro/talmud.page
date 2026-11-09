@@ -1,0 +1,624 @@
+{
+  "Rashi on Shabbat 29b:10:1": {
+    "dependsOn": [
+      "Shabbat 29b:10",
+      "Rashi on Shabbat 29b:10:2"
+    ],
+    "generatedAt": "2026-11-09T08:06:22.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דומיא דכסא</strong> - קטנים ובהא הוא דאסר רבי יהודה אבל בגדולים שרי:"
+  },
+  "Rashi on Shabbat 29b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:10:1"
+    ],
+    "generatedAt": "2026-11-09T08:07:01.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסא דומיא דמטה</strong> - גדולים ובהא הוא דשרי רבי שמעון אבל בקטנים אסר:"
+  },
+  "Rashi on Shabbat 29b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:07:47.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכרין כדרכן</strong> - כסות של כלאים לובשו בשוק כדי להראותו למוכרו דלא אסרה תורה אלא לבישה שהיא להתחמם כדרך כל הלובשים והעלאה דומיא דלבישה נמי דמיתהני בה:"
+  },
+  "Rashi on Shabbat 29b:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:11:1",
+      "Rashi on Shabbat 29b:11:3",
+      "Rashi on Shabbat 29b:11:4"
+    ],
+    "generatedAt": "2026-11-09T08:08:52.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יתכוין כו'</strong> - ור' שמעון הוא דאזיל בתר כוונה:"
+  },
+  "Rashi on Shabbat 29b:11:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:11:1",
+      "Rashi on Shabbat 29b:11:2",
+      "Rashi on Shabbat 29b:11:4",
+      "Steinsaltz on Shabbat 29b:11"
+    ],
+    "generatedAt": "2026-11-09T08:09:56.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והצנועים</strong> - כשרים שמרחיקין עצמן מכל לזות שפתים:"
+  },
+  "Rashi on Shabbat 29b:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:11:09.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא הכא דאפשר</strong> - לכל אדם למעבד שלא על ידי איסור ואפילו הכי שרי:"
+  },
+  "Rashi on Shabbat 29b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:12:22.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני נכרים</strong> - כגון פרסיים שהיה להם יום חג שאין מניחין אור אלא בבית עבודת אלילים שלהם:"
+  },
+  "Rashi on Shabbat 29b:12:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:1"
+    ],
+    "generatedAt": "2026-11-09T08:13:05.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני הלסטין</strong> - שלא יראו שיש שם אדם ויבאו עליו:"
+  },
+  "Rashi on Shabbat 29b:12:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:1",
+      "Rashi on Shabbat 29b:12:2",
+      "Rashi on Shabbat 29b:12:4"
+    ],
+    "generatedAt": "2026-11-09T08:13:58.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני רוח רעה</strong> - הבאה עליו וכשאינו רואה נוח לו:"
+  },
+  "Rashi on Shabbat 29b:12:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:1",
+      "Rashi on Shabbat 29b:12:2",
+      "Rashi on Shabbat 29b:12:3",
+      "Rashi on Shabbat 29b:12:4",
+      "Rashi on Shabbat 29b:12:5"
+    ],
+    "generatedAt": "2026-11-09T08:14:43.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - ובגמרא מפרש לכולה:"
+  },
+  "Rashi on Shabbat 29b:12:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:4",
+      "Rashi on Shabbat 29b:12:5",
+      "Rashi on Shabbat 29b:12:6"
+    ],
+    "generatedAt": "2026-11-09T08:15:31.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחס על הנר</strong> - שראוהו שמתקלקל וחס עליו וכבה את הפתילה:"
+  },
+  "Rashi on Shabbat 29b:12:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:5",
+      "Rashi on Shabbat 29b:12:6",
+      "Rashi on Shabbat 29b:12:7"
+    ],
+    "generatedAt": "2026-11-09T08:16:50.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנר</strong> - קרוייזי\"ל:"
+  },
+  "Rashi on Shabbat 29b:12:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:6",
+      "Rashi on Shabbat 29b:12:7",
+      "Rashi on Shabbat 29b:12:8",
+      "Shabbat 29b:12",
+      "Rashi on Shabbat 29b:12:4",
+      "Rashi on Shabbat 29a:9:5",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-09T08:19:06.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - מפרש לה:"
+  },
+  "Rashi on Shabbat 29b:12:8": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:12:7",
+      "Rashi on Shabbat 29b:12:1",
+      "Rashi on Shabbat 29b:12:9",
+      "Rashi on Shabbat 30a:8:1"
+    ],
+    "generatedAt": "2026-11-09T08:23:20.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוטר בכולן</strong> - מפרש בגמרא <span class=\"parenthesized\">(דף לא:)</span>:"
+  },
+  "Rashi on Shabbat 29b:12:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:24:03.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:12:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוא עושה פחם</strong> - בכיבוי זה והוי מלאכה הצריכה לגופה כדאמר בגמרא:"
+  },
+  "Rashi on Shabbat 29b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:19:41.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחו בקופסא</strong> - גלי דעתיה דחשיב ליה:"
+  },
+  "Rashi on Shabbat 29b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:1:1",
+      "Rashi on Shabbat 29b:1:3",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2"
+    ],
+    "generatedAt": "2026-11-09T07:21:37.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במגוד</strong> - קביל\"א דגרע מקופסא ועדיף מאחורי הדלת ואחורי הדלת עדיף מזרקו לאשפה ומוכן דר' אליעזר היינו קופסא ושלא מן המוכן מגוד ואחורי הדלת:"
+  },
+  "Rashi on Shabbat 29b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:1:1",
+      "Rashi on Shabbat 29b:1:2",
+      "Rashi on Shabbat 29b:1:3",
+      "Rashi on Shabbat 29b:1:4"
+    ],
+    "generatedAt": "2026-11-09T07:23:27.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי קרי ליה שלא מן המוכן</strong> - הואיל ולרבי אליעזר חשיב לקבולי טומאה דלגבי קופסא לאו מוכן הוא:"
+  },
+  "Rashi on Shabbat 29b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:1:3",
+      "Rashi on Shabbat 29b:1:2",
+      "Rashi on Shabbat 29b:1:5"
+    ],
+    "generatedAt": "2026-11-09T07:24:27.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהושע סבר כו'</strong> - ומוכן דרבי יהושע מגוד ואחורי הדלת ושלא מן המוכן זרקו לאשפה:"
+  },
+  "Rashi on Shabbat 29b:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:1:1",
+      "Rashi on Shabbat 29b:1:2",
+      "Rashi on Shabbat 29b:1:3",
+      "Rashi on Shabbat 29b:1:4",
+      "Rashi on Shabbat 29a:1:2"
+    ],
+    "generatedAt": "2026-11-09T07:27:35.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי קרי ליה</strong> - למגוד מוכן הואיל ולר' יהושע בטל דלגבי אשפה דאיירי בה רבי יהושע מוכן הוא ורבי עקיבא תלאו במגוד קרי מוכן ואחורי הדלת שלא מן המוכן:"
+  },
+  "Rashi on Shabbat 29b:2:1": {
+    "dependsOn": [
+      "Shabbat 29b:2",
+      "Rashi on Shabbat 29b:2:1",
+      "Rashi on Shabbat 29b:2:2",
+      "Rashi on Shabbat 29b:2:3",
+      "Rashi on Shabbat 29a:15:1"
+    ],
+    "generatedAt": "2026-11-09T07:31:24.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדר ביה ר' עקיבא לגבי ר' יהושע</strong> - ומטהר אף במוכן:"
+  },
+  "Rashi on Shabbat 29b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:2:2",
+      "Rashi on Shabbat 29b:2:1",
+      "Rashi on Shabbat 29b:2:3",
+      "Shabbat 29b:2"
+    ],
+    "generatedAt": "2026-11-09T07:32:57.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקתני</strong> - במתניתין פתילת הבגד דמשמע שעדיין בגד הוא קצת וחשבו בעיניו ואפ\"ה קאמר רבי עקיבא במתני' טהורה היא אלמא הדר ביה:"
+  },
+  "Rashi on Shabbat 29b:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:2:1",
+      "Rashi on Shabbat 29b:2:2",
+      "Rashi on Shabbat 28b:8:1",
+      "Rashi on Shabbat 28b:8:2",
+      "Rashi on Shabbat 28b:8:3",
+      "Shabbat 28b:9",
+      "Shabbat 28b:10",
+      "Shabbat 29a:1",
+      "Shabbat 29a:2",
+      "Shabbat 29a:3"
+    ],
+    "generatedAt": "2026-11-09T07:35:11.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של בגד</strong> - משמע שקפלה מבגד הבגד משמע שקפל הבגד עצמו שלם ולענין הדלקה כדאוקימנא לעיל טעמא דרבי אליעזר דבעי פתילה מחורכת שתדלק יפה:"
+  },
+  "Rashi on Shabbat 29b:3:1": {
+    "dependsOn": [
+      "Shabbat 29b:3"
+    ],
+    "generatedAt": "2026-11-09T07:36:37.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתהא מנטפת</strong> - ויתקיים הנר שתהא השמן מטפטף כל שעה לתוך הנר וטעמא משום גזרה שמא יסתפק הימנו וכיון שהקצהו לנר חייב משום מכבה ואפי' אותה שפופרת של חרס דמאיסא ליה גזרינן:"
+  },
+  "Rashi on Shabbat 29b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:3:1",
+      "Shabbat 29b:3",
+      "Rashi on Shabbat 29b:3:2",
+      "Rashi on Shabbat 29b:3:3",
+      "Rashi on Shabbat 29b:3:4"
+    ],
+    "generatedAt": "2026-11-09T07:37:33.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אם חיברה</strong> - ליכא למיחש דמשום איסור שבת בדיל מיניה:"
+  },
+  "Rashi on Shabbat 29b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:3:1",
+      "Rashi on Shabbat 29b:3:2",
+      "Rashi on Shabbat 29b:3:4"
+    ],
+    "generatedAt": "2026-11-09T07:39:19.156Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויתן ראש הפתילה</strong> - השני שהוא יוצא דרך הנקב האחר שבנר לשאוב ושמן נמשך דרך הפתילה לראש הדולק:"
+  },
+  "Rashi on Shabbat 29b:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:3:1",
+      "Rashi on Shabbat 29b:3:2",
+      "Rashi on Shabbat 29b:3:3",
+      "Shabbat 29b:4"
+    ],
+    "generatedAt": "2026-11-09T07:40:10.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהודה מתיר</strong> - דלא גזר:"
+  },
+  "Rashi on Shabbat 29b:4:1": {
+    "dependsOn": [
+      "Shabbat 29b:4",
+      "Rashi on Shabbat 29b:3:1",
+      "Rashi on Shabbat 29b:3:2",
+      "Rashi on Shabbat 29b:3:3",
+      "Rashi on Shabbat 29b:3:4",
+      "Rashi on Shabbat 29b:4:2"
+    ],
+    "generatedAt": "2026-11-09T07:41:20.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא מיפסק</strong> - מידי שהוא מונח בתוך חלל הנר למעלה מכיסוי:"
+  },
+  "Rashi on Shabbat 29b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:4:1"
+    ],
+    "generatedAt": "2026-11-09T07:42:08.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמפסקא</strong> - שהרי אצל הנר מונחת ויש כאן הפסק וליכא למימר גופיה הוא אימא מודה דנגזור:"
+  },
+  "Rashi on Shabbat 29b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:5:2",
+      "Rashi on Shabbat 29b:5:1"
+    ],
+    "generatedAt": "2026-11-09T07:43:01.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא אם חיברה</strong> - בעה\"ב עצמו מבעוד יום בסיד או בחרסית מותר:"
+  },
+  "Rashi on Shabbat 29b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:43:40.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין יוצר</strong> - שחברה שפיר:"
+  },
+  "Rashi on Shabbat 29b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:44:12.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשישא</strong> - רצפה של שיש דלא עביד בה חריץ:"
+  },
+  "Rashi on Shabbat 29b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:44:38.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעילא מרבי יצחק</strong> - לפניו:"
+  },
+  "Rashi on Shabbat 29b:7:3": {
+    "dependsOn": [
+      "Shabbat 29b:7",
+      "Shabbat 29b:5",
+      "Shabbat 29b:6",
+      "Rashi on Shabbat 29b:7:1",
+      "Rashi on Shabbat 29b:7:2",
+      "Rashi on Shabbat 29b:7:4"
+    ],
+    "generatedAt": "2026-11-09T07:45:49.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדשתיקו ליה חבריא</strong> - רבי טרפון וזקנים שמפני שלא אמרו לו דבר דימה והעיד דמותר:"
+  },
+  "Rashi on Shabbat 29b:7:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:7:1",
+      "Rashi on Shabbat 29b:7:2",
+      "Rashi on Shabbat 29b:7:3",
+      "Rashi on Shabbat 29b:8:1",
+      "Rashi on Shabbat 29b:8:2",
+      "Rashi on Shabbat 29b:8:3",
+      "Rashi on Shabbat 29b:8:4",
+      "Rashi on Shabbat 29b:8:5"
+    ],
+    "generatedAt": "2026-11-09T07:48:20.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפק מיניה חורבה</strong> - וינהגו היתר בדבר ור' יצחק סבירא ליה כרבי יהודה דדבר שאין מתכוין אסור ואע\"ג דבשייש לא עביד חריץ. גזר אטו עיליתא דעלמא:"
+  },
+  "Rashi on Shabbat 29b:8:1": {
+    "dependsOn": [
+      "Steinsaltz on Shabbat 29b:8",
+      "Steinsaltz comment #1 on Shabbat 29b:8"
+    ],
+    "generatedAt": "2026-11-09T07:51:30.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ריש כנישתא</strong> - מפטיר כנסיות המכניס ומוציא ומיישב תלמידים ותינוקות:"
+  },
+  "Rashi on Shabbat 29b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:53:39.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבצרה</strong> - שם מקום כי זבח לה' בבצרה <span class=\"parenthesized\">(ישעיהו ל״ד:ו׳)</span>:"
+  },
+  "Rashi on Shabbat 29b:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:8:1",
+      "Rashi on Shabbat 29b:8:2",
+      "Rashi on Shabbat 29b:8:4",
+      "Rashi on Shabbat 29b:8:5",
+      "Shabbat 22a:6",
+      "Rashi on Shabbat 29b:1:1",
+      "Rashi on Shabbat 29b:1:2",
+      "Rashi on Shabbat 29b:3:1",
+      "Rashi on Shabbat 29b:3:2"
+    ],
+    "generatedAt": "2026-11-09T07:59:17.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' שמעון</strong> - דאמר גורר אדם:"
+  },
+  "Rashi on Shabbat 29b:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T07:59:40.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא אפשר</strong> - אלא בגרירה שאין יכול ליטלן בידו:"
+  },
+  "Rashi on Shabbat 29b:8:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:8:1",
+      "Rashi on Shabbat 29b:8:2",
+      "Rashi on Shabbat 29b:8:3",
+      "Rashi on Shabbat 29b:8:4",
+      "Rashi on Shabbat 29b:7:1",
+      "Rashi on Shabbat 29b:7:2",
+      "Rashi on Shabbat 29b:7:3",
+      "Rashi on Shabbat 29b:7:4"
+    ],
+    "generatedAt": "2026-11-09T08:01:10.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת בקטנים</strong> - ואע\"ג דאפשר בטלטול שרי רבי שמעון הואיל ואין מתכוין לחריץ ור' יהודה סבר כיון דאפשר אסור:"
+  },
+  "Rashi on Shabbat 29b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:9:2"
+    ],
+    "generatedAt": "2026-11-09T08:04:09.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני גדולים</strong> - מטה:"
+  },
+  "Rashi on Shabbat 29b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 29b:9:1",
+      "Rashi on Shabbat 29b:9:2",
+      "Shabbat 29b:9"
+    ],
+    "generatedAt": "2026-11-09T08:05:31.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 29b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני קטנים</strong> - כסא ורבי יהודה פליג עליה דתנן במסכת ביצה רבי יהודה אומר כל הכלים אין נגררים דאי לאו משום פלוגתייהו למה לי למיתני גדולים השתא קטנים שרי רבי שמעון גדולים מיבעיא אלא תנא קטנים משום ר' שמעון ותנא גדולים משום רבי יהודה:"
+  },
+  "Tosafot on Shabbat 29b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:11:51.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 29b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יתכוין בחמה מפני החמה וכו'</strong> - ובענין דלא הוי פסיק רישיה כגון שהוא לבוש מלבושים אחרים להגין עליו מפני החמה ומפני הצינה:"
+  },
+  "Tosafot on Shabbat 29b:7:1": {
+    "dependsOn": [
+      "Shabbat 95a:5",
+      "Rashi on Shabbat 95a:5:1",
+      "Rashi on Shabbat 95a:5:2",
+      "Rashi on Shabbat 95a:5:3",
+      "Gilyon HaShas on Shabbat 29b:2"
+    ],
+    "generatedAt": "2026-11-09T07:50:08.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 29b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזירה עיליתא דשישא אטו עיליתא דעלמא</strong> - והא דקאמר בסוף המצניע <span class=\"parenthesized\">(לקמן שבת דף צה. ושם)</span> אמימר שרא זילחא במחוזא ומפרש דטעמא מאי אמור רבנן דילמא אתי לאשוויי גומות הכא ליכא גומות ומפרש <span class=\"rashi-quotation\">בקונטרס</span> דכולה מחוזא רצפה היתה התם אין לגזור מחוזא אטו שאר עיירות אבל בעיר אחת גזרינן עלייה זו אטו עלייה אחרת:"
+  },
+  "Tosafot on Shabbat 29b:8:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 29b:8:1"
+    ],
+    "generatedAt": "2026-11-09T08:03:19.344Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 29b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג מחלוקת בקטנים אבל בגדולים ד\"ה מותר</strong> - ול\"ג ד\"ה אסור דבפרק כל שעה <span class=\"parenthesized\">(פסחים דף כ: ושם)</span> משמע דטפי שרי היכא דלא אפשר מהיכא דאפשר:"
+  }
+}

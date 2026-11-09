@@ -1,0 +1,433 @@
+{
+  "Rashi on Shabbat 31a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:10:2",
+      "Rashi on Shabbat 31a:10:3",
+      "Tosafot on Shabbat 31a:10:1"
+    ],
+    "generatedAt": "2026-11-09T10:21:07.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סדר זרעים</strong> - שעל אמונת האדם סומך להפריש מעשרותיו כראוי:"
+  },
+  "Rashi on Shabbat 31a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:21:33.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוסן</strong> - לשון יורשין ועל ידי אשה נולדו יורשין:"
+  },
+  "Rashi on Shabbat 31a:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:10:1",
+      "Rashi on Shabbat 31a:10:2",
+      "Rashi on Shabbat 31a:10:3",
+      "Rashi on Shabbat 31a:10:4",
+      "Rashi on Shabbat 31a:10:5"
+    ],
+    "generatedAt": "2026-11-09T10:22:31.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סדר נזיקין</strong> - מושיען מזהיר לפרוש מהיזק ומהתחייב ממון:"
+  },
+  "Rashi on Shabbat 31a:10:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:10:1",
+      "Rashi on Shabbat 31a:10:2",
+      "Rashi on Shabbat 31a:10:3",
+      "Rashi on Shabbat 31a:10:4",
+      "Rashi on Shabbat 31a:10:5"
+    ],
+    "generatedAt": "2026-11-09T10:24:11.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעת</strong> - עדיף מחכמה:"
+  },
+  "Rashi on Shabbat 31a:10:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:24:44.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא אוצרו</strong> - הוא עיקר החשוב בעיניו לאצור ולעשות סגולה לזכרון:"
+  },
+  "Rashi on Shabbat 31a:11:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:11:1"
+    ],
+    "generatedAt": "2026-11-09T10:26:05.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קבעת עתים</strong> - לפי שאדם צריך להתעסק בדרך ארץ שאם אין דרך ארץ אין תורה הוצרך לקבוע עתים לתורה דבר קצוב שלא ימשך כל היום לדרך ארץ:"
+  },
+  "Rashi on Shabbat 31a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:27:46.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפריה ורביה</strong> - היינו חוסן:"
+  },
+  "Rashi on Shabbat 31a:11:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:11:3",
+      "Rashi on Shabbat 31a:11:1",
+      "Rashi on Shabbat 31a:11:2",
+      "Rashi on Shabbat 31a:11:4",
+      "Rashi on Shabbat 31a:11:5",
+      "Steinsaltz on Shabbat 31a:11",
+      "Steinsaltz comment #2 on Shabbat 31a:11",
+      "Steinsaltz comment #3 on Shabbat 31a:11"
+    ],
+    "generatedAt": "2026-11-09T10:29:26.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צפית לישועה</strong> - לדברי הנביאים:"
+  },
+  "Rashi on Shabbat 31a:11:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:11:1",
+      "Rashi on Shabbat 31a:11:2",
+      "Rashi on Shabbat 31a:11:3",
+      "Rashi on Shabbat 31a:11:5"
+    ],
+    "generatedAt": "2026-11-09T10:30:37.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבנת דבר מתוך דבר</strong> - היינו דעת:"
+  },
+  "Rashi on Shabbat 31a:11:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:11:4",
+      "Rashi on Shabbat 31a:11:1",
+      "Rashi on Shabbat 31a:11:2",
+      "Rashi on Shabbat 31a:11:3",
+      "Rashi on Shabbat 31a:10:1",
+      "Rashi on Shabbat 31a:10:2",
+      "Jastrow, חוּמְטוֹן 1",
+      "Steinsaltz comment #4 on Shabbat 31a:11"
+    ],
+    "generatedAt": "2026-11-09T10:32:01.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קב חומטין</strong> - ארץ מלחה ומשמרת את הפירות מהתליע:"
+  },
+  "Rashi on Shabbat 31a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:32:35.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו חושש</strong> - למוכרה בדמי חטין דלאו אונאה היא שהרי שמירתן בכך:"
+  },
+  "Rashi on Shabbat 31a:1:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:1:1",
+      "Jastrow, מרי II 1",
+      "Steinsaltz on Shabbat 31a:1"
+    ],
+    "generatedAt": "2026-11-09T09:56:20.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהמרו</strong> - נתערבו כמו שממרין את היונים דסנהדרין <span class=\"parenthesized\">(דף כו:)</span>:"
+  },
+  "Rashi on Shabbat 31a:1:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:1:2",
+      "Rashi on Shabbat 31a:1:1",
+      "Rashi on Shabbat 31a:1:3",
+      "Jastrow, מִי II 1",
+      "Steinsaltz on Shabbat 31a:1",
+      "Rashi on Shabbat 31a:6:1",
+      "Rashi on Shabbat 31a:6:2"
+    ],
+    "generatedAt": "2026-11-09T09:57:30.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי כאן הלל</strong> - כלום כאן הלל ולשון גנאי לנשיא ישראל:"
+  },
+  "Rashi on Shabbat 31a:1:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:1:3",
+      "Jastrow, סְגַלְגַּל 1",
+      "Sefer HeArukh, Letter Samekh 53"
+    ],
+    "generatedAt": "2026-11-09T09:58:59.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני מה ראשן של בבליים סגלגלות</strong> - בילונ\"ה בלעז שאינו עגול לישנא אחרינא ראשן של בבליים סגלגל עגול:"
+  },
+  "Rashi on Shabbat 31a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:2:1",
+      "Rashi on Shabbat 31a:1:1",
+      "Rashi on Shabbat 31a:1:2",
+      "Rashi on Shabbat 31a:1:3",
+      "Rashi on Shabbat 31a:2:2",
+      "Rashi on Genesis 29:17:1",
+      "Bava Batra 123a:14",
+      "Bava Batra 123a:15",
+      "Steinsaltz comment #1 on Shabbat 31a:2"
+    ],
+    "generatedAt": "2026-11-09T10:02:38.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרוטות</strong> - רכות:"
+  },
+  "Rashi on Shabbat 31a:2:2": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 31a:2:2",
+      "Rashi on Shabbat 31a:4:1"
+    ],
+    "generatedAt": "2026-11-09T10:03:51.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרים בין החולות</strong> - והרוח נושבת ונכנס בתוך עיניהם ובמקום אחר מפרש תרוטות לשון עגולות בית מושב שלהן ואף כאן אני אומר כן ומפני שדרים בין החולות שינה אותם המקום שלא יהא סדק של עיניהם ארוך כשלנו ויכנס בו החול וכן רגליהם של אפרקיים רחבות שלא יטבעו בבצעי המים ורבותינו מפרשים שדרים בין בצעי המים והולכין יחפין ומתפשטין רגליהן לפי שהמנעל דוחק הרגל ומעמידו על דפוס שלו:"
+  },
+  "Rashi on Shabbat 31a:4:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:4:1"
+    ],
+    "generatedAt": "2026-11-09T10:05:03.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי הוא הלל</strong> - ראוי לכך:"
+  },
+  "Rashi on Shabbat 31a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:5:1",
+      "Rashi on Shabbat 31a:5:2",
+      "Rashi on Shabbat 31a:5:3",
+      "Rashi on Shabbat 31a:5:4",
+      "Rashi on Shabbat 31a:6:1",
+      "Rashi on Shabbat 31a:6:2",
+      "Rashi on Shabbat 31a:1:1",
+      "Steinsaltz on Shabbat 31a:5",
+      "Bekhorot 30b:15",
+      "Bekhorot 30b:16",
+      "Bekhorot 30b:4",
+      "Rashi on Shabbat 31b:1:1",
+      "Rashi on Shabbat 31b:2:1"
+    ],
+    "generatedAt": "2026-11-09T10:07:26.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוציאו בנזיפה</strong> - דתניא הבא לקבל דברי חברות חוץ מדבר אחד וכן גר הבא להתגייר וקבל עליו דברי תורה חוץ מדבר אחד אין מקבלין אותו במסכת בכורות <span class=\"parenthesized\">(דף ל:)</span>:"
+  },
+  "Rashi on Shabbat 31a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:5:2",
+      "Translation on Rashi on Shabbat 31a:5:2",
+      "Rashi on Shabbat 31a:5:1",
+      "Rashi on Shabbat 31a:5:3",
+      "Rashi on Shabbat 31a:5:4",
+      "Rashi on Shabbat 31a:1:1",
+      "Rashi on Shabbat 31a:2:1"
+    ],
+    "generatedAt": "2026-11-09T10:08:46.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גייריה</strong> - וסמך על חכמתו שסופו שירגילנו לקבל עליו דלא דמיא הא לחוץ מדבר אחד שלא היה כופר בתורה שבעל פה אלא שלא היה מאמין שהיא מפי הגבורה והלל הובטח שאחר שילמדנו יסמוך עליו:"
+  },
+  "Rashi on Shabbat 31a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:5:3",
+      "Rashi on Shabbat 31a:5:1",
+      "Rashi on Shabbat 31a:5:2",
+      "Rashi on Shabbat 31a:5:4",
+      "Steinsaltz on Shabbat 31a:5"
+    ],
+    "generatedAt": "2026-11-09T10:10:09.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפיך ליה</strong> - כגון תשר\"ק:"
+  },
+  "Rashi on Shabbat 31a:5:4": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 31a:5:4"
+    ],
+    "generatedAt": "2026-11-09T10:11:03.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו עלי קא סמכת</strong> - מנין אתה יודע שזו אלף וזו בית אלא שלמדתיך וסמכת עלי דעל פה נמי סמוך על דברי:"
+  },
+  "Rashi on Shabbat 31a:6:1": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 31a:6:1"
+    ],
+    "generatedAt": "2026-11-09T10:11:45.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמת הבנין</strong> - מקל שהוא אמת אורך ומודדים בו אורך הבנין שהיו קוצצין עם האומנין כך וכך אמות בכך וכך דמים:"
+  },
+  "Rashi on Shabbat 31a:6:2": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 31a:6:2"
+    ],
+    "generatedAt": "2026-11-09T10:12:39.532Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעלך סני לחברך לא תעביד</strong> - ריעך וריע אביך אל תעזוב <span class=\"parenthesized\">(משלי כז)</span> זה הקב\"ה אל תעבור על דבריו שהרי עליך שנאוי שיעבור חבירך על דבריך ל\"א חבירך ממש כגון גזלה גנבה ניאוף ורוב המצות:"
+  },
+  "Rashi on Shabbat 31a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:6:3",
+      "Translation on Rashi on Shabbat 31a:6:3",
+      "Rashi on Shabbat 31a:6:1",
+      "Rashi on Shabbat 31a:6:2",
+      "Rashi on Shabbat 31a:6:4",
+      "Steinsaltz on Shabbat 31a:6"
+    ],
+    "generatedAt": "2026-11-09T10:13:37.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אידך</strong> - שאר דברי תורה:"
+  },
+  "Rashi on Shabbat 31a:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:6:1",
+      "Rashi on Shabbat 31a:6:2",
+      "Rashi on Shabbat 31a:6:3",
+      "Translation on Rashi on Shabbat 31a:6:4"
+    ],
+    "generatedAt": "2026-11-09T10:14:35.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירושה</strong> - דהא מילתא הוא לדעת איזה דבר שנאוי זיל גמור ותדע:"
+  },
+  "Rashi on Shabbat 31a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:7:1",
+      "Rashi on Shabbat 31a:6:1"
+    ],
+    "generatedAt": "2026-11-09T10:15:24.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סופר</strong> - מלמד תינוקות:"
+  },
+  "Rashi on Shabbat 31a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31a:8:1",
+      "Translation on Rashi on Shabbat 31a:8:1",
+      "Steinsaltz on Shabbat 31a:8"
+    ],
+    "generatedAt": "2026-11-09T10:19:02.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טכסיסי</strong> - תיקוני צרכי המלך לפי הכבוד:"
+  },
+  "Rashi on Shabbat 31a:9:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 31a:9:1"
+    ],
+    "generatedAt": "2026-11-09T10:19:31.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשתן</strong> - הגרים הללו:"
+  },
+  "Tosafot on Shabbat 31a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:25:22.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 31a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמונת זה סדר זרעים</strong> - מפרש בירושלמי שמאמין בחי העולמים וזורע:"
+  },
+  "Tosafot on Shabbat 31a:1:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 31a:1:1",
+      "Translation on Tosafot on Shabbat 31a:1:1",
+      "Tosafot on Bava Metzia 74a:1:1"
+    ],
+    "generatedAt": "2026-11-09T10:00:19.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 31a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהמרו זה את זה</strong> - דיני אסמכתא מפורש במקום אחר <span class=\"parenthesized\">(בבא מציעא דף עד. ושם)</span>:"
+  }
+}

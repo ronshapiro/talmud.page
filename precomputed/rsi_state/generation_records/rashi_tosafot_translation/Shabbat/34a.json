@@ -1,0 +1,547 @@
+{
+  "Rashi on Shabbat 34a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:3:9",
+      "Shabbat 48a:4",
+      "Shabbat 47b:1",
+      "Rashi on Shabbat 34a:9:3",
+      "Steinsaltz on Shabbat 34a:10",
+      "Rashi on Shabbat 34a:10:2",
+      "Rashi on Shabbat 34a:10:3",
+      "Rashi on Shabbat 34a:10:4"
+    ],
+    "generatedAt": "2026-11-09T15:36:06.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אמר רבא מפני מה אמרו אין טומנין בדבר שאינו מוסיף הבל</strong> - כגון צמר ומוכין:"
+  },
+  "Rashi on Shabbat 34a:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:10:1",
+      "Rashi on Shabbat 34a:10:3",
+      "Rashi on Shabbat 34a:10:4"
+    ],
+    "generatedAt": "2026-11-09T15:38:19.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משחשכה</strong> - כדתנן במתניתין וטומנין את החמין טעמא דספק חשכה הא ודאי חשכה אין טומנין וסתם הטמנה בדבר שאינו מוסיף הבל דאילו בדבר המוסיף הבל אפי׳ מבעוד יום אסור כדתנן בפ״ד <span class=\"parenthesized\">(דף מז:)</span> אין טומנין לא בגפת כו׳ גזירה שמא ימצא קדרתו שנצטננה כשירצה להטמינה וירתיחנה תחילה ונמצא מבשל בשבת:"
+  },
+  "Rashi on Shabbat 34a:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:10:1",
+      "Rashi on Shabbat 34a:10:2",
+      "Rashi on Shabbat 34a:10:4"
+    ],
+    "generatedAt": "2026-11-09T15:39:25.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכא בין השמשות נמי ניגזר</strong> - דהא שבות מעלייתא היא דהא איכא גזירת איסור דאורייתא ותנא דמתניתין אית ליה דגזרו על השבות ביה\"ש דקתני אין מעשרין את הודאי:"
+  },
+  "Rashi on Shabbat 34a:10:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:40:57.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רותחות הן</strong> - שסמוך לביה\"ש הוא מעבירם מעל האור וליכא למיחש לשמא נצטננה וירתיחנה:"
+  },
+  "Rashi on Shabbat 34a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:1:1",
+      "Translation on Rashi on Shabbat 34a:1:1"
+    ],
+    "generatedAt": "2026-11-09T14:44:54.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואית להו צערא לאקופי</strong> - שהיה אותו שוק שהספק בו מקום מעבר העיר לרבים והכהנים לא היו יכולין ליכנס שם מפני טומאה וצריך להקיף דרך אחר ארוך:"
+  },
+  "Rashi on Shabbat 34a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:1:2",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:3",
+      "Tosafot on Shabbat 34a:1:1",
+      "Steinsaltz on Shabbat 34a:1",
+      "Rashi on Shabbat 34a:1:4",
+      "Rashi on Shabbat 34a:1:5"
+    ],
+    "generatedAt": "2026-11-09T14:46:29.718Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דידע דאיתחזק טהרה</strong> - בהאי שוק מימיו שלא היה בית הקברות גמור ולא ניתן לפנותו:"
+  },
+  "Rashi on Shabbat 34a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:1:3",
+      "Translation on Rashi on Shabbat 34a:1:3",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:2",
+      "Rashi on Shabbat 34a:1:4",
+      "Rashi on Shabbat 34a:1:5",
+      "Tosafot on Shabbat 34a:1:1",
+      "Tosafot on Shabbat 34a:1:2",
+      "Rashi on Shabbat 33b:1:1",
+      "Rashi on Shabbat 33b:2:1"
+    ],
+    "generatedAt": "2026-11-09T14:47:43.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן קיצץ בן זכאי</strong> - שתלן ועקרן לאחר גידולן:"
+  },
+  "Rashi on Shabbat 34a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:1:4",
+      "Translation on Rashi on Shabbat 34a:1:4",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:2",
+      "Rashi on Shabbat 34a:1:3",
+      "Rashi on Shabbat 34a:1:5",
+      "Shabbat 34a:1",
+      "Steinsaltz on Shabbat 34a:1",
+      "Steinsaltz In-Depth on Shabbat 34a:1",
+      "Rashi on Shabbat 34a:2:1",
+      "Rashi on Shabbat 34a:2:2",
+      "Rashi on Shabbat 34a:3:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Tosafot on Shabbat 34a:1:1",
+      "Tosafot on Shabbat 34a:1:2"
+    ],
+    "generatedAt": "2026-11-09T14:51:20.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורמסי תרומה</strong> - הצריכות לשמרן בטהרה וגם הוא היה כהן כדאמרינן [בתוספתא דפרה] <span class=\"parenthesized\">(פ\"ג)</span> אם מה שעשו ידי שכחתי:"
+  },
+  "Rashi on Shabbat 34a:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:1:5",
+      "Tosafot on Shabbat 34a:7:1",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:2",
+      "Rashi on Shabbat 34a:1:3",
+      "Rashi on Shabbat 34a:1:4"
+    ],
+    "generatedAt": "2026-11-09T14:53:10.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבד איהו נמי הכי</strong> - היה מקצץ תורמסין ומשליכן שם ונעשה נס וצף המת במקום שהוא שם וציינו למקום הקבר הכי מפרש בפסיקתא דפרשת העומר ובסדר זרעים ירושלמי:"
+  },
+  "Rashi on Shabbat 34a:2:1": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 34a:2:1",
+      "Rashi on Shabbat 34a:2:2",
+      "Rashi on Shabbat 34a:2:3",
+      "Rashi on Shabbat 34a:2:4",
+      "Steinsaltz on Shabbat 34a:2:1",
+      "Steinsaltz on Shabbat 34a:2",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:2",
+      "Rashi on Shabbat 33b:1:1",
+      "Rashi on Shabbat 33b:1:2"
+    ],
+    "generatedAt": "2026-11-09T14:59:22.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היית</strong> - במעמד:"
+  },
+  "Rashi on Shabbat 34a:2:2": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 34a:2:2"
+    ],
+    "generatedAt": "2026-11-09T15:00:03.169Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמנית</strong> - הסכמת לדעתנו להיות מן המנין:"
+  },
+  "Rashi on Shabbat 34a:2:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 34a:2:3",
+      "Jastrow, פִּרְכֵּס I 1",
+      "Steinsaltz on Shabbat 34a:2",
+      "Rashi on Shabbat 34a:2:1",
+      "Rashi on Shabbat 34a:2:2",
+      "Rashi on Shabbat 34a:2:4"
+    ],
+    "generatedAt": "2026-11-09T15:01:54.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפרכסות זו את זו</strong> - את שער חברתה להיות נאה:"
+  },
+  "Rashi on Shabbat 34a:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:2:4",
+      "Translation on Rashi on Shabbat 34a:2:4"
+    ],
+    "generatedAt": "2026-11-09T15:02:36.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גל מעצמות</strong> - כמת שנרקב בשרו ונפל מזמן הרבה:"
+  },
+  "Rashi on Shabbat 34a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:03:14.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עם חשכה</strong> - שאם ימהר להזכירם מבעוד יום יפשעו ויאמרו עדיין יש שהות:"
+  },
+  "Rashi on Shabbat 34a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:3:1",
+      "Rashi on Shabbat 34a:3:3",
+      "Beitzah 34b:8",
+      "Beitzah 34b:9",
+      "Beitzah 34b:10"
+    ],
+    "generatedAt": "2026-11-09T15:04:48.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרתם</strong> - פירות האילן לסעודת שבת שאף אכילת עראי של שבת קובעת למעשר כדאמרינן במסכת ביצה <span class=\"parenthesized\">(דף לד:)</span> דשבת עונג איקרי מכל שהוא הוי עונג:"
+  },
+  "Rashi on Shabbat 34a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:06:12.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערבתם</strong> - ערובי תחומין וחצירות והני תרי שייכי למימרינהו בלשון שאלה דשמא כבר עשו אבל בנר לא שייך הדלקתם דדבר הנראה לעין הוא:"
+  },
+  "Rashi on Shabbat 34a:3:4": {
+    "dependsOn": [
+      "Shabbat 34a:3",
+      "Rashi on Shabbat 34a:3:3",
+      "Rashi on Shabbat 34a:3:4",
+      "Rashi on Shabbat 34a:3:5",
+      "Rashi on Shabbat 34a:3:1",
+      "Rashi on Shabbat 34a:3:2",
+      "Rashi on Shabbat 34a:3:6",
+      "Rashi on Shabbat 34a:3:7",
+      "Rashi on Shabbat 34a:2:1",
+      "Rashi on Shabbat 34a:2:2"
+    ],
+    "generatedAt": "2026-11-09T15:08:23.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק חשכה</strong> - כגון בין השמשות אין מעשרין את הודאי דתיקון מעליא הוא אע\"ג דשבות בעלמא היא קסבר גזרו על השבות אף על בהש\"מ:"
+  },
+  "Rashi on Shabbat 34a:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:3:4",
+      "Rashi on Shabbat 34a:3:6"
+    ],
+    "generatedAt": "2026-11-09T15:09:11.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מטבילין את הכלים</strong> - דהוי נמי שבות כדאמרינן במסכת ביצה <span class=\"parenthesized\">(דף יח.)</span> דנראה כמתקן כלי:"
+  },
+  "Rashi on Shabbat 34a:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:10:10.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מדליקין את הנרות</strong> - כ\"ש דספיקא דאורייתא היא וזו ואין צריך לומר זו קתני:"
+  },
+  "Rashi on Shabbat 34a:3:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:3:1",
+      "Rashi on Shabbat 34a:3:2",
+      "Rashi on Shabbat 34a:3:3",
+      "Rashi on Shabbat 34a:3:4",
+      "Rashi on Shabbat 34a:3:5",
+      "Rashi on Shabbat 34a:3:6",
+      "Rashi on Shabbat 34a:3:8",
+      "Rashi on Shabbat 34a:3:9",
+      "Shabbat 34a:5",
+      "Shabbat 34a:8",
+      "Rashi on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:2"
+    ],
+    "generatedAt": "2026-11-09T15:11:34.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מעשרין את הדמאי</strong> - דלא דמי למתקן דרוב ע\"ה מעשרין הן:"
+  },
+  "Rashi on Shabbat 34a:3:8": {
+    "dependsOn": [
+      "Shabbat 34a:3",
+      "Shabbat 34a:5",
+      "Rashi on Shabbat 34a:3:7",
+      "Rashi on Shabbat 34a:3:8",
+      "Rashi on Shabbat 34a:3:9",
+      "Rashi on Shabbat 34a:3:2",
+      "Rashi on Shabbat 34a:3:3",
+      "Rashi on Shabbat 34a:3:4"
+    ],
+    "generatedAt": "2026-11-09T15:14:23.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומערבין</strong> - עירוב ובגמרא פריך הא תנן לעיל עם חשכה ערבתם מקמי דליהוי ספק:"
+  },
+  "Rashi on Shabbat 34a:3:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:15:39.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:3:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטומנין את החמין</strong> - נותנן בקופה של מוכין להיות חומם משתמר בהן אבל משחשכה ודאי אין טומנין בהן כדמפרש בגמ':"
+  },
+  "Rashi on Shabbat 34a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:16:15.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עם חשכה</strong> - מבעוד יום הוא ויש שהות לעשר ולערב:"
+  },
+  "Rashi on Shabbat 34a:7:1": {
+    "dependsOn": [
+      "Eruvin 51a:4",
+      "Eruvin 51a:5",
+      "Rashi on Eruvin 51a:8:1",
+      "Shabbat 34a:7",
+      "Shabbat 34a:3",
+      "Shabbat 34a:4",
+      "Shabbat 34a:5",
+      "Rashi on Shabbat 34a:3:2",
+      "Rashi on Shabbat 34a:3:5",
+      "Rashi on Shabbat 33b:2:7"
+    ],
+    "generatedAt": "2026-11-09T15:19:16.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעירובי תחומין</strong> - תיקון מעליא דאסמכוה רבנן תחומין אקראי ואפי' למאן דאמר תחומין דרבנן כדאמרינן בעירובין <span class=\"parenthesized\">(דף נא.)</span> ילפינן מקום ממקום ומקום מניסה כו' אבל עירובי חצרות חומרא בעלמא הוא ולא מיקרי שביתה מעלייתא וספקא דבין השמשות שפיר דמי:"
+  },
+  "Rashi on Shabbat 34a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:8:1",
+      "Rashi on Shabbat 34a:8:2",
+      "Rashi on Shabbat 34a:8:3",
+      "Rashi on Shabbat 34a:8:4"
+    ],
+    "generatedAt": "2026-11-09T15:22:16.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין השמשות קונה עירוב</strong> - שהוא תחילת קדושת היום:"
+  },
+  "Rashi on Shabbat 34a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:22:53.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאכל</strong> - שאכלו כלב או אדם:"
+  },
+  "Rashi on Shabbat 34a:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:8:1",
+      "Rashi on Shabbat 34a:8:2",
+      "Rashi on Shabbat 34a:8:3",
+      "Rashi on Shabbat 34a:8:4"
+    ],
+    "generatedAt": "2026-11-09T15:23:45.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעירב עליו מבעוד יום</strong> - הניח עירוב לסוף התחום מבעוד יום ולא הספיק להחשיך ממש עד שנאכל בין השמשות:"
+  },
+  "Rashi on Shabbat 34a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:24:28.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהם קנו עירוב</strong> - דלגבי האי שנאכל בין השמשות משוינן ליה ליליא ואמרינן כבר קדש היום בעוד העירוב קיים וקנה עירוב דהלכה כר' יוסי דאמר בעירובין <span class=\"parenthesized\">(דף לה.)</span> ספק עירוב כשר ולגבי דהאי שהונח עליו בין השמשות ונתקיים עד שחשכה משוינן לבין השמשות יממא ועדיין לא קדש היום כשהונח ונמצא שהיה שם כבר בשעת קניית עירוב:"
+  },
+  "Rashi on Shabbat 34a:9:1": {
+    "dependsOn": [
+      "Shabbat 34a:9",
+      "Rashi on Shabbat 34a:9:1",
+      "Rashi on Shabbat 34a:9:2",
+      "Rashi on Shabbat 34a:9:3"
+    ],
+    "generatedAt": "2026-11-09T15:30:34.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרא ליקני</strong> - זה שהונח עליו בין השמשות:"
+  },
+  "Rashi on Shabbat 34a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:31:57.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמא לא ליקני</strong> - שהרי נאכל מבעוד יום:"
+  },
+  "Rashi on Shabbat 34a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:9:1",
+      "Rashi on Shabbat 34a:9:2",
+      "Rashi on Shabbat 34a:9:3",
+      "Tosafot on Shabbat 33b:5:1"
+    ],
+    "generatedAt": "2026-11-09T15:34:08.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 34a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ספקא דרבנן היא</strong> - כלומר הא מילתא דמספקא לן אי בין השמשות יממא או ליליא במילתא דרבנן איתרע לן בעירובי תחומין דרבנן וכל ספקא דרבנן לקולא:"
+  },
+  "Tosafot on Shabbat 34a:1:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Shabbat 34a:1:1",
+      "Rashi on Shabbat 34a:1:4",
+      "Rashi on Shabbat 34a:1:5"
+    ],
+    "generatedAt": "2026-11-09T14:54:43.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבד איהו נמי הכי</strong> - מפר\"ת כמו יעקב אבינו ותיקן מילתא:"
+  },
+  "Tosafot on Shabbat 34a:1:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 34a:1:2",
+      "Translation on Tosafot on Shabbat 34a:1:2",
+      "Niddah 61a:13",
+      "Chokhmat Shlomo on Shabbat 34a:2",
+      "Rashi on Niddah 61a:13:1"
+    ],
+    "generatedAt": "2026-11-09T14:56:56.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 34a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל היכא דהוה קשי טהריה</strong> - כדאיתא בנדה בפרק האשה <span class=\"parenthesized\">(דף סא. ושם)</span> דתניא אמר רבי יוסי בן שאול מעשה בסלע שהיו מחזיקין בה טומאה כו' אמר להו הביאו לי סדינין הביאו לו ושראן במים ופרסו עליו מקום טומאה לח מקום טהרה נגוב:"
+  },
+  "Tosafot on Shabbat 34a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:7:1"
+    ],
+    "generatedAt": "2026-11-09T15:21:20.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 34a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא כאן בעירובי תחומין כו'</strong> - נראה לר\"ת כפירוש <span class=\"rashi-quotation\">הקונטרס</span> דבעירובי תחומין מחמרינן משום דאית להו סמך מן המקרא וכן פר\"ח וכן יש בירושלמי וכן משמע בפרק מי שהוציאוהו <span class=\"parenthesized\">(עירובין דף מו: וסם)</span> גבי הא דקאמר הלכה כדברי המיקל בעירוב רב פפא אמר איצטריך סד\"א ה\"מ עירובי חצרות אבל בעירובי תחומין אימא לא ומעיקרא היה מפרש ר\"ת דעירובי חצרות חמירי טפי דאין מערבין אלא בפת כדמשמע בפרק הדר <span class=\"parenthesized\">(עירובין דף עא:)</span> ובחלון <span class=\"parenthesized\">(שם דף פא. ושם)</span> אבל בעירובי תחומין מערבין בכל דבר חוץ ממים ומלח ואין נראה דהא ר\"מ ס\"ל דתחומין דאורייתא בפרק בכל מערבין <span class=\"parenthesized\">(עירובין לה.)</span> ואפ\"ה אית ליה בהדר דעירובי חצרות בפת ובעירובי תחומין מערבין בכל דבר דלא אשכחן דפליג ר\"מ אסתם משנה דבכל מערבין וטעמא דמקילי בתחומים דלא בעי פת משום דאין מערבין אלא לדבר מצוה:"
+  },
+  "Tosafot on Shabbat 34a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T15:25:16.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 34a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאכל עירובו משחשכה</strong> - לאו דווקא וה\"ה לא נאכל:"
+  },
+  "Tosafot on Shabbat 34a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 34a:8:1",
+      "Rashi on Shabbat 34a:8:2",
+      "Rashi on Shabbat 34a:8:3",
+      "Rashi on Shabbat 34a:8:4",
+      "Tosafot on Shabbat 34a:8:1",
+      "Steinsaltz comment #1 on Shabbat 34a:8",
+      "Steinsaltz comment #2 on Shabbat 34a:8",
+      "Tosafot on Eruvin 35b:12:2",
+      "Eruvin 35b:12",
+      "Eruvin 36a:1",
+      "Eruvin 36a:7",
+      "Tosafot on Eruvin 76a:1:2",
+      "Maharsha on Shabbat 34a:2"
+    ],
+    "generatedAt": "2026-11-09T15:29:25.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 34a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שניהם קנו עירוב</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דרבא איירי בעירובי תחומין וכן משמע לשון צא וערב ואע\"פ דספק חשכה אין מערבין עירובי תחומין ה\"מ לכתחילה אבל בדיעבד כשר כר' יוסי דאמר <span class=\"parenthesized\">(עירובין פ\"ג דף לה.)</span> ספק עירוב כשר וקשה לרשב\"א דר' יוסי לית ליה התם גבי נפל עליו גל או נשרף או תרומה ונטמאה ספק עירוב [כשר] אלא משום חזקה כדתניא התם בהדיא <span class=\"parenthesized\">(דף לו.)</span> כיצד אמר רבי יוסי ספק עירוב כשר כו' אבל בספק כי הכא שהניחו בין השמשות או נאכל בין השמשות לא מכשר ומפר\"ת דהכא מיירי בעירובי חצרות וכן פר\"ח וכן מוכח בסוף הדר <span class=\"parenthesized\">(עירובין דף עו.)</span> וצא אשכחן נמי דלאו חוץ לעיר קאמר כמו צא ושכור לנו פועלים <span class=\"parenthesized\">(ב\"מ דף פג.)</span>:"
+  }
+}

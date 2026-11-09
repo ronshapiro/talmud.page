@@ -1,4 +1,14 @@
 {
+  "Rashi on Shabbat 21a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T05:20:11.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 21a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבלאי מכנסי הכהנים</strong> - ממכנסי הכהנים הבלואים:"
+  },
   "Rashi on Shabbat 21a:10:2": {
     "dependsOn": [
       "Shabbat 21a:10",
@@ -23,6 +33,30 @@
       "Rashi on Shabbat 21a:10:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">היו מפקיעין</strong> - קורעין ועושין פתילות בשמחת בית השואבה שהיא בעזרת נשים:"
+  },
+  "Rashi on Shabbat 21a:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 21a:10:3",
+      "Rashi on Shabbat 21a:10:1",
+      "Rashi on Shabbat 21a:10:2",
+      "Rashi on Shabbat 21a:10:4",
+      "Shabbat 21a:10",
+      "Rashi on Shabbat 20b:13:1",
+      "Rashi on Shabbat 21a:9:1",
+      "Rashi on Shabbat 21a:9:2",
+      "Rashi on Shabbat 21a:7:1",
+      "Rashi on Shabbat 21a:7:2",
+      "Rashi on Shabbat 21a:7:3",
+      "Rashi on Shabbat 20b:1:1",
+      "Rashi on Shabbat 20b:2:1"
+    ],
+    "generatedAt": "2026-11-09T05:22:22.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 21a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומהמיניהם</strong> - של כלאים הם דכתיב ואת האבנט שש משזר ותכלת וארגמן וקי\"ל תכלת עמרא הוא ותני' לעיל לענין שבת הוסיפו עליהן של צמר לפסול וקתני מדליקין בהן במקדש:"
   },
   "Rashi on Shabbat 21a:10:4": {
     "dependsOn": [

@@ -1,0 +1,244 @@
+{
+  "Rashi on Shabbat 31b:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:10:1",
+      "Rashi on Shabbat 31b:10:2",
+      "Rashi on Shabbat 31b:10:3",
+      "Rashi on Shabbat 31b:10:4",
+      "Steinsaltz on Shabbat 31b:10",
+      "Steinsaltz comment #1 on Shabbat 31b:10",
+      "Rashi on Shabbat 22a:6:2"
+    ],
+    "generatedAt": "2026-11-09T11:02:05.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:10:1"
+    ],
+    "sourceText": "הכי גרסינן בנדה מאי טעמא:"
+  },
+  "Rashi on Shabbat 31b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:10:1",
+      "Rashi on Shabbat 31b:10:2",
+      "Rashi on Shabbat 31b:10:3"
+    ],
+    "generatedAt": "2026-11-09T11:02:47.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחדרי בטנה</strong> - מקור דמה:"
+  },
+  "Rashi on Shabbat 31b:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:10:1",
+      "Rashi on Shabbat 31b:10:2",
+      "Rashi on Shabbat 31b:10:4"
+    ],
+    "generatedAt": "2026-11-09T11:03:51.636Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קלקלה</strong> - מרדה:"
+  },
+  "Rashi on Shabbat 31b:10:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:10:1",
+      "Rashi on Shabbat 31b:10:2",
+      "Rashi on Shabbat 31b:10:3"
+    ],
+    "generatedAt": "2026-11-09T11:04:28.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביעית דם</strong> - חיי אדם תלויין בה:"
+  },
+  "Rashi on Shabbat 31b:1:1": {
+    "dependsOn": [
+      "Shabbat 31b:1",
+      "Rashi on Shabbat 31b:1:2"
+    ],
+    "generatedAt": "2026-11-09T10:33:48.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יראת שמים דומה</strong> - לפתחים חיצונים שדרך להם נכנסים לפנימיים כך אם ירא שמים הוא נעשה חרד לשמור ולעשות ואם לאו אינו חש לתורתו:"
+  },
+  "Rashi on Shabbat 31b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:34:34.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהי עייל</strong> - באיזה פתח נכנס לפתוח את הפנימים:"
+  },
+  "Rashi on Shabbat 31b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:1:1",
+      "Rashi on Shabbat 31b:1:2"
+    ],
+    "generatedAt": "2026-11-09T10:36:02.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(ואנא)</span> אמינא לך</strong> - כלומר אתה מיעטת בשבחו:"
+  },
+  "Rashi on Shabbat 31b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:36:44.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הן יראת ה'</strong> - יחידה היא היראה בעולם:"
+  },
+  "Rashi on Shabbat 31b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:37:50.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שאכל שום וריחו נודף כו'</strong> - פירוקא הוא כלומר הכי קאמר קרא אם רשעת מעט אל תוסף על רשעך דמי שאכל שום וריחו נודף כבר לחבריו כלום יחזור ויאכל עוד אחר ויהיה נודף יותר לזמן ארוך:"
+  },
+  "Rashi on Shabbat 31b:5:1": {
+    "dependsOn": [
+      "Shabbat 105a:3",
+      "Shabbat 105a:4",
+      "Rashi on Shabbat 31b:5:2",
+      "Rashi on Shabbat 31b:5:3"
+    ],
+    "generatedAt": "2026-11-09T10:38:58.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרדין ועצבין</strong> - נוטריקון דחרצובות:"
+  },
+  "Rashi on Shabbat 31b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:39:28.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאולם</strong> - שפתחו פתוח ורחב:"
+  },
+  "Rashi on Shabbat 31b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:40:27.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה דרכם</strong> - לעיל מיניה כתיב קרבם בתימו לעולם דהיינו קבורה והדר כתיב זה דרכם כסל למו כלומר יודעין הם שזו דרכם אבל כסל למו כליותיהם מחופין בחלבם מהשיב כליותיהם מחשבת סופם ושמא תאמר מחמת החלב שכחו והרי הם שוגגין ת\"ל ואחריהם את העתיד לבא לנפשם אחרי אובדם בפיהם ירצו ויספרו תמיד ואעפ\"כ אינן חוזרין:"
+  },
+  "Rashi on Shabbat 31b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:6:2",
+      "Maharam on Shabbat 31b:2"
+    ],
+    "generatedAt": "2026-11-09T10:41:56.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' בפתילה נמי ליפטר</strong> - דחס על הפתילה נמי אינה צריכה המלאכה לגופה דמלאכה היינו כיבוי וכיבוי עצמו אינו צריך לו דאם לא הובערה מעולם הוה ניחא ליה אם מתחלה הובהבה הואיל וחס עליה כי אית בה טפי הוה ניחא ליה בה:"
+  },
+  "Rashi on Shabbat 31b:6:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Shabbat 31b:2",
+      "Maharam on Shabbat 31b:3",
+      "Chokhmat Shlomo on Shabbat 31b:3"
+    ],
+    "generatedAt": "2026-11-09T10:50:12.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם כר' יהודה סבירא ליה</strong> - דמשום אין צריכה לגופה לא מיפטר הואיל וצריכה לדבר אחר מלאכת מחשבת הוא וכי מכבה לה משום חייסא דשמן ונר היינו טעמא דפטור קסבר דסותר ע\"מ לבנות במקומו הוי סותר כל מקלקל דשבת הוי פטור דלאו היינו מלאכת מחשבת וסותר דתנן באבות מלאכות דמיחייב סותר ע\"מ לבנות הוא ואינו יכול לבנות אלא אם כן סותרו והשתא לאו קלקול הוא ור\"י סבר דאם במקומו חוזר ובונה הוא דמחייב אסתירה ואי לא לא ומכבה דומיא דסותר הוא וכן קורע דומיא דסותר ולהכי תנן הקורע ע\"מ לתפור וכן מוחק תנן ע\"מ לכתוב דכולם סותר נינהו הלכך על הפתילה חייסה דידיה אינה אלא להדליק הלכך מכבה על מנת להדליק היינו במקומו אבל כי חס על הנר או על השמן ועל הפתילה אינו חס ואינו חושש אם משליכה אפי' צריך לשמן להדליק בו פתילה אחרת לאחר זמן בתוך נר זה אין זה סותר ע\"מ לבנות במקומו שאין הכיבוי וההבערה לא בשמן ולא בנר אלא בפתילה הלכך לא שייכא סתירה ובנין אלא בפתילה וכיון דאין מחשבת סופו לחזור ולהדליק פתילה זו אין כאן עוד בנין במקום סתירה ודקתני שהוא עושה פחם כלומר מפני שהם עושין פחם מתחלתה ועומדת לחזור ולהאחיז בה אור ואיכא בנין במקום סתירה ורבותינו מפרשין נר ושמן איכא למימר מיבעי ליה למידי אחריני ולא להדליק ולי נראה שאין צריכין אנו לדוחק זה דמשום דאיכא למימר לית לן למיפטריה שהרי הוא יודע למה חס עליהן וסתם נר אינו אלא להדליק בו פתילה:"
+  },
+  "Rashi on Shabbat 31b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T10:53:33.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשכן סותר על מנת לבנות שלא במקומו הוא</strong> - שהיו סותרין אותו בחנייה זו ונוסעים למקום אחר וחונים וחוזרים ומקימין אותו:"
+  },
+  "Rashi on Shabbat 31b:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:6:1",
+      "Rashi on Shabbat 31b:6:2"
+    ],
+    "generatedAt": "2026-11-09T10:55:30.833Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' שמעון</strong> - דפטר ליה משום דאין צריכין לגופה וכחס על הפתילה היינו טעמא דמחייב כגון שצריך להבהבה שלא הובהבה מבעוד יום דכיבוי זה צריך לגופו שיהא הלהב נוח לאחוז בה כשיבא להדליקה:"
+  },
+  "Rashi on Shabbat 31b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 31b:8:1",
+      "Rashi on Shabbat 31b:7:1",
+      "Shabbat 31b:6"
+    ],
+    "generatedAt": "2026-11-09T10:56:47.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוא עושה פחם</strong> - שהוא מתכוין ממש לעשותה כמין פחם עכשיו אלמא בכבוי הצריך לגופו מיירי ולא קתני שנעשית פחם מתחלתו שהובהבה דנמצי למימר טעמא משום דבת בנין היא דאיכא בנין במקום סתירה מה שאין כן בשמן ונר דלא שייך בהו בנין וסתירה:"
+  },
+  "Rashi on Shabbat 31b:9:1": {
+    "dependsOn": [
+      "Shabbat 31b:9",
+      "Shabbat 31b:10",
+      "Shabbat 32a:1"
+    ],
+    "generatedAt": "2026-11-09T10:58:25.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 31b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת לידתן</strong> - בגמרא מפרש מאי שנא שעת לידתן:"
+  },
+  "Tosafot on Shabbat 31b:6:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 31b:6:1",
+      "Shabbat 31b:6"
+    ],
+    "generatedAt": "2026-11-09T10:52:59.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 31b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסותר על מנת לבנות במקומו</strong> - ור\"ש פוטר אפי' בסותר על מנת לבנות במקומו אלא במקום שע\"י סתירה יש תיקון <span class=\"parenthesized\">(בבנין אחרון)</span> יותר משלא היה בנין ראשון מעולם שם כגון בפתילה שצריך להבהבה דמחייב ר' שמעון כדאמר בסמוך ואם תאמר לר' שמעון הא דתנן בפרק כלל גדול <span class=\"parenthesized\">(לקמן שבת דף עג.)</span> המכבה והסותר בשלמא מכבה משכחת לה דמתקן כדפירש כגון לעשות פחמין אלא סותר לא משכחת שיהא מתקן בסתירה זו יותר משלא היה בנוי שם מעולם ואמאי חייב לר' שמעון וי\"ל דכולהו ממשכן ילפינן לה ולא היה כיבוי במשכן כ\"א לעשות פחמין ולהכי לא מחייב ר\"ש אלא בכה\"ג אבל סותר אשכחן במשכן שאין מתקן בסתירה זו יותר משלא היה בנוי שם מעולם ולהכי מחייב שם אפי' ר\"ש וא\"ת כיון דסותר ומכבה בעינן ע\"מ לבנות ולהבעיר א\"כ בפרק כלל גדול <span class=\"parenthesized\">(שם)</span> דתנן המכבה והסותר הוי ליה למיתני המכבה ע\"מ להבעיר והסותר ע\"מ לבנות כי היכי דקתני המוחק ע\"מ לכתוב שתי אותיות והקורע ע\"מ לתפור שתי תפירות וי\"ל דהתם נמי לא קתני ליה אלא משום דבעי למיתני שיעורא דשתי אותיות ושתי תפירות אבל במכבה וסותר על מנת להבעיר ולבנות כל שהוא מיחייב לא איצטריך למיתנייה:"
+  }
+}

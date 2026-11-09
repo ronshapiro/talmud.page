@@ -851,6 +851,21 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">זאזא</strong> - מולש\"א בלעז:"
   },
+  "Rashi on Shabbat 20b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 20b:5:1",
+      "Rashi on Shabbat 20b:5:2",
+      "Rashi on Shabbat 20b:5:3",
+      "Shabbat 20b:5"
+    ],
+    "generatedAt": "2026-11-09T05:19:01.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 20b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה מדליקין</strong> - לעשות פתילה כל הני דמתני' מפרש בגמרא:"
+  },
   "Rashi on Shabbat 20b:5:2": {
     "dependsOn": [
       "Shabbat 20b:5",

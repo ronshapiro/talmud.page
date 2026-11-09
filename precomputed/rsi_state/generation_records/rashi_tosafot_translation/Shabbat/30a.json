@@ -1,0 +1,419 @@
+{
+  "Rashi on Shabbat 30a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:1:2",
+      "Rashi on Shabbat 30a:1:3"
+    ],
+    "generatedAt": "2026-11-09T08:24:52.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקתני סיפא</strong> - כחס על הנר כו' חייב חטאת אם שגג בשבת ששכח שהוא שבת או סבר שכיבוי מותר בשבת:"
+  },
+  "Rashi on Shabbat 30a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:1:1",
+      "Rashi on Shabbat 30a:1:3",
+      "Rashi on Shabbat 30a:1:4"
+    ],
+    "generatedAt": "2026-11-09T08:27:54.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ ר' יהודה היא</strong> - דאמר מלאכה שאינה צריכה לגופה חייב עליה דכיבוי זה אין צריך לגופו אלא לצורך דבר אחר שלא תדלק הפתילה או שלא יפקע הנר ואין לך כיבוי הצריך לגופו אלא כיבוי של פחמין כשעושין אותו וכיבוי של הבהוב פתילה שהכיבוי נעשה להאחיז בו האור מהר כשירצה להדליקו וכיון דרבי יהודה היא רישא דפטר משום חולה וה\"ה לשאר פטורי דמתניתין:"
+  },
+  "Rashi on Shabbat 30a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:1:1",
+      "Rashi on Shabbat 30a:1:2",
+      "Rashi on Shabbat 30a:1:3",
+      "Rashi on Shabbat 30a:1:4"
+    ],
+    "generatedAt": "2026-11-09T08:29:03.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי</strong> - דאית בהו סכנת נפשות ומשום פקוח נפש שרי להו ליתני מותר לכתחלה:"
+  },
+  "Rashi on Shabbat 30a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:29:37.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב מיבעי ליה</strong> - הואיל ורבי יהודה היא דלא פטר ליה משום דאינה צריכה לגופה:"
+  },
+  "Rashi on Shabbat 30a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:2:2",
+      "Rashi on Shabbat 30a:1:1",
+      "Rashi on Shabbat 30a:1:2",
+      "Rashi on Shabbat 30a:1:3",
+      "Rashi on Shabbat 30a:1:4"
+    ],
+    "generatedAt": "2026-11-09T08:30:43.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דתני רבי אושעיא</strong> - בהדיא אבל אסור:"
+  },
+  "Rashi on Shabbat 30a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:2:1",
+      "Rashi on Shabbat 29b:7:4",
+      "Rashi on Shabbat 30a:1:1",
+      "Rashi on Shabbat 30a:1:2",
+      "Rashi on Shabbat 30a:1:3",
+      "Rashi on Shabbat 30a:1:4"
+    ],
+    "generatedAt": "2026-11-09T08:32:40.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' שמעון היא</strong> - דפטר ליה משום אינה צריכה לגופה:"
+  },
+  "Rashi on Shabbat 30a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:33:05.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאול שאילתא</strong> - שאלו שאלה:"
+  },
+  "Rashi on Shabbat 30a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:37:26.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעילא מר' תנחום</strong> - לפניו וכן לשון הש\"ס והמקרא שרפים עומדים ממעל לו <span class=\"parenthesized\">(ישעיהו ו׳:ב׳)</span> ועל שם שיראים להתקרב לפניו עומדין מרחוק:"
+  },
+  "Rashi on Shabbat 30a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:38:04.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמן נוי</strong> - מקום:"
+  },
+  "Rashi on Shabbat 30a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:38:59.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באישא</strong> - חולה תרגום של רעה בישתא:"
+  },
+  "Rashi on Shabbat 30a:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:3:4",
+      "Rashi on Shabbat 30a:3:6",
+      "Steinsaltz on Shabbat 30a:3"
+    ],
+    "generatedAt": "2026-11-09T08:39:51.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתח ואמר</strong> - כך היו רגילין לפתוח באגדה תחילה והוא דומה לשאלה ודרש:"
+  },
+  "Rashi on Shabbat 30a:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:40:13.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחזרת ואמרת</strong> - לסתור דברי עצמך:"
+  },
+  "Rashi on Shabbat 30a:3:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:41:49.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי לכלב חי</strong> - כלומר גדולים החיים ופקוח נפש:"
+  },
+  "Rashi on Shabbat 30a:3:8": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:3:8",
+      "Rashi on Shabbat 30a:3:1",
+      "Rashi on Shabbat 30a:3:2",
+      "Rashi on Shabbat 30a:3:7"
+    ],
+    "generatedAt": "2026-11-09T08:42:37.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אן היא</strong> - אנה הלכה:"
+  },
+  "Rashi on Shabbat 30a:4:1": {
+    "dependsOn": [
+      "Shabbat 30a:4",
+      "Rashi on Shabbat 30a:4:2",
+      "Rashi on Shabbat 30a:1:1",
+      "Rashi on Shabbat 30a:2:1",
+      "Rashi on Shabbat 29b:1:1",
+      "Rashi on Shabbat 29b:2:1"
+    ],
+    "generatedAt": "2026-11-09T08:43:55.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא</strong> - איהו גופיה הוה מפרש להו:"
+  },
+  "Rashi on Shabbat 30a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:4:1",
+      "Rashi on Shabbat 29b:8:3",
+      "Rashi on Shabbat 30a:3:2",
+      "Rashi on Shabbat 30a:3:1",
+      "Rashi on Shabbat 30a:3:3",
+      "Rashi on Shabbat 30a:3:4"
+    ],
+    "generatedAt": "2026-11-09T08:48:15.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר ר' יוחנן</strong> - קרא קא דריש במתים חפשי:"
+  },
+  "Rashi on Shabbat 30a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:49:02.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבח אני את המתים</strong> - שעסקו בחייהם בתורה ומצות ומתו ראויים לשבחם אפילו מצדיקים חיים שגדולים הן במיתתן מבחייהן:"
+  },
+  "Rashi on Shabbat 30a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:49:29.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמד משה</strong> - ואין לך צדיק ממנו ולא נענה בזכותו:"
+  },
+  "Rashi on Shabbat 30a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:50:15.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותקן כמה תקנות</strong> - כי ההיא דתני במגילה <span class=\"parenthesized\">(דף ד. ולב.)</span> משה תיקן להם לישראל שיהו שואלין ודורשין בעניינו של יום:"
+  },
+  "Rashi on Shabbat 30a:6:1": {
+    "dependsOn": [
+      "Shabbat 30a:6",
+      "Rashi on Shabbat 30a:5:1",
+      "Rashi on Shabbat 30a:5:2",
+      "Rashi on Shabbat 30a:5:3",
+      "Rashi on Shabbat 30a:6:2",
+      "Rashi on Shabbat 30a:3:1",
+      "Rashi on Shabbat 30a:3:2"
+    ],
+    "generatedAt": "2026-11-09T08:52:17.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ד\"א ושבח אני את המתים</strong> - הראשונים מן החיים של עכשיו שהראשונים טובים מאלה תדע שמתקיימות גזרותיו של משה ואין מתקיימות גזירות שרים של עכשיו:"
+  },
+  "Rashi on Shabbat 30a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:53:20.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על אותו עון</strong> - דבת שבע:"
+  },
+  "Rashi on Shabbat 30a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:53:56.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבקו שערים</strong> - של בית קדשי הקדשים:"
+  },
+  "Rashi on Shabbat 30a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:7:1",
+      "Rashi on Shabbat 30a:3:1",
+      "Rashi on Shabbat 30a:3:2",
+      "Rashi on Shabbat 30a:3:3",
+      "Steinsaltz on Shabbat 30a:7",
+      "Rashi on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-11-09T08:56:58.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כ\"ד רננות</strong> - רנה תפילה תחינה כתובים בתפילת שלמה עד כ\"ד ויש אומרים כ\"ד ברכות דתענית ולא נהירא:"
+  },
+  "Rashi on Shabbat 30a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:7:1",
+      "Rashi on Shabbat 30a:7:2",
+      "Rashi on Shabbat 30a:7:4"
+    ],
+    "generatedAt": "2026-11-09T08:58:15.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רהטו שערים בתריה למבלעיה</strong> - סברי דעל עצמו אמר מלך הכבוד א\"ל שערים מי הוא זה מלך הכבוד אמר איהו ה' עזוז וגבור <span class=\"parenthesized\">(תהילים כ״ד:י׳)</span>:"
+  },
+  "Rashi on Shabbat 30a:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:58:47.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שונאי דוד</strong> - משפחת שאול שמעי וכיוצא בו:"
+  },
+  "Rashi on Shabbat 30a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T08:59:58.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיום הכפורים</strong> - שאכלו ושתו בחנוכת הבית כדכתיב את החג שבעת ימים ושבעת ימים כדאמרינן במועד קטן <span class=\"parenthesized\">(דף ט.)</span>:"
+  },
+  "Rashi on Shabbat 30a:9:1": {
+    "dependsOn": [
+      "Shabbat 30a:9"
+    ],
+    "generatedAt": "2026-11-09T09:00:44.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודקאמר שלמה כי לכלב חי הוא טוב מאריה המת</strong> - לאו לענין חשיבותא אמרו אלא לענין הלכות שבת וי\"ט:"
+  },
+  "Rashi on Shabbat 30a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:9:1",
+      "Rashi on Shabbat 30a:9:2",
+      "Rashi on Shabbat 30a:9:3"
+    ],
+    "generatedAt": "2026-11-09T09:01:34.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיצי</strong> - העתידות לבוא עלי:"
+  },
+  "Rashi on Shabbat 30a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:9:1",
+      "Rashi on Shabbat 30a:9:2",
+      "Rashi on Shabbat 30a:9:3",
+      "Rashi on Shabbat 30a:9:4",
+      "Shabbat 30a:9",
+      "Rashi on Psalms 39:5:1"
+    ],
+    "generatedAt": "2026-11-09T09:04:33.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדת ימי</strong> - כמה ימי חיי:"
+  },
+  "Rashi on Shabbat 30a:9:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:9:2",
+      "Rashi on Shabbat 30a:9:3"
+    ],
+    "generatedAt": "2026-11-09T09:05:23.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה חדל אני</strong> - באיזה יום אני חדל ובטל מן העולם:"
+  },
+  "Rashi on Shabbat 30a:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-09T09:05:56.193Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמות באחד בשבת</strong> - שיוכלו להתעסק בי ובהספדי:"
+  },
+  "Rashi on Shabbat 30a:9:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 30a:9:1",
+      "Rashi on Shabbat 30a:9:2",
+      "Rashi on Shabbat 30a:9:3",
+      "Rashi on Shabbat 30a:9:4",
+      "Rashi on Shabbat 30a:9:5",
+      "Rashi on Shabbat 30a:7:1",
+      "Rashi on Shabbat 30a:7:2",
+      "Rashi on Shabbat 30a:3:1",
+      "Rashi on Shabbat 30a:3:2",
+      "Rashi on Shabbat 30a:3:3",
+      "Rashi on Shabbat 23b:1:1",
+      "Rashi on Shabbat 23b:1:2",
+      "Rashi on Shabbat 24a:1:1"
+    ],
+    "generatedAt": "2026-11-09T09:14:07.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 30a:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי טוב יום בחצריך</strong> - כלומר כבר אמרת לפני טוב יום שאתה עומד בחצרי ועוסק בתורה מאלף עולות שעתיד בנך שלמה להעלות כדכתיב <span class=\"parenthesized\">(מלכים א ג)</span> אלף עולות יעלה שלמה וגו':"
+  }
+}
