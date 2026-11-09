@@ -205,6 +205,49 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כדי שלא יהא צריך להתרחק</strong> – אלמא אין מתרחקין בלילה:"
   },
+  "Rashi on Berakhot 62a:18:5": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:18:4",
+      "Rashi on Berakhot 62a:18:5",
+      "Rashi on Berakhot 62a:18:6",
+      "Rashi on Berakhot 62a:18:1",
+      "Rashi on Berakhot 62a:18:2",
+      "Rashi on Berakhot 62a:18:3",
+      "Rashi on Berakhot 62a:1:1",
+      "Rashi on Berakhot 62a:3:1",
+      "Rashi on Berakhot 62a:4:1"
+    ],
+    "generatedAt": "2026-11-08T22:55:20.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנו לי דוכתא</strong> – מבני אדם:"
+  },
+  "Rashi on Berakhot 62a:18:6": {
+    "dependsOn": [
+      "Berakhot 62a:18",
+      "Berakhot 62a:1"
+    ],
+    "generatedAt": "2026-11-08T23:00:40.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:18:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדרך שנפנה ביום</strong> – לענין פרוע טפח וטפחיים כדאמרינן בפרקי קמאי <span class=\"parenthesized\">(פ\"ג ד' כג:)</span> ומיושב כדאמרינן לעיל:"
+  },
+  "Rashi on Berakhot 62a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T23:01:11.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקרן זוית</strong> – אם יש קרן זוית סמוך צריך להסתלק שם בלילה כביום ולא יפנה בגלוי:"
+  },
   "Rashi on Berakhot 62a:1:1": {
     "dependsOn": [
       "Berakhot 62a:1",
@@ -227,6 +270,76 @@
       "Rashi on Berakhot 62a:1:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן</strong> – כלומר כל זה העזת פניך בפני רבך שנסתכלת בכל אלו:"
+  },
+  "Rashi on Berakhot 62a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-08T23:05:30.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמש</strong> – בצרור או בקיסם לפתוח נקבים כדאמרינן במסכת שבת <span class=\"parenthesized\">(ד' פב.)</span> לשון אחר משמש המושב שלא יהא מלוכלך ולשון ראשון הגון דא\"כ למה לי משום כשפים תיפוק לי כיון שישב כבר מלוכלכים בגדיו ומה יועיל משמושו:"
+  },
+  "Rashi on Berakhot 62a:22:1": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:22:1",
+      "Rashi on Berakhot 62a:22:2"
+    ],
+    "generatedAt": "2026-11-08T23:06:07.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לי לא לי</strong> – לא תוכלו לי:"
+  },
+  "Rashi on Berakhot 62a:22:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:22:1",
+      "Rashi on Berakhot 62a:22:2",
+      "Rashi on Berakhot 62a:22:3",
+      "Rashi on Berakhot 62a:22:4",
+      "Berakhot 62a:21",
+      "Berakhot 62a:18"
+    ],
+    "generatedAt": "2026-11-08T23:10:14.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תחים ולא תחתים</strong> – הם שמות הכשפים העשויים ע\"י תחתוניות:"
+  },
+  "Rashi on Berakhot 62a:22:3": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:22:1",
+      "Rashi on Berakhot 62a:22:2",
+      "Rashi on Berakhot 62a:22:4",
+      "Rashi on Berakhot 62a:18:1",
+      "Rashi on Berakhot 62a:18:2"
+    ],
+    "generatedAt": "2026-11-08T23:12:43.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:22:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הני ולא מהני</strong> – לא כולן ולא מקצתן:"
+  },
+  "Rashi on Berakhot 62a:22:4": {
+    "dependsOn": [
+      "Rashi on Berakhot 62a:22:1",
+      "Rashi on Berakhot 62a:22:2",
+      "Rashi on Berakhot 62a:22:3"
+    ],
+    "generatedAt": "2026-11-08T23:14:05.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Berakhot 62a:22:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא חרשי דחרשא ולא חרשי דחרשתא</strong> – ולא מכשפות מכשף זכר ולא מכשפות מכשפה נקבה לשון אחר לא הני ולא מהני לא יצלח ולא יועיל עוד מכשפות:"
   },
   "Rashi on Berakhot 62a:3:1": {
     "dependsOn": [],
