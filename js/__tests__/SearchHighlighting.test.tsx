@@ -37,6 +37,10 @@ const searchablePage = () => page({
 });
 
 const search = (text: string) => flush(() => (window as any).SEARCH(text));
+const setTemporarySearch = (text: string) => (
+  flush(() => (window as any).SET_TEMPORARY_SEARCH(text)));
+const clearTemporarySearch = () => flush(() => (window as any).CLEAR_TEMPORARY_SEARCH());
+const getTemporarySearchColor = () => (window as any).GET_TEMPORARY_SEARCH_COLOR();
 const foundTerms = (app: MountedRenderer) => app.all("span-search-term");
 const openSearchBar = (app: MountedRenderer) => click(app.find("#showSearch button"));
 
@@ -160,5 +164,120 @@ describe("clearing a search", () => {
     click(app.find("#snackbars .mdl-button"));
 
     expect(foundTerms(app)).toHaveLength(0);
+  });
+});
+
+describe("temporary search query from selected text", () => {
+  test("text becomes a temporary query and highlights matches without opening the snackbar", () => {
+    const app = mountRenderer([searchablePage()]);
+
+    expect(foundTerms(app)).toHaveLength(0);
+    expect(app.findOrNull("#snackbars")).toBeNull();
+
+    setTemporarySearch("שמע");
+
+    expect(foundTerms(app).map(x => x.textContent)).toEqual(["שמע"]);
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+    expect(getTemporarySearchColor()).toBe("yellow");
+    expect(app.findOrNull("#snackbars")).toBeNull();
+  });
+
+  test("dynamically updates when the selected text changes", () => {
+    const app = mountRenderer([searchablePage()]);
+
+    setTemporarySearch("שמע");
+    expect(foundTerms(app).map(x => x.textContent)).toEqual(["שמע"]);
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+
+    setTemporarySearch("קורין");
+    expect(foundTerms(app).map(x => x.textContent)).toEqual(["קורין"]);
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+    expect(getTemporarySearchColor()).toBe("yellow");
+  });
+
+  test("is removed when deselected", () => {
+    const app = mountRenderer([searchablePage()]);
+
+    setTemporarySearch("שמע");
+    expect(foundTerms(app)).toHaveLength(1);
+
+    clearTemporarySearch();
+    expect(foundTerms(app)).toHaveLength(0);
+    expect(getTemporarySearchColor()).toBeUndefined();
+  });
+
+  test("selecting the search button keeps the same color and makes the query fixed", () => {
+    const app = mountRenderer([searchablePage()]);
+
+    setTemporarySearch("שמע");
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+
+    search("שמע");
+
+    expect(app.findOrNull("#snackbars")).not.toBeNull();
+    expect(foundTerms(app).map(x => x.textContent)).toEqual(["שמע"]);
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+
+    clearTemporarySearch();
+    expect(foundTerms(app)).toHaveLength(1);
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+  });
+
+  test("uses the next available color when another search is already fixed", () => {
+    const app = mountRenderer([searchablePage()]);
+
+    search("שמע");
+    expect([...foundTerms(app)[0].classList]).toEqual(["foundTerm", "yellow"]);
+
+    setTemporarySearch("קורין");
+    const byColor = foundTerms(app).map(x => [...x.classList][1]);
+    expect(byColor.sort()).toEqual(["purple", "yellow"]);
+    expect(getTemporarySearchColor()).toBe("purple");
+
+    clearTemporarySearch();
+    expect(foundTerms(app).map(x => [...x.classList][1])).toEqual(["yellow"]);
+
+    setTemporarySearch("קורין");
+    search("קורין");
+    clearTemporarySearch();
+    const fixedColors = foundTerms(app).map(x => [...x.classList][1]);
+    expect(fixedColors.sort()).toEqual(["purple", "yellow"]);
+  });
+
+  test("preserves the actively selected element during temporary search without replacing its innerHTML", () => {
+    const multiSegmentPage = page({
+      id: "2a",
+      sections: [
+        segment({ref: "Berakhot 2a:1", he: "מאימתי קורין את שמע", en: "First"}),
+        segment({ref: "Berakhot 2a:2", he: "שמע ישראל", en: "Second"}),
+      ],
+    });
+    const app = mountRenderer([multiSegmentPage]);
+    const firstCell = app.find("[sefaria-ref='Berakhot 2a:1'] .hebrew");
+    const originalFirstCellChild = firstCell.firstChild;
+
+    const originalGetSelection = document.getSelection;
+    document.getSelection = () => ({
+      type: "Range",
+      anchorNode: firstCell,
+      focusNode: firstCell,
+      containsNode: () => true,
+    } as any);
+
+    try {
+      setTemporarySearch("שמע");
+
+      expect(firstCell.firstChild).toBe(originalFirstCellChild);
+      expect(firstCell.querySelectorAll(".foundTerm")).toHaveLength(0);
+
+      const secondCell = app.find("[sefaria-ref='Berakhot 2a:2'] .hebrew");
+      expect(secondCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+
+      search("שמע");
+      expect(firstCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+      expect(secondCell.querySelectorAll(".foundTerm")).toHaveLength(1);
+    } finally {
+      document.getSelection = originalGetSelection;
+    }
   });
 });
