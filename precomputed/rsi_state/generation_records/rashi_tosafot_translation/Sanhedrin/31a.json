@@ -1,0 +1,397 @@
+{
+  "Rashi on Sanhedrin 31a:11:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 31a:11:1",
+      "Steinsaltz on Sanhedrin 31a:11",
+      "Steinsaltz comment #1 on Sanhedrin 31a:11",
+      "Sanhedrin 31a:10"
+    ],
+    "generatedAt": "2026-11-12T17:37:17.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתר עשרין ותרתין שנין</strong> - דאיתמר בי מדרשא אפקיה ההוא תלמידא ודבר לשון הרע היה:"
+  },
+  "Rashi on Sanhedrin 31a:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:12:2"
+    ],
+    "generatedAt": "2026-11-12T17:38:08.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל זמן שמביא ראיה</strong> - הבא לבית דין ולא היה שטר זכותו בידו ויצא מבית דין חייב ולאחר זמן מצא שטר זכותו והביאו:"
+  },
+  "Rashi on Sanhedrin 31a:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:12:1"
+    ],
+    "generatedAt": "2026-11-12T17:38:51.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סותר את הדין</strong> - בית דינו סותרין לו דינו שפסקו ומחייבין את שכנגדו:"
+  },
+  "Rashi on Sanhedrin 31a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:39:21.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבא ראיה</strong> - שטר זכותך:"
+  },
+  "Rashi on Sanhedrin 31a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:39:53.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה אין כלום</strong> - שהרי אמר אין לי וחיישינן שמא זייף או שכר עדים:"
+  },
+  "Rashi on Sanhedrin 31a:16:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:10",
+      "Sanhedrin 31a:12",
+      "Sanhedrin 31a:14",
+      "Rashi on Sanhedrin 31a:16:2",
+      "Rashi on Sanhedrin 31a:14:1",
+      "Rashi on Sanhedrin 31a:14:2"
+    ],
+    "generatedAt": "2026-11-12T17:41:01.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרבו פלוני ופלוני כו'</strong> - אפילו רבן שמעון בן גמליאל מודה שכיון שהיה יודע בהן ואמר אין לי ודאי שקרנים הן:"
+  },
+  "Rashi on Sanhedrin 31a:16:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:16:1",
+      "Rashi on Sanhedrin 31a:1:1",
+      "Rashi on Sanhedrin 31a:3:1",
+      "Rashi on Sanhedrin 31a:3:2",
+      "Rashi on Sanhedrin 31a:4:1",
+      "Rashi on Sanhedrin 31a:7:1",
+      "Rashi on Sanhedrin 31a:8:1"
+    ],
+    "generatedAt": "2026-11-12T17:42:21.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פונדתו</strong> - חגורתו:"
+  },
+  "Rashi on Sanhedrin 31a:17:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:10",
+      "Sanhedrin 31a:17"
+    ],
+    "generatedAt": "2026-11-12T17:43:38.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כרבן שמעון</strong> - אקמייתא קאי כיון דלא אמר אין לי אע\"ג דלא מצא בתוך שלשים יום:"
+  },
+  "Rashi on Sanhedrin 31a:19:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 31a:19:1",
+      "Steinsaltz on Sanhedrin 31a:19",
+      "Sanhedrin 31a:19",
+      "Rashi on Sanhedrin 31a:21:1"
+    ],
+    "generatedAt": "2026-11-12T17:45:58.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי עבד</strong> - כרבנן מהדר עובדא:"
+  },
+  "Rashi on Sanhedrin 31a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:18:28.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גברא אגברא</strong> - דרב חסדא אדרב יהודה:"
+  },
+  "Rashi on Sanhedrin 31a:21:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:21",
+      "Rashi on Sanhedrin 31a:19:1"
+    ],
+    "generatedAt": "2026-11-12T17:47:08.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממילא ידעינן אין הלכה כרבן שמעון</strong> - והכא ליכא למימר כדלעיל מיניה דאי עבד כו' דבשלמא התם אי לאו דהדר ואמר אין הלכה כחכמים הוה אמינא אי עביד לא מהדרינן דאלים כח דברי המרובין אבל הכא כיון דאמר הלכה כחכמים פשיטא דאי עביד כיחיד מהדרינן להו:"
+  },
+  "Rashi on Sanhedrin 31a:22:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:22",
+      "Rashi on Sanhedrin 31a:21:1",
+      "Rashi on Sanhedrin 31a:23:1",
+      "Rashi on Sanhedrin 31a:23:2",
+      "Rashi on Sanhedrin 31a:23:3"
+    ],
+    "generatedAt": "2026-11-12T17:48:10.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא קא משמע לן דבהא</strong> - לחודא הוא דאין הלכה כרבן שמעון הא בכל מקום הלכה כמותו אפילו בערב וצידן:"
+  },
+  "Rashi on Sanhedrin 31a:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:49:20.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערב</strong> - בגט פשוט <span class=\"parenthesized\">(ב\"ב ד' קעג:)</span>:"
+  },
+  "Rashi on Sanhedrin 31a:23:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:23:1",
+      "Rashi on Sanhedrin 31a:23:3",
+      "Tosafot on Sanhedrin 31a:4:1",
+      "Rashi on Sanhedrin 31a:1:1",
+      "Rashi on Sanhedrin 31a:3:1",
+      "Rashi on Sanhedrin 31a:5:1",
+      "Sanhedrin 31a:23",
+      "Gittin 67b:9"
+    ],
+    "generatedAt": "2026-11-12T17:56:50.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צידן</strong> - במסכת גיטין במי שאחזו קורדייקוס <span class=\"parenthesized\">(ד' עד.)</span>:"
+  },
+  "Rashi on Sanhedrin 31a:23:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:23:1",
+      "Rashi on Sanhedrin 31a:23:2",
+      "Sanhedrin 31a:10",
+      "Sanhedrin 31a:12",
+      "Sanhedrin 31a:14",
+      "Sanhedrin 31a:16"
+    ],
+    "generatedAt": "2026-11-12T17:58:38.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:23:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראיה אחרונה</strong> - הך בתרייתא דמתני' דאילו בקמייתא הילכתא כוותיה:"
+  },
+  "Rashi on Sanhedrin 31a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:00:38.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנפק שטרא מתותי ידה</strong> - שהאמינוה הלוה והמלוה לשומרו:"
+  },
+  "Rashi on Sanhedrin 31a:27:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:04:04.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אותיות ניקנות במסירה</strong> - המוכר שט\"ח לחבירו קנה החוב במסירת אותיות ומילתיה דרבי בהמוכר את הספינה <span class=\"parenthesized\">(ב\"ב ד' עו.)</span> והכא נמי קנאתו והוי כדידה ונאמנת לומר פרוע:"
+  },
+  "Rashi on Sanhedrin 31a:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 30b:22:1",
+      "Rashi on Sanhedrin 30a:11:1"
+    ],
+    "generatedAt": "2026-11-12T17:21:32.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' יהושע בן קרחה</strong> - דמכל מקום שניהם מעידים שחייב לו מנה:"
+  },
+  "Rashi on Sanhedrin 31a:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:3:1",
+      "Sanhedrin 31a:3",
+      "Sanhedrin 30a:24",
+      "Sanhedrin 30b:1",
+      "Rashi on Sanhedrin 30a:24:1",
+      "Sanhedrin 30b:7",
+      "Sanhedrin 30b:8"
+    ],
+    "generatedAt": "2026-11-12T17:23:23.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דלא מכחשו אהדדי</strong> - כגון זה מעיד על מנה שביום שני וזה מעיד על מנה שביום ראשון ושניהן מודין שזה לא ראה בשל זה אבל היכא דשניהם מעידים על מנה אחד ומכחישין זה את זה מי אמר:"
+  },
+  "Rashi on Sanhedrin 31a:4:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:4"
+    ],
+    "generatedAt": "2026-11-12T17:24:15.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא דאמר כי האי תנא</strong> - נהרדעי אמרו כי האי תנא דאמר זה אומר מנה וזה אומר מאתים דמכחישין זה את זה מצטרפין למנה שיש בכלל מאתים מנה ולא אמרינן שתיהן שקרו אלא הלך אחר הפחות שבהם:"
+  },
+  "Rashi on Sanhedrin 31a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:5:2"
+    ],
+    "generatedAt": "2026-11-12T17:27:36.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחלקה עדותן</strong> - שכיון שהאחד שקרן שוב אין כאן עדות:"
+  },
+  "Rashi on Sanhedrin 31a:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:4:1"
+    ],
+    "generatedAt": "2026-11-12T17:28:18.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש בכלל מאתים מנה</strong> - שניהם מעידין על מנה ובאותו מנה אין מכחישין זה את זה:"
+  },
+  "Rashi on Sanhedrin 31a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:30:38.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי האי גוונא</strong> - דתרי מיני נינהו וכולי האי מיכחשי הדדי מי אמר:"
+  },
+  "Rashi on Sanhedrin 31a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:31:39.421Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדמי</strong> - זה אומר בפני הודה לו דמי חבית של יין וזה אומר בפני הודה דמי חבית של שמן דתרווייהו מסהדי אדמי חבית יין:"
+  },
+  "Rashi on Sanhedrin 31a:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31a:9:1",
+      "Rashi on Sanhedrin 31a:9:2",
+      "Rashi on Sanhedrin 31a:9:3"
+    ],
+    "generatedAt": "2026-11-12T17:33:18.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיוטא עליונה</strong> - הלוהו מנה:"
+  },
+  "Rashi on Sanhedrin 31a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:34:07.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיוטא</strong> - עלייה הבולטת לרשות הרבים על פני רוחב הבית ובני רשות הרבים עוברים תחתיה:"
+  },
+  "Rashi on Sanhedrin 31a:9:3": {
+    "dependsOn": [
+      "Sanhedrin 31a:9",
+      "Rashi on Sanhedrin 31a:9:1",
+      "Rashi on Sanhedrin 31a:9:2",
+      "Sanhedrin 30b:24",
+      "Sanhedrin 30b:25"
+    ],
+    "generatedAt": "2026-11-12T17:35:32.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצירוף עדותן</strong> - כר' יהושע בן קרחה דתרווייהו מנה מחייבי ואע\"ג דמתכחשי בבדיקות כדרב יהודה:"
+  },
+  "Tosafot on Sanhedrin 31a:24:1": {
+    "dependsOn": [
+      "Steinsaltz comment #1 on Sanhedrin 31a:24",
+      "Rosh on Sanhedrin 3:34:1"
+    ],
+    "generatedAt": "2026-11-12T18:00:11.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייביה רב נחמן</strong> - לית ליה לרב נחמן הא דאמרינן אין נזקקין לנכסי יתומים אא\"כ ריבית אוכלת בהן דאמר רב נחמן בפרק שום היתומים <span class=\"parenthesized\">(ערכין דף כב.)</span> מריש לא הוה מזקיקין לנכסי יתומים כיון דשמענא להא דאמר רב דיתמי דאכלי דלאו דידהו ליזלו בתר שיבקייהו מזקיקין ומהאי טעמא נמי אע\"ג דבעלמא אין מקבלים עדים אלא בפני בעל דין גבי קטן מקבלין א\"נ לא קאמר נזקקין אלא כשיש שטר דמקיימין את השטר שלא בפני בעל דין וכאן היה שטר:"
+  },
+  "Tosafot on Sanhedrin 31a:4:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:4",
+      "Sanhedrin 31a:1",
+      "Chidushei Halachot on Sanhedrin 31a:1"
+    ],
+    "generatedAt": "2026-11-12T17:27:06.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא דאמר כי האי תנא</strong> - משמע הכא דרב יהודה דאמר במנה שחור ובמנה לבן אין מצטרפין לית ליה דרשב\"א ותימא דבחזקת הבתים <span class=\"parenthesized\">(ב\"ב דף מא. ושם)</span> גבי עובדא דרב כהנא שקל בידקא בארעיה משמע בהדיא דרב יהודה אית ליה דרשב\"א ואין לומר דרב יהודה בכל ענין קאמר ואפילו במנה שחור ובמנה לבן והאי דקאמר רבא מסתברא מילתיה דרב יהודה באחד אמר כו' רבא טעמא דנפשיה קאמר דא\"כ הל\"ל והאלהים אמר רב יהודה אפילו במנה שחור ובמנה לבן כדאשכחן בפ\"ק דגיטין <span class=\"parenthesized\">(דף יג: ושם)</span> מסתברא מילתיה דרב בפקדון כו' דיש לומר דודאי אית ליה דרשב\"א אלא שמחלק בין מנה למאתים למנה שחור ומנה לבן:"
+  },
+  "Tosafot on Sanhedrin 31a:5:1": {
+    "dependsOn": [
+      "Sanhedrin 31a:5",
+      "Tosafot on Sanhedrin 31a:4:1",
+      "Chokhmat Shlomo on Sanhedrin 31a:4:1"
+    ],
+    "generatedAt": "2026-11-12T17:30:01.960Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבית שמאי אומרים נחלקה עדותן</strong> - ואם תאמר כיון דבכת אחת בית שמאי אומרים נחלקה עדותן אם כן בשתי כיתי עדים ה\"ל נמצא אחד מהן קרוב או פסול ויש לומר דהיינו דווקא כשהפסול ידוע אי נמי כמ\"ד תתקיים העדות בשאר אי נמי לא אמרינן נמצא אחד מהם קרוב או פסול אלא בבאו בבת אחת תוך כדי דיבור דאז חשיבי עדות אחת והכא שבאו שני כיתי עדים זו אחר זו ועי\"ל דכי אמר נמצא אחד מהם קרוב או פסול ה\"מ כי מסייעי אהדדי אבל הכא דמכחשי אהדדי לא:"
+  }
+}

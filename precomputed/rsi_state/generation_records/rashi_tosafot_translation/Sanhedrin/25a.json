@@ -1,0 +1,224 @@
+{
+  "Rashi on Sanhedrin 25a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:33:33.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מזייה וטופריה</strong> - הגדיל שערו וציפורניו לנוול עצמו לעשות תשובה:"
+  },
+  "Rashi on Sanhedrin 25a:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:12:2"
+    ],
+    "generatedAt": "2026-11-12T07:34:21.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין מכירין אותו</strong> - דתשובה דהתם לאו עירומי הוא:"
+  },
+  "Rashi on Sanhedrin 25a:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:12:1"
+    ],
+    "generatedAt": "2026-11-12T07:35:04.893Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויחזיר אבידה</strong> - אם ימצא אבידת חבירו דכיון דמחזיר אבידה הוא ודאי הדר ביה מחמדת ממון:"
+  },
+  "Rashi on Sanhedrin 25a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:36:00.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תקדמיה יונך ליון</strong> - ליוני אתן לך כך וכך:"
+  },
+  "Rashi on Sanhedrin 25a:13:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:13:1",
+      "Steinsaltz on Sanhedrin 25a:13",
+      "Steinsaltz comment #3 on Sanhedrin 25a:13",
+      "Steinsaltz comment #4 on Sanhedrin 25a:13",
+      "Jastrow, יוֹנְתָא 1",
+      "Rashi on Sanhedrin 25a:15:1"
+    ],
+    "generatedAt": "2026-11-12T07:37:58.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארא</strong> - אשתליו\"ן מלומד להביא יונים ממקומן לבית בעלים על כרחן ויש בהן גזל:"
+  },
+  "Rashi on Sanhedrin 25a:15:1": {
+    "dependsOn": [
+      "Bava Metzia 102a:1",
+      "Bava Metzia 102a:2"
+    ],
+    "generatedAt": "2026-11-12T07:42:23.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני דרכי שלום בעלמא</strong> - דתניא <span class=\"parenthesized\">(חולין דף קמא:)</span> יוני שובך ויוני עלייה יש בהן גזל מפני דרכי שלום ולא גזל גמור דלא זכה בהן בעל השובך דממילא קאתו ורבו להתם ובגמרא דהשואל <span class=\"parenthesized\">(דף קב.)</span> גרס לה:"
+  },
+  "Rashi on Sanhedrin 25a:18:1": {
+    "dependsOn": [
+      "Sanhedrin 25a:18"
+    ],
+    "generatedAt": "2026-11-12T07:43:14.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא תולה בדעת עצמו</strong> - דהויא אסמכתא והדר תנא דתולה בדעת יונו:"
+  },
+  "Rashi on Sanhedrin 25a:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:3:1",
+      "Rashi on Sanhedrin 25a:5:1",
+      "Rashi on Sanhedrin 24b:13:1",
+      "Rashi on Sanhedrin 24b:14:1",
+      "Sanhedrin 24b:17"
+    ],
+    "generatedAt": "2026-11-12T07:19:13.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימתי ובמה</strong> - אימתי כגון במתניתין דהכא או במה דברים אמורים:"
+  },
+  "Rashi on Sanhedrin 25a:3:1": {
+    "dependsOn": [
+      "Sanhedrin 25a:3",
+      "Rashi on Sanhedrin 25a:1:1"
+    ],
+    "generatedAt": "2026-11-12T07:20:24.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גברא אגברא</strong> - דרבי יהושע בן לוי ארמי בר חמא רמי בר חמא סבר אימתי דרבי יהודה לחלוק בא:"
+  },
+  "Rashi on Sanhedrin 25a:5:1": {
+    "dependsOn": [
+      "Sanhedrin 25a:5",
+      "Rashi on Sanhedrin 25a:5:2"
+    ],
+    "generatedAt": "2026-11-12T07:21:21.656Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא דרבי יהודה היא משום רבי טרפון</strong> - לעולם אימתי לפרש הוא ורבנן דמתניתין לא פליגי עליה ומתניתא דקתני בין שיש לו כו' דמשמע טעמא משום אסמכתא ר' יהודה גופיה אמרה משמיה דרבי טרפון ופליג אדרבנן דמתניתין דטעמייהו משום יישוב ובמתניתין ר' יהודה מילתייהו דרבנן קא מפרש:"
+  },
+  "Rashi on Sanhedrin 25a:5:2": {
+    "dependsOn": [
+      "Translation on Rashi on Sanhedrin 25a:5:2",
+      "Rashi on Sanhedrin 25a:5:1"
+    ],
+    "generatedAt": "2026-11-12T07:23:11.377Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין אחד מהן נזיר</strong> - שנים יושבין ואחד עובר זה אומר פלוני העובר נזיר הוא וזה אומר אינו נזיר ואמר אחד הריני נזיר אם כמותו הוא שהוא נזיר וחבירו אומר הריני נזיר אם כמותו הוא שאינו נזיר ושניהם מתכוונין לנזירות ונמצא כאחד מהם ואמר רבי טרפון אין אחד מהן נזיר שעל הספק אמר דבריו תחילה ואין זו הפלאה דכי יפליא איש <span class=\"parenthesized\">(ויקרא כז)</span> יפרש משמע אלמא לר' טרפון דכי תלי תנאה במידי דלאו בידיה ולא ידע לה אפילו הכי הויא אסמכתא ולא אמרינן מספיקא גמר ואקני:"
+  },
+  "Rashi on Sanhedrin 25a:6:1": {
+    "dependsOn": [
+      "Sanhedrin 25a:6",
+      "Rashi on Sanhedrin 25a:6:2",
+      "Sanhedrin 27a:10",
+      "Rashi on Sanhedrin 25a:1:1",
+      "Rashi on Sanhedrin 25a:5:1"
+    ],
+    "generatedAt": "2026-11-12T07:27:53.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לוה בריבית פסול לעדות</strong> - דקיי\"ל <span class=\"parenthesized\">(ב\"מ דף עה:)</span> המלוה והלוה עוברין בלא תעשה וכיון דחימוד ממון מעבירו על דת הוה לי' כרשע דחמס דעובר נמי על לא תעשה מפני חימוד ממון:"
+  },
+  "Rashi on Sanhedrin 25a:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:6:1"
+    ],
+    "generatedAt": "2026-11-12T07:28:29.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלוה הבאה בריבית</strong> - ומשמע אתרווייהו:"
+  },
+  "Rashi on Sanhedrin 25a:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:7:1",
+      "Rashi on Sanhedrin 25a:6:1",
+      "Rashi on Sanhedrin 25a:6:2",
+      "Rashi on Sanhedrin 25a:8:1"
+    ],
+    "generatedAt": "2026-11-12T07:29:56.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר ביניתוס</strong> - אוזיף מלוה:"
+  },
+  "Rashi on Sanhedrin 25a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:31:13.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוה ליה</strong> - האי סהדא רשע דהא אודי דלווה בריבית:"
+  },
+  "Rashi on Sanhedrin 25a:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:8:1",
+      "Rashi on Sanhedrin 9b:8:2",
+      "Sanhedrin 25a:9"
+    ],
+    "generatedAt": "2026-11-12T07:32:44.532Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 25a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא לטעמיה</strong> - בפ\"ק דאין אדם משים עצמו כו' אינו יכול לפסול עצמו על פיו דהא אין קרוב מעיד לא לזכות ולא לחובה ואדם קרוב אצל עצמו:"
+  },
+  "Tosafot on Sanhedrin 25a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 25a:5:1",
+      "Rashi on Sanhedrin 25a:5:2",
+      "Tosafot on Sanhedrin 25a:5:1"
+    ],
+    "generatedAt": "2026-11-12T07:26:09.143Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 25a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההיא ר' יהודה משום ר' טרפון</strong> - דאמר לא נתנה נזירות אלא להפלאה פ\"ה אלמא כיון דמספקא ליה אי הוי נזיר אי לא מספיקא לא משעביד נפשיה הכא נמי מספיקא לא גמר ומקני והקשה הריב\"ן מאי מדמה קנין לנזירות שאני נזירות דגלי קרא דכתיב כי יפליא וי\"ל דמ\"מ נילף מיניה בעלמא ור\"י פי' דמ\"מ מייתי שפיר ואין להקשות שאני הכא דגלי קרא משום דהא לא מפרש בקרא מאי היא הפלאה אלא גלי לן קרא דבעינן הפלאה ולא ידעינן מה היא הפלאה אלא תיתי לן מסברא מה היא הפלאה והיינו דקאמר ההיא רבי יהודה היא דאמר משום רבי טרפון דכיון דלא חשיב ליה הפלאה א\"כ ש\"מ דעל כרחיך הוא דאמר לעיל בכי האי גוונא אסמכתא היא דאי לאו אסמכתא היא מילתא דלא ידע אם כן הויא נמי הך הפלאה אע\"ג דלא ידע ומדקאמר ר' יהודה לעולם אין אחד מהם נזיר וכו' מכלל דלא הוי הפלאה כי האי גוונא אם כן ש\"מ לעיל דהוי אסמכתא כי האי גוונא וקרא דכי יפליא איצטריך משום דידות נזירות כנזירות הלכך אי לאו קרא דכי יפליא הייתי מרבה גם זו לידות נזירות דלא גרע מהם ומשום הכי איצטריך כי יפליא לומר דלא חשיב כידות:"
+  }
+}

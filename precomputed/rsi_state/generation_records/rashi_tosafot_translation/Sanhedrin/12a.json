@@ -1,0 +1,529 @@
+{
+  "Rashi on Sanhedrin 12a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:57:32.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בשביעית</strong> - לפי שמאריכין עליהן איסור עבודת קרקע:"
+  },
+  "Rashi on Sanhedrin 12a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:10:1",
+      "Rashi on Sanhedrin 12a:10:3",
+      "Rashi on Sanhedrin 12a:10:4"
+    ],
+    "generatedAt": "2026-11-11T11:58:25.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא במוצאי שביעית</strong> - בשמינית לפי שכלה הישן מאריכין עליהן איסור החדש:"
+  },
+  "Rashi on Sanhedrin 12a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:58:50.714Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בערב שביעית</strong> - להוסיף להם חדש לעבודת קרקע:"
+  },
+  "Rashi on Sanhedrin 12a:10:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:10:1",
+      "Rashi on Sanhedrin 12a:10:2",
+      "Rashi on Sanhedrin 12a:10:3",
+      "Rashi on Sanhedrin 12a:10:4",
+      "Sanhedrin 12a:10",
+      "Maharshal on Sanhedrin 12a:10:1"
+    ],
+    "generatedAt": "2026-11-11T11:59:57.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של בית רבן <span class=\"parenthesized\">(שמעון)</span> מעברין במוצאי שביעית</strong> - ואין חוששין אם כילה הישן דקסבר מביאין ירק ותבואה מחוצה לארץ לארץ ישראל מאותה שחרשו וזרעו בשביעית והתירם עומר של שביעית:"
+  },
+  "Rashi on Sanhedrin 12a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T12:00:27.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי בינייהו</strong> - במאי פליגי:"
+  },
+  "Rashi on Sanhedrin 12a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T12:01:35.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוששין לגושייהו</strong> - שמא יביא עמה מגוש ארץ העמים שמטמא באהל ויטמא טהרות של ארץ ישראל:"
+  },
+  "Rashi on Sanhedrin 12a:12:1": {
+    "dependsOn": [
+      "Sanhedrin 12a:12",
+      "Maharshal on Sanhedrin 12a:5:1",
+      "Sanhedrin 12a:13",
+      "Sanhedrin 12b:2"
+    ],
+    "generatedAt": "2026-11-11T12:10:33.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני הטומאה</strong> - כגון שהיה נשיא חולה ואמדוהו למות ערב הפסח או <span class=\"parenthesized\">(שני)</span> ימים קודם ויהיו טמאים או שהיה רובן טמאים בסוף אדר וכלתה אפר הפרה ואינן יכולין למצוא עכשיו פרה אדומה אין מעברין בכך אלא יעשו בטומאה:"
+  },
+  "Rashi on Sanhedrin 12a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T12:16:55.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעיבר את השנה מפני הטומאה</strong> - שנטמאו בימי אחז אביו מעבודה זרה שלא חששו לתורה והיה חזקיהו מחזירן למוטב וידע שלא יספיקו כולן לבא וליטהר עד הפסח ועיבר השנה:"
+  },
+  "Rashi on Sanhedrin 12a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T12:17:38.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובקש רחמים על עצמו</strong> - שימחל לו העון ולקמן פריך הואיל ואמר רבי יהודה מעברין למה ביקש רחמים על עצמו:"
+  },
+  "Rashi on Sanhedrin 12a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:20:37.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשני רעבון</strong> - לפי שכלה התבואה וצריכין לאכול מן החדש:"
+  },
+  "Rashi on Sanhedrin 12a:2:1": {
+    "dependsOn": [
+      "Sanhedrin 12a:2"
+    ],
+    "generatedAt": "2026-11-11T11:21:15.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחם ביכורים</strong> - לחם אביב משמע שעכשיו היה מבכר:"
+  },
+  "Rashi on Sanhedrin 12a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:21:55.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמא תאמר חיטין היו</strong> - שהן אפילות לכך נתאחרו לבשל עד אחר הפסח תלמוד לומר לחם שעורים:"
+  },
+  "Rashi on Sanhedrin 12a:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:3:1",
+      "Rashi on Sanhedrin 12a:3:2",
+      "Sanhedrin 12a:3"
+    ],
+    "generatedAt": "2026-11-11T11:22:49.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמא תאמר לפני העומר היה</strong> - ובזמן ביכר תלמוד לומר תן לעם ויאכלו מלמד שקרב העומר והותר החדש:"
+  },
+  "Rashi on Sanhedrin 12a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:23:36.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמור מעתה ראויה היתה אותה שנה להתעבר</strong> - על האביב שכשהגיע ניסן עדיין לא היה רוב אביב דהא לאחר ששה עשר בניסן לא ביכרו אלא שעורין ולא קרינא ביה חדש האביב:"
+  },
+  "Rashi on Sanhedrin 12a:4:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:4:1"
+    ],
+    "generatedAt": "2026-11-11T11:25:05.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששנת בצורת היתה</strong> - בקראי משכחת לה:"
+  },
+  "Rashi on Sanhedrin 12a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:5:2",
+      "Rashi on Sanhedrin 12a:5:3",
+      "Rashi on Sanhedrin 11b:7:1",
+      "Rashi on Sanhedrin 11b:8:1"
+    ],
+    "generatedAt": "2026-11-11T11:29:18.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מעברין</strong> - אין יושבין ב\"ד קודם ראש השנה לעיין ולומר תתעבר שנה זו בשני אדרים מפני שיש שכחה בדבר קודם שיגיע ומזלזלי בחמץ:"
+  },
+  "Rashi on Sanhedrin 12a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:30:10.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מפני הדחק</strong> - שמא לא יהא שם ב\"ד מופלא סמוך לאדר או שמא יבא המלך אדומי ויעכב על ידן מעברין אותה ומודיעין לגולה אחר ר\"ה מיד שעיברנוה:"
+  },
+  "Rashi on Sanhedrin 12a:5:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:5:1",
+      "Rashi on Sanhedrin 12a:5:2",
+      "Rashi on Sanhedrin 11b:12:1",
+      "Rashi on Sanhedrin 12a:1:1",
+      "Rashi on Sanhedrin 12a:2:1",
+      "Rashi on Sanhedrin 12a:3:1",
+      "Rashi on Sanhedrin 12a:3:2",
+      "Steinsaltz on Sanhedrin 12a:5",
+      "Steinsaltz comment #3 on Sanhedrin 12a:5",
+      "Tosafot on Sanhedrin 12a:5:1"
+    ],
+    "generatedAt": "2026-11-11T11:32:17.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואעפ\"כ אין מעברין</strong> - אותה בשני חדשים אחרים אלא כשיגיע אדר יעשו שני אדרים:"
+  },
+  "Rashi on Sanhedrin 12a:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:6:1"
+    ],
+    "generatedAt": "2026-11-11T11:34:43.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זוג</strong> - שני תלמידי חכמים:"
+  },
+  "Rashi on Sanhedrin 12a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:35:09.764Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא מרקת</strong> - טבריא:"
+  },
+  "Rashi on Sanhedrin 12a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:35:41.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותפשו נשר</strong> - חיל פרסיים:"
+  },
+  "Rashi on Sanhedrin 12a:6:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:6:1",
+      "Rashi on Sanhedrin 12a:6:2",
+      "Rashi on Sanhedrin 12a:6:3",
+      "Rashi on Sanhedrin 12a:7:1",
+      "Rashi on Sanhedrin 12a:7:2"
+    ],
+    "generatedAt": "2026-11-11T11:37:19.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברים הנעשים בלוז</strong> - תכלת בלוז עושין אותה כדאמרינן בסוטה <span class=\"parenthesized\">(דף מו:)</span> היא לוז שצובעין בה תכלת:"
+  },
+  "Rashi on Sanhedrin 12a:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:7:2"
+    ],
+    "generatedAt": "2026-11-11T11:38:02.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמוסי יריכי נחשון</strong> - נשיא שבארץ ישראל שהוא מזרע נחשון בן עמינדב ראשון לנשיאים:"
+  },
+  "Rashi on Sanhedrin 12a:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:7:1",
+      "Rashi on Sanhedrin 12a:7:2",
+      "Rashi on Sanhedrin 12a:7:3"
+    ],
+    "generatedAt": "2026-11-11T11:40:03.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקשו לקבוע נציב אחד</strong> - בקשו להוסיף חדש אחד על השנה לעברה:"
+  },
+  "Rashi on Sanhedrin 12a:7:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:7:1",
+      "Rashi on Sanhedrin 12a:7:2",
+      "Rashi on Sanhedrin 12a:7:3"
+    ],
+    "generatedAt": "2026-11-11T11:40:39.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הניחן אדומי הלז</strong> - מלכות הרשעה גזרה גזירה עליהן:"
+  },
+  "Rashi on Sanhedrin 12a:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:41:23.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בירח שמת בו אהרן</strong> - באב אלמא מפני הדחק מעיינין בעיבור שנה לפני ראש השנה:"
+  },
+  "Rashi on Sanhedrin 12a:7:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:7:1",
+      "Rashi on Sanhedrin 12a:7:2",
+      "Rashi on Sanhedrin 12a:7:3",
+      "Rashi on Sanhedrin 12a:7:4",
+      "Rashi on Sanhedrin 12a:7:5"
+    ],
+    "generatedAt": "2026-11-11T11:42:19.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלויי לא מגלו</strong> - עד לאחר ראש השנה שלא ישכחו בני הגולה:"
+  },
+  "Rashi on Sanhedrin 12a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:42:47.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נציבים</strong> - ממונים:"
+  },
+  "Rashi on Sanhedrin 12a:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:8:1",
+      "Rashi on Sanhedrin 12a:8:3"
+    ],
+    "generatedAt": "2026-11-11T11:43:27.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדש בשנה</strong> - יהיה על כל אחד לכלכל:"
+  },
+  "Rashi on Sanhedrin 12a:8:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:8:1",
+      "Rashi on Sanhedrin 12a:8:2"
+    ],
+    "generatedAt": "2026-11-11T11:44:14.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד חדש העיבור</strong> - בשנה מעוברת היה אותו נציב מכלכל באדר השני:"
+  },
+  "Rashi on Sanhedrin 12a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:44:47.352Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משנה לחברתה</strong> - אם שנה הבאה צריכה לעבר אין מעברין שנה זו מפני צורכי שנה הבאה אלא הצריכה תתעבר:"
+  },
+  "Rashi on Sanhedrin 12a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:9:1",
+      "Rashi on Sanhedrin 12a:9:3",
+      "Rashi on Sanhedrin 12a:9:4"
+    ],
+    "generatedAt": "2026-11-11T11:45:31.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא שלש שנים זו אחר זו</strong> - שא\"כ משתנות השנים מתיקונם ובא לו ניסן השלישי באמצע הקיץ:"
+  },
+  "Rashi on Sanhedrin 12a:9:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:9:1",
+      "Rashi on Sanhedrin 12a:9:2",
+      "Rashi on Sanhedrin 12a:9:4",
+      "Rashi on Sanhedrin 12a:5:1",
+      "Rashi on Sanhedrin 12a:5:2",
+      "Rashi on Sanhedrin 12a:5:3",
+      "Rashi on Sanhedrin 11b:1:1",
+      "Rashi on Sanhedrin 11a:1:1"
+    ],
+    "generatedAt": "2026-11-11T11:51:01.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב\"ד ישבו וקבעו כל אחת ואחת בזמנה</strong> - ולא עיברו ג' שנים רצופות ולא זו אחר זו היו אלא מפני שר\"ע חכם גדול היה ובקי בעיבור השנה והוא עומד ליהרג באו ב\"ד וישבו עמו ועיינו בעיבור ג' שנים ולא רצופות אלא כל אחת בזמנה דהא אמרינן מפני הדחק חשובי מחשבינן גלויי לא מגלינן לישנא אחרינא ולא ג' שנים זו אחר זו תנא קמא נמי בהא קאסר שלא יעיינו בעיבור שלש שנים זו אחר זו בישיבה אחת ואפילו לעברן בזמנן:"
+  },
+  "Rashi on Sanhedrin 12a:9:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:9:1",
+      "Rashi on Sanhedrin 12a:9:2",
+      "Rashi on Sanhedrin 12a:9:3",
+      "Rashi on Sanhedrin 12a:9:4"
+    ],
+    "generatedAt": "2026-11-11T11:52:06.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 12a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משם ראיה בית דין ישבו</strong> - אחרי כן בכל שנת עיבור ועיבור וקבעוה ולא סמכו על אותו מנין אלא לפי שהיה רבי עקיבא חכם גדול עיינו בשלשתם בימיו:"
+  },
+  "Tosafot on Sanhedrin 12a:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:11:1",
+      "Rashi on Sanhedrin 12a:11:2"
+    ],
+    "generatedAt": "2026-11-11T12:09:21.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוששין לגושיהן</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> דמטמא באהל וקשה דתניא במסכת אהלות <span class=\"parenthesized\">(פ\"ב משנה ג)</span> דגוש הבא מארץ העמים מטמא במגע ומשא אבל לא באהל והא דמשמע בפ\"ק דשבת <span class=\"parenthesized\">(דף טו: ושם)</span> ובנזיר <span class=\"parenthesized\">(דף נד: ושם)</span> דמטמא באהל היינו דווקא בארץ העמים אבל אם הביא מעפרה לארץ ישראל לא מטמא באהל לכן צריך לומר דהכא דחיישינן לגושיהן היינו שלא יטמאו במגע ומשא:"
+  },
+  "Tosafot on Sanhedrin 12a:13:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:13:1",
+      "Rashi on Sanhedrin 12a:13:2",
+      "Tosafot on Sanhedrin 12a:4:1",
+      "Tosafot on Sanhedrin 12a:4:2",
+      "Tosafot on Sanhedrin 12a:5:1",
+      "Sanhedrin 12a:13",
+      "Steinsaltz comment #1 on Sanhedrin 12a:13",
+      "Steinsaltz comment #2 on Sanhedrin 12a:13",
+      "Mishnah Parah 3:5"
+    ],
+    "generatedAt": "2026-11-11T12:25:16.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעיבר השנה מפני הטומאה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שניטמאו בע\"ז דע\"ז מטמא בפרק ר' עקיבא <span class=\"parenthesized\">(שבת דף פב.)</span> כמת אע\"ג דטומאת ע\"ז מדרבנן מאותה שעה שמא גזרו עליה דהא דריש ליה התם מקראי דדברי הקבלה ובירושלמי אמר דגולגלתו של ארונה היבוסי מצאו תחת המזבח ותימה שהרי <span class=\"parenthesized\">(בט\"ו)</span> היו יכולין ליטהר ולמה עיברוה והא סגי בהזאת שלישי ושביעי ואפר פרה לא היו חסרים דכל בית ראשון עמד להם אפר פרה דמשה כדאמר <span class=\"parenthesized\">(פרה פרק ג משנה ה)</span> דשניי' עשה עזרא ושמא לא היה להם הדבר מזומן ליטהר:"
+  },
+  "Tosafot on Sanhedrin 12a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:26:57.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראויה היתה אותה שנה שתתעבר</strong> - וא\"ת מנ\"ל דילמא אביב הוא דלא הוה אבל פירות האילן ותקופה הוו כתיקונן ואמרינן דעל אחד מהן אין מעברין וי\"ל דמסתמא כיון דבעל שלישה הקלה שבארץ ישראל לא ביכרה אלא מין אחד ש\"מ דפירות האילן נמי לא הוו וא\"ת ודילמא ביהודה הוא דלא הוו אבל בעבר הירדן ובגליל הוו וי\"ל דהא נמי שמעינן מבעל שלישה שהיא הקלה שלא ביכרה:"
+  },
+  "Tosafot on Sanhedrin 12a:4:2": {
+    "dependsOn": [
+      "Sanhedrin 12a:4",
+      "Tosafot on Sanhedrin 12a:4:1",
+      "Maharsha: Chidushei Halachot on Sanhedrin 12a:1"
+    ],
+    "generatedAt": "2026-11-11T11:27:54.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני מה לא עיברה אלישע</strong> - וא\"ת ומנא לן דלא עיברה וי\"ל דאם איתא דעיברה אי אפשר שלא היו מוציאין בכמה מינין אחר העומר:"
+  },
+  "Tosafot on Sanhedrin 12a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T11:34:19.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מעברין אלא אדר</strong> - וכל שאר החדשים אין מעברין דכתיב <span class=\"parenthesized\">(אסתר ג)</span> לחדש שנים עשר הוא חדש אדר ואי מעברין אחת משאר החדשים לא הוי אדר שנים עשר:"
+  },
+  "Tosafot on Sanhedrin 12a:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:9:1"
+    ],
+    "generatedAt": "2026-11-11T11:53:34.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא משנה לחברתה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שנה זו שאינה צריכה להתעבר אין מעברין כדי לתקן שנה הבאה ואין הלשון משמע כן אלא נראה דמיירי לחשב דאין מחשבין בשנה זו על שנה שלאחריה ואע\"ג דלא מגלין מ\"מ אין מחשבין לסמוך על אותו חשבון שלא לעשות חשבון אחר:"
+  },
+  "Tosafot on Sanhedrin 12a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 12a:9:1",
+      "Rashi on Sanhedrin 12a:9:2",
+      "Rashi on Sanhedrin 12a:9:3",
+      "Rashi on Sanhedrin 12a:9:4",
+      "Tosafot on Sanhedrin 12a:9:1",
+      "Maharsha on Sanhedrin 12a:2",
+      "Steinsaltz comment #1 on Sanhedrin 12a:9",
+      "Steinsaltz comment #2 on Sanhedrin 12a:9",
+      "Mishneh Torah, Sanctification of the New Month 4:13"
+    ],
+    "generatedAt": "2026-11-11T11:56:11.092Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 12a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא שלש שנים זו אחר זו</strong> - פירוש רצופות שלא יבא ניסן ופסח באמצע הקיץ <span class=\"rashi-quotation\">כדפי' בקונטרס</span> וק\"ק דמאי אריא שלש אפי' שתים נמי ועוד דקאמר ר' שמעון מעשה בר' עקיבא שעיבר ג' שנים רצופות ורבנן מהדרו ליה ב\"ד ישבו וקבעו כל אחת בזמנה פי' ולא רצופות היו ואין הלשון משמע כן ונראה כלשון אחר <span class=\"rashi-quotation\">שפי' בקונטרס</span> דאין מעברין ג' שנים היינו שאין קובעין בפעם אחת להיות שלש שנים מעוברות כל אחת בזמנה ולפי' זה לא יתכן מה שפירש משנה לחבירתה דמשמע דמודה ר\"ש ברישא:"
+  }
+}

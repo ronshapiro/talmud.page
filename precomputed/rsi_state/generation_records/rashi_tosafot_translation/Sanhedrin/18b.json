@@ -1,0 +1,443 @@
+{
+  "Rashi on Sanhedrin 18b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:10:1",
+      "Rashi on Sanhedrin 18b:10:2",
+      "Jastrow, אָפְסַנְיָא 1"
+    ],
+    "generatedAt": "2026-11-11T23:48:04.108Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום אפסניא</strong> - מחלק ממון לחיילותיו כך וכך לשנה ונוח לו שיהו כל השנים מעוברות:"
+  },
+  "Rashi on Sanhedrin 18b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:49:14.548Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהן גדול</strong> - אינו רוצה שתתעבר שנה מפני הצינה שצריך לטבול ולקדש ביום הכפורים חמש טבילות ועשרה קידושין ואם תתעבר שנה הרי תשרי במרחשון וצינת מרחשון תהיה בתשרי:"
+  },
+  "Rashi on Sanhedrin 18b:11:1": {
+    "dependsOn": [
+      "Sanhedrin 18b:11",
+      "Rashi on Sanhedrin 18b:11:2",
+      "Rashi on Sanhedrin 18b:10:1",
+      "Rashi on Sanhedrin 18b:10:2",
+      "Rashi on Sanhedrin 18b:1:1",
+      "Rashi on Sanhedrin 18b:4:1",
+      "Rashi on Sanhedrin 18b:6:1",
+      "Rashi on Sanhedrin 18b:7:1",
+      "Rashi on Sanhedrin 18b:9:1"
+    ],
+    "generatedAt": "2026-11-11T23:52:18.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב פפא ש\"מ</strong> - מהא דקתני ולא כהן גדול בעיבור שנה:"
+  },
+  "Rashi on Sanhedrin 18b:11:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:11:1",
+      "Sanhedrin 18b:11",
+      "Steinsaltz on Sanhedrin 18b:11"
+    ],
+    "generatedAt": "2026-11-11T23:53:48.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתא בתר ירחי אזלא</strong> - אחר ירחים הראוים להיות אם לא נתעברה הולך קור וחום של שנה וצינה הראויה במרחשון הויא בתשרי כשמתעברת:"
+  },
+  "Rashi on Sanhedrin 18b:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:12:2",
+      "Steinsaltz on Sanhedrin 18b:12:1"
+    ],
+    "generatedAt": "2026-11-11T23:57:07.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם בכיר ולקיש כחדא יינץ דין הוא אדר</strong> - אם יהא חום בקרקע ויצמח זרע הבכיר והאפילה יחד חיטין שנזרעו בראש החודש והשעורין שנזרעו עכשיו דין הוא אדר ואם לאו לית דין אדר אלא שבט:"
+  },
+  "Rashi on Sanhedrin 18b:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:12:1",
+      "Rashi on Sanhedrin 18b:12:2",
+      "Rashi on Sanhedrin 18b:12:3"
+    ],
+    "generatedAt": "2026-11-11T23:57:39.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תור בצפר בתלג ימות</strong> - אם בבקר יהא קור חזק עד שיהא השור קרוב למות מחמת הצינה:"
+  },
+  "Rashi on Sanhedrin 18b:12:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:12:2",
+      "Rashi on Sanhedrin 18b:12:3",
+      "Rashi on Sanhedrin 18b:12:4",
+      "Steinsaltz on Sanhedrin 18b:12:1"
+    ],
+    "generatedAt": "2026-11-11T23:58:28.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובטיהרא בטול תאינתא ידמוך</strong> - ובצהרים יגדל כח החום עד שיהא השור מיצל בצל התאנה מחמת החום:"
+  },
+  "Rashi on Sanhedrin 18b:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:59:06.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וישלח משכיה</strong> - ויפשיט עורו כלומר יתחכך בתאינה מחמת החום:"
+  },
+  "Rashi on Sanhedrin 18b:12:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:12:4",
+      "Rashi on Sanhedrin 18b:12:5",
+      "Rashi on Sanhedrin 18b:12:6",
+      "Jastrow, *יַפַּח 1"
+    ],
+    "generatedAt": "2026-11-12T00:00:20.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם קידום תקיף לחדא יהא יפח בלועך נפיק לקבליה</strong> - אם כבר תשש כח החורף כל כך שכשיהא רוח מזרחי' חזקה מאד והיא מביאה צינה ואתה מנשב בפיך ויוצא לקראתה ונפיחתך קשה מן הרוח ומחממתה דין הוא אדר:"
+  },
+  "Rashi on Sanhedrin 18b:12:6": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:12:4",
+      "Rashi on Sanhedrin 18b:12:5",
+      "Rashi on Sanhedrin 18b:12:6",
+      "Rashi on Sanhedrin 18b:12:7"
+    ],
+    "generatedAt": "2026-11-12T00:01:16.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו</strong> - שעדיין יש צינה חזקה לית דין אדר אלא שבט:"
+  },
+  "Rashi on Sanhedrin 18b:12:7": {
+    "dependsOn": [
+      "Sanhedrin 18b:12",
+      "Rashi on Sanhedrin 18b:11:1",
+      "Rashi on Sanhedrin 18b:11:2",
+      "Rashi on Sanhedrin 18b:12:1",
+      "Rashi on Sanhedrin 18b:12:6"
+    ],
+    "generatedAt": "2026-11-12T00:02:20.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועברוה רבנן</strong> - ועשאוהו כשבט שקבעו אדר השני אחריו אלמא שתא בתר עיבורא אזיל ולא נהגא חום דניסן באדר אלא מנהג אדר באדר השני:"
+  },
+  "Rashi on Sanhedrin 18b:13:1": {
+    "dependsOn": [
+      "Sanhedrin 18b:13",
+      "Steinsaltz on Sanhedrin 18b:13",
+      "Rashi on Sanhedrin 18b:11:1",
+      "Rashi on Sanhedrin 18b:11:2"
+    ],
+    "generatedAt": "2026-11-12T00:04:18.401Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן אחושבנייהו סמוך</strong> - ובלא\"ה מעברינן ליה והכא איסתייועי מיסתייעא מילתייהו כלומר איתרמי להו מזל חשיבות דאיקלע עיבור כמלתייהו ומיהו ברוב העבורים שתא בתר ירחא אזלא:"
+  },
+  "Rashi on Sanhedrin 18b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:05:20.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא פסיק ותני</strong> - הוא אינו מייבם לא שנא נפלה לו יבמתו בין מן הנשואין בין מן האירוסין בשלמא מן הנשואין איכא עשה ולא תעשה באיסורא בתולה יקח <span class=\"parenthesized\">(ויקרא כ״א:י״ד)</span> ולא בעולה דהיינו עשה אלמנה לא יקח <span class=\"parenthesized\">(שם)</span> הרי לאו:"
+  },
+  "Rashi on Sanhedrin 18b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:18:55.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההורג כהן גדול</strong> - בשוגג גולה לעיר מקלט ואינו יוצא משם לעולם דכיון דאין כהן גדול במקדש כשהוא גולה במיתת מי ישוב וכן כהן גדול שהרג את הנפש בשוגג במיתת מי ישוב הא ליכא כהן גדול:"
+  },
+  "Rashi on Sanhedrin 18b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:20:29.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא כהדיוט</strong> - לידון בשלשה:"
+  },
+  "Rashi on Sanhedrin 18b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:21:04.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר גדול ממש</strong> - אם עבר עבירה שיש בה מיתת בית דין הוא דבעי סנהדרי גדולה אבל במלקות לא:"
+  },
+  "Rashi on Sanhedrin 18b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 18b:6",
+      "Rashi on Sanhedrin 18b:6:1",
+      "Rashi on Sanhedrin 18b:6:2",
+      "Rashi on Sanhedrin 18b:6:3"
+    ],
+    "generatedAt": "2026-11-11T23:27:11.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי שהיה מוצא אבידה</strong> - כהן והיה האבידה בבית הקברות או שהיה זה זקן ואינה לפי כבודו שאם היתה שלו לא היה מחזיר':"
+  },
+  "Rashi on Sanhedrin 18b:6:2": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 18b:6",
+      "Rashi on Sanhedrin 18b:6:1",
+      "Rashi on Sanhedrin 18b:6:3"
+    ],
+    "generatedAt": "2026-11-11T23:28:28.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שהיתה מלאכה שלו מרובה משל חבירו</strong> - כגון נוקב מרגליות שאם ילך ויחזירנ' יפסיד בבטלותו יותר מדמיה:"
+  },
+  "Rashi on Sanhedrin 18b:6:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:6:1",
+      "Rashi on Sanhedrin 18b:6:2",
+      "Sanhedrin 18b:6"
+    ],
+    "generatedAt": "2026-11-11T23:29:27.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכך נאמר והתעלמת</strong> - אלמא כבוד הבריות דוחה לאו דלא תוכל להתעלם וה\"נ זילותא הוא לגבי כהן גדול ליתי לאסהודי לבעל דין:"
+  },
+  "Rashi on Sanhedrin 18b:7:1": {
+    "dependsOn": [
+      "Sanhedrin 18b:7",
+      "Rashi on Sanhedrin 18b:7:1",
+      "Rashi on Sanhedrin 18b:7:2",
+      "Rashi on Sanhedrin 18b:7:3"
+    ],
+    "generatedAt": "2026-11-11T23:30:23.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יוסף</strong> - הא דקתני מעיד למלך קאמר שהיה מלך בעל דין וכהן גדול יודע לו עדות:"
+  },
+  "Rashi on Sanhedrin 18b:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:7:1",
+      "Rashi on Sanhedrin 18b:7:2",
+      "Rashi on Sanhedrin 18b:7:3",
+      "Rashi on Sanhedrin 18a:1:1",
+      "Rashi on Sanhedrin 18a:2:1",
+      "Rashi on Sanhedrin 18a:3:1",
+      "Rashi on Sanhedrin 18a:4:1",
+      "Rashi on Sanhedrin 18b:6:1",
+      "Rashi on Sanhedrin 18b:6:2",
+      "Rashi on Sanhedrin 18b:8:1",
+      "Rashi on Sanhedrin 18b:8:2",
+      "Rashi on Sanhedrin 18b:8:3",
+      "Rashi on Sanhedrin 18b:8:4",
+      "Rashi on Sanhedrin 18b:10:1",
+      "Rashi on Sanhedrin 18b:10:2",
+      "Steinsaltz on Sanhedrin 18b:7:1",
+      "Tosafot on Sanhedrin 18b:7:1",
+      "Rashi on Sanhedrin 18b:4:1",
+      "Rashi on Sanhedrin 18b:9:1",
+      "Rashi on Sanhedrin 18b:11:1",
+      "Rashi on Sanhedrin 18b:11:2",
+      "Rashi on Sanhedrin 18b:13:1",
+      "Rashi on Sanhedrin 18b:14:1"
+    ],
+    "generatedAt": "2026-11-11T23:32:24.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא לא דנין אותו</strong> - מאי סהדות' בעי:"
+  },
+  "Rashi on Sanhedrin 18b:7:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:7:1",
+      "Rashi on Sanhedrin 18b:7:2"
+    ],
+    "generatedAt": "2026-11-11T23:33:04.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן מלך הדיוט הוא</strong> - והדר קושיין לדוכתא דאיכא זילותא לכה\"ג:"
+  },
+  "Rashi on Sanhedrin 18b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:36:09.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפני המלך</strong> - שהמלך יושב ודן בסנהדרין:"
+  },
+  "Rashi on Sanhedrin 18b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:36:36.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מושיבין מלך בסנהדרין</strong> - לקמן מפרש טעמא:"
+  },
+  "Rashi on Sanhedrin 18b:8:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:8:1",
+      "Rashi on Sanhedrin 18b:8:2",
+      "Rashi on Sanhedrin 18b:8:3"
+    ],
+    "generatedAt": "2026-11-11T23:43:20.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתי</strong> - מלך יתיב עד דמיקבל סהדותא וקאי מלך ואזיל ומעיינינן אנן בדינא:"
+  },
+  "Rashi on Sanhedrin 18b:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:9:1"
+    ],
+    "generatedAt": "2026-11-11T23:46:53.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 18b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תענה על רב</strong> - אינך רשאי לסתור את דברי מופלא שבדיינין ואי אמר מלך חובה תו לא מצי אינך למחזי ליה זכותא:"
+  },
+  "Tosafot on Sanhedrin 18b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:10:2"
+    ],
+    "generatedAt": "2026-11-11T23:50:26.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום צינה</strong> - פ\"ה משום שכהן גדול טעון טבילה ולא נהירא דמשמע ביומא <span class=\"parenthesized\">(דף לא:)</span> שהיו מחממין לו קומקמום של חמין ביוה\"כ לכן נראה לפרש משום קרירות הרצפה שכל היום היה עומד יחף:"
+  },
+  "Tosafot on Sanhedrin 18b:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 18b:11:1",
+      "Rashi on Sanhedrin 18b:11:2",
+      "Sanhedrin 18b:11",
+      "Chidushei Agadot on Sanhedrin 18b:1",
+      "Steinsaltz comment #1 on Sanhedrin 18b:11",
+      "Gilyon HaShas on Sanhedrin 18b:1"
+    ],
+    "generatedAt": "2026-11-11T23:56:14.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתא בתר ירחא אזלא</strong> - פירש הקונטר' קור וחום של שנה אחר החדשים אם לא היתה השנה מעוברת וקור שהיה ראוי לעשות במרחשון אם לא היתה השנה מעוברת יעשה בתשרי דאי בתר חדשי חמה אזלא מה לו לכהן אם נעבר השנה וקשה והלא כל מה שאנו מעברים היינו כדי להשוות חדשי חמה לחדשי הלבנה ולעשות ממרחשון תשרי כדי שתפול בו תקופת תשרי ותהא מקצת החג בתקופה החדשה והלא ברוב השנים כמו כן היא נופלת תקופת תשרי בתשרי של לבנה ופי' בתוס' דמיירי בשמעתתא משום אביב ופירות האילן דאז משתנה קור של תשרי זה מקור של תשרי של שאר שנים להיות בו צינה כצינה של מרחשון ולהכי פריך שפיר משלשה רועי בקר דמשמע שהפירות והצינה שוים שהרי סימני הרועים האחד היה נותן לפירות והאחר לצינת הרוח:"
+  },
+  "Tosafot on Sanhedrin 18b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:19:57.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו יוצא משם לעולם</strong> - פירוש וכגון שלא מינו אחר עד שנגמר דינו וכגון דליכא משוח שעבר וליכא משוח מלחמה דמשוח שעבר מחזיר הרוצח לדברי הכל ומשוח מלחמה פלוגתא דר' יהודה ורבנן פרק בתרא דהוריות <span class=\"parenthesized\">(דף י)</span>:"
+  },
+  "Tosafot on Sanhedrin 18b:5:1": {
+    "dependsOn": [
+      "Sanhedrin 18b:5",
+      "Shevuot 30b:9",
+      "Tosafot on Shevuot 30b:10:1",
+      "Tosafot on Bava Metzia 30b:2:1"
+    ],
+    "generatedAt": "2026-11-11T23:24:07.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעיד והא תניא והתעלמת וכו'</strong> - ואם תאמר ולוקמה בעדות החדש דודאי כהן גדול מעיד דבמידי דאיסורא אין חכמה ואין תבונה לנגד ה' כדאמר גבי צורבא מרבנן פרק שבועת העדות <span class=\"parenthesized\">(שבועות דף ל:)</span> והא דאמרינן דדוחין <span class=\"parenthesized\">(עשה)</span> בשביל כבוד הבריות הני מילי ממונא אבל במידי דאיסורא לא כדפרישי' וי\"ל דמעיד משמע לכל דבר בין באיסורא בין בממונא דומיא דמלך לא מעיד דמיירי <span class=\"parenthesized\">(אפי')</span> בממונ' דאי באיסורא אין חכמה וכו':"
+  },
+  "Tosafot on Sanhedrin 18b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:35:48.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנן מלך לא דן ולא דנין אותו וכו'</strong> - וא\"ת ולוקי מתניתין דתני מלך לא דן ולא דנין אותו במלכי ישראל ומתניתין דתני מעיד למלך דמשמע דדנין אותו במלכי בית דוד דאמר לקמן <span class=\"parenthesized\">(סנהדרין דף יט.)</span> דדן ודנין אותו וי\"ל דכולה מתניתין מסתמא איירי במלכי ישראל דומיא דמלך לא דן ולא דנין אותו:"
+  },
+  "Tosafot on Sanhedrin 18b:8:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Sanhedrin 18b:2",
+      "Steinsaltz comment #1 on Sanhedrin 18b:8",
+      "Steinsaltz comment #2 on Sanhedrin 18b:8",
+      "Sanhedrin 18b:8"
+    ],
+    "generatedAt": "2026-11-11T23:45:53.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 18b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אין מושיבין מלך בסנהדרין</strong> - תימה לפרוך ממתניתין דתנן מלך לא דן ועוד מאי קמ\"ל מתניתין היא מלך לא דן וכו' וי\"ל דהא דאין מלך דן ה\"מ לבדו משום דאין דנין אותו דלא קרינן ביה התקוששו וקושו אבל עם אחרים שפיר מצי דן דאין הדין נגמר על פיו לבד כך נראה למהר\"ן וא\"ת מ\"מ היאך דן את בנו דמסתמא בבן מלך קאי שמועה עכשיו וי\"ל דודאי היה יודע שפיר דלדון לא בא אבל קשה ליה דאפילו ישב וידום נמי לא ובהכי ניחא דלא פריך ממתני' דתנן מלך לא דן:"
+  }
+}

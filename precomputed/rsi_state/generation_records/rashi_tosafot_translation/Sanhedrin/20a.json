@@ -1,0 +1,307 @@
+{
+  "Rashi on Sanhedrin 20a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:26:31.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למחות בשאול</strong> - בהריגת נוב עיר הכהנים:"
+  },
+  "Rashi on Sanhedrin 20a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:10:1",
+      "Sanhedrin 20a:10",
+      "Rashi on Sanhedrin 20a:11:1"
+    ],
+    "generatedAt": "2026-11-12T01:27:24.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידיך לא אסורות</strong> - אדם חשוב היית לשאול והיה לך למחות ולפי שלא מחית כנפול לפני בני עולה נפלת:"
+  },
+  "Rashi on Sanhedrin 20a:11:1": {
+    "dependsOn": [
+      "Sanhedrin 20a:11",
+      "Rashi on Sanhedrin 20a:10:1",
+      "Rashi on Sanhedrin 20a:10:2"
+    ],
+    "generatedAt": "2026-11-12T01:28:26.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכדי מחויי מחית</strong> - והכי קאמר ידיך לא אסורות היו לא ניהגת בעצמך כאדם חשוב אלא בכל כוחך גילית בדעתך ומחית בשאול:"
+  },
+  "Rashi on Sanhedrin 20a:12:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 20a:12:2"
+    ],
+    "generatedAt": "2026-11-12T01:29:58.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששהה מלכות בית דוד</strong> - שהעמיד את איש בושת למלך ואם לא המליכו אבנר היו ממליכין את דוד ומשמלך איש בושת עד יום שמלך דוד על כל ישראל היו שתי שנים ומחצה שתי שנים לאיש בושת וחצי שנה בין מיתתו למלכות דוד שמשמת שאול מלך דוד בחברון וכתיב בחברון מלך שבע שנים וששה חדשים צא מהן חמש שנים שבין מיתת שאול למלכות איש בושת דתניא בסדר עולם <span class=\"parenthesized\">(ולקמן סנהדרין דף קז.)</span> והימים אשר מלך דוד על וגו' נמצאת מלכות ישראל בטילה חמש שנים אלמא חמש שנים היו בלא מלך נשתיירו שתי שנים ומחצה ממלכות איש בושת למלכות בית דוד:"
+  },
+  "Rashi on Sanhedrin 20a:13:1": {
+    "dependsOn": [
+      "Shabbat 67b:12",
+      "Shabbat 67b:1",
+      "Rashi on Shabbat 67b:1:1",
+      "Rashi on Shabbat 67b:1:2",
+      "Rashi on Sanhedrin 20b:18:2",
+      "Rashi on Sanhedrin 20a:1:1",
+      "Rashi on Sanhedrin 20a:4:1",
+      "Rashi on Sanhedrin 20a:5:1",
+      "Rashi on Sanhedrin 20a:13:2",
+      "Rashi on Sanhedrin 20a:13:3"
+    ],
+    "generatedAt": "2026-11-12T01:39:22.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרגש ערסא דגדא</strong> - נוהגין היו לערוך מטה ושלחן בבית ולא היו משתמשין בהן כלל אלא למזל הבית מונחת משום ניחוש גדא מזל ודומה גד גדי וסנוק לא <span class=\"parenthesized\">(שבת דף סז:)</span>:"
+  },
+  "Rashi on Sanhedrin 20a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:39:49.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד השתא לאו אותביניה</strong> - עד הנה לא ישב על אותה מיטה שהרי מונחת היא לנוי הבית:"
+  },
+  "Rashi on Sanhedrin 20a:13:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:13:1",
+      "Rashi on Sanhedrin 20a:13:2"
+    ],
+    "generatedAt": "2026-11-12T01:40:48.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשתא</strong> - דאבל הוא בעינן לאותביה עלה מהיכא תיפוק לן:"
+  },
+  "Rashi on Sanhedrin 20a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:41:24.812Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא מוכלינן ליה</strong> - משל אחרים:"
+  },
+  "Rashi on Sanhedrin 20a:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:14:1",
+      "Sanhedrin 20a:12",
+      "Sanhedrin 20a:13",
+      "Rashi on Sanhedrin 20a:9:1",
+      "Rashi on Sanhedrin 20a:9:2",
+      "Rashi on Sanhedrin 20a:13:1",
+      "Rashi on Sanhedrin 20a:13:2",
+      "Rashi on Sanhedrin 20a:13:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Sanhedrin 20a:1:1"
+    ],
+    "generatedAt": "2026-11-12T01:44:13.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי קשיא</strong> - אדעולא הא קשיא עלה דתניא בעלמא <span class=\"parenthesized\">(מו\"ק דף כז.)</span> דרגש אין צריך האבל לכפותו:"
+  },
+  "Rashi on Sanhedrin 20a:15:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:15:1",
+      "Rashi on Sanhedrin 20a:15:2",
+      "Jastrow, קַרְבִיטִין 1",
+      "Rashi on Moed Katan 27a:12:1",
+      "Rashi on Moed Katan 27a:12:2",
+      "Rashi on Moed Katan 27a:12:3",
+      "Rashi on Nedarim 56b:2:1",
+      "Rashi on Nedarim 56b:2:2",
+      "Rashi on Nedarim 56b:2:3",
+      "Rashi on Sanhedrin 20a:13:1",
+      "Rashi on Sanhedrin 20a:13:2",
+      "Rashi on Sanhedrin 20a:13:3",
+      "Rashi on Sanhedrin 20a:14:1",
+      "Rashi on Sanhedrin 20a:14:2",
+      "Steinsaltz on Sanhedrin 20a:15"
+    ],
+    "generatedAt": "2026-11-12T01:46:24.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיר קרביטין</strong> - בימי אבלו קרביטין לולאות:"
+  },
+  "Rashi on Sanhedrin 20a:15:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:15:1",
+      "Sanhedrin 20a:15",
+      "Rashi on Sanhedrin 20a:13:1",
+      "Rashi on Sanhedrin 20a:13:2",
+      "Rashi on Sanhedrin 20a:13:3",
+      "Rashi on Sanhedrin 20a:16:1",
+      "Rashi on Sanhedrin 20a:16:2"
+    ],
+    "generatedAt": "2026-11-12T01:47:38.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרביטין מי אית ליה</strong> - הלא כשאר מטות עושין אותה מטה:"
+  },
+  "Rashi on Sanhedrin 20a:16:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:16:2",
+      "Steinsaltz on Sanhedrin 20a:16",
+      "Rashi on Sanhedrin 20a:1:1",
+      "Rashi on Sanhedrin 20a:4:1",
+      "Rashi on Sanhedrin 20a:5:1",
+      "Sanhedrin 20a:16",
+      "Sefer HeArukh, Letter Gimel 176"
+    ],
+    "generatedAt": "2026-11-12T01:48:44.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גילדאי</strong> - רצענין:"
+  },
+  "Rashi on Sanhedrin 20a:16:2": {
+    "dependsOn": [
+      "Sanhedrin 20a:16",
+      "Rashi on Sanhedrin 20a:16:1",
+      "Rashi on Sanhedrin 20a:14:1",
+      "Rashi on Sanhedrin 20a:14:2",
+      "Rashi on Sanhedrin 20a:15:1",
+      "Rashi on Sanhedrin 20a:15:2"
+    ],
+    "generatedAt": "2026-11-12T01:51:56.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערסא דצלא</strong> - מטה של עור ותולין רצועות בשפת העור סביב וכשרוצין לנטותו עונבין הרצועות בארוכות המטה וכשמתירין אותה הוא נופל והן הן קרביטין וחס הוא עליו לכפותו שלא יתקלקל העור בלחלוח הקרקע שלא היו ראשי כרעיו גבוהין מסירוגו למעלה וקאמר ת\"ק זוקפו על דופן הכרעים וארוכותיו למעלה ואמר ליה רבן שמעון מתיר קרביטין והוא נופל:"
+  },
+  "Rashi on Sanhedrin 20a:1:1": {
+    "dependsOn": [
+      "Sanhedrin 20a:1",
+      "Rashi on Sanhedrin 19b:21:1"
+    ],
+    "generatedAt": "2026-11-12T01:20:03.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוקפו של בועז ענוותנותו של פלטי</strong> - דאילו בועז חדא לילה ופלטי שנים רבות:"
+  },
+  "Rashi on Sanhedrin 20a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:21:19.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דורו של משה ויהושע</strong> - עסקו בתורה הרבה ודורו של חזקיהו יותר מהם כדכתיב <span class=\"parenthesized\">(ישעיהו י)</span> וחובל עול מפני שמן ואמרינן בחלק <span class=\"parenthesized\">(לקמן סנהדרין דף צד:)</span> חובל עול של סנחריב מפני שמנו של חזקיה שהיה דולק בבתי מדרשות עד שבדקו מדן ועד באר שבע ולא מצאו עם הארץ:"
+  },
+  "Rashi on Sanhedrin 20a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:21:48.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתכסין בטלית אחת</strong> - עניים היו:"
+  },
+  "Rashi on Sanhedrin 20a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:23:00.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה אומר לעולם</strong> - לפני המטה יוצאות שכן מצינו בדוד שיצא אחר מטתו של אבנר ואי ס\"ד נשים אחר המטה אורחיה דדוד להלך עם הנשים:"
+  },
+  "Rashi on Sanhedrin 20a:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:9:2"
+    ],
+    "generatedAt": "2026-11-12T01:24:21.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחילה להכרותו</strong> - שהיו סבורין שמאתו היתה הריגת אבנר:"
+  },
+  "Rashi on Sanhedrin 20a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:9:1"
+    ],
+    "generatedAt": "2026-11-12T01:26:09.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולבסוף להברותו</strong> - שידעו הבירור שלא מאת דוד נהרג אבנר:"
+  },
+  "Tosafot on Sanhedrin 20a:12:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 20a:12:1"
+    ],
+    "generatedAt": "2026-11-12T01:33:14.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 20a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששהא מלכות וכו'</strong> - אף על גב דדרשינן <span class=\"parenthesized\">(מדרש רבה פרשת וישלח)</span> ומלכים ממך יצאו זה שאול ואיש בושת מ\"מ היה יכול להתקיים במקום אחר ולא היה לו לשהות מלכות בית דוד שנמשח כבר על פי נביא:"
+  },
+  "Tosafot on Sanhedrin 20a:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20a:12:1"
+    ],
+    "generatedAt": "2026-11-12T01:37:23.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 20a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי שנים ומחצה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שמלכות ישראל היתה בטלה חמש שנה בין מיתת שאול למלכות איש בושת ב' שנים ומחצה היינו שתי שנים ממלכות איש בושת ומחצה בין מיתת איש בושת למלכות דוד ולא נהירא חדא דלמה נענש על אותה חצי שנה דבין מיתת איש בושת למלכות דוד הלא קודם מיתתו חזר אבנר ונתאמץ להמליך את דוד כדכתיב <span class=\"parenthesized\">(שמואל ב ג׳:י״ב)</span> וישלח אבנר מלאכים אל דוד וגו' ועוד דכיון דחמש שנים עמדו בלא מלך ולא המליכו את דוד א\"כ למה נענש אבנר במה שנתחזק אחרי כן להמליך איש בושת ונראה לי איפכא דאותה חצי שנה היתה בין מיתת שאול למלכות איש בושת ובאותם הימים נתחזק אבנר ודבר לכל ישראל להמליך איש בושת עד שהמליכו לסוף אותה חצי שנה ומשמת איש בושת היתה מלכות ישראל בטלה חמש שנים עד שמלך דוד נמצאו ז' שנים ומחצה שמלך דוד בחברון כדכתיב בהדיא אע\"ג דבאידך קרא לא חשיב רק ז' שנים היינו לפי שנצטרע כדאמרינן בחלק <span class=\"parenthesized\">(לקמן סנהדרין דף קז.)</span> והא דלא חשיב חצי שנה זאת בחשבון בטול מלכות ישראל <span class=\"parenthesized\">(בחלק)</span> היינו לפי שלא היתה סמוך לה' שנים ולא היה הבטול יחד:"
+  },
+  "Tosafot on Sanhedrin 20a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:23:45.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 20a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשים לצאת לפני המטה</strong> - דכיון דשעת צער הוא ליכא למיחש להרהור ובירושלמי פליגי איכא למאן דאמר לפני המטה לפי שגרמו מיתה לעולם ואית דנהגו לאחר המטה ואנשים לפני המטה לפי שגנאי לבנות ישראל שיסתכלו בהן אנשים:"
+  }
+}

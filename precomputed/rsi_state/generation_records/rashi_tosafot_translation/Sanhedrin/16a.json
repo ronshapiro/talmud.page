@@ -1,0 +1,379 @@
+{
+  "Rashi on Sanhedrin 16a:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:10:1",
+      "Rashi on Sanhedrin 16a:10:2"
+    ],
+    "generatedAt": "2026-11-11T19:51:40.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יביאו אליך</strong> - ומשה במקום שבעים ואחד קאי:"
+  },
+  "Rashi on Sanhedrin 16a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:10:1"
+    ],
+    "generatedAt": "2026-11-11T19:52:22.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבריו של גדול</strong> - דינו של בעל שררה כגון נשיא וכהן גדול:"
+  },
+  "Rashi on Sanhedrin 16a:13:1": {
+    "dependsOn": [
+      "Sanhedrin 16a:13"
+    ],
+    "generatedAt": "2026-11-11T19:53:19.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי תנא</strong> - דדרש דבר גדול דבר קשה למה לי תרי קראי:"
+  },
+  "Rashi on Sanhedrin 16a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T19:53:48.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שורו של כהן גדול</strong> - אם המית איש:"
+  },
+  "Rashi on Sanhedrin 16a:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:14:1",
+      "Rashi on Sanhedrin 16a:5:1",
+      "Rashi on Sanhedrin 16a:5:2",
+      "Rashi on Sanhedrin 16a:7:1",
+      "Rashi on Sanhedrin 16a:8:1",
+      "Rashi on Sanhedrin 16a:19:2",
+      "Rashi on Sanhedrin 15b:11:1",
+      "Rashi on Sanhedrin 2a:10:2",
+      "Rashi on Sanhedrin 2b:1:1",
+      "Rashi on Sanhedrin 2b:1:2",
+      "Rashi on Sanhedrin 2b:2:1"
+    ],
+    "generatedAt": "2026-11-11T19:56:17.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקא מיבעיא ליה שורו</strong> - שמע מינה שורו הוא דמספקא ליה משום דכתיב <span class=\"parenthesized\">(שמות כ״א:כ״ט)</span> וגם בעליו יומת כמיתת בעלים אבל שאר ממונו פשיטא לן דבשלשה ככל דיני ממונות:"
+  },
+  "Rashi on Sanhedrin 16a:15:1": {
+    "dependsOn": [
+      "Sanhedrin 16a:15"
+    ],
+    "generatedAt": "2026-11-11T19:57:53.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דבריו</strong> - ואפילו ממונו ליבעי סנהדרי גדולה:"
+  },
+  "Rashi on Sanhedrin 16a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T20:00:36.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא</strong> - הא דקא מדכר קרא בסנהדרי גדולה משום שאילת אורים ותומים הוא אתא לאשמעינן דנשאלין לסנהדרין באורים ותומים וכן למלך וכן למשוח מלחמה אבל לא להדיוט ולעולם לענין לצאת למלחמה יוצאין בלא רשות סנהדרי:"
+  },
+  "Rashi on Sanhedrin 16a:19:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:19:2",
+      "Rashi on Sanhedrin 16a:18:1"
+    ],
+    "generatedAt": "2026-11-11T20:05:14.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנור</strong> - נקב שלו כלפי צפון היה ובלילה רוח צפונית מנשבת דקיימא לן <span class=\"parenthesized\">(בבבא בתרא ד' כה.)</span> ארבע רוחות מנשבות בכל יום מזרחית בבקר ורוח דרומית בחצי היום ומערבית בתחילת לילה וצפונית בחצי לילה כמהלך חמה שמהלכת ממזרח לדרום ומדרום למערב וממערב לצפון ותניא ביבמות <span class=\"parenthesized\">(דף עב.)</span> כל אותן ארבעים שנה שהיו ישראל במדבר אף על פי שנזופים היו ולא נשבה להם רוח צפונית ביום לא היה יום שלא נשבה להם רוח צפונית בחצי הלילה אלמא חצות לילה עת נשיבתה לעולם ופעמים שהיא מנשבת אף ביום והיא רוח נוחה ויפה לבריות והיום מאיר בה:"
+  },
+  "Rashi on Sanhedrin 16a:19:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:19:1"
+    ],
+    "generatedAt": "2026-11-11T20:08:31.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה דוד עומד ועוסק בתורה</strong> - כדכתיב חצות לילה אקום <span class=\"parenthesized\">(תהילים קי״ט:ס״ב)</span>:"
+  },
+  "Rashi on Sanhedrin 16a:1:1": {
+    "dependsOn": [
+      "Sanhedrin 16a:1",
+      "Rashi on Sanhedrin 16a:1:2"
+    ],
+    "generatedAt": "2026-11-11T19:19:59.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנשיא שבט שחטא</strong> - ובאחת מכל מיתות ב\"ד:"
+  },
+  "Rashi on Sanhedrin 16a:1:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:1:1",
+      "Rashi on Sanhedrin 16a:10:1",
+      "Rashi on Sanhedrin 16a:10:2"
+    ],
+    "generatedAt": "2026-11-11T19:21:45.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרב אדא בר אהבה</strong> - לקמן:"
+  },
+  "Rashi on Sanhedrin 16a:20:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:20:2"
+    ],
+    "generatedAt": "2026-11-11T20:08:59.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קומץ</strong> - פרנסה מועטת:"
+  },
+  "Rashi on Sanhedrin 16a:20:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:20:1",
+      "Rashi on Berakhot 3b:29:2",
+      "Tosafot on Berakhot 3b:29:2"
+    ],
+    "generatedAt": "2026-11-11T20:10:17.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין הבור מתמלא מחולייתו</strong> - עוקר חוליא מבור עמוק וחוזר והשליכה לתוכו אינו מתמלא בכך כלומר אין סיפק בידינו לפרנס עניים שבתוכנו:"
+  },
+  "Rashi on Sanhedrin 16a:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T20:15:37.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמלכין בסנהדרין</strong> - נוטלין רשות מהן והיינו מתני':"
+  },
+  "Rashi on Sanhedrin 16a:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:2:1",
+      "Sanhedrin 16a:1"
+    ],
+    "generatedAt": "2026-11-11T19:22:47.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתחילתה של א\"י</strong> - כך דינה לעולם אם נפלה מחלוקת נחלה בשבט:"
+  },
+  "Rashi on Sanhedrin 16a:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:3:1",
+      "Tosafot on Sanhedrin 16a:3:1",
+      "Rashi on Sanhedrin 16a:1:1",
+      "Rashi on Sanhedrin 16a:1:2",
+      "Rashi on Sanhedrin 15b:1:1",
+      "Rashi on Sanhedrin 15b:2:1"
+    ],
+    "generatedAt": "2026-11-11T19:24:46.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קלפי אורים ותומים</strong> - ביש נוחלין <span class=\"parenthesized\">(ב\"ב דף קכב.)</span> מפורש:"
+  },
+  "Rashi on Sanhedrin 16a:4:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:3:1",
+      "Rashi on Sanhedrin 16a:5:1",
+      "Rashi on Sanhedrin 15b:8:1",
+      "Rashi on Sanhedrin 15b:9:1",
+      "Rashi on Sanhedrin 16a:1:1"
+    ],
+    "generatedAt": "2026-11-11T19:27:42.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"ג דקטלינן ביחיד</strong> - דדינא של שבט בסקילה אפ\"ה בדינא דרבים דיינינן ליה דבעי ע\"א ולא בדינא דיחיד בכ\"ג:"
+  },
+  "Rashi on Sanhedrin 16a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:5:1",
+      "Rashi on Sanhedrin 16a:5:2",
+      "Sanhedrin 112a:4-6",
+      "Rashi on Sanhedrin 16a:1:1",
+      "Rashi on Sanhedrin 16a:1:2",
+      "Rashi on Sanhedrin 16a:2:1",
+      "Rashi on Sanhedrin 16a:3:1",
+      "Rashi on Sanhedrin 16a:4:1",
+      "Sanhedrin 16a:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Sanhedrin 16a:5"
+    ],
+    "generatedAt": "2026-11-11T19:31:35.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבי חמא בר' יוסי</strong> - לקמן:"
+  },
+  "Rashi on Sanhedrin 16a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T19:36:39.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשעריך</strong> - לב\"ד שבשעריך דהיינו סנהדרי קטנה ואי אתה מוציא כולה אלא בסנהדרי גדולה:"
+  },
+  "Rashi on Sanhedrin 16a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T19:39:39.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתיא הזדה הזדה</strong> - בנביא השקר כתיב <span class=\"parenthesized\">(דברים י״ח:כ׳)</span> אך הנביא אשר יזיד ובזקן ממרא כתיב <span class=\"parenthesized\">(שם יז)</span> והאיש אשר יעשה בזדון מה זקן אינו נהרג אא\"כ המרה על פי ב\"ד הגדול דכתיב <span class=\"parenthesized\">(שם)</span> וקמת ועלית אף נביא אינו נידון אלא בבית דין הגדול:"
+  },
+  "Rashi on Sanhedrin 16a:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:8:2",
+      "Rashi on Sanhedrin 16a:8:3"
+    ],
+    "generatedAt": "2026-11-11T19:40:23.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא הזדה</strong> - דזקן ממרא:"
+  },
+  "Rashi on Sanhedrin 16a:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:8:1"
+    ],
+    "generatedAt": "2026-11-11T19:43:36.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי כתיבא בקטלא כתיבא</strong> - וקטלא דידיה בעשרים ושלשה דכי כתיב וקמת ועלית בהוראה כתיב שבאין לשואלו מה יורו וחוזר לעירו ואם הורה לעשות כבתחילה נידון כשאר המומתין בכ\"ג דהא לא תני במתניתין <span class=\"parenthesized\">(דף ב.)</span> ולא את זקן ממרא:"
+  },
+  "Rashi on Sanhedrin 16a:8:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:8:1",
+      "Rashi on Sanhedrin 16a:8:2",
+      "Rashi on Sanhedrin 16a:7:1",
+      "Rashi on Sanhedrin 16a:9:1",
+      "Rashi on Sanhedrin 16a:10:1",
+      "Rashi on Sanhedrin 15b:11:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1",
+      "Steinsaltz on Sanhedrin 16a:8:1",
+      "Rashi on Sanhedrin 16a:1:1",
+      "Rashi on Sanhedrin 16a:1:2"
+    ],
+    "generatedAt": "2026-11-11T19:46:46.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר דבר מהמראתו</strong> - בנביא בקטליה כתיב <span class=\"parenthesized\">(דברים יז)</span> אשר יזיד לדבר דבר וגו' ובהמראת זקן כתיב <span class=\"parenthesized\">(שם)</span> ועשית ע\"פ הדבר:"
+  },
+  "Rashi on Sanhedrin 16a:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:9:1",
+      "Rashi on Sanhedrin 16a:9:2",
+      "Rashi on Sanhedrin 16a:8:3",
+      "Rashi on Sanhedrin 2a:9:2",
+      "Rashi on Sanhedrin 16a:5:1",
+      "Rashi on Sanhedrin 16a:5:2"
+    ],
+    "generatedAt": "2026-11-11T19:49:39.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליהדר זקן ממרא וניגמר</strong> - קטלי' בסנהדרי גדולה הזדה הזדה מנביא דהא בקטלא דתרווייהו כתיב הזדה ונימא מה נביא בסנהדרי גדולה דהא גמרינן מהמראת זקן אף מיתת זקן בסנהדרי גדולה וניתני במתני' <span class=\"parenthesized\">(דף ב.)</span> ולא את הזקן ממרא אלא בב\"ד של ע\"א:"
+  },
+  "Rashi on Sanhedrin 16a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:9:1"
+    ],
+    "generatedAt": "2026-11-11T19:50:59.959Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 16a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר דבר</strong> - הך גזירה שוה דדבר דבר גמיר ליה האי תנא מרביה אבל הך דהזדה הזדה לא גמיר ליה מרביה וקל וחומר אדם דן מעצמו ואין אדם דן גזירה שוה מעצמו אלא אם כן קיבל מרבו הלכה למשה מסיני דאיכא למימר קרא למילתא אחריתא אתא וכן הלכה רווחת בישראל:"
+  },
+  "Tosafot on Sanhedrin 16a:20:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 16a:20:1",
+      "Rashi on Sanhedrin 16a:20:2",
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-11T20:14:00.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 16a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הבור מתמלא מחולייתו</strong> - פ\"ה כגון אם עקר חוליא מבור עמוק וחזר והשליכו לתוכו אין הבור מתמלא ממנה ולא יתכן דאמרינן בפ' הרואה <span class=\"parenthesized\">(ברכות דף נט.)</span> כשנטל הקב\"ה ב' כוכבים מכימה והביא מבול לעולם ומילא הנקב מעש ופריך ולימלייה מדידיה ומשני אין הבור מתמלא מחולייתו וי\"מ דקרקע שרגילין להניח על שפת הבור קורין חוליא כי ההיא דתנן <span class=\"parenthesized\">(עירובין דף פג:)</span> חוליית הבור והסלע שהם גבוהים עשרה וקאמר אין הבור מתמלא מאותה חוליא ור\"ת פירש מחולייתו היינו ממקורו דאין מתמלא הבור מים ממקור נביעתו וכן מוכח במדרש דאמר אין הבור מתמלא מחולייתו אלא אם כן ממשיכין לו מים ממקום אחר:"
+  },
+  "Tosafot on Sanhedrin 16a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T19:25:52.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 16a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה תחילתה קלפי אורים ותומים</strong> - הא דאמר בריש הדר <span class=\"parenthesized\">(עירובין דף סג.)</span> גבי יהושע דלא אשכחן דאיצטריך ליה לאלעזר לשאול באורים ותומים לאו אחלוקת הארץ קאמר דגזירת הכתוב היא אלא בשאר דברים הצריכים לשאול באורים ותומים שהיה נגלה לו בנבואה:"
+  },
+  "Tosafot on Sanhedrin 16a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T19:38:43.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 16a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איש ואשה אתה מוציא לשעריך</strong> - הכא לא חשיב עיר איש ואף על גב דבפ' אלו דברים <span class=\"parenthesized\">(פסחים דף סו: ושם ודף עו.)</span> גבי פסח בטומאה אמר איש נדחה ואין ציבור נדחים ואפילו כל העיר טמאה נדחים לפסח שני עד דאיכא רוב ישראל שאני הכא משום דמצינו שחילק הכתוב בין יחידים למרובים כמו בין עיר הנדחת ליחיד:"
+  }
+}

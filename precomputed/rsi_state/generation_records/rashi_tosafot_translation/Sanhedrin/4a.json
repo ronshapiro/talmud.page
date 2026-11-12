@@ -1,0 +1,464 @@
+{
+  "Rashi on Sanhedrin 4a:10:1": {
+    "dependsOn": [
+      "Sanhedrin 4a:10",
+      "Rashi on Sanhedrin 4a:10:2"
+    ],
+    "generatedAt": "2026-11-10T23:44:26.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא</strong> - לב\"ה כולהו למצוה דהא כולהו צריכי למכתב למצוה ועיכוב דחדא מנא להו אימא אע\"פ שלא נתן כלום כיפר:"
+  },
+  "Rashi on Sanhedrin 4a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:10:1",
+      "Steinsaltz on Sanhedrin 4a:10"
+    ],
+    "generatedAt": "2026-11-10T23:45:25.474Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכדי</strong> - בלא כלום:"
+  },
+  "Rashi on Sanhedrin 4a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:45:47.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים</strong> - דפנות של סוכה:"
+  },
+  "Rashi on Sanhedrin 4a:11:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:11:1",
+      "Rashi on Sanhedrin 4a:11:2",
+      "Rashi on Sanhedrin 4a:11:3"
+    ],
+    "generatedAt": "2026-11-10T23:47:15.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהלכתן</strong> - שלימות:"
+  },
+  "Rashi on Sanhedrin 4a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:47:49.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו טפח</strong> - ברום י' טפחים:"
+  },
+  "Rashi on Sanhedrin 4a:11:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:11:1",
+      "Rashi on Sanhedrin 4a:11:2",
+      "Rashi on Sanhedrin 4a:11:3",
+      "Rashi on Sanhedrin 4a:11:4",
+      "Rashi on Sanhedrin 4a:12:1"
+    ],
+    "generatedAt": "2026-11-10T23:48:37.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למסורת</strong> - שנמסרה כתיבתו לכתבו חסירה:"
+  },
+  "Rashi on Sanhedrin 4a:12:1": {
+    "dependsOn": [
+      "Rashi on Sukkah 6b:10:2"
+    ],
+    "generatedAt": "2026-11-10T23:49:32.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתאי הלכתא</strong> - דאמרינן התם מחיצות הלמ\"מ ומוקמינן לה לגרוע לדופן אתיא:"
+  },
+  "Rashi on Sanhedrin 4a:14:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:14:1",
+      "Rashi on Sanhedrin 4a:14:2",
+      "Rashi on Sanhedrin 4a:14:3",
+      "Rashi on Sanhedrin 4a:14:4"
+    ],
+    "generatedAt": "2026-11-10T23:50:52.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפשות</strong> - היינו דם דאיקרי נפש:"
+  },
+  "Rashi on Sanhedrin 4a:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:14:1",
+      "Rashi on Sanhedrin 4a:14:2",
+      "Rashi on Sanhedrin 4a:14:3",
+      "Rashi on Sanhedrin 4a:14:4"
+    ],
+    "generatedAt": "2026-11-10T23:51:43.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביעית</strong> - היא שיעור חיותו של אדם ובלא\"ה לא איקרי מת עד שיהא בו שיעור מיתה"
+  },
+  "Rashi on Sanhedrin 4a:14:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:14:1",
+      "Rashi on Sanhedrin 4a:14:2",
+      "Rashi on Sanhedrin 4a:14:3",
+      "Rashi on Sanhedrin 4a:14:4"
+    ],
+    "generatedAt": "2026-11-10T23:52:44.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי נפשות</strong> - משמע משני ב\"א וכתב מת כדי מיתה היינו רביעית:"
+  },
+  "Rashi on Sanhedrin 4a:14:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:14:1",
+      "Rashi on Sanhedrin 4a:14:2",
+      "Rashi on Sanhedrin 4a:14:3",
+      "Rashi on Sanhedrin 4a:14:4"
+    ],
+    "generatedAt": "2026-11-10T23:53:39.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:14:4"
+    ],
+    "sourceText": "ורבנן פליגי עליה ואמרי עד שיהא השיעור מאדם אחד דנפשת חסר כתיב:"
+  },
+  "Rashi on Sanhedrin 4a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:01:41.896Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחלב אמו</strong> - יכול בחֵלֶב אמו אבל בחָלָב מותר לבשל:"
+  },
+  "Rashi on Sanhedrin 4a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:13:56.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש אם למקרא</strong> - בתר קרייה אזלינן דהיא עיקר:"
+  },
+  "Rashi on Sanhedrin 4a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:22:10.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דאמרן</strong> - ירשיעון קרינן:"
+  },
+  "Rashi on Sanhedrin 4a:4:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:3:1",
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:2:1",
+      "Rashi on Sanhedrin 4a:5:2",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5",
+      "Rashi on Sanhedrin 3b:4:1",
+      "Steinsaltz on Sanhedrin 4a:4:1",
+      "Steinsaltz on Sanhedrin 4a:4",
+      "Tosafot on Sanhedrin 4a:4:1"
+    ],
+    "generatedAt": "2026-11-10T23:25:53.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרא אני</strong> - יכולני לקרות וטמאה שבעים כנדתה <span class=\"parenthesized\">(ויקרא י״ב:ה׳)</span> דהא לא כתיב שבועיים מלא:"
+  },
+  "Rashi on Sanhedrin 4a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:5:2",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "generatedAt": "2026-11-10T23:30:08.124Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא בזכר</strong> - שבעת ימים:"
+  },
+  "Rashi on Sanhedrin 4a:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "generatedAt": "2026-11-10T23:30:54.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטיהר</strong> - שלשים ושלשת ימים:"
+  },
+  "Rashi on Sanhedrin 4a:5:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:5:2",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "generatedAt": "2026-11-10T23:31:29.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטימא בנקבה</strong> - לשבועיים:"
+  },
+  "Rashi on Sanhedrin 4a:5:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:5:2",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "generatedAt": "2026-11-10T23:32:04.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטיהר</strong> - ששים יום וששת ימים:"
+  },
+  "Rashi on Sanhedrin 4a:5:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:5:1",
+      "Rashi on Sanhedrin 4a:5:2",
+      "Rashi on Sanhedrin 4a:5:3",
+      "Rashi on Sanhedrin 4a:5:4",
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "generatedAt": "2026-11-10T23:32:44.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפלים</strong> - וטומאה דיולדת זכר שבעה הלכך דנקבה שבועיים:"
+  },
+  "Rashi on Sanhedrin 4a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:34:36.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הניתנין</strong> - עולה ושלמים ואשם הטעונין שתי מתנות שהן ד' שנתנם במתנה אחת:"
+  },
+  "Rashi on Sanhedrin 4a:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4a:7:1"
+    ],
+    "generatedAt": "2026-11-10T23:35:07.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיפר</strong> - דכתיב ודם זבחיך ישפך שפיכה אחת במשמע:"
+  },
+  "Rashi on Sanhedrin 4a:9:1": {
+    "dependsOn": [
+      "Sanhedrin 4a:9",
+      "Rashi on Zevachim 38a:7:2",
+      "Steinsaltz on Sanhedrin 4a:9",
+      "Rashi on Sanhedrin 4a:7:1",
+      "Rashi on Sanhedrin 4a:7:2",
+      "Zevachim 36b:16",
+      "Zevachim 36b:17",
+      "Zevachim 36b:18",
+      "Zevachim 36b:19",
+      "Zevachim 36b:20"
+    ],
+    "generatedAt": "2026-11-10T23:43:25.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרנות קרנת קרנת</strong> - <span class=\"parenthesized\">(ויקרא ד)</span> בחטאת של מזבח החיצון כתיב בשעיר דנשיא כתיב קרנת חסר ובכבשה דיחיד כתיב <span class=\"parenthesized\">(שם)</span> קרנות מלא ובשעיר' דיחיד כתיב <span class=\"parenthesized\">(שם)</span> קרנת חסר אבל הנך דפר כהן משיח והעלם דבר במזבח הפנימי כתיב <span class=\"parenthesized\">(שם)</span> והתם כולהו מודו דמתנה אחת מעכבת בהן וב\"ש אזלי בתר קרייה:"
+  },
+  "Tosafot on Sanhedrin 4a:14:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 4a:14:2",
+      "Tosafot on Sanhedrin 4a:1:1",
+      "Tosafot on Sanhedrin 4a:2:1",
+      "Tosafot on Sanhedrin 4a:4:1",
+      "Tosafot on Sanhedrin 4a:5:1",
+      "Tosafot on Sanhedrin 2a:1:1",
+      "Tosafot on Sanhedrin 3b:1:1",
+      "Rashi on Sanhedrin 4a:2:1",
+      "Rashi on Sanhedrin 4a:5:1",
+      "Sanhedrin 4a:14",
+      "Maharsha on Sanhedrin 4a:4",
+      "Maharsha on Sanhedrin 4a:5",
+      "Rashi on Sanhedrin 4a:14:1",
+      "Rashi on Sanhedrin 4a:14:2",
+      "Rashi on Sanhedrin 4a:14:3",
+      "Rashi on Sanhedrin 4a:14:4",
+      "Chokhmat Shlomo on Sanhedrin 4a:9",
+      "Chokhmat Shlomo on Sanhedrin 4a:10"
+    ],
+    "generatedAt": "2026-11-10T23:58:39.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניין לרביעית דם כו'</strong> - תימה למ\"ל קרא להכי מ\"ש משני חצאי זיתים מב' מתים שמטמא ובפרק בהמה המקשה <span class=\"parenthesized\">(חולין דף עב:)</span> נמי דבעי רבי ישמעאל קרא לרביעית דם הבא מן המת שמטמא למה לי קרא תיפוק ליה מידי דהוה אבשר המת דדם חשוב כבשר כדמוכח בהמוציא יין <span class=\"parenthesized\">(שבת דף עז. ושם:)</span> ובהמנחות והנסכים <span class=\"parenthesized\">(מנחות דף קד. ושם)</span> גבי דם נבלה דמטמא ברביעית הואיל ויכול לקרוש ולעמוד על כזית מטמא מידי דהוה אבשר ויש לומר דשאני מת דאפי' בשר עצמו לא היה מטמא אי לאו משום דמקומו נעשה צלקת כדאמר במסכת נדה בפרק דם הנדה <span class=\"parenthesized\">(נדה דף נה.)</span> דבעי אין גזעו מחליף הלכך דם כיון דגזעו מחליף אי לאו דרבי קרא הייתי מטהר והא דנקט מניין לרביעית דם הבא משני מתים שהוא מטמא לאו משום שיהיה פשוט לו במת אחד בלאו האי קרא דאי במת אחד היה טמא ה\"ה בשני מתים אי ליכא מיעוטא דהא תנן בפרק קדשי מזבח <span class=\"parenthesized\">(זבחים דף יז. ושם)</span> כל שטומאתו ושיעורו שוה מצטרפין זה עם זה והא דמטהרי רבנן דפליגי אר\"ע משום דמעטיה קרא כדאמר נפשת כתיב והא דאיצטריך קרא בדם השרץ בפרק קדשי מזבח <span class=\"parenthesized\">(שם)</span> אע\"ג דחשיב כבשר מכל מקום איצטריך לדם צלול דמטמא בכעדשה אף על גב דכי מיקריש מפחית טובא ולהכי תנן התם <span class=\"parenthesized\">(שם)</span> דם השרץ ובשרו מצטרפין דשיעורן שוה אבל דם נבלה ובשרה לא וכן מוכח בירושלמי בריש המוציא יין דאמר דם הנבלה טמא והתנן דם השרץ ובשרו מצטרפין ואין לנו כיוצא בו ומיהו קשה דבפרק כל שעה <span class=\"parenthesized\">(פסחים דף כב. ושם)</span> לא משני אקושיא דדם כשהותרה נבלה היא ודמה הותרה כדמשני אקושיא דחלב וגיד משמע דדם לא חשיב כבשר לכך צ\"ל שיש שום ריבוי דמרבינן ביה דם נבלה ולבתר דמרבינן מסתבר לאוקמי ברביעית שיכול לקרוש ולעמוד על כזית אבל קשה דאם כן דם שרץ נמי דאית ביה ריבויא נבעי מיניה כל כך שיכול לקרוש ולעמוד על כעדשה:"
+  },
+  "Tosafot on Sanhedrin 4a:14:2": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 4a:14:1",
+      "Chullin 72a:8",
+      "Chullin 72a:9",
+      "Chullin 72a:10",
+      "Tosafot on Sanhedrin 4a:2:1",
+      "Tosafot on Sanhedrin 4a:5:1",
+      "Tosafot on Chullin 72a:10:1"
+    ],
+    "generatedAt": "2026-11-11T00:01:05.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן נפשת כתיב</strong> - תימה דרבי ישמעאל סבר לקמן יש אם למסורת והיינו כרבנן דדרשי נפשת ואם כן בפרק בהמה המקשה <span class=\"parenthesized\">(חולין דף עב.)</span> דפליגי ר' ישמעאל ור\"ע דדריש ר' ישמעאל הנוגע במת בנפש דרביעית דם מטמא וקאמר ר\"ע לטעמיה דאמר אף משני מתים מטמא לרבי ישמעאל למה לי תרי קראי בדם המת דמטמא:"
+  },
+  "Tosafot on Sanhedrin 4a:1:1": {
+    "dependsOn": [
+      "Sanhedrin 4a:1",
+      "Tosafot on Sanhedrin 4a:1:1",
+      "Shabbat 55b:16"
+    ],
+    "generatedAt": "2026-11-10T23:13:21.781Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן ירשיען כתיב</strong> - וישכבן כתיב דפרק במה בהמה <span class=\"parenthesized\">(שבת דף נה:)</span> אפי' רבי מודה משום דקרא מוכח דפנחס לא חטא שייחסו הכתוב:"
+  },
+  "Tosafot on Sanhedrin 4a:2:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 4a:2:1",
+      "Maharsha on Sanhedrin 4a:2:1",
+      "Sukkah 45b:8",
+      "Sukkah 45b:9"
+    ],
+    "generatedAt": "2026-11-10T23:21:34.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולהו סבירא להו יש אם למקרא</strong> - הא דלא חשיב הכא רבי יוחנן בן ברוקא דמסכת סוכה פרק לולב וערבה <span class=\"parenthesized\">(סוכה דף מה:)</span> דאמר חריות של דקל היו מביאין ומפרש בגמרא משום דכתיב כפות אחת ללולב ואחת <span class=\"parenthesized\">(לערבה)</span> למזבח ורבנן מפרשי' כפת כתיב משום דרבי לוי מפרש התם טעמא אחרינא ונראה דדוקא הכא שמקרא ומסורת מכחשי אהדדי אית להו יש אם למקרא אבל היכא דלא מכחשו אהדדי דרשי תרווייהו דהא רבי ורבי עקיבא ור' שמעון דסברי הכא יש אם למקרא מחייבין בפרק ספק אכל <span class=\"parenthesized\">(כריתות דף יז:)</span> ובפרק דם שחיטה <span class=\"parenthesized\">(כריתות דף כב:)</span> בחתיכה אחת ספק של חלב ספק של שומן אשם תלוי משום דמצות כתיב אלא היינו משום דקרא ומסורת דהתם לא מכחשי אהדדי ואפשר לקיים שניהם שבא המקרא דמצוות קרינן לחייב אשני מצות דהיינו ב' חתיכות והמסורת בא לחייב על כל מצוה אחת ובפרק כל שעה <span class=\"parenthesized\">(פסחי' דף לו. ושם)</span> נמי דריש ר\"ע גבי לחם עוני מקרא ומסורת ובפרק לולב הגזול <span class=\"parenthesized\">(סוכה דף לד:)</span> תנא נמי ר\"ע אומר כשם שלולב אחד כו' ומפרש בגמרא לולב אחד משום דכתיב כפת וכן ר\"ש דריש בפ\"ק דקדושין <span class=\"parenthesized\">(דף יח:)</span> גבי בבגדו בה מקרא ומסורת ומיהו קשה מר' עקיבא דלא דריש התם אלא מקרא לחוד ואמאי לא דריש התם תרווייהו כמו גבי לחם עוני וע\"ק דמסקינן בפרק קמא דסוכה <span class=\"parenthesized\">(דף ו:)</span> לחד לישנא דכ\"ע רבי שמעון ורבנן יש אם למסורת ובפרק כיצד צולין <span class=\"parenthesized\">(פסחים דף פו:)</span> גבי בבית אחד יאכל קסבר יש אם למקרא וע\"ק דפ\"ק דסוכה <span class=\"parenthesized\">(ד' ט:)</span> פסלינן לכ\"ע סוכה תחת סוכה מדכתיב בסכת ולא אמרינן יש אם למקרא:"
+  },
+  "Tosafot on Sanhedrin 4a:4:1": {
+    "dependsOn": [
+      "Sanhedrin 4a:4",
+      "Zevachim 38b:1",
+      "Zevachim 38b:2",
+      "Zevachim 38b:3",
+      "Zevachim 38b:4",
+      "Zevachim 38a:1",
+      "Zevachim 38a:2",
+      "Zevachim 38a:3",
+      "Rashi on Zevachim 38a:3:1",
+      "Tosafot on Zevachim 38a:3:1",
+      "Tosafot on Sanhedrin 4a:5:1",
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-10T23:29:31.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרא אני שבעים</strong> - ה\"מ לשנויי כדמשני בפ' ב\"ש <span class=\"parenthesized\">(זבחים ד' לח:)</span> משום דכתיב כנדתה פירוש כך יש להוסיף בנקבה על ימי שבע טומאה דזכר:"
+  },
+  "Tosafot on Sanhedrin 4a:5:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 4a:4:1",
+      "Chokhmat Shlomo on Sanhedrin 4a:1",
+      "Chokhmat Shlomo on Sanhedrin 4a:2",
+      "Steinsaltz comment #1 on Sanhedrin 4a:5"
+    ],
+    "generatedAt": "2026-11-10T23:33:55.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה כשטיהר בזכר</strong> - ה\"מ למימר מה בזכר ימי טהרה מרובים על ימי טומאה אף בנקבה ימי טהרה מרובים על ימי טומאה:"
+  },
+  "Tosafot on Sanhedrin 4a:7:1": {
+    "dependsOn": [
+      "Chidushei Halachot on Sanhedrin 4a:1",
+      "Zevachim 36b:20",
+      "Tosafot on Zevachim 36b:20:1"
+    ],
+    "generatedAt": "2026-11-10T23:38:23.174Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הניתנין על המזבח החיצון שנתנן במתנה אחת כיפר</strong> - בזבחים בריש ב\"ש <span class=\"parenthesized\">(זבחים דף לו:)</span> תניא מניין לניתנין על מזבח החיצון שנתנו במתנה אחת כיפר תלמוד לומר ודם זבחיך ישפך ונראה דהך דרשה אתיא אליבא דבית שמאי דלב\"ה לא צריך קרא דלא עדיפי מחטאת וכן משמע התם בסוף הסוגיא דקאמר דלהנך תנאי דמפקי האי דם זבחיך ישפך לדרשה אחרינא כל הניתנין על המזבח החיצון שנתנו במתנה אחת כיפר מנא להו ומשני סברי להו כבית הלל דאמרי אף חטאת שנתנו במתנה אחת כיפר וילפי כולהו מחטאת ותימה למ\"ל קרא דמהי תיתי דמעכבי הא אפילו לב\"ש לא ילפי מחטאת דאיכא למיפרך שכן חטאת וד' קרנות ועוד דמשמע התם דאפילו לב\"ה ה\"א דמעכבי אי לאו דילפי מחטאת ונראה לפרש דהיינו טעמא משום דמתנות של קרנות נפקא לן בפרק איזהו מקומן <span class=\"parenthesized\">(זבחים דף נג:)</span> מדכתיב סביב והוה חשבינא כולה במתנה אחת א\"נ משום דכתיב סביב טובא ושינה הכתוב לעכב להכי איצטריך קרא בין לב\"ש בין לב\"ה:"
+  },
+  "Tosafot on Sanhedrin 4a:8:1": {
+    "dependsOn": [
+      "Sanhedrin 4a:8"
+    ],
+    "generatedAt": "2026-11-10T23:40:10.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושתים לעכב</strong> - וא\"ת הוה ליה למימר שלש לעכב דכי לא כתיב נמי אלא ד' הוה ידעינא אחת לעכב דכפרה בכדי לא אשכחן כדאמרי בית הלל ואכתי מייתרי תרי לרבות שנים וי\"ל דבית שמאי לית להו ההיא סברא א\"נ קסברי כיון דאיכא שפיכות דמים ליסוד לאו כפרה בכדי הוא:"
+  }
+}

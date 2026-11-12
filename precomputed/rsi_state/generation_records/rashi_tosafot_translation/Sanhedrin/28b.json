@@ -1,0 +1,481 @@
+{
+  "Rashi on Sanhedrin 28b:11:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:11",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:11:2",
+      "Rashi on Sanhedrin 28b:11:3",
+      "Rashi on Sanhedrin 28b:11:4"
+    ],
+    "generatedAt": "2026-11-12T13:16:50.245Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי דעתיך</strong> - דלא חשבת ליה קרוב:"
+  },
+  "Rashi on Sanhedrin 28b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T13:17:55.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אונן</strong> - אם מתה אינו נאסר בקדשים מחמת אנינות:"
+  },
+  "Rashi on Sanhedrin 28b:11:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:11:2",
+      "Rashi on Sanhedrin 28b:11:3",
+      "Rashi on Sanhedrin 28b:11:4",
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Rashi on Sanhedrin 28b:17:3"
+    ],
+    "generatedAt": "2026-11-12T13:20:13.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מטמא לה</strong> - אם כהן הוא ואית דל\"ג אינה מטמאה וכן היא אינה נאסרת באנינות מיתתו בקדשים ואינה מטמאה אינה מצווה להתעסק בו ואיידי דתניא לא אוננת תנא ולא מיטמאת ולאו דווקא דנשים דכהונה לא הוזהרו על הטומאה:"
+  },
+  "Rashi on Sanhedrin 28b:11:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:11:2",
+      "Rashi on Sanhedrin 28b:11:3",
+      "Rashi on Sanhedrin 28b:11:4",
+      "Sanhedrin 28b:11",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 28a:2:1",
+      "Rashi on Sanhedrin 28a:3:1",
+      "Rashi on Sanhedrin 28b:1:1",
+      "Rashi on Sanhedrin 28b:8:1"
+    ],
+    "generatedAt": "2026-11-12T13:22:43.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גובה כתובתה</strong> - בדכתב לה מן האירוסין מוקמינן לה בשנים אוחזין <span class=\"parenthesized\">(ב\"מ דף יח.)</span> ואהא דקתני לא מטמא לה קא סמכת ואמרת לאו קרוב הוא:"
+  },
+  "Rashi on Sanhedrin 28b:12:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:11",
+      "Rashi on Sanhedrin 28b:12:2"
+    ],
+    "generatedAt": "2026-11-12T13:23:19.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם</strong> - גבי טומאה וירושה:"
+  },
+  "Rashi on Sanhedrin 28b:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:12:1",
+      "Rashi on Sanhedrin 28b:8:1",
+      "Rashi on Sanhedrin 28b:8:2",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Sanhedrin 28b:11",
+      "Sanhedrin 28b:12",
+      "Rashi on Sanhedrin 28b:1:1",
+      "Rashi on Sanhedrin 28b:1:2",
+      "Rashi on Sanhedrin 28b:5:1",
+      "Rashi on Sanhedrin 28a:24:1",
+      "Tosafot on Sanhedrin 28a:24:1",
+      "Rashi on Sanhedrin 27b:1:1",
+      "Rashi on Sanhedrin 27b:2:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T13:26:03.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשארו תלה רחמנא</strong> - כדכתיב <span class=\"parenthesized\">(ויקרא כ״א:ב׳)</span> כי אם לשארו הקרוב ואמר מר <span class=\"parenthesized\">(יבמות דף כב:)</span> שארו זו אשתו וכן בירושת הבעל לשארו הקרוב אליו ממשפחתו וירש אותה מיכן שהבעל יורש את אשתו ביש נוחלין <span class=\"parenthesized\">(ב\"ב קט:)</span>:"
+  },
+  "Rashi on Sanhedrin 28b:13:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:13",
+      "Rashi on Sanhedrin 28b:13:1",
+      "Chokhmat Shlomo on Sanhedrin 28b:5",
+      "Steinsaltz on Sanhedrin 28b:13",
+      "Sanhedrin 27b:10",
+      "Sanhedrin 27b:11",
+      "Sanhedrin 27b:12",
+      "Sanhedrin 27b:13",
+      "Rashi on Sanhedrin 28b:1:1",
+      "Rashi on Sanhedrin 28b:1:2",
+      "Rashi on Sanhedrin 28b:8:1",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 27b:10:1",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 28a:2:1"
+    ],
+    "generatedAt": "2026-11-12T13:34:36.595Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיסו</strong> - לבדו אבל בנו וחתנו כשרים לגיסו ורבי יוסי פליג אמתני' בתרתי חדא דקתני מתני' בגיסו בן וחתן ופליג נמי אבעל אחות אמו דקתני מתני' דהוה קרוב וכן גם הוא קרוב לו דהוי לו בן גיסו פסול הוא לו משום דאיהו לדידיה בעל אחות אמו אבל משום קורבה דבן גיסו לא מיפסיל ונפקא מינה דחתן גיסו כשר להעיד לו <span class=\"parenthesized\">(והוא הדין לגיסו והיינו דקתני בברייתא בתרייתא ר' יהודה אומר חורגו אף חורגו דמודה נמי בגיסו ואתא ר' יוסי למימר גיסו לבדו והוא הדין לחורגו)</span> זה\"ו נוס\"ח אח\"ר בפי' ונראה גיסו לבדו ורבי יוסי פליג אמתניתין בחדא דקתני מתני' גיסו ובנו וחתנו <span class=\"parenthesized\">(כשרים לגיסו)</span> דאבעל אחות אמו דקתני מתניתין דהוי קרוב וכן גם הוא קרוב לו דהוי ליה בן גיסו לא פליג רבי יוסי עלה ומודה הוא דבן גיסו פסול לו משום דאיהו לדידיה בעל אחות אמו אבל משום קורבה דבן גיסו לא מפסיל ונפקא מינה דחתן גיסו כשר וכו':"
+  },
+  "Rashi on Sanhedrin 28b:14:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:14",
+      "Rashi on Sanhedrin 28b:13:1",
+      "Rashi on Sanhedrin 28b:14:1",
+      "Rashi on Sanhedrin 28b:15:1",
+      "Chokhmat Shlomo on Sanhedrin 28b:6",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:11:2",
+      "Rashi on Sanhedrin 28b:11:3",
+      "Rashi on Sanhedrin 28b:12:1",
+      "Sanhedrin 25a:4"
+    ],
+    "generatedAt": "2026-11-12T13:36:30.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי גיסו דקאמר רבי יוסי אף גיסו</strong> - ומר אמר חדא ומר אמר חדא ולא פליגי:"
+  },
+  "Rashi on Sanhedrin 28b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:15",
+      "Rashi on Sanhedrin 28b:14:1",
+      "Rashi on Sanhedrin 28b:15:1",
+      "Rashi on Sanhedrin 28b:16:1",
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Rashi on Sanhedrin 28b:17:3",
+      "Maharshal on Sanhedrin 28b:13:1",
+      "Maharshal on Sanhedrin 28b:14:1",
+      "Maharshal on Sanhedrin 28b:17:1",
+      "Steinsaltz on Sanhedrin 28b:15"
+    ],
+    "generatedAt": "2026-11-12T13:40:14.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:15:1"
+    ],
+    "sourceText": "הכי גרסינן אלא הכי קאמר חורגו לבדו אבל גיסו הוא ובנו וחתנו ואתא רבי יוסי למימר גיסו לבדו אבל חורגו הוא ובנו וחתנו:"
+  },
+  "Rashi on Sanhedrin 28b:16:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:15:1",
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 28a:2:1",
+      "Sanhedrin 28b:16",
+      "Rashi on Sanhedrin 28a:21:1",
+      "Rashi on Sanhedrin 28a:21:2"
+    ],
+    "generatedAt": "2026-11-12T13:42:46.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא דתני רבי חייא כו' לא רבי יהודה ולא ר' יוסי</strong> - דלר' יהודה ט' אבות הוויין במתני' בר מחורגו וכן לר' יוסי תשעה הווין:"
+  },
+  "Rashi on Sanhedrin 28b:17:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Rashi on Sanhedrin 28b:17:3",
+      "Rashi on Sanhedrin 28b:16:1",
+      "Maharshal on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:15:1",
+      "Chokhmat Shlomo on Sanhedrin 28b:7",
+      "Steinsaltz on Sanhedrin 28b:17",
+      "Tosafot on Sanhedrin 28b:17:1",
+      "Sanhedrin 28b:13",
+      "Sanhedrin 28b:14",
+      "Sanhedrin 28b:15",
+      "Sanhedrin 28b:16",
+      "Sanhedrin 28b:17"
+    ],
+    "generatedAt": "2026-11-12T13:46:18.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:17:1"
+    ],
+    "sourceText": "אלא חורגו לבדו אבל גיסו הוא ובנו וחתנו ואתא ר' יוסי למימר גיסו לבדו וכל שכן חורגו:"
+  },
+  "Rashi on Sanhedrin 28b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T13:47:47.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתני' רבי יהודה</strong> - דקתני בן וחתן בגיסו:"
+  },
+  "Rashi on Sanhedrin 28b:17:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Sanhedrin 28b:17",
+      "Sanhedrin 28b:6",
+      "Sanhedrin 28b:13",
+      "Sanhedrin 28b:14",
+      "Rashi on Sanhedrin 28b:16:1",
+      "Sanhedrin 27b:10",
+      "Tosafot on Sanhedrin 28b:17:1",
+      "Maharshal on Sanhedrin 28b:17:1",
+      "Steinsaltz on Sanhedrin 28b:17",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:11:2",
+      "Rashi on Sanhedrin 28b:12:1",
+      "Rashi on Sanhedrin 28b:14:1",
+      "Rashi on Sanhedrin 28b:15:1",
+      "Rashi on Sanhedrin 28b:13:1"
+    ],
+    "generatedAt": "2026-11-12T13:53:34.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברייתא ר' יוסי</strong> - אפיק גיסו וחורגו הוי ח' אבות ובנים וחתנים ואית דמוקמי להאי בן גיסו דקא מכשר ר' יוסי בבן שיש לו לגיסו מאשה אחרת כי היכי דלא לפלוג ר' יוסי אבעל אחות אמו ולא מיתוקמ' שפיר דכל בניהם דמתני' מאותה אשה קאמר ועוד אי מאשה אחרת מכשיר ר' יוסי מכלל דתנא דידן מאשה אחרת נמי פסול משום קרוב מחמת קרוב תיקשי לרב חסדא דאכשר באחי האח דהשתא בן גיסו פסול משום אחי בן אחות אשתו אחי האח מיבעיא:"
+  },
+  "Rashi on Sanhedrin 28b:19:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Rashi on Sanhedrin 28b:11:1",
+      "Rashi on Sanhedrin 28b:12:1"
+    ],
+    "generatedAt": "2026-11-12T13:57:53.987Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כר' יוסי</strong> - קס\"ד כר' יוסי דמתני' דלא פסול אלא קרוב הראוי לירש וגיסו אינו ראוי ליורשו:"
+  },
+  "Rashi on Sanhedrin 28b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:1",
+      "Rashi on Sanhedrin 28b:1:2"
+    ],
+    "generatedAt": "2026-11-12T13:04:28.886Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוילי</strong> - קלפים:"
+  },
+  "Rashi on Sanhedrin 28b:1:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:1:1",
+      "Sanhedrin 28b:1"
+    ],
+    "generatedAt": "2026-11-12T13:06:06.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באשת חורגו</strong> - על נכסי מלוג שלה בהשפטה עם אדם מן השוק ובנשי שאר קרובים לא איבעי להו דכיון דבניהם פסולין לו והוא להם פסול אף לנשים לפי שהבנים ראויין לירש את אמן אבל חורגו דבנו כשר מיבעי' לן באשתו:"
+  },
+  "Rashi on Sanhedrin 28b:20:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:20"
+    ],
+    "generatedAt": "2026-11-12T13:58:36.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפסיל בגיסו</strong> - דקתני גיסו לבדו:"
+  },
+  "Rashi on Sanhedrin 28b:21:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:1:2",
+      "Rashi on Sanhedrin 28b:8:1"
+    ],
+    "generatedAt": "2026-11-12T14:00:12.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ס\"ד</strong> - דהא בהדיא פריש שמואל לפסולא דגיסו כגון אנא ופנחס שהיה אחיו וגיסו מכלל דגיסו דעלמא כשרין:"
+  },
+  "Rashi on Sanhedrin 28b:22:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:22",
+      "Rashi on Sanhedrin 28b:21:1",
+      "Sanhedrin 28b:20"
+    ],
+    "generatedAt": "2026-11-12T14:02:30.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום גיסו</strong> - ושמואל פירושא דגיסו אתא לאשמעי':"
+  },
+  "Rashi on Sanhedrin 28b:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:03:02.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - למקבל מתנה:"
+  },
+  "Rashi on Sanhedrin 28b:23:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:23:1",
+      "Gittin 3b:4"
+    ],
+    "generatedAt": "2026-11-12T14:06:29.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיל קנייה בעדי מסירה</strong> - אם יש לך עדים אחרים שמסר לך שטר זה בפניהם הביאם ויעידו ותהיה שלך דסבר כרבי אלעזר דאמרי' במסכת גיטין <span class=\"parenthesized\">(ד' ג:)</span> אפי' לא חתמו בו עדים אלא שנתנו לה בפני עדים כשר וגובה מנכסים משועבדים שאין העדים חותמים על הגט אלא מפני תקון העולם:"
+  },
+  "Rashi on Sanhedrin 28b:24:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:24",
+      "Rashi on Sanhedrin 28b:23:1",
+      "Rashi on Sanhedrin 28b:23:2",
+      "Rashi on Gittin 10b:16:1",
+      "Bava Metzia 7a:21"
+    ],
+    "generatedAt": "2026-11-12T14:08:07.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במזויף מתוכו</strong> - שחתמו בו עדים פסולים שהוא פסול דבמאי קני ליה בהאי שטרא האי שטרא חספא בעלמא הוא:"
+  },
+  "Rashi on Sanhedrin 28b:2:1": {
+    "dependsOn": [
+      "Sanhedrin 28b:2",
+      "Rashi on Sanhedrin 28b:1:1",
+      "Rashi on Sanhedrin 28b:1:2",
+      "Steinsaltz on Sanhedrin 28b:2",
+      "Sanhedrin 27b:10",
+      "Rashi on Sanhedrin 28b:12:1",
+      "Rashi on Sanhedrin 28b:14:1",
+      "Rashi on Sanhedrin 28b:16:1",
+      "Rashi on Sanhedrin 27b:10:8",
+      "Rashi on Sanhedrin 28a:1:1"
+    ],
+    "generatedAt": "2026-11-12T13:12:04.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל כאשתו</strong> - ואשה כבעלה והרי הוא כאילו חמיה ותנן <span class=\"parenthesized\">(דף כז:)</span> חמיו פסול קרוב הוא:"
+  },
+  "Rashi on Sanhedrin 28b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T13:13:28.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחי האח</strong> - בן שיש לבעל אמו מאשה אחרת פסול לו מפני שהוא אחי אחיו:"
+  },
+  "Rashi on Sanhedrin 28b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:8:1",
+      "Rashi on Sanhedrin 28b:8:2",
+      "Rashi on Sanhedrin 28b:8:3"
+    ],
+    "generatedAt": "2026-11-12T13:14:29.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבי חתן ואבי כלה</strong> - בן ראובן שנשא בת שמעון לא נתקרבו ראובן ושמעון בכך וכשרין להעיד זה לזה בכל עדיות ולא אמרינן בשביל בנו שנתקרב ראובן לשמעון נפסל ראובן לשמעון:"
+  },
+  "Rashi on Sanhedrin 28b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:8:1",
+      "Rashi on Sanhedrin 28b:8:2",
+      "Rashi on Sanhedrin 28b:8:3"
+    ],
+    "generatedAt": "2026-11-12T13:15:11.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא דמו</strong> - ראובן ושמעון להדדי:"
+  },
+  "Rashi on Sanhedrin 28b:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T13:15:40.532Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי אכלא לדנא</strong> - כמגופה שאינה דומה לחבית:"
+  },
+  "Rashi on Sanhedrin 28b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T13:16:15.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי מינה</strong> - לחוב לה ולזכות לבעל דינה דקרוב לא הוי כל זמן שלא נשאה ומיהו לעיולי לה לא מהימן דאדעתא דידיה קעביד:"
+  },
+  "Tosafot on Sanhedrin 28b:17:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28b:17:1",
+      "Rashi on Sanhedrin 28b:17:2",
+      "Rashi on Sanhedrin 28b:17:3",
+      "Sanhedrin 28b:20",
+      "Sanhedrin 28b:24",
+      "Chokhmat Shlomo on Sanhedrin 28b:7",
+      "Tosafot on Sanhedrin 28a:22:1"
+    ],
+    "generatedAt": "2026-11-12T13:56:19.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיסו לבדו וכ\"ש חורגו</strong> - אינם שוים דחורגו לבדו למעוטי בנו וחתנו וגיסו לבדו לא למעוטי בנו דהא ברייתא ר' יוסי היא אלמא חשיב בעל אחות אמו והיינו בן גיסו ולא אתא למעוטי אלא חתנו <span class=\"rashi-quotation\">כדפי' הקונטרס</span> ומדמסקי' דהלכה כר' יוסי דגיסו לבדו למעוטי חתנו יש לדקדק כ\"ש שנים הנשואים שתי בנות אחיות או בנות שני אחים דכשרים:"
+  },
+  "Tosafot on Sanhedrin 28b:24:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:09:33.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מודו רבי אלעזר במזויף מתוכו</strong> - מדמהדר ליה אביי הכי משמע דס\"ל כרבי אלעזר דאמר עידי מסירה כרתי אלמא קסבר אביי כתב לאחד ומסר לאחר זה שמסר לו קנה דהכי א\"ר אלעזר בסוף מי שהיה נשוי <span class=\"parenthesized\">(כתובות דף צד: ושם)</span> ותימה הא אביי הוא דאמר בפ\"ק דב\"מ <span class=\"parenthesized\">(דף יג. ושם)</span> עדיו בחתומיו זכין לו וי\"ל דההיא דכתב לאחר מיירי בב' שטרות היוצאים ביום אחד שזמנם שוה דכיון דלא מוכח מתוך השטר איזה קדם לא שייך למימר עדיו בחתומיו זכין לו ואזלינן בתר מסירה אבל היכא דמתוך השטר מוכח איזהו קדם עדיו בחתומיו זכין לו ואפילו נמסר לבסוף:"
+  }
+}

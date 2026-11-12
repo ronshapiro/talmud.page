@@ -1,0 +1,452 @@
+{
+  "Rashi on Sanhedrin 28a:17:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:17"
+    ],
+    "generatedAt": "2026-11-12T12:06:23.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה ליה שלישי בראשון</strong> - בני שלישי הוא ואחי אבא ראשון דאבא ואחיו ראשונים ואני שני ובני שלישי ואמר רב דשלישי לא יעיד בראשון:"
+  },
+  "Rashi on Sanhedrin 28a:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:06:57.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואנן</strong> - במתני' שני בשני ושני בראשון תנן אבל כולי האי לא פסיל מתני':"
+  },
+  "Rashi on Sanhedrin 28a:17:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:17:1",
+      "Rashi on Sanhedrin 28a:17:2",
+      "Sanhedrin 27b:13"
+    ],
+    "generatedAt": "2026-11-12T12:08:07.724Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני בשני</strong> - כגון אחי אביו ובנו אחי אבא לי ואני לו הרי ראשון בשני ושני בראשון בן אחי אבא לי ואני לו הרי שני בשני אבל בני לאחי אבא לא תנן:"
+  },
+  "Rashi on Sanhedrin 28a:18:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:18",
+      "Rashi on Sanhedrin 28a:17:1",
+      "Rashi on Sanhedrin 28a:17:2",
+      "Rashi on Sanhedrin 28a:17:3",
+      "Rashi on Sanhedrin 27b:1:1",
+      "Rashi on Sanhedrin 27b:2:1",
+      "Rashi on Sanhedrin 27b:3:1",
+      "Rashi on Sanhedrin 28a:3:1",
+      "Rashi on Sanhedrin 28a:21:1",
+      "Tosafot on Sanhedrin 28a:18:1",
+      "Rashi on Sanhedrin 23a:1:1",
+      "Rashi on Sanhedrin 24a:1:1",
+      "Rashi on Sanhedrin 25a:1:1",
+      "Rashi on Sanhedrin 26a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3"
+    ],
+    "generatedAt": "2026-11-12T12:11:44.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חתנו דקתני מתני'</strong> - אחי אביו ובנו וחתנו האי חתנו דמתני' אבנו קאי דהוה שלישי האי חתן ולקמן פריך א\"כ הוה שלישי בשני:"
+  },
+  "Rashi on Sanhedrin 28a:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:1:2"
+    ],
+    "generatedAt": "2026-11-12T11:58:35.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחן אבות לבנים</strong> - ראובן לבן שמעון דהיינו אחי אביו:"
+  },
+  "Rashi on Sanhedrin 28a:1:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:1:1",
+      "Sanhedrin 28a:1"
+    ],
+    "generatedAt": "2026-11-12T11:59:47.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובנים לאבות</strong> - בן שמעון לראובן דהיינו בן אחיו וכל שכן אבות להדדי דהא בנים מכח דידהו קא אתו ואימעיטו להו מהאי קרא אחיו ובנו ואחי אביו:"
+  },
+  "Rashi on Sanhedrin 28a:20:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:20"
+    ],
+    "generatedAt": "2026-11-12T12:14:50.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב אורחיה</strong> - דבעי לאשמועינן שלישי פסול נקט חתן בנו דאשמועינן נמי בעל כאשתו:"
+  },
+  "Rashi on Sanhedrin 28a:21:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:21",
+      "Sanhedrin 28a:27",
+      "Sanhedrin 28a:28",
+      "Sanhedrin 28a:29",
+      "Sanhedrin 27b:1",
+      "Sanhedrin 27b:10",
+      "Sanhedrin 28b:16"
+    ],
+    "generatedAt": "2026-11-12T12:16:33.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמנה אבות</strong> - עם בניהם וחתניהם הוו כ\"ד אע\"ג דבמתני' תשעה תנן בר מחורגו שאין בן וחתן עמו לקמן פריך להו:"
+  },
+  "Rashi on Sanhedrin 28a:21:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:21:1",
+      "Sanhedrin 28a:21",
+      "Sanhedrin 28a:19"
+    ],
+    "generatedAt": "2026-11-12T12:18:01.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלתין ותרתין</strong> - ח' אבות וח' בנים וח' חתנים וח' בני בנים ואע\"ג דאיכא תו ח' חתנים שם חתנות חד קרי ליה:"
+  },
+  "Rashi on Sanhedrin 28a:22:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:22"
+    ],
+    "generatedAt": "2026-11-12T12:30:01.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמאי קרי ליה</strong> - רב לחתנו דמתני' חתן בנו כיון דחתן לא הוי מזרעו ומעלמא אתי כדור שלישי חשיב ליה רב והלכך בני נמי לאחי אבא דהוי שלישי בראשון פסול ואיכא לאקשויי לרב כיון דאמר חתן כדור אחר דמי אמאי פסול חתנו לאחי אבא הוה ליה רביעי בראשון אלא מילתא אחריתי אקשי ליה עד דאפקיה מהאי טעמא לגמרי:"
+  },
+  "Rashi on Sanhedrin 28a:23:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:21:1",
+      "Rashi on Sanhedrin 28a:21:2",
+      "Rashi on Sanhedrin 28a:22:1",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 28a:4:1",
+      "Rashi on Sanhedrin 28a:6:1",
+      "Rashi on Sanhedrin 28a:7:1",
+      "Rashi on Sanhedrin 27b:1:1",
+      "Rashi on Sanhedrin 27b:2:1",
+      "Rashi on Sanhedrin 27b:3:1",
+      "Sanhedrin 28a:23",
+      "Sanhedrin 28a:17",
+      "Sanhedrin 28a:18",
+      "Rashi on Sanhedrin 28a:17:1",
+      "Rashi on Sanhedrin 28a:17:2",
+      "Rashi on Sanhedrin 28a:17:3"
+    ],
+    "generatedAt": "2026-11-12T12:37:01.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דחתן נמי כדור אחר דמי וקתני מתני' חתן אחי אבא פסול לי הוה ליה שלישי פסול להעיד בשני ורב אכשר שלישי בשני דקאמר אף אני לא אעיד לו אני ובני אבל בני לבנו יעיד:"
+  },
+  "Rashi on Sanhedrin 28a:24:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:24:1",
+      "Chokhmat Shlomo on Sanhedrin 28a:4",
+      "Steinsaltz on Sanhedrin 28a:24",
+      "Rashi on Sanhedrin 28a:24:2",
+      "Tosafot on Sanhedrin 28a:24:1",
+      "Bava Batra 128a:5",
+      "Bava Batra 128a:6",
+      "Bava Batra 128a:7",
+      "Rashi on Sanhedrin 27b:11:1",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Sanhedrin 28a:24",
+      "Steinsaltz comment #1 on Sanhedrin 28a:24"
+    ],
+    "generatedAt": "2026-11-12T12:45:18.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג אלא רב דאמר כר\"א</strong> - ולעולם חתן לאו כדור אחר דמי ורב דפסיל שלישי בראשון כר' אלעזר דאמר שלישי בשני פסול וכ\"ש שלישי בראשון ומיהו לית הלכתא כוותיה דאמרינן ביש נוחלין <span class=\"parenthesized\">(ב\"ב ד' קכח.)</span> דשלישי <span class=\"parenthesized\">(בראשון)</span> כשר והלכתא כוותיה דרב מדבתראי הוה:"
+  },
+  "Rashi on Sanhedrin 28a:24:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:24:1",
+      "Sanhedrin 28a:22",
+      "Sanhedrin 28a:23",
+      "Steinsaltz on Sanhedrin 28a:24",
+      "Tosafot on Sanhedrin 28a:24:1",
+      "Rashi on Sanhedrin 28a:17:1",
+      "Rashi on Sanhedrin 28a:27:1",
+      "Sanhedrin 28a:27",
+      "Sanhedrin 28a:28",
+      "Sanhedrin 28a:29",
+      "Rashi on Sanhedrin 28a:29:1",
+      "Chokhmat Shlomo on Sanhedrin 28a:4"
+    ],
+    "generatedAt": "2026-11-12T12:47:54.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:24:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בן בנו של אחי אבא</strong> - לדידי הוי שלישי בשני ורב שלישי בראשון נפקא ליה מדכתיב בנים הוו שנים:"
+  },
+  "Rashi on Sanhedrin 28a:27:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:27:1",
+      "Sanhedrin 28a:27",
+      "Steinsaltz on Sanhedrin 28a:27",
+      "Rashi on Sanhedrin 28a:21:1",
+      "Rashi on Sanhedrin 28a:21:2",
+      "Rashi on Sanhedrin 28a:28:1",
+      "Rashi on Sanhedrin 28a:24:1"
+    ],
+    "generatedAt": "2026-11-12T12:55:31.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וי\"ו לרבות בני בנים</strong> - דפסולין לאבות דהוה שלישי בראשון:"
+  },
+  "Rashi on Sanhedrin 28a:28:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:28",
+      "Rashi on Sanhedrin 28a:27:1",
+      "Rashi on Sanhedrin 28a:24:1",
+      "Rashi on Sanhedrin 28a:21:1"
+    ],
+    "generatedAt": "2026-11-12T13:01:04.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:28:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר</strong> - כרב סבירא ליה דוי\"ו לרבות אתא ודריש על בנים למימר דכל דפסילי לאבות פסול לבנים הלכך כי היכי דג' בראשון פסול שלישי בשני נמי פסול:"
+  },
+  "Rashi on Sanhedrin 28a:29:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:29",
+      "Chokhmat Shlomo on Sanhedrin 28a:5",
+      "Sanhedrin 28a:30"
+    ],
+    "generatedAt": "2026-11-12T13:03:15.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא תונא</strong> - תנא דידן כמו אבונא אחונא: חתן בעל אחותי פסול לי ואני לו שאני אחי חמותו ואני לחתן בעל אחות אבי בן אחי חמותו אני ולחתן בעל אחות אמי בן אחות חמותו אני מילתיה דרב נחמן מחתניהן דקתני מתני' יליף וכן מילתיה דרב אשי מחתניהן דאחיו ואחי אביו ואחי אמו שפסולין לו והוא להם הוי איהו לגבייהו אחי חמיו ובן אחי חמיו ובן אחות חמיו:"
+  },
+  "Rashi on Sanhedrin 28a:3:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:3",
+      "Rashi on Sanhedrin 27b:10:8",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 28a:1:2"
+    ],
+    "generatedAt": "2026-11-12T12:01:15.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנים להדדי מנלן</strong> - דקתני במתני' בן אחי אביו פסול לו:"
+  },
+  "Rashi on Sanhedrin 28a:4:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:4"
+    ],
+    "generatedAt": "2026-11-12T12:02:03.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליכתוב לא יומתו אבות על הבן</strong> - דכיון דכתיב אבות שני אחים משמע ועל הבן הוי משמע בנו של כל אחד ואחד הוי פסול לשניהם:"
+  },
+  "Rashi on Sanhedrin 28a:5:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:5"
+    ],
+    "generatedAt": "2026-11-12T12:02:45.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעלמא</strong> - שיהו שנים קרובים פסולין להעיד על אדם מן השוק:"
+  },
+  "Rashi on Sanhedrin 28a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:03:15.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעדות אחיו</strong> - דאי לאו דאסהיד האי קרובו בהדיה לא הוה מיקטל נמצא בנים מתים זה על זה:"
+  },
+  "Rashi on Sanhedrin 28a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:04:14.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה אחים ואחד</strong> - מן השוק עם כל אחד ואחד מעידים על אכילת שני חזקה של קרקע של אדם מן השוק ומעיד אחד מן האחין והבא מן השוק על שנה ראשונה ואחד מן האחין והבא מן השוק על שנה שניה והשלישי על השלישית והרי אלו שלש עדיות והחזקה קיימת ולא אמרי' עדות אחת היא והרי העדים קרובים אלא ג' עדיות נינהו דאשתא דקא מסהיד האי לא מסהיד האי:"
+  },
+  "Rashi on Sanhedrin 28a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:04:59.775Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והן עדות אחת להזמה</strong> - דעד דמתזמי כולהו לא משלמי ממונא דהא לא הוה מתוקמא בידא דלוקח אלא בסהדותא דכולהו:"
+  },
+  "Rashi on Sanhedrin 28a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:05:33.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הזמה מעלמא קא אתי להו</strong> - ע\"י המזימין אותן הן משלמים ולא זה על יד זה:"
+  },
+  "Tosafot on Sanhedrin 28a:18:1": {
+    "dependsOn": [
+      "Sanhedrin 28a:18",
+      "Sanhedrin 27b:13",
+      "Sanhedrin 27b:14",
+      "Tosafot on Sanhedrin 27b:10:2",
+      "Tosafot on Sanhedrin 28a:21:1",
+      "Tosafot on Sanhedrin 28a:7:1"
+    ],
+    "generatedAt": "2026-11-12T12:14:10.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חתנו דקתני מתני' חתן בנו</strong> - תימה א\"כ מתני' דקתני גיסו ובנו וחתנו היינו חתן בנו אלמא חתן בן אחות אשתו פסול הא אפי' חתן בן אשתו כשר דקתני חורגו לבדו וי\"ל דכיון דחתנו הוי חתן בנו איכא למימר דחורגו לאו למעוטי בן חורגו וחתן חורגו אלא אתא למעוטי בן בן חורגו וחתן בן חורגו:"
+  },
+  "Tosafot on Sanhedrin 28a:21:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:21:1",
+      "Rashi on Sanhedrin 28a:21:2",
+      "Tosafot on Sanhedrin 28a:21:2",
+      "Steinsaltz on Sanhedrin 28a:21",
+      "Sanhedrin 28a:21"
+    ],
+    "generatedAt": "2026-11-12T12:19:24.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמונה אבות שהן כ\"ד</strong> - איכא טובא דחדא נינהו אלא לפום ריהטא דמתני' קחשיב:"
+  },
+  "Tosafot on Sanhedrin 28a:21:2": {
+    "dependsOn": [
+      "Sanhedrin 28a:21",
+      "Tosafot on Sanhedrin 28a:21:1",
+      "Tosafot on Sanhedrin 28a:21:2",
+      "Tosafot on Sanhedrin 28a:21:3"
+    ],
+    "generatedAt": "2026-11-12T12:22:41.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלתין ותרתין הוו</strong> - הא דלא קאמר ארבעים הוו הם ובניהם וחתניהם וחתן בניהם ובני בניהם משום דלא קתני להו בהדיא במתני' אי נמי שם חתנות חד הוא:"
+  },
+  "Tosafot on Sanhedrin 28a:21:3": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 28a:21:1",
+      "Tosafot on Sanhedrin 28a:21:2",
+      "Tosafot on Sanhedrin 28a:21:3",
+      "Rashi on Sanhedrin 28a:21:1",
+      "Rashi on Sanhedrin 28a:21:2",
+      "Tosafot on Sanhedrin 28a:22:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T12:26:53.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(תלתין ותרתין הוו</strong> - <span class=\"rashi-quotation\">פי' הקונט'</span> דחתן בניהם לא חשיב דשם חתנות חדא הוא ור\"י אומר דבני בניהם לא חשיב משום דלא קתני להו במתני' בהדיא)</span>:"
+  },
+  "Tosafot on Sanhedrin 28a:22:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 28a:22:1",
+      "Sanhedrin 28a:22",
+      "Maharsha: Chidushei Halachot on Sanhedrin 28a:2",
+      "Rashi on Sanhedrin 28a:23:1",
+      "Steinsaltz on Sanhedrin 28a:23",
+      "Sanhedrin 28a:17",
+      "Sanhedrin 28a:18",
+      "Sanhedrin 28a:13",
+      "Sanhedrin 28a:14",
+      "Sanhedrin 28a:15",
+      "Sanhedrin 28a:16"
+    ],
+    "generatedAt": "2026-11-12T12:33:59.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דמעלמא אתי כדור אחר דמי</strong> - פ\"ה והא דלא אקשי' ליה לרב כיון דאמרת כדור אחר דמי אמאי פסול חתנו לאחי אביו הוה ליה רביעי בראשון משום דקשיא ליה מילתא אחריתי והקשה הר\"ר יוסף אחי הר\"ף להר\"ף דאמאי לא מקשי לרב דאכשר ג' בשני דקאמר אחי אבא לא יעיד לי הוא ובנו וחתנו וחתנו כדור אחר דמי א\"כ פסול שלישי בשני ותירץ הר\"ף אה\"נ דהוה מצי לאקשויי הכי אלא משום דאקשי ליה מילתא אחריתי לא אסיק אדעתיה דהכי נמי תירץ בשיטת <span class=\"rashi-quotation\">הקונטרס</span>:"
+  },
+  "Tosafot on Sanhedrin 28a:24:1": {
+    "dependsOn": [
+      "Bava Batra 158b:1",
+      "Bava Batra 158b:2",
+      "Bava Batra 128a:5",
+      "Bava Batra 128a:6",
+      "Bava Batra 128a:8",
+      "Sanhedrin 28a:24",
+      "Tosafot on Bava Batra 128a:6:2"
+    ],
+    "generatedAt": "2026-11-12T12:53:43.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 28a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב דאמר כר' אלעזר</strong> - אומר ר\"ת דכן הלכה דשלישי בראשון פסול כדמוכח בפ' יש נוחלין <span class=\"parenthesized\">(ב\"ב ד' קנח: ושם)</span> דשלח ליה ר' אבא לרב יוסף בר חמא הלכה שלישי בשני כשר ומשמע הא בראשון פסול ואמר התם דהכי הלכתא ובירושלמי נמי אמרי' משה מהו להעיד באשת פנחס ואמר ר' יוחנן כשר ומדנקט אשת פנחס משמע דלפנחס לא יעיד דהוה שלישי בראשון והא דלא אמרינן אשה כבעלה כי הכא באשת חורגו משום דהתם איתפלג דרא:"
+  }
+}

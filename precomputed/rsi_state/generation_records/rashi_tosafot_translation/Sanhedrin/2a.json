@@ -1,0 +1,667 @@
+{
+  "Rashi on Sanhedrin 15a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:33:44.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 15a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואדם כיוצא בהן</strong> - כקרקעות דבעי נמי תשע וכהן לשומו:"
+  },
+  "Rashi on Sanhedrin 2a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:48:35.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור הנסקל</strong> - שנגח אדם ומת:"
+  },
+  "Rashi on Sanhedrin 2a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:10:1",
+      "Rashi on Sanhedrin 2a:10:2",
+      "Rashi on Sanhedrin 2a:10:3",
+      "Rashi on Sanhedrin 2a:10:4",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1",
+      "Sanhedrin 15a:15"
+    ],
+    "generatedAt": "2026-11-10T19:50:27.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמיתת בעלים</strong> - אם היה נידון בחיוב מיתת בית דין דבעי עשרים ושלשה כך מיתת השור דהאי בעליו יומת קרא יתירא להך דרשה ולא דנתחייב קטלא כדמפרש טעמא בגמ' <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:10:3": {
+    "dependsOn": [
+      "Bava Kamma 54b:4",
+      "Bava Kamma 54b:5"
+    ],
+    "generatedAt": "2026-11-10T19:51:52.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזאב והארי כו'</strong> - שהמיתו אדם ונידונין בסקילה כשור דאמרינן בב\"ק אחד שור ואחד כו' בשור שנגח את הפרה <span class=\"parenthesized\">(דף נד:)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:10:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:10:1",
+      "Rashi on Sanhedrin 2a:10:2",
+      "Rashi on Sanhedrin 2a:10:3",
+      "Steinsaltz comment #1 on Sanhedrin 2a:10",
+      "Steinsaltz comment #2 on Sanhedrin 2a:10",
+      "Steinsaltz comment #3 on Sanhedrin 2a:10"
+    ],
+    "generatedAt": "2026-11-10T19:52:53.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברדלס</strong> - חיה היא:"
+  },
+  "Rashi on Sanhedrin 2a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:57:02.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין דנין לא את השבט</strong> - רובו של שבט שעבדו ע\"ז במזיד:"
+  },
+  "Rashi on Sanhedrin 2a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:57:35.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נביא השקר</strong> - בחנק בגמ' <span class=\"parenthesized\">(דף טז.)</span> בעי מנלן דבעי שבעים ואחד:"
+  },
+  "Rashi on Sanhedrin 2a:11:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:11:3",
+      "Rashi on Sanhedrin 2a:11:1",
+      "Rashi on Sanhedrin 2a:11:2",
+      "Rashi on Sanhedrin 2a:11:4",
+      "Rashi on Sanhedrin 2a:11:5"
+    ],
+    "generatedAt": "2026-11-10T19:58:38.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במלחמת הרשות</strong> - כל מלחמה קרי רשות לבד ממלחמת יהושע שהיתה לכבוש את ארץ ישראל:"
+  },
+  "Rashi on Sanhedrin 2a:11:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:11:1",
+      "Rashi on Sanhedrin 2a:11:2",
+      "Rashi on Sanhedrin 2a:11:3",
+      "Rashi on Sanhedrin 2a:11:5"
+    ],
+    "generatedAt": "2026-11-10T19:59:16.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על העיר</strong> - ירושלים:"
+  },
+  "Rashi on Sanhedrin 2a:11:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T20:06:49.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סנהדריות</strong> - שהיו מושיבים סנהדרי קטנה של כ\"ג בכל עיר ועיר כדכתיב <span class=\"parenthesized\">(דברים ט״ז:י״ח)</span> תתן לך בכל שעריך וצריכין בית דין הגדול שבלשכת הגזית לצאת ולהושיבם וכו' יליף בגמ' <span class=\"parenthesized\">(דף טז:)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:12:1": {
+    "dependsOn": [
+      "Sanhedrin 16b:13"
+    ],
+    "generatedAt": "2026-11-10T20:08:12.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בספר</strong> - כרך המבדיל בין ישראל לנכרים ובלע\"ז מרק\"א ובגמרא <span class=\"parenthesized\">(שם)</span> מפרש טעמא:"
+  },
+  "Rashi on Sanhedrin 2a:14:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:14:2"
+    ],
+    "generatedAt": "2026-11-10T20:08:54.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדה שופטת</strong> - עשרה מחייבין:"
+  },
+  "Rashi on Sanhedrin 2a:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:14:1"
+    ],
+    "generatedAt": "2026-11-10T20:09:39.975Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדה מצלת</strong> - עשרה מזכין אשמעינן קרא דצריך עשרים שאם יחלקו יהיו עשרה מחייבין ועשרה מזכין:"
+  },
+  "Rashi on Sanhedrin 2a:15:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:15:1"
+    ],
+    "generatedAt": "2026-11-10T20:10:11.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעדה הרעה</strong> - במרגלים כתיב:"
+  },
+  "Rashi on Sanhedrin 2a:16:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:16:2",
+      "Rashi on Sanhedrin 2a:16:3",
+      "Chokhmat Shlomo on Sanhedrin 2a:2",
+      "Rashi on Sanhedrin 2a:14:1",
+      "Rashi on Sanhedrin 2a:14:2",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2",
+      "Rashi on Sanhedrin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-10T20:11:45.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרעות</strong> - אם הרוב מחייבין לא תלך אחריהם להרוג:"
+  },
+  "Rashi on Sanhedrin 2a:16:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:16:1",
+      "Rashi on Sanhedrin 2a:16:2",
+      "Rashi on Sanhedrin 2a:16:3",
+      "Maharsha on Sanhedrin 2a:3"
+    ],
+    "generatedAt": "2026-11-10T20:13:22.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שומע אני</strong> - דלטובה לזכות הלך אחריהן שאפי' מיעוט המזכים ורבים המחייבין כתיב לא תהיה אחרי רבים לרעות אם כן למה נאמר אחרי רבים להטות משום זכות לא איצטריך ליה אלא אפילו לחייב הלך אחריהן:"
+  },
+  "Rashi on Sanhedrin 2a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T20:16:41.985Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כהטייתך</strong> - אחרי רבים לזכות אני אומר לך לנטות אחרי רבים לחובה אלא לזכות על פי אחד אפילו אין יתירין מזכין על המחייבין אלא אחד זכה אבל לחובה עד שיהו מחייבין עודפין על המזכין שנים והכי קאמר לא תהיה אחרי רבים לרעות על פי אחד אבל אחרי רבים בשנים אפי' לרעות הלכך על כרחך כ\"ב בעינן דבציר מעשרה מזכין ליכא למימר דהא כתיב והצילו העדה ותו לא משכחת חובה בציר מי\"ב:"
+  },
+  "Rashi on Sanhedrin 2a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T18:55:25.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני ממונות בשלשה</strong> - בגמ' ילפינן להו:"
+  },
+  "Rashi on Sanhedrin 2a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T18:56:14.661Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזילות</strong> - כופר בפקדון דמששלח בו יד הוי גזלן וכן החוטף מיד חבירו הוי גזלן כגון ויגזול את החנית מיד המצרי <span class=\"parenthesized\">(שמואל ב כ״ג:כ״א)</span> אבל לוה ולא שילם לא מיקרי גזלן דמלוה להוצאה ניתנה:"
+  },
+  "Rashi on Sanhedrin 2a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T18:58:10.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחבלות</strong> - החובל בחבירו חייב בחמשה דברים כדאמרינן בבבא קמא <span class=\"parenthesized\">(דף פד.)</span> ואיש כי יתן מום בעמיתו וגו' כן יעשה לו בממון ובגמ' פריך היינו דיני ממונות:"
+  },
+  "Rashi on Sanhedrin 2a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T18:58:50.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזק</strong> - דשור המועד או אדם שהזיקו ובגמ' פריך היינו חבלות:"
+  },
+  "Rashi on Sanhedrin 2a:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T18:59:45.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשלומי כפל</strong> - דגניבה שנמצא בידו דכתיב <span class=\"parenthesized\">(שמות כ״ב:ג׳)</span> אם המצא תמצא בידו וגו':"
+  },
+  "Rashi on Sanhedrin 2a:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:00:39.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותשלומי ארבעה וחמשה</strong> - דשור או שה שטבחו או מכרו:"
+  },
+  "Rashi on Sanhedrin 2a:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:2:2",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2",
+      "Rashi on Sanhedrin 2a:1:3"
+    ],
+    "generatedAt": "2026-11-10T19:06:31.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האונס ומפתה</strong> - נערה בתולה חמשים כסף:"
+  },
+  "Rashi on Sanhedrin 2a:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:2:1",
+      "Rashi on Sanhedrin 2a:7:1",
+      "Rashi on Sanhedrin 2a:7:2",
+      "Rashi on Sanhedrin 2a:6:1",
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:1:3",
+      "Rashi on Sanhedrin 2a:1:5",
+      "Tosafot on Sanhedrin 2b:6:1"
+    ],
+    "generatedAt": "2026-11-10T19:08:15.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוציא שם רע</strong> - לא מצאתי לבתך בתולים וגו' וענשו אותו מאה כסף וגו' <span class=\"parenthesized\">(דברים כ״ב:י״ז)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:08:59.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני נפשות</strong> - דאם אמת היה שזינתה תחתיו היא בסקילה ודיני נפשות בעינן כ\"ג <span class=\"parenthesized\">(לקמן בפירקין)</span> <span class=\"parenthesized\">(סנהדרין דף טו.)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:4:1": {
+    "dependsOn": [
+      "Sanhedrin 2a:4",
+      "Rashi on Sanhedrin 2a:4:1"
+    ],
+    "generatedAt": "2026-11-10T19:10:14.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכות</strong> - מלקות ארבעים טעמא דר' ישמעאל ורבנן מפרש בגמרא <span class=\"parenthesized\">(דף י.)</span> מקראי:"
+  },
+  "Rashi on Sanhedrin 2a:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:5:1",
+      "Rashi on Sanhedrin 2a:4:1",
+      "Rashi on Sanhedrin 2a:7:4",
+      "Rashi on Sanhedrin 2a:8:1",
+      "Rashi on Sanhedrin 2a:5:2",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-10T19:13:25.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיבור החדש</strong> - בגמרא מפרש:"
+  },
+  "Rashi on Sanhedrin 2a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:14:39.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיבור השנה</strong> - שהיו ב\"ד יושבין ורואין אם צריכין לעבר מפני האביב והתקופה כדאמרינן בגמרא מילתיה דר' שמעון מיפרשא בגמרא בברייתא <span class=\"parenthesized\">(דף י:)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:17:24.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמיכת זקנים</strong> - על ראש פר העלם דבר של צבור:"
+  },
+  "Rashi on Sanhedrin 2a:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:6:1",
+      "Rashi on Sanhedrin 2a:6:3"
+    ],
+    "generatedAt": "2026-11-10T19:18:56.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חליצה בשלשה</strong> - ביבמות יליף לה בפרק מצות חליצה <span class=\"parenthesized\">(יבמות דף קא.)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:20:15.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיאונין</strong> - יתומה קטנה שהשיאוה אמה ואחיה לדעתה יוצאה בלא גט במיאון כל זמן שלא גדלה תחתיו ובשלשה בעינן דכל דתקון רבנן כעין דאורייתא תקון ומיאונין דרבנן דמדאורייתא אפילו מיאון לא בעיא דאין קדושי קטנה כלום אלא אם כן קדשה אביה דכתיב <span class=\"parenthesized\">(דברים כ״ב:ט״ז)</span> את בתי נתתי לאיש הזה:"
+  },
+  "Rashi on Sanhedrin 2a:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:7:1",
+      "Rashi on Sanhedrin 2a:7:2"
+    ],
+    "generatedAt": "2026-11-10T19:20:54.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטע רבעי</strong> - אם בא לחללו על המעות וכן מעשר שני:"
+  },
+  "Rashi on Sanhedrin 2a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:21:19.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין דמיהן ידועין</strong> - כגון פירות והרקיבו שאין להם שער בשוק:"
+  },
+  "Rashi on Sanhedrin 2a:7:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:7:1",
+      "Rashi on Sanhedrin 2a:7:2",
+      "Rashi on Sanhedrin 2a:7:4",
+      "Rashi on Sanhedrin 2a:7:5"
+    ],
+    "generatedAt": "2026-11-10T19:22:12.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וההקדשות</strong> - הבא לפדותן צריך שלשה לשומן:"
+  },
+  "Rashi on Sanhedrin 2a:7:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:5:1"
+    ],
+    "generatedAt": "2026-11-10T19:24:16.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הערכין המטלטלין</strong> - בגמרא מפרש <span class=\"parenthesized\">(דף יד:)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:7:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:7:1",
+      "Rashi on Sanhedrin 2a:7:2",
+      "Rashi on Sanhedrin 2a:7:3",
+      "Rashi on Sanhedrin 2a:7:4",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2",
+      "Rashi on Sanhedrin 2a:2:1",
+      "Rashi on Sanhedrin 2a:2:2",
+      "Steinsaltz on Sanhedrin 2a:7",
+      "Rashi on Sanhedrin 2a:1:5",
+      "Tosafot on Berakhot 2a:7:1",
+      "Rashi on Berakhot 2a:5:7",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:1:3",
+      "Sanhedrin 14b:11",
+      "Leviticus 27:12"
+    ],
+    "generatedAt": "2026-11-10T19:33:09.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד מהם כהן</strong> - דכתיב כהן בפרשה כערכך הכהן וגו' <span class=\"parenthesized\">(ויקרא כז)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T19:34:50.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקרקעות</strong> - של הקדש צריך ט' והעשירי כהן לשומן אם בא לפדותן בגמ' <span class=\"parenthesized\">(דף טו.)</span> מפרש ויליף להו מקראי:"
+  },
+  "Rashi on Sanhedrin 2a:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:8:1",
+      "Rashi on Sanhedrin 2a:8:2",
+      "Rashi on Sanhedrin 2a:8:3",
+      "Rashi on Sanhedrin 2a:1:3",
+      "Rashi on Sanhedrin 2a:1:4",
+      "Rashi on Sanhedrin 2b:1:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2",
+      "Rashi on Sanhedrin 15a:8:1",
+      "Sanhedrin 15a:8"
+    ],
+    "generatedAt": "2026-11-10T19:37:00.929Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואדם</strong> - הבא לפדות עצמו מיד הקדש צריך עשרה לשומו ובגמרא <span class=\"parenthesized\">(שם)</span> פריך אדם מי קדיש:"
+  },
+  "Rashi on Sanhedrin 2a:9:1": {
+    "dependsOn": [
+      "Sanhedrin 2a:9",
+      "Rashi on Sanhedrin 2a:8:3",
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:9:2",
+      "Rashi on Sanhedrin 2a:8:1",
+      "Rashi on Sanhedrin 2a:8:2",
+      "Sanhedrin 2a:1",
+      "Sanhedrin 2a:2",
+      "Sanhedrin 2a:3",
+      "Sanhedrin 2a:4",
+      "Sanhedrin 2a:5",
+      "Sanhedrin 2a:6",
+      "Rashi on Sanhedrin 2a:3:1",
+      "Rashi on Sanhedrin 2a:9:3",
+      "Rashi on Sanhedrin 2a:9:4",
+      "Rashi on Sanhedrin 2a:9:5"
+    ],
+    "generatedAt": "2026-11-10T19:39:04.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני נפשות</strong> - דאם אמת היה שזינתה תחתיו היא בסקילה ודיני נפשות בעינן כ\"ג <span class=\"parenthesized\">(לקמן בפירקין)</span> <span class=\"parenthesized\">(סנהדרין דף טו.)</span>:"
+  },
+  "Rashi on Sanhedrin 2a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:9:3",
+      "Sanhedrin 2a:8",
+      "Sanhedrin 2a:9",
+      "Sanhedrin 2a:10",
+      "Rashi on Sanhedrin 2a:3:1",
+      "Rashi on Sanhedrin 2a:4:1"
+    ],
+    "generatedAt": "2026-11-10T19:44:02.084Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני נפשות</strong> - בעשרים ושלשה לקמן יליף לה במתני':"
+  },
+  "Rashi on Sanhedrin 2a:9:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:9:2",
+      "Rashi on Sanhedrin 2a:9:4",
+      "Rashi on Sanhedrin 2a:9:5",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-10T19:45:10.089Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרובע והנרבע</strong> - שור שרבע אשה ובהמה שנרבעת לאיש נידונית הבהמה ליסקל:"
+  },
+  "Rashi on Sanhedrin 2a:9:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:9:2",
+      "Rashi on Sanhedrin 2a:9:3",
+      "Rashi on Sanhedrin 2a:9:4",
+      "Rashi on Sanhedrin 2a:9:5",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:10:1",
+      "Rashi on Sanhedrin 2a:6:1"
+    ],
+    "generatedAt": "2026-11-10T19:47:18.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכ\"ג</strong> - כאדם הרובע דאיתקוש להדדי והרגת את האשה ואת הבהמה בהמה היינו רובע ואיתקוש בהמה לאשה מה אשה בכ\"ג אף בהמה בכ\"ג:"
+  },
+  "Rashi on Sanhedrin 2a:9:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 2a:9:1",
+      "Rashi on Sanhedrin 2a:9:2",
+      "Rashi on Sanhedrin 2a:9:3",
+      "Rashi on Sanhedrin 2a:9:4",
+      "Rashi on Sanhedrin 2a:9:5"
+    ],
+    "generatedAt": "2026-11-10T19:48:07.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 2a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואומר ואת הבהמה תהרוגו</strong> - בנרבע כתיב:"
+  },
+  "Tosafot on Sanhedrin 15b:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 15b:7:1",
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-10T19:56:25.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 15b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והברדלס</strong> - פ\"ה פוטיי\"ש ולא משמע כן דאותו אינו עז כל כך וכאן משמע שהוא עז ביותר ודרכו להמית את האדם וכן בפרק אלו מציאות <span class=\"parenthesized\">(ב\"מ דף כד.)</span> אמרי' המציל מן הארי ומן הדוב כו' ובפ\"ק דב\"ק <span class=\"parenthesized\">(טו: ושם)</span> תנן הרי אלו מועדים ואפשר שהוא מין נחש דהא מפרש התם בגמ' <span class=\"parenthesized\">(טז: ושם)</span> דברדלס היינו אפא וצבוע זהו אפא וצבוע זהו אפעה שהרי גיא הצבועים מתרגמינן מישר אפעיא <span class=\"parenthesized\">(שמואל א יג)</span> וכתיב אפעה ושרף מעופף <span class=\"parenthesized\">(ישעיהו ל׳:ו׳)</span> ומיהו יש עדיין ברדלס אחר דהא בפ\"ק דבכורות <span class=\"parenthesized\">(דף ח.)</span> חשיב אפעה לע' שנה ברדלס לג' שנים ואע\"ג דחשיב לה התם בהדי זאב וארי ע\"כ לאו היינו ההוא דהכא ודב\"ק דהא מפרש התם דהיינו אפא דהוא אפעה ויתכן דההוא דבכורות הוא פוטיי\"ש שפ\"ה בכאן וכן ההיא דפ\"ק דפסחים <span class=\"parenthesized\">(דף ט.)</span> אם חולדה וברדלס מצויין שם משמע שהיא חיה קטנה כעין חולדה:"
+  },
+  "Tosafot on Sanhedrin 2a:1:1": {
+    "dependsOn": [
+      "Bava Kamma 43a:1",
+      "Bava Kamma 43a:2",
+      "Bava Kamma 43a:3",
+      "Bava Kamma 43a:4",
+      "Bava Kamma 43a:5",
+      "Bava Kamma 44b:1",
+      "Bava Kamma 44b:2",
+      "Bava Kamma 44b:3",
+      "Bava Kamma 44b:4",
+      "Bava Kamma 44b:5",
+      "Bava Kamma 44b:6",
+      "Bava Kamma 44b:7",
+      "Bava Kamma 44b:8",
+      "Bava Kamma 44b:9",
+      "Bava Kamma 44b:10",
+      "Bava Kamma 44b:11",
+      "Bava Kamma 44b:12",
+      "Bava Kamma 44b:13",
+      "Bava Kamma 44b:14",
+      "Bava Kamma 44b:15",
+      "Tosafot on Bava Kamma 43a:10:1",
+      "Bava Kamma 41b:1",
+      "Bava Kamma 41b:2",
+      "Bava Kamma 41b:3",
+      "Bava Kamma 41b:4",
+      "Bava Kamma 41b:5",
+      "Bava Kamma 41b:6",
+      "Bava Kamma 41b:7",
+      "Bava Kamma 41b:8",
+      "Bava Kamma 41b:9",
+      "Bava Kamma 41b:10",
+      "Bava Kamma 41b:11",
+      "Bava Kamma 41b:12",
+      "Bava Kamma 41b:13",
+      "Bava Kamma 41b:14",
+      "Tosafot on Bava Kamma 41b:10:1"
+    ],
+    "generatedAt": "2026-11-10T19:05:31.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני ממונות בשלשה</strong> - אחר ששנה דינים בתלתא בבי משמיענו בכמה דנין אותם הא דלא תנא כופר ושלשים של עבד כדתנן שאר קנסות י\"מ משום דשור מיתתו בכ\"ג ובזמן שהשור בסקילה בעלים משלמין כופר ושלשים של עבד <span class=\"parenthesized\">(ב\"ק דף מג.)</span> ודלא כר\"א דמחייב ע\"פ עד אחד וע\"פ הבעלים בפרק ארבעה וחמשה <span class=\"parenthesized\">(שם מא:)</span> ואין נראה דהא איכא אמוראי התם דסברי דאפי' ר' עקיבא דריש . אם כופר לרבות שלא בכוונה ונראה לר\"ת דכופר ול' של עבד הוי בכלל חבלות אי נמי תנא ושייר הני ושייר נמי יציאת עבד בראשי אברים דקנסא הוא ובעי נמי ג' מומחין וללישנא קמא לא חשיב הא שייר דאיכ' למימר דפשיטא ליה דהוי מכלל חבלות אי נמי התנא לא איירי אלא בממון הניתן מיד ליד:"
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "Rashi on Sanhedrin 31b:11:1": {
+    "dependsOn": [
+      "Jastrow, עָצַם 1"
+    ],
+    "generatedAt": "2026-11-12T18:34:07.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתעצמו</strong> - שנעשו קשין זה לזה:"
+  },
+  "Rashi on Sanhedrin 31b:14:1": {
+    "dependsOn": [
+      "Sanhedrin 31b:14"
+    ],
+    "generatedAt": "2026-11-12T18:37:34.173Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו מטבריא לציפורי</strong> - אע\"פ שישיבת טבריא גדולה משל ציפורי הלך אחריו לציפורי:"
+  },
+  "Rashi on Sanhedrin 31b:16:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:16:2",
+      "Rashi on Sanhedrin 31b:14:1",
+      "Sanhedrin 31b:16"
+    ],
+    "generatedAt": "2026-11-12T18:39:12.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר רבי אלעזר</strong> - והא חזינן דפליג עלה ר' אלעזר לעיל ויהיב טעמא למילתיה דמסתבר טעמא:"
+  },
+  "Rashi on Sanhedrin 31b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:40:26.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דקאמר לוה</strong> - נלך למקום הוועד כופין אותו וידון כאן ולא יוציא זה מנה על מנה:"
+  },
+  "Rashi on Sanhedrin 31b:17:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:17:2",
+      "Rashi on Sanhedrin 31b:20:1",
+      "Tosafot on Sanhedrin 31b:12:1",
+      "Rashi on Sanhedrin 31a:1:1",
+      "Rashi on Sanhedrin 31a:2:1",
+      "Shabbat 55a:1",
+      "Shabbat 55a:2"
+    ],
+    "generatedAt": "2026-11-12T18:41:55.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר עוקבא</strong> - אב ב\"ד הוה במסכת שבת בבמה בהמה יוצאה <span class=\"parenthesized\">(דף נה.)</span>:"
+  },
+  "Rashi on Sanhedrin 31b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:50:52.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדזיו ליה כבר בתיה</strong> - כמשה שהוא בן בתיה למי שמקרין עור פניו כמשה רבינו שגידלתו בתיה בת פרעה לשון אחר כבר ביתיה כמשה שהוא בן בית דכתיב <span class=\"parenthesized\">(במדבר י״ב:ז׳)</span> בכל ביתי נאמן הוא לדזיו ליה על שם שהיה חכם וכתיב <span class=\"parenthesized\">(קהלת ח׳:א׳)</span> חכמת אדם תאיר פניו ומצאתי בספר הגדה שהיה מר עוקבא בעל תשובה שנתן עיניו באשה אחת והעלה לבו טינא ונפל בחולי ואשת איש היתה לימים נצרכה ללות ממנו ומתוך דוחקה נתרצית לו וכבש יצרו ופטרה לשלום ונתרפא וכשהיה יוצא לשוק היה נר דולק בראשו מן השמים ועל שם כך קרי ליה ר' נתן צוציתא במסכת שבת <span class=\"parenthesized\">(דף נו:)</span> הכא נמי להכי כתבו ליה הכי על שם האור שהיה זורח עליו:"
+  },
+  "Rashi on Sanhedrin 31b:17:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:51:45.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוקבן הבבלי קבל קדמנא</strong> - צעק לפנינו ואמר ירמיה אחי העביר עלי את הדרך איבד ממני דרך בני אדם שסירסו כך שמעתי וי\"א העביר עלי את הדרך לא נהג עמי כשורה ועל עסקי ממון היה צועק:"
+  },
+  "Rashi on Sanhedrin 31b:17:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:17:1",
+      "Rashi on Sanhedrin 31b:17:2",
+      "Rashi on Sanhedrin 31b:17:3",
+      "Rashi on Sanhedrin 31b:17:4",
+      "Rashi on Sanhedrin 31b:17:5"
+    ],
+    "generatedAt": "2026-11-12T18:53:39.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו לו</strong> - לירמיה להתפייס עמו:"
+  },
+  "Rashi on Sanhedrin 31b:17:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:54:10.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:17:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השיאוהו ויראה פנינו בטבריא</strong> - הכריחוהו והזקיקוהו לבוא כאן לדון עמו:"
+  },
+  "Rashi on Sanhedrin 31b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 31b:1"
+    ],
+    "generatedAt": "2026-11-12T18:04:58.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קלתיה</strong> - שרפתו הלכך מה לה לשקר:"
+  },
+  "Rashi on Sanhedrin 31b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:05:26.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיתחזק בבי דינא</strong> - שכתוב בו הנפק לא אלימא איהי לאפקועי מעשה ב\"ד:"
+  },
+  "Rashi on Sanhedrin 31b:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:3:2",
+      "Rashi on Sanhedrin 31b:3:3",
+      "Rashi on Sanhedrin 31b:3:4"
+    ],
+    "generatedAt": "2026-11-12T18:11:22.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימפון</strong> - שובר ויצא מתחת יד לוה כמשפטו:"
+  },
+  "Rashi on Sanhedrin 31b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:12:55.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתקיים</strong> - השטר בחותמיו יעידו עדים על חתימות ידיהן וכשר:"
+  },
+  "Rashi on Sanhedrin 31b:3:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:3:1",
+      "Rashi on Sanhedrin 31b:3:2",
+      "Rashi on Sanhedrin 31b:3:3",
+      "Rashi on Sanhedrin 31b:3:4",
+      "Sanhedrin 31b:2",
+      "Sanhedrin 31b:3",
+      "Sanhedrin 31a:27",
+      "Sanhedrin 31a:28",
+      "Sanhedrin 31a:24",
+      "Sanhedrin 31a:25",
+      "Sanhedrin 31a:26"
+    ],
+    "generatedAt": "2026-11-12T18:15:33.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עליו עדים</strong> - והרי הוא יוצא מתחת יד שליש ולא מתחת יד הלוה הואיל ושניהם מודים שזה מינהו להיות שליש ביניהם כשר:"
+  },
+  "Rashi on Sanhedrin 31b:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:16:12.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שיצא אחר חיתום שטרות</strong> - בתוך שטר המלוה נכתב השובר תחת העדים כשר שהרי המלוה עצמו מוחזק בשטרו ואי לאו דפרעיה לא הוה שביק למיכתב תברא בגוויה:"
+  },
+  "Rashi on Sanhedrin 31b:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:3:1",
+      "Rashi on Sanhedrin 31b:6:1",
+      "Rashi on Sanhedrin 31a:1:1",
+      "Rashi on Sanhedrin 31b:1:1",
+      "Rashi on Sanhedrin 31b:2:1",
+      "Sanhedrin 31b:5",
+      "Rashi on Sanhedrin 30a:1:1"
+    ],
+    "generatedAt": "2026-11-12T18:27:35.193Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיסתתם טענותיו</strong> - משמע שאמר בבית דין אין לי לא עדים ולא ראיה וחזר ואמר קרבו פלוני ופלוני שהיו מזומנין שם ומתחילה סותר טענותיו לומר אין לי:"
+  },
+  "Rashi on Sanhedrin 31b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:30:04.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא גופא קשיא</strong> - יסתתם טענותיו משמע מכיון שיסתמו שוב אין מביא ראיה ואפילו מצאם לאחר זמן כרבנן והדר קתני קרבו דמשמע דהאי הוא דלא מייתי דאפי' רשב\"ג מודה בו אבל מצאם לאחר זמן מייתי כרבן שמעון:"
+  },
+  "Rashi on Sanhedrin 31b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:30:40.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר אין לי עדים</strong> - ואפילו מצאן לאחר זמן אינו סותר כרבנן:"
+  },
+  "Rashi on Sanhedrin 31b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:8:2"
+    ],
+    "generatedAt": "2026-11-12T18:31:26.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסקיא</strong> - שק של עור שהיו שטרותיו של אביו מונחין בו:"
+  },
+  "Rashi on Sanhedrin 31b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:32:11.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 31b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התוקף את חבירו בדין</strong> - בעל דין קשה ומטריח את חבירו ואין רוצה חבירו לדון כאן אלא למקום וועד תלמידי חכמים הרבה שיהא זה בוש מהם:"
+  },
+  "Tosafot on Sanhedrin 31b:10:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 31b:10:1"
+    ],
+    "generatedAt": "2026-11-12T18:33:16.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(ויוציא מנה על מנה</strong> - מכאן למתחייב בדין דלא משלם לאידך יציאותיו אע\"פ שמזקיקו לילך לו לדון בעיר אחרת)</span>:"
+  },
+  "Tosafot on Sanhedrin 31b:12:1": {
+    "dependsOn": [
+      "Sanhedrin 31b:12",
+      "Bava Metzia 69a:13"
+    ],
+    "generatedAt": "2026-11-12T18:36:04.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אמר כתבו ותנו לי מאיזה טעם כו'</strong> - דוקא היכא דנתעצמו לדון כו' וכפו אותו לדון כאן אבל בעלמא לא וכן משמע באיזהו נשך <span class=\"parenthesized\">(ב\"מ דף סט. ושם)</span> גבי תרי כותאי דעבוד עיסקא דא\"ל חזינא דכל בתר דידי קאזיל מר וקאמר כי האי ודאי צריך לאודועי מיהא יש לדחות דהכי קאמר כי האי ודאי צריך לאודועי אע\"פ שאין שואל מאיזה טעם נתחייב צריך לאודועי אבל בעלמא אי שאיל אין אי לא לא:"
+  },
+  "Tosafot on Sanhedrin 31b:19:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 31b:19:1",
+      "Sanhedrin 31b:19",
+      "Tosafot on Sanhedrin 31b:3:1",
+      "Tosafot on Sanhedrin 31b:3:2",
+      "Tosafot on Sanhedrin 31b:10:1",
+      "Tosafot on Sanhedrin 31b:2:1",
+      "Tosafot on Sanhedrin 31b:12:1"
+    ],
+    "generatedAt": "2026-11-12T18:55:57.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי ציית ציית</strong> - אין לפרש אי לא ציית שלא תוכלו לכופו דכ\"ש שלא יוכל נשיא לכופו דהכא שבט והתם מחוקק ומר עוקבא ריש גולה הוה אלא מפר\"ת אי לא ציית כגון דאמר לב\"ד הגדול קאזילנא:"
+  },
+  "Tosafot on Sanhedrin 31b:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:2:1",
+      "Sanhedrin 31b:2",
+      "Bava Batra 159b:1",
+      "Bava Batra 159b:2"
+    ],
+    "generatedAt": "2026-11-12T18:10:46.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכיון דאיתחזק בבי דינא</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> שכתוב בו הנפק וקשה דמכל מקום ניהמנה במיגו דאי בעי קלתיה וי\"ל דאיתחזק בבי דינא שראוהו בידה כי ההוא דשילהי מי שמת <span class=\"parenthesized\">(ב\"ב דף קנט:)</span> שהוחזק כתב ידו בבית דין:"
+  },
+  "Tosafot on Sanhedrin 31b:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 31b:3:1",
+      "Rashi on Sanhedrin 31b:3:2",
+      "Rashi on Sanhedrin 31b:3:3",
+      "Rashi on Sanhedrin 31b:3:4",
+      "Tosafot on Sanhedrin 31b:2:1",
+      "Tosafot on Sanhedrin 31b:3:2",
+      "Bava Metzia 20a:1",
+      "Bava Metzia 20a:2",
+      "Bava Metzia 20a:3",
+      "Bava Metzia 20a:4",
+      "Bava Metzia 20a:5",
+      "Bava Metzia 20a:6",
+      "Bava Metzia 20a:7",
+      "Bava Metzia 20a:8",
+      "Bava Metzia 20a:9",
+      "Bava Metzia 20a:10",
+      "Bava Metzia 20b:1",
+      "Bava Metzia 20b:2",
+      "Bava Metzia 20b:18",
+      "Bava Metzia 20b:19",
+      "Bava Metzia 20b:20",
+      "Bava Metzia 20b:21",
+      "Bava Metzia 20b:22",
+      "Bava Metzia 20b:23",
+      "Bava Metzia 21a:1",
+      "Bava Metzia 21a:2"
+    ],
+    "generatedAt": "2026-11-12T18:21:44.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמפון שיש עליו עדים</strong> - פ\"ה שובר ויוצא מתחת ידי לוה כמשפטו ור\"ת פירש דביד הלוה קרוי שובר וכשהוא יוצא מתחת ידי המלוה קרוי סמפון ויתקיים בחותמיו היינו דשיילינא לסהדי אי פריע אי לא פריע כדאיתא שילהי פ\"ק דב\"מ <span class=\"parenthesized\">(דף)</span>:"
+  },
+  "Tosafot on Sanhedrin 31b:3:2": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 31b:3:1",
+      "Sanhedrin 31b:2",
+      "Tosafot on Sanhedrin 31b:2:1",
+      "Bava Metzia 20a:6",
+      "Bava Metzia 20b:18",
+      "Bava Metzia 20b:21",
+      "Bava Metzia 20b:22",
+      "Bava Metzia 20b:23",
+      "Bava Metzia 20b:24",
+      "Bava Metzia 20b:25",
+      "Bava Metzia 21a:1",
+      "Bava Metzia 20b:26",
+      "Bava Metzia 21a:2",
+      "Bava Metzia 21a:3",
+      "Sanhedrin 31b:4"
+    ],
+    "generatedAt": "2026-11-12T18:24:55.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 31b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עליו עדים ויוצא</strong> - השטר והסמפונות מתחת ידי שליש כשר משמע ליה אפילו איתחזק דומיא דיוצא אחר חיתום שטרות. א\"נ יש לפרש לאו דאין עליו עדים כלל אלא יש עליו עדים ולא ידעי אי פריע אי לא פריע ויוצא הסמפונות מתחת ידי שליש:"
+  }
+}
