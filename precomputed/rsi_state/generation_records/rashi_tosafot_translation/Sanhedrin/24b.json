@@ -1,0 +1,359 @@
+{
+  "Rashi on Sanhedrin 24b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:10:2",
+      "Rashi on Sanhedrin 24b:10:3",
+      "Rashi on Sanhedrin 24b:10:4",
+      "Sanhedrin 24b:10",
+      "Tosafot on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:1:1",
+      "Rashi on Sanhedrin 24b:2:1",
+      "Rashi on Sanhedrin 24b:4:1",
+      "Rashi on Sanhedrin 24b:7:1",
+      "Rashi on Sanhedrin 24a:1:1",
+      "Rashi on Sanhedrin 24a:1:2",
+      "Rashi on Sanhedrin 24b:15:1",
+      "Rashi on Sanhedrin 24b:15:2",
+      "Rashi on Sanhedrin 24b:15:3",
+      "Tosafot on Sanhedrin 23b:11:1",
+      "Rashi on Sanhedrin 25b:2:2",
+      "Rashi on Sanhedrin 24b:5:1",
+      "Rashi on Sanhedrin 24b:5:2",
+      "Rashi on Sanhedrin 23b:1:1",
+      "Rashi on Sanhedrin 23b:2:1",
+      "Rashi on Sanhedrin 23a:1:1"
+    ],
+    "generatedAt": "2026-11-12T06:47:37.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:10:1"
+    ],
+    "sourceText": "ה\"ג אי אמרת בשלמא ר' יוחנן הכי קאמר לאחר גמר דין מחלוקת אבל לפני גמר דין אפילו לרבנן חוזר:"
+  },
+  "Rashi on Sanhedrin 24b:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:10:3",
+      "Rashi on Sanhedrin 24b:10:4",
+      "Sanhedrin 24b:10",
+      "Rashi on Sanhedrin 24b:4:1",
+      "Rashi on Sanhedrin 24b:5:1",
+      "Rashi on Sanhedrin 24b:7:1",
+      "Rashi on Sanhedrin 23a:7:1"
+    ],
+    "generatedAt": "2026-11-12T06:51:07.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא</strong> - דפסיק הלכתא דחוזר לפני גמר דין ולא לאחר גמר דין דאמר כר' יוחנן ואליבא דרבנן:"
+  },
+  "Rashi on Sanhedrin 24b:10:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:10:2",
+      "Rashi on Sanhedrin 24b:10:4"
+    ],
+    "generatedAt": "2026-11-12T06:52:23.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי אמרת</strong> - לר' יוחנן בין בזה ובין בזה מחלוקת:"
+  },
+  "Rashi on Sanhedrin 24b:10:4": {
+    "dependsOn": [
+      "Sanhedrin 24b:10",
+      "Rashi on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:10:2",
+      "Rashi on Sanhedrin 24b:10:3",
+      "Rashi on Sanhedrin 24b:4:1",
+      "Rashi on Sanhedrin 24b:5:1",
+      "Rashi on Sanhedrin 24b:7:1"
+    ],
+    "generatedAt": "2026-11-12T06:56:24.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא דאמר כמאן</strong> - בין לריש לקיש בין לר' יוחנן לרבנן לפני גמר דין קאמרי דלא הדר והא ליכא למימר דרבא כריש לקיש ואליבא דר\"מ אמרה לשמעתיה דלא שביק רבנן ועביד כר\"מ דפסקינן לקמן הלכה כחכמים ולא שייך למימר הכא רבא טעמא דנפשיה קאמר וסבירא ליה דכי פליגי רבנן לאחר גמר דין אבל לפני גמר דין מודו אבל לרבי יוחנן בין בזו ובין בזו מחלוקת דהא לא איירי רבא בפלוגתא כלל אלא מיפסק פסק דינא:"
+  },
+  "Rashi on Sanhedrin 24b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:01:41.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקנו מידו</strong> - מתחלה שלא יחזור:"
+  },
+  "Rashi on Sanhedrin 24b:15:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:15:1"
+    ],
+    "generatedAt": "2026-11-12T07:02:09.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלו הן הפסולים</strong> - לדון ולהעיד:"
+  },
+  "Rashi on Sanhedrin 24b:15:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 24b:15:2",
+      "Rashi on Sanhedrin 24b:15:1",
+      "Rashi on Sanhedrin 24b:15:3"
+    ],
+    "generatedAt": "2026-11-12T07:03:07.793Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המשחק בקוביא</strong> - כולהו מפרש בגמ' וכולן מעין גזלנין הן והתורה אמרה <span class=\"parenthesized\">(שמות כג)</span> אל תשת רשע עד וכל שכן דיין:"
+  },
+  "Rashi on Sanhedrin 24b:15:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 24b:15:3",
+      "Rashi on Sanhedrin 25a:6:1"
+    ],
+    "generatedAt": "2026-11-12T07:04:15.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסוחרי שביעית</strong> - הואיל וחימוד ממון מעבירו על דברי תורה הוה ליה כרשע דחמס ופסול לדון ולהעיד שנוטה אחרי הבצע:"
+  },
+  "Rashi on Sanhedrin 24b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:07:53.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחילה היו קוראין אותן כו'</strong> - מפרש בגמ':"
+  },
+  "Rashi on Sanhedrin 24b:17:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:17:1"
+    ],
+    "generatedAt": "2026-11-12T07:08:33.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין לו אומנות אלא הוא</strong> - דהואיל ואין עסוקין ביישובו של עולם אינן בקיאין בטיב דינין ומשא ומתן ואינן יראי חטא:"
+  },
+  "Rashi on Sanhedrin 24b:18:1": {
+    "dependsOn": [
+      "Translation on Rashi on Sanhedrin 24b:18:1",
+      "Rashi on Sanhedrin 24b:18:2"
+    ],
+    "generatedAt": "2026-11-12T07:09:31.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסמכתא</strong> - היינו דבר דאינו נותן לו מדעתו אלא סומך על דבר שאינו דסבור שהוא יכול לנצח ופעמים שמנצחין אותו:"
+  },
+  "Rashi on Sanhedrin 24b:18:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:18:2"
+    ],
+    "generatedAt": "2026-11-12T07:10:16.757Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קניא</strong> - והוה ליה כעין גזילה בידו:"
+  },
+  "Rashi on Sanhedrin 24b:19:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:19:1"
+    ],
+    "generatedAt": "2026-11-12T07:11:53.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כי האי גוונא לאו אסמכתא היא</strong> - והיכי דמי אסמכתא כגון דאם אוביר ולא אעביד אשלם במיטבא <span class=\"parenthesized\">(ב\"מ דף עג:)</span> וכגון משליש את שטרו דגט פשוט <span class=\"parenthesized\">(ב\"ב דף קסח.)</span> דסומך על לא דבר דסבור כל זה בידי לעשות ומרישא כי מתני אדעתא דלא יהיב ליה לאסמכתא קא מתני דטועה וסבור לא יבא לידי כך אבל הכא לא סמיך אמידי דהא לא ידע אי נצח אי לא נצח ואפי' הכי אתני שמע מינה מספיקא אתני גמר ואקני ולא גזילה היא:"
+  },
+  "Rashi on Sanhedrin 24b:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:2:1",
+      "Rashi on Sanhedrin 24b:3:1",
+      "Rashi on Sanhedrin 24b:4:1",
+      "Rashi on Sanhedrin 24a:1:1",
+      "Rashi on Sanhedrin 24a:2:1",
+      "Rashi on Sanhedrin 24a:3:1",
+      "Sanhedrin 24b:1",
+      "Rashi on Sanhedrin 24a:22:1",
+      "Rashi on Sanhedrin 23a:20:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T06:33:39.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באותן הנשבעין</strong> - לפטור עצמן שלא ישלמו דתובע קאמר דור לי ואני מוחל לך:"
+  },
+  "Rashi on Sanhedrin 24b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T06:34:38.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנשבעין ונוטלין</strong> - השכיר והנגזל וכיוצא בהן דנתבע קאמר ליה דור לי ואתן לך:"
+  },
+  "Rashi on Sanhedrin 24b:3:1": {
+    "dependsOn": [
+      "Sanhedrin 24b:3",
+      "Sanhedrin 24b:1"
+    ],
+    "generatedAt": "2026-11-12T06:35:33.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תנא לה רישא</strong> - דאוקמת לה באתן לך ותרתי למה לי:"
+  },
+  "Rashi on Sanhedrin 24b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T06:36:14.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולה בדעת אחרים</strong> - אבא ואביך:"
+  },
+  "Rashi on Sanhedrin 24b:4:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:4:1",
+      "Rashi on Sanhedrin 24b:4:2"
+    ],
+    "generatedAt": "2026-11-12T06:37:06.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדעת עצמו</strong> - של חבירו בעל דין:"
+  },
+  "Rashi on Sanhedrin 24b:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:5:2"
+    ],
+    "generatedAt": "2026-11-12T06:38:18.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי יימר דמזכי ליה</strong> - ואי הוה ידע דמזכי ליה לא הוה אמר הלכך הדר:"
+  },
+  "Rashi on Sanhedrin 24b:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:5:1"
+    ],
+    "generatedAt": "2026-11-12T06:39:30.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל תולה בדעת עצמו</strong> - של בעל דין אסיק אדעתיה דודאי נדר ליה כדי להפטר וידע ומחיל:"
+  },
+  "Rashi on Sanhedrin 24b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T06:40:06.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפני גמר דין</strong> - לאחר שטענו בפניהם וקודם גמר דין בא זה לחזור:"
+  },
+  "Tosafot on Sanhedrin 24b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:10:1",
+      "Rashi on Sanhedrin 24b:10:2",
+      "Rashi on Sanhedrin 24b:10:3",
+      "Rashi on Sanhedrin 24b:10:4",
+      "Tosafot on Sanhedrin 24b:10:1",
+      "Tosafot on Sanhedrin 24b:15:1",
+      "Sanhedrin 24b:10",
+      "Sanhedrin 24a:26",
+      "Rashi on Sanhedrin 24a:26:1",
+      "Maharsha: Chidushei Halachot on Sanhedrin 24b:1"
+    ],
+    "generatedAt": "2026-11-12T06:59:29.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 24b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא דאמר כמאן</strong> - וליכא למימר דסבירא ליה כר\"ש בן לקיש אליבא דר' מאיר חדא כפירוש רש\"י דאין לומר דשביק רבנן ועביד כר' מאיר ועוד דהכא פליגי ר' יוחנן ור\"ש בן לקיש ורבא פסיק פרק החולץ <span class=\"parenthesized\">(יבמות דף לו.)</span> כר\"ש בן לקיש בתלת משמע דבכל שאר מקומות ס\"ל כר' יוחנן לגבי רשב\"ל וליכא למימר הכא טעמיה דנפשיה קאמר כדתירץ לעיל משום דהכא לא קאי אפלוגתא דמתני' כדלעיל דמשום הכי מפרש לה לעיל טעמיה דנפשיה אבל הכא ליכא למימר טעמיה דנפשיה קאמר:"
+  },
+  "Tosafot on Sanhedrin 24b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:01:11.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 24b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלח ליה לאחר גמר דין מחלוקת והלכה כדברי חכמים</strong> - תימה דהכא משמע דלאחר גמר דין מחלוקת אבל קודם יכול לחזור בו ובפ' יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קכח. ושם)</span> אמרי' אמר לו עבדי גנבת שורי טבחת והלה אומר אתה מכרתו לי אתה נתתו לי במתנה רצונך השבע וטול נשבע ואינו יכול לחזור בו משמע מיד שאמר השבע וטול שחבירו ישבע ואינו יכול לחזור בו אלמא אפי' קודם גמר דין אינו יכול לחזור בו להכי גרס ר\"ת ונשבע אינו יכול לחזור בו כלומר אם קפץ זה חבירו ונשבע אינו יכול לחזור בו דכיון דכבר נשבע הוי לאחר גמר דין ואמרי' לאחר גמר דין דהלכה כחכמים:"
+  },
+  "Tosafot on Sanhedrin 24b:15:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 24b:15:1",
+      "Mishnah Rosh Hashanah 1:8",
+      "Rosh Hashanah 22a:8",
+      "Sanhedrin 24b:15",
+      "Tosafot on Rosh Hashanah 22a:8:1",
+      "Sanhedrin 26a:5"
+    ],
+    "generatedAt": "2026-11-12T07:07:08.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 24b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלו הן הפסולין</strong> - יש גורסין עבדים משום דסבירא ליה דקא חשיב הכא פסולי דרבנן ודאורייתא ולא נהירא משום דלא חשיב במתני' רק פסולי דרבנן דהא גזלנים לא קתני וכל פסולי דמתני' פסולי דרבנן נינהו משחק בקוביא אפי' למ\"ד אסמכתא היא דאסמכתא לא קניא מ\"מ אינו דאורייתא כיון שאינו סבור לעשות איסור לבא לידי פסול דאורייתא ולמ\"ד משום ישובו של עולם פשיטא דאינו אלא מדרבנן ומלוה בריבית מיירי בריבית שאינה קצוצה ואפי' מיירי בריבית שקצוצה לא משמע ליה איסור כיון דמדעתיה יהיב ואינו פסול לעדות אלא מדרבנן מפריחי יונים מדרבנן פסולים אפי' למ\"ד אי תקדמי יונך היינו משחק בקוביא ולאידך דאמר ארא מפני דרכי שלום הוא וסוחרי שביעית מיירי בשביעית בזמן הזה דאינו אסור אלא מדרבנן ואפי' בשביעית דאורייתא לא חשיב ליה איסור הא דממציאין מעות לעניים אבל עבדים פסולין מדאורייתא נינהו ק\"ו מאשה ומה אשה שכשירה לבא בקהל פסולה להעיד דכתיב <span class=\"parenthesized\">(דברים יט)</span> האנשים עבד שפסול וכו' על כן נראה דלא גרסי' עבדים דלא מיירי אלא בפסולי דרבנן:"
+  },
+  "Tosafot on Sanhedrin 24b:19:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 24b:18:1",
+      "Rashi on Sanhedrin 24b:18:2",
+      "Rashi on Sanhedrin 24b:19:1",
+      "Maharsha on Sanhedrin 24b:2",
+      "Tosafot on Sanhedrin 24b:12:1"
+    ],
+    "generatedAt": "2026-11-12T07:17:36.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 24b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל כי האי גוונא לאו אסמכתא היא</strong> - פ\"ה דהיכי דמי אסמכתא כגון אם אוביר ולא אעביד אשלם במיטבא וכן משליש את שטרו דגט פשוט <span class=\"parenthesized\">(ב\"ב דף קסח. ושם)</span> דכל הני סמיך אדעתיה וסבור הוא שזה בידו לעשות ומרישא כי מתני ליה אדעתיה דלא יהיב ליה מתנה אתני ליה שהרי סבור הוא שלא יבא לידי כך אבל הכא לאו בידו ולא סמיך אמידי דהא לא ידע אי נצח אי לא נצח ואפ\"ה אתני ש\"מ דמספיקא גמר ומקני ולאו גזילה היא ומיהו הא <span class=\"parenthesized\">(שפיר)</span> דאם אוביר ולא אעביד אשלם במיטבא אסמכתא היא טעות סופרים הוא זה ובזה לא דבר רש\"י דהא אם אוביר אשלם במיטבא לאו אסמכתא כדאמרי' פ' איזהו נשך <span class=\"parenthesized\">(ב\"מ דף עד.)</span> אלא היינו אם אוביר ולא אעביד אשלם אלפא זוזי דבפ' המקבל <span class=\"parenthesized\">(בבא מציעא דף קד.)</span> קאמר אסמכתא היא ובפי' רש\"י היה כתוב אם אוביר וכו' על כן טעו סופרים אבל ר\"ת הקשה ל<span class=\"rashi-quotation\">פי' הקונט'</span> משום דלפי פי' משמע דטפי חשיב אסמכתא <span class=\"parenthesized\">(מה)</span> שהיה בידו מלאו בידו ובפ' איזהו נשך <span class=\"parenthesized\">(בבא מציעא דף עד. ושם)</span> משמע איפכא דאמר התם האי מאן דמקבל זוזי מחבריה למזבין ליה חמרא ופשע ולא זבין משלם כדאזיל אפרוותא דזולשפוט וקאמר התם דאסמכתא היא כו' עד דמקשה הש\"ס מאי שנא מאם אוביר ולא אעביד אשלם במיטבא ומשני התם גבי אם אוביר ולא אעביד אשלם במיטבא משום דהוי בידו לא הויא אסמכתא אלמא דלא הויא בידו הוי טפי אסמכתא ממה שהוא בידו על כן נראה לר\"ת לפרש הכי כל כי האי גוונא לאו אסמכתא היא דלא הויא אסמכתא אלא היכא שאין יכול להרויח כגון משליש שטרו וכו' דגט פשוט <span class=\"parenthesized\">(ב\"ב דף קסח.)</span> אבל הכא לא הויא אסמכתא משום דכיון דשנים הם כל אחד ואחד מקני לחבריה מגו דאי מרווח בעי איהו למקני בההיא הנאה גמר ומקני לחבריה ולפי זה כל שידוכין לא הויא אסמכתא משום דכל חד וחד בעי למקני גמר נמי ומקני ומיהו קשה על פי' ר\"ת שהרי בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף מח: ושם)</span> אמרינן הנותן עירבון לחבירו ואמר לו אם אני חוזר בי עירבוני מחול לך והלה אומר אם אני חוזר בי אכפול לך ערבונך נתקיימו התנאים דברי רבי יוסי ומסיק התם לבסוף אליבא דר' יהודה דהויא אסמכתא ולא קניא אלמא אפי' בשנים חשיב אסמכתא ולא אמרינן מגו דאי בעי קנין העירבון אם חבירו חוזר בו מקנה נמי כנגד העירבון לחבירו כשהוא חוזר בו ועוד משמע לקמן גבי צריכותות דמפריחי יונים דהיכא שהוא סבור דבידו להרויח הויא אסמכתא בעלמא טפי כדפירש רש\"י על כן נראה לר\"י עיקר כפירוש רש\"י ואי קשיא לו מההיא דאיזהו נשך כדפירש לעיל תריץ הכי שאני התם דודאי דבר שהוא בידו ממש לגמרי כגון אם אוביר ולא איעביד אשלם במיטבא דהתם בידו לעשות ולא גזים נמי שסובר הוא שכך הפסיד חבירו אם לא ישלים תנאו כמו אם ישלם במיטבא ובההיא ודאי גמר ומקני ולא חשיב אסמכתא ואומר בלבו עלי לשלם ודאי מן הדין מה שבידי לעשות ולא עשיתי אבל היכא דגזים אע\"ג דהוי בידו ממש לגמרי כגון אם אוביר ולא איעבד אשלם אלפא זוזי מכל מקום כיון דגזים ודאי הוי גוזמא דמתנה לשלם אלף זוז בשביל קרקע אחת ודאי חשיב אסמכתא ומיהו קשה דהכא משמע דדבר דלא הוי בידו לאו אסמכתא הוא כגון משחק בקוביא דהכא ואע\"ג דגזים ומאי שנא מההיא דחמרא דזולשפוט דחשבינן אסמכתא מהאי טעמא ומכ\"מ לא קשיא מידי דהתם ודאי הויא אסמכתא משום שזה סומך עליו משום דהוי דבר שבידו שמוצאין יין למכור ונראה כאסמכתא קצת אע\"ג דלא גזים דשמא לא ירצו אחרים למכור לו והלכך אע\"ג דלא גזים כיון דלאו בידו הוא לגמרי לא גמר ומקני לחבריה אבל הכא גבי משחק בקוביא דלאו בידו הוא כלל אע\"ג דגזים בתנאי שחוק שלו מ\"מ גמר ומקני דכיון שהוא יודע שאין בידו להרויח וידוע הוא שאחד מהם ירויח ודאי לא נתכוון להסמיך חבירו על דבר שאינו אלא גמר ומקנה לכך כי האי גוונא ודאי לאו אסמכתא היא אבל הא דאשלם אלפא זוזי דגזים וגם בידו להשלים תנאו יש לנו לומר דנתכוון להסמיך ולהטעות חבירו הויא אסמכתא משום דגוזמא קאמר ולא גמר ומקנה ומסתברא דלהכי גזים שהוא סבור ודאי שיעבדנה ועוד שבידו הוא ומשום הכי פסק דמשחק בקוביא כשר לעדות דפסקינן כר' יהודה לקמן דכיון שיש לו אומנות שלא הוא כשר והא דפסקינן דמשחק בקוביא קני דווקא כשמעות שניהם על פי הדף לפי שהדף והמקום קנוי לאותו שירויח כדי לקנות המעות אשר עליו אבל המשחקים באמנה אפילו הקנו לא מהני אם לא הקנו בב\"ד חשוב כדאי' בנדרים <span class=\"parenthesized\">(דף כז:)</span>:"
+  }
+}

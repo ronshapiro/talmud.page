@@ -1,0 +1,346 @@
+{
+  "Rashi on Sanhedrin 6b:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:11:1",
+      "Rashi on Sanhedrin 6b:11:2",
+      "Rashi on Sanhedrin 6b:11:3"
+    ],
+    "generatedAt": "2026-11-11T03:54:58.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוטר מים ראשית מדון</strong> - אם באת לפטור ולהשליך המריבה המשולה כמים כדלקמן ולשום שלום ביניהן:"
+  },
+  "Rashi on Sanhedrin 6b:11:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:11:1",
+      "Rashi on Sanhedrin 6b:11:2",
+      "Rashi on Sanhedrin 6b:11:3",
+      "Steinsaltz on Sanhedrin 6b:11:1"
+    ],
+    "generatedAt": "2026-11-11T03:55:57.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ראשית מדון</strong> - קודם שתשא ותתן בדין פטור אותה:"
+  },
+  "Rashi on Sanhedrin 6b:11:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:11:1",
+      "Rashi on Sanhedrin 6b:11:2"
+    ],
+    "generatedAt": "2026-11-11T03:56:37.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטשהו</strong> - ורדוף אחר השלום:"
+  },
+  "Rashi on Sanhedrin 6b:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:12:1"
+    ],
+    "generatedAt": "2026-11-11T03:57:19.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשה</strong> - בעל מריבה מטריח דיינין:"
+  },
+  "Rashi on Sanhedrin 6b:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:12:1",
+      "Steinsaltz on Sanhedrin 6b:12"
+    ],
+    "generatedAt": "2026-11-11T03:58:29.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג שמא יתחייב חזק ונמצא רודפו</strong> - רודף את הדיין להפך את הדין:"
+  },
+  "Rashi on Sanhedrin 6b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:01:49.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיושב לפני רבו</strong> - ובא דין לפני רבו ולא לפניו וראה התלמיד זכות לעני וחובה לעשיר ורבו טועה בדין מניין שלא יחלוק כבוד לרבו וישתוק תלמוד כו' ולקמן <span class=\"parenthesized\">(סנהדרין דף ז.)</span> מפרש מאי משמע דלא תגורו לשון כינוס הוא:"
+  },
+  "Rashi on Sanhedrin 6b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:02:33.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את מי הן מעידין</strong> - כאילו הן מעידין בהקב\"ה כדאמר לקמן <span class=\"parenthesized\">(סנהדרין דף ח.)</span> שמטריחין אותו להחזיר ממון לבעליו:"
+  },
+  "Rashi on Sanhedrin 6b:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:03:31.950Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועמדו שני האנשים אשר להן הריב</strong> - ואוקמינן במסכ' שבועות <span class=\"parenthesized\">(דף ל.)</span> בעדים הכתוב מדבר:"
+  },
+  "Rashi on Sanhedrin 6b:14:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:14:1",
+      "Rashi on Sanhedrin 6b:14:2",
+      "Rashi on Sanhedrin 6b:14:3",
+      "Rashi on Sanhedrin 6b:14:4",
+      "Rashi on Sanhedrin 6a:1:1",
+      "Rashi on Sanhedrin 6a:2:1"
+    ],
+    "generatedAt": "2026-11-11T04:06:35.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לי לצער הזה</strong> - שאם אטעה איענש:"
+  },
+  "Rashi on Sanhedrin 6b:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:14:1",
+      "Rashi on Sanhedrin 6b:14:2",
+      "Rashi on Sanhedrin 6b:14:3",
+      "Rashi on Sanhedrin 6b:14:4",
+      "Steinsaltz on Sanhedrin 6b:14"
+    ],
+    "generatedAt": "2026-11-11T04:07:47.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר</strong> - ביהושפט עמכם בדבר המשפט לפי מה שעם לבבכם שלבבכם נוטה בדבר כלומר בטענותיהם עמכם במשפט לפי אותן דברים תשפוטו ולא תיענשו:"
+  },
+  "Rashi on Sanhedrin 6b:14:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:14:1",
+      "Rashi on Sanhedrin 6b:14:2",
+      "Rashi on Sanhedrin 6b:14:3",
+      "Rashi on Sanhedrin 6b:14:4",
+      "Rashi on Sanhedrin 6b:5:1",
+      "Rashi on Sanhedrin 6a:1:1",
+      "Tosafot on Sanhedrin 6b:1:1",
+      "Rashi on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-11T04:16:07.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאין לו לדיין</strong> - לירא ולמנוע עצמו מן הדין:"
+  },
+  "Rashi on Sanhedrin 6b:14:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:16:37.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לפי מה שעיניו רואות</strong> - לידון ויתכוין להוציאו לצדקו ולאמיתו ושוב לא יענש:"
+  },
+  "Rashi on Sanhedrin 6b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 6b:15"
+    ],
+    "generatedAt": "2026-11-11T04:18:38.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי דמי גמר דין</strong> - דאמרינן לעיל שוב אין אתה רשאי לבצוע:"
+  },
+  "Rashi on Sanhedrin 6b:1:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 6b:1",
+      "Mishneh Torah, The Sanhedrin and the Penalties within Their Jurisdiction 22:4",
+      "Shulchan Arukh, Choshen Mishpat 12:2",
+      "Sanhedrin 6b:15"
+    ],
+    "generatedAt": "2026-11-11T03:33:12.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגמר הדין</strong> - שאמרו איש פלוני אתה זכאי איש פלוני אתה חייב:"
+  },
+  "Rashi on Sanhedrin 6b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:44:47.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור לבצוע</strong> - משבאו לדין אסור לדיינים לבצוע:"
+  },
+  "Rashi on Sanhedrin 6b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:2:1"
+    ],
+    "generatedAt": "2026-11-11T03:45:25.989Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המברך</strong> - המשבח:"
+  },
+  "Rashi on Sanhedrin 6b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:45:56.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אהרן אוהב שלום ורודף שלום</strong> - וכיון שהיה שומע מחלוקת ביניהם קודם שיבואו לפניו לדין היה רודף אחריהן ומטיל שלום ביניהן:"
+  },
+  "Rashi on Sanhedrin 6b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:3:1",
+      "Rashi on Sanhedrin 6b:3:2",
+      "Rashi on Sanhedrin 6b:2:1",
+      "Rashi on Sanhedrin 6b:2:2",
+      "Rashi on Sanhedrin 6b:4:1",
+      "Rashi on Sanhedrin 6b:5:1",
+      "Rashi on Sanhedrin 6b:11:1",
+      "Rashi on Sanhedrin 6b:11:2",
+      "Rashi on Sanhedrin 6b:11:3"
+    ],
+    "generatedAt": "2026-11-11T03:48:43.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורת אמת וגו'</strong> - משתעי באהרן כי שפתי כהן ישמרו דעת וגו' <span class=\"parenthesized\">(מלאכי ב׳:ז׳)</span>:"
+  },
+  "Rashi on Sanhedrin 6b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:50:33.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי שגזל כו'</strong> - ובוצע לשון גזילה דכתיב <span class=\"parenthesized\">(משלי א׳:י״ט)</span> כן ארחות כל בוצע בצע את נפש בעליו יקח:"
+  },
+  "Rashi on Sanhedrin 6b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:52:20.008Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד יהודה</strong> - שהיה לו לומר נחזירנו לאבינו אחרי שהיו דבריו נשמעין לאחיו:"
+  },
+  "Rashi on Sanhedrin 6b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:54:06.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 6b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתאן לתנא קמא</strong> - תנא קמא דאמר אסור לבצוע דריש ליה להאי משפט וצדקה שהיה דוד דן את הדין וחייב את החייב וראה שהיה עני מחויב ממון והיה משלם לבעל דינו מתוך ביתו:"
+  },
+  "Tosafot on Sanhedrin 6b:12:1": {
+    "dependsOn": [
+      "Sanhedrin 6b:12",
+      "Rashi on Sanhedrin 6b:12:1",
+      "Rashi on Sanhedrin 6b:12:2"
+    ],
+    "generatedAt": "2026-11-11T03:59:35.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמצא חזק רודפו</strong> - פירוש לדיין כדמוכח בתר הכי הא דנקט אחד רך שאם היו שניהם חזקים השני היה מסייעו:"
+  },
+  "Tosafot on Sanhedrin 6b:13:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 6b:13:1",
+      "Rashi on Sanhedrin 6b:13:2",
+      "Rashi on Sanhedrin 6b:13:3",
+      "Steinsaltz comment #1 on Sanhedrin 6b:13",
+      "Tosafot on Shevuot 31a:3:1",
+      "Chidushei Agadot on Sanhedrin 6b:9"
+    ],
+    "generatedAt": "2026-11-11T04:05:16.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תכניס את דבריך</strong> - גבי רש ועשיר לא שייך לשון יראה שאינו ירא מפניהם אלא כלומר אל תכניס את דבריך כדי לחלוק לו כבוד:"
+  },
+  "Tosafot on Sanhedrin 6b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:43:42.521Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגמר הדין אי אתה רשאי לבצוע</strong> - כגון שכבר דקדקו בדין היטב וכמו גמרו את הדין דלא מיחסר אלא איש פלוני אתה חייב דכיון דנתברר כל כך אין להטעותו לעשות פשרה שאילמלא היה יודע שנתברר דינו לזכות לא היה מתרצה לפשרה בשום ענין ו<span class=\"rashi-quotation\">פירש בקונטרס</span> שכבר אמרו איש פלוני אתה זכאי ואיש פלוני אתה חייב ולשון הש\"ס מוכח כן בודאי אבל קשה מאי ביצוע שייך השתא אחר שנפסק הדין לגמרי ובדוחק י\"ל שלא יטעו אותו לומר לו יראים אנו שמא טעינו בדין ומיהו כשמתחייבין שבועה זה או זה שרי למימר להו לעשות הביצוע כדי ליפטר מעונש שבועה:"
+  },
+  "Tosafot on Sanhedrin 6b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:49:16.033Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אהרן</strong> - פי' כיון שלא היה דיין ולא היה הדין בא לפניו אלא לפני משה ודאי לדידיה שרי:"
+  },
+  "Tosafot on Sanhedrin 6b:4:1": {
+    "dependsOn": [
+      "Pesachim 37a:12",
+      "Pesachim 37a:9",
+      "Pesachim 37a:10",
+      "Pesachim 37a:13"
+    ],
+    "generatedAt": "2026-11-11T03:51:55.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טחנה ואפאה</strong> - להכי נקט ואפאה לפי שיש דברים שאין מתחייבין בחלה עד לאחר אפייה ומייתי לה פרק כל שעה <span class=\"parenthesized\">(פסחים דף לז.)</span> הסופגנין והדובשנין והאיסקריטין עשאן באילפס חייבין בחמה פטורין:"
+  },
+  "Tosafot on Sanhedrin 6b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T03:53:18.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 6b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כנגד יהודה</strong> - והא דכתיב <span class=\"parenthesized\">(בראשית מ״ט:ט׳)</span> מטרף בני עלית על מעשה דתמר שיבחו הכתוב כדמתרגמינן את אודיתא ולא בהיתתא:"
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "Rashi on Sanhedrin 7a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:41:19.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שב בירי לשלמנא</strong> - שבע בורות כרויות לרגלי איש שלום ומכולם ינצל:"
+  },
+  "Rashi on Sanhedrin 7a:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:10:1",
+      "Rashi on Sanhedrin 7a:10:3"
+    ],
+    "generatedAt": "2026-11-11T04:41:52.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחד בירא לעביד ביש</strong> - לעושה רשעה:"
+  },
+  "Rashi on Sanhedrin 7a:10:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:10:1",
+      "Rashi on Sanhedrin 7a:10:2",
+      "Rashi on Sanhedrin 7a:10:3"
+    ],
+    "generatedAt": "2026-11-11T04:42:24.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יפול</strong> - בתקלה ראשונה הבאה לו:"
+  },
+  "Rashi on Sanhedrin 7a:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:11:1",
+      "Rashi on Sanhedrin 7a:11:2",
+      "Rashi on Sanhedrin 7a:11:3"
+    ],
+    "generatedAt": "2026-11-11T04:44:00.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמבי דינא שלקוה גלימי'</strong> - מי שנטלו ב\"ד טליתו לפורעה לאחר:"
+  },
+  "Rashi on Sanhedrin 7a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:44:25.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליזמר וליזל</strong> - הואיל ודין אמת דנו לא הפסיד כלום אלא גזילה הוציאו מידו:"
+  },
+  "Rashi on Sanhedrin 7a:11:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:11:1",
+      "Rashi on Sanhedrin 7a:11:2"
+    ],
+    "generatedAt": "2026-11-11T04:45:07.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל העם הזה</strong> - ביתרו כתיב ומשמע לא שנא זכאי ולא שנא חייב כולן במשמע:"
+  },
+  "Rashi on Sanhedrin 7a:12:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 7a:12",
+      "Jastrow, שְׁפַל 1",
+      "Jastrow, דִּיקוּלָא 1",
+      "Chokhmat Shlomo on Sanhedrin 7a:2",
+      "Sefer HeArukh, Letter Daled 227"
+    ],
+    "generatedAt": "2026-11-11T04:47:01.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היא ניימא ודיקולא שפיל</strong> - כשהאשה מנמנמת הסל שעל ראשה שהיא נותנת בו פילכה ומלאכת ידיה בו שפיל כלומר מתוך שהיא עצילה אין מלאכתה ניכרת וכולן משלות הן:"
+  },
+  "Rashi on Sanhedrin 7a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:47:50.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדייה לגזיזיה וקם</strong> - הרים אגרופו עלי ועמד לנגדי:"
+  },
+  "Rashi on Sanhedrin 7a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:48:19.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רחימתין הוה עזיזא</strong> - כשאהבתינו היתה עזה ביני לאשתי:"
+  },
+  "Rashi on Sanhedrin 7a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:48:41.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפותיא דספסירא שכיבן</strong> - על רוחב הסייף היינו שוכבים שנינו:"
+  },
+  "Rashi on Sanhedrin 7a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:49:09.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא סגי לן</strong> - לא די לנו:"
+  },
+  "Rashi on Sanhedrin 7a:14:4": {
+    "dependsOn": [
+      "Sanhedrin 7a:14"
+    ],
+    "generatedAt": "2026-11-11T04:49:54.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי כאן עשרה</strong> - גובה מן הקרקע הרי שהקב\"ה משרה שכינתו בעשרה טפחים סמוך לקרקע ועוד באורך הכפורת באמתה וחצי:"
+  },
+  "Rashi on Sanhedrin 7a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:50:48.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולבסוף</strong> - בבהמ\"ק היה גבוה שלשים אמה ואורכו ששים וכשחטאו נאמר להם איזה בית אשר תבנו לי שתוכל שכינתי להיות מצומצמת בתוכו:"
+  },
+  "Rashi on Sanhedrin 7a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:51:22.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עתה אקום</strong> - אסתלק משער ב\"ד:"
+  },
+  "Rashi on Sanhedrin 7a:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:1:1",
+      "Rashi on Sanhedrin 7a:1:2",
+      "Rashi on Sanhedrin 7a:1:3"
+    ],
+    "generatedAt": "2026-11-11T04:19:33.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצוה למימר להו</strong> - ברישא אי דינא בעיתו אי פשרה בעיתו דפתחינן להו בפשרה:"
+  },
+  "Rashi on Sanhedrin 7a:1:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:1:1",
+      "Rashi on Sanhedrin 7a:1:3",
+      "Rashi on Sanhedrin 6b:1:1",
+      "Rashi on Sanhedrin 6b:10:1",
+      "Rashi on Sanhedrin 6b:14:1",
+      "Sanhedrin 6b:1"
+    ],
+    "generatedAt": "2026-11-11T04:21:00.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו ת\"ק</strong> - דאמר נגמר הדין אי אתה רשאי לבצוע הא מקודם גמר דין רשאי לבצוע וה\"נ רשות הוא:"
+  },
+  "Rashi on Sanhedrin 7a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:21:36.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו מצוה</strong> - להזכיר פשרה לת\"ק ליכא מצוה:"
+  },
+  "Rashi on Sanhedrin 7a:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:2:1",
+      "Rashi on Sanhedrin 6b:1:1",
+      "Sanhedrin 6b:15"
+    ],
+    "generatedAt": "2026-11-11T04:23:07.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו משתשמע דבריהם</strong> - לת\"ק אפילו שמע דבריהם רשאי לבצוע עד שיגמר הדין ויאמר זה זכאי וזה חייב לר\"ש בן מנסיא משתשמע את דבריהם וידעת להיכן נוטה אע\"ג דלא נגמר אין רשאי לבצוע:"
+  },
+  "Rashi on Sanhedrin 7a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:23:52.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרא זה</strong> - ובוצע ברך:"
+  },
+  "Rashi on Sanhedrin 7a:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:3:1",
+      "Rashi on Sanhedrin 7a:3:2",
+      "Rashi on Sanhedrin 7a:3:3",
+      "Rashi on Sanhedrin 7a:3:4"
+    ],
+    "generatedAt": "2026-11-11T04:24:33.017Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כנגד מעשה העגל</strong> - שעשה אהרן פשרה בינו לבין עצמו והורה היתר לעצמו לעשות להם את העגל:"
+  },
+  "Rashi on Sanhedrin 7a:3:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:3:1",
+      "Rashi on Sanhedrin 7a:3:2",
+      "Rashi on Sanhedrin 7a:3:3",
+      "Rashi on Sanhedrin 7a:3:4"
+    ],
+    "generatedAt": "2026-11-11T04:25:11.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויבן מזבח</strong> - הבין מהזבוח לפניו שהרגו את חור על שלא עשה להם:"
+  },
+  "Rashi on Sanhedrin 7a:3:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:3:1",
+      "Rashi on Sanhedrin 7a:3:2",
+      "Rashi on Sanhedrin 7a:3:3",
+      "Rashi on Sanhedrin 7a:3:4",
+      "Sanhedrin 7a:3",
+      "Rashi on Sanhedrin 7a:4:1"
+    ],
+    "generatedAt": "2026-11-11T04:25:55.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהרן</strong> - כהן ונביא היה:"
+  },
+  "Rashi on Sanhedrin 7a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:27:37.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הויא להו תקנתא</strong> - דהא סופן לעשות כן בזכריה בן יהוידע ויחרב בית המקדש על כך:"
+  },
+  "Rashi on Sanhedrin 7a:5:1": {
+    "dependsOn": [
+      "Sanhedrin 7a:5"
+    ],
+    "generatedAt": "2026-11-11T04:28:59.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והני תנאי</strong> - דלית להו משתשמע דבריהם אי אתה רשאי לבצוע האי פוטר מים מאי דרשי ביה:"
+  },
+  "Rashi on Sanhedrin 7a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:29:27.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחילת דינו</strong> - לעתיד לבא:"
+  },
+  "Rashi on Sanhedrin 7a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:29:51.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על דברי תורה</strong> - שלא עסק בתורה:"
+  },
+  "Rashi on Sanhedrin 7a:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:30:34.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוטר מים</strong> - שפוטר התורה מעליו הוא ראשית מדונו תורה נמשלה למים דכתיב <span class=\"parenthesized\">(ישעיהו נ״ה:א׳)</span> הוי כל צמא לכו למים:"
+  },
+  "Rashi on Sanhedrin 7a:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:32:32.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לצינורא דבידקא</strong> - כשהנהר גדל פעמים שהוא יוצא לשדות שעל אגפיו כעין ניגרים וצינורות קטנים ואם אינו סותמו מיד הולך ומרחיב ושוב אינו יכול לסותמו והיינו דקאמר קרא פוטר מים ראשית מדון כלומר ראשית מדון ומריבה דומה לפוטר מים פוטר פותח כמו פטר רחם <span class=\"parenthesized\">(שמות יג)</span>:"
+  },
+  "Rashi on Sanhedrin 7a:6:1": {
+    "dependsOn": [
+      "Sanhedrin 7a:6",
+      "Rashi on Sanhedrin 7a:5:4",
+      "Rashi on Sanhedrin 7a:5:5",
+      "Tosafot on Sanhedrin 7a:6:1",
+      "Jastrow, גּוּדָא 1"
+    ],
+    "generatedAt": "2026-11-11T04:35:49.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגודא דגמלא</strong> - דפין של גשר בתחילה כשדורסין עליהם מנענעות וסוף מתחזקות ונקבעות במקומן והכי נמי כשאדם מרבה בקטטה מתחזקת ובאה ולא מקרא נפקא:"
+  },
+  "Rashi on Sanhedrin 7a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:37:41.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוביה דשמע ואדיש</strong> - אשריו ששומע חרפתו ושותק ומרגיל בכך ואדיש כמו דדש דש <span class=\"parenthesized\">(גיטין דף נו:)</span>:"
+  },
+  "Rashi on Sanhedrin 7a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:38:18.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלפוה בישתיה מאה</strong> - הלכו להם בשתיקתו מאה רעות שהיו באות עליו על ידי התגר:"
+  },
+  "Rashi on Sanhedrin 7a:8:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7a:8:1",
+      "Rashi on Sanhedrin 7a:8:2",
+      "Rashi on Sanhedrin 7a:8:3",
+      "Rashi on Sanhedrin 7a:8:4"
+    ],
+    "generatedAt": "2026-11-11T04:39:02.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוטר מים</strong> - המתחיל <span class=\"parenthesized\">(מדון)</span> ופותח בקטטה הוא תחילת מאה דיני:"
+  },
+  "Rashi on Sanhedrin 7a:8:4": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 7a:8",
+      "Rashi on Sanhedrin 7a:8:1",
+      "Rashi on Sanhedrin 7a:8:2",
+      "Rashi on Sanhedrin 7a:8:3"
+    ],
+    "generatedAt": "2026-11-11T04:40:27.299Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדון</strong> - נוטריקון מאה דני ל\"א מדון בגימטריא מאה:"
+  },
+  "Rashi on Sanhedrin 7a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:41:00.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתרי תלת גנבא לא מיקטיל</strong> - כלומר אם עובר אדם עבירה פעמים ושלש ולא באה עליו פורענות אל יתמה דאתרי תלת גנבא לא מיקטיל וסופו ללקות באחרונה:"
+  },
+  "Tosafot on Sanhedrin 7a:3:1": {
+    "dependsOn": [
+      "Sanhedrin 7a:3",
+      "Sanhedrin 6b:3",
+      "Rashi on Sanhedrin 7a:3:1",
+      "Rashi on Sanhedrin 7a:3:2"
+    ],
+    "generatedAt": "2026-11-11T04:27:12.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 7a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד מעשה העגל</strong> - אקרא דתורת אמת קאי כדכתיב בסיפיה ורבים השיב מעון שיהא להם תקנה כדמסיק:"
+  },
+  "Tosafot on Sanhedrin 7a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:34:36.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא על דברי תורה</strong> - והא דאמרינן בפרק במה מדליקין <span class=\"parenthesized\">(שבת דף לא.)</span> ששואלין לו נשאת ונתת באמונה ואח\"כ קבעת עתים לתורה התם באדם שעוסק בתורה מיירי אלא שלא קבע עתים והכא מיירי כשלא עסק כלל אי נמי שואלים לו תחילה על משא ומתן באמונה ומ\"מ יקבל דינו תחילה על דברי תורה והכי דריש ליה לקרא תחלת גילוי דינו במה שנטשו מדברי תורה:"
+  },
+  "Tosafot on Sanhedrin 7a:6:1": {
+    "dependsOn": [
+      "Sanhedrin 7a:6",
+      "Rashi on Sanhedrin 7a:6:1"
+    ],
+    "generatedAt": "2026-11-11T04:36:45.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגודא דגמלא</strong> - וה\"ק פוטר מים דהיינו גודא דגמלא שפוטרת את האדם מן המים כך הוא ראשית מדון:"
+  }
+}

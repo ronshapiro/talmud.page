@@ -1,0 +1,385 @@
+{
+  "Rashi on Sanhedrin 19b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:57:49.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי תנה את אשתי את מיכל</strong> - דמשמע זו אשתי ולא מירב אשתי:"
+  },
+  "Rashi on Sanhedrin 19b:10:2": {
+    "dependsOn": [
+      "Sanhedrin 19b:10",
+      "Rashi on Sanhedrin 19b:10:1",
+      "Rashi on Sanhedrin 19b:10:2",
+      "Rashi on Sanhedrin 19b:10:3",
+      "Sanhedrin 19b:8",
+      "Sanhedrin 19b:6"
+    ],
+    "generatedAt": "2026-11-12T01:00:17.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי דריש ביה</strong> - רבי יוסי דלא דריש ולא מירב אשתי:"
+  },
+  "Rashi on Sanhedrin 19b:10:3": {
+    "dependsOn": [
+      "Sanhedrin 19b:10",
+      "Sanhedrin 19b:12",
+      "Sanhedrin 19b:13",
+      "Rashi on Sanhedrin 19b:10:1",
+      "Rashi on Sanhedrin 19b:10:2",
+      "Rashi on Sanhedrin 19b:10:3"
+    ],
+    "generatedAt": "2026-11-12T01:02:06.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטעמיה</strong> - דדריש ממקרא מעורבב כדלקמן מה מיכל אשתי אף מירב אשתי:"
+  },
+  "Rashi on Sanhedrin 19b:12:1": {
+    "dependsOn": [
+      "Sanhedrin 19b:12",
+      "Sanhedrin 19b:10",
+      "Rashi on Sanhedrin 19b:8:1",
+      "Rashi on Sanhedrin 19b:10:1",
+      "Rashi on Sanhedrin 19b:10:2"
+    ],
+    "generatedAt": "2026-11-12T01:03:09.528Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדושי מיכל לפלטי</strong> - פשיטא לן דבעבירה דהא כתיב אשתי מיכל וקיימא לן <span class=\"parenthesized\">(קידושין דף מז.)</span> דעתיה אפרוטה דבת קידושין היא:"
+  },
+  "Rashi on Sanhedrin 19b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:04:26.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואשתו היהודית</strong> - בכלב בן יפונה משתעי קרא יהודית על שם שכפרה בע\"ז ונתגיירה שכל הכופר בע\"ז נקרא יהודי דכתיב <span class=\"parenthesized\">(דניאל ג׳:י״ב)</span> איתי גוברין יהודאין וגו':"
+  },
+  "Rashi on Sanhedrin 19b:15:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:15:1",
+      "Rashi on Sanhedrin 19b:15:3"
+    ],
+    "generatedAt": "2026-11-12T01:04:59.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירד אביגדור</strong> - כולן שמותן של משה הן:"
+  },
+  "Rashi on Sanhedrin 19b:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:05:41.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרד</strong> - כלב שמרד בעצת מרגלים:"
+  },
+  "Rashi on Sanhedrin 19b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:06:02.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולדות אהרן ומשה</strong> - ומפרש בתריה בני אהרן ולא הוזכרו בני משה שם:"
+  },
+  "Rashi on Sanhedrin 19b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:07:15.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפדאו מצער גידול בנים</strong> - שהוטל עליו טורח השבטים שעל אברהם היה מוטל אותו טורח דכתיב <span class=\"parenthesized\">(בראשית כ״ו:ד׳)</span> והרביתי את זרעך והוא פדאו:"
+  },
+  "Rashi on Sanhedrin 19b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:43:03.634Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפנה</strong> - שמעון לימינו לידע אם יאמרו כמותו:"
+  },
+  "Rashi on Sanhedrin 19b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:43:34.651Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבשו פניהם</strong> - שהיו יראין ממנו:"
+  },
+  "Rashi on Sanhedrin 19b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:43:58.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעל מחשבות</strong> - הקב\"ה:"
+  },
+  "Rashi on Sanhedrin 19b:20:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:20:1",
+      "Rashi on Sanhedrin 19b:20:2",
+      "Rashi on Sanhedrin 19b:20:3",
+      "Rashi on Sanhedrin 19b:20:4"
+    ],
+    "generatedAt": "2026-11-12T01:12:57.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא כתיב אישה</strong> - אלמא בא עליה:"
+  },
+  "Rashi on Sanhedrin 19b:20:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:20:1",
+      "Rashi on Sanhedrin 19b:20:3",
+      "Rashi on Sanhedrin 19b:20:4"
+    ],
+    "generatedAt": "2026-11-12T01:13:46.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנעשה לה כאישה</strong> - שהיה מגדלה ומחבבה:"
+  },
+  "Rashi on Sanhedrin 19b:20:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:20:1",
+      "Rashi on Sanhedrin 19b:20:2",
+      "Rashi on Sanhedrin 19b:20:3",
+      "Rashi on Sanhedrin 19b:20:4"
+    ],
+    "generatedAt": "2026-11-12T01:14:45.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלך ובכה אחריה</strong> - בקושיא קא נסיב לה:"
+  },
+  "Rashi on Sanhedrin 19b:20:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:15:12.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד בחורים</strong> - קרא קא דריש ואזיל:"
+  },
+  "Rashi on Sanhedrin 19b:21:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:21:2",
+      "Rashi on Sanhedrin 19b:21:3"
+    ],
+    "generatedAt": "2026-11-12T01:16:09.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוקפו של יוסף ענוותנותו של בועז</strong> - דבר גדול של יוסף כדבר קל וקטן שבבועז תוקף דבר גדול וחמור ויש לו שם ענוה דבר שאין לו שם שאדם עושה לפי תומו:"
+  },
+  "Rashi on Sanhedrin 19b:21:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:21:2",
+      "Rashi on Sanhedrin 19b:21:1",
+      "Rashi on Sanhedrin 19b:21:3"
+    ],
+    "generatedAt": "2026-11-12T01:18:14.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנעשה בשרו</strong> - אבר:"
+  },
+  "Rashi on Sanhedrin 19b:21:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:21:1",
+      "Rashi on Sanhedrin 19b:21:2"
+    ],
+    "generatedAt": "2026-11-12T01:19:08.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כראשי לפתות</strong> - נתקשה ואעפ\"כ כבש יצרו ואף על פי שפנויה היתה ועמו במיטה אבל יוסף אשת איש היתה ואינה עמו במיטה:"
+  },
+  "Rashi on Sanhedrin 19b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:44:58.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא חולצין לאשתו</strong> - מפני שאסורה לינשא:"
+  },
+  "Rashi on Sanhedrin 19b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:2:1",
+      "Rashi on Sanhedrin 19b:2:2",
+      "Rashi on Sanhedrin 19b:2:3",
+      "Sanhedrin 18a:9",
+      "Steinsaltz on Sanhedrin 19b:2",
+      "Tosafot on Sanhedrin 19b:2:1",
+      "Rashi on Sanhedrin 19b:1:1",
+      "Rashi on Sanhedrin 19b:1:2",
+      "Rashi on Sanhedrin 19b:1:3"
+    ],
+    "generatedAt": "2026-11-12T00:46:47.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:2:2"
+    ],
+    "sourceText": "חליצה גנאי היא לו לבא לב\"ד ותהא רוקקת לפניו וייבום גנאי הוא לו לקום על שם אחיו:"
+  },
+  "Rashi on Sanhedrin 19b:2:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:2:1",
+      "Rashi on Sanhedrin 19b:2:2",
+      "Rashi on Sanhedrin 19b:2:3",
+      "Rashi on Sanhedrin 19b:1:1",
+      "Rashi on Sanhedrin 19b:1:2",
+      "Rashi on Sanhedrin 19b:1:3",
+      "Rashi on Sanhedrin 19b:6:1",
+      "Rashi on Sanhedrin 19b:7:1",
+      "Rashi on Sanhedrin 19b:7:2",
+      "Rashi on Sanhedrin 19b:8:1",
+      "Rashi on Sanhedrin 19b:8:2"
+    ],
+    "generatedAt": "2026-11-12T00:51:12.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:2:3"
+    ],
+    "sourceText": "הא דרב אשי בפ' קמא דקידושין <span class=\"parenthesized\">(דף לב:)</span>:"
+  },
+  "Rashi on Sanhedrin 19b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:53:43.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הראויות לו</strong> - המותרות לו אבל נשיו של שאול לא:"
+  },
+  "Rashi on Sanhedrin 19b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 19b:6",
+      "Rashi on Sanhedrin 19b:7:1",
+      "Rashi on Sanhedrin 19b:7:2"
+    ],
+    "generatedAt": "2026-11-12T00:54:29.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלוה אית לך גבאי</strong> - עושר גדול וקידושין אחרים לא קיבלתי:"
+  },
+  "Rashi on Sanhedrin 19b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:55:00.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעת תת</strong> - כשהגיע עת לתתה לדוד נתנה לעדריאל:"
+  },
+  "Rashi on Sanhedrin 19b:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:7:1",
+      "Rashi on Sanhedrin 19b:7:2"
+    ],
+    "generatedAt": "2026-11-12T00:55:53.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלוה ופרוטה</strong> - מלוה עושר גדול שנתחייבתי לך בשביל גלית ופרוטה שוה כסף שקבלתי ממך בהללו ערלות פלשתים:"
+  },
+  "Rashi on Sanhedrin 19b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:8:2"
+    ],
+    "generatedAt": "2026-11-12T00:56:37.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאול סבר דעתיה</strong> - דמקדש למקדש במלוה דחשיבא הלכך לאו קידושי נינהו ואזל ויהבה לפלטי בן ליש:"
+  },
+  "Rashi on Sanhedrin 19b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 19b:8:1"
+    ],
+    "generatedAt": "2026-11-12T00:57:22.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 19b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודוד סבר</strong> - דעתיה אפרוטה משום הכי קרי לה אשתי:"
+  },
+  "Tosafot on Sanhedrin 19b:18:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 19b:18:1",
+      "Rashi on Sanhedrin 19b:18:1"
+    ],
+    "generatedAt": "2026-11-12T01:12:16.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 19b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפדאו מצער גידול בנים</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> גידול י\"ב שבטים ולא נהירא חדא דאינו צער אלא שמחה כדאמרינן <span class=\"parenthesized\">(ברכות דף סג.)</span> גבי עובד אדום שברכו ה' בבנים בשכר הארון שהיה בביתו ועוד דאברהם היו לו בנים מקטורה וצריך לומר צער של יוסף ואחיו וגלגול ירידת מצרים:"
+  },
+  "Tosafot on Sanhedrin 19b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:53:24.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 19b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצוה שאני</strong> - וכה\"ג לא משני הש\"ס גבי המלך שעבר לפני כלה בפרק האשה שנתארמלה <span class=\"parenthesized\">(כתובות דף טז.)</span> דמשני פרשת דרכים הואי ואמאי לא משני מצוה שאני וי\"ל דהתם אין המצוה כי אם בשביל כבוד החתן והכלה וכבוד מלך עדיף טפי מכבוד החתן וא\"כ ליכא מצוה אבל הכא גבי יבום מצוה איכא:"
+  }
+}

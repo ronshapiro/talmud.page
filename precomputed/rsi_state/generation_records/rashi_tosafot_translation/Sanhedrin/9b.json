@@ -1,0 +1,304 @@
+{
+  "Rashi on Sanhedrin 9b:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:1:2",
+      "Sanhedrin 9b:1",
+      "Rashi on Sanhedrin 3a:1:1",
+      "Rashi on Sanhedrin 3a:1:2",
+      "Rashi on Sanhedrin 8a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-11T07:37:20.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דא\"כ מה יעשו שני אחין ואחד</strong> - כשר עמהם:"
+  },
+  "Rashi on Sanhedrin 9b:1:2": {
+    "dependsOn": [
+      "Sanhedrin 9b:1",
+      "Rashi on Sanhedrin 9b:1:1",
+      "Sanhedrin 9a:5",
+      "Rashi on Sanhedrin 9a:6:1",
+      "Rashi on Sanhedrin 9a:6:2",
+      "Rashi on Sanhedrin 9a:6:3",
+      "Rashi on Sanhedrin 9a:6:4",
+      "Rashi on Sanhedrin 9a:6:5",
+      "Rashi on Sanhedrin 9b:3:1",
+      "Rashi on Sanhedrin 9b:3:2",
+      "Rashi on Sanhedrin 9b:5:1",
+      "Rashi on Sanhedrin 9b:5:2",
+      "Rashi on Sanhedrin 9b:1:2"
+    ],
+    "generatedAt": "2026-11-11T07:43:58.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שראו באחד שהרג את הנפש</strong> - ופלוגתא דר' מאיר ורבנן נמי כגון שנמצא אחד מן השלשה קרוב או פסול וראה ושתק ולא התרה ר' מאיר סבר לה כר' יוסי דאמר בדיני נפשות לא שנא התרה ולא שנא שתק עדותן בטלה ורבנן סברי כרבי דהיכא דשתק תתקיים העדות בשאר ומיקטלא:"
+  },
+  "Rashi on Sanhedrin 9b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:45:37.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבדיקות</strong> - זה אומר כליו של בועל שחורים וזה אומר לבנים:"
+  },
+  "Rashi on Sanhedrin 9b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:3:1"
+    ],
+    "generatedAt": "2026-11-11T07:46:28.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חקירות</strong> - איזה יום ואיזו שעה וכיוצא בהם שהעדים באים על ידיהם לידי הזמה ורבי מאיר סבר הכחשת בדיקות שמה הכחשה ולא מיקטלא ורבנן סברי כיון דבחקירה נמצאו מכוונים הכחשה דבדיקות לאו הכחשה היא דלא רמו סהדי אדעתיהו למיבדק כולי האי:"
+  },
+  "Rashi on Sanhedrin 9b:4:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:1:1",
+      "Rashi on Sanhedrin 9b:3:1",
+      "Rashi on Sanhedrin 9b:5:1"
+    ],
+    "generatedAt": "2026-11-11T07:47:34.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעוקצי תאנים</strong> - שאמרו העדים תחת תאנה נעשה מעשה אמר לו תאנה זו עוקציה דקין או עוקציה גסין עוקצין זנבות תאנים כמו <span class=\"parenthesized\">(סוכה דף לד:)</span> ניטל עוקצו:"
+  },
+  "Rashi on Sanhedrin 9b:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:5:2"
+    ],
+    "generatedAt": "2026-11-11T07:50:38.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדי הבעל נהרגין</strong> - שבאו להורגה:"
+  },
+  "Rashi on Sanhedrin 9b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:52:00.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין משלמין ממון</strong> - אע\"פ שהיו מפסידין אותה כתובה אין משלמין טובת הנאת כתובתה כדין שאר זוממי כתובה במסכת מכות <span class=\"parenthesized\">(דף ג.)</span> דכיון דבשבילה הן נהרגין אין משלמין לה ממון דמתחייב בנפשו פטור מן התשלומין דכתיב <span class=\"parenthesized\">(שמות כ״א:כ״ב)</span> לא יהיה אסון ענוש יענש ואי משום מאה סלע דהוו בעו לאפסודיה לאב והוה ליה מיתה לזה לאשה ותשלומין לזה לאב לאו עלייהו רמו לשלומי אלא על הבעל שהרי על ידן הבעל בא לשלם לאב דכל זמן שלא הביא הבעל עדים שזינתה תחתיו אינו מתחייב לשלם מאה סלע על ידי עצמו כדאמרינן בכתובות <span class=\"parenthesized\">(דף מו.)</span> דלא קרינא ביה ואם אמת היה וגו' דבלאו עדים לא מיקטלא הלכך איהו נמי לא מיחייב אלא אם כן הביא עדים שזינתה והוזמו:"
+  },
+  "Rashi on Sanhedrin 9b:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:6:1",
+      "Rashi on Sanhedrin 9b:6:2",
+      "Rashi on Sanhedrin 9b:6:3",
+      "Rashi on Sanhedrin 9b:6:4",
+      "Rashi on Sanhedrin 9b:6:5",
+      "Rashi on Sanhedrin 9b:1:1",
+      "Rashi on Sanhedrin 9b:1:2",
+      "Rashi on Sanhedrin 9b:3:1",
+      "Rashi on Sanhedrin 9b:5:1"
+    ],
+    "generatedAt": "2026-11-11T07:53:19.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והזימום לעדי האב</strong> - היאך אתם מזימים את אלו לומר שעמכם היו במקום פלוני והלא אתם עמנו הייתם במקום פלוני:"
+  },
+  "Rashi on Sanhedrin 9b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:53:48.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדי האב נהרגין</strong> - שרצו להרוג עדי הבעל:"
+  },
+  "Rashi on Sanhedrin 9b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:54:42.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשלמין ממון</strong> - מאה כסף לבעל שבאו לחייבו כשהזימו את עדיו:"
+  },
+  "Rashi on Sanhedrin 9b:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:55:05.760Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממון לזה</strong> - לבעל:"
+  },
+  "Rashi on Sanhedrin 9b:6:5": {
+    "dependsOn": [
+      "Sanhedrin 9b:6",
+      "Rashi on Sanhedrin 9b:6:4"
+    ],
+    "generatedAt": "2026-11-11T07:55:49.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפשות לזה</strong> - ונהרגין בשביל העדים דקסבר רב יוסף כי פטר רחמנא מתחייב בנפשו מן התשלומין היכא דמיתה וממון משום חד קאתו עליה:"
+  },
+  "Rashi on Sanhedrin 9b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T08:06:50.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלוני רבעו</strong> - במשכב זכור:"
+  },
+  "Rashi on Sanhedrin 9b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T08:07:45.580Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאונסו</strong> - על כרחו:"
+  },
+  "Rashi on Sanhedrin 9b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T08:08:22.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא ואחר</strong> - הנרבע הזה כשר להעיד עליו ואם יש אחר עמו נהרג הרובע על פיהם:"
+  },
+  "Rashi on Sanhedrin 9b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9b:8:1",
+      "Rashi on Sanhedrin 9b:8:2",
+      "Rashi on Sanhedrin 9b:5:2",
+      "Rashi on Sanhedrin 2a:1:5"
+    ],
+    "generatedAt": "2026-11-11T08:11:33.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תשת רשע עד</strong> - דכתיב <span class=\"parenthesized\">(שמות כג)</span> אל תשת ידך וגו':"
+  },
+  "Rashi on Sanhedrin 9b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T08:12:27.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר</strong> - אין אדם נפסל לעדות בהודאת פיו דאדם קרוב אצל עצמו הלכך אין אדם יכול לשום עצמו רשע כלומר על עדות עצמו אינו נעשה רשע שהרי תורה פסלה קרוב לעדות ונהרג הרובע דפלגינן דיבורא ומהימנינן ליה לגבי חבריה ולא מהימנינן ליה לגבי דידיה לפסול לעדות:"
+  },
+  "Tosafot on Sanhedrin 9b:2:1": {
+    "dependsOn": [
+      "Makkot 6b:10",
+      "Makkot 6b:9"
+    ],
+    "generatedAt": "2026-11-11T07:45:07.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי אומר לעולם אינו נהרג עד שיהיו פי שני עדיו מתרין בו</strong> - וא\"ת והא תנן באלו הן הגולין <span class=\"parenthesized\">(מכות דף ט:)</span> רבי יוסי אומר השונא נהרג מפני שהוא כמועד ומותרה בפרק קמא דמכות <span class=\"parenthesized\">(דף ו:)</span> פריך לה ומשני דההוא היינו כרבי יוסי בר יהודה:"
+  },
+  "Tosafot on Sanhedrin 9b:4:1": {
+    "dependsOn": [
+      "Sanhedrin 9b:4",
+      "Tosafot on Sanhedrin 8b:3:1",
+      "Tosafot on Sanhedrin 8b:2:1"
+    ],
+    "generatedAt": "2026-11-11T07:50:01.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפלוגתא דבן זכאי</strong> - תימה דמשמע דקאי אאביי דאמר דכ\"ע חוששין ללעז א\"כ לרבי מאיר יהא נמי בכ\"ג אע\"ג דאיתכחיש בבדיקות דהא חיישינן שמא יבואו עדים אחרים שזינתה בין לפ\"ה בין לפר\"ת וי\"ל דמיירי כגון דאמרי הנך סהדי לא היה שם עד אחר וטעמא דרבנן בעשרים ושלשה לפר\"ת דאיירי כשהכחישו עדי האב הכחשה גמורה אע\"ג דליכא למיחש לסהדי אחריני מ\"מ איכא למיחש שמא יזים את עדי האב כגון דלא הוכחשו ויצטרך נמי כ\"ג אי נמי איירי דיש לבעל שני כתי עדים המכחישים זו את זו בבדיקות דתו ליכא למיחש לר' מאיר לעדים אחרים דאפילו יבאו יהיו מוכחשים מאלו בבדיקות ולרבנן איכא למיחש לעדים אחרים דהכחשה דבדיקות לאו כלום אי נמי דעדי האב הזימו לעדי הבעל דלכולי עלמא ליכא למיחש לאחריני וטעמא דרבנן דבכ\"ג משום כבוד ראשונים אפילו הזימו קודם גמר דין כל שכן לאחר גמר דין דאתי טפי שפיר דהוי בכ\"ג ולרבי מאיר לא שייך כבוד ראשונים דלא היה כאן חיוב מיתה דהוכחשו בבדיקות:"
+  },
+  "Tosafot on Sanhedrin 9b:6:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sanhedrin 9b:1",
+      "Sanhedrin 41a:9",
+      "Sanhedrin 41a:10",
+      "Sanhedrin 41a:11",
+      "Sanhedrin 41a:12",
+      "Sanhedrin 41a:13",
+      "Sanhedrin 41a:14",
+      "Sanhedrin 41a:15",
+      "Tosafot on Sanhedrin 9b:6:2"
+    ],
+    "generatedAt": "2026-11-11T08:01:15.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדי האב נהרגין ומשלמין ממון</strong> - תימה דאמאי נהרגין דמצו אמרי לא לחייב עדי הבעל באנו אלא לחייב הבעל ממון קאתינא כיון שלא התרו בהן דעדים זוממין לא בעו התראה וכה\"ג אמרינן לקמן בפרק היו בודקין <span class=\"parenthesized\">(סנהדרין דף מא:)</span> למאן דאמר חבר א\"צ התראה עדי נערה המאורסה אין נהרגין מתוך שיכולין לומר לאוסרה על בעלה באנו וי\"ל דהכא שאני כיון שיודעים דבאים להרוג את האשה יודעים שיהרגו אותן אם יוזמו דאי אפשר להיות זה בלא זה אבל התם לא ידעי שהיתה חבירה אי נמי לא ידעי דחבר א\"צ התראה והא דפריך התם אלא אשה חבירה דקיימא לן <span class=\"parenthesized\">(כר')</span> יוסי ב\"ר יהודה דמיקטלא היכי משכחת לה הוה מצי לשנויי כגון דידעי שהיא חבירה וידעי שחבר א\"צ התראה:"
+  },
+  "Tosafot on Sanhedrin 9b:6:2": {
+    "dependsOn": [
+      "Bava Kamma 22b:11",
+      "Tosafot on Bava Kamma 22b:5:1",
+      "Tosafot on Sanhedrin 9b:6:1",
+      "Sanhedrin 9b:6"
+    ],
+    "generatedAt": "2026-11-11T08:06:19.856Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממון לזה ונפשות לזה</strong> - הא דמקשה בפרק כיצד הרגל <span class=\"parenthesized\">(ב\"ק דף כב: ד\"ה בגדי)</span> דפטר התם אפילו בגדי דחד ועבדא דחד מפורש במקום אחר:"
+  },
+  "Tosafot on Sanhedrin 9b:8:1": {
+    "dependsOn": [
+      "Tosafot on Makkot 6a:6:1"
+    ],
+    "generatedAt": "2026-11-11T08:15:22.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרצונו רשע הוא</strong> - ואע\"ג דרבא בעי רשע דחמס בפרק זה בורר <span class=\"parenthesized\">(לקמן סנהדרין דף כז.)</span> האי כמו רשע דחמס הוא דומיא דאוכל נבילות לתיאבון כיון שעובר להנאתו על דעת קונו כמו כן היה עושה בשביל הנאת ממון ומעיד שקר והא דאמר התם <span class=\"parenthesized\">(דף כו:)</span> החשוד על העריות כשר לעדות <span class=\"rashi-quotation\">פירש בקונטרס</span> לאו דאיכא סהדי שבא על הערוה אלא שהוא גס בעריות ומתייחד עמהן והאי דקאמר ארבעים בכתפיה וכשר היינו משום דמלקין על ייחוד כל העריות חוץ מאשת איש דמלקין על לא טובה השמועה אי נמי התם כשר משום דיצרו תוקפו כ\"כ וחשוב כאנוס אבל ארביעה אין יצרו תוקפו כ\"כ א\"נ ה\"נ יצרו תוקפו וכשר לעדות אחרת ולא ארביעה דחשוד על הדבר לא דנו ולא מעידו והא דפריך בפ\"ק דמכות <span class=\"parenthesized\">(דף ו. ושם)</span> נרבע יציל אין לפרש יציל לפי שהוא פסול מחמת ששונא הרובע שרבעו לאונסו שכך היה נראה לפרש דומיא דהרוג יציל דהכי מוכח דלאונסו כשר ואין שונאו כמו הרוג ועוד דהרוג גופיה מצינא לפרש דלא מיפסל מחמת שנאה אלא מחמת שהוא טריפה ואינו ראוי להעיד ונראה לפרש דהתם מנרבע לרצונו פריך ואע\"ג דלרבא כשר התם איירי שיש עדים שנרבע לרצונו דאז אינו ראוי להעיד והוי נמצא עד אחד מהן פסול ועדותן בטלה וק\"ק כיון דבנרבע לרצונו איירי בחנם נקט לבסוף הורג ורובע יציל פירוש יצילו על עצמם דמנרבע לרצונו דמיירי ביה הוי מצי למיפרך אכתי שיציל את עצמו וי\"מ דמהרוג ונרבע כשהם קרובים פריך דיציל וכ\"ת ה\"נ הא כתיב ביה <span class=\"parenthesized\">(שמות כ״א:ט״ו)</span> מכה אביו ואמו וגו' אף על פי שהוא קרוב ונרבע נמי כתיב ערות אביך ואיכא למאן דדריש לקמן <span class=\"parenthesized\">(סנהדרין דף נד.)</span> ערות אביך ממש:"
+  },
+  "Tosafot on Sanhedrin 9b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T08:18:48.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין אדם משים עצמו רשע</strong> - הקשה ר\"י בר' מרדכי מדקאמר בפ\"ב דכתובות <span class=\"parenthesized\">(דף יח: ושם)</span> העדים שאמרו כתב ידינו הוא זה אבל אנוסים היינו קטנים היינו פסולי עדות היינו נאמנים ואמר רמי בר חמא בגמרא לא שנו אלא שאמרו אנוסים היינו מחמת נפשות אבל אנוסים מחמת ממון אין נאמנים מ\"ט אין אדם משים עצמו רשע ורבא הוא דמסיק התם הכי והשתא אמאי לא פלגינן דיבורא ונהימנינהו במאי דקאמרי שהיו אנוסין אבל לא מחמת ממון ונראה דההיא דכתובות אתיא כמאן דאמר ביש נוחלין <span class=\"parenthesized\">(ב\"ב דף קלא: ושם)</span> דלא פלגינן דיבורא בחד גופא פי' בחד גופא כמו גירשתי את אשתי דלא פלגינן דיבורא בחד גופא לומר דלא מהימן לשעבר ומהימן להבא וכן אנוסין היינו מחמת ממון שעל עצמו הוא מעיד כן דאי מהימנת ליה שהוא אנוס ניהמניה שהוא מחמת ממון נאנס וכן פלוני רבעו לרצונו אין לפרש דלא מהימן במאי דקאמר לרצונו אלא פלגינן דיבורא לומר שרבעו לאונסו דא\"כ הוה פלגינן דיבורא בחד גופא ובמקצת מהימן אהאי גופא ובמקצת לא מהימן אלא פלגינן לומר שרבע אבל לא שרבעו וכן מוכח מפלוני רבע שורי דאי הוה אמרי' אדם קרוב אצל ממונו ה\"א דמהימן לומר שרבע שור אחר אבל לא שורו דבשורו אין שייך לחלק בין אונס לרצון וכן מוכח ההוא דזה בורר <span class=\"parenthesized\">(לקמן סנהדרין דף כה.)</span> דחד אמר לדידי אוזפן ברביתא דמהימן שהלוה בריבית אבל לא לדידיה ותדע דאם היה כהן נשוי אחותו והוא ואחר מעידין שפלוני בא עליה סברא היא לרבא דמצטרפין להורגו אבל לא להרגה אפילו לאוסרה על בעלה אע\"פ שנאסרת באונס ואע\"ג דבההיא דכתובות <span class=\"parenthesized\">(דף יח: ושם)</span> פלגינן דמהימנינן להו במאי דאמרי כתב ידינו הוא זה היינו אפי' בלא טעמא דפלגינן ועוד יש לומר דהתם בכתובות כיון דקיום שטרות דרבנן דעדים שחתומין על השטר נעשה כמי שנחקרה עדותן בב\"ד לא פלגינן דיבורא לומר שאנוסין היו מחמת נפשות ואע\"ג דאשכחן <span class=\"parenthesized\">(גיטין דף ח:)</span> פלגינן דיבורא גבי עבד שהביא גיטו וכתוב בו עצמך ונכסיי קנויין לך דאמר רבא עצמו קנה ונכסיו לא קנה לא דמי דהתם כך הוא נוהג בכל שטרות דעלמא דבגט אשה ובגט שחרור הימנוהו רבנן על ידי בפני נכתב ובפני נחתם ובשאר שטרות הצריכו קיום:"
+  }
+}

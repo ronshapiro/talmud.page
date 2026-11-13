@@ -1,0 +1,306 @@
+{
+  "Rashi on Sanhedrin 21b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:14:43.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להרווחה</strong> - שלא לצמצם ואם יצטרך לשכור עוד חיילות שיהיה מצוי בידו:"
+  },
+  "Rashi on Sanhedrin 21b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:15:01.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעוטי הדיוטות</strong> - דמותרין להרבות נשים:"
+  },
+  "Rashi on Sanhedrin 21b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:15:23.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אצטבלאות</strong> - בית גדול למדור הסוסים:"
+  },
+  "Rashi on Sanhedrin 21b:13:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:13:1",
+      "Jastrow, אֻרְיָה 1"
+    ],
+    "generatedAt": "2026-11-12T03:16:03.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארוות</strong> - הבדלה בין שורה לשורה על פני הבית:"
+  },
+  "Rashi on Sanhedrin 21b:14:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 21b:14",
+      "Chidushei Agadot on Sanhedrin 21b:3"
+    ],
+    "generatedAt": "2026-11-12T03:16:46.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאבנים</strong> - חשיב מיהא פורתא:"
+  },
+  "Rashi on Sanhedrin 21b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:17:41.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נתגלו טעמי תורה</strong> - כגון למה נאסרה לבישת שעטנז ואכילת חזיר וכיוצא בהן:"
+  },
+  "Rashi on Sanhedrin 21b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 21b:1",
+      "Sanhedrin 21b:2",
+      "Avodah Zarah 36b:17",
+      "Steinsaltz on Sanhedrin 21b:1"
+    ],
+    "generatedAt": "2026-11-12T03:00:59.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על הייחוד</strong> - דאשת איש ועל הפנויה:"
+  },
+  "Rashi on Sanhedrin 21b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:18:22.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשתי תורות</strong> - הא דשאני מלך מהדיוטות דאילו היה הדיוט סגי ליה בחדא ומלך בעי תרתי:"
+  },
+  "Rashi on Sanhedrin 21b:20:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:20:1",
+      "Rashi on Sanhedrin 21b:14:1",
+      "Rashi on Sanhedrin 21b:16:1",
+      "Rashi on Sanhedrin 21a:1:1",
+      "Rashi on Sanhedrin 21a:2:1"
+    ],
+    "generatedAt": "2026-11-12T03:19:28.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משנה</strong> - שתים במשמע:"
+  },
+  "Rashi on Sanhedrin 21b:22:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 21b:22",
+      "Jastrow, כְּתָב 1"
+    ],
+    "generatedAt": "2026-11-12T03:21:30.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתב עברי</strong> - של בני עבר הנהר:"
+  },
+  "Rashi on Sanhedrin 21b:23:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 21b:23:1",
+      "Jastrow, לִיבּוּנָאָה 1",
+      "Steinsaltz on Sanhedrin 21b:23"
+    ],
+    "generatedAt": "2026-11-12T03:22:06.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליבונאה</strong> - אותיות גדולות כעין אותן שכותבין בקמיעות ומזוזות:"
+  },
+  "Rashi on Sanhedrin 21b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:01:43.884Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבקש להולמו ולא הולמתו</strong> - שתשב בראשו כתר מלכות ולא הולמתו לפי שהיה שרביט של זהב בתוך חללה מדופן לדופן ואינה מתיישבת בראשו אלא למי שיש לו חריץ בראשו והיא עדות לבית דוד שכל הראוי למלכות הולמתו ומי שאינו ראוי למלכות אינו הולמתו:"
+  },
+  "Rashi on Sanhedrin 21b:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:5:2"
+    ],
+    "generatedAt": "2026-11-12T03:02:34.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי רבותיה</strong> - דחמשים איש לבן מלך:"
+  },
+  "Rashi on Sanhedrin 21b:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:5:1"
+    ],
+    "generatedAt": "2026-11-12T03:03:17.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטולי טחול וחקוקי כפות הרגלים</strong> - נטולי טחול על ידי סם שהטחול מכבידו לאדם וחקוקי כפות הרגלים אין בשר בפרסותיהם ורצים על הקוצים ועל הברקנין ואינן ניזוקין:"
+  },
+  "Rashi on Sanhedrin 21b:6:1": {
+    "dependsOn": [
+      "Jastrow, אספניא 1",
+      "Jastrow, אָפְסַנְיָא 1",
+      "Rashi on Sanhedrin 21b:5:1",
+      "Rashi on Sanhedrin 21b:5:2",
+      "Rashi on Sanhedrin 21b:7:1"
+    ],
+    "generatedAt": "2026-11-12T03:04:22.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אספניא</strong> - שכר חיילות מדי שנה בשנה הנכנסין והיוצאין עמו כל השנה:"
+  },
+  "Rashi on Sanhedrin 21b:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:7:2",
+      "Rashi on Sanhedrin 21b:1:1",
+      "Steinsaltz on Sanhedrin 21b:7"
+    ],
+    "generatedAt": "2026-11-12T03:05:33.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לו</strong> - משמע להרחיב דעתו ולהגדיל ברבוי סוסים:"
+  },
+  "Rashi on Sanhedrin 21b:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:7:1",
+      "Rashi on Sanhedrin 21b:7:2",
+      "Rashi on Sanhedrin 21b:6:1",
+      "Rashi on Sanhedrin 21b:8:1",
+      "Sanhedrin 21b:7",
+      "Steinsaltz on Sanhedrin 21b:7",
+      "Torah Temimah on Torah, Deuteronomy 17:16:1",
+      "Rashi on Sanhedrin 21b:5:1",
+      "Rashi on Sanhedrin 21b:5:2",
+      "Rashi on Sanhedrin 21b:9:1",
+      "Rashi on Sanhedrin 21b:9:2",
+      "Rashi on Sanhedrin 20b:15:1",
+      "Rashi on Sanhedrin 21a:10:1",
+      "Rashi on Sanhedrin 21a:19:1"
+    ],
+    "generatedAt": "2026-11-12T03:07:49.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:7:2"
+    ],
+    "sourceText": "הסוסים באים ממצרים לארץ ישראל וצריך לשלוח שלוחים לקנות לו סוסים ועוברים בלא תוסיפו לראותם עוד עד עולם <span class=\"parenthesized\">(שמות י״ד:י״ג)</span>:"
+  },
+  "Rashi on Sanhedrin 21b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:8:1",
+      "Sanhedrin 21b:8",
+      "Tosafot on Sanhedrin 21b:8:1"
+    ],
+    "generatedAt": "2026-11-12T03:09:13.523Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:8:1"
+    ],
+    "sourceText": "בעשה ולא תעשה לא גרסינן:"
+  },
+  "Rashi on Sanhedrin 21b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:12:36.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה אמינא אפילו כדי רכבו לא</strong> - בתמיה מלכות בלא רכב ופרשים מי חשיבא:"
+  },
+  "Rashi on Sanhedrin 21b:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:9:1"
+    ],
+    "generatedAt": "2026-11-12T03:14:02.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 21b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפושי</strong> - רכב ופרשים וסוסים לרכוב בהרווחה ולא בצמצום. ל\"א לאפוחי גרסינן כשרוכב סוס אחד ומושך סוס אחד אצלו ביד ורוכב פעם על זה ופעם על זה להרגיע את חבירו:"
+  },
+  "Tosafot on Sanhedrin 21b:23:1": {
+    "dependsOn": [
+      "Gittin 20a:11",
+      "Gittin 20a:12",
+      "Gittin 20a:13",
+      "Gittin 20a:14",
+      "Gittin 20a:15",
+      "Gittin 20a:16",
+      "Rashi on Sanhedrin 21b:23:1",
+      "Sanhedrin 21b:20",
+      "Sanhedrin 21b:21",
+      "Sanhedrin 21b:22",
+      "Rashi on Gittin 20a:12:1",
+      "Rashi on Gittin 20a:12:2",
+      "Chidushei Agadot on Sanhedrin 21b:8",
+      "Jastrow, לִיבּוּנָאָה 1",
+      "Steinsaltz comment #1 on Sanhedrin 21b:23",
+      "Jastrow, כְּתָב 1",
+      "Rashi on Sanhedrin 22a:1:1",
+      "Tosafot on Sanhedrin 21b:8:1"
+    ],
+    "generatedAt": "2026-11-12T03:32:13.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 21b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתב ליבונאה</strong> - י\"מ כזה שהאות נעשית מן הלבן שממלאין החלק דיו והכתב נעשית מאיליו מנייר חלק ולא נהירא דאין זה כתב דהוי חק תוכות וחק ירכות דאמרינן בגיטין <span class=\"parenthesized\">(דף כ.)</span> אין כתב לגבי גט וכי היכי דגבי גט אינו כתב גבי ספר תורה נמי אינו כשר ועוד אמאי לא כהלן כתבא למקרי <span class=\"parenthesized\">(דניאל ה׳:ח׳)</span> הרי לא נשתנה כתיבת האותיות כלל ור\"ת פי' דשם מקום רישמא ליבונאה וכותבין בו כתב משונה:"
+  },
+  "Tosafot on Sanhedrin 21b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 21b:8:1",
+      "Sanhedrin 21b:6",
+      "Sanhedrin 21b:7",
+      "Gilyon HaShas on Sanhedrin 21b:1",
+      "Steinsaltz comment #1 on Sanhedrin 21b:8"
+    ],
+    "generatedAt": "2026-11-12T03:11:52.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 21b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סוסים למה לי</strong> - פי' דמשמע תרי הכי גרסינן אי לא כתיב אלא סוס ה\"א לכמה סוסים חד לאו הוא דאיכא כתב רחמנא סוסים והדר סוס לחלק על כל אחד פי' אי כתיב סוס גבי לא ירבה הוה אמינא על סוס אחד בטל הוא עובר כדמוכח קרא דהרבות סוס ומ\"מ לכמה סוסים ליכא אלא חד לאו לכך שינה הכתוב לעבור על לא תעשה על כל סוס וסוס ויש ספרים משובשים דגרסי לעבור בעשה ולא תעשה פי' לא ירבה סוסים למה לי כלל ולא יתכן דלמען הרבות סוס לאו עשה הוא אך קאי אלאו דלא ישיב:"
+  }
+}

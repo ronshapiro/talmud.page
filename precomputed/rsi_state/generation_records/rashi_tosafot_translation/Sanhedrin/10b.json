@@ -1,0 +1,368 @@
+{
+  "Rashi on Sanhedrin 10b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:54:51.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד ברכת כהנים</strong> - בפסוק ראשון ג' תיבות והשני ה' ושלישי ז' תיבות:"
+  },
+  "Rashi on Sanhedrin 10b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:55:36.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה כנגד שומרי הסף כו'</strong> - כלומר אשכחנא דמלכותא דארעא שלשה ממונין וחמשה ממונין ושבעה ממונין ג' כנגד שומרי הסף בצדקיהו <span class=\"parenthesized\">(מלבים ב כה)</span> גבי גלות נבוזראדן והתם נמי משכחת חמשה מרואי פני המלך ובאחשורוש <span class=\"parenthesized\">(אסתר א)</span> אשכחן שבעה שרי פרס ומדי ועיבור שנה מטכסיסי מלכות שמים הוא ליישב סדר השנים על מכונן:"
+  },
+  "Rashi on Sanhedrin 10b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:09:40.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למחייה עשרים וחדא</strong> - דהא אכתי חי הוא ואגבא דחיי מחי:"
+  },
+  "Rashi on Sanhedrin 10b:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:2:2",
+      "Rashi on Sanhedrin 10b:2:3",
+      "Rashi on Sanhedrin 10b:2:4"
+    ],
+    "generatedAt": "2026-11-11T09:11:43.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חישוב לא קתני</strong> - דנימא שצריך שלשה לחשב אם יעברו את החודש דבחושבנא תליא אע\"פ שצריך לעברו כגון משום ירקיא ומשום מתיא אפילו הכי חושבנא בעי כדתנן במסכת ערכין <span class=\"parenthesized\">(דף ח:)</span> אין פוחתין מארבעה חדשים המעוברין בשנה ולא נראה לעבר יותר על שמנה אבל תשעה מעוברין לא עבדינן דאם כן קדים ואתי סיהרא תלתא יומי ומחזי שיקרא הלכך צריך לחשב תולדות הלבנה אם תקדום שלשה ימים או שנים לקביעות החדש לא מעברינן ליה דתמהי בה אינשי:"
+  },
+  "Rashi on Sanhedrin 10b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:2:1",
+      "Rashi on Sanhedrin 10b:2:3",
+      "Rashi on Sanhedrin 10b:4:1",
+      "Rashi on Sanhedrin 10b:4:2",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-11T09:13:18.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קידוש לא קתני</strong> - דנימא דצריך ג' לקבל עדות החדש מפי העדים ולומר מקודש החדש:"
+  },
+  "Rashi on Sanhedrin 10b:2:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:2:1",
+      "Rashi on Sanhedrin 10b:2:2",
+      "Rashi on Sanhedrin 10b:2:4",
+      "Rashi on Sanhedrin 10a:9:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:3",
+      "Tosafot on Sanhedrin 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-11T09:16:30.835Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא עיבור החדש</strong> - משמע שצריך שלשה לומר מעובר החדש אמירה זו למה:"
+  },
+  "Rashi on Sanhedrin 10b:2:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:2:1",
+      "Rashi on Sanhedrin 10b:2:2",
+      "Rashi on Sanhedrin 10b:2:3",
+      "Rashi on Sanhedrin 10b:2:4"
+    ],
+    "generatedAt": "2026-11-11T09:17:30.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ליקדשיה ביום שלשים</strong> - וממילא כי מקדשינן ליה למחר מיעבר החדש שעבר דיום שלשים בתריה שדית ליה:"
+  },
+  "Rashi on Sanhedrin 10b:3:1": {
+    "dependsOn": [
+      "Sanhedrin 10b:3",
+      "Rashi on Sanhedrin 10b:3:1",
+      "Rashi on Sanhedrin 10b:3:2"
+    ],
+    "generatedAt": "2026-11-11T09:18:20.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תני קידוש</strong> - ועל כל חדשי השנה קאי:"
+  },
+  "Rashi on Sanhedrin 10b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:3:1"
+    ],
+    "generatedAt": "2026-11-11T09:19:19.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא עבור קתני</strong> - דרך תנא טועה בגירסא לחסר תיבה על ידי שכחה אבל אין נחלף לתנא בין גירסת קידוש לגירסת עיבור:"
+  },
+  "Rashi on Sanhedrin 10b:3:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:3:1",
+      "Rashi on Sanhedrin 10b:3:2",
+      "Rashi on Sanhedrin 10b:3:4",
+      "Rashi on Sanhedrin 10b:3:5"
+    ],
+    "generatedAt": "2026-11-11T09:19:57.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביום עיבור</strong> - יום עיבור הוא יום שלשים שממנו נעשה החדש מעובר כשרוצין לעברו:"
+  },
+  "Rashi on Sanhedrin 10b:3:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:3:3",
+      "Rashi on Sanhedrin 10b:3:5"
+    ],
+    "generatedAt": "2026-11-11T09:23:44.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קידוש ביום עיבור</strong> - כגון בחדש חסר שעבר צריך שלשה לקדש ראש חדש הבא ביום ל' לחדש שעבר:"
+  },
+  "Rashi on Sanhedrin 10b:3:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:3:1",
+      "Rashi on Sanhedrin 10b:3:2",
+      "Rashi on Sanhedrin 10b:3:3",
+      "Rashi on Sanhedrin 10b:3:4",
+      "Rashi on Sanhedrin 10b:3:5",
+      "Rashi on Rosh Hashanah 24a:16:2",
+      "Steinsaltz on Sanhedrin 10b:3:1",
+      "Steinsaltz on Sanhedrin 10b:3"
+    ],
+    "generatedAt": "2026-11-11T09:25:35.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר עיבור</strong> - אם עשו חודש שעבר מלא וקבעו ר\"ח ביום ל' ואחד אין אומרין בו מקודש מקודש:"
+  },
+  "Rashi on Sanhedrin 10b:4:1": {
+    "dependsOn": [
+      "Rosh Hashanah 25a:3",
+      "Rosh Hashanah 25a:4",
+      "Rosh Hashanah 25a:5",
+      "Rosh Hashanah 25a:10"
+    ],
+    "generatedAt": "2026-11-11T09:27:23.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמנו</strong> - ביום ל' דתולדתו ביום ל' הוא דאין חדש לבנה פחות מכ\"ט יום ומחצה ותשצ\"ג חלקים:"
+  },
+  "Rashi on Sanhedrin 10b:4:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:4:1",
+      "Rashi on Rosh Hashanah 24a:9:1"
+    ],
+    "generatedAt": "2026-11-11T09:28:46.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכבר קידשוהו בשמים</strong> - ב\"ד שלמעלה מאתמול:"
+  },
+  "Rashi on Sanhedrin 10b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:34:00.793Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פלימו אומר בזמנו אין מקדשין אותו</strong> - שא\"צ לעשות חיזוק לדבר שהרי בזמנו בא:"
+  },
+  "Rashi on Sanhedrin 10b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 10b:6",
+      "Rashi on Sanhedrin 10b:7:1",
+      "Chokhmat Shlomo on Sanhedrin 10b:7"
+    ],
+    "generatedAt": "2026-11-11T09:38:24.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חישוב דעבור</strong> - לחשב אם יעברוהו דאילו קידוש סבר תנא דידן דלא צריך לקדושי לא מלא ולא חסר וכר\"א בר' שמעון לקמן ואיידי דתני עיבור השנה דהוי נמי חישוב דעיבור השנה והתם לא סגי דלא תני עיבור דאמירה בעי שיקדשו אדר השני לשם אדר דאי שתקי ממילא לשם ניסן מיקבע תנא נמי גבי חדש עיבור החדש וקרייה נמי לחישוב עיבור ואשמעינן דחישוב בעינן אבל קידוש לא בעינן לא למלא ולא לחסר כר\"א:"
+  },
+  "Rashi on Sanhedrin 10b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:42:39.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים אתה מקדש</strong> - שנת של כל יובל ויובל מקדשין ב\"ד לשם יובל:"
+  },
+  "Rashi on Sanhedrin 10b:8:1": {
+    "dependsOn": [
+      "Sanhedrin 11b:5",
+      "Rashi on Sanhedrin 11b:5:1",
+      "Rashi on Sanhedrin 11b:5:2",
+      "Rashi on Sanhedrin 11b:5:3"
+    ],
+    "generatedAt": "2026-11-11T09:50:04.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א' אומר לישב</strong> - א' מן השלשה אומר צריך לישב ולעיין אם צריכה לעבר שנה זו מפני האביב או התקופות או פירות האילנות כדלקמן <span class=\"parenthesized\">(סנהדרין דף יא:)</span>:"
+  },
+  "Rashi on Sanhedrin 10b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:8:1",
+      "Rashi on Sanhedrin 10b:8:3"
+    ],
+    "generatedAt": "2026-11-11T09:51:18.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושנים אומרים</strong> - אינו צריך להושיב ב\"ד על כך שאין כאן ספק דודאי אינה צריכה לעבר:"
+  },
+  "Rashi on Sanhedrin 10b:8:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:8:1",
+      "Rashi on Sanhedrin 10b:8:2"
+    ],
+    "generatedAt": "2026-11-11T09:51:57.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטל יחיד במיעוטו</strong> - ולא ישבו החמשה עוד לעיין בדבר:"
+  },
+  "Rashi on Sanhedrin 10b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T09:52:31.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים אומרים לישב ואחד אומר שלא לישב</strong> - הולכין אחר השנים ויושבין לישא וליתן אם צריכה לעבר אם לאו ומשא ומתן של עיבור צריך חמשה לפיכך מוסיפין עוד שנים ולקמן מפרש שלשה וחמשה ושבעה כנגד מי:"
+  },
+  "Rashi on Sanhedrin 10b:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:9:1",
+      "Rashi on Sanhedrin 10b:9:2",
+      "Rashi on Sanhedrin 10b:9:3"
+    ],
+    "generatedAt": "2026-11-11T09:53:14.929Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים אומרים צריכה</strong> - לעבר ושלשה אומרים אין צריכה בטלו שנים במיעוטן ועומדין והולכין להם:"
+  },
+  "Rashi on Sanhedrin 10b:9:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:9:1",
+      "Rashi on Sanhedrin 10b:9:2",
+      "Rashi on Sanhedrin 10b:9:3"
+    ],
+    "generatedAt": "2026-11-11T09:54:14.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 10b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים אומרים אינה צריכה ושלשה אומרים צריכה</strong> - הולכין אחר הרוב ומוסיפין עוד שנים להשלמת המנין ומעברין:"
+  },
+  "Tosafot on Sanhedrin 10b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:10:1",
+      "Rashi on Sanhedrin 10b:10:2",
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-11T09:58:35.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 10b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבעה רואי פני מלך</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דאאחשורוש קאי ואין נראה שתקנו כנגד שרי העו\"ג ומפרש ר\"ת דהם שרי ישראל דאשכחן בסוף מלכים <span class=\"parenthesized\">(ב כה)</span> דהגלה נבוזראדן ג' שומרי הסף וה' רואי פני המלך ובסוף ירמיה <span class=\"parenthesized\">(נב)</span> כתיב ושבעה אנשים מרואי פני המלך וכן מוכח בירושלמי ומונה אותן גבי סנהדרי גדולה והכי איתא התם אית תנא תני ע\"א שנאמר ויקח רב הטבחים את שלשה שומרי הסף הרי שלשה ושבעה אנשים מרואי פני המלך הרי עשר וששים איש מעם הארץ הרי שבעים ומן העיר לקח סריס אחד אשר הוא פקיד על אנשי המלחמה הרי שבעים ואחד ולמה קרא אותו סריס שיושב ומסרס בהלכה כתוב אחד אומר ה' וכתוב אחד אומר שבעה להביא שני סופרי הדיינין:"
+  },
+  "Tosafot on Sanhedrin 10b:4:1": {
+    "dependsOn": [
+      "Rashi on Rosh Hashanah 24a:9:1",
+      "Rashi on Sanhedrin 10b:4:1",
+      "Rashi on Sanhedrin 10b:4:2",
+      "Tosafot on Sanhedrin 9b:8:2",
+      "Rashi on Sanhedrin 2a:5:2"
+    ],
+    "generatedAt": "2026-11-11T09:33:25.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 10b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכבר קידשוהו בשמים</strong> - י\"מ דב\"ד של מעלה מקדשין אותו לעולם בשעת המולד ואין נראה דאם כן בזמנו נמי כבר קדשו בשמים אלא נראה כפירוש <span class=\"rashi-quotation\">הקונטרס</span> בפ\"ב דר\"ה דביום שלשים ממתינים ב\"ד של מעלה לב\"ד של מטה שמא יעברו אבל יום שלשים ואחד שאי אפשר שלא קדשו היום מקדשין אותו בשמים מן השחר והא דאמר בירושלמי רבא בר זבדא בשם רב טעמא דר' אלעזר בר' צדוק בשעה שב\"ד שלמעלה רואין שאין מקדשין אותה מקדשין הן יש ליישבו כפירוש <span class=\"rashi-quotation\">הקונטרס</span> דהכי פירש בשעה שב\"ד שלמעלה רואין שאין מקדשין אותו מלמטה ביום ל' מקדשין אותו הן מן הבוקר ביום ל\"א דאין כאן ספק דודאי יקבע היום:"
+  },
+  "Tosafot on Sanhedrin 10b:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 10b:6:1",
+      "Maharsha: Chidushei Halachot on Sanhedrin 10b:3"
+    ],
+    "generatedAt": "2026-11-11T09:41:44.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 10b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיידי דתנא עיבור שנה</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דהתם לא סגי דלא תני עיבור דאמירה בעי שיקדשו אדר השני לשם אדר דאי שתקי ממילא מיקבע לשם ניסן מה שפירש שיקדשו אדר השני לשם אדר לא דק דלשון קידוש אין להזכיר להאי תנא דלא בעי קידוש לא מלא ולא חסר ואין אומר בו מקודש מקודש והיה לו לומר שקובעין אותו לשם אדר ומה שמשמע מתוך פי' דביום שלשים קובעין אותו לשם אדר שני אין נראה דאמרינן לקמן <span class=\"parenthesized\">(סנהדרין דף יב.)</span> אין מעברין את השנה ביום שלשים של אדר הואיל וראוי לקובעו ניסן אלא צריך לומר דאמירה של עיבור היינו בשעה שגומרין השבעה שתהא השנה מעוברת קודם שלשים של אדר ובשעה שבאו עדים שראו את החדש אפילו יקבעו אותו סתם לית לן בה וממילא הוי אדר השני:"
+  },
+  "Tosafot on Sanhedrin 10b:7:1": {
+    "dependsOn": [
+      "Sanhedrin 10b:7"
+    ],
+    "generatedAt": "2026-11-11T09:48:36.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 10b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חישוב חדש אין קידוש חדש לא מני ר\"א</strong> - תימה א\"כ תיקשי דר' מאיר אדר' מאיר דבמתני' קתני עיבור החדש בשלשה ועיבור השנה בג' דברי ר\"מ ולעיל קתני בברייתא קידוש החדש ועיבור השנה בג' דברי ר\"מ ואין לומר דברי ר\"מ דמתניתין אעיבור שנה קאי ולא אעיבור החדש מדקאמר דאיידי דבעי למיתני עיבור שנה תנא נמי עיבור חדש משמע דחד תנא תני תרווייהו:"
+  }
+}

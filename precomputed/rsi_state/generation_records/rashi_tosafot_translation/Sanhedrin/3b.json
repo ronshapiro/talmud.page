@@ -1,0 +1,476 @@
+{
+  "Rashi on Sanhedrin 3b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:25:37.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין ב\"ד שקול</strong> - וסתם זקנים בית דינא משמע:"
+  },
+  "Rashi on Sanhedrin 3b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:32:23.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:11:1"
+    ],
+    "sourceText": "עדיפא מדר' יהודה כלומר ר' יאשיה חיזק את דבריו יותר מדר' יהודה:"
+  },
+  "Rashi on Sanhedrin 3b:11:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:11:1",
+      "Rashi on Sanhedrin 3b:11:3",
+      "Rashi on Sanhedrin 3b:1:1",
+      "Rashi on Sanhedrin 3b:4:1",
+      "Rashi on Sanhedrin 3b:5:1",
+      "Rashi on Sanhedrin 3b:6:1",
+      "Rashi on Sanhedrin 3b:7:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1",
+      "Sanhedrin 3b:11"
+    ],
+    "generatedAt": "2026-11-10T22:34:30.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא האי לנטות מאי עביד ליה</strong> - בשלמא לר' יהודה מוקי לה בשאר בית דין:"
+  },
+  "Rashi on Sanhedrin 3b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:35:17.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיני נפשות</strong> - שתתקיים בו הטייתך לטובה על פי אחד כדאמרה במתניתין ואי הוי זוגות ליכא הטייה בפחות משנים:"
+  },
+  "Rashi on Sanhedrin 3b:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:11:1",
+      "Sanhedrin 3b:12",
+      "Rashi on Sanhedrin 3b:1:1",
+      "Rashi on Sanhedrin 3b:7:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-10T22:40:13.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא דלא כר' יאשיה</strong> - דאי כר' יאשיה כיון דשלישי מקראי יליף להו ולאו משום נוטה צריך שתהא דעת שלשתן שוה:"
+  },
+  "Rashi on Sanhedrin 3b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:41:18.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' תימא ר' יאשיה</strong> - מודה דהיכא דחלוקין אזלינן בתר רובא:"
+  },
+  "Rashi on Sanhedrin 3b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:47:46.934Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי שיגמר הדין</strong> - אם יחלקו שיהא שלשה רוב ונלך אחריהם:"
+  },
+  "Rashi on Sanhedrin 3b:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:14:2",
+      "Rashi on Sanhedrin 3b:14:1",
+      "Rashi on Sanhedrin 3b:14:3"
+    ],
+    "generatedAt": "2026-11-10T22:48:29.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו</strong> - כי הוו תלתא מעיקרא מי לא גמיר דינא בתרי:"
+  },
+  "Rashi on Sanhedrin 3b:14:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:14:1",
+      "Rashi on Sanhedrin 3b:14:2",
+      "Rashi on Sanhedrin 3b:15:1",
+      "Steinsaltz on Sanhedrin 3b:14"
+    ],
+    "generatedAt": "2026-11-10T22:49:48.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני גמר דין</strong> - שצריך שלשה בגמר דין:"
+  },
+  "Rashi on Sanhedrin 3b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 3b:15",
+      "Rashi on Sanhedrin 3b:15:2",
+      "Rashi on Sanhedrin 3b:14:1",
+      "Rashi on Sanhedrin 3b:14:2",
+      "Rashi on Sanhedrin 3b:14:3"
+    ],
+    "generatedAt": "2026-11-10T22:51:07.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מעתה</strong> - דקראי בגמר דין קיימי:"
+  },
+  "Rashi on Sanhedrin 3b:15:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:15:1",
+      "Sanhedrin 3b:15",
+      "Rashi on Sanhedrin 3b:16:1",
+      "Rashi on Sanhedrin 3b:16:2",
+      "Rashi on Sanhedrin 3b:16:3",
+      "Rashi on Sanhedrin 3b:16:4",
+      "Rashi on Sanhedrin 3a:1:1",
+      "Rashi on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-10T22:53:00.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תהא סנהדרי גדולה כו'</strong> - אלא מאי טעמא לא אמרת הכי:"
+  },
+  "Rashi on Sanhedrin 3b:16:1": {
+    "dependsOn": [
+      "Sanhedrin 3b:16",
+      "Rashi on Sanhedrin 3b:16:1",
+      "Rashi on Sanhedrin 3b:16:2",
+      "Rashi on Sanhedrin 3b:16:3",
+      "Rashi on Sanhedrin 3b:16:4",
+      "Sanhedrin 3b:15",
+      "Rashi on Sanhedrin 3b:14:1",
+      "Rashi on Sanhedrin 3b:14:2",
+      "Rashi on Sanhedrin 3b:14:3",
+      "Chokhmat Shlomo on Sanhedrin 3b:11",
+      "Chokhmat Shlomo on Sanhedrin 3b:17",
+      "Sanhedrin 3b:11",
+      "Sanhedrin 3b:12"
+    ],
+    "generatedAt": "2026-11-10T23:00:44.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא האי לנטות מאי עביד ליה</strong> - בשלמא לר' יהודה מוקי לה בשאר בית דין:"
+  },
+  "Rashi on Sanhedrin 3b:16:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:16:1",
+      "Rashi on Sanhedrin 3b:16:2",
+      "Rashi on Sanhedrin 3b:16:3",
+      "Sanhedrin 3b:16",
+      "Rashi on Sanhedrin 3b:15:1",
+      "Rashi on Sanhedrin 3b:15:2"
+    ],
+    "generatedAt": "2026-11-10T23:03:10.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאספה לי כו'</strong> - ר' אבהו קאמר לה לכולה מילתא ובלשון קושיא:"
+  },
+  "Rashi on Sanhedrin 3b:16:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:16:2",
+      "Rashi on Sanhedrin 3b:16:3",
+      "Rashi on Sanhedrin 3b:16:4",
+      "Sanhedrin 2a:1",
+      "Rashi on Sanhedrin 2a:11:5"
+    ],
+    "generatedAt": "2026-11-10T23:04:22.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושפטו העדה</strong> - וילפינן מיניה במתניתין כ\"ג לסנהדרי קטנה:"
+  },
+  "Rashi on Sanhedrin 3b:16:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:16:1",
+      "Rashi on Sanhedrin 3b:16:2",
+      "Rashi on Sanhedrin 3b:16:3",
+      "Rashi on Sanhedrin 3b:16:4",
+      "Steinsaltz on Sanhedrin 3b:16",
+      "Sanhedrin 3b:16"
+    ],
+    "generatedAt": "2026-11-10T23:05:52.917Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונקרב בעל הבית אל האלהים</strong> - דילפינן מיניה משעת קריבה קאמר:"
+  },
+  "Rashi on Sanhedrin 3b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T23:07:15.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירשיעון</strong> - לשון רבים:"
+  },
+  "Rashi on Sanhedrin 3b:17:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:17:1",
+      "Rashi on Sanhedrin 3b:17:2",
+      "Rashi on Sanhedrin 3b:17:3",
+      "Steinsaltz on Sanhedrin 3b:17:1",
+      "Exodus 22:8"
+    ],
+    "generatedAt": "2026-11-10T23:08:39.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה</strong> - ירשיעון אלהים:"
+  },
+  "Rashi on Sanhedrin 3b:17:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:17:1",
+      "Rashi on Sanhedrin 3b:17:2",
+      "Sanhedrin 3b:3",
+      "Sanhedrin 3b:4"
+    ],
+    "generatedAt": "2026-11-10T23:10:14.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעלה</strong> - עד האלהים יבא וההוא דונקרב לא קחשיב דקסבר אין דורשין תחילות:"
+  },
+  "Rashi on Sanhedrin 3b:1:1": {
+    "dependsOn": [
+      "Leviticus 5:24"
+    ],
+    "generatedAt": "2026-11-10T22:08:21.833Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו משתלם בראש</strong> - שמשלם יותר מן הקרן וחצי נזק משלם פחות מן הקרן בראש היינו קרן דכתיב <span class=\"parenthesized\">(ויקרא ה)</span> ושלם אותו בראשו:"
+  },
+  "Rashi on Sanhedrin 3b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:08:57.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין דורשין תחלות</strong> - למניין דלגופיה אתא דלבעי מומחין דאלהים לשון גדולה ורבנות:"
+  },
+  "Rashi on Sanhedrin 3b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:3:1",
+      "Rashi on Sanhedrin 3a:2:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:1:2",
+      "Rashi on Sanhedrin 3b:4:1",
+      "Steinsaltz on Sanhedrin 3b:3"
+    ],
+    "generatedAt": "2026-11-10T22:11:30.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין ב\"ד שקול</strong> - אין עושין ב\"ד זוגות דצריך לקיים בו אחרי רבים להטות ואם יתחלקו לחצאין אין כאן רבים:"
+  },
+  "Rashi on Sanhedrin 3b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:15:17.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ</strong> - דלא למידרשיה אתא לכתוב אל השופט:"
+  },
+  "Rashi on Sanhedrin 3b:5:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 3b:5:1",
+      "Steinsaltz on Sanhedrin 3b:5",
+      "Sanhedrin 3b:4"
+    ],
+    "generatedAt": "2026-11-10T22:15:59.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגבי דיינא</strong> - אצל דיין הרגיל ולא אצל הדיוט:"
+  },
+  "Rashi on Sanhedrin 3b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 3b:6",
+      "Rashi on Sanhedrin 3b:6:2",
+      "Rashi on Sanhedrin 3b:3:1",
+      "Rashi on Sanhedrin 3b:3:2",
+      "Rashi on Sanhedrin 3b:4:1"
+    ],
+    "generatedAt": "2026-11-10T22:18:33.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יאשיה</strong> - דבעי קרא לאתויי שלישי מי לית ליה ב\"ד נוטה שצריך שלא יהא בית דין שקול כדי שיתקיים בו הטייה אחרי רבים ולדידיה ארבעה או ששה כשרין דאי בעי בית דין נוטה קרא לאיתויי שלישי למה לי:"
+  },
+  "Rashi on Sanhedrin 3b:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:6:1",
+      "Rashi on Sanhedrin 3b:6:2",
+      "Steinsaltz on Sanhedrin 3b:6:1",
+      "Steinsaltz on Sanhedrin 3b:6",
+      "Sanhedrin 3b:6",
+      "Rashi on Sanhedrin 3b:7:1"
+    ],
+    "generatedAt": "2026-11-10T22:19:37.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא כו'</strong> - והא קרא דריש:"
+  },
+  "Rashi on Sanhedrin 3b:7:1": {
+    "dependsOn": [
+      "Sanhedrin 3b:7"
+    ],
+    "generatedAt": "2026-11-10T22:20:26.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבר לה</strong> - רבי יאשיה כרבי יהודה דאמר סנהדרי גדולה שבעים דהוו להו זוגות וקרא מוקי לה לקמן לדרשה אחריתי:"
+  },
+  "Rashi on Sanhedrin 3b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:8:1",
+      "Rashi on Sanhedrin 3b:7:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-10T22:24:34.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיבי קראי</strong> - לקמן <span class=\"parenthesized\">(סנהדרין דף יז'.)</span> בשילהי פירקין:"
+  },
+  "Rashi on Sanhedrin 3b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:25:00.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 3b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמיכת זקנים</strong> - על ראש פר העדה:"
+  },
+  "Tosafot on Sanhedrin 3b:11:1": {
+    "dependsOn": [
+      "Sanhedrin 33b:2"
+    ],
+    "generatedAt": "2026-11-10T22:36:48.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 3b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוקי לה בדיני נפשות אבל בדיני ממונות לא</strong> - משום דקרא משמע בדיני נפשות דכתיב לא תהיה אחרי רבים לרעות דמשמע דבר שהוא רע לכל דהיינו דיני נפשות אבל בדיני ממונות זכות לזה וחובה לזה ואף על גב דדיני נפשות נמי קרי ליה זכותיה דגואל הדם בריש אחד דיני ממונות <span class=\"parenthesized\">(לקמן סנהדרין דף לג:)</span> מ״מ חשיב ליה רעות כיון דאין מרויח כלום במיתתו של זה ועדים זוממין אף על גב דכי מיחייבי מפטר רוצח בכך מכל מקום אפשר דמיפטרי כולהו בהכחשה הלכך חשיב ליה רעות כי מיחייבי עדים זוממין מיתה ועוד מצי למימר דע״כ נמי קרא בדיני נפשות משום דדרשינן בריש פירקין <span class=\"parenthesized\">(סנהדרין דף ב.)</span> לא כהטייתך לטובה הטייתך לרעה ולא שייך בדיני ממונות דרע לזה וטוב לזה:"
+  },
+  "Tosafot on Sanhedrin 3b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:47:15.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיני ממונות לא כ\"ש</strong> - תימה דבריש המוכר פירות <span class=\"parenthesized\">(ב\"ב דף צב:)</span> קאמר שמואל דאין הולכים בממון אחר הרוב ואמאי לא נילף בק\"ו מדיני נפשות כדאמר הכא ואין לומר דדיני נפשות גופייהו לא אזלינן בתר רובא ברובא דליתיה קמן אלא ברובא דאיתיה קמן דהא בריש פרק סורר ומורה <span class=\"parenthesized\">(לקמן סנהדרין דף סט.)</span> משמע דבכל דוכתא אזלינן בתר רובא בדיני נפשות כגון רוב נשים לט' ילדן ורובא דאינשי דטעו בעיבורא דירחא וצ\"ל דרובא לרדיא זבני לא חשיב כי הנך רובא הלכך לא סמכינן אהך רובא בדיני ממונות:"
+  },
+  "Tosafot on Sanhedrin 3b:15:1": {
+    "dependsOn": [
+      "Tosafot on Sanhedrin 3b:15:1",
+      "Tosafot on Sanhedrin 3b:13:1",
+      "Rashi on Sanhedrin 3b:15:1",
+      "Rashi on Sanhedrin 3b:15:2",
+      "Steinsaltz on Sanhedrin 3b:15:1",
+      "Tosafot on Sanhedrin 3b:7:1",
+      "Tosafot on Sanhedrin 3b:3:1",
+      "Tosafot on Sanhedrin 3b:11:1",
+      "Steinsaltz comment #1 on Sanhedrin 3b:15",
+      "Steinsaltz comment #2 on Sanhedrin 3b:15",
+      "Steinsaltz comment #3 on Sanhedrin 3b:15",
+      "Steinsaltz comment #4 on Sanhedrin 3b:15",
+      "Steinsaltz comment #5 on Sanhedrin 3b:15",
+      "Steinsaltz comment #6 on Sanhedrin 3b:15",
+      "Steinsaltz comment #7 on Sanhedrin 3b:15",
+      "Steinsaltz comment #8 on Sanhedrin 3b:15",
+      "Steinsaltz comment #9 on Sanhedrin 3b:15"
+    ],
+    "generatedAt": "2026-11-10T22:58:48.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 3b:15:1"
+    ],
+    "sourceText": "מסנהדרי גדולה פריך שפיר דשבעים ואחד כתיב כדדריש בסוף פירקין <span class=\"parenthesized\">(סנהדרין דף יז.)</span> אבל סנהדרי קטנה דעשרים כתיב ותו לא כדדריש בריש פירקין עדה שופטת ועדה מצלת ואי עשרים בגמר דין כתיב בל״ט סגי:"
+  },
+  "Tosafot on Sanhedrin 3b:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 3b:3:1",
+      "Rashi on Sanhedrin 3b:3:2",
+      "Sanhedrin 3b:3",
+      "Rashi on Sanhedrin 3b:4:1",
+      "Rashi on Sanhedrin 3b:5:1"
+    ],
+    "generatedAt": "2026-11-10T22:14:33.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין דורשין תחילות</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> משום דאיצטריך למומחין וקשה דמסיק דכ״ע אין דורשין תחילות ור' יאשיה אמר לך אם כן נכתוב קרא אל השופט דהא משופט לא ידעינן מומחין <span class=\"rashi-quotation\">כמו שפירש בקונטרס</span> עצמו ור' יונתן לישנא דעלמא נקט כדאמרי אינשי מאן דאית ליה דינא ליקרב לגבי דיינא הרגיל ולא אצל הדיוט לכך נראה דה״ק אין דורשין תחילות למניינא ואע״ג דלא איצטריך למומחין וכן משמע בפלוגתא דרבי שמעון ורבנן דלקמן <span class=\"parenthesized\">(סנהדרין דף ד.)</span> דבסכת בסכת בסכות מפרש בפ״ק דסוכה <span class=\"parenthesized\">(דף ו:)</span> בחד לישנא דכ״ע יש אם למסורת ופליגי בדורשין תחילות ומשמע דלכ״ע סככא לא בעי קרא ואפ״ה מדלינן חד לגופיה ולא מוקמינן למניינא למאן דלא דריש תחילות וצריך לדקדק בכל הנהו דלקמן <span class=\"parenthesized\">(סנהדרין דף ד.)</span> קרנת קרנת קרנות לטטפת לטטפת לטוטפות וי' כהנים דסוף פירקין <span class=\"parenthesized\">(סנהדרין דף יד:)</span> דדרשינן כולהו למניינא ולא אמרינן אין דורשין תחילות:"
+  },
+  "Tosafot on Sanhedrin 3b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-10T22:22:34.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה אומר שבעים</strong> - והא דאמר רבי יהודה בפרק החליל <span class=\"parenthesized\">(סוכה דף נא: ושם)</span> גבי אלכסנדריא של מצרים שהיו בה ע\"א קתדראות של זהב כנגד ע\"א זקנים של סנהדרי גדולה היינו משום דמשה על גבייהו וכן בכל סנהדרי גדולה היה שם מופלא שבב\"ד שלא היה מן החשבון:"
+  }
+}

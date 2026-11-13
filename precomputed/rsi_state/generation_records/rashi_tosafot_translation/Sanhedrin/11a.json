@@ -1,0 +1,423 @@
+{
+  "Rashi on Sanhedrin 11a:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 11a:10"
+    ],
+    "generatedAt": "2026-11-11T10:17:07.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטול רשות</strong> - לדבר על עסקי ציבור:"
+  },
+  "Rashi on Sanhedrin 11a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:17:36.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני הדרכים</strong> - שנתקלקלו בימות החורף ומפני הגשמים ועדיין לא נתקנו ולא יוכלו עולי רגל לבא:"
+  },
+  "Rashi on Sanhedrin 11a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:18:02.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנורי פסחים</strong> - שצולין בהם פסחיהם ונמוקו בגשמי החורף וצריכין חמה להתייבש:"
+  },
+  "Rashi on Sanhedrin 11a:11:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:11:1",
+      "Rashi on Sanhedrin 11a:11:2",
+      "Rashi on Sanhedrin 11a:11:3",
+      "Rashi on Sanhedrin 11a:11:4"
+    ],
+    "generatedAt": "2026-11-11T10:18:52.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני גליות ישראל</strong> - בני הגולה הרחוקים ונשמע לבית דין שנעקרו ממקומן לעלות לרגל לעשות פסחיהם ועדיין לא הגיעו שאם לא יעברוה לא ירגילו לבא בפסח:"
+  },
+  "Rashi on Sanhedrin 11a:11:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:11:1",
+      "Rashi on Sanhedrin 11a:11:2",
+      "Rashi on Sanhedrin 11a:11:3",
+      "Rashi on Sanhedrin 11a:11:4"
+    ],
+    "generatedAt": "2026-11-11T10:19:29.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מפני השלג</strong> - שלא יחדלו בכך מלבוא:"
+  },
+  "Rashi on Sanhedrin 11a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:22:09.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדיים וטלאין</strong> - שהן דקין אין מעברין עליהן כדי שיגדלו ויעשו מהם פסחים שהרי יכול להקריב קטנים:"
+  },
+  "Rashi on Sanhedrin 11a:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:12:1",
+      "Rashi on Sanhedrin 11a:12:3"
+    ],
+    "generatedAt": "2026-11-11T10:23:00.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוזלות</strong> - שצריכין לקיני יולדות שבכל א\"י וכן זבין וזבות שכולן משהין קיניהם עד עלותן לרגל אעפ\"כ אין מעברין על כך שיכולין להביא בני יונה שכשרים כשהם קטנים:"
+  },
+  "Rashi on Sanhedrin 11a:12:3": {
+    "dependsOn": [
+      "Sanhedrin 11b:5",
+      "Rashi on Sanhedrin 11b:5:1",
+      "Rashi on Sanhedrin 11a:12:1",
+      "Rashi on Sanhedrin 11a:12:2",
+      "Rashi on Sanhedrin 11a:12:4"
+    ],
+    "generatedAt": "2026-11-11T10:25:07.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל עושין אותן סעד</strong> - סייג וסמך לדבריהם לעבר את השנה אם צריכה לעבר מפני א' מן הדברים שמעברין עליהן כגון על האביב ועל פירות האילן ואמרי' לקמן על שתים מהן מעברין ועל א' מהן אין מעברין הללו גדיים וטלאים וגוזלות נעשו סעד ומצטרפין לאחד מהן ומעברין:"
+  },
+  "Rashi on Sanhedrin 11a:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:25:54.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזימנא דאביבא לא מטא</strong> - הוא אחד מן הסימנים שמעברין עליהם כדלקמן:"
+  },
+  "Rashi on Sanhedrin 11a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:26:19.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדש</strong> - כ\"ט ימים:"
+  },
+  "Rashi on Sanhedrin 11a:1:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:1:1",
+      "Translation on Rashi on Sanhedrin 11a:1:1",
+      "Sanhedrin 11a:1",
+      "Rashi on Sanhedrin 11a:1:2"
+    ],
+    "generatedAt": "2026-11-11T09:59:47.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במזומנין לה</strong> - שהזמינן הנשיא מבערב:"
+  },
+  "Rashi on Sanhedrin 11a:1:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 11a:1:2",
+      "Rashi on Sanhedrin 11a:1:1"
+    ],
+    "generatedAt": "2026-11-11T10:00:51.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השכימו לי</strong> - מחר ז' לעלייה המיוחדת לישב בה בית דין:"
+  },
+  "Rashi on Sanhedrin 11a:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:2:1",
+      "Translation on Rashi on Sanhedrin 11a:2:1"
+    ],
+    "generatedAt": "2026-11-11T10:01:33.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לעבר שנה עליתי</strong> - להצטרף עמכם עכשיו:"
+  },
+  "Rashi on Sanhedrin 11a:2:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 11a:2:2",
+      "Rashi on Sanhedrin 11a:2:1",
+      "Rashi on Sanhedrin 11a:2:2",
+      "Rashi on Sanhedrin 11a:2:3"
+    ],
+    "generatedAt": "2026-11-11T10:02:31.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא ללמוד</strong> - תורה מכם היאך תעשו:"
+  },
+  "Rashi on Sanhedrin 11a:2:3": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 11a:2:3"
+    ],
+    "generatedAt": "2026-11-11T10:03:27.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחמת כיסופא הוא דעבד</strong> - שלא יכירו מי היה העולה שלא ברשות וילבינו פניו:"
+  },
+  "Rashi on Sanhedrin 11a:3:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:3:1",
+      "Translation on Rashi on Sanhedrin 11a:3:1"
+    ],
+    "generatedAt": "2026-11-11T10:04:31.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שציערת לאבא</strong> - שאכלת השום ונדף הריח:"
+  },
+  "Rashi on Sanhedrin 11a:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:3:1",
+      "Steinsaltz on Sanhedrin 11a:3",
+      "Translation on Rashi on Sanhedrin 11a:3:2",
+      "Chidushei Agadot on Sanhedrin 11a:3"
+    ],
+    "generatedAt": "2026-11-11T10:05:55.023Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חס ושלום</strong> - שאוכל השום בבואו לבית מדרשו אלא כדי שלא להלבין פניו של אוכל השום יצאתי כדי שיצאו כולם ולא יבינו מי הוא:"
+  },
+  "Rashi on Sanhedrin 11a:5:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 11a:5:1"
+    ],
+    "generatedAt": "2026-11-11T10:06:33.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמואל הקטן</strong> - כדאמרן:"
+  },
+  "Rashi on Sanhedrin 11a:5:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Sanhedrin 11a:5:2",
+      "Rashi on Sanhedrin 11a:5:1"
+    ],
+    "generatedAt": "2026-11-11T10:07:24.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנחנו מעלנו</strong> - והוא לא נשא נכרית והכניס עצמו בכלל שלא להלבין פניהם:"
+  },
+  "Rashi on Sanhedrin 11a:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:6:1",
+      "Rashi on Sanhedrin 11a:5:1",
+      "Rashi on Sanhedrin 11a:5:2",
+      "Rashi on Sanhedrin 11a:6:2",
+      "Rashi on Sanhedrin 11a:6:3"
+    ],
+    "generatedAt": "2026-11-11T10:08:24.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיהושע</strong> - ממעשה דיהושע שלא רצה הקדוש ברוך הוא לגלות לו מי הוא החוטא והכניס את כולן בכלל שנאמר חטא ישראל במעשה דעכן:"
+  },
+  "Rashi on Sanhedrin 11a:6:2": {
+    "dependsOn": [
+      "Translation on Rashi on Sanhedrin 11a:6:2",
+      "Rashi on Sanhedrin 11a:6:1",
+      "Rashi on Sanhedrin 11a:6:3"
+    ],
+    "generatedAt": "2026-11-11T10:09:05.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דילטור</strong> - רכיל:"
+  },
+  "Rashi on Sanhedrin 11a:6:3": {
+    "dependsOn": [
+      "Translation on Rashi on Sanhedrin 11a:6:3",
+      "Rashi on Sanhedrin 11a:6:1",
+      "Rashi on Sanhedrin 11a:6:2"
+    ],
+    "generatedAt": "2026-11-11T10:10:20.904Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאנתם</strong> - כולן בכלל והרי כולן לא יצאו ללקוט אלא מקצת דכתיב <span class=\"parenthesized\">(שמות טז)</span> יצאו מן העם ללקוט וגו':"
+  },
+  "Rashi on Sanhedrin 11a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:10:53.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמתו נביאים כו'</strong> - משום שמואל הקטן נקט לה הכא:"
+  },
+  "Rashi on Sanhedrin 11a:8:1": {
+    "dependsOn": [
+      "Sanhedrin 11a:8",
+      "Rashi on Sanhedrin 11a:8:1",
+      "Rashi on Sanhedrin 11a:8:2"
+    ],
+    "generatedAt": "2026-11-11T10:13:19.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף הוא</strong> - הוכיח סופו ששרתה עליו שכינה שנתנבא בשעת מיתתו:"
+  },
+  "Rashi on Sanhedrin 11a:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:8:1",
+      "Rashi on Sanhedrin 11a:8:3",
+      "Rashi on Sanhedrin 11a:8:4",
+      "Rashi on Sanhedrin 11a:2:1",
+      "Rashi on Sanhedrin 11a:2:2",
+      "Rashi on Sanhedrin 11a:2:3"
+    ],
+    "generatedAt": "2026-11-11T10:14:20.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעון וישמעאל לחרבא</strong> - רשב\"ג הנשיא ורבי ישמעאל בן אלישע כ\"ג יהרגו בחרב:"
+  },
+  "Rashi on Sanhedrin 11a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:14:47.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחביריו</strong> - כגון ר\"ע ורבי חנניא בן תרדיון:"
+  },
+  "Rashi on Sanhedrin 11a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:15:41.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקטלא</strong> - לשאר מיתות ר\"ע במסרקות של ברזל בפרק הרואה <span class=\"parenthesized\">(ברכות דף סא:)</span> ר' חנניא בשריפה במסכת ע\"ז <span class=\"parenthesized\">(דף יח.)</span>:"
+  },
+  "Rashi on Sanhedrin 11a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:16:01.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לומר כן</strong> - אותו הספד:"
+  },
+  "Rashi on Sanhedrin 11a:9:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:9:1"
+    ],
+    "generatedAt": "2026-11-11T10:16:31.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 11a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שאין מספידין על הרוגי מלכות</strong> - מפני יראת המלך מיהרו לקוברן:"
+  },
+  "Tosafot on Sanhedrin 11a:11:1": {
+    "dependsOn": [
+      "Sanhedrin 11a:11",
+      "Sanhedrin 11b:5"
+    ],
+    "generatedAt": "2026-11-11T10:20:42.177Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 11a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני הדרכים והגשרים</strong> - והאי דלא חשיב ג' סימנין דלקמן משום דעל שנים מהן מעברין אבל הני אפילו אחד מהני מעברין ובברייתא דבסמוך גבי גדיים וטלאים וגוזלות שלא פרחו נמי לא חשיב להו משום דאהנך דבסמוך אפי' אשנים מהם אין מעברין עליו אלא שעושין אותו סעד עם אחד מג' סימנים:"
+  },
+  "Tosafot on Sanhedrin 11a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:21:35.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 11a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפני גליות ישראל שנעקרו ממקומן</strong> - משום דהנך דיתבי בא\"י אין צריך לעבר דאפי' האחרון יכול להגיע מר\"ח ניסן עד פסח כדתניא פ\"ק דתענית <span class=\"parenthesized\">(דף י.)</span> גבי שאלת גשמים ט\"ו יום אחר החג כדי שיגיע האחרון שבישראל לנהר פרת:"
+  },
+  "Tosafot on Sanhedrin 11a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T10:30:30.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשב\"ג אומר חדש</strong> - הכא משמע דחדש סתם הוא חדש חסר וכן בפרק המדיר <span class=\"parenthesized\">(כתובות דף עא.)</span> גבי חדש מלא וחדש חסר איכא בינייהו וקשה דבסוף החולץ <span class=\"parenthesized\">(יבמות דף מח: ושם)</span> אמרינן ירח שלשים ימים שלשים וכן בפרק קמא דנזיר <span class=\"parenthesized\">(ה. ושם)</span> פריך ואימא שלשים כדכתיב עד חדש ימים וי\"ל דלשון תורה לחוד ולשון חכמים לחוד א\"נ הכא ובהמדיר דקאמר ת\"ק שלשים מוכחא מילתא דאידך תנא חדש חסר <span class=\"parenthesized\">(וע\"ע תוס' כתובוח עא. ד\"ה רבי)</span>:"
+  },
+  "Tosafot on Sanhedrin 11a:7:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 11a:7:1",
+      "Steinsaltz on Sanhedrin 11a:7",
+      "Steinsaltz comment #1 on Sanhedrin 11a:7",
+      "Steinsaltz comment #2 on Sanhedrin 11a:7",
+      "Tosafot on Sanhedrin 11a:11:1",
+      "Tosafot on Sanhedrin 11a:11:2",
+      "Tosafot on Sanhedrin 11a:13:1",
+      "Tosafot on Sanhedrin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-11T10:12:37.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת קול</strong> - יש אומרים שלא היו שומעין קול היוצא מן השמים אלא מתוך אותו קול יוצא קול אחר כמו פעמים שאדם מכה בכח ושומע קול אחר היוצא ממנו למרחוק ואותו קול היו שומעין לכך קורין אותו בת קול:"
+  }
+}

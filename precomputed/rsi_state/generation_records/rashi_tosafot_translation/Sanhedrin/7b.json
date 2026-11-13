@@ -1,0 +1,635 @@
+{
+  "Rashi on Sanhedrin 7b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:10:1",
+      "Rashi on Sanhedrin 7b:10:2",
+      "Rashi on Sanhedrin 7b:10:3",
+      "Steinsaltz on Sanhedrin 7b:10",
+      "Sanhedrin 7b:13"
+    ],
+    "generatedAt": "2026-11-11T05:10:54.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדינא</strong> - לדון:"
+  },
+  "Rashi on Sanhedrin 7b:10:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:10:1",
+      "Rashi on Sanhedrin 7b:10:3"
+    ],
+    "generatedAt": "2026-11-11T05:11:30.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקטלא</strong> - לישא עליו חטא ועל עצמו היה אומר:"
+  },
+  "Rashi on Sanhedrin 7b:10:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:10:1",
+      "Rashi on Sanhedrin 7b:10:2",
+      "Rashi on Sanhedrin 7b:10:4",
+      "Rashi on Sanhedrin 7b:10:5",
+      "Rashi on Sanhedrin 7b:4:1",
+      "Rashi on Sanhedrin 7b:4:2",
+      "Rashi on Sanhedrin 7b:14:1"
+    ],
+    "generatedAt": "2026-11-11T05:13:04.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצבי ביתיה לית הוא עביד</strong> - צרכי ביתו אינו עושה כאן:"
+  },
+  "Rashi on Sanhedrin 7b:10:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:13:27.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וריקן לביתיה עייל</strong> - שאינו משתכר כאן כלום:"
+  },
+  "Rashi on Sanhedrin 7b:10:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:14:13.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולואי שתהא ביאה</strong> - שאחזור לביתי כיציאה שיצאתי מביתי בלא חטא שלא אטעה ואענש:"
+  },
+  "Rashi on Sanhedrin 7b:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:10:1",
+      "Rashi on Sanhedrin 7b:10:2",
+      "Rashi on Sanhedrin 7b:12:1"
+    ],
+    "generatedAt": "2026-11-11T05:15:20.968Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמבוהא</strong> - סיעת אנשים:"
+  },
+  "Rashi on Sanhedrin 7b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:15:59.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם יעלה לשמים וגו'</strong> - כדי שלא תזוח דעתו עליו היה אומר כך:"
+  },
+  "Rashi on Sanhedrin 7b:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:16:38.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגללו</strong> - גלל רעי:"
+  },
+  "Rashi on Sanhedrin 7b:11:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:11:3",
+      "Rashi on Sanhedrin 7b:11:4",
+      "Rashi on Sanhedrin 7b:11:5"
+    ],
+    "generatedAt": "2026-11-11T05:17:39.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכתפי להו</strong> - נושאין אותן על הכתף שהיו זקינים ואינם יכולין לרוץ ומטריחין את הציבור לעמוד בפניהם לפיכך היו עבדיהם נושאין אותם מהר:"
+  },
+  "Rashi on Sanhedrin 7b:11:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:18:06.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשבתא דרגלא</strong> - שבת ששואלין בו בהלכות הרגל והיינו שלשים יום קודם הרגל:"
+  },
+  "Rashi on Sanhedrin 7b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:18:33.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתונים</strong> - רגילין בהמתנה כדי לעיין בה יפה קודם שתחתכוהו:"
+  },
+  "Rashi on Sanhedrin 7b:12:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:12:1",
+      "Rashi on Sanhedrin 7b:12:3"
+    ],
+    "generatedAt": "2026-11-11T05:19:20.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במעלות</strong> - בחזקה ובמרוצה:"
+  },
+  "Rashi on Sanhedrin 7b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:19:49.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על ראשי עם קדש</strong> - שכשהיה המתורגמן דורש היו הציבור יושבין לארץ והמפסיע ביניהן לילך ולישב במקומו נראה כמפסיע על ראשן:"
+  },
+  "Rashi on Sanhedrin 7b:12:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:12:1",
+      "Rashi on Sanhedrin 7b:12:2",
+      "Rashi on Sanhedrin 7b:12:3"
+    ],
+    "generatedAt": "2026-11-11T05:21:02.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסמיך ליה ואלה המשפטים</strong> - כלומר אף לשופטים אני מזהיר:"
+  },
+  "Rashi on Sanhedrin 7b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:21:28.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלי הדיינים</strong> - דשייכא בהו שימה דבר המטלטל:"
+  },
+  "Rashi on Sanhedrin 7b:13:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:13:1",
+      "Rashi on Sanhedrin 7b:13:3",
+      "Rashi on Sanhedrin 7b:13:4"
+    ],
+    "generatedAt": "2026-11-11T05:22:12.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רצועה</strong> - למלקות:"
+  },
+  "Rashi on Sanhedrin 7b:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:22:39.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקל</strong> - למכת מרדות עד שיחזור בו:"
+  },
+  "Rashi on Sanhedrin 7b:13:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:13:1",
+      "Rashi on Sanhedrin 7b:13:2",
+      "Rashi on Sanhedrin 7b:13:3",
+      "Rashi on Sanhedrin 7b:13:5"
+    ],
+    "generatedAt": "2026-11-11T05:23:13.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שופר</strong> - לשמתא ונידוי:"
+  },
+  "Rashi on Sanhedrin 7b:13:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:13:1",
+      "Rashi on Sanhedrin 7b:13:2",
+      "Rashi on Sanhedrin 7b:13:3",
+      "Rashi on Sanhedrin 7b:13:4"
+    ],
+    "generatedAt": "2026-11-11T05:24:02.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סנדל</strong> - לחליצה:"
+  },
+  "Rashi on Sanhedrin 7b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:24:46.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואצוה</strong> - כל צואה לשון זירוז הוא דתניא <span class=\"parenthesized\">(קדושין דף כט:)</span> כל מקום שנאמר צו אינו אלא לשון זירוז ועל מה זירז על המקל ועל הרצועה שיהו מטילין אימה על הציבור לשם שמים:"
+  },
+  "Rashi on Sanhedrin 7b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:25:49.984Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמוע בין אחיכם</strong> - כשיהיו שניהם יחד שמעו דבריהם ולא תשמעו דברי זה בלא זה שמסדר דברי שקר כדברי אמת לפי שאין מכחישן ומכיון שלב הדיין נוטה לו לזכות שוב אין לבו מהפך בזכות השני כל כך:"
+  },
+  "Rashi on Sanhedrin 7b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:26:41.316Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע</strong> - דבריך בין אחיכם כשתהיו שניכם יחד משמע:"
+  },
+  "Rashi on Sanhedrin 7b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 7b:15"
+    ],
+    "generatedAt": "2026-11-11T05:29:17.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תשא</strong> - לא תקבל שמע שוא אזהרה לדיין וקרי ביה נמי לא תשיא אזהרה לבעל דין:"
+  },
+  "Rashi on Sanhedrin 7b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:30:24.049Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין איש ובין אחיו</strong> - שנפלה להם בית בירושה אל תאמר טול אתה בית ואחיך עליה ומה בכך הרי לכל אחד יש לו דירה אלא העלה אותן בדמים והשווה חלוקתן ע\"י מעות:"
+  },
+  "Rashi on Sanhedrin 7b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:31:14.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין גרו</strong> - לשון מגור תשמישי דירה אל תאמר יטול זה תנור וזה כירה שהרי תנור עודף על הכירה וצריך להוסיף דמים:"
+  },
+  "Rashi on Sanhedrin 7b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:31:43.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תכירהו</strong> - אם הוא אוהבך:"
+  },
+  "Rashi on Sanhedrin 7b:18:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:18:1"
+    ],
+    "generatedAt": "2026-11-11T05:32:09.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תנכרהו</strong> - אם הוא שונאך לא תעשה לו כנכרי לחייבו:"
+  },
+  "Rashi on Sanhedrin 7b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:32:42.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - ההוא גברא לרב:"
+  },
+  "Rashi on Sanhedrin 7b:19:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:19:1",
+      "Rashi on Sanhedrin 7b:19:2",
+      "Rashi on Sanhedrin 7b:19:3",
+      "Rashi on Sanhedrin 7b:19:4",
+      "Jastrow, אוּשְׁפִּיזְכָנָא 1",
+      "Steinsaltz comment #1 on Sanhedrin 7b:19",
+      "Rosh on Sanhedrin 1:10:1"
+    ],
+    "generatedAt": "2026-11-11T05:35:28.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאו אושפיזכני את</strong> - כלומר אין אתה זכור שעשיתי עמך חסד:"
+  },
+  "Rashi on Sanhedrin 7b:19:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:19:1",
+      "Rashi on Sanhedrin 7b:19:2",
+      "Rashi on Sanhedrin 7b:19:3",
+      "Rashi on Sanhedrin 7b:19:4",
+      "Rashi on Sanhedrin 7b:1:1",
+      "Rashi on Sanhedrin 7b:1:2",
+      "Rashi on Sanhedrin 7b:2:1",
+      "Sanhedrin 7b:19",
+      "Rashi on Sanhedrin 7b:10:1",
+      "Rashi on Sanhedrin 7b:10:2",
+      "Rashi on Sanhedrin 7b:10:3",
+      "Rashi on Sanhedrin 7b:10:4",
+      "Rashi on Sanhedrin 7b:10:5",
+      "Rashi on Sanhedrin 7a:8:1",
+      "Rashi on Sanhedrin 7a:9:1"
+    ],
+    "generatedAt": "2026-11-11T05:38:17.152Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - רב אין:"
+  },
+  "Rashi on Sanhedrin 7b:19:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:19:1",
+      "Rashi on Sanhedrin 7b:19:2",
+      "Rashi on Sanhedrin 7b:19:3",
+      "Sanhedrin 7b:19"
+    ],
+    "generatedAt": "2026-11-11T05:39:09.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה ההוא גברא דינא אית לי</strong> - ורוצה אני שתהא דיין:"
+  },
+  "Rashi on Sanhedrin 7b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 7b:1",
+      "Rashi on Sanhedrin 7b:1:2",
+      "Rashi on Sanhedrin 7b:1:3"
+    ],
+    "generatedAt": "2026-11-11T04:52:01.340Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטתו שלשלמה</strong> - שכנו של מקום:"
+  },
+  "Rashi on Sanhedrin 7b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:52:25.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששים גבורים</strong> - תלמידי חכמים וששים לאו דוקא:"
+  },
+  "Rashi on Sanhedrin 7b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:53:04.309Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלומדי מלחמה</strong> - מלחמתה של תורה:"
+  },
+  "Rashi on Sanhedrin 7b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:53:41.100Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם ברור לך</strong> - הדין כבקר שהוא מאיר:"
+  },
+  "Rashi on Sanhedrin 7b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:2:1"
+    ],
+    "generatedAt": "2026-11-11T04:54:16.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אומרהו</strong> - והכי משמע דינו לבקר הוציאו לאור משפט:"
+  },
+  "Rashi on Sanhedrin 7b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T04:54:44.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קולר תלוי</strong> - עונשה של הטייה:"
+  },
+  "Rashi on Sanhedrin 7b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:3:1",
+      "Steinsaltz on Sanhedrin 7b:3:1",
+      "Steinsaltz on Sanhedrin 7b:3",
+      "Sanhedrin 7b:3"
+    ],
+    "generatedAt": "2026-11-11T04:55:45.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לתלמיד היושב לפני רבו</strong> - ובא דין לפני רבו והוא לא נזקק לדבר נענש אם שתק והוא מבין ברבו שטועה:"
+  },
+  "Rashi on Sanhedrin 7b:4:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:4:1",
+      "Rashi on Sanhedrin 7b:4:2",
+      "Rashi on Sanhedrin 7b:4:3"
+    ],
+    "generatedAt": "2026-11-11T04:56:33.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנמטיין שיבא מכשורא</strong> - שיגיענו נסורת קטנה מן הקורה כלומר שאם נטעה ישתלש העונש בין כולנו ויקלו מעלי:"
+  },
+  "Rashi on Sanhedrin 7b:4:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:4:1",
+      "Rashi on Sanhedrin 7b:4:2",
+      "Rashi on Sanhedrin 7b:4:3"
+    ],
+    "generatedAt": "2026-11-11T04:58:03.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיבא</strong> - נסורת כמו <span class=\"parenthesized\">(הושע ח׳:ו׳)</span> כי שבבים יהיה עגל שומרון ומתרגמינן לניסרי לווחין:"
+  },
+  "Rashi on Sanhedrin 7b:4:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:4:1",
+      "Rashi on Sanhedrin 7b:4:2",
+      "Rashi on Sanhedrin 7b:4:3",
+      "Steinsaltz on Sanhedrin 7b:4"
+    ],
+    "generatedAt": "2026-11-11T04:59:20.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טבחי</strong> - בקיאין בטריפות:"
+  },
+  "Rashi on Sanhedrin 7b:5:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:5:2"
+    ],
+    "generatedAt": "2026-11-11T04:59:53.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם דומה הדיין למלך</strong> - שבקי בטיב דינין ומלא חכמה כמלך זה שהוא עשיר:"
+  },
+  "Rashi on Sanhedrin 7b:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:5:1",
+      "Tosafot on Sanhedrin 7b:5:1",
+      "Chidushei Agadot on Sanhedrin 7b:3",
+      "Steinsaltz comment #1 on Sanhedrin 7b:5",
+      "Rashi on Ketubot 105b:2:1"
+    ],
+    "generatedAt": "2026-11-11T05:01:07.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמחזר על הגרנות</strong> - לשאול תרומותיו ואף זה צריך לחזר לשאול ב\"ד:"
+  },
+  "Rashi on Sanhedrin 7b:6:1": {
+    "dependsOn": [
+      "Sanhedrin 7b:6"
+    ],
+    "generatedAt": "2026-11-11T05:03:03.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קום עליה באמורא</strong> - להשמיע דרשה לציבור מה שילחוש לך:"
+  },
+  "Rashi on Sanhedrin 7b:7:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sanhedrin 7b:2",
+      "Steinsaltz on Sanhedrin 7b:7",
+      "Rashi on Sanhedrin 7b:4:1",
+      "Rashi on Sanhedrin 7b:4:2",
+      "Rashi on Sanhedrin 7b:5:1",
+      "Rashi on Sanhedrin 7b:14:1",
+      "Rashi on Sanhedrin 7b:8:1",
+      "Rashi on Sanhedrin 7b:8:2",
+      "Rashi on Sanhedrin 7b:2:1",
+      "Rashi on Sanhedrin 7b:2:2",
+      "Rashi on Sanhedrin 6b:4:1"
+    ],
+    "generatedAt": "2026-11-11T05:05:53.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וה' בהיכל קדשו</strong> - סמוך להאי קרא דהוי אומר לעץ הקיצה עורה לאבן וגו' הוא יורה הנה הוא תפוש וגו' כתב הס מפניו כל הארץ יכלה על עון הזה את כל הארץ:"
+  },
+  "Rashi on Sanhedrin 7b:8:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:8:2"
+    ],
+    "generatedAt": "2026-11-11T05:09:03.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל עץ</strong> - משמע דיין דכתיב <span class=\"parenthesized\">(דברים כג)</span> כי האדם עץ השדה ומוקמינן ליה בתלמיד:"
+  },
+  "Rashi on Sanhedrin 7b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:09:25.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אצל מזבח</strong> - ות\"ח מכפרין ומגינין כמזבח:"
+  },
+  "Rashi on Sanhedrin 7b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T05:09:55.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלוה הבא בשביל כסף</strong> - דיין שהעמידוהו ע\"י שנתן ממון למלך על כך:"
+  },
+  "Tosafot on Sanhedrin 7b:14:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 7b:14:1",
+      "Rashi on Sanhedrin 7b:14:2",
+      "Sanhedrin 8a:6"
+    ],
+    "generatedAt": "2026-11-11T05:28:39.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תהא זריז</strong> - שלא להטיל אימה על הציבור לרדותם יותר מדאי וכן מוכח לקמן <span class=\"parenthesized\">(סנהדרין דף ח.)</span> דדרשינן מהאי קרא אזהרה לדיין שיסבול את הציבור:"
+  },
+  "Tosafot on Sanhedrin 7b:5:1": {
+    "dependsOn": [
+      "Sanhedrin 7b:5"
+    ],
+    "generatedAt": "2026-11-11T05:02:24.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו צריך לכלום</strong> - כלומר דגמיר וסביר וכן מוכח מדמייתי עלה דבי נשיאה אוקמו דיינא דלא גמיר ומיהו בפי\"ג דכתובות <span class=\"parenthesized\">(דף קה:)</span> מייתי לה על דיין שאינו מקבל שוחד ומשמע שאין צריך לכלום שהוא עשיר:"
+  }
+}

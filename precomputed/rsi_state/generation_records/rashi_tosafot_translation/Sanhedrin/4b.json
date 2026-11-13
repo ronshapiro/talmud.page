@@ -1,0 +1,398 @@
+{
+  "Rashi on Sanhedrin 4b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:26:30.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור\"ש ורבנן</strong> - כולהו יש אם למקרא סבירא להו וכי מדלית חד בסוכות לגופיה פשו להו ארבעה אבל רבנן סברי סככא בעי קרא פשו להו ג' דפנות וגרעתא הלכתא לשלישית ור\"ש סבר סככא לא בעי קרא דמקרא דמדלינן לגופיה נפקא דהא בלא סככא לא מיקרי' סוכה:"
+  },
+  "Rashi on Sanhedrin 4b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:27:03.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפשות דעלמא</strong> - ולעולם חדא משמע אלא הכי קאמר על אחת מכל נפשות מת שבעולם לא יבא:"
+  },
+  "Rashi on Sanhedrin 4b:12:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:12:1",
+      "Sanhedrin 4b:12",
+      "Rashi on Sanhedrin 4b:10:1",
+      "Rashi on Sanhedrin 4b:11:1",
+      "Rashi on Menachot 34b:1:1",
+      "Tosafot on Sanhedrin 4b:12:1",
+      "Rashi on Sanhedrin 4b:2:1",
+      "Rashi on Sanhedrin 4b:2:2",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:5:1",
+      "Rashi on Sanhedrin 4b:13:1",
+      "Rashi on Sanhedrin 4b:13:2",
+      "Rashi on Sanhedrin 4b:14:1",
+      "Rashi on Sanhedrin 4b:14:2",
+      "Steinsaltz comment #1 on Sanhedrin 4b:12",
+      "Steinsaltz comment #2 on Sanhedrin 4b:12",
+      "Steinsaltz comment #3 on Sanhedrin 4b:12"
+    ],
+    "generatedAt": "2026-11-11T00:29:44.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:12:1"
+    ],
+    "sourceText": "בפרשת שמע ובפרשת כי יביאך כתיב לטטפת חסר וי\"ו אבל בפרשת והיה אם שמוע כתיב לטוטפות מלא הרי כאן ד' בתים לתפילין של ראש אבל של יד אינה אלא אחת:"
+  },
+  "Rashi on Sanhedrin 4b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:50:28.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתפי</strong> - שם מקום כשרוצים לומר שתים אומר טט:"
+  },
+  "Rashi on Sanhedrin 4b:13:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:13:1",
+      "Rashi on Sanhedrin 4b:1:1",
+      "Rashi on Sanhedrin 4b:2:1",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 3a:1:1"
+    ],
+    "generatedAt": "2026-11-11T00:52:13.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפריקי</strong> - נמי מקום וקורין לשתים פת:"
+  },
+  "Rashi on Sanhedrin 4b:14:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:14:2",
+      "Rashi on Sanhedrin 4b:13:1",
+      "Rashi on Sanhedrin 4b:13:2",
+      "Rashi on Sanhedrin 4b:12:1"
+    ],
+    "generatedAt": "2026-11-11T00:59:24.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשני קרא ממסורת</strong> - באותיות הקריה יתירות על המסורת כמו לטוטפות בסוכות קרנות דאיכא למימר מדשני ודאי תרווייהו דרשינן:"
+  },
+  "Rashi on Sanhedrin 4b:14:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:14:1",
+      "Rashi on Sanhedrin 4b:13:1",
+      "Rashi on Sanhedrin 4b:13:2",
+      "Rashi on Sanhedrin 4b:15:1"
+    ],
+    "generatedAt": "2026-11-11T01:00:20.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל חלב וחלב דכי הדדי נינהו</strong> - כולי עלמא מודו דיש אם למקרא:"
+  },
+  "Rashi on Sanhedrin 4b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 4b:15"
+    ],
+    "generatedAt": "2026-11-11T01:02:03.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יראה כל זכורך כתיב</strong> - וקרינא יֵרָאֶה תרווייהו דרשינן יִרְאֶה כל זכורך שיראו פני השכינה יֵרָאֶה משמע שיתראו לפניו שהוא בא לראותו היקיש ראייתך לראיתו כדרך שהקב\"ה בא לראותך כך בא ליראות לו מה הוא רואה אותך כשהוא שלם שנאמר <span class=\"parenthesized\">(דברים י״א:י״ב)</span> עיני ה' אלהיך בה מראשית אף אתה רואה אותו בשתי עיניך אלמא אע\"ג דכי הדדי נינהו דרשינן מסורת וגבי חלב אמו מאן לימא דלא לידרש חלב אמו בתר מסורת:"
+  },
+  "Rashi on Sanhedrin 4b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T01:07:06.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך בישול</strong> - חָלָב צלול כמים ואיכא בישול אבל חֵלֶב אינו בישול אלא טגון:"
+  },
+  "Rashi on Sanhedrin 4b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 4b:1"
+    ],
+    "generatedAt": "2026-11-11T00:02:15.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרת יש אם למקרא</strong> - וליכא מאן דפליג דאי פליגי בשר בחלב מנא לן דאסור:"
+  },
+  "Rashi on Sanhedrin 4b:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:2:1",
+      "Rashi on Sanhedrin 4b:2:2",
+      "Sanhedrin 4b:2",
+      "Sanhedrin 3b:17",
+      "Rashi on Sanhedrin 3b:17:1",
+      "Rashi on Sanhedrin 3b:17:2",
+      "Rashi on Sanhedrin 3b:17:3",
+      "Rashi on Sanhedrin 3b:17:4"
+    ],
+    "generatedAt": "2026-11-11T00:03:24.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ירשיעון אלהים אחריני</strong> - לבד מאלהים האמור למעלה בעינא תרתי ולמעלה דומיא דלמטה הרי ד':"
+  },
+  "Rashi on Sanhedrin 4b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:2:1",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:4:2"
+    ],
+    "generatedAt": "2026-11-11T00:04:48.364Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהיאך והאי</strong> - ירשיעון אלהים האמור למעלה ואלהים האמור כאן ולעולם לשון רבים משמע:"
+  },
+  "Rashi on Sanhedrin 4b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:07:46.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכפר וכפר וכפר</strong> - בשעיר נשיא ובשעירה דיחיד ובכבשה דיחיד כתיב <span class=\"parenthesized\">(ויקרא ד)</span> ומשמע דסגי בכפרה אחת כדמפרש:"
+  },
+  "Rashi on Sanhedrin 4b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:08:29.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני הדין</strong> - הוצרכו ליכתב כולן דאי לא הוו כתיבי הוו מייתנא מדינא דכולהו מתנות מעכבי:"
+  },
+  "Rashi on Sanhedrin 4b:4:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:4:2",
+      "Rashi on Sanhedrin 4b:4:3",
+      "Sanhedrin 4b:4",
+      "Steinsaltz on Sanhedrin 4b:4:1",
+      "Steinsaltz on Sanhedrin 4b:5:1",
+      "Steinsaltz on Sanhedrin 4b:4"
+    ],
+    "generatedAt": "2026-11-11T00:10:10.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:4:3"
+    ],
+    "sourceText": "שיכול לא גרסינן:"
+  },
+  "Rashi on Sanhedrin 4b:5:1": {
+    "dependsOn": [
+      "Sanhedrin 4b:5",
+      "Rashi on Sanhedrin 4b:4:3",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:4:2"
+    ],
+    "generatedAt": "2026-11-11T00:10:58.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלא דין הוא</strong> - דלא ליעכבו למה לי לרבויי דבכפרה אחת סגי:"
+  },
+  "Rashi on Sanhedrin 4b:5:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:5:1",
+      "Rashi on Sanhedrin 4b:5:2",
+      "Rashi on Sanhedrin 4b:5:3",
+      "Rashi on Sanhedrin 4b:5:4",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:11:1",
+      "Rashi on Sanhedrin 4b:2:1",
+      "Rashi on Sanhedrin 4b:2:2",
+      "Rashi on Sanhedrin 3b:1:1",
+      "Rashi on Sanhedrin 2a:1:1",
+      "Rashi on Sanhedrin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-11T00:12:36.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמרו דמים</strong> - בפרשה למטה גבי חטאת העוף דשמיעת הקול דכתיב <span class=\"parenthesized\">(ויקרא ה׳:ט׳)</span> והזה מדם החטאת על קיר המזבח:"
+  },
+  "Rashi on Sanhedrin 4b:5:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:5:2"
+    ],
+    "generatedAt": "2026-11-11T00:13:07.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונאמרו דמים למעלה</strong> - בחטאת בהמה:"
+  },
+  "Rashi on Sanhedrin 4b:5:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:5:1",
+      "Rashi on Sanhedrin 4b:5:2",
+      "Rashi on Sanhedrin 4b:5:3",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:4:2",
+      "Rashi on Sanhedrin 4b:4:3"
+    ],
+    "generatedAt": "2026-11-11T00:14:47.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנתנו במתנה אחת כיפר</strong> - דהא לא כתיב קרנות. לשון אחר נאמרו דמים למטה למטה מחוט הסיקרא בעולה ושלמים ואשם ונאמר דמים למעלה למעלה מחוט הסיקרא דהיינו חטאת בהמה דכתיבי בה קרנות <span class=\"parenthesized\">(ויקרא ד)</span> מה דמים האמורים למטה שנתנן במתנה אחת כיפר דהא אפי' ב\"ש מודו בשאר קרבנות דכתיב <span class=\"parenthesized\">(דברים י״ב:כ״ז)</span> ודם זבחיך ישפך לשון אחר למטה בפרשה תחתונה דויקרא באשמות כתיבי לשון אמצעי עיקר:"
+  },
+  "Rashi on Sanhedrin 4b:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:5:1"
+    ],
+    "generatedAt": "2026-11-11T00:17:00.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפנים</strong> - חטאות הפנימיות דפר כהן משיח והעלם דבר הטעונין שבע הזיות על הפרוכת ועל מזבח הזהב ותנן בהו מתנה אחת מהן מעכבת באיזהו מקומן <span class=\"parenthesized\">(זבחים מז.)</span> ונפקא לן מקראי בהקומץ רבה <span class=\"parenthesized\">(מנחות דף כז.)</span> ועשה כאשר עשה מה ת\"ל לכפול בהזאות מלמד שאם חסר אחת מכל המתנות לא עשה כלום:"
+  },
+  "Rashi on Sanhedrin 4b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T00:20:41.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנין חטאת</strong> - ונאמרו בה קרנות מחטאות הפנימיות שהן חטאות ונאמרו בה <span class=\"parenthesized\">(ויקרא ד׳:ז׳)</span> קרנות המזבח קטורת הסמים:"
+  },
+  "Rashi on Sanhedrin 4b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:8:1",
+      "Sanhedrin 4b:8",
+      "Rashi on Sanhedrin 4b:4:1",
+      "Rashi on Sanhedrin 4b:4:2",
+      "Rashi on Sanhedrin 4b:4:3",
+      "Rashi on Sanhedrin 4b:5:1",
+      "Rashi on Sanhedrin 4b:5:2",
+      "Rashi on Sanhedrin 4b:5:3",
+      "Rashi on Sanhedrin 4b:5:4",
+      "Tosafot on Sanhedrin 4b:8:1"
+    ],
+    "generatedAt": "2026-11-11T00:22:17.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 4b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואל יוכיח זה</strong> - דם האשם שאינו חטאות ולא נאמרו בה קרנות אלא סביב וללישנא דחטאת העוף נמי אינו חטאת וארבע קרנות כלומר אע\"פ ששמן חטאות לא נאמרו בו קרנות וכולן שמעתיה ודחטאת העוף לא סלקא לו:"
+  },
+  "Tosafot on Sanhedrin 4b:12:1": {
+    "dependsOn": [
+      "Yevamot 72b:6",
+      "Maharsha on Sanhedrin 4b:1",
+      "Tosafot on Menachot 34b:1:1"
+    ],
+    "generatedAt": "2026-11-11T00:50:00.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטטפת לטטפת לטוטפות</strong> - תימה דלא כתיב וי\"ו בין פ\"א לתי\"ו בכולהו ויש מפרשים משום דכתיב ולטוטפת וגורעין וי\"ו דבריש התיבה ומוסיפין בסוף התיבה ודורשין כדאשכחן בפרק ב' דזבחים <span class=\"parenthesized\">(דף כה.)</span> ולקח מדם הפר דם מהפר יקבלנו ובריש יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קיא:)</span> דרשינן ונתתם את נחלתו לשארו נחלת שארו לו וקשה דבפרק הזהב <span class=\"parenthesized\">(ב\"מ דף נד:)</span> אמר גבי הקדש כתיב ויסף חמישית אע\"ג דכי שקלת לוי\"ו דויסף ושדית ליה אחמישית סוף סוף הוו ליה חמישיתו ולא נימא לשדיה בין יו\"ד לתי\"ו דהוה חמישיות משמע דבאמצע תיבה אין מוסיפין ומיהו אשכחן בפרק מומין אלו <span class=\"parenthesized\">(בכורות ד' מד:)</span> גבי מרוח אשך דתנן ר' חנינא בן אנטיגנוס אומר שמראיו חשוכין ומפרש בגמרא דגורעין ח' ממרוח ושדינן אאשך ואל\"ף דאשך שדינן אמרוח וקרי ביה מראו חשך ובירוש' איכא פלוגתא דר' אמי בשם ר' יוחנן אמר גורעין לדרוש מתחלת הפרשה לסופה פירוש מתחלת התיבה לסופה ור' יוחנן בשם ר' ירמיה אמר אפי' באמצע תיבה ור\"ת מפרש דוי\"ו דולטוטפת דריש וה\"ג לטטפת לטטפת ולטוטפת הרי כאן ד' ואע\"ג דר\"ש לא דריש וי\"ו וי\"ו למ\"ד דריש כדאמרי' בהערל <span class=\"parenthesized\">(יבמות דף עב:)</span> גבי והנותר:"
+  },
+  "Tosafot on Sanhedrin 4b:13:1": {
+    "dependsOn": [
+      "Sanhedrin 4b:13",
+      "Rashi on Sanhedrin 4b:13:1",
+      "Rashi on Sanhedrin 4b:13:2",
+      "Tosafot on Menachot 34b:2:1",
+      "Chokhmat Shlomo on Sanhedrin 4b:1"
+    ],
+    "generatedAt": "2026-11-11T00:57:34.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טט בכתפי שתים</strong> - פי' בתיבה אחת רמז הכתוב ארבע בתים בין שתי הלשונות כתפי ואפריקי ומכיון דאשכחינן ליה בחד תיבה לית לן לרבויי טפי א\"נ הא דלא דרשינן בתים טובא משום דלא מצינו בתורה כתובים אלא בד' פרשיות וי\"מ דלרבי עקיבא דל חד לגופיה ומשני טוטפות דריש ד' בתים לכל לשון שני טוט ושני פת:"
+  },
+  "Tosafot on Sanhedrin 4b:15:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 4b:15:1",
+      "Tosafot on Chagigah 2a:6:1",
+      "Maharsha: Chidushei Halachot on Sanhedrin 4b:3"
+    ],
+    "generatedAt": "2026-11-11T01:06:31.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדרך שבא לראות</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> כדרך שבא לראותך כן אתה בא ליראות לו מה הוא רואה אותך שלם אף אתה רואה אותו בשתי עיניך ולפי זה קאי יראה אקדוש ברוך הוא וקאי יראה אזכורך ואין הלשון משמע כן אלא תרווייהו משמע אזכורך לכך מפרש רבינו תם איפכא כדרך שזכורך בא לראות את פני השכינה שהקדוש ברוך הוא רואהו בשתי עיניו כך זכורך רואהו בשתי עיניו שלו וניחא השתא לשון בא דשכינה תמיד בבית המקדש:"
+  },
+  "Tosafot on Sanhedrin 4b:16:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Sanhedrin 4b:16:1",
+      "Rashi on Sanhedrin 4b:16:1",
+      "Pesachim 41a:12",
+      "Pesachim 41a:13",
+      "Pesachim 41a:14"
+    ],
+    "generatedAt": "2026-11-11T01:08:50.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך בישול אסרה תורה</strong> - ובחלב אינו בישול אלא טיגון <span class=\"rashi-quotation\">כדפירש בקונטרס</span> והאי דקרי לצלי קדר בישול בפרק כל שעה <span class=\"parenthesized\">(פסחים דף מא. ושם)</span> שאני התם דכתיב ובשל מבושל מ\"מ וי\"מ דרך בישול אסרה תורה דבלא בישול שרי וע\"י בישול אסור לאפוקי חלב דבלאו הכי אסור וקשה לפי זה דחלב ומתה אסרינן בחלב בפרק כל הבשר <span class=\"parenthesized\">(חולין דף קיג: ודף קטו.)</span> למ\"ד איסור חל על איסור וקאמר התם חלב ומתה לא צריכא קרא:"
+  },
+  "Tosafot on Sanhedrin 4b:8:1": {
+    "dependsOn": [
+      "Zevachim 39b:1",
+      "Sanhedrin 4b:7",
+      "Sanhedrin 4b:8",
+      "Sanhedrin 4b:9",
+      "Zevachim 39b:2",
+      "Zevachim 39b:3"
+    ],
+    "generatedAt": "2026-11-11T00:24:20.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 4b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנין חטאת וארבע קרנות</strong> - תימה הא אפי' פנים מפנים לא גמרינן בפרק ב\"ש <span class=\"parenthesized\">(זבחים דף לט:)</span> דבעי קרא לפר כהן משיח ולפר העלם דבר של ציבור ולשעירי ע\"ז אף על גב דכולהו חטאות נינהו וכ\"ש דלא אתו חיצונות מפנימיות ושמא כיון דאשכחן דלא פליג קרא התם מהשתא לא מחלקינן אפי' חיצונות מפנימיות:"
+  }
+}

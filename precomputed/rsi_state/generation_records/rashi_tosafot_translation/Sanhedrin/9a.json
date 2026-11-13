@@ -1,0 +1,177 @@
+{
+  "Rashi on Sanhedrin 9a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:00:26.494Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתרו ביה מלקות ולא אתרו ביה קטלא</strong> - דהא ודאי לא מיקטלא אלא לוקה דאין לך מיתת בית דין שלא נאמר בה לאו וקסבר לאו שניתן לאזהרת מיתת בית דין לוקין עליו כי אתרו בה מלקות ולא קטלא:"
+  },
+  "Rashi on Sanhedrin 9a:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:1:1",
+      "Rashi on Sanhedrin 9a:3:1",
+      "Rashi on Sanhedrin 9a:3:2",
+      "Rashi on Sanhedrin 9a:3:3",
+      "Mishnah Sanhedrin 1:1",
+      "Mishnah Sanhedrin 1:2"
+    ],
+    "generatedAt": "2026-11-11T07:11:31.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום ר' ישמעאל אמרו בעשרים ושלשה</strong> - טעמא מפרש לקמן <span class=\"parenthesized\">(סנהדרין דף י.)</span>:"
+  },
+  "Rashi on Sanhedrin 9a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:12:02.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד מן העדים</strong> - והיו שם שלשה או ארבעה שיכולה עדות להתקיים בשאר:"
+  },
+  "Rashi on Sanhedrin 9a:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:3:1",
+      "Rashi on Sanhedrin 9a:3:2",
+      "Rashi on Sanhedrin 9a:3:3"
+    ],
+    "generatedAt": "2026-11-11T07:13:18.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:3:2"
+    ],
+    "sourceText": "הא דרבי עקיבא במסכת מכות:"
+  },
+  "Rashi on Sanhedrin 9a:3:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:3:1",
+      "Rashi on Sanhedrin 9a:3:2",
+      "Makkot 5b:23",
+      "Makkot 5b:24",
+      "Rashi on Sanhedrin 9a:6:1",
+      "Tosafot on Sanhedrin 9a:6:1"
+    ],
+    "generatedAt": "2026-11-11T07:15:32.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בא שלישי כו'</strong> - דממשמע שנאמר <span class=\"parenthesized\">(דברים י״ט:ט״ו)</span> על פי שנים עדים <span class=\"parenthesized\">(יקום)</span> כל שכן שלשה למה נאמר או שלשה עדים אלא להחמיר עליו ליתן חומר בעדי שקר ששלישי זה אע\"פ שלא היה זה נידון על פיו למיתה שהרי בשנים שהעידו תחלה נמי היה נידון אפילו הכי עשה הכתוב את דינו כיוצא באלו שאם הוזמו יהרג אף השלישי מפני שניטפל לעוברי עבירה:"
+  },
+  "Rashi on Sanhedrin 9a:4:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 9a:4"
+    ],
+    "generatedAt": "2026-11-11T07:21:20.797Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קל וחומר שישלם שכר וכו'</strong> - דקיימא לן מדה טובה מרובה ממדת פורענות הלכך קל וחומר הוא:"
+  },
+  "Rashi on Sanhedrin 9a:6:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:6:2",
+      "Rashi on Sanhedrin 9a:3:1",
+      "Rashi on Sanhedrin 9a:3:2"
+    ],
+    "generatedAt": "2026-11-11T07:22:05.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים</strong> - דעדותן בטלה:"
+  },
+  "Rashi on Sanhedrin 9a:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:6:1",
+      "Rashi on Sanhedrin 9a:6:2",
+      "Sanhedrin 9a:6",
+      "Tosafot on Sanhedrin 9a:6:1",
+      "Rashi on Sanhedrin 9a:6:3",
+      "Rashi on Sanhedrin 9a:6:4",
+      "Rashi on Sanhedrin 9a:6:5",
+      "Rashi on Sanhedrin 9a:2:1",
+      "Rashi on Sanhedrin 9a:3:1",
+      "Rashi on Sanhedrin 9a:3:2",
+      "Rashi on Sanhedrin 9a:3:3",
+      "Rashi on Sanhedrin 2a:16:3"
+    ],
+    "generatedAt": "2026-11-11T07:24:36.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיני נפשות</strong> - דרחמנא אמר <span class=\"parenthesized\">(במדבר ל״ה:כ״ה)</span> והצילו העדה דמהדרינן בתר זכותא לבטל העדות ולא יהרג לא הוא ולא הם:"
+  },
+  "Rashi on Sanhedrin 9a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:25:12.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אומר אחד דיני ממונות ואחד דיני נפשות</strong> - שוין בכך דעדותן בטלה:"
+  },
+  "Rashi on Sanhedrin 9a:6:4": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 9a:6:1",
+      "Rashi on Sanhedrin 9a:6:2",
+      "Rashi on Sanhedrin 9a:6:3",
+      "Rashi on Sanhedrin 9a:6:4",
+      "Rashi on Sanhedrin 9a:6:5",
+      "Sanhedrin 9a:6",
+      "Rashi on Makkot 6a:2:1"
+    ],
+    "generatedAt": "2026-11-11T07:30:21.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימתי</strong> - בדיני נפשות עדותן בטלה:"
+  },
+  "Rashi on Sanhedrin 9a:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:31:14.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 9a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שהתרו</strong> - הקרוב או הפסול בעוברי עבירה שגילו דעתם שאף הם נעשים עדים והרי הכתוב הקיש שלשה לבטל העדות אם יש קרוב או פסול אבל לא התרו הקרוב והפסול בעוברי עבירה אלא שתקו והכשרים התרו בהן אין אלו נעשים עדים ותתקיים העדות בשאר:"
+  },
+  "Tosafot on Sanhedrin 9a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:20:09.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בא השלישי להקל עליו אלא להחמיר עליו</strong> - אדר\"ש קאי דקתני בפ\"ק דמכות <span class=\"parenthesized\">(דף ה: ושם)</span> לעיל מהך ר\"ש אומר מה שנים אין נהרגין עד שיהו שניהם זוממין אף שלשה וכו' ומצי למימר דפליג אדר\"ש וס\"ל דנהרגין אע\"פ שאין שלשתן זוממין דקסבר דאין להקיש שלשה לשנים לענין זה דכיון דכתיב <span class=\"parenthesized\">(דברים י״ט:י״ט)</span> ועשיתם לו כאשר זמם הרי זממו שנים שיש כח בידיהם להרוג בפני עצמם <span class=\"rashi-quotation\">ובקונטרס פירש</span> במכות <span class=\"parenthesized\">(שם)</span> לא בא השלישי להקל עליו דלהקל עליו לא צריך קרא דכתיב <span class=\"parenthesized\">(שם)</span> והנה עד שקר העד דמשמע כל העדות ואינן נהרגין עד שיוזמו כולן ולא בא הכתוב אלא להחמיר עליו אבל אין לפרש לא בא השלישי להקל עליו גרידא אלא גם להחמיר עליו אע\"ג דר\"ש מודה דשלשתן נהרגין ה\"מ כשבאו בתוך כדי דיבור כדמפרש התם בגמרא אבל רבי עקיבא סבר שנענש אע\"ג שבא אח\"כ מדנקט נטפל דהא כיון דאית ליה לרבי עקיבא היקישא דעד שיהו שלשתן זוממין בבאו בבת אחת בבאו זה אחר זה נמי יקישם להכי כי היכי דמקיש לענין לענש כמותם:"
+  },
+  "Tosafot on Sanhedrin 9a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T07:35:28.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 9a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שהתרו בהן</strong> - מפרש בפ\"ק דמכות <span class=\"parenthesized\">(דף ו. ושם)</span> הכי אמרינן להו לאסהודי אתיתו או למיחזי אתיתו אי אמרי לאסהודי אתינא נמצא אחד מהם קרוב או פסול עדותן בטלה ואי אמרי למיחזי אתינא מה יעשו שני אחים כו' ונראה לר\"י דמשום שנתכוונו להעיד לא אמרינן נמצא אחד מהם קרוב או פסול עדותן בטלה אלא שהולכים ומעידים כולן בב\"ד אבל משום ראייה לחוד שנתכוונו להעיד לא דאי לא תימא הכי כל גיטין כשנותנין אותן בפני קרובים או פסולים יהיו פסולים אם יתכוין הא' ולר' יוסי אפילו לא יתכוין והאי דקאמר מה יעשו ב' אחים ודאי יכולין לתקן שלא ילכו שניהם להעיד אבל פעמים שלא ידע זה בזה ויעיד האחד אע\"פ שהעיד אחיו כבר בב\"ד אע\"פ שהשני העיד לאחר כדי דיבור מ\"מ עדותן בטלה דשייך שפיר לאקושי להך מילתא שלשה לשנים אפילו בזה אחר זה כיון דבשעת ראייה רואין יחד ומתכוונין להעיד לכך עדותן בטלה אפילו העידו זה אחר זה אע\"ג דלענין שלשתן זוממין לא הוקשו אלא כשהעידו בתוך כדי דיבור דהתם הזמה משעת העדאת עדים קא אתיא ואע\"ג דפריך במכות <span class=\"parenthesized\">(שם)</span> הרוג יציל אע\"פ שאינו הולך להעיד בב\"ד ה\"מ מעיקרא דאכתי לא אסיק אדעתיה יקום דבר במקיימי דבר הכתוב מדבר אבל לבסוף דמסיק יקום דבר במקיימי דבר לא צריכי לשנויי קמאי דממעטי' הרוג וההורג מיקום דבר דבעינן שילכו לקיים דבר בב\"ד וכן <span class=\"parenthesized\">(לקמן סנהדרין דף לד:)</span> לענין אין עד נעשה דיין נראה לר\"י דדוקא בעד המעיד אין עד נעשה דיין אבל במתכוין להעיד לא דהא דטעמא דאין עד נעשה דיין נראה או משום דבעינן עדות שאתה יכול להזימה וכיון שהעדים בעצמם דנין לא ירצו לקבל הזמה על עדותן או משום דכתיב <span class=\"parenthesized\">(דברים י״ט:י״ז)</span> ועמדו שני האנשים וגו' שני האנשים אלו העדים לפני השם אלו הדיינין דבעינן שיעידו העדים לפני הדיינין ולא שיהו בעצמן דיינין והנך טעמי לא שייכי אלא בעד המעיד בפיו ולא במתכוין להעיד ולא כפי' רבינו שמואל שפי' בעלמא <span class=\"parenthesized\">(ב\"ב קיג: ד\"ה ג' שנכנסו כו')</span> שנתכוון להעיד אמרינן נמצא אחד מהם קרוב או פסול עדותן בטלה וכן לענין שאינו נעשה דיין ודקדק מדאמרינן בפרק אחד דיני ממונות <span class=\"parenthesized\">(לקמן סנהדרין דף לד:)</span> שלשה שנכנסו לבקר את החולה כו' משמע דווקא שנכנסו לבקר ולא נתכוונו להעיד אמרינן רצו עושין דין אבל נתכוונו להעיד אין עושין דין ועוד נראה לר\"י לדקדק דלא אמרינן אין עד נעשה דיין אלא עד המעיד דאי לא תימא הכי קשיא דרב יהודה אדרב יהודה דהא בפ\"ק דמכות <span class=\"parenthesized\">(דף ו. ושם)</span> פסיק רב יהודה הלכה כרבי יוסי דבראייה בעלמא נעשה עד אע\"פ שאינו מכוין להעד ורב יהודה קאמר <span class=\"parenthesized\">(ב\"ב דף קיג:)</span> גבי ג' שנכנסו לבקר את החולה וכו' רצו עושין דין ואמאי הא בראייה בעלמא נעשה עד ועוד להאי פירוש לית ליה לרבי יוסי לא תהא שמיעה גדולה מראייה לא בעדות החדש <span class=\"parenthesized\">(ר\"ה דף כה: ושם)</span> בראוהו שלשה והן ב\"ד ולא בסנהדרין באחד שהרג את הנפש שראוהו אע\"פ שראוהו ביום ומיהו נראה לרשב\"א דהני לא פרכי נינהו דרבי יוסי על כרחך לית ליה שיעשה עד בראייה ואפי' יעיד לבסוף דהא ר' יוסי הוא דאמר עד שיהיו פי שני עדים מתרים בו כדאמר בסמוך וכמו ששנים אין יכולין להעיד אא\"כ התרו בו כך שלשה וכו' אלמא אותן יהו חשובין עדים אבל השאר לא וכן נראה הדברים דאם הוזמו כולן לא היו נהרגין אותן שלא התרו בו דלא מהני סהדותייהו בלא סהדותא דאחריני ולא אמרינן נמצא אחד מהן קרוב או פסול אלא באותן שהותרו והא דקאמר רבי בזמן שהתרו בהן לאו משום דרבי יוסי לא בעי התרו דאכתי טפי מרבי בעינן דלרבי בנתכוונו להעיד בעלמא סגי כדמוכח במכות <span class=\"parenthesized\">(דף ו.)</span> ור' יוסי בעי התראה ממש אלא דיני ממונות אתא לאוסופי והא דמשמע הכא דלר' יוסי בראייה בעלמא אמרינן נמצא אחד מהן קרוב או פסול כו' מדקאמר וקמיפלגי בפלוגתא דרבי ור' יוסי היינו במה שנחלקו במשנה זו אבל מתוך משנה אחרת יש ללמוד דבעי ר' יוסי התראה ושמא רב יהודה פסק לגמרי כר' יוסי אי נמי לא פסק כוותיה אלא במאי דקאמר אבל בדיני ממונות תתקיים העדים בשאר גרידא אבל בכוונת עדות סבר כרבי והאי דקאמר במכות <span class=\"parenthesized\">(שם)</span> היכי אמרינן להו לרבי קאי וכן מוכח דקאמר אי אמרי למיחזי אתינא מה יעשו שני אחים כו' וה\"פ היכי אמרינן להו דעל כרחך התראה לאו דווקא דבדיני ממונות לא שייכא התראה אלא ודאי לא בעי אלא שנדע שנתכוונו להעיד והיכי אמרינן להו וכו':"
+  }
+}

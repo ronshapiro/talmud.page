@@ -1,0 +1,369 @@
+{
+  "Rashi on Sanhedrin 20b:10:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:8:1",
+      "Rashi on Sanhedrin 20b:8:2",
+      "Rashi on Sanhedrin 20a:2:1",
+      "Rashi on Sanhedrin 20a:3:1",
+      "Rashi on Sanhedrin 20b:1:1",
+      "Rashi on Sanhedrin 20b:2:1"
+    ],
+    "generatedAt": "2026-11-12T02:25:09.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמי הארץ קלקלו</strong> - דאילו זקנים שאלוהו לשופטם ולרדות הסרבנים שבהם אבל עמי הארץ תלו עליו מלחמותיהם שאמרו ויצא בראשינו ונלחם את מלחמתנו:"
+  },
+  "Rashi on Sanhedrin 20b:15:1": {
+    "dependsOn": [
+      "Sanhedrin 20b:16"
+    ],
+    "generatedAt": "2026-11-12T02:25:56.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחילה</strong> - קודם שנשא שלמה נשים נכריות מלך אף על עליונים:"
+  },
+  "Rashi on Sanhedrin 20b:16:1": {
+    "dependsOn": [
+      "Sanhedrin 20b:16",
+      "Steinsaltz on Sanhedrin 20b:16",
+      "Rashi on Megillah 11a:21:2"
+    ],
+    "generatedAt": "2026-11-12T02:27:23.941Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכשם שמלך על תפסח ועזה כך מלך על כל העולם כולו</strong> - והכי קאמר קרא כי הוא רודה בכל עבר הנהר כמתפסח ועד עזה:"
+  },
+  "Rashi on Sanhedrin 20b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:28:04.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מקלו</strong> - שהשליכו אשמדאי מכסאו כדאמרינן במסכת גיטין <span class=\"parenthesized\">(דף סח:)</span>:"
+  },
+  "Rashi on Sanhedrin 20b:18:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:18:1",
+      "Sefer HeArukh, Letter Kof 38",
+      "Steinsaltz on Sanhedrin 20b:18",
+      "Steinsaltz comment #1 on Sanhedrin 20b:18",
+      "Steinsaltz comment #2 on Sanhedrin 20b:18"
+    ],
+    "generatedAt": "2026-11-12T02:29:43.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גונדו</strong> - טליתו ובסדר טהרות <span class=\"parenthesized\">(כלים פרק טז)</span> פירש רב האיי מקידה הוא מקידה של חרש ודומה לו חד אמר קודו וחד אמר מקלו <span class=\"parenthesized\">(ויקרא רבה פרשה אחרי)</span> והוא מקידה ששותה בה מים:"
+  },
+  "Rashi on Sanhedrin 20b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:30:17.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלך והדיוט</strong> - ושוב לא חזר למלכותו:"
+  },
+  "Rashi on Sanhedrin 20b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 20a:22",
+      "Sanhedrin 20b:1",
+      "Rashi on Sanhedrin 20b:1:2",
+      "Rashi on Sanhedrin 20b:1:3"
+    ],
+    "generatedAt": "2026-11-12T01:52:29.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סירוגו</strong> - קשירתו:"
+  },
+  "Rashi on Sanhedrin 20b:1:2": {
+    "dependsOn": [
+      "Sanhedrin 20a:15",
+      "Sanhedrin 20b:1",
+      "Rashi on Sanhedrin 20b:1:1",
+      "Rashi on Sanhedrin 20b:1:2",
+      "Rashi on Sanhedrin 20b:1:3",
+      "Jastrow, בִּזְיוּנָא , II 1",
+      "Nedarim 56b:3",
+      "Rashi on Nedarim 56b:3:1",
+      "Rashi on Nedarim 56b:3:2",
+      "Rashi on Nedarim 56b:3:3",
+      "Steinsaltz on Sanhedrin 20b:1:1",
+      "Steinsaltz In-Depth on Sanhedrin 20b:1:1",
+      "Steinsaltz on Sanhedrin 20b:1",
+      "Steinsaltz comment #1 on Sanhedrin 20b:1"
+    ],
+    "generatedAt": "2026-11-12T01:54:23.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוכו</strong> - שיש נקבים בארכבותיו ותוחבין בהן ראשי רצועות התלויות בעור ועונבים ואין מרכיבין הרצועה על גבי ארוכות המטה:"
+  },
+  "Rashi on Sanhedrin 20b:1:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:1:1",
+      "Rashi on Sanhedrin 20b:1:2"
+    ],
+    "generatedAt": "2026-11-12T01:54:59.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סירוגה מעל גבה</strong> - החבלים מרכיבין על ארוכות המטה מיכן ומיכן ואורג והוא סירוג:"
+  },
+  "Rashi on Sanhedrin 20b:2:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:2:1"
+    ],
+    "generatedAt": "2026-11-12T01:56:56.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העריסה</strong> - עריסת תינוקות בריי\"ץ:"
+  },
+  "Rashi on Sanhedrin 20b:2:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:2:1",
+      "Rashi on Sanhedrin 20b:2:3",
+      "Steinsaltz on Sanhedrin 20b:2"
+    ],
+    "generatedAt": "2026-11-12T01:57:46.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משישופם בעור הדג</strong> - משפשפם בעור הדג כדי להחליק הארוכות ליפותם:"
+  },
+  "Rashi on Sanhedrin 20b:2:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:2:1",
+      "Rashi on Sanhedrin 20b:2:2"
+    ],
+    "generatedAt": "2026-11-12T01:58:52.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי שיפת עור הדג</strong> - הלא אין יופיה ניכר שהרי מכוסות הן תמיד בראשי החבלים המסורגין על גבן:"
+  },
+  "Rashi on Sanhedrin 20b:2:4": {
+    "dependsOn": [
+      "Jastrow, בִּזְיוּנָא , II 1",
+      "Rashi on Sanhedrin 20b:2:3",
+      "Rashi on Sanhedrin 20b:2:5"
+    ],
+    "generatedAt": "2026-11-12T01:59:43.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטה אעולי ואפוקי בבזיוניה</strong> - בבזעים ונקבים של ארוכות מכניס ומוציא ראש החבל ומסרג:"
+  },
+  "Rashi on Sanhedrin 20b:2:5": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:2:1",
+      "Rashi on Sanhedrin 20b:2:2",
+      "Rashi on Sanhedrin 20b:2:3",
+      "Rashi on Sanhedrin 20b:2:4",
+      "Rashi on Nedarim 56b:4:3",
+      "Tosafot on Nedarim 56b:4:2",
+      "Steinsaltz on Sanhedrin 20b:2:1",
+      "Steinsaltz comment #1 on Sanhedrin 20b:2",
+      "Steinsaltz comment #2 on Sanhedrin 20b:2"
+    ],
+    "generatedAt": "2026-11-12T02:01:03.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באבקתא</strong> - לולאות התלויות בנקבי ארכובותיו ובהן מכניסין ראשי רצועות התלויות בשפת העור:"
+  },
+  "Rashi on Sanhedrin 20b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:02:02.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנקליטיה יוצאין</strong> - נקליטין שני עצים ארוכים ומעמידין אותן באמצע דופני המטה אחד מראשותיה ואחד מרגלותיה ומפוצלין הן בראשותיהן ומניחין קנה מזה לזה ועליו פורסין הכילה ויש שמחברין אותן נקליטין למטה והיינו יוצאין שמחוברין ויוצאין מן המטה ואין יכול לכפותה מפני נקליטיה:"
+  },
+  "Rashi on Sanhedrin 20b:3:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:3:1",
+      "Rashi on Moed Katan 27a:15:1"
+    ],
+    "generatedAt": "2026-11-12T02:03:05.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זוקפה</strong> - על מראשותיה או על מרגלותיה וארכובותיה למעלה ודיו:"
+  },
+  "Rashi on Sanhedrin 20b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:03:26.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופורץ</strong> - גדרות אחרים:"
+  },
+  "Rashi on Sanhedrin 20b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:03:52.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעשות לו דרך</strong> - לשדהו ולכרמו:"
+  },
+  "Rashi on Sanhedrin 20b:4:3": {
+    "dependsOn": [
+      "Sanhedrin 20b:20",
+      "Rashi on Sanhedrin 20b:20:1",
+      "Rashi on Sanhedrin 20b:4:1",
+      "Rashi on Sanhedrin 20b:4:2",
+      "Steinsaltz on Sanhedrin 20b:4"
+    ],
+    "generatedAt": "2026-11-12T02:05:37.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלק בראש</strong> - חלק היפה בורר ראשון ונוטל מחצה:"
+  },
+  "Rashi on Sanhedrin 20b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:06:14.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפרשת מלך</strong> - בספר שמואל <span class=\"parenthesized\">(א ח)</span> בניכם ובנותיכם יקח וכיוצא בהם:"
+  },
+  "Rashi on Sanhedrin 20b:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:6:1",
+      "Tosafot on Sanhedrin 20b:6:1"
+    ],
+    "generatedAt": "2026-11-12T02:07:19.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אמר לא נאמרה פרשה</strong> - דשמואל אלא לאיים עליהם שתהא אימת מלכם עליהם אבל אינו מותר לעשות:"
+  },
+  "Rashi on Sanhedrin 20b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:13:53.194Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג רבי יהודה אומר לא נאמרה פרשה זו אלא לאיים עליהם</strong> - ולא גרס ליראם ולבהלם דהא לרבי יהודה יפה כיוונו שהרי נצטוו ישראל על כך והכי גרס לה בתוספתא:"
+  },
+  "Rashi on Sanhedrin 20b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:14:22.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש מצות</strong> - להכי נקט שלש הללו שהן תלויות זו בזו לעשותן כסדרן כדמפרש לקמן בתחלה מלך ואחריה עמלק ואחריה בית הבחירה:"
+  },
+  "Rashi on Sanhedrin 20b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:8:1",
+      "Rashi on Sanhedrin 20b:2:1",
+      "Rashi on Sanhedrin 20b:2:2",
+      "Rashi on Sanhedrin 20a:3:1",
+      "Rashi on Sanhedrin 20a:4:1",
+      "Rashi on Sanhedrin 20b:4:1",
+      "Rashi on Sanhedrin 20b:6:1",
+      "Rashi on Sanhedrin 20b:7:1",
+      "Rashi on Sanhedrin 20b:15:1",
+      "Rashi on Sanhedrin 20b:16:1",
+      "Sanhedrin 20b:9",
+      "Sanhedrin 20b:10",
+      "Rashi on Sanhedrin 19b:18:1"
+    ],
+    "generatedAt": "2026-11-12T02:17:29.912Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכניסתם לארץ</strong> - דבכולהו כתיב ירושה וישיבה וירשתה וישבת בה ואמרת אשימה עלי מלך <span class=\"parenthesized\">(דברים י״ז:י״ד)</span> בעמלק כתיב <span class=\"parenthesized\">(שם כה)</span> והיה בהניח ה' וגו' ובבנין בית הבחירה כתיב <span class=\"parenthesized\">(שם יב)</span> ועברתם את הירדן וישבתם בארץ וגו' והדר כתיב והיה המקום וגו':"
+  },
+  "Rashi on Sanhedrin 20b:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 20b:9:2"
+    ],
+    "generatedAt": "2026-11-12T02:18:19.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נאמרה פרשה זו</strong> - דשום תשים עליך מלך משום מצוה אלא כנגד תרעומתם שגלוי לפניו שעתידים להתרעם על כך ולומר והיינו גם אנחנו ככל הגוים שנאמר ואמרת אשימה עתידין אתם לומר כן:"
+  },
+  "Rashi on Sanhedrin 20b:9:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Sanhedrin 20b:10",
+      "Sanhedrin 20b:8",
+      "Sanhedrin 20b:10"
+    ],
+    "generatedAt": "2026-11-12T02:23:58.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 20b:9:2"
+    ],
+    "sourceText": "ר' נהוראי אמר כו' לא גרסינן ליה בתוספתא ותדע דשיבוש הוא דהא קי\"ל בעירובין <span class=\"parenthesized\">(דף יג:)</span> דהוא רבי נחמיה הוא רבי נהוראי:"
+  },
+  "Tosafot on Sanhedrin 20b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:11:01.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 20b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלך מותר וכו'</strong> - תימה למה נענש אחאב על נבות כיון שלא רצה למכור לו כרמו ועוד דבפרק הכונס צאן לדיר <span class=\"parenthesized\">(ב\"ק דף ס.)</span> קאמר דדוד שאל אם היה יכול להחליף גדישין של שעורין מישראל לתת בפני בהמתו וי\"ל דבפרשת המלך כתיב <span class=\"parenthesized\">(שמואל א ח׳:י״ד)</span> יקח ונתן לעבדיו ולא לעצמו ועוד י\"ל דבחנם היה יכול ליקח אם היה רוצה אבל כשהיה שואל אחאב שימכרו לו חשב נבות שרשות בידו לומר לא אמכור ועי\"ל דנענש לפי ששאל הכרם לעשות ע\"ז דכתיב <span class=\"parenthesized\">(מלכים א כ״א:ב׳)</span> והיה לי לגן ירק כמו המתקדשים והמטהרים אל הגנות <span class=\"parenthesized\">(ישעיהו ס״ו:י״ז)</span> והנקדן תירץ דאינו מותר רק בשדות הרחוקים מן העיר דלא מעלי כל כך אבל כרם נבות היה אצל היכל אחאב בשומרון ועי\"ל דדוקא בשדה מקנה אבל שדה אחוזה שירש מאבותיו לא כמו שהשיב נבות חלילה לי מתתי נחלת אבותי לך אי נמי דפרשת המלך לא נאמרה רק על המלך שנמלך על כל ישראל ויהודה ומאת המקום ואחאב לא מלך על יהודה וגם לא מלך מאת המקום:"
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "Rashi on Sanhedrin 29a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:15:03.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד לדיין</strong> - דבדיין מודו רבנן דשונא לא ידון דלא מצי חזי ליה זכותא:"
+  },
+  "Rashi on Sanhedrin 29a:12:1": {
+    "dependsOn": [
+      "Sanhedrin 29a:12",
+      "Rashi on Sanhedrin 29a:11:1"
+    ],
+    "generatedAt": "2026-11-12T14:15:53.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואידך</strong> - לפסול בדין אחד שני דיינין ששונאין זה את זה:"
+  },
+  "Rashi on Sanhedrin 29a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:17:12.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאיימין עליהם</strong> - מפרש בגמרא:"
+  },
+  "Rashi on Sanhedrin 29a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:17:36.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא אמר לי</strong> - הלוה אמר לי:"
+  },
+  "Rashi on Sanhedrin 29a:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:18:39.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמר כלום</strong> - דעביד איניש דאמר פלוני נושה בי כדי שלא יחזיקוהו עשיר:"
+  },
+  "Rashi on Sanhedrin 29a:14:3": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:14:1",
+      "Rashi on Sanhedrin 29a:14:2",
+      "Steinsaltz on Sanhedrin 29a:14:1"
+    ],
+    "generatedAt": "2026-11-12T14:19:35.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הודה לו</strong> - שהיו שניהם בפנינו להודות נתכוון להיות לו עדים בדבר:"
+  },
+  "Rashi on Sanhedrin 29a:16:1": {
+    "dependsOn": [
+      "Exodus 23:2",
+      "Sanhedrin 2a:16",
+      "Rashi on Sanhedrin 2a:16:2",
+      "Rashi on Sanhedrin 29a:16:2",
+      "Rashi on Sanhedrin 29a:6:1",
+      "Rashi on Sanhedrin 29a:6:2",
+      "Rashi on Sanhedrin 29a:11:1",
+      "Rashi on Berakhot 2a:5:2",
+      "Berakhot 2a:8",
+      "Berakhot 2a:9"
+    ],
+    "generatedAt": "2026-11-12T14:21:23.070Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנים אומרים זכאי ואחד אומר חייב זכאי</strong> - דכתיב <span class=\"parenthesized\">(שמות כ״ג:ב׳)</span> אחרי רבים להטות:"
+  },
+  "Rashi on Sanhedrin 29a:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:22:11.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו שנים מחייבין או מזכין והשלישי אומר איני יודע יוסיפו הדיינין</strong> - ואע\"ג דאי הוה פליג עלייהו הוי בטל במיעוטא כי אמר איני יודע הוי כמי שלא ישב בדין ונמצא הדין בשנים ואנן תלתא בעינן:"
+  },
+  "Rashi on Sanhedrin 29a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:22:50.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכניסין אותן</strong> - לבעלי דינין ובגמרא פריך הא לא אפקינהו:"
+  },
+  "Rashi on Sanhedrin 29a:19:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:19:2"
+    ],
+    "generatedAt": "2026-11-12T14:23:42.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי א\"ל</strong> - לעדים כשמאיימין עליהם:"
+  },
+  "Rashi on Sanhedrin 29a:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:25:08.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשיאים ורוח וגשם וגו'</strong> - בשביל מתהלל במתת שקר דהיינו מעידי שקר גשמים נעצרים ואפילו כשהשמים מתקשרים בעבים ורוח להוריד גשמים אין הגשם בא:"
+  },
+  "Rashi on Sanhedrin 29a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:10:03.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרובים ונתרחקו הוו</strong> - שמתה אחותם אשת מר עוקבא:"
+  },
+  "Rashi on Sanhedrin 29a:21:1": {
+    "dependsOn": [
+      "Sanhedrin 29a:21",
+      "Rashi on Sanhedrin 29a:21:2"
+    ],
+    "generatedAt": "2026-11-12T14:26:22.017Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבא</strong> - מאי איכפת להו אם לא ירדו גשמים אמרי בלבם משל הדיוט שב שני הוה כפנא ואבבא אומנא לא חליף על פתח מי שיודע אומנות ובעל מלאכה לא עבר הרעב:"
+  },
+  "Rashi on Sanhedrin 29a:21:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:21:1",
+      "Rashi on Sanhedrin 29a:19:1",
+      "Rashi on Sanhedrin 29a:19:2"
+    ],
+    "generatedAt": "2026-11-12T14:27:10.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפץ וחרב וגו' איש עונה וגו'</strong> - בעון עדות שקר דבר בא ויתייראו שלא ימותו:"
+  },
+  "Rashi on Sanhedrin 29a:23:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:23:2"
+    ],
+    "generatedAt": "2026-11-12T14:27:58.465Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אאוגרייהו זילי</strong> - השוכרים אותם מבזים אותם וקלים הם בעיניו:"
+  },
+  "Rashi on Sanhedrin 29a:23:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:28:27.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והושיבו שנים אנשים בני בליעל</strong> - גבי נבות היזרעאלי כתיב שיועצי המלך היו יועצים לשוכרם והיו קורין אותם בני בליעל:"
+  },
+  "Rashi on Sanhedrin 29a:24:1": {
+    "dependsOn": [
+      "Sanhedrin 29a:23",
+      "Sanhedrin 29a:24",
+      "Sanhedrin 29a:25",
+      "Sanhedrin 29a:26",
+      "Steinsaltz on Sanhedrin 29a:24",
+      "Steinsaltz on Sanhedrin 29a:25",
+      "Rashi on Sanhedrin 29a:26:1"
+    ],
+    "generatedAt": "2026-11-12T14:30:34.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפנינו</strong> - משמע שעשאונו עדים:"
+  },
+  "Rashi on Sanhedrin 29a:26:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:31:19.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - ואע\"פ ששמעו עדים אתמול שהודה לו הואיל ולא אמר אתם עדיי:"
+  },
+  "Rashi on Sanhedrin 29a:26:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:26:1",
+      "Rashi on Sanhedrin 29a:26:2"
+    ],
+    "generatedAt": "2026-11-12T14:31:54.112Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משטה אני בך</strong> - שוחק הייתי בך בשביל שהיית שואלני מה שלא היה:"
+  },
+  "Rashi on Sanhedrin 29a:28:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:33:08.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:28:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכמין</strong> - החביא כמו וארב לו <span class=\"parenthesized\">(דברים יט)</span> ויכמון ליה:"
+  },
+  "Rashi on Sanhedrin 29a:29:1": {
+    "dependsOn": [
+      "Steinsaltz on Sanhedrin 29a:29:1",
+      "Steinsaltz on Sanhedrin 29a:29"
+    ],
+    "generatedAt": "2026-11-12T14:34:06.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:29:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין טוענין למסית</strong> - המסית חבירו לעבודת כוכבים אין טוענין אותו ב\"ד בשבילו טענת זכות אלא אם כן טוענה הוא:"
+  },
+  "Rashi on Sanhedrin 29a:30:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:30:2",
+      "Rashi on Sanhedrin 29a:26:1",
+      "Rashi on Sanhedrin 29a:28:1",
+      "Rashi on Sanhedrin 29a:23:1",
+      "Rashi on Sanhedrin 29a:23:2",
+      "Rashi on Sanhedrin 29a:14:1",
+      "Rashi on Sanhedrin 29a:14:2",
+      "Rashi on Sanhedrin 29a:14:3"
+    ],
+    "generatedAt": "2026-11-12T14:35:51.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:30:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לא טען</strong> - משטה הייתי בך כשהודיתי אלא אמר לא אתן לך הבא עדים שהלוית לי אין טוענין בשבילו אלא אומרין לו אחרי שהודיתה לך שלם:"
+  },
+  "Rashi on Sanhedrin 29a:30:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:30:1"
+    ],
+    "generatedAt": "2026-11-12T14:36:36.844Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:30:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובדיני נפשות</strong> - אם יש טענת זכות והוא אינו יודע לטעון טוענין לו:"
+  },
+  "Rashi on Sanhedrin 29a:32:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:37:34.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:32:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שלא טען</strong> - הנחש לא טען הקב\"ה בשבילו:"
+  },
+  "Rashi on Sanhedrin 29a:34:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:39:11.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:34:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא תגעו בו</strong> - הקב\"ה לא הזהירם על הנגיעה ומתוך תוספת גירעו שדחף הנחש את חוה על האילן עד שנגעה בו אמר לה ראי שאין מיתה על הנגיעה אף על האכילה לא תמותי:"
+  },
+  "Rashi on Sanhedrin 29a:35:1": {
+    "dependsOn": [
+      "Sanhedrin 29a:35",
+      "Chokhmat Shlomo on Sanhedrin 29a:4",
+      "Chidushei Agadot on Sanhedrin 29a:5",
+      "Steinsaltz In-Depth on Sanhedrin 29a:35",
+      "Rashi on Sanhedrin 29a:36:1",
+      "Steinsaltz on Sanhedrin 29a:35",
+      "Torah Temimah on Torah, Exodus 25:10:3",
+      "Torah Temimah on Torah, Exodus 26:7:1"
+    ],
+    "generatedAt": "2026-11-12T14:42:58.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:35:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמתים</strong> - דל אל\"ף מהכא קרי ביה <span class=\"parenthesized\">(מתים)</span> הוי שתי מאות אמה כל אותיות שבתורה הברתם ככתיבתם כמו ועשית ואמרת כאלו כתובה בה\"א וכן אתה חסר כמו אותה מלא:"
+  },
+  "Rashi on Sanhedrin 29a:36:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:43:31.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:36:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשתי עשרה</strong> - דל עיי\"ן מהכא הוו להו שתים עשרה:"
+  },
+  "Rashi on Sanhedrin 29a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:11:06.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקבא דקירא אידבקי בכו</strong> - בקב של שעוה נדבקתי בכם בתמיה כלומר איני דבוק בכם כלל אלא אתון לא צייתיתון דינא:"
+  },
+  "Rashi on Sanhedrin 29a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:11:39.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיום ראשון ואילך</strong> - בטלה שושבינות וכשר להעיד:"
+  },
+  "Rashi on Sanhedrin 29a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:12:51.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא לא אויב לו יעידנו</strong> - דהאי והוא אעד קאי דמעיד שהוא חייב גלות והעד לא אויב לו לרוצח דאי ברוצח הא כתיב <span class=\"parenthesized\">(דברים ד)</span> והוא לא שונא לו וקראי אחריני טובא:"
+  },
+  "Rashi on Sanhedrin 29a:6:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 29a:6:1",
+      "Rashi on Sanhedrin 29a:14:1",
+      "Rashi on Sanhedrin 29a:3:1",
+      "Rashi on Sanhedrin 29a:5:1",
+      "Rashi on Sanhedrin 29a:11:1",
+      "Rashi on Sanhedrin 28a:1:1",
+      "Rashi on Sanhedrin 27b:1:1"
+    ],
+    "generatedAt": "2026-11-12T14:14:31.852Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 29a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מבקש רעתו ידיננו</strong> - דסמיך ליה ושפטו העדה וקאמר ר' יהודה דהאי לא מבקש רעתו אשופטים קאי ולשון זה מצאתי בברייתא דסיפרי ולא בסיפרי שלנו והוא לא אויב לו העד ולא מבקש רעתו השופט:"
+  },
+  "Tosafot on Sanhedrin 29a:33:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T14:38:27.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 29a:33:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי הרב ודברי התלמיד</strong> - וא\"ת אם כן כל מסית יפטר עצמו באותה טענה ויש לומר דדוקא נחש שלא נצטוה שלא להסית ולא נענש אלא לפי שבאת תקלה על ידו אבל מסית שנצטוה שלא להסית נמצא כשמסית עובר:"
+  }
+}

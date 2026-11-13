@@ -1,0 +1,285 @@
+{
+  "Rashi on Sanhedrin 23b:10:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:10",
+      "Rashi on Sanhedrin 23b:11:1"
+    ],
+    "generatedAt": "2026-11-12T05:18:16.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת בשתי כיתי עדים</strong> - שאמר בעל דין בפנינו יש לי שתי כיתי עדים בדבר זה הביא כת ראשונה ועמד הלוה ואחר ואמר פסולין הן דהשתא לאו כנוגע בעדות הוא שהרי אמר מלוה שיש לו כת אחרת ואם ביקש ולא מצא יפסיד דקסבר ר\"מ צריך בעל דין לברר ולהעמיד על האמת כל דבריו שטוען בבית דין והני מיפסלי אף לעדיות אחרות ואם ביקש ומצא כת אחרת כשירה אף ע\"פ שראשונה נפסלה הרי בירר דבריו שאמר להביאם והביא והוא לא דק דסבור שכשרים היו:"
+  },
+  "Rashi on Sanhedrin 23b:11:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:11",
+      "Rashi on Sanhedrin 23b:10:1"
+    ],
+    "generatedAt": "2026-11-12T05:19:10.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן סברי אין צריך לברר</strong> - ויכול לומר אין לי עוד ונמצא זה נוגע בעדותו הוא ולא מיפסלי אפי' בעדות זו:"
+  },
+  "Rashi on Sanhedrin 23b:13:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:13",
+      "Rashi on Sanhedrin 23b:10:1",
+      "Rashi on Sanhedrin 23b:11:1",
+      "Rashi on Sanhedrin 23b:5:1",
+      "Rashi on Sanhedrin 23b:7:1",
+      "Rashi on Sanhedrin 23b:8:1"
+    ],
+    "generatedAt": "2026-11-12T05:30:12.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמצאת כת שניה קרובין או פסולין</strong> - ע\"י עדים גמורים מהו לר' מאיר מי אמרינן השתא ודאי נוגע בעדות הוא דאין לחבירו כת אחרת כשרה או דילמא מעיקרא מיהת כי אסהיד בעל דין ואחר עמו אקמאי למיפסלינהו לאו נוגע בעדות הוא דאכתי לא אשתכח כת שנייה פסולין הכי גרסינן לה כמו שפירשתי ולא נהירא חדא דאין זה בירור דברים לר' מאיר הואיל וכת האחת נפסלין ועדיין נוגע בעדות הוא ועוד דאי נמי הוי בירור דברים בהכי נוגע בעדות הוא דאם לא ימצא כת אחרת כשרה אלא כת פסולה נמצא מפסיד בפסול של ראשונים דאי לא נפסלו ראשונים היה מוציא ממונו על פיהם ודבריו נבררין ע\"י שניה ואע\"פ שפסולין ועכשיו הוא מפסיד הלכך אומר אני דגרסינן הכי והוא עיקר דר\"מ סבר א\"צ לברר וזה שאמר להביא שתי כיתי עדים והביאם והאחת נפסלת אין בכך כלום שא\"צ לברר דבריו ודיו בכת אחת הכשרין ואלו נפסלין לעדות אחרת ע\"פ בעל דין ואחר דאינו נוגע בעדות ורבנן סברי צריך לברר ונמצא זה נוגע בעדות ולא מפסיל נמצאת כת שניה קרובין או פסולין לר' מאיר מהו נהי דא\"צ לברר מ\"מ עכשיו אין כאן עדות וה\"ל נוגע בעדות למפרע או דילמא כי אסהיד מיהא לאו נוגע בעדות הוה דאכתי לא מצאו כת שנייה פסולה:"
+  },
+  "Rashi on Sanhedrin 23b:14:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:14",
+      "Rashi on Sanhedrin 23b:13:1",
+      "Maharshal on Sanhedrin 23b:14:1"
+    ],
+    "generatedAt": "2026-11-12T05:32:29.472Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבר העידו הראשונים</strong> - <span class=\"parenthesized\">(כת ראשונה)</span> כשנמצאת כת שניה פסולה כבר נתקבלה בכשרות עדותן של אלו המעידין על הפסול ועדיין לא היה נוגע בעדות ומאחר שנתקבלה בהכשר נאמנין לפסול את הראשונים. ל\"א כבר העידו העדים הראשונים כת ראשונה שהעידו בעדותן של בעלי דינין ומהימני דכיון דשניה פסולה תו לא מפסלי קמאי דה\"ל נוגע בעדות ולשון ראשון נראה מדנקט בהאי לישנא כבר העידו:"
+  },
+  "Rashi on Sanhedrin 23b:16:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:16:2",
+      "Steinsaltz on Sanhedrin 23b:16",
+      "Rashi on Sanhedrin 23b:1:1",
+      "Rashi on Sanhedrin 23b:4:1",
+      "Rashi on Sanhedrin 23b:5:1"
+    ],
+    "generatedAt": "2026-11-12T05:35:12.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבא לידון בשטר ובחזקה</strong> - מחזיק בקרקע ואמר לו חבירו מה לך בכאן וא\"ל אתה מכרתיה לי ואכלתיה שני חזקה ועדיין שטר מכירה בידי נידון בשטר על כרחו צריך להביא השטר ויברר דבריו ואם לא מצא שטר יפסיד דלא מהניא ליה חזקה ואע\"ג דחזקה במקום שטר קיימא כדאמרי רבנן עד תלת שנין מזדהר איניש בשטרי' טפי לא מזדהר האי כיון דאמר ישנו בידי צריך לברר:"
+  },
+  "Rashi on Sanhedrin 23b:16:2": {
+    "dependsOn": [
+      "Sanhedrin 23b:16",
+      "Rashi on Sanhedrin 23b:16:1"
+    ],
+    "generatedAt": "2026-11-12T05:36:37.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נידון בחזקה</strong> - משמע על כרחו יביא עדי חזקה ושטר לא מהני להכי פריך בחזקה ולא בשטר והא שטר עיקר ראיה הוא וכיון דיש לו שטר אין בחזקה אפי' משום בירור דברים דבמקום שטר לא הוזכרה חזקה דהיא גופא לא אתיא אלא מכח השטר דאמר על ידי השטר החזקתי בו ואבד ממני לאחר ג' שנים:"
+  },
+  "Rashi on Sanhedrin 23b:17:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:17",
+      "Sanhedrin 23b:20"
+    ],
+    "generatedAt": "2026-11-12T05:41:33.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף בחזקה</strong> - באיזה מהן שירצה ואם יש לו עדי חזקה א\"צ לברר דבריו על השטר והיינו דאמר ר' מאיר כרבי ורבנן כר' שמעון:"
+  },
+  "Rashi on Sanhedrin 23b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:1"
+    ],
+    "generatedAt": "2026-11-12T05:07:16.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב דימי</strong> - הא דקתני נאמן עלי אבא כגון דקבליה עליה בחד דיין ויש שנים כשרין עמו ואפילו הכי כיון דפסול מדאורייתא מצי הדר ביה הכא נמי כיון דחד לממון לא מתכשר מצי הדר ביה:"
+  },
+  "Rashi on Sanhedrin 23b:20:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:20:1",
+      "Sanhedrin 23b:20",
+      "Rashi on Sanhedrin 23b:17:1",
+      "Rashi on Sanhedrin 23b:13:1",
+      "Rashi on Sanhedrin 23b:14:1",
+      "Rashi on Sanhedrin 23b:16:1",
+      "Rashi on Sanhedrin 23b:16:2",
+      "Rashi on Sanhedrin 23b:1:1",
+      "Rashi on Sanhedrin 23b:4:1",
+      "Rashi on Sanhedrin 23b:5:1",
+      "Rashi on Sanhedrin 23b:6:1",
+      "Rashi on Sanhedrin 23b:7:1",
+      "Rashi on Sanhedrin 23b:7:2",
+      "Rashi on Sanhedrin 23b:8:1",
+      "Rashi on Sanhedrin 23b:8:2",
+      "Rashi on Sanhedrin 23b:9:1",
+      "Rashi on Sanhedrin 23b:9:2",
+      "Rashi on Sanhedrin 23b:10:1",
+      "Rashi on Sanhedrin 23b:11:1",
+      "Steinsaltz on Sanhedrin 23b:20"
+    ],
+    "generatedAt": "2026-11-12T05:50:34.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:20:1"
+    ],
+    "sourceText": "אפי' תימא רבנן כרבי סבירא להו דעד כאן לא קאמר רבי התם צריך לברר אלא משום דחזקה לאו עיקר ראיה הוא דמכח השטר הוא דאתיא דאי הוה טעין ברישא החזקתי בה מעצמי שלא אמר לי אדם דבר מעולם אין זו חזקה וכי אמר לו אתה מכרתיה לי דהיינו בשטר ואבדתיו לאחר ג' שנים הויא חזקה הלכך האי הואיל ואמר ישנו בידי צריך לברר אבל אמר יש לי ב' כיתי עדי' והביא אחת כיון דהני לאו מכח הני אתו א\"צ לברר דבריו ולחזר אחר כת שניה וללישנא בתרא ה\"ק אפי' תימא תרווייהו אליבא דרבי פליגי ור\"מ אמר לך אנא דאמר אפי' לרבי ומשום דהלכה כרבי מחבריו מהדרינן לאוקומא לפלוגתייהו אליביה:"
+  },
+  "Rashi on Sanhedrin 23b:4:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:4",
+      "Rashi on Sanhedrin 23b:1:1",
+      "Rashi on Sanhedrin 23b:5:1",
+      "Rashi on Sanhedrin 23b:6:1",
+      "Rashi on Sanhedrin 23a:24:1",
+      "Rashi on Sanhedrin 23a:25:1"
+    ],
+    "generatedAt": "2026-11-12T05:10:43.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא דווקא קתני</strong> - מדשני במילתיה דבדיינין נקט לשון יחיד ובעדים נקט לשון רבים וליתא לדריש לקיש והדרא קושיין לדוכתא והא עדים כמומחין דמו:"
+  },
+  "Rashi on Sanhedrin 23b:5:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:5",
+      "Rashi on Sanhedrin 23b:4:1",
+      "Rashi on Sanhedrin 23a:7:2"
+    ],
+    "generatedAt": "2026-11-12T05:11:56.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר אלעזר</strong> - סיפא גבי עדים בבא הוא ואחר לפוסלן דהוו להו תרי דמסהדי אפסולה ומהימני ודיינין בערכאות שבסוריא כדאוקימנא ולא פסול ממש קאמר אלא בעינא בי דינא מעליא:"
+  },
+  "Rashi on Sanhedrin 23b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T05:12:32.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוגע בעדותו הוא</strong> - האי בעל דין דמשום דלא ליסהוד עליה קאתי למיפסליה:"
+  },
+  "Rashi on Sanhedrin 23b:7:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:7",
+      "Rashi on Sanhedrin 23b:7:2"
+    ],
+    "generatedAt": "2026-11-12T05:13:21.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקרא עליו ערער</strong> - בעל דין אומר לפנינו על מה הוא פוסלו ויש אחר עמו:"
+  },
+  "Rashi on Sanhedrin 23b:7:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:7:1"
+    ],
+    "generatedAt": "2026-11-12T05:13:50.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערער</strong> - שמץ של פסול:"
+  },
+  "Rashi on Sanhedrin 23b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T05:14:20.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגזלנותא</strong> - מעיד עליו הוא ואחר שגזלן הוא:"
+  },
+  "Rashi on Sanhedrin 23b:8:2": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:8:1"
+    ],
+    "generatedAt": "2026-11-12T05:15:04.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוגע בעדותו הוא</strong> - משום דלא נסהיד עליה קאמר:"
+  },
+  "Rashi on Sanhedrin 23b:9:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:9:1",
+      "Rashi on Sanhedrin 23b:9:2"
+    ],
+    "generatedAt": "2026-11-12T05:16:17.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפגם משפחה</strong> - עבד הוא ממשפחת עבד שלא נשתחרר בא ופסול הוא ומשפחתו:"
+  },
+  "Rashi on Sanhedrin 23b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T05:16:55.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sanhedrin 23b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמשפחה קמסהדי</strong> - ולאו משום האי לחודיה מסהדי הלכך סהדותא אחרינא הוא ולאו כנוגע בעדות דמי:"
+  },
+  "Tosafot on Sanhedrin 23b:11:1": {
+    "dependsOn": [
+      "Rashi on Sanhedrin 23b:11:1",
+      "Rashi on Sanhedrin 23b:10:1",
+      "Tosafot on Bava Batra 169b:15:1",
+      "Maharsha on Sanhedrin 23b:2:1"
+    ],
+    "generatedAt": "2026-11-12T05:27:22.676Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 23b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן סברי צריך לברר</strong> - ה\"ג <span class=\"rashi-quotation\">הקונטרס</span> ללשון אחרון דרבנן סברי דצריך לברר כו' אם יאמר אדם בב\"ד אביא ב' כיתי עדים כשרים צריך לברר דבריו ולהביא שתי כיתי עדים כשרים ואם לא הביאם כשרים יפסיד הלכך אינו יכול לפסול הראשונים שאם הראשוני' פסולים זה לא יגבה חובו בעדים אחרונים שצריך לברר ולהביא כולם כשרים וקשה לר\"ת דבפ' גט פשוט <span class=\"parenthesized\">(ב\"ב קסט: ושם)</span> משמע דאפילו מאן דאמר צריך היינו לכתחילה יאמרו לו ב\"ד ברר דבריך אבל מכל מקום אם אין יכול לברר בכך לא יפסיד ונראה לר\"ת כפ\"ה ללשון ראשון ר\"מ סבר צריך לברר הלכך יכול לפסול הראשונים לפי שלא יפסיד שום דבר אם הראשונים פסולין לפי שבית דין אומרים לו ברר דבריך דמסתמא יעשה מה שב\"ד יצוה עליו וא\"כ לא יפסיד לפסול הראשונים שמתקיים העדות בשאר:"
+  },
+  "Tosafot on Sanhedrin 23b:1:1": {
+    "dependsOn": [
+      "Sanhedrin 23b:1",
+      "Rashi on Sanhedrin 23b:1:1",
+      "Tosafot on Sanhedrin 23b:11:1",
+      "Maharsha on Sanhedrin 23b:3"
+    ],
+    "generatedAt": "2026-11-12T05:09:23.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sanhedrin 23b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב דימי כגון דקבליה בחד</strong> - תימה למה לי לאתויי הא דרב דימי ויש לומר דאי לאו דרב דימי לא הוה קשיא ליה תנינא דאי מהתם ה\"א דמיירי דקביל עליה כבי תרי דהוי תרתי לריעותא והתם קאמר ר\"מ דיכול לחזור אבל בחדא לריעותא לא אמר רבי מאיר דיכול לחזור בו ומשום הכי מייתי מילתיה דרב דימי דקא משמע לן דאפילו בחדא ריעותא קאמר ר' מאיר יכול לחזור בו וקא מקשי שפיר תנינא:"
+  }
+}
