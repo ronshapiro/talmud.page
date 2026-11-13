@@ -219,7 +219,7 @@ export async function executeContextTool(
       const refs = (parameters.refs as string[]) ?? [];
       const lang = parameters.lang as "he" | "en" | "both" | undefined;
       const on = parameters.on as string | undefined;
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs "
+      const commandLine = "npm run get-refs "
         + `'${JSON.stringify(refs)}'${lang ? ` --lang ${lang}` : ""}`
         + `${on ? ` --on "${on}"` : ""}`;
       try {
@@ -231,7 +231,7 @@ export async function executeContextTool(
     case "get_comment_refs": {
       const ref = String(parameters.ref ?? "");
       const commentary = parameters.commentary as string | undefined;
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-comment-refs "
+      const commandLine = "npm run get-comment-refs "
         + `"${ref}"${commentary ? ` --commentary "${commentary}"` : ""}`;
       try {
         return {result: getCommentRefs(ref, commentary), commandLine};
@@ -243,7 +243,7 @@ export async function executeContextTool(
       const ref = String(parameters.ref ?? "");
       const before = typeof parameters.before === "number" ? parameters.before : 1;
       const after = typeof parameters.after === "number" ? parameters.after : 1;
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "
+      const commandLine = "npm run get-neighbors "
         + `"${ref}" --before ${before} --after ${after}`;
       try {
         return {result: getNeighborSegments(ref, before, after), commandLine};
@@ -254,7 +254,7 @@ export async function executeContextTool(
     case "get_prior_sugyot": {
       const ref = String(parameters.ref ?? "");
       const count = typeof parameters.count === "number" ? parameters.count : 2;
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot "
+      const commandLine = "npm run get-prior-sugyot "
         + `"${ref}" --count ${count}`;
       try {
         return {result: getPriorSugyaSkeleton(ref, count), commandLine};
@@ -270,7 +270,7 @@ export async function executeContextTool(
       const commentaryArg = commentary && commentary.length > 0
         ? ` --commentary ${commentary.join(" ")}`
         : "";
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts search "
+      const commandLine = "npm run search "
         + `"${page}" "${query}"${commentaryArg}`;
       try {
         return {result: searchPage(page, query, commentary), commandLine};
@@ -281,7 +281,7 @@ export async function executeContextTool(
     case "wikipedia": {
       const query = String(parameters.query ?? "");
       const lang = (parameters.lang as string | undefined) ?? "en";
-      const commandLine = "npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia "
+      const commandLine = "npm run wikipedia "
         + `"${query}" --lang ${lang}`;
       try {
         const result = await fetchWikipedia(query, lang);
@@ -293,7 +293,7 @@ export async function executeContextTool(
     default:
       return {
         error: `Unknown tool: ${name}`,
-        commandLine: `npx ts-node rsi_orchestrator/context_fetch_cli.ts ${name}`,
+        commandLine: `npm run ${name}`,
       };
   }
 }

@@ -516,8 +516,11 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     if (use.name !== "Bash" && use.name !== "run_command") continue;
     const input = use.input as {command?: string; CommandLine?: string} | undefined;
     const command = input?.command ?? input?.CommandLine;
-    if (!command || !command.includes("context_fetch_cli")) continue;
-    if (/context_fetch_cli\S*\s+(wikipedia|search|get-comment-refs)\b/.test(command)) continue;
+    if (!command) continue;
+    const isContextFetch = command.includes("context_fetch_cli")
+      || /\bnpm\s+run\s+(?:get-context|get-refs|get-comment-refs|get-neighbors|get-prior-sugyot|search|wikipedia)\b/.test(command);
+    if (!isContextFetch) continue;
+    if (/\b(?:wikipedia|search|get-comment-refs)\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);
     if (arrayMatch) {
       try {

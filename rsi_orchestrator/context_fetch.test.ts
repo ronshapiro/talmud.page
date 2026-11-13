@@ -502,6 +502,48 @@ describe("getPriorSugyaSkeleton", () => {
 });
 
 describe("extractRequestedRefs", () => {
+  test("extracts refs from an npm run get-refs Bash call", () => {
+    const refs = extractRequestedRefs([
+      {
+        name: "Bash",
+        input: {
+          command: "npm run get-refs '[\"Rashi on Zevachim 2a:1:1\",\"Tosafot on Zevachim 2a:1:1\"]'",
+        },
+      },
+      {
+        name: "Bash",
+        input: {
+          command: "npm run get-context get-refs '[\"Berakhot 2a:1\"]'",
+        },
+      },
+    ]);
+    expect(refs.sort()).toEqual([
+      "Berakhot 2a:1",
+      "Rashi on Zevachim 2a:1:1",
+      "Tosafot on Zevachim 2a:1:1",
+    ]);
+  });
+
+  test("extracts a single ref from an npm run get-neighbors Bash call", () => {
+    const refs = extractRequestedRefs([
+      {
+        name: "Bash",
+        input: {
+          command: "npm run get-neighbors \"Zevachim 2a:3\" --before 1 --after 1",
+        },
+      },
+    ]);
+    expect(refs).toEqual(["Zevachim 2a:3"]);
+  });
+
+  test("ignores npm context commands for non-passage lookups", () => {
+    expect(extractRequestedRefs([
+      {name: "Bash", input: {command: "npm run get-comment-refs \"Zevachim 2a:1\""}},
+      {name: "Bash", input: {command: "npm run search \"Sukkah 53b\" \"חליל\""}},
+      {name: "Bash", input: {command: "npm run wikipedia \"Fenugreek\""}},
+    ])).toEqual([]);
+  });
+
   test("extracts refs from a get-refs JSON-array Bash call", () => {
     const refs = extractRequestedRefs([
       {

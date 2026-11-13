@@ -420,9 +420,15 @@ describe("execFileWithStreaming", () => {
 });
 
 describe("isCommandAllowed", () => {
-  const allowed = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
+  const allowed = [
+    "Bash(npm run get-*)",
+    "Bash(npm run search *)",
+    "Bash(npm run wikipedia *)",
+    "Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)",
+    "Bash(curl *wikipedia.org*)",
+  ];
 
-  test("allows context_fetch_cli commands", () => {
+  test("allows context_fetch_cli and npm run commands", () => {
     expect(isCommandAllowed(
       'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "Menachot 108a:1" --before 2',
       allowed,
@@ -432,6 +438,33 @@ describe("isCommandAllowed", () => {
       'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs \'["Menachot 107b:23"]\'',
       allowed,
     )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run get-refs \'["Menachot 107b:23"]\'',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run get-context get-refs \'["Menachot 107b:23"]\'',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run search "Menachot 107b" "שתי הלחם"',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run wikipedia "Menachot"',
+      allowed,
+    )).toBe(true);
+  });
+
+  test("blocks unauthorized npm commands", () => {
+    expect(isCommandAllowed("npm run deploy", allowed)).toBe(false);
+    expect(isCommandAllowed("npm run dev", allowed)).toBe(false);
+    expect(isCommandAllowed("npm test", allowed)).toBe(false);
+    expect(isCommandAllowed("npm install", allowed)).toBe(false);
   });
 
   test("blocks python commands", () => {
@@ -510,6 +543,14 @@ describe("createToolFilterShims", () => {
         {env, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"]},
       );
       expect(out).toContain("context_fetch_cli.ts");
+
+      // Node executing npm run get-refs is allowed through
+      const npmOutput = execFileSync(
+        "npm",
+        ["run", "get-refs", "[]"],
+        {env, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"]},
+      );
+      expect(npmOutput).toContain("entries");
     } finally {
       cleanup();
     }

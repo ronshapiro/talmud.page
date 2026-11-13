@@ -322,7 +322,7 @@ export function createToolFilterShims(): ToolFilterShims {
     + "allowed=0\n"
     + "for arg in \"$@\"; do\n"
     + "  case \"$arg\" in\n"
-    + "    *context_fetch_cli*|*ts-node*|*npx*)\n"
+    + "    *context_fetch_cli*|*ts-node*|*npx*|*npm*)\n"
     + "      allowed=1\n"
     + "      ;;\n"
     + "    -e|--eval)\n"
