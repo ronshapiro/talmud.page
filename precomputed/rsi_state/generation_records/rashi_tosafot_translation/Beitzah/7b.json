@@ -1,0 +1,441 @@
+{
+  "Rashi on Beitzah 7b:11:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:11:1",
+      "Rashi on Beitzah 7b:11:2",
+      "Rashi on Beitzah 7b:16:2"
+    ],
+    "generatedAt": "2026-11-13T18:49:15.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית להו דרבי זירא</strong> - בתמיה והא קרא בהדיא כתיב:"
+  },
+  "Rashi on Beitzah 7b:11:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:11:1",
+      "Rashi on Beitzah 7b:11:2",
+      "Rashi on Beitzah 7b:11:3",
+      "Rashi on Beitzah 7b:11:4",
+      "Rashi on Beitzah 7a:2:2"
+    ],
+    "generatedAt": "2026-11-13T18:50:36.831Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פתח הכתוב בשאור</strong> - שאור לא ימצא בבתיכם <span class=\"parenthesized\">(שמות יב)</span>:"
+  },
+  "Rashi on Beitzah 7b:11:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:11:1",
+      "Rashi on Beitzah 7b:11:2",
+      "Rashi on Beitzah 7b:11:3",
+      "Rashi on Beitzah 7b:11:4"
+    ],
+    "generatedAt": "2026-11-13T18:51:38.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסיים בחמץ</strong> - כי כל אוכל [מחמצת] והוה ליה למכתב כי כל אוכל שאור כו' דהא אתיא עונשו עם אזהרתו"
+  },
+  "Rashi on Beitzah 7b:11:4": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:11:1",
+      "Rashi on Beitzah 7b:11:2",
+      "Rashi on Beitzah 7b:11:3",
+      "Rashi on Beitzah 7b:11:4"
+    ],
+    "generatedAt": "2026-11-13T18:52:10.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהו שאור וכו'</strong> - כזה כן זה:"
+  },
+  "Rashi on Beitzah 7b:12:1": {
+    "dependsOn": [
+      "Beitzah 7b:11"
+    ],
+    "generatedAt": "2026-11-13T18:55:40.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענין אכילה כולי עלמא לא פליגי</strong> - דאפילו ב\"ש מודו דחמץ חייב בכזית כשאור באכילתו וכדר' זירא אבל לביעור לב\"ש לא השוו מדאיצטריך קרא למכתבינהו לתרוייהו לא יראה לך חמץ ולא יראה לך שאור לא ילפינן למימר כי היכי דבאכילה השוה הכתוב אכילת חמץ לביעור שאור אף לביעורו השוה לו דמדאיצטריך למכתבינהו יש חלוק בשיעורן:"
+  },
+  "Rashi on Beitzah 7b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:56:08.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא נמי הכי</strong> - דבביעור הוא דפליגי ולא באכילה:"
+  },
+  "Rashi on Beitzah 7b:16:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:16:2",
+      "Beitzah 7b:14"
+    ],
+    "generatedAt": "2026-11-13T18:56:59.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השוחט דיעבד</strong> - דאי שחט משמע אבל לכתחילה לא שרי ליה בית שמאי לשחוט אא\"כ יש לו עפר מוכן תיחוח:"
+  },
+  "Rashi on Beitzah 7b:16:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:16:1",
+      "Rashi on Beitzah 7b:6:1",
+      "Rashi on Beitzah 7b:6:2",
+      "Rashi on Beitzah 7b:5:1",
+      "Rashi on Beitzah 7b:17:1",
+      "Rashi on Beitzah 7b:17:2",
+      "Rashi on Beitzah 7b:11:1"
+    ],
+    "generatedAt": "2026-11-13T18:59:04.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכלל דת\"ק סבר ישחוט</strong> - בתמיה והא השוחט קאמר"
+  },
+  "Rashi on Beitzah 7b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:00:57.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לא קשיא</strong> - לא ישחוט דב\"ה אכסוי לחודיה קא מהדרי והכי קאמר לא יגמור מעשה השחיטה דהיינו הכסוי:"
+  },
+  "Rashi on Beitzah 7b:17:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:17:1"
+    ],
+    "generatedAt": "2026-11-13T19:01:52.809Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ישחוט ויכסה</strong> - אע\"פ ששחט לא יגמור:"
+  },
+  "Rashi on Beitzah 7b:19:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Beitzah 7b:8"
+    ],
+    "generatedAt": "2026-11-13T19:04:26.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השוחט שבא לימלך</strong> - אע\"ג דהשוחט דעלמא דיעבד על כרחך הכא לכתחלה השוחט שבא לשחוט <span class=\"parenthesized\">(בהמה)</span> ובא לימלך לנו מה יעשה אם ישחוט אם לאו הואיל ואין לו עפר תיחוח ב\"ש אומרים כו':"
+  },
+  "Rashi on Beitzah 7b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:31:13.177Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשמעה קליה ביממא</strong> - שהקול אינו נשמע ביום כבלילה:"
+  },
+  "Rashi on Beitzah 7b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:05:27.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב יוסף אמר כו'</strong> - ולקמיה מפרש במאי קמפלגי רבה ורב יוסף אליבא דב\"ש:"
+  },
+  "Rashi on Beitzah 7b:21:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:21:2",
+      "Rashi on Beitzah 7b:21:1"
+    ],
+    "generatedAt": "2026-11-13T19:06:15.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעפר</strong> - משמע שהוא נבלל וטמון בעפר קודם הכסוי:"
+  },
+  "Rashi on Beitzah 7b:21:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:21:1",
+      "Steinsaltz on Beitzah 7b:21:1",
+      "Rashi on Beitzah 7b:20:1"
+    ],
+    "generatedAt": "2026-11-13T19:07:25.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכסהו עפר</strong> - הוי משמע דלא קפיד אלא אכסוי:"
+  },
+  "Rashi on Beitzah 7b:23:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:10:00.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אית לן דר' זירא</strong> - ובעינן עפר למטה והכי קאמר רבה אם יכולין לומר לו שחוט מיד שיש לו כבר עפר למטה שרינן ליה אבל אם אנו צריכין לומר לו חפור תחלה לא נתיר לו:"
+  },
+  "Rashi on Beitzah 7b:23:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:23:1",
+      "Rashi on Beitzah 7b:23:2",
+      "Rashi on Beitzah 7b:23:3"
+    ],
+    "generatedAt": "2026-11-13T19:10:37.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא</strong> - לאחר חפירה ממליך ולא שחיט נמצא שחופר בחנם:"
+  },
+  "Rashi on Beitzah 7b:23:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:23:1",
+      "Rashi on Beitzah 7b:23:2"
+    ],
+    "generatedAt": "2026-11-13T19:11:09.664Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:23:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא עדיפא</strong> - דלא תגזור הכי:"
+  },
+  "Rashi on Beitzah 7b:24:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:23:1",
+      "Rashi on Beitzah 7b:23:2",
+      "Rashi on Beitzah 7b:21:1"
+    ],
+    "generatedAt": "2026-11-13T19:12:18.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא קא עביד כתישה</strong> - לרב יהודה פריך דאמר והוא שיש לו דקר נעוץ אלמא דטעמא דמתניתין לאו משום דאתי עשה דוכסהו בעפר ודחי את לא תעשה כל מלאכה אלא משום דכבר חפור ועומד הוא והא קא עביד כתישה שעדיין רגבים מדובקים הם ואינן ראוין לכסוי אלא אם כן כותשן וכותש תולדה דטוחן הוא ומלאכה היא:"
+  },
+  "Rashi on Beitzah 7b:2:1": {
+    "dependsOn": [
+      "Beitzah 7b:2",
+      "Rashi on Beitzah 7b:1:1",
+      "Beitzah 7a:18"
+    ],
+    "generatedAt": "2026-11-13T18:33:41.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עובדא</strong> - דבדק מעי\"ט ולא מצא והשכים ומצא ולא היה תרנגול זכר עד ששים בתים וסמך רב מרי על התרנגול והתיר את הביצה:"
+  },
+  "Rashi on Beitzah 7b:3:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:3:1",
+      "Rashi on Beitzah 7b:3:2",
+      "Rashi on Beitzah 7b:1:1",
+      "Rashi on Beitzah 7b:2:1",
+      "Rashi on Beitzah 7a:1:1",
+      "Rashi on Beitzah 7a:2:1",
+      "Rashi on Beitzah 7a:3:1",
+      "Rashi on Beitzah 7a:4:1",
+      "Steinsaltz on Beitzah 7b:3",
+      "Sefer HeArukh, Letter Mem 454",
+      "Rashi on Beitzah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T18:36:56.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מברא</strong> - גשר:"
+  },
+  "Rashi on Beitzah 7b:3:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:3:1",
+      "Jastrow, מֵצַר ³ 1",
+      "Steinsaltz on Beitzah 7b:3"
+    ],
+    "generatedAt": "2026-11-13T18:38:12.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיצרא</strong> - חבל קשור בראשי שתי יתדות אחת תקועה בשפת הנהר מזה ואחת תקועה בשפת הנהר מזה ועץ קצר מוטל לרוחב הנהר ועוברין בו בדוחק על ידי שאוחזין בחבל ועוברין:"
+  },
+  "Rashi on Beitzah 7b:4:1": {
+    "dependsOn": [
+      "Beitzah 7b:4",
+      "Beitzah 7b:3",
+      "Rashi on Beitzah 7b:3:1",
+      "Rashi on Beitzah 7b:3:2"
+    ],
+    "generatedAt": "2026-11-13T18:39:48.721Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי אוקימתא</strong> - לדרבי יוסי ב\"ר שאול:"
+  },
+  "Rashi on Beitzah 7b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:40:34.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא מאתמול הואי</strong> - דכיון דרובא ביממא ילדן אי לא בדק תלינן ביממא:"
+  },
+  "Rashi on Beitzah 7b:5:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:5:1",
+      "Beitzah 7b:5",
+      "Beitzah 7a:17",
+      "Rashi on Beitzah 7a:17:1"
+    ],
+    "generatedAt": "2026-11-13T18:41:33.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבי יוחנן לא שכיחא</strong> - הלכך בדאיכא זכר כיון דקים לן דאינה יולדת בלילה תלינן כרבי יוחנן אבל בדספנא מארעא לילד בלילה שכיח טפי מיצתה רובה:"
+  },
+  "Rashi on Beitzah 7b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:43:20.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תומא שחיקא</strong> - שומין שחוקין:"
+  },
+  "Rashi on Beitzah 7b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:43:42.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגלויא</strong> - הנחש שותה ממנו אם מוצאו מגולה ומטיל בו ארס:"
+  },
+  "Rashi on Beitzah 7b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:44:05.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן</strong> - דחד שיעורא לתרוייהו:"
+  },
+  "Rashi on Beitzah 7b:8:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:8:1",
+      "Beitzah 7b:8",
+      "Rashi on Beitzah 7b:3:1",
+      "Rashi on Beitzah 7b:3:2",
+      "Rashi on Beitzah 7b:5:1",
+      "Rashi on Beitzah 7b:6:1"
+    ],
+    "generatedAt": "2026-11-13T18:46:27.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 7b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיעורו של זה כו'</strong> - להכי לא יליף שאור מחמץ משום דחמץ בככותבת דלא תימא דיו לבא מן הדין להיות כנדון ושאור נמי בככותבת להכי כתביה בהדיא לשעורי בשיעורא זוטא ושיעורא רבא ולהכי נקט כותבת דבהכי הוי יתובי דעתא כדמפרש טעמא ביומא <span class=\"parenthesized\">(דף עט.)</span> אי נמי שיעורין הלכה למשה מסיני:"
+  },
+  "Tosafot on Beitzah 7b:11:1": {
+    "dependsOn": [
+      "Beitzah 7b:11",
+      "Maharsha: Chidushei Halachot on Beitzah 7b:1",
+      "Maharshal: Chokhmat Shlomo on Beitzah 7b:10"
+    ],
+    "generatedAt": "2026-11-13T18:53:38.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רבי זירא פתח הכתוב בשאור וסיים בחמץ וכו' ובית הלל סברי ילפינן ביעור מאכילה</strong> - ואם תאמר למה ליה צריכותא דלעיל הא ידענא שפיר [דחמץ] בכזית מהכא וי\"ל שלא תטעה לומר הואיל וחלקן הכתוב בשני לאוין ולא יראה לך <span class=\"parenthesized\">(. שאור)</span> ולא יראה לך <span class=\"parenthesized\">(. חמץ)</span> ודאי אין שיעורן שוה דזה בככותבת וזה בכזית קמ\"ל הצריכתות וא\"ת הואיל ואית להו הצריכתות למה להו דר' זירא י\"ל לא הייתי משים כרת אלא בחמץ דכתיב ביה כרת:"
+  },
+  "Tosafot on Beitzah 7b:1:1": {
+    "dependsOn": [
+      "Beitzah 7b:1",
+      "Rashi on Beitzah 7b:1:1"
+    ],
+    "generatedAt": "2026-11-13T18:32:07.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשמעה קליה ביממא</strong> - ובלילה משמיעין קולם למרחוק יותר מביום ולא נקט בלילה משום דתשמישו ביום:"
+  },
+  "Tosafot on Beitzah 7b:5:1": {
+    "dependsOn": [
+      "Beitzah 7b:5",
+      "Rashi on Beitzah 7b:4:1",
+      "Rashi on Beitzah 7b:5:1",
+      "Rashi on Beitzah 7b:5:2"
+    ],
+    "generatedAt": "2026-11-13T18:42:45.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי לא בדק אימר מאתמול הואי</strong> - וא\"ת והא ביצה דבר שיש לו מתירין א\"כ ספקא לחומרא וי\"ל דשאני הכא משום דגם כי ספנא מארעא שכיח דיולדת ביום יותר מבלילה:"
+  },
+  "Tosafot on Beitzah 7b:8:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 7b:8:1",
+      "Rashi on Beitzah 7b:8:2",
+      "Tosafot on Beitzah 2a:8:1",
+      "Maharshal on Beitzah 7b:9"
+    ],
+    "generatedAt": "2026-11-13T18:48:17.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לומר לך שיעורו של זה לא כשיעורו של זה</strong> - פירש רש\"י דאי לא כתב שאור הייתי אומר דיו לבא מן הדין להיות כנדון ודוקא בככותבת וא\"ת מנלן דשיעור חמץ בככותבת אימא כביצה או כשיעור אחר ופ\"ה דהלכתא גמירי לה דהוי ככותבת ולא נהירא דא\"כ קרא למה לי ע\"כ נראה פירוש <span class=\"parenthesized\">(אחר)</span> הואיל וידענא דשיעורו של זה לא כשיעורו של זה נוקים ליה שיעורו כדאשכחנא בעלמא גבי יום כפור <span class=\"parenthesized\">(יומא דף עט. ושם)</span> דהוי בככותבת:"
+  }
+}

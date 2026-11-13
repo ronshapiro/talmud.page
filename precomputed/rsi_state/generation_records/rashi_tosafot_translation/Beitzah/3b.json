@@ -1,0 +1,568 @@
+{
+  "Rashi on Beitzah 3b:11:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:11:2",
+      "Rashi on Beitzah 3b:1:1",
+      "Rashi on Beitzah 3b:2:1",
+      "Beitzah 3b:11"
+    ],
+    "generatedAt": "2026-11-13T12:32:35.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא למ\"ד</strong> - לקמן:"
+  },
+  "Rashi on Beitzah 3b:11:2": {
+    "dependsOn": [
+      "Beitzah 3b:11",
+      "Rashi on Beitzah 3b:11:1"
+    ],
+    "generatedAt": "2026-11-13T12:33:48.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שדרכו למנות שנינו</strong> - במשנת ערלה כדלקמן דלא בטיל משמע כל דבר שיש בני אדם המקפידין עליו מפני חשיבותו למוכרו במנין ביצה נמי הרבה מוכרין אותה במנין:"
+  },
+  "Rashi on Beitzah 3b:12:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:11:1",
+      "Rashi on Beitzah 3b:11:2",
+      "Rashi on Beitzah 3b:12:2"
+    ],
+    "generatedAt": "2026-11-13T12:34:38.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למאן דאמר את שדרכו</strong> - דמשמע את המיוחד לכך שאין אדם מוכרו באומד:"
+  },
+  "Rashi on Beitzah 3b:12:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:12:1"
+    ],
+    "generatedAt": "2026-11-13T12:35:24.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא למימר</strong> - הרי ביצה הרבה נמכרת באומד בלא מנין:"
+  },
+  "Rashi on Beitzah 3b:13:1": {
+    "dependsOn": [
+      "Steinsaltz on Beitzah 3b:13",
+      "Rashi on Beitzah 3b:13:2",
+      "Rashi on Beitzah 3b:1:1"
+    ],
+    "generatedAt": "2026-11-13T12:37:51.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלתן</strong> - מין קטנית למתק קדירה פילוג\"ר בלע\"ז:"
+  },
+  "Rashi on Beitzah 3b:13:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:13:1",
+      "Rashi on Beitzah 3b:13:3",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2",
+      "Rashi on Beitzah 3b:5:1",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T12:39:30.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידלקו</strong> - כדין כלאי הכרם שנאמר <span class=\"parenthesized\">(דברים כ״ב:ט׳)</span> פן תוקדש תוקד אש דאסירי בהנאה:"
+  },
+  "Rashi on Beitzah 3b:13:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:13:1",
+      "Rashi on Beitzah 3b:13:2"
+    ],
+    "generatedAt": "2026-11-13T12:40:53.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יעלו באחת ומאתים</strong> - אם נתערב אחד מהן במאתים של היתר יעלה אחד מהן וידלק והשאר מותרין וזה שיעור ביטול כלאים וערלה באחד ומאתים:"
+  },
+  "Rashi on Beitzah 3b:14:1": {
+    "dependsOn": [
+      "Beitzah 3b:14",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:5:1",
+      "Rashi on Beitzah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T12:48:38.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיה ר' מאיר אומר</strong> - כלומר להכי אמר ר' מאיר כולן ידלקו ולית להו ביטול שהיה ר' מאיר אומר הואיל ודרכן לימנות אין בטלין ומקדשין לאסור כל המתערבין בהן:"
+  },
+  "Rashi on Beitzah 3b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:49:06.052Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים אומרים</strong> - כל פירות שבעולם בטלים חוץ מששה דברים הללו המנויין כאן שהן חשובין מאד:"
+  },
+  "Rashi on Beitzah 3b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:49:27.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרך ובאדן</strong> - מקומות הן:"
+  },
+  "Rashi on Beitzah 3b:14:4": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:14:1",
+      "Rashi on Beitzah 3b:14:2",
+      "Rashi on Beitzah 3b:14:3",
+      "Tosafot on Beitzah 2a:6:1"
+    ],
+    "generatedAt": "2026-11-13T12:50:39.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קולחי</strong> - קלחי כרובין גדולים עם עלין שלהן וכרוב של א\"י היה גדול כאילן כדאמרינן בכתובות <span class=\"parenthesized\">(דף קיא:)</span>:"
+  },
+  "Rashi on Beitzah 3b:15:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:15:1",
+      "Rashi on Beitzah 3b:15:2",
+      "Rashi on Beitzah 3b:15:3"
+    ],
+    "generatedAt": "2026-11-13T12:51:28.448Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הראוי לערלה ערלה</strong> - אותן שהן מין אילן וערלה נוהגת בהן מקדשין את ערוביהן משום ערלה:"
+  },
+  "Rashi on Beitzah 3b:15:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:15:1",
+      "Rashi on Beitzah 3b:15:3"
+    ],
+    "generatedAt": "2026-11-13T12:53:17.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והראוי לכלאי הכרם</strong> - כגון חלפי תרדין וקולחי כרוב וככרות שאינן מין אילן מקדשין ערוביהן באיסור כלאי הכרם:"
+  },
+  "Rashi on Beitzah 3b:15:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:15:1",
+      "Rashi on Beitzah 3b:15:2",
+      "Rashi on Beitzah 3b:14:1",
+      "Rashi on Beitzah 3b:16:1",
+      "Rashi on Beitzah 3a:1:1",
+      "Rashi on Beitzah 3a:2:1",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T12:55:20.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את שדרכו לימנות שנינו</strong> - במילתיה דר' מאיר:"
+  },
+  "Rashi on Beitzah 3b:16:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:15:1",
+      "Rashi on Beitzah 3b:14:1",
+      "Rashi on Beitzah 3b:13:1",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2",
+      "Rashi on Beitzah 3b:7:1",
+      "Rashi on Beitzah 3a:1:1",
+      "Rashi on Beitzah 3a:2:1",
+      "Rashi on Beitzah 3a:3:1",
+      "Beitzah 3b:13",
+      "Beitzah 3b:14",
+      "Beitzah 3b:15",
+      "Chokhmat Shlomo on Beitzah 3b:7",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:3:1"
+    ],
+    "generatedAt": "2026-11-13T12:59:13.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לר' שמעון בן לקיש</strong> - איכא לאוקמא לברייתא דלעיל דקתני ביצה לא בטלה כר' מאיר:"
+  },
+  "Rashi on Beitzah 3b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T13:01:03.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי תנא</strong> - דלעיל:"
+  },
+  "Rashi on Beitzah 3b:17:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:17:1",
+      "Rashi on Beitzah 3b:17:2",
+      "Rashi on Beitzah 3b:17:3"
+    ],
+    "generatedAt": "2026-11-13T13:01:53.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא</strong> - דאיירי גבי ליטרא קציעות הוא דאמר כל דבר שיש בו מנין אפילו במידי דרבנן כגון ליטרא קציעות דאיירי בתרומת פירות דרבנן לא בטיל כדמפרש לקמיה:"
+  },
+  "Rashi on Beitzah 3b:17:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:17:1",
+      "Rashi on Beitzah 3b:17:2"
+    ],
+    "generatedAt": "2026-11-13T13:02:44.548Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכ\"ש</strong> - ביצה טרפה:"
+  },
+  "Rashi on Beitzah 3b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T13:03:30.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטרא קציעות</strong> - תאנים שנתייבשו בשדה וקצען במקצוע והוא שם כלי העשוי לכך וחותכין בו עוקצי התאנים ואחר כך דורסים אותם בכלי עגול והן נדבקין יחד ונעשין כגבינה והוא נקרא עגולי דבילה וכשבאין למוכרן מפרידן במגריפה ומוכרן במשקל ליטרא:"
+  },
+  "Rashi on Beitzah 3b:18:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:18:1"
+    ],
+    "generatedAt": "2026-11-13T13:04:14.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרסה ע\"פ כלי</strong> - ששמו עגול שבו עושין העגולין:"
+  },
+  "Rashi on Beitzah 3b:18:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T13:05:05.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו יודע באיזה עגול</strong> - אבל יודע שעל פיו הוא ולא בתוכו:"
+  },
+  "Rashi on Beitzah 3b:18:4": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:18:1",
+      "Rashi on Beitzah 3b:18:2",
+      "Rashi on Beitzah 3b:18:3",
+      "Beitzah 3b:18",
+      "Mishnah Terumot 4:10",
+      "Steinsaltz on Beitzah 3b:18",
+      "Steinsaltz on Beitzah 4a:1",
+      "Steinsaltz on Beitzah 4a:2",
+      "Rashi on Beitzah 4a:1:1",
+      "Rashi on Beitzah 4a:2:1"
+    ],
+    "generatedAt": "2026-11-13T13:07:08.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:18:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי מאיר אומר</strong> - כן נחלקו ר' אליעזר ור' יהושע בדבר זה ר' אליעזר אומר אף על פי שאין לטרות תחתונות בספק דמוע מצטרפות התחתונות אל הפומין של כל העגולין הללו:"
+  },
+  "Rashi on Beitzah 3b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:08:04.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא אמר</strong> - הא דקאמר ר' יוחנן מוחלפת השיטה לא תיפוך:"
+  },
+  "Rashi on Beitzah 3b:2:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:2:1",
+      "Rashi on Beitzah 3b:2:2",
+      "Rashi on Beitzah 3b:2:3",
+      "Rashi on Beitzah 3b:2:4"
+    ],
+    "generatedAt": "2026-11-13T12:08:56.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלא דאפרת הוא</strong> - וכיון דמשום סחיטה ליכא משום משקין שזבו נמי ליכא בעומדת לאכילה:"
+  },
+  "Rashi on Beitzah 3b:2:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:2:1",
+      "Rashi on Beitzah 3b:2:2",
+      "Rashi on Beitzah 3b:2:3",
+      "Rashi on Beitzah 3b:2:4",
+      "Beitzah 3b:2",
+      "Beitzah 3a:2",
+      "Rashi on Beitzah 3a:2:1"
+    ],
+    "generatedAt": "2026-11-13T12:10:37.842Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידכו</strong> - דאסריתו לה אף בשני נהי נמי דאית לכו בביצה גזירת משקין שזבו ואפילו בתרנגולת העומדת לאכילה:"
+  },
+  "Rashi on Beitzah 3b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:11:03.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אודו לי מיהת דבשני שריא</strong> - דחד מינייהו חול הוא:"
+  },
+  "Rashi on Beitzah 3b:2:4": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:2:3",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2",
+      "Rashi on Beitzah 2a:3:2",
+      "Rashi on Beitzah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-13T12:12:16.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדושה אחת היא</strong> - ולא דמו לשאר ימים טובים דהנך לאו משום ספקא אתקון דאף בזמן ב\"ד היו עושין אותם שני ימים אם באו עדים מן המנחה ולמעלה כדאמרינן בר\"ה <span class=\"parenthesized\">(דף ל:)</span>:"
+  },
+  "Rashi on Beitzah 3b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:16:21.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא ברי' דרב עולא אמר</strong> - רבי יהודה אדר' יהודה מעיקרא לא תקשי דהא דקאמר בשני אין בראשון לא בעומדת לביצים קאמר ומשום מוקצה ולא משום משקין שזבו:"
+  },
+  "Rashi on Beitzah 3b:4:1": {
+    "dependsOn": [
+      "Beitzah 3b:4",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2",
+      "Rashi on Beitzah 3b:4:3"
+    ],
+    "generatedAt": "2026-11-13T12:18:01.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי</strong> - אהנך אמוראי קמאי דאפלוג בטעמא דבית הלל דמתני':"
+  },
+  "Rashi on Beitzah 3b:4:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:3"
+    ],
+    "generatedAt": "2026-11-13T12:18:52.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכסות בה את הכלי</strong> - פי צלוחית:"
+  },
+  "Rashi on Beitzah 3b:4:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2"
+    ],
+    "generatedAt": "2026-11-13T12:19:41.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסמוך בה</strong> - זוקפה כנגד חודה וסומך בה:"
+  },
+  "Rashi on Beitzah 3b:5:1": {
+    "dependsOn": [
+      "Shabbat 43a:10"
+    ],
+    "generatedAt": "2026-11-13T12:21:28.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כופה עליה כו'</strong> - ואע\"ג דהיא אינה ניטלת מטלטלין את הכלי לצורכה ולאפוקי מדר' יצחק דאמר <span class=\"parenthesized\">(שבת דף מג.)</span> אין כלי ניטל אלא לדבר הניטל בשבת ואיהו מוקי לה בצריך למקומו של כלי:"
+  },
+  "Rashi on Beitzah 3b:5:2": {
+    "dependsOn": [
+      "Beitzah 3b:5",
+      "Rashi on Beitzah 3b:5:1",
+      "Rashi on Beitzah 2a:6:1"
+    ],
+    "generatedAt": "2026-11-13T12:23:15.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וספקא</strong> - של זו אסורה קא סלקא דעתך ספק נולדה ביו\"ט ספק בחול אסורה ביו\"ט:"
+  },
+  "Rashi on Beitzah 3b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:25:57.504Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק דרבנן היא</strong> - דאפי' ודאי משום גזירה הוא דאתסר וכי הויא לה ספיקא הוי ספק במידי דאסור מדרבנן:"
+  },
+  "Rashi on Beitzah 3b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:26:31.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לספק טריפה</strong> - ספק נולדה מתרנגולת טרפה ולאו ביו\"ט קאי ואיידי דאיירי באיסור ביצה איירי נמי בהא:"
+  },
+  "Rashi on Beitzah 3b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T12:27:13.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש לו מתירין</strong> - שיכול לאכלו אחר יו\"ט בהיתר גמור:"
+  },
+  "Rashi on Beitzah 3b:9:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:9:1",
+      "Rashi on Beitzah 3b:4:1",
+      "Rashi on Beitzah 3b:4:2",
+      "Rashi on Beitzah 3b:5:1",
+      "Exodus 23:2"
+    ],
+    "generatedAt": "2026-11-13T12:29:19.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 3b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו באלף לא בטיל</strong> - ואע\"ג דמדאורייתא חד בתרי בטיל דכתיב <span class=\"parenthesized\">(שמות כ״ג:ב׳)</span> אחרי רבים להטות אחמור רבנן הואיל ויש לו מתירין לאחר זמן לא יאכלנו באיסור על ידי ביטול:"
+  },
+  "Tosafot on Beitzah 3b:13:1": {
+    "dependsOn": [
+      "Tosafot on Yevamot 81a:11:2",
+      "Chokhmat Shlomo on Beitzah 3b:9",
+      "Chokhmat Shlomo on Beitzah 3b:10",
+      "Chokhmat Shlomo on Beitzah 3b:11",
+      "Zevachim 74a:1",
+      "Zevachim 74a:2",
+      "Zevachim 74a:3",
+      "Zevachim 74a:4",
+      "Zevachim 74a:5",
+      "Zevachim 74a:6",
+      "Zevachim 74a:7",
+      "Zevachim 74a:9",
+      "Zevachim 74a:10",
+      "Zevachim 74a:11",
+      "Zevachim 74a:12",
+      "Zevachim 74a:13",
+      "Zevachim 74a:14",
+      "Zevachim 74a:15"
+    ],
+    "generatedAt": "2026-11-13T12:45:18.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחרות באחרות וכו'</strong> - תימה דאם כן אוסר ספק ספיקא ובהתערובות <span class=\"parenthesized\">(זבחים דף עד. ושם)</span> . דקאמר מי איכא דאסר ספק ספיקא באסורי הנאה אמאי לא פשיט ליה מהכא דאסרינן אע\"ג דאיכא ספק ספיקא בשלמא ההיא דלעיל דאמר וספיקא אסורה נתערבה באלף כולן אסורות נוכל לפרש כדפירש ר\"ת נתערב' באלף אאיסור עצמו קאי א\"נ הא דלעיל ברייתא היא ומאי אולמא דהך ברייתא דהכא מהך ברייתא דהתם אבל <span class=\"parenthesized\">(מברייתא קשיא למשנה)</span> ע\"כ לא גריס ר\"ת ואחרות באחרות ורבינו יצחק ב\"ר ברוך אומר דגרס ליה שפיר וה\"פ שנתערב גם האיסור דסד\"א שמותר הואיל ואיכא כעין תרי רובי קא משמע לן ועוד תירץ הר\"ר יצחק דגרס ליה שפיר ואעפ\"כ לא מצי למיפשט מהכא דקים לן כל דבר שיש לו חשיבות אינו בטל אלא בתרי רובי לכך אינו בטל הכא אבל התם מוכיח ליה מתרי רובי דקאמר אם נתערב רובא בתוך רובא והתניא וכו' אבל הכא אין כאן תרי רובי שהתערובת הראשון היה שוה ובפרק הערל <span class=\"parenthesized\">(יבמות דף פא. ושם בד\"ה נתערבו)</span> פירשתי:"
+  },
+  "Tosafot on Beitzah 3b:2:1": {
+    "dependsOn": [
+      "Beitzah 3b:2",
+      "Beitzah 3a:6",
+      "Beitzah 3a:7",
+      "Beitzah 3a:8",
+      "Rashi on Beitzah 3b:1:1"
+    ],
+    "generatedAt": "2026-11-13T12:15:09.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 3b:2:1"
+    ],
+    "sourceText": "לדידי אפי' בראשון נמי שריא ותימה ר' יהודה דאמר כבית שמאי וכי שביק ב\"ה ועביד כב\"ש וי\"ל דר' יהודה היה אומר לא נחלקו ב\"ש וב\"ה בדבר זה מעולם:"
+  },
+  "Tosafot on Beitzah 3b:5:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 3b:5:1",
+      "Rashi on Beitzah 3b:5:2",
+      "Chokhmat Shlomo on Beitzah 3b:8",
+      "Tosafot on Shabbat 43a:11:1",
+      "Shulchan Arukh, Orach Chayim 310:6",
+      "Rashba on Beitzah 3b:2"
+    ],
+    "generatedAt": "2026-11-13T12:25:24.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כופה עליה כלי</strong> - פירש רש\"י דמהך ברייתא פריך התם לר' יצחק דאמר דאין כלי ניטל אלא לדבר הניטל והוא תירץ בצריך למקומו ומכאן פוסקין דהא דקי\"ל דדבר שמלאכתו לאיסור אסור אינו אלא דוקא שאינו לצורך גופו או לצורך מקומו אבל לצורך גופו או לצורך מקומו שרי ואם התחיל לטלטלו בשביל שצריך לגופו או למקומו מותר להוליכו אפילו בחדרו אם ירצה דהא חזינא הכא דהואיל וצריך למקומו או לגוף הכלי כופהו על הביצה:"
+  }
+}
