@@ -41,6 +41,13 @@
   "scripts": {
     "test": "jest --colors",
     "compute-translation-progress": "ts-node --compiler-options '{\"lib\":[\"es2022\",\"dom\"]}' precomputed/translation_progress_data.ts",
+    "get-context": "ts-node rsi_orchestrator/context_fetch_cli.ts",
+    "get-refs": "ts-node rsi_orchestrator/context_fetch_cli.ts get-refs",
+    "get-comment-refs": "ts-node rsi_orchestrator/context_fetch_cli.ts get-comment-refs",
+    "get-neighbors": "ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors",
+    "get-prior-sugyot": "ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot",
+    "search": "ts-node rsi_orchestrator/context_fetch_cli.ts search",
+    "wikipedia": "ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia",
     "dev": "nodemon --watch parcel.ts parcel.ts dev",
     "parcel-prod": "npm run compute-translation-progress && ts-node parcel.ts prod",
     "deploy": "npm run parcel-prod && yes | gcloud --configuration talmud-page app deploy",

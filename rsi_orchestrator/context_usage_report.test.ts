@@ -39,6 +39,26 @@ test("classifies requested refs relative to the target comment's page", () => {
   });
 });
 
+test("classifies requested refs from npm run commands", () => {
+  const [stats] = computeContextReport([entry({}, [
+    "npm run get-refs '[\"Arakhin 10a:2\", \"Sukkah 53b:7-9\"]'",
+    "npm run get-context get-neighbors \"Arakhin 9b:17\"",
+    "npm run wikipedia \"Trumpet\"",
+  ])]);
+  expect(stats).toEqual({
+    model: "claude-sonnet-5",
+    calls: 1,
+    fetchingCalls: 1,
+    refs: 3,
+    ownSegmentCalls: 1,
+    offPageRefs: 2,
+    offBookRefs: 1,
+    earlyPageRefs: 0,
+    commands: {"get-refs": 1, "get-neighbors": 1, wikipedia: 1},
+    costUsd: 0.1,
+  });
+});
+
 test("resolves book aliases to the same book", () => {
   const [stats] = computeContextReport([entry({ref: "Rashi on Chullin 11a:2:1"}, [
     `${CLI} get-refs '["Hullin 10b:7"]'`,

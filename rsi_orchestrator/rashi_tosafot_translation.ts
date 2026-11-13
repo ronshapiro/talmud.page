@@ -58,6 +58,8 @@ const PROMPT_VERSION = "v3";
 // The only tool this task type's headless calls may use — see the module doc above. Scoped to
 // this exact command so it can't fall back to arbitrary Bash use.
 const CONTEXT_FETCH_ALLOWED_TOOLS = [
+  "Bash(npm run *)",
+  "Bash(npm *)",
   "Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)",
   "Bash(curl *wikipedia.org*)",
 ];

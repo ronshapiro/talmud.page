@@ -25,12 +25,12 @@ You're translating and punctuating a single commentary comment on the Talmud, fo
 
 ## Rules on tools and external lookups
 
-- The ONLY permitted CLI tool is context_fetch_cli (`npx ts-node rsi_orchestrator/context_fetch_cli.ts ...`).
+- The ONLY permitted CLI tools are the context fetching npm commands (such as `npm run get-refs`, `npm run get-context`, etc.).
 - You must NOT execute `git`, `python`, arbitrary node execution (such as `node -e`), or arbitrary bash commands/scripts (e.g. cat, diff, echo to file). Any attempt to run git, python, or other unapproved commands is blocked and will abort your attempt.
 - Do NOT attempt to output your response via `node` or bash. Output your JSON response directly as text in your message.
 - You must NOT make any lookups to Sefaria (sefaria.org). External lookups to sefaria.org are strictly forbidden and blocked.
-- Wikipedia checks ARE permitted (via `npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.
-- If context_fetch_cli or Wikipedia does not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.
+- Wikipedia checks ARE permitted (via `npm run wikipedia ...` or curl to wikipedia.org) if needed for realia, botanical/zoological terms, historical figures, or French loanwords.
+- If context lookups or Wikipedia do not provide what you need, do not seek it elsewhere — translate based on the provided text and your own knowledge.
 
 ## Context lookups
 
@@ -53,16 +53,17 @@ Prefer search over fetching long passages. When you're looking for where a parti
 
 Do NOT fetch other comments to calibrate style or to see how comments are usually punctuated or translated. The worked examples below are the style reference, and comments from elsewhere in the tractate (e.g. its first comments on 2a) say nothing about this one. Never guess at refs. Use a ref from the page index below, one returned by an earlier fetch, or get-neighbors.
 
-context_fetch_cli commands (each call is size-capped):
+Context fetch commands (each call is size-capped):
 
 ```
-npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs '["<ref>", ...]' [--lang he|en|both] [--on "<segment ref>"]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts get-comment-refs "<segment ref>" [--commentary "<name>"]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "<segment ref>" [--before N] [--after N]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts get-prior-sugyot "<any ref on this page>" [--count N]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts search "<page or segment range, e.g. Sukkah 53b or Sukkah 53b:7-54a:2>" "<word or phrase>" [--commentary <name> ...]
-npx ts-node rsi_orchestrator/context_fetch_cli.ts wikipedia "<topic>" [--lang en|he]
+npm run get-refs '["<ref>", ...]' [--lang he|en|both] [--on "<segment ref>"]
+npm run get-comment-refs "<segment ref>" [--commentary "<name>"]
+npm run get-neighbors "<segment ref>" [--before N] [--after N]
+npm run get-prior-sugyot "<any ref on this page>" [--count N]
+npm run search "<page or segment range, e.g. Sukkah 53b or Sukkah 53b:7-54a:2>" "<word or phrase>" [--commentary <name> ...]
+npm run wikipedia "<topic>" [--lang en|he]
 ```
+(Alternatively, `npm run get-context <subcommand> ...` is also supported.)
 
 ## Response format
 

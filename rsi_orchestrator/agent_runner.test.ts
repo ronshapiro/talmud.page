@@ -420,9 +420,14 @@ describe("execFileWithStreaming", () => {
 });
 
 describe("isCommandAllowed", () => {
-  const allowed = ["Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)"];
+  const allowed = [
+    "Bash(npm run *)",
+    "Bash(npm *)",
+    "Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)",
+    "Bash(curl *wikipedia.org*)",
+  ];
 
-  test("allows context_fetch_cli commands", () => {
+  test("allows context_fetch_cli and npm run commands", () => {
     expect(isCommandAllowed(
       'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors "Menachot 108a:1" --before 2',
       allowed,
@@ -430,6 +435,16 @@ describe("isCommandAllowed", () => {
 
     expect(isCommandAllowed(
       'npx ts-node rsi_orchestrator/context_fetch_cli.ts get-refs \'["Menachot 107b:23"]\'',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run get-refs \'["Menachot 107b:23"]\'',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run get-context get-refs \'["Menachot 107b:23"]\'',
       allowed,
     )).toBe(true);
   });
@@ -510,6 +525,14 @@ describe("createToolFilterShims", () => {
         {env, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"]},
       );
       expect(out).toContain("context_fetch_cli.ts");
+
+      // Node executing npm run get-refs is allowed through
+      const npmOutput = execFileSync(
+        "npm",
+        ["run", "get-refs", "[]"],
+        {env, encoding: "utf8", stdio: ["pipe", "pipe", "pipe"]},
+      );
+      expect(npmOutput).toContain("entries");
     } finally {
       cleanup();
     }
