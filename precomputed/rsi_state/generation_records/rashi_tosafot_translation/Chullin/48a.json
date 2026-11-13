@@ -1,0 +1,522 @@
+{
+  "Rashi on Chullin 48a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:50:15.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאינו קרום</strong> - אבל סתימת דופן סתימה מעלייתא היא:"
+  },
+  "Rashi on Chullin 48a:11:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:11:2",
+      "Chullin 48a:10"
+    ],
+    "generatedAt": "2026-11-12T07:53:24.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקיף כו'</strong> - השתא דאמרת נקב הוא בריאה אלא שהדופן סותמתו אילו אינקיב דופן להדה ריאה כנגד דופן הריאה לאחר זמן מאי טרפה דאזלא לה סתימת דופן:"
+  },
+  "Rashi on Chullin 48a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:54:06.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתני</strong> - במתניתין נקובת הדופן בהדי שאר טרפות דיש בהמה שנטרפה בכך:"
+  },
+  "Rashi on Chullin 48a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:54:41.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו מיניה מטרפא</strong> - דטרפות מחמת ריאה בא:"
+  },
+  "Rashi on Chullin 48a:14:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 48a:14",
+      "Rashi on Chullin 48a:14:2",
+      "Sefer HeArukh, Letter Mem 101",
+      "Jastrow, מוּגְלָא 1",
+      "[",
+      "[\\",
+      "Rashi on Chullin 48a:2:4",
+      "Steinsaltz comment #1 on Chullin 48a:14",
+      "Steinsaltz comment #2 on Chullin 48a:14",
+      "Jastrow, צֶמַח I 1",
+      "Sefer HeArukh, Letter Tzadi 95"
+    ],
+    "generatedAt": "2026-11-12T07:59:47.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צמחין</strong> - מנל\"ץ:"
+  },
+  "Rashi on Chullin 48a:14:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:14:1",
+      "Sefer HeArukh, Letter Mem 101",
+      "Steinsaltz on Chullin 48a:14",
+      "Rashi on Chullin 48a:7:1"
+    ],
+    "generatedAt": "2026-11-12T08:01:36.816Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזדנזין בדבר</strong> - מגמגמין:"
+  },
+  "Rashi on Chullin 48a:15:1": {
+    "dependsOn": [
+      "Jastrow, צִמְחָא 1",
+      "Rashi on Chullin 48a:15:2",
+      "Steinsaltz on Chullin 48a:15",
+      "Jastrow, מוּגְלָא 1",
+      "Rashi on Chullin 47b:8:2"
+    ],
+    "generatedAt": "2026-11-12T08:04:21.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צמחין</strong> - היינו מוגלא:"
+  },
+  "Rashi on Chullin 48a:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:04:45.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בעי מר אומצא</strong> - רוצה היה לדעת אם יכשירנה ואם לאו:"
+  },
+  "Rashi on Chullin 48a:15:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:15:1",
+      "Rashi on Chullin 48a:15:2",
+      "Rashi on Chullin 48a:15:4",
+      "Rashi on Chullin 48a:15:5"
+    ],
+    "generatedAt": "2026-11-12T08:05:16.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית לי פריטי</strong> - דוחהו היה:"
+  },
+  "Rashi on Chullin 48a:15:4": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:15:1",
+      "Rashi on Chullin 48a:15:2",
+      "Rashi on Chullin 48a:15:3",
+      "Rashi on Chullin 48a:15:5",
+      "Steinsaltz on Chullin 48a:15"
+    ],
+    "generatedAt": "2026-11-12T08:06:16.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקפן אנא</strong> - הטבחים יקיפו לי באמנה כמו החנווני מקיף לשון אמנה:"
+  },
+  "Rashi on Chullin 48a:15:5": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:15:1",
+      "Rashi on Chullin 48a:15:2",
+      "Rashi on Chullin 48a:15:3",
+      "Rashi on Chullin 48a:15:4"
+    ],
+    "generatedAt": "2026-11-12T08:07:10.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:15:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליה לא סבירא ליה</strong> - לרבי יוחנן לא סבירא ליה לאכשורי ומיטרף נמי לא הוה טריף לה ניהלייהו דלא שמיעא ליה מרביה:"
+  },
+  "Rashi on Chullin 48a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:08:24.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסגינן</strong> - אזלינן. מסגי לשון פוסע:"
+  },
+  "Rashi on Chullin 48a:1:1": {
+    "dependsOn": [
+      "Jastrow, שַׁלְפּוּחִית 1",
+      "Rashi on Chullin 48b:9:1",
+      "Rashi on Chullin 48b:8:3",
+      "Chullin 55b:8",
+      "Rashi on Chullin 55b:8:1",
+      "Rashi on Chullin 48a:1:2",
+      "Rashi on Chullin 47b:9:1",
+      "Tosafot on Chullin 48a:1:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T07:20:32.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלפוחית</strong> - קרום שהולד מונח בה ובלע\"ז מרי\"ץ. לקמן בפירקין <span class=\"parenthesized\">(חולין דף נה:)</span> תניא היא האם היא טרפחת היא שלפוחית:"
+  },
+  "Rashi on Chullin 48a:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:1:1",
+      "Rashi on Chullin 48a:1:2",
+      "Chullin 48a:1",
+      "Tosafot on Chullin 48a:1:1",
+      "Tosefta Chullin 3:4"
+    ],
+    "generatedAt": "2026-11-12T07:21:48.018Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:1:2"
+    ],
+    "sourceText": "ואסרו להם לא גרסינן ובשני הרגלים לא אמרו להם כלום ובשלישי עמדו למנין ורבו המתירין והתירוהו:"
+  },
+  "Rashi on Chullin 48a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:23:26.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הסמוכה לדופן</strong> - דבוקה בצלעות:"
+  },
+  "Rashi on Chullin 48a:2:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:2:1",
+      "Rashi on Chullin 48a:2:2",
+      "Rashi on Chullin 48a:2:3"
+    ],
+    "generatedAt": "2026-11-12T07:24:10.591Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין חוששין לה</strong> - שמא ניקבה אלא תלינן ריעותא בדופן ואמרינן דופן זה מכה היתה בו וכשחיתה קלטה הריאה אצלה:"
+  },
+  "Rashi on Chullin 48a:2:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:2:1",
+      "Rashi on Chullin 48a:2:2",
+      "Rashi on Chullin 48a:2:3",
+      "Rashi on Chullin 48a:2:4",
+      "Rashi on Chullin 48a:1:1",
+      "Rashi on Chullin 48a:1:2",
+      "Rashi on Chullin 48a:6:1"
+    ],
+    "generatedAt": "2026-11-12T07:25:06.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העלתה</strong> - הריאה:"
+  },
+  "Rashi on Chullin 48a:2:4": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:2:1",
+      "Rashi on Chullin 48a:2:2",
+      "Rashi on Chullin 48a:2:3",
+      "Rashi on Chullin 48a:2:4",
+      "Jastrow, צֶמַח I 1",
+      "Steinsaltz on Chullin 48a:2",
+      "Steinsaltz comment #1 on Chullin 48a:2",
+      "Steinsaltz comment #2 on Chullin 48a:2",
+      "Steinsaltz comment #3 on Chullin 48a:2",
+      "Sefer HeArukh, Letter Tzadi 95",
+      "Rashi on Chullin 48a:9:1",
+      "Rashi on Chullin 48a:9:2",
+      "Rashi on Chullin 46b:12:3"
+    ],
+    "generatedAt": "2026-11-12T07:28:15.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צמחין</strong> - מנל\"ץ סביבות סמיכתה לדופן הואיל וחזינן בה ריעותא תלינן למכה בדידה:"
+  },
+  "Rashi on Chullin 48a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:28:41.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחליש פומיה</strong> - פיו חדוד ודק וחותך יפה שלא יקרע קרום הריאה במושכו אותה מן הדופן:"
+  },
+  "Rashi on Chullin 48a:4:1": {
+    "dependsOn": [
+      "Chullin 48a:4",
+      "Rashi on Chullin 48a:3:1",
+      "Steinsaltz on Chullin 48a:4",
+      "Jastrow, בְּדִיקוּתָא 1"
+    ],
+    "generatedAt": "2026-11-12T07:31:24.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיק לה בפשורי</strong> - לאחר שפירקוה ומצאו מכה בדופן מנפח בה אי מבצבצא מיא טרפה שהרי ניקבה:"
+  },
+  "Rashi on Chullin 48a:5:1": {
+    "dependsOn": [
+      "Chullin 48a:5",
+      "Rashi on Chullin 48a:5:2",
+      "Rashi on Chullin 49a:6:2",
+      "Rashi on Chullin 48a:1:1",
+      "Rashi on Chullin 48a:2:1",
+      "Steinsaltz on Chullin 48a:5:1",
+      "Steinsaltz on Chullin 48a:5"
+    ],
+    "generatedAt": "2026-11-12T07:34:25.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג בשלמא הכא תלינן בדופן וכשרה ולא גרסינן אי איכא ריעותא בדופן</strong> - כלומר בשלמא הכא בדיק לה דאי לא מבצבצא לא אמרינן ניקבה ונסתמה דכיון דאיכא למיתלייה בדופן תלינן בה וכשרה:"
+  },
+  "Rashi on Chullin 48a:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:5:1",
+      "Rashi on Chullin 48a:5:2"
+    ],
+    "generatedAt": "2026-11-12T07:35:18.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הכא</strong> - גבי תרתי אוני מכדי סרכא זו מחמת מכה היתה הי מינייהו דאנקיב טרפה והאי דלא מפקא זיקא קרום עלה בה וסתמה:"
+  },
+  "Rashi on Chullin 48a:6:1": {
+    "dependsOn": [
+      "Chullin 48a:6",
+      "Chullin 48a:1",
+      "Chullin 48a:2"
+    ],
+    "generatedAt": "2026-11-12T07:36:14.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי אמר ר\"נ הכי</strong> - דהעלתה צמחין חוששין לה מכלל דאי פשיטא לן דניקבה הריאה לא מהני לה סתימת הדופן:"
+  },
+  "Rashi on Chullin 48a:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:6:1",
+      "Chullin 48a:5",
+      "Steinsaltz on Chullin 48a:6:1",
+      "Steinsaltz on Chullin 48a:6"
+    ],
+    "generatedAt": "2026-11-12T07:37:56.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם במקום רביתא</strong> - במקום שהריאה והדופן גדלין כאחד וסמוכין תמיד דלא מיפרק ההיא סירכא הילכך כשרה וכי אמר ר\"נ חוששין לה למעלה ברוחב החלל כנגד האומא הגדולה דכיון דרחוקה הריאה מן הדופן מיפרקא ההיא סתימה ואפילו הכי כי לא העלתה צמחים אמר אין חוששין לה דתלי לה בדופן. ובהא כאבימי סבירא לן דחוששין לה ולחומרא אזלינן בדאורייתא:"
+  },
+  "Rashi on Chullin 48a:7:1": {
+    "dependsOn": [
+      "Chullin 48a:7",
+      "Rashi on Chullin 48a:6:1",
+      "Rashi on Chullin 48a:6:2"
+    ],
+    "generatedAt": "2026-11-12T07:39:59.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום חיתוכי דאוני</strong> - שהן סמוך לצואר במיצר החלל. ובהא הילכתא כרב נחמן דליכא דפליג עליה:"
+  },
+  "Rashi on Chullin 48a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:40:32.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסביך בבישרא</strong> - שנסבכת ונאחזת הריאה בבשר שבין ב' הצלעות דהוי סתימה שרירא דלא מיפרקא אבל בצלעות עצמן אין זו סירכא קיימת:"
+  },
+  "Rashi on Chullin 48a:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:8:1",
+      "Chullin 48a:8",
+      "Steinsaltz on Chullin 48a:8",
+      "Rashi on Chullin 48a:9:1"
+    ],
+    "generatedAt": "2026-11-12T07:41:47.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא נקב הוא</strong> - ואפילו הכי כי סביך מכשרת לה. אלמא דמהניא סתימה לריאה שנקבה:"
+  },
+  "Rashi on Chullin 48a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:44:43.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניקב</strong> - הגיד של אדם:"
+  },
+  "Rashi on Chullin 48a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:45:15.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסול</strong> - משום כרות שפכה:"
+  },
+  "Rashi on Chullin 48a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:48:30.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שהוא שותת</strong> - ואינו יורה כחץ וקי\"ל <span class=\"parenthesized\">(נדה דף מג.)</span> כל שכבת זרע שאינו יורה כחץ אינו מוליד:"
+  },
+  "Rashi on Chullin 48a:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:48:54.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נסתם</strong> - הנקב אחרי כן:"
+  },
+  "Rashi on Chullin 48a:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T07:49:22.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשר</strong> - לבא בקהל מפני שהוא מוליד:"
+  },
+  "Tosafot on Chullin 48a:10:1": {
+    "dependsOn": [
+      "Chullin 48a:10",
+      "Rashi on Chullin 48a:10:1",
+      "Tosafot on Chullin 48a:8:1",
+      "Rashba on Chullin 48a:8:1",
+      "Steinsaltz comment #1 on Chullin 48a:10",
+      "Chullin 47b:9",
+      "Chullin 47b:10",
+      "Tosafot on Chullin 46b:12:2"
+    ],
+    "generatedAt": "2026-11-12T07:52:24.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא למעוטי קרום שעלה מחמת מכה בריאה</strong> - ה\"נ הוה מצי למימר למעוטי שלא במקום רביתייהו:"
+  },
+  "Tosafot on Chullin 48a:14:1": {
+    "dependsOn": [
+      "Chullin 48a:14",
+      "Chullin 48a:6",
+      "Chullin 48a:2"
+    ],
+    "generatedAt": "2026-11-12T08:02:53.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העלתה צמחין מהו אמר ליה כשרה</strong> - והא דאמר לעיל דחוששין לה היינו בסרוכה לדופן דמוכחא מילתא שהסירכא מחמת נקב:"
+  },
+  "Tosafot on Chullin 48a:1:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:1:1"
+    ],
+    "generatedAt": "2026-11-12T07:23:00.049Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלפוחית</strong> - היינו במקום שהולד מונח אבל ניקב כיס השתן או ניטל טרפה ומה שלא הוזכר לא במשנה ולא בגמרא שמא הוי בכלל ניקבו הדקין:"
+  },
+  "Tosafot on Chullin 48a:3:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:3:1"
+    ],
+    "generatedAt": "2026-11-12T07:29:57.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מייתינן סכינא דחליש פומיה</strong> - דהיינו כשלא העלתה צמחים אבל העלתה צמחים אפילו איכא ריעותא בדופן לא תלינן בדופן:"
+  },
+  "Tosafot on Chullin 48a:4:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:4:1"
+    ],
+    "generatedAt": "2026-11-12T07:32:20.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב נחמיה בריה דרב יוסף בדיק לה בפשורי</strong> - אאיכא ריעותא בדופן קאי <span class=\"rashi-quotation\">כדפירש בקונטרס</span> ועתה נוהגין להטריף כל הסירכות ואין בודקין אותן לא בדופן ולא בפשורי:"
+  },
+  "Tosafot on Chullin 48a:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48a:8:1",
+      "Rashi on Chullin 48a:8:2"
+    ],
+    "generatedAt": "2026-11-12T07:44:04.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבינא והוא דסביך בבשרא</strong> - פירוש נאחז ומסובך היטב בבשר כמו צמר מסובך ולהכי נקט סביך ולא נקט סריך ובתשובת רב שר שלום גאון כתב דבין סריך וסביך ובין לא סביך וסריך כשרה ולית הלכתא כרבינא אלא כרב נחמן דאמר ריאה שניקבה ודופן סותמתה כשרה ומשמע מתוך דבריו דרבינא לא בא לפרש דבריו של רב נחמן אלא סברא דנפשיה קאמר וכן נראה מדפריך עליה דהעלתה צמחים חוששין לה ומי אמר רב נחמן הכי והאמר רב נחמן ריאה שניקבה ודופן סותמתה כשרה ולא משני הא דסביך הא דלא סביך ועוד מדפריך רב יוסף לרבינא ולא לרב נחמן משמע דלרב נחמן לא בעי לא סביך ולא סריך ואין נקב פוסל שם שדופן סותמתו ומיהו לא ידעינן מנא ליה שלא יהא הלכה כרבינא שהוא בתרא ושמא אין זה רבינא סתמא שהוא בכל הש\"ס שהיה חבירו של רב אשי שנולד ביום שמת רבא מדבא רב יוסף להשיב על דבריו ובהלכות טרפות של רבינו גרשום כתב דריאה הסמוכה לדופן אף במקום רביתייהו דאוני וסרוכה וסבוכה בבשר שבין הצלעות או בצלעות עצמן בדקינא להו בנפיחה עם הצלעות או גוררין הבשר עם הסירכא ומנפחין לה אם עולה בנפיחה כשרה דכיוון שהסירכא קיימת וסותמת כל הנקב לא יתפרק עוד כיון דבמקום רביתייהו קיימא <span class=\"rashi-quotation\">ובקונטרס פירש</span> דסביך בבשרא היינו דוקא בבשר שבין הצלעות אבל בצלעות עצמן לא:"
+  }
+}

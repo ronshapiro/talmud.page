@@ -1,0 +1,446 @@
+{
+  "Rashi on Chullin 44b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:29:05.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה הרואה טרפה לעצמו</strong> - כשנולד ספק טרפות בבהמתו ונראה בו טעם לאיסור וטעם להיתר ואינו חס עליה ואוסרה:"
+  },
+  "Rashi on Chullin 44b:10:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:10:1"
+    ],
+    "generatedAt": "2026-11-12T01:29:47.060Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרואה טרפה לעצמו</strong> - ודאי שונא מתנות אחרים הוא שאף על שלו אינו חומד להכריע להיתר:"
+  },
+  "Rashi on Chullin 44b:11:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:11:2",
+      "Rashi on Chullin 44b:10:1",
+      "Rashi on Chullin 44b:10:2"
+    ],
+    "generatedAt": "2026-11-12T01:35:19.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמש תלמידי חכמים</strong> - גמר לתרץ טעמי המשנה ומשניות הסותרות זו את זו והיינו גמרא:"
+  },
+  "Rashi on Chullin 44b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:36:03.122Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יגיע כפיך כי תאכל</strong> - דכיון דעל שלו אינו חומד כל שכן שאינו חומד בשל אחרים לגנוב ולגזול:"
+  },
+  "Rashi on Chullin 44b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:36:24.873Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזמני ליה</strong> - לאכול אצלם:"
+  },
+  "Rashi on Chullin 44b:1:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:1:2",
+      "Steinsaltz on Chullin 44b:1",
+      "Steinsaltz comment #1 on Chullin 44b:1"
+    ],
+    "generatedAt": "2026-11-12T00:54:54.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב עוביה</strong> - יש אומרים רוב עובי הדופן אע\"פ שלא הגיע לחלל ושיבוש הוא דאם כן חמור הקנה מן הוושט דאילו וושט ניקב עור החיצון בלא עור הפנימי כשר עד שינקב לחלל. רוב עוביה כלומר כי משערינן רובה ברוב עוביה משערינן ועובי הקנה היינו מן העור ולצואר דאילו מן הראש ולחזה הוי אורך ולרוחב הצואר הוי רוחב הקנה ולעובי הצואר קרי נמי עובי הקנה בשיעור זה נמדד עובי התנוך וקודם שיגיע לחצי חלל הוי רוב עוביה עם הדפנות והחלל מפני שדופן הקנה עב מלמעלה ולצד הצואר אינו אלא קרום דק וסתמא כשנפסק הקנה מלמעלה למטה הוא נפסק ומהני עובי התנוך לאשלומי לרובא ובמיעוט התחתון הוי חצי החלל או רובו:"
+  },
+  "Rashi on Chullin 44b:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:1:1"
+    ],
+    "generatedAt": "2026-11-12T00:55:31.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב חללה</strong> - אינה טרפה עד שיפסק רוב החלל ועובי התנוך אינו משלים לרוב:"
+  },
+  "Rashi on Chullin 44b:1:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:1:1",
+      "Rashi on Chullin 44b:1:2",
+      "Rashi on Chullin 44b:1:3"
+    ],
+    "generatedAt": "2026-11-12T00:56:16.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרי לה ברוב חללה</strong> - אליבא דרב פליגי אמוראי:"
+  },
+  "Rashi on Chullin 44b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:59:00.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרה</strong> - רב לקמיה דרבה:"
+  },
+  "Rashi on Chullin 44b:2:2": {
+    "dependsOn": [
+      "Bava Kamma 90b:15",
+      "Rashi on Chullin 44b:2:1",
+      "Rashi on Chullin 44b:1:1",
+      "Rashi on Chullin 44b:1:2",
+      "Rashi on Chullin 44b:1:3"
+    ],
+    "generatedAt": "2026-11-12T01:01:03.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתליסר איסתרי פשיטי</strong> - איסתרי סלעי מדינה שהם פשוטים וקלים. איסתרי סתם היינו סלעין צורי שהסלע ארבע דינרים ואיסתרי פשיטי הוא סלע מדינה שמינית שבסלע צורי דהיינו חצי דינר כדאמרינן בהחובל את חבירו <span class=\"parenthesized\">(ב\"ק צ:)</span> איסתרא פלגא דזוזא וקרי ליה התם סלע מדינה:"
+  },
+  "Rashi on Chullin 44b:3:1": {
+    "dependsOn": [
+      "Chullin 44b:3"
+    ],
+    "generatedAt": "2026-11-12T01:01:46.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מיסר אסר</strong> - דהכי הוה בעי למיבדקיה ברוב עוביה ולא שבקוה תלמידים ושדרוה לקמיה דרבה:"
+  },
+  "Rashi on Chullin 44b:6:1": {
+    "dependsOn": [
+      "Chullin 44b:6",
+      "Rashi on Chullin 47b:7:1"
+    ],
+    "generatedAt": "2026-11-12T01:06:16.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתליא בסברא</strong> - דהתם איכא לספוקי דלמא לא הוי סברא מעליא והכא רבה אגמריה סמוך דהכי גמיר מרביה דפסוקת הגרגרת ברוב חללה. מלתא דתליא בסברא כגון מקיפין בריאה דאיכא למימר דלמא לא מידמו חזותא שפיר וכגון דמיא לבשרא ודמיא לכבדא ודמיא לביעתא ודמיא למוריקא דאיכא מינייהו כשרות ואיכא מינייהו טרפות ופעמים שאדם טועה במראותיהן:"
+  },
+  "Rashi on Chullin 44b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:07:04.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום חשדא</strong> - דלא לימרו משום דשריא ניהליה מוזיל גביה ונראה כנוטל שכר על הוראתו:"
+  },
+  "Rashi on Chullin 44b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:07:45.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דן את הדין</strong> - על שדה או על טלית בין זה לזה:"
+  },
+  "Rashi on Chullin 44b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:08:10.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן עדים שהעידו</strong> - על שדה או על טלית שהן של פלוני:"
+  },
+  "Rashi on Chullin 44b:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:08:30.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן רשאים ליקח</strong> - אותו חפץ:"
+  },
+  "Rashi on Chullin 44b:7:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:09:04.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרחק מן הכיעור</strong> - שלא יאמרו בשביל כך זיכהו לזה שיתננה לו בזול:"
+  },
+  "Rashi on Chullin 44b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:16:47.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי בוכרא</strong> - כשהיה כהן מביא לפניו בכור לראות מומו והיה מתירו לא היה לוקח ממנו מבשר אותו בכור. בכור נוהג בזמן הזה וכשהוא תם אינו ראוי לכלום דשוחט קדשים בחוץ:"
+  },
+  "Rashi on Chullin 44b:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:8:1",
+      "Rashi on Chullin 44b:8:2",
+      "Rashi on Chullin 44b:8:3",
+      "Rashi on Chullin 44b:3:1",
+      "Rashi on Chullin 44b:6:1",
+      "Rashi on Chullin 44b:9:1",
+      "Rashi on Chullin 44b:9:2",
+      "Rashi on Chullin 44b:9:3",
+      "Rashi on Chullin 44b:9:4",
+      "Gittin 57a:1",
+      "Gittin 58a:1",
+      "Gittin 58a:2",
+      "Gittin 58a:3",
+      "Gittin 58a:4",
+      "Gittin 58a:5",
+      "Gittin 58a:6",
+      "Gittin 58a:7",
+      "Gittin 58a:8",
+      "Gittin 58a:9",
+      "Gittin 58a:10",
+      "Gittin 58a:11",
+      "Gittin 58a:12",
+      "Gittin 58a:13",
+      "Gittin 58a:14",
+      "Gittin 58a:15",
+      "Gittin 58a:16",
+      "Gittin 58a:17",
+      "Gittin 58a:18",
+      "Gittin 58a:19",
+      "Gittin 58a:20",
+      "Gittin 58a:21",
+      "Gittin 58a:22",
+      "Gittin 58a:23",
+      "Gittin 57b:1",
+      "Gittin 57b:2",
+      "Gittin 57b:3",
+      "Gittin 57b:4",
+      "Gittin 57a:11",
+      "Gittin 57a:12",
+      "Gittin 57a:13",
+      "Gittin 57a:14",
+      "Gittin 57a:15",
+      "Gittin 57a:16",
+      "Gittin 57a:17",
+      "Gittin 57a:18",
+      "Gittin 57a:22",
+      "Gittin 57a:23",
+      "Gittin 57a:24",
+      "Gittin 57a:25",
+      "Gittin 57a:26",
+      "Gittin 57a:19",
+      "Gittin 57a:20",
+      "Gittin 57a:21",
+      "Gittin 57a:2",
+      "Gittin 57a:3",
+      "Gittin 57a:4",
+      "Gittin 57a:5",
+      "Gittin 57a:6",
+      "Gittin 57a:7",
+      "Gittin 57a:8",
+      "Gittin 57a:9",
+      "Gittin 57a:10",
+      "Gittin 57b:5",
+      "Gittin 57b:6",
+      "Gittin 57b:7",
+      "Gittin 57b:8",
+      "Gittin 57b:9",
+      "Gittin 57b:10",
+      "Gittin 57b:11",
+      "Gittin 57b:12",
+      "Gittin 57b:13",
+      "Gittin 57b:14",
+      "Gittin 57b:15",
+      "Gittin 57b:16",
+      "Gittin 57b:17",
+      "Gittin 57b:18",
+      "Gittin 57b:19",
+      "Gittin 57b:20",
+      "Gittin 57b:21",
+      "Gittin 57b:22",
+      "Gittin 57b:23",
+      "Gittin 57b:24",
+      "Gittin 57b:25",
+      "Chidushei Halachot on Chullin 44b:4",
+      "Rashi on Berakhot 44a:6:1",
+      "Rashi on Berakhot 44a:6:2",
+      "Rashi on Berakhot 44a:6:3",
+      "Berakhot 44a:6",
+      "Rashi on Chullin 44b:1:1",
+      "Rashi on Chullin 44b:1:2",
+      "Rashi on Chullin 44b:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-12T01:23:11.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:8:2"
+    ],
+    "sourceText": "רב חסדא כהן הוה כדאמרינן בגיטין בהניזקין <span class=\"parenthesized\">(גיטין דף נז)</span> שמונים זוגים אחים כהנים נשואין שמונים זוגות אחיות כהנות:"
+  },
+  "Rashi on Chullin 44b:8:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:8:1",
+      "Rashi on Chullin 44b:8:2",
+      "Rashi on Chullin 44b:8:3",
+      "Chullin 44b:8",
+      "Rashi on Chullin 44b:9:1",
+      "Rashi on Chullin 44b:9:2",
+      "Rashi on Chullin 44b:9:3",
+      "Rashi on Chullin 44b:9:4",
+      "Rashi on Chullin 44a:1:1",
+      "Rashi on Chullin 44a:2:1",
+      "Rashi on Chullin 44b:7:1",
+      "Rashi on Chullin 44b:7:2",
+      "Rashi on Chullin 44b:7:3",
+      "Rashi on Chullin 44b:7:4",
+      "Rashi on Chullin 44b:7:5",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Chullin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T01:25:25.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:8:3"
+    ],
+    "sourceText": "בכור נמכר באומד ולא במשקל כדאמרינן בבכורות <span class=\"parenthesized\">(דף לא.)</span> כל פסולי המוקדשין נשחטין ונמכרין באיטליז ונמכרין בליטרא חוץ מן הבכור והמעשר:"
+  },
+  "Rashi on Chullin 44b:9:1": {
+    "dependsOn": [
+      "Chullin 44b:9",
+      "Rashi on Chullin 44b:9:1",
+      "Rashi on Chullin 44b:9:2",
+      "Rashi on Chullin 44b:9:3",
+      "Rashi on Chullin 44b:9:4"
+    ],
+    "generatedAt": "2026-11-12T01:26:48.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקלא מוכח</strong> - שהכל רואין שהוא שוקל ליטרא בדינר כמותו לאחרים ונותן המעות מיד:"
+  },
+  "Rashi on Chullin 44b:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:9:2",
+      "Rashi on Chullin 44b:9:1",
+      "Rashi on Chullin 44b:9:3",
+      "Rashi on Chullin 44b:9:4"
+    ],
+    "generatedAt": "2026-11-12T01:27:26.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא</strong> - במה יכולין לחשדני:"
+  },
+  "Rashi on Chullin 44b:9:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:9:2",
+      "Rashi on Chullin 44b:9:3",
+      "Rashi on Chullin 44b:9:4"
+    ],
+    "generatedAt": "2026-11-12T01:27:56.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום אומצא מעלייתא</strong> - ששוקלין לי הליטרא ממיטב הבשר:"
+  },
+  "Rashi on Chullin 44b:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:28:30.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל יומא נמי</strong> - חולקין לי כבוד ומוכרין לי מן המיטב:"
+  },
+  "Tosafot on Chullin 44b:10:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44b:10:1",
+      "Rashi on Chullin 44b:10:2",
+      "Steinsaltz comment #1 on Chullin 44b:10",
+      "Steinsaltz comment #2 on Chullin 44b:10"
+    ],
+    "generatedAt": "2026-11-12T01:34:21.328Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזהו תלמיד חכם</strong> - דמהדרי ליה אבידתו בטביעת עין זה הרואה טרפה לעצמו:"
+  },
+  "Tosafot on Chullin 44b:3:1": {
+    "dependsOn": [
+      "Niddah 20b:11",
+      "Niddah 20b:12",
+      "Niddah 20b:13",
+      "Niddah 20b:14",
+      "Niddah 20b:15",
+      "Niddah 20b:16",
+      "Niddah 20b:17",
+      "Niddah 20b:18",
+      "Niddah 20b:19",
+      "Niddah 20b:20",
+      "Rashi on Niddah 20b:19:1",
+      "Tosafot on Niddah 20b:19:1",
+      "Chullin 49a:3"
+    ],
+    "generatedAt": "2026-11-12T01:04:32.447Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי עביד הכי והא תניא חכם שטימא כו'</strong> - וא\"ת דלקמן <span class=\"parenthesized\">(חולין דף מט.)</span> גבי ההוא מחטא דאישתכח בסמפונא דכבדא הונא מר בריה דרב אידי טריף רב אדא בר מניומי מכשיר וי\"ל דהתם אגמריה סמיך כדאמרינן בסוף פ\"ב דנדה <span class=\"parenthesized\">(דף כ:)</span> גבי ילתא דאייתית דמא לקמיה דרבה בר בר חנה וטמי לה ואייתית קמיה דרב יצחק בר' יהודה ודכי לה ופריך עליה מחכם שטימא כו' ומשני דמעיקרא טמי טמוי לה כיון דאמרה כל יומא הוה דכי לי רבה בב\"ח כה\"ג וההוא יומא חש בעיניה הוה דכי לה ובעי התם כזה התיר לי פלוני חכם מהו פירוש נאמנת או אינה נאמנת ובעי למיפשט מעובדא דילתא דנאמנת ומשני רב יצחק בר' יהודה אגמריה סמך ופירש שם בקונטר' דהדר ביה מאידך שנויא דשני מעיקרא טמויי טמי לה דכיון דאגמריה סמך רשאי להתיר מה שאסר חבירו וכי אמר דאין חבירו רשאי להתיר היינו מסברא ולפירושו בשמעתין נמי למאי דמסיק דאגמריה סמך לא צריך למאי דמשני רב לא אסר ולא מידי אלא דהאמת מתרץ ולכאורה היה נראה פשט ההלכה דנדה אגמריה סמך ולכן האמין לדבריה ולעיל צריכין לשנוייא קמא דמעיקרא טמויי טמי לה וההיא עובדא דלקמן <span class=\"parenthesized\">(חולין דף מט.)</span> דמחט שנמצאת בסמפונא דכבדא שמא היו שניהם בבית המדרש ונשאלה השאלה לפניהם לשניהם אי נמי לא ידע שאסר חבירו:"
+  },
+  "Tosafot on Chullin 44b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T01:16:14.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן העדים שהעידו כולם רשאין ליקח כו'</strong> - דשנים אינם חשודים כדאמרינן בפ\"ב דיבמות <span class=\"parenthesized\">(דף כה:)</span> ומ\"מ לבעל נפש טוב להרחיק ואם תאמר ועדים היאך רשאין ליקח כו' בשלמא חתומים על גט אשה או על שטר מקח לא חשו חכמים למעשה דמעשה לא עבדי אבל דבורא אמרי כדאמרינן בפרק התקבל <span class=\"parenthesized\">(גיטין דף סז.)</span> אמר לעדים אמרו לסופר לכתוב ולעדים ויחתמו לא תעשה בישראל כזאת דחיישינן שמא תשכיר עדים וכן מיאנה או שחלצה בפניו היאך ישאנה הא לא עבדי התם מעשה ויש לומר דכל דבר שנגמר על פיהם חשיב מעשה אבל התם שאינו אלא דבור בעלמא שאומר מן הבעל אל הסופר לכתוב ולעדים לחתום ואפשר שהם לא יעשו ולא תתגרש וגם אם אין גומרין הדבר אינם חוששין ואם תאמר דן את הדין דהכא היאך רשאי ליקח והלא יחיד הוה מדקתני דן דמכח מתני' דבכורות <span class=\"parenthesized\">(דף כח:)</span> דתנן דן את הדין מייתי בפ\"ק דסנהדרין <span class=\"parenthesized\">(דף ו.)</span> דשנים שדנו דיניהם דין ולאו דוקא ב' אלא ה\"ה אחד ואין לומר דדיין לא חשיד דהא אמרינן בפ\"ב דיבמות <span class=\"parenthesized\">(דף כה:)</span> החכם שאסר את האשה בנדר דלא ישאנה ושמא חיישינן התם טפי שמא עיניו נתן בה ועוד יש לומר דההיא דבכורות מוכחא טפי דביחיד איירי דקתני רישא מי שאינו מומחה וראה את הבכור כו' בפרק עד כמה <span class=\"parenthesized\">(בכורות דף כח:)</span> ולהכי דייק מינה בסנהדרין:"
+  }
+}

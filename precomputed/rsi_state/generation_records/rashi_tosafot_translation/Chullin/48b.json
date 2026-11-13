@@ -1,0 +1,423 @@
+{
+  "Rashi on Chullin 48b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:47:09.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבנן טרופאי</strong> - הנך רבנן דלעיל רבי מני וריש לקיש ורבי שמעון דטרפי למחט שנמצאת בריאה:"
+  },
+  "Rashi on Chullin 48b:10:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:10:1",
+      "Rashi on Chullin 48b:10:3"
+    ],
+    "generatedAt": "2026-11-12T08:47:44.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשמעתייהו</strong> - דמחזקי ריעותא מספיקא דחיישינן שמא דרך הוושט נכנסה תחלה וניקבה כרס או דקין ויצתה:"
+  },
+  "Rashi on Chullin 48b:10:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:10:1",
+      "Rashi on Chullin 48b:10:2"
+    ],
+    "generatedAt": "2026-11-12T08:48:30.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דבסמפונא רבה אישתכח</strong> - מי מכוונה לאותו סמפון אם דרך וושט נכנסה הלכך דברים ניכרים על כרחנו דבסמפונא נקט ועל דרך הקנה ובא לסמפונות הריאה:"
+  },
+  "Rashi on Chullin 48b:11:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:11:2",
+      "Rashi on Chullin 48b:4:1",
+      "Rashi on Chullin 48b:7:1",
+      "Rashi on Chullin 48b:8:1",
+      "Rashi on Chullin 48b:9:4",
+      "Rashi on Chullin 48a:5:1"
+    ],
+    "generatedAt": "2026-11-12T08:51:35.732Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה טריף מר</strong> - בתמיה. כלומר וכי נקובת הכבד טרפה הוא:"
+  },
+  "Rashi on Chullin 48b:11:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:11:1"
+    ],
+    "generatedAt": "2026-11-12T08:52:46.888Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קופא לגיו</strong> - אם ראשה העב שהיא נקובה בו נחבא בתוך הכבד וחודה שקורין פונט\"ה יוצא לתוך חלל הבהמה ודאי סמפונא נקט ואח\"כ ניקב חודה את הסמפון ויצא לכבד וממנו לחוץ ואי קופא לבר לחלל הבהמה ופיה לתוך הכבד ודאי דרך הוושט נכנסה תחלה וניקבה הדקין ויצתה ונכנס פיה לכבד:"
+  },
+  "Rashi on Chullin 48b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:53:30.038Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באלימתא</strong> - מחט עבה שאינה יכולה לנקב דרך קופא שלה אבל בקטינתא כגון מחטין שלנו שמנקבין בשר אפילו דרך קופא שלהן:"
+  },
+  "Rashi on Chullin 48b:1:1": {
+    "dependsOn": [
+      "Chullin 48b:1",
+      "Rashi on Chullin 48b:1:2",
+      "Steinsaltz on Chullin 48b:1"
+    ],
+    "generatedAt": "2026-11-12T08:09:31.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגלדאי</strong> - רצענין:"
+  },
+  "Rashi on Chullin 48b:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:1:1",
+      "Rashi on Chullin 48b:1:2",
+      "Jastrow, כַּנְדָּא II 1",
+      "Steinsaltz on Chullin 48b:1",
+      "Sefer HeArukh, Letter Kaf 187",
+      "Chullin 48a:15",
+      "Rashi on Chullin 48a:15:1"
+    ],
+    "generatedAt": "2026-11-12T08:11:15.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנדי כנדי</strong> - צמחין גדולים כבדים בריאה:"
+  },
+  "Rashi on Chullin 48b:2:1": {
+    "dependsOn": [
+      "Chullin 48b:1",
+      "Jastrow, טִינָּר ² 1",
+      "Rashi on Chullin 48b:1:1",
+      "Rashi on Chullin 48b:1:2",
+      "Steinsaltz on Chullin 48b:2"
+    ],
+    "generatedAt": "2026-11-12T08:12:16.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טינרי</strong> - צמחים גדולים מכנדי וכבר הוקשו כסלע ואלו הן אותן המצוין בבהמות שלנו בריאה ואין מראיהן דומה לריאה אלא דומין כמראה מוגלא ולאו היינו אטום בריאה דאטום אין שם צמח ואינו משתנה מן הריאה אלא שאין עולה בנפיחה:"
+  },
+  "Rashi on Chullin 48b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:12:43.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחט שנמצאת בריאה</strong> - ואין הריאה נקובה מבחוץ ואין הרוח יוצא ממנה:"
+  },
+  "Rashi on Chullin 48b:4:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:4:2",
+      "Rashi on Chullin 48b:4:3"
+    ],
+    "generatedAt": "2026-11-12T08:13:28.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חסרון מבפנים</strong> - שהברזל אוכל הבשר סביבותיו כששוהה שם ומחסרו:"
+  },
+  "Rashi on Chullin 48b:4:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:4:1",
+      "Rashi on Chullin 48b:4:3",
+      "Rashi on Chullin 48b:4:4"
+    ],
+    "generatedAt": "2026-11-12T08:14:53.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג לא דכולי עלמא לא שמיה חסרון</strong> - דהא הכי אוקימנא לעיל דאכשרי ריאה שנשפכה כקיתון ועוד אי גרסי' דכ\"ע שמיה חסרון אי נמי סמפונא נקט ואתא כדמפרש מ\"מ כיון שנמצא בבשר הריאה אי אפשר בלא חסרון כדפרי':"
+  },
+  "Rashi on Chullin 48b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:17:27.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמפונא נקט ואתא</strong> - דרך הקנה נכנס ובא בסמפונות ומן הסמפונות לבשר ומ\"מ קרום החיצון לא ניקב ואע\"פ שאין דרך הקנה לבלוע אפ\"ה הואיל דאיתא לריאה קמן ולא חזינן דאינקבא ע\"כ סמפונא נקט ועל ריעותא דלא חזינן לא מחזקינן:"
+  },
+  "Rashi on Chullin 48b:4:4": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:4:1",
+      "Rashi on Chullin 48b:4:2",
+      "Rashi on Chullin 48b:4:3",
+      "Chullin 48b:4",
+      "Chullin 48b:8",
+      "Rashi on Chullin 48b:1:1",
+      "Rashi on Chullin 48b:2:1"
+    ],
+    "generatedAt": "2026-11-12T08:19:07.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקובי נקיב</strong> - דרך הוושט בא ונכנס שאין דרך הקנה לבלוע ונקבה את הדקין ויצאה ונקבה את קרום הריאה ונכנס לתוכה: והלכתא כהנך רבנן דמכשרי דהא רבי יוחנן וריש לקיש הלכה כרבי יוחנן ועוד דקם ליה בשיטתייהו רבי אמי ורב אשי דאמרי לקמן אי קופא לגיו סמפונא נקט ואתא אלמא עבידא קנה שיכנס לתוכו מחט ולא מחזקינן איסורא הואיל ואין נקב ניכר בו ודוקא כי אתא כולה ריאה לקמן אבל נחתכה קודם שבא לפנינו חיישינן דלמא אי הוה ריאה קמן הוה נקובה והכי פסק רבי אמי לקמן בשמעתין:"
+  },
+  "Rashi on Chullin 48b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:19:35.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחיתוכא</strong> - לאחר שנחתכה נמצאת באחד החתיכות:"
+  },
+  "Rashi on Chullin 48b:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:5:1"
+    ],
+    "generatedAt": "2026-11-12T08:20:11.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבר לאכשורה</strong> - דקסבר סמפונא נקט וחסרון מבפנים לא שמיה חסרון:"
+  },
+  "Rashi on Chullin 48b:6:1": {
+    "dependsOn": [
+      "Chullin 48b:6"
+    ],
+    "generatedAt": "2026-11-12T08:24:39.349Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרה קמיה דרבי יצחק</strong> - ולא משום הך קושיא דהא איכא לשנוייה כדשנינן לעיל <span class=\"parenthesized\">(חולין מז:)</span> לעולם מבחוץ ולרבי שמעון איצטריך אלא משום דנחתכה הריאה לא סמך אגמריה למימר סמפונא נקט ועל דדלמא אי הוה ריאה לקמן הואי נקובה ותדע דמשום הך ספיקא הדר ביה דהא כי הדר אהדרוה קמיה טרפה מהאי טעמא:"
+  },
+  "Rashi on Chullin 48b:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:6:1",
+      "Rashi on Chullin 48b:7:2",
+      "Rashi on Chullin 48b:7:3"
+    ],
+    "generatedAt": "2026-11-12T08:30:41.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רבנן</strong> - דלעיל מכשרי רבי יוחנן ורבי אלעזר ור' חנינא:"
+  },
+  "Rashi on Chullin 48b:7:2": {
+    "dependsOn": [
+      "Chullin 48b:7",
+      "Rashi on Chullin 48b:7:1"
+    ],
+    "generatedAt": "2026-11-12T08:31:35.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיודעין מאיזה טעם הכשירו</strong> - שהרי באת כל הריאה לפניהם וראוה שלמה הלכך על כרחיך דרך הקנה נכנסה:"
+  },
+  "Rashi on Chullin 48b:7:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:7:1",
+      "Rashi on Chullin 48b:7:2",
+      "Chullin 48b:7"
+    ],
+    "generatedAt": "2026-11-12T08:32:22.644Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא</strong> - הוה נקובה שרוב הנכנסין דרך הוושט נכנסין ואי בוושט נכנס ודאי ניקבה:"
+  },
+  "Rashi on Chullin 48b:8:1": {
+    "dependsOn": [
+      "Chullin 48b:8"
+    ],
+    "generatedAt": "2026-11-12T08:34:30.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא איתא</strong> - לריאה ולא ניקבה:"
+  },
+  "Rashi on Chullin 48b:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:8:1",
+      "Rashi on Chullin 48b:8:3",
+      "Chullin 48b:8",
+      "Chullin 48b:5",
+      "Rashi on Chullin 48b:5:1",
+      "Rashi on Chullin 48b:5:2",
+      "Rashi on Chullin 48b:4:1",
+      "Rashi on Chullin 48b:4:2",
+      "Rashi on Chullin 48b:7:1",
+      "Rashi on Chullin 48b:7:2"
+    ],
+    "generatedAt": "2026-11-12T08:36:12.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשרה</strong> - ומשום טעמא דבסמפונא נקט ועל ונהי נמי דדרך הסימפון בא הרי לא בסמפונות נמצאת ועל כרחך ניקבה הסמפון ויצאה לבשר הריאה ואמר רב נחמן האי סמפונא דאינקיב טרפה:"
+  },
+  "Rashi on Chullin 48b:8:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:8:1",
+      "Rashi on Chullin 48b:8:2",
+      "Rashi on Chullin 48b:4:3",
+      "Rashi on Chullin 48b:8:3",
+      "Chullin 48b:8"
+    ],
+    "generatedAt": "2026-11-12T08:39:55.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחבירו אתמר</strong> - אצל פיצול כשמתפצל מחבירו ניקב אצל דופן של חבירו דכיון דדופן חבירו קשה הוא דייר\"ש בלע\"ז עומד כנגדו ואינו סותם הנקב ולא מגין עליה אבל ניקב לאחר פיצולו ברחוק בשר הריאה שהוא רך נכנס לנקב ומגין עליו והא לא אמרינן דילמא אינקיב לחבריה דאחזוקי ריעותא לא מחזקינן אי לא איתחזוק כגון היכא דליתא לריאה קמן דע\"כ חזקה היא זו שרוב הנבלעין אין נבלעין אלא דרך הוושט ומשם לא יצתה בתוך הריאה בלא נקיבת דקין וריאה:"
+  },
+  "Rashi on Chullin 48b:9:1": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:9:2",
+      "Rashi on Chullin 48b:9:3",
+      "Rashi on Chullin 48b:9:4",
+      "Jastrow, הֲדוּרָא 1",
+      "[",
+      "[\\",
+      "Mishneh Torah, Ritual Slaughter 7:13",
+      "Steinsaltz on Chullin 48b:9",
+      "Steinsaltz comment #1 on Chullin 48b:9",
+      "Steinsaltz comment #2 on Chullin 48b:9",
+      "Chullin 55b:3",
+      "Chullin 55b:4",
+      "Chullin 55b:5",
+      "Rashi on Chullin 48b:8:3",
+      "Chullin 48b:9"
+    ],
+    "generatedAt": "2026-11-12T08:42:59.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנתא</strong> - אנטלי\"ר בלע\"ז חלב טהור:"
+  },
+  "Rashi on Chullin 48b:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:9:1",
+      "Rashi on Chullin 48b:9:3",
+      "Rashi on Chullin 48b:9:4",
+      "Jastrow, הֲדוּרָא 1"
+    ],
+    "generatedAt": "2026-11-12T08:43:52.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדורא דכנתא</strong> - דקין הסובבין אותו סביב כעגולה:"
+  },
+  "Rashi on Chullin 48b:9:3": {
+    "dependsOn": [
+      "Rashi on Chullin 48b:9:1",
+      "Rashi on Chullin 48b:9:2",
+      "Rashi on Chullin 48b:9:4"
+    ],
+    "generatedAt": "2026-11-12T08:44:33.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאינקיב לחבריה</strong> - שניקב באותו צד שבינו לחברו שלא ניקב חיצון שבכולן:"
+  },
+  "Rashi on Chullin 48b:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:46:39.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 48b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי חותכה מכאן ומתה וחותכה מכאן וחיה</strong> - נחתך בשר רגלים למעלה מצומת הגידין ולא נשבר העצם כשרה נחתכה למטה במקום צומת הגידין אע\"פ שנמוך מכאן טרפה כדאמרינן לקמן וכן שניטל צומת הגידין בפ' בהמה המקשה <span class=\"parenthesized\">(לקמן חולין דף עו.)</span> ואע\"פ שלא נחתך העצם:"
+  },
+  "Tosafot on Chullin 48b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T08:55:43.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קופא לגיו אי קופא לבר</strong> - אין לפרש כשהמחט מקצתה חוץ לכבד ומקצתה בתוכו אבל כולו בתוך הכבד כשרה בכל ענין דסמפונא נקיט ואתא דא\"כ מאי פריך ממחט שנמצא בעובי בית הכוסות דעל כרחך התם כשהוא בתוך בית הכוסות איירי דאי בחלל הגוף היכי קאמר מצד אחד שלא ניקבה אלא עור אחד כשרה הא ודאי דרך הוושט נקיב ואתא אלא אי קופא לגיו לצד סמפון של כבד קאמר ואפילו כולה בתוך הכבד ונראה דדוקא גבי כבד יש חילוק בין קופא לגיו לקופא לבר אבל בריאה כשרה בכל ענין דקרובה לקנה וסמפונא דריאה יש לה ריוח וחלל גדול וכן אם נמצאת בתוך הקורקבן כשר שדרך הוושט בא מחט עם המאכל שהקורקבן תלוי בוושט:"
+  },
+  "Tosafot on Chullin 48b:6:1": {
+    "dependsOn": [
+      "Chullin 48b:6",
+      "Rashi on Chullin 48b:5:1",
+      "Rashi on Chullin 48b:5:2",
+      "Rashi on Chullin 48b:6:1",
+      "Chullin 47b:12",
+      "Chullin 47b:13"
+    ],
+    "generatedAt": "2026-11-12T08:27:14.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדרה לקמיה דרבי יצחק נפחא</strong> - לא מפני שקבל לקושיתם <span class=\"rashi-quotation\">כדפירש בקונטרס</span> דלעיל שנינו דלא צריכא אלא לר\"ש אלא משום דדלמא אי הוה ריאה קמן הוה מינקבה ואע\"פ שרבי אמי הקשה לעיל קושיא זו לעולא ממתניתין דהריאה שניקבה או שחסרה קיבל תירוצו של עולא ויש ספרים דגרסי לעיל איתיביה רבי אחא לעולא:"
+  },
+  "Tosafot on Chullin 48b:7:1": {
+    "dependsOn": [
+      "Chullin 48b:7",
+      "Chullin 48b:9",
+      "Rashi on Chullin 48b:7:1",
+      "Rashi on Chullin 48b:7:2",
+      "Rashi on Chullin 48b:7:3",
+      "Chidushei Halachot on Chullin 48b:3"
+    ],
+    "generatedAt": "2026-11-12T08:33:38.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 48b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא אי הוה ריאה קמן הוה מנקבה</strong> - לא משום דדרך הוושט מינקיב ואתאי דא\"כ אמאי מכשר בסמוך בחתיכה דכבדא אלא בעי למימר דרך הסמפונות יצא ונכנס בריאה מבחוץ:"
+  }
+}

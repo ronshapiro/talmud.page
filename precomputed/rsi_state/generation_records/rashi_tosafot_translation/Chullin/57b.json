@@ -1,0 +1,504 @@
+{
+  "Rashi on Chullin 57b:10:1": {
+    "dependsOn": [
+      "Chullin 57b:10",
+      "Rashi on Chullin 57b:10:2",
+      "Rashi on Chullin 57b:10:3"
+    ],
+    "generatedAt": "2026-11-13T00:55:12.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי עסקן</strong> - למה נקרא שמו עסקן תחלה:"
+  },
+  "Rashi on Chullin 57b:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:55:59.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי ודאי לית להו מלכא</strong> - דכתיב אשר אין לה קצין והיינו עסקן דלא בעי למיסמך אהימנותיה דשלמה:"
+  },
+  "Rashi on Chullin 57b:10:3": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:10:1",
+      "Rashi on Chullin 57b:10:2",
+      "Rashi on Chullin 57b:10:3",
+      "Chullin 57b:10",
+      "Chullin 57b:11",
+      "Rashi on Chullin 57b:11:1",
+      "Rashi on Chullin 57b:11:2",
+      "Rashi on Chullin 57b:11:3"
+    ],
+    "generatedAt": "2026-11-13T00:56:55.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:10:3"
+    ],
+    "sourceText": "הנמלים אוהבים צל ושונאים חום:"
+  },
+  "Rashi on Chullin 57b:11:1": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:10:1",
+      "Rashi on Chullin 57b:11:1",
+      "Rashi on Chullin 57b:11:2",
+      "Rashi on Chullin 57b:11:3",
+      "Rashi on Chullin 57b:6:1",
+      "Rashi on Chullin 57b:6:2",
+      "Rashi on Chullin 57b:6:3",
+      "Rashi on Chullin 57b:6:4",
+      "Rashi on Chullin 2a:3:1",
+      "Rashi on Sukkah 53b:1:1",
+      "Steinsaltz on Chullin 57b:11"
+    ],
+    "generatedAt": "2026-11-13T01:01:27.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשומשמני</strong> - נמלים:"
+  },
+  "Rashi on Chullin 57b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T01:01:50.884Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפק חד מינייהו</strong> - מתוך חורי הקן ובא לחוץ וראה הצל:"
+  },
+  "Rashi on Chullin 57b:11:3": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:11:3",
+      "Rashi on Chullin 57b:11:1",
+      "Rashi on Chullin 57b:11:2"
+    ],
+    "generatedAt": "2026-11-13T01:02:40.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתנח ביה סימנא</strong> - להכירו לידע מה יעשו לו חבריו כשימצא שקרן:"
+  },
+  "Rashi on Chullin 57b:12:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 57b:12",
+      "Jastrow, הַרְמָנָא 1",
+      "Rashi on Chullin 57b:12:2",
+      "Rashi on Chullin 57b:12:3"
+    ],
+    "generatedAt": "2026-11-13T01:03:42.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרמנא הוו נקיטי</strong> - שכל המהתל בחברו יהרגוהו:"
+  },
+  "Rashi on Chullin 57b:12:2": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:12:1",
+      "Rashi on Chullin 57b:12:3"
+    ],
+    "generatedAt": "2026-11-13T01:05:12.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נמי בין מלכא למלכא הוה</strong> - מת המלך ועדיין לא קם אחר ודרך ארץ לעשות איש הישר בעיניו כדכתיב בימים ההם וגו' איש הישר בעיניו יעשה:"
+  },
+  "Rashi on Chullin 57b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T01:05:43.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהימנותיה דשלמה</strong> - נאמן הוא על כך וברוח הקדש אמרה:"
+  },
+  "Rashi on Chullin 57b:13:1": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:13:2",
+      "Rashi on Chullin 57b:13:3"
+    ],
+    "generatedAt": "2026-11-13T01:06:26.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימן</strong> - לספק טרפה:"
+  },
+  "Rashi on Chullin 57b:13:2": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:13:1",
+      "Rashi on Chullin 57b:13:3"
+    ],
+    "generatedAt": "2026-11-13T01:07:58.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">י\"ב חדש</strong> - אם כך חיה בידוע שלא נטרפה:"
+  },
+  "Rashi on Chullin 57b:13:3": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:7:3",
+      "Rashi on Chullin 57b:13:2",
+      "Chullin 57b:13",
+      "Rashi on Chullin 57b:13:1",
+      "Rashi on Chullin 57b:13:3",
+      "Rashi on Chullin 57b:10:2"
+    ],
+    "generatedAt": "2026-11-13T01:12:08.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ב' ושלש שנים</strong> - וקשיא לרב הונא די\"ב חדש ליכא למ\"ד:"
+  },
+  "Rashi on Chullin 57b:14:1": {
+    "dependsOn": [
+      "Chullin 57b:14",
+      "Rashi on Chullin 57b:14:1",
+      "Rashi on Chullin 57b:14:2",
+      "Rashi on Chullin 57b:14:3",
+      "Rashi on Chullin 57b:14:4",
+      "Steinsaltz on Chullin 57b:14"
+    ],
+    "generatedAt": "2026-11-13T01:14:13.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי היא</strong> - דאיכא דסבירא ליה כרב הונא דקתני לקמן ימות החמה היו וכיון שעברו עליו ימות הצנה מיד מת ויש מכה שהיא נבערה ומת מתוך חום הלכך בעינן ימות החמה וימות הצנה:"
+  },
+  "Rashi on Chullin 57b:14:2": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:14:1",
+      "Rashi on Chullin 57b:14:2",
+      "Rashi on Chullin 57b:14:3",
+      "Rashi on Chullin 57b:14:4",
+      "Tosefta Oholot 2:4",
+      "Steinsaltz on Chullin 57b:14",
+      "Chullin 57b:14",
+      "Steinsaltz comment #1 on Chullin 57b:14",
+      "Bekhorot 37b:17",
+      "Bekhorot 37b:18",
+      "Bekhorot 37b:19",
+      "Bekhorot 37b:20",
+      "Bekhorot 37b:21",
+      "Bekhorot 37b:22",
+      "Bekhorot 37b:23",
+      "Bekhorot 37b:24",
+      "Bekhorot 38a:1",
+      "Bekhorot 38a:2"
+    ],
+    "generatedAt": "2026-11-13T01:16:40.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקב אחד ארוך</strong> - ונקדרה בחסרון:"
+  },
+  "Rashi on Chullin 57b:14:3": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:14:1",
+      "Rashi on Chullin 57b:14:2",
+      "Rashi on Chullin 57b:14:4",
+      "Chullin 57b:14",
+      "Chullin 52b:1",
+      "Chullin 52b:2",
+      "Chullin 52b:3",
+      "Chullin 52b:4",
+      "Chullin 52b:5",
+      "Chullin 52b:6",
+      "Mishnah Oholot 2:3"
+    ],
+    "generatedAt": "2026-11-13T01:19:00.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצטרפין למלא מקדח</strong> - ושוב אינה מטמאה באהל לבית שמאי. פלוגתא דשדרה וגלגולת באהלות <span class=\"parenthesized\">(פ\"ב מ\"ג)</span> דהיינו כדי שינטל מן החי וימות דהכי אמרינן בפרקין <span class=\"parenthesized\">(דף נב:)</span> גבי שדרה וכן לטרפה:"
+  },
+  "Rashi on Chullin 57b:14:4": {
+    "dependsOn": [
+      "Jastrow, חִידּוּק 1",
+      "Rashi on Chullin 57b:14:3"
+    ],
+    "generatedAt": "2026-11-13T01:19:46.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חידוק של קרויה</strong> - חתיכה של דלעת יבשה:"
+  },
+  "Rashi on Chullin 57b:1:1": {
+    "dependsOn": [
+      "Chullin 57b:1"
+    ],
+    "generatedAt": "2026-11-13T00:30:55.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה לן פתחון פה קמיה דרב הונא</strong> - כלומר הוזקקנו לדבר בשמוטת ירך לפני רב הונא ואמר לן כשרה ואחרי כן אשכחתיה לרב ירמיה כו':"
+  },
+  "Rashi on Chullin 57b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:31:25.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת מה בידך</strong> - עכשיו אמור לי אתה אם שמעת בה כלום אחר שבאת הלום:"
+  },
+  "Rashi on Chullin 57b:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:5:2",
+      "Rashi on Chullin 57b:5:3",
+      "Rashi on Chullin 57a:1:1",
+      "Rashi on Chullin 57a:2:1",
+      "Rashi on Chullin 56b:1:1",
+      "Rashi on Chullin 57a:3:1",
+      "Rashi on Chullin 56b:15:1"
+    ],
+    "generatedAt": "2026-11-13T00:36:56.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חברוותא</strong> - חברים:"
+  },
+  "Rashi on Chullin 57b:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:5:1",
+      "Rashi on Chullin 57b:5:3"
+    ],
+    "generatedAt": "2026-11-13T00:37:37.906Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא פרכיס</strong> - לא היה יכול לנוד כנף ולקנתר אפילו רמז דבר מתוך שגדולים הם ויש לו לירא מהם אם היה אצלם:"
+  },
+  "Rashi on Chullin 57b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:38:10.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומלחה רבי חנינא</strong> - כדי להתקיים ויוכל להראות ימים רבים:"
+  },
+  "Rashi on Chullin 57b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:38:57.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולית הלכתא ככל הני</strong> - דשרו שמוטת ירך בעוף:"
+  },
+  "Rashi on Chullin 57b:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:6:1",
+      "Rashi on Chullin 57b:6:2",
+      "Rashi on Chullin 57b:6:3",
+      "Rashi on Chullin 57b:6:4",
+      "Chullin 57b:6"
+    ],
+    "generatedAt": "2026-11-13T00:39:57.773Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא כי הא</strong> - דקתני והלא הלכה רווחת היא שמוטת ירך בעוף טרפה:"
+  },
+  "Rashi on Chullin 57b:6:3": {
+    "dependsOn": [
+      "Jastrow, קְדִירָה 1",
+      "Rashi on Chullin 57b:6:4",
+      "Rashi on Chullin 57b:6:1",
+      "Rashi on Chullin 57b:6:2",
+      "Steinsaltz on Chullin 57b:6",
+      "Rashi on Chullin 54a:13:2",
+      "Rashi on Chullin 54a:13:3"
+    ],
+    "generatedAt": "2026-11-13T00:41:28.199Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קדירת קנה</strong> - קנה שנקדר ממנה חתיכה כמין ארובה:"
+  },
+  "Rashi on Chullin 57b:6:4": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:6:1",
+      "Rashi on Chullin 57b:6:2",
+      "Rashi on Chullin 57b:6:3",
+      "Rashi on Chullin 57b:6:4",
+      "Jastrow, קְרוֹמִית 1",
+      "Steinsaltz on Chullin 57b:6",
+      "Sefer HeArukh, Letter Kof 535"
+    ],
+    "generatedAt": "2026-11-13T00:42:54.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרומית</strong> - רחבה וסתמוהו בה:"
+  },
+  "Rashi on Chullin 57b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:43:37.347Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל דא את סמיך</strong> - מפני שראית שחיתה המכה אתה סומך להתיר והלא הלכה כו':"
+  },
+  "Rashi on Chullin 57b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:44:11.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רווחת</strong> - כבר נתפשטה ונתרווחה לנהוג:"
+  },
+  "Rashi on Chullin 57b:7:3": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:7:1",
+      "Rashi on Chullin 57b:7:2",
+      "Steinsaltz on Chullin 57b:7"
+    ],
+    "generatedAt": "2026-11-13T00:45:25.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך י\"ב חדש</strong> - חיתה המכה ולסוף י\"ב חדש מתה דטרפה עד י\"ב חדש חיה:"
+  },
+  "Rashi on Chullin 57b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:45:53.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה עושה דבר</strong> - כדמפרש לקמן להוציא מלבו של רבי יהודה:"
+  },
+  "Rashi on Chullin 57b:8:2": {
+    "dependsOn": [
+      "Jastrow, טַרְסִי I 1",
+      "Rashi on Chullin 57b:8:1"
+    ],
+    "generatedAt": "2026-11-13T00:47:24.734Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטלה עליה במטלית של טרסיים</strong> - כרכה במטלית של צורפי נחשת שנותנים לפניהם לקבל עפרורית שחקי נחשת ושל עור היא ותמיד היא חמה מתוך עוביה וגם הנחושת מחמם לעולם:"
+  },
+  "Rashi on Chullin 57b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T00:52:39.695Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 57b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במידי דמיטרפא בה כו'</strong> - בתמיה. נהי דמשבחת בשאר אבריה מיהו ההיא מילתא דמיטרפא ביה מי הדרא ומשבחת כי הכא דגדלו אחרונים יותר מן הראשונים:"
+  },
+  "Tosafot on Chullin 57b:10:1": {
+    "dependsOn": [
+      "Bava Batra 75a:4",
+      "Bava Batra 75a:5",
+      "Bava Batra 75a:11",
+      "Chullin 57b:11",
+      "Tosafot on Chullin 57b:8:1",
+      "Tosafot on Chullin 57b:9:1",
+      "Tosafot on Chullin 56a:11:1"
+    ],
+    "generatedAt": "2026-11-13T00:59:12.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 57b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזיל ואחזי היכי איתא מילתא</strong> - אע\"ג דכה\"ג חשיב בהמוכר הספינה <span class=\"parenthesized\">(ב\"ב עה.)</span> מלגלג גבי ההוא תלמיד דאמר ליה רבי יוחנן אם לא ראית לא האמנת מלגלג על דברי חכמים אתה שאני הכא שבא לברר הדבר ולהודיע איך ידע שלמה:"
+  },
+  "Tosafot on Chullin 57b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T01:12:42.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 57b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימן לטרפה כל שאינה יולדת</strong> - יש כמה בהמות שפוסקות מלילד ולא מחזקינן להו בטרפות אלא בעי למימר אם יולדת בידוע שאינה טרפה:"
+  },
+  "Tosafot on Chullin 57b:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 57b:8:2",
+      "Sefer HeArukh, Letter Tet 221",
+      "Tosafot on Chullin 57b:10:1",
+      "Tosafot on Chullin 57b:13:1"
+    ],
+    "generatedAt": "2026-11-13T00:51:39.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 57b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטלית של טרסיים</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> צורפי נחשת וכן פירש הערוך והביא ראיה דאמר במגילה פרק בני העיר <span class=\"parenthesized\">(מגילה דף כו.)</span> מעשה בבית הכנסת של טרסיים שהיתה בירושלים ובנזיר פרק ג' <span class=\"parenthesized\">(דף נב.)</span> מעשה שהביא קופה מלאה עצמות מכפר טביא לבית הכנסת של טרסיים פירש בערוך ומסתמא מפני שצורפי נחושת מזוהמים כבורסקי ועל כן היה להם ביהכ\"נ לבד ובפ\"ק דע\"ז <span class=\"parenthesized\">(דף יז:)</span> חכם של טרסיים אני אייתו ליה תרי קיבורי חד דשיתיא וחדא דערבא משמע דטרסי וגרדי חדא הוא וקשה דבפ' החליל <span class=\"parenthesized\">(סוכה נא:)</span> משמע דגרדיים בפני עצמן וטרסיים בפני עצמן ועוד דאמרי' באגדה דמגילה <span class=\"parenthesized\">(דף יג:)</span> בגתן ותרש שני טרסיים היו והיו מספרים בלשון טרסיים משמע שהיא אומה שיש לה לשון בפני עצמה:"
+  },
+  "Tosafot on Chullin 57b:9:1": {
+    "dependsOn": [
+      "Avodah Zarah 16a:5",
+      "Avodah Zarah 16a:6",
+      "Avodah Zarah 14b:9",
+      "Avodah Zarah 14b:10",
+      "Avodah Zarah 15a:1"
+    ],
+    "generatedAt": "2026-11-13T00:54:14.148Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 57b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודילמא סבר טרפה יולדת ומשבחת</strong> - מסתברא דלא גרסינן יולדת דאין צריך לו כלל ועוד הא אמרינן פ\"ק דע\"ז <span class=\"parenthesized\">(דף טז.)</span> גבי רבי יהודה מתיר בשבורה אמרו לו והלא מרביעין עליה זכר אמר להן לכשתלד אלמא לא מקבלת זכר ומיהו יש לחלק בין טרפה חתוכה רגלים לשאר טרפות:"
+  }
+}

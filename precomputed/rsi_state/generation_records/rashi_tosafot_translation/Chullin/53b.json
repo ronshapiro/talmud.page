@@ -1,4 +1,139 @@
 {
+  "Rashi on Chullin 53b:11:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:11:2",
+      "Rashi on Chullin 53b:6:1",
+      "Rashi on Chullin 53b:6:2",
+      "Rashi on Chullin 53b:6:3"
+    ],
+    "generatedAt": "2026-11-12T18:26:00.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש דרוסה לסימנין</strong> - אם דרסה כנגדם מי הוי טרפה מי אמרינן קשין הן אצל דרוסה וכשרה או לא:"
+  },
+  "Rashi on Chullin 53b:11:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:11:1"
+    ],
+    "generatedAt": "2026-11-12T18:26:37.387Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד בית החלל כולו</strong> - ולאפוקי עובי הצואר או הירכים:"
+  },
+  "Rashi on Chullin 53b:12:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:11:1",
+      "Rashi on Chullin 53b:11:2",
+      "Rashi on Chullin 53b:13:1",
+      "Rashi on Chullin 53b:13:2",
+      "Rashi on Chullin 53b:13:3",
+      "Rashi on Chullin 53b:6:1",
+      "Rashi on Chullin 53b:6:2",
+      "Rashi on Chullin 53b:6:3",
+      "Rashi on Chullin 53b:9:1",
+      "Rashi on Chullin 53b:9:2",
+      "Chullin 53b:12"
+    ],
+    "generatedAt": "2026-11-12T18:32:14.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימנים שנדלדלו</strong> - איידי דא\"ר זירא בהנך תרתי דלעיל כבר פירשה פלוני קמסדר ואזיל לכל הנך דאמר בהו ר' זירא הכי:"
+  },
+  "Rashi on Chullin 53b:12:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:12:1",
+      "Steinsaltz on Chullin 53b:12"
+    ],
+    "generatedAt": "2026-11-12T18:33:38.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדלדלו</strong> - נעקרו במקומות הרבה:"
+  },
+  "Rashi on Chullin 53b:13:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:13:1",
+      "Rashi on Chullin 53b:13:2",
+      "Rashi on Chullin 53b:13:3",
+      "Rashi on Chullin 53b:13:4"
+    ],
+    "generatedAt": "2026-11-12T18:34:28.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המסמסה מהו</strong> - כגון דרסה בירך שלא כנגד החלל וראינו שניקב הבשר לאחר זמן מהו:"
+  },
+  "Rashi on Chullin 53b:13:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:13:1",
+      "Rashi on Chullin 53b:13:2",
+      "Rashi on Chullin 53b:13:3",
+      "Rashi on Chullin 53b:13:4",
+      "Steinsaltz on Chullin 53b:13:1",
+      "Chullin 53b:13"
+    ],
+    "generatedAt": "2026-11-12T18:35:31.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד בני מעיים</strong> - אפילו בהאדימה:"
+  },
+  "Rashi on Chullin 53b:13:3": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:13:1",
+      "Rashi on Chullin 53b:13:2",
+      "Rashi on Chullin 53b:13:3",
+      "Rashi on Chullin 53b:13:4",
+      "Steinsaltz on Chullin 53b:13",
+      "Rashba on Chullin 53b:13:1",
+      "Rosh on Chullin 3:42:1",
+      "Steinsaltz comment #1 on Chullin 53b:13",
+      "Steinsaltz comment #2 on Chullin 53b:13",
+      "Chullin 53b:13"
+    ],
+    "generatedAt": "2026-11-12T18:37:06.748Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמסמס הבשר</strong> - במקום אחד:"
+  },
+  "Rashi on Chullin 53b:13:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:37:41.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רואין אותו כאילו אינו</strong> - ואם יש בו טרפות בניטל כולו כגון צומת הגידין טרפה דהאי נמי כנטול דמי:"
+  },
+  "Rashi on Chullin 53b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:38:15.526Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גורדו</strong> - אם היה בא לרפאותו גורדו ומשליכו עד הבשר החי:"
+  },
   "Rashi on Chullin 53b:14:2": {
     "dependsOn": [],
     "generatedAt": "2026-10-05T15:38:56.397Z",
@@ -8,5 +143,277 @@
       "Rashi on Chullin 53b:14:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">גורדו</strong> - בדל\"ת:"
+  },
+  "Rashi on Chullin 53b:14:3": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:14:1",
+      "Rashi on Chullin 53b:14:2",
+      "Rashi on Chullin 53b:14:4",
+      "Rashi on Chullin 53b:13:1",
+      "Rashi on Chullin 53b:13:2",
+      "Rashi on Chullin 53b:13:3"
+    ],
+    "generatedAt": "2026-11-12T18:39:23.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלחה</strong> - מתפרקת ונופלין ממנה חתיכות חתיכות:"
+  },
+  "Rashi on Chullin 53b:14:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:40:01.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדרב הונא בריה דרב יהושע</strong> - דאמר כל שהרופא גורדו קרוי המסמסה וכאילו אינו והויא לה ריאה שחסרה:"
+  },
+  "Rashi on Chullin 53b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:41:01.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקוץ עד שתינקב לחלל</strong> - אבל הגיע לחלל יש לחוש שמא ניקבו הדקין ובבדיקה אי אפשר מפני שאין נקב דק ניכר בהן:"
+  },
+  "Rashi on Chullin 53b:15:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:15:1",
+      "Rashi on Chullin 53b:15:3"
+    ],
+    "generatedAt": "2026-11-12T18:41:47.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסימנין</strong> - דרסה בסימנין:"
+  },
+  "Rashi on Chullin 53b:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:42:20.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיאדימו הן עצמן</strong> - אבל משום האדמת בשר שכנגדן לא מיטרפא דרוב סימנין קשין הן ואין ארס שולט בהן אבל כי האדימו הן עצמן הרי נגלה ששלט בהן:"
+  },
+  "Rashi on Chullin 53b:1:1": {
+    "dependsOn": [
+      "Chullin 53b:1"
+    ],
+    "generatedAt": "2026-11-12T17:59:36.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהדדי</strong> - דכשם שהם נבעתים ממנו כך הוא נבעת מהם ואין לחוש:"
+  },
+  "Rashi on Chullin 53b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:00:09.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרקפא</strong> - סל מלא עופות שנכנס הנץ ביניהם:"
+  },
+  "Rashi on Chullin 53b:4:1": {
+    "dependsOn": [
+      "Chullin 53b:4",
+      "Rashi on Chullin 53b:3:1",
+      "Eruvin 94a:6"
+    ],
+    "generatedAt": "2026-11-12T18:03:28.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתריה דשמואל הוה</strong> - ולאו אורח ארעא לאורויי קמיה באתריה בדבר שהן שוין בו אבל אי הוו פליגי בה לא היה משדר להו קמיה להפסיד ממון ישראל דכל מקום שיש נדנוד חטא אין חולקין כבוד לרב כך שמעתי ול\"נ דה\"ג אלא אתריה דשמואל הוה ומהכא לא תפשוט דהדר ביה רב דלאו אורח ארעא למישרי באתריה מלתא דאיהו אסר והכי אמרינן בעירובין <span class=\"parenthesized\">(דף צד.)</span> ורב אי ס\"ל דאסור לימא ליה אתריה דשמואל הוה:"
+  },
+  "Rashi on Chullin 53b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:04:03.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לישדינהו הכי</strong> - ישליכם לנהר כמות שהם:"
+  },
+  "Rashi on Chullin 53b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T18:04:42.637Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפרחן וסלקן</strong> - וצדין אותן ציידים וימכרו לישראל:"
+  },
+  "Rashi on Chullin 53b:6:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:5:1",
+      "Rashi on Chullin 53b:4:1",
+      "Rashi on Chullin 53a:1:1",
+      "Rashi on Chullin 53a:2:1",
+      "Rashi on Chullin 53b:6:2",
+      "Rashi on Chullin 53b:6:3",
+      "Tosafot on Chullin 53b:6:1"
+    ],
+    "generatedAt": "2026-11-12T18:06:38.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשהינהו י\"ב חדש</strong> - כדין ספק טרפה כדלקמן בפירקין <span class=\"parenthesized\">(חולין דף נח.)</span>:"
+  },
+  "Rashi on Chullin 53b:6:2": {
+    "dependsOn": [
+      "Chullin 53b:6"
+    ],
+    "generatedAt": "2026-11-12T18:07:18.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לידי תקלה</strong> - איידי דהוה בהו טובא לא מצי לאזדהורי בהו ואתי למיכל חד מינייהו:"
+  },
+  "Rashi on Chullin 53b:6:3": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:6:1",
+      "Rashi on Chullin 53b:6:2",
+      "Rashi on Chullin 53b:8:1",
+      "Rashi on Chullin 53b:7:1",
+      "Rashi on Chullin 53b:5:2",
+      "Rashi on Chullin 53b:4:1"
+    ],
+    "generatedAt": "2026-11-12T18:08:42.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתו</strong> - עובדי כוכבים והדרי ומזבני לה לישראל:"
+  },
+  "Rashi on Chullin 53b:7:1": {
+    "dependsOn": [
+      "Chullin 53b:7",
+      "Chullin 53b:6",
+      "Chullin 53b:5",
+      "Rashi on Chullin 53b:3:1",
+      "Tosafot on Chullin 53b:9:1"
+    ],
+    "generatedAt": "2026-11-12T18:11:43.732Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפרסומי מילתא</strong> - וכי אזל לנהרא אוושא מילתא טפי. ולפי שעופות דקים היו ומרובים היו לא יכול לבודקן ולהתירן בבדיקה מפני הטורח שמא יטעה באחת מהן אי נמי איידי דקליש זיהריה דנץ לא מאדים בשר ולא מינכר ודבר זה נראה לי:"
+  },
+  "Rashi on Chullin 53b:8:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 53b:8"
+    ],
+    "generatedAt": "2026-11-12T18:12:28.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממסמס</strong> - מלוכלך:"
+  },
+  "Rashi on Chullin 53b:9:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:9:2"
+    ],
+    "generatedAt": "2026-11-12T18:15:42.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרוסה שאמרו</strong> - כגון ספק דרוסת ארי או שראהו שדרסה ואין מקום הדריסה ניכר מבחוץ:"
+  },
+  "Rashi on Chullin 53b:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:9:1",
+      "Steinsaltz on Chullin 53b:9",
+      "Steinsaltz comment #1 on Chullin 53b:9",
+      "Steinsaltz comment #2 on Chullin 53b:9",
+      "Steinsaltz comment #3 on Chullin 53b:9",
+      "Steinsaltz comment #4 on Chullin 53b:9",
+      "Rashi on Chullin 46b:2:7"
+    ],
+    "generatedAt": "2026-11-12T18:20:03.732Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צריכה לבדוק</strong> - גבה וכריסה וצידיה וכל שכנגד בני מעיים ואם האדים שם בשר שנקוטרוד\"א זהו הארס וטרפה שסופו לשרוף עד שינקוב את בני מעיים ואם לא האדים בשר שם אין צריך לבדוק במקום אחר שאין דרוסה אלא כנגד בני מעיים דלא מיטרפא במקום אחר:"
+  },
+  "Tosafot on Chullin 53b:3:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:3:1"
+    ],
+    "generatedAt": "2026-11-12T18:01:20.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרקפא</strong> - קן של עופות ודרור קן לה <span class=\"parenthesized\">(תהלים פד)</span> מתרגמינן שירקפא <span class=\"rashi-quotation\">ובקונטרס פירש</span> סל מלא עופות:"
+  },
+  "Tosafot on Chullin 53b:6:1": {
+    "dependsOn": [
+      "Chullin 53b:6"
+    ],
+    "generatedAt": "2026-11-12T18:09:56.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתי בהו לידי תקלה</strong> - והא דאמר לקמן בפירקין <span class=\"parenthesized\">(חולין דף נח.)</span> גבי ביצי ספק טרפה שיחלא קמא משהינן לה אי הדרא טענה שריא ולא חיישינן לתקלה וי\"ל דהא אמר פ\"ק דפסחים <span class=\"parenthesized\">(דף כ:)</span> דתקלה עצמה תנאי היא ועוד התם אי סופה לטעון ממהרת לטעון ועוד דלמאי דמסיק הכא דלפרסומי מילתא עביד הכי ניחא:"
+  },
+  "Tosafot on Chullin 53b:8:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 53b:8:1",
+      "Tosafot on Chullin 28a:7:1"
+    ],
+    "generatedAt": "2026-11-12T18:14:59.103Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק שונרא ספק קניא אימר קניא</strong> - לעיל בפ\"ב <span class=\"parenthesized\">(חולין דף כח. ד\"ה אתא)</span> פירשתי וא\"ת דבריש התערובת <span class=\"parenthesized\">(זבחים דף עד:)</span> אמרינן גבי נתערבה בטרפה האי טרפה ה\"ד אי דידע ליה נישקליה ואי דלא ידע ליה מהיכן ידע א\"ר ינאי דאיערב נקובת הקוץ בדרוסת הזאב ור\"ל אמר דאיערב בנפולה ורבי ירמיה אמר דאיערב בולד טרפה ורבי אלעזר היא ומפרש דכולהו כר' ינאי לא אמרי בין נקובת הקוץ לדרוסת הזאב מידע ידיע האי משיך והאי עגיל וא\"כ אפשר לברר כאן אי שונרא אי קניא וי\"ל דדוקא התם מן הזאב ולמעלה אבל בשונרא לא ידיע ואם תאמר א\"כ לישני התם דאיערוב נקובת הקוץ בדרוסת חתול ובגדיים וטלאים וי\"ל דניחא ליה לאוקומי בכל הבהמות והאי דלא משני דאיערוב דרוסת הכלב בדרוסת הזאב דלמא אפשר לברר:"
+  },
+  "Tosafot on Chullin 53b:9:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53b:9:1",
+      "Chullin 53b:9",
+      "Chullin 53b:12"
+    ],
+    "generatedAt": "2026-11-12T18:22:08.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרוסה שאמרו צריכה בדיקה כו'</strong> - פ״ה כגון ספק דרוסת ארי או שדרסה ואין מקום הדריסה ניכר מבחוץ משמע דודאי דרוסה לא מהניא בדיקה וכן פירש הרב רבי יצחק בר' מאיר ז״ל דודאי דרוסה אין לה בדיקה שפעמים שמאדים הבשר ואין יכול לכוין יפה ונראה דיש בדיקה אפילו לודאי דרוסה מדאמר בסמוך בדרוסה עד שיאדים הבשר כנגד בני מעיים ובסימנים עד שיאדימו הסימנים עצמם אבל אם האדים הבשר שכנגד הסימנים ולא האדימו הסימנים כשרה אע״ג דודאי נדרסה שהרי האדים הבשר וא״כ איכא ודאי זיהרא ועוד דקאמר בסמוך דמורי ביה רב מכפא עד אטמא והיינו ע״כ ודאי דרוסה דרב לא חייש לספק דרוסה דלא הדר ביה <span class=\"rashi-quotation\">כדפירש בקונטרס</span> לעיל מההיא דכל גגות <span class=\"parenthesized\">(עירובין צד.)</span> והא דאמר בריש פירקין <span class=\"parenthesized\">(חולין מג.)</span> נפקא מינה לספק דרוסה ולא אמר לודאי דרוסה משום דאף לספק דרוסה קיימא לן דחיישינן ועוד מדבעי בסמוך וושט נקובתו במשהו דרוסתו נמי במשהו קנה נקובתו בכאיסר דרוסתו בכמה אלמא אע״ג דמאדים במשהו ונדרס ודאי בעי למימר דכשר עד שיהא בו בכאיסר ונראה שגם <span class=\"rashi-quotation\">בקונטרס</span> לא נקט ספק דרוסה אלא משום דאז צריך לבדוק בכל מקום גבה וכריסה וצדה וכל מה שכנגד בני המעיים אבל אם היה ניכר מבחוץ מקום הדריסה לא היה צריך לבדוק אלא כנגד אותו מקום:"
   }
 }

@@ -1,0 +1,658 @@
+{
+  "Rashi on Chullin 58b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:43:14.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלמטה</strong> - סמוך לנקב הרעי מתחברין כדי שיהא הרעי יוצא ממקום אחד:"
+  },
+  "Rashi on Chullin 58b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:44:18.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה</strong> - הא דאמר דחשיב לה כגלודה שניטל עורה ורבי ישמעאל נמי חשיב לנוצה כעור דאמר נוצה מצטרפת לכזית לפגל בחטאת העוף אם מלקה ע\"מ לאכול כזית בין נוצה ועור ובשר חוץ לזמנו:"
+  },
+  "Rashi on Chullin 58b:12:1": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:12:1",
+      "Rashi on Chullin 58b:12:2",
+      "Rashi on Chullin 58b:12:3",
+      "Chullin 58b:11",
+      "Steinsaltz on Chullin 58b:12",
+      "Jastrow, פְּגַל 1",
+      "Ketubot 36b:8"
+    ],
+    "generatedAt": "2026-11-13T02:48:05.144Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפגולי</strong> - גרסינן:"
+  },
+  "Rashi on Chullin 58b:12:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:12:1",
+      "Rashi on Chullin 58b:12:3",
+      "Chullin 58b:11"
+    ],
+    "generatedAt": "2026-11-13T02:48:51.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לענין אפגולי</strong> - דקסבר חזיא לאכילה:"
+  },
+  "Rashi on Chullin 58b:12:3": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:12:1",
+      "Rashi on Chullin 58b:12:2",
+      "Chullin 58b:12"
+    ],
+    "generatedAt": "2026-11-13T02:49:52.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מגין</strong> - וכי ניטלה נמי לא איכפת לן:"
+  },
+  "Rashi on Chullin 58b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:50:44.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחוזת הדם</strong> - שאחזה דם וחלתה:"
+  },
+  "Rashi on Chullin 58b:13:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:13:1",
+      "Rashi on Chullin 58b:13:3",
+      "Rashi on Chullin 58b:13:4",
+      "Rashi on Chullin 58b:13:5"
+    ],
+    "generatedAt": "2026-11-13T02:51:17.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמעושנת</strong> - נכנס עשן בגופה:"
+  },
+  "Rashi on Chullin 58b:13:3": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:13:2",
+      "Rashi on Chullin 58b:13:3",
+      "Rashi on Chullin 58b:13:4",
+      "Rashi on Chullin 58b:13:1",
+      "Rashi on Chullin 58b:13:5"
+    ],
+    "generatedAt": "2026-11-13T02:54:21.559Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמצוננת</strong> - חולי מחמת צינה: הרדופני - סם המות לבהמה:"
+  },
+  "Rashi on Chullin 58b:13:4": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:13:3",
+      "Rashi on Chullin 58b:13:4",
+      "Rashi on Chullin 58b:13:5"
+    ],
+    "generatedAt": "2026-11-13T02:54:56.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מים הרעים</strong> - מים מגולים:"
+  },
+  "Rashi on Chullin 58b:13:5": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:13:1",
+      "Rashi on Chullin 58b:13:2",
+      "Rashi on Chullin 58b:13:3",
+      "Rashi on Chullin 58b:13:4",
+      "Rashi on Chullin 58b:13:5"
+    ],
+    "generatedAt": "2026-11-13T02:55:36.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכלה סם המות</strong> - שהוא סם המות לאדם:"
+  },
+  "Rashi on Chullin 58b:14:1": {
+    "dependsOn": [
+      "Jastrow, חִילְתִּית 1",
+      "Rashi on Avodah Zarah 35b:10:7",
+      "Chullin 58b:14",
+      "Rashi on Chullin 58b:15:1",
+      "Rashi on Chullin 58b:13:1",
+      "Rashi on Chullin 58b:13:2",
+      "Rashi on Chullin 58b:13:3",
+      "Rashi on Chullin 58b:13:4",
+      "Rashi on Chullin 58b:13:5",
+      "Avodah Zarah 35b:10",
+      "Rashi on Chullin 58b:1:1",
+      "Rashi on Chullin 58b:2:1",
+      "Rashi on Chullin 58b:3:1",
+      "Rashi on Chullin 58b:4:1"
+    ],
+    "generatedAt": "2026-11-13T02:57:52.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קורט של חלתית</strong> - חד הוא ונוקב את בני המעים. חלתית לזר\"א:"
+  },
+  "Rashi on Chullin 58b:15:1": {
+    "dependsOn": [
+      "Jastrow, תִּיאָה 1",
+      "Rashi on Chullin 58b:15:2",
+      "Rashi on Chullin 58b:15:3",
+      "Rashi on Chullin 58b:15:4"
+    ],
+    "generatedAt": "2026-11-13T02:59:56.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיעא</strong> - תור\"א בלע\"ז ועשב מר הוא מאד וכל אלו קשין לה:"
+  },
+  "Rashi on Chullin 58b:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:00:58.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלב שוטה</strong> - אמרינן בסדר יומא <span class=\"parenthesized\">(דף פג:)</span> רוח רעה שורה עליו וכשנושך אדם שורה עליו והורגתו:"
+  },
+  "Rashi on Chullin 58b:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:01:33.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא חלתית</strong> - דהכא אחלתית דשמואל:"
+  },
+  "Rashi on Chullin 58b:15:4": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:15:1",
+      "Rashi on Chullin 58b:15:2",
+      "Rashi on Chullin 58b:15:3",
+      "Rashi on Chullin 58b:15:4"
+    ],
+    "generatedAt": "2026-11-13T03:02:48.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקשיא סם המות</strong> - דהכא אסם המות דמתני':"
+  },
+  "Rashi on Chullin 58b:16:1": {
+    "dependsOn": [
+      "Chullin 58b:16",
+      "Rashi on Chullin 58b:16:2"
+    ],
+    "generatedAt": "2026-11-13T03:03:33.173Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דידה</strong> - ברייתא בסם המות דבהמה שאינו סם המות לאדם:"
+  },
+  "Rashi on Chullin 58b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:05:04.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרי גווני סם המות</strong> - דבהמה מיירי תנא דברייתא:"
+  },
+  "Rashi on Chullin 58b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:02:50.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני תמרי דכדא</strong> - שהתליעו ואין ידוע אם במחובר אם בתלוש:"
+  },
+  "Rashi on Chullin 58b:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:1:1"
+    ],
+    "generatedAt": "2026-11-13T02:03:24.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבתר תריסר ירחי שתא שריין</strong> - דאי במחובר התליע לא הוי חיי עד השתא:"
+  },
+  "Rashi on Chullin 58b:2:1": {
+    "dependsOn": [
+      "Jastrow, בַּקָּא 1",
+      "Steinsaltz on Chullin 58b:2",
+      "Steinsaltz on Sukkah 26a:8"
+    ],
+    "generatedAt": "2026-11-13T02:11:51.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקא</strong> - מין זבוב צינציל\"א והיא נושכת כצרעה:"
+  },
+  "Rashi on Chullin 58b:2:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:2:1",
+      "Rashi on Chullin 58b:1:1",
+      "Rashi on Chullin 58b:1:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Chullin 58b:6:1",
+      "Rashi on Chullin 58b:7:1",
+      "Rashi on Chullin 58b:8:1"
+    ],
+    "generatedAt": "2026-11-13T02:13:18.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידבא</strong> - זבוב:"
+  },
+  "Rashi on Chullin 58b:3:1": {
+    "dependsOn": [
+      "Jastrow, מְרֵי 1",
+      "Rashi on Job 39:18:1",
+      "Rashi on Chullin 58b:3:2",
+      "Rashi on Chullin 58b:3:3",
+      "Rashi on Chullin 58b:3:4",
+      "Rashi on Chullin 58b:3:5",
+      "Rashi on Chullin 58b:3:6",
+      "Rashi on Chullin 58b:3:7"
+    ],
+    "generatedAt": "2026-11-13T02:15:34.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימרא</strong> - לשון <span class=\"parenthesized\">(איוב לט)</span> כעת במרום תמריא. נתנכרה לו ומרדה עליו אינשלביי\"ר:"
+  },
+  "Rashi on Chullin 58b:3:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:3:1",
+      "Rashi on Chullin 58b:3:3",
+      "Steinsaltz on Chullin 58b:3"
+    ],
+    "generatedAt": "2026-11-13T02:16:19.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבר מחוזא</strong> - על שם שהיו בני מחוזא מעונגים ושמנים נאמר משל זה עליהם:"
+  },
+  "Rashi on Chullin 58b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:16:47.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומצת מיניה</strong> - דמא. מצצת דמו:"
+  },
+  "Rashi on Chullin 58b:3:4": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:3:3",
+      "Rashi on Chullin 58b:3:4",
+      "Rashi on Chullin 58b:3:5"
+    ],
+    "generatedAt": "2026-11-13T02:17:58.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מני</strong> - משקל ששים מני:"
+  },
+  "Rashi on Chullin 58b:3:5": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:3:1",
+      "Rashi on Chullin 58b:3:2",
+      "Rashi on Chullin 58b:3:3",
+      "Rashi on Chullin 58b:3:4",
+      "Rashi on Chullin 58b:3:6",
+      "Rashi on Chullin 58b:3:7",
+      "Rashi on Chullin 57b:1:1",
+      "Jastrow on Chullin 58b:3:1",
+      "Jastrow on Chullin 58b:3:2",
+      "Steinsaltz on Chullin 58b:3",
+      "Jastrow, קוּרְנְסָא 1"
+    ],
+    "generatedAt": "2026-11-13T02:20:07.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקורנסיה</strong> - מרטי\"ל. כלומר הוי זהיר בו שנשיכתו כבדה:"
+  },
+  "Rashi on Chullin 58b:3:6": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:3:5",
+      "Rashi on Chullin 58b:3:6",
+      "Rashi on Chullin 58b:3:7"
+    ],
+    "generatedAt": "2026-11-13T02:21:22.031Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במני דידהו</strong> - במשקל שלהן של בקי שהוא קל:"
+  },
+  "Rashi on Chullin 58b:3:7": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:3:1",
+      "Rashi on Chullin 58b:3:2",
+      "Rashi on Chullin 58b:3:3",
+      "Rashi on Chullin 58b:3:4",
+      "Rashi on Chullin 58b:3:5",
+      "Rashi on Chullin 58b:3:6"
+    ],
+    "generatedAt": "2026-11-13T02:21:47.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשני דידהו</strong> - רגעים הן:"
+  },
+  "Rashi on Chullin 58b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:22:07.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן התם</strong> - בבכורות לענין מומים:"
+  },
+  "Rashi on Chullin 58b:4:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:4:1",
+      "Rashi on Chullin 58b:4:2",
+      "Rashi on Chullin 58b:4:3",
+      "Rashi on Chullin 58b:4:4"
+    ],
+    "generatedAt": "2026-11-13T02:22:46.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דקתני הרי זה מום לגבוה הא להדיוט שרי:"
+  },
+  "Rashi on Chullin 58b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:23:34.563Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שחסר ויתר ביד</strong> - שחסור זה דבעלת שלש או יתור זה דבעלת ה' ביד שאין לה אלא יד אחד או שיש לה ג' ידים:"
+  },
+  "Rashi on Chullin 58b:4:4": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:4:1",
+      "Rashi on Chullin 58b:4:2",
+      "Rashi on Chullin 58b:4:3",
+      "Rashi on Chullin 58b:4:4",
+      "Chullin 57b:2",
+      "Chullin 57a:3",
+      "Rashi on Chullin 57a:3:2"
+    ],
+    "generatedAt": "2026-11-13T02:25:31.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנטול דמי</strong> - יתר אחד כחסר אחד והויא כבעלת רגל אחד וטרפה דהויא כשמוטת ירך בבהמה:"
+  },
+  "Rashi on Chullin 58b:5:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 58b:5",
+      "Steinsaltz comment #1 on Chullin 58b:5",
+      "Steinsaltz comment #2 on Chullin 58b:5",
+      "Rashi on Chullin 50b:2:1",
+      "Rashi on Chullin 58b:4:1",
+      "Rashi on Chullin 58b:4:2",
+      "Rashi on Chullin 58b:6:1",
+      "Rashi on Chullin 58b:7:1",
+      "Rashi on Chullin 2a:1:1",
+      "Rashi on Chullin 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T02:27:39.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סניא דיבי</strong> - בודי\"ל קרשטניי\"א קורין לו:"
+  },
+  "Rashi on Chullin 58b:6:1": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:6:2",
+      "Jastrow, גּוּבְתָא 1",
+      "Steinsaltz on Chullin 58b:6"
+    ],
+    "generatedAt": "2026-11-13T02:28:21.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גובתא</strong> - כמו קנה בשר:"
+  },
+  "Rashi on Chullin 58b:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:6:1",
+      "Rashi on Chullin 58b:6:2",
+      "Steinsaltz on Chullin 58b:6"
+    ],
+    "generatedAt": "2026-11-13T02:29:32.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה מעבר מבי כסי להובלילא</strong> - המסס:"
+  },
+  "Rashi on Chullin 58b:7:1": {
+    "dependsOn": [
+      "Chullin 58b:7"
+    ],
+    "generatedAt": "2026-11-13T02:30:09.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאכשורה</strong> - כדאכשרנא בגובתא דבי כסי והובלילא:"
+  },
+  "Rashi on Chullin 58b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:31:26.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחדא מחיתא מחתינהו</strong> - וכי באריגה אחת ארגתם לכולם לשון <span class=\"parenthesized\">(שמות לט בתרגום)</span> עובד מחי. דתיקון דבור קרו לו אינשי אריגה שמסדר את דבריו:"
+  },
+  "Rashi on Chullin 58b:7:3": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:7:1",
+      "Rashi on Chullin 58b:7:2",
+      "Rashi on Chullin 58b:7:3",
+      "Rashi on Chullin 58b:7:4",
+      "Chullin 58b:7",
+      "Rashi on Chullin 58b:6:1",
+      "Rashi on Chullin 58b:6:2"
+    ],
+    "generatedAt": "2026-11-13T02:35:49.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דאיתמר</strong> - דברייתא הכי אית להו איתמר:"
+  },
+  "Rashi on Chullin 58b:7:4": {
+    "dependsOn": [
+      "Chullin 58b:7",
+      "Rashi on Chullin 58b:7:1",
+      "Rashi on Chullin 58b:7:2",
+      "Rashi on Chullin 58b:7:3",
+      "Chullin 58b:1",
+      "Chullin 58b:2",
+      "Chullin 58b:3",
+      "Chullin 58b:4"
+    ],
+    "generatedAt": "2026-11-13T02:37:41.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיכא דלא איתמר לא איתמר</strong> - ויתר הוא וכאילו ניטל אחד מן המעים כנגדו הוא דכל יתר כנטול דמי וכן הלכה דליכא מאן דפליג. ואע\"ג דאמרן <span class=\"parenthesized\">(לעיל חולין דף מז.)</span> באוני דריאה לית הלכתא כוותיה דרבא ביתרת הא אוקימנא והוא דקיימא בדרא דאוני דקים להו לרבנן דאורחייהו בהכי אבל ביני ביני טרפה אלמא כנטול דמי וגבי רגלים דלאו אורחייהו ודאי טרפה:"
+  },
+  "Rashi on Chullin 58b:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:8:1",
+      "Rashi on Chullin 58b:8:2",
+      "Rashi on Chullin 58b:8:3",
+      "Rashi on Chullin 58b:8:4",
+      "Steinsaltz on Chullin 58b:8",
+      "[",
+      "Steinsaltz comment #1 on Chullin 58b:8",
+      "Steinsaltz comment #2 on Chullin 58b:8",
+      "Jastrow, כַּנְתָא 1"
+    ],
+    "generatedAt": "2026-11-13T02:39:59.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היוצאים מן הבהמה כאחד</strong> - דאית לה תרתי הדורי דכנתא ושניהם יוצאין מן הקיבה זה בראשה וזה באמצעה:"
+  },
+  "Rashi on Chullin 58b:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:8:1",
+      "Rashi on Chullin 58b:8:3",
+      "Rashi on Chullin 58b:8:4",
+      "Steinsaltz on Chullin 58b:8",
+      "Steinsaltz comment #1 on Chullin 58b:8",
+      "Steinsaltz comment #2 on Chullin 58b:8",
+      "Steinsaltz comment #3 on Chullin 58b:8"
+    ],
+    "generatedAt": "2026-11-13T02:41:26.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכנגדן בעוף כשרה</strong> - דעוף זימנין דהוי הכי ואע\"ג דלא משתכח להו הכי קים להו. ויש מפרשין שכל עוף דרכו כן משום דמן הזפק ועד הקורקבן קנה של מעיין אחד וההוא קרי בני מעים ובראש הקורקבן יוצאין בני מעים גמורין:"
+  },
+  "Rashi on Chullin 58b:8:3": {
+    "dependsOn": [
+      "Rashi on Chullin 58b:8:1",
+      "Rashi on Chullin 58b:8:2",
+      "Rashi on Chullin 58b:8:3",
+      "Rashi on Chullin 58b:8:4"
+    ],
+    "generatedAt": "2026-11-13T02:41:57.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל יוצאין ממקום אחד</strong> - סמוכין זה לזה:"
+  },
+  "Rashi on Chullin 58b:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:42:18.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכלים עד כאצבע</strong> - וחוזרין ומתחברין בתוך רוחב אצבע:"
+  },
+  "Rashi on Chullin 58b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:42:46.833Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 58b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פליגי בה</strong> - בהיכא דיוצאים ממקום אחד דקתני כשרה:"
+  },
+  "Tosafot on Chullin 58b:11:1": {
+    "dependsOn": [
+      "Chullin 58b:11",
+      "Rashi on Chullin 58b:11:1"
+    ],
+    "generatedAt": "2026-11-13T02:45:53.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 58b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנוצה מצטרפת</strong> - פ\"ה לענין פגול וגריס אבל לענין פגול כרבנן סבירא ליה ור\"ת אומר שהוא משנה בטהרות <span class=\"parenthesized\">(פ\"א מ\"ב)</span> הכנפים והנוצה מטמאות ומיטמאות ולא מצטרפין רבי ישמעאל אומר הנוצה מצטרפת פירוש מצטרפת לכביצה דשומר הוא ותנן במסכת עוקצין <span class=\"parenthesized\">(פ\"א מ\"א)</span> כל שהוא יד ואינו שומר טמא ומטמא ולא מצטרף שומר אפילו שאינו יד טמא ומצטרף והשתא מייתי ראיה מדחשיב ליה כשומר לבשר אלמא הוי כמו עור וכשניטלה כאילו ניטל העור דהוי גלודה וטרפה ורבא דחי עד כאן לא קאמר רבי יהודה אלא לענין אגוני אבל שומר לבשר לא חשיב שאין רגילות להצניע העוף עם הנוצה שלא יתלכלך ועד כאן לא קאמר ר' ישמעאל אלא לענין טומאה דחשיב שומר אבל לענין אגוני לא מגין:"
+  },
+  "Tosafot on Chullin 58b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:10:04.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 58b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הני תמרי דכדא לבתר תריסר ירחי שתא שרי</strong> - רבינו שמואל גריס דכרים פירוש שהתליעו כמו ענבי דכרום ושדה שלקתה בעמרים בפרק המקבל <span class=\"parenthesized\">(ב\"מ דף קו: ע\"ש)</span> ובנזיר בריש גמרא פרק שלשה מינים <span class=\"parenthesized\">(נזיר דף לד:)</span> לאתויי ענבים דכרום ובאמצע הפרק זה <span class=\"parenthesized\">(דף לח:)</span> והא שייר ענבים דכרום שהרי אין דרך פירות להניח בכד ועוד דהוה ליה למימר שהתליעו ור\"ת מפרש שדרך להניח כל דבר בכד כדאיתא בפ' חזקת הבתים <span class=\"parenthesized\">(ב\"ב דף נה.)</span> הני שערי דכדא משתעבדי לכרגא ובהמפקיד <span class=\"parenthesized\">(ב\"מ דף מ.)</span> הוה עובדא ופקע כדא ובפ' הזהב <span class=\"parenthesized\">(בבא מציעא דף נט.)</span> במשלם שערי מכדא נקיט ואתי תיגרא:"
+  }
+}

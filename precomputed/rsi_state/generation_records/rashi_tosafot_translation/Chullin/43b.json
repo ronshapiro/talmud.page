@@ -65,6 +65,168 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מר לא אמר הכי</strong> - רבי אינו אומר כן:"
   },
+  "Rashi on Chullin 43b:11:4": {
+    "dependsOn": [
+      "Jastrow, כְּוֵץ 1",
+      "Steinsaltz comment #3 on Chullin 43b:11",
+      "Steinsaltz on Chullin 43b:11"
+    ],
+    "generatedAt": "2026-11-11T23:51:10.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכויץ</strong> - רטיי\"ש ונכפל פי הנקב בצד חללו ונסתם עוגל פי החלל:"
+  },
+  "Rashi on Chullin 43b:11:5": {
+    "dependsOn": [
+      "Rashi on Chullin 43b:11:4",
+      "Rashi on Chullin 43b:11:5",
+      "Rashi on Chullin 43b:11:6",
+      "Rashi on Chullin 43b:11:1",
+      "Rashi on Chullin 43b:11:2",
+      "Rashi on Chullin 43b:11:3",
+      "Chullin 43b:10"
+    ],
+    "generatedAt": "2026-11-11T23:52:13.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מבלעתא</strong> - מקום בית הבליעה קרוי תורבץ סמוך לראש הנקב מאד:"
+  },
+  "Rashi on Chullin 43b:11:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:52:36.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות משערתא</strong> - מאורך שעורה:"
+  },
+  "Rashi on Chullin 43b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-11T23:53:08.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתחיל ביה שחיטה</strong> - משהו:"
+  },
+  "Rashi on Chullin 43b:13:1": {
+    "dependsOn": [
+      "Chullin 43b:13",
+      "Rashi on Chullin 43b:13:1",
+      "Rashi on Chullin 43b:13:2",
+      "Rashi on Chullin 43b:12:1",
+      "Chullin 43b:10",
+      "Rashi on Chullin 43b:10:1",
+      "Rashi on Chullin 43b:10:2",
+      "Rashi on Chullin 43b:10:3",
+      "Rashi on Chullin 43a:1:1"
+    ],
+    "generatedAt": "2026-11-11T23:55:08.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר במשהו</strong> - והאי לאו מקום שחיטה הוא:"
+  },
+  "Rashi on Chullin 43b:13:2": {
+    "dependsOn": [
+      "Rashi on Chullin 43b:13:1"
+    ],
+    "generatedAt": "2026-11-11T23:55:47.032Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשמואל</strong> - והוי נקב:"
+  },
+  "Rashi on Chullin 43b:14:1": {
+    "dependsOn": [
+      "Chullin 43b:14",
+      "Rashi on Chullin 43b:14:2",
+      "Rashi on Chullin 43b:14:3"
+    ],
+    "generatedAt": "2026-11-11T23:59:19.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין לרב ובין לשמואל מישרא שרי</strong> - לרב מקום שחיטה הוא ושחיטה מעלייתא היא ולשמואל דאמר נקב הוא דאמר נקובתו ברובו:"
+  },
+  "Rashi on Chullin 43b:14:2": {
+    "dependsOn": [
+      "Rashi on Chullin 43b:14:1",
+      "Rashi on Chullin 43b:14:2",
+      "Rashi on Chullin 43b:14:3",
+      "Chokhmat Shlomo on Chullin 43b:2",
+      "Chokhmat Shlomo on Chullin 43b:1",
+      "Steinsaltz on Chullin 43b:14",
+      "Rashi on Chullin 43b:2:1",
+      "Rashi on Chullin 43b:2:2",
+      "Rashi on Chullin 43b:2:3",
+      "Rashi on Chullin 43b:11:1",
+      "Rashi on Chullin 43b:11:2",
+      "Rashi on Chullin 43b:11:3",
+      "Rashi on Chullin 43b:11:4",
+      "Rashi on Chullin 43b:11:5",
+      "Rashi on Chullin 43b:11:6",
+      "Rashi on Chullin 43b:9:1",
+      "Rashi on Chullin 43b:9:2",
+      "Rashi on Chullin 43b:9:3",
+      "Rashi on Chullin 43b:10:1",
+      "Rashi on Chullin 43b:10:2",
+      "Rashi on Chullin 43b:10:3",
+      "Rashi on Chullin 43b:13:1",
+      "Rashi on Chullin 43b:13:2",
+      "Rashi on Chullin 43b:12:1",
+      "Rashi on Chullin 43b:8:1",
+      "Rashi on Chullin 43b:7:1",
+      "Rashi on Chullin 43b:7:2",
+      "Rashba on Chullin 43b:3",
+      "Tosafot on Chullin 43b:14:1",
+      "Steinsaltz comment #1 on Chullin 43b:14",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T00:05:30.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:14:2"
+    ],
+    "sourceText": "רבא בריה דרב בר יוסף בר חייא הוא והוא רבא דכולי גמרא בר פלוגתיה דאביי:"
+  },
+  "Rashi on Chullin 43b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:07:16.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמי תורא למריה</strong> - שכבר האכילו לכלבים דאילו הוה קמן הוה הדר ביה ומישתרי באכילה דקיי\"ל <span class=\"parenthesized\">(בסנהדרין דף ו.)</span> טעה בדבר משנה חוזר והא דבר משנה מפורשת היא דלא עבדינן כתרי חומרי:"
+  },
+  "Rashi on Chullin 43b:15:1": {
+    "dependsOn": [
+      "Chullin 43b:15"
+    ],
+    "generatedAt": "2026-11-12T00:09:50.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 43b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלפי סנאיה דרבא</strong> - לישנא מעליא משום דבעי לאותובי והכסיל בחושך הולך:"
+  },
   "Rashi on Chullin 43b:1:1": {
     "costUsd": 0.062444799999999995,
     "dependsOn": [],
@@ -240,6 +402,54 @@
       "Rashi on Chullin 43b:9:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ברייתא</strong> - הרועות באפר וביערים:"
+  },
+  "Tosafot on Chullin 43b:13:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 43b:13:1",
+      "Tosafot on Chullin 43b:13:2"
+    ],
+    "generatedAt": "2026-11-11T23:56:51.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 43b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשמואל דאמר לאו מקום שחיטה הוא</strong> - ואפי' למאן דמכשיר בפ\"ק <span class=\"parenthesized\">(לעיל חולין יט.)</span> הגרים שליש ושחט שני שליש שאני גרגרת דלא מיטרפא במשהו עד דאיכא רובא:"
+  },
+  "Tosafot on Chullin 43b:13:2": {
+    "dependsOn": [
+      "Tosafot on Chullin 43b:13:1",
+      "Chullin 43b:12",
+      "Chullin 43b:13",
+      "Chullin 20a:6",
+      "Chullin 20a:7"
+    ],
+    "generatedAt": "2026-11-11T23:58:28.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 43b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי כשמואל הא אמר ברובו</strong> - אע\"ג דשמואל פוסל בפ\"ק <span class=\"parenthesized\">(לעיל חולין כ.)</span> הגרים שליש ושחט שני שליש גבי כל הכשר בשחיטה כנגדו בעורף כשר למליקה הכא בעי למימר דרבא לא פסיל מהאי טעמא אלא משום חומרי דרב וחומרי דשמואל:"
+  },
+  "Tosafot on Chullin 43b:14:1": {
+    "dependsOn": [
+      "Rashi on Chullin 43b:14:1",
+      "Rashi on Chullin 43b:14:2",
+      "Rashi on Chullin 43b:14:3",
+      "Chullin 43b:13",
+      "Rashba on Chullin 43b:14:1",
+      "Sanhedrin 33a:13",
+      "Sanhedrin 33a:14",
+      "Sanhedrin 33b:1"
+    ],
+    "generatedAt": "2026-11-12T00:09:11.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 43b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זיל שלים דמי תורא למריה</strong> - ואע\"ג דטעה בדבר משנה הוא לא עבדינן כתרי חומרי דסתרי אהדדי בידים האכילו לכלבים:"
   },
   "Tosafot on Chullin 43b:2:1": {
     "costUsd": 0.0682448,
