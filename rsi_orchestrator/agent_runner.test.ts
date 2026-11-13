@@ -421,8 +421,9 @@ describe("execFileWithStreaming", () => {
 
 describe("isCommandAllowed", () => {
   const allowed = [
-    "Bash(npm run *)",
-    "Bash(npm *)",
+    "Bash(npm run get-*)",
+    "Bash(npm run search *)",
+    "Bash(npm run wikipedia *)",
     "Bash(npx ts-node rsi_orchestrator/context_fetch_cli.ts *)",
     "Bash(curl *wikipedia.org*)",
   ];
@@ -447,6 +448,23 @@ describe("isCommandAllowed", () => {
       'npm run get-context get-refs \'["Menachot 107b:23"]\'',
       allowed,
     )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run search "Menachot 107b" "שתי הלחם"',
+      allowed,
+    )).toBe(true);
+
+    expect(isCommandAllowed(
+      'npm run wikipedia "Menachot"',
+      allowed,
+    )).toBe(true);
+  });
+
+  test("blocks unauthorized npm commands", () => {
+    expect(isCommandAllowed("npm run deploy", allowed)).toBe(false);
+    expect(isCommandAllowed("npm run dev", allowed)).toBe(false);
+    expect(isCommandAllowed("npm test", allowed)).toBe(false);
+    expect(isCommandAllowed("npm install", allowed)).toBe(false);
   });
 
   test("blocks python commands", () => {

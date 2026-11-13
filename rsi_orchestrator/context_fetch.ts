@@ -518,7 +518,7 @@ export function extractRequestedRefs(toolUses: ToolUseRecord[]): string[] {
     const command = input?.command ?? input?.CommandLine;
     if (!command) continue;
     const isContextFetch = command.includes("context_fetch_cli")
-      || /\bnpm\s+(?:run\s+)?(?:get-context|get-refs|get-comment-refs|get-neighbors|get-prior-sugyot|search|wikipedia)\b/.test(command);
+      || /\bnpm\s+run\s+(?:get-context|get-refs|get-comment-refs|get-neighbors|get-prior-sugyot|search|wikipedia)\b/.test(command);
     if (!isContextFetch) continue;
     if (/\b(?:wikipedia|search|get-comment-refs)\b/.test(command)) continue;
     const arrayMatch = command.match(/\[[^\]]*]/);

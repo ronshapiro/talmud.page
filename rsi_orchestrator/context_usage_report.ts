@@ -55,7 +55,7 @@ const SUBCOMMANDS = new Set([
 function subcommandOf(command: string): string | undefined {
   const cliMatch = /context_fetch_cli\S*\s+([a-z-]+)/.exec(command);
   if (cliMatch && SUBCOMMANDS.has(cliMatch[1])) return cliMatch[1];
-  const npmMatch = /\bnpm\s+(?:run\s+)?(?:get-context\s+)?([a-z-]+)/.exec(command);
+  const npmMatch = /\bnpm\s+run\s+(?:get-context\s+)?([a-z-]+)/.exec(command);
   if (npmMatch && SUBCOMMANDS.has(npmMatch[1])) return npmMatch[1];
   return /\bcurl\b.*wikipedia\.org/.test(command) ? "wikipedia" : undefined;
 }
