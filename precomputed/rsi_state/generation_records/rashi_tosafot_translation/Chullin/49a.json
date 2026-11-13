@@ -1,0 +1,597 @@
+{
+  "Rashi on Chullin 49a:10:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:10:2",
+      "Rashi on Chullin 49a:9:1",
+      "Rashi on Chullin 49a:9:2"
+    ],
+    "generatedAt": "2026-11-12T09:41:47.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מורנא</strong> - תולעת היוצאה מן הריאה ונקבה:"
+  },
+  "Rashi on Chullin 49a:10:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:10:1"
+    ],
+    "generatedAt": "2026-11-12T09:42:28.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שחיטה פריש</strong> - מן הריאה ונקבה ונטרפה:"
+  },
+  "Rashi on Chullin 49a:12:1": {
+    "dependsOn": [
+      "Jastrow, מַלּוּךְ 1",
+      "Rashi on Chullin 49a:12:2",
+      "Chullin 49a:12",
+      "Rashi on Chullin 49a:13:1",
+      "Steinsaltz on Chullin 49a:12"
+    ],
+    "generatedAt": "2026-11-12T09:44:07.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלוך ערבאה</strong> - הדר בערביים:"
+  },
+  "Rashi on Chullin 49a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:44:45.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין הלכה כרבי שמעון קאמר</strong> - לא אמר הלכה כרבי שמעון אלא אין הלכה כרבי שמעון קאמר:"
+  },
+  "Rashi on Chullin 49a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:45:16.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת מה בידך</strong> - רב ביבי שייליה לרבי זירא:"
+  },
+  "Rashi on Chullin 49a:14:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:14:1",
+      "Chullin 49a:14",
+      "Rashi on Chullin 49a:13:1",
+      "Rashi on Chullin 49a:12:1"
+    ],
+    "generatedAt": "2026-11-12T09:46:25.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין הלכה כרבי שמעון</strong> - גמרא קא פסיק ליה. ובישיבה האחרונה נפסקו ההלכות הללו הפסוקות סתם בגמרא:"
+  },
+  "Rashi on Chullin 49a:15:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:15:1",
+      "Rashi on Chullin 49a:15:2",
+      "Rashi on Chullin 49a:15:3",
+      "Chokhmat Shlomo on Chullin 49a:2",
+      "Steinsaltz comment #1 on Chullin 49a:15",
+      "Steinsaltz comment #2 on Chullin 49a:15",
+      "Tosafot on Chullin 49a:15:1"
+    ],
+    "generatedAt": "2026-11-12T09:49:30.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים</strong> - שהקבה ניתנה להם מאת זובחי הזבח נהגו בו היתר לאכלו. ומשום רבי ישמעאל נקיט ליה:"
+  },
+  "Rashi on Chullin 49a:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:49:54.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וסימניך</strong> - שהוא התירה ולא תשכח בשם מי נאמר:"
+  },
+  "Rashi on Chullin 49a:15:3": {
+    "dependsOn": [
+      "Chullin 49a:15",
+      "Rashi on Chullin 49a:15:3"
+    ],
+    "generatedAt": "2026-11-12T09:50:41.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישמעאל כהנא מסייע כהני</strong> - תמיד הוא עוזרן ומיקל להם ולקמיה מפרש היכא:"
+  },
+  "Rashi on Chullin 49a:16:1": {
+    "dependsOn": [
+      "Chullin 49a:16"
+    ],
+    "generatedAt": "2026-11-12T09:52:47.302Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי היא</strong> - היכא מסייע להם:"
+  },
+  "Rashi on Chullin 49a:16:2": {
+    "dependsOn": [
+      "Chullin 49a:16",
+      "Rashi on Chullin 49a:16:1",
+      "Rashi on Chullin 49a:15:1",
+      "Rashi on Chullin 49a:15:2",
+      "Rashi on Chullin 49a:15:3"
+    ],
+    "generatedAt": "2026-11-12T09:53:45.817Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואני אברכם</strong> - רבי ישמעאל מוקי ליה אכהנים ורבי עקיבא מוקי ליה אישראל:"
+  },
+  "Rashi on Chullin 49a:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:58:54.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי מסייע כהני</strong> - הואיל ורבי עקיבא נמי אית ליה ברכה לכהנים מקרא אחרינא:"
+  },
+  "Rashi on Chullin 49a:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:59:44.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום ברכה לישראל</strong> - אצל ברכת ישראל דהכי עדיפא דמשמע שמתברכין הן עם השאר:"
+  },
+  "Rashi on Chullin 49a:1:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 49a:1",
+      "Steinsaltz comment #1 on Chullin 49a:1"
+    ],
+    "generatedAt": "2026-11-12T08:59:04.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עובי בית הכוסות</strong> - בסוף הכרס שקורים פנצ\"א יש בו שעשוי ככובע ושפת דופנו כפולה שתי דפנות אדוקין זו בזו ושומן מחברן וקורין לו דובלו\"ן:"
+  },
+  "Rashi on Chullin 49a:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 49a:1:3"
+    ],
+    "generatedAt": "2026-11-12T08:59:36.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצד אחד</strong> - שנקבה את דופן הפנימית ולא נקבה את השנית:"
+  },
+  "Rashi on Chullin 49a:1:3": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 49a:1:3",
+      "Rashi on Chullin 49a:1:4",
+      "Rashi on Chullin 49a:1:5"
+    ],
+    "generatedAt": "2026-11-12T09:00:12.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשרה</strong> - שחברתה מגינה עליה:"
+  },
+  "Rashi on Chullin 49a:1:4": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 49a:1:3",
+      "Rashi on Chullin 49a:1:4",
+      "Rashi on Chullin 49a:1:5"
+    ],
+    "generatedAt": "2026-11-12T09:00:51.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משני צדדין</strong> - שנקבה השנית ויצאה לחלל הגוף:"
+  },
+  "Rashi on Chullin 49a:1:5": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 49a:1:3",
+      "Rashi on Chullin 49a:1:4",
+      "Chullin 49a:1",
+      "Rashi on Chullin 48b:11:1",
+      "Rashi on Chullin 48b:11:2",
+      "Rashi on Chullin 48b:6:1",
+      "Rashi on Chullin 48b:8:2"
+    ],
+    "generatedAt": "2026-11-12T09:03:35.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרפה</strong> - ולא אמרינן היכא דלא נקבה אלא את האחת אי קופא לבר שנמצאת קופא שלה תחובה בדופן ופיה כולה בתוך הכרס ודאי מבחוץ נכנסה שנקבה את הוושט או כרס או דקין ובאת לחלל הגוף ומשם חזרה ונכנסה לעובי בית הכוסות ועברה כבר כולה את הדופן החיצון ולא הספיקה קופא שלה לעבור את דופן הפנימי דאי מבפנים באתה ועכשיו היא מתחלת לצאת דרך עובי בית הכוסות אין דרך הקופא לנקב ונימא טרפה אלא מדקתני כשרה שמעינן מינה כל היכא דמצינו למימר סמפונא נקט ועל כגון הכא די\"ל דרך הוושט באת עד הלום ועכשיו היא מתחלת לנקב ואפילו קופא לבר לא טרפינן:"
+  },
+  "Rashi on Chullin 49a:2:1": {
+    "dependsOn": [
+      "Chullin 49a:2"
+    ],
+    "generatedAt": "2026-11-12T09:04:13.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלין ומשקין דחקוה</strong> - ומתוך הדחק נכנסה קופא שלה בבשר הילכך אע\"ג דקופא לבר הואיל ולא חזינן נקב יוצא לחוץ כשרה:"
+  },
+  "Rashi on Chullin 49a:3:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:3:2",
+      "Rashi on Chullin 49a:3:3"
+    ],
+    "generatedAt": "2026-11-12T09:04:56.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הונא מר טריף</strong> - דקסבר נקובי נקיב שלא נכנסה אלא דרך הוושט ונקבה כרס או וושט או דקין ויצתה:"
+  },
+  "Rashi on Chullin 49a:3:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:3:1",
+      "Rashi on Chullin 49a:3:3",
+      "Steinsaltz on Chullin 49a:3:1",
+      "Steinsaltz on Chullin 49a:3",
+      "Steinsaltz comment #1 on Chullin 49a:3",
+      "Rashi on Chullin 48b:4:2",
+      "Rashi on Chullin 48b:4:3",
+      "Jastrow, סִימְפּוֹנָא 1"
+    ],
+    "generatedAt": "2026-11-12T09:06:38.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכשר</strong> - כיון דבסמפונא אישתכח אמרינן מי מיכוונה להכנס בסמפון זה אלא דרך הקנה נכנסה והקנה וקנה כבד סמוכין זה לזה בהתחלקן סמוך לריאה וגם קנה הלב וקנה הכבד מתחלקין לסמפונות בראשן האחד וי\"ל שנכנסה מסמפוני הכבד לסמפוני קנה הכבד ומשם עלתה לכבד דרך הסמפונות:"
+  },
+  "Rashi on Chullin 49a:3:3": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:3:1",
+      "Rashi on Chullin 49a:3:2",
+      "Rashi on Chullin 49a:3:3",
+      "Steinsaltz on Chullin 49a:3",
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 48b:1:1",
+      "Rashi on Chullin 48b:2:1",
+      "Rashi on Chullin 2a:1:1"
+    ],
+    "generatedAt": "2026-11-12T09:08:03.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקילו גלימא דטרופאי</strong> - שהאכילוה לכלבים:"
+  },
+  "Rashi on Chullin 49a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:08:30.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשייתא</strong> - גרעין של תמרה:"
+  },
+  "Rashi on Chullin 49a:4:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:4:1",
+      "Rashi on Chullin 49a:4:2",
+      "Rashi on Chullin 49a:4:3",
+      "Tosafot on Chullin 49a:4:1",
+      "Steinsaltz on Chullin 49a:4"
+    ],
+    "generatedAt": "2026-11-12T09:09:39.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סימפונא</strong> - דכבד נקט ועל. דרך הקנה נכנסה דאי דרך הוושט נכנסה אינה ראויה לנקב כלום ולצאת משם ולחזור וליכנס כאן דרך נקב:"
+  },
+  "Rashi on Chullin 49a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:10:07.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"ג דלא נפקא</strong> - שאינה יכולה לצאת דרך הסמפון כשרוצין להוציאה לפי שהסמפון דחוק:"
+  },
+  "Rashi on Chullin 49a:4:4": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:4:3",
+      "Rashi on Chullin 49a:4:5"
+    ],
+    "generatedAt": "2026-11-12T09:12:20.960Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מירבל הוא דרביל</strong> - על ידי נענוע שנענעה הבהמה בהליכתה ימים רבים נכנסה תמיד מעט מעט במקום דחוק שאינה יכולה עכשיו לצאת. מירבל לשון כברה שמנענעים אותה כמו אייתי ארבלא וקמרבל באלו מציאות <span class=\"parenthesized\">(ב\"מ כו:)</span>:"
+  },
+  "Rashi on Chullin 49a:4:5": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:4:1",
+      "Rashi on Chullin 49a:4:2",
+      "Rashi on Chullin 49a:4:3",
+      "Rashi on Chullin 49a:4:4",
+      "Chullin 49a:4",
+      "Tosafot on Chullin 49a:4:1",
+      "Steinsaltz on Chullin 49a:4",
+      "Rosh on Chullin 3:27:1"
+    ],
+    "generatedAt": "2026-11-12T09:14:28.392Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיבזע בזע</strong> - במחט ומאן דטריף במחט טריף נמי בהא:"
+  },
+  "Rashi on Chullin 49a:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:5:2"
+    ],
+    "generatedAt": "2026-11-12T09:16:50.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאכילה</strong> - האוכלין אותה כמו שהיא:"
+  },
+  "Rashi on Chullin 49a:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:5:1"
+    ],
+    "generatedAt": "2026-11-12T09:17:35.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או ע\"י סמנין</strong> - כשמערבין סממנין המאירין את העינים אף היא מסייעה עמם:"
+  },
+  "Rashi on Chullin 49a:6:1": {
+    "dependsOn": [
+      "Chullin 49a:6",
+      "Rashi on Chullin 49a:6:2"
+    ],
+    "generatedAt": "2026-11-12T09:18:48.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אווזא בזוזא ריאה דידה בארבעה</strong> - כשהאווז נלקח בדינר ריאה שלה שווה ד' לפי שהסממנין מעורבין בה:"
+  },
+  "Rashi on Chullin 49a:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:6:1",
+      "Rashi on Chullin 49a:5:1",
+      "Rashi on Chullin 49a:5:2",
+      "Steinsaltz on Chullin 49a:6",
+      "Chidushei Agadot on Chullin 49a:1",
+      "Chullin 49a:5",
+      "Chokhmat Shlomo on Chullin 49a:1"
+    ],
+    "generatedAt": "2026-11-12T09:20:56.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד</strong> - כמות שהיא מאירה לינקוט אווז שלם עם הריאה בזוזא וליכול ומאי דקאמר. הכי גרסינן ואי ס\"ד לאכילה לינקוט בזוזא וליכול:"
+  },
+  "Rashi on Chullin 49a:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:7:2",
+      "["
+    ],
+    "generatedAt": "2026-11-12T09:22:25.297Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דממשמשא ידא דטבחא</strong> - אני שמעתי במיצר החזה שמתוך הדחק היד קורעת בצפרניו. וכמדומה אני בכל מקום שהוא יודע שיכול לתלות כגון נקב העשוי בסכין או שתלשה מלמעלה בחזקה ואח\"כ נמצא שם נקב:"
+  },
+  "Rashi on Chullin 49a:7:2": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:7:1",
+      "Rashi on Chullin 49a:7:2",
+      "Chullin 49a:7",
+      "Rashi on Chullin 49a:8:1",
+      "Chokhmat Shlomo on Chullin 49a:1",
+      "Rashi on Chullin 49a:10:1",
+      "Rashi on Chullin 49a:10:2",
+      "Rashi on Chullin 48b:4:4",
+      "Rashi on Chullin 49a:1:1",
+      "Rashi on Chullin 49a:1:2",
+      "Rashi on Chullin 49a:1:3",
+      "Rashi on Chullin 49a:1:4",
+      "Rashi on Chullin 49a:1:5",
+      "Rashi on Chullin 49a:2:1",
+      "Rashi on Chullin 49a:3:1",
+      "Rashi on Chullin 49a:5:1",
+      "Rashi on Chullin 49a:6:1",
+      "Steinsaltz on Chullin 49a:7",
+      "Rashi on Chullin 50a:15:3",
+      "Rashba on Chullin 49a:1",
+      "Rashba on Chullin 49a:2",
+      "Rashi on Chullin 42a:3:1"
+    ],
+    "generatedAt": "2026-11-12T09:36:50.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:7:2"
+    ],
+    "sourceText": "והילכתא תלינן:"
+  },
+  "Rashi on Chullin 49a:8:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 49a:8"
+    ],
+    "generatedAt": "2026-11-12T09:37:34.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרישי כלי</strong> - מריש דרשנין המשמיעין לעם את דבריו כשהיה דורש:"
+  },
+  "Rashi on Chullin 49a:9:1": {
+    "dependsOn": [
+      "Chullin 49a:9",
+      "Rashi on Chullin 49a:9:2"
+    ],
+    "generatedAt": "2026-11-12T09:38:51.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבוה דאבא</strong> - רב אחא:"
+  },
+  "Rashi on Chullin 49a:9:2": {
+    "dependsOn": [
+      "Chullin 49a:9",
+      "Rashi on Chullin 49a:9:1"
+    ],
+    "generatedAt": "2026-11-12T09:41:04.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 49a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא תלינן בזאב</strong> - דאמר בפ\"ק <span class=\"parenthesized\">(לעיל חולין ט.)</span> בא זאב ונטל את בני מעיים והחזירן כשהן נקובין אין אומרים במקום נקב נקב:"
+  },
+  "Tosafot on Chullin 49a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:52:06.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהנים נהגו בו היתר</strong> - ה\"ה ישראלים וכהנים דנקט לפי שהקבה ניתנה לכהנים:"
+  },
+  "Tosafot on Chullin 49a:16:1": {
+    "dependsOn": [
+      "Chullin 49a:16",
+      "Tosafot on Chullin 49a:15:1",
+      "Tosafot on Chullin 49a:16:1",
+      "Tosafot on Chullin 49a:17:1",
+      "Tosafot on Chullin 49a:18:1",
+      "Rashi on Chullin 49a:16:1",
+      "Rashi on Chullin 49a:16:2"
+    ],
+    "generatedAt": "2026-11-12T09:55:49.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי מסייע כהני</strong> - דמשום פעם אחת לא היה קוראהו מסייע כהני:"
+  },
+  "Tosafot on Chullin 49a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T09:56:39.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקדוש ברוך הוא מסכים על ידם</strong> - ולרבי ישמעאל לא איצטריך קרא להכי דפשיטא דמסכים כיון שצוה להם לברך:"
+  },
+  "Tosafot on Chullin 49a:18:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 49a:18:1",
+      "Chullin 13a:12"
+    ],
+    "generatedAt": "2026-11-12T09:58:15.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואברכה מברכיך</strong> - ואפילו עובדי כוכבים המברכים את ישראל מתברכין כדאיתא בירושלמי דברכות דההוא עובד כוכבים דיהיב שלמא לרבי ישמעאל אמר לו מלתך כבר אמורה פירוש איני צריך להחזיר לך שלום שברכתך כתובה מואברכה מברכיך:"
+  },
+  "Tosafot on Chullin 49a:20:1": {
+    "dependsOn": [
+      "Chullin 49a:20",
+      "Chullin 49b:2",
+      "Chullin 49a:16"
+    ],
+    "generatedAt": "2026-11-12T10:01:06.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאמר משום אבותיו מאי היא דתניא כו'</strong> - פירוש קבלה היתה בידו של רבי אושעיא דרבי ישמעאל משום אבותיו התיר אבל לא מתוך ברייתא זו דקדק ולא גרסינן דברי רבי ישמעאל שאמר משום אבותיו אלא דברי רבי ישמעאל סתם דהא במסקנא מהפכינן ליה ומפרש דמשום אבותיו דקאמר רבי אושעיא היינו משום אבותיו וליה לא ס\"ל והא דקאמר הכא שאמר משום אבותיו מאי היא היינו אותה ברייתא שהתיר רבי ישמעאל חלב הקיבה שאתה אומר שהוא משום אבותיו מאי היא:"
+  },
+  "Tosafot on Chullin 49a:4:1": {
+    "dependsOn": [
+      "Rashi on Chullin 49a:4:5",
+      "Chullin 48b:3",
+      "Rashi on Chullin 48b:4:4"
+    ],
+    "generatedAt": "2026-11-12T09:16:04.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 49a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל דזיתא מבזע בזע</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> ולמאן דחייש במחט חייש נמי הכא ואם כן הוה דלא כהלכתא דקיימא לן הלכתא כרבי יוחנן דמכשיר לעיל אבל נראה דאפילו רבי יוחנן במחט הוא דתלינן שבאתה דרך הסמפונות אבל קשייתא דזיתא שהם גסים ואינן יכולין לבא בריווח דרך הסמפונות חיישינן שמא ניקבה הוושט וחזר ונכנס בכבד:"
+  }
+}

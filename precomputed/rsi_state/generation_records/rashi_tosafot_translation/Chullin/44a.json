@@ -1,0 +1,378 @@
+{
+  "Rashi on Chullin 44a:10:1": {
+    "dependsOn": [
+      "Chullin 44a:10",
+      "Rashi on Chullin 44a:10:1",
+      "Rashi on Chullin 44a:10:2",
+      "Rashi on Chullin 44a:10:3",
+      "Chullin 44a:12"
+    ],
+    "generatedAt": "2026-11-12T00:36:14.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורבץ הוושט שניטל כולו</strong> - לקמיה פריך והא איכא עיקור סימנים:"
+  },
+  "Rashi on Chullin 44a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:36:46.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא תונא</strong> - תנא דמתניתין דפרקין מסייע ליה. תונא כמו תנא דידן:"
+  },
+  "Rashi on Chullin 44a:10:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:10:1",
+      "Rashi on Chullin 44a:10:2",
+      "Rashi on Chullin 44a:10:3"
+    ],
+    "generatedAt": "2026-11-12T00:37:23.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניטל לחי התחתון כשר</strong> - וכיון שניטל הלחי נתלשו הסימנים שבלחי התחתון הם מחוברי':"
+  },
+  "Rashi on Chullin 44a:12:1": {
+    "dependsOn": [
+      "Chullin 44a:12"
+    ],
+    "generatedAt": "2026-11-12T00:42:40.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא מתני'</strong> - דקתני כשר:"
+  },
+  "Rashi on Chullin 44a:13:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:13:2",
+      "Rashi on Chullin 44a:13:3",
+      "Rashi on Chullin 44a:12:1"
+    ],
+    "generatedAt": "2026-11-12T00:43:22.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דאיעקור איעקורי</strong> - עיקור סימנים כשנעקר הוושט מן הלחי ומן הבשר:"
+  },
+  "Rashi on Chullin 44a:13:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:13:1",
+      "Rashi on Chullin 44a:13:3"
+    ],
+    "generatedAt": "2026-11-12T00:44:06.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דאיגום איגומי מעילוי סימנים</strong> - שנגמם הלחי מן הבשר שמוטל על הסימנים בין הלחי והסימן דלאו עיקור הוא שהסימנים מעורין בבשר:"
+  },
+  "Rashi on Chullin 44a:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:44:42.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לשמואל קשיא</strong> - הא דרב פפא דלדידיה איכא עיקור סימנים דקאמר תורבץ הוושט שניטל דמשמע שהוושט לבדו ניתק ונתלש מן הבשר:"
+  },
+  "Rashi on Chullin 44a:15:1": {
+    "dependsOn": [
+      "Sotah 35b:14",
+      "Sotah 35b:15",
+      "Sotah 35b:16",
+      "Sotah 35b:1",
+      "Sotah 35b:2",
+      "Sotah 35b:3",
+      "Sotah 35b:4",
+      "Sotah 35b:5",
+      "Sotah 35b:6",
+      "Sotah 35b:7",
+      "Sotah 35b:8",
+      "Sotah 35b:9",
+      "Sotah 35b:10",
+      "Rashi on Sotah 35b:9:1",
+      "Rashi on Sotah 35b:9:2",
+      "Rashi on Sotah 35b:9:3",
+      "Rashi on Chullin 44a:15:2",
+      "Rashi on Chullin 44a:13:1",
+      "Rashi on Chullin 44a:13:2",
+      "Rashi on Chullin 44a:13:3",
+      "Rashi on Chullin 43b:8:1",
+      "Rashi on Chullin 43b:1:1"
+    ],
+    "generatedAt": "2026-11-12T00:47:00.327Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאקפל אקפולי</strong> - שנקלף מעל הבשר. אקפל כמו ונקלף ודומה לו וקפלו את האבנים דמסכת סוטה <span class=\"parenthesized\">(דף לה:)</span>:"
+  },
+  "Rashi on Chullin 44a:15:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:15:1"
+    ],
+    "generatedAt": "2026-11-12T00:47:56.812Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיפרוק אפרוקי</strong> - כדבר הנעקר בכח שנעקר כאן מעט וכאן מעט עד רובו דאותו מיעוט המחובר אינו מחובר ביחד הילכך לאו חבור הוא דלא הדר בריא:"
+  },
+  "Rashi on Chullin 44a:1:1": {
+    "dependsOn": [
+      "Chullin 44a:1"
+    ],
+    "generatedAt": "2026-11-12T00:11:43.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחומרי בית שמאי ומחומרי בית הלל</strong> - מפרש בפ\"ק דעירובין <span class=\"parenthesized\">(דף ז.)</span> בתרי חומרי דסתרן אהדדי כגון הך דשדרה וגולגולת דאפלוג בית שמאי ובית הלל לגבי אהל דהוו להו בית שמאי לחומרא ואמרי עד שתחסר שתי חוליות מטמא באהל ובית הלל לקולא וקאמרינן וכן לטרפה דלבית הלל בחדא חוליא הוי חסרון וטרפה ולב\"ש כשרה והוו להו ב\"ש לקולא וב\"ה לחומרא ומאן דעביד בטרפות כחומרי ב\"ה ובטומאה כחומרי ב\"ש כסיל הוא דהכא חשיב ליה חסרון והכא לא חשיב ליה חסרון. והני דרבא נמי סתרן אהדדי דכיון דאמר נקובתו במשהו טעמא משום דמקום שחיטה הוא וחומרי דשמואל דאמר לאו מקום שחיטה הוא ואשתכח דסתרן מילתיה דרבא אהדדי:"
+  },
+  "Rashi on Chullin 44a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:12:11.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת קול</strong> - בפרק קמא דעירובין <span class=\"parenthesized\">(דף יג:)</span> יצתה בת קול ואמרה הלכה כבית הלל:"
+  },
+  "Rashi on Chullin 44a:4:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:4:1",
+      "Chullin 44a:4",
+      "Rashi on Chullin 44a:3:1",
+      "Tosafot on Chullin 44a:4:1"
+    ],
+    "generatedAt": "2026-11-12T00:13:51.253Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:4:1"
+    ],
+    "sourceText": "דרבי יהושע בבבא מציעא בהזהב <span class=\"parenthesized\">(בבא מציעא דף נט:)</span>:"
+  },
+  "Rashi on Chullin 44a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:19:25.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכל מקום קשיא</strong> - דכתרי חומרי לא עבדינן:"
+  },
+  "Rashi on Chullin 44a:6:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:6:1",
+      "Rashi on Chullin 44a:6:2",
+      "Rashi on Chullin 44a:6:3",
+      "Chullin 44a:6",
+      "Chokhmat Shlomo on Chullin 44a:2",
+      "Tosafot on Chullin 44a:6:1"
+    ],
+    "generatedAt": "2026-11-12T00:21:02.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:6:1"
+    ],
+    "sourceText": "סתם שמעתתיה דרב בדרי בתראי רב יהודה הוה אמר להו בבי מדרשא:"
+  },
+  "Rashi on Chullin 44a:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:6:1",
+      "Rashi on Chullin 44a:6:3"
+    ],
+    "generatedAt": "2026-11-12T00:21:37.836Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנו בו שיעור</strong> - עד כמה הוא כשר לשחיטה:"
+  },
+  "Rashi on Chullin 44a:6:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:6:1",
+      "Rashi on Chullin 44a:6:2"
+    ],
+    "generatedAt": "2026-11-12T00:22:14.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו מקום שחיטה הוא</strong> - אפ\"ה אמר רב במשהו מידי דהוה אגרגרת דבין במקום שחיטה בין שלא במקום שחיטה שוה שיעוריה:"
+  },
+  "Rashi on Chullin 44a:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:7:2"
+    ],
+    "generatedAt": "2026-11-12T00:27:02.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כדי תפיסת יד</strong> - צריך להניח לצד הראש כשלש אצבעות וארבע לשון מורי הזקן ואני שמעתי אחיזת חודי צפרנים והראשון נראה בעיני דכי האי גוונא לא מיקרי תפיסת יד:"
+  },
+  "Rashi on Chullin 44a:7:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:7:1",
+      "Steinsaltz on Chullin 44a:7"
+    ],
+    "generatedAt": "2026-11-12T00:27:43.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד מקום שישעיר</strong> - שיש שם שער שגוררין בסכין מכרס הפנימי:"
+  },
+  "Rashi on Chullin 44a:8:1": {
+    "dependsOn": [
+      "Chullin 44a:8",
+      "Rashi on Chullin 44a:6:1",
+      "Rashi on Chullin 44a:7:1",
+      "Rashi on Chullin 44a:7:2"
+    ],
+    "generatedAt": "2026-11-12T00:32:05.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפח בוושט</strong> - מיקרי כרס וקא סלקא דעתך דלא אזיל שער בתוך הוושט ולא מידי ואת אמרת עד מקום שישעיר דהא עד סוף הוושט כולו מצי שחיט וכיון דלאו וושט הוא היכי מצי שחיט ביה:"
+  },
+  "Rashi on Chullin 44a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:33:48.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא טפח בכרס סמוך לוושט</strong> - דהיינו טפח ראשון של כרס הוי כרס הפנימי ונקובתו במשהו ולפי שהוא נחבא במקום המיצר בין צלעות החזה קרי ליה פנימי וכל שאר הכרס קרוי במתני' החיצונה ונידונית בקריעת רובו:"
+  },
+  "Rashi on Chullin 44a:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:9:1",
+      "Rashi on Chullin 44a:9:2",
+      "Rashi on Chullin 44a:9:3"
+    ],
+    "generatedAt": "2026-11-12T00:34:29.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי קאמר רב</strong> - טפח בוושט מקרי כרס:"
+  },
+  "Rashi on Chullin 44a:9:3": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:9:1",
+      "Rashi on Chullin 44a:9:2",
+      "Rashi on Chullin 44a:9:3",
+      "Chullin 44a:9",
+      "Rashi on Chullin 44a:7:1",
+      "Rashi on Chullin 44a:7:2"
+    ],
+    "generatedAt": "2026-11-12T00:35:15.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 44a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתורא דמשעיר טפי</strong> - שהשער נכנס בתוך הוושט טפח ולעולם מקום שחיטה הוי בוושט עד מקום השער:"
+  },
+  "Tosafot on Chullin 44a:11:1": {
+    "dependsOn": [
+      "Chullin 44a:11",
+      "Chullin 44a:14",
+      "Tosafot on Chullin 20a:6:1",
+      "Chidushei Halachot on Chullin 44a:2",
+      "Chokhmat Shlomo on Chullin 44a:4"
+    ],
+    "generatedAt": "2026-11-12T00:40:12.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאיכא עיקור סימנים</strong> - לפירוש <span class=\"rashi-quotation\">הקונטרס</span> דפ\"ק <span class=\"parenthesized\">(לעיל חולין כ.)</span> דבעיקור סימנים הויא טרפה תימה דהיכי פשיטא ליה דהויא טרפה על כרחך אינה נטרפה בתורבץ הוושט בנקב בעלמא כמו בוושט עצמו וכמו כן נימא דניטל כולו כשרה וכי תימא דסבירא ליה דלא גרע משמוטת הגרגרת שהיא טרפה זהו דוחק גדול ועוד דקא משני דברובו כשרה אף על פי דפסוקת הגרגרת תנן ברובו טרפה ולפירוש הלכות גדולות פריך שפיר והא איכא עיקור סימנים אף ע\"ג דלא הויא טרפה בשמוטה זו מ\"מ במה יכשר כיון דאין לו היתר בשחיטה ומיהו קשה לפי' ה\"ג דמאי פריך והאמר רבה בר בר חנה סימנים שנדלדלו ברובן טרפה לפי המקשן תקשה ליה ארבה בר בר חנה גופיה דאי טרפה הויא בהכי אם כן מהו עיקור דקיימא לן דלא הויא טרפה אלא שאין שחיטה מועלת בו ומיהו ספרים דגרסי מעיקרא לא קשיא <span class=\"parenthesized\">(הא דאקפל אקפולי)</span> והא דאדלדול אדלדולי וי\"ל שיודע המקשן כדמסיק לבסוף דרבה בר בר חנה איירי דאיפרוק אפרוקי בכח כאן מעט וכאן מעט דלא הדרא בריא והוי טרפה ועיקור סימנין דלא הוי טרפה דאקפול אקפולי בנחת מעל הבשר ומ\"מ פריך מדלדול דרבה בר בר חנה אלשון דלדול שהזכיר המתרץ וחוזר ומפרש לו דדלדול שאמרתי אינו כשל רבה בר בר חנה אבל לספרים דגרסי בתר והא אמר שמואל ברובו לא קשיא הא דאנקוב אנקובי הא דאקפל אקפולי קשה וכן קשה לפירוש רבינו חננאל דמפרש דאפרוק איפרוקי שנפרדו הסימנין זה מזה ליכא למימר שהמקשן היה יודע האמת דא\"כ לא הוה פריך מידי וי\"ל דכי פריך מרבה בר בר חנה הוה מצי למימר וליטעמיך תקשה לך דרבה בר בר חנה גופיה אי טרפה הויא עיקור סימנים היכי משכחת לה:"
+  },
+  "Tosafot on Chullin 44a:4:1": {
+    "dependsOn": [
+      "Chullin 44a:4",
+      "Tosafot on Chullin 44a:6:1",
+      "Tosafot on Chullin 44a:4:1",
+      "Tosafot on Chullin 44a:6:2"
+    ],
+    "generatedAt": "2026-11-12T00:18:59.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יהושע היא דאמר אין משגיחין בבת קולמדקאמר נתנו בו חכמים שיעור כו'</strong> - ולא בעי למימר דנתנו בו שיעור למטה דמדלא פירש דבריו מסתמא בין למעלה בין למטה קאמר:תימה דקיימא לן כבית הלל משום בת קול וקיימא לן דרבי אליעזר שמותי הוא ולא חיישינן בבת קול שפסק כוותיה בפרק הזהב <span class=\"parenthesized\">(ב\"מ דף נט:)</span> ויש לומר דשאני התם שלא יצתה אלא לכבודו דרבי אליעזר דאמר מן השמים יוכיחו ועוד דבת קול דבית הלל מסייע קרא דכתיב <span class=\"parenthesized\">(שמות כג)</span> אחרי רבים להטות דבית הלל רובא הוו אלא דמעיקרא מספקא לן משום דבית שמאי מחודדין טפי אבל בת קול דרבי אליעזר רבנן דפליגי עליה הוו רובא ואם תאמר אמאי קאמר הכא הא מני רבי יהושע היא דאמר אין משגיחין בבת קול הא איהו לא קאמר אלא אעובדא דרבי אליעזר דאנן נמי לא קיימא לן כבת קול דרבי אליעזר וי\"ל דכיון דקאמר לא בשמים היא משמע דאית ליה דבשום דוכתא אין משגיחין בבת קול:"
+  },
+  "Tosafot on Chullin 44a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T00:23:08.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולה כרב עבדא</strong> - והא דאמרינן לעיל רמינן עליה חומרי דרב וחומרי דשמואל היינו למאי דס\"ד והוה מצי למימר כולה כשמואל עבדא דלאו מקום שחיטה הוא ואסר נמי בהגרים שליש ושחט שני שלישי אלא נקט כרב משום דקי\"ל כרב באיסורי:"
+  },
+  "Tosafot on Chullin 44a:6:2": {
+    "dependsOn": [
+      "Tosafot on Chullin 44a:6:1"
+    ],
+    "generatedAt": "2026-11-12T00:26:19.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקאמר נתנו בו חכמים שיעור כו'</strong> - ולא בעי למימר דנתנו בו שיעור למטה דמדלא פירש דבריו מסתמא בין למעלה בין למטה קאמר:"
+  },
+  "Tosafot on Chullin 44a:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 44a:7:1",
+      "Rashi on Chullin 44a:7:2",
+      "Chullin 50b:1",
+      "Rosh on Chullin 3:5:1",
+      "Rashba on Chullin 44a:2",
+      "Rashba on Chullin 44a:3",
+      "Jastrow, בִּטְרָא 1"
+    ],
+    "generatedAt": "2026-11-12T00:30:58.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי תפיסת יד</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> ארבע אצבעות תימה דבעוף מאי ופירש רבינו יצחק בן רבינו מאיר ארבע אצבעות בראמים גדולים מכאן ואילך כל חד וחד לפי מה שהוא גדול ובה\"ג מפרש כדי תפיסת יד כדנקיט איניש בשתי אצבעותיו ודבריהם דברי קבלה ויש לסמוך עליהם והאי דקרי לקמן <span class=\"parenthesized\">(חולין דף נ:)</span> גבי חלחולת בתפיסת יד כמלא בטדא דתורא דהיינו ארבע אצבעות התם נקט כדי תפיסה סתם אבל הכא כדי תפיסת יד קאמר דמשמע כדי שיוכל לתפוס בשתי אצבעות ואפי' כל שהוא:"
+  }
+}

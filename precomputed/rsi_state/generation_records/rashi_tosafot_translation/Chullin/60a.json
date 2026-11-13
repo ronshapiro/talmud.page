@@ -1,0 +1,113 @@
+{
+  "Rashi on Chullin 60a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:28:43.508Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להדי יומא</strong> - נגד השמש:"
+  },
+  "Rashi on Chullin 60a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:29:09.739Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיצבית ליה נהמא</strong> - אתקן לו סעודה:"
+  },
+  "Rashi on Chullin 60a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:29:33.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לגידא דרביתא</strong> - על שפת נהר ששמו רביתא:"
+  },
+  "Rashi on Chullin 60a:2:3": {
+    "dependsOn": [
+      "Rashi on Chullin 60a:2:1",
+      "Rashi on Chullin 60a:2:2",
+      "Rashi on Chullin 60a:2:3",
+      "Rashi on Chullin 60a:2:4"
+    ],
+    "generatedAt": "2026-11-13T05:30:37.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרויח עלמא</strong> - להתקבץ שם חיילותיו והוא נתכוין למקום שתהא רוח שולטת בו:"
+  },
+  "Rashi on Chullin 60a:2:4": {
+    "dependsOn": [
+      "Jastrow, כְּנַשׁ 1",
+      "Steinsaltz on Chullin 60a:2",
+      "Rashi on Bava Metzia 85a:7:1",
+      "Rashi on Bava Metzia 85a:7:2"
+    ],
+    "generatedAt": "2026-11-13T05:31:57.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנשיה לימא</strong> - טאיטו לים:"
+  },
+  "Rashi on Chullin 60a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:32:21.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנושאי</strong> - מכבדי הבית:"
+  },
+  "Rashi on Chullin 60a:3:2": {
+    "dependsOn": [
+      "Rashi on Chullin 60a:3:1",
+      "Rashi on Chullin 60a:3:3"
+    ],
+    "generatedAt": "2026-11-13T05:32:59.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זלוחאי</strong> - מרביצי הבית במים מפני אבק העולה וכבר הם כלו לאכול כל זה:"
+  },
+  "Rashi on Chullin 60a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:33:25.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דנפישי חיילותיו כ\"כ לא מצינא:"
+  },
+  "Rashi on Chullin 60a:4:1": {
+    "dependsOn": [
+      "Jastrow, מִסְתּוֹרִיתָא 1",
+      "Jastrow, דַּוְלָלָא 1",
+      "Rashi on Chullin 60a:4:2",
+      "Rashi on Chullin 60a:4:3",
+      "Steinsaltz on Chullin 60a:4",
+      "Steinsaltz comment #1 on Chullin 60a:4",
+      "Rashi on Chullin 60a:4:1"
+    ],
+    "generatedAt": "2026-11-13T05:37:41.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 60a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסתוריתא</strong> - דיוושלטייר\"ש בלע\"ז:"
+  }
+}

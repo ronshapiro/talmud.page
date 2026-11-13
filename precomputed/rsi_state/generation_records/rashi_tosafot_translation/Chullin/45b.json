@@ -1,0 +1,624 @@
+{
+  "Rashi on Chullin 45b:11:1": {
+    "dependsOn": [
+      "Chullin 45b:11"
+    ],
+    "generatedAt": "2026-11-12T03:04:16.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הורה רבי</strong> - שבא מעשה לידו והורה להחמיר ולא סמך על דבריו:"
+  },
+  "Rashi on Chullin 45b:12:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:12:2",
+      "Rashi on Chullin 45b:11:1",
+      "Rashi on Chullin 45b:13:1",
+      "Steinsaltz on Chullin 45b:12"
+    ],
+    "generatedAt": "2026-11-12T03:05:29.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב עורו</strong> - אם נחתך רוב היקף עורו סביב אע\"פ שהמוח לא נפרד כלום טרפה:"
+  },
+  "Rashi on Chullin 45b:12:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:12:1",
+      "Steinsaltz on Chullin 45b:12"
+    ],
+    "generatedAt": "2026-11-12T03:06:18.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרי לה רוב מוחו</strong> - דכיון שנפסק ונפרד המוח מבפנים אע\"ג שהעור כולו קיים טרפה:"
+  },
+  "Rashi on Chullin 45b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:06:50.833Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כ\"ש רוב עורו</strong> - שהרי רוב העור מחזיקו וכיון שנפסק העור סוף המוח לפרד ולצאת:"
+  },
+  "Rashi on Chullin 45b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:08:45.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניולי</strong> - שם חכם:"
+  },
+  "Rashi on Chullin 45b:15:1": {
+    "dependsOn": [
+      "Chullin 45b:15",
+      "Rashi on Chullin 45b:14:1"
+    ],
+    "generatedAt": "2026-11-12T03:09:37.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיק ברוב עורו</strong> - ואשכח דלא איפסיק רוביה והדר בעי למיבדק ברוב מוחו דניהוי נמי קיים:"
+  },
+  "Rashi on Chullin 45b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:10:48.117Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמרך פסול נתמסמס פסול גרסינן</strong> - ואחוט השדרה קאי. אע\"ג דהמסמסה קילא מהמרכה כדמפרש ואזיל אפילו הכי תנא תרווייהו דאי תנא המסמסה לחודה הוה מפרשינן דהיינו נשפך כקיתון. המרכה לשון מורך שנתרככה ונעשית המוח בתוך הקרום כמים ונשפך מראשו לסופו ומסופו לראשו ואם היו נוקבין אותו היה יוצא דרך הנקב:"
+  },
+  "Rashi on Chullin 45b:17:1": {
+    "dependsOn": [
+      "Chullin 45b:17",
+      "Rashi on Chullin 45b:16:1",
+      "Rashi on Chullin 45b:17:1",
+      "Rashi on Chullin 45b:17:2",
+      "Steinsaltz on Chullin 45b:17:1",
+      "["
+    ],
+    "generatedAt": "2026-11-12T03:12:12.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו יכול לעמוד</strong> - מפני שנעשה צלול אבל לא כל כך שיהיה נשפך כקיתון של מים אבל כשאוחזין אותו ומניח קצתו למעלה מידו הוא נכפף ונופל:"
+  },
+  "Rashi on Chullin 45b:17:2": {
+    "dependsOn": [
+      "Chullin 45b:17",
+      "Rashi on Chullin 45b:17:1",
+      "Rashi on Chullin 45b:15:1"
+    ],
+    "generatedAt": "2026-11-12T03:13:20.593Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני כבדו</strong> - שהוא עב וכבד אבל לא נתרכך מבפנים מהו חולי הוא זה שמכבידו או לא. וכל הני נתמרך ונתמסמס בכלל נפסק החוט הן דקים להו לרבנן שמתוך ליקוי זה עתיד לינקב וליפסק אי נמי אין פיסוק גדול מזה אע\"ג דאמרן מוח זה לא מעלה ולא מוריד ה\"מ בהפרדה אבל בהמרכה לא:"
+  },
+  "Rashi on Chullin 45b:17:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:14:18.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיקו</strong> - וכל תיקו דאיסורא לחומרא:"
+  },
+  "Rashi on Chullin 45b:17:4": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:17:1",
+      "Rashi on Chullin 45b:17:2",
+      "Rashi on Chullin 45b:17:3",
+      "Rashi on Chullin 45b:17:4",
+      "Rashi on Chullin 45b:17:5",
+      "Rashi on Chullin 45b:17:6",
+      "Chullin 45b:17"
+    ],
+    "generatedAt": "2026-11-12T03:15:19.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמסמס פסול</strong> - כדקאמרת:"
+  },
+  "Rashi on Chullin 45b:17:5": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:17:1",
+      "Rashi on Chullin 45b:17:2",
+      "Rashi on Chullin 45b:17:3",
+      "Rashi on Chullin 45b:17:4",
+      "Rashi on Chullin 45b:17:5",
+      "Rashi on Chullin 45b:17:6",
+      "Chullin 45b:17"
+    ],
+    "generatedAt": "2026-11-12T03:16:17.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמזמז כשר</strong> - ולהכי הדר נקט נתמסמס פסול דלא תימא נתמזמז ונתמסמס חדא הוא ולאיפלוגי עליה אתא:"
+  },
+  "Rashi on Chullin 45b:17:6": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:17:4",
+      "Rashi on Chullin 45b:17:5",
+      "Rashi on Chullin 45b:17:1",
+      "Rashi on Chullin 45b:17:2",
+      "Rashi on Chullin 45b:17:3"
+    ],
+    "generatedAt": "2026-11-12T03:17:05.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:17:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמזמז</strong> - נתרוקן מהמוח מקצתו מאליו:"
+  },
+  "Rashi on Chullin 45b:18:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:18:2",
+      "Sefer HeArukh, Letter Tet 181",
+      "Rashi on Chullin 45a:8:3"
+    ],
+    "generatedAt": "2026-11-12T03:22:51.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרייה</strong> - מינציי\"ר בלע\"ז:"
+  },
+  "Rashi on Chullin 45b:18:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:18:1",
+      "Rashi on Chullin 45b:18:2",
+      "Rashi on Chullin 45b:18:3",
+      "Jastrow on Chullin 45b:16:1"
+    ],
+    "generatedAt": "2026-11-12T03:23:45.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמזמז מוחיה דדין</strong> - דואג היה עליו ואומר אוי לו לזה שנתמזמז מוחו:"
+  },
+  "Rashi on Chullin 45b:18:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:18:1",
+      "Rashi on Chullin 45b:18:2"
+    ],
+    "generatedAt": "2026-11-12T03:24:28.575Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאינו מוליד</strong> - תולדות האיש מן המוח היא באה שגיד הנשה של ירך וגיד הגוייה כולן מחוברין לחוט השדרה שהוא מתפצל ויוצא מתחת השדרה ונעשה גיד אצל הירכים ונכנס לתוכו:"
+  },
+  "Rashi on Chullin 45b:19:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:19:2"
+    ],
+    "generatedAt": "2026-11-12T03:28:08.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד היכן חוט השדרה</strong> - עד היכן כחו של חוט להיות בהמה טרפה בפסיקתו. החוט יוצא מן המוח והולך על פני כל השדרה והאליה עד סוף הזנב:"
+  },
+  "Rashi on Chullin 45b:19:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:19:1"
+    ],
+    "generatedAt": "2026-11-12T03:29:15.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד בין הפרשות</strong> - עד מקום שהוא מתפרש ומתפצל פצולין. כנגד הירכים הוא מתחיל ליפצל ויוצא ראש א' לירך זו ואחד לזו והאמצעי יורד לזנב ולמטה מאותן פיצולין כנגד שתי אצבעות הוא חוזר ומתפצל עוד לג' ולמטה מהם עוד מתפצל וכן בהרבה מקומות עד סופו. ואם נפסק מן המוח ועד בין הפרשות הללו כל מקום שנפסק שם רובו טרפה ואם למטה מבין הפרשות נפסק כבר תשש כחו והיריכים מעמידין את שדרתו ואינה מתה בכך:"
+  },
+  "Rashi on Chullin 45b:1:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:1:1",
+      "Rashi on Chullin 45b:1:2",
+      "Rashi on Chullin 45b:1:3",
+      "Steinsaltz on Chullin 45b:1",
+      "Steinsaltz comment #1 on Chullin 45b:1"
+    ],
+    "generatedAt": "2026-11-12T02:43:44.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פולין</strong> - גלנ\"ץ:"
+  },
+  "Rashi on Chullin 45b:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:1:1",
+      "Rashi on Chullin 45b:1:3"
+    ],
+    "generatedAt": "2026-11-12T02:44:23.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פי הקדרה</strong> - למקום חבור הצואר והגולגולת:"
+  },
+  "Rashi on Chullin 45b:1:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:1:1",
+      "Rashi on Chullin 45b:1:2"
+    ],
+    "generatedAt": "2026-11-12T02:45:04.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופולין עצמן</strong> - מוח שכנגד הפולין:"
+  },
+  "Rashi on Chullin 45b:20:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:20:1",
+      "Rashi on Chullin 45b:20:2",
+      "Rashi on Chullin 45b:20:3"
+    ],
+    "generatedAt": "2026-11-12T03:30:02.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אייתי ליה גדי שמן</strong> - שחוט ומופשט ולא היה לו שהות לעכב עד שיקרענו ויראה לו הפיצולין מבפנים והיה מראה לו מבחוץ שהחוט לבן הוא ונפרד מבחוץ כשנכנס בבשר האליה לכאן ולכאן מתחת לעצם:"
+  },
+  "Rashi on Chullin 45b:20:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:20:1",
+      "Rashi on Chullin 45b:20:3",
+      "Chullin 45b:20"
+    ],
+    "generatedAt": "2026-11-12T03:31:01.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ידיע</strong> - החוט מבחוץ והוא צריך לכוון עד מלא חוט השערה שאם נפסק לכאן טרפה ואם נפסק לכאן כשרה:"
+  },
+  "Rashi on Chullin 45b:20:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:20:1",
+      "Rashi on Chullin 45b:20:2",
+      "Rashi on Chullin 45b:20:3",
+      "Steinsaltz on Chullin 45b:20:1",
+      "Steinsaltz on Chullin 45b:20",
+      "Jastrow, בְּלַט 1"
+    ],
+    "generatedAt": "2026-11-12T03:32:23.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בליטן טפי</strong> - והעצם של בוקא דאטמא דוחק הבשר ומדובק ודוחק בו את מוח החוט הנפצל עליו עד שנעשה דק ואינו ניכר:"
+  },
+  "Rashi on Chullin 45b:21:1": {
+    "dependsOn": [
+      "Chullin 45b:21",
+      "Rashi on Chullin 45b:19:1",
+      "Rashi on Chullin 45b:19:2",
+      "Steinsaltz on Chullin 45b:21"
+    ],
+    "generatedAt": "2026-11-12T03:33:44.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד אחת</strong> - כ\"מ שיפסק מן הצואר עד בין הפרשה ראשונה טרפה נפסק בין הפרשה שלישית כשרה שניה איני יודע:"
+  },
+  "Rashi on Chullin 45b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:45:27.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלל גדול</strong> - חלל האמצעי:"
+  },
+  "Rashi on Chullin 45b:3:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:3:1",
+      "Rashi on Chullin 45b:3:3"
+    ],
+    "generatedAt": "2026-11-12T02:46:01.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלל קטן</strong> - הרבה חדרים קטנים יש לו סביב:"
+  },
+  "Rashi on Chullin 45b:3:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:3:1",
+      "Rashi on Chullin 45b:3:2",
+      "Chullin 47a:4",
+      "Chullin 47a:2",
+      "Rashi on Chullin 47a:2:1",
+      "Rashi on Chullin 47a:2:2",
+      "Rashi on Chullin 47a:4:2",
+      "Steinsaltz comment #1 on Chullin 45b:3"
+    ],
+    "generatedAt": "2026-11-12T02:48:27.209Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמפון גדול</strong> - אמצעי שבאומה:"
+  },
+  "Rashi on Chullin 45b:4:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:3:1",
+      "Rashi on Chullin 45b:3:2",
+      "Rashi on Chullin 45b:3:3"
+    ],
+    "generatedAt": "2026-11-12T02:49:39.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם לבית הסמפונות קתני</strong> - ולא תני לבית הסמפון אבל הכא לא תני לבית החללים אלא לבית חללו:"
+  },
+  "Rashi on Chullin 45b:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:5:2",
+      "Rashi on Chullin 45b:6:1",
+      "Rashi on Chullin 45b:6:2",
+      "Rashi on Chullin 45b:6:3"
+    ],
+    "generatedAt": "2026-11-12T02:50:59.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנה הלב</strong> - לקמן מפרש:"
+  },
+  "Rashi on Chullin 45b:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:5:1",
+      "Rashi on Chullin 45b:5:2",
+      "Chullin 45b:16",
+      "Chullin 45b:17"
+    ],
+    "generatedAt": "2026-11-12T02:52:17.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במשהו</strong> - אם ניקב: כל חלב מקרי חלב בין טמא בין טהור ושומן אינו אלא לשון חכמים כגון גבי שתי חתיכות אחת של חלב ואחת של שומן דעל כרחך קרי ליה שומן משום דגבי חלב תנייה:"
+  },
+  "Rashi on Chullin 45b:6:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:6:1",
+      "Rashi on Chullin 45b:6:2",
+      "Rashi on Chullin 45b:6:3",
+      "Chullin 45b:5"
+    ],
+    "generatedAt": "2026-11-12T02:53:08.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי דפנות</strong> - היורד על הצלעות מן השדרה:"
+  },
+  "Rashi on Chullin 45b:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:6:1",
+      "Rashi on Chullin 45b:6:2",
+      "Rashi on Chullin 45b:6:3",
+      "Rashi on Chullin 45b:7:1",
+      "Rashi on Chullin 45b:7:2",
+      "Rashi on Chullin 45b:7:3"
+    ],
+    "generatedAt": "2026-11-12T02:54:01.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי דפנות ס\"ד</strong> - ומאי חיותא תליא ביה:"
+  },
+  "Rashi on Chullin 45b:6:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:6:1",
+      "Rashi on Chullin 45b:6:2",
+      "Steinsaltz on Chullin 45b:6:1",
+      "Steinsaltz on Chullin 45b:6",
+      "Jastrow, דּוֹפָן 1"
+    ],
+    "generatedAt": "2026-11-12T02:55:28.236Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעל גבי דופני ריאה</strong> - קנה שומן שיורד בין שתי ערוגות הריאה ודבוק בשדרה ומחובר לחלל הלב:"
+  },
+  "Rashi on Chullin 45b:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:7:2",
+      "Rashi on Chullin 45b:7:3"
+    ],
+    "generatedAt": "2026-11-12T02:56:07.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלתא קני הוו</strong> - לאחר שהקנה נכנס לחזה מתפצל לשלשה:"
+  },
+  "Rashi on Chullin 45b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:56:33.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד פריש לריאה</strong> - ומתחלק בתוכה והן הן סמפונות:"
+  },
+  "Rashi on Chullin 45b:7:3": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:7:1",
+      "Rashi on Chullin 45b:7:2",
+      "Rashi on Chullin 45b:7:4",
+      "Rashi on Chullin 45b:7:5"
+    ],
+    "generatedAt": "2026-11-12T02:57:05.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דריאה כי ריאה</strong> - בנקב משהו:"
+  },
+  "Rashi on Chullin 45b:7:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:58:17.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכבדא כי כבדא</strong> - עד שינטל כולו כדתנן <span class=\"parenthesized\">(לעיל חולין מב.)</span> גבי כבד ולא נשתייר ממנה כלום:"
+  },
+  "Rashi on Chullin 45b:7:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T02:58:42.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דליבא פליגי</strong> - רב ושמואל לעיל:"
+  },
+  "Rashi on Chullin 45b:8:1": {
+    "dependsOn": [
+      "Chullin 45b:7"
+    ],
+    "generatedAt": "2026-11-12T02:59:30.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתני איפכא</strong> - דריאה עד שינטל ככבדא ודכבדא כי ריאה במשהו ודליבא פליגי רב ושמואל. וכלישנא קמא מסתברא דהא קם ליה רבי יוחנן כוותיה דאמר לעיל ניקב למטה מן החזה נידון כריאה:"
+  },
+  "Rashi on Chullin 45b:9:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:9:2",
+      "Chokhmat Shlomo on Chullin 45b:1",
+      "Chullin 45b:8",
+      "Chullin 45b:7"
+    ],
+    "generatedAt": "2026-11-12T03:02:22.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרה לשמעתא דרב</strong> - דאמר במשהו קמיה דשמואל ואכתי לא הוה שמיע ליה דרב בסורא הוה ראש ישיבה והתם הוה אמר שמעתתיה ושמואל הוה בנהרדעא:"
+  },
+  "Rashi on Chullin 45b:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:9:1",
+      "Rashi on Chullin 45b:9:2",
+      "Chokhmat Shlomo on Chullin 45b:1"
+    ],
+    "generatedAt": "2026-11-12T03:03:25.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 45b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבא</strong> - רב. הכי הוה קרי ליה שמואל דרב הוה עדיף מיניה אני שמעתי אבא ואית דגרסי אבא חברי:"
+  },
+  "Tosafot on Chullin 45b:13:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:13:1",
+      "Steinsaltz In-Depth on Chullin 45b:13:1",
+      "Chidushei Halachot on Chullin 45b:1",
+      "Steinsaltz comment #1 on Chullin 45b:13"
+    ],
+    "generatedAt": "2026-11-12T03:08:29.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 45b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דאמר רוב עורו רוב מוחו מאי</strong> - דדלמא ה\"ה ברוב מוחו לבד טרפה ונקט רוב עורו לאשמועינן דאפילו עורו בעי רוב ורבינו תם מפרש דמבעי ליה אי בעי נמי רוב מוחו ועורו דנקט מפני שהוא עיקר ומכל מקום בלא מוחו נמי אינה טריפה:"
+  },
+  "Tosafot on Chullin 45b:18:1": {
+    "dependsOn": [
+      "Tosafot on Chullin 45b:18:1",
+      "Chullin 45b:17",
+      "Tosafot on Bava Metzia 2a:2:1",
+      "Rashi on Chullin 45b:18:1",
+      "Rashi on Chullin 45b:18:2",
+      "Rashi on Chullin 45b:18:3",
+      "Steinsaltz In-Depth on Chullin 45b:18:1"
+    ],
+    "generatedAt": "2026-11-12T03:27:09.041Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 45b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתמזמז מוחיה דדין</strong> - תימה לריב\"ם דמייתי ראיה ממוח דראש דשיעורו בנקב משהו למוח חוט השדרה דשיעורו ברובו:"
+  },
+  "Tosafot on Chullin 45b:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 45b:8:1"
+    ],
+    "generatedAt": "2026-11-12T03:00:42.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 45b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר בר חייא מתני איפכא</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דמסתברא כלישנא קמא דקים ליה רבי יוחנן בשיטתיה לעיל דאמר ניקב הקנה למטה מן החזה נידון כריאה ונראה דאזלינן בכולהו לחומרא מדלא איתמר הלכתא לא כמר ולא כמר וגם רבי יוחנן דאמר ניקב הקנה למטה מן החזה משמע בין דריאה בין דכבדא נדון כריאה וכן רבינו חננאל פסק לחומרא דשלשתן נקובתן במשהו בין דכבד בין דלב בין דריאה:"
+  }
+}

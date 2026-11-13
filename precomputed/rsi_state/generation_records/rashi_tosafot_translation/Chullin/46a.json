@@ -1,0 +1,715 @@
+{
+  "Rashi on Chullin 46a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T04:28:39.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתלקט מהו</strong> - כזית מתלקט ולא במקום אחד אלא חצי כזית כאן וחצי כזית כאן:"
+  },
+  "Rashi on Chullin 46a:10:2": {
+    "dependsOn": [
+      "Jastrow, רָדַד 1",
+      "Rashi on Chullin 46a:10:1",
+      "Steinsaltz on Chullin 46a:10",
+      "Steinsaltz comment #1 on Chullin 46a:10",
+      "Steinsaltz comment #2 on Chullin 46a:10"
+    ],
+    "generatedAt": "2026-11-12T04:30:05.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרודד</strong> - מרוקע טינב\"א בלע\"ז וגרע מכרצועה:"
+  },
+  "Rashi on Chullin 46a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T04:30:40.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדלדלה</strong> - נעקרה במקומות הרבה:"
+  },
+  "Rashi on Chullin 46a:11:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:11:1",
+      "Rashi on Chullin 46a:11:3",
+      "Jastrow, טַרְפְּשָׁא 1"
+    ],
+    "generatedAt": "2026-11-12T04:31:23.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומעורה בטרפשיה</strong> - כאן מעט וכאן מעט וכולה קיימת:"
+  },
+  "Rashi on Chullin 46a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T04:31:55.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא איכא</strong> - הרי כולה קיימת:"
+  },
+  "Rashi on Chullin 46a:12:1": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:12:1",
+      "Rashi on Chullin 46a:12:2",
+      "Rashi on Chullin 46a:11:1",
+      "Rashi on Chullin 46a:11:2",
+      "Rashi on Chullin 46a:11:3"
+    ],
+    "generatedAt": "2026-11-12T04:32:50.045Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:12:1"
+    ],
+    "sourceText": "רב נחמן קרמא תתאה ס\"ל:"
+  },
+  "Rashi on Chullin 46a:12:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:12:1",
+      "Rashi on Chullin 46a:7:1",
+      "Rashi on Chullin 46a:13:1",
+      "Chullin 46b:1"
+    ],
+    "generatedAt": "2026-11-12T04:34:35.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיתונא דורדא</strong> - מלבוש אדום שהריאה מונחת בו. ורדא על שם שקרום תחתון אדום הוא כדאמרינן לקמן <span class=\"parenthesized\">(עמוד ב)</span> כאהינא סומקא:"
+  },
+  "Rashi on Chullin 46a:13:1": {
+    "dependsOn": [
+      "Mishnah Chullin 3:2"
+    ],
+    "generatedAt": "2026-11-12T04:37:04.284Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאגליד</strong> - שניטל קרום העליון והופשט כמו גלודה דמתניתין <span class=\"parenthesized\">(לקמן חולין דף נד.)</span>:"
+  },
+  "Rashi on Chullin 46a:1:1": {
+    "dependsOn": [
+      "Chullin 46a:1"
+    ],
+    "generatedAt": "2026-11-12T03:35:04.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד ועד בכלל</strong> - והכי קאמר מן הראש ועד בין הפרשה ראשונה וכל אותו בין בכלל טרפה או דלמא הכי קאמר עד ולא עד בכלל טרפה שלישית כשרה שניה איני יודע ה\"ה לראשונה דמספקא ליה וממילא משתמע ולא אצטריך לפרושי ראשונה ושניה איני יודע דכיון דאמר ודאי טרפה עד אחת ולא היא בכלל מכלל דמכאן ועד שלישית מספקא ליה וחדא מינייהו הוא דנקט דלא תימא שניה כשלישית לקולא:"
+  },
+  "Rashi on Chullin 46a:2:1": {
+    "dependsOn": [
+      "Chullin 46a:2",
+      "Rashi on Chullin 46a:1:1",
+      "Rashi on Chullin 46a:3:1",
+      "Rashi on Chullin 45b:14:1",
+      "Rashi on Chullin 45b:15:1",
+      "Rashi on Chullin 46a:4:12",
+      "Tosafot on Chullin 46a:2:1"
+    ],
+    "generatedAt": "2026-11-12T03:39:55.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את\"ל עד ולא עד בכלל פי פרשה מהו</strong> - נפסק החוט הגדול כנגד פי הפצולין הראשונים במקום פיצול מהו בכלל טרפה הוא או בכלל איני יודע הוא מי אמרינן עד בין דוקא ופי הפרשה טרפה או לאו דוקא:"
+  },
+  "Rashi on Chullin 46a:3:1": {
+    "dependsOn": [
+      "Chullin 46a:3",
+      "Rashi on Chullin 46a:2:1",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2"
+    ],
+    "generatedAt": "2026-11-12T03:43:01.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת\"ל עד ועד בכלל</strong> - ליכא למיבעי בפי הפרשה מידי דודאי טרפה דאפילו חוט שכנגד הפסק שבין שני הפיצולים טרפה וכ\"ש פי פיצול הראשון אלא הכי קא מיבעיא ליה נפסק הפיצול עצמו מן החוט מהו ובפרשה ראשונה קאי:"
+  },
+  "Rashi on Chullin 46a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T03:45:22.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תידון כבשר</strong> - שאם נפסק הפיצול כשרה:"
+  },
+  "Rashi on Chullin 46a:4:10": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:8",
+      "Rashi on Chullin 46a:4:9",
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Chullin 46a:3",
+      "Chullin 46a:4",
+      "Chullin 46a:2",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Chullin 46a:1"
+    ],
+    "generatedAt": "2026-11-12T04:02:31.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא עד בכלל</strong> - ובכלל איני יודע הוא:"
+  },
+  "Rashi on Chullin 46a:4:11": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:9",
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Chullin 46a:3",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Rashi on Chullin 46a:4:13",
+      "Chullin 45b:21",
+      "Rashi on Chullin 45b:19:2"
+    ],
+    "generatedAt": "2026-11-12T04:04:40.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:11"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פי פרשה</strong> - נפסק החוט אצל תחלת העצם ולא כנגדו ממש מאי בהדי עצם חשיב ואיני יודע או בהדי פרשה קמייתא חשיב וטרפה. ולא נהירא דהא ודאי מן הפרשה היא ולא מבין הפרשה:"
+  },
+  "Rashi on Chullin 46a:4:12": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Rashi on Chullin 46a:4:13",
+      "Chullin 46a:4",
+      "Chullin 46a:3",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:8",
+      "Rashi on Chullin 46a:4:9",
+      "Chullin 46a:2",
+      "Rashi on Chullin 45b:14",
+      "Rashi on Chullin 45b:15",
+      "Rashi on Chullin 46a:1:1"
+    ],
+    "generatedAt": "2026-11-12T04:06:11.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:12"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרשה עצמה</strong> - נפסק החוט כנגד פרשה שניה בשר שבין צלע ראשון לשני מהו בהדי ראשון שדינן ליה וטרפה או בתר צלע שני שדינן ליה ואיני יודע:"
+  },
+  "Rashi on Chullin 46a:4:13": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Rashi on Chullin 46a:4:13",
+      "Chullin 46a:3",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7"
+    ],
+    "generatedAt": "2026-11-12T04:07:46.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:13"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תידון כבשר</strong> - אם נפסק החוט כנגדו ולהאי לישנא גרס מאי לאו פרשה שניה. ומפי גאון אחר שמעתי פרשה עצמו נשבר הצלע עצמו. ולשון מורי הראשון הגון וסייג מצאתי לו בהלכות גדולות והוא עיקר:"
+  },
+  "Rashi on Chullin 46a:4:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Chullin 46a:4",
+      "Chullin 46a:1",
+      "Rashi on Chullin 46a:4:13"
+    ],
+    "generatedAt": "2026-11-12T03:47:23.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג מאי לאו ראשונה ושניה לא שלישית</strong> - מאי לאו פיצול ראשון ואע\"ג דחוט של אחריה עדיין בכלל טרפות או בכלל ספק הוא וכן שני לשון מורי."
+  },
+  "Rashi on Chullin 46a:4:3": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:3:1",
+      "Rashi on Chullin 46a:4:4",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:2:1",
+      "Rashi on Chullin 46a:1:1",
+      "Rashi on Chullin 45b:19:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Chullin 45b:19"
+    ],
+    "generatedAt": "2026-11-12T03:51:45.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:3"
+    ],
+    "sourceText": "לשון אחר בין הפרשות הן צלעות קטנות של אליה. פרשות הוא בשר המפריש בין צלע לצלע. <span class=\"parenthesized\">(בין)</span> [פי] הפרשות צלעות שבין פרשה לפרשה:"
+  },
+  "Rashi on Chullin 46a:4:4": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Chullin 45b:19",
+      "Chullin 45b:20",
+      "Rashi on Chullin 45b:20:1"
+    ],
+    "generatedAt": "2026-11-12T03:53:05.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדי שמן</strong> - חי:"
+  },
+  "Rashi on Chullin 46a:4:5": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Chullin 45b:20",
+      "Rashi on Chullin 45b:20:1",
+      "Rashi on Chullin 45b:20:2",
+      "Rashi on Chullin 45b:20:3"
+    ],
+    "generatedAt": "2026-11-12T03:54:23.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בליעה טפי</strong> - הצלעות נבלעין ואין ניכרין כשהוא חי:"
+  },
+  "Rashi on Chullin 46a:4:6": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Chullin 45b:20"
+    ],
+    "generatedAt": "2026-11-12T03:55:22.572Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בליטי טפי</strong> - ונפשט הבשר והכל דומה לצלעות. וכל לשון זה אינו נראה לי ומפי גאון שמעתיו:"
+  },
+  "Rashi on Chullin 46a:4:7": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:9",
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Rashi on Chullin 46a:4:13",
+      "Chullin 45b:20",
+      "Chullin 45b:21",
+      "Chullin 45b:22",
+      "Chullin 45b:23"
+    ],
+    "generatedAt": "2026-11-12T03:56:40.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד אחת</strong> - עד בין הפרשה ראשונה דהיינו צלע ראשונה של אליה:"
+  },
+  "Rashi on Chullin 46a:4:8": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Rashi on Chullin 46a:4:9",
+      "Chullin 46a:3",
+      "Chullin 46a:4",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:10",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Rashi on Chullin 46a:4:13",
+      "Rashi on Chullin 45b:21:1"
+    ],
+    "generatedAt": "2026-11-12T03:58:27.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרפה</strong> - אם נפסק החוט:"
+  },
+  "Rashi on Chullin 46a:4:9": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:4:7",
+      "Rashi on Chullin 46a:4:8",
+      "Rashi on Chullin 46a:4:9",
+      "Rashi on Chullin 46a:4:10",
+      "Chullin 46a:4",
+      "Chullin 46a:2",
+      "Rashi on Chullin 46a:1:1",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 46a:4:3",
+      "Rashi on Chullin 46a:4:4",
+      "Rashi on Chullin 46a:4:5",
+      "Rashi on Chullin 46a:4:6",
+      "Rashi on Chullin 46a:4:11",
+      "Rashi on Chullin 46a:4:12",
+      "Rashi on Chullin 46a:4:13",
+      "Rashi on Chullin 45b:10:1",
+      "Rashi on Chullin 45b:19:1"
+    ],
+    "generatedAt": "2026-11-12T04:00:43.560Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:4:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעי רב הונא עד ועד בכלל</strong> - שאם נפסק החוט כנגד צלע הראשון טרפה דאיהו נמי קאי בין שתי פרשות שיש הפרש בינו לצלעות הגדולות:"
+  },
+  "Rashi on Chullin 46a:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:5:2",
+      "Rashi on Chullin 45b:14:1",
+      "Rashi on Chullin 45b:14:2",
+      "Chullin 46a:4"
+    ],
+    "generatedAt": "2026-11-12T04:10:09.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד למטה</strong> - מכנפיו הוי כח חוט השדרה דיליה:"
+  },
+  "Rashi on Chullin 46a:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:5:1"
+    ],
+    "generatedAt": "2026-11-12T04:10:39.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולריש לקיש עד כנגד בין אגפים</strong> - ותו לא:"
+  },
+  "Rashi on Chullin 46a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T04:12:25.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושלחו ליה דבי נשיאה</strong> - שלחו בשבילו שילך אצלם:"
+  },
+  "Rashi on Chullin 46a:7:1": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:7:1",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2",
+      "Rashi on Chullin 45a:1:1",
+      "Rashi on Chullin 45b:1:1",
+      "Rashi on Chullin 42a:1:1",
+      "Rashi on Chullin 42a:2:1"
+    ],
+    "generatedAt": "2026-11-12T04:14:54.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן</strong> - גבי אלו כשרות במתני' <span class=\"parenthesized\">(לקמן חולין נד.)</span>:"
+  },
+  "Rashi on Chullin 46a:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:8:1",
+      "Rashi on Chullin 46a:8:2",
+      "Rashi on Chullin 46a:8:3"
+    ],
+    "generatedAt": "2026-11-12T04:15:42.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זריק לה</strong> - לבהמה שלא נשתייר בה כזית מן הכבד דקסבר טרפה:"
+  },
+  "Rashi on Chullin 46a:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:8:1",
+      "Rashi on Chullin 46a:8:3",
+      "Chullin 46a:8",
+      "Rashi on Chullin 46a:4:1",
+      "Rashi on Chullin 46a:4:2"
+    ],
+    "generatedAt": "2026-11-12T04:18:09.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטביל לה</strong> - אוכלה. וכל מאכלם ע\"י טיבול חומץ או חרוסת כך שמעתי. אבל נראה בעיני דבאיסור והיתר טריף ומכשר הוה שייך למיתני וזריק ומטביל לא שייך ביה ומסתברא דהכי קאמר רבי חייא זריק לה לכבד של כל בהמה ולא היה אוכלו דלא הוה חשיב ליה ורבי שמעון מטביל ליה דאף על גב דלאו בשר הוא קאכיל ליה משום בריאותא דקסבר נשמה תלויה בו כדקי\"ל <span class=\"parenthesized\">(ברכות דף מד:)</span> כל נפש משיב נפש וכדאמרינן <span class=\"parenthesized\">(לעיל חולין דף לג.)</span> הרוצה שיבריא חותך כזית בשר קודם שתצא נפשה הילכך אם לא נשתייר כזית להעלות ארוכה שיחזור וירפא טרפה ולר' חייא לא בעי כדי להעלות ארוכה אלא שיורא פורתא מקום תליא דמרה דשיורא במקום מרה בעינן כדלקמן:"
+  },
+  "Rashi on Chullin 46a:8:3": {
+    "dependsOn": [
+      "Jastrow, קָמַץ 1",
+      "Steinsaltz on Chullin 46a:8",
+      "Rashi on Menachot 86a:2:1"
+    ],
+    "generatedAt": "2026-11-12T04:19:23.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשירין מקמצין</strong> - רבי שמעון בן רבי בנו של נשיא היה. ומקמץ לשון עצרן:"
+  },
+  "Rashi on Chullin 46a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T04:19:41.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פולמוסא</strong> - חיל השלטון:"
+  },
+  "Rashi on Chullin 46a:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:9:1",
+      "Rashi on Chullin 46a:9:3"
+    ],
+    "generatedAt": "2026-11-12T04:20:21.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערוקאי</strong> - גמירו מינאי הא מילתא כזית שאמרו במקום מרה יהא:"
+  },
+  "Rashi on Chullin 46a:9:3": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:9:1",
+      "Rashi on Chullin 46a:9:2",
+      "Steinsaltz on Chullin 46a:9",
+      "Steinsaltz comment #3 on Chullin 46a:9",
+      "Steinsaltz comment #4 on Chullin 46a:9",
+      "Tosafot on Chullin 46a:9:1",
+      "Tosafot on Chullin 46a:9:2",
+      "[",
+      "Shulchan Arukh, Yoreh De'ah 41:1",
+      "Mishneh Torah, Ritual Slaughter 8:21",
+      "Jastrow, טַרְפְּשָׁא 1",
+      "Rashi on Chullin 46a:11:1",
+      "Rashi on Chullin 46a:11:2",
+      "Rashi on Chullin 46a:11:3",
+      "Sefer HeArukh, Letter Tet 240",
+      "Rashi on Chullin 46a:10:2"
+    ],
+    "generatedAt": "2026-11-12T04:24:00.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 46a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום שהיא חיה</strong> - שהכבד חיה משם דהיינו מקום תלייתה כשהיא מעורה דבוקה תחת הכליות זה נראה לי ומצאתיו. לישנא אחרינא ביותרת הכבד איבר\"ש בלע\"ז והן טרפשין:"
+  },
+  "Tosafot on Chullin 46a:12:1": {
+    "dependsOn": [
+      "Chullin 46a:12",
+      "Rashi on Chullin 46a:12:1",
+      "Rashi on Chullin 46a:12:2",
+      "Chullin 46b:1",
+      "Maharam on Chullin 46a:2",
+      "Rosh on Chullin 3:13:1"
+    ],
+    "generatedAt": "2026-11-12T04:36:14.516Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמרי לה קרמא תתאה</strong> - כלומר עם עילאה דאי תתאה גרידא הא פסקינן בסמוך דבעינן תרוייהו ואם כן לא הוה ליה לא כרב ולא כשמואל:"
+  },
+  "Tosafot on Chullin 46a:1:1": {
+    "dependsOn": [
+      "Steinsaltz comment #1 on Chullin 46a:1",
+      "Steinsaltz comment #2 on Chullin 46a:1",
+      "Tosafot on Chullin 55a:5:2"
+    ],
+    "generatedAt": "2026-11-12T03:37:27.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד ועד בכלל או עד ולא עד בכלל</strong> - מדאמר בפירקין <span class=\"parenthesized\">(לקמן חולין דף נה.)</span> כל שיעורא דשיערו חכמים להחמיר ליכא למפשט מידי דהני מילי במשנה או בברייתא אבל הכא מימרא היא:"
+  },
+  "Tosafot on Chullin 46a:2:1": {
+    "dependsOn": [
+      "Chullin 46a:1",
+      "Rashi on Chullin 46a:2:1",
+      "Tosafot on Chullin 46a:1:1"
+    ],
+    "generatedAt": "2026-11-12T03:41:50.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם תימצי לומר עד ולא עד בכלל פי פרשה מהו</strong> - אף על פי שאמר שמואל עד בין הפרשות מ\"מ מספקא ליה דדלמא מתחלת עובי פיצול ראשון עד פיצול שני שלמטה הימנו קרוי בין הפרשות ראשון ועד ולא עד בכלל ואיני יודע או שמא מסוף עובי פיצול קרוי בין הפרשות שזהו בין הפרשות ממש אבל מה שהוא כנגד עובי החוט המתפצל לא מיקרי בין הפרשות וטרפה אי נמי משום הכי מספקא ליה שמא פי פרשות עצמן דהיינו עובי פיצול ראשון הוי בין הפרשות דקאמר שמואל לפי שהוא בין חוט המתפצל לשמאל לחוט המתפצל לימין והא דנקט שמואל עד בין הפרשות ולא נקט עד הפרשות לפי שהאחד מתחיל לצאת ולהתפצל קודם לחבירו ודוקא אם עד ולא עד בכלל איבעיא ליה בפי פרשה ראשונה אבל אם עד ועד בכלל לא מצי למיבעי פי פרשה שניה מהו דממה נפשך הוי בכלל איני יודע כמו בין הפרשות שני דהא עד בין הפרשות ראשון קאמר דטרפה ותו לא ואם איתא דפי פרשה אינו קרוי בין הפרשות הרי לא אמרינן שיהא טרפה אלא עד בין הפרשות ואין זה בין הפרשות ואם הוא קרוי בין הפרשות האמר שניה איני יודע ובכלל שניה יש לו להיות:"
+  },
+  "Tosafot on Chullin 46a:3:1": {
+    "dependsOn": [
+      "Chullin 46a:2",
+      "Chullin 46a:3",
+      "Rashi on Chullin 46a:3:1",
+      "Chullin 46a:1",
+      "Rashi on Chullin 46a:2:1",
+      "Chokhmat Shlomo on Chullin 46a:3",
+      "Tosafot on Chullin 45b:8:1"
+    ],
+    "generatedAt": "2026-11-12T03:44:54.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם תימצי לומר עד ועד בכלל פרשה עצמה מהו</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> נפסק הפיצול עצמה מן החוט מהו ונראה דאפילו דאם תימצי לומר דעד ולא עד בכלל הוה מצי למיבעי בפרשה עצמה את\"ל דפי פרשה טרפה אבל אי פי פרשה כשרה אז ודאי ליכא למבעי דכ\"ש פרשה עצמה ועוד י\"ל דמבעיא ליה אם נפסק הפיצול ברחוק ממקום חיבורו כנגד חוט השדרה שבין פיצול ראשון לפיצול שני שהוא בין הפרשות ראשון והשתא לא מצי למבעי אלא את\"ל עד ועד בכלל:"
+  },
+  "Tosafot on Chullin 46a:4:1": {
+    "dependsOn": [
+      "Chullin 46a:4"
+    ],
+    "generatedAt": "2026-11-12T04:08:39.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו ראשונה ושניה</strong> - הא דנקט שניה משום דאי הויא טרפה הוה שייך למבעי כל הנך בעיות בשניה כמו בראשונה:"
+  },
+  "Tosafot on Chullin 46a:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 46a:5:1",
+      "Rashi on Chullin 46a:5:2",
+      "Steinsaltz comment #1 on Chullin 46a:5"
+    ],
+    "generatedAt": "2026-11-12T04:11:33.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה מן האגפים</strong> - יש להסתפק אם למטה ממקום חיבורן בגוף קאמר אם למטה ממקום ששוכבות על העוף דהיינו למטה מסוף עצם של כנף המחובר בגוף:"
+  },
+  "Tosafot on Chullin 46a:9:1": {
+    "dependsOn": [
+      "Sanhedrin 25b:14-16",
+      "Sanhedrin 25b:17-19",
+      "Sanhedrin 25b:24",
+      "Rashi on Sanhedrin 25b:24:1-4"
+    ],
+    "generatedAt": "2026-11-12T04:25:06.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערוקאי</strong> - רבי זירא לא היה צריך לברוח דאביו גבאי של מלך היה דנהג בגבואתא תליסר שנין כדאמר בפרק זה בורר <span class=\"parenthesized\">(סנהדרין כה:)</span> דכי הוה אתי ריש נהרא למתא כי הוה חזי רבנן אמר להו לך עמי בא בחדריך:"
+  },
+  "Tosafot on Chullin 46a:9:2": {
+    "dependsOn": [
+      "Chullin 43a:7",
+      "Tosafot on Chullin 46a:9:1"
+    ],
+    "generatedAt": "2026-11-12T04:28:03.232Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 46a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכך בעינן כזית במקום מרה וכזית במקום שהיא חיה</strong> - הכי קיימא לן כדפסקינן לעיל <span class=\"parenthesized\">(חולין דף מג.)</span> הלכה כדברי האומר בכזית:"
+  }
+}

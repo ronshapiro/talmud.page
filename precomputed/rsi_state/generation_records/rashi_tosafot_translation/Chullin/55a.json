@@ -1,0 +1,281 @@
+{
+  "Rashi on Chullin 55a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T21:01:09.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לקתה בכוליא</strong> - כגון מליא מוגלא:"
+  },
+  "Rashi on Chullin 55a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T21:01:28.596Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכוליא אחת</strong> - וכ\"ש בשתיהן:"
+  },
+  "Rashi on Chullin 55a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:30:04.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד לוג</strong> - שיעור זה ניתן לשברי כלים שלא היה תחלתן אלא עד לוג דאם היה תחלתן יותר מלוג הוי שיעור שבריו ברביעית הלוג כדלקמן:"
+  },
+  "Rashi on Chullin 55a:2:1": {
+    "dependsOn": [
+      "Chullin 55a:2",
+      "Rashi on Chullin 55a:2:2",
+      "Rashi on Chullin 55a:1:1"
+    ],
+    "generatedAt": "2026-11-12T20:35:03.548Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלוג עד סאה</strong> - כלי שהיה תחלתו יותר מלוג כגון שנים או שלשה לוגין או יותר על סאה שיעור שבריו ברביעית הלוג:"
+  },
+  "Rashi on Chullin 55a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:35:37.827Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סאה כלמעלה</strong> - ושיעור שבריו בחצי לוג כדלקמן:"
+  },
+  "Rashi on Chullin 55a:3:1": {
+    "dependsOn": [
+      "Rashi on Chullin 55a:2:1",
+      "Rashi on Chullin 55a:2:2"
+    ],
+    "generatedAt": "2026-11-12T20:37:31.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סאתים כלמעלה</strong> - ושיעור שבריו בתורת כהנים ובמסכת כלים <span class=\"parenthesized\">(פ\"ב מ\"ב)</span> בלוג שלם:"
+  },
+  "Rashi on Chullin 55a:4:1": {
+    "dependsOn": [
+      "Chullin 55a:4",
+      "Rashi on Chullin 55a:2:1",
+      "Rashi on Chullin 55a:2:2",
+      "Rashi on Chullin 55a:3:1",
+      "Chullin 55a:1",
+      "Rashi on Chullin 55a:1:1",
+      "Rashi on Chullin 54b:13:1",
+      "Rashi on Chullin 54b:13:2"
+    ],
+    "generatedAt": "2026-11-12T20:38:58.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא לוג כלמטה כו'</strong> - אלמא בכולהו עד ועד בכלל:"
+  },
+  "Rashi on Chullin 55a:5:1": {
+    "dependsOn": [
+      "Chullin 55a:5",
+      "Chullin 55a:1"
+    ],
+    "generatedAt": "2026-11-12T20:40:09.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם לחומרא</strong> - משום הכי אמרינן בהו עד ועד בכלל דאזלינן לחומרא דמטמינן לשברים בשיעור זוטא אבל כסלע וכאיסר דרב נחמן אי הוה אמרינן בהו עד ועד בכלל הוי קולא לאכשורה ואשמועינן רב נחמן דכל היכא דקתני עד זיל ביה לחומרא ואי עד ועד בכלל קולא היא אימא עד ולא עד בכלל:"
+  },
+  "Rashi on Chullin 55a:5:2": {
+    "dependsOn": [
+      "Chullin 55a:5",
+      "Rashi on Chullin 55a:5:1",
+      "Rashi on Chullin 55a:5:2",
+      "Rashi on Chullin 55a:5:3",
+      "Steinsaltz on Chullin 55a:5:1",
+      "Steinsaltz on Chullin 55a:5",
+      "Tosafot on Chullin 55a:5:1",
+      "Tosafot on Chullin 55a:5:2"
+    ],
+    "generatedAt": "2026-11-12T20:42:05.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שיעורים של חכמים להחמיר</strong> - אי מצומצם חומרא הוא שערינהו במצומצם ואי מצומצם קולא שערינהו בשוחק:"
+  },
+  "Rashi on Chullin 55a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:45:18.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מכגריס של כתמים</strong> - ששנינו בנדה <span class=\"parenthesized\">(דף נח:)</span> דהרואה כתם של דם בבגדה כגריס טמא דמספקינן לה בדם נדה אע\"ג דכי משערת ליה במצומצם חומרא הוי לא הויא טמאה אלא ביותר מכגריס אבל כגריס עצמו מחזקינן ליה בדם מאכולת והיינו להקל דאע\"ג דכגריס שעורו בעינן כגריס ועוד והכי תניא בהרואה כתם <span class=\"parenthesized\">(שם נח:)</span> וטעמא משום דכתמים עצמן דרבנן דמדאורייתא עד דחזיא מגופה כדכתיב <span class=\"parenthesized\">(ויקרא טו)</span> דם יהיה זובה בבשרה:"
+  },
+  "Rashi on Chullin 55a:6:1": {
+    "dependsOn": [
+      "Chullin 55a:6",
+      "Chullin 55a:5",
+      "Rashi on Chullin 55a:6:1",
+      "Rashi on Chullin 55a:6:2",
+      "Rashi on Chullin 55a:6:3",
+      "Rashi on Chullin 55a:5:1",
+      "Rashi on Chullin 55a:5:2",
+      "Rashi on Chullin 55a:5:3"
+    ],
+    "generatedAt": "2026-11-12T20:52:52.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - דהא דקתני לוג כלמטה סאה כלמטה משום חומרא הוא ולאו דנימא נמי במקום קולא עד ועד בכלל:"
+  },
+  "Rashi on Chullin 55a:6:2": {
+    "dependsOn": [
+      "Chullin 55a:6",
+      "Rashi on Chullin 55a:6:1",
+      "Rashi on Chullin 55a:6:2",
+      "Rashi on Chullin 55a:6:3",
+      "Rashi on Chullin 55a:5:1",
+      "Rashi on Chullin 55a:5:2",
+      "Rashi on Chullin 55a:5:3"
+    ],
+    "generatedAt": "2026-11-12T20:54:07.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקתני עלה דההיא</strong> - דחבל היוצא חמשה טפחים כלמעלה טמא דעד דקתני עד חמשה טהור ולא עד בכלל:"
+  },
+  "Rashi on Chullin 55a:6:3": {
+    "dependsOn": [
+      "Rashi on Chullin 55a:6:1",
+      "Rashi on Chullin 55a:6:2",
+      "Rashi on Chullin 55a:1:1",
+      "Rashi on Chullin 55a:2:1"
+    ],
+    "generatedAt": "2026-11-12T20:55:12.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשרה כלמטה</strong> - דהאי עד דקתני ועד עשרה טמא ועד בכלל קאמר אלמא בתר חומרא אזיל:"
+  },
+  "Rashi on Chullin 55a:8:1": {
+    "dependsOn": [
+      "Mishnah Chullin 4:1",
+      "Rashi on Chullin 55a:8:2",
+      "Rashi on Chullin 55a:8:3"
+    ],
+    "generatedAt": "2026-11-12T20:56:07.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חותך מעובר</strong> - שבמעי הבהמה ולא יצא מתוכה:"
+  },
+  "Rashi on Chullin 55a:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 55a:8:1",
+      "Rashi on Chullin 55a:8:3"
+    ],
+    "generatedAt": "2026-11-12T20:57:23.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר</strong> - אבר באכילה וניתר בשחיטתה כעובר עצמו וטעמא מפרש בבהמה המקשה <span class=\"parenthesized\">(לקמן חולין סט.)</span> מכל בבהמה תאכלו:"
+  },
+  "Rashi on Chullin 55a:8:3": {
+    "dependsOn": [
+      "Rashi on Chullin 55a:8:1",
+      "Rashi on Chullin 55a:8:2",
+      "Chullin 68a:6",
+      "Rashi on Chullin 69a:23:1",
+      "Chullin 55a:8",
+      "Chullin 55a:7"
+    ],
+    "generatedAt": "2026-11-12T20:59:21.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן הטחול ומן הכליות</strong> - של בהמה אם נחתך מהם אף על פי שלא הוציא החתיכה מתוכה אסור באכילה משום אבר מן החי והתם קא יליף טעמא מאותה תאכלו שלמה ולא חסרה כלומר כשהיא שלמה הוא דקאמינא לך כל בבהמה תאכלו להתיר דבר אחר שבגופה אבל כשהיא חסרה דהנמצא בתוכה מחסרונה הוא לא שרינא לך כל בבהמה דהיינו הנמצא בה. ומכל מקום שמעינן מינה דהיא עצמה שריא אף על גב דנחתך מן הטחול ואין חיתוך בלא נקב דכל נקב משום חיתוך הוא:"
+  },
+  "Rashi on Chullin 55a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:59:57.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא הדין דבהמה נמי אסירא</strong> - דחמיר ניקב ונחתך מניטל לגמרי שעל ידי הנקב הוא הולך ומוסיף מכאוב והחולי רב בגופה:"
+  },
+  "Rashi on Chullin 55a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T21:00:41.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 55a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איידי דתנא רישא מותר</strong> - בחתיכה עצמה דאיצטריך לאשמועינן דלאו אבר מן החי הוא תנא איסורא דסיפא נמי בחתיכה:"
+  },
+  "Tosafot on Chullin 55a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:33:59.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 55a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיעורן בכדי סיכת קטן ועד לוג</strong> - אבל אם היה תחלתן יותר מלוג בעינן שיעור גדול לשברים יותר מכדי סיכת קטן ואפילו יחדו בטלה דעתו אצל כל אדם ואין יחודו יחוד דאין דרך ליחד שברים הבאים מכלי גדול לצורך סיכת קטן וכן נראה דע\"י יחוד מיירי הכא דהיאך יקבלו שברים טומאה אם לא ע\"י יחוד הא אמרינן בסוף המצניע <span class=\"parenthesized\">(שבת צה:)</span> דכלי חרס שניקב כמוציא זית טהור מלקבל בו זיתים ועדיין כלי הוא לקבל בו רמונים ושם <span class=\"rashi-quotation\">פירש בקונטרס</span> כלומר טהור הוא מלקבל טומאה עוד משום סתם כלי חרס ששיעורו בזיתים וגם אם היתה עליו טומאה נטהר ועדיין כלי הוא לקבל בו רמונים שאם יחדו שוב לרמונים מקבל טומאה מכאן ולהבא או אם מתחלה היה מיוחד לרמונים לא נטהר אלמא בעינן יחוד וא\"ת דתנא בתוספתא דכלים בשלהי פרק מחט וטבעת שולי המחצין ושולי הפחתין וקרקרות הכלים ודופנותיהם [מאחוריהן] אין ממלאין בהן ואין מקדשין בהן ואין מזין מהן וכו' שפן ועשה מהן כלים מקבלין טומאה מכאן ולהבא דברי ר' מאיר וחכ\"א כל כלי חרס שטהר שעה אחת שוב אין לו טומאה לעולם ואי בעינן יחוד לקבל בו רמונים כשניקב כמוציא זית הא מיד כשניקב נטהר וכשיחדו לרמונים אחר כך איך יקבל טומאה מכאן ולהבא אבל אי לא בעינן יחוד אתי שפיר דלא נטהר כל זמן שהוא ראוי לרמונים וי\"ל דההיא דתוספתא מיירי בדלא חזי על ידי יחוד בלי תיקון ולהכי בשברים הפחותין מכשיעור המפורש כאן בשמעתין דמחמת גריעותא לא מהני יחוד אבל היכא דלא בעי תיקון דאין מחוסר אלא יחוד לא אמרן דכיון שטיהר שוב לא יקבל טומאה לעולם והא דתנן במסכת כלים <span class=\"parenthesized\">(פ\"ה מ\"ח)</span> חתכו חוליות פחות מארבעה טפחים טהור מירחו בטיט מקבל טומאה משיסיקנו לאפות בו סופגנין משמע דאתא ביה טומאה ע\"י תקון שאני התם דחשיב כלי גמור ע\"י שנעשה אחר כך שלם כמתחילה ע\"י תקון אבל שברים קטנים אין נחשבים להיות עוד כלים ע\"י שום תקון וא\"ת לפי מה שפירש דלא מהני ראויות לשברים לקבל טומאה עד שיחד הא בפרק כל הכלים <span class=\"parenthesized\">(שבת דף קכד:)</span> פליגי ר\"מ ור' יהודה בכלי שנשבר בשבת וראוי למלאכה אחרת לענין טלטול דר' יהודה אוסר לטלטל משום נולד ור\"מ שרי דלית ליה נולד אבל כ\"ע מודו שאם נשבר מערב שבת דלא הוי נולד ושרי לטלטולי בשבת הואיל וראוי למלאכה אחרת אלמא מנא הוא לענין שבת ואם כן לענין טומאה נמי מנא הוא כדאמר רבא בפרק כל הכלים <span class=\"parenthesized\">(שבת דף קכג.)</span> גבי מחט של יד מדלענין טומאה לאו מנא הוא לענין שבת נמי לאו מנא הוא ועוד מוכח התם דלא בעינן יחוד לענין שבת גבי רבא דאיתווס מסאניה בטינא ואתא שמעיה ושקל חספא וקא מכפר ליה ומפרש טעמא משום דאילו הוה בחצר חזי לאיכסויי ביה מנא וי\"ל דלעולם בעינן יחוד לענין טומאה והא דקאמר רבא מדלענין טומאה לאו מנא הוא היינו אפילו ע\"י יחוד דכיון דניטל חודה או עוקצה לא מהני בה יחוד והא דתנן במסכת כלים פרק י\"ג <span class=\"parenthesized\">(מ\"ה)</span> מחט שניטל חודה או עוקצה טהורה ואם התקינה למיתוח טמאה לאו יחוד בעלמא קאמר אלא שעשה שום תיקון אבל היכא דהוי מנא לענין טומאה ע\"י יחוד לענין שבת לא תקנו יחוד וכן משמע התם בההיא דתרגמא אביי אליבא דרבא בגולמי דזימנין דמימליך עלייהו ומשוי להו מנא משמע דאע\"ג דטהורה היא דאכתי לא מימלך עליה אפילו הכי מותר לטלטלה הואיל וראויה להיות כלי ע\"י יחוד ומיהו קשה מההיא דאמר בפרק במה אשה יוצאה <span class=\"parenthesized\">(שבת דף נח:)</span> העושה זגין למכתשת ולעריסה ולמטפחת תינוקות יש להם עינבל טמאים אין להם עינבל טהורים נטלו עינבליהן עדיין טומאתן עליהם ומפרש ר' יוסי בר' חנינא הואיל וראוי להקישו ע\"ג כלי חרס רבי יוחנן אמר הואיל וראוי לגמוע בו מים לתינוק אלמא בראויות בעלמא בלא יחוד מקבל טומאה אע\"פ שלא יחדו לגמוע דעל כרחך בלא יחדו מיירי מדפליג עלה ר' יוסי בר' חנינא ולא מטמא משום גימוע דבעינן מעין מלאכה ראשונה ועוד אי יחדו מה לי לא היה לו עינבל מעולם מה לי היה לו עינבל וניטל ועוד מדפריך עליה ורבי יוחנן לא בעי מעין מלאכה ראשונה והא תניא יכול כפה סאה וישב עליה כו' וא\"ר אלעזר אומרים במדרסות עמוד ונעשה מלאכתנו ואין אומרים בטמא מת עמוד ונעשה מלאכתנו ורבי יוחנן אמר אף אומר בטמא מת עמוד ונעשה מלאכתנו וההיא ע\"כ בלא יחוד דומיא דכפה סאה וישב עליה דאיירי כשלא יחדו לישיבה דממעט ליה מדכתיב אשר ישב עליו הזב מי שמיוחד לישיבה יצא זה שאומרין לו עמוד ונעשה מלאכתנו וי\"ל דשאני גבי זגין דכיון שגם הדיוט יכול להחזיר העינבל כדקאמר התם אית לן למימר דחשיב כלי ע\"י דבר מועט שעדיין ראוי לגמוע קודם חזרת עינבל ואפילו בלא יחוד ולמ\"ד הואיל וראוי להקישו על גבי כלי חרס ניחא ממה נפשך אי בעלמא בעי מעין מלאכה ראשונה הכא נמי לא מהני לגמוע מים דהיינו מלאכה אחרת ואפילו את\"ל דבעלמא טמא בלא יחוד הכא שעומד למלאכה ראשונה ע\"י חזרת העינבל אי לא דראוי להקישו לא הוי טמא ולא סגי ליה בגימוע מים דהוי כמו עמוד ונעשה מלאכתנו:"
+  },
+  "Tosafot on Chullin 55a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:46:04.371Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 55a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם לחומרא</strong> - השתא חוזר בו מכל מה שתירץ והוי כמו אלא:"
+  },
+  "Tosafot on Chullin 55a:5:2": {
+    "dependsOn": [
+      "Tosafot on Chullin 55a:5:2",
+      "Tosafot on Chullin 55a:5:1",
+      "Tosafot on Berakhot 26b:15:1",
+      "Chullin 55a:5"
+    ],
+    "generatedAt": "2026-11-12T20:51:33.675Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 55a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שיעורי חכמים להחמיר</strong> - וא\"ת בפרק תפלת השחר <span class=\"parenthesized\">(ברכות דף כו.)</span> דקאמר רבי יהודה עד ד' שעות ובעי בגמרא אי עד ועד בכלל אי לא עד ועד בכלל ופשיט דעד ועד בכלל דומיא דההיא דקאמר רבי יהודה גבי תפלת המוספים עד ו' שעות דהוי עד ועד בכלל כדמוכח התם והיינו קולא שיכול להמתין ולהתפלל עד סוף ארבע וי\"ל דאיכא נמי חומרא דלא אמרינן עבר זמנו וחייב עדיין להתפלל כל שעה רביעית וא\"ת והיכי פשיט ליה דעד ארבע שעות מתפלת המוספין דלמא האי עד ועד בכלל והאי עד ולא עד בכלל כדקאמר הכא גבי ההיא דחבל היוצא מן המטה דחמשה כלמעלה ועשרה כלמטה וי\"ל דשאני הכא דשניהם שוים דתרוייהו לחומרא:"
+  }
+}

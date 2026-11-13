@@ -1,0 +1,615 @@
+{
+  "Rashi on Chullin 50a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:33:15.689Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מאן דהוא</strong> - אחד מן התלמידים ולא היו זכורין אלו שסידרו הגמרא מי הוה:"
+  },
+  "Rashi on Chullin 50a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:33:41.019Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אזכי ואיסק</strong> - לארעא דישראל לאתריה דרבי אבא בריה דרבי חייא בר אבא:"
+  },
+  "Rashi on Chullin 50a:10:3": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:10:1",
+      "Rashi on Chullin 50a:10:2",
+      "Rashi on Chullin 50a:10:3",
+      "Chullin 50a:10",
+      "Chullin 50a:7",
+      "Beitzah 27a:5",
+      "Beitzah 27a:6",
+      "Beitzah 27a:7",
+      "Steinsaltz on Chullin 50a:10",
+      "Rashba on Chullin 50a:6:1",
+      "Rashba on Chullin 50a:13:1",
+      "Rashba on Chullin 50a:15:1",
+      "Moed Katan 22a:9",
+      "Rashi on Moed Katan 22a:9:1",
+      "Rashi on Moed Katan 22a:9:2",
+      "Moed Katan 22a:10",
+      "Moed Katan 22a:7",
+      "Moed Katan 22a:8",
+      "Moed Katan 22a:11",
+      "Jastrow, מַאן 1",
+      "Niddah 48a:14",
+      "Rashi on Beitzah 27a:6:1",
+      "Rashi on Beitzah 27a:6:2"
+    ],
+    "generatedAt": "2026-11-12T11:40:40.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואגמרה</strong> - לשמעתא דרבי חייא בר אבא ואגמרה משמיה אי אמר הלכה כר' שמעון או לא:"
+  },
+  "Rashi on Chullin 50a:12:1": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:10:1",
+      "Rashi on Chullin 50a:10:2",
+      "Rashi on Chullin 50a:10:3",
+      "Chullin 50a:12",
+      "Rashi on Chullin 50a:1:1",
+      "Rashi on Chullin 50a:2:1",
+      "Rashi on Chullin 50a:3:1"
+    ],
+    "generatedAt": "2026-11-12T11:45:15.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין הלכה כרבן שמעון [ב\"ג]</strong> - הש\"ס קא פסיק לה:"
+  },
+  "Rashi on Chullin 50a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:45:49.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקיפין בבני מעיים</strong> - אם נמצאו נקובים ואין אנו יודעין אם קודם שחיטה ואם לאחר שחיטה נוקבין נקב אחר בצידו ורואין אם מראיהן שוין כשרה דבידוע שלאחר שחיטה היה:"
+  },
+  "Rashi on Chullin 50a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:46:19.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממשמש בהו</strong> - ממשמש בהן בנקבים האחרים ונהפכו למראה אחד:"
+  },
+  "Rashi on Chullin 50a:14:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:14:1",
+      "Rashi on Chullin 50a:14:2",
+      "Rashi on Chullin 50a:14:3",
+      "Rashi on Chullin 50a:14:4",
+      "Rashi on Chullin 50a:14:5",
+      "Chullin 50a:14",
+      "Rashi on Chullin 50a:13:1"
+    ],
+    "generatedAt": "2026-11-12T11:48:22.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואדמו</strong> - ואכשרה:"
+  },
+  "Rashi on Chullin 50a:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:48:53.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא לך הא</strong> - שידעת לעשות חכמה זו:"
+  },
+  "Rashi on Chullin 50a:14:4": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:14:1",
+      "Rashi on Chullin 50a:14:2",
+      "Rashi on Chullin 50a:14:3",
+      "Rashi on Chullin 50a:14:5"
+    ],
+    "generatedAt": "2026-11-12T11:49:40.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - מעצמי הבינותי דאמינא כמה ידי ממשמשות בנקבין קמאי מקמי דליתי קמיה דמר:"
+  },
+  "Rashi on Chullin 50a:14:5": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:14:1",
+      "Rashi on Chullin 50a:14:2",
+      "Rashi on Chullin 50a:14:3",
+      "Rashi on Chullin 50a:14:4",
+      "Rashi on Chullin 2a:1:1",
+      "Rashi on Chullin 2a:1:2",
+      "Rashi on Chullin 10a:1:1"
+    ],
+    "generatedAt": "2026-11-12T11:51:58.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:14:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כר' יוחנן</strong> - בכל מילי. לישנא אחרינא רבי יוחנן חכים בטרפות דאמרינן לקמן שדר ליה שמואל תריסר גמלי ספיקי דטריפתא בפרק גיד הנשה <span class=\"parenthesized\">(לקמן חולין דף צה:)</span>:"
+  },
+  "Rashi on Chullin 50a:15:1": {
+    "dependsOn": [
+      "Chullin 50a:15",
+      "Rashi on Chullin 50a:13:1",
+      "Rashi on Chullin 50a:15:1",
+      "Rashi on Chullin 50a:15:2",
+      "Rashi on Chullin 50a:15:3",
+      "Chullin 49a:7",
+      "Rashi on Chullin 49a:7:1"
+    ],
+    "generatedAt": "2026-11-12T11:53:03.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקיפין בריאה</strong> - היכא דליכא למיתלי בטבחא:"
+  },
+  "Rashi on Chullin 50a:15:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:15:1",
+      "Rashi on Chullin 50a:15:3"
+    ],
+    "generatedAt": "2026-11-12T11:53:50.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערוגה</strong> - דופן הריאה ימיני או שמאלי:"
+  },
+  "Rashi on Chullin 50a:15:3": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:15:1",
+      "Rashi on Chullin 50a:15:2"
+    ],
+    "generatedAt": "2026-11-12T11:54:46.859Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקה לדקה</strong> - אפילו בהמה אחרת דוגמתה. לישנא אחרינא מגסה לגסה מאומה לאומה ומדקה לדקה מאונא לאונא וזאת נראית לי שאין מקילין כל כך:"
+  },
+  "Rashi on Chullin 50a:16:1": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:16:1",
+      "Rashi on Chullin 50a:16:2",
+      "Rashi on Chullin 50a:16:3",
+      "Rashi on Chullin 50a:16:4",
+      "Chullin 50a:15",
+      "Rashi on Chullin 50a:15:1",
+      "Chullin 50a:13",
+      "Chullin 50a:14"
+    ],
+    "generatedAt": "2026-11-12T11:57:32.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקיפין בקנה</strong> - אם נמצאת פסוקה לאחר זמן או קדורה כאיסר:"
+  },
+  "Rashi on Chullin 50a:16:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:16:1",
+      "Rashi on Chullin 50a:16:2",
+      "Rashi on Chullin 50a:16:3",
+      "Rashi on Chullin 50a:16:4",
+      "Chullin 50a:14",
+      "Chullin 50a:15",
+      "Steinsaltz on Chullin 50a:16",
+      "Steinsaltz comment #1 on Chullin 50a:16",
+      "Steinsaltz comment #2 on Chullin 50a:16"
+    ],
+    "generatedAt": "2026-11-12T11:58:58.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באותה חוליא</strong> - לענין קדורה כאיסר נקט לה. חוליא שלש טבעות דטבעת אחת אין עוגל כאיסר וקודרין עוד אחרת באותה חוליא עצמה ומקיפין:"
+  },
+  "Rashi on Chullin 50a:16:3": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:16:1",
+      "Rashi on Chullin 50a:16:2",
+      "Rashi on Chullin 50a:16:3",
+      "Rashi on Chullin 50a:16:4",
+      "Steinsaltz on Chullin 50a:16",
+      "Steinsaltz comment #1 on Chullin 50a:16",
+      "Steinsaltz comment #2 on Chullin 50a:16",
+      "Steinsaltz comment #3 on Chullin 50a:16"
+    ],
+    "generatedAt": "2026-11-12T12:00:06.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר חוליא</strong> - הוא קלישות הקנה מן הצדדין ומתחתיה שרצועות הבשר מחברת ראשי הטבעות ואף התנוך הולך ודק מעוביו מאמצעיתו ולצדדין לכאן ולכאן על פני כל הקנה:"
+  },
+  "Rashi on Chullin 50a:16:4": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:16:1",
+      "Rashi on Chullin 50a:16:2",
+      "Rashi on Chullin 50a:16:3",
+      "Rashi on Chullin 50a:16:4"
+    ],
+    "generatedAt": "2026-11-12T12:00:45.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחוליא לבר חוליא</strong> - ממקום עוביה של זו למקום קלישותה של זו:"
+  },
+  "Rashi on Chullin 50a:17:1": {
+    "dependsOn": [
+      "Jastrow, חַלְחוֹלֶת 1",
+      "Steinsaltz on Chullin 50a:17",
+      "Sefer HeArukh, Letter Chet 134",
+      "Rashi on Chullin 50a:17:2",
+      "Rashi on Chullin 50a:17:3",
+      "Rashi on Chullin 50a:17:4",
+      "Steinsaltz comment #1 on Chullin 50a:17",
+      "Steinsaltz comment #2 on Chullin 50a:17",
+      "Steinsaltz comment #3 on Chullin 50a:17",
+      "Steinsaltz comment #4 on Chullin 50a:17",
+      "Rashba on Chullin 50a:7",
+      "Rosh on Chullin 3:32:1",
+      "[",
+      "Rashi on Chullin 50a:1:1",
+      "Rashi on Chullin 50a:2:1"
+    ],
+    "generatedAt": "2026-11-12T12:03:14.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלחולת</strong> - היא כרכשא טבחיי\"א:"
+  },
+  "Rashi on Chullin 50a:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T12:03:38.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעמידות</strong> - סותמות אותה שהרי אדוקה בהן:"
+  },
+  "Rashi on Chullin 50a:17:3": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:17:1",
+      "Rashi on Chullin 50a:17:2",
+      "Rashi on Chullin 50a:17:4"
+    ],
+    "generatedAt": "2026-11-12T12:04:16.839Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום הדבק</strong> - שהיא דבוקה בירכים:"
+  },
+  "Rashi on Chullin 50a:17:4": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:17:1",
+      "Rashi on Chullin 50a:17:2",
+      "Rashi on Chullin 50a:17:3"
+    ],
+    "generatedAt": "2026-11-12T12:05:47.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברובו</strong> - אפילו נקדר וניטל דופנה עליון או תחתון ברובו כשרה שאין דרך הריעי היוצא דרך הנקב לחזור לאחוריו וליפול לתוך חלל הגוף מפני שמקום דחוק הוא השדרה מלמעלה ועצמות האליה שקורין הנקא\"ש ומכאן ולמטה הן מחוברין בחסחוס:"
+  },
+  "Rashi on Chullin 50a:1:1": {
+    "dependsOn": [
+      "Chullin 50a:1",
+      "Rashi on Chullin 49b:15:1",
+      "Rashi on Chullin 49b:15:2",
+      "Rashi on Chullin 2a:2:1"
+    ],
+    "generatedAt": "2026-11-12T11:04:36.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולדידן אפילו מיסתם נמי לא סתים</strong> - בתמיה. לדידן בני בבל נהי דלא אכלי ליה להכי מיהא מחזקינן ליה בחלב טהור להיות סותם. שמע מינה ההיא דפליגי ביה בני א\"י ובני בבל קרי ליה רב נחמן בר חימצא והיינו דאייתרא חלב שבמקום היתר שהקיבה עשויה כקשת ומבחוץ קרי דאקשתא ומבפנים לעוגל קרי דאייתרא חבל ובדאייתרא פליגי כדמפרש ואזיל:"
+  },
+  "Rashi on Chullin 50a:2:1": {
+    "dependsOn": [
+      "Steinsaltz on Chullin 50a:2",
+      "Jastrow, קֶשֶׁת ² 1",
+      "Tosafot on Chullin 50a:2:1",
+      "Rashi on Chullin 50a:2:2",
+      "Chullin 50a:2",
+      "Rashi on Chullin 49b:2:3",
+      "Chullin 49b:2"
+    ],
+    "generatedAt": "2026-11-12T11:06:53.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאקשתא כולי עלמא לא פליגי</strong> - דבין לבני בבל ובין לבני מערבא אסור דאפילו רבי עקיבא דאמר לעיל <span class=\"parenthesized\">(חולין דף מט:)</span> תותב קרום ונקלף אסור דהאי נמי לתותב דמי שאינו מחובר אלא באמצע הקשת שקורין פישט\"א:"
+  },
+  "Rashi on Chullin 50a:2:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:2:1",
+      "Rashi on Chullin 49b:5:1",
+      "Rashi on Chullin 49b:1:1",
+      "Rashi on Chullin 49b:3:1",
+      "Rashi on Chullin 49b:12:5",
+      "Chullin 49b:1",
+      "Chullin 49b:2"
+    ],
+    "generatedAt": "2026-11-12T11:09:06.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי דאייתרא</strong> - בני בבל סברי לה כר' ישמעאל דאמר כל קרום ונקלף חלב טמא הוא והאי נמי קרום ונקלף הוא ובני מערבא כר' עקיבא דבעי תותב קרום ונקלף והאי לאו תותב הוא:"
+  },
+  "Rashi on Chullin 50a:3:1": {
+    "dependsOn": [
+      "Chullin 50a:2",
+      "Rashi on Chullin 50a:2:1",
+      "Rashi on Chullin 50a:2:2",
+      "Rashi on Chullin 50a:3:2",
+      "Rashi on Chullin 49b:12:1",
+      "Rashi on Chullin 49b:13:1",
+      "Rashi on Chullin 49b:13:2"
+    ],
+    "generatedAt": "2026-11-12T11:13:58.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי דאייתרא כולי עלמא [לא פליגי] דשרי</strong> - דכר' עקיבא סברי להו:"
+  },
+  "Rashi on Chullin 50a:3:2": {
+    "dependsOn": [
+      "Chullin 50a:3",
+      "Rashi on Chullin 50a:2:1",
+      "Rashi on Chullin 50a:2:2",
+      "Rashi on Chullin 50a:3:1",
+      "Rashi on Chullin 49b:2:3",
+      "Chullin 49b:2",
+      "Pesachim 51a:9"
+    ],
+    "generatedAt": "2026-11-12T11:16:04.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי דאקשתא</strong> - מאן דאסר סבר תותב הוא ומאן דשרי סבר כיון דמחובר במקצת לאו תותב הוא. ולהאי לישנא בתרא לא מתוקמא מילתיה דרב נחמן דכיון דבאקשתא דפליגי ביה אמר רב נחמן דסתים כ\"ש דאייתרא דכולהו שרו ואם כן מאן לא סתים ודרב נחמן אלישנא קמא והכי מסתברא כלישנא קמא כדאמרינן במקום שנהגו <span class=\"parenthesized\">(פסחים דף נא.)</span> כי אתא רבה בר בר חנה אכל דאייתרא עול לגביה רב אויא וכסייה מן קמיה משום דבני בבל אסרי לה. ולדידן תרווייהו אסירי דבתר בני בבל גררינן דאנן בני גולה אנן וכלישנא קמא ולחומרא דכל היכא דאיכא תרי לישני בגמרא אי מידי דאורייתא הוא זיל לחומרא ובדרבנן זיל בתר בתרא:"
+  },
+  "Rashi on Chullin 50a:4:1": {
+    "dependsOn": [
+      "Chullin 50a:4",
+      "Rashi on Chullin 50a:4:2"
+    ],
+    "generatedAt": "2026-11-12T11:19:14.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי הא</strong> - אלישנא קמא קאי:"
+  },
+  "Rashi on Chullin 50a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:19:59.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אמי</strong> - מערבאה הוא ואמר מקמצין נוטלין ממנו מעט למעלה מההיא דאייתרא מפני שחלב הקרב שוכב עליו ואוכלין השאר:"
+  },
+  "Rashi on Chullin 50a:5:1": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:5:1",
+      "Rashi on Chullin 50a:5:2",
+      "Rashi on Chullin 50a:5:3",
+      "Rashi on Chullin 49b:9:1"
+    ],
+    "generatedAt": "2026-11-12T11:22:22.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחסם</strong> - לשון <span class=\"parenthesized\">(דברים כה)</span> לא תחסום. מגמגם:"
+  },
+  "Rashi on Chullin 50a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:23:00.013Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבלאה את</strong> - שנהגו בו איסור:"
+  },
+  "Rashi on Chullin 50a:5:3": {
+    "dependsOn": [
+      "Chullin 92b:7",
+      "Rashi on Chullin 92b:7:2",
+      "Rashi on Chullin 50a:5:1",
+      "Rashi on Chullin 50a:5:2"
+    ],
+    "generatedAt": "2026-11-12T11:24:27.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גום</strong> - חתוך עד עיקרו כולו והשלך. גום כמו גוממו עם השופי לקמן <span class=\"parenthesized\">(חולין דף צב:)</span>:"
+  },
+  "Rashi on Chullin 50a:6:1": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:6:2",
+      "Chullin 50a:6",
+      "Steinsaltz on Chullin 50a:6",
+      "Steinsaltz comment #1 on Chullin 50a:6",
+      "Steinsaltz comment #2 on Chullin 50a:6"
+    ],
+    "generatedAt": "2026-11-12T11:25:26.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליחה</strong> - מבפנים היא:"
+  },
+  "Rashi on Chullin 50a:6:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:6:1",
+      "Sefer HeArukh, Letter Shin 465",
+      "Steinsaltz on Chullin 50a:6",
+      "Steinsaltz comment #1 on Chullin 50a:6",
+      "Steinsaltz comment #2 on Chullin 50a:6",
+      "Rashi on Pesachim 68a:9:2",
+      "Jastrow, שִׁירְקָא 1",
+      "Rosh on Chullin 3:31:1",
+      "Rashba on Chullin 50a:3",
+      "Chullin 50a:6",
+      "Rashi on Chullin 50a:8:1",
+      "Rashi on Chullin 50a:8:2"
+    ],
+    "generatedAt": "2026-11-12T11:29:03.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שירקא דמעייא</strong> - גליד\"א ואדוקה בהן מבפנים ומוציאין אותה מהם בדוחק:"
+  },
+  "Rashi on Chullin 50a:7:1": {
+    "dependsOn": [
+      "Chullin 50a:7",
+      "Moed Katan 22a:7",
+      "Steinsaltz on Chullin 50a:7"
+    ],
+    "generatedAt": "2026-11-12T11:30:28.439Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמירי חבריא דרבי אבא מרבי אבא</strong> - הא שמעתא לקמן דרבי אבא בריה דרבי חייא ולאו היינו רבי אבא קמא:"
+  },
+  "Rashi on Chullin 50a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:30:52.312Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שלשה ימים הראשונים</strong> - של אבלות:"
+  },
+  "Rashi on Chullin 50a:8:2": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:8:1"
+    ],
+    "generatedAt": "2026-11-12T11:31:44.993Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 50a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא ממקום קרוב</strong> - אם לא היה אחד מן האבלים בבית והיה במקום קרוב בתוך מהלך יום אחד וראוי הוא לדעת בו ביום אע\"פ שלא ידע חל אבלות עליו ובלבד שיבא בתוך שלשה ימים ומונה אבלותו מיום ראשון:"
+  },
+  "Tosafot on Chullin 50a:15:1": {
+    "dependsOn": [
+      "Rashi on Chullin 50a:15:1",
+      "Rashi on Chullin 50a:15:2",
+      "Rashi on Chullin 50a:15:3",
+      "Chullin 42a:4"
+    ],
+    "generatedAt": "2026-11-12T11:56:09.311Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 50a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקה לדקה ומגסה לגסה</strong> - פירש רבינו חננאל מסתמא מבהמה דקה לבהמה דקה להקל דאי באונא ואומא הוה ליה למימר קטנה וגדולה כדאמר רבי יהודה גבי כרס:"
+  },
+  "Tosafot on Chullin 50a:2:1": {
+    "dependsOn": [
+      "Chullin 50a:1",
+      "Chullin 50a:2",
+      "Chullin 50a:3"
+    ],
+    "generatedAt": "2026-11-12T11:11:27.244Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 50a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי דאייתרא</strong> - ההיא דפסחים פרק מקום שנהגו <span class=\"parenthesized\">(פסחים דף נא.)</span> כי סליק רבה בר בר חנה אכל דאייתרא מיתוקם כי האי לישנא:"
+  },
+  "Tosafot on Chullin 50a:3:1": {
+    "dependsOn": [
+      "Chullin 50a:3",
+      "Rashi on Chullin 50a:3:1",
+      "Rashi on Chullin 50a:3:2",
+      "Chullin 50a:1"
+    ],
+    "generatedAt": "2026-11-12T11:17:28.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 50a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאייתרא כולי עלמא לא פליגי דשרי</strong> - ולהאי לישנא מפרש מילתא דרב נחמן בניחותא אינהו מיכל קא אכלי ליה השתא לדידן דלא אכלינן אפי' סותם אינו ולא כפירוש <span class=\"rashi-quotation\">הקונטרס</span> דפירש דלהאי לישנא בתרא לא מתוקמא מילתיה דרב נחמן:"
+  },
+  "Tosafot on Chullin 50a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T11:32:52.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 50a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו ביום שביעי בא ממקום קרוב מונה עמהם</strong> - לכאורה היה נראה דיום שביעי לאו דוקא אלא בלילה של שביעי דאכתי לא פסק אבלות מינייהו דאי ביום השביעי הא מקצת היום ככולו ואין שייך לומר מונה עמהם ומיהו אפילו ביום שביעי ממש איירי דבמועד קטן <span class=\"parenthesized\">(דף כב.)</span> מוקי לה כשעדיין המנחמים אצלו דאכתי קאי באבלותיה עד שילכו להם:"
+  }
+}

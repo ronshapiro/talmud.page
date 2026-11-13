@@ -1,4 +1,305 @@
 {
+  "Rashi on Chullin 53a:10:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:10:1",
+      "Rashi on Chullin 53a:10:2",
+      "Rashi on Chullin 53a:10:3"
+    ],
+    "generatedAt": "2026-11-12T17:40:41.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונמצאת צפורן</strong> - תלושה בגב:"
+  },
+  "Rashi on Chullin 53a:10:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:10:1",
+      "Rashi on Chullin 53a:10:3"
+    ],
+    "generatedAt": "2026-11-12T17:41:30.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב אריות דורסין</strong> - כלומר אע\"פ שרוב אריות דורסין וקים לן שכל הדורס אין לך אחד בהן שתשמט צפרנו:"
+  },
+  "Rashi on Chullin 53a:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:42:01.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתחכך</strong> - השור וצפורן זו בכותל היתה:"
+  },
+  "Rashi on Chullin 53a:12:1": {
+    "dependsOn": [
+      "Chullin 53a:12"
+    ],
+    "generatedAt": "2026-11-12T17:45:44.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב לטעמיה</strong> - לקמן:"
+  },
+  "Rashi on Chullin 53a:13:1": {
+    "dependsOn": [
+      "Chullin 53a:13"
+    ],
+    "generatedAt": "2026-11-12T17:46:36.091Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקום צפורן</strong> - שלא נשמט ולא נמצא שם הצפורן אלא מקומה ומכתה ניכרת בשור:"
+  },
+  "Rashi on Chullin 53a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:46:59.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחה</strong> - שהיה בה דם:"
+  },
+  "Rashi on Chullin 53a:13:3": {
+    "dependsOn": [
+      "Chullin 53a:13",
+      "Rashi on Chullin 53a:13:1",
+      "Rashi on Chullin 53a:13:2"
+    ],
+    "generatedAt": "2026-11-12T17:50:01.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבידא דמשתמטא</strong> - ושמא דרס:"
+  },
+  "Rashi on Chullin 53a:14:1": {
+    "dependsOn": [
+      "Jastrow, דָּר ³ 1"
+    ],
+    "generatedAt": "2026-11-12T17:50:42.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדרא דסיחופיה</strong> - שעומדות בגב השור כסדר שהן סדורות ביד הארי:"
+  },
+  "Rashi on Chullin 53a:16:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:16:1",
+      "Rashi on Chullin 53a:16:2",
+      "Chullin 53a:16"
+    ],
+    "generatedAt": "2026-11-12T17:51:45.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימר כלבא</strong> - והא אמרינן אין דרוסה לכלב דאין לו ארס:"
+  },
+  "Rashi on Chullin 53a:16:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:16:1",
+      "Rashi on Chullin 53a:16:2",
+      "Rashi on Chullin 53a:16:3"
+    ],
+    "generatedAt": "2026-11-12T17:52:47.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על</strong> - ארי בינייהו וישב שם:"
+  },
+  "Rashi on Chullin 53a:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:53:27.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלמא שוי</strong> - עשה שלום עמהם כדרך כמה חיות שנעשות תרבות וגדלות עם בני אדם ובהמות ואין מזיקין:"
+  },
+  "Rashi on Chullin 53a:16:4": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:16:1",
+      "Rashi on Chullin 53a:16:2",
+      "Rashi on Chullin 53a:16:3",
+      "Rashi on Chullin 53a:16:4",
+      "Rashi on Chullin 53a:16:5",
+      "Rashi on Chullin 53a:16:6",
+      "Chullin 53a:16"
+    ],
+    "generatedAt": "2026-11-12T17:55:03.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נח ריתחיה</strong> - בהני ולא חיישינן לדריסה באחריני:"
+  },
+  "Rashi on Chullin 53a:16:5": {
+    "dependsOn": [
+      "Jastrow, עֲוֵי II 1",
+      "Rashi on Chullin 53a:16:4",
+      "Rashi on Chullin 53a:16:6",
+      "Rashi on Chullin 53a:16:1",
+      "Rashi on Chullin 53a:16:2",
+      "Rashi on Chullin 53a:16:3",
+      "Rashi on Chullin 53b:1:1"
+    ],
+    "generatedAt": "2026-11-12T17:57:12.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעואי</strong> - נוהם:"
+  },
+  "Rashi on Chullin 53a:16:6": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:16:5",
+      "Rashi on Chullin 53a:16:6"
+    ],
+    "generatedAt": "2026-11-12T17:59:04.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:16:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרקרין</strong> - גועות. דלשון צעקת ארי לחוד ולשון צעקת כל בהמה לחוד כמו בלשון עברית נוהם לארי וגועה לשור וערוג לאיל וצהל לסוס וצפצוף לעופות וחרץ לכלב:"
+  },
+  "Rashi on Chullin 53a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:17:46.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף לחולדה</strong> - שהיא קטנה הימנו יש דרוסה וכ\"ש לחתול:"
+  },
+  "Rashi on Chullin 53a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:18:40.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף לחתול</strong> - שהוא גדול אין דרוסה וכ\"ש לחולדה ולקמיה מתרצינן לה:"
+  },
+  "Rashi on Chullin 53a:3:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:3:2",
+      "Rashi on Chullin 53a:1:1",
+      "Rashi on Chullin 53a:1:2",
+      "Rashi on Chullin 53a:4:1",
+      "Rashi on Chullin 53a:5:1",
+      "Rashi on Chullin 52b:8:1",
+      "Rashi on Chullin 52b:9:1",
+      "Rashi on Chullin 52b:10:1",
+      "Rashi on Chullin 51a:5:9"
+    ],
+    "generatedAt": "2026-11-12T17:23:39.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באימרי רברבי</strong> - בבהמה דקה ס\"ל אין דרוסה לחתול כדאמר רב לעיל <span class=\"parenthesized\">(חולין דף נב:)</span> בבהמה מן הזאב ולמעלה:"
+  },
+  "Rashi on Chullin 53a:3:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:3:1",
+      "Rashi on Chullin 52b:11:1",
+      "Rashi on Chullin 52b:11:2",
+      "Rashi on Chullin 53a:8:1"
+    ],
+    "generatedAt": "2026-11-12T17:24:35.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדיים וטלאים</strong> - דקים מאד:"
+  },
+  "Rashi on Chullin 53a:4:1": {
+    "dependsOn": [
+      "Chullin 53a:4",
+      "Chullin 52b:8",
+      "Chullin 42a:5"
+    ],
+    "generatedAt": "2026-11-12T17:25:21.648Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאר עופות טמאים</strong> - חוץ מן הגס והנץ:"
+  },
+  "Rashi on Chullin 53a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:27:07.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אנן תנן ודרוסת הנץ בעוף הדק</strong> - מכלל דשאר עופות אפילו בעוף הדק לא:"
+  },
+  "Rashi on Chullin 53a:5:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:5:1"
+    ],
+    "generatedAt": "2026-11-12T17:27:59.896Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדרברבי מיניה</strong> - ואפ\"ה עוף הדק הוא:"
+  },
+  "Rashi on Chullin 53a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:28:16.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית היני</strong> - שם מקום:"
+  },
+  "Rashi on Chullin 53a:8:1": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:8:1",
+      "Rashi on Chullin 53a:8:2",
+      "Rashi on Chullin 53a:8:3",
+      "Rashi on Chullin 53a:8:4",
+      "Rashi on Chullin 53a:8:5"
+    ],
+    "generatedAt": "2026-11-12T17:31:46.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביד</strong> - שהכהו בידו:"
+  },
   "Rashi on Chullin 53a:8:2": {
     "dependsOn": [],
     "generatedAt": "2026-10-05T15:10:49.736Z",
@@ -8,5 +309,156 @@
       "Rashi on Chullin 53a:8:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רגל</strong> - אחרונה:"
+  },
+  "Rashi on Chullin 53a:8:3": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:8:1",
+      "Rashi on Chullin 53a:8:2",
+      "Rashi on Chullin 53a:8:4",
+      "Rashi on Chullin 53a:8:5"
+    ],
+    "generatedAt": "2026-11-12T17:32:41.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל שן לא</strong> - דאין ארס החיה בשיניה:"
+  },
+  "Rashi on Chullin 53a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:33:13.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא מדעת</strong> - דכיון דשלא מדעת נפל כגון מן הגג על הבהמה אע\"פ שנתקעה צפרנו בגבה אין משליך בה ארס:"
+  },
+  "Rashi on Chullin 53a:8:5": {
+    "dependsOn": [
+      "Chullin 53a:8",
+      "Rashi on Chullin 53a:8:1",
+      "Rashi on Chullin 53a:8:2",
+      "Rashi on Chullin 53a:8:3",
+      "Rashi on Chullin 53a:8:4"
+    ],
+    "generatedAt": "2026-11-12T17:36:35.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר מיתה</strong> - קס\"ד שמת הארי ואחר כך נפל על הבהמה:"
+  },
+  "Rashi on Chullin 53a:9:1": {
+    "dependsOn": [
+      "Chullin 53a:9"
+    ],
+    "generatedAt": "2026-11-12T17:37:37.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דדריס</strong> - מחיים ולא הספיק לשלוף צפורנו ממנה עד שפסקו את ידו ומיתה דקאמר מיתת האבר שנחתך:"
+  },
+  "Rashi on Chullin 53a:9:2": {
+    "dependsOn": [
+      "Rashi on Chullin 53a:9:1"
+    ],
+    "generatedAt": "2026-11-12T17:38:18.169Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 53a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשליף</strong> - כשחולץ ומוציא צפרנו מגבה:"
+  },
+  "Tosafot on Chullin 53a:10:1": {
+    "dependsOn": [
+      "Chullin 53a:10",
+      "Chullin 53a:12"
+    ],
+    "generatedAt": "2026-11-12T17:44:02.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוב אריות דורסים</strong> - וא\"ת אפילו אם תמצא לומר דצפורן זה מחמת חיכוך אתא מ\"מ אפילו בשאר שוורים שאין בהם צפורן היה לנו לחוש כיון דרוב אריות שבין השוורים דורסין ובסמוך נמי דקאמר אביי אבל מקום צפורן חיישינן למה לי מקום צפורן כלל ואומר ר\"ת דהכי פירושו רוב אריות דורסין כלומר ראויין לדרוס שהן בריאים ודורסים ומעוטן חולין ואין דורסים ורוב אריות הדורסים שהם בריאים אין צפורן נשמטת מהן וזו הואיל וצפורן יושבת לו על גבו מסתמא האי ארי חולה הוא ולא מחמת דרוסה בא צפורן זה לכאן אלא בכותל נתחכך והיה הארי שוכב אצל הכותל ומחמת שנתחכך השור בכותל וברגלו של ארי נשמטה ממנו הצפורן וישבה לו על גבו ופריך אדרבה אע\"ג דרוב שוורים מתחככין מ\"מ רוב שוורים אין מתחככין במקום שרגל ארי מונחת שם שתשב לו צפורן על גבו ויש לתלות הצפורן בדריסת הארי ואע\"ג דרוב הבריאים הדורסים אין צפורן נשמטת ומסיק דאיכא למימר הכי והכי ורב לטעמיה דלא חיישינן לספק דרוסה דאוקמינן אחזקתה קמייתא בחזקת שלא נדרס:"
+  },
+  "Tosafot on Chullin 53a:10:2": {
+    "dependsOn": [
+      "Chullin 53a:10"
+    ],
+    "generatedAt": "2026-11-12T17:44:59.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הדורס אין הצפורן נשמטת</strong> - האי כל לאו דוקא וכן כל המתחכך דבסמוך אלא כלומר רוב הדורסין רוב המתחכך:"
+  },
+  "Tosafot on Chullin 53a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:21:25.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש דרוסה לחתול או לאו כו'</strong> - הרב ר' יצחק בר\"מ מפרש דכל הנך בעיות הוי בכמה זימנין דפעם ראשונה היה עוסק בעופות ושאלו אם יש דרוסה לחתול והשיב לו רב אפילו לחולדה יש דרוסה ושוב היה עוסק באימרי רברבי ושאלו אם יש דרוסה לחולדה אם לאו והשיב לו אפילו לחתול אין דרוסה ושוב היה עוסק בגדיים וטלאים ושאלו חולדה וחתול יש להם דרוסה או לא וא\"ל לחתול יש דרוסה ולא לחולדה וכן היה מפרש ההיא עובדא דשבת פ' תולין <span class=\"parenthesized\">(שבת דף קלח. ושם ד\"ה בעא)</span> גבי כילה מהו אמר לו אף מטה אסורה מטה מהו א\"ל אף כילה מותרת כילה ומטה מהו א\"ל כילה אסורה ומטה מותרת ולא קשיא כו' ועוד י\"ל דכל הנך הוו בפעם אחת בתחלה שאלו יש דרוסה לחתול או לאו א\"ל אתה שואל סתם יש דבר שאף לחולדה יש דרוסה והדר בעי מיניה אם לחולדה יש דרוסה בכל מקום וא\"ל אף לחתול פעמים שאין דרוסה והדר בעי מיניה כיון דזה וזה פעמים יש דרוסה ופעמים שאין דרוסה שוים הן או לאו אמר לו יש דבר דלחתול יש דרוסה ולחולדה אין דרוסה וכענין זה יש לפרש ההיא דשבת:"
+  },
+  "Tosafot on Chullin 53a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:26:36.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאר עופות טמאים יש להן דרוסה או אין להן דרוסה</strong> - הך דרוסה היינו דשדי זיהריה כי שליף ואין זה כי ההיא דלקמן <span class=\"parenthesized\">(חולין נט.)</span> דכל עוף הדורס טמא דהוי מסימני טומאה ולא מבעיא ליה הכא אלא בעופות טמאין אבל פשיטא דאין דרוסה לטהורים:"
+  },
+  "Tosafot on Chullin 53a:6:1": {
+    "dependsOn": [
+      "Chullin 52b:11",
+      "Chullin 53a:4",
+      "Chullin 53a:5",
+      "Chullin 53a:7",
+      "Chullin 53a:8",
+      "Chullin 52b:1",
+      "Chullin 52b:8",
+      "Chullin 52b:9"
+    ],
+    "generatedAt": "2026-11-12T17:30:02.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובא מעשה לפני חכמים ואמרו יש דרוסה</strong> - וא\"ת ולישני ליה דהכא רחל קטנה היתה ורב כהנא איירי באימרי רברבי וי\"ל דא\"כ מאי איריא דנקט רב כהנא שועל אפילו חתול נמי:"
+  },
+  "Tosafot on Chullin 53a:7:1": {
+    "dependsOn": [
+      "Chullin 53a:7"
+    ],
+    "generatedAt": "2026-11-12T17:31:15.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובא מעשה לפני חכמים ואמרו אין דרוסה</strong> - וא\"ת ולישני ליה דהכא רחל גדולה היתה וכן משמע מדלא נקט טלה וי\"ל דא\"כ לא הוה רב דימי משמיענו שום חדוש בהאי מעשה דאפילו לחתול אין דרוסה ברברבי:"
+  },
+  "Tosafot on Chullin 53a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:39:02.801Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 53a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא משמע לן דבהדי דשליף שדי זיהריה</strong> - יש שטועין להתיר לשחוט כשהנץ שוכב ע\"ג העוף ולא הסיר רגליו עדיין דאכתי לא שליף ולא שדי ביה זיהריה ואסור לעשות כן דכשהנץ רודף אחר העוף ולוכדו מכהו כמה פעמים ברגליו ודריס ושליף כמה זימנין:"
   }
 }
