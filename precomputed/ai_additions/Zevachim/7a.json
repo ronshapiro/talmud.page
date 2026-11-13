@@ -1,36 +1,106 @@
 {
   "Rashi on Zevachim 7a:12:1": {
-    "english": "<b>A sin offering that one slaughtered for the sake of a sin offering:</b> For example, a fat sin offering that was slaughtered for the sake of a blood sin offering."
+    "hebrew": "<strong class=\"dibur-hamatchil\">חטאת ששחטה לשם חטאת</strong> - כגון חטאת חלב שנשחטה לשם חטאת דם:",
+    "english": "<strong class=\"dibur-hamatchil\">A sin offering that one slaughtered for the sake of a sin offering</strong> - For example, a sin offering [brought for transgressing a prohibition involving] forbidden fat that was slaughtered for the sake of a sin offering [brought for a prohibition involving] blood.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:14:1": {
-    "english": "<b>Fit</b> - and it fulfills his obligation."
+    "hebrew": "<strong class=\"dibur-hamatchil\">כשרה</strong> - ועלתה לו <span class=\"explanation\">לבעלים לחובתו</span>:",
+    "english": "<strong class=\"dibur-hamatchil\">Fit</strong> - and it counts for him <span class=\"explanation\">(the owner, as his obligation)</span>.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:14:2": {
-    "english": "<b>Unfit</b> - completely unfit, as we learned in the mishna: 'except for the Paschal offering and the sin offering'."
+    "hebrew": "<strong class=\"dibur-hamatchil\">פסולה</strong> - פסולה לגמרי, כדתנן: חוץ מן הפסח והחטאת:",
+    "english": "<strong class=\"dibur-hamatchil\">Unfit</strong> - Completely unfit, as we learned in the Mishnah: except for the Passover offering and the sin offering.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:14:3": {
-    "english": "<b>For one who is obligated to bring a sin offering</b> - This refers to a change of owners, with the intent to sprinkle its blood for the sake of his fellow who is obligated to bring a sin offering like him."
+    "hebrew": "<strong class=\"dibur-hamatchil\">על מי שמחוייב חטאת</strong> - בשינוי בעלים, על מנת לזרוק דמה לשם חבירו המחוייב חטאת כמותו:",
+    "english": "<strong class=\"dibur-hamatchil\">For one who is obligated to bring a sin offering</strong> - [This refers to a slaughter] with a change of owner, with the intention of sprinkling its blood for the sake of another person who is obligated to bring a sin offering like [the owner].",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:16:1": {
-    "english": "<b>One who is not obligated in a positive mitzva</b> - meaning, who has not violated a positive mitzva. And concerning a positive mitzva, it is appropriate to speak of a sin offering, as the Gemara will explain further on."
+    "hebrew": "<strong class=\"dibur-hamatchil\">שאינו מחוייב עשה</strong> - שלא עבר <span class=\"explanation\">על</span> עשה, ובעשה שייך למימר חטאת, כדמפרש ואזיל:",
+    "english": "<strong class=\"dibur-hamatchil\">Who is not obligated [for a positive commandment]</strong> - [Meaning,] who did not transgress a positive commandment; and it is with regard to a positive commandment that it is possible to speak of a sin offering, as [the Gemara] goes on to explain.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:17:1": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">למימרא</strong>: דעשה בת מינה דחטאת היא."
+    "hebrew": "<strong class=\"dibur-hamatchil\">ואמר רבא חטאת מכפרת על חייבי עשה</strong> - הלכך, מחוייב כפרה כמותו הוא:",
+    "english": "<strong class=\"dibur-hamatchil\">And Rava said: A sin offering atones for those obligated in a positive commandment</strong> - Therefore, <span class=\"explanation\">one who failed to fulfill a positive commandment</span> is obligated to bring atonement, just like <span class=\"explanation\">one liable for a sin offering</span>.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:17:2": {
     "hebrew": "<strong class=\"dibur-hamatchil\">והאמר רבא כו' על מי שמחוייב עולה כשרה</strong>: אלמא לאו מיניה הוא, דהא עבירות עשה בידו שהפריש עולה עליהן."
   },
+  "Rashi on Zevachim 7a:18:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">למימרא</strong> - <span class=\"explanation\">האם הכוונה</span> דעשה בת מינה דחטאת היא:",
+    "english": "<strong class=\"dibur-hamatchil\">Is this to say</strong> - that a positive commandment is of the same type as a sin offering?",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:18:2": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">והאמר רבא כו' על מי שמחוייב עולה כשרה</strong> - אלמא לאו מיניה הוא, דהא עבירות עשה בידו שהפריש עולה עליהן:",
+    "english": "<strong class=\"dibur-hamatchil\">But doesn't Rava say, etc., for one who is obligated to bring a burnt offering, it is fit</strong> - Apparently [the violation of a positive mitzva] is not of the same type [as a sin offering's atonement], for the transgressions of positive commandments are in his hands, for which he set aside a burnt offering.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:1:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">לדברי רבי שמעון אין נפדין תמימין</strong> - דהכי גמר לה רבי יוחנן מרביה, דפליגי בה רבי שמעון ורבנן: לרבי שמעון לית ליה לב <abbr title=\"בית דין\">ב\"ד</abbr> מתנה עליהן להכשירן לתמידי שנה הבאה [לומר] אם הוצרכו — הוצרכו, ואם לאו — יהא קדושים לדמיהן, שיפדו אותן ממעות חולין בלא מום ויוציאם לחול, ויפלו דמיהם למותר תרומה, ואחר כך יחזרו ויקחו אותם מתרומה חדשה ויוכשרו לתמידין. ולדברי חכמים נפדין תמימים, דאית להו לב בית דין מתנה עליהן תנאי זה. אלמא לית ליה לרבי שמעון לב בית דין מתנה עליהן <span class=\"parenthesized\">(בהן)</span>, דאי אית ליה — יוכשרו לתמידין ולא יקייצו, אלא לית [ליה לב <abbr title=\"בית דין\">ב\"ד</abbr> מתנה]. כך שמעתי בשבועות:",
+    "english": "<strong class=\"dibur-hamatchil\">According to the statement of Rabbi Shimon, they may not be redeemed while unblemished</strong> - For Rabbi Yochanan learned it this way from his teacher, that Rabbi Shimon and the Rabbis disagree about it: According to Rabbi Shimon, \"the court stipulates concerning them\" does not apply, [namely, a stipulation] to make them eligible to serve as the daily offerings of the coming year, [saying]: If they are needed, they are needed; and if not, let them be sanctified [only] for their value, so that they may be redeemed with non-sacred money without a blemish, and [the court] takes them out to non-sacred status, and their money falls to the surplus of the [shekel] donation; and afterward they would return and buy them from the new donation, and they would be made eligible for the daily offerings. But according to the Rabbis, they may be redeemed while unblemished, for they hold that the court stipulates concerning them this condition. Evidently, Rabbi Shimon does not hold that the court stipulates concerning them (<i>concerning them</i>), for if he did hold it, they would be made eligible for the daily offerings and would not lie [unused] until they spoil; rather, [he must hold] that the court does not stipulate. So I heard in Shevuot:",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:2:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">ועוד</strong> - אי נמי, בעית למימר דקרא דחיק ומוקי אנפשיה כשהפרישן בזה אחר זה, ובטומאה דערב יום טוב קאמר. מי מצית למימר דכי קתני \"שאירעה בין זה לזה\" — בהפרשה קאמר? והא בעא מיניה כו':",
+    "english": "<strong class=\"dibur-hamatchil\">And furthermore</strong> - Alternatively, you might have said that the verse is forced and it establishes itself [as speaking] of when he designated them one after the other, and it is speaking of impurity [that occurred] on the eve of the festival. Can you say that when it teaches \"that occurred between this one and that one,\" it is speaking of the designation? But surely he asked him, etc.:",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:2:2": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">בשתי כוסות</strong> - נשחטין כאחד, ואין שהות לאורועי טומאה בין שחיטתיהן. ונזרק דמו של ראשון, שני למה קרב לר' שמעון? הרי אין טומאה בין זה לזה! ואמר ליה: לטומאה שאורעה בין זריקתו של זה לזריקתו של זה:",
+    "english": "<strong class=\"dibur-hamatchil\">In two cups</strong> - They are slaughtered simultaneously, and there is no time for an impurity to occur between their slaughterings. [If] the blood of the first was sprinkled, why is the second offered, according to Rabbi Shimon? Behold, there is no impurity between this one and that one! And [the respondent] said to him: [It atones] for an impurity that occurred between the sprinkling of this one and the sprinkling of that one.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:3:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">ע\"כ לא מיבעיא כו'</strong> - אפילו לרבי ירמיה לא מתמה אלא אי מכפר אעשה דלאחר שחיטתו אי לא. מכלל דפשיטא ליה דבין זה לזה — דקאמר רבי שמעון בטומאת י\"ט — קאמר, בין שחיטתו של זה לשחיטתו של זה:",
+    "english": "<strong class=\"dibur-hamatchil\">\"Until here he only raised the dilemma…\"</strong> - Even according to Rabbi Yirmeya, he is only asking whether [the offering] atones for a positive commandment [violated] after its slaughter, or not. It follows that it was obvious to him that when Rabbi Shimon said \"between this one and that one\" regarding impurity on a Festival, he meant between the slaughter of this one and the slaughter of that one.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:4:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">דלמא אם תמצא לומר קאמר</strong> - דלמא תרוייהו קמיבעיא ליה, והכי קמיבעיא ליה: האי \"בין זה לזה\" דקאמר רבי שמעון, קודם הפרשה קאי או לאחר הפרשה קאי? ואם תימצי לומר אחר הפרשה נמי קאי, קודם שחיטה, או אפילו לאחר שחיטה עד זריקה? ואהדר ליה איהו: אפילו עד זריקה. ודלמא לא קיימא לן כר' זירא, ולא איפשיטא בעיין:",
+    "english": "<strong class=\"dibur-hamatchil\">Perhaps he was saying \"if you say\"</strong> - Perhaps he was uncertain about both matters, and this is how he was asking: This \"between this and that\" that Rabbi Shimon said — does it refer to before designation, or does it refer to after designation? And if you say that it refers also to after designation, [does it refer only to] before slaughter, or even after slaughter until the throwing [of the blood]? And he [Rabbi Zeira] answered him: Even until the throwing. But perhaps we do not hold like Rabbi Zeira, and the question is not resolved.",
+    "status": "pending"
+  },
   "Rashi on Zevachim 7a:5:1": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו:</strong> לא ששחטה על מנת שיתכפר בה מי שאינו בעליה ואין זה שינוי קודש אלא שינוי קודש שהיתה לראובן תודה ולשמעון תודה אחרת ושחט את תודתו של זה לשם תודתו של זה והוא הדין בשוחט חטאת חלב לשם חטאת דם: ועלתה לבעלים דאפי' שינוי קדש אין כאן: פסולה - לא עלתה לבעלים דשינוי קדש הוא:<strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו:</strong> לא ששחטה על מנת שיתכפר בה מי שאינו בעליה ואין זה שינוי בעלים אלא שינוי קודש שהיתה לראובן תודה ולשמעון תודה אחרת ושחט את תודתו של זה לשם תודתו של זה והוא הדין בשוחט חטאת חלב לשם חטאת דם: אבל רש\"י פירש כי אין מדובר כאן במי ששוחט בהמת ראובן על מנת שיתכפר בה שמעון, שהרי זה שינוי בעלים (ואין שייך שינוי בעלים אלא בשוחט על מנת לזרוק את הדם לשם אחרים, ולא בעושה את השחיטה עצמה לשם אחרים, ראה לעיל ד,א). אלא מדובר בשוחט תודת ראובן לשם תודת שמעון (שאף הוא הפריש קרבן תודה עבור עצמו), ויש בדבר שינוי קודש לדעת רב חסדא, שהרי זה לשם קרבן אחר. והאחרונים התקשו בדברי רש\"י, ואף שינו את הגרסה בדבריו. ויש שפירשו לדעתו כי אין הכוונה ששחט בהמת ראובן לשם שמעון, אלא ששחט את בהמת ראובן לשם הסוג המיוחד של תודה שנתחייב בה שמעון, כגון שראובן חזר ממקום הסכנה, ושמעון היה חולה ונתרפא, והכהן שחט את בהמת ראובן עבור ראובן לשם הנס שאירע לשמעון (ברכת הזבח, חק נתן). ויש שפירש כי כוונת רש\"י להבחין בין שחיטה לשם חבירו, לבין שחיטה שהיא לשם בהמת חבירו (זבח תודה). וכבר העירו האחרונים כי הרמב\"ם אינו מתייחס למחלוקת זו שלפנינו. ורצו ללמוד כי מכאן הוא למד שגם בשינוי בעלים רגיל (ולא רק בשוחט על מנת לזרוק לשם בעלים אחרים) לא עלה הקרבן לבעליו לשם חובה (שפ\"א, זבח תודה). כשחט עולת ראובן לשם עולת שמעון — לא עלתה לא לראובן ולא לשמעון. וכדברי רב חסדא, שהיה גדול מרבה (ליקוטי הלכות). (רמב\"ם ספר עבודה הלכות פסולי המוקדשין פט\"ו ה\"א). <strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו</strong> - לא ששחטה על מנת שיתכפר בה מי שאינו בעליה ואין זה שינוי בעלים אלא שינוי קודש שהיתה לראובן תודה ולשמעון תודה אחרת ושחט את תודתו של זה לשם תודתו של זה והוא הדין בשוחט חטאת חלב לשם חטאת דם:",
-    "english": "<b>A thanks offering that one slaughtered for the sake of another’s thanks offering:</b> Not that he slaughtered it with the intention that someone who is not its owner be atoned by it, and this is not a change of owner, but rather a change of offering, that Reuven had a thanks offering and Shimon had another thanks offering, and he slaughtered Reuven's thanks offering for the sake of Shimon's thanks offering. And the same applies to one who slaughters a fat sin offering for the sake of a blood sin offering."
+    "hebrew": "<strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו</strong> - לא ששחטה ע\"מ שיתכפר בה מי שאינו בעליה, ואין זה שינוי בעלים, אלא שינוי קודש: שהיתה לראובן תודה, ולשמעון תודה אחרת, ושחט את תודתו של זה לשם תודתו של זה. [<abbr title=\"והוא הדין\">וה\"ה</abbr>] בשוחט חטאת חלב לשם חטאת דם:",
+    "english": "<strong class=\"dibur-hamatchil\">A thanks offering that one slaughtered for the sake of another's thanks offering</strong> - This does not mean that one slaughtered it in order that someone who is not its owner be atoned through it, and this is not a change of owner but a change of sanctity: Reuven had a thanks offering and Shimon had a different thanks offering, and one slaughtered the thanks offering of this one for the sake of the thanks offering of that one. [The same law applies] to one who slaughters a chelev sin offering for the sake of a blood sin offering:",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:5:2": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">כשרה:</strong> ועלתה לבעלים דאפילו שינוי קודש אין כאן:",
-    "english": "<b>Fit:</b> And it satisfied the owner's obligation, as there is no change of offering here."
+    "hebrew": "<strong class=\"dibur-hamatchil\">כשרה</strong> - ועולה לבעלים, דאפי' שינוי קדש אין כאן:",
+    "english": "<strong class=\"dibur-hamatchil\">Fit</strong> - And it counts for its owners, for there is not even a change of sanctity here.",
+    "status": "pending"
   },
   "Rashi on Zevachim 7a:5:3": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">פסולה:</strong> לא עלתה לבעלים דשינוי קודש הוא:",
-    "english": "<b>Unfit:</b> It did not satisfy the owner's obligation, as it is a change of offering."
+    "hebrew": "<strong class=\"dibur-hamatchil\">פסולה</strong> - לא עלתה לבעלים, דשינוי קדש הוא:",
+    "english": "<strong class=\"dibur-hamatchil\">Unfit</strong> - It does not count for the owners [as fulfilling their obligation], for it is a change of designation of a sacrifice.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:6:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">לשם שלמים דידיה בעינן</strong> - דכתיב זבח תודת שלמיו. והאי דאיפלוג בתודה, משום דמינה מייתי רבה סייעתא למילתיה מדאבא חנן. ומיהו ה\"ה לשאר זבחים:",
+    "english": "<strong class=\"dibur-hamatchil\">We require [that it be slaughtered] for the sake of his own peace offering</strong> - For it is written (Leviticus 7:15): \"The sacrifice of the thanks-offering of his peace offerings.\" And the reason they disagreed specifically regarding a thanks offering is that Rabbah brings support for his position from [the statement of] Abba Ḥanan. However, the same law applies to other sacrifices as well.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:7:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">כשרה</strong> - עלתה לבעלים:",
+    "english": "<strong class=\"dibur-hamatchil\">Fit</strong> - It counts for the owners <span class=\"explanation\">(i.e., it fulfills their obligation)</span>.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:7:2": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">פסולין</strong> - לא עלו:",
+    "english": "<strong class=\"dibur-hamatchil\">Unfit</strong> - They did not ascend <span class=\"explanation\">[to the altar as valid offerings]</span>.",
+    "status": "pending"
+  },
+  "Rashi on Zevachim 7a:9:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">לא דידיה</strong> - ואע\"פ שלא באו על הודייה אחת, דארבעה צריכין להודות, כדאמרינן בברכות <span class=\"parenthesized\">(דף נד:)</span>, וכתיב בהו <span class=\"parenthesized\">(תהילים ק״ז:כ״ב)</span> \"ויזבחו זבחי תודה\" — ושחט תודה בשעת עלייתו מן הים לשם תודה שהפריש על יציאתו מבית האסורין:",
+    "english": "<strong class=\"dibur-hamatchil\">Not his own</strong> - And even though they did not come for one [and the same] thanksgiving, [this is possible,] since four [kinds of people] must give thanks, as we say in Berakhot <span class=\"parenthesized\">(54b)</span>, and it is written regarding them <span class=\"parenthesized\">(Psalms 107:22)</span>, \"And let them sacrifice thanksgiving offerings.\" And so [the one who returned from the sea] slaughtered a thanksgiving offering at the time of his ascent from the sea, for the sake of [a different] thanksgiving offering that he had set aside for his release from prison.",
+    "status": "pending"
   },
   "Steinsaltz comment #1 on Zevachim 6a:12": {
     "english": "As Rashi noted, this is not referring to an offering that was slaughtered not for its sake, but to a more general question concerning a burnt offering. Although the Sages derived from the verses that bringing this offering is atonement for neglecting positive mitzvot, there is no Torah obligation to bring a burnt offering for a specific transgression (and there is a reason for this, as not only can a person violate many positive mitzvot at every passing moment, without measure, but also in this type of mitzvot, a person cannot know what he has transgressed and to what extent he has transgressed). However, on the other hand, since this offering has an aspect of atonement, it is possible to learn the laws of atonement from the sin offering, for which the Torah gave specific laws. It is also logical that only a transgression for which the offering was designated and consecrated is atoned for by the burnt offering."
@@ -45,26 +115,38 @@
     "english": "<b>And Rava says: A sin offering atones for those obligated in a positive mitzvah, due to a *kal vaḥomer*. What is the *kal vaḥomer*? If a sin offering atones for those who are liable for *karet* offenses, which are severe, all the more so should it not atone for those who are liable for positive mitzvot, which are less severe transgressions?</b>"
   },
   "Tosafot on Zevachim 7a:12:1": {
-    "hebrew": "<b>כל</b> - פירש רבינו תם, דרבה סבירא ליה כרב חסדא, דהא דרבה אידחי. וטעמא דתודה משום שלמים משמע, דרבי לקיש איירי ששחטה לשם חטאת חבירו. ונראה דלאו בהכי מיירי, מדלא קאמר בהדיא חבירו, אלא מיירי בחטאת חלב לשם חטאת דם, כדאמר רבא לקמן בפירקין (זבחים דף ט:): \"חטאת חלב ששחטה לשם חטאת דם לשם חטאת עבודת כוכבים כשרה, לשם חטאת נזיר, לשם חטאת מצורע — פסולה, הני עולות נינהו.\" ואם תאמר, ותרתי דרבה למה לי? ויש לומר דהך דהכא נקט לאשמועינן דשינוי קודש איפכא משינוי בעלים, אע\"ג דרבא לא פירש הפסוקים כדבריו, מדאמר בריש פירקין (לעיל זבחים דף ג:) דרב יוסף בר אמי רמי שינוי קודש ומשני. והא דלקמן נקט לחלק בחטאות, וגם משום בעיא דאחר כך דבעי רבא: חטאת חלב ששחטה לשם חטאת דטומאת מקדש וקדשיו מהו: ולשיטתו של רבי לקיש אמר ששחטה לשם חטאת חבירו, ונראה שאין מדובר בכך, מכיוון שהוא לא אמר בפירוש 'חבירו', אלא מדובר בחטאת שומן עבור חטאת דם. כדאמר רבא לקמן בפרקנו (זבחים דף ט:): 'חטאת שומן ששחטה לשם חטאת דם, לשם חטאת עבודה זרה, כשרה. לשם חטאת נזיר, לשם חטאת מצורע - פסולה, אלו עולות הן'. ואם תאמר, ושתי ההלכות של רבה למה לי? ויש לומר שזו שפה נקט להשמיענו ששינוי סוג הקרבן הוא היפך משינוי בעלים. אף על פי שרבא לא פירש את הפסוקים כדבריו, מדאמר בראש פרקנו (לעיל זבחים דף ג:) שרב יוסף בר אמי מציג סתירה בין שינוי סוג הקרבן ומתרץ. והלכה שלקמן נקט לחלק בין חטאות, וגם בגלל דילמה שלאחר מכן, ששאל רבא: חטאת שומן ששחטה לשם חטאת של טומאת מקדש וקדשיו מהו?."
+    "hebrew": "<strong class=\"dibur-hamatchil\">אמר רבא חטאת ששחטה לשם חטאת כשרה</strong> - פירש רבינו תם: דרבה כרב חסדא <abbr title=\"סבירא ליה\">ס\"ל</abbr>, דהא דרבה אידחי, וטעמא דתודה משום שלמים; משמע <abbr title=\"רצונו לומר\">דר\"ל</abbr> דאיירי ששחטה לשם חטאת חבירו. ונראה דלאו בהכי מיירי, מדלא קאמר בהדיא “חבירו”, אלא מיירי בחטאת חלב לשם חטאת דם, כדאמר רבא לקמן בפירקין <span class=\"parenthesized\">(זבחים דף ט:)</span>: “חטאת חלב ששחטה לשם חטאת דם, לשם חטאת עבודת כוכבים — כשרה; לשם חטאת נזיר, לשם חטאת מצורע — פסולה, הני עולות נינהו”. ואם תאמר: ותרתי דרבה למה לי? ויש לומר דהך דהכא נקט לאשמועינן דשינוי קודש איפכא משינוי בעלים, אע\"ג דרבא לא פירש הפסוקים כדבריו, מדאמר בריש פירקין <span class=\"parenthesized\">(לעיל זבחים דף ג:)</span> דרב יוסף בר אמי רמי שינוי קודש, ומשני. [והא] דלקמן נקט לחלק בחטאות, וגם משום בעיא דאחר כך, דבעי רבא: חטאת חלב ששחטה לשם חטאת דטומאת מקדש וקדשיו מהו:",
+    "english": "<strong class=\"dibur-hamatchil\">Rava said: A sin offering that one slaughtered for the sake of a sin offering is fit</strong> - Rabbeinu Tam explained: Rabba holds like Rav Chisda, since that statement of Rabba is rejected, and the reason for the thank offering is that it is [treated] as a peace offering. This implies that he means that [the Gemara] is speaking of one who slaughtered it for the sake of the sin offering of his fellow. But it appears that it is not speaking of this, since [Rava] did not say explicitly \"of his fellow.\" Rather, it is speaking of a sin offering of the fat [type] [slaughtered] for the sake of a sin offering of the blood [type], as Rava said later in this chapter (Zevachim 9b): \"A sin offering of the fat [type] that one slaughtered for the sake of a sin offering of the blood [type], or for the sake of an idolatry sin offering, is fit; for the sake of the sin offering of a nazirite or the sin offering of a leper, it is unfit, for these are burnt offerings.\" And if you ask: Why do I need the two statements of Rabba? One can answer that he stated this one here to teach that a change of sanctity is the opposite of a change of owner, even though Rava did not explain the verses as he [Rabba] did, since he said at the beginning of the chapter (above, Zevachim 3b) that Rav Yosef bar Ami raised a contradiction about a change of sanctity, and [Rava] resolved it. And the one later on he stated in order to distinguish among sin offerings, and also because of the question that follows, in which Rava asked: A sin offering of the fat [type] that one slaughtered for the sake of a sin offering [for] impurity of the Temple and its sacred items — what is the law?",
+    "status": "pending"
   },
   "Tosafot on Zevachim 7a:14:1": {
-    "hebrew": "<b>חטאת ששחטה על מי שמחוייב עולה כשרה</b> - וכגון שלא הפרישה עדיין. דאי הפרישה, הוה ליה כעל מי שאינו מחוייב כלום. אם תימצי לומר דלא מכפרא אעשה דלאחר הפרשה, דמסתמא עולה יביא ויכפר על הכל. אי נמי דאמר הרי עלי עולה, דכשיפרישנה יכפר על כל עשה שעבר.",
-    "english": "<b>A sin offering that one slaughtered for a person who is obligated to bring a burnt offering is fit</b> - for example, if he had not yet designated it. For if he had already designated it, it would be as if it was slaughtered for one who is not obligated in anything. If you want to say that it does not atone for a positive mitzva after designation, then it is presumed that he will bring a burnt offering and atone for everything. Or, alternatively, if he said: 'I take upon myself a burnt offering,' then when he designates it, it will atone for every positive mitzva he violated."
+    "hebrew": "<strong class=\"dibur-hamatchil\">חטאת ששחטה על מי שמחוייב עולה כשרה</strong> - וכגון שלא הפרישה עדיין, דאי הפרישה הוה ליה כעל מי שאינו מחוייב כלום, אם תימצי לומר דלא מכפרא אעשה דלאחר הפרשה, דמסתמא עולה יביא ויכפר על הכל. <abbr title=\"אי נמי\">א\"נ</abbr> דאמר הרי עלי עולה, דכשיפרישנה יכפר על כל עשה שעבר:",
+    "english": "<strong class=\"dibur-hamatchil\">A sin offering that one slaughtered for one who is obligated to bring a burnt offering is fit</strong> - And this is, for example, where he has not yet set aside [the burnt offering]. For if he had already set it aside, it would be considered as [slaughtering] for one who is not obligated in anything at all, if you will say that [a burnt offering] does not atone for a positive commandment [that was transgressed] after the setting aside, since presumably he will bring a burnt offering and it will atone for everything. Alternatively, [it is where] he said, \"I hereby take upon myself a burnt offering,\" for when he sets it aside, it will atone for any positive commandment that he transgressed:",
+    "status": "pending"
   },
   "Tosafot on Zevachim 7a:16:1": {
-    "english": "<b>(A sin offering slaughtered) for one who is not obligated in anything, it is unfit</b> - if we read in this statement 'a burnt offering', for regarding a burnt offering too, it is written 'to atone for him'. But if we read 'a sin offering' here, why do I need Rava's other statement (that a sin offering atones for those obligated in a positive mitzva), for we learn it from here."
+    "hebrew": "<strong class=\"dibur-hamatchil\">על מי שאינו מחוייב כלום פסולה</strong> - אי דגרסינן בהא מימרא \"עולה\", דגבי עולה נמי כתיב \"לכפר עליו\"; דאי גרסינן הכא \"חטאת\", ל\"ל אידך מילתא דרבא דחטאת מכפרת על חייבי עשה? מהכא שמעינן לה:",
+    "english": "<strong class=\"dibur-hamatchil\">\"For a person who is not obligated to bring anything, it is unfit\"</strong> - If we read in this statement \"an olah (burnt offering),\" [that is understandable], for with regard to an olah too it is written, \"to atone for him.\" For if we read here \"a chatat (sin offering),\" why do I need the other statement of Rava, that a chatat atones for those obligated by a positive commandment? We would learn it from here!",
+    "status": "pending"
   },
   "Tosafot on Zevachim 7a:17:1": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">על חייבי עשה לא כל שכן</strong>: מהאי קל וחומר הוה לן למימר דאפילו מקיבעא מכפרא, אלא דאינה מכפרא הואיל ועיקרא למילתא אחריתי קאתיא, ואהני קל וחומר לקופיא.",
-    "english": "<b>All the more so for those liable for a positive mitzvah</b>: From this *kal vaḥomer*, we should have said that a sin offering atones even by its essence. However, it does not atone by its essence because it was primarily designated for another matter. This *kal vaḥomer* is only effective for incidental atonement."
+    "english": "<strong class=\"dibur-hamatchil\">\"For those obligated in a positive mitzva, all the more so\"</strong> - From this <i>a fortiori</i> inference we should have said that even <i>mikiv'a</i> it atones, but it does not atone, since it came primarily for a different matter, and the <i>a fortiori</i> inference is effective for the <i>kofya</i>:",
+    "status": "pending"
+  },
+  "Tosafot on Zevachim 7a:4:1": {
+    "hebrew": "<strong class=\"dibur-hamatchil\">דלמא אם תימצי לומר קאמר</strong> - ורבי זירא נמי שהשיב נמי לרבי ירמיה על טומאה שאירעה בין זו לזו, כמו כן <span class=\"explanation\">יש לומר</span> אם תימצי לומר קאמר. וקושיא ראשונה — ומי אית ליה לרבי שמעון לב בית דין מתנה — לא חש לתרץ, דאיכא למימר דאפרשינהו בזה אחר זה, ואינו חושש בקושיא <span class=\"explanation\">השנייה</span> דליקו ולימא ליה לקרא כו'. ועוד, דהיכא דלית ליה תקנתא ברעייה, אית ליה לרבי שמעון לב בית דין מתנה, כדמוכח במנחות פ' התודה <span class=\"parenthesized\">(מנחות עט:)</span>. ומיהו הא מוכח דהיכא דאית ליה תקנתא ברעייה לית ליה לב בית דין מתנה, וכאן אית ליה תקנתא ברעייה:",
+    "english": "<strong class=\"dibur-hamatchil\">\"Perhaps he was saying: Even if you say\"</strong> - And Rabbi Zeira, who also answered Rabbi Yirmeya about impurity that occurred between one [offering] and the other, likewise [one can say] that he was saying \"even if you say.\" And the first difficulty — does Rabbi Shimon hold that the court stipulates [a condition]? — [Tosafot] did not trouble to resolve, since one can say that they set them aside one after the other, and [Tosafot] is not concerned with [the second difficulty], \"Let him arise and say to the verse,\" etc. Furthermore, where [the owner] has no remedy through grazing, Rabbi Shimon does hold that the court stipulates [a condition], as is proven in Menachot, chapter Hatodah (79b). However, this proves that where there is a remedy through grazing, he does not hold that the court stipulates, and here there is a remedy through grazing:",
+    "status": "pending"
   },
   "Tosafot on Zevachim 7a:5:1": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו כשרה:</strong> ועולה לשם חובה משום שינוי בעלים לא מיפסלא, דאין שינוי בעלים אלא אם כן בזריקה. ורב חסדא אמר פסולה, פירוש: לא עלתה לשם חובה משום דהוי שינוי קודש כשאמר: תודת פלוני לשם תודה אחרת של פלוני. אבל אם אמר: תודה זו לשם פלוני, כשרה גמורה, לפי שהוא שינוי בעלים בשחיטה דכשירה גמורה:",
-    "english": "<b>A thanks offering that one slaughtered for the sake of another’s thanks offering is fit:</b> And it fulfilled the obligation, because it is not disqualified due to a change of owner, as a change of owner is only applicable for sprinkling. And Rav Ḥisda said it is unfit, meaning it did not fulfill the obligation because it is a change of offering when he said: \"the thanks offering of so-and-so for the sake of another thanks offering of so-and-so.\" But if he said: \"This thanks offering is for so-and-so,\" it is completely fit, because that is a change of owner in the slaughter, which is completely fit."
+    "hebrew": "<strong class=\"dibur-hamatchil\">תודה ששחטה לשם תודת חבירו כשרה</strong> - ועולה לשם חובה, משום שנוי בעלים לא מיפסלא, דאין שינוי בעלים אלא <span class=\"parenthesized\">(<abbr title=\"אם כן\">א\"כ</abbr>)</span> בזריקה. ורב חסדא אמר פסולה, פירוש: לא עלתה לשם חובה, משום דהוי שינוי קודש, כשאמר תודת פלוני לשם תודה אחרת של פלוני. אבל אמר תודה זו לשם פלוני — כשרה גמורה, לפי שהוא שינוי בעלים בשחיטה, דכשירה גמורה:",
+    "english": "<strong class=\"dibur-hamatchil\">A thanks offering that one slaughtered for the sake of another's thanks offering is valid</strong> - And it counts toward the obligation, [since] it is not disqualified on account of a change of owner, for there is no [disqualifying] change of owner except (if so) in the sprinkling. And Rav Ḥisda says it is unfit. Explanation: it does not count toward the obligation, because it is a change of consecration, when he said \"the thanks offering of so-and-so\" for the sake of a different thanks offering of so-and-so. But if he said \"this thanks offering is for the sake of so-and-so,\" it is entirely valid, since it is a change of owner at the slaughtering, which is entirely valid:",
+    "status": "pending"
   },
   "Tosafot on Zevachim 7a:5:2": {
-    "hebrew": "<strong class=\"dibur-hamatchil\">הגה\"ה רב חסדא אמר פסולה:</strong> נראה דוקא בתודה פליג משום דכתיב בהן קרא שלמיו, ו<span class=\"rashi-quotation\">בקונטרס פירש</span> דהוא הדין בשאר קרבנות:",
-    "english": "<b>Gloss: Rav Ḥisda says it is unfit:</b> It seems he argues specifically concerning a thanks offering because the verse states \"his peace offerings\" in reference to them. And in Rashi's commentary he explained that the same applies to other offerings."
+    "hebrew": "<strong class=\"dibur-hamatchil\">הגה\"ה רב חסדא אמר פסולה</strong> - נראה דוקא בתודה פליג, משום דכתיב בהן קרא \"שלמיו\". <span class=\"rashi-quotation\">ובקונטרס פירש</span> דהוא הדין בשאר קרבנות:",
+    "english": "<strong class=\"dibur-hamatchil\">Gloss: Rav Ḥisda says it is unfit</strong> - It appears that he disagrees specifically with regard to a thanks offering, because a verse is written concerning them, \"its peace offerings\" (Leviticus 7:13). <span class=\"rashi-quotation\">But in the Kuntres [Rashi] explained</span> that the same applies to other offerings:",
+    "status": "pending"
   },
   "Zevachim 6a:12": {
     "english": "A dilemma was raised before the Sages: When one brings a burnt offering, which atones for violations of positive mitzvot, does a burnt offering atone even for a violation of a positive mitzva that its owner committed after designating the animal as an offering, or does it not atone for such a violation?"
