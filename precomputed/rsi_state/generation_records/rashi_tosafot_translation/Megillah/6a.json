@@ -1,0 +1,709 @@
+{
+  "Rashi on Megillah 6a:10:1": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:10:1",
+      "Rashi on Megillah 6a:10:2"
+    ],
+    "generatedAt": "2026-11-13T18:06:05.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידי חזי לי זבת חלב ודבש דכל ארץ ישראל</strong> - בכל מקום שהוא שם ואם באת לצרפו יחד הוי כמבי כובי עד אקרא דתולבקני שם מקום:"
+  },
+  "Rashi on Megillah 6a:10:2": {
+    "dependsOn": [
+      "Jastrow, אַקְרָא 1",
+      "Rashi on Megillah 6a:10:1",
+      "Steinsaltz on Megillah 6a:10"
+    ],
+    "generatedAt": "2026-11-13T18:08:29.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרא</strong> - מקום מעבר הנהר ובלע\"ז פורט\"ו:"
+  },
+  "Rashi on Megillah 6a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:08:53.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדיפי ליה</strong> - חביבי ליה:"
+  },
+  "Rashi on Megillah 6a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:09:14.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יתד תקועה</strong> - לרעה:"
+  },
+  "Rashi on Megillah 6a:12:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:12:1",
+      "Jastrow, אֲחִידָה I 1",
+      "Steinsaltz on Megillah 6a:12"
+    ],
+    "generatedAt": "2026-11-13T18:10:17.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחידת מגדל שיר</strong> - כבושת מגדל שיר:"
+  },
+  "Rashi on Megillah 6a:13:1": {
+    "dependsOn": [
+      "Megillah 6a:13"
+    ],
+    "generatedAt": "2026-11-13T18:10:55.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והסירותי דמיו מפיו וגו'</strong> - גבי צור כתיב שהוא ראש לאדום:"
+  },
+  "Rashi on Megillah 6a:13:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:13:1",
+      "Steinsaltz on Megillah 6a:13",
+      "Jastrow, *גַּלְיָא II 1",
+      "Sefer HeArukh, Letter Bet 136",
+      "Sefer HeArukh, Letter Bet 133"
+    ],
+    "generatedAt": "2026-11-13T18:12:15.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלייא במיא</strong> - ראשי ע\"ז הם לאדום:"
+  },
+  "Rashi on Megillah 6a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:12:45.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיבוסי</strong> - היא ירושלים:"
+  },
+  "Rashi on Megillah 6a:14:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:14:1",
+      "Steinsaltz on Megillah 6a:14",
+      "Tosafot on Megillah 6a:14:1"
+    ],
+    "generatedAt": "2026-11-13T18:16:04.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה אדום לאלופי יהודה</strong> - ועקרון תהיה בית תלמוד בירושלים:"
+  },
+  "Rashi on Megillah 6a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:18:27.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשם</strong> - עיר שכיבשו בני דן:"
+  },
+  "Rashi on Megillah 6a:15:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:15:1",
+      "Rashi on Megillah 6a:15:3",
+      "Rashi on Megillah 6a:15:4",
+      "Rashi on Megillah 6a:8:3"
+    ],
+    "generatedAt": "2026-11-13T18:19:37.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו פמייס</strong> - שמשם ירדן יוצא כדאמר מר ירדן יוצא ממערת פמייס <span class=\"parenthesized\">(בכורות דף נה.)</span>:"
+  },
+  "Rashi on Megillah 6a:15:3": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:15:3",
+      "Rashi on Taanit 18b:10:1",
+      "Rashi on Megillah 6a:15:1",
+      "Rashi on Megillah 6a:15:2",
+      "Rashi on Megillah 6a:15:4",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 3a:1:2",
+      "Taanit 18b:10"
+    ],
+    "generatedAt": "2026-11-13T18:22:01.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטרופולין</strong> - לשון יון אימא של מלכות מטר\"א אם פולין לשון שררה כדאמר מר עד שבאו דיופלי מהעיר שני שרים <span class=\"parenthesized\">(תענית דף יח:)</span>:"
+  },
+  "Rashi on Megillah 6a:15:4": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:15:1",
+      "Rashi on Megillah 6a:15:2",
+      "Rashi on Megillah 6a:15:3",
+      "Rashi on Megillah 6a:14:1",
+      "Rashi on Megillah 6a:14:2",
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Megillah 5b:2:1"
+    ],
+    "generatedAt": "2026-11-13T18:23:20.077Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמרבי</strong> - שמגדלין שם בני מלכים:"
+  },
+  "Rashi on Megillah 6a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:25:01.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמלאה החרבה</strong> - רישא דקרא יען אמרה צור על ירושלים אמלאה החרבה עכשיו אתמלא מחורבתה:"
+  },
+  "Rashi on Megillah 6a:18:1": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Translation on Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3"
+    ],
+    "generatedAt": "2026-11-13T18:26:05.992Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רשע</strong> - זה עשו:"
+  },
+  "Rashi on Megillah 6a:18:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:6",
+      "Rashi on Megillah 6a:18:7"
+    ],
+    "generatedAt": "2026-11-13T18:27:07.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארץ נכוחות יעול</strong> - את ירושלים יחריב: אמר יצחק להקב\"ה יוחן רשע זה עשו אמר לו הקדוש ברוך הוא רשע הוא:"
+  },
+  "Rashi on Megillah 6a:18:3": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:6",
+      "Rashi on Megillah 6a:18:7"
+    ],
+    "generatedAt": "2026-11-13T18:28:42.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר</strong> - יצחק בל למד צדק כלומר אין אדם יכול ללמד עליו צדק:"
+  },
+  "Rashi on Megillah 6a:18:4": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:6",
+      "Rashi on Megillah 6a:18:7",
+      "Rashi on Megillah 6a:1:1",
+      "Rashi on Megillah 6a:1:2"
+    ],
+    "generatedAt": "2026-11-13T18:29:29.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לו</strong> - הקב\"ה:"
+  },
+  "Rashi on Megillah 6a:18:5": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:6",
+      "Rashi on Megillah 6a:18:7",
+      "Rashi on Megillah 6a:16:1",
+      "Rashi on Megillah 6a:19:1",
+      "Rashi on Megillah 6a:2:1",
+      "Rashi on Megillah 6a:8:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 3a:1:1",
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Rosh Hashanah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T18:30:41.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארץ נכוחות יעול</strong> - את ירושלים יחריב: אמר יצחק להקב\"ה יוחן רשע זה עשו אמר לו הקדוש ברוך הוא רשע הוא:"
+  },
+  "Rashi on Megillah 6a:18:6": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:7"
+    ],
+    "generatedAt": "2026-11-13T18:31:08.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארץ נכוחות יעול</strong> - כלומר עתיד להחריב את ארץ ישראל:"
+  },
+  "Rashi on Megillah 6a:18:7": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 6a:18:3",
+      "Rashi on Megillah 6a:18:4",
+      "Rashi on Megillah 6a:18:5",
+      "Rashi on Megillah 6a:18:6",
+      "Rashi on Megillah 6a:18:7"
+    ],
+    "generatedAt": "2026-11-13T18:32:07.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:18:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר יצחק</strong> - אם כן בל יראה גאות ה':"
+  },
+  "Rashi on Megillah 6a:19:1": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:19:1",
+      "Megillah 6a:19",
+      "Rashi on Megillah 6a:18:1",
+      "Rashi on Megillah 6a:18:2",
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Megillah 5b:2:1"
+    ],
+    "generatedAt": "2026-11-13T18:34:04.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זממו אל תפק</strong> - אל תוציאנו מנחיריו זמם כמין טבעת ברזל שנותנין בחוטמה של אנקה ונמשכת בו ומתוך חוזקה אינה משתמרת כי אם בו:"
+  },
+  "Rashi on Megillah 6a:1:1": {
+    "dependsOn": [
+      "Megillah 6a:1",
+      "Rashi on Megillah 6a:1:1",
+      "Rashi on Megillah 6a:1:2",
+      "Steinsaltz on Megillah 6a:1"
+    ],
+    "generatedAt": "2026-11-13T17:39:19.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:1:1"
+    ],
+    "sourceText": "ואישתכח כוותי גרסי':"
+  },
+  "Rashi on Megillah 6a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:39:44.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רקתא דנהרא</strong> - שפת הנהר גבוה מן הנהר אף ציפורי יושבת בראש ההר:"
+  },
+  "Rashi on Megillah 6a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:40:14.893Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי שכיב איניש הכא</strong> - כשמת אדם גדול בבבל:"
+  },
+  "Rashi on Megillah 6a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:40:30.953Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספדי ליה התם</strong> - בטבריא:"
+  },
+  "Rashi on Megillah 6a:2:3": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:2:1",
+      "Rashi on Megillah 6a:2:2",
+      "Steinsaltz on Megillah 6a:2",
+      "Rashi on Megillah 6a:2:3",
+      "Rashi on Megillah 6a:2:4",
+      "Rashi on Megillah 6a:2:5"
+    ],
+    "generatedAt": "2026-11-13T17:43:55.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששך</strong> - בבל בחילוף א\"ת ב\"ש:"
+  },
+  "Rashi on Megillah 6a:2:4": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:2:1",
+      "Rashi on Megillah 6a:2:2",
+      "Rashi on Megillah 6a:2:3",
+      "Rashi on Megillah 6a:2:5"
+    ],
+    "generatedAt": "2026-11-13T17:44:31.682Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושם לו ברקת</strong> - יצא לו שם בטבריא:"
+  },
+  "Rashi on Megillah 6a:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:44:50.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי מסקי ארון</strong> - של מת מבבל לקוברו בטבריא:"
+  },
+  "Rashi on Megillah 6a:2:6": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:2:5",
+      "Rashi on Megillah 6a:2:6",
+      "Rashi on Megillah 6a:2:7",
+      "Steinsaltz on Megillah 6a:2"
+    ],
+    "generatedAt": "2026-11-13T17:45:51.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו הכי</strong> - הספדנין קורין בשווקים בלשון הזה שיצאו לקראת המת:"
+  },
+  "Rashi on Megillah 6a:2:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:46:28.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוהבי שרידים</strong> - אוהבי ישראל:"
+  },
+  "Rashi on Megillah 6a:2:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:46:55.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:2:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יושבי רקת צאו וקבלו הרוגי עמק</strong> - מתי בבל העמוקה:"
+  },
+  "Rashi on Megillah 6a:3:1": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:3:1",
+      "Rashi on Megillah 6a:3:2",
+      "Rashi on Megillah 6a:3:3",
+      "Rashi on Megillah 6a:1:1",
+      "Rashi on Megillah 6a:1:2",
+      "Rashi on Megillah 6a:2:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:2",
+      "Rashi on Megillah 2a:2:1"
+    ],
+    "generatedAt": "2026-11-13T17:49:27.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:3:1"
+    ],
+    "sourceText": "ר' זירא עלה מבבל לארץ ישראל ומת שם בטבריא:"
+  },
+  "Rashi on Megillah 6a:3:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:3:1",
+      "Rashi on Megillah 6a:3:2",
+      "Rashi on Megillah 6a:3:3",
+      "Rashi on Megillah 6a:2:7"
+    ],
+    "generatedAt": "2026-11-13T17:51:12.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ארץ צבי</strong> - ארץ] ישראל:"
+  },
+  "Rashi on Megillah 6a:3:3": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:3:1",
+      "Rashi on Megillah 6a:3:2",
+      "Rashi on Megillah 6a:3:3"
+    ],
+    "generatedAt": "2026-11-13T17:51:50.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידלה שעשועיה</strong> - של שנער:"
+  },
+  "Rashi on Megillah 6a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:52:14.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטיבורה</strong> - באמצעיתה:"
+  },
+  "Rashi on Megillah 6a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:54:38.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הוריש את יושבי קטרון</strong> - שבאה לחלקו ועבר על מה שאמר הקב\"ה לא תחיה כל נשמה <span class=\"parenthesized\">(דברים כ׳:ט״ז)</span> והניחן לגור שם ביניהם ולהעלות להם מס:"
+  },
+  "Rashi on Megillah 6a:6:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:6:2",
+      "Rashi on Megillah 6a:6:1"
+    ],
+    "generatedAt": "2026-11-13T17:55:24.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מדותיו</strong> - על מזלו שנמדד לו מן השמים מדה שאינו חפץ בה:"
+  },
+  "Rashi on Megillah 6a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:55:49.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן צריכין לך</strong> - כל אחיך יהו צריכין לך:"
+  },
+  "Rashi on Megillah 6a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:56:17.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על ידי חלזון</strong> - חלזון עולה מן הים להרים וצובעין בדמו תכלת ונמכר בדמים יקרים:"
+  },
+  "Rashi on Megillah 6a:7:3": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:7:1",
+      "Rashi on Megillah 6a:7:2",
+      "Rashi on Megillah 6a:6:1",
+      "Rashi on Megillah 6a:6:2"
+    ],
+    "generatedAt": "2026-11-13T17:57:19.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עמים הר יקראו</strong> - מכל השבטים יתקבצו להריך לקנות שפוני טמוני חול:"
+  },
+  "Rashi on Megillah 6a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:57:50.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפוני זה חלזון</strong> - שהוא דבר חשוב ספון חשוב בלשון ברייתא:"
+  },
+  "Rashi on Megillah 6a:8:2": {
+    "dependsOn": [
+      "Jastrow, טָרִית 1",
+      "Rashi on Avodah Zarah 39a:2:1",
+      "Rashi on Avodah Zarah 39a:2:2",
+      "Rashi on Megillah 6a:8:1",
+      "Rashi on Megillah 6a:8:3",
+      "Rashi on Megillah 6a:8:4",
+      "Rashi on Megillah 6a:8:5"
+    ],
+    "generatedAt": "2026-11-13T17:59:18.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרית</strong> - דג שקורין טונינ\"א:"
+  },
+  "Rashi on Megillah 6a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:00:31.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זכוכית לבנה</strong> - היוצא מן החול כדאמר ביציאות השבת <span class=\"parenthesized\">(שבת טו:)</span> וחול של זבולון חשוב משאר חולות וראוי לזכוכית לבנה:"
+  },
+  "Rashi on Megillah 6a:8:4": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:8:3",
+      "Rashi on Megillah 6a:8:4",
+      "Rashi on Megillah 6a:8:5",
+      "Rashi on Megillah 6a:8:1",
+      "Rashi on Megillah 6a:8:2"
+    ],
+    "generatedAt": "2026-11-13T18:01:58.386Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מודיעני</strong> - על זאת לתת לי דמים: כל המוצא חלזון ונוטלו בלא דמים אינו מצליח:"
+  },
+  "Rashi on Megillah 6a:8:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:02:41.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שם יזבחו זבחי צדק</strong> - כאשר אסור גזל בעולה כך לא יגזלו ממך כלום שאם יטול שוה פרוטה בלא דמים תתקלקל הצביעה והחול ולא יועיל כלום:"
+  },
+  "Rashi on Megillah 6a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:04:07.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבת חלב ודבש</strong> - העזים אוכלין תאנים והדבש נוטף מהן והחלב זב מן העזים ונעשים כמין נחל:"
+  },
+  "Rashi on Megillah 6a:9:2": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:9:1",
+      "Steinsaltz on Megillah 6a:9",
+      "Pesachim 93b:11",
+      "Rashi on Pesachim 93b:11:4",
+      "Rashi on Megillah 6a:2:1",
+      "Rashi on Megillah 6a:2:2",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T18:05:30.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 6a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששה עשר מיל</strong> - ד' פרסאות:"
+  },
+  "Tosafot on Megillah 6a:14:1": {
+    "dependsOn": [
+      "Rashi on Megillah 6a:14:1",
+      "Rashi on Megillah 6a:14:2",
+      "Steinsaltz comment #1 on Megillah 6a:14",
+      "Steinsaltz comment #2 on Megillah 6a:14",
+      "Steinsaltz comment #3 on Megillah 6a:14",
+      "Jastrow, קִרְקְסָיוֹת 1",
+      "Jastrow, תִּיאַטְרוֹן 1",
+      "Ritva on Megillah 6a:1"
+    ],
+    "generatedAt": "2026-11-13T18:18:11.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 6a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טראטריות וקרקסיאות</strong> - י\"מ בתי עבודת כוכבים ומכנה אותן טרטאכ' לשון חרפה וקרקסיאות רוצה לומר בית הכסא בלשון ערב וקשה לומר שאותן מקומות מטונפות יכול ללמוד שם תורה אלא ודאי לשממה יהא במהרה בימינו ורוצה לומר בתים שמתאספים שם לוועד של עובדי עבודת כוכבים:"
+  },
+  "Tosafot on Megillah 6a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:52:38.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שטובה ראייתה</strong> - שהיו שם גנות ופרדסים:"
+  },
+  "Tosafot on Megillah 6a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:03:38.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 6a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכל הנוטל <span class=\"parenthesized\">(פרוטה)</span> ממך בלא דמים אין מועיל</strong> - דכתיב שם יזבחו זבחי צדק וגזל לא מהני בזבח:"
+  }
+}

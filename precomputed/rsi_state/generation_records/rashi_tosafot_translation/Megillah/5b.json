@@ -1,0 +1,429 @@
+{
+  "Rashi on Megillah 5b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:21:55.132Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובאתריה דרבי לא נהוג גרסינן</strong> - במקומו של רבי לא נהגו איסור בדבר:"
+  },
+  "Rashi on Megillah 5b:12:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:12:1",
+      "Rashi on Megillah 5b:12:2",
+      "Rashi on Megillah 5b:12:3",
+      "Rashi on Megillah 5b:12:4"
+    ],
+    "generatedAt": "2026-11-13T17:23:19.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטיעה של שמחה</strong> - דכיון דפורים יום שמחה הוא מותר לנטוע נטיעה של שמחה:"
+  },
+  "Rashi on Megillah 5b:12:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:12:1",
+      "Rashi on Megillah 5b:12:3"
+    ],
+    "generatedAt": "2026-11-13T17:24:20.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדתנן עברו אלו</strong> - י\"ג תעניות שב\"ד מתענין על הגשמים:"
+  },
+  "Rashi on Megillah 5b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:24:44.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא נענו</strong> - מן השמים:"
+  },
+  "Rashi on Megillah 5b:12:4": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:12:1",
+      "Rashi on Megillah 5b:12:2",
+      "Rashi on Megillah 5b:12:3",
+      "Rashi on Megillah 5b:12:4",
+      "Megillah 5b:12",
+      "Rashi on Megillah 5b:13:1",
+      "Rashi on Megillah 5b:13:2"
+    ],
+    "generatedAt": "2026-11-13T17:25:48.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממעטין</strong> - בנטיעה ובבנין:"
+  },
+  "Rashi on Megillah 5b:13:1": {
+    "dependsOn": [
+      "Megillah 5b:13",
+      "Rashi on Megillah 5b:12:3",
+      "Rashi on Megillah 5b:12:4",
+      "Rashi on Megillah 5b:13:1",
+      "Rashi on Megillah 5b:13:2"
+    ],
+    "generatedAt": "2026-11-13T17:29:07.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנא נטיעה נטיעה של שמחה</strong> - בנין האמור כאן שאסורין בבנין של שמחה שנוהגין עצמן כנזופין וכאבלים:"
+  },
+  "Rashi on Megillah 5b:13:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:13:1",
+      "Megillah 5b:12"
+    ],
+    "generatedAt": "2026-11-13T17:31:04.908Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונטיעה</strong> - האמורה כאן נטיעה של שמחה כגון אבורנקי אילן שצילו נאה כגון אילן שכופפין אותו על גבי כלונסות ויתידות והמלכים אוכלין תחתיו בימות החמה ומתעדנין בה במיני שמחות ובנין בית חתנות לבנו כשמשיא אשה לבנו הראשון היה בונה לו בית ועושה לו חופה בתוכו אלמא איכא נטיעה של שמחה:"
+  },
+  "Rashi on Megillah 5b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:32:28.035Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וערי מבצר הצדים וגו'</strong> - בספר יהושע <span class=\"parenthesized\">(יט)</span> בנחלת נפתלי וקיימא לן לקמן דרקת זו טבריא וקרי ליה ערי מבצר אלמא מוקפת חומה הואי:"
+  },
+  "Rashi on Megillah 5b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:32:59.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחד גיסא שורא דימא הויא</strong> - אין לה חומה מצד אחד אלא הים חומתה ומספקא ליה אי חשיב היקף אי לא:"
+  },
+  "Rashi on Megillah 5b:15:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:14:1",
+      "Rashi on Megillah 5b:14:2",
+      "Rashi on Megillah 5b:15:2",
+      "Rashi on Megillah 5b:15:3",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:2:1",
+      "Rashi on Megillah 3b:1:1"
+    ],
+    "generatedAt": "2026-11-13T17:34:27.351Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חומה ולא שור איגר</strong> - בבתי ערי חומה כתיב עיר חומה ולא עיר שאין לה חומה בפני עצמה אלא מוקפת בתים סמוכות זו לזו וחומות חיצונות של בתים נעשות חומה לעיר והיינו שור איגר שגגותיה חומותיה גג מתרגמינן איגר:"
+  },
+  "Rashi on Megillah 5b:15:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:15:1",
+      "Rashi on Megillah 5b:15:2",
+      "Rashi on Megillah 5b:15:3"
+    ],
+    "generatedAt": "2026-11-13T17:35:29.963Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סביב</strong> - לגבי בתי החצרים כתיב אשר אין להם חומה סביב מכלל דבתי ערי חומה מסובבת סביב קאמ':"
+  },
+  "Rashi on Megillah 5b:15:3": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:15:1",
+      "Rashi on Megillah 5b:15:2"
+    ],
+    "generatedAt": "2026-11-13T17:36:03.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט לטבריא שימה חומתה</strong> - שהים שלה היא חומתה מצד האחד:"
+  },
+  "Rashi on Megillah 5b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:37:23.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי מספקא ליה לענין מקרא מגילה</strong> - דלא מפורש בה חומה אלא לשון פרזים ושאינן פרזים כתיב בה ומספקא ליה האי לשון פרזים אי לשון גלוי הוא או לשון עיר הנוחה ליכבש:"
+  },
+  "Rashi on Megillah 5b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:37:51.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כד הוינא טליא</strong> - כשהייתי נער:"
+  },
+  "Rashi on Megillah 5b:1:1": {
+    "dependsOn": [
+      "Jastrow, קְרוֹנָה 1"
+    ],
+    "generatedAt": "2026-11-13T16:57:37.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקרונה של צפורי</strong> - ביום השוק בפרהסיא בשעת הילוך קרונות:"
+  },
+  "Rashi on Megillah 5b:1:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:1:1",
+      "Megillah 5b:2",
+      "Rashba on Megillah 5b:1",
+      "Ritva on Megillah 5b:1"
+    ],
+    "generatedAt": "2026-11-13T16:58:35.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא הודו לו</strong> - מתשעה באב:"
+  },
+  "Rashi on Megillah 5b:2:1": {
+    "dependsOn": [
+      "Megillah 5b:2",
+      "Rashi on Megillah 5b:2:1",
+      "Rashi on Megillah 5b:2:2",
+      "Rashi on Megillah 5b:2:3",
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Megillah 5b:1:2",
+      "Megillah 5b:1",
+      "Rashi on Megillah 2a:6:1"
+    ],
+    "generatedAt": "2026-11-13T17:08:49.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לפניו</strong> - [לפני] ר' אלעזר:"
+  },
+  "Rashi on Megillah 5b:2:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:2:1",
+      "Rashi on Megillah 5b:2:3"
+    ],
+    "generatedAt": "2026-11-13T17:09:47.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא כך היה</strong> - לא ביקש לעקור לגמרי אלא אותה שנה בלבד:"
+  },
+  "Rashi on Megillah 5b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:10:19.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טובים השנים</strong> - אילו לא שמעתי הייתי טועה בדבר עכשיו טוב לי שלימדתני האמת:"
+  },
+  "Rashi on Megillah 5b:3:1": {
+    "dependsOn": [
+      "Megillah 5b:3"
+    ],
+    "generatedAt": "2026-11-13T17:10:57.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר ארביסר הוה</strong> - לא היתה מן המוקפין:"
+  },
+  "Rashi on Megillah 5b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:13:36.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וטבריא מוקפת חומה מימות יהושע</strong> - לקמן ילפינן מקרא:"
+  },
+  "Rashi on Megillah 5b:6:1": {
+    "dependsOn": [
+      "Megillah 5b:6"
+    ],
+    "generatedAt": "2026-11-13T17:16:37.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי פשיטא ליה</strong> - שהיה מבני חמיסר מי שרי בארביסר במלאכה:"
+  },
+  "Rashi on Megillah 5b:7:1": {
+    "dependsOn": [
+      "Megillah 5b:7"
+    ],
+    "generatedAt": "2026-11-13T17:18:04.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נצרכא</strong> - במגילת תענית שהרי כבר כתובין במגלת אסתר שאסור בהספד ותענית אלא לאסור כו':"
+  },
+  "Rashi on Megillah 5b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:18:26.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדי כיתנא</strong> - זורע פשתן:"
+  },
+  "Rashi on Megillah 5b:8:2": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:8:1",
+      "Megillah 5b:7",
+      "Rashi on Megillah 5b:7:1",
+      "Megillah 5b:8",
+      "Rashi on Megillah 5b:8:2",
+      "Rashi on Megillah 2a:22:1",
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Megillah 5b:1:2",
+      "Rashi on Megillah 5b:2:1",
+      "Rashi on Megillah 5b:3:1",
+      "Rashi on Megillah 5b:4:1",
+      "Rashi on Megillah 5b:6:1",
+      "Rashi on Megillah 5b:12:1",
+      "Rashi on Megillah 5b:12:2"
+    ],
+    "generatedAt": "2026-11-13T17:21:16.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 5b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר יומיה הוה</strong> - שקראו בו בני עירו: אפילו תימא בר יומיה הוה גרסי' רבי שנטע נטיעה ביום שקראו בו נטע ודקא קשיא לך יום טוב שאסור בעשיית מלאכה ההוא קרא דכתיב שמחה ומשתה ויום טוב כתיב מעיקרא קודם קבלה אבל בשעת קבלה לא קיבלו עליהן אלא שמחה ומשתה לאוסרן בהספד ותענית אבל י\"ט לא קיבלו עליהן:"
+  },
+  "Tosafot on Megillah 5b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:22:43.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברים המותרים ואחרים נהגו בהן איסור</strong> - קשה דהא רבי התיר בית שאן ע\"י ר' מאיר שאכל שם עלה של ירק בחולין <span class=\"parenthesized\">(דף ו:)</span> וי\"ל דהתם לא נהגו איסור אלא בטעות והכא מיירי בדבר שנהגו בו איסורא במתכוין:"
+  },
+  "Tosafot on Megillah 5b:12:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:12:1",
+      "Rashi on Megillah 5b:12:2",
+      "Rashi on Megillah 5b:12:3",
+      "Rashi on Megillah 5b:12:4",
+      "Tosafot on Megillah 5b:12:2",
+      "Maharsha: Chidushei Halachot on Megillah 5b:1",
+      "Megillah 5b:12",
+      "Ritva on Megillah 5b:11"
+    ],
+    "generatedAt": "2026-11-13T17:27:21.504Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממעטין במשא ומתן</strong> - פי' של שמחה דומיא דבנין ונטיעה דבסמוך אבל שאר בנינים שרו ואין לך משא ומתן גדול מזה:"
+  },
+  "Tosafot on Megillah 5b:12:2": {
+    "dependsOn": [
+      "Tosafot on Megillah 5b:12:1"
+    ],
+    "generatedAt": "2026-11-13T17:28:17.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממעטין </strong> - רוצה לומר שלא יהו ששים כלל וחמירי מתשעה באב שמארסין בו אבל אין לפרש ממעטין אבל ששים קצת דאם כן היה לו לפרש השיעור מה הוא קורא ממעט:"
+  },
+  "Tosafot on Megillah 5b:1:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:1:1",
+      "Rashi on Megillah 5b:1:2",
+      "Tosafot on Megillah 5b:1:2",
+      "Ritva on Megillah 5b:1"
+    ],
+    "generatedAt": "2026-11-13T17:00:02.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורחץ בקרונה של צפורי</strong> - לאו דוקא בקרונה אלא כלומר בפרהסיא ואם תאמר מאי איריא לרחוץ אפי' לאכול נמי מותר כדתניא בר\"ה <span class=\"parenthesized\">(דף יח:)</span> אין צרה ואין שלום רצו מתענין לא רצו אין מתענין וי\"ל דכיון דקבלוהו כבר אבותינו על עצמם מסתמא גם הם קבלוהו:"
+  },
+  "Tosafot on Megillah 5b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:04:37.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובקש לעקור תשעה באב ולא הודו לו</strong> - קשה היכי סלקא דעתך דהאי תנא [דרבי] היה רוצה לעקור ט' באב לגמרי והא אמרינן <span class=\"parenthesized\">(תענית דף ל:)</span> כל האוכל ושותה בתשעה באב אינו רואה בנחמה: של ירושלים ועוד דהא אין בית דין יכול לבטל דברי בית דין חבירו אא\"כ גדול הימנו בחכמה ובמנין ויש לומר דלא רצה לעוקרו אלא מחומרא שיש בו יותר משאר תעניות אי נמי יש לומר דרצה לעקרו מתשיעי ולקבעו בעשירי כדאמר ר' יוחנן <span class=\"parenthesized\">(שם כט:)</span> . אילו הואי התם קבעתיה בעשירי:"
+  },
+  "Tosafot on Megillah 5b:3:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:3:1",
+      "Ritva on Megillah 5b:4",
+      "Shulchan Arukh, Orach Chayim 696:3"
+    ],
+    "generatedAt": "2026-11-13T17:13:05.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאסורים בהספד</strong> - השיב רש\"י וכי מן נתן כח לימי מגילת אסתר לדחות אבילות . אי איתא דבהספד נאסר משום דכתיב ימי משתה ושמחה והא חזינן דכולי עלמא נהגו בו היתר אלא ודאי לא הוי אלא לענין שאין נופלין על פניהם דלא הוי יום צרה אלא יום שמחה:"
+  },
+  "Tosafot on Megillah 5b:4:1": {
+    "dependsOn": [
+      "Rashi on Megillah 5b:4:1",
+      "Tosafot on Megillah 5b:1:1",
+      "Tosafot on Megillah 5b:1:2",
+      "Tosafot on Megillah 5b:3:1",
+      "Avodah Zarah 10a:1",
+      "Avodah Zarah 10a:2"
+    ],
+    "generatedAt": "2026-11-13T17:15:32.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רבי בטבריא הוה</strong> - נראה שהיה בימי אנטונינוס כשהיו יחד כדאמר במס' ע\"ז <span class=\"parenthesized\">(דף י.)</span> שרצה לשחרר בני טבריא ממס לפי שהיו תלמידי חכמים דקאמר ליעביד טבריא קלניא:"
+  }
+}

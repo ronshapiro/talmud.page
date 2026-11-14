@@ -1,0 +1,190 @@
+{
+  "Rashi on Megillah 7b:1:1": {
+    "dependsOn": [
+      "Megillah 7b:1",
+      "Rabbeinu Chananel on Megillah 7b:1",
+      "Rashi on Megillah 2a:5:1",
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-11-13T19:38:18.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג קיימת בנו רבינו ומשלוח מנות</strong> - דהא תרי מנות איכא:"
+  },
+  "Rashi on Megillah 7b:2:1": {
+    "dependsOn": [
+      "Megillah 7b:2",
+      "Rashi on Megillah 7b:2:1",
+      "Rashi on Megillah 7b:2:2",
+      "Rashi on Megillah 7b:2:3",
+      "Rashi on Megillah 7b:2:4",
+      "Rashi on Megillah 7b:2:5",
+      "Rashi on Megillah 7b:2:6",
+      "Rashi on Megillah 2a:22:1"
+    ],
+    "generatedAt": "2026-11-13T19:39:17.877Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:1"
+    ],
+    "sourceText": "הדר שלח ליה איהו לא גרסינן ליה הכא:"
+  },
+  "Rashi on Megillah 7b:2:2": {
+    "dependsOn": [
+      "Rashi on Megillah 7b:2:2",
+      "Rashi on Megillah 7b:2:1",
+      "Rashi on Megillah 7b:2:3",
+      "Rashi on Megillah 7b:4:1",
+      "Rashi on Megillah 7b:6:1",
+      "Rashi on Megillah 7b:7:1"
+    ],
+    "generatedAt": "2026-11-13T19:40:33.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:2"
+    ],
+    "sourceText": "טסקא דקשבא- שק מלא תמרים:"
+  },
+  "Rashi on Megillah 7b:2:3": {
+    "dependsOn": [
+      "Rashi on Megillah 7b:2:1",
+      "Rashi on Megillah 7b:2:2",
+      "Rashi on Megillah 7b:2:3",
+      "Rashi on Megillah 7b:2:4"
+    ],
+    "generatedAt": "2026-11-13T19:41:33.940Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאבשונא</strong> - שנתייבשו החטים בתנור בעודן כרמל וקמח שלהן מתוק לעולם:"
+  },
+  "Rashi on Megillah 7b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:42:19.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל אביי</strong> - לרבה:"
+  },
+  "Rashi on Megillah 7b:2:5": {
+    "dependsOn": [
+      "Rashi on Megillah 7b:2:4",
+      "Rashi on Megillah 7b:2:5",
+      "Rashi on Megillah 7b:2:6"
+    ],
+    "generatedAt": "2026-11-13T19:42:56.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא אמר מרי</strong> - עכשיו יאמר מרי עליך:"
+  },
+  "Rashi on Megillah 7b:2:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:43:32.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי חקלאה מלכא ליהוי דיקולא מצואריה לא נחית</strong> - הסל שהיה רגיל להוליך בעודנו בן כפר ומאכיל לבהמתו לא יוריד עתה מראשו כך אתה נעשית מלך וראש בפומבדיתא ואינך שולח לו אלא דברים המצויין לכל:"
+  },
+  "Rashi on Megillah 7b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:44:11.308Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוליא</strong> - מתיקא:"
+  },
+  "Rashi on Megillah 7b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:44:45.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי נפקי מבי מר</strong> - כשיצאתי מבית אדוני רבה לילך לבית אבא מרי בר מר הייתי שבע:"
+  },
+  "Rashi on Megillah 7b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:45:31.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צעי</strong> - קערות של מיני מאכל:"
+  },
+  "Rashi on Megillah 7b:4:3": {
+    "dependsOn": [
+      "Jastrow, כְּסַס 1"
+    ],
+    "generatedAt": "2026-11-13T19:46:24.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיכסייא לצעא בתראי</strong> - הייתי חפץ לכוס הקערה אחריו כל אכילה שלא כדרכה נקרא כוסס:"
+  },
+  "Rashi on Megillah 7b:5:1": {
+    "dependsOn": [
+      "Steinsaltz on Megillah 7b:5",
+      "Jastrow, רְוַוח ² 1",
+      "Jastrow, בְּסוּמָא 1"
+    ],
+    "generatedAt": "2026-11-13T19:48:23.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רווחא לבסימא שכיח</strong> - ריוח מצוי לדבר המתוק בתוך המעיים:"
+  },
+  "Rashi on Megillah 7b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:48:53.808Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלפי סעודתייהו</strong> - זה אוכל עם זה בפורים של שנה זו ובשניה סועד חברו עמו:"
+  },
+  "Rashi on Megillah 7b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:49:13.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאבסומי</strong> - להשתכר ביין:"
+  },
+  "Tosafot on Megillah 7b:7:1": {
+    "dependsOn": [
+      "Maharsha: Chidushei Halachot on Megillah 7b:1"
+    ],
+    "generatedAt": "2026-11-13T19:50:27.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא ידע בין ארור המן לברוך מרדכי</strong> - [בירושלמי] ארורה זרש ברוכה אסתר ארורים כל הרשעים ברוכים כל היהודים:"
+  }
+}
