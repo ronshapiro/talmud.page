@@ -1,0 +1,503 @@
+{
+  "Rashi on Moed Katan 3b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:03:59.087Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך התנו</strong> - שמאי והלל בשעת תקנתם:"
+  },
+  "Rashi on Moed Katan 3b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:05:41.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידהו היא</strong> - תקנתם היא:"
+  },
+  "Rashi on Moed Katan 3b:11:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:11:2"
+    ],
+    "generatedAt": "2026-11-13T18:06:27.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חורתן</strong> - מקום:"
+  },
+  "Rashi on Moed Katan 3b:11:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:11:1",
+      "Rashi on Moed Katan 3b:11:2",
+      "Rashi on Moed Katan 3b:11:3",
+      "Rashi on Moed Katan 3b:11:4",
+      "Moed Katan 3b:11"
+    ],
+    "generatedAt": "2026-11-13T18:07:59.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">י' נטיעות</strong> - המפוזרות בתוך בית סאה שהוא נ' על נ' חורשין כל השדה שלה בשבילן בערב שביעית עד ר\"ה ואמרי הני הואיל וילדות הן איכא פסידא יתירא לכך חורשין עד ראש השנה אבל זקינה אין חורשין עד ראש השנה אלמא דהלכה למשה מסיני הן:"
+  },
+  "Rashi on Moed Katan 3b:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:08:34.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וערבה</strong> - להקיף המזבח:"
+  },
+  "Rashi on Moed Katan 3b:12:1": {
+    "dependsOn": [
+      "Moed Katan 3b:12",
+      "Rashi on Moed Katan 3b:11:1",
+      "Rashi on Moed Katan 3b:11:2",
+      "Rashi on Moed Katan 3b:11:3",
+      "Rashi on Moed Katan 3b:11:4",
+      "Rashi on Moed Katan 3b:12:1",
+      "Rashi on Moed Katan 3b:12:2",
+      "Rashi on Moed Katan 3b:12:3"
+    ],
+    "generatedAt": "2026-11-13T18:15:30.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי גמירי הלכתא</strong> - דאין חורשין לזקינה עד ראש השנה אבל חורשין עד שלשים יום לפני ראש השנה:"
+  },
+  "Rashi on Moed Katan 3b:12:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:12:1",
+      "Rashi on Moed Katan 3b:12:2",
+      "Rashi on Moed Katan 3b:12:3",
+      "Steinsaltz on Moed Katan 3b:12:1",
+      "Steinsaltz on Moed Katan 3b:12"
+    ],
+    "generatedAt": "2026-11-13T18:17:19.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתו</strong> - בתקנה דידהו דהרחיקו עד הפסח ועד העצרת:"
+  },
+  "Rashi on Moed Katan 3b:12:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:12:1",
+      "Rashi on Moed Katan 3b:12:2"
+    ],
+    "generatedAt": "2026-11-13T18:17:58.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל הרוצה לבטל יבוא ויבטל</strong> - ורבן גמליאל דבטל לא בטל אלא מפסח ומעצרת עד שלשים יום לפני ראש השנה:"
+  },
+  "Rashi on Moed Katan 3b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:33:58.349Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי אתא רב דימי</strong> - מארץ ישראל לבבל:"
+  },
+  "Rashi on Moed Katan 3b:1:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:1:1",
+      "Rashi on Moed Katan 3b:1:3",
+      "Rashi on Moed Katan 2a:1:1",
+      "Rashi on Moed Katan 2a:1:2",
+      "Rashi on Moed Katan 3a:1:1",
+      "Rashi on Moed Katan 3a:1:2",
+      "Rashi on Moed Katan 2b:3:1",
+      "Rashi on Moed Katan 2b:3:2",
+      "Rashi on Moed Katan 3b:4:2"
+    ],
+    "generatedAt": "2026-11-13T17:37:15.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר</strong> - שמעית דאמרי בא\"י יכול ילקה על תוספת:"
+  },
+  "Rashi on Moed Katan 3b:1:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:1:1",
+      "Rashi on Moed Katan 3b:1:2",
+      "Rashi on Moed Katan 3b:1:3",
+      "Ritva on Moed Katan 3b:1:1",
+      "Ritva on Moed Katan 3b:1:2",
+      "Ritva on Moed Katan 3b:1:3",
+      "Steinsaltz on Moed Katan 3b:1",
+      "Moed Katan 3b:1",
+      "Rashi on Moed Katan 3b:2:1",
+      "Rashi on Moed Katan 3b:2:2"
+    ],
+    "generatedAt": "2026-11-13T17:39:06.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמעית דנסיב עליה תלמודא לפטורא</strong> - ולא ידענא מאי תוספת ולא פטור:"
+  },
+  "Rashi on Moed Katan 3b:2:1": {
+    "dependsOn": [
+      "Moed Katan 3b:2"
+    ],
+    "generatedAt": "2026-11-13T17:40:03.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר אמר חרישה</strong> - בשביעית להכי קרי ליה תוספת דלא נפיק עיקרו מן התורה אלא מכלל ופרט וכלל כדאמרי לעיל:"
+  },
+  "Rashi on Moed Katan 3b:2:2": {
+    "dependsOn": [
+      "Moed Katan 3b:2",
+      "Rashi on Moed Katan 3b:2:1",
+      "Rashi on Moed Katan 3b:3:1",
+      "Rashi on Moed Katan 3b:3:2"
+    ],
+    "generatedAt": "2026-11-13T17:41:06.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונסיב תלמודא לפטורא</strong> - כדאמרינן הני אין:"
+  },
+  "Rashi on Moed Katan 3b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:45:08.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאם כן</strong> - דהוי לקי:"
+  },
+  "Rashi on Moed Katan 3b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:45:46.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הני פרטי</strong> - דפריט בהדיא דאסור בשביעית זריעה וזימור קצירה ובצירה:"
+  },
+  "Rashi on Moed Katan 3b:3:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:3:1",
+      "Rashi on Moed Katan 3b:3:2",
+      "Rashi on Moed Katan 3b:3:3",
+      "Moed Katan 3b:3",
+      "Moed Katan 3a:14",
+      "Moed Katan 3a:15",
+      "Moed Katan 3a:16"
+    ],
+    "generatedAt": "2026-11-13T17:47:11.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי</strong> - דכתב רחמנא אלא למימרא דאהנך הוא דלוקה וכו' שמע מינה אחרישה לא לקי:"
+  },
+  "Rashi on Moed Katan 3b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:47:41.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ימים שלפני ראש השנה</strong> - של שביעית שהוא תוספת על השביעית:"
+  },
+  "Rashi on Moed Katan 3b:4:2": {
+    "dependsOn": [
+      "Moed Katan 3b:4",
+      "Moed Katan 3b:13",
+      "Moed Katan 4a:1",
+      "Rashi on Moed Katan 3b:4:1",
+      "Rashi on Moed Katan 3b:4:2",
+      "Rashi on Moed Katan 3b:4:3",
+      "Tosafot on Moed Katan 3b:4:1",
+      "Rashi on Moed Katan 4a:1:1",
+      "Steinsaltz on Moed Katan 3b:4"
+    ],
+    "generatedAt": "2026-11-13T17:49:55.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתיא מבחריש ובקציר</strong> - כדאמר לקמן אם אינו ענין לשביעית שהרי כתיב שדך לא תזרע וכרמך לא תזמור תנהו לענין ששית שנכנס לשביעית דבשביעית נמי אסור:"
+  },
+  "Rashi on Moed Katan 3b:4:3": {
+    "dependsOn": [
+      "Moed Katan 3b:4",
+      "Moed Katan 4a:7",
+      "Rashi on Moed Katan 3b:4:1",
+      "Rashi on Moed Katan 3b:4:2",
+      "Rashi on Moed Katan 3b:1:1",
+      "Rashi on Moed Katan 3b:1:2",
+      "Rashi on Moed Katan 3b:1:3",
+      "Steinsaltz on Moed Katan 4a:7",
+      "Leviticus 25:4"
+    ],
+    "generatedAt": "2026-11-13T17:51:49.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדבעינן למימר לקמן</strong> - גמר שבת שבתון משבת בראשית:"
+  },
+  "Rashi on Moed Katan 3b:5:1": {
+    "dependsOn": [
+      "Moed Katan 3b:5",
+      "Steinsaltz on Moed Katan 3b:5"
+    ],
+    "generatedAt": "2026-11-13T17:54:23.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל זמן שיפה לפרי</strong> - כלומר כל זמן שחרישה יפה לפירות שגדלו בששית דהיינו נמי קרוב לעצרת אבל מכאן ואילך לא דהוי כמתקן פירות שביעית:"
+  },
+  "Rashi on Moed Katan 3b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:57:30.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדה לבן</strong> - של תבואה:"
+  },
+  "Rashi on Moed Katan 3b:6:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:6:1",
+      "Moed Katan 3b:6"
+    ],
+    "generatedAt": "2026-11-13T17:58:32.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתכלה הלחה</strong> - שכלין הגשמים של שנה ששית דעד ההיא שעתא מהני חרישה לזריעה דשנה זו אבל משתכלה הלחה אינו יכול לחרוש דמחזי כחורש לצורך שביעית דהיינו כל זמן שבני אדם חורשין ליטע מקשאות:"
+  },
+  "Rashi on Moed Katan 3b:7:1": {
+    "dependsOn": [
+      "Moed Katan 3b:7"
+    ],
+    "generatedAt": "2026-11-13T17:59:22.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתנה תורה שיעור לכל אחד ואחד בידו</strong> - כלומר נתת דבריך לשיעורין שפעמים זה חורש קודם חבירו ליטע מקשאות:"
+  },
+  "Rashi on Moed Katan 3b:8:1": {
+    "dependsOn": [
+      "Moed Katan 3b:5",
+      "Moed Katan 3b:7",
+      "Rashi on Moed Katan 3b:5:1",
+      "Rashi on Moed Katan 3b:8:2"
+    ],
+    "generatedAt": "2026-11-13T18:00:35.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על שני פרקים</strong> - דפסח ועצרת:"
+  },
+  "Rashi on Moed Katan 3b:8:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 3b:8:1",
+      "Rashi on Moed Katan 3b:8:2"
+    ],
+    "generatedAt": "2026-11-13T18:01:12.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובטלום</strong> - דחורשין עד ראש השנה:"
+  },
+  "Rashi on Moed Katan 3b:9:1": {
+    "dependsOn": [
+      "Moed Katan 3b:9",
+      "Rashi on Moed Katan 3b:4:2",
+      "Rashi on Moed Katan 3b:8:1",
+      "Rashi on Moed Katan 3b:8:2"
+    ],
+    "generatedAt": "2026-11-13T18:03:31.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 3b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תקנתא דשמאי והלל</strong> - דרבי שמעון דאמר עד פסח ועד עצרת והיינו אליבא דב\"ש וב\"ה:"
+  },
+  "Tosafot on Moed Katan 3b:10:1": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 3b:10:1",
+      "Rashi on Moed Katan 3b:10:1"
+    ],
+    "generatedAt": "2026-11-13T18:05:08.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הרוצה לבטל יבא ויבטל</strong> - שמא יתקלקלו הקרקעות ואינן מגדלין תבואה בלא חרישה לאחר זמן זה התנו שיהא כח להתיר לצריכים שחשו להפסד רבים שלא יגרמו רעה לעולם:"
+  },
+  "Tosafot on Moed Katan 3b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:09:23.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה למשה מסיני</strong> - מהכא איכא לדקדק מדשרא רחמנא ילדה מכלל דזקינה אסורה הרי על ידי הלכה למשה מסיני נאסרה תוספת שביעית אבל להתירא לחוד לילדה לא אצטריך דמהיכא תיתי לאסור:"
+  },
+  "Tosafot on Moed Katan 3b:11:2": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 3b:11:1",
+      "Tosafot on Moed Katan 3b:11:3",
+      "Tosafot on Moed Katan 3b:2:1",
+      "Mishnah Sheviit 1:8"
+    ],
+    "generatedAt": "2026-11-13T18:11:43.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטיעות</strong> - תנן במסכת שביעית פרק קמא עד אימתי נקראו נטיעות ר' אלעזר בן עזריה אומר עד שיחולו רבי יהושע אומר בת שבע שנים רבי עקיבא אומר נטיעה כשמה אילן שנגמם פירוש שנחתך והוציא חליפין מטפח ולמטה כנטיעה מטפח ולמעלה כאילן דברי רבי שמעון:"
+  },
+  "Tosafot on Moed Katan 3b:11:3": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 3b:11:1",
+      "Tosafot on Moed Katan 3b:11:2"
+    ],
+    "generatedAt": "2026-11-13T18:14:08.783Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניסוך המים</strong> - והא דאמרינן בעלמא <span class=\"parenthesized\">(שבת דף קג:)</span> מ\"ם יו\"ד מ\"ם לרבות ניסוך המים מן התורה אינו אלא אסמכתא בעלמא כפר\"ח:"
+  },
+  "Tosafot on Moed Katan 3b:13:1": {
+    "dependsOn": [
+      "Moed Katan 3b:13",
+      "Rashi on Moed Katan 2b:16:4",
+      "Chidushei Halachot on Moed Katan 3b:4",
+      "Moed Katan 4a:2",
+      "Moed Katan 4a:3",
+      "Moed Katan 4a:4"
+    ],
+    "generatedAt": "2026-11-13T18:20:01.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי כבר נאמר שדך לא תזרע וגו'</strong> - ואח\"כ כתיב את ספיח קצירך לא תקצור אלמא קצירה לא אצטריך ואפילו אם תימצי לומר חרישה צריכה דאזהרת חרישה לא אשכחן אלא הכא מיהא קצירה לא אצטריך ולההיא דרשא דאתיא קצירה אתיא חרישה כיון דכתבינהו גבי הדדי אי נמי ס\"ל לר\"ע כי ההיא דאמרן לעיל דלוקה על חרישה וכדאמרינן טעמא לעיל סבר ר' עקיבא ותרוייהו מיותרין ואליבא דר' עקיבא קפריש ואזיל דר' עקיבא סבר אם אינו ענין לשבת תנהו גבי שביעית ובמשמעות שבא להחמיר ולא להקל ולא בעי לאוקמי בשבת כר' ישמעאל להקל דהכי עדיפא ליה ור' ישמעאל עדיפא ליה לאוקמי בשבת דפשטיה דקרא מיירי ביה ואפילו להקל מלאוקמי בשביעית דלא מיירי ביה ולהחמיר:"
+  },
+  "Tosafot on Moed Katan 3b:2:1": {
+    "dependsOn": [
+      "Moed Katan 3b:2",
+      "Moed Katan 3a:14",
+      "Moed Katan 3a:15",
+      "Moed Katan 3a:16",
+      "Moed Katan 3a:17",
+      "Moed Katan 3a:18",
+      "Moed Katan 3a:19",
+      "Moed Katan 3a:20",
+      "Moed Katan 3a:11",
+      "Moed Katan 3a:12",
+      "Moed Katan 3a:13",
+      "Moed Katan 3b:4",
+      "Moed Katan 3b:5",
+      "Moed Katan 3b:10",
+      "Moed Katan 3b:11",
+      "Ritva on Moed Katan 3b:2:1",
+      "Ritva on Moed Katan 3b:1:1",
+      "Rashi on Moed Katan 3b:2:1",
+      "Rashi on Moed Katan 3b:2:2",
+      "Steinsaltz on Moed Katan 3b:2",
+      "Steinsaltz comment #1 on Moed Katan 3b:1",
+      "Steinsaltz comment #2 on Moed Katan 3b:1",
+      "Steinsaltz comment #3 on Moed Katan 3b:1",
+      "Moed Katan 3b:8",
+      "Moed Katan 3b:7",
+      "Moed Katan 3b:9",
+      "Moed Katan 3b:6"
+    ],
+    "generatedAt": "2026-11-13T17:44:40.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר אומר חרישה</strong> - מהא ליכא למימר תסתיים דר' אלעזר לעיל דאמר אינו לוקה דאיכא למימר דרבי אלעזר לא שמיע ליה הא דאמר לקמן דהתירו תוספת שביעית הלכך הוה אמר הכי דליכא לפרש מילתא דרב דימי אלא בחרישה אבל לדידיה אסור ולוקה דלא ס\"ל אי נמי דכיון דאיתא בהדיא כי הך דלעיל במילי דחרישה אינו צריך לומר תסתיים דאין דרך הש\"ס לומר תסתיים בדבר המפורש בהדיא כל כך:"
+  },
+  "Tosafot on Moed Katan 3b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:52:43.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול ילקה על תוספת של ראש השנה</strong> - ואם תאמר מלקות מנלן והלא לא כתיב בתוספת לאו אלא עשה גרידא בחריש ובקציר תשבות איכא למימר דמבחריש ובקציר מפקינן דצריך תוספת כלומר שהשביעית מתחלת משנה הששית וכל דין שביעית יהיה לששית דהכי קאמר רחמנא דשביעית מתחלת קודם שנת שביעית וא\"כ הוא כשביעית:"
+  },
+  "Tosafot on Moed Katan 3b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T17:55:49.745Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד עצרת</strong> - דהיינו יותר דבכל מקום בית שמאי לחומרא ובית הלל לקולא לבד מאותן דברים דקחשיב בעדיות <span class=\"parenthesized\">(פ\"ה)</span>:"
+  },
+  "Tosafot on Moed Katan 3b:5:2": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 3b:5:1"
+    ],
+    "generatedAt": "2026-11-13T17:56:32.232Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 3b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקרובים דברי אלו</strong> - קא משמע לן דאין ב\"ש מחמירין אלא מעט על ב\"ה ולאשמועינן מילתייהו דבית שמאי פירש הכי:"
+  }
+}
