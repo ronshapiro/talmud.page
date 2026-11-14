@@ -1,4 +1,39 @@
 {
+  "Rashi on Beitzah 2a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 156b:17:1",
+      "Rashi on Shabbat 156b:18:1",
+      "Rashi on Shabbat 156b:7:1",
+      "Rashi on Shabbat 156b:7:2",
+      "Rashi on Beitzah 2a:10:2"
+    ],
+    "generatedAt": "2026-11-13T10:26:13.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחתכין דלועין</strong> - תלושין לפני הבהמה ולא אמרינן טרחא דלאו צורך הוא:"
+  },
+  "Rashi on Beitzah 2a:10:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:10:1",
+      "Rashi on Beitzah 2a:10:2",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:8:1",
+      "Rashi on Beitzah 2a:8:2",
+      "Rashi on Beitzah 2a:8:3",
+      "Rashi on Beitzah 2a:8:4",
+      "Beitzah 2a:10"
+    ],
+    "generatedAt": "2026-11-13T10:28:43.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת הנבילה לפני הכלבים</strong> - ואע\"פ שנתנבלה בשבת דבין השמשות לא היתה עומדת לאכילת כלבים אפילו הכי שרי דלית לן מוקצה בשבת הלכך מגביהין מעל השלחן דמיירי בשבת מוקים לבית הלל דנימרו כר' שמעון כי היכי דלא תקשי הלכתא אהלכתא דקיימא לן הלכה כסתם משנה וקיימא הלכה כבית הלל אבל גבי יום טוב דאשכחן דסתם רבי כרבי יהודה:"
+  },
   "Rashi on Beitzah 2a:1:1": {
     "dependsOn": [
       "Rashi on Beitzah 2a:1:1",
@@ -36,5 +71,268 @@
       "Rashi on Beitzah 2a:1:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בככותבת</strong> - תמרה:"
+  },
+  "Rashi on Beitzah 2a:2:1": {
+    "dependsOn": [
+      "Sefer HeArukh, Letter Daled 235",
+      "Rashi on Beitzah 2a:2:2",
+      "Rashi on Beitzah 2a:2:3",
+      "Rashi on Shabbat 20b:5:1",
+      "Rashi on Shabbat 20b:5:2",
+      "Rashi on Shabbat 20b:5:3"
+    ],
+    "generatedAt": "2026-11-13T09:55:57.776Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יחפור בדקר</strong> - פיל\"א בלע\"ז:"
+  },
+  "Rashi on Beitzah 2a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T09:56:53.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומודים שאם שחט כו'</strong> - כדמפרש טעמא בגמ' כשיש לו דקר נעוץ מבעוד יום:"
+  },
+  "Rashi on Beitzah 2a:2:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:2:1",
+      "Rashi on Beitzah 2a:2:2",
+      "Beitzah 8a:3"
+    ],
+    "generatedAt": "2026-11-13T09:58:06.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאפר כירה מוכן הוא</strong> - בגמרא בעי מאי קאמר:"
+  },
+  "Rashi on Beitzah 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T09:58:45.956Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העומדת לאכילה</strong> - שאינה מוקצת:"
+  },
+  "Rashi on Beitzah 2a:3:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:1:2",
+      "Rashi on Beitzah 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-11-13T10:00:47.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלא דאפרת</strong> - אוכל שנפרד וחבירו במנחות חבורי אוכלין כמאן דמפרתי דמו וכן בשחיטת חולין <span class=\"parenthesized\">(דף עג.)</span>:"
+  },
+  "Rashi on Beitzah 2a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:02:43.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לית להו מוקצה</strong> - דדלמא כר' שמעון סבירא להו דאמר בפרק [כירה] <span class=\"parenthesized\">(שבת דף מד.)</span> מותר השמן שבנר ושבקערה אסור <span class=\"parenthesized\">(דברי רבי יהודה)</span> ור\"ש מתיר:"
+  },
+  "Rashi on Beitzah 2a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:10:07.605Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא סלקא דעתין</strong> - להכי פרכינן מאי טעמייהו דבית שמאי דקא סלקא דעתין דאפי' לר' שמעון דשרי במוקצה בנולד אסיר דאילו במוקצה סבירא ליה לא מקצי איניש מדעתיה מידי דחזי ליה אבל נולד לא הוה ידע דנהוי דעתיה עלויה:"
+  },
+  "Rashi on Beitzah 2a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:14:24.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי אמר רב נחמן הכי</strong> - דבית הלל כר' יהודה:"
+  },
+  "Rashi on Beitzah 2a:8:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:8:1",
+      "Rashi on Beitzah 2a:8:2",
+      "Rashi on Beitzah 2a:8:3",
+      "Rashi on Beitzah 2a:8:4"
+    ],
+    "generatedAt": "2026-11-13T10:15:13.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגביהין</strong> - בשבת מעל השלחן עצמות שאינן ראוין לאכילה וקליפי אגוזים ולא חיישינן למוקצה:"
+  },
+  "Rashi on Beitzah 2a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:15:48.065Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובית הלל אומרים</strong> - אין מטלטלין אותן בידים שמוקצה הן:"
+  },
+  "Rashi on Beitzah 2a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:16:33.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מסלק הטבלא</strong> - שיש תורת כלי עליה ומנערה:"
+  },
+  "Rashi on Beitzah 2a:9:1": {
+    "dependsOn": [
+      "Beitzah 2a:9",
+      "Steinsaltz on Beitzah 2a:9"
+    ],
+    "generatedAt": "2026-11-13T10:24:31.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב נחמן אנו אין לנו</strong> - בשיטת משנה זו לפי שמוחלפת שיטתה אלא כך שמעתי מרבותינו דבית שמאי כרבי יהודה ומחמרי ובית הלל כרבי שמעון:"
+  },
+  "Tosafot on Beitzah 2a:10:1": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:8:1",
+      "Tosafot on Beitzah 2a:8:2",
+      "Shabbat 156b:7",
+      "Rashi on Shabbat 156b:7:1",
+      "Tosafot on Beitzah 2a:10:2",
+      "Tosafot on Beitzah 2a:3:1",
+      "Tosafot on Beitzah 2a:5:1",
+      "Tosafot on Beitzah 2a:6:1",
+      "Tosafot on Berakhot 2a:13:1"
+    ],
+    "generatedAt": "2026-11-13T10:30:56.319Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן מחתכין את הדלועין לפני הבהמה ואת כו'</strong> - וא\"ת היכי דמי אי בדלועין שהיו מחוברין בין השמשות בהא ודאי מודה ר' שמעון גזרה שמא יעלה ויתלוש וי\"ל דמיירי בתלושין וסלקא דעתך דאסור דמשוה להו אוכלין לפי שהן קשין והחתוך מרכך אותם:"
+  },
+  "Tosafot on Beitzah 2a:10:2": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:10:1"
+    ],
+    "generatedAt": "2026-11-13T10:31:52.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואת הנבלה כו'</strong> - אנו צריכין לפרש שנתנבלה בשבת ומכל מקום תני להו בהדי הדדי דאע\"ג דבדלועין לא הוי טעמא משום מוקצה כמו בנבלה משום דבשניהם שייך לשון מחתכין:"
+  },
+  "Tosafot on Beitzah 2a:1:1": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T09:51:25.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביצה שנולדה בי\"ט בש\"א תאכל ובה\"א לא תאכל</strong> - וא\"ת אמאי לא תנא אוסרין ומתירין וכי תימא אוסרין משמע שאסור לעולם זה אינו דאמרינן לקמן <span class=\"parenthesized\">(ביצה דף ו.)</span> אפרוח שנולד בי\"ט אסור והיינו ביומו ועוד דאמרינן <span class=\"parenthesized\">(לקמן ביצה ל:)</span> מותר שמן שבנר רבי יהודה אוסר והיינו דוקא באותו יום ויש לומר דאי הוה תני אוסרין ומתירין הייתי אומר שמה שמתירין הביצה היינו לטלטל אבל באכילה אסורה והכי אמרינן <span class=\"parenthesized\">(לקמן ביצה דף כד.)</span> גבי נכרי אחד שהביא דגים לפני רבן גמליאל ואמר מותרים הם אלא שאין רצוני לקבל הימנו ומסיק מאי מותרים לטלטל אבל באכילה אסורים ואם תאמר לבית הלל דאמרי לא תאכל אבל לטלטל שרי והא קי\"ל <span class=\"parenthesized\">(לקמן ביצה ד.)</span> דאף לטלטל אסור לכן פירש ר\"י דנקט כי האי לישנא דסתם ביצה לאכילה קיימא עוד יש לומר דנקט לבית שמאי תאכל משום דמשמע אכילה וטלטול דאין אכילה בלא טלטול ובית הלל אסרי אף בטלטול אלא אגב דנקטי ב\"ש תאכל נקטי אינהו לא תאכל:"
+  },
+  "Tosafot on Beitzah 2a:1:2": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:1:1",
+      "Tosafot on Beitzah 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T09:53:26.093Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאור בכזית</strong> - לא שייך הכא מידי אלא מייתי כאן תלת מילי גבי יום טוב דבית הלל לחומרא וב\"ש לקולא:"
+  },
+  "Tosafot on Beitzah 2a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:01:38.327Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכלא דאפרת הוא</strong> - פירוש אוכל הנפרד מן האוכל הוא דהביצה שנולדה נפרדה היא מן התרנגולת ואי בעי שחיט לה ואכיל כל שבגוה:"
+  },
+  "Tosafot on Beitzah 2a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:05:33.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא בית שמאי לית להו מוקצה</strong> - תימה במתני' קאמר בהדיא דבית שמאי אית להו מוקצה דקתני <span class=\"parenthesized\">(לקמן ביצה דף י.)</span> לא יטול אלא אם כן נענע מבעוד יום ויש לומר דמוקצה דבעלי חיים חמיר טפי ומוקצה ביותר והתם הוא דאית ליה מוקצה כדחזינא ר\"ש דאע\"ג דלית ליה מוקצה אית ליה <span class=\"parenthesized\">(שבת דף מה.)</span> גבי גרוגרת וצמוקים דאתקצאי טפי:"
+  },
+  "Tosafot on Beitzah 2a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:13:18.704Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא סלקא דעתין דאפי' מאן דשרי מוקצה בנולד אסיר</strong> - דלא מקצי איניש מאי דחזי ליה אבל בנולד לא הוה ידע מאתמול ותימה דהא רבי שמעון דשרי במוקצה שרי בנולד כדאמרינן בשבת <span class=\"parenthesized\">(דף כט.)</span> רבי יהודה אומר אין מסיקין בשברי כלים ור\"ש מתיר אע\"ג דהוי נולד וי\"ל דלא דמי דהאי נולד דהכא הוי נולד טפי שמתחילה לא היה בעולם אבל התם הכלי היה בעולם רק שנשבר וכן משמע נמי בעירובין <span class=\"parenthesized\">(דף מה: ושם)</span> מיא בעיבא מיבלע בליעי ופריך כל שכן דהוי נולד ואסור ומאי פריך ודלמא ההוא כר' שמעון דהא רבי שמעון מתיר בנולד אלא ודאי היינו טעמא כדפרישית דכיון דבליעי לא היו כלל בעולם ואפי' ר' שמעון מודה דהאי נולד אסור:"
+  },
+  "Tosafot on Beitzah 2a:8:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2a:8:1",
+      "Rashi on Beitzah 2a:8:2",
+      "Mishnah Shabbat 21:3",
+      "Tosafot on Shabbat 143a:3:1"
+    ],
+    "generatedAt": "2026-11-13T10:19:12.107Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגביהין מעל השלחן עצמות וקליפין</strong> - פ\"ה אע\"ג דאין ראוין לא למאכל אדם ולא למאכל בהמה ולא נהירא דהא איכא בסיפא ושער של אפונין ושער של עדשים מפני שהן ראוין למאכל בהמה לכך נ\"ל שהם ראוים למאכל בהמה כגון עצמות רכים וקליפי תפוחים ובית הלל סברי כיון דלא חזי למאכל אדם לא:"
+  },
+  "Tosafot on Beitzah 2a:8:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Beitzah 2a:7",
+      "Tosafot on Beitzah 2a:8:2",
+      "Rashba on Beitzah 2a:4",
+      "Rashba on Beitzah 2a:5",
+      "Tosafot on Beitzah 2a:8:1"
+    ],
+    "generatedAt": "2026-11-13T10:23:17.804Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובית הלל אומרים מסלק את הטבלא ומנערה</strong> - תימה והלא היא בסיס לדבר האסור דהא לא שכח הואיל והניחם שם מדעתו ויש לומר דלפירוש רבינו תם ניחא דפירש במסכת שבת דלא הוי בסיס לדבר האסור אלא כשדעתו להניחם שם כל היום אי נמי כיון דהוו שם אוכלין הוה ליה בסיס לדבר האסור ולדבר המותר ושרי כדמוכח פרק נוטל <span class=\"parenthesized\">(שבת דף קמב.)</span> ו דאין זה מניח בכוונה דהא אינו חושש היכן יפלו:"
   }
 }

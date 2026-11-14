@@ -1,0 +1,367 @@
+{
+  "Rashi on Beitzah 2b:10:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:10:1",
+      "Rashi on Beitzah 2b:10:2",
+      "Rashi on Beitzah 2b:10:3",
+      "Rashi on Beitzah 2b:10:4"
+    ],
+    "generatedAt": "2026-11-13T10:57:41.342Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבה</strong> - דאסר בהכנה שאינה בידים ממש:"
+  },
+  "Rashi on Beitzah 2b:10:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:10:1",
+      "Rashi on Beitzah 2b:10:3",
+      "Rashi on Beitzah 2b:10:4",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:2:1"
+    ],
+    "generatedAt": "2026-11-13T10:59:11.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטעמיה דאמר רבה</strong> - בפסחים <span class=\"parenthesized\">(דף מז:)</span> ויליף מהכא דמוקצה דאורייתא:"
+  },
+  "Rashi on Beitzah 2b:10:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:10:1",
+      "Rashi on Beitzah 2b:10:2",
+      "Rashi on Beitzah 2b:10:4"
+    ],
+    "generatedAt": "2026-11-13T11:00:33.421Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכינו</strong> - והזמינו כגון מכאן אני אוכל למחר דאי משום הכנה בידים ולומר שיאפו ויבשלו מבעוד יום בהדיא כתיב את אשר תאפו אפו אלא הזמנה בפה קאמר וכתיב ביום הששי וסתם ששי חול הוא ואחשבה רחמנא לסעודת שבת שיזמיננה מבעוד יום ובחול:"
+  },
+  "Rashi on Beitzah 2b:10:4": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:10:3"
+    ],
+    "generatedAt": "2026-11-13T11:03:46.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין יום טוב מכין לשבת</strong> - ויום טוב נמי קרוי שבת ובעיא סעודתו הזמנה והזמנתה בחול אבל סעודת חול לא חשיבא ולא שייכא בה הזמנה הלכך באחד בשבת בעלמא לית לן למיסר ביצה שנולדה ביה משום דאתכן בידי שמים דסעודת חול לא אצרכה רחמנא זמון מבעוד יום דלא שייך בה מוקצה:"
+  },
+  "Rashi on Beitzah 2b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:07:33.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יום טוב בעלמא</strong> - שאינו אחר שבת:"
+  },
+  "Rashi on Beitzah 2b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:08:04.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבת דעלמא</strong> - שאינו אחר יום טוב:"
+  },
+  "Rashi on Beitzah 2b:11:3": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:11:1",
+      "Rashi on Beitzah 2b:11:2",
+      "Rashi on Beitzah 2b:11:3"
+    ],
+    "generatedAt": "2026-11-13T11:08:58.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשתרי</strong> - לגמוע ביצה חיה שנולדה בו:"
+  },
+  "Rashi on Beitzah 2b:12:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:11:1",
+      "Rashi on Beitzah 2b:11:2",
+      "Rashi on Beitzah 2b:11:3",
+      "Rashi on Beitzah 2b:12:2",
+      "Rashi on Beitzah 2b:12:3",
+      "Rashi on Beitzah 2b:12:1",
+      "Chokhmat Shlomo on Beitzah 2b:4",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:2:1",
+      "Rashi on Beitzah 2a:3:1",
+      "Rashi on Beitzah 2a:4:1",
+      "Rashi on Beitzah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-13T11:10:35.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי גזרינן</strong> - ומי אחמור רבנן בביצה למגזר היתרא משום איסורא:"
+  },
+  "Rashi on Beitzah 2b:12:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:12:1",
+      "Rashi on Beitzah 2b:12:3"
+    ],
+    "generatedAt": "2026-11-13T11:13:04.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[והתניא וכו']</strong> - וא\"ת הויא לה גזרה לגזרה דהנך דמתילדין ביומיהם נמי אינן אסורות אלא משום גזרה דיום טוב אחר השבת תריץ הא מצי לאוקומי ביום טוב אחר השבת דהשתא איכא למיגזר אטו דמתילדין ביומיהם ואשמועינן הך מתני' דאפי' בי\"ט אחר השבת מותרות הואיל ואינם נולדות ומשום הנך דמתילדן ליכא למגזר דמילתא דלא שכיחא הוא בשם רבינו והא דאמרינן בכולי הש\"ס שאין גוזרין גזרה לגזרה מהאי קרא נפקא ושמרתם את משמרתי עשו משמרת כלומר גזרה למשמרתי לתורתי ולא משמרת למשמרת שלא יעשו גזרה לגזרה:"
+  },
+  "Rashi on Beitzah 2b:12:3": {
+    "dependsOn": [
+      "Beitzah 2b:12"
+    ],
+    "generatedAt": "2026-11-13T11:14:31.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין י\"ט מכין לחברו</strong> - לא גרסינן במלתיה דרבה דהא קרא קא דריש ושני ימים רצופים בתורה לא אשכחן דמספיקא עבדינן להו:"
+  },
+  "Rashi on Beitzah 2b:14:1": {
+    "dependsOn": [
+      "Beitzah 2b:14"
+    ],
+    "generatedAt": "2026-11-13T11:18:28.380Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב יוסף אמר</strong> - טעמא דביצה בתרנגולת העומדת לאכילה וכדאוקימנא ובית הלל דאסרי משום פירות הנושרין מן האילן בשבת וקא סלקא דעתך השתא גזרה היא משום פירות הנושרין דלא נכלינהו דהא נמי לפירות הנושרין מן האילן דמיא שאף זו פרי הנושר:"
+  },
+  "Rashi on Beitzah 2b:1:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:1:2"
+    ],
+    "generatedAt": "2026-11-13T10:32:52.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתנן אין מבקעין עצים</strong> - בי\"ט לא מן הקורות הסדורות זו על גב זו בקרקע ועומדות לבנין:"
+  },
+  "Rashi on Beitzah 2b:1:2": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:1:1",
+      "Beitzah 2b:1",
+      "Rashi on Beitzah 2a:10:1",
+      "Rashi on Beitzah 2a:10:2",
+      "Tosafot on Beitzah 2a:5:1",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:2:1",
+      "Rashi on Beitzah 2a:3:1",
+      "Rashi on Beitzah 2a:4:1",
+      "Rashi on Beitzah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-13T10:35:56.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מן הקורה שנשברה בי\"ט</strong> - ואע\"פ שעומדת מעכשיו להיסק הואיל ובין השמשות לאו להכי קיימא כיון דאתקצאי לבין השמשות אתקצאי לכולי יומא אלמא אית לן מוקצה ביום טוב הלכך מוקי רב נחמן למתני' דאיירי ביום טוב ובית הלל כר' יהודה ובעומדת לגדל ביצים ומשום מוקצה:"
+  },
+  "Rashi on Beitzah 2b:2:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:1:1",
+      "Rashi on Beitzah 2b:1:2",
+      "Rashi on Beitzah 2a:1:1",
+      "Rashi on Beitzah 2a:2:1",
+      "Rashi on Beitzah 2a:3:1",
+      "Rashi on Beitzah 2a:4:1",
+      "Rashi on Beitzah 2a:5:1"
+    ],
+    "generatedAt": "2026-11-13T10:50:31.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן סתם לן למתני' ר'</strong> - הוא סדר המשנה וכשראה דברי חכם וישרו בעיניו שנאן סתם ולא הזכיר שם אומרו עליהן כדי שלא יהו שנויה מפי יחיד ונראין כאילו נשנו מפי המרובים ויעשו כמותן:"
+  },
+  "Rashi on Beitzah 2b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:51:06.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא אתי לזלזולי ביה</strong> - אי מקילין בה חדא קולא לא אתי לאקולי בה טפי:"
+  },
+  "Rashi on Beitzah 2b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:52:20.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהתירא עדיף ליה</strong> - טוב לו להשמיענו כח דברי המתיר שהוא סומך על שמועתו ואינו ירא להתיר אבל כח האוסרין אינה ראיה שהכל יכולין להחמיר ואפילו בדבר המותר:"
+  },
+  "Rashi on Beitzah 2b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:56:11.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשום הכנה</strong> - דאסרי לה ב\"ה כדמפרש ואזיל:"
+  },
+  "Rashi on Beitzah 2b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:56:54.433Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Beitzah 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכל ביצה דמתילדא האידנא מאתמול גמרה לה</strong> - ואף על גב דבידי שמים הוא אסור דבעינן כל סעודות שבת וסעודות יום טוב שיהו מזומנות ומוכנות מבעוד יום של חול:"
+  },
+  "Tosafot on Beitzah 2b:10:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:10:1",
+      "Rashi on Beitzah 2b:10:2",
+      "Rashi on Beitzah 2b:10:3",
+      "Rashi on Beitzah 2b:10:4",
+      "Maharsha: Chidushei Halachot on Beitzah 2b:2",
+      "Maharshal: Chokhmat Shlomo on Beitzah 2b:7",
+      "Meir Lublin: Maharam on Beitzah 2b:7"
+    ],
+    "generatedAt": "2026-11-13T11:06:57.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיה ביום הששי וגו'</strong> - פרש\"י וע\"כ בא לאשמועינן דאפילו הכנה בידי שמים ביצה אסורה דאי משום הכנה בידי אדם כלומר שיאפו ויבשלו מבעוד יום הא בהדיא כתיב את אשר תאפו אפו אלא הזמנה בפה קאמר ואין י\"ט מכין לשבת כו' ואין שבת מכין לי\"ט מכ\"ש דכיון דאין י\"ט מכין לשבת כ\"ש דאין שבת מכין לי\"ט והקשה רש\"י אם כן ביצה שנולדה באחד בשבת או לאחר י\"ט תתסר מכ\"ש דשבת וי\"ט לא מכינין אהדדי כ\"ש דלא מכינין אחול ותירץ דלגבי סעודת חול לא צריך הכנה דאין סעודת חול חשובה אך תימה הואיל והכנה דאורייתא היאך אופין ומבשלין מי\"ט לשבת וכ\"ת ע\"י ערובי תבשילין וכי אתי תקנתא דרבנן וליעקר הכנה דאורייתא ונראה ליישב דרבה גופיה אזיל לטעמיה דאית ליה הואיל ואי מקלעי אורחין חזי ליה השתא נמי חזי ליה ואפילו לדידן ניחא דכל דבר אפוי ומבושל לא שייך ביה הכנה שאינו מחוסר רק תקון בעלמא דמעיקרא הוה חזי ליה רק גבי ביצה שהוא דבר חדש שלא היתה בעולם ולא היתה ראויה כלל מעיקרא <span class=\"parenthesized\">(ולאפות ולבשל תקוני מלתא בעלמא)</span> תימה דכאן משמע שהמן לא היה יורד בי\"ט כדפי' רש\"י הששי הראוי להכנה וזהו בחול והא אמר ויברך ויקדש ברכו במן וקדשו במן שבשבת לא היה יורד מן אבל בי\"ט היה יורד וי\"ל דמדרשים חלוקין כדאיתא במדרש <span class=\"parenthesized\">(מכילתא ע' בשלח)</span> שבת לא יהיה <span class=\"parenthesized\">(שמות ט״ז:כ״ו)</span> לרבות יום הכפורים לא יהיה בו לרבות י\"ט שלא היה יורד בהן מן ועי\"ל דאפי' היה יורד בי\"ט מ\"מ בי\"ט שחל להיות בע\"ש לא היה יורד מדכתיב קרא בו ביום הששי ולא כתיב ששי משמע הששי המיוחד שהוא ראוי להכנה ולא בששי שהוא יו\"ט:"
+  },
+  "Tosafot on Beitzah 2b:12:1": {
+    "dependsOn": [
+      "Beitzah 2b:12"
+    ],
+    "generatedAt": "2026-11-13T11:15:32.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגזר משום הנך דמתילדן ביומיהן</strong> - ואין זה גזרה לגזרה דמותר לאוכלן בי\"ט משמע אפילו ביום טוב דלאחר השבת:"
+  },
+  "Tosafot on Beitzah 2b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:17:09.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלתא דלא שכיחא היא</strong> - וקשה דלמא אם לא שחטה היתה נולדת היום ואם כן מאתמול גמרה לה ותאסר בלא גזרה מספק וי\"ל דמאחר דלא נולדה ע\"י כך לא חשיב גמר ובירושלמי פליג בהא:"
+  },
+  "Tosafot on Beitzah 2b:1:1": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:1:1",
+      "Tosafot on Beitzah 2a:2:1",
+      "Rashi on Beitzah 2a:1:1",
+      "Bava Batra 122b:12",
+      "Tosafot on Bava Batra 122b:12:1",
+      "Rashbam on Bava Batra 122b:13:1",
+      "Tosafot on Berakhot 2a:1:1",
+      "Rashi on Beitzah 2b:1:2"
+    ],
+    "generatedAt": "2026-11-13T10:41:40.207Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבי שבת דסתם לן תנא כרבי שמעון</strong> - ותימה והא הוי סתם ואח\"כ מחלוקת דהא פליג ר' יהודה במתניתין ואמר אם לא נתנבלה בערב שבת אסור ואין הלכה כסתם דכי האי גונא חשיב סתם ואח\"כ מחלוקת בפרק יש נוחלין <span class=\"parenthesized\">(ב\"ב דף קכב: ושם)</span> גבי מלתיה דרבי יוחנן בן ברוקה דפריך סתם ואחר כך מחלוקת היא וי\"ל דהתם סמיך אועוד מאי אלא דפריך בתר הכי וכן פירש שם <span class=\"rashi-quotation\">בקונטרס</span> אבל לעולם מהני הסתם להיות רבים והוי רבים רבי שמעון והוי יחיד רבי יהודה והלכתא כרבים כת\"ק דהיינו רבי שמעון וא\"ת גבי שבת נמי סתם לן כרבי יהודה כי האי דתנן <span class=\"parenthesized\">(שבת דף מד.)</span> מטלטלין נר חדש אבל לא ישן ור' שמעון מתיר והואיל ואוסר מוקצה מחמת מיאוס כל שכן מחמת איסור דהכי אמרינן התם וי\"ל דהאי סתמא עדיפא הואיל ונשנית משנה בסתם לבסוף פרק מי שהחשיך <span class=\"parenthesized\">(שבת דף קנו: ושם)</span>:"
+  },
+  "Tosafot on Beitzah 2b:1:2": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2b:1:1",
+      "Tosafot on Beitzah 2b:1:2",
+      "Tosafot on Beitzah 2b:1:3",
+      "Translation on Tosafot on Beitzah 2b:1:2",
+      "Beitzah 2b:1",
+      "Chidushei Halachot on Beitzah 2b:1:1",
+      "Chidushei Halachot on Beitzah 2b:1:2",
+      "Chidushei Halachot on Beitzah 2b:1:3",
+      "Rashi on Beitzah 2b:1:1",
+      "Rashi on Beitzah 2b:1:2",
+      "Steinsaltz comment #1 on Beitzah 2b:1",
+      "Beitzah 2a:7",
+      "Beitzah 2a:8",
+      "Beitzah 2a:9",
+      "Tosafot on Shabbat 143a:6:1"
+    ],
+    "generatedAt": "2026-11-13T10:45:35.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוקים לב\"ה כר\"ש</strong> - וקשה דמאי אולמיה דהאי סתמא מהאי סתמא וי\"ל דבעדיות לא תני לה מקולי ב\"ש וחומרי ב\"ה:"
+  },
+  "Tosafot on Beitzah 2b:1:3": {
+    "dependsOn": [
+      "Tosafot on Beitzah 2a:1:1",
+      "Tosafot on Beitzah 2b:1:1",
+      "Tosafot on Beitzah 2b:1:2"
+    ],
+    "generatedAt": "2026-11-13T10:48:35.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מבקעין עצים לא מן הקורות וכו'</strong> - לא מייתי מרישא דאין מבקעין קורות דהא מיירי בסואר של קורות דהוי מוקצה מחמת חסרון כיס ובהא כ\"ע מודו אפי' ר' שמעון אלא מייתי מסיפא דלא מן הקורה שנשתברה וא\"ת והא ר' שמעון אינו מתיר אלא ביושב ומצפה <span class=\"parenthesized\">(לקמן ביצה ל:)</span> וי\"ל דה\"נ הואיל ונשתברה בשבת מסתמא היתה רעועה מאתמול והוי כיושב ומצפה מתי תשבר קורתו ותהיה ראויה להסקה:"
+  },
+  "Tosafot on Beitzah 2b:6:1": {
+    "dependsOn": [
+      "Rashi on Beitzah 2b:6:1",
+      "Tosafot on Beitzah 2b:6:2",
+      "Tosafot on Beitzah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T10:54:03.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכ\"ת כח דהתירא עדיף</strong> - <span class=\"rashi-quotation\">פי' הקונט'</span> לכך כח דהתירא עדיף כשאדם מתיר סומך על שמועתו וצריך להביא ראיה לדבריו אבל איסורא אדם יכול להחמיר עליו בלא טעם:"
+  },
+  "Tosafot on Beitzah 2b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T10:55:36.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Beitzah 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפלוג בתרוייהו</strong> - תימה ובכל מקום דקאמר כח דהיתרא עדיף לפרוך הכי וי\"ל דהכי פריך ונפלוג בתרוייהו שלא יאריך משום כך ויאמר היא וביצתה אבל בעלמא לא שייך:"
+  }
+}
