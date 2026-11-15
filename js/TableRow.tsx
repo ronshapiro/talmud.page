@@ -49,15 +49,56 @@ function searchTermWrapper(color: string): Wrapper {
   };
 }
 
-function useSearchableText(text: string): string {
+function isElementActiveSelectionTarget(
+  element: HTMLElement | null | undefined,
+): boolean {
+  if (!element || typeof document === "undefined" || !document.getSelection) {
+    return false;
+  }
+  const selection = document.getSelection();
+  if (!selection || selection.type !== "Range") {
+    return false;
+  }
+  const {anchorNode, focusNode} = selection;
+  if (anchorNode && (
+    element === anchorNode
+    || element.contains(anchorNode)
+    || anchorNode.contains(element)
+  )) {
+    return true;
+  }
+  if (focusNode && (
+    element === focusNode
+    || element.contains(focusNode)
+    || focusNode.contains(element)
+  )) {
+    return true;
+  }
+  return false;
+}
+
+function useSearchableText(
+  text: string,
+  elementRef?: {current: HTMLElement | null | undefined},
+): string {
   const context = useConfiguration();
   const regexes = context.searchQueryRegex ? Object.entries(context.searchQueryRegex) : [];
+  const temporarySearchColor = (
+    context.temporarySearchColor
+    || (window as any).GET_TEMPORARY_SEARCH_COLOR?.()
+  );
   return useMemo(() => {
+    const isSelectedElement = isElementActiveSelectionTarget(elementRef?.current);
     for (const [color, regex] of regexes) {
-      if (regex) text = htmlWrapMatches(text, regex as string, searchTermWrapper(color));
+      if (regex) {
+        if (color === temporarySearchColor && isSelectedElement) {
+          continue;
+        }
+        text = htmlWrapMatches(text, regex as string, searchTermWrapper(color));
+      }
     }
     return text;
-  }, [text, regexes]);
+  }, [text, regexes, temporarySearchColor]);
 }
 
 interface CellTextProps {
@@ -88,7 +129,7 @@ export function CellText({
   });
   classes = classes || [];
 
-  const sanitizedText = useSearchableText(useSanitizedText(text));
+  const sanitizedText = useSearchableText(useSanitizedText(text), ref);
 
   /* eslint-disable react/no-danger */
   const cellText = (
@@ -171,6 +212,7 @@ function BaseCell({
   doubleClickListener,
   doubleClickHintSurfaceType,
 }: BaseCellProps): React.ReactElement | null {
+  const ref = useHtmlRef<HTMLDivElement>();
   const {
     visualIndicator,
     doubleClickListener: effectiveDoubleClickListener,
@@ -179,7 +221,10 @@ function BaseCell({
 
   const cellClasses = isVisualHintActive ? classes.concat("has-double-click-hint") : classes;
   const className = ["table-cell"].concat(cellClasses).join(" ");
-  const sanitizedText = useSearchableText(useSanitizedText(typeof text === "string" ? text : ""));
+  const sanitizedText = useSearchableText(
+    useSanitizedText(typeof text === "string" ? text : ""),
+    ref,
+  );
 
   const childrenProp = (typeof text === "string")
     ? {dangerouslySetInnerHTML: {__html: sanitizedText}}
@@ -196,8 +241,6 @@ function BaseCell({
     }
     : childrenProp;
   /* eslint-enable react/jsx-props-no-spreading */
-
-  const ref = useHtmlRef<HTMLDivElement>();
 
   useEffect(() => {
     $(ref.current!).betterDoubleClick(effectiveDoubleClickListener);
