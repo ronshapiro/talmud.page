@@ -131,3 +131,34 @@ test("error message ids and creation", () => {
     expect(errors[2].id).not.toBe(errors[5].id);
   });
 });
+
+test("retries immediately when window fires online event", async () => {
+  jest.useFakeTimers();
+  let attemptCount = 0;
+  const testFactory = new RetryMethodFactory(
+    noOpErrorsDelegate,
+    () => {},
+    () => {},
+  );
+
+  const retryingFunction = testFactory.retryingMethod({
+    retryingCall: () => {
+      attemptCount++;
+      return retryUnless(attemptCount === 2);
+    },
+  });
+
+  const promise = retryingFunction();
+
+  await Promise.resolve();
+  expect(attemptCount).toBe(1);
+
+  window.dispatchEvent(new Event("online"));
+
+  await Promise.resolve();
+  expect(attemptCount).toBe(2);
+
+  await promise;
+  testFactory.destroy();
+  jest.useRealTimers();
+});

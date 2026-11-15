@@ -4,6 +4,13 @@ import {flatten} from "../sefariaTextType";
 import {useHtmlRef} from "./hooks";
 import Modal from "./Modal";
 import {extractErrorMessage, postWithRetry} from "./post";
+import {
+  initializeOfflineRsiRetries,
+  markDecisionInFlight,
+  removePendingOfflineRsiDecision,
+  savePendingOfflineRsiDecision,
+  unmarkDecisionInFlight,
+} from "./offlineRsiEdits";
 import {getRsiReviewKey} from "./rsiReviewKey";
 import {
   isSiteLanguageHebrew,
@@ -32,7 +39,7 @@ export function resetSnackbarDismissTimerForTesting(): void {
   clearAutoDismissTimerAndIncrement();
 }
 
-function showSnackbarWithAutoDismiss(
+export function showSnackbarWithAutoDismiss(
   snackbar: Snackbar,
   updateAction: (dismissButton: Button) => void,
 ): void {
@@ -96,8 +103,23 @@ async function postDecision(
     },
   };
 
-  const initialMessage = `Submitting ${decision} for ${ref}…`;
+  initializeOfflineRsiRetries();
+
+  const initialMessage = navigator.onLine === false
+    ? `Submitting ${decision} for ${ref}… (saved offline, will retry when back online)`
+    : `Submitting ${decision} for ${ref}…`;
   snackbars.reportedIssueSent.show(initialMessage, [dismissButton]);
+
+  const pendingDecision = savePendingOfflineRsiDecision({
+    page,
+    ref,
+    decision,
+    reviewerIdentity,
+    key: getRsiReviewKey(),
+    knownPrNumber,
+    ...extra,
+  });
+  markDecisionInFlight(pendingDecision.id);
 
   try {
     const response = await postWithRetry("/api/rsi-review-decision", {
@@ -114,6 +136,9 @@ async function postDecision(
       },
     }) as DecisionResponse;
 
+    removePendingOfflineRsiDecision(pendingDecision.id);
+    unmarkDecisionInFlight(pendingDecision.id);
+
     if (isDismissed || activeSnackbarToken !== expectedToken) {
       return;
     }
@@ -126,6 +151,11 @@ async function postDecision(
       snackbars.reportedIssueSent.update(`${label} ${ref}${link}`, [dismissButtonForSuccess]);
     });
   } catch (error) {
+    unmarkDecisionInFlight(pendingDecision.id);
+    const errorObject = error as Record<string, any>;
+    if (errorObject?.status === 400 || errorObject?.status === 403) {
+      removePendingOfflineRsiDecision(pendingDecision.id);
+    }
     console.error(error);
     if (!isDismissed && activeSnackbarToken === expectedToken) {
       const errorText = extractErrorMessage(error);
