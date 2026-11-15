@@ -1,0 +1,405 @@
+{
+  "Rashi on Shabbat 39a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:1:1",
+      "Shabbat 39a:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:3",
+      "Rashi on Shabbat 39a:1:4"
+    ],
+    "generatedAt": "2026-11-12T21:54:10.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבא בחמין</strong> - כל מלוח שבא בחמין מע\"ש חוזרין ושורין אותו בחמין בשבת ואין בו משום תיקון שהרי נתקן כבר:"
+  },
+  "Rashi on Shabbat 39a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:1:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:3",
+      "Rashi on Shabbat 39a:1:4"
+    ],
+    "generatedAt": "2026-11-12T21:54:43.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדיחין</strong> - שאין זה גמר מלאכתו אבל לא שורין:"
+  },
+  "Rashi on Shabbat 39a:1:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 39a:1:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:4"
+    ],
+    "generatedAt": "2026-11-12T21:55:36.177Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מדג מלוח ישן או קולייס האיספנין</strong> - דג שקורין טונינ\"א <span class=\"parenthesized\">(טוּנה)</span> :"
+  },
+  "Rashi on Shabbat 39a:1:4": {
+    "dependsOn": [
+      "Shabbat 39a:1",
+      "Rashi on Shabbat 39a:1:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:3",
+      "Rashi on Shabbat 39a:1:4"
+    ],
+    "generatedAt": "2026-11-12T21:56:20.568Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהדחתו זהו גמר מלאכתו</strong> - מדקרי ליה גמר מלאכתו ש\"מ זהו בישולו וחייב:"
+  },
+  "Rashi on Shabbat 39a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:2:2",
+      "Rashi on Shabbat 39a:1:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:3",
+      "Chokhmat Shlomo on Shabbat 39a:1"
+    ],
+    "generatedAt": "2026-11-12T22:00:57.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא דתנן</strong> - בפרק חבית נותנין כו' המים צונן:"
+  },
+  "Rashi on Shabbat 39a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:2:1",
+      "Rashi on Shabbat 39a:3:1"
+    ],
+    "generatedAt": "2026-11-12T22:01:37.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחמה</strong> - בשמש:"
+  },
+  "Rashi on Shabbat 39a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:01:59.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשרי</strong> - דאין דרך בישולו בכך וחמה באור לא מיחלפא דליגזר הא אטו הא:"
+  },
+  "Rashi on Shabbat 39a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:3:1",
+      "Rashi on Shabbat 39a:2:1",
+      "Shabbat 39a:1",
+      "Shabbat 38b:16",
+      "Shabbat 38b:10"
+    ],
+    "generatedAt": "2026-11-12T22:03:16.010Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתולדות האור</strong> - כגון אם הוחם הסודר הזה באור מתחילה:"
+  },
+  "Rashi on Shabbat 39a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:3:3"
+    ],
+    "generatedAt": "2026-11-12T22:03:43.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאסיר</strong> - דהוי בישול:"
+  },
+  "Rashi on Shabbat 39a:3:4": {
+    "dependsOn": [
+      "Shabbat 38b:16",
+      "Rashi on Shabbat 38b:16:2",
+      "Shabbat 39a:1",
+      "Rashi on Shabbat 39a:3:1",
+      "Rashi on Shabbat 39a:3:2",
+      "Rashi on Shabbat 39a:3:3",
+      "Rashi on Shabbat 39a:3:5",
+      "Steinsaltz on Shabbat 39a:3",
+      "Shabbat 39a:2"
+    ],
+    "generatedAt": "2026-11-12T22:04:41.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולדות חמה</strong> - שהוחם הסודר בחמה:"
+  },
+  "Rashi on Shabbat 39a:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:3:1",
+      "Rashi on Shabbat 39a:3:2",
+      "Rashi on Shabbat 39a:3:3",
+      "Rashi on Shabbat 39a:3:4"
+    ],
+    "generatedAt": "2026-11-12T22:05:14.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו תולדות האור</strong> - דמאן דחזי סבר דתולדות האור נינהו:"
+  },
+  "Rashi on Shabbat 39a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:3:1",
+      "Rashi on Shabbat 39a:3:4",
+      "Rashi on Shabbat 39a:3:5",
+      "Rashi on Shabbat 39a:4:2",
+      "Rashi on Shabbat 39a:4:3",
+      "Rashi on Shabbat 39a:1:1",
+      "Rashi on Shabbat 39a:1:2",
+      "Rashi on Shabbat 39a:1:3",
+      "Rashi on Shabbat 39a:1:4",
+      "Rashi on Shabbat 38b:10:1",
+      "Rashi on Shabbat 38b:10:2",
+      "Rashi on Shabbat 38b:10:3",
+      "Rashi on Shabbat 38b:10:4",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3"
+    ],
+    "generatedAt": "2026-11-12T22:07:06.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא יטמין ברמץ</strong> - דמאן דחזי סבר מכדי האי לבשולי והאי לבשולי ותרוייהו דרך הטמנה מה לי רמץ מה לי חול ומשום הכי מודה ר' יוסי:"
+  },
+  "Rashi on Shabbat 39a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:4:1",
+      "Rashi on Shabbat 39a:4:2",
+      "Rashi on Shabbat 39a:4:3"
+    ],
+    "generatedAt": "2026-11-12T22:07:57.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא יזיז עפר</strong> - שמא לא יהא שם חול עקור לכל הצורך ואתי לאזוזי עפר הדבוק והוי חופר גומא:"
+  },
+  "Rashi on Shabbat 39a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:08:21.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עפר תיחוח</strong> - כלומר תיחוח בעומק דליכא למיחש למזיז:"
+  },
+  "Rashi on Shabbat 39a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:13:51.477Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גג רותח</strong> - שרתחו חמה:"
+  },
+  "Rashi on Shabbat 39a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:5:1"
+    ],
+    "generatedAt": "2026-11-12T22:14:31.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מגלגלין בסיד רותח</strong> - דהוא תולדות האור:"
+  },
+  "Rashi on Shabbat 39a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:15:00.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליכא למיגזר</strong> - בגג רותח דהא לא מטמין ליה:"
+  },
+  "Rashi on Shabbat 39a:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:5:1",
+      "Rashi on Shabbat 39a:5:2",
+      "Rashi on Shabbat 39a:5:3",
+      "Rashi on Shabbat 39a:5:4"
+    ],
+    "generatedAt": "2026-11-12T22:15:47.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - לשמא יזיז עפר ויכסנו בו ליגזר:"
+  },
+  "Rashi on Shabbat 39a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:6:1",
+      "Shabbat 39a:6",
+      "Rashi on Shabbat 39a:6:2"
+    ],
+    "generatedAt": "2026-11-12T22:20:28.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לתוך אמה של חמין</strong> - וחמי טבריא לאו תולדות האור נינהו ואפ\"ה אסרו להו ומודה בהא ר' יוסי:"
+  },
+  "Rashi on Shabbat 39a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:20:48.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דדמיא להטמנה</strong> - שמטמין מים במים:"
+  },
+  "Rashi on Shabbat 39a:7:1": {
+    "dependsOn": [
+      "Shabbat 39a:7"
+    ],
+    "generatedAt": "2026-11-12T22:21:29.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי סברת מעשה אסיפא קאי</strong> - לסייעתא דחול ואבק ולאורויי דתולדות חמה כי האי גוונא אסירי לדברי הכל:"
+  },
+  "Rashi on Shabbat 39a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T22:23:01.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארישא קאי</strong> - אפלוגתא ורבנן הוא דאמרי לה אבל לר' יוסי כה\"ג לא מיתסר אלא משום דהני תולדות האור נינהו:"
+  },
+  "Rashi on Shabbat 39a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:7:1",
+      "Rashi on Shabbat 39a:7:2"
+    ],
+    "generatedAt": "2026-11-12T22:23:46.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 39a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא מעשה</strong> - דחמי טבריא דתולדות חמה נינהו ודמי לאפקעתא דסודרין דליכא למגזר לשמא יזיז ואסרי להו:"
+  },
+  "Tosafot on Shabbat 39a:1:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 42b:1:1",
+      "Tosafot on Shabbat 39a:4:2",
+      "Chidushei Halachot on Shabbat 39a:1",
+      "Tosafot on Avodah Zarah 74b:8:1"
+    ],
+    "generatedAt": "2026-11-12T21:58:50.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבא בחמין מלפני השבת</strong> - פירוש שנתבשל לגמרי כדמפרש לקמן בפרק חבית <span class=\"parenthesized\">(שבת דף קמה:)</span> כגון תרנגולת דרבי אבא שורין אותו בחמין אפילו בכלי ראשון וכל שלא בא כו' מדיחין אותו לפירוש רשב\"א דמפרש דעירוי ככלי שני אתי שפיר הכא דאין שורין אותו בכלי ראשון אבל מדיחין אותו מכלי ראשון דרך עירוי אבל לפר\"ת. דמפרש דעירוי הוי ככלי ראשון ע\"כ מדיחין אותו מכלי שני קאמר וא\"כ מאי איריא מדיחין אפילו שורין נמי ואומר ר\"י דאפילו בכלי שני אין שורין דהואיל דהמים חמין מיחזי כמבשל ואע\"ג דתנן לקמן <span class=\"parenthesized\">(שבת דף מב:)</span> אבל נותן לתוך הקערה או לתוך התמחוי היינו דוקא תבלין שהן עשויין למתק את הקדירה ולא מיחזי כמבשל א\"נ ה\"ה שורין אותו כיון דאיירי בכלי שני והא דנקט מדיחין לאשמעינן דאפילו הדחה הויא גמר מלאכה במניח הישן וקולייס האיספנין:"
+  },
+  "Tosafot on Shabbat 39a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38b:15:1",
+      "Rashi on Shabbat 39a:4:1"
+    ],
+    "generatedAt": "2026-11-12T22:09:09.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמא יטמין ברמץ</strong> - אבל הפקעת סודרין לא גזרו אטו שמא יטמין ברמץ דסודרין לא דמו לרמץ ואטו סודרין שנתחממו באור לא בעי ר' יוסי למיגזר דאין דרך לחממן כל כך שלא יהיו נשרפין:"
+  },
+  "Tosafot on Shabbat 39a:4:2": {
+    "dependsOn": [
+      "Maharsha on Shabbat 39a:4"
+    ],
+    "generatedAt": "2026-11-12T22:11:23.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שמזיז עפר ממקומו</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> מתוך שלא יהיה לו חול עקור כל הצורך לכסות אתי לאזוזי עפר הדבוק והוי חופר גומא וקשה לריב\"א דהא ליכא איסורא דאורייתא בחופר גומא ואינו צריך אלא לעפרה לרבי שמעון דאמר מלאכה שאינה צריכה לגופה פטור עליה וצריך לומר לפי פירוש <span class=\"rashi-quotation\">הקונטרס</span> גזירה שמא יחפור הגומא לטמון הביצה בתוכה ור\"ת הקשה לפירוש <span class=\"rashi-quotation\">הקונטרס</span> דמאי דמשני בסמוך סתם גג לית ביה עפר אדרבה הא סתם גג יש בו מעזיבה וכיון דגזרינן שמא יחפור לגזור שמא יחפור במעזיבה ויכסה ועוד שמצא בספרים ישנים מפני שמזיז עפר ממקומו ולפירוש <span class=\"rashi-quotation\">הקונטרס</span> צריך לגרוס שמא יזיז ומפרש ר\"ת שמזיז עפר שהוא מוקצה ממקומו כשתוחב הביצה בתוך העפר וסבר רב יוסף דטלטול מן הצד שמיה טלטול ואיכא בינייהו עפר תיחוח היינו שהוא תיחוח כל כך כשמניח הביצה מידו ליפול נטמנת מעצמה בתוך העפר ואינו מזיז עפר ממקומו בידים והשתא אתי שפיר דסתם גג לית ביה עפר כל כך שיוכל להטמין בתוכו דלחפירת מעזיבה לא חיישינן ולפירוש זה הוה מצי למימר איכא בינייהו עפר מוכן ובלאו הכי איכא בינייהו טובא כגון גג דאית ביה עפר שמא יטמין ליכא למימר ושמא יזיז איכא וכגון מעשה דאנשי טבריא דשייך יטמין ולא שייך יזיז אבל קשה לרשב\"א דקאמר בסמוך אלא למ\"ד שמא יזיז עפר לגזור ולהאי פירוש לא שייך למימר לגזור אלא הוה ליה למימר ליתסר ויש ליישב דמשום דכל איסורי דרבנן הם גזירה אטו דאורייתא נקט האי לישנא ועוד פירש רבינו תם בספר הישר שמזיז עפר ממקומו והוי חופר שהוא תולדה דחורש אפילו בעפר תיחוח כגון חול ואבק דרכים כדמוכח בביצה <span class=\"parenthesized\">(דף ח. ושם)</span> דקאמר והא קעביד כתישה בעפר תיחוח והא קעביד גומא אלמא בעפר תיחוח שייך נמי גומא והא דקאמר הכא איכא בינייהו עפר תיחוח היינו כל כך תיחוח כשמניח ביצה עליו נשקעת מאליה דבההוא ודאי לא שייך חורש וקשה לפי' דאמאי פליג רבה ארב יוסף ולא חייש למה שמזיז עפר מדקאמר אלא למאן דאמר שמזיז כו' משמע דלרבה ניחא ויש לומר דרבה סבר דלא שייך גומא אלא כשנוטל בידו מן העפר ונשאר מקום מן הגומא אבל בנעיצת ביצה לא שייכא גומא לפי שאינה ניכרת:"
+  },
+  "Tosafot on Shabbat 39a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 39a:4:3",
+      "Tosafot on Beitzah 8a:1:1",
+      "Maharam on Shabbat 39a:9",
+      "Tosafot on Shabbat 39a:4:2",
+      "Tosafot on Shabbat 39a:1:1"
+    ],
+    "generatedAt": "2026-11-12T22:13:30.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא בינייהו עפר תיחוח</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דבעפר תיחוח לא שייכא גומא והא דמשמע בביצה <span class=\"parenthesized\">(שם)</span> דבעפר תיחוח נמי שייך גומא צריך לומר לפי' דהתם איירי שיש מעט עפר תיחוח וסביבו קרקע קשה דכשמסיר עפר תיחוח תשאר הגומא קיימת אבל הכא כשיש עפר תיחוח הרבה כשיעשה גומא אינה מתקיימת כי דופני הגומא יפלו ולא יוכלו להתקיים לפי שאין הקרקע קשה:"
+  },
+  "Tosafot on Shabbat 39a:5:1": {
+    "dependsOn": [
+      "Shabbat 39a:5"
+    ],
+    "generatedAt": "2026-11-12T22:17:27.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מגלגלין ביצה על גבי סיד רותח</strong> - קשה אדמפליג בין תולדות חמה לתולדות האור לפלוג בתולדות חמה גופייהו בין גג רותח לחול ואבק דרכים וגג דאית ביה עפר ולמ\"ד דשמא יטמין ברמץ אתי שפיר דמפליג בין גג רותח לסיד רותח שלא כדרך הטמנה אבל בתולדות חמה גופייהו לא מצי למיפלג אלא בין דרך הטמנה לשלא כדרך הטמנה דבחול נמי אם אינו מטמינו בו אלא מגלגלו על גביו שרי:"
+  },
+  "Tosafot on Shabbat 39a:5:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 39a:4:1",
+      "Tosafot on Shabbat 39a:4:2",
+      "Tosafot on Shabbat 39a:4:3"
+    ],
+    "generatedAt": "2026-11-12T22:18:22.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 39a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד שמא יזיז וכו'</strong> - וא\"ת לרב יוסף אטו מי לית ליה גזירה שמא יטמין ברמץ והא מהאי טעמא אסרינן להטמין בדבר המוסיף הבל ויש לומר דמבעוד יום איכא למיגזר שמא יטמין ברמץ ושמא יחתה אבל הכא לא שייך למיגזר דאטו אי שרינן לבשל בחמי חמה ניחוש דילמא אתי לבשל בחמי אור בשבת וא\"ת הא אסרינן משחשיכה להטמין אף כשאין מוסיף הבל גזירה שמא ירתיח ויש לומר דהני מילי בדבר המבושל איכא למיחש שמא ירתיח. אבל בישול גמור כי הכא לא טעו אינשי אטו תולדות חמה:"
+  }
+}

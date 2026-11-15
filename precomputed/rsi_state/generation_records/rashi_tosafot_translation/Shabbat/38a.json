@@ -1,0 +1,561 @@
+{
+  "Rashi on Shabbat 38a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:1:2",
+      "Rashi on Shabbat 38a:1:3",
+      "Shabbat 38a:1"
+    ],
+    "generatedAt": "2026-11-12T20:28:30.317Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכח קדרה</strong> - אליבא מאן דאסר:"
+  },
+  "Rashi on Shabbat 38a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:29:21.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המבשל בשבת</strong> - משנה היא:"
+  },
+  "Rashi on Shabbat 38a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:1:2",
+      "Rashi on Shabbat 38a:1:3",
+      "Shabbat 38a:1"
+    ],
+    "generatedAt": "2026-11-12T20:30:06.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא שנא</strong> - אבל האי דשכח קדרה. לא שנא בין שוגג למזיד והכי דרש להו סתמא ולא פירש אי אשוגג מדמה לה ומותר לאוכלה אי אמזיד מדמה לה ואסור:"
+  },
+  "Rashi on Shabbat 38a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:32:09.701Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במזיד נמי</strong> - אם השהה על גבי כירה מבעוד יום יאכל:"
+  },
+  "Rashi on Shabbat 38a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:2:1",
+      "Rashi on Shabbat 38a:2:3"
+    ],
+    "generatedAt": "2026-11-12T20:33:36.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא אתי לאיערומי</strong> - ולעשות מזיד ולומר שוגג הייתי דלא נחשדו ישראל על השבתות:"
+  },
+  "Rashi on Shabbat 38a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:2:1",
+      "Rashi on Shabbat 38a:2:2",
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:1:2",
+      "Rashi on Shabbat 38a:1:3"
+    ],
+    "generatedAt": "2026-11-12T20:35:15.017Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתי לאיערומי</strong> - דאיסור דרבנן הוא וקילא ליה ואתי לשהויי מזיד ויאמר שכחתי:"
+  },
+  "Rashi on Shabbat 38a:3:1": {
+    "dependsOn": [
+      "Shabbat 38a:3",
+      "Rashi on Shabbat 38a:3:1",
+      "Rashi on Shabbat 38a:3:2",
+      "Rashi on Shabbat 38a:2:1",
+      "Rashi on Shabbat 38a:2:2",
+      "Rashi on Shabbat 38a:2:3",
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:5:1"
+    ],
+    "generatedAt": "2026-11-12T20:37:36.257Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי שכח קדרה כו' בשוגג</strong> - כגון האי דשכח יאכל בשבת:"
+  },
+  "Rashi on Shabbat 38a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:3:1"
+    ],
+    "generatedAt": "2026-11-12T20:38:12.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במזיד</strong> - דלא שכח אלא הניח לא יאכל:"
+  },
+  "Rashi on Shabbat 38a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:4:2",
+      "Shabbat 38a:4",
+      "Steinsaltz on Shabbat 38a:4",
+      "Steinsaltz comment #1 on Shabbat 38a:4",
+      "Sefer HeArukh, Letter Tet 230",
+      "Rashba on Shabbat 38a:1"
+    ],
+    "generatedAt": "2026-11-12T20:40:06.375Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשר טרוף</strong> - דגלי דעתיה דלא לאורחים קבעי לה:"
+  },
+  "Rashi on Shabbat 38a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:4:1",
+      "Shabbat 38a:3",
+      "Rashi on Shabbat 38a:3:1",
+      "Rashi on Shabbat 38a:3:2"
+    ],
+    "generatedAt": "2026-11-12T20:40:52.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל המצטמק ויפה לו</strong> - כלומר וכן כל שאר המצטמק ויפה להם אסור לאוכלן אם השהן מזיד:"
+  },
+  "Rashi on Shabbat 38a:5:1": {
+    "dependsOn": [
+      "Shabbat 38a:5",
+      "Rashi on Shabbat 38a:5:1",
+      "Rashi on Shabbat 38a:5:2"
+    ],
+    "generatedAt": "2026-11-12T20:41:47.962Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני מיהת</strong> - בשלא בישל כל צרכו דיש חילוק בין שוגג למזיד במשהה קשיא בין לרבה ורב יוסף דשרו מזיד בין לרב נחמן דאסר שוגג:"
+  },
+  "Rashi on Shabbat 38a:5:2": {
+    "dependsOn": [
+      "Shabbat 38a:5",
+      "Rashi on Shabbat 38a:5:1",
+      "Shabbat 37b:9"
+    ],
+    "generatedAt": "2026-11-12T20:43:12.730Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב נחמן</strong> - מצי לתרוצי כי תניא ההיא דשוגג יאכל לפני גזירה דאמרינן לקמן דגזרו על השוכחין וכי איתמר דר' חייא בר אבא דתריצנא אליביה דשוגג אסור לאחר גזירה:"
+  },
+  "Rashi on Shabbat 38a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:5:1",
+      "Rashi on Shabbat 38a:5:2",
+      "Rashi on Shabbat 38a:5:4",
+      "Rashi on Shabbat 37b:3:1",
+      "Rashi on Shabbat 38a:5:5",
+      "Rashi on Shabbat 38a:5:6"
+    ],
+    "generatedAt": "2026-11-12T20:44:43.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דרבה ורב יוסף</strong> - דאמרי אליבא דר' חייא בר אבא להתירא אף במזיד:"
+  },
+  "Rashi on Shabbat 38a:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:5:1",
+      "Rashi on Shabbat 38a:5:2",
+      "Rashi on Shabbat 38a:5:3",
+      "Rashi on Shabbat 38a:5:4",
+      "Rashi on Shabbat 38a:5:5",
+      "Rashi on Shabbat 38a:5:6",
+      "Rashi on Shabbat 37b:3:1"
+    ],
+    "generatedAt": "2026-11-12T20:45:48.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי קודם גזירה</strong> - אתמר דר' חייא:"
+  },
+  "Rashi on Shabbat 38a:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:5:4",
+      "Rashi on Shabbat 38a:5:5",
+      "Rashi on Shabbat 38a:5:6",
+      "Shabbat 38a:5",
+      "Rashi on Shabbat 38a:5:1",
+      "Rashi on Shabbat 38a:5:2",
+      "Rashi on Shabbat 38a:5:3",
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:2:1"
+    ],
+    "generatedAt": "2026-11-12T20:47:25.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא מיהא מזיד</strong> - דהכא תניא במזיד לא יאכל:"
+  },
+  "Rashi on Shabbat 38a:5:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:5:4",
+      "Rashi on Shabbat 38a:5:5",
+      "Rashi on Shabbat 38a:5:6",
+      "Rashi on Shabbat 38a:5:1",
+      "Rashi on Shabbat 38a:5:2",
+      "Rashi on Shabbat 38a:5:3",
+      "Shabbat 38a:5"
+    ],
+    "generatedAt": "2026-11-12T20:48:32.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי לאחר גזירה קשיא נמי שוגג</strong> - דאפי' שוגג ה\"ל למיסר דאילו מתני' קודם גזירה נשנית:"
+  },
+  "Rashi on Shabbat 38a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:6:2"
+    ],
+    "generatedAt": "2026-11-12T20:50:30.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המבשל בשבת</strong> - בידים דאיכא חיובא דאורייתא:"
+  },
+  "Rashi on Shabbat 38a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:6:2",
+      "Rashi on Shabbat 38a:6:1"
+    ],
+    "generatedAt": "2026-11-12T20:51:21.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וה\"ה לשוכח</strong> - דהמשהה נמי מבעוד יום אם שכח בשוגג יאכל ואם במזיד השהה לא יאכל כאילו בשלה בידים בשבת:"
+  },
+  "Rashi on Shabbat 38a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:7:2",
+      "Rashi on Shabbat 38a:7:3",
+      "Rashi on Shabbat 38a:7:4",
+      "Rashi on Shabbat 37b:1:1",
+      "Rashi on Shabbat 37b:2:1",
+      "Rashi on Shabbat 37b:4:1",
+      "Rashi on Shabbat 36b:7:1",
+      "Rashi on Shabbat 36b:8:1",
+      "Rashi on Shabbat 38a:1:1",
+      "Rashi on Shabbat 38a:2:1",
+      "Rashi on Shabbat 38a:5:1",
+      "Tosafot on Shabbat 38a:5:1",
+      "Tosafot on Shabbat 38a:7:1"
+    ],
+    "generatedAt": "2026-11-12T20:54:19.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דר' מאיר אדר' מאיר</strong> - דתנן לעיל בריש פירקין לר' מאיר אליבא דב\"ה חמין אבל לא תבשיל והכא שרי חמין ותבשיל שבישל כל צרכו:"
+  },
+  "Rashi on Shabbat 38a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:7:1",
+      "Rashi on Shabbat 38a:7:2",
+      "Rashi on Shabbat 38a:7:3",
+      "Rashi on Shabbat 38a:7:4"
+    ],
+    "generatedAt": "2026-11-12T20:55:57.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקשיא דר' יהודה אדר' יהודה</strong> - דהתם א\"ר יהודה חמין ותבשיל והכא אסר תבשיל שבישל כל צרכו:"
+  },
+  "Rashi on Shabbat 38a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:56:50.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לכתחלה</strong> - משנה קמייתא לשהות לכתחלה קמיירי והך בהשהה כבר קאמר דמותר לאוכלה:"
+  },
+  "Rashi on Shabbat 38a:7:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:7:1",
+      "Rashi on Shabbat 38a:7:2",
+      "Rashi on Shabbat 38a:7:3"
+    ],
+    "generatedAt": "2026-11-12T20:57:47.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן בגרופה וקטומה</strong> - ההיא דלעיל איירי בגרופה וקטומה כדקתני בה משהין על גבי גרופה וקטומה ואין משהין על שאינה גרופה ומה הן משהין על הגרופה שהתרנו לשהות ר\"מ אומר כו' הלכך אפי' לכתחלה שרי ר' יהודה והכא כשאינה גרופה הלכך דיעבד אסר:"
+  },
+  "Rashi on Shabbat 38a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:8:2",
+      "Rashi on Shabbat 38a:8:3",
+      "Rashi on Shabbat 38a:8:4",
+      "Rashi on Shabbat 38a:8:5"
+    ],
+    "generatedAt": "2026-11-12T21:02:07.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבר ושהה במזיד מאי</strong> - מותר לאוכלה או לא:"
+  },
+  "Rashi on Shabbat 38a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:8:1",
+      "Rashi on Shabbat 38a:8:3",
+      "Shabbat 38a:4"
+    ],
+    "generatedAt": "2026-11-12T21:03:05.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמין לא אסר</strong> - דמצטמק ורע לו:"
+  },
+  "Rashi on Shabbat 38a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T21:03:34.453Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביצים אסר</strong> - דמצטמק ויפה לו:"
+  },
+  "Rashi on Shabbat 38a:8:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:8:5",
+      "Rashi on Shabbat 38a:8:1",
+      "Rashi on Shabbat 38a:8:2",
+      "Rashi on Shabbat 38a:8:3"
+    ],
+    "generatedAt": "2026-11-12T21:04:23.402Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו לאותו שבת</strong> - אסרן עליהן באכילה:"
+  },
+  "Rashi on Shabbat 38a:8:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:8:3",
+      "Rashi on Shabbat 38a:8:4"
+    ],
+    "generatedAt": "2026-11-12T21:04:56.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לשבת הבאה</strong> - אסר להן עכשיו שלא לעשות כן לשבת הבאה אבל באכילה שרו:"
+  },
+  "Rashi on Shabbat 38a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T21:10:17.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכלל דביצים מצומקות כו'</strong> - בעיא היא:"
+  },
+  "Rashi on Shabbat 38a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:9:1",
+      "Rashi on Shabbat 38a:9:2",
+      "Rashi on Shabbat 38a:9:3"
+    ],
+    "generatedAt": "2026-11-12T21:10:52.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והביאו לפניו</strong> - בחול:"
+  },
+  "Rashi on Shabbat 38a:9:3": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-12T21:12:22.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 38a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעוזרדין</strong> - שנצטמקו עד שנעשו דקות כעוזרדין קורמ\"ש בלע\"ז ומדאמר ואכלנו הרבה מכלל דיפה להן:"
+  },
+  "Tosafot on Shabbat 38a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T20:31:52.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכח קדרה על גבי כירה ובישלה בשבת מהו</strong> - אע\"ג דקיי\"ל כחנניא הכא בעי בדלא בשיל כמאכל בן דרוסאי דמודה ביה חנניא אי נמי בעי אפי' בקידרא חייתא והא דשרינן בפ\"ק <span class=\"parenthesized\">(דף יח: ושם)</span> קידרא חייתא היינו דוקא בתנור שחומו רב דבלא חיתוי יתבשל עד למחר אבל כירה דשליט בה אוירא אסור דאיכא למיחש שמא יחתה:"
+  },
+  "Tosafot on Shabbat 38a:2:1": {
+    "dependsOn": [
+      "Shabbat 38a:2",
+      "Shabbat 18b:14",
+      "Shabbat 18b:2"
+    ],
+    "generatedAt": "2026-11-12T20:36:21.222Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל האי דלא קעביד מעשה במזיד נמי יאכל</strong> - תימה דהא אמר בפ\"ק <span class=\"parenthesized\">(שם)</span> לא תמלא אשה קדרה עססיות כו' ואם נתנה למוצאי שבת אסורין בכדי שיעשו וי\"ל דבלאו הכי פריך שפיר מברייתא דמייתי:"
+  },
+  "Tosafot on Shabbat 38a:5:1": {
+    "dependsOn": [
+      "Shabbat 38a:5",
+      "Shabbat 38a:1",
+      "Tosafot on Shabbat 38a:1:1",
+      "Tosafot on Shabbat 38a:2:1"
+    ],
+    "generatedAt": "2026-11-12T20:50:00.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב נחמן בר יצחק כאן קודם גזירה כו'</strong> - תימה לר\"י לימא תרווייהו קודם גזירה והא דשרי בברייתא שוגג היינו בבשיל כמאכל בן דרוסאי ורב נחמן איירי בדלא בשיל כמאכל בן דרוסאי כדפי' ותירץ ר\"ת דבישלה בשבת משמע שלא היתה קודם לכן כלל מבושלת ולא בעי למימר נמי דרב נחמן סבר כר' יהודה דאסר תבשיל אפי' בישל כל צרכו וכ\"ש לא בישל משום דדילמא ר' יהודה לא איירי אלא במזיד אבל בשוגג מודה לר\"מ דשרי אפי' לא בישל כל צרכו:"
+  },
+  "Tosafot on Shabbat 38a:7:1": {
+    "dependsOn": [
+      "Shabbat 38a:7",
+      "Shabbat 37b:1",
+      "Shabbat 37b:2",
+      "Shabbat 37b:3",
+      "Shabbat 37b:4",
+      "Shabbat 37b:8",
+      "Shabbat 37b:9",
+      "Shabbat 37b:10",
+      "Shabbat 37b:11",
+      "Shabbat 37a:11",
+      "Shabbat 37a:12",
+      "Shabbat 37a:13"
+    ],
+    "generatedAt": "2026-11-12T20:59:38.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דר' מאיר אדר' מאיר</strong> - כאן משמע דסתם חמין ותבשיל הוי נמי מבושל כל צרכו דאי לאו הכי לא הוה פריך מידי ורשב\"א אומר דאפי' אי סתם חמין ותבשיל הוי בלא בשיל כל צרכו פריך שפיר דהא באינה גרופה משמע בברייתא דלעיל דאין משהין כלל אפי' בישל כל צרכו דאי הוה שרי בישל כל צרכו ה\"ל לפרש מה הן משהין באינה גרופה כדמפרש אגרופה והכא שרי ר\"מ בישל כל צרכו אפי' באינה גרופה מ\"מ נראה דסתם חמין ותבשיל הוי נמי בבשיל כל צרכו מדפשיטא ליה לתלמודא דמאן דאסר להחזיר אסר אפי' בישל כל צרכו כדמוכח גבי ואף ר' אושעיא סבר כו':"
+  },
+  "Tosafot on Shabbat 38a:7:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 38a:7:1",
+      "Shabbat 38a:7",
+      "Rashi on Shabbat 38a:7:1",
+      "Rashi on Shabbat 38a:7:2",
+      "Rashi on Shabbat 38a:7:3",
+      "Rashi on Shabbat 38a:7:4",
+      "Maharsha on Shabbat 38a:3",
+      "Maharshal on Shabbat 38a:3"
+    ],
+    "generatedAt": "2026-11-12T21:01:25.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא לכתחלה הא דיעבד</strong> - לא סגי בהאי שינויא דהא לעיל שרי ר' מאיר סתם חמין דהויא אפי' לא הוחמו כל צורכן אפי' לכתחלה והכא אסר חמין שלא הוחמו כל צורכן אפי' דיעבד אלא צריך לשנויי כדמשני אקשיא דר' יהודה אדר' יהודה הא בגרופה וקטומה הא בשאינה גרופה ואדרבי יהודה נמי צריך לשנויא <span class=\"parenthesized\">(דהכא)</span> דהא לכתחלה הא דיעבד דהא בשאינה גרופה אסר לעיל אפי' חמין שנתבשל כל צרכו והכא שרי אלא דאיכא לשנויי הא לכתחלה הא דיעבד:"
+  },
+  "Tosafot on Shabbat 38a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 38a:8:1",
+      "Rashi on Shabbat 38a:8:2",
+      "Rashi on Shabbat 38a:8:3",
+      "Rashi on Shabbat 38a:8:4",
+      "Rashi on Shabbat 38a:8:5",
+      "Tosafot on Shabbat 38a:7:1",
+      "Tosafot on Shabbat 38a:7:2",
+      "Tosafot on Shabbat 38a:8:2",
+      "Tosafot on Shabbat 38a:5:1",
+      "Chidushei Halachot on Shabbat 38a:4",
+      "Chidushei Halachot on Shabbat 38a:5",
+      "Maharam on Shabbat 38a:3",
+      "Maharam on Shabbat 38a:4",
+      "Maharam on Shabbat 38a:5",
+      "Tosafot on Shabbat 2a:4:1",
+      "Tosafot on Shabbat 38a:1:1",
+      "Rashba on Shabbat 38a:3"
+    ],
+    "generatedAt": "2026-11-12T21:09:15.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבר ושהה מאי</strong> - בדלא בשיל כמאכל בן דרוסאי ליכא לאוקמי דהא כבר פשט לעיל לאיסורא כרב נחמן בר יצחק ונראה לר\"י דמבעיא ליה בבשיל ובשוגג ואליבא דר' יהודה אע\"ג דאין הלכה כר' יהודה אי אסר מצטמק ויפה לו דוקא במזיד או דילמא אפי' בשוגג ומייתי ראיה ממעשה דר' יוסי דאסר ומשמע ליה דאפי' בשוגג היה מדקאמר ונשתהו ולא קאמר ושיהו ומיהו לשון עבר ושהה משמע במזיד כמו עברה ולשה דפסחים <span class=\"parenthesized\">(דף מב.)</span> ואומר רשב\"א דקודם גזירה בעו דאחר גזירה פשיטא דאסור בשוגג כמו מזיד:"
+  },
+  "Tosafot on Shabbat 38a:8:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 37b:1:1",
+      "Tosafot on Shabbat 37b:5:1",
+      "Tosafot on Shabbat 38a:7:1",
+      "Tosafot on Shabbat 38a:7:2",
+      "Tosafot on Shabbat 38a:8:1"
+    ],
+    "generatedAt": "2026-11-12T21:09:51.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 38a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא לשבת הבאה</strong> - כולה סוגיא בשאינה גרופה דבגרופה ליכא שום אמורא דאסר כדפרישית לעיל והיינו כרב דאסר לעיל מצטמק ויפה לו:"
+  }
+}

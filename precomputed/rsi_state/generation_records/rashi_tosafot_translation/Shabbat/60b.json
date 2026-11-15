@@ -1,0 +1,516 @@
+{
+  "Rashi on Shabbat 60b:10:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 60b:10:2",
+      "Rashi on Shabbat 60b:10:3",
+      "Rashi on Shabbat 60b:14:1",
+      "Rashi on Shabbat 60b:14:2",
+      "Rashi on Shabbat 60b:14:3",
+      "Rashi on Shabbat 60b:14:4",
+      "Rashi on Shabbat 60b:14:5"
+    ],
+    "generatedAt": "2026-11-14T00:53:10.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תפרו מבפנים</strong> - שנתן מנעל של עור לפנים מן הסנדל תפרו פורדרי\"ץ בלע\"ז:"
+  },
+  "Rashi on Shabbat 60b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:10:1",
+      "Rashi on Shabbat 60b:10:3",
+      "Shabbat 60b:10"
+    ],
+    "generatedAt": "2026-11-14T00:53:45.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר</strong> - שמעתי מרבי יוחנן וטעמא לא ידענא:"
+  },
+  "Rashi on Shabbat 60b:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:10:1",
+      "Rashi on Shabbat 60b:10:2",
+      "Steinsaltz on Shabbat 60b:10"
+    ],
+    "generatedAt": "2026-11-14T00:54:26.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר</strong> - לקבוע בו מסמרים מבחוץ:"
+  },
+  "Rashi on Shabbat 60b:12:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 60b:12:2"
+    ],
+    "generatedAt": "2026-11-14T00:55:23.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשאו</strong> - למסמר כמין כלבוס בלע\"ז טינפיילו\"ן שני ראשין חדין וכפופין ונועץ שני ראשים בעץ כדאמרי' בסוטה <span class=\"parenthesized\">(יט:)</span> כלבוס של ברזל מטילין לה לתוך פיה:"
+  },
+  "Rashi on Shabbat 60b:12:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:12:1"
+    ],
+    "generatedAt": "2026-11-14T00:55:53.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר</strong> - הואיל ונשתנה משאר מסמרים דלא גזרו אלא מעין המאורע:"
+  },
+  "Rashi on Shabbat 60b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T00:56:11.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיפהו</strong> - מלמטה:"
+  },
+  "Rashi on Shabbat 60b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T00:56:30.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מטלטלין אותו</strong> - דתורת כלי עליו:"
+  },
+  "Rashi on Shabbat 60b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T00:56:45.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסר</strong> - דילמא אתי לנועלו:"
+  },
+  "Rashi on Shabbat 60b:14:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:14:1",
+      "Rashi on Shabbat 60b:14:2",
+      "Rashi on Shabbat 60b:14:3",
+      "Rashi on Shabbat 60b:14:4",
+      "Rashi on Shabbat 60b:14:5"
+    ],
+    "generatedAt": "2026-11-14T00:57:27.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשרו רוב מסמרותיו כו'</strong> - לקמן מפרש לה:"
+  },
+  "Rashi on Shabbat 60b:14:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:14:1",
+      "Rashi on Shabbat 60b:14:2",
+      "Rashi on Shabbat 60b:14:3",
+      "Rashi on Shabbat 60b:14:4",
+      "Rashi on Shabbat 60b:14:5",
+      "Steinsaltz on Shabbat 60b:14"
+    ],
+    "generatedAt": "2026-11-14T00:58:06.989Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר</strong> - הואיל ונשתנה מכמו שהיה דמעין המאורע גזרו:"
+  },
+  "Rashi on Shabbat 60b:14:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:14:4",
+      "Rashi on Shabbat 60b:14:5",
+      "Rashi on Shabbat 60b:14:1",
+      "Rashi on Shabbat 60b:14:2",
+      "Rashi on Shabbat 60b:14:3",
+      "[",
+      "Steinsaltz on Shabbat 60b:14"
+    ],
+    "generatedAt": "2026-11-14T00:59:09.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:14:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשאו</strong> - לראש מסמר רחב כמין טס או שעשאו חד כמין יתד:"
+  },
+  "Rashi on Shabbat 60b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T00:59:31.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"ג דאישתאר טובא</strong> - ובלבד שיהיו מעוט:"
+  },
+  "Rashi on Shabbat 60b:16:1": {
+    "dependsOn": [
+      "Shabbat 60b:16",
+      "Rashi on Shabbat 60b:16:2"
+    ],
+    "generatedAt": "2026-11-14T01:00:15.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנגממו</strong> - מלמעלה ורשומו ניכר בתוך העץ אפילו טובא דהא מינכר שאינו כברייתו:"
+  },
+  "Rashi on Shabbat 60b:16:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:16:1",
+      "Shabbat 60b:16",
+      "Steinsaltz on Shabbat 60b:16",
+      "Versions on Shabbat 60b:16",
+      "Tosafot on Shabbat 60b:3:1",
+      "Tosafot on Shabbat 60b:17:1",
+      "Rashi on Shabbat 60b:15:1",
+      "Rabbeinu Chananel on Shabbat 60b:13:1",
+      "Rabbeinu Chananel on Shabbat 60b:5",
+      "Steinsaltz comment #3 on Shabbat 60b:14",
+      "Steinsaltz comment #4 on Shabbat 60b:14"
+    ],
+    "generatedAt": "2026-11-14T01:05:45.579Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנעקרו</strong> - לגמרי שאין ניכר שהיה בו יותר ד' או ה' [אין] טפי לא לוי\"ה ולשון חבירו איפכא:"
+  },
+  "Rashi on Shabbat 60b:18:1": {
+    "dependsOn": [
+      "Shabbat 60b:18",
+      "Rashi on Shabbat 60b:14:1",
+      "Rashi on Shabbat 60b:14:2",
+      "Rashi on Shabbat 60b:14:3",
+      "Rashi on Shabbat 60b:14:4",
+      "Rashi on Shabbat 60b:14:5",
+      "Rashi on Shabbat 60b:19:1",
+      "Rashi on Shabbat 60b:19:2"
+    ],
+    "generatedAt": "2026-11-14T01:08:38.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוטה שאני</strong> - שכולן צריכין לו להשוותו ואין אחד מהן לחזק:"
+  },
+  "Rashi on Shabbat 60b:19:1": {
+    "dependsOn": [
+      "Shabbat 60b:19",
+      "Rashi on Shabbat 60b:18:1",
+      "Rashi on Shabbat 60b:19:2"
+    ],
+    "generatedAt": "2026-11-14T01:09:19.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא דאתית להכי</strong> - לחלק בין נוטה לשאין נוטה:"
+  },
+  "Rashi on Shabbat 60b:19:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:19:1",
+      "Rashi on Shabbat 60b:19:2",
+      "Shabbat 60b:19",
+      "Shabbat 60b:15",
+      "Shabbat 60b:9",
+      "Rashi on Shabbat 60b:1:1",
+      "Rashi on Shabbat 60b:2:1",
+      "Rashi on Shabbat 60b:3:1"
+    ],
+    "generatedAt": "2026-11-14T01:10:52.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי יוחנן נמי</strong> - דקפרכת לעיל מינה ואמרי דאמר כמאן איכא נמי לתרוצי לעולם כרבי נתן ונוטה שאני דהתם מתיר עד שבע אבל אין נוטה ה' ותו לא:"
+  },
+  "Rashi on Shabbat 60b:1:1": {
+    "dependsOn": [
+      "Shabbat 60b:1"
+    ],
+    "generatedAt": "2026-11-14T00:38:25.450Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלחין כלים ביו\"ט בין תפורין בין שאינן תפורין אבל לא סנדל המסומר</strong> - אלמא לאו בר מנעלי' ביו\"ט הוא דהא קתני התם כל שנאותין בו ביו\"ט משלחין אותו:"
+  },
+  "Rashi on Shabbat 60b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T01:11:14.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסתברא טעמא</strong> - דאסור לטלטל שמא ינעלנו:"
+  },
+  "Rashi on Shabbat 60b:21:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:21:2",
+      "Rashi on Shabbat 60b:21:3",
+      "Rashi on Shabbat 60b:21:4",
+      "Rashi on Shabbat 60b:8:1"
+    ],
+    "generatedAt": "2026-11-14T01:12:53.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבלאי שרי איסורי</strong> - דר' חייא מבבל הוה כדאמרינן בסוכה עלו ר' חייא ובניו ויסדוה:"
+  },
+  "Rashi on Shabbat 60b:21:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:21:1",
+      "Rashi on Shabbat 60b:21:2",
+      "Rashi on Shabbat 60b:21:3",
+      "Rashi on Shabbat 60b:21:4"
+    ],
+    "generatedAt": "2026-11-14T01:14:41.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד דאתא רבי חייא</strong> - כשעלה מבבל לארץ ישראל ובא דרך סוריא מפומבדיתא:"
+  },
+  "Rashi on Shabbat 60b:21:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:21:3",
+      "Rashi on Shabbat 60b:21:1",
+      "Rashi on Shabbat 60b:21:2",
+      "Rashi on Shabbat 60b:21:4"
+    ],
+    "generatedAt": "2026-11-14T01:15:15.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חסר תרתי</strong> - נפלו שתים ממסמרותיו בדרך:"
+  },
+  "Rashi on Shabbat 60b:21:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:21:1",
+      "Rashi on Shabbat 60b:21:2",
+      "Rashi on Shabbat 60b:21:3",
+      "Rashi on Shabbat 60b:21:4",
+      "Chokhmat Shlomo on Shabbat 60b:2",
+      "Steinsaltz on Shabbat 60b:21"
+    ],
+    "generatedAt": "2026-11-14T01:18:17.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:21:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסורא חסר</strong> - <span class=\"parenthesized\">(תרתי)</span> דומה אצל דומה:"
+  },
+  "Rashi on Shabbat 60b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:2:2"
+    ],
+    "generatedAt": "2026-11-14T00:41:53.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא כינופיא</strong> - שאין עושין מלאכה ונקבצין לבתי כנסיות ולבתי מדרשות כי ההיא מעשה דהוה כינופיא:"
+  },
+  "Rashi on Shabbat 60b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:2:1"
+    ],
+    "generatedAt": "2026-11-14T00:42:28.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאיסורא</strong> - בעשיית מלאכה:"
+  },
+  "Rashi on Shabbat 60b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:2:1"
+    ],
+    "generatedAt": "2026-11-14T00:43:20.979Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו לרבי חנינא בן עקיבא</strong> - בפרק חומר בקדש גבי נושא מי חטאת ואפר חטאת בירדן ובספינה שנמצא כזית מן המת תחוב בקרקעית' של ספינה ונטמאו וקאמרי רבנן דגזרו שלא יעביר אדם מי חטאת בספינה ולא על הגשר ולא ישיטם על פני המים אחד ירדן ואחד שאר נהרות ופליג ר' חנינא ואמר לא אסרו אלא בירדן ובספינה ולא גשר ושאר נהרות דגזירה שגזרו מחמת מאורע אין להם לגזור אלא מעין המאורע:"
+  },
+  "Rashi on Shabbat 60b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:3:1"
+    ],
+    "generatedAt": "2026-11-14T00:43:45.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשאני משאר נהרות</strong> - ברוחב או בעומק:"
+  },
+  "Rashi on Shabbat 60b:4:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-14T00:45:07.298Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לחזק</strong> - שמסמרותיו נעשו לחזק העקב שקורין שול\"א עם הפנתא שקורין אינפייל\"א אבל לנוי מותר דלא גזרו אלא מעין המאורע והנהו לחזק היו כסתם מסמרים דסנדל:"
+  },
+  "Rashi on Shabbat 60b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:5:2"
+    ],
+    "generatedAt": "2026-11-14T00:45:39.725Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתים מכאן</strong> - לצד חיצון אחד בראשו לצד האצבעות ואחד לצד עקיבו ושתים מכאן לצד פנימי לעבר בין הרגלים:"
+  },
+  "Rashi on Shabbat 60b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:5:1",
+      "Rashi on Shabbat 60b:2:1",
+      "Rashi on Shabbat 60b:2:2",
+      "Jastrow, תְּרֵיסִיּוֹת 1",
+      "Rashi on Shabbat 60a:1:1",
+      "Rashi on Shabbat 60a:2:1",
+      "Rashi on Shabbat 60b:4:1",
+      "Rashi on Shabbat 60b:6:1",
+      "Rashi on Shabbat 60b:8:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Shabbat 2a:2:1",
+      "Rashi on Shabbat 2a:3:1",
+      "Rashi on Shabbat 2b:1:1",
+      "Rashi on Shabbat 2b:2:1",
+      "Rashi on Shabbat 60b:10:1",
+      "Rashi on Shabbat 60b:10:2",
+      "Rashi on Shabbat 60b:10:3",
+      "Rashi on Shabbat 112b:3:1",
+      "Rashi on Shabbat 112b:3:2",
+      "Rashi on Shabbat 112b:3:3",
+      "Rashi on Shabbat 112b:3:4",
+      "Rashi on Shabbat 112b:3:5",
+      "Rashi on Shabbat 112b:3:6",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-14T00:49:20.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרסיותיו</strong> - רצועותיו:"
+  },
+  "Rashi on Shabbat 60b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T00:49:43.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סנדל הנוטה</strong> - שתחתון שלו אינו שוה שעב מצד זה ודק מצד זה וכשדורס נוטה לצד הדק וצריך להגביהו שיהא שוה לצד שכנגדו:"
+  },
+  "Rashi on Shabbat 60b:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60b:3:1",
+      "Rashi on Shabbat 60b:3:2",
+      "Rashi on Shabbat 59b:1:1",
+      "Rashi on Shabbat 59b:8:2",
+      "Rashi on Shabbat 59b:13:1"
+    ],
+    "generatedAt": "2026-11-14T00:51:58.974Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 60b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איפה</strong> - שם חכם ובנו של ר' רחבה דפומבדיתא הוה:"
+  },
+  "Tosafot on Shabbat 60b:17:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Shabbat 60b:17:1",
+      "Tosafot on Shabbat 60b:1:1",
+      "Tosafot on Shabbat 60b:3:1",
+      "Rashi on Shabbat 60b:1:1",
+      "Tosafot on Shabbat 60a:1:1"
+    ],
+    "generatedAt": "2026-11-14T01:07:45.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 60b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השתא חמש שרינן כו'</strong> - בפרק קמא דסוכה <span class=\"parenthesized\">(ד' ב: ושם)</span> גבי רבי יהודה מכשיר עד ארבעים וחמשים אמה לא פריך השתא חמשים כו' וכן בריש אע\"פ <span class=\"parenthesized\">(כתובות דף נז. ושם)</span> גבי אבל חכמים אומרים משהה אדם עם אשתו אפילו שתים ושלש שנים בלא כתובה ונראה לר\"י דכל היכא דפשיטא ליה דבעי למימר אפי' טובא לא פריך אבל הכא ליכא לפרושי ד' וה' אפילו טובא דא\"כ התרתה סנדל המסומר וכן בפרק בנות כותים <span class=\"parenthesized\">(נדה דף לז: ושם)</span> פריך [גבי] וכמה היא קישוייה ר' מאיר אומר אפילו מ' ונ' יום דליכא למימר אפילו טובא דאין סברא שיחשב דם קישוי מיום תחילת עיבורה ומשמע ליה בכל הני דשיעורא בתרא דוקא ולהכי פריך דלימא שיעורא בתרא ולא לימא שיעורא קמא ולקמן בפרק מפנין ד' וה' קופות <span class=\"parenthesized\">(שבת דף קכו:)</span> פריך נמי השתא חמש שרי ד' כו' משמע ליה דטפי לא שרינן משום טורח שבת ומשני רב חסדא ד' מאוצר קטן חמש מאוצר גדול ושמואל משני ד' וה' אפילו טובא כדאמרי אינשי דסבר אפילו טובא מצי לפנות ובלבד שלא יגמור את האוצר פי' קרקעית האוצר משום אשוויי גומות וכדאמרן התם וא\"ת דבפרק אע\"פ <span class=\"parenthesized\">(כתובות דף ס. ושם)</span> אמרינן תינוק יונק והולך אפילו ד' וה' שנים ולא פריך אף על גב דהוי דוקא מדפריך התם מחבילתו על כתפו ומשני אידי ואידי חד שיעורא וי\"ל הא בכחוש הא בבריא והא דאמרינן בפרק הזרוע <span class=\"parenthesized\">(חולין דף קלב:)</span> כהן טבח שתים וג' שבתות פטור מן המתנות מכאן ואילך חייב במתנות אומר ר\"י דנקט שתים לרבי דאית ליה בהבא על יבמתו <span class=\"parenthesized\">(יבמות דף סד:)</span> דבתרי זימני הויא חזקה וג' לרשב\"ג:"
+  },
+  "Tosafot on Shabbat 60b:1:1": {
+    "dependsOn": [
+      "Shabbat 60b:1",
+      "Shabbat 60a:1",
+      "Shabbat 60b:14",
+      "Tosafot on Shabbat 59b:19:1",
+      "Tosafot on Shabbat 2a:4:1"
+    ],
+    "generatedAt": "2026-11-14T00:41:23.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 60b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בסנדל המסומר ולא במנעל שאינו תפור</strong> - תימה לר\"י והא קתני סיפא זה הכלל כל שניאותין בו משלחין אותו ביו\"ט ומפרש בגמ' דכל שנאותין בו בחול קאמר וסנדל המסומר ניאותין בו בחול ואמאי אין משלחין אותו בי\"ט וי\"ל דהחמירו בו לפי שבא תקלה על ידו כי היכי דאסר ליה בשמעתין ר' אלעזר בר' שמעון לטלטלו לכסות בו את הכלי או לסמוך בו כרעי המטה אע\"פ ששאר כלים שמלאכתן לאיסור שרי לטלטלן לצורך גופן ומקומן וזה הכלל דקתני התם לא קאי אלא אמנעל שאינו תפור ונראה לר\"י דאפי' לרבנן דר' אלעזר דשרי לטלטל לצורך גופו ומקומו אסור לשלחו בי\"ט אע\"ג דשילוח משום שמחת י\"ט חשיב כמו לצורך גופו מדשרי' לשלוח דברים שמלאכתן לאיסור כיון שבאת תקלה על ידו ליכא. שמחת י\"ט:"
+  },
+  "Tosafot on Shabbat 60b:3:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 60b:3:1"
+    ],
+    "generatedAt": "2026-11-14T00:44:29.165Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 60b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בין יו\"ט לשבת כו</strong> - ואע\"פ דבפ' משילין <span class=\"parenthesized\">(ביצה דף לז. ושם)</span> ולקמן בפ' כל הכלים <span class=\"parenthesized\">(שבת דף קכד. ושם)</span> מוקמינן לה כב\"ש דאי כב\"ה הא אמרי מתוך שהותרה הבערה לצורך הותרה נמי שלא לצורך מ\"מ דמי טפי יו\"ט לשבת הואיל ולא שריא שאר דברים אלא מטעם שהותרה לצורך אוכל נפש:"
+  }
+}

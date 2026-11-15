@@ -324,6 +324,34 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בין השמשות דר' יוסי מישך שייך בדר' יהודה</strong> - בסופו הוא נכלל וכי שלים דר' יהודה ליליא הוא אפי' לר' יוסי וכי טביל בסוף בין השמשות דר' יהודה תו ליכא הערב שמש קא משמע לן שמואל דכל בין השמשות דר' יהודה לר' יוסי יממא הוא וכשר לטבילה והדר מתחיל דר' יוסי והוא הערב שמש:"
   },
+  "Rashi on Shabbat 35a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:9:2"
+    ],
+    "generatedAt": "2026-11-12T17:57:50.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא הלכה כר' יהודה לענין שבת לחומרא</strong> - כלומר מדקאמר ר' יוחנן הלכה כר' יהודה להכי והלכה כר' יוסי להכי ש\"מ מספקא ליה הלכך על כרחך לחומרא בעי למיזל ובשלמא כי אמר הלכה כר' יהודה לענין שבת איכא למימר דלחומרא אמרה ובע\"ש אמר שאם עשה בו מלאכה מביא אשם תלוי אבל במוצ\"ש לא עבדינן כוותיה למימרא דביה\"ש דידיה ליליא הוא:"
+  },
+  "Rashi on Shabbat 35a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 35a:9:1",
+      "Shabbat 35a:9",
+      "Rashi on Shabbat 35a:7:1",
+      "Rashi on Shabbat 35a:7:2",
+      "Rashi on Shabbat 35a:7:3"
+    ],
+    "generatedAt": "2026-11-12T17:59:04.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 35a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא לטבילה</strong> - דס\"ל דכהנים טובלין בדר' יהודה כדקאמר ר' יוסי והא לר' יוחנן דר' יהודה ספיקא הוא מדלענין שבת קאי כוותיה לחומרא:"
+  },
   "Tosafot on Shabbat 35a:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-09T16:27:29.058Z",

@@ -1,0 +1,640 @@
+{
+  "Rashi on Shabbat 79a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:10:2",
+      "Rashi on Shabbat 79a:10:3",
+      "Rashi on Shabbat 79a:10:1"
+    ],
+    "generatedAt": "2026-11-15T00:18:16.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה על שלשה לטומאת מדרס</strong> - אבל למגע שלש על שלש והן אצבעות:"
+  },
+  "Rashi on Shabbat 79a:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:10:1",
+      "Rashi on Shabbat 79a:10:3",
+      "Shabbat 79a:10",
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:2",
+      "Rashi on Shabbat 79a:9:3",
+      "Rashi on Shabbat 79a:9:4",
+      "Shabbat 79a:8",
+      "Shabbat 79a:5"
+    ],
+    "generatedAt": "2026-11-15T00:19:24.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך שיעור להוצאת שבת</strong> - אלמא שאין מעובד חמשה טפחים בעינן ומתניתין מוקי במעובד:"
+  },
+  "Rashi on Shabbat 79a:10:3": {
+    "dependsOn": [
+      "[",
+      "Sefer HeArukh, Letter Kof 508",
+      "Rashi on Shabbat 79a:10:1",
+      "Rashi on Shabbat 79a:10:2"
+    ],
+    "generatedAt": "2026-11-15T00:20:23.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקורטבלא</strong> - מבשלו ברותחין ומתקשה לישב עליו ולכסות דלובקאות שקורין פושדטוויי\"ל ומטות ולעשותו שולחן:"
+  },
+  "Rashi on Shabbat 79a:1:1": {
+    "dependsOn": [
+      "Shabbat 79a:1",
+      "Rashi on Shabbat 78b:8:1"
+    ],
+    "generatedAt": "2026-11-14T23:37:15.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיאמר פרעתי ולא פרעתי</strong> - כלומר עד שלא אמר פרעתי חייב משאמר פרעתי פטור דבטל ליה:"
+  },
+  "Rashi on Shabbat 79a:2:1": {
+    "dependsOn": [
+      "Shabbat 79a:2",
+      "Shabbat 78b:8",
+      "Rashi on Shabbat 79a:2:1",
+      "Rashi on Shabbat 79a:2:2",
+      "Rashi on Shabbat 79a:2:3"
+    ],
+    "generatedAt": "2026-11-14T23:38:09.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכולי עלמא צריך לקיימו</strong> - והכא בפרעו ולא פרעו ממש קאמר ובשטר מקויים ודכולי עלמא אסור לשהות שטר פרוע:"
+  },
+  "Rashi on Shabbat 79a:2:2": {
+    "dependsOn": [
+      "Shabbat 79a:2",
+      "Rashi on Shabbat 79a:2:1",
+      "Rashi on Shabbat 79a:2:3",
+      "Shabbat 78b:7",
+      "Tosafot on Shabbat 79a:2:1"
+    ],
+    "generatedAt": "2026-11-14T23:39:41.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא בכותבין שובר קא מיפלגי</strong> - יש גורסין ת\"ק סבר אין כותבין שובר על שטר פרוע שאתה מצריכו לשמור שוברו מן העכברים אלא מחזיר לו ושורפו ואסור להשהותו ורבי יהודה סבר כותבין שובר ועל ידי שובר מותר לשהות שטר פרוע לצור ע\"פ צלוחיתו ולא היא חדא דכיון דאסור לשהות שטר פרוע אפי' על ידי שובר נמי אסור להשהותו שמא יאבד השובר וזה חוזר וגובה בו ועוד לרבי יהודה אין כותבין שובר שמעינן ליה בבבא בתרא <span class=\"parenthesized\">(דף קע:)</span> דתנן מי שפרע מקצת חובו ר' יהודה אומר יחליף רבי יוסי אומר יכתוב שובר וה\"ג ת\"ק סבר כותבים שובר והכי קאמר משפרעו לוה והוציאו מלוה בשבת פטור שאינו צריך לו ואי אמרת כיון דראוי לצור ע\"פ צלוחיתו הוא דבעי אהדורי ללוה לא משהי ליה שמא יבא לידי מלוה ויחזור ויתבענו ואי נמי לא מהדר ליה מלוה לא איכפת ליה ללוה דמלוה כתב ליה ללוה שובר עילויה ורבי יהודה סבר אין כותבין שובר הלכך צריך הוא המלוה דבעי אהדורי ואי לא מהדר ליה חוזר ותובעו לו מה שפרעו דלא סגי ליה בשובר דצריך לשומרו מן העכברים:"
+  },
+  "Rashi on Shabbat 79a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:2:1",
+      "Rashi on Shabbat 79a:2:2",
+      "Shabbat 79a:2",
+      "Shabbat 78b:8",
+      "Rashi on Shabbat 78b:7:3",
+      "Rashi on Shabbat 78b:7:4"
+    ],
+    "generatedAt": "2026-11-14T23:40:45.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר</strong> - פלוגתייהו כשהוציאו לוה הוא ומה הוא צריך לו דקאמר ודאי לא לצור דמשום סתימת פי צלוחית לא משהי ליה שמא יבא ליד המלוה אלא משהי ליה להראותו לשאר בעלי חובות ולהתהלל שהוא פורע חובותיו:"
+  },
+  "Rashi on Shabbat 79a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:3:2"
+    ],
+    "generatedAt": "2026-11-14T23:43:55.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המוציא עור בכמה</strong> - משום דבעי למיבעי מיניה הנך בעיי אחרנייתא בעא מיניה הא ואף על גב דמתני' היא:"
+  },
+  "Rashi on Shabbat 79a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T23:44:18.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעבד</strong> - עור העומד לעבדו ועדיין לא עבדו בכמה שיעור הוצאתו:"
+  },
+  "Rashi on Shabbat 79a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T23:44:40.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המלבן</strong> - צמר:"
+  },
+  "Rashi on Shabbat 79a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3",
+      "Rashi on Shabbat 105b:2:1",
+      "Rashi on Shabbat 78b:1:1"
+    ],
+    "generatedAt": "2026-11-14T23:45:55.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיט</strong> - כדי הפרש אצבע מהאמה:"
+  },
+  "Rashi on Shabbat 79a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3",
+      "Rashi on Shabbat 79a:4:4",
+      "Rashi on Shabbat 79a:4:5",
+      "Rashi on Shabbat 105b:2:1",
+      "Shabbat 106a:6",
+      "Rashi on Shabbat 106a:6:1",
+      "Rashi on Shabbat 106a:6:2",
+      "Jastrow, סִיט 1",
+      "Rashi on Shabbat 79a:1:1",
+      "Rashi on Shabbat 79a:3:1",
+      "Rashi on Shabbat 79a:3:2",
+      "Rashi on Shabbat 78b:1:1",
+      "Rashi on Shabbat 78a:1:1"
+    ],
+    "generatedAt": "2026-11-14T23:47:45.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפול</strong> - שני סיטין:"
+  },
+  "Rashi on Shabbat 79a:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3",
+      "Rashi on Shabbat 79a:4:4",
+      "Rashi on Shabbat 79a:4:5"
+    ],
+    "generatedAt": "2026-11-14T23:48:19.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא</strong> - כיון דמנפץ ומלבן לטווייה קאי שיעוריה כטוויה:"
+  },
+  "Rashi on Shabbat 79a:4:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3",
+      "Rashi on Shabbat 79a:4:4"
+    ],
+    "generatedAt": "2026-11-14T23:48:51.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא לעבדו</strong> - אינו עומד לעבד:"
+  },
+  "Rashi on Shabbat 79a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:3",
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3",
+      "Rashi on Shabbat 79a:4:4",
+      "Rashi on Shabbat 79a:4:5",
+      "Rashi on Shabbat 78b:8:1",
+      "Rashi on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-11-14T23:50:52.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דוגמא</strong> - כלומר מעט כעין שמראין לדוגמא לומר רוצה אתה בזה:"
+  },
+  "Rashi on Shabbat 79a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:3",
+      "Mishnah Shabbat 8:4",
+      "Mishnah Shabbat 9:5",
+      "Shabbat 80a:1",
+      "Shabbat 80a:2",
+      "Shabbat 80a:3",
+      "Shabbat 80a:4",
+      "Shabbat 78b:9",
+      "Shabbat 78b:10",
+      "Shabbat 78b:11",
+      "Shabbat 78b:12",
+      "Shabbat 78b:13",
+      "Shabbat 78b:14",
+      "Shabbat 78b:15",
+      "Shabbat 79a:1",
+      "Rabbeinu Chananel on Shabbat 79a:5",
+      "Sefer HeArukh, Letter Daled 33",
+      "Steinsaltz on Shabbat 79a:5",
+      "Tosefta Kifshutah on Shabbat 9:7:1",
+      "Tosefta Kifshutah on Shabbat 9:7:3",
+      "Shabbat 89b:7"
+    ],
+    "generatedAt": "2026-11-14T23:55:17.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאירא</strong> - והוא כשיעור הצריך לאירא של גרדי לסתום פי קנה שפקעית הערב נתונה בו:"
+  },
+  "Rashi on Shabbat 79a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T23:55:37.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קליפי אגוזים</strong> - קליפה לחה שעל קליפי האגוז:"
+  },
+  "Rashi on Shabbat 79a:5:4": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 79a:5:3",
+      "Rashi on Shabbat 79a:5:4",
+      "Rashi on Shabbat 79a:5:5",
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:6",
+      "Rashi on Shabbat 79a:5:7"
+    ],
+    "generatedAt": "2026-11-14T23:57:37.173Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סטיס</strong> - וישודא:"
+  },
+  "Rashi on Shabbat 79a:5:5": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 79a:5:4",
+      "Rashi on Shabbat 20b:2:1",
+      "Rashi on Shabbat 20b:2:2",
+      "Rashi on Shabbat 20b:2:3",
+      "Rashi on Shabbat 20b:2:4",
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:3",
+      "Rashi on Shabbat 79a:5:6",
+      "Rashi on Shabbat 79a:5:7"
+    ],
+    "generatedAt": "2026-11-15T00:00:00.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פואה</strong> - וורנצ\"א:"
+  },
+  "Rashi on Shabbat 79a:5:6": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 79a:5:5",
+      "Rashi on Shabbat 79a:5:7",
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:3",
+      "Rashi on Shabbat 79a:5:4",
+      "Rashi on Shabbat 78b:5:1",
+      "Rashi on Shabbat 78b:6:1",
+      "Rashi on Shabbat 78b:8:1"
+    ],
+    "generatedAt": "2026-11-15T00:01:17.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פי סבכה</strong> - קופ\"א נותנין בגד באמצעיתה והאי שיעורא נפיש:"
+  },
+  "Rashi on Shabbat 79a:5:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Rashi on Shabbat 79a:5:3",
+      "Rashi on Shabbat 79a:5:4",
+      "Rashi on Shabbat 79a:5:5",
+      "Rashi on Shabbat 79a:5:6"
+    ],
+    "generatedAt": "2026-11-15T00:01:58.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:5:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין אדם טורח כו'</strong> - ואם בא לשרותה שורה כדי פי סבכה אבל עור טורח אדם לעבד כדי קמיע ומעובד נמי פחות מכדי קמיע לא חשיב:"
+  },
+  "Rashi on Shabbat 79a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:02:19.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמשה</strong> - גרעינין:"
+  },
+  "Rashi on Shabbat 79a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:02:39.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואילו בתר דזרעינהו תנן</strong> - דקלח אחד חשוב:"
+  },
+  "Rashi on Shabbat 79a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:6:1",
+      "Rashi on Shabbat 79a:6:2",
+      "Rashi on Shabbat 79a:6:4",
+      "Rashi on Shabbat 79a:6:5",
+      "Rashi on Shabbat 90b:2:1",
+      "Rashi on Shabbat 90b:2:2",
+      "Rashi on Shabbat 79a:4:1",
+      "Rashi on Shabbat 79a:4:2",
+      "Rashi on Shabbat 79a:4:3"
+    ],
+    "generatedAt": "2026-11-15T00:04:53.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרישא</strong> - קפלוט:"
+  },
+  "Rashi on Shabbat 79a:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:6:3",
+      "Rashi on Shabbat 79a:6:4",
+      "Rashi on Shabbat 79a:6:5"
+    ],
+    "generatedAt": "2026-11-15T00:05:31.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא איתמר עלה</strong> - לקמן בפרק רבי עקיבא מתרץ לה רב פפא הכי:"
+  },
+  "Rashi on Shabbat 79a:6:5": {
+    "dependsOn": [
+      "Steinsaltz on Shabbat 79a:6",
+      "Rashi on Shabbat 79a:6:4",
+      "Rashi on Shabbat 79a:6:5",
+      "Rashi on Shabbat 79a:6:1",
+      "Rashi on Shabbat 79a:6:2",
+      "Rashi on Shabbat 79a:6:3",
+      "Rashi on Shabbat 78b:1:1",
+      "Rashi on Shabbat 78b:2:1",
+      "Rashi on Shabbat 79a:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2"
+    ],
+    "generatedAt": "2026-11-15T00:07:45.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא</strong> - גרעינין:"
+  },
+  "Rashi on Shabbat 79a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:8:1",
+      "Rashi on Shabbat 79a:8:2",
+      "Rashi on Shabbat 79a:8:3"
+    ],
+    "generatedAt": "2026-11-15T00:08:20.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מצה כמשמעו</strong> - שאין לה שום תיקון:"
+  },
+  "Rashi on Shabbat 79a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:08:36.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמיח</strong> - משהין אותו בקמח ומים:"
+  },
+  "Rashi on Shabbat 79a:8:3": {
+    "dependsOn": [
+      "[",
+      "Jastrow, אֲפַץ 1",
+      "Rashi on Shabbat 79a:8:2",
+      "Rashi on Shabbat 79a:8:4"
+    ],
+    "generatedAt": "2026-11-15T00:09:37.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עפיץ</strong> - מתקנין אותו בשחיקת עפצים כמו שעושין כאן בשחיקת קליפת ארז שקורין טנא:"
+  },
+  "Rashi on Shabbat 79a:8:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:09:55.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכמה שיעורו</strong> - להוצאת שבת:"
+  },
+  "Rashi on Shabbat 79a:8:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:8:1",
+      "Rashi on Shabbat 79a:8:2",
+      "Rashi on Shabbat 79a:8:3",
+      "Rashi on Shabbat 79a:8:4",
+      "Rashi on Shabbat 79a:8:5",
+      "Steinsaltz on Shabbat 79a:8",
+      "Steinsaltz comment #3 on Shabbat 79a:8"
+    ],
+    "generatedAt": "2026-11-15T00:11:17.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבעא דרבעא דפומבדיתא</strong> - רובע ליטרא של פומבדיתא דרך הסוחרים לצור משקולת של עופרת כדי שלא תפחת לפי שהמתכת נשחקת תמיד ונפחת מאליו:"
+  },
+  "Rashi on Shabbat 79a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:2",
+      "Rashi on Shabbat 79a:9:3",
+      "Rashi on Shabbat 79a:9:4"
+    ],
+    "generatedAt": "2026-11-15T00:11:50.080Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמיע</strong> - בציר שיעוריה מכדי לצור משקולת:"
+  },
+  "Rashi on Shabbat 79a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:3",
+      "Rashi on Shabbat 79a:9:4",
+      "Rashi on Shabbat 79a:8:1",
+      "Rashi on Shabbat 79a:8:2",
+      "Rashi on Shabbat 79a:5:1",
+      "Rashi on Shabbat 79a:5:2",
+      "Shabbat 79a:1",
+      "Gittin 85a:27"
+    ],
+    "generatedAt": "2026-11-15T00:14:06.078Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכתוב גט</strong> - ותנן <span class=\"parenthesized\">(גיטין דף פה.)</span> גופו של גט הרי את מותרת לכל אדם ושמו ושמה והעדים והזמן ושיעור זה קטן מכולן:"
+  },
+  "Rashi on Shabbat 79a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:2",
+      "Shabbat 79a:9"
+    ],
+    "generatedAt": "2026-11-15T00:14:44.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני מיהת כו'</strong> - אלמא שיעור דאין מעובד נפיש:"
+  },
+  "Rashi on Shabbat 79a:9:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:2",
+      "Rashi on Shabbat 79a:9:3"
+    ],
+    "generatedAt": "2026-11-15T00:15:13.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 79a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבישולא</strong> - לח כמו שהופשט קרי בשולא לשון בשול שהוא לח דאכתי לא חזי לעיבוד אבל יבש חזי לעיבוד וכיון דחזי לעיבוד הוי כמעובד:"
+  },
+  "Tosafot on Shabbat 79a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:2:1",
+      "Rashi on Shabbat 79a:2:2",
+      "Rashi on Shabbat 79a:2:3",
+      "Shabbat 79a:2",
+      "Shabbat 78b:6",
+      "Shabbat 78b:7"
+    ],
+    "generatedAt": "2026-11-14T23:41:49.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 79a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ק סבר כותבין שובר</strong> - ומיירי שכבר יש לו שובר ולכך משפרע פטור דאין זקוק להחזיר השטר ומתוך פירוש <span class=\"rashi-quotation\">הקונטרס</span> משמע שעדיין לא נכתב השובר וקשה דהרי צריך להחזירו ללוה שלא יצטרך לכתוב שובר:"
+  },
+  "Tosafot on Shabbat 79a:2:2": {
+    "dependsOn": [
+      "Shabbat 79a:2",
+      "Tosafot on Shabbat 79a:2:1"
+    ],
+    "generatedAt": "2026-11-14T23:43:16.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 79a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזי דגברא דפרע אנא</strong> - כרב אשי תניא בתוספתא דמכילתין ר' יהודה אומר אף המוציא שטר פרוע כל שהוא חייב מפני שמשמרו לבעל חוב ולשאר אמוראי קשה לרשב\"א:"
+  },
+  "Tosafot on Shabbat 79a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T23:49:16.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 79a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא כיון דלטוויה קאי</strong> - הוה ליה למינקט כיון דלאריגה קאי שהוא רחוק יותר אלא שמא לאו כולהו קיימי לאריגה:"
+  },
+  "Tosafot on Shabbat 79a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 79a:9:1",
+      "Rashi on Shabbat 79a:9:2",
+      "Rashi on Shabbat 79a:9:3",
+      "Rashi on Shabbat 79a:9:4"
+    ],
+    "generatedAt": "2026-11-15T00:16:07.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 79a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדי לכתוב עליו את הגט</strong> - סבירא ליה כרבי אליעזר דאמר עדי מסירה כרתי דלר' מאיר אין כותבין על הדפתרא דתנן בגטין <span class=\"parenthesized\">(דף כא:)</span> אין כותבין על נייר מחוק ועל הדפתרא וחכמים מכשירין ואמר בגמ' מאן חכמים ר' אליעזר ובחנם <span class=\"rashi-quotation\">פי' בקונטרס</span> דשיעור גט קטן מכולן דהא אשכחן דקלף כדי לכתוב עליו פרשה קטנה שבתפילין ונייר דגרע טפי שיעורו לכתוב עליו קשר מוכסין וטעמא דקלף שהוא חשוב אין מצניעין אותו לקשר מוכסין וכן יש לפרש כאן:"
+  },
+  "Tosafot on Shabbat 79a:9:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 79a:9:1",
+      "Tosafot on Shabbat 79a:2:1",
+      "Tosafot on Shabbat 79a:2:2",
+      "Tosafot on Shabbat 79a:4:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 2a:1:2",
+      "Shabbat 79a:9"
+    ],
+    "generatedAt": "2026-11-15T00:17:43.011Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 79a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקתני מיהא כדי לצור ואמר אביי</strong> - קשה לר\"י דלא הוה ליה לאתויי מילתא דאביי הכא:"
+  }
+}

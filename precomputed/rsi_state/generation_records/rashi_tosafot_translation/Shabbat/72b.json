@@ -1,0 +1,288 @@
+{
+  "Rashi on Shabbat 72b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:1:2",
+      "Rashi on Shabbat 72b:1:3"
+    ],
+    "generatedAt": "2026-11-14T15:39:21.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתכוין להגביה את התלוש</strong> - כגון דנפל סכין בערוגת הירק ונתכוין להגביהו:"
+  },
+  "Rashi on Shabbat 72b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:1:1",
+      "Rashi on Shabbat 72b:1:3",
+      "Shabbat 72b:1"
+    ],
+    "generatedAt": "2026-11-14T15:40:46.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחתך את המחובר פטור</strong> - דכתיב אשר חטא בה ודרשינן בכריתות פרט למתעסק בדבר אחר ועשה דבר זה ושוגג היכי דמי כגון שנתכוין לכך אבל שגג דסבר שאין היום שבת או סבר שמלאכה זו מותרת וזה מתעסק בהגבהה היה ולא בחתיכה:"
+  },
+  "Rashi on Shabbat 72b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:1:1",
+      "Rashi on Shabbat 72b:1:2"
+    ],
+    "generatedAt": "2026-11-14T15:41:20.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא לא איכוין אחתיכה דאיסורא</strong> - בשגגת שבת או בשגגת מלאכות אלא מתעסק בחתיכת היתר הוה שיודע שהוא שבת ויודע שחתיכת מחובר אסור:"
+  },
+  "Rashi on Shabbat 72b:2:1": {
+    "dependsOn": [
+      "Shabbat 72b:2",
+      "Rashi on Shabbat 72b:2:2"
+    ],
+    "generatedAt": "2026-11-14T15:43:43.173Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משא\"כ בשאר מצות</strong> - כולה מפרש לה ואזיל:"
+  },
+  "Rashi on Shabbat 72b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T15:44:06.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגג בלא מתכוין</strong> - לקמן מפרש לה:"
+  },
+  "Rashi on Shabbat 72b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:3:2",
+      "Rashi on Shabbat 72b:3:3"
+    ],
+    "generatedAt": "2026-11-14T15:44:35.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלב ודם</strong> - דומיא דטחינה וקצירה שהן שני גופין:"
+  },
+  "Rashi on Shabbat 72b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:3:1",
+      "Rashi on Shabbat 72b:3:2",
+      "Rashi on Shabbat 72b:3:3",
+      "Chokhmat Shlomo on Shabbat 72b:1"
+    ],
+    "generatedAt": "2026-11-14T15:46:19.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא גבי שאר מצות היכי דמי</strong> - דפטור:"
+  },
+  "Rashi on Shabbat 72b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:3:1",
+      "Rashi on Shabbat 72b:3:2"
+    ],
+    "generatedAt": "2026-11-14T15:46:45.707Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון חלב וחלב</strong> - בהעלם אחד:"
+  },
+  "Rashi on Shabbat 72b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T15:48:52.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבי אמי</strong> - במסכת סנהדרין בפרק ד' מיתות יליף למילתיה מקרא דאין חילוק חטאות לעכו\"ם:"
+  },
+  "Rashi on Shabbat 72b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T15:49:35.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והשתחוה לה</strong> - והיינו שגג שהיא ע\"ז בלא מתכוין שלא נתכוון להשתחוות לע\"ז:"
+  },
+  "Rashi on Shabbat 72b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T15:49:57.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי לבו לשמים</strong> - ומה חיוב יש כאן אפי' ידע שהוא בית ע\"ז והשתחוה בו לשמים אין חיוב כאן:"
+  },
+  "Rashi on Shabbat 72b:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:5:1",
+      "Rashi on Shabbat 72b:5:2",
+      "Rashi on Shabbat 72b:5:3"
+    ],
+    "generatedAt": "2026-11-14T15:50:51.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אנדרטא</strong> - צורת המלך שעושין לכבוד המלך והשתחוה לה ולא לשם אלהות:"
+  },
+  "Rashi on Shabbat 72b:6:1": {
+    "dependsOn": [
+      "Shabbat 72b:6"
+    ],
+    "generatedAt": "2026-11-14T15:51:24.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאהבה ומיראה</strong> - מאהבת אדם או מיראת אדם השתחוה לע\"ז וקרי ליה שוגג בלא מתכוין כלומר שגג בהכי דסבור כיון דאין מתכוין לבו לאלהות מותר:"
+  },
+  "Rashi on Shabbat 72b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:6:1",
+      "Rashi on Shabbat 72b:6:3",
+      "Shabbat 72b:2"
+    ],
+    "generatedAt": "2026-11-14T15:52:18.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא באומר מותר</strong> - כגון גר שנתגייר בין הנכרים כסבור שאין ע\"ז בתורה וקרי ליה שגג בלא מתכוין:"
+  },
+  "Rashi on Shabbat 72b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:6:1",
+      "Rashi on Shabbat 72b:6:2",
+      "Shabbat 72b:6"
+    ],
+    "generatedAt": "2026-11-14T15:53:06.379Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דפטור לגמרי</strong> - בתמיה:"
+  },
+  "Rashi on Shabbat 72b:7:1": {
+    "dependsOn": [
+      "Shabbat 70b:2",
+      "Shabbat 72b:6",
+      "Shabbat 72b:7",
+      "Rashi on Shabbat 72b:6:1",
+      "Rashi on Shabbat 72b:6:2",
+      "Rashi on Shabbat 72b:6:3"
+    ],
+    "generatedAt": "2026-11-14T16:01:24.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 72b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן לא קבעי מיניה רבא מרב נחמן</strong> - העלם זה וזה בידו מהו לעיל בפירקין <span class=\"parenthesized\">(שבת דף ע:)</span> דהיינו אומר מותר דאמר אין שבת בתורה היינו העלם זה וזה:"
+  },
+  "Tosafot on Shabbat 72b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:1:1",
+      "Rashi on Shabbat 72b:1:2",
+      "Rashi on Shabbat 72b:1:3",
+      "Shabbat 72b:1"
+    ],
+    "generatedAt": "2026-11-14T15:43:08.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 72b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתכוין להגביה את התלוש</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> כגון סכין מוטל בערוגת ירק ונתכוין להגביה וחתך את המחובר א\"כ הא דפליגי בנתכוין לחתוך את התלוש וחתך את המחובר היינו לחתוך תלוש וחתך מחובר אחר אבל לחתוך מחובר זה וחתך מחובר אחר משמע דחייב לכ\"ע וקשה לר\"ת דבסוף פ' ספק אכל <span class=\"parenthesized\">(כריתות יט:)</span> אמר שמואל המתעסק בחלבים ועריות חייב שכן נהנה בשבת פטור דמלאכת מחשבת אסרה תורה ומוכח התם דאפילו בנתכוין ללקוט תאנה זו וליקט תאנה אחרת פטר שמואל ולקמן בפרק הזורק <span class=\"parenthesized\">(שבת דף צז:)</span> פטר רבא נתכוין לזרוק ארבע וזרק שמנה כי לא אמר כל מקום שתרצה תנוח וכל שכן בנתכוין לזרוק בצד זה וזרק בצד אחר דלא נעשה כלל רצונו או נתכוין לחתוך מחובר זה וחתך מחובר אחר דפטור ונראה לר\"ת דהכא מיירי בנתכוין לחתוך תלוש ונמצא שהוא מחובר וחותך מה שהיה מתכוין אלא שלא היה יודע שהיה מחובר ופליגי אביי ורבא בקרא דאשר חטא בה דמוקי ליה רבי אליעזר בפרק ספק אכל <span class=\"parenthesized\">(שם יט:)</span> פרט למתעסק והכי איתא התם בהדיא דקאמר עלה לרבא משכחת לה שנתכוין לחתוך את התלוש וחתך את המחובר לאביי שנתכוין להגביה את התלוש כו' ושמואל דפטר מטעם מלאכת מחשבת היינו בנתכוין לחתוך מחובר זה וחתך מחובר אחר דלא נעשה מחשבתו והשתא אתי שפיר דקאמר לקמן דמפרש שגג בלא מתכוין דשאר מצות היכי דמי כגון דסבור שומן הוא ואכלו דהיינו ממש דומיא דשבת לפר\"ת:"
+  },
+  "Tosafot on Shabbat 72b:6:1": {
+    "dependsOn": [
+      "Shabbat 72b:6",
+      "Tosafot on Shabbat 72b:6:2",
+      "Tosafot on Shabbat 72b:6:3",
+      "Tosafot on Shabbat 72b:7:1",
+      "Tosafot on Shabbat 72b:1:1",
+      "Keritot 19b:2",
+      "Keritot 19b:3",
+      "Keritot 19b:4",
+      "Keritot 19b:5",
+      "Shabbat 73a:1",
+      "Meir Lublin: Maharam on Shabbat 72b:3"
+    ],
+    "generatedAt": "2026-11-14T15:55:04.778Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 72b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לאביי דאמר חייב</strong> - פי' הניחא לאביי בהא דמשכחת גבי ע\"ז שגג בלא מתכוין אבל מ\"מ גם לאביי לא מיתוקמא ברייתא שפיר בהכי דהא אם חלל שבת מאהבה ומיראה נמי חייב ולהכי איצטריך בסמוך לאוקמא אליבא דאביי שגג בלא מתכוין ה\"ד דסבור רוק הוא ובלעו:"
+  },
+  "Tosafot on Shabbat 72b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T15:58:22.946Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 72b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבא אמר פטור</strong> - ואם תאמר והא אמר בפרק בן סורר ומורה <span class=\"parenthesized\">(סנהדרין דף עד.)</span> דע\"ז וגילוי עריות ושפיכות דמים יהרג ואל יעבור אם כן אפילו לא מקבל ליה חייב ואין לומר דרבא לטעמיה דאמר במס' ע\"ז בפרק ר' ישמעאל <span class=\"parenthesized\">(עבודה זרה דף נד.)</span> דאפילו בע\"ז בצינעא וחי בהם ולא שימות בהם והא דקאמר רבא בפ\"ב דכתובות <span class=\"parenthesized\">(דף יט.)</span> גבי עדים שאמרו להם חתמו שקר כו' שאין לך דבר שעומד בפני פיקוח נפש אלא ע\"ז וגילוי עריות ושפיכות דמים ה\"פ אפילו מאן דמחמיר לא מחמיר אלא בע\"ז ג\"ע ושפיכות דמים דאם כן דטעמא דרבא דפטר הוי משום הכי מאי מייתי אביי בפ' ד' מיתות <span class=\"parenthesized\">(סנהדרין סא:)</span> מכמה ברייתות לימא דאתיא כמ\"ד בפרק בן סורר <span class=\"parenthesized\">(שם עד.)</span> יהרג ואל יעבור דפלוגתא דתנאי היא וי\"ל דסבר רבא דאפי' למ\"ד דחייב למסור את עצמו אם לא מסר עצמו לא מיחייב מיתה בבית דין וקשה לרשב\"א דאמר רבא במסכת ע\"ז הכל היו בכלל לא תעבדם כשפרט לך הכתוב וחי בהם יצא אונס משמע דלא מפיק אלא אונס מיתה אבל שאר אונסין הוו בכלל לא תעבדם וחייב והכא פטור אפי' מאהבה דליכא אונס מיתה וי\"מ דההיא דאמר יהרג ואל יעבור היינו בסתם אע\"ג דלא מקבל עליה לאלוה אבל הכא במפרש דקעביד מאהבה ומיראה אי נמי אפילו בסתם ובע\"ז שהכל אין עובדין אותה אלא מאהבה ומיראה דומיא דהמן דמייתי עלה התם להם אי אתה משתחוה אבל אתה משתחוה לאדם כמותך יכול אפי' נעבד כהמן ת\"ל לא תעבדם [וקאמר רבא כהמן ולא כהמן דאילו התם מיראה והכא לאו מיראה] ומההיא גופא נמי יש לדקדק דחייב אע\"ג דלא קבל עליה באלוה דמשמע דאסר נעבד כהמן דומיא דאדם שכמותך דשרי והיינו בלא קיבלו עליו באלוה ועוד דאמר בפרק ד' מיתות <span class=\"parenthesized\">(סנהדרין דף ס:)</span> הפוער עצמו לפעור זו היא עבודתו אע\"ג דקא מכוין לבזוייא הזורק אבן למרקוליס זו היא עבודתו אע\"ג דקא מכוין למירגמיה אלמא דחייב אע\"פ שאין מקבל עליו באלוה ומיהו יש לפרש אע\"ג דקא מכוין לבזוייא מכוין לעובדה דרך בזיון וברגימה זו והא דלא דחי ראיות דאביי בעובד מאהבה ומיראה סתם משום דסתם עובד כמדעתו דמי וא\"ת ולמאי דפטר רבא אמאי לא השתחוה מרדכי להמן וי\"ל כדאמרינן במדרש ששתי צורות היו על לבו ועוד משום קידוש השם כדאשכחן בירושלמי במסכת שביעית בפ\"ד כגון פפוס ולולינוס אחיו שנתנו להם מים בזכוכית צבועה ולא קבלו מהם:"
+  },
+  "Tosafot on Shabbat 72b:6:3": {
+    "dependsOn": [
+      "Tosafot on Shabbat 72b:6:1",
+      "Tosafot on Shabbat 72b:6:2",
+      "Tosafot on Shabbat 70a:4:3"
+    ],
+    "generatedAt": "2026-11-14T16:00:15.145Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 72b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באומר מותר</strong> - והא דמעטינן בפ\"ב דמכות <span class=\"parenthesized\">(דף ז: ושם)</span> בשגגה פרט לאומר מותר שאני גבי גלות דטובא בשגגה כתיבי התם ולהכי נמי אמר בסוף פ\"ב דב\"ק <span class=\"parenthesized\">(דף כו: ושם)</span> היתה אבן מונחת לו בחיקו ולא הכיר בה מעולם לענין גלות פטור מבשגגה לענין שבת פטור משום דבעינן מלאכת מחשבת והשתא תיפוק ליה דגבי שבת נמי כתיב בשגגה אלא ודאי דוקא גבי גלות ממעטינן משום דכתיבי בשגגה טובא:"
+  },
+  "Tosafot on Shabbat 72b:7:1": {
+    "dependsOn": [
+      "Shabbat 72b:7",
+      "Tosafot on Shabbat 72b:6:1",
+      "Tosafot on Shabbat 72b:6:2",
+      "Tosafot on Shabbat 72b:6:3",
+      "Tosafot on Shabbat 68b:2:1",
+      "Rashi on Shabbat 72b:7:1",
+      "Maharsha on Shabbat 72b:2",
+      "Maharam on Shabbat 72b:5",
+      "Maharam on Shabbat 72b:8"
+    ],
+    "generatedAt": "2026-11-14T16:03:52.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 72b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד כאן לא בעא מיניה רבא מרב נחמן כו'</strong> - וא\"ת אמאי לא מייתי מתני' דהשוכח עיקר שבת דאינו חייב אלא אחת ולא הוי פטור לגמרי וי\"ל דניחא ליה לאתויי מרבא דמספקא ליה בהעלם זה וזה דדילמא אפי' תרתי מיחייב דכי אוקי הכא באומר מותר היינו בנתעלמה ממנו לפי שעה דהיינו דומיא דהעלם זה וזה בידו כדפי' לעיל דאם לא נודע לו מעולם איסור ע\"ז אינו ישראל כלל כיון שמודה בע\"ז דדוחק להעמיד בתינוק שנשבה לבין העכו\"ם:"
+  }
+}

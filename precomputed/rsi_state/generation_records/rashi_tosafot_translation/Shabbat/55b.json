@@ -1,0 +1,432 @@
+{
+  "Rashi on Shabbat 55b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:07:34.145Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זעזעת'</strong> - יראת לחטוא לר' אליעזר ור' יהושע חטא ולרבן גמליאל ולמודעי בקש לחטוא ולא חטא:"
+  },
+  "Rashi on Shabbat 55b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:10:1"
+    ],
+    "generatedAt": "2026-11-13T19:08:17.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלית</strong> - חולי גדול להתאפק לכבוש יצרך:"
+  },
+  "Rashi on Shabbat 55b:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:12:1",
+      "Shabbat 55b:12",
+      "Rashi on Shabbat 55b:13:1",
+      "Rashi on Shabbat 55b:13:2"
+    ],
+    "generatedAt": "2026-11-13T19:09:04.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל האומר בני עלי חטאו</strong> - באשת איש אינו אלא טועה ומיהו בבזיון קדשים חטאו:"
+  },
+  "Rashi on Shabbat 55b:13:1": {
+    "dependsOn": [
+      "Shabbat 55b:13"
+    ],
+    "generatedAt": "2026-11-13T19:11:26.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר רב</strong> - לקמן בשמעתין פנחס לא חטא ויליף לה מקרא ור' יונתן יליף לה לחפני מהאי קרא דמקיש חפני לפנחס:"
+  },
+  "Rashi on Shabbat 55b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:12:03.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששהו את קיניהן</strong> - שהיו מסרבין להקריב שום קרבן אלא בקושי כדכתיב <span class=\"parenthesized\">(שמואל א ב׳:ט״ו)</span> גם בטרם יקטירון את החלב וגו' וכשהיו זבות ויולדות באות ממקום אחר לשילה להקריב את קיניהן והן היו משהין מלהקריבם והנשים לא היו יכולין לסמוך עליהם שיקריבו והיו שוהות שם ולא היו חוזרות אצל בעליהן עד שראו קיניהן קרבין והיו טהורות לקדשים וליכנס לעזרה לפיכך מעלה עליהם כאילו שכבום שהיו מונעים אותן מפריה ורביה:"
+  },
+  "Rashi on Shabbat 55b:14:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:13:1",
+      "Rashi on Shabbat 55b:13:2",
+      "Rashi on Shabbat 55b:14:2",
+      "Rashi on Shabbat 55b:14:3",
+      "Shabbat 55b:14",
+      "Rashi on Shabbat 55b:6:1",
+      "Rashi on Shabbat 55b:6:2",
+      "Rashi on Shabbat 55b:6:3",
+      "Rashi on Shabbat 55b:9:1",
+      "Tosafot on Shabbat 55b:12:1",
+      "Steinsaltz on Shabbat 55b:14:1"
+    ],
+    "generatedAt": "2026-11-13T19:13:42.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנחס לא חטא</strong> - באשת איש דאשר ישכבון את הנשים אינו אלא חפני לבדו:"
+  },
+  "Rashi on Shabbat 55b:14:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:14:1",
+      "Rashi on Shabbat 55b:14:3"
+    ],
+    "generatedAt": "2026-11-13T19:14:33.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחיה בן אחיטוב וגו' כהן ה'</strong> - בשילה נושא אפוד הרי שמיחסו לשבח ומזכיר עליו שם פנחס אבי אביו:"
+  },
+  "Rashi on Shabbat 55b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:15:13.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר בא חטא לידו והכתוב מייחסו</strong> - לשבח ואת בן בנו מייחסו אחריו והכתיב גבי עבירה דנואפים יכרת ה' לאיש וגו' והאי קרא בבא על הנכרית ועל הזונה מישתעי כדדרשינן ליה באלו הן הנשרפין דכתיב לעיל מיניה כי חלל יהודה קדש ה' אשר אהב ובעל בת אל נכר ודרשינן כי חלל יהודה קדש זו זונה וכן הוא אומר לא תהיה קדשה וגו':"
+  },
+  "Rashi on Shabbat 55b:15:1": {
+    "dependsOn": [
+      "Eruvin 53b:15",
+      "Eruvin 53b:16",
+      "Eruvin 53b:17",
+      "Eruvin 53b:13",
+      "Eruvin 53b:14",
+      "Rashi on Shabbat 55b:15:2",
+      "Rashi on Shabbat 55b:15:3"
+    ],
+    "generatedAt": "2026-11-13T19:16:34.348Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ער</strong> - חריף להבין ולהורות בין החכמים כדאמרי' בעירובין <span class=\"parenthesized\">(דף נג:)</span> אהרנית ערנית:"
+  },
+  "Rashi on Shabbat 55b:15:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:15:1",
+      "Rashi on Shabbat 55b:15:3",
+      "Shabbat 55b:14"
+    ],
+    "generatedAt": "2026-11-13T19:17:18.378Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם כהן הוא כו'</strong> - וכאן מייחס כהן מגיש מנחה אחר פנחס:"
+  },
+  "Rashi on Shabbat 55b:15:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:15:1",
+      "Rashi on Shabbat 55b:15:2",
+      "Rashi on Shabbat 55b:15:3",
+      "Shabbat 55b:15",
+      "Rashi on Shabbat 55b:14:1",
+      "Rashi on Shabbat 55b:14:2",
+      "Rashi on Shabbat 55b:14:3",
+      "Rashi on Shabbat 55b:17:1",
+      "Rashi on Shabbat 55b:18:1",
+      "Shabbat 55b:18"
+    ],
+    "generatedAt": "2026-11-13T19:18:34.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:15:3"
+    ],
+    "sourceText": "והכתיב אל בני כי לא טובה השמועה אשר אנכי שומע מעבירים עם ה' אביהם היה מוכיחם:"
+  },
+  "Rashi on Shabbat 55b:18:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 55b:18:1",
+      "Steinsaltz comment #1 on Shabbat 55b:18",
+      "Steinsaltz comment #2 on Shabbat 55b:18",
+      "Steinsaltz on Shabbat 55b:18"
+    ],
+    "generatedAt": "2026-11-13T19:19:59.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא כתיב מעבירים אמר רב הונא בריה דרב יהושע מעבירם כתיב</strong> - קשה בעיני שם החכם הנזכר כאן כי אומר אני שטעות גדול הוא ול\"ג לה להא מילתא שהרי בספרים מוגהים כתיב מעבירים וגם . במסורה הגדולה במקום שמנויין שם כל התיבות דלא כתיב בהן יו\"ד וקורין ולא נמנה זה והם מנויין ע\"פ החשבון וזו אינה קשיא דהאי מעבירים לאו לשון עבירה הוא אלא לשון ויעבירו קול במחנה <span class=\"parenthesized\">(שמות ל״ו:ו׳)</span> וה\"ק להו לא טובה השמועה אשר אנכי שומע את עם ה' מעבירים ומכריזין וקובלים עליכם והאי מעבירים לשון רבים הוא ואעם ה' קאי ולאו אבני עלי שהרי הם היו עוברים ולא היו מעבירים את אחרים:"
+  },
+  "Rashi on Shabbat 55b:3:1": {
+    "dependsOn": [
+      "Daniel 2:14"
+    ],
+    "generatedAt": "2026-11-13T18:51:07.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעטיו של נחש</strong> - בעצתו של נחש שהשיא לחוה ולא בחטא אחר שלא חטאו בעטיו כמו עטא וטעם <span class=\"parenthesized\">(דניאל ב)</span>:"
+  },
+  "Rashi on Shabbat 55b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:52:16.193Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחיותיהם</strong> - בבני ישי משתעי:"
+  },
+  "Rashi on Shabbat 55b:5:1": {
+    "dependsOn": [
+      "Shabbat 55b:5",
+      "Rashi on Shabbat 55b:3:1"
+    ],
+    "generatedAt": "2026-11-13T18:53:03.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו ר\"ש בן אלעזר</strong> - דאמר משה ואהרן בחטאם מתו ומודה בהני:"
+  },
+  "Rashi on Shabbat 55b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:54:20.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל האומר ראובן חטא</strong> - במעשה בלהה:"
+  },
+  "Rashi on Shabbat 55b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:6:1",
+      "Rashi on Shabbat 55b:6:2",
+      "Rashi on Shabbat 55b:6:3"
+    ],
+    "generatedAt": "2026-11-13T18:55:14.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב</strong> - בההוא קרא:"
+  },
+  "Rashi on Shabbat 55b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:6:1",
+      "Rashi on Shabbat 55b:6:2",
+      "Rashi on Shabbat 55b:6:3"
+    ],
+    "generatedAt": "2026-11-13T18:56:02.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויהיו בני יעקב וגו'</strong> - להוציא מלבך שלא תחשדנו:"
+  },
+  "Rashi on Shabbat 55b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:56:36.262Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויבא חטא זה לידו</strong> - ויגזור הקב\"ה שיהיו מן המקללים:"
+  },
+  "Rashi on Shabbat 55b:8:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Shabbat 55b:2"
+    ],
+    "generatedAt": "2026-11-13T18:57:08.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחת של שכינה</strong> - כך היה יעקב עושה בארבעה אהלי נשיו מעמיד מטה לשכינה ובאותו אהל שהוא רואה בו השכינה הוא בא ולן אותו הלילה:"
+  },
+  "Rashi on Shabbat 55b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:8:1",
+      "Rashi on Shabbat 55b:8:2",
+      "Torah Temimah on Song of Songs 1:16:2",
+      "Torah Temimah on Torah, Genesis 35:22:4"
+    ],
+    "generatedAt": "2026-11-13T18:58:04.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חללת</strong> - אותו שם שעלה על יצועי דהיינו שכינה מדלא כתיב יצועי עלית טעם אחר עד שלא נבנה אהל מועד היתה שכינה מצויה באהלי צדיקים:"
+  },
+  "Rashi on Shabbat 55b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:9:2",
+      "Rashi on Shabbat 55b:9:3",
+      "Shabbat 105a:3",
+      "Shabbat 105a:4",
+      "Rashi on Shabbat 55b:6:1",
+      "Rashi on Shabbat 55b:8:1"
+    ],
+    "generatedAt": "2026-11-13T18:59:03.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחז</strong> - נוטריקון הוא:"
+  },
+  "Rashi on Shabbat 55b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:9:1",
+      "Rashi on Shabbat 55b:9:3",
+      "Rashi on Shabbat 55b:9:4",
+      "Rashi on Shabbat 55b:9:5",
+      "Rashi on Shabbat 55b:3:1",
+      "Rashi on Shabbat 55b:4:1",
+      "Rashi on Shabbat 55b:6:1",
+      "Rashi on Shabbat 55b:8:1",
+      "Rashi on Shabbat 55a:1:1",
+      "Rashi on Shabbat 55a:2:1"
+    ],
+    "generatedAt": "2026-11-13T19:00:26.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פזתה</strong> - לשון עמא פזיזא <span class=\"parenthesized\">(לקמן שבת דף פח.)</span>. פזתה מיהרת בעצמך וחטאת:"
+  },
+  "Rashi on Shabbat 55b:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:9:1",
+      "Rashi on Shabbat 55b:9:2",
+      "Rashi on Shabbat 55b:9:3",
+      "Steinsaltz on Shabbat 55b:9"
+    ],
+    "generatedAt": "2026-11-13T19:01:05.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זלתה</strong> - זלזלת:"
+  },
+  "Rashi on Shabbat 55b:9:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:9:3",
+      "Rashi on Shabbat 55b:9:4",
+      "Rashi on Shabbat 55b:9:5"
+    ],
+    "generatedAt": "2026-11-13T19:01:34.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פיללת</strong> - להנצל מן החטא:"
+  },
+  "Rashi on Shabbat 55b:9:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 55b:9:1",
+      "Rashi on Shabbat 55b:9:2",
+      "Rashi on Shabbat 55b:9:3",
+      "Rashi on Shabbat 55b:9:4",
+      "Rashi on Shabbat 55b:9:5",
+      "Rashi on Shabbat 55b:8:1",
+      "Rashi on Shabbat 55b:8:2",
+      "Rashi on Shabbat 55b:10:1",
+      "Rashi on Shabbat 55b:10:2"
+    ],
+    "generatedAt": "2026-11-13T19:05:21.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 55b:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלתה</strong> - ויחל משה <span class=\"parenthesized\">(שמות לב)</span>:"
+  },
+  "Tosafot on Shabbat 55b:12:1": {
+    "dependsOn": [
+      "Shabbat 55b:12"
+    ],
+    "generatedAt": "2026-11-13T19:09:50.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 55b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל האומר בני עלי חטאו אינו אלא טועה</strong> - פירוש במאי דכתיב אשר ישכבון לא חטאו אלא מבזים קדשים היו כדכתיב <span class=\"parenthesized\">(שמואל א ב׳:ט״ו)</span> בטרם יקטירון החלב וגו':"
+  },
+  "Tosafot on Shabbat 55b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:25:05.228Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 55b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעבירם כתיב</strong> - הש\"ס שלנו חולק על ספרים שלנו שכתוב בהם <span class=\"parenthesized\">(מעבירים)</span> וכן מצינו בירושלמי בשמשון והוא שפט את ישראל ארבעים שנה מלמד שהיו פלשתים יראים ממנו כ' שנה אחר מותו כמו בחייו ובכל ספרים שלנו כתיב כ' שנה <span class=\"parenthesized\">(שופטים טז)</span>:"
+  },
+  "Tosafot on Shabbat 55b:19:1": {
+    "dependsOn": [
+      "Shabbat 55b:19",
+      "Tosafot on Shabbat 55b:12:1"
+    ],
+    "generatedAt": "2026-11-13T19:26:24.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 55b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתוך שהיה לו לפנחס למחות</strong> - פליג אר' יונתן דאמר שניהם לא חטאו:"
+  },
+  "Tosafot on Shabbat 55b:3:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 55b:3:1",
+      "Steinsaltz on Shabbat 55b:3:1"
+    ],
+    "generatedAt": "2026-11-13T18:51:52.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 55b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארבעה מתו בעטיו של נחש</strong> - והא דכתיב <span class=\"parenthesized\">(קהלת ז)</span> כי אדם אין צדיק בארץ וגו' ברוב בני אדם קאמר:"
+  },
+  "Tosafot on Shabbat 55b:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 55b:5:1",
+      "Rashi on Shabbat 55b:5:1"
+    ],
+    "generatedAt": "2026-11-13T18:54:02.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 55b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וש\"מ יש מיתה בלא חטא ויש יסורים בלא עון</strong> - ואע\"ג דבמאי דקאמר אין יסורין בלא עון לא איתותב:"
+  }
+}

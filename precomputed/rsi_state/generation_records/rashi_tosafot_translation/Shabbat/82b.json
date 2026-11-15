@@ -1,0 +1,303 @@
+{
+  "Rashi on Shabbat 82b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:17:28.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה שלו ושל ע\"ז</strong> - שהיה חצי מקום הכותל של ע\"ז:"
+  },
+  "Rashi on Shabbat 82b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:1:1",
+      "Shabbat 82b:1",
+      "Mishnah Avodah Zarah 3:6",
+      "Steinsaltz on Shabbat 82b:1",
+      "Avodah Zarah 47a:21",
+      "Rashi on Avodah Zarah 47a:21:1",
+      "Rashi on Avodah Zarah 47a:21:2",
+      "Rashi on Avodah Zarah 47a:21:3",
+      "Rashi on Avodah Zarah 47a:21:4",
+      "Rashi on Avodah Zarah 47b:1:1",
+      "Avodah Zarah 47b:1"
+    ],
+    "generatedAt": "2026-11-15T04:20:07.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדון מחצה על מחצה</strong> - המחצה שלו נחשבת בארבע אמות של כניסה לפי שחייבוהו חכמים להרחיקו משלו ארבע אמות וליכנס כולו בתוך שלו:"
+  },
+  "Rashi on Shabbat 82b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:1:1",
+      "Rashi on Shabbat 82b:1:2",
+      "Rashi on Shabbat 82b:1:4"
+    ],
+    "generatedAt": "2026-11-15T04:20:44.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקץ תשקצנו</strong> - לשון שקץ כשרץ שאינו מטמא במשא:"
+  },
+  "Rashi on Shabbat 82b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:21:30.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדה מטמאה במשא</strong> - אדם הנושאה דאיתקש לזב והדוה בנדתה והזב את זובו וגו' <span class=\"parenthesized\">(ויקרא ט״ו:י׳)</span> וזב מטמא במשא דכתיב <span class=\"parenthesized\">(שם)</span> וכל הנוגע בכל אשר יהיה תחתיו יטמא עד הערב והנושא אותם וגו' אף הזב במשמע אותם:"
+  },
+  "Rashi on Shabbat 82b:2:1": {
+    "dependsOn": [
+      "Jastrow, מְסַמָּא 1",
+      "Tosafot on Shabbat 82b:2:1"
+    ],
+    "generatedAt": "2026-11-15T04:24:12.392Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באבן מסמא</strong> - אבן ששמוה על גבי יתידות וכלים תחתיה כדכתיב <span class=\"parenthesized\">(דניאל ו׳:י״ח)</span> והיתית אבן חדא ושמת על פום גובא ונדה או זב יושבין עליה אע\"פ שלא הכבידו על הכלים טמאים הכלים דכתיב כל אשר יהיה תחתיו:"
+  },
+  "Rashi on Shabbat 82b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:2",
+      "Rashi on Shabbat 82b:3:3"
+    ],
+    "generatedAt": "2026-11-15T04:31:44.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למשמשין</strong> - שאין הכלים המשמשין מטמאים לא במשא ולא באבן מסמא:"
+  },
+  "Rashi on Shabbat 82b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:1",
+      "Shabbat 82b:3",
+      "Rashi on Shabbat 82b:2:1"
+    ],
+    "generatedAt": "2026-11-15T04:32:34.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למשא</strong> - אבל לא לאבן מסמא דלהכי אהני היקשא דשרץ:"
+  },
+  "Rashi on Shabbat 82b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:33:00.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולוקשה לנבלה</strong> - דאית בה משא ולית בה אבן מסמא והכי עדיף דתו לא צריך לאקושה לשרץ למעוטי מאבן מסמא:"
+  },
+  "Rashi on Shabbat 82b:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:1",
+      "Rashi on Shabbat 82b:3:2",
+      "Rashi on Shabbat 82b:3:3",
+      "Rashi on Shabbat 82b:3:5",
+      "Rashi on Shabbat 82b:2:1"
+    ],
+    "generatedAt": "2026-11-15T04:34:01.488Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה לאברים</strong> - אם נחתך אבר ממנה מטמא במשא ובאהל משום תורת אבר מן החי אבל לא משום תורת אבר מן הנדה ונפקא מינה דלא מטמא באבן מסמא:"
+  },
+  "Rashi on Shabbat 82b:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:4",
+      "Rashi on Shabbat 82b:3:5",
+      "Rashi on Shabbat 82b:3:6"
+    ],
+    "generatedAt": "2026-11-15T04:34:54.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף ע\"ז אינה לאברים</strong> - כגון ע\"ז של חוליות אבר אבר ממנה אינו מטמא כלל משום ע\"ז:"
+  },
+  "Rashi on Shabbat 82b:3:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:5",
+      "Rashi on Shabbat 82b:3:7"
+    ],
+    "generatedAt": "2026-11-15T04:35:39.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבעי רב חמא</strong> - לקמן <span class=\"parenthesized\">(שבת דף פג:)</span>:"
+  },
+  "Rashi on Shabbat 82b:3:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:4",
+      "Rashi on Shabbat 82b:3:5",
+      "Rashi on Shabbat 82b:3:6",
+      "Shabbat 82b:3"
+    ],
+    "generatedAt": "2026-11-15T04:36:35.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אליבא דרבי עקיבא בעי לה</strong> - דאקשה לנדה <span class=\"parenthesized\">(למשא)</span> מי אמרינן להא נמי איתקש או דילמא לחומרא מקשינן לקולא לא מקשינן:"
+  },
+  "Rashi on Shabbat 82b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:4:2",
+      "Tosafot on Shabbat 82b:4:1"
+    ],
+    "generatedAt": "2026-11-15T04:40:35.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא מטמאה</strong> - דהא איתקש לשרץ ובשרץ כתיב מגע ולא כתיב משא:"
+  },
+  "Rashi on Shabbat 82b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:4:1",
+      "Rashi on Shabbat 82b:4:2",
+      "Shabbat 82b:4",
+      "Shabbat 82b:3",
+      "Rashi on Shabbat 82b:3:1",
+      "Rashi on Shabbat 82b:3:2",
+      "Rashi on Shabbat 82b:3:3",
+      "Rashi on Shabbat 82b:3:4",
+      "Rashi on Shabbat 82b:3:5"
+    ],
+    "generatedAt": "2026-11-15T04:48:57.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 82b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למשמשיה</strong> - תירוצא היא:"
+  },
+  "Tosafot on Shabbat 82b:1:1": {
+    "dependsOn": [
+      "Avodah Zarah 41b:11",
+      "Tosafot on Shabbat 81b:5:1"
+    ],
+    "generatedAt": "2026-11-15T04:23:07.531Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבניו ועציו ועפריו מטמאים כשרץ</strong> - ואפי' למ\"ד בפ\"ג דמסכת ע\"ז <span class=\"parenthesized\">(דף מא:)</span> ע\"ז שנשתברה מאליה מותרת הא מוקי לה בירושלמי כגון שהשתחוה לכל אבן ואבן ולכל עץ ועץ ולכל עפר ועפר דהוי ע\"ז שלימה:"
+  },
+  "Tosafot on Shabbat 82b:2:1": {
+    "dependsOn": [
+      "Shabbat 82b:2"
+    ],
+    "generatedAt": "2026-11-15T04:26:29.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבה במשא כ\"ע לא פליגי דמטמאה דהא איתקש לנדה</strong> - קשה לר\"ת מ\"ט דרבנן אי אית להו הא דאמר בסוף שמעתין <span class=\"parenthesized\">(ף כג:)</span> טומאה דע\"ז דרבנן היא ולקולא מקשינן א\"כ אמאי מטמאה במשא נימא דהיקישא דנדה דאינה לאיברים והיקישא דשרץ דלא מטמאה במשא ואי סברי רבנן דלחומרא מקשינן אימא אהני היקשא דנדה לטמויי באבן מסמא ודשרץ לטמויי בכעדשה ולר' עקיבא נמי אי לחומרא מקיש אמאי איצטריך למימר דהיקישא דשרץ למשמשיה לימא לטמויי בכעדשה ואי לקולא מקיש לא תטמא אפילו במשא והיקישא דנדה דאינה לאברים והיקישא דשרץ דלא מטמא במשא וכן לר' אלעזר אליבא דר' עקיבא ונראה לר\"ת דגרסי' לעיל בספרים אמר רבה תזרם דאמר קרא נכרינהו מינך כזר צא תאמר לו הכנס אל תאמר לו פירוש כיון דכתיב כבר ברישא וטמאתם את צפוי פסילי כספך וגו' ל\"ל תו למימר תזרם כמו דוה אלא לומר שמאד יש להרחיק ואתא למימר אע\"ג דשאר קראי נדרשות לקולא משום דטומאת ע\"ז דרבנן מנדה ילפינן לחומרא מש\"ה קאמר רבה לכ\"ע מטמא במשא דאית להו דרשא דתזרם ולרבנן נמי הוית מטמא באבן מסמא כנדה אי לאו דממעטין מדאיתקש לשרץ:"
+  },
+  "Tosafot on Shabbat 82b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:2:1"
+    ],
+    "generatedAt": "2026-11-15T04:30:08.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באבן מסמא</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> אבן מונחת על גבי יתידות ונדה יושבת עליה וכלים תחת האבן וטמא מוכל אשר יהיה תחתיו וקשה דבת\"כ מפיק אבן מסמא מוכל המשכב וקרא דכל אשר יהיה תחתיו מוקמינן בפרק בנות כותים <span class=\"parenthesized\">(נדה לב:)</span> לעליונו של זב ובת\"כ מוקי לה במרכב ועוד דאי מוכל אשר יהיה תחתיו נפקא א\"כ אפי' כלים שאין ראוי למשכב ומושב ובת\"כ מוכח בהדיא דכלים שאין ראויין למשכב ומושב אין להם אפי' טומאה קלה ועוד אמאי נקט אבן אפי' דף ע\"ג יתידות נמי ומפרש ר\"ת דאבן מסמא היינו אבן גדולה שהיא כבידה ואין הכלים מרגישים כובד הזב והנדה מחמת כובד האבן ומסמא היינו משא גדולה שצריכה שימה כדכתיב והיתית אבן חדא ושמת על פום גובא אך קשה דבת\"כ מרבה אבן מסמא מוכל המשכב משמע דמרבה מטעם משכב ומושב ובכל הש\"ס משמע דהוי מטעם משא דבמתני' קרי ליה משא ובפ' בתרא דנדה <span class=\"parenthesized\">(דף כט:)</span> תנן הזב והזבה מטמאין במשא ומפרש בגמרא מאי משא אבן מסמא ובריש דם הנדה [נדה נה.] ממעט מדוה מאבן מסמא מוהנושא אותם ובתוספתא דכלים תניא אין טומאה לכלי חרס אלא מאוירו ובהיסט הזב ע\"ג אבן מסמא והיסט [היינו] משא כדאמר בהעור והרוטב <span class=\"parenthesized\">(חולין דף קכד:)</span> אטו נושא לאו היסט הוא משמע ע\"ג אבן מסמא שהכלים ע\"ג האבן דלא שייך כלל למשכב ומושב ועוד דמדרס כלי חרס טהור וי\"ל דהא דמרבה בת\"כ אבן מסמא מטעם משכב ומושב היינו כשהזב ע\"ג האבן והכלים תחתיה אבל כשיד הטהור או רגלו תחת האבן הוי מטעם משא שהטהור נושא את הטמא או כשאצבעו של זב תחת האבן והכלים עליה טמא מטעם היסט דהיינו משא הזב והיינו היסיט הזב ע\"ג אבן מסמא דתוספתא וא\"ת בריש דם הנדה <span class=\"parenthesized\">(נדה דף נד:)</span> דממעט דם הנדה ממשכב ומושב מהיא יושבת מאי פריך תו אי מה היא מטמאה באבן מסמא אף מדוה נמי מטמאה באבן מסמא כיון דכבר מיעט מאשר היא יושבת מדוה ממשכב ומושב היכי סלקא דעתך תו למימר דמטמא באבן מסמא ואור\"י דאבן מסמא נפקא לה משום דרשה דלא מטמא אלא אוכלין ומשקין להכי איצטריך התם למעוטי מדוה אף מאבן מסמא שהיא טומאה קלה:"
+  },
+  "Tosafot on Shabbat 82b:2:3": {
+    "dependsOn": [
+      "Shabbat 82b:2"
+    ],
+    "generatedAt": "2026-11-15T04:31:01.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן סברי כשרץ כו'</strong> - וא\"ת אמאי איצטריך שרץ למעוטי אבן מסמא תיפוק ליה מדאיתקש למת <span class=\"parenthesized\">(לקמן שבת דף פג:)</span> וי\"ל דכיון דגלי לן קרא דנכרינהו מינך כזר דאית לן לאקשויי לנדה לחומרא לא הוה ממעטי ממת אבן מסמא בע\"ז כיון דאיצטריך היקישא דמת לשיעור כזית א\"נ לכדאמר בפרק נגמר הדין <span class=\"parenthesized\">(סנהדרין דף מז:)</span> מה ע\"ז במחובר לא מיתסרא אף קבר במחובר לא מיתסר:"
+  },
+  "Tosafot on Shabbat 82b:3:1": {
+    "dependsOn": [
+      "Shabbat 82b:3"
+    ],
+    "generatedAt": "2026-11-15T04:37:24.067Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולרבי עקיבא למאי הלכתא איתקש לשרץ כו'</strong> - תימה לר\"י מאי קמיבעיא ליה הא איצטריך לאפוקי שלא יטמא באהל המת דמנדה דילמא לא ילפינן שום קולא דהא בעי רב חמא בר גוריא בסמוך אי ישנה לאברים אע\"ג דנדה אינה לאברים ויש לומר דלענין דליכא בע\"ז חומרא דמת שפיר ילפינן מנדה ואע\"ג דהיקישא דנדה לחומרא קולא נמי אית לן למילף והא דמספקא ליה לענין אברים משום דלא דמי דאברי נדה אין אדם יכול להחזירם ואברי ע\"ז מיהא אומן יכול להחזירם א\"נ הא דקאמר למאי הלכתא וכן הא דקא משני למשמשין היינו את\"ל דילפינן קולא מנדה:"
+  },
+  "Tosafot on Shabbat 82b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:1",
+      "Rashi on Shabbat 82b:3:2",
+      "Tosafot on Shabbat 82b:3:2"
+    ],
+    "generatedAt": "2026-11-15T04:38:41.280Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למשמשיה</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> שאין כלים המשמשין לע\"ז מטמאין לא במשא ולא באבן מסמא משמע דאי לאו דאיתקש לשרץ הוו מטמי כע\"ז באבן מסמא ותימה דלרבנן דהיקישא דשרץ לא אתא למשמשיה מנלן דמשמשין לא מטמו במשא כמו ע\"ז עצמה דלקמן קאמר רב אשי אליבא דרבה משמשין בין הן שהסיטו אחרים בין אחרים שהסיטו אותן טהורין ונראה לר\"י דאי לאו דאיתקש משמשין לשרץ לא הוה מטמינן להו כלל ורבנן דמטמו למשמשיה מדכתיב שקץ תשקצנו כי חרם הוא משמע כל דבר שהוא חרם פירש שאסור בהנאה הוי כשרץ ומשמשין אסור בהנאה ובזה לא יתיישב <span class=\"rashi-quotation\">פי' הקונטרס</span> דמכי חרם הוא לא משמע למעוטי משמשין דלא מטמו במשא דאין שום יתור לכך אבל הא דמשמשיה טמא משתמע שפיר:"
+  },
+  "Tosafot on Shabbat 82b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 82b:3:3",
+      "Rashi on Shabbat 82b:3:4",
+      "Shabbat 82b:3",
+      "Maharam on Shabbat 82b:6",
+      "Tosafot on Shabbat 82b:3:1",
+      "Tosafot on Shabbat 82b:3:2"
+    ],
+    "generatedAt": "2026-11-15T04:39:58.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולוקשה רחמנא לנבלה</strong> - אמאי דהוקשה למת ליכא למיפרך דלוקש לנבלה דהא איצטריך למת לכדדרשינן בנגמר הדין ו<span class=\"rashi-quotation\">בקונט'</span> פי' דהכי פריך ולוקשה לנבלה משום דאז לא הוה צריך לאקושה לשרץ:"
+  },
+  "Tosafot on Shabbat 82b:4:1": {
+    "dependsOn": [
+      "Shabbat 82b:4"
+    ],
+    "generatedAt": "2026-11-15T04:51:25.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 82b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי אלעזר אמר כו'</strong> - פי' רבינו שמואל דבמילתיה דר' אלעזר ל\"ג ור\"ע למאי הלכתא איתקש לשרץ למשמשיה דהא איצטריך למעוטה מאבן מסמא כדאמר דכ\"ע לא פליגי דלא מטמא באבן מסמא דהא איתקש לשרץ ויש ספרים דל\"ג דהא איתקש לשרץ ולפי זה מצינן למימר דטעמא דר' אלעזר דכ\"ע לא פליגי דלא מטמא באבן מסמא לאו משום דאיתקש לשרץ אלא בלא שום יתור לא מחמרינן כולי האי לטמאות באבן מסמא ולפי זה גרסי' שפיר ור\"ע למאי הלכתא כו' והא דפריך בתר הכי ולוקשה רחמנא לנבלה לא פריך לוקשה לנבלה ותו לא צריך לאקושה לשרץ דהשתא נמי לא צריך לאקושי משום הכי לשרץ אלא הכי פריך דהוה ליה טפי לאקושה לנבלה דדמיא ממש לנבלה אבל לנדה לא דמיא דנדה מטמאה באבן מסמא משא\"כ בע\"ז:"
+  }
+}

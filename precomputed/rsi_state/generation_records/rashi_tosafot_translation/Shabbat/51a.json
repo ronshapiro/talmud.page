@@ -1,0 +1,408 @@
+{
+  "Rashi on Shabbat 51a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:58:31.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין טומנין את החמין משחשיכה ואפילו בדבר שאינו מוסיף הבל</strong> - וכדאמרן שמא ימצא קדרתו צוננת כשירצה להטמינה וירתיחנה בשבת אבל אם בא להוסיף כיסוי על כיסוי משחשיכה מוסיף:"
+  },
+  "Rashi on Shabbat 51a:10:2": {
+    "dependsOn": [
+      "[",
+      "Chokhmat Shlomo on Shabbat 51a:1",
+      "Rashi on Shabbat 51a:10:1",
+      "Jastrow, גְּלוּפְקְרֵי 1"
+    ],
+    "generatedAt": "2026-11-13T12:00:13.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גלופקרא</strong> - קו\"ט ויש בו הבל יותר מן הסדינין ונוטל את הגלופקרא בימות החמה אם ירא שמא יקדיח תבשילו מחמת רוב כיסוי:"
+  },
+  "Rashi on Shabbat 51a:11:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:11:1",
+      "Shabbat 51a:11"
+    ],
+    "generatedAt": "2026-11-13T12:03:29.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן היה רשב\"ג</strong> - מיקל קולא אחריתי בהטמנה:"
+  },
+  "Rashi on Shabbat 51a:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:11:1"
+    ],
+    "generatedAt": "2026-11-13T12:04:21.115Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אסרו</strong> - להטמין משחשיכה אלא במיחם שהוחמו בו דהתם הוא דאיכא למיגזר שמא ירתיח: אבל מפנה הוא ממיחם למיחם אחר ומטמין זהו לשון התוספתא והיינו נמי פינהו ממיחם למיחם מותר דהשתא ליכא למיגזר שמא ירתיח דהשתא אקורי קא מיקר להו במתכוין ארתוחי מרתח להו בתמיה:"
+  },
+  "Rashi on Shabbat 51a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:12:1",
+      "Rashi on Shabbat 51a:12:2",
+      "Rashi on Shabbat 51a:12:3",
+      "Rashi on Shabbat 51a:12:4"
+    ],
+    "generatedAt": "2026-11-13T12:11:04.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמן</strong> - הקדרה בדבר הניטל מה שנתן סביבותיה הוי דבר מוכן:"
+  },
+  "Rashi on Shabbat 51a:12:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:12:1",
+      "Rashi on Shabbat 51a:12:2",
+      "Rashi on Shabbat 51a:12:3",
+      "Rashi on Shabbat 51a:12:4"
+    ],
+    "generatedAt": "2026-11-13T12:11:41.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכיסה</strong> - על פיה נמי דבר המוכן כגון כלי:"
+  },
+  "Rashi on Shabbat 51a:12:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:12:1",
+      "Rashi on Shabbat 51a:12:2",
+      "Rashi on Shabbat 51a:12:3",
+      "Rashi on Shabbat 51a:12:4"
+    ],
+    "generatedAt": "2026-11-13T12:12:27.279Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שטמן בדבר שאינו ניטל</strong> - וכיסה בדבר הניטל:"
+  },
+  "Rashi on Shabbat 51a:12:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:12:1",
+      "Rashi on Shabbat 51a:12:2",
+      "Rashi on Shabbat 51a:12:3",
+      "Shabbat 51a:12",
+      "Tosafot on Shabbat 51a:13:1"
+    ],
+    "generatedAt": "2026-11-13T12:13:56.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זה נוטל ומחזיר</strong> - דהואיל והכיסוי ניטל מגלה הקדרה ואוחזה אבל טמן וכיסה בדבר שאינו ניטל או אפי' טמן בדבר הניטל וכיסה בדבר שאינו ניטל אם אין מקצת פיה מגולה לא יטול דאין לו במה יאחזנה ואם תאמר יפנה סביבותיה הואיל ודבר הניטל הוא ויאחזנה בדופניה ויטנה על צדה ויפול הכיסוי כי ההיא דתנן לקמן <span class=\"parenthesized\">(פרק נוטל דף קמב:)</span> האבן שעל פי החבית מטה על צדה והיא נופלת ואם היתה בין החביות מגביהה ומטה על צדה והיא נופלת הא אוקימנא התם בשכח אבל במניח נעשה בסיס לדבר האסור והיכא דמגולה מקצתו אין זה טלטול שמצדדו והכיסוי נופל מאליו:"
+  },
+  "Rashi on Shabbat 51a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:43:02.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא משום כלאים</strong> - דאין זו שתילה:"
+  },
+  "Rashi on Shabbat 51a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:1:1",
+      "Rashi on Shabbat 51a:1:3"
+    ],
+    "generatedAt": "2026-11-13T11:43:35.145Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא משום מעשר</strong> - דנימא בטלה לה אגב קרקע והרי הוא כלוקטה מתחלה ויהא צריך לעשר על הנוסף שמא ניתוסף:"
+  },
+  "Rashi on Shabbat 51a:1:3": {
+    "dependsOn": [
+      "Shabbat 51a:1",
+      "Rashi on Shabbat 50b:15:1",
+      "Rashi on Shabbat 51a:1:1",
+      "Rashi on Shabbat 51a:1:2",
+      "Shabbat 50b:15"
+    ],
+    "generatedAt": "2026-11-13T11:44:54.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניטלין בשבת</strong> - שאוחזה במקצת עליה המגולין ולא חייש אם העפר ניזוז מאליו וה\"ה לסליקוסתא:"
+  },
+  "Rashi on Shabbat 51a:2:1": {
+    "dependsOn": [
+      "Shabbat 34a:10",
+      "Rashi on Shabbat 51a:2:1",
+      "Rashi on Shabbat 34a:10:1",
+      "Rashi on Shabbat 34a:10:2",
+      "Rashi on Shabbat 34a:10:3",
+      "Rashi on Shabbat 34a:10:4"
+    ],
+    "generatedAt": "2026-11-13T11:47:02.600Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יכסנו משתחשך</strong> - הא פרישנא טעמא בפ\"ב <span class=\"parenthesized\">(דף לד.)</span> מפני מה אמרו אין טומנין בדבר שאינו מוסיף הבל משחשיכה גזירה שמא ירתיח:"
+  },
+  "Rashi on Shabbat 51a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:47:28.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממלא הקיתון</strong> - של צונן:"
+  },
+  "Rashi on Shabbat 51a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:2:1",
+      "Rashi on Shabbat 51a:2:2",
+      "Shabbat 51a:2"
+    ],
+    "generatedAt": "2026-11-13T11:48:17.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונותן לתוך הכר</strong> - שלא יחמו בחום הקיץ והחמה כגון כר וכסת של לבדין שאינו מחמם:"
+  },
+  "Rashi on Shabbat 51a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:49:47.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר להטמין את הצונן</strong> - מפני החמה שלא יחמו ולא גזרינן אטו הטמנה כדי שיחמו:"
+  },
+  "Rashi on Shabbat 51a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:4:2",
+      "Rashi on Shabbat 51a:2:1",
+      "Rashi on Shabbat 51a:3:1",
+      "Shabbat 51a:4"
+    ],
+    "generatedAt": "2026-11-13T11:51:39.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי ממתני' הוה אמינא הני מילי</strong> - כגון מים צוננין שאין דרכן להטמין תחת כר וכסת לחממן שאין מתחממין בכך הלכך ליכא למיגזר:"
+  },
+  "Rashi on Shabbat 51a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:4:1"
+    ],
+    "generatedAt": "2026-11-13T11:52:16.561Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל דבר שדרכו להטמין</strong> - לחמם כגון תבשיל אימא לא יטמיננו מפני החמה:"
+  },
+  "Rashi on Shabbat 51a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:52:34.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התיר להטמין את הצונן</strong> - מפני החום:"
+  },
+  "Rashi on Shabbat 51a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:52:55.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממלא מקום אבותיו</strong> - גדול כאביו:"
+  },
+  "Rashi on Shabbat 51a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:53:18.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה כפוף ויושב לפני רבי</strong> - מפני כבוד הנשיאות ולא היה מורה לפניו אע\"פ שגדול הימנו:"
+  },
+  "Rashi on Shabbat 51a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:6:1",
+      "Rashi on Shabbat 51a:6:2",
+      "Rashi on Shabbat 51a:6:3"
+    ],
+    "generatedAt": "2026-11-13T11:53:49.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבר הורה זקן</strong> - גדלו ונשאו עליו:"
+  },
+  "Rashi on Shabbat 51a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:56:06.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטמין לי צונן</strong> - בשבת:"
+  },
+  "Rashi on Shabbat 51a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:7:1",
+      "Rashi on Shabbat 51a:7:2",
+      "Rashi on Shabbat 51a:7:3",
+      "Shabbat 51a:8"
+    ],
+    "generatedAt": "2026-11-13T11:56:57.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואייתי לי מיא דאחים קפילא ארמאה</strong> - שהחמן נחתום נכרי ובחול ולאשמועינן דאין בהן משום בשולי נכרים:"
+  },
+  "Rashi on Shabbat 51a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:7:1",
+      "Rashi on Shabbat 51a:7:2",
+      "Rashi on Shabbat 51a:4:1",
+      "Rashi on Shabbat 51a:4:2",
+      "Rashi on Shabbat 51a:5:1"
+    ],
+    "generatedAt": "2026-11-13T11:57:49.085Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבוותיה</strong> - כרבותיו:"
+  },
+  "Rashi on Shabbat 51a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T11:58:06.949Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 51a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם חשוב שאני</strong> - שהרואה אותו שהוא מיקל עומד ומיקל יותר:"
+  },
+  "Tosafot on Shabbat 51a:10:1": {
+    "dependsOn": [
+      "Tosefta Shabbat 4:12",
+      "Rashi on Shabbat 51a:10:1",
+      "Rashi on Shabbat 51a:10:2",
+      "Maharsha: Chidushei Halachot on Shabbat 51a:2",
+      "Meir Lublin: Maharam on Shabbat 51a:5"
+    ],
+    "generatedAt": "2026-11-13T12:02:18.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 51a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד הוא עושה רשב\"ג אומר נוטל את הסדינין כו'</strong> - נראה לר\"י ולה\"ר פור\"ת דל\"ג כיצד הוא עושה דרשב\"ג פליג את\"ק דלא שרי אלא להוסיף אבל להחליף אסור ורשב\"ג שרי אף להחליף וכ\"ש ליטול ולהחזיר אותו דבר דלא הוי כל כך תחלת הטמנה והיינו דקאמר וכן היה רשב\"ג אומר כלומר שהיה מיקל קולא אחריתי גבי הטמנה:"
+  },
+  "Tosafot on Shabbat 51a:11:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 38b:4:1",
+      "Shabbat 51a:11",
+      "Shabbat 51a:2",
+      "Shabbat 51a:3",
+      "Shabbat 51a:4",
+      "Shabbat 51a:5",
+      "Tosafot on Shabbat 51a:2:1",
+      "Tosafot on Shabbat 51a:6:1",
+      "Tosafot on Shabbat 51a:10:1",
+      "Tosafot on Shabbat 51a:13:1"
+    ],
+    "generatedAt": "2026-11-13T12:10:28.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 51a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל פינה ממיחם למיחם מותר</strong> - ול\"ד לההוא דכירה דבעי בפרק כירה <span class=\"parenthesized\">(לעיל שבת לח:)</span> פינה ממיחם למיחם מהו דהתם רוצה בחמימותן לכך יש לאסור כשהוא צונן אבל הכא גבי הטמנה כל כמה שהוא צונן טפי שפיר דמי כדאמר לעיל רבי התיר להטמין את הצונן וא\"ת ורבי לא ידע לעיל דמותר להטמין את הצונן וכי לא ידע דשמיע ליה מאבוה הכא דשרי וי\"ל דהכא דוקא דמוכח מילתא שנתכוין לצנן שפינהו ממיחם למיחם אבל קיתון של מים דלא מוכח מידי יהא אסור להטמין. מתוספות רבינו יהודה <span class=\"parenthesized\">(ת\"י)</span>:"
+  },
+  "Tosafot on Shabbat 51a:13:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 51a:12:3",
+      "Rashi on Shabbat 51a:12:4"
+    ],
+    "generatedAt": "2026-11-13T12:17:08.707Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 51a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או שטמן בדבר הניטל וכיסה בדבר שאינו ניטל</strong> - הקשה <span class=\"rashi-quotation\">בקונט'</span> יפנה סביבה ויאחזנה בדופניה ויגביהנה ויטנה על צדה כדתנן בפרק נוטל <span class=\"parenthesized\">(לקמן שבת קמב:)</span> היתה בין החביות מגביהה כו' ומתרץ דהא אוקמינן התם בשכח אבל במניח נעשה בסיס לדבר האסור וקשה דאי חשיב הכא כמניח אם כן במגולה מקצתה היאך נוטל ומחזיר מה בין זה לאבן שעל פי החבית דאסרי' במניח אפי' להטותה על צדה ועוד קשה לר\"ת דהא תנן נוער את הכיסוי והן נופלות אפי' אינן מגולות מקצתן ועל כן אומר ר\"ת דלא חשיב כמניח כיון שדעתו ליטלו בשבת ובפ' נוטל <span class=\"parenthesized\">(שבת דף קמג.)</span> נתנן בית שמאי אומרים מגביהין מעל גבי השלחן עצמות וקליפים וב\"ה אומרים מסלק את הטבלא ומנערה ולא חשיב לב\"ה כמניח והכא מיירי בכיסוי כעין כלי חרס שנותנים על הקדרה שהקדרה בלועה בתוכה ואי אפשר לנער הכיסוי אלא אם כן יגביהו קצת ור\"י מפרש כגון שטמן הקדרה בקופה בדבר הניטל ולמעלה מן הקדרה מילא כל הקופה בדבר שאינו ניטל שאי אפשר לו להגיע לקדרה אם לא יטלטל דבר שאינו ניטל בידים:"
+  },
+  "Tosafot on Shabbat 51a:2:1": {
+    "dependsOn": [
+      "Shulchan Arukh, Orach Chayim 257:4"
+    ],
+    "generatedAt": "2026-11-13T11:49:17.917Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 51a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כסהו ונתגלה מותר לכסותו</strong> - נראה לר\"י דה\"ה דמותר לגלותו בידים ולחזור ולכסותו כמו שמותר ליטול הקדרה ולהחזירה והא דנקט כסהו ונתגלה משום דנתגלה מבעוד יום איירי דומיא דרישא לא כסהו מבעוד יום וקאמר דמותר לכסותו משתחשך אבל אם גילהו בידים מבעוד יום כדי לכסותו משתחשך אסור לכסותו משתחשך דדמיא לתחלת הטמנה:"
+  },
+  "Tosafot on Shabbat 51a:6:1": {
+    "dependsOn": [
+      "Niddah 14b:13",
+      "Niddah 14b:14",
+      "Niddah 14b:15",
+      "Niddah 14b:7",
+      "Niddah 14b:5",
+      "Niddah 14b:6",
+      "Niddah 14b:8",
+      "Rashi on Shabbat 51a:6:1",
+      "Rashi on Shabbat 51a:6:2",
+      "Rashi on Shabbat 51a:6:3"
+    ],
+    "generatedAt": "2026-11-13T11:55:46.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 51a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילו היה ר' יוסי קיים היה כפוף כו'</strong> - פי' רבינו שלמה מחמת נשיאותו דהא ר\"י היה גדול מרבי כדמוכח בפ\"ב דנדה <span class=\"parenthesized\">(דף יד: ושם)</span> דאמר ליה רבי ישמעאל ברבי יוסי לר' חמא בר ביסנא כדברי רבי אומר לך או כדברי אבא אמר ליה כדברי רבי אמור לי אמר ליה זהו שאומרים עליו דאדם גדול הוא שמניח דברי הרב ושומע דברי התלמיד ור\"ת מפרש דודאי מתחלה היה רבי תלמידו של רבי יוסי אבל אח\"כ נתחכם רבי כדקאמ' התם ור' חמא סבר רבי ריש מתיבתא שכיחי רבנן גביה ומחדדן שמעתתיה:"
+  }
+}

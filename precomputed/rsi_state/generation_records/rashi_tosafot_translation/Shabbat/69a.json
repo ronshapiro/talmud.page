@@ -1,0 +1,440 @@
+{
+  "Rashi on Shabbat 69a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T11:56:47.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תשגו ולא תעשו את כל המצות האלה</strong> - וילפינן בהוריות <span class=\"parenthesized\">(דף ח.)</span> זו ע\"ז שהיא שקולה ככל המצות וכתיב תורה אחת כל התורה במשמע:"
+  },
+  "Rashi on Shabbat 69a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:1:1",
+      "Rashi on Shabbat 69a:1:3",
+      "Shabbat 68b:6"
+    ],
+    "generatedAt": "2026-11-14T11:58:00.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוקשו</strong> - קרבנות של שגגות של כל עבירות לשל ע\"ז מה ע\"ז קרבן שלה אינו בא אלא על עבירה גמורה שחייב על זדונו כרת דסמיך ליה והנפש אשר תעשה ביד רמה ונכרתה:"
+  },
+  "Rashi on Shabbat 69a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:1:1",
+      "Rashi on Shabbat 69a:1:2",
+      "Rashi on Shabbat 69a:1:3"
+    ],
+    "generatedAt": "2026-11-14T11:58:30.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף כל התורה</strong> - אין מביאין חטאת אלא על דבר שזדונו כרת:"
+  },
+  "Rashi on Shabbat 69a:2:1": {
+    "dependsOn": [
+      "Shabbat 69a:2"
+    ],
+    "generatedAt": "2026-11-14T12:07:31.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא מונבז</strong> - דאמר לעיל דמי שהיתה לו ידיעה בשעת מעשה חייב חטאת:"
+  },
+  "Rashi on Shabbat 69a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:2:1",
+      "Rashi on Shabbat 69a:2:2",
+      "Rashi on Shabbat 69a:2:3",
+      "Rashi on Shabbat 69a:2:4"
+    ],
+    "generatedAt": "2026-11-14T12:08:14.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשגג במאי</strong> - הא גבי חטאת שגגה כתיב:"
+  },
+  "Rashi on Shabbat 69a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T12:08:39.841Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשגג בקרבן</strong> - דיודע שחייב על זדונו כרת אבל אינו יודע שחייב עליה חטאת:"
+  },
+  "Rashi on Shabbat 69a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T12:09:12.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמה שגגה</strong> - עד ששגג בעבירה עצמה:"
+  },
+  "Rashi on Shabbat 69a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:2:1",
+      "Rashi on Shabbat 69a:2:2",
+      "Rashi on Shabbat 69a:2:3",
+      "Rashi on Shabbat 69a:2:4"
+    ],
+    "generatedAt": "2026-11-14T12:14:09.490Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - דבעו שגגה בעבירה עצמה שגגה במאי קאמרי שגגה בכולה מילתא בלאו וכרת או בכרת לחודיה:"
+  },
+  "Rashi on Shabbat 69a:3:2": {
+    "dependsOn": [
+      "Shabbat 69a:3",
+      "Rashi on Shabbat 69a:3:1",
+      "Rashi on Shabbat 69a:3:2",
+      "Rashi on Shabbat 69a:3:3",
+      "Rashi on Shabbat 69a:1:1",
+      "Rashi on Shabbat 69a:1:2",
+      "Rashi on Shabbat 69a:1:3",
+      "Rashi on Shabbat 68b:1:1",
+      "Rashi on Shabbat 68b:2:1",
+      "Rashi on Shabbat 68a:1:1",
+      "Rashi on Shabbat 69a:5:1",
+      "Rashi on Shabbat 69a:6:1"
+    ],
+    "generatedAt": "2026-11-14T12:16:15.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון ששגג בכרת אע\"ג שהזיד בלאו</strong> - שאז הקרבן על הכרת הוא בא כדאמרן לעושה בשגגה וסמיך ליה והנפש אשר תעשה וגו':"
+  },
+  "Rashi on Shabbat 69a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T12:16:34.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תעשינה</strong> - היינו לאו:"
+  },
+  "Rashi on Shabbat 69a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:5:1",
+      "Rashi on Shabbat 69a:5:2",
+      "Rashi on Shabbat 69a:5:3"
+    ],
+    "generatedAt": "2026-11-14T12:21:37.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנינא למה לי</strong> - ליתני אבות מלאכות הזורע והחורש כו' למה לי למיתנא ארבעים חסר אחת ליתנינהו ואנן ידעינן דמ' חסר אחת איכא:"
+  },
+  "Rashi on Shabbat 69a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:5:1",
+      "Rashi on Shabbat 69a:5:3"
+    ],
+    "generatedAt": "2026-11-14T12:22:16.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם עשאן כולן כו'</strong> - וסימנא בעלמא אשמעינן לידע כמה חטאות חייב על חילול שבת אחת:"
+  },
+  "Rashi on Shabbat 69a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:5:1",
+      "Rashi on Shabbat 69a:5:2",
+      "Shabbat 69a:5",
+      "Rashba on Shabbat 69a:4",
+      "Tosafot on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2"
+    ],
+    "generatedAt": "2026-11-14T12:25:46.270Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי משכחת לה</strong> - דמיחייב ע\"כ לא משכחת לה אלא בזדון שבת דיודע שהוא שבת ושגגת מלאכות דאינו יודע שהמלאכות הללו אסורות דאי בזדון מלאכות ושגגת שבת דיודע שהן אסורות בשבת אבל שכח שהיום שבת הא תנן דאינו חייב אלא אחת לכל שבת וזדון שבת לא הוי אא\"כ יודע אחת מהלכותיה דאי לא ידע בחדא מינייהו אין שבת חלוק לו משאר ימים וזה ששגג בכולן אין כאן זדון שבת:"
+  },
+  "Rashi on Shabbat 69a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2",
+      "Rashi on Shabbat 69a:6:3",
+      "Rashi on Shabbat 69a:1:1",
+      "Rashi on Shabbat 69a:1:2",
+      "Rashi on Shabbat 69a:1:3",
+      "Rashi on Shabbat 68b:1:1",
+      "Rashi on Shabbat 68b:2:1",
+      "Rashi on Shabbat 68b:3:1",
+      "Shabbat 69a:6"
+    ],
+    "generatedAt": "2026-11-14T12:27:21.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לר' יוחנן</strong> - דאמר שגגת כרת שמה שגגה:"
+  },
+  "Rashi on Shabbat 69a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:3"
+    ],
+    "generatedAt": "2026-11-14T12:28:39.918Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משכחת לה</strong> - זדון שבת בלאוין ושגגת מלאכות בכריתות דיודע לה לשבת שהוזהר על הלאוין או של כולן או של אחת מהן:"
+  },
+  "Rashi on Shabbat 69a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2",
+      "Rashi on Shabbat 69a:6:3",
+      "Rashi on Shabbat 69a:6:4"
+    ],
+    "generatedAt": "2026-11-14T12:29:45.811Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידע לה לשבת במאי</strong> - הלא בכולן שגג כסבור שכל ל\"ט מלאכות מותרות:"
+  },
+  "Rashi on Shabbat 69a:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2",
+      "Rashi on Shabbat 69a:6:3",
+      "Rashi on Shabbat 69a:6:4",
+      "Rashi on Shabbat 69a:6:5"
+    ],
+    "generatedAt": "2026-11-14T12:31:05.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתחומין</strong> - דאינן בקרבן:"
+  },
+  "Rashi on Shabbat 69a:6:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2",
+      "Rashi on Shabbat 69a:6:3",
+      "Rashi on Shabbat 69a:6:4",
+      "Rashi on Shabbat 68b:2:1",
+      "Rashi on Shabbat 68b:7:1"
+    ],
+    "generatedAt": "2026-11-14T12:33:42.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואליבא דר' עקיבא</strong> - דאמר במסכת סוטה תחומין דאורייתא נינהו דתנן בו ביום דרש רבי עקיבא ומדותם מחוץ לעיר כו':"
+  },
+  "Rashi on Shabbat 69a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:7:2",
+      "Rashi on Shabbat 69a:7:3",
+      "Steinsaltz on Shabbat 69a:7"
+    ],
+    "generatedAt": "2026-11-14T12:38:03.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהו שוגג האמור בתורה</strong> - כלומר היכא דשגג בשבת ובמלאכות אין כאן לא דין ולא דיין לקנתר ואין לך שוגג כזה:"
+  },
+  "Rashi on Shabbat 69a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:7:1",
+      "Rashi on Shabbat 69a:7:2",
+      "Rashi on Shabbat 69a:7:3"
+    ],
+    "generatedAt": "2026-11-14T12:38:47.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזיד בזה ובזה</strong> - אין לך מזיד כזה:"
+  },
+  "Rashi on Shabbat 69a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:7:1",
+      "Rashi on Shabbat 69a:7:2",
+      "Rashi on Shabbat 69a:7:3"
+    ],
+    "generatedAt": "2026-11-14T12:39:18.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שגג באחת מהן</strong> - אף זה שוגג וחייבים עליה קרבן:"
+  },
+  "Rashi on Shabbat 69a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:8:2",
+      "Rashi on Shabbat 69a:8:3"
+    ],
+    "generatedAt": "2026-11-14T12:40:16.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבועת ביטוי</strong> - שאוכל ולא אוכל שאכלתי ולא אכלתי חייב עליה קרבן וכתיב ביה ונעלם דהיינו שוגג הכל מודים בשוגג שלה דאם נשבע שלא אוכל ואכל אינו חייב אלא אם כן שכח שבועתו כשאכל דהשתא שגג בלאו שבה:"
+  },
+  "Rashi on Shabbat 69a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:8:1",
+      "Rashi on Shabbat 69a:8:3",
+      "Shabbat 69a:8"
+    ],
+    "generatedAt": "2026-11-14T12:41:33.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל מודים מאן רבי יוחנן</strong> - כלומר על כרחין אביי לאו אפלוגתא דמונבז ורבנן קאי דלישמעינן דמודה מונבז בהא <span class=\"parenthesized\">(דהא)</span> שגגת קרבן לא הויא שגגה דמהיכא תיתי והא ק\"ו היא השתא בכל התורה כולה דליכא חידוש בקרבן דידהו אמר מונבז דמיחייב בשגגת קרבן הכא דחידוש הוא דאין בה כרת ומביא קרבן עליה לא כ\"ש אלא לרבנן קאמר ואפלוגתא דר\"י ור\"ל קאי ומאן הכל מודים ר\"י דאף על גב דבעלמא קאמר אף על פי שהזיד בלאו הכא בעינן שישגוג בלאו:"
+  },
+  "Rashi on Shabbat 69a:8:3": {
+    "dependsOn": [
+      "Shabbat 69a:8",
+      "Rashi on Shabbat 69a:8:1",
+      "Rashi on Shabbat 69a:8:2"
+    ],
+    "generatedAt": "2026-11-14T12:43:00.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשיטא</strong> - כיון דאליבא דרבנן איפליג דאמרי שגגת קרבן לאו שגגה היא אי בלאו שלה הזיד במאי שגג דע\"כ לא קאמר ר\"י בעלמא אלא במקום כרת דשגג בכרת:"
+  },
+  "Rashi on Shabbat 69a:9:1": {
+    "dependsOn": [
+      "Shabbat 69a:9"
+    ],
+    "generatedAt": "2026-11-14T12:45:09.000Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 69a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סלקא דעתך אמינא</strong> - בשבועת ביטוי נמי קאי רבי יוחנן במילתיה דאף על פי שהזיד בלאו ודקשיא לך במאי שגג שגג בקרבן דהואיל וחידוש מודו ביה רבנן:"
+  },
+  "Tosafot on Shabbat 69a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T12:10:59.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 69a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למונבז שגגה במאי</strong> - לא מצי למימר ששגג בלאו והזיד בקרבן דאין סברא לחייב בהזיד בקרבן דלא שב מידיעתו הוא וליכא נמי למימר שגג בלאו וקרבן דסברא הוא דכיון דמקיש למזיד אפי' מזיד בכל דבר ושוגג רק בדבר אחד דהיינו בקרבן יש לנו לחייבו ומיהו היכא דאיכא סקילה בעינן שיהא שוגג גם בסקילה דאי הוה מזיד בסקילה אין לחייבו בקרבן דכיון דאינו שב מסקילה פשיטא שאפילו היה יודע שחייב גם קרבן שלא היה שב ולא שב מידיעתו הוא ואע\"ג דבהזיד בכרת חשיב ליה שב מידיעתו לקרבן היינו משום דכרת אפשר בתשובה וקרבן לא אפשר בתשובה ועוד דגבי כרת שייך שפיר למימר אם היה יודע שחייב כרת עם הקרבן היה שב:"
+  },
+  "Tosafot on Shabbat 69a:2:2": {
+    "dependsOn": [
+      "Shabbat 69a:2",
+      "Tosafot on Shabbat 69a:2:1",
+      "Tosafot on Shabbat 69a:3:1",
+      "Shabbat 69a:1",
+      "Tosafot on Shabbat 69a:1:1"
+    ],
+    "generatedAt": "2026-11-14T12:12:57.524Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 69a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון ששגג בכרת אע\"פ שהזיד בלאו</strong> - וטעמא דר' יוחנן משום דלא כתיב לאו בהיקשא דר' יהושע ולא כתיב אלא כרת בההיא ענינא ולהכי בעי מ\"ט דריש לקיש ולא בעי מ\"ט דר' יוחנן וצ\"ל דרבי יוחנן מיירי אליבא דרבנן דאית להו היקשא דרבי יהושע בן לוי אבל לרבי דנפקא ליה מג\"ש דעליה מודה רבי יוחנן דבעי עד שישגוג בלאו וכרת דהא כתיב לאו בההוא קרא ואשה אל אחותה לא תקח וגו':"
+  },
+  "Tosafot on Shabbat 69a:3:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 69a:2:1",
+      "Tosafot on Shabbat 69a:2:2",
+      "Tosafot on Shabbat 68a:2:1",
+      "Tosafot on Shabbat 68b:1:1",
+      "Meir Lublin on Shabbat 69a:7:1",
+      "Maharam on Shabbat 69a:1",
+      "Shabbat 69a:3",
+      "Shabbat 68b:7"
+    ],
+    "generatedAt": "2026-11-14T12:19:13.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 69a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא אשר לא תעשינה בשגגה</strong> - קשה לר\"י מנא ליה לריש לקיש דרבנן דרשי הכי ובעו שגגת לאו וליכא למימר דמשמע ליה למדרש קרא הכי דהא ע\"כ סבירא ליה דאין סברא לדרוש כן דהא איהו סבר כמונבז כדאמר לעיל ומונבז לא בעי שגגת לאו אלא שגגת קרבן גרידא דבהדיא תניא לקמן או שאמר יודע אני שמלאכה זו אסורה אבל איני יודע אם חייבים עליה קרבן אם לאו חייב ולא קאמר קרבן ומלקות אם לאו:"
+  },
+  "Tosafot on Shabbat 69a:6:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 6b:7:1",
+      "Rashi on Shabbat 69a:6:1",
+      "Rashi on Shabbat 69a:6:2",
+      "Rashi on Shabbat 69a:6:3",
+      "Rashi on Shabbat 69a:6:4",
+      "Rashi on Shabbat 69a:6:5",
+      "Tosafot on Shabbat 69a:3:1",
+      "Tosafot on Shabbat 2a:4:1"
+    ],
+    "generatedAt": "2026-11-14T12:37:12.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 69a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דידע לה בתחומין</strong> - לא מצי למימר דידע לה בדאיסי דבההוא נמי חייב חטאת כדפירשתי בפרק קמא <span class=\"parenthesized\">(דף ו: בד\"ה הא קמ\"ל)</span> תימה לר\"י דאמאי לא קאמר דידע לה לשבת בעשה דכתיב וביום השביעי תשבות וגו' <span class=\"parenthesized\">(שמות כ״ג:י״ב)</span> וכתיב נמי ושמרתם את השבת <span class=\"parenthesized\">(שם לא)</span>:"
+  },
+  "Tosafot on Shabbat 69a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 69a:8:1",
+      "Rashi on Shabbat 69a:8:2",
+      "Rashi on Shabbat 69a:8:3",
+      "Shevuot 26a:14",
+      "Rashi on Shevuot 26a:14:1",
+      "Shevuot 26a:16",
+      "Shevuot 26b:1",
+      "Shevuot 26b:2"
+    ],
+    "generatedAt": "2026-11-14T12:44:11.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 69a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שישגוג בלאו שבה</strong> - כגון נשבע שלא יאכל ואכל ובשעת אכילה שכח איסור שבועה וקרינן ביה האדם דבשעת שבועה שנשבע היה יודע היטב איסור שבועה אלא שבשעת אכילה היה סבור דמותר לעבור על שבועתו ורש\"י פירש דבשעת אכילה שכח שנשבע ואין נראה דאין זה קרוי שגג בלאו שבה במה שאינו נזכר שנשבע:"
+  }
+}

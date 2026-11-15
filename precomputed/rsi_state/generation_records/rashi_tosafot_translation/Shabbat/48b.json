@@ -1,0 +1,374 @@
+{
+  "Rashi on Shabbat 48b:10:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 48b:10:2",
+      "Rashi on Shabbat 48b:10:3",
+      "Steinsaltz comment #2 on Shabbat 48b:10",
+      "Steinsaltz comment #3 on Shabbat 48b:10",
+      "Rashi on Shabbat 48b:2:1",
+      "Rashi on Shabbat 48b:3:1",
+      "Rashi on Shabbat 48b:6:1"
+    ],
+    "generatedAt": "2026-11-13T09:04:11.864Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזמל של רהיטני</strong> - פליינ\"א שממחקים בה את התריסין ונותנין הברזל לתוך דפוס של עץ המתוקן לו ולאחר מלאכתו נוטלו הימנו:"
+  },
+  "Rashi on Shabbat 48b:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:10:1",
+      "Rashi on Shabbat 48b:10:3"
+    ],
+    "generatedAt": "2026-11-13T09:04:54.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיבור לטומאה</strong> - נטמא זה טמא זה:"
+  },
+  "Rashi on Shabbat 48b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T09:05:17.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין חיבור להזאה</strong> - וצריך להזות על שניהם:"
+  },
+  "Rashi on Shabbat 48b:1:1": {
+    "dependsOn": [
+      "Shabbat 48b:1",
+      "Rashi on Shabbat 48b:1:2"
+    ],
+    "generatedAt": "2026-11-13T08:45:18.921Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה בין זו למגופת חבית</strong> - דתניא בפרק חבית שנשברה <span class=\"parenthesized\">(לקמן שבת דף קמו.)</span> מביא אדם חבית ומתיז את ראשה בסייף ומניחה לפני האורחים:"
+  },
+  "Rashi on Shabbat 48b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:45:44.941Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגופה</strong> - אינה מן החבית עצמו ואע\"פ שדבוקה בו אינו חשוב חיבור שהרי לינטל עומדת אבל הבגד כשנארג כולו חבור:"
+  },
+  "Rashi on Shabbat 48b:2:1": {
+    "dependsOn": [
+      "Jastrow, שָׁלָל II 1"
+    ],
+    "generatedAt": "2026-11-13T08:47:50.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלל של כובסים</strong> - דרכם לשלול הבגדים זה עם זה קטנים עם הגדולים כדי שלא יאבדו:"
+  },
+  "Rashi on Shabbat 48b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:48:21.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובגד שתפרו בכלאים</strong> - והן שתי חתיכות של בגד צמר שתפרו בחוט של פשתן דודאי סופו ליקרע ולהפרד זה מזה משום איסור כלאים וכן שלל של כובסין סופן להפרד אפ\"ה חיבור לטומאה ואם נטמא זה נטמא זה:"
+  },
+  "Rashi on Shabbat 48b:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:2:1",
+      "Rashi on Shabbat 48b:2:2",
+      "Rashi on Shabbat 48b:2:4"
+    ],
+    "generatedAt": "2026-11-13T08:49:07.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיתחיל להתיר</strong> - דמעשה מוציא מיד מעשה וכיון שהתחיל להתיר גלי על ידי מעשה דלאו חד בגד הוא:"
+  },
+  "Rashi on Shabbat 48b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:49:27.845Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בשעת מלאכה</strong> - כגון שלל של כובסין שלא הוצרך לשוללו אלא משום שעת כיבוס ואפילו הכי חשיב ליה חיבור אחר כיבוס:"
+  },
+  "Rashi on Shabbat 48b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:3:2",
+      "Rashi on Shabbat 48b:3:3"
+    ],
+    "generatedAt": "2026-11-13T08:50:38.345Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקל</strong> - של עצים בעלמא:"
+  },
+  "Rashi on Shabbat 48b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:3:1",
+      "Rashi on Shabbat 48b:3:2",
+      "Rashi on Shabbat 48b:3:3"
+    ],
+    "generatedAt": "2026-11-13T08:51:36.088Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שעשאו יד לקרדום</strong> - שלא קבעו לתוכו:"
+  },
+  "Rashi on Shabbat 48b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:52:38.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיבור בשעת מלאכה</strong> - ואע\"פ דבאנפי נפשיה פשוטי כלי עץ לא מקבלי טומאה הכא בית יד הוא ונתרבו ידות לכל תורת כלי או האוכל בפ' העור והרוטב <span class=\"parenthesized\">(חולין קיח.)</span>:"
+  },
+  "Rashi on Shabbat 48b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:52:59.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזורקו</strong> - למקל ומצניע הקורדום לבדו:"
+  },
+  "Rashi on Shabbat 48b:4:2": {
+    "dependsOn": [
+      "Shabbat 48b:4",
+      "Rashi on Shabbat 48b:4:1",
+      "Rashi on Shabbat 48b:4:2",
+      "Rashi on Shabbat 48b:4:3"
+    ],
+    "generatedAt": "2026-11-13T08:53:53.616Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניחא להו</strong> - שיהו שלולין:"
+  },
+  "Rashi on Shabbat 48b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:4:1",
+      "Rashi on Shabbat 48b:4:2",
+      "Shabbat 48b:4"
+    ],
+    "generatedAt": "2026-11-13T08:54:28.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי מיטנפי הדר מחוור להו</strong> - ע\"י השלל הזה:"
+  },
+  "Rashi on Shabbat 48b:5:1": {
+    "dependsOn": [
+      "Shabbat 48b:5"
+    ],
+    "generatedAt": "2026-11-13T08:55:02.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להא שמעתין</strong> - דלקמיה מאן תנא להא כו'. כל המחובר לו כגון שלל של כובסין דאמרן לעיל חיבור ונטמא אף זה שלא נגעה בו הטומאה ואי לאו דחיבור הוא הוי טהור ואע\"ג דנגע בהאי דאין כלי מקבל טומאה אלא מאב הטומאה:"
+  },
+  "Rashi on Shabbat 48b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:6:2",
+      "Rashi on Shabbat 48b:6:3",
+      "Rashi on Shabbat 48b:6:4"
+    ],
+    "generatedAt": "2026-11-13T08:55:33.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית הפך ובית התבלין ובית הנר שבכירה</strong> - כירה זו מיטלטלת היא ומחוברין לה כלי חרס קטנים. בית הפך שמושיבין בתוכו שמן להפשיר:"
+  },
+  "Rashi on Shabbat 48b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:6:1",
+      "Rashi on Shabbat 48b:6:2",
+      "Rashi on Shabbat 48b:6:3",
+      "Rashi on Shabbat 48b:6:4"
+    ],
+    "generatedAt": "2026-11-13T08:56:06.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטמאין במגע</strong> - אם נפלה טומאה באוירן או לאויר הכירה ונגעה הטומאה לשולי הכירה נטמאו גם אלו או נגעה טומאה לשוליהם של אלו נטמאת הכירה:"
+  },
+  "Rashi on Shabbat 48b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:6:1",
+      "Rashi on Shabbat 48b:6:2",
+      "Rashi on Shabbat 48b:6:4"
+    ],
+    "generatedAt": "2026-11-13T08:56:54.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מטמאין</strong> - בטומאת הכירה כלומר בטומאת האויר שאם נפל שרץ באויר הכירה ולא נגעה הטומאה בדופניה היא טמאה דכלי חרס מטמא באויר והן טהורין שאינן חיבור לה אלא לענין מגע כדמפרש טעמא לקמיה:"
+  },
+  "Rashi on Shabbat 48b:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:6:1",
+      "Rashi on Shabbat 48b:6:2",
+      "Rashi on Shabbat 48b:6:3",
+      "Shabbat 48b:6",
+      "Rashi on Shabbat 48b:5:1"
+    ],
+    "generatedAt": "2026-11-13T08:58:31.101Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' שמעון מטהר</strong> - במגע את מי שלא נגעה בו הטומאה דכל חד כלי באנפי נפשיה הוא אלמא לרבי מאיר חיבור ופליגי עליה:"
+  },
+  "Rashi on Shabbat 48b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:59:51.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' באויר ליטמו</strong> - מחמת כירה אם נטמאת כירה מאוירה בלא נגיעה:"
+  },
+  "Rashi on Shabbat 48b:8:1": {
+    "dependsOn": [
+      "Shabbat 48b:8"
+    ],
+    "generatedAt": "2026-11-13T09:00:19.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דגזרו בהו</strong> - דליהוו חיבור מדרבנן:"
+  },
+  "Rashi on Shabbat 48b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T09:00:49.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבוד בהו רבנן היכרא</strong> - דלא עבדו להו ככירה ממש ליטמא באויר כי היכי דלידעו שחיבור מדבריהם ולא לשרוף על טומאתן תרומה וקדשים:"
+  },
+  "Tosafot on Shabbat 48b:11:1": {
+    "dependsOn": [
+      "Shabbat 48b:11"
+    ],
+    "generatedAt": "2026-11-13T09:07:39.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי חיבור הוא אפי' להזאה נמי כו'</strong> - קשה לר\"י דבשלל של כובסין נמי תקשה לן הכי אי חיבור הוא אפילו להזאה נמי אי לאו חיבור הוא לטומאה נמי לא ורבא נמי דקאמר דבר תורה בשעת מלאכה חיבור בין לטומאה בין להזאה אמאי לא קאמר דבין בשעת מלאכה בין שלא בשעת מלאכה גזרו בה רבנן טומאה כי ההיא דשלל של כובסין ותירץ ר\"י דשלל של כובסין ודאי לא הוי חיבור אלא מדרבנן אפילו בשעת מלאכה שאינם צריכים זה לזה ולהכי מדמה לה לבית הפך ולבית התבלין שכל אחד הוא תשמיש בפני עצמו ולהכי אינו חיבור להזאה כיון דמדאורייתא אינו חיבור אבל מספורת של פרקים פשיטא ליה דבשעת מלאכה הוי חיבור דבר תורה כיון שמשמשין שניהם תשמיש א' וצריכים זה לזה בשעת מלאכה מה שאין כן בשלל של כובסים שאין תשמיש בגד זה צריך לזה כלל והא דפריך אי לאו חיבור הוא אפילו לטומאה נמי לא לאו דוקא ועיקר קושיתו הוא דאמאי אינו חיבור להזאה ורשב\"א מפרש דגבי שלל של כובסין אתי ליה שפיר אע\"ג דאינו חיבור להזאה משום דלא הוי חיבור מן התורה גזרו רבנן שיהא חיבור לטומאה כיון שכל בגד טמא בפני עצמו מן התורה אבל גבי מספורת פריך שפיר אי לאו חיבור הוא מדאורייתא אם כן אמאי גזרו חכמים טומאה כלל דהא כל פרק בפני עצמו טהור מדאורייתא לרבנן דתנן במס' כלים בפי\"ג <span class=\"parenthesized\">(מ\"א)</span> מספורת שנחלקה לשנים רבי יהודה מטמא וחכמים מטהרים אף על גב דאיכא למימר דהתם מיירי כשאינה של פרקים ולפי זה הא דאמר השחור והזוג של מספרים אף על פי שנחלקו טמאים אתי כרבי יהודה ודוחק והא דאמר דגזרו על הזאה שבשעת מלאכה משום הזאה שלא בשעת מלאכה אף על גב דשלא בשעת מלאכה טהור גמור הוא ואין צריך הזאה כלל מ\"מ כשחוזרים ועושים בו מלאכה חוזר לטומאתו ישנה והחמירו חכמים בטומאה ישנה שלא תועיל לו הזאה שלא בשעת מלאכה כיון שאינו חיבור דבר תורה וגזרו על הזאה שבשעת מלאכה אטו הזאה שלא בשעת מלאכה. רשב\"א:"
+  },
+  "Tosafot on Shabbat 48b:11:2": {
+    "dependsOn": [
+      "Shabbat 48b:11",
+      "Tosafot on Shabbat 48b:11:1",
+      "Shabbat 44b:2"
+    ],
+    "generatedAt": "2026-11-13T09:09:14.186Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר תורה בשעת מלאכה חיבור</strong> - תימה מאי שנא ממוכני דאמר <span class=\"parenthesized\">(לעיל שבת דף מד:)</span> בזמן שהיא נשמטת דאינו חיבור וצריך לחלק:"
+  },
+  "Tosafot on Shabbat 48b:1:1": {
+    "dependsOn": [
+      "Shabbat 48b:1",
+      "Rashi on Shabbat 48b:1:1",
+      "Rashi on Shabbat 48b:1:2"
+    ],
+    "generatedAt": "2026-11-13T08:47:18.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי מה בין זה למגופת חבית</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דתניא לקמן בפרק חבית <span class=\"parenthesized\">(שבת דף קמו. ושם)</span> רשב\"ג אומר מתיזה בסייף ומניחה לפני האורחין ואין נראה לר\"י דא\"כ מאי משני זה חיבור וזה אינו חיבור התם נמי חיבור הוא דרשב\"ג שרי להתיז אפילו גוף החבית עם המגופה כדמוכח התם דבעו מיניה מרב ששת מהו למיברז חביתא בבורטיא כו' אמר להו לפתחא קא מכוין ואסור ופריך מהא דשרי רשב\"ג להתיז ראשה בסייף ומשני התם ודאי לעין יפה קא מכוין אבל הכא אי לעין יפה קא מכוין ליפתחיה מיפתח והא דאסר למיברז חביתא היינו בגוף החבית דחביתא חבית גופא משמע ועוד דמגופה שרי דתנן במתני' אין נוקבין מגופה של חבית דברי רבי יהודה וחכמים מתירין משמע דשרי רשב\"ג אפי' בגוף החבית דלעין יפה קא מיכוין והכי הוה ליה לשנויי בשמעתין הכא לפתחא מכוין התם לעין יפה מכוין ופיר\"ת וכי מה בין זה. לנקיבת מגופת חבית דתנן בפ' חבית <span class=\"parenthesized\">(גם זהשם)</span> אין נוקבין מגופת חבית דברי ר' יהודה וחכמים מתירין וא\"ת [התם] לכ\"ע לא מיחייב חטאת כדאמר התם בגמ' דבר תורה כל פתח שאינו עשוי להכניס ולהוציא אינו פתח אבל הכא פתח בית הצואר עשוי הוא להכניס ולהוציא ואם כן מאי קשיא ליה ויש לומר דהכי פריך כיון דמחייבת חטאת בפותח בית הצואר משום דעשוי להכניס ולהוציא א\"כ נמי גבי מגופה אם עשוי להכניס ולהוציא היה חייב חטאת הלכך השתא נמי שאינו עשוי אלא להוציא היה לאסור מדרבנן ומשני זה חיבור וזה אינו חיבור שהמגופה אינה מן החבית ואפילו אם היה עשוי נקב שבמגופה להכניס ולהוציא לא היה חייב חטאת לכך שרו רבנן:"
+  },
+  "Tosafot on Shabbat 48b:2:1": {
+    "dependsOn": [
+      "Mishnah Parah 12:9"
+    ],
+    "generatedAt": "2026-11-13T08:50:13.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיבור עד שיתחיל להתיר</strong> - האי חיבור היינו לטומאה ולא להזאה כדתנן במסכת פרה <span class=\"parenthesized\">(פי\"ב מ\"ט)</span> וא\"ת ואמאי לא מייתי מתני' דמסכת פרה וי\"ל משום דלא קתני בה עד שיתחיל להתיר ולא הוה מצי לאוכוחי מינה דשלא בשעת מלאכה נמי חיבור:"
+  },
+  "Tosafot on Shabbat 48b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48b:6:1",
+      "Rashi on Shabbat 48b:6:2",
+      "Shabbat 48b:6",
+      "Rashi on Shabbat 48b:5:1"
+    ],
+    "generatedAt": "2026-11-13T08:59:28.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב יהודה אמר רב רבי מאיר היא</strong> - אההיא דשלל של כובסים קאי וכן <span class=\"rashi-quotation\">פירש בקונטרס</span> דבההוא דמקל שמא אפי' רבי שמעון מודה דכיון שצריך הקרדום למקל הוי חיבור:"
+  },
+  "Tosafot on Shabbat 48b:9:1": {
+    "dependsOn": [
+      "Shabbat 48b:9",
+      "Tosafot on Shabbat 48b:6:1",
+      "Tosafot on Shabbat 48b:11:1",
+      "Shabbat 48b:5"
+    ],
+    "generatedAt": "2026-11-13T09:02:13.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עבדו רבנן היכרא כו'</strong> - וגבי שלל של כובסין איכא נמי היכרא מה שאינו חיבור להזאה והכא גבי כירה לא שייך הך היכרא דלית ביה הזאה:"
+  }
+}

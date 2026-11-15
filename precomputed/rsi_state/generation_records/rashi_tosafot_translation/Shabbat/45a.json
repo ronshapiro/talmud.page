@@ -1,0 +1,557 @@
+{
+  "Rashi on Shabbat 45a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T04:55:55.298Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מניחין נר</strong> - מבעוד יום:"
+  },
+  "Rashi on Shabbat 45a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:1:1",
+      "Rashi on Shabbat 45a:1:3",
+      "Rashi on Shabbat 45a:1:4"
+    ],
+    "generatedAt": "2026-11-13T04:56:45.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"ג דקל</strong> - וידלק שם בשבת דליכא למיחש לכשיכבה לישקליה מיניה ונמצא משתמש במחובר דכיון דאקצייה לדבר האסור בין השמשות איתקצי לכולי יומא:"
+  },
+  "Rashi on Shabbat 45a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:1:1",
+      "Rashi on Shabbat 45a:1:2",
+      "Rashi on Shabbat 45a:1:3",
+      "Rashi on Shabbat 45a:1:4"
+    ],
+    "generatedAt": "2026-11-13T04:57:21.469Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מניחין כו' בי\"ט</strong> - דשקיל ומנח ליה ומשתמש באילן:"
+  },
+  "Rashi on Shabbat 45a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:1:1",
+      "Rashi on Shabbat 45a:1:2",
+      "Rashi on Shabbat 45a:1:3"
+    ],
+    "generatedAt": "2026-11-13T04:57:55.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לי שבת כו'</strong> - בשבת נמי שקיל ליה לכשיכבה:"
+  },
+  "Rashi on Shabbat 45a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:2:1",
+      "Rashi on Shabbat 45a:2:2",
+      "Rashi on Shabbat 45a:2:3"
+    ],
+    "generatedAt": "2026-11-13T05:00:50.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרגא דחנוכתא</strong> - אחר שכבה:"
+  },
+  "Rashi on Shabbat 45a:2:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 45a:2:2"
+    ],
+    "generatedAt": "2026-11-13T05:01:32.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקמי חברי</strong> - שלא יראוהו בחצר כדאמרינן בפרקין דלעיל <span class=\"parenthesized\">(שבת דף כב:)</span> דנותנו בטפח הסמוך לרשות הרבים וידעו שהדליקו בו נר והם גזרו שלא להדליק אי נמי ביום חגם אין מניחין לדלוק אור אלא בבית ע\"ז:"
+  },
+  "Rashi on Shabbat 45a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:2:3",
+      "Rashi on Shabbat 45a:2:1",
+      "Rashi on Shabbat 45a:2:2",
+      "Rashi on Shabbat 45a:2:4",
+      "Rashi on Shabbat 45a:2:5",
+      "Rashi on Shabbat 21b:8:1",
+      "Rashi on Shabbat 22a:1:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T05:02:58.569Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חברי</strong> - שם אומה שהיתה עם פרסיים:"
+  },
+  "Rashi on Shabbat 45a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:03:21.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי הילכתא</strong> - בתמיה:"
+  },
+  "Rashi on Shabbat 45a:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:04:01.354Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשעת הדחק</strong> - סכנה אלמא שלא בשעת הדחק אסור:"
+  },
+  "Rashi on Shabbat 45a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:3:2",
+      "Rashi on Shabbat 45a:3:3",
+      "Rashi on Shabbat 45a:3:4",
+      "Shabbat 45a:2"
+    ],
+    "generatedAt": "2026-11-13T05:05:42.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שזרען בקרקע</strong> - ועדיין לא השרישו מהו ללקוט ולאכול:"
+  },
+  "Rashi on Shabbat 45a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:3:1",
+      "Rashi on Shabbat 45a:3:3",
+      "Rashi on Shabbat 45a:3:4",
+      "Rashi on Shabbat 44a:5:1",
+      "Shabbat 45a:3"
+    ],
+    "generatedAt": "2026-11-13T05:07:50.749Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוקצה לר' שמעון בדבר הראוי</strong> - אלא בשמן שבנר בשעה שהוא דולק כדתניא לעיל:"
+  },
+  "Rashi on Shabbat 45a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:3:1",
+      "Rashi on Shabbat 45a:3:2",
+      "Rashi on Shabbat 45a:3:4"
+    ],
+    "generatedAt": "2026-11-13T05:08:24.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל והוקצה למצותו</strong> - לשבת:"
+  },
+  "Rashi on Shabbat 45a:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:3:3",
+      "Rashi on Shabbat 45a:3:4"
+    ],
+    "generatedAt": "2026-11-13T05:08:52.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוקצה לאיסורו</strong> - איסור כיבוי:"
+  },
+  "Rashi on Shabbat 45a:4:1": {
+    "dependsOn": [
+      "Shabbat 45a:4"
+    ],
+    "generatedAt": "2026-11-13T05:14:26.606Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוקצה למצותו לית ליה</strong> - בתמיה דקס\"ד שמן שבנר דוקא קאמר דאיכא תרתי מוקצה למצוה ומוקצה של שעת דליקתו משום איסור כיבוי אבל מוקצה למצוה גרידא לא אסר ואפילו בשעת המצוה:"
+  },
+  "Rashi on Shabbat 45a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:4:1",
+      "Rashi on Shabbat 45a:4:2",
+      "Rashi on Shabbat 45a:4:3"
+    ],
+    "generatedAt": "2026-11-13T05:14:58.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא סיככה</strong> - לסוכה כו':"
+  },
+  "Rashi on Shabbat 45a:4:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 44a:4:3",
+      "Shabbat 45a:4"
+    ],
+    "generatedAt": "2026-11-13T05:16:34.458Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרמים</strong> - בגדי צבעונים שקורין אובריינ\"א:"
+  },
+  "Rashi on Shabbat 45a:4:4": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-13T05:17:07.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפרסקין</strong> - פירסיק\"י בלע\"ז:"
+  },
+  "Rashi on Shabbat 45a:4:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:4:4",
+      "Rashi on Shabbat 45a:4:5",
+      "Rashi on Shabbat 45a:4:6"
+    ],
+    "generatedAt": "2026-11-13T05:17:42.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יינות שמנים</strong> - בכלי זכוכית:"
+  },
+  "Rashi on Shabbat 45a:4:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:18:13.818Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד מוצאי יו\"ט האחרון</strong> - והכא מוקצה למצוה איכא מוקצה דאיסור ליכא דאי משום סתירת אהל כי מטא חולו של מועד לשתרי דומיא דנר שכבה:"
+  },
+  "Rashi on Shabbat 45a:5:1": {
+    "dependsOn": [
+      "Shabbat 45a:5"
+    ],
+    "generatedAt": "2026-11-13T05:20:05.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא ממאי דר' שמעון היא</strong> - דמותיבנא לך מיניה:"
+  },
+  "Rashi on Shabbat 45a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:5:1",
+      "Rashi on Shabbat 45a:5:2",
+      "Rashi on Shabbat 45a:5:3",
+      "Rashi on Shabbat 44b:1:1",
+      "Rashi on Shabbat 44b:2:1",
+      "Rashi on Shabbat 44b:3:1",
+      "Rashi on Shabbat 44b:4:1",
+      "Rashi on Shabbat 44a:6:1",
+      "Rashi on Shabbat 43b:1:1",
+      "Rashi on Shabbat 43b:2:1",
+      "Rashi on Shabbat 42a:1:1"
+    ],
+    "generatedAt": "2026-11-13T05:21:30.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתני ר' חייא כו' אין נוטלין עצים</strong> - בפסח ועצרת מסוכה העשויה לצל ואפילו נפלו משום מוקצה דאיתקצאי מחמת סתירת אהל בי\"ט:"
+  },
+  "Rashi on Shabbat 45a:5:3": {
+    "dependsOn": [
+      "Shabbat 45a:5",
+      "Rashi on Shabbat 45a:5:1",
+      "Rashi on Shabbat 45a:5:2",
+      "Rashi on Shabbat 45a:5:3"
+    ],
+    "generatedAt": "2026-11-13T05:23:02.264Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא מן הסמוך לה</strong> - אם סמך חבילות עצים אצל דופנה ליכא איסור מוקצה דדעתיה עילויה מאתמול למישקלינהו למחר דלא סתר בהו אהלא ומהך דתני ר' חייא בר יוסף הוי מצי לאותבי ברישא אלא ניחא ליה לאותבי ממתניתא דר' חייא ור' אושעיא כדאמרינן בעלמא <span class=\"parenthesized\">(חולין דף קמא.)</span> כל מתניתא דלא מיתניא בי ר' חייא כו':"
+  },
+  "Rashi on Shabbat 45a:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:24:08.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' שמעון מתיר</strong> - אם נפלה דלית ליה מוקצה והכי מוקמינן ליה במסכת ביצה:"
+  },
+  "Rashi on Shabbat 45a:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:5:4",
+      "Rashi on Shabbat 45a:5:5",
+      "Rashi on Shabbat 45a:5:6"
+    ],
+    "generatedAt": "2026-11-13T05:24:43.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושוין בסוכת החג בחג</strong> - שהוקצה למצותה דמצותה כל שבעה אלמא כל שעת מצותה נוהג מוקצה שלה ואע\"ג דליכא איסור סתירה:"
+  },
+  "Rashi on Shabbat 45a:5:6": {
+    "dependsOn": [
+      "Shabbat 45a:5",
+      "Rashi on Shabbat 45a:3:3",
+      "Rashi on Shabbat 45a:5:5",
+      "Rashi on Shabbat 45a:5:6"
+    ],
+    "generatedAt": "2026-11-13T05:25:43.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין שמן קאמינא</strong> - ולא משום איסור אלא משום מצוה דהואיל דהוקצה למצותו דשבת הוקצה לכל זמן איסור דליקתו ולא יותר דאין מצותו אלא בשעת דליקתו ומשכבה אין בו מצוה אבל בסוכת החג מצותה כל שבעה והקצאתה כל זמן מצותה:"
+  },
+  "Rashi on Shabbat 45a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:28:40.521Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא גרוגרות וצמוקין</strong> - גרוגרות תאנים שמעלה לגג ליבשן ומשנשתהו שם מעט אין ראוים לאכילה עד שיתייבשו וכן צימוקים דענבים:"
+  },
+  "Rashi on Shabbat 45a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:29:01.378Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה אוכל בתאנים</strong> - רבותא אשמעי' דהוה אכיל ואזיל מכיון דאסקינהו אסח דעתיה ואקצן:"
+  },
+  "Rashi on Shabbat 45a:6:3": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-13T05:29:29.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבושין</strong> - קויינ\"ץ:"
+  },
+  "Rashi on Shabbat 45a:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:29:50.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן אתה אומר כו'</strong> - ואע\"ג דהני חזי כל שעתא ואפי' נשתהו לא נתקלקלו מיהו הואיל ואקצינהו אסירי:"
+  },
+  "Rashi on Shabbat 45a:7:1": {
+    "dependsOn": [
+      "Shabbat 45a:7"
+    ],
+    "generatedAt": "2026-11-13T05:33:22.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 45a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא ר\"י</strong> - למה לי הנך דנקט דדחינהו בידים אפי' הכניסן נמי לאוצר בעו הזמנה:"
+  },
+  "Tosafot on Shabbat 45a:1:1": {
+    "dependsOn": [
+      "Shabbat 45a:1",
+      "Chokhmat Shlomo on Shabbat 45a:1",
+      "Tosafot on Shabbat 44b:1:1",
+      "Tosafot on Shabbat 44b:1:2",
+      "Tosafot on Shabbat 36a:1:1",
+      "Shabbat 19b:1",
+      "Shabbat 19b:2",
+      "Shabbat 19b:3",
+      "Shabbat 19b:4",
+      "Shabbat 19b:5",
+      "Shabbat 19b:6",
+      "Rashi on Shabbat 19b:4:3"
+    ],
+    "generatedAt": "2026-11-13T05:00:15.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי נמי מסתברא דרב כר' יהודה ס\"ל</strong> - בכמה מקומות אשכחן דרב סבר כר' יהודה דאסר מטה שייחדה למעות והניח עליה מעות ואילו לר' שמעון שרי דהא שרי חצוצרות אפי' תקע בה כמה זימני ודכרכי דזוזי <span class=\"parenthesized\">(לעיל שבת דף יט:)</span> אלא דבעי לאוכוחי דסבר כר' יהודה במיגו דאיתקצאי בין השמשות כו':"
+  },
+  "Tosafot on Shabbat 45a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 45a:2:1",
+      "Rashi on Shabbat 45a:2:2"
+    ],
+    "generatedAt": "2026-11-13T05:04:53.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקמי חברי בשבתא</strong> - שביום חג שלהם לא היו מניחין נר אלא בבית ע\"ז ומאי דקמבעיא ליה בנר חנוכה טפי מבנר שבת משום דלצורך אכילה היו מניחים להם ואע\"ג דבשעת הסכנה אמרינן בבמה מדליקין <span class=\"parenthesized\">(לעיל שבת דף כא:)</span> דמניחה על שולחנו ודיו הכא מיירי אם יארע שלא הניחה על שולחנו א\"נ אומר ר\"י דשעת הסכנה דלעיל לאו סכנת חברים קאמר אלא סכנת גזירה שגזרו שלא להדליק נר חנוכה:"
+  },
+  "Tosafot on Shabbat 45a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:09:23.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דדחייה בידים אית ליה</strong> - ואף על גב דנר שכבה שרי ר' שמעון אף על גב דדחייה בידים דהתם שאני כיון שכבר פסק דיחוי שלה אבל הכא לעולם הן דחויין כל זמן שמונחין שם:"
+  },
+  "Tosafot on Shabbat 45a:3:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 45a:3:1",
+      "Rashi on Shabbat 45a:3:1",
+      "Rashi on Shabbat 45a:3:2",
+      "Rashi on Shabbat 45a:3:3",
+      "Rashi on Shabbat 45a:3:4",
+      "Tosafot on Shabbat 44a:2:1",
+      "Chokhmat Shlomo on Shabbat 45a:3",
+      "Maharam on Shabbat 45a:9",
+      "Maharam on Shabbat 45a:10"
+    ],
+    "generatedAt": "2026-11-13T05:11:56.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שמן שבנר</strong> - לאו דווקא שבנר דההוא אסור משום מכבה כדאמר בפ\"ב דביצה <span class=\"parenthesized\">(דף כב.)</span> המסתפק ממנו חייב משום מכבה אלא המטפטף מנר ומשום דמוקצה למצותו לא אסור נר הדולק לטלטל כדפרישית לעיל אלא כדאמר בסוף פירקין משום דהוי בסיס לדבר האסור תימה לר\"י דאמאי נקט שמן שבנר טפי ה\"ל למינקט אין מוקצה לר' שמעון אלא גרוגרות וצימוקין דדמו טפי לחיטין שזרען דלא איתקצאי לא מחמת מצוה ולא מחמת איסור וליכא למימר דסבר ר' יוחנן דלר' שמעון אין מוקצה בגרוגרות וצימוקין דהא רבי קאמר בסמוך דאית ליה לרבי שמעון מוקצה בגרוגרות וצימוקין ומסתמא לא פליג:"
+  },
+  "Tosafot on Shabbat 45a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:19:18.434Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד מוצאי י\"ט האחרון של חג</strong> - הקשה ר\"ת ביום טוב האחרון דלא אסר אלא מטעם מיגו דאיתקצאי בין השמשות מחמת יום שעבר והא רבי שמעון שרי מותר השמן שבנר אף על גב דהוקצה בין השמשות למצותו משום יום הבא ונראה לר\"י דבמה שאוסרת הברייתא יום טוב האחרון לא אתיא כר' שמעון:"
+  },
+  "Tosafot on Shabbat 45a:5:1": {
+    "dependsOn": [
+      "Beitzah 30b:11",
+      "Beitzah 30b:12",
+      "Beitzah 30a:13",
+      "Beitzah 30b:1",
+      "Beitzah 30b:2",
+      "Beitzah 30b:3"
+    ],
+    "generatedAt": "2026-11-13T05:27:03.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מן הסמוך לה</strong> - בפרק המביא כדי יין <span class=\"parenthesized\">(ב. צה ל: ושם)</span> גרס במשנה אלא מן הסמוך לה ופריך בגמ' והא קסתר אוהלא ומשני מאי מן הסמוך לה סמוך לדפנות והשתא אי גרס בברייתא דהכא אלא מן הסמוך לה הוי בסמוך לדפנות ואי גרס ולא מן הסמוך לה מיירי במה שעל הסכך וטעמא משום דסתר אוהלא כדאמר התם:"
+  },
+  "Tosafot on Shabbat 45a:5:2": {
+    "dependsOn": [
+      "Maharam on Shabbat 45a:13",
+      "Beitzah 30b:2",
+      "Beitzah 30b:3",
+      "Beitzah 30b:4",
+      "Beitzah 30b:5",
+      "Beitzah 30b:6",
+      "Tosafot on Shabbat 45a:5:1"
+    ],
+    "generatedAt": "2026-11-13T05:28:16.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם התנה הכל לפי תנאו</strong> - בריש המביא <span class=\"parenthesized\">(ג\"ז שם)</span> פריך עלה והא קא סתר אוהלא ומוקי לה בסוכה נפולה וברעועה דמאתמול דעתיה עלה:"
+  },
+  "Tosafot on Shabbat 45a:6:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 45a:6:1",
+      "Tosafot on Shabbat 45a:6:2",
+      "Rashi on Shabbat 45a:6:1",
+      "Rashi on Shabbat 45a:6:2",
+      "Rashi on Shabbat 45a:6:3",
+      "Rashi on Shabbat 45a:6:4",
+      "Steinsaltz comment #1 on Shabbat 45a:6"
+    ],
+    "generatedAt": "2026-11-13T05:31:53.263Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בגרוגרות וצימוקין</strong> - בירושלמי פ' שמסריחין בינתיים כיון שמתקלקלין כל כך אין דעתו לקחתם עד שיתקנו היטב:"
+  },
+  "Tosafot on Shabbat 45a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:32:23.623Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן אתה אומר באפרסקין</strong> - אף על פי שאין מתקלקלין כל כך מקצה אותם מדעתו:"
+  },
+  "Tosafot on Shabbat 45a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T05:34:19.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכא דלא דחייה בידים אית ליה מוקצה</strong> - כגון הא דתנן בפרק מפנין <span class=\"parenthesized\">(לקמן שבת קכו:)</span> ולא את האוצר ותנן נמי בפרק בתרא <span class=\"parenthesized\">(דף קנו:)</span> רבי יהודה אומר אם לא היתה נבלה מע\"ש אסורה כו':"
+  },
+  "Tosafot on Shabbat 45a:8:1": {
+    "dependsOn": [
+      "Shabbat 45a:8"
+    ],
+    "generatedAt": "2026-11-13T05:34:59.090Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 45a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואוכל איצטריכא ליה</strong> - מדנקט אוכל במוקצה דדחייה בידים נראה דאזיל ואכיל שרי ליה לר\"י במוקצה דלא דחייה בידים כגון גבי אוצר:"
+  }
+}

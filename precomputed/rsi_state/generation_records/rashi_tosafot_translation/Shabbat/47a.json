@@ -1,0 +1,463 @@
+{
+  "Rashi on Shabbat 47a:1:1": {
+    "dependsOn": [
+      "Shabbat 47a:1",
+      "Rashi on Shabbat 47a:1:2"
+    ],
+    "generatedAt": "2026-11-13T07:12:38.962Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדבר האסור</strong> - לשלהבת דבכי האי מוקצה מודה ר\"ש שהכלי טפל לשלהבת בעודה בו ולאו משום דחייש לכבייה:"
+  },
+  "Rashi on Shabbat 47a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:1:1"
+    ],
+    "generatedAt": "2026-11-13T07:13:33.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסיס</strong> - מושב את כנו מתרגמינן בסיסיה:"
+  },
+  "Rashi on Shabbat 47a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:2:2",
+      "Rashi on Shabbat 47a:2:3",
+      "Shabbat 47a:2"
+    ],
+    "generatedAt": "2026-11-13T07:15:41.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר רומנוס לי התיר רבי לטלטל מחתה</strong> - של לבונה באפרה קס\"ד באפרה עם אפרה קאמר שהאפר מוקצה ולא היו צריכין לו ואשמעינן דאגב מחתה דאיכא תורת כלי עליה טלטלה עם אפרה:"
+  },
+  "Rashi on Shabbat 47a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:2:1",
+      "Rashi on Shabbat 47a:2:3"
+    ],
+    "generatedAt": "2026-11-13T07:16:19.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נוטל אדם</strong> - הכלכלה בשבת והאבן בתוכה:"
+  },
+  "Rashi on Shabbat 47a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:2:1",
+      "Rashi on Shabbat 47a:2:2",
+      "Shabbat 47a:2",
+      "Rashi on Shabbat 46b:6:1",
+      "Rashi on Shabbat 47a:1:1"
+    ],
+    "generatedAt": "2026-11-13T07:18:04.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ליכא פרי לא</strong> - דכלי נעשה בסיס לאבן וטפלה לו ובטל תורת כלי דידיה והכי נמי נעשית מחתה בסיס לאפר ורבי יוחנן שמעי' ליה לעיל דכדר' יהודה סבירא ליה:"
+  },
+  "Rashi on Shabbat 47a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:3:2",
+      "Rashi on Shabbat 47a:3:3",
+      "Shabbat 47a:2"
+    ],
+    "generatedAt": "2026-11-13T07:20:46.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאית ביה קרטין</strong> - שנשתיירו מן האור ולבונה דחזיא להריח ואגב לבונה מטלטל למחתה עם אפרה דומיא דכלכלה מלאה פירות והאבן בתוכה:"
+  },
+  "Rashi on Shabbat 47a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:3:1",
+      "Rashi on Shabbat 47a:3:3"
+    ],
+    "generatedAt": "2026-11-13T07:21:16.237Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרטין</strong> - של שיור לבונה:"
+  },
+  "Rashi on Shabbat 47a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:3:1",
+      "Rashi on Shabbat 47a:3:2",
+      "Rashi on Shabbat 47a:3:3",
+      "Rashi on Shabbat 47a:4:1",
+      "Rashi on Shabbat 47a:4:2",
+      "Rashi on Shabbat 47a:5:1",
+      "Rashi on Shabbat 47a:5:2",
+      "Rashi on Shabbat 47a:5:3",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Tosafot on Berakhot 2a:10:1"
+    ],
+    "generatedAt": "2026-11-13T07:23:40.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בי רבי</strong> - דנשיא ועשיר הוה מי חשיבי:"
+  },
+  "Rashi on Shabbat 47a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:4:2",
+      "Rashi on Shabbat 47a:4:3",
+      "Tosafot on Shabbat 47a:4:1",
+      "Steinsaltz on Shabbat 47a:4:1"
+    ],
+    "generatedAt": "2026-11-13T07:25:06.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עניים</strong> - שלש על שלש או שחוטן עבה הוו בגדים לעניים לענין טומאה:"
+  },
+  "Rashi on Shabbat 47a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:4:1",
+      "Rashi on Shabbat 47a:4:3",
+      "Shabbat 47a:3"
+    ],
+    "generatedAt": "2026-11-13T07:25:56.298Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עשירים</strong> - שלשה על שלשה הוו בגדים לעשירים וכל שכן לעניים אבל בגדי עניים לעשירים לא הוה בגד גבייהו ולא מקבלי טומאה הכא נמי בי רבי בטלי קרטין:"
+  },
+  "Rashi on Shabbat 47a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:26:27.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר אביי</strong> - הא דשרי ליה לטלטל מחתה באפרה משום דאפרה מאיס עליה לראותו והוי כגרף של רעי דתניא במסכת ביצה <span class=\"parenthesized\">(דף לו:)</span> מותר להוציאו לאשפה שבחצר:"
+  },
+  "Rashi on Shabbat 47a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:5:1",
+      "Rashi on Shabbat 47a:5:2"
+    ],
+    "generatedAt": "2026-11-13T07:29:57.155Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרף</strong> - כלי חרס המוכן לכך:"
+  },
+  "Rashi on Shabbat 47a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:5:1",
+      "Shabbat 47a:5"
+    ],
+    "generatedAt": "2026-11-13T07:30:33.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיכסי</strong> - כל מחתות מכוסות הן ויש בהן נקבים להוציא הריח:"
+  },
+  "Rashi on Shabbat 47a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:30:59.766Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנונא</strong> - כלי נחשת שמביאין בו האור לפני שרים להתחמם:"
+  },
+  "Rashi on Shabbat 47a:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:5:3",
+      "Rashi on Shabbat 47a:5:4",
+      "Rashi on Shabbat 47a:5:5",
+      "Chokhmat Shlomo on Shabbat 47a:3",
+      "Shabbat 47a:1",
+      "Shabbat 47a:2",
+      "Shabbat 47a:3",
+      "Shabbat 47a:4"
+    ],
+    "generatedAt": "2026-11-13T07:32:35.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב קטמיה</strong> - שהיו צריכין לאפרו לכסות רוק או צואה וא\"ת מה צד איסור יש כאן היינו רבותא דאע\"ג דאיכא עליה שברי עצים והא דר' רומנוס נמי האי מחתה באפרה דקאמר מחתה בשביל אפרה שהיה צריך לו ודעתייהו עליה מאתמול ורבותא אשמעינן <span class=\"parenthesized\">(כיון)</span> אע\"ג דאיכא עליה שברי עצים דהוי ככלכלה של פירות והאבן בתוכה:"
+  },
+  "Rashi on Shabbat 47a:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:5:4",
+      "Rashi on Shabbat 47a:5:6",
+      "Rashi on Shabbat 47a:2:1",
+      "Rashi on Shabbat 47a:2:2",
+      "Rashi on Shabbat 47a:2:3",
+      "Rashi on Shabbat 44a:1:1",
+      "Rashi on Shabbat 44a:2:1",
+      "Rashi on Shabbat 45b:1:1",
+      "Rashi on Shabbat 46a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Shabbat 47a:5:1",
+      "Rashi on Shabbat 47a:5:2",
+      "Rashi on Shabbat 47a:5:3"
+    ],
+    "generatedAt": "2026-11-13T07:34:01.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושוין</strong> - ר' יהודה ור\"ש שנחלקו בנר ישן:"
+  },
+  "Rashi on Shabbat 47a:5:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:34:25.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגלילא שנו</strong> - שחשובות להן שברי פתילה שאין בגדים של פשתן מצויין להם הלכך לא בטלי ונעשה נר בסיס להן:"
+  },
+  "Rashi on Shabbat 47a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:6:2"
+    ],
+    "generatedAt": "2026-11-13T07:42:14.378Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרסיים</strong> - צורפי נחשת או גרדיים והולכין מעיר לעיר למלאכתן ונושאין עמהן מטות של פרקים:"
+  },
+  "Rashi on Shabbat 47a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:6:1"
+    ],
+    "generatedAt": "2026-11-13T07:42:48.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב חטאת</strong> - הוא תחלתו וגמרו ונמצא עושה כלי וחייב משום מכה בפטיש אב לכל גומרי מלאכה ולא משום בנין דאין בנין בכלים:"
+  },
+  "Rashi on Shabbat 47a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:43:08.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנה מנורה</strong> - שיוצאין ממנה קנים לנרות הרבה ונוטלין הימנה ובשעת הצורך מחזירין אותו:"
+  },
+  "Rashi on Shabbat 47a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:43:34.598Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קנה של סיידין</strong> - הטחין ומלבנין הבית בסיד יש להן קנים של פרקים ונותן מטלית בראשה ושורין בסיד המחוי וטח את הבית וכשהוא טח מלמטה אי אפשר לו אלא בקנה קצר וכשהוא הולך ומגביה מוסיף קנה על קנה ומאריכו:"
+  },
+  "Rashi on Shabbat 47a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:7:1",
+      "Rashi on Shabbat 47a:7:2",
+      "Rashi on Shabbat 47a:7:3",
+      "Rashi on Shabbat 47a:7:4"
+    ],
+    "generatedAt": "2026-11-13T07:43:59.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - שאין זה גמרו שהרי צריך לחזור ולפרקו תמיד:"
+  },
+  "Rashi on Shabbat 47a:7:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:7:1",
+      "Rashi on Shabbat 47a:7:2",
+      "Rashi on Shabbat 47a:7:3",
+      "Rashi on Shabbat 47a:7:5",
+      "Shabbat 47a:7"
+    ],
+    "generatedAt": "2026-11-13T07:44:40.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קרן עגולה וקרן פשוטה</strong> - שניהם מין כלי זמר והוא עשוי נקבים נקבים ככברה ומכניס בהן חלילים ומוציאין קולות הרבה קרן עגולה מעשה אומן הוא וצריך לתקוע בנקבים בחוזק והויא מלאכה ובקרן פשוט מכניסו בריוח ודרכן לפרקם תמיד ופטור קתני מיהת בקני מנורה דחייב והוא הדין למטה של טרסיים:"
+  },
+  "Rashi on Shabbat 47a:7:5": {
+    "dependsOn": [
+      "Shabbat 47a:7"
+    ],
+    "generatedAt": "2026-11-13T07:45:03.982Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינהו</strong> - רבי אבא ורב הונא בר חייא:"
+  },
+  "Rashi on Shabbat 47a:7:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:45:40.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמור כי האי תנא</strong> - כרבי שמעון דמתיר לכתחלה:"
+  },
+  "Rashi on Shabbat 47a:7:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:46:10.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלבנות המטה</strong> - כעין רגלים קטנים ויש להן בית קיבול ומכניס לתוכן ראשי כרעי המטה שלא ירקבו בארץ:"
+  },
+  "Rashi on Shabbat 47a:7:8": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-13T07:46:40.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 47a:7:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לווחים של סקיבס</strong> - עץ קטן כמין דף שתוקעין בקשת שקורין אבלשטר\"א שעליו מושך החץ:"
+  },
+  "Tosafot on Shabbat 47a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:14:12.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנח לנר שמן ופתילה הואיל ונעשה בסיס לדבר האסור</strong> - איצטריך למימר בשמן דנעשה בסיס לדבר האסור דאי לאו הכי לא היה הנר אסור לטלטל דהוי בסיס לדבר האסור ולדבר המותר ושרי כדאמר בסמוך כי הוינן בי רב נחמן הוה מטלטלינן כנונא אגב קיטמא אע\"ג דאיכא עליה שברי עצים ואם תאמר פתילה אמאי קאמר דהויא בסיס לדבר האסור היא עצמה הויא דבר האסור כדאמר לקמן ושוין שאם יש בה שברי פתילות שאסור לטלטלה וי\"ל דשברי פתילה הוי שברי כלים ודמי לצרורות אבל פתילה שלימה שהיא כלי הוה שרי אי לאו דנעשה בסיס לדבר האסור:"
+  },
+  "Tosafot on Shabbat 47a:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 47a:2:2"
+    ],
+    "generatedAt": "2026-11-13T07:19:07.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לי התיר רבי לטלטל מחתה באפרה</strong> - השתא ס\"ד דאפר מחתה מוקצה הוא:"
+  },
+  "Tosafot on Shabbat 47a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:19:57.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רבה ב\"ב חנה א\"ר יוחנן כו'</strong> - תימה אמאי לא פריך בלאו מילתיה דרבי יוחנן ממתני' דפ' נוטל <span class=\"parenthesized\">(לקמן שבת דף קמב:)</span> דתנן מעות שע\"ג הכר מנער את הכר והן נופלות וכן אבן שעל פי החבית מטה על צדה והיא נופלת אבל טלטול גמור אסור ואור\"י דה\"א דשאני מעות דחשיבי ולא בטלי ואבן שע\"פ החבית ה\"א דמיירי שהוא מתוקן לסתום פי החבית והחבית צריכה לה ולכך לא בטלה:"
+  },
+  "Tosafot on Shabbat 47a:4:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 47a:1:1",
+      "Tosafot on Shabbat 47a:2:1",
+      "Tosafot on Shabbat 47a:5:1",
+      "Tosafot on Shabbat 46a:4:1",
+      "Tosafot on Shabbat 46b:1:1",
+      "Shabbat 47a:4",
+      "Rashi on Shabbat 47a:4:1",
+      "Rashi on Shabbat 47a:4:2",
+      "Rashi on Shabbat 47a:4:3",
+      "Mishnah Kelim 27:2",
+      "Mishnah Kelim 28:8",
+      "Steinsaltz comment #1 on Shabbat 47a:4",
+      "Tosafot on Shabbat 45b:1:1",
+      "Tosafot on Shabbat 45b:2:1"
+    ],
+    "generatedAt": "2026-11-13T07:29:23.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגדי עניים לעניים</strong> - אומר ר\"ת דדוקא בטומאת מדרס דבייחוד תליא מלתא אבל בשאר טומאות לא תליא מלתא בייחוד דאפי' היה מוטל באשפה מרבינן מוהבגד דשלש על שלש מיטמא בין לעניים בין לעשירים דבקרא לא מפליג מידי ומייתי ר\"ת ראיה דתנן במסכת כלים <span class=\"parenthesized\">(פרק כ\"ז מ\"ב)</span> דבגד מטמא משום שלשה על שלשה למדרס משום שלש על שלש לטמא מת וע\"כ בעשירים מיירי דבפכ\"ח תנן התם בגדי עניים אע\"פ שאין בהם שלשה על שלשה טמאין מדרס וא\"ת הכא דפריך מברייתא אמאי לא פריך ממתני' דפכ\"ח דכלים שהבאתי ואור\"י דאי ממתני' ה\"א דבגדי עניים היינו כעין שק שעיקרו עשוי לעניים ואפי' ביד עשירים אינו צריך שלשה על שלשה אבל שאר בגדים בעי שלשה על שלשה שאינו עומד אלא לעשירים להכי מייתי ברייתא דלא שייך לפרשה הכי:"
+  },
+  "Tosafot on Shabbat 47a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T07:35:39.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוה מטלטלינן כנונא אגב קיטמא</strong> - פי' כנונא מחתה והיינו מחתה באפרה דלעיל פי' אגב אפרה שהוסק מע\"ש דמוכן הוא דחזי לכסות בה רוק או צואה וקשה דמשמע דוקא אגב קיטמא שרי הא לאו הכי נעשה בסיס לדבר האסור ואילו בפ\"ב דביצה <span class=\"parenthesized\">(כא: ושם)</span> אמר גבי אין מזמנין נכרי בשבת משום שיורי כוסות פריך וניטלטלינהו אגב. כסא מי לא אמר רבא כי הוינן בי רב נחמן הוה מטלטלינן כנונא אגב קיטמא אף על גב דאיכא עליה שברי עצים ומאי פריך שאני כנונא דאגב קטמא מטלטל לה אבל בכוס ליכא אלא דבר האסור ואור\"י דשיורי כוסות לא חשיבי למיהוי כוס בטל לגבייהו אף על גב שאין היתר עמהן בכוס טפי גרעי משברי עצים שעם הקיטמא בכנונא:"
+  },
+  "Tosafot on Shabbat 47a:5:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 47a:5:1",
+      "Tosafot on Shabbat 47a:5:3",
+      "Maharam on Shabbat 47a:7",
+      "Maharam on Shabbat 47a:8"
+    ],
+    "generatedAt": "2026-11-13T07:37:08.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אע\"ג דאיכא עליה שברי עצים</strong> - נראה לרבינו תם דשברי עצים חשיבי טפי מאבן שבכלכלה דאם לא כן מאי קמ\"ל ואדמקשי ליה מברייתא דשוין כו' ליסייעיה ממתני' דכלכלה והאבן בתוכה אלא שברי עצים חשיבי טפי ויש לדמות שברי עצים לגבי אפר כשברי פתילה לגבי שמן:"
+  },
+  "Tosafot on Shabbat 47a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 47a:5:6",
+      "Rashi on Shabbat 78a:4:2"
+    ],
+    "generatedAt": "2026-11-13T07:41:31.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 47a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגלילא שנו</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> שחשובות להן שברי פתילה שאין בגדי פשתן מצויין להם ואין נראה לר\"ת דהא אמרי' בשילהי ב\"ק <span class=\"parenthesized\">(דף קיח:)</span> לוקחין מן הנשים כלי צמר ביהודה וכלי פשתן בגליל משמע שמצוי פשתן הרבה שם ומפרש ר\"ת בגלילא שנו שהיה להם רוב שמן ולהכי לא בטלי שברי פתילה אגב שמן וכן משמע בפ\"ק דסנהדרין <span class=\"parenthesized\">(דף יא:)</span> גבי טול איגרת וכתוב לאחנא בני גלילאה עילאה ותתאה כו' דזמן ביעורא מטא לאפרושא מעשרא ממעטני זיתא ואמר. בנזיר בפרק בית שמאי <span class=\"parenthesized\">(נזיר דף לא:)</span> בגלילא שנו דחמרא עדיף ממשחא ויין היה מצוי להם הרבה כדאמר בהמוציא יין <span class=\"parenthesized\">(לקמן שבת עח.)</span> גבי מים כדי לשוף בהן את הקילור וקאמר בגלילא שנו דרפואת מים שכיח טפי משתיה שהיה להן רוב יין והיו שותין הכל יין ואפילו הכי חמרא עדיף להו ממישחא כי השמן היה להם בזול יותר ורש\"י פי' נמי בהמוציא <span class=\"parenthesized\">(שם)</span> שמחמת עניותא היו עושין רפואה מן המים ואין עושין מן היין רק שתייה ולפיכך היתה רפואת מים שכיחא ואין נראה דכיון שלא היה להם יין לשיפות הקילור א\"כ שכיחא שתיית מים טובא ואמרי' בעלמא אף ערב יוה\"כ בגליל שהיו מרבים בסעודה משמע שעשירים היו [וע\"ע תוספות חגיגה כה: ד\"ה בגלילא]:"
+  }
+}

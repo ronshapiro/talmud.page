@@ -1,0 +1,528 @@
+{
+  "Rashi on Shabbat 75b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T18:54:14.733Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום צובע</strong> - שצובע את הבשר של בית השחיטה ולקמן מפרש אמאי מיכוין לצובעו וצביעה הואי במשכן אב מלאכה:"
+  },
+  "Rashi on Shabbat 75b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T18:54:52.189Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום נטילת נשמה</strong> - דנטילת נשמה הואי במשכן באילים מאדמים ותחש וחלזון:"
+  },
+  "Rashi on Shabbat 75b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:1:1",
+      "Rashi on Shabbat 75b:1:2",
+      "Rashi on Shabbat 75b:1:4",
+      "Rashi on Shabbat 75b:1:5",
+      "Rashi on Shabbat 75b:1:6",
+      "Rashi on Shabbat 75b:1:7",
+      "Shabbat 75b:1"
+    ],
+    "generatedAt": "2026-11-14T18:55:53.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צובע בשר במאי ניחא ליה</strong> - להאי שוחט בצביעת הבשר היינו חוכא ואני אומר בו טעם:"
+  },
+  "Rashi on Shabbat 75b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T18:56:57.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף משום צביעה</strong> - ונפקא מינה לחיוביה תרתי:"
+  },
+  "Rashi on Shabbat 75b:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:1:4",
+      "Rashi on Shabbat 75b:1:5",
+      "Rashi on Shabbat 75b:1:6"
+    ],
+    "generatedAt": "2026-11-14T18:57:37.383Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מילתא דאמרי אימא כו'</strong> - דבר תימה אמרתי להזכיר צביעה בשחיטה צריך אני לומר בו דבר טעם דלא ליתו דרי בתראי השומעים וליחכו עלי:"
+  },
+  "Rashi on Shabbat 75b:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T18:58:08.297Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניחא ליה דלתווס בית השחיטה בדמא</strong> - שיהא צבוע בדם:"
+  },
+  "Rashi on Shabbat 75b:1:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T18:58:23.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי היכי דניחזייה אינשי</strong> - שנשחטה היום וניתו ונזבנו:"
+  },
+  "Rashi on Shabbat 75b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:1:1",
+      "Rashi on Shabbat 75b:2:2",
+      "Rashi on Shabbat 75b:2:3",
+      "Rashi on Shabbat 75b:1:5",
+      "Steinsaltz on Shabbat 75b:2",
+      "Tosafot on Shabbat 75b:2:1"
+    ],
+    "generatedAt": "2026-11-14T18:59:36.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו מולח היינו מעבד</strong> - אטו מליחה לאו צורך עיבוד הוא:"
+  },
+  "Rashi on Shabbat 75b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:2:1",
+      "Rashi on Shabbat 75b:2:3"
+    ],
+    "generatedAt": "2026-11-14T19:00:20.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועייל שירטוט</strong> - לפי שדרך הרצענין כשהוא בא לחתכו משרטטו תחלה כפי מה שהוא רוצה להאריך ולהרחיב ולקצר החיתוך ואחר כך מעביר הסכין דרך השירטוט וכן בעורות המשכן כשחתכום:"
+  },
+  "Rashi on Shabbat 75b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:00:43.849Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקבעי ליה לאורחא</strong> - שמולחה הרבה:"
+  },
+  "Rashi on Shabbat 75b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:01:53.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השף בין העמודים</strong> - כגון עמודי אכסדראות שעשוים חלונות חלונות ונסמכין בחלונות בין עמוד לעמוד והשף שם בקרקעית הבנין שנשענין עליו כדי שיהא חלק חייב משום ממחק:"
+  },
+  "Rashi on Shabbat 75b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:1",
+      "Rashi on Shabbat 75b:3:2",
+      "Rashi on Shabbat 75b:3:3"
+    ],
+    "generatedAt": "2026-11-14T19:03:08.774Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המגרר ראשי כלונסות</strong> - שיהיו ראשיהן שוין וחדין:"
+  },
+  "Rashi on Shabbat 75b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:2",
+      "Rashi on Shabbat 75b:3:4"
+    ],
+    "generatedAt": "2026-11-14T19:03:43.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממרח רטיה</strong> - מחליק תחבושת על המכה:"
+  },
+  "Rashi on Shabbat 75b:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:4"
+    ],
+    "generatedAt": "2026-11-14T19:04:19.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסתת את האבן</strong> - לאחר שנעקרה מן ההר ונחצבה מחליקה:"
+  },
+  "Rashi on Shabbat 75b:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:4",
+      "Rashi on Shabbat 75b:3:5",
+      "Rashi on Shabbat 75b:3:6"
+    ],
+    "generatedAt": "2026-11-14T19:04:54.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום מכה בפטיש</strong> - שהוא גמר מלאכה:"
+  },
+  "Rashi on Shabbat 75b:3:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:5",
+      "Rashi on Shabbat 75b:3:6",
+      "Rashi on Shabbat 75b:3:7"
+    ],
+    "generatedAt": "2026-11-14T19:05:34.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הצר בכלי צורה</strong> - בכלי שעומד לכך לנאותו:"
+  },
+  "Rashi on Shabbat 75b:3:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:05:56.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנפח בכלי זכוכית</strong> - כשהותך נעשה על ידי נפוח:"
+  },
+  "Rashi on Shabbat 75b:3:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:06:17.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:3:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשקיל אקופי</strong> - ראשי חוטין התלויין ביריעה במקום קשורין כשניתק בה חוט וקשרוהו וכן קשין וקסמים דקין שנארגו בה בלא מתכוין ונוטלין אותם ממנה לאחר אריגה גמר מלאכה הוא וחייב משום מכה בפטיש:"
+  },
+  "Rashi on Shabbat 75b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:08:15.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתב אות אחת גדולה כו' פטור</strong> - שבקרשי המשכן שתים היו כותבים אחת בזו ואחת בזו כדי לזווגן כשסותרים אותן:"
+  },
+  "Rashi on Shabbat 75b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:08:32.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחק אות אחת כו' חייב</strong> - שאין מלאכת מחיקה חשובה אלא ע\"מ לכתוב והרי יש מקום לשתי אותיות:"
+  },
+  "Rashi on Shabbat 75b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:4:1",
+      "Rashi on Shabbat 75b:4:2"
+    ],
+    "generatedAt": "2026-11-14T19:09:05.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רבי מנחם ברבי יוסי</strong> - הא קמ\"ל מאן תנא קמא ר' מנחם ברבי יוסי:"
+  },
+  "Rashi on Shabbat 75b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:6:2"
+    ],
+    "generatedAt": "2026-11-14T19:09:55.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי מדרבי אליעזר</strong> - דהא אמרן דלא נמנו כאן אלא להודיענו מנין חטאות של העלם אחד ותנא הרי אלו למעוטי שאם עשה תולדותיהם עמהן דאינו מביא עליהן חטאת ודלא כרבי אליעזר דמחייב אתולדה עם האב בכריתות:"
+  },
+  "Rashi on Shabbat 75b:6:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 75b:6:1",
+      "Rashi on Shabbat 75b:6:3",
+      "Steinsaltz on Shabbat 75b:6",
+      "Rashi on Shabbat 75a:1:1",
+      "Rashi on Shabbat 75a:2:1"
+    ],
+    "generatedAt": "2026-11-14T19:11:40.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שובט</strong> - משוה השתי בכרכר שקורין ריו\"ל:"
+  },
+  "Rashi on Shabbat 75b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:6:2",
+      "Rashi on Shabbat 75b:6:4",
+      "Steinsaltz on Shabbat 75b:6"
+    ],
+    "generatedAt": "2026-11-14T19:12:44.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדקדק</strong> - כשמותח חוט הערב מכה בכרכר עליו במקומות מקומות ליישבו שלא יהא מתוח יותר מדאי שהמתיחה מעכבתו מהתחבר יפה עם הארג:"
+  },
+  "Rashi on Shabbat 75b:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:6:1",
+      "Rashi on Shabbat 75b:6:2",
+      "Rashi on Shabbat 75b:6:3",
+      "Rashi on Shabbat 75b:6:4",
+      "Rashi on Shabbat 75b:6:5"
+    ],
+    "generatedAt": "2026-11-14T19:13:14.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שובט הרי הוא בכלל מיסך</strong> - דהיינו מיסך ממש שמסדר חוטי השתי:"
+  },
+  "Rashi on Shabbat 75b:6:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:6:1",
+      "Rashi on Shabbat 75b:6:2",
+      "Rashi on Shabbat 75b:6:3",
+      "Rashi on Shabbat 75b:6:4"
+    ],
+    "generatedAt": "2026-11-14T19:14:12.138Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי הוא אורג</strong> - דהיינו אורג ממש ולא דמי לזורה ובורר ומרקד דזה בקשין וזה בצרורות וזה בקמח:"
+  },
+  "Rashi on Shabbat 75b:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:7:2",
+      "Rashi on Shabbat 75b:7:3",
+      "Shabbat 76a:1",
+      "Shabbat 76a:2"
+    ],
+    "generatedAt": "2026-11-14T19:18:30.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הכשר להצניע</strong> - שהוא מין העשוי לצורך האדם:"
+  },
+  "Rashi on Shabbat 75b:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:7:1",
+      "Rashi on Shabbat 75b:7:2",
+      "Rashi on Shabbat 75b:7:3",
+      "Shabbat 75b:7",
+      "Rashi on Shabbat 75b:8:1",
+      "Rashi on Shabbat 75b:9:1"
+    ],
+    "generatedAt": "2026-11-14T19:19:31.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומצניעין כמוהו</strong> - כמות זה כלומר שיש בו שיעור הראוי להצניעו:"
+  },
+  "Rashi on Shabbat 75b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:20:06.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין חיוב אלא למצניעו</strong> - אם נעשה חביב לאדם א' והצניעו חייב על הוצאתו אם חזר והוציאו אבל אדם אחר אינו חייב עליו דלגביה לאו מלאכה הוא:"
+  },
+  "Rashi on Shabbat 75b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:20:30.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ד דם נדה</strong> - אינו כשר להצניע כ\"ש עצי אשרה דאיסורי הנאה נינהו ומאיסי וצריך לאבדן:"
+  },
+  "Rashi on Shabbat 75b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:20:53.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דחלשא</strong> - המאכיל דם האדם לחתול נעשה חלש אותו אדם:"
+  },
+  "Rashi on Shabbat 75b:9:1": {
+    "dependsOn": [
+      "Shabbat 75b:9",
+      "Rashi on Shabbat 75b:9:1",
+      "Rashi on Shabbat 75b:9:2"
+    ],
+    "generatedAt": "2026-11-14T19:26:41.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא</strong> - דתנא כל הכשר להצניע ויש בו שיעור שרוב ב\"א עשויין להצניע כשיעור הזה חייב כל אדם על הוצאתו ואפילו אדם עשיר שאין שיעור זה חשוב לו:"
+  },
+  "Rashi on Shabbat 75b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:27:12.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 75b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא כר' שמעון</strong> - לקמן בהמוציא:"
+  },
+  "Tosafot on Shabbat 75b:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 75b:2:1"
+    ],
+    "generatedAt": "2026-11-14T19:01:26.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עיבוד באוכלין</strong> - אין להתיר מכאן מליחת אוכלין דאסור מדרבנן מליחה בפרק שמונה שרצים <span class=\"parenthesized\">(לקמן שבת דף קח:)</span> ואפילו בי\"ט אסור בפ\"ק דביצה <span class=\"parenthesized\">(דף יא.)</span>:"
+  },
+  "Tosafot on Shabbat 75b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:3:1"
+    ],
+    "generatedAt": "2026-11-14T19:07:00.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השף בין העמודים בשבת חייב</strong> - פירש ר\"ח דשף העור על העמוד כדי להחליקו וכן משמע בירושלמי ורש\"י פירש ששף קרקעית שבין עמודי חלונות ולא נהירא:"
+  },
+  "Tosafot on Shabbat 75b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T19:07:53.365Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמסתת את האבן כו' חייב משום מכה בפטיש</strong> - אבל משום מחתך וממחק לא מיחייב דמיירי שכבר היא מרובעת ומתוקנת אלא שמייפה אותה ועושה בה שירטוטין ויפוי כעין שעושין עכשיו מסתתי האבנים ר\"י וכן ריב\"א:"
+  },
+  "Tosafot on Shabbat 75b:6:1": {
+    "dependsOn": [
+      "Shabbat 70a:1",
+      "Tosafot on Shabbat 75b:6:2"
+    ],
+    "generatedAt": "2026-11-14T19:15:03.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי אלו לאפוקי מדרבי אליעזר דמחייב אתולדה במקום אב</strong> - וא\"ת מרישא שמעינן לה דתנן העושה מלאכות הרבה מעין מלאכה אחת אינו חייב אלא אחת וי\"מ דה\"ק מעין מלאכה אחת היינו שתי תולדות מאב א' אבל האב ותולדה דידיה מיחייב תרתי קמ\"ל:"
+  },
+  "Tosafot on Shabbat 75b:6:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 75b:6:1",
+      "Shabbat 73a:1",
+      "Shabbat 73a:2",
+      "Maharam on Shabbat 75b:1",
+      "Gilyon HaShas on Shabbat 75b:1",
+      "Rashi on Shabbat 75b:6:1",
+      "Rashi on Shabbat 75b:6:2",
+      "Rashi on Shabbat 75b:6:3",
+      "Rashi on Shabbat 75b:6:4",
+      "Rashi on Shabbat 75b:6:5"
+    ],
+    "generatedAt": "2026-11-14T19:17:45.130Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חסר אחת לאפוקי מדר' יהודה</strong> - תימה דממנינא דרישא שמעינן לה וליכא למימר תנא ושייר דהא אלו קתני ומיהו הא ליכא לאקשויי דהא מאלו דרישא שמעינן לאפוקי מדר' אליעזר דאיכא למימר דנקט ברישא אלו אבות משום דקאי אדקתני לעיל חייב על כל אב מלאכה וי\"ל דממנינא דרישא לא שמעינן לאפוקי מדרבי יהודה דאיכא למימר דלא חשיב אלא מלאכות חשובות אבל שובט ומדקדק אע\"ג דמלאכות הן לא קתני להו משום דאינם מבוררות כל כך וכה\"ג משני בפ\"ק דקדושין <span class=\"parenthesized\">(דף טז:)</span> גבי אלו מעניקין להן דבר שיש לו קצבה קתני דבר שאין לו קצבה לא קתני:"
+  },
+  "Tosafot on Shabbat 75b:8:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 75b:6:1",
+      "Tosafot on Shabbat 75b:8:1",
+      "Shabbat 90a:6",
+      "Rashi on Shabbat 90a:6:6",
+      "Tosafot on Shabbat 75b:9:1"
+    ],
+    "generatedAt": "2026-11-14T19:26:00.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאפוקי עצי אשרה</strong> - דלא כרבי יהודה דאמר בפרק רבי עקיבא <span class=\"parenthesized\">(לקמן שבת דף צ.)</span> אף המוציא משמשי ע\"ז כל שהוא חייב אלא כת\"ק דפליג עליה כן <span class=\"rashi-quotation\">פירש בקונט'</span> התם וקשה לרשב\"א הא דקאמר הכא מ\"ד דם נדה כ\"ש עצי אשרה מנא ליה דילמא סבר כרבי יהודה ומחייב בעצי אשרה שמצניעין אותן לשריפה:"
+  },
+  "Tosafot on Shabbat 75b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 75b:9:1",
+      "Rashi on Shabbat 75b:9:2",
+      "Shabbat 90b:8",
+      "Shabbat 91a:1",
+      "Shabbat 91a:2",
+      "Chokhmat Shlomo on Shabbat 75b:1",
+      "Shabbat 75b:7",
+      "Shabbat 91a:3",
+      "Shabbat 91a:4",
+      "Shabbat 91a:5",
+      "Rashi on Shabbat 76a:1:1",
+      "Steinsaltz on Shabbat 75b:9",
+      "Maharam on Shabbat 75b:4",
+      "Maharam on Shabbat 75b:5",
+      "Chokhmat Shlomo on Shabbat 75b:5",
+      "Chokhmat Shlomo on Shabbat 75b:6",
+      "Chokhmat Shlomo on Shabbat 76a:4",
+      "Shabbat 76b:6",
+      "Rashi on Shabbat 76b:6:9"
+    ],
+    "generatedAt": "2026-11-14T19:31:26.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 75b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דלא כר' שמעון</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> הא דתנן כל הכשר כו' שרוב בני אדם עשויים להצניע כשיעור הזה חייב כל אדם על הוצאתו אפילו אדם עשיר שאין שיעור זה חשוב לו משמע מדבריו דלא מחייב ר' שמעון אלא בסתם בני אדם שרגילין להצניעו שאותו שיעור חשוב להן ואפילו לא הצניעו הוא ולקמן פי' לא נאמרו שיעורים שבמשנה אלא למצניעין אותו קודם לכן וחזר המצניע והוציאו משמע דוקא בהצניעו חייב ואומר ר\"י דיש ליישב פירושו דמה שמצריך לקמן הצנעה היינו לאדם עשיר שאין דרכו להצניע ומכל מקום פירוש מילתיה דר\"ש צריך לפרש כמו שפירש כאן דאי מיירי במצניעין לאותו דבר עצמו שמפורש במשנה כמו שפירש התם אם כן כולהו הוה מצי למימר בכל שהוא בכדי שיפת קילור כדתנן בפ' המצניע <span class=\"parenthesized\">(לקמן שבת צ:)</span> דלרפואה בכל שהוא ואתיא כר\"ש מדלא קאמר התם בגמ' הא דלא כר\"ש כי היכי דקאמר <span class=\"parenthesized\">(דף צא.)</span> הא דלא כר\"ש בן אלעזר ומהתם נמי יש לדקדק דלר' שמעון סתם בני אדם שרגילין להצניעו מיחייבי אפי' לא הצניעו מדקתני המצניע לזרע כו' וכל אדם אין חייבין עליו אלא כשיעורו משמע בלא הצנעה וכר\"ש נמי אתיא כדפי' ואין לפרש דבעשיר שאין דרכו להצניע לא מיחייב לר\"ש אפי' בהצניעו דהא אמר בהמוציא יין בד\"א במוציא אבל במצניע כל שהוא ר\"ש אומר בד\"א במצניע כו' ומפרש מצניע דרבנן בתלמיד שאמר לו כו' דבר שאינו חשוב לכל אי אצנעיה רביה אין אי לא לא ודומיא דהכי נראה דהוי מצניע דר\"ש דתליא מילתא באותו שהצניעו היינו בעשיר קשה לרשב\"א דמהאי טעמא דקאמר הכא מתני' דלא כר\"ש משום דמתני' סתמא קתני דחייב משמע שכל בני אדם חייבין עליו אפי' אותן שאין חשוב להן שיעור זה מהאי טעמא נמי הוה ליה למימר בההיא דפרק המצניע דהויא דלא כר\"ש ושמא י\"ל דהכא דנקט לפרושי הוה ליה לפרושי טפי:"
+  }
+}

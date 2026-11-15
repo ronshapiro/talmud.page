@@ -1,0 +1,330 @@
+{
+  "Rashi on Shabbat 68b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:1:2",
+      "Rashi on Shabbat 68b:1:3",
+      "Rashi on Shabbat 68a:9:1",
+      "Rashi on Shabbat 68a:2:1"
+    ],
+    "generatedAt": "2026-11-14T11:24:47.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא שכחה</strong> - לעיקר שבת אלא ששכח שהיום שבת מאי:"
+  },
+  "Rashi on Shabbat 68b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:1:1",
+      "Chokhmat Shlomo on Shabbat 68b:2",
+      "Shabbat 68b:1"
+    ],
+    "generatedAt": "2026-11-14T11:25:51.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב על כל אב מלאכה</strong> - דע\"כ אי הוה סבירא ליה דאינו חייב אלא אחת לכל שבת ושבת הוה ליה למיכרך ולמיתני הכי מי שידע עיקר שבת ושכחה וכן היודע עיקר שבת ועשה מלאכות הרבה בשבתות הרבה חייב על כל שבת ושבת:"
+  },
+  "Rashi on Shabbat 68b:1:3": {
+    "dependsOn": [
+      "Shabbat 68b:1",
+      "Rashi on Shabbat 68b:1:1",
+      "Rashi on Shabbat 68b:1:2",
+      "Rashi on Shabbat 68b:1:3",
+      "Rashi on Shabbat 68b:1:4",
+      "Rashi on Shabbat 69a:5:3"
+    ],
+    "generatedAt": "2026-11-14T11:27:13.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתני היודע עיקר שבת</strong> - דהוה שגגת שבת וזדון מלאכות הרבה חייב על כל מלאכה אע\"ג דבכל שבת ליכא אלא חדא שגגה וכ\"ש שגגת מלאכות וזדון שבת דאיכא שגגות הרבה:"
+  },
+  "Rashi on Shabbat 68b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:1:1",
+      "Rashi on Shabbat 68b:1:2",
+      "Rashi on Shabbat 68b:1:3",
+      "Rashi on Shabbat 68b:1:4",
+      "Shabbat 68b:1"
+    ],
+    "generatedAt": "2026-11-14T11:27:56.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהכיר ולבסוף שכח דמי</strong> - ומתניתין איצטריך למינקט הכיר ולבסוף שכח דלא תימא חייב על כל שבת ושבת:"
+  },
+  "Rashi on Shabbat 68b:2:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 68b:2:1"
+    ],
+    "generatedAt": "2026-11-14T11:38:39.329Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - דקסברי רבי יוחנן ור\"ל אומר מותר אנוס הוא ולא שגגה היא:"
+  },
+  "Rashi on Shabbat 68b:2:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 68b:2:2",
+      "Rashi on Shabbat 68b:2:1",
+      "Rashi on Shabbat 69a:1:3",
+      "Shabbat 69a:1"
+    ],
+    "generatedAt": "2026-11-14T11:40:08.083Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייב על הדם</strong> - שאכל כל ימיו אחת וכן על כל דבר כרת שבתורה:"
+  },
+  "Rashi on Shabbat 68b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:3:2",
+      "Rashi on Shabbat 68b:3:3"
+    ],
+    "generatedAt": "2026-11-14T11:47:12.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מזיד קרוי חוטא</strong> - דכתיב <span class=\"parenthesized\">(ויקרא ה׳:א׳)</span> בשבועת העדות נפש כי תחטא ושמעה וגומר ולא כתיב ביה ונעלם:"
+  },
+  "Rashi on Shabbat 68b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T11:47:32.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הריני מוסיף על דבריך</strong> - כלומר אם כך באת לדרוש ג\"ש ללמד שוגג ממזיד בא ואוסיף גם אני על דבריך עוד ובה תראה אם יעמדו דבריך:"
+  },
+  "Rashi on Shabbat 68b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:3:1",
+      "Rashi on Shabbat 68b:3:2",
+      "Shabbat 68b:3"
+    ],
+    "generatedAt": "2026-11-14T11:48:30.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף שוגג שהיתה לו ידיעה בשעת מעשה</strong> - תחייבהו גם בזו חטאת:"
+  },
+  "Rashi on Shabbat 68b:4:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 68b:4:1",
+      "Shabbat 68b:4"
+    ],
+    "generatedAt": "2026-11-14T11:49:13.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כ\"ש שהוספת</strong> - על דברי והרי אתה מסייעני וגם בזו אני אומר שהוא חייב ולקמן מפרש במאי שגג:"
+  },
+  "Rashi on Shabbat 68b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T11:51:50.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קתני מיהא</strong> - רישא תינוק שנשבה לבין הנכרים חייב:"
+  },
+  "Rashi on Shabbat 68b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:5:1"
+    ],
+    "generatedAt": "2026-11-14T11:52:24.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב ושמואל ניחא</strong> - דאינהו נמי מחייבי ואיכא לאוקמי דהוא הדין להכיר ולבסוף שכח כי מתניתין וברייתא דקתני תינוק היא גופא איצטריך לאשמעינן פלוגתא דמונבז ורבנן:"
+  },
+  "Rashi on Shabbat 68b:6:1": {
+    "dependsOn": [
+      "Shabbat 68b:6",
+      "Shabbat 68b:3",
+      "Rashi on Shabbat 68b:6:2"
+    ],
+    "generatedAt": "2026-11-14T11:53:28.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דמונבז</strong> - אבנין אב ודאי לא סמיך למיעבד שוגג דומיא דמזיד דהאי שוגג חילוף דמזיד וליכא לדמויינהו דהאי חייב והאי פטור:"
+  },
+  "Rashi on Shabbat 68b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:6:1"
+    ],
+    "generatedAt": "2026-11-14T11:54:08.099Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקיש שוגג</strong> - לענין חטאת למזיד לענין כרת ואף על גב דלא דמי ע\"כ הקישן הכתוב:"
+  },
+  "Rashi on Shabbat 68b:7:1": {
+    "dependsOn": [
+      "Shabbat 68b:7",
+      "Rashi on Shabbat 68b:7:2"
+    ],
+    "generatedAt": "2026-11-14T11:54:58.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבנן</strong> - הך הקישא בעיא לכדרבי יהושע ב\"ל:"
+  },
+  "Rashi on Shabbat 68b:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:7:1"
+    ],
+    "generatedAt": "2026-11-14T11:55:47.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 68b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורה אחת יהיה לכם</strong> - גבי קרבן ע\"ז כתיב בפרשת שלח לך אנשים:"
+  },
+  "Tosafot on Shabbat 68b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:1:1",
+      "Rashi on Shabbat 68b:1:2",
+      "Rashi on Shabbat 68b:1:3",
+      "Shabbat 68b:1",
+      "Tosafot on Shabbat 68b:1:2",
+      "Tosafot on Shabbat 68b:1:3",
+      "Tosafot on Shabbat 68b:1:4",
+      "Tosafot on Shabbat 68a:6:1"
+    ],
+    "generatedAt": "2026-11-14T11:31:53.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא שכחה מאי חייב על כל מלאכה ומלאכה</strong> - תימה לר\"י מנא ליה למידק הכי אימא דלא שכחה נמי אינו חייב על כל מלאכה ומלאכה אלא על כל שבת ושבת כמו בהכיר ולבסוף שכח ותנא הכיר ולבסוף שכח וכ\"ש הא כדפרי' ו<span class=\"rashi-quotation\">מה שפי' בקונטרס</span> דדייק דחייב על כל מלאכה ומלאכה מדלא כייל להו אהדדי מי שידע עיקר שבת ושכחה והיודע עיקר שבת חייב על כל שבת ושבת דהוה משמע דוקא על כל שבת ושבת ולא על כל מלאכה אין נראה לר\"י דא\"כ היכי פריך לעיל לתני הכיר ולבסוף שכח וכל שכן הא דמשמע דהא לא איצטריך למיתני והא נמי איצטריך לאשמעינן דאינו חייב על כל מלאכה ומלאכה ונראה לר\"י דלעיל דקאמר ליתני הכיר ולבסוף שכח וכ\"ש הא לא בעי למימר דלא ליתני' כלל במשנה אלא ה\"פ מדקתני חייב על כל שבת ושבת ולא קתני אינו חייב אלא על כל שבת דהוה משמע ולא על כל מלאכה ומלאכה משמע דעיקר מתניתין חיובא אתא לאשמעינן דחייב על כל שבת ושבת ולא פטורא דאינו חייב על כל מלאכה ואם כן ליתני הכיר ולבסוף שכח דהוי רבותא טפי וכ\"ש האי דחייב על כל שבת ולא הוה צריך למתנייה בהאי בבא אלא ה\"ל למיתני בתר הכי בבבא אחריתי היודע עיקר שבת אינו חייב אלא על כל שבת ושבת לאשמעינן דאינו חייב על כל מלאכה והשתא דייק שפיר אבל לא שכחה מאי חייב על כל מלאכה ומלאכה מדלא תני בבבא אחריתי דאינו חייב אלא על כל שבת ושבת:"
+  },
+  "Tosafot on Shabbat 68b:1:2": {
+    "dependsOn": [
+      "Keritot 16b:10-14",
+      "Keritot 16b:15-17a:2",
+      "Keritot 17a:3-10",
+      "Keritot 16b:3-7",
+      "Tosafot on Shabbat 68b:1:1",
+      "Tosafot on Shabbat 68b:1:3",
+      "Tosafot on Shabbat 67b:17:1"
+    ],
+    "generatedAt": "2026-11-14T11:34:45.573Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתני היודע עיקר שבת וכ\"ש הא</strong> - תימה לר\"י לרבא דאמר בכריתות בסוף פרק אמרו לו <span class=\"parenthesized\">(כריתות דף טז:)</span> דבזדון שבת ושגגת מלאכות לא מיחייב אכל שבת ושבת ודייק ממתניתין דהכא דלא קתני חייב על כל אב מלאכה ומלאכה של כל שבת ושבת ולדידיה היכי פריך הכא ליתני היודע עיקר שבת הא לא מצי למיתני הכי דאם כן הוה משמע דלא מיחייב היודע עיקר שבת אכל שבת ושבת ותירץ דהכי פריך דליתני היודע עיקר שבת דחייב אכל אב מלאכה של כל שבת ושבת ורשב\"א מפרש דאי הוה תני בהדיא היודע עיקר שבת חייב על כל אב מלאכה ליכא למידק דלא מיחייב אכל שבת מדלא קתני חייב על כל אב מלאכה של כל שבת דלא צריך למיתני' דמרישא שמעינן ליה דקתני בהכיר ולבסוף שכח דחייב על כל שבת ושבת כ\"ש יודע עיקר שבת כדאמר לעיל:"
+  },
+  "Tosafot on Shabbat 68b:1:3": {
+    "dependsOn": [
+      "Tosafot on Shabbat 68b:1:2",
+      "Chokhmat Shlomo on Shabbat 68b:1:3",
+      "Chokhmat Shlomo on Shabbat 68b:1",
+      "Tosafot on Shabbat 68b:1:1",
+      "Tosafot on Shabbat 68b:1:4",
+      "Tosafot on Shabbat 68b:2:1"
+    ],
+    "generatedAt": "2026-11-14T11:36:06.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכ\"ש האי</strong> - ה\"נ לא בעי למימר דלא לתני' כלל במשנה דאם כן הוה אמינא דחייב נמי על כל שבת ושבת ואינו כן לרבה דכריתות אלא ליתני בבא אחריתי היודע שהוא שבת אינו חייב על כל שבת:"
+  },
+  "Tosafot on Shabbat 68b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 68b:1:3",
+      "Rashi on Shabbat 68b:1:4",
+      "Tosafot on Shabbat 68b:1:1",
+      "Tosafot on Shabbat 68b:1:2",
+      "Tosafot on Shabbat 68b:1:3",
+      "Maharam on Shabbat 68b:4",
+      "Maharam on Shabbat 68b:5",
+      "Tosafot on Shabbat 68a:1:1"
+    ],
+    "generatedAt": "2026-11-14T11:37:54.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי הכיר ולבסוף שכח דמי</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דלהכי לא תנא במתניתין שכח מעיקרו דהיינו תינוק שנשבה דלא תימא דהכיר ולבסוף שכח חייב על כל שבת וקשה לר\"י דמ\"מ ליתנייה וליתני נמי בתר הכי הכיר ולבסוף שכח אינו חייב אלא אחת דכה\"ג פריך לעיל ליתני הכיר ולבסוף שכח וכ\"ש הא כדפרישית ונראה לר\"י דודאי אי הוה תני חייב חטאת דהוה אתי לאשמעינן חיובא הוה שייך למיפרך דליתני תינוק שנשבה דהוי רבותא טפי אבל השתא דקתני אינו חייב אלא אחת דפטורה אתא לאשמעינן נקט הכיר ולבסוף שכח דהוי רבותא טפי ומיהו קשה לר\"י דמ\"מ ליתני תינוק שנשבה דלא נטעה לומר דפטור כרבי יוחנן וריש לקיש והדר ליתני הכיר ולבסוף שכח:"
+  },
+  "Tosafot on Shabbat 68b:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 68b:2:1",
+      "Rashi on Shabbat 68b:2:1",
+      "Rashi on Shabbat 68b:2:2",
+      "Tosafot on Shabbat 2a:7:1"
+    ],
+    "generatedAt": "2026-11-14T11:45:30.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל תינוק שנשבה פטור</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דקסברי אומר מותר אנוס הוא ואין נראה דטעמייהו כמונבז כדאמר בסמוך וטעמא דמונבז מפרש לקמן דיליף מקרא והא דאמר בפ\"ב דמכות <span class=\"parenthesized\">(דף ז:)</span> גבי גלות בשגגה פרט למזיד ומפרש <span class=\"parenthesized\">(אביי)</span> [צ\"ל רבא] פרט לאומר מותר ופריך ליה <span class=\"parenthesized\">(רבא)</span> [צ\"ל אביי] אומר מותר אנוס הוא לאו דוקא קאמר אנוס דבכל מקום מחייבין ליה אלא לגבי גלות דוקא ממעט <span class=\"parenthesized\">(אביי)</span> [צ\"ל רבא] אומר מותר משום דטובא בשגגה כתיב התם דהא בפירקין מחייבי אומר מותר בע\"ז ובחלב אע\"ג דכתיב בהן בשגגה <span class=\"parenthesized\">(ורבא)</span> [צ\"ל ואביי] פריך ליה אומר מותר אנוס הוא ולא הוה ליה למיתני בברייתא בשגגה פרט למזיד אלא פרט לאנוס דיותר דמי וקרוב לאנוס מלמזיד:"
+  },
+  "Tosafot on Shabbat 68b:2:2": {
+    "dependsOn": [
+      "Maharam on Shabbat 68b:6"
+    ],
+    "generatedAt": "2026-11-14T11:46:38.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייב על הדם אחת</strong> - אע\"ג דמילתא דפשיטא היא דאכל מה שאכל דם אינו חייב אלא אחת כיון שאין בדם חילוק איסור כמו שיש בשבת חילוק מלאכות וכל אדם נמי בלא תינוק שנשבה אכל דם ודם אינו חייב אלא אחת אלא אומר ר\"י דמיירי דאפי' אכלן בכמה תמחויין דלר\"י <span class=\"parenthesized\">(לקמן שבת דף עא.)</span> אדם אחר חייב על כל תמחוי אפי' בהעלם אחד ובתינוק שנשבה אינו חייב אלא אחד אך קשה לרשב\"א דמאי איצטריך תו לאשמעינן ולמתני ועל החלב אחד:"
+  },
+  "Tosafot on Shabbat 68b:4:1": {
+    "dependsOn": [
+      "Shabbat 68b:4",
+      "Rashi on Shabbat 68b:4:1",
+      "Shabbat 69a:7",
+      "Tosafot on Shabbat 68b:1:1",
+      "Tosafot on Shabbat 68a:4:1"
+    ],
+    "generatedAt": "2026-11-14T11:51:27.470Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 68b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שכן שהוספת</strong> - <span class=\"rashi-quotation\">כדפירש בקונטרס</span> דאף בזו מחייב ומחייב נמי כי ליכא ידיעה בשעת מעשה דהא רבי יוחנן וריש לקיש סברי כמונבז ומחייבי הכיר ולבסוף שכח ותניא נמי לקמן שגג בזה ובזה זהו שוגג האמור בתורה ומוקמינן לה כמונבז והיינו טעמא משום דסברא הוא דלא איתקש שוגג למזיד לאפוקי ליה ממשמעות שגגה דאדרבה שוגג משמע דלית ליה ידיעה בשעת מעשה ולא אתא היקשא אלא לחייב נמי כי אית ליה ידיעה בשעת מעשה ומיהו קשה לר\"י דהא פטרי מהיקשא תינוק שנשבה מהאי טעמא נמי יפטור הכיר ולבסוף שכח:"
+  }
+}

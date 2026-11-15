@@ -1,0 +1,318 @@
+{
+  "Rashi on Shabbat 70b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:40:14.662Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהנה לרבות תולדות</strong> - כלומר היוצאות מהן מן האבות:"
+  },
+  "Rashi on Shabbat 70b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:41:27.062Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחת שהיא הנה</strong> - דאמרן פעמים שחייב על כל אחת ואחת מאי היא כגון שעשאן בזדון שבת ושגגת מלאכות דאיכא שגגות טובא והנה שהיא אחת דאמרן פעמים שחייב אחת על כולן מאי היא כגון שגגת שבת וזדון מלאכות דיודע שהמלאכות אסורות בשבת אבל שכח ששבת היום:"
+  },
+  "Rashi on Shabbat 70b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:1:1",
+      "Rashi on Shabbat 70b:1:2"
+    ],
+    "generatedAt": "2026-11-14T13:42:01.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא משמע ליה</strong> - דמיבעיא ליה כוליה לשם משמעון ולתולדות:"
+  },
+  "Rashi on Shabbat 70b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:48:19.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה וזה</strong> - שבת ומלאכות:"
+  },
+  "Rashi on Shabbat 70b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:2:1",
+      "Rashi on Shabbat 70b:2:3"
+    ],
+    "generatedAt": "2026-11-14T13:49:19.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - חייב אחת על כולן או על כל אחת ואחת וקמבעיא ליה הא דתני לעיל <span class=\"parenthesized\">(שבת דף סט.)</span> שגג בזה ובזה זהו שוגג האמור בתורה מהו לחיובי חדא או לחיובי אכולהו וממתני' דהשוכח עיקר שבת דאינו חייב אלא אחת לא שמעינן ליה דהשוכח עיקר שבת חדא שגגה היא וכי מיבעיא לן ביודע עיקר שבת אבל מלאכות הללו אינו יודע שאסורות ועוד נעלם ממנו שהיום שבת דאיכא למיתלי שגגה אכל מלאכה ומלאכה הואיל ויודע עיקר שבת ואיכא למתלי אהעלם שבת וחדא שגגה היא:"
+  },
+  "Rashi on Shabbat 70b:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:2:2",
+      "Rashi on Shabbat 70b:2:3",
+      "Rashi on Shabbat 70b:2:4"
+    ],
+    "generatedAt": "2026-11-14T13:50:00.201Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי משום שבת קא פריש</strong> - זה שפירש מן העבירה ובא להתכפר אי משום שבת היתה שאמרו לו שבת היום ופירש אישתכח דמשום העלם שבת היה עושה:"
+  },
+  "Rashi on Shabbat 70b:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:2:2",
+      "Rashi on Shabbat 70b:2:3",
+      "Rashi on Shabbat 70b:2:4",
+      "Rashi on Shabbat 70b:2:5",
+      "Shabbat 70b:2",
+      "Rashi on Shabbat 70b:2:1",
+      "Rashi on Shabbat 70b:2:6",
+      "Tosafot on Shabbat 70b:2:3",
+      "Rashi on Shabbat 70b:3:1",
+      "Rashi on Shabbat 70b:3:2",
+      "Rashi on Shabbat 69b:8:2",
+      "Rashi on Shabbat 70b:1:1",
+      "Rashi on Shabbat 70b:1:2",
+      "Rashi on Shabbat 70b:1:3"
+    ],
+    "generatedAt": "2026-11-14T13:53:38.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:4"
+    ],
+    "sourceText": "ה\"ג ואי משום מלאכות הללו קא פריש שאמרו לו מלאכה היא זו ופירש הרי העלם מלאכה בידו וזיל בתר מלאכות:"
+  },
+  "Rashi on Shabbat 70b:2:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:2:4",
+      "Rashi on Shabbat 70b:2:6",
+      "Rashi on Shabbat 70a:1:4",
+      "Tosafot on Shabbat 68a:2:2",
+      "Rashi on Shabbat 69b:1:2",
+      "Rashi on Shabbat 70b:2:1",
+      "Rashi on Shabbat 70b:2:2",
+      "Rashi on Shabbat 70b:2:3"
+    ],
+    "generatedAt": "2026-11-14T13:56:02.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלום פריש משבת אלא משום מלאכות</strong> - כשאמרו לו שבת היום הבין שהמלאכות הללו אסורות דאי לא אסורות למה הוזקקו לומר שבת היום:"
+  },
+  "Rashi on Shabbat 70b:2:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:56:23.658Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לא שנא</strong> - ואינו חייב אלא אחת:"
+  },
+  "Rashi on Shabbat 70b:3:1": {
+    "dependsOn": [
+      "Shabbat 70b:3",
+      "Rashi on Shabbat 70b:3:1",
+      "Rashi on Shabbat 70b:3:2"
+    ],
+    "generatedAt": "2026-11-14T14:02:27.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשאן לכולן</strong> - היינו העלם זה וזה בידו דהא לא ידע שבת במידי כיון דכל הלכותיה נעלמות ממנו אין חילוק היום משאר ימים:"
+  },
+  "Rashi on Shabbat 70b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:3:1",
+      "Shabbat 70b:3"
+    ],
+    "generatedAt": "2026-11-14T14:03:30.454Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"א כו' היכי משכחת לה</strong> - דניחייב איניש אכל חדא ע\"כ בזדון שבת ושגגת מלאכות הוא דמשכחת לה והכא מאי זדון שבת איכא:"
+  },
+  "Rashi on Shabbat 70b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T14:03:56.501Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא לר' יוחנן כו'</strong> - משכחת ליה שלא נעלמו ממנו אלא הכריתות ויודע הלאוין והיינו זדון שבת:"
+  },
+  "Rashi on Shabbat 70b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T14:04:28.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגרוגרת</strong> - שיעור הוא לכל איסורי מלאכות של שבת באוכלים:"
+  },
+  "Rashi on Shabbat 70b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:5:1",
+      "Rashi on Shabbat 70b:5:2",
+      "Rashi on Shabbat 70b:5:3"
+    ],
+    "generatedAt": "2026-11-14T14:05:12.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קצר</strong> - כגרוגרת וטחן כגרוגרת בשגגת שבת וזדון מלאכות דלא מיחייב אלא חדא:"
+  },
+  "Rashi on Shabbat 70b:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:5:1",
+      "Rashi on Shabbat 70b:5:2",
+      "Rashi on Shabbat 70b:5:3",
+      "Rashi on Shabbat 70b:5:4"
+    ],
+    "generatedAt": "2026-11-14T14:05:53.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחזר וקצר</strong> - כגרוגרת וטחן כגרוגרת בזדון שבת ושגגת מלאכות דמיחייב תרתי ולא נודע לו בינתים שחטא:"
+  },
+  "Rashi on Shabbat 70b:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:5:1",
+      "Rashi on Shabbat 70b:5:2",
+      "Rashi on Shabbat 70b:5:3",
+      "Rashi on Shabbat 70b:5:4",
+      "Rashi on Shabbat 70b:5:5"
+    ],
+    "generatedAt": "2026-11-14T14:06:21.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונודע לו</strong> - אחרי כן על הקצירה ועל הטחינה כלומר או על זו או על זו וכ\"ש על שתיהן:"
+  },
+  "Rashi on Shabbat 70b:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:5:1",
+      "Rashi on Shabbat 70b:5:2",
+      "Rashi on Shabbat 70b:5:3",
+      "Rashi on Shabbat 70b:5:4",
+      "Shabbat 70b:5",
+      "Rashi on Shabbat 70b:2:1",
+      "Rashi on Shabbat 70b:2:2"
+    ],
+    "generatedAt": "2026-11-14T14:07:34.064Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(על)</span> שגגת שבת וזדון מלאכות</strong> - והפריש חטאת וחטאת זו מכפרת על שתיהן דהא חדא הוא דמיחייב עליה:"
+  },
+  "Tosafot on Shabbat 70b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:44:51.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שם משמעון</strong> - האי לישנא לא הוה צריך למימר כיון דאליבא דר' יוסי קאי דסבר בפ' הבונה <span class=\"parenthesized\">(לקמן שבת ד' קג:)</span> דאפי' שריטה אחת על שני נסרים או שני שריטות על נסר אחד חייב אלא ניחא ליה למנקט לישנא דמתני' דהבונה <span class=\"parenthesized\">(שם.)</span> א\"ר יהודה מצינו שם קטן משם גדול שם משמעון:"
+  },
+  "Tosafot on Shabbat 70b:1:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 70b:1:1",
+      "Shabbat 70b:1",
+      "Shabbat 70a:3",
+      "Shabbat 70a:4"
+    ],
+    "generatedAt": "2026-11-14T13:48:00.794Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא משמע ליה</strong> - שמואל דלא כר' נתן ודלא כר' יוסי וצ\"ל דמקבלה קים ליה לשמואל הכי:"
+  },
+  "Tosafot on Shabbat 70b:2:1": {
+    "dependsOn": [
+      "Shabbat 70b:2",
+      "Tosafot on Shabbat 70b:1:1",
+      "Tosafot on Shabbat 70a:1:1",
+      "Tosafot on Shabbat 70b:2:2",
+      "Tosafot on Shabbat 70b:2:3"
+    ],
+    "generatedAt": "2026-11-14T13:58:06.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העלם זה וזה בידו מהו</strong> - אומר ר\"י דאפי' לא ידע לשבת בשום מלאכה חשיב ליה העלם זה וזה כדמוכח בסמוך דקאמר <span class=\"parenthesized\">(ר\"י')</span> אי אמרת בשלמא העלם זה וזה בידו חייב כו' אלמא אע\"ג דלא ידע לשבת במידי חשוב העלם זה וזה וצריך לחלק בין זה לשוכח עיקר שבת דהכא אינו שכוח כל כך דכי מדכרו ליה מדכר אבל שכח עיקר שבת היינו כעין תינוק שנשבה לבין הנכרים:"
+  },
+  "Tosafot on Shabbat 70b:2:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 70b:2:1"
+    ],
+    "generatedAt": "2026-11-14T13:59:47.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה הרי העלם שבת בידו כו'</strong> - בשבועות בפ\"ב <span class=\"parenthesized\">(\" יט.)</span> בעא מיניה רבא מרב נחמן העלם זה וזה בידו מהו א\"ל הרי העלם טומאה בידו וחייב והתם בפ\"ג <span class=\"parenthesized\">(דף כו.)</span> נמי השיבו הרי העלם שבועה בידו וחייב התם שפיר דמהדר ליה לחומרא והא דמהדר ליה הכא לפוטרו משום דקסבר שגגת שבת עיקר דעיקר המצוה היא משום שבת:"
+  },
+  "Tosafot on Shabbat 70b:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70b:2:3",
+      "Rashi on Shabbat 70b:2:4",
+      "Rashi on Shabbat 70b:2:5",
+      "Rashi on Shabbat 70b:2:6"
+    ],
+    "generatedAt": "2026-11-14T14:01:32.431Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזינן אי משום שבת קא פריש כו'</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שאמרו לו שבת היום ופירש וקשה דשמא כי הוו אמרי ליה נמי מלאכה היא היה פורש אפי' לא יזכירוהו שבת אלא נראה לר\"י דה\"פ אי משום שבת קא פריש שאומר בעצמו דאי הוו מודעי ליה אשבת לבד היה פורש ואי הוו מודעי ליה אמלאכות לא היה פורש א\"כ העלם שבת עיקר שהוא היה שכוח יותר ואי משום מלאכות פריש דשיילינן ליה ואמר דאי הוו מודעי ליה אמלאכות לא הוה צריך לאודועיה אשבת ואי הוו מודעי ליה אשבת הוה צריך לאודועיה אמלאכות הרי העלם מלאכות עיקר וחייב על כל אחת ואחת אבל כששניהם שכוחות בשוה מזה לא פשט כלום ולא בא רב אשי אלא לפשוט מקצת הבעיא כלומר לפעמים נוכל להבחין איזו העלמה עיקר ול\"ג מה שכתוב בספרים ואי כי מודעי ליה אשבת אכתי צריך לאודועיה אמלאכות העלם מלאכות בידו כו' דלפי מה שפי' ר\"י אכתי הוה צריך לפרושי וכי מודעת ליה אמלאכות לא הוה צריך לאודועיה אשבת אלא גרסי' ואי משום מלאכות קא פריש כו' וקאמר רבינא כלום פריש משבת אלא משום מלאכות כו' כלומר כיון ששניהם שכוחים במה שזה שכוח יותר מזה לא נפקא מיניה מידי אלא לא שנא ותרווייהו תבעי ורשב\"א מקיים גירסת הספרים ומפרש דרב אשי בא לפשוט דהעלם זה וזה חייב אי משום שבת קפריש שהשבת שכוחה יותר העלם שבת בידו ואי כי מודעת ליה אשבת אכתי צריך לאודועי אמלאכות אפילו אי כי נמי מודעת ליה אמלאכות צריך לאודועיה אשבת דהוי העלם זה וזה חשיב כהעלם מלאכות וחייב וכן מוכח מדנקט לעיל אי משום שבת קא פריש והכא נקט אי כי מודעת ליה אשבת כו' והא דקאמר כלום פריש ממלאכות אלא משום שבת ה\"פ אלא משום שבת ותהא שגגת שבת עיקר ולא מיחייב אלא חדא דבענין אחר לא הוה פריך מידי כיון דבשניהן שוה חייב על כל אחת:"
+  },
+  "Tosafot on Shabbat 70b:5:1": {
+    "dependsOn": [
+      "Shabbat 70b:5",
+      "Shabbat 71a:1",
+      "Tosafot on Shabbat 70b:1:1"
+    ],
+    "generatedAt": "2026-11-14T14:09:14.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נודע לו על הקצירה ועל הטחינה של שגגת שבת וזדון מלאכות</strong> - פי' רבינו שמואל שנודע לו והפריש קרבן וקודם שנתכפר חזר ונודע לו על הקצירה וטחינה של שגגת מלאכות אבל אם לא נודע לו עד אחר הכפרה אין נגררין וצריכין שתי חטאות דלכ\"ע כפרה מחלקת ודווקא הפריש קרבן אבל אם לא הפריש קרבן וחזר ונודע לו על קצירה וטחינה של שגגת מלאכות יביא איזה שירצה דבו תליא מילתא אם ירצה יפריש חטאת אחת על שגגת שבת ונגררין של שגגת מלאכות עמה או אם ירצה יפריש ב' קרבנות על הקצירה וטחינה של שגגת מלאכות ויגררו עמהן של שגגת שבת כדאמר רבא בסמוך אכל שני זיתי חלב בהעלם אחד ונודע לו על אחד מהן כו' הביא קרבן על הראשון כו' אלמא אע\"ג דנודע לו על הראשון תחלה הואיל ועדיין לא הפריש קרבן עליו אינו גורר האמצעי עמו כדי להתחייב קרבן על השלישי אלא אם ירצה יביא קרבן על האמצעי ויתכפרו כולן וא\"ת דהשתא משמע דסבר רבא דאין הפרשות מחלקות מדנגררות של שגגת מלאכות עם של שגגת שבת והיינו כריש לקיש ורבא גופיה לא פסיק כוותיה בהחולץ <span class=\"parenthesized\">(יבמות לו.)</span> אלא בג' מקומות ומיהו מתוך פי' ר\"ח שפירש דהלכתא כרבה רבו של אביי משמע דגרס רבה וכן משמע שמזכירו לפני אביי וכן בסמוך דקאמר מילתא דפשיטא לה לרבא ואביי ואפי' גרסי' רבא י\"ל דלא איירי ביבמות אלא בדברים הנוהגים בזמן הזה מיהו תימה לר\"י לקמן דמיבעיא לן אי פליגי בהפרשות מחלקות או לא תפשוט דבהפרשות פליגי דאי בידיעות פליגי אבל הפרשות מחלקות לכ\"ע א\"כ רבה ואביי דסברי הכא דאין הפרשות מחלקות כמאן וי\"ל דאיכא למדחי דהכא מיירי שלא הפריש עד אחר שחזר ונודע לו גם על שגגת מלאכות והא דנקט ונודע לו על שגגת שבת היינו כלומר שלבסוף הפריש על שגגת שבת:"
+  }
+}

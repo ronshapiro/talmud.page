@@ -1,0 +1,411 @@
+{
+  "Rashi on Shabbat 37a:10:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-12T19:55:48.688Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נעורת</strong> - ארישט\"ש:"
+  },
+  "Rashi on Shabbat 37a:11:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:11:1",
+      "Rashi on Shabbat 37a:10:1",
+      "Rashi on Shabbat 37a:5:1"
+    ],
+    "generatedAt": "2026-11-12T19:57:38.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהוחמו כל צרכן</strong> - דליכא למיחש לחיתויי:"
+  },
+  "Rashi on Shabbat 37a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:1:2",
+      "Rashi on Shabbat 37a:1:3",
+      "Shabbat 37a:1",
+      "Rashi on Shabbat 36b:6:1",
+      "Rashi on Shabbat 36b:4:1",
+      "Rashi on Shabbat 36b:4:2"
+    ],
+    "generatedAt": "2026-11-12T19:30:58.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אימא לך להחזיר תנן</strong> - ואילו לשהות אע\"פ שאינו גרוף שרי:"
+  },
+  "Rashi on Shabbat 37a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:1:1",
+      "Rashi on Shabbat 37a:1:3"
+    ],
+    "generatedAt": "2026-11-12T19:31:34.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והך חזרה דאמרי לך</strong> - לא יחזיר עד שיגרוף דכי גרוף מיהא שרי:"
+  },
+  "Rashi on Shabbat 37a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:32:32.177Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו דברי הכל היא</strong> - ולבית שמאי לא סבירא להו:"
+  },
+  "Rashi on Shabbat 37a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:34:01.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - שריותא דמתני' אלא על גבה דלא נפיש הבלא כולי האי אבל תוכה אסור:"
+  },
+  "Rashi on Shabbat 37a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Rashi on Shabbat 37a:2:3"
+    ],
+    "generatedAt": "2026-11-12T19:34:38.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אמרת בשלמא להחזיר תנן</strong> - אבל לשהות משהין אפילו בשאין גרופה כדמחסרינן ליה חסורי ורבי חלבו אשריותא דלשהות על שאינה גרופה קאי:"
+  },
+  "Rashi on Shabbat 37a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Rashi on Shabbat 37a:2:3",
+      "Rashi on Shabbat 37a:2:4",
+      "Rashi on Shabbat 36b:2:1",
+      "Rashi on Shabbat 36b:2:2",
+      "Rashi on Shabbat 36b:3:1",
+      "Rashi on Shabbat 36b:3:2",
+      "Rashi on Shabbat 37a:1:1"
+    ],
+    "generatedAt": "2026-11-12T19:35:31.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דשני בין תוכה לעל גבה</strong> - דכי משהי לתוכה דשאינה גרופה מטמין ממש ברמץ:"
+  },
+  "Rashi on Shabbat 37a:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Rashi on Shabbat 37a:2:3"
+    ],
+    "generatedAt": "2026-11-12T19:36:10.125Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי אמרת לשהות תנן</strong> - דאפילו לשהות בעי גרופה כיון דגרופה ומבעוד יום הוא נותנו לתוכה מה לי תוכה מה לי על גבה:"
+  },
+  "Rashi on Shabbat 37a:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:36:44.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארישא</strong> - עד שיגרוף:"
+  },
+  "Rashi on Shabbat 37a:2:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Rashi on Shabbat 37a:2:3",
+      "Rashi on Shabbat 37a:2:4",
+      "Rashi on Shabbat 37a:2:5"
+    ],
+    "generatedAt": "2026-11-12T19:37:18.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסיפא קאי</strong> - דאיירי בחזרה אבל רישא לשהות הוא ובין תוכה ובין גבה שרי:"
+  },
+  "Rashi on Shabbat 37a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:39:47.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי כירות המתאימות</strong> - מחוברות יחד וקיר של חרס מפסקת ביניהם:"
+  },
+  "Rashi on Shabbat 37a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:3:1",
+      "Rashi on Shabbat 37a:3:3"
+    ],
+    "generatedAt": "2026-11-12T19:40:35.110Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משהין על גבי גרופה וקטומה</strong> - דלא חיישינן משום דסליק לה הבלא מאידך:"
+  },
+  "Rashi on Shabbat 37a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:3:1",
+      "Rashi on Shabbat 37a:3:2",
+      "Rashi on Shabbat 37a:3:3",
+      "Rashi on Shabbat 37a:3:4"
+    ],
+    "generatedAt": "2026-11-12T19:41:06.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה הן משהין</strong> - על הגרופה:"
+  },
+  "Rashi on Shabbat 37a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:41:23.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יחזיר</strong> - בשבת:"
+  },
+  "Rashi on Shabbat 37a:4:1": {
+    "dependsOn": [
+      "Shabbat 37a:4",
+      "Rashi on Shabbat 37a:4:1",
+      "Rashi on Shabbat 37a:4:2",
+      "Rashi on Shabbat 37a:4:3",
+      "Rashi on Shabbat 37a:4:4"
+    ],
+    "generatedAt": "2026-11-12T19:43:07.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"ב</strong> - רישא דמתניתין לשהות קאמר דבעי גרופה ובלשהות פליגי בחמין ובתבשיל ובגרוף וסיפא פליגי בחזרה מתני' ר' יהודה היא אלא אי אמרת להחזיר תנן דבעי גרופה אבל לשהות לא בעי גרופה ופלוגתא דחמין ותבשיל כשאינו גרוף כדקמחסרת ומתרצת לה:"
+  },
+  "Rashi on Shabbat 37a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:4:1",
+      "Rashi on Shabbat 37a:4:2",
+      "Rashi on Shabbat 37a:4:3",
+      "Rashi on Shabbat 37a:4:4",
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Shabbat 37a:3",
+      "Rashi on Shabbat 36b:1:1",
+      "Rashi on Shabbat 36b:2:1",
+      "Rashi on Shabbat 36b:3:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 37a:1:1",
+      "Rashi on Shabbat 37a:1:2",
+      "Rashi on Shabbat 37a:1:3",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Shabbat 31a:1:1"
+    ],
+    "generatedAt": "2026-11-12T19:45:56.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא לב\"ש בחדא</strong> - דקאמרי ב\"ש במתני' משהין חמין אף בשאינו גרוף והכא קאמר רבי מאיר לב\"ש דאפילו גרוף ולא כלום וכ\"ש כשאינו גרוף והא כולה חדא פירכא היא דבית שמאי לא שני להו בין גרוף לשאינו גרוף:"
+  },
+  "Rashi on Shabbat 37a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:4:1",
+      "Rashi on Shabbat 37a:4:2",
+      "Rashi on Shabbat 37a:4:4",
+      "Rashi on Shabbat 36b:1:1",
+      "Rashi on Shabbat 36b:2:1",
+      "Shabbat 37a:4",
+      "Shabbat 37a:3"
+    ],
+    "generatedAt": "2026-11-12T19:47:13.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולב\"ה בתרתי</strong> - דבמתניתין שרי בית הלל להשהות חמין ותבשיל אף בשאינו גרוף והכא קתני דבגרוף חמין אין תבשיל לא ובשאינה גרוף אין משהין כלל ולענין חזרה בגרוף תנן במתניתין לב\"ה מחזירין והכא קתני עקר דברי הכל לא יחזיר:"
+  },
+  "Rashi on Shabbat 37a:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:4:1",
+      "Rashi on Shabbat 37a:4:2",
+      "Rashi on Shabbat 37a:4:3",
+      "Rashi on Shabbat 37a:3:1",
+      "Rashi on Shabbat 37a:3:2",
+      "Rashi on Shabbat 37a:3:3",
+      "Rashi on Shabbat 37a:3:4",
+      "Rashi on Shabbat 36b:9:1",
+      "Rashi on Shabbat 36b:9:2",
+      "Rashi on Shabbat 36b:10:1"
+    ],
+    "generatedAt": "2026-11-12T19:49:00.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ר' יהודה</strong> - דאמר נמי כי מתניתין מ\"מ גרופה וקטומה קשיא דמתניתין תרצת דפלוגתא קמייתא בשאינו גרוף ושרו ב\"ש חמין ובית הלל חמין ותבשיל והכא קתני אין משהין על גבי שאינה גרופה ואינה קטומה כלל ופלוגתא דלשהות בגרופה וקטומה:"
+  },
+  "Rashi on Shabbat 37a:5:1": {
+    "dependsOn": [
+      "Shabbat 37a:5",
+      "Rashi on Shabbat 37a:4:1",
+      "Rashi on Shabbat 37a:4:2",
+      "Rashi on Shabbat 37a:4:3",
+      "Rashi on Shabbat 37a:4:4"
+    ],
+    "generatedAt": "2026-11-12T19:49:56.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחמין ותבשיל ונוטלים ומחזירין</strong> - דמוקי פלוגתא דב\"ש וב\"ה בשהיית חמין ותבשיל דבית שמאי שרו חמין ותבשיל לא וב\"ה חמין ותבשיל ולא כר' מאיר דאמר לב\"ש לא כלום:"
+  },
+  "Rashi on Shabbat 37a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:6:2"
+    ],
+    "generatedAt": "2026-11-12T19:50:26.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו לסמוך</strong> - קדרה אצל דופן הכירה בלא גרופה שהכירה מטלטלת היא ומושיבים אותה על גבי קרקע:"
+  },
+  "Rashi on Shabbat 37a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:6:1"
+    ],
+    "generatedAt": "2026-11-12T19:51:00.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבה</strong> - עובי שפתה או כסוי שעל חללה:"
+  },
+  "Rashi on Shabbat 37a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:52:45.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמדלי</strong> - הקדרה על גבי הכירה:"
+  },
+  "Rashi on Shabbat 37a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:53:03.022Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונתלבתה</strong> - חזרה והובערה:"
+  },
+  "Rashi on Shabbat 37a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:54:52.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 37a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם נוטלין ומחזירין בחד מקום</strong> - ולא שייך למתני מחזירין עד דתני נוטלין:"
+  },
+  "Tosafot on Shabbat 37a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:56:37.719Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 37a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע כירה שהסיקוה כו'</strong> - ומסיק דשרי לסמוך ומכל מקום אין ללמוד מכאן לסמוך אצל האש דשאני הכא דדופני כירה מפסיקין בינו ולאש:"
+  },
+  "Tosafot on Shabbat 37a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T19:33:23.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 37a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אימא לך להחזיר תנן וחסורי מיחסרא כו'</strong> - משום דקיי\"ל כחנניה כמו שאפרש בע\"ה דחיק לאוקמא מתני' כוותיה:"
+  },
+  "Tosafot on Shabbat 37a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 37a:2:1",
+      "Rashi on Shabbat 37a:2:2",
+      "Rashi on Shabbat 37a:2:3",
+      "Rashi on Shabbat 37a:2:4",
+      "Rashi on Shabbat 37a:2:5",
+      "Rashi on Shabbat 37a:2:6",
+      "Shabbat 37a:1",
+      "Tosafot on Shabbat 37a:1:1",
+      "Tosafot on Shabbat 37a:6:1",
+      "Tosafot on Shabbat 37a:10:1",
+      "Tosafot on Shabbat 36b:1:1"
+    ],
+    "generatedAt": "2026-11-12T19:39:28.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 37a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אא\"ב להחזיר תנן היינו דשני בין תוכה לעל גבה</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> משום דאי להחזיר תנן א\"כ לשהות משהין אפילו באינה גרופה להכי שני בין תוכה דהוי מטמין ממש ברמץ לעל גבה וקשה להר\"ח דלחנניה אפילו תוכה משהין אפי' באינה גרופה דהא תנן <span class=\"parenthesized\">(. לעיל שבת דף יט:)</span> ולא חררה על גבי גחלים אלא עד שיקרמו פניה הא קרמו פניה שרי אע\"ג דחררה בתוכה היא ובלאו הכי אור\"י דבחנם דחק רש\"י לפרש כן דאיכא למימר שפיר היינו דשני לן בין תוכה לעל גבה מהא דשרי להחזיר בגרופה ובהשהאה דוקא לא ניחא ליה לחלק אבל בהחזרה ניחא ליה שפיר לחלק כדמוכח במאי דמשני מי סברת ארישא קאי אסיפא קאי כו' קשה לר\"י היכי בעי למימר אליבא דרב דמתניתין להחזיר תנן אם כן אתיא מתניתין כחנניה ורב דלא כחנניה דהא חנניה שרי במצטמק ויפה לו דהא דתנן <span class=\"parenthesized\">(שם)</span> אין צולין בשר וביצה אלא כדי שיצולו מבעוד יום אתיא כחנניה וביצה אמרינן לקמן דמצטמק ויפה לו הוא ורב אסר לקמן דמצטמק ויפה לו וי\"ל דבלאו הכי לא סבר לה רב כשום תנא דהא ר\"מ ור' יהודה אסרי באינה גרופה אפילו במצטמק ורע לו ורב שרי במצטמק ורע לו אפילו באינה גרופה דבגרופה לא אשכחן שום אמורא דאסר אפילו יפה לו ועוד דרב קאי אמילתיה דרבי יוחנן דאיירי באינה גרופה וכן רבי יוחנן דשרי לקמן חמין ותבשיל שבישל כל צרכו באינה גרופה אבל לא בישל כל צרכו אסור לא אשכחן תנא דסבר הכי:"
+  },
+  "Tosafot on Shabbat 37a:6:1": {
+    "dependsOn": [
+      "Shabbat 37a:6",
+      "Rashi on Shabbat 37a:6:1",
+      "Rashi on Shabbat 37a:6:2"
+    ],
+    "generatedAt": "2026-11-12T19:52:12.795Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 37a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו לסמוך</strong> - באינה גרופה קבעי ואי מתניתין להשהות תנן קא בעי להשהות ולהחזיר ואי להחזיר תנן ושרי להשהות אפי' תוכה וגבה בעי להחזיר ולהשהות היכא שאינו מבושל כמאכל בן דרוסאי:"
+  }
+}
