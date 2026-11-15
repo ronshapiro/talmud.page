@@ -1,0 +1,502 @@
+{
+  "Rashi on Shabbat 58b:10:1": {
+    "dependsOn": [
+      "Shabbat 58b:10"
+    ],
+    "generatedAt": "2026-11-13T22:23:37.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזוג והעינבל חיבור</strong> - כשהן יחד הרי הן כלי אחד נטמא זה נטמא זה הזה על זה טהור זה וכיון דקרי ליה חיבור שמע מינה דכי נתפרדו הוי כלי שניטל מקצתו ואף על גב דהדיוט יכול להחזירו כל כמה דלא אהדריה לאו שלם הוא:"
+  },
+  "Rashi on Shabbat 58b:11:1": {
+    "dependsOn": [
+      "Shabbat 58b:11",
+      "Rashi on Shabbat 58b:10:1",
+      "Rashi on Shabbat 58b:11:2"
+    ],
+    "generatedAt": "2026-11-13T22:28:13.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא</strong> - דהאי חיבור דקאמר הכי קאמר אפי' מפורדים קרינן ליה חיבור ואתא לאשמעי' דאם נתפרדו משנטמאו לא עלו מטומאתן:"
+  },
+  "Rashi on Shabbat 58b:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:11:1",
+      "Rashi on Shabbat 58b:11:2",
+      "Rashi on Shabbat 58b:11:3",
+      "Rashi on Shabbat 58b:11:4",
+      "Rashi on Shabbat 58b:11:5",
+      "Shabbat 58b:11",
+      "Rashi on Shabbat 58b:10:1",
+      "Shabbat 48b:10",
+      "Shabbat 48b:11",
+      "Shabbat 49a:1",
+      "Rashi on Shabbat 58b:13:1",
+      "Rashi on Shabbat 58b:14:1",
+      "Tosafot on Shabbat 58b:11:1",
+      "Steinsaltz on Shabbat 58b:11",
+      "Rashi on Shabbat 48b:10:1",
+      "Rashi on Shabbat 48b:10:2",
+      "Rashi on Shabbat 48b:10:3"
+    ],
+    "generatedAt": "2026-11-13T22:30:29.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא תניא</strong> - גבי ההיא:"
+  },
+  "Rashi on Shabbat 58b:11:3": {
+    "dependsOn": [
+      "Jastrow, מִסְפֶּרֶת 1"
+    ],
+    "generatedAt": "2026-11-13T22:31:12.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מספורת של פרקים</strong> - ששני סכינים שלה מתפרדין:"
+  },
+  "Rashi on Shabbat 58b:11:4": {
+    "dependsOn": [
+      "[",
+      "Steinsaltz on Shabbat 58b:11",
+      "Rashi on Shabbat 58b:11:1",
+      "Rashi on Shabbat 58b:11:2",
+      "Rashi on Shabbat 58b:11:3",
+      "Rashi on Shabbat 58b:11:5",
+      "Sefer HeArukh, Letter Alef 219",
+      "Sefer HeArukh, Letter Samekh 337",
+      "Jastrow, מִסְפֶּרֶת 1",
+      "Rashi on Shabbat 48b:10:1",
+      "Rashi on Shabbat 58b:10:1"
+    ],
+    "generatedAt": "2026-11-13T22:33:12.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזמל של רהיטני</strong> - פלינה של אומנים תריסים שנותנים האיזמל לתוך בין שני עצים העשוין לכך ולאחר מלאכתו נוטלו ומצניעו:"
+  },
+  "Rashi on Shabbat 58b:11:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:11:1",
+      "Rashi on Shabbat 58b:11:2",
+      "Rashi on Shabbat 58b:11:3",
+      "Rashi on Shabbat 58b:11:4",
+      "Rashi on Shabbat 58b:11:5",
+      "Steinsaltz on Shabbat 58b:11"
+    ],
+    "generatedAt": "2026-11-13T22:34:02.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חיבור לטומאה</strong> - ואם נטמא זה נטמא זה:"
+  },
+  "Rashi on Shabbat 58b:13:1": {
+    "dependsOn": [
+      "Shabbat 58b:13"
+    ],
+    "generatedAt": "2026-11-13T22:37:54.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בשעת מלאכה</strong> - הואיל ואין צריכין להיות מחוברין הוו להו כשני כלים ואין חיבור ואף על פי שמחוברין דע\"כ שלא בשעת מלאכה דומיא דשעת מלאכה קאמר ובשעת מלאכה מחוברין הן אלמא במחוברין עסקינן וגזרו לחומרא על הטומאה דליהוי חיבור ועל הזאה דלא ליהוי חיבור ומשום הכי קתני חיבור לטומאה לעולם ואין חיבור להזאה לעולם:"
+  },
+  "Rashi on Shabbat 58b:14:1": {
+    "dependsOn": [
+      "Shabbat 58b:14",
+      "Shabbat 58b:11",
+      "Chokhmat Shlomo on Shabbat 58b:3",
+      "Chokhmat Shlomo on Shabbat 58b:4",
+      "Tosafot on Shabbat 58b:14:1"
+    ],
+    "generatedAt": "2026-11-13T22:39:24.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבא</strong> - לא תימא הואיל והדיוט יכול להחזיר דודאי חד מנא הואי כדקתני בברייתא הזוג והעינבל חיבור וכי מיפרדי הוי כלי שניטל מקצתו ואינו מקבל טומאה העינבל לעצמו אבל הזוג טמא לעצמו דלא בטל ליה מתורת כלי:"
+  },
+  "Rashi on Shabbat 58b:1:1": {
+    "dependsOn": [
+      "Shabbat 58b:1",
+      "Shabbat 54b:1",
+      "Shabbat 54b:2",
+      "Shabbat 54b:3",
+      "Shabbat 54b:4",
+      "Shabbat 52b:1",
+      "Shabbat 52b:2",
+      "Shabbat 52b:3",
+      "Shabbat 52b:4",
+      "Shabbat 52a:14",
+      "Shabbat 52a:15",
+      "Shabbat 52a:16",
+      "Shabbat 52a:17",
+      "Shabbat 52a:18",
+      "Rashi on Shabbat 58b:2:1",
+      "Rashi on Shabbat 58b:5:1"
+    ],
+    "generatedAt": "2026-11-13T22:04:58.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושל דלת טהור</strong> - דלת מחובר לבית הוא שהוא חבור לקרקע ואינו כלי לקבל טומאה וזוג העשוי לו בטיל לגביה כדאמרי' בריש פרקין דלעיל כל המחובר לו הרי הוא כמוהו:"
+  },
+  "Rashi on Shabbat 58b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:2:1",
+      "Rashi on Shabbat 58b:2:2",
+      "Rashi on Shabbat 58b:2:3"
+    ],
+    "generatedAt": "2026-11-13T22:05:45.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של דלת ועשאו לבהמה טמאה</strong> - מכאן ולהבא ואע\"פ דלא עבד ביה מעשה אלא שחישב עליו ותלאו ותלייה לאו מעשה היא שכל הכלים יורדים לידי תורת טומאה במחשבה שלו:"
+  },
+  "Rashi on Shabbat 58b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:2:1",
+      "Rashi on Shabbat 58b:2:3"
+    ],
+    "generatedAt": "2026-11-13T22:06:17.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של בהמה ועשאו לדלת טמא</strong> - ואפי' מכאן להבא יקבל טומאה שאין חיבורו מעשה עד שישנהו מכמות שהיה:"
+  },
+  "Rashi on Shabbat 58b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T22:06:47.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין עולין מטומאתן</strong> - מתורת טומאה שירדה להן ואע\"פ שעדיין לא נטמאו משנמלך עליהן אין עולין מלקבל טומאה אלא בשינוי מעשה:"
+  },
+  "Rashi on Shabbat 58b:3:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-13T22:07:18.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עינבל</strong> - בטדי\"ל שעשוי בתוכו להשמיע קול:"
+  },
+  "Rashi on Shabbat 58b:4:1": {
+    "dependsOn": [
+      "Shabbat 58b:4",
+      "Rashi on Shabbat 58b:4:2",
+      "Rashi on Shabbat 58b:3:1"
+    ],
+    "generatedAt": "2026-11-13T22:08:08.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי מנא הוא</strong> - דתכשיט חשיב ליה:"
+  },
+  "Rashi on Shabbat 58b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:4:1"
+    ],
+    "generatedAt": "2026-11-13T22:08:52.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עינבל משוי ליה מנא</strong> - בתמיה משום העינבל מי הוי תכשיט:"
+  },
+  "Rashi on Shabbat 58b:5:1": {
+    "dependsOn": [
+      "Shabbat 58b:5",
+      "Rashi on Shabbat 58b:4:1",
+      "Rashi on Shabbat 58b:4:2"
+    ],
+    "generatedAt": "2026-11-13T22:09:32.305Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין</strong> - עינבל משוי ליה מנא ולא משום תכשיט אלא משום כלי:"
+  },
+  "Rashi on Shabbat 58b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T22:09:55.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דבר שיבא באש</strong> - בכלי מתכות משתעי במעשה מדין:"
+  },
+  "Rashi on Shabbat 58b:6:1": {
+    "dependsOn": [
+      "Shabbat 58b:6",
+      "Shabbat 58b:2",
+      "Shabbat 58b:3",
+      "Rashi on Shabbat 58b:6:2",
+      "Rashi on Shabbat 58a:8:4",
+      "Shabbat 58a:8",
+      "Steinsaltz on Shabbat 58b:6:1",
+      "Steinsaltz on Shabbat 58b:7:1"
+    ],
+    "generatedAt": "2026-11-13T22:13:37.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא מציעתא</strong> - זוג דאדם:"
+  },
+  "Rashi on Shabbat 58b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:6:1",
+      "Shabbat 58b:6",
+      "Rashi on Shabbat 58b:2:1",
+      "Rashi on Shabbat 58b:2:2",
+      "Rashi on Shabbat 58b:2:3",
+      "Rashi on Shabbat 58b:4:1",
+      "Rashi on Shabbat 58b:4:2",
+      "Rashi on Shabbat 58b:5:1",
+      "Rashi on Shabbat 58b:5:2"
+    ],
+    "generatedAt": "2026-11-13T22:14:37.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי מקבל טומאה</strong> - אפי' דאדם:"
+  },
+  "Rashi on Shabbat 58b:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:7:1",
+      "Rashi on Shabbat 58b:7:2",
+      "Rashi on Shabbat 58b:7:3",
+      "Rashi on Shabbat 58b:7:4",
+      "Rashi on Shabbat 58b:7:5"
+    ],
+    "generatedAt": "2026-11-13T22:16:30.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העושה זגין למכתשת</strong> - שמפטמין בה סממנין להקטיר לריח דקיי\"ל בכריתות <span class=\"parenthesized\">(פ\"א ד' ו)</span> שהקול יפה לבשמים:"
+  },
+  "Rashi on Shabbat 58b:7:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 58b:10:1",
+      "Rashi on Shabbat 58b:7:1",
+      "Rashi on Shabbat 58b:7:3",
+      "Rashi on Shabbat 58b:7:4",
+      "Rashi on Shabbat 58b:7:5"
+    ],
+    "generatedAt": "2026-11-13T22:17:16.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולעריסה</strong> - שהתינוק שוכב בתוכה שקורין בירצ\"ה ותולה בו זגין לקשקש כדי שישמע התינוק וישן:"
+  },
+  "Rashi on Shabbat 58b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T22:17:35.971Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמטפחות ספרים</strong> - כשנושאין אותן לבית הכנסת שהתינוקות של בית רבן קורין שם מקשקשין הזגין והתינוקות שומעין ובאין:"
+  },
+  "Rashi on Shabbat 58b:7:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:7:1",
+      "Rashi on Shabbat 58b:7:2",
+      "Rashi on Shabbat 58b:7:3",
+      "Rashi on Shabbat 58b:7:4",
+      "Rashi on Shabbat 58b:7:5",
+      "Steinsaltz on Shabbat 58b:7",
+      "Tosefta Kelim Metzia 1:4"
+    ],
+    "generatedAt": "2026-11-13T22:18:33.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמטפחות תינוקות</strong> - שתולין בצוארן:"
+  },
+  "Rashi on Shabbat 58b:7:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 58b:7:1",
+      "Rashi on Shabbat 58b:7:2",
+      "Rashi on Shabbat 58b:7:3",
+      "Rashi on Shabbat 58b:7:4",
+      "Rashi on Shabbat 58b:7:5",
+      "Shabbat 58b:8",
+      "Shabbat 58b:9",
+      "Rashi on Shabbat 58b:9:1",
+      "Rashi on Shabbat 58a:1:1",
+      "Tosafot on Shabbat 58b:5:1"
+    ],
+    "generatedAt": "2026-11-13T22:20:57.917Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניטלו עינבליהם כו'</strong> - <span class=\"parenthesized\">(אם ניטלו קודם שנטמאו תורת טומאה עליהם ומקבלין טומאה כדמפרש טעמא לקמיה מעיקרא כי אין להם עינבל דקתני טהורין דעדיין לא נגמרה מלאכתן אבל משירדה להם תורת טומאה לא בטל שם כלי מעליהם בנטילת העינבל)</span> ואם ניטל לאחר שנטמאו עדיין טומאתן עליהן דלא הוי ככלי שנשבר ובטל מתורת כלי ליטהר מטומאתו:"
+  },
+  "Rashi on Shabbat 58b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T22:21:16.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 58b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדיוט</strong> - שאין צריך אומן:"
+  },
+  "Tosafot on Shabbat 58b:10:1": {
+    "dependsOn": [
+      "Shabbat 58b:10",
+      "Rashi on Shabbat 58b:10:1",
+      "Rashi on Shabbat 58b:11:1",
+      "Rashi on Shabbat 58b:11:2",
+      "Rashi on Shabbat 58b:11:3",
+      "Rashi on Shabbat 58b:11:4",
+      "Rashi on Shabbat 58b:11:5",
+      "Chokhmat Shlomo on Shabbat 58b:5",
+      "Maharam on Shabbat 58b:3",
+      "Tosafot on Shabbat 58b:10:2"
+    ],
+    "generatedAt": "2026-11-13T22:25:58.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רבא הזוג והעינבל חיבור</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> מדקרי ליה חיבור ש\"מ דכי נתפרדו הוי כלי שניטל מקצתו ואע\"ג דהדיוט יכול להחזיר כל כמה דלא אהדרי' לאו שלם הוא וקשה לר\"י דהא מעיקרא נמי הוי ידענא דהוי כלי שניטל מקצתו ולהכי פריך למאי חזו ומשני דודאי באפי נפשה לא חזו לא זוג ולא עינבל אלא משום דהדיוט יכול להחזירו ומה שפירש נמי והתניא כו' גבי ההיא מספורת של פרקים לא עיין דההוא דזוג ועינבל משנה היא במסכת פרה <span class=\"parenthesized\">(פ. \"ב משנה ח)</span> וההיא דמספורת בתוספתא דכלים ומפרש הרב פור\"ת בשם ר' שמואל הואיל והדיוט יכול להחזירם ואע\"ג דהשתא בלא עינבל לא חזי מידי כיון דהדיוט יכול בקל להחזירה כמאן דמיחברי דמי ואם נטמא העינבל נטמא גם הזוג כאילו הן מחוברין נפקא מינה דלכשיתחברו יטמא הזוג את הנוגע בו ומיהו בלא חיבור לא יטמא כי אם העינבל לבדו שנגע בטומאה והכי משמע לישנא דקאמר וכי תימא ה\"ק אע\"ג דלא מיחברי כמאן דמיחברי דמי משמע דאביי הכי סבירא ליה דמדתלי טעמא בחזרת הדיוט משמע דסבר דלא חזי השתא למידי ואי לאו כמחובר חשיב ליה היאך יקבל טומאה מאחר דלא חזי מידי בלא חזרה:"
+  },
+  "Tosafot on Shabbat 58b:10:2": {
+    "dependsOn": [
+      "Shabbat 58b:10",
+      "Tosafot on Shabbat 58b:10:1",
+      "Rashi on Shabbat 58b:10:1",
+      "Shabbat 58b:12"
+    ],
+    "generatedAt": "2026-11-13T22:27:12.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רבא הזוג והעינבל חיבור</strong> - שאם נטמא זה נטמא זה וה\"מ כשמחוברים אבל שלא בשעת חיבור אם נטמא זה לא נטמא זה ולא חיישינן להדיוט יכול להחזיר דהשתא מיהא לאו מחוברין נינהו וממשנה זו אין לנו להוכיח דמיירי בשעת חיבור כדקאמר וכי תימא כו' אבל מכח ברייתא מוכיח דבשעת חיבור מיירי ומברייתא גרידתא הוה מצי רבא לאותוביה לאביי אלא דניחא ליה לאקשויי מהך דמיירי בזוג ועינבל בהדיא לאביי דאיירי נמי בזוג ועינבל:"
+  },
+  "Tosafot on Shabbat 58b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T22:37:08.882Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(וכי תימא כו')</span> והתניא מספורת של פרקים ואיזמל של רהיטני</strong> - שתי ברייתות הן במסכת כלים כל אחד בפני עצמה וברישא קתני בהדיא דכשאינן מחוברין מקבל כל א' טומאה בפני עצמו וגזרו על טומאה שלא בשעת מלאכה שיהא חיבור לטומאה ליטמא זה כשניטמא זה משום דדמי לשעת מלאכה אבל שלא בחיבורין משמע דאפי' גזירה דרבנן ליכא ואם נטמא זה לא נטמא זה דלא חייש למה שהדיוט יכול להחזירו:"
+  },
+  "Tosafot on Shabbat 58b:14:1": {
+    "dependsOn": [
+      "Shabbat 58b:14",
+      "Rashi on Shabbat 58b:14:1",
+      "Rashi on Shabbat 59a:1:1",
+      "Tosafot on Shabbat 58b:5:1",
+      "Tosafot on Shabbat 58b:10:1",
+      "Tosafot on Shabbat 58b:11:1"
+    ],
+    "generatedAt": "2026-11-13T22:42:42.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבא כו'</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דטומאה לא פרח הימנו כשנפרד משקיבל הואיל וראוי להקישו והוה ליה ככלי <span class=\"parenthesized\">(עץ)</span> שניקב בפחות ממוציא רמון דלא טהר מטומאה ומשמע שרוצה לומר דמכאן ואילך לא מקבל טומאה וקשה לר\"י דלמה לא יקבל טומאה כיון דנפחת פחות מכשיעור דהוי כאילו שלם לגמרי ונראה לר\"י דודאי גם מקבל טומאה מכאן ולהבא ולקונטרס דחקו לפרש כן משום דכשלא היה להם עינבל טהורין ולא מקבלי טומאה אף על גב דראוי להקישו ואינו דומה דכשלא היה בו עינבל מעולם ודאי טהור דכיון שעומד ליתן בו עינבל דהא עביד לקלא והוי גולמי כלי מתכות אבל משנגמר שהיה בו עינבל אף על פי שניטל מקבל טומאה שלא בטל מתורת כלי שהיה עליו קודם לכן והר\"ם הביא ראיה מחמת שתפרה ושייר פחות ממוציא רמון דטהורה <span class=\"parenthesized\">(חולין קלח.)</span> אפ\"ג דחמת שלם שנקרע פחות ממוציא רימון מקבל טומאה ועוד קשה לר\"י ל<span class=\"rashi-quotation\">פי' הקונטרס</span> דלטומאה שהיתה עליהן שלא תפרח מהני שפיר טעמא דהדיוט יכול להחזירו בלא טעמא דראוי להקישו כדאשכחן בפ' שלשה שאכלו <span class=\"parenthesized\">(ברכות נ:)</span> גבי מטה דאפי' מפורקת לא פרחה טומאה מינה אא\"כ נגנבה או שאבדה חציה או שחלקוה אחים או שותפים שאין סופן לחברה ולא איצטריך כלל לטעמא דהקשה אלא לענין לקבל טומאה מכאן ולהבא דהאי טעמא הואיל והדיוט יכול להחזירו לא מהני לקבל בה טומאה כדקתני התם החזירוה מקבלת טומאה מכאן ולהבא ולאביי נמי הוה בעי למימר דמשום דהדיוט יכול להחזירו מקבלין שניהן זוג והעינבל טומאה מכאן ולהבא וריצב\"א הביא ראיה ל<span class=\"rashi-quotation\">פי' הקונט'</span> דתניא בתוספתא דמסכת כלים בפ' רשב\"ג העושה זוג למכתשת ולעריסה ולמטפחות תינוקות ניטלו עינבליהן טהורין משמע דזגין טהורין ולפירוש <span class=\"rashi-quotation\">הקונט'</span> ניחא דטהורין דלא מקבלי טומאה מכאן ולהבא אבל לפר\"י קשה אמאי טהורין ור\"י השיב דכמה ברייתות יש בתוספתא דפליגי אש\"ס שלנו:"
+  },
+  "Tosafot on Shabbat 58b:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 58b:5:2",
+      "Shabbat 58b:5",
+      "Tosafot on Shabbat 57b:17:2"
+    ],
+    "generatedAt": "2026-11-13T22:11:38.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין כדר' שמואל כו'</strong> - דחשיב ליה כלי תשמיש דאדם משום דבעי ליה לקלא דע\"י הזוג ששומע יודע היכן בהמתו עומדת ומוצאה ע\"י כך והוי כמקל של בהמה של מתכת דטמאה הואיל ואדם רודה בה וכ\"מ לקמן גבי בירית טהורה דמשמיע [קול] בכלי מתכות אינו טמא אלא היכא דבעי ליה לקלא והא דמשני הא דאית ביה עינבל הא דלית ביה עינבל ולא מחלק באית ביה עינבל בין בעי ליה לקלא בין לא בעי אומר ר\"י דלא שכיח שיעשו עינבל אלא אם כן בעי ליה לקלא:"
+  },
+  "Tosafot on Shabbat 58b:5:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 58b:5:2",
+      "Tosafot on Shabbat 58b:5:1"
+    ],
+    "generatedAt": "2026-11-13T22:12:21.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דבר אשר יבא</strong> - ואע\"ג דהאי קרא לא לגבי טומאה כתיב אלא לגבי הגעלה מסתברא דהתם אין דיבור מעלה ומוריד ואם אינו ענין להגעלה תנהו לענין טומאה:"
+  },
+  "Tosafot on Shabbat 58b:9:1": {
+    "dependsOn": [
+      "Shabbat 58b:9",
+      "Shabbat 58b:11",
+      "Shabbat 58b:14",
+      "Tosafot on Shabbat 58b:14:1",
+      "Rashi on Shabbat 58b:11:1",
+      "Rashi on Shabbat 58b:11:2",
+      "Rashi on Shabbat 58b:11:3",
+      "Rashi on Shabbat 58b:11:4",
+      "Rashi on Shabbat 58b:11:5"
+    ],
+    "generatedAt": "2026-11-13T22:22:50.146Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 58b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\"><span class=\"parenthesized\">(אלא)</span> אמר רבא הואיל ויכול להקישו</strong> - פי' מקבל טומאה הזוג אבל עינבל דאין ראוי להקישו לא ומספורת ואיזמל נמי בלא חיבור ראויין למעין מלאכה ראשונה ומקבלי טומאה כל אחד בפני עצמו כדתני בתוספתא:"
+  }
+}

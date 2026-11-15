@@ -1,0 +1,593 @@
+{
+  "Rashi on Shabbat 65a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:49:09.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי הא דאמרן</strong> - דלא חייש דילמא שלפא:"
+  },
+  "Rashi on Shabbat 65a:10:2": {
+    "dependsOn": [
+      "Shabbat 65a:10",
+      "Rashi on Shabbat 65a:10:1",
+      "Shabbat 62a:1"
+    ],
+    "generatedAt": "2026-11-14T06:50:50.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פוטר בכובלת</strong> - ואוקימנא דהאי פוטר מותר לכתחילה הוא ואמר טעמא מאן דרכה למיפק בכובלת אשה שריחה רע ולא שלפא ומחויא גנותה:"
+  },
+  "Rashi on Shabbat 65a:11:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:11:2"
+    ],
+    "generatedAt": "2026-11-14T06:51:45.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למטה מן הסבכה</strong> - כגון כיפה של צמר:"
+  },
+  "Rashi on Shabbat 65a:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:11:1"
+    ],
+    "generatedAt": "2026-11-14T06:52:23.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצאה בה</strong> - דלא חיישינן דילמא שלפא ומחוויא דמיגלי שערה ומגניא בה שהשבכה נוי הוא לשער:"
+  },
+  "Rashi on Shabbat 65a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:52:47.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סלע</strong> - מטבע הוא:"
+  },
+  "Rashi on Shabbat 65a:12:10": {
+    "dependsOn": [
+      "Shabbat 65a:12",
+      "Rashi on Shabbat 65a:12:8",
+      "Rashi on Shabbat 65a:12:9",
+      "Rashi on Shabbat 65a:12:10",
+      "Rashi on Shabbat 65b:5:1",
+      "Rashi on Shabbat 65a:6:3",
+      "Rashi on Shabbat 65a:8:2",
+      "Shabbat 65b:5"
+    ],
+    "generatedAt": "2026-11-14T07:03:47.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא תפרוף לכתחלה בשבת</strong> - ובגמ' פריך והאמרת רישא פורפת:"
+  },
+  "Rashi on Shabbat 65a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:53:20.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צינית</strong> - מפרש בגמ':"
+  },
+  "Rashi on Shabbat 65a:12:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:12:2",
+      "Rashi on Shabbat 65a:12:3",
+      "Rashi on Shabbat 65a:12:4",
+      "Steinsaltz on Shabbat 65a:12",
+      "Rashba on Shabbat 65a:3",
+      "Shulchan Arukh, Orach Chayim 303:20",
+      "Versions on Shabbat 65a:12",
+      "Jastrow, קִיסָּם 1",
+      "Sefer HeArukh, Letter Bet 444",
+      "Sefer HeArukh, Letter Peh 558",
+      "Sefer HeArukh, Letter Peh 559",
+      "Sefer HeArukh, Letter Mem 60",
+      "Sefer HeArukh, Letter Ayin 268",
+      "Rashi on Shabbat 57a:16:1",
+      "Rashi on Shabbat 64b:15:5"
+    ],
+    "generatedAt": "2026-11-14T06:56:25.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבנות קטנות</strong> - שמנקבות אזניהם ואין עושין נזמים עד שיגדלו ונותנין חוטין או קסמים באזניהם שלא יסתמו אזניהם לוי\"ה:"
+  },
+  "Rashi on Shabbat 65a:12:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:12:2",
+      "Rashi on Shabbat 65a:12:3",
+      "Rashi on Shabbat 65a:12:4"
+    ],
+    "generatedAt": "2026-11-14T06:58:12.278Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו</strong> - רבותא קאמר דאע\"ג דלאו תכשיט נוי הוא אורחא בהכי ולא משאוי הוא ויש מפרשין חוטין שקולעת בהן שערה דאסרינן לגדולה בריש פרקין התם משום דשכיחא בהו טבילה אבל קטנות דלא שכיחא בהו טבילה שרי ולשון ראשון הגון מזה חדא דקטנות נמי צריכות טבילה לטומאת מגע משום טהרות ואף נדות נמי שכיחות בהו כדתניא <span class=\"parenthesized\">(נדה דף לב.)</span> מעשה שהיה והטבילוה קודם לאמה ועוד מדקתני אפי' בקיסמין איכא למישמע דחוטין נמי אאזנים קיימי דאי חוטי הראש לא שייך למיתני אפי' בקסמין:"
+  },
+  "Rashi on Shabbat 65a:12:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:58:29.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערביות</strong> - נשים ישראליות שבערב:"
+  },
+  "Rashi on Shabbat 65a:12:6": {
+    "dependsOn": [
+      "Shabbat 65a:12",
+      "Rashi on Shabbat 65a:12:1",
+      "Rashi on Shabbat 65a:12:2",
+      "Rashi on Shabbat 65a:12:7"
+    ],
+    "generatedAt": "2026-11-14T06:59:27.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יוצאות רעולות</strong> - דרך ערביות להיות מעוטפות ראשן ופניהם חוץ מן העינים וקרי לה בלשון ערבי רעולות היינו הרעלות דכתיב גבי תכשיטי נשים בספר ישעיה:"
+  },
+  "Rashi on Shabbat 65a:12:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:59:45.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדיות</strong> - נשים ישראליות שבמדי:"
+  },
+  "Rashi on Shabbat 65a:12:8": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:12:7",
+      "Rashi on Shabbat 65a:12:8",
+      "Rashi on Shabbat 65a:12:9",
+      "Rashi on Shabbat 65a:12:10"
+    ],
+    "generatedAt": "2026-11-14T07:00:26.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרופות</strong> - שמעטפות בטלית ותולה הרצועה בשפתה האחת כנגד צוארה ובשפתה השנית כורכת אבן או אגוז וקושרת הרצועה בכרך ואין הטלית נופל מעליה:"
+  },
+  "Rashi on Shabbat 65a:12:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:01:05.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:12:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פורפת</strong> - כמו קרסים דמתרגמינן פורפין כל המחבר בגד לחבירו קרי פריפה:"
+  },
+  "Rashi on Shabbat 65a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:04:21.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בת ארעא</strong> - מכה שהיא תחת פרסת הרגל וקושר בה סלע לרפואה:"
+  },
+  "Rashi on Shabbat 65a:14:1": {
+    "dependsOn": [
+      "Jastrow, אָקוֹשָׁא 1",
+      "Jastrow, יָתֵד 1"
+    ],
+    "generatedAt": "2026-11-14T07:05:11.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאקושא</strong> - שהיא קשה ומגינה על המכה מקוצים ויתדות דרכים:"
+  },
+  "Rashi on Shabbat 65a:14:2": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-14T07:08:38.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוכתא</strong> - ליחלוחית היוצא מן הכסף ובלע\"ז רוי\"ל ויפה למכה שוכתא כמו דשתך טפי דאלו מציאות <span class=\"parenthesized\">(ב\"מ דף כו.)</span> ומשתכין כנחשת דתענית <span class=\"parenthesized\">(דף ח.)</span>:"
+  },
+  "Rashi on Shabbat 65a:14:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:14:1",
+      "Rashi on Shabbat 65a:14:2",
+      "Rashi on Shabbat 65a:14:3",
+      "Rashi on Shabbat 65a:14:4"
+    ],
+    "generatedAt": "2026-11-14T07:09:23.624Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעבד טסא</strong> - דכספא טיבעא למה לי אלא משום צורתא דטיבעא מעליא למכה ולאו שוכתא:"
+  },
+  "Rashi on Shabbat 65a:14:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:14:1",
+      "Rashi on Shabbat 65a:14:2",
+      "Rashi on Shabbat 65a:14:3",
+      "Rashi on Shabbat 65a:14:4",
+      "Rashi on Shabbat 65a:14:5",
+      "Rashi on Shabbat 65a:14:6"
+    ],
+    "generatedAt": "2026-11-14T07:09:57.335Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעבד פולסא</strong> - עגול של עץ ויצור עליו:"
+  },
+  "Rashi on Shabbat 65a:14:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:14:1",
+      "Rashi on Shabbat 65a:14:2",
+      "Rashi on Shabbat 65a:14:3",
+      "Rashi on Shabbat 65a:14:4",
+      "Rashi on Shabbat 65a:14:6"
+    ],
+    "generatedAt": "2026-11-14T07:11:17.178Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אביי ש\"מ</strong> - ממתני' דנקט סלע:"
+  },
+  "Rashi on Shabbat 65a:14:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:14:1",
+      "Rashi on Shabbat 65a:14:2",
+      "Rashi on Shabbat 65a:14:3",
+      "Rashi on Shabbat 65a:14:4",
+      "Rashi on Shabbat 65a:14:5"
+    ],
+    "generatedAt": "2026-11-14T07:12:00.515Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:14:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולהו בהדדי מעלו לה</strong> - ולהכי נקט סלע דאיתנהו לכולהו אקושא ושוכתא וצורתא:"
+  },
+  "Rashi on Shabbat 65a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:14:39.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שביק להו לבנתיה כו'</strong> - מפרש לקמן טעמא דכולהו:"
+  },
+  "Rashi on Shabbat 65a:15:2": {
+    "dependsOn": [
+      "Shabbat 65a:15"
+    ],
+    "generatedAt": "2026-11-14T07:15:14.639Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גניאן גבי הדדי</strong> - לישן זו אצל זו בעודן בתולות:"
+  },
+  "Rashi on Shabbat 65a:15:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:15:1",
+      "Rashi on Shabbat 65a:15:2",
+      "Rashi on Shabbat 65a:15:3",
+      "Rashi on Shabbat 65a:15:4",
+      "Shabbat 65a:15",
+      "Shabbat 65b:3",
+      "Rashi on Shabbat 65b:3:3"
+    ],
+    "generatedAt": "2026-11-14T07:16:17.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקואות ביומי ניסן</strong> - של מים מכונסין או סמוך לנהר וממשיך לתוכן מי הנהר וטובלות שם:"
+  },
+  "Rashi on Shabbat 65a:15:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:16:35.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:15:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפצי ביומי תשרי</strong> - שטובלות בפרת ומפני הטיט שלא יהא חציצה נותנות המפץ תחת רגליהן:"
+  },
+  "Rashi on Shabbat 65a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:18:17.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דצבעונין</strong> - וחייש למישלף ואחוויי:"
+  },
+  "Rashi on Shabbat 65a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T07:18:41.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המסוללות</strong> - מתחככות משום תאות תשמיש:"
+  },
+  "Rashi on Shabbat 65a:1:1": {
+    "dependsOn": [
+      "Shabbat 65a:1",
+      "Rashi on Shabbat 65a:1:2",
+      "Rashi on Shabbat 65a:1:3"
+    ],
+    "generatedAt": "2026-11-14T06:33:33.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שוטחן בחמה</strong> - מי שנשרו כליו בדרך במי גשמים:"
+  },
+  "Rashi on Shabbat 65a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:1:1",
+      "Rashi on Shabbat 65a:1:2",
+      "Rashi on Shabbat 65a:1:3"
+    ],
+    "generatedAt": "2026-11-14T06:34:07.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא כנגד העם</strong> - שלא יאמרו כבסן בשבת האי תנא סבר דמידי דמשום מראית העין מותר בחדרים:"
+  },
+  "Rashi on Shabbat 65a:1:3": {
+    "dependsOn": [
+      "Shabbat 65a:1",
+      "Rashi on Shabbat 65a:1:1",
+      "Rashi on Shabbat 65a:1:2",
+      "Rashi on Shabbat 65a:1:3"
+    ],
+    "generatedAt": "2026-11-14T06:34:41.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסרין</strong> - כרב:"
+  },
+  "Rashi on Shabbat 65a:5:1": {
+    "dependsOn": [
+      "Shabbat 65a:5",
+      "Rashi on Shabbat 65a:5:2"
+    ],
+    "generatedAt": "2026-11-14T06:35:30.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשתה לו בית יד</strong> - למוך שבאותו מקום מהו למיסריה דילמא שקלה וממטא לה בידים דלא מאיס לאוחזה בבית יד שלה:"
+  },
+  "Rashi on Shabbat 65a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:5:1",
+      "Shabbat 65a:4"
+    ],
+    "generatedAt": "2026-11-14T06:36:03.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשתה לה בית יד מותר</strong> - דלא אמרינן לא מאיס אלא אפילו בבית יד מאיס:"
+  },
+  "Rashi on Shabbat 65a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:36:23.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוחנן נפיק ביה לבי מדרשא</strong> - במוך שבאזנו שהיה זקן והיתה לו צואת האוזן מרובה:"
+  },
+  "Rashi on Shabbat 65a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T06:37:02.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחלוקין עליו חבריו</strong> - מפני שלא היה קשור באזנו והוא יוצא בו לרה\"ר:"
+  },
+  "Rashi on Shabbat 65a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:6:1",
+      "Rashi on Shabbat 65a:6:2",
+      "Rashi on Shabbat 65a:6:4",
+      "Shabbat 65a:6",
+      "Rosh on Shabbat 6:14:1",
+      "Steinsaltz comment #1 on Shabbat 65a:6",
+      "Steinsaltz comment #2 on Shabbat 65a:6",
+      "Steinsaltz on Shabbat 65a:6"
+    ],
+    "generatedAt": "2026-11-14T06:39:13.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תני רמי והוא שקשור כו'</strong> - וכי קשור מיהא אפילו לרה\"ר מותר ואמאי קאמר לבי מדרשו ולא קאמר לרשות הרבים ומשני דר' יוחנן קשור ולא מיהדק הקשר ולשון ראשון מיושב מזה:"
+  },
+  "Rashi on Shabbat 65a:6:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:6:1",
+      "Rashi on Shabbat 65a:6:2",
+      "Rashi on Shabbat 65a:6:3",
+      "Rashi on Shabbat 65a:6:4",
+      "Rashi on Shabbat 65a:5:1",
+      "Rashi on Shabbat 65a:5:2",
+      "Maharsha: Chidushei Halachot on Shabbat 65a:1"
+    ],
+    "generatedAt": "2026-11-14T06:41:42.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא דמיהדק</strong> - דר' יוחנן היה תוחב באזנו יפה ומהדק ולא בעי קשירה ודרמי בר יחזקאל בדלא מיהדק ל\"א מתלמידי רבינו הלוי דרבי יוחנן קשור הוה ובית מדרשו סמוך לביתו הוה ולא היתה רה\"ר מפסקת:"
+  },
+  "Rashi on Shabbat 65a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:7:1",
+      "Rashi on Shabbat 65a:7:2",
+      "Rashi on Shabbat 65a:7:3",
+      "Rashi on Shabbat 65a:6:1",
+      "Rashi on Shabbat 65a:6:2",
+      "Rashi on Shabbat 65a:6:3",
+      "Rashi on Shabbat 65a:6:4",
+      "Rashi on Shabbat 64b:1:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-14T06:43:27.789Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדורשיני</strong> - לחולי השינים:"
+  },
+  "Rashi on Shabbat 65a:7:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 65a:7:1",
+      "Rashi on Shabbat 65a:7:3"
+    ],
+    "generatedAt": "2026-11-14T06:44:43.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זנגבילא</strong> - גינזירו:"
+  },
+  "Rashi on Shabbat 65a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:7:1",
+      "Rashi on Shabbat 65a:7:2"
+    ],
+    "generatedAt": "2026-11-14T06:45:30.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרצונא</strong> - קנמון:"
+  },
+  "Rashi on Shabbat 65a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:8:1",
+      "Rashi on Shabbat 65a:8:2"
+    ],
+    "generatedAt": "2026-11-14T06:46:19.449Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - דחכמים אוסרין אלא של זהב שמשונה במראה משאר שינים ודילמא מבזו לה ושקלה לה בידה וממטיא:"
+  },
+  "Rashi on Shabbat 65a:8:2": {
+    "dependsOn": [
+      "Shabbat 65a:8",
+      "Rashi on Shabbat 65a:8:1",
+      "Maharsha on Shabbat 65a:2"
+    ],
+    "generatedAt": "2026-11-14T06:48:46.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 65a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל של כסף</strong> - שדומה לשאר השינים דברי הכל מותר לשון רבותי ולי נראה טעמא דשל זהב משום דחשיבא ואתי' לאחויי לכך אסור אבל של כסף לא חשיבא ולא אתי' לאחוויי וללשון רבותי קשיא לי הא דאמר אביי רבי ור\"ש בן אלעזר כו' ואי טעמא דרבנן משום דחייכי עלה הוא מאי שנא רבי דקחשיב ליה רבנן נמי לאו לאחוויי חיישי ויש לתרץ דרבנן מיסר קאסרי מכל מקום ורבי מתיר דקסבר לא חייכו עלה ולא שלפא להו ומיהו ה\"ל למיחש דלמא שלפא לה משום אחוויי אלא לא שלפא משום דאי מחוי לה גנותא היא:"
+  },
+  "Tosafot on Shabbat 65a:14:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:14:5",
+      "Rashi on Shabbat 65a:14:6",
+      "Rashi on Shabbat 65a:14:1",
+      "Rashi on Shabbat 65a:14:2",
+      "Rashi on Shabbat 65a:14:3",
+      "Rashi on Shabbat 65a:14:4",
+      "Tosafot on Shabbat 64b:6:1",
+      "Maharsha: Chidushei Halachot on Shabbat 65a:3"
+    ],
+    "generatedAt": "2026-11-14T07:13:56.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 65a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליעבד לה פולסא</strong> - פ\"ה חתיכה של עץ ויצור עליה צורה ולפירושו ניחא מה שמקשים דבעלמא אמר מאי אסימון פולסא ופ\"ה התם היינו דבר שאין עליו צורה וקשה דהכא משמע דפולסא הוא דבר שיש עליו צורה ולפירש\"י ניחא דפירש ליעבד פולסא בלא צורה ויצור עליו הצורה אבל לפיר\"ת קשה דפירש אסימון הוי של מתכת ויש עליו צורה אבל אינה חשובה ואינה יוצאה אם כן הכא מאי איריא סלע אפילו אסימון ושמא י\"ל דצורת סלע צריך:"
+  },
+  "Tosafot on Shabbat 65a:15:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 65a:15:3",
+      "Rashi on Shabbat 65a:15:4",
+      "Tosafot on Shabbat 65a:14:1"
+    ],
+    "generatedAt": "2026-11-14T07:17:32.687Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 65a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפצי ביומי תשרי</strong> - פ\"ה מפני הטיט שלא יהיה חציצה ונותנות המפץ תחת רגליהן ורבינו תם פירש שהיו נותנות מפצי זקופות שלא יראו אותן העולם ויתביישו מהם ולא יטבלו היטב:"
+  }
+}

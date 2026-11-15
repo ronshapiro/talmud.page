@@ -1,0 +1,599 @@
+{
+  "Rashi on Shabbat 73b:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Shabbat 73b:10",
+      "Sefer HeArukh, Letter Zayin 159"
+    ],
+    "generatedAt": "2026-11-14T17:15:37.543Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג היינו זורה היינו בורר היינו מרקד</strong> - היינו כמו הי ניהו כלומר דמפליג להו תנא דמתניתין לתלת והלא כולן מלאכה אחת הן דמפריש אוכל מן הפסולת:"
+  },
+  "Rashi on Shabbat 73b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:37:02.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנינא למה לי</strong> - ליתני אבות מלאכות הזורע והחורש כו' ואנא חזינא אי ארבעין נינהו:"
+  },
+  "Rashi on Shabbat 73b:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:1:2",
+      "Rashi on Shabbat 73b:1:1"
+    ],
+    "generatedAt": "2026-11-14T16:37:49.153Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם עשאן כו'</strong> - ובא להודיעך שאם נתעלמו כל הלכות שבת ממנו חייב כמה חטאות עליו:"
+  },
+  "Rashi on Shabbat 73b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:2:2"
+    ],
+    "generatedAt": "2026-11-14T16:38:23.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכרב כרבי</strong> - חורשין:"
+  },
+  "Rashi on Shabbat 73b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:2:1"
+    ],
+    "generatedAt": "2026-11-14T16:38:55.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בא\"י</strong> - קשה היא ואין יכול לכסות בלא חרישה ואשמעינן דהא נמי חרישה היא:"
+  },
+  "Rashi on Shabbat 73b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:39:55.350Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן מלאכה אחת הן</strong> - דזומר נמי לצמוחי אילנא הוא ונפקא מינה דאי עבד ליה כולן בהדי זורע לא מיחייב אלא חדא דהעושה מלאכות הרבה כו' זורע אב מלאכה ונוטע נמי אב מלאכה הוא דהיינו זורע אלא שזה בזרעים וזה באילנות וכן מבריך ומרכיב אבל זומר תולדה:"
+  },
+  "Rashi on Shabbat 73b:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:3:1",
+      "Rashi on Shabbat 73b:3:3"
+    ],
+    "generatedAt": "2026-11-14T16:40:56.246Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זומר חייב</strong> - משום תולדת נוטע דלצמוחי עביד:"
+  },
+  "Rashi on Shabbat 73b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:3:1",
+      "Rashi on Shabbat 73b:3:2",
+      "Rashi on Shabbat 73b:3:3",
+      "Rashi on Shabbat 73b:3:4"
+    ],
+    "generatedAt": "2026-11-14T16:41:50.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונוטע</strong> - גופיה וכן מבריך ומרכיב:"
+  },
+  "Rashi on Shabbat 73b:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:3:1",
+      "Rashi on Shabbat 73b:3:2",
+      "Rashi on Shabbat 73b:3:3",
+      "Rashi on Shabbat 73b:3:5"
+    ],
+    "generatedAt": "2026-11-14T16:42:32.558Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב משום זורע</strong> - כלומר אינהו נמי זורע הן זה אב בזרעים וזה אב באילנות:"
+  },
+  "Rashi on Shabbat 73b:3:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:43:02.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום נוטע לא</strong> - אמבריך ואמרכיב קאי:"
+  },
+  "Rashi on Shabbat 73b:3:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:3:4",
+      "Rashi on Shabbat 73b:3:5"
+    ],
+    "generatedAt": "2026-11-14T16:43:43.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא אף משום זורע</strong> - דהך זריעה באילנות ואי עביד ליה בהדי זורע מיחייב חדא ותו לא:"
+  },
+  "Rashi on Shabbat 73b:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:4:2",
+      "Rashi on Shabbat 73b:4:3",
+      "Rashi on Shabbat 73b:4:4"
+    ],
+    "generatedAt": "2026-11-14T16:46:38.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זומר</strong> - להצמיח הגפן:"
+  },
+  "Rashi on Shabbat 73b:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:4:1",
+      "Rashi on Shabbat 73b:4:3",
+      "Rashi on Shabbat 73b:4:4",
+      "Tosafot on Shabbat 73b:4:1",
+      "Steinsaltz on Shabbat 73b:4",
+      "Versions on Shabbat 73b:4"
+    ],
+    "generatedAt": "2026-11-14T16:47:51.020Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך לעצים</strong> - להסקה משום דצריך להם הויא תולדה דקוצר דצריך נמי לקצור:"
+  },
+  "Rashi on Shabbat 73b:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:4:2",
+      "Rashi on Shabbat 73b:4:3",
+      "Rashi on Shabbat 73b:4:4"
+    ],
+    "generatedAt": "2026-11-14T16:48:34.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקטל אספסתא</strong> - שחת וקוצרין אותו ג' פעמים בחדש וחוזר וצומח:"
+  },
+  "Rashi on Shabbat 73b:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:4:1",
+      "Rashi on Shabbat 73b:4:2",
+      "Rashi on Shabbat 73b:4:3",
+      "Shabbat 73b:4"
+    ],
+    "generatedAt": "2026-11-14T16:49:22.315Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקניב סילקא</strong> - חותך תרדין מן המחובר וחוזרין וגדלין:"
+  },
+  "Rashi on Shabbat 73b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:5:1",
+      "Rashi on Shabbat 73b:5:2",
+      "Rashi on Shabbat 73b:5:3",
+      "Rashi on Shabbat 73b:5:4",
+      "Rashi on Shabbat 73a:1:1"
+    ],
+    "generatedAt": "2026-11-14T16:52:48.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החורץ</strong> - עושה חריצין בקרקע:"
+  },
+  "Rashi on Shabbat 73b:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:5:1",
+      "Rashi on Shabbat 73b:5:2"
+    ],
+    "generatedAt": "2026-11-14T16:53:24.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מלאכה אחת הן</strong> - אינו חייב אלא אחת דכולהו לרפויי ארעא עבידי:"
+  },
+  "Rashi on Shabbat 73b:5:3": {
+    "dependsOn": [
+      "Jastrow, גַּבְשׁוּשִׁית 1"
+    ],
+    "generatedAt": "2026-11-14T16:53:58.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גבשושית</strong> - תל קטן:"
+  },
+  "Rashi on Shabbat 73b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:54:17.274Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבית</strong> - שייך בנין שמתכוין להשוות קרקעיתו:"
+  },
+  "Rashi on Shabbat 73b:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:5:1",
+      "Rashi on Shabbat 73b:5:2",
+      "Rashi on Shabbat 73b:5:3",
+      "Rashi on Shabbat 73b:5:4",
+      "Rashi on Shabbat 73b:5:5",
+      "Rashi on Shabbat 73b:5:6"
+    ],
+    "generatedAt": "2026-11-14T16:54:55.939Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום חורש</strong> - דמרפי ארעא:"
+  },
+  "Rashi on Shabbat 73b:5:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:5:1",
+      "Rashi on Shabbat 73b:5:2",
+      "Rashi on Shabbat 73b:5:3",
+      "Rashi on Shabbat 73b:5:4",
+      "Rashi on Shabbat 73b:5:5"
+    ],
+    "generatedAt": "2026-11-14T16:55:27.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גומא וטממה</strong> - בעפר היינו חורש שהעפר שמילאה בו הוי רפוי וטוב לזריעה והשוה לקרקע להיות נזרע עם השדה:"
+  },
+  "Rashi on Shabbat 73b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:55:45.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לעפרה</strong> - לכסות צואה:"
+  },
+  "Rashi on Shabbat 73b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:6:1",
+      "Rashi on Shabbat 73b:6:3",
+      "Rashi on Shabbat 73b:6:4",
+      "Rashi on Shabbat 73b:6:5"
+    ],
+    "generatedAt": "2026-11-14T16:56:25.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור עליה</strong> - ואין כאן משום בנין בבית דקלקול הוא ולזריעה נמי לא חזיא אבל אם היה צריך לה חייב משום בונה:"
+  },
+  "Rashi on Shabbat 73b:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:6:2",
+      "Rashi on Shabbat 73b:6:3",
+      "Rashi on Shabbat 73b:6:4",
+      "Rashi on Shabbat 73b:1:1",
+      "Rashi on Shabbat 73b:5:1"
+    ],
+    "generatedAt": "2026-11-14T16:57:24.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבי יהודה</strong> - בפרק המצניע <span class=\"parenthesized\">(לקמן שבת צג:)</span> גבי מוציא את המת במטה:"
+  },
+  "Rashi on Shabbat 73b:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:58:31.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקן</strong> - כמו מוציא את המת לקוברו אינו צריך לגופה דהוצאה ולא למת אלא לפנות ביתו והוצאה הצריכה לגופה כגון שהוא צריך לחפץ זה במקום אחר:"
+  },
+  "Rashi on Shabbat 73b:6:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:6:1",
+      "Rashi on Shabbat 73b:6:2",
+      "Rashi on Shabbat 73b:6:3",
+      "Rashi on Shabbat 73b:6:4",
+      "Steinsaltz on Shabbat 73b:6",
+      "Shabbat 105b:8"
+    ],
+    "generatedAt": "2026-11-14T16:59:38.557Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקלקל הוא</strong> - את ביתו:"
+  },
+  "Rashi on Shabbat 73b:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:1",
+      "Rashi on Shabbat 73b:7:2",
+      "Rashi on Shabbat 73b:7:3",
+      "Rashi on Shabbat 73b:6:1",
+      "Rashi on Shabbat 73b:6:2",
+      "Rashi on Shabbat 73a:1:1",
+      "Rashi on Shabbat 73a:2:1"
+    ],
+    "generatedAt": "2026-11-14T17:00:39.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גודר</strong> - בתמרים:"
+  },
+  "Rashi on Shabbat 73b:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:1",
+      "Rashi on Shabbat 73b:7:3"
+    ],
+    "generatedAt": "2026-11-14T17:01:34.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומוסק</strong> - בזיתים:"
+  },
+  "Rashi on Shabbat 73b:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:1",
+      "Rashi on Shabbat 73b:7:2",
+      "Rashi on Shabbat 73b:7:3",
+      "Rashi on Shabbat 73b:7:4"
+    ],
+    "generatedAt": "2026-11-14T17:02:16.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אורה</strong> - בתאנים:"
+  },
+  "Rashi on Shabbat 73b:7:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:3",
+      "Rashi on Shabbat 73b:7:4",
+      "Rashi on Shabbat 73b:7:5"
+    ],
+    "generatedAt": "2026-11-14T17:03:09.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשדא פיסא לדיקלא</strong> - זרק פיסת רגבים לדקל:"
+  },
+  "Rashi on Shabbat 73b:7:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:4",
+      "Rashi on Shabbat 73b:7:5",
+      "Rashi on Shabbat 73b:7:6",
+      "Steinsaltz on Shabbat 73b:7",
+      "Rashi on Shabbat 73b:7:1",
+      "Rashi on Shabbat 73b:7:2",
+      "Rashi on Shabbat 73b:7:3",
+      "Rashi on Shabbat 73b:1:1",
+      "Rashi on Shabbat 73b:1:2"
+    ],
+    "generatedAt": "2026-11-14T17:04:12.858Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתר תמרי</strong> - השיר התמרים:"
+  },
+  "Rashi on Shabbat 73b:7:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:5",
+      "Rashi on Shabbat 73b:7:6",
+      "Rashi on Shabbat 73b:7:7"
+    ],
+    "generatedAt": "2026-11-14T17:04:43.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולש</strong> - תולדה דקוצר:"
+  },
+  "Rashi on Shabbat 73b:7:7": {
+    "dependsOn": [
+      "[",
+      "Chokhmat Shlomo on Shabbat 73b:2",
+      "Rashi on Shabbat 73b:7:6",
+      "Rashi on Shabbat 73b:7:8"
+    ],
+    "generatedAt": "2026-11-14T17:06:09.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפרק</strong> - תולדה דדש שמפרק תבואה משבליה לשון פורק מן החמור דישקארגיי\"ר בלע\"ז רבינו לוי וגם בתשובת רבינו משולם הגאון מצאתי כן ואף זה מפרק התמרים מן המכבדות:"
+  },
+  "Rashi on Shabbat 73b:7:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T17:06:44.991Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:7:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין דרך תלישה ופריקה בכך</strong> - על ידי זריקה אלא או ביד או בכלי ותולש כלאחר יד הוא ופטור:"
+  },
+  "Rashi on Shabbat 73b:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:8:2"
+    ],
+    "generatedAt": "2026-11-14T17:11:46.195Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכניף מלחא ממלחתא</strong> - שצבר מלח ממשרפות מים דמתרגמינן חריצי ימא <span class=\"parenthesized\">(יהושע יא)</span> שממשיך לתוכו מים מן הים והחמה שורפתן והן נעשין מלח ואותו חריץ קרי מילחתא:"
+  },
+  "Rashi on Shabbat 73b:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:8:1"
+    ],
+    "generatedAt": "2026-11-14T17:12:18.868Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום מעמר</strong> - שאף הוא כמאסף בשבלין הוא:"
+  },
+  "Rashi on Shabbat 73b:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:9:1",
+      "Rashi on Shabbat 73b:9:2",
+      "Steinsaltz on Shabbat 73b:9"
+    ],
+    "generatedAt": "2026-11-14T17:12:54.544Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המנפץ</strong> - פשתן בגבעולין:"
+  },
+  "Rashi on Shabbat 73b:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:9:1",
+      "Jastrow, נָפַט 1",
+      "Steinsaltz on Shabbat 73b:9"
+    ],
+    "generatedAt": "2026-11-14T17:14:05.467Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמנפט</strong> - צמר גפן בקשת כדרך האומנין וצמר גפן גידולי קרקע הוא להכי קרי ניפוט דיליה תולדה דדש שמפרק גרעינין ממנו ולא קרי ליה תולדת מנפץ דצמר:"
+  },
+  "Tosafot on Shabbat 73b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:39:26.061Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכדי מכרב כרבי ברישא והדר כו'</strong> - לא שייך למידק הכי בהא דקתני המכבה ברישא והדר המבעיר דהכא כל סידורא דפת נקט כסדר לבד מחרישה:"
+  },
+  "Tosafot on Shabbat 73b:3:1": {
+    "dependsOn": [
+      "Rabbeinu Chananel on Shabbat 73b:3",
+      "Rabbeinu Chananel on Shabbat 73b:2",
+      "Rabbeinu Chananel on Shabbat 73b:4",
+      "Rabbeinu Chananel on Shabbat 138a:2",
+      "Chokhmat Shlomo on Shabbat 73b:5"
+    ],
+    "generatedAt": "2026-11-14T16:45:51.938Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום זורע</strong> - אין להוכיח מכאן דצריך להתרות אתולדה משום אב דהא לא קאמר שצריך להתרותו משום זורע אלא דאם התרה בו משום זורע דחייב אבל בריש פרק תולין <span class=\"parenthesized\">(לקמן שבת קלח.)</span> משמע קצת דצריך להתרות אתולדה משום אב דקאמר משמר משום מאי מתרינן ביה <span class=\"parenthesized\">(שיהא חייב)</span> רבה אמר משום בורר רבי זירא אמר משום מרקד וגם זה יש לדחות דהכי פירושו משום מאי מתרינן ביה שיהא חייב רבה אמר משום בורר אבל אם התרו בו משום מרקד פטור כיון דמתרהו משום דבר שאינו דומה לו הוא סבר שהוא מלעיג בו ופטור אבל אם התרה בו סתם אל תשמר חייב ונראה שגם ר\"ח רוצה לפרש כן ועוד ראיה דבריש בבא קמא <span class=\"parenthesized\">(דף ב.)</span> קאמר ולר' אליעזר דמחייב אתולדה במקום אב אמאי קרי ליה אב ואמאי קרי ליה תולדה ולא משני דלהכי קרי ליה אב דצריך להתרות אתולדה [משום] אב:"
+  },
+  "Tosafot on Shabbat 73b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:50:25.994Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זומר וצריך לעצים חייב שתים</strong> - והא דאמר בפ' זה בורר <span class=\"parenthesized\">(סנהדרין דף כו.)</span> תו חזיוה לההוא גברא דהוה קא כסח אמר להן כהן וזמיר אמרו ליה יכול לומר לעקל בית הבד אני צריך אף על גב דהכא אמר חייב משום נוטע התם מיירי בכה\"ג שאין האילן מיתקן בכך אלא מתקלקל:"
+  },
+  "Tosafot on Shabbat 73b:4:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 73b:4:1"
+    ],
+    "generatedAt": "2026-11-14T16:51:27.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך לעצים</strong> - נראה דאפילו לר' יהודה דמחייב מלאכה שאינה צריכה לגופה בעינן צריך לעצים דלא מיקרי בעצים קוצר אלא בענין זה מידי דהוה אקורע על מנת לתפור ומוחק על מנת לכתוב וכדאמר רבי יוחנן לקמן בפ' חבית <span class=\"parenthesized\">(שבת דף קמה.)</span> אחד כבשים ואחד שלקות שסחטן לגופן מותר למימיהן חייב חטאת ואמאי שרי לגופן ליהוי כמלאכה שאינה צריכה לגופה אלא טעמא לפי שאין דרך דישה בכך:"
+  },
+  "Tosafot on Shabbat 73b:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73b:7:7",
+      "Rashi on Shabbat 73b:7:8"
+    ],
+    "generatedAt": "2026-11-14T17:07:38.119Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחת משום מפרק</strong> - אין נראה לר\"י כמו שמפרש רש\"י שמפרק האילן ממשאו מן הפירות שעליו אלא כמו שפירש רבינו שמואל שיש על התמרים קליפה העליונה וכשהוא מכה בתמרים מפרק את הקליפה מן התמרים והוי כמו דש שמפרק את התבואה מן השבולת:"
+  },
+  "Tosafot on Shabbat 73b:7:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 73b:7:1",
+      "Tosafot on Shabbat 73b:2:1",
+      "Tosafot on Shabbat 73b:3:1",
+      "Tosafot on Shabbat 73b:4:1",
+      "Tosafot on Shabbat 2a:1:1",
+      "Tosafot on Shabbat 95a:3:1"
+    ],
+    "generatedAt": "2026-11-14T17:10:50.416Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפרק</strong> - פירש\"י דהוה תולדה דדש וקשה לר\"ת דבשילהי המצניע <span class=\"parenthesized\">(לקמן שבת צה.)</span> אמר דחולב חייב משום מפרק ואי הוה תולדה דדש הא אמר לקמן גבי הפוצע חלזון דלרבנן אין דישה אלא בגידולי קרקע ואין לומר דדוקא חלזון שהוא דג פטרי רבנן דלא הוי גידולי קרקע אבל בחולב מחייבי דבהמה חשיבא גידולי קרקע כדמוכח בריש בכל מערבין <span class=\"parenthesized\">(עירובין דף כז:)</span> דהא [ע\"כ טעמא דרבנן משום] דילפינן להו מסממנין שבמשכן דאין דישה אלא בגידולי קרקע לגבי דבר הגדל ממש מן הקרקע לא חשיבא בהמה גידולי קרקע כדאמרינן בהשוכר את הפועלים <span class=\"parenthesized\">(ב\"מ פט.)</span> מה דיש מיוחד שהוא גידולי קרקע ופועל אוכל בו אף כל כו' יצא החולב והמגבן כו' ודוחק לומר דברייתא דהמצניע אתיא כר\"י דפליג לקמן אדרבנן ונראה לר\"ת דמפרק חייב משום ממחק דכשחולב ממחק את הדד ומחליקו ואין נראה לר\"י דבפרק חבית <span class=\"parenthesized\">(לקמן שבת קמד:)</span> אמרינן חולב אדם לתוך הקדרה אבל לא לתוך הקערה ולר\"ת מה לי לתוך הקדרה מה לי לתוך הקערה ולפירוש <span class=\"rashi-quotation\">הקונטרס</span> א\"ש דמעיקרא כשהיה בדדין חשיב אוכל וכשחולב לתוך הקדרה <span class=\"parenthesized\">(דהשתא)</span> נמי הוי אוכל ולא דמי לדש שנשתנה ונראה דלפירוש <span class=\"rashi-quotation\">הקונטרס</span> הלכה כרבי יהודה דהאמר בפרק אע\"פ <span class=\"parenthesized\">(כתיבות ס.)</span> אמר רבי מרינוס גונח יונק חלב בשבת מ\"ט מפרק כלאחר יד הוא ובמקום צער לא גזרו רבנן ופסיק התם רב יוסף הלכתא כרבי מרינוס ואין נראה לומר דאף לרבנן אסור מדרבנן דמיחזי כמפרק ואף על גב דלא אסירא אלא מדרבנן לא שרי אלא משום דאיכא תרתי כלאחר יד ובמקום צער:"
+  }
+}

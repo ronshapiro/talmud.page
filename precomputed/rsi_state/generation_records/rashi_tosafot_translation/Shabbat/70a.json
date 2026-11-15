@@ -1,0 +1,347 @@
+{
+  "Rashi on Shabbat 70a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:14:00.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא רישא</strong> - דשגגת שבת וזדון מלאכות לא מיחייב אלא אחת לכל שבת וסיפא דזדון שבת ושגגת מלאכות חייב על כל מלאכה ומלאכה:"
+  },
+  "Rashi on Shabbat 70a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:14:20.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן מידיעת שבת הוא פורש</strong> - רישא כי אמרו ליה שבת הוא פורש מן המלאכה ומכיר שחטא ועל כך הוא מביא קרבן הלכך שגגת שבת היא ועל השבת הוא צריך להביא:"
+  },
+  "Rashi on Shabbat 70a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:1:2",
+      "Rashi on Shabbat 70a:1:1",
+      "Rashi on Shabbat 70a:1:4"
+    ],
+    "generatedAt": "2026-11-14T13:15:37.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן מידיעת מלאכות הוא פורש</strong> - כי אמרי ליה שבת הוא לא פריש דהא נמי ידע וכי אמרי ליה מלאכה חשובה היא זו פריש הלכך על מנין המלאכות יביא:"
+  },
+  "Rashi on Shabbat 70a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:1:1",
+      "Rashi on Shabbat 70a:1:2",
+      "Rashi on Shabbat 70a:1:3"
+    ],
+    "generatedAt": "2026-11-14T13:16:22.417Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלום פריש משבת אלא משום</strong> - דכי אודעיה שבת הוא הכיר שחטא על המלאכות וכלום פריש ממלאכה כלומר ע\"י ידיעת המלאכות אלא משום שבת דכי אמרו ליה מלאכות הן הכיר שחילל שבת:"
+  },
+  "Rashi on Shabbat 70a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:16:41.588Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חילוק מלאכות</strong> - שגופי מלאכות מתחלקים לחטאות אע\"פ שבהעלם אחד:"
+  },
+  "Rashi on Shabbat 70a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:2:1",
+      "Rashi on Shabbat 70a:2:2",
+      "Rashi on Shabbat 70a:2:3"
+    ],
+    "generatedAt": "2026-11-14T13:17:24.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מות יומת</strong> - מיתות הרבה:"
+  },
+  "Rashi on Shabbat 70a:2:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:2:1",
+      "Rashi on Shabbat 70a:2:2"
+    ],
+    "generatedAt": "2026-11-14T13:17:52.381Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בממון</strong> - לאפושי קרבנות:"
+  },
+  "Rashi on Shabbat 70a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:19:29.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה ת\"ל</strong> - והלא כבר נאמר לא תעשה כל מלאכה:"
+  },
+  "Rashi on Shabbat 70a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:3:1",
+      "Rashi on Shabbat 97b:2:1",
+      "Rashi on Shabbat 70a:1:1",
+      "Rashi on Shabbat 70a:2:1"
+    ],
+    "generatedAt": "2026-11-14T13:21:19.290Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברים</strong> - משמע תרי ה' לרבות חד הרי שלשה אלה בגמטריא ל\"ו הרי ל\"ט:"
+  },
+  "Rashi on Shabbat 70a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:4:2",
+      "Rashi on Shabbat 70a:4:3",
+      "Rashi on Shabbat 70a:4:1"
+    ],
+    "generatedAt": "2026-11-14T13:22:04.417Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל בחריש ובקציר תשבות</strong> - כלומר בלאו לא תבערו הוה לן למילף מהאי אם לא שיש להשיב:"
+  },
+  "Rashi on Shabbat 70a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:22:34.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדיין אני אומר על חריש וקציר חייב שתים</strong> - אם עשאן בהעלם אחד שהרי הוציאם מן הכלל לחלקן לשתים ומשמע אזהרה לקציר לעצמה ואזהרה לחריש לעצמה:"
+  },
+  "Rashi on Shabbat 70a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:4:1",
+      "Rashi on Shabbat 70a:4:2",
+      "Rashi on Shabbat 70a:4:3",
+      "Rashi on Shabbat 70a:4:4"
+    ],
+    "generatedAt": "2026-11-14T13:23:28.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל כולן אחת</strong> - דבחדא מלאכה כיילינהו וחד לאו ובדבר שהיה בכלל ויצא מן הכלל ללמד לא ללמד כו' לא דיינינן ליה דהוי ליה כלל בלא תעשה ופרט בעשה ואין דנין אותו בכלל ופרט אי נמי הוי חריש וקציר שני כתובין הבאין כאחד ואין מלמדין דהוה ליה למיכתב חד:"
+  },
+  "Rashi on Shabbat 70a:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:24:11.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל לא תבערו כו'</strong> - וחריש וקציר לדרשה אחרינא אי כר' עקיבא דדריש ליה בעלמא <span class=\"parenthesized\">(ר\"ה דף ט.)</span> לענין תוספת שביעית אי כרבי ישמעאל לענין שבת מה חריש רשות אף קציר רשות ללמד על קציר העומר שדוחה שבת:"
+  },
+  "Rashi on Shabbat 70a:4:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:4:1",
+      "Rashi on Shabbat 70a:4:2",
+      "Rashi on Shabbat 70a:4:3",
+      "Rashi on Shabbat 70a:4:4",
+      "Rashi on Shabbat 70a:4:5",
+      "Rashi on Shabbat 70a:4:6"
+    ],
+    "generatedAt": "2026-11-14T13:24:46.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכלל היתה</strong> - דלא תעשה כל מלאכה:"
+  },
+  "Rashi on Shabbat 70a:4:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:4:6"
+    ],
+    "generatedAt": "2026-11-14T13:25:22.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להקיש אליה</strong> - כל שאר המלאכות שנכללו עמה בכלל שזו מדה בתורה כל דבר שהיה בכלל ויצא מן הכלל ללמד לא ללמד על עצמו יצא כו':"
+  },
+  "Rashi on Shabbat 70a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:5:2",
+      "Rashi on Shabbat 69b:3:4"
+    ],
+    "generatedAt": "2026-11-14T13:30:50.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ללאו</strong> - שאין חייבין עליה כרת וסקילה כשאר מלאכות אלא מה שאמור בה:"
+  },
+  "Rashi on Shabbat 70a:5:2": {
+    "dependsOn": [
+      "Shabbat 70a:5",
+      "Rashi on Shabbat 70a:5:1"
+    ],
+    "generatedAt": "2026-11-14T13:31:55.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחלק</strong> - כדאמרן מה הבערה מיוחדת:"
+  },
+  "Rashi on Shabbat 70a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:6:1",
+      "Rashi on Shabbat 70a:4:1",
+      "Rashi on Shabbat 70a:4:2",
+      "Rashi on Shabbat 70a:4:3"
+    ],
+    "generatedAt": "2026-11-14T13:34:08.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועשה מאחת מהנה</strong> - האמור לענין חטאות הוה ליה למכתב ועשה אחת ולישתוק אייתר ליה שאר' מ\"ם דמאחת וכל תיבת מהנה לדרשה ודרוש הכי פעמים שכל מעשה עבירותיו חשוב אחת ופעמים שהוא קרוי הנה לשון רבים:"
+  },
+  "Rashi on Shabbat 70a:7:1": {
+    "dependsOn": [
+      "Shabbat 70a:7",
+      "Rashi on Shabbat 70a:7:1",
+      "Rashi on Shabbat 70a:7:2",
+      "Rashi on Shabbat 70a:6:1",
+      "Rashi on Shabbat 70a:4:1",
+      "Rashi on Shabbat 70a:5:1"
+    ],
+    "generatedAt": "2026-11-14T13:38:12.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וא\"ר יוסי בר' חנינא מ\"ט דר' יוסי</strong> - כלומר מאי דריש ביה דאכתי מ' דמהנה ומ' דמאחת למאי אתא:"
+  },
+  "Rashi on Shabbat 70a:7:2": {
+    "dependsOn": [
+      "Shabbat 70a:7",
+      "Rashi on Shabbat 70a:6:1",
+      "Rashi on Shabbat 70a:7:1",
+      "Rashi on Shabbat 70a:7:2",
+      "Chokhmat Shlomo on Shabbat 70a:1"
+    ],
+    "generatedAt": "2026-11-14T13:39:52.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 70a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחת מאחת</strong> - אחת הוה ליה למכתב וכתיב מאחת וכן נמי הנה ה\"ל למכתב <span class=\"parenthesized\">(הנה)</span> [למדרש פעמים שהוא הנה] וכתב מהנה ודרוש אחת והנה בלא מ\"ם הכי פעמים אחת שהוא הנה שבת [אחת] לבדו הוא מחלל ויש כאן חטאות הרבה דאזלי בתר מלאכות ופעמים הנה שהיא אחת מלאכות הרבה עשה ואינו חייב אלא אחת דבהנך תרי גווני איכא למשמע ועשה אחת וחייב הנה ואיכא למימר נמי הכי ועשה אחת הנה עשייתו הוי אחת אע\"פ שהן הנה [וחייב א'] ומ\"ם יתירה [דרוש הכי] לרבות שהכותב שם משמעון דאע\"ג שנתכוון לעשות תיבה גדולה הואיל ושתי אותיות הראשונות שם במקום אחר הן חייב והיינו מאחת מקצת המלאכה ולא כולה יביא חטאת:"
+  },
+  "Tosafot on Shabbat 70a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:18:40.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם אינו ענין למזיד דהא כתיב כו'</strong> - ואם תאמר ולימא אם אינו ענין למזיד משום דאטו בתרי קטלא קטלת ליה וי\"ל דאי לאו קרא אחרינא דמייתי הוה מוקמינן ליה להאי קרא במזיד ומות יומת דברה תורה כלשון בני אדם אבל השתא דלא איצטריך למזיד מוקמי ליה ע\"כ בשוגג ולחייב קרבן על כל א':"
+  },
+  "Tosafot on Shabbat 70a:4:1": {
+    "dependsOn": [
+      "Shabbat 70a:4",
+      "Maharshal on Shabbat 70a:6",
+      "Maharsha on Shabbat 70a:1",
+      "Chokhmat Shlomo on Shabbat 70a:1"
+    ],
+    "generatedAt": "2026-11-14T13:27:34.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול שאם עשאן כולם בהעלם אחד כו'</strong> - תימה א\"כ מניינא דקרא דברים הדברים אלה הדברים למה לי כיון דלא אתא לחלק ויש לומר דצריך למניינא לפי שיש מלאכות שאינן חשובות ואיצטריך מניינא לאשמעינן דכולהו הויין מלאכות להתחייב עליהן ומיהו ממתניתין דמ' מלאכות דייק שפיר דבהעלם אחד חייב על כל אחת דלא הוה צריך למניינא כיון דמני כולהו בהדיא ומיהו קשה לר\"י דלקמן בהזורק <span class=\"parenthesized\">(שבת דף צז:)</span> משמע דהאי מניינא אתיא לחלק דאמר התם למימרא דמחייב רבי אתולדה במקום אב והתניא רבי אומר דברים הדברים אלה הדברים כו' ו<span class=\"rashi-quotation\">פי' בקונטרס</span> התם דהכי פריך הואיל ומניינא לא אתא אלא לחילוק חטאות ואי ס\"ד דמחייב אתולדה במקום אב טובא ה\"ל למיתני ולפי מה שפירשנו דמניינא לא אתא אלא לאשמעינן דכולהו חשובות מלאכות להתחייב עליהם לא הוה פריך מידי ונראה לר\"י דגרס הכא כמו במכילתא דתניא התם רבי נתן אומר לא תבערו אש למה נאמר לפי שנאמר ויקהל משה שומע אני שלא יהא חייב עד שיעבור ל\"ט מלאכות תלמוד לומר בחריש ובקציר וכו' והשתא אי לאו לא תבערו ה\"א דמניינא אתא למימר שאינו חייב על אחת או שתים עד שיעבור כל ל\"ט וכיון דכתיב לא תבערו דילפינן מיניה דחייב על כל אחת בפני עצמה אם כן מניינא אתא למימר דאל\"ט דווקא הוא דחייב על כל אחת ואחת אבל אתולדה במקום אב לא והשתא מוכח שפיר בהזורק דרבי לא מחייב אתולדה במקום אב ואתי נמי שפיר להאי גירסא דקתני לפי שנאמר דברים הדברים וגו' יכול כו' דמשמע דמתוך קרא דהדברים הוא דמשמע ליה דאינו חייב עד שיעבור כולן וכן בפ\"ק דפסחים <span class=\"parenthesized\">(דף ה:)</span> לפי שנאמר לא יראה לך יכול יטמין ויקבל פקדונות מן הנכרים אבל לגירסת הספרים מאי קאמר לפי שנאמר בלאו קרא נמי הוה אמרינן הכי כל כמה דלא נפקא לן חילוק מלאכות משום מקום:"
+  },
+  "Tosafot on Shabbat 70a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T13:27:58.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על חרישה וקצירה חייב שתים</strong> - וא\"ת מנא ליה דחייב שתים נימא דלא מיחייב אתרוייהו אלא אחת וי\"ל משום דכתיב בחריש ובקציר דמשמע תרי מילי מדלא כתב בחריש וקציר:"
+  },
+  "Tosafot on Shabbat 70a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:4:1",
+      "Rashi on Shabbat 70a:4:2",
+      "Rashi on Shabbat 70a:4:3",
+      "Rashi on Shabbat 70a:4:4",
+      "Rashi on Shabbat 70a:4:5",
+      "Rashi on Shabbat 70a:4:6",
+      "Tosafot on Shabbat 70a:2:1",
+      "Tosafot on Shabbat 70a:4:1",
+      "Tosafot on Shabbat 70a:4:2",
+      "Tosafot on Shabbat 70a:5:1"
+    ],
+    "generatedAt": "2026-11-14T13:29:47.582Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועל כולן אינו חייב אלא אחת</strong> - <span class=\"rashi-quotation\">פירש בקונט'</span> משום דהוי ליה כלל בלא תעשה ופרט בעשה וקשה דכללא נמי כתיב בעשה וביום השביעי תשבות ועוד דגבי כלל ופרט דוקא הוא דאמרינן בפרק קמא דמו\"ק <span class=\"parenthesized\">(דף ג.)</span> דלא דיינינן כשאין הכלל בלשון הפרט אבל לגבי דבר שהוא יצא מן הכלל לא אשכחן בשום מקום ועוד דבמועד קטן איכא למ\"ד דנין ונראה כפי' אחרון <span class=\"rashi-quotation\">שפי' בקונט'</span> דלא ילפינן מחריש וקציר משום דהוו שני כתובים הבאים כאחד וכה\"ג אמרינן בפרק ד' מיתות <span class=\"parenthesized\">(סגהדרין סז:)</span> אוב וידעוני בכלל כל המכשפים היו כו' ופריך וליהוי אוב וידעוני שני כתובים הבאין כא' ואם תאמר והיכי יליף מלא תבערו כל שכן דהוי ג' כתובים הבאין כאחד ואין מלמדין לכ\"ע וכ\"ת דחריש וקציר אתא לכדדרשינן בריש מו\"ק <span class=\"parenthesized\">(ד' ד.)</span> מה חריש רשות כו' אם כן היכי הוה בעי למילף מיניה מעיקרא הא לא אתי להכי ואומר ר\"י דלא הוו ג' כתובים מדלא כתבינהו או כולהו בלאו או כולהו בעשה ולהכי ילפינן מהבערה ומהשתא אייתר ליה חריש וקציר לכדדרשינן במו\"ק:"
+  },
+  "Tosafot on Shabbat 70a:5:1": {
+    "dependsOn": [
+      "Shabbat 20a:5",
+      "Tosafot on Sanhedrin 35b:8:1"
+    ],
+    "generatedAt": "2026-11-14T13:32:58.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבערה ללאו יצאת</strong> - וא\"ת והא איצטריך למיכתב לא תבערו משום סיפיה דקרא דכתיב בכל מושבותיכם דדרשינן מינה ביבמות <span class=\"parenthesized\">(דף ו:)</span> ובסנהדרין <span class=\"parenthesized\">(דף לה:)</span> דאין רציחה דוחה שבת וי\"ל דהוה מצי למיכתב בלישנא אחריתי ולא לכתוב לא תבערו ומשום דדרשינן בפ\"ק <span class=\"parenthesized\">(דף כ.)</span> אבל אתה מבעיר כו' לא הוה צריך למיכתב לא תבערו:"
+  },
+  "Tosafot on Shabbat 70a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 70a:6:1",
+      "Shabbat 70a:7",
+      "Rashi on Shabbat 70a:7:2"
+    ],
+    "generatedAt": "2026-11-14T13:35:46.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 70a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דר' יוסי</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> כלומר דאכתי מ\"ם דמאחת ומהנה למה לי ולשון מאי טעמא אינו משמע כן ונראה לר\"י דה\"פ מ\"ט דר' יוסי הא איצטריך קרא לשם משמעון ולאבות ולתולדות ומנא ליה דחייב על כל אחת ואחת ומפרש דמאחת שם משמעון מהנה לאבות ותולדות ומ\"מ מדסמכינהו להדדי דרשינן אחת שהיא הנה והנה שהיא אחת:"
+  }
+}

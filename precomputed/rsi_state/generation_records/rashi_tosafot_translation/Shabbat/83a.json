@@ -1,0 +1,378 @@
+{
+  "Rashi on Shabbat 83a:1:1": {
+    "dependsOn": [
+      "Shabbat 83a:1",
+      "Rashi on Shabbat 83a:1:1",
+      "Rashi on Shabbat 83a:1:2",
+      "Rashi on Shabbat 83a:1:3",
+      "Rashi on Shabbat 82b:4:1",
+      "Rashi on Shabbat 82b:4:2",
+      "Rashi on Shabbat 82a:9:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Maharsha: Chidushei Halachot on Shabbat 83a:3"
+    ],
+    "generatedAt": "2026-11-15T04:53:20.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' עקיבא למאי הלכתא איתקש לנדה למשא</strong> - לחודה לוקשה לנבלה:"
+  },
+  "Rashi on Shabbat 83a:1:2": {
+    "dependsOn": [
+      "Shabbat 83a:1"
+    ],
+    "generatedAt": "2026-11-15T04:54:11.973Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבה מתני לה</strong> - דאמר לעיל דר\"ע לאבן מסמא נמי אקשה לנדה ולא מצי לאקושה לנבלה:"
+  },
+  "Rashi on Shabbat 83a:1:3": {
+    "dependsOn": [
+      "Shabbat 83a:1",
+      "Rashi on Shabbat 83a:1:1",
+      "Rashi on Shabbat 83a:1:2",
+      "Rashi on Shabbat 83a:1:3",
+      "Chokhmat Shlomo on Shabbat 83a:4",
+      "Rashi on Shabbat 82b:3:1",
+      "Rashi on Shabbat 82b:4:1"
+    ],
+    "generatedAt": "2026-11-15T04:55:32.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובעי לה אליבא דר' עקיבא</strong> - מי מקיש נמי לענין נדה דאינה לאברים או לא:"
+  },
+  "Rashi on Shabbat 83a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:55:51.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניחא</strong> - דקתני לרבנן כשרץ אלמא לא מטמיא במשא:"
+  },
+  "Rashi on Shabbat 83a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:2:1",
+      "Rashi on Shabbat 83a:4:2"
+    ],
+    "generatedAt": "2026-11-15T04:57:48.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממתני'</strong> - דמסכת ע\"ז אבניו ועציו כו':"
+  },
+  "Rashi on Shabbat 83a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:3:2",
+      "Rashi on Shabbat 83a:3:3",
+      "Rashi on Shabbat 83a:3:4",
+      "Versions on Shabbat 83a:3",
+      "Maharam on Shabbat 83a:1",
+      "Tosafot on Shabbat 83a:2:1",
+      "Tosafot on Shabbat 83a:4:1",
+      "Rabbeinu Chananel on Shabbat 83a:4:1",
+      "Rabbeinu Chananel on Shabbat 83a:5:1",
+      "Steinsaltz on Shabbat 83a:3",
+      "Niddah 34a:5",
+      "Niddah 34a:6",
+      "Niddah 34a:7"
+    ],
+    "generatedAt": "2026-11-15T05:01:16.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג נכרי ונכרית וע\"ז ומשמשיה כו'</strong> - ול\"ג מגע נכרי ונכרית שגזרו חכמים עליהן טומאת זבין:"
+  },
+  "Rashi on Shabbat 83a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:3:1",
+      "Rashi on Shabbat 83a:3:3",
+      "Rashi on Shabbat 83a:3:4",
+      "Steinsaltz on Shabbat 83a:3",
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T05:03:56.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הן ולא היסטן</strong> - קס\"ד היסטן משמע שהוסטו דהיינו משא ולא כשאר היסיטות שבהש\"ס דמשמעו שהטמא הסיט האחרים:"
+  },
+  "Rashi on Shabbat 83a:3:3": {
+    "dependsOn": [
+      "Shabbat 83a:3",
+      "Rashi on Shabbat 83a:3:1",
+      "Rashi on Shabbat 83a:3:2",
+      "Rashi on Shabbat 83a:3:3",
+      "Rashi on Shabbat 83a:3:4",
+      "Chokhmat Shlomo on Shabbat 83a:10",
+      "Shabbat 83a:5",
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:2:1"
+    ],
+    "generatedAt": "2026-11-15T05:06:28.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לר\"א ניחא</strong> - דקתני ולא היסטן דמשמע דלא מטמא במשא ולקמן פריך מאי הן אי הן טמאין קאמר פשיטא השתא היסטן טמא הם מיבעיא הכי איבעי ליה למתני מגען ולא היסטן:"
+  },
+  "Rashi on Shabbat 83a:3:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:06:49.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכל דבריהם</strong> - אלמא מטמאו במשא דאי לא מטמאו אלא במגע מאי כזבין לימא כטמאי מתים:"
+  },
+  "Rashi on Shabbat 83a:4:1": {
+    "dependsOn": [
+      "Shabbat 83a:4"
+    ],
+    "generatedAt": "2026-11-15T05:07:18.041Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - הא משבשתא היא ובעי לתרוצי ורבה מתרץ לטעמיה ורבי אלעזר לטעמיה:"
+  },
+  "Rashi on Shabbat 83a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:4:3",
+      "Rashi on Shabbat 82b:1:1",
+      "Rashi on Shabbat 82b:2:1"
+    ],
+    "generatedAt": "2026-11-15T05:10:00.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואבן מסמא שלהן גרסי'</strong> - גבי נכרי ונכרית בין בתרצתא דרבה בין בדר' אלעזר והכי אמרינן בפרק בתרא דמסכת נדה <span class=\"parenthesized\">(דף סט:)</span> נכרי ונכרית מטמאין באבן מסמא:"
+  },
+  "Rashi on Shabbat 83a:4:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:4:2",
+      "Shabbat 83a:4"
+    ],
+    "generatedAt": "2026-11-15T05:11:14.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' אלעזר מתרץ לטעמיה כו' ע\"ז היא ולא היסטה</strong> - ולא משאה שאינה מטמאה במשא:"
+  },
+  "Rashi on Shabbat 83a:5:1": {
+    "dependsOn": [
+      "Shabbat 83a:5",
+      "Shabbat 83a:4"
+    ],
+    "generatedAt": "2026-11-15T05:14:34.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתקיף לה רב אשי מאי הן</strong> - אי רבה ורבי אלעזר היסט דברייתא לשון משא משמע להו שהסיטו אחרים דהיינו משא מאי הן והיסטן הן ולא היסטן דקתני בין לר' עקיבא בין לרבנן אי למימרא דהן עצמן טמאים פשיטא דאי טהורים הם היסט מנא להו הכי איבעיא לאיפלוגי ע\"ז אין היסטה טמא ר' עקיבא אומר היסטה טמא:"
+  },
+  "Rashi on Shabbat 83a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:3",
+      "Rashi on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:4:2",
+      "Rashi on Shabbat 83a:4:3"
+    ],
+    "generatedAt": "2026-11-15T05:15:37.012Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רב אשי הכי קאמר נכרי ונכרית בין הן שהסיטו אחרים</strong> - והיינו היסטן דקתני בה ככל היסט שבמשנה:"
+  },
+  "Rashi on Shabbat 83a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:2",
+      "Rashi on Shabbat 83a:5:4",
+      "Rashi on Shabbat 82b:1:1",
+      "Rashi on Shabbat 82b:8:1",
+      "Rashi on Shabbat 82b:10:1",
+      "Rashi on Shabbat 82b:11:1"
+    ],
+    "generatedAt": "2026-11-15T05:24:07.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין אחרים שהסיטו אותן</strong> - דהיינו משא וזהו הן דקתני בברייתא והכי משמע הן והיסטן דלישנא דברייתא משא שהזכירו חכמים נכרי ונכרית בין הן שהוסטו על ידי אדם בין היסטן כלומר מה שהסיטו הן טמאין דתורת זבין עליהם דזב שהוסט ע\"י אדם או הסיט את האדם ואת כל דבר טמאוהו דתנן <span class=\"parenthesized\">(זבין פ\"ה משנה ב)</span> כל הנישא על גבי זב טמא והיינו היסט וילפינן לה במסכת נדה <span class=\"parenthesized\">(ד' לג.)</span> מוכל הנוגע בכל אשר יהיה תחתיו ומוקמי' לקרא התם ע\"כ דה\"ק וכל הנוגע בכל אשר יהיה הזב תחתיו דהיינו נישא על גבי הזב:"
+  },
+  "Rashi on Shabbat 83a:5:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:2",
+      "Rashi on Shabbat 83a:5:3",
+      "Rashi on Shabbat 83a:5:5",
+      "Rashi on Shabbat 82b:2:1",
+      "Shabbat 82b:2"
+    ],
+    "generatedAt": "2026-11-15T05:25:13.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"ז שהסיטה את אחרים טהורים</strong> - דאיתקש לשרץ להכי שלא תטמא לא בהיסט ולא באבן מסמא ואליבא דרבה קמתרץ לה רב אשי:"
+  },
+  "Rashi on Shabbat 83a:5:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:2",
+      "Rashi on Shabbat 83a:5:3",
+      "Rashi on Shabbat 83a:5:4",
+      "Rashi on Shabbat 83a:5:5",
+      "Rashi on Shabbat 83a:5:6",
+      "Shabbat 82b:3"
+    ],
+    "generatedAt": "2026-11-15T05:26:10.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחרים שהסיטוה טמאים</strong> - דהיינו משא ומודו רבנן דמטמאה במשא דאיתקש לנדה:"
+  },
+  "Rashi on Shabbat 83a:5:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:2",
+      "Rashi on Shabbat 83a:5:3",
+      "Rashi on Shabbat 83a:5:4",
+      "Rashi on Shabbat 83a:5:5",
+      "Chokhmat Shlomo on Shabbat 83a:12",
+      "Chokhmat Shlomo on Shabbat 83a:13",
+      "Chokhmat Shlomo on Shabbat 83a:14",
+      "Shabbat 83a:5",
+      "Shabbat 83a:3",
+      "Shabbat 83a:4",
+      "Tosafot on Shabbat 83a:5:1",
+      "Rabbeinu Chananel on Shabbat 83a:5:1",
+      "Chidushei Halachot on Shabbat 83a:2",
+      "Steinsaltz on Shabbat 83a:5"
+    ],
+    "generatedAt": "2026-11-15T05:29:14.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:5:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי עקיבא אומר</strong> - ע\"ז נמי כנכרי ונכרית בין שהסיטה בין שהוסטה וה\"ה לאבן מסמא דאיתקש לנדה והכי תני רב אשי לברייתא אליבא דרבה נכרי ונכרית הן המשא שלהן והיסטן ע\"ז היא המשא שלה ולא היסטה משמשיה לא הן ולא היסטן ר' עקיבא אומר נכרי ונכרית ע\"ז הן והיסטן משמשיה לא הן ולא היסטן וממילא לר' אלעזר מתרץ לה רב אשי הכי נכרי ונכרית הן והיסטן ע\"ז ומשמשיה לא הן ולא היסטן ר' עקיבא אומר נכרי ונכרית הן והיסטן ע\"ז היא ולא היסטה דבמשא מטמיא ולא באבן מסמא דהוא דומיא דהיסט משמעין לא הן ולא היסטן כך נראה לי סוגיא זו ולא פירשו רבותינו כן והם פירשו מאי הן דאתקפתא דרב אשי אדרבי עקיבא קאי ולא קשיא ליה אלא דתני לה בלשון רבים והכי קשיא ליה כיון דר\"ע אע\"ז לחודה אמאי תנא הן והיסטן היא והיסטה איבעיא ליה למיתני ולא נהירא לי דקשיא לי טובא בגוה חדא דלא אתקפתא היא דכיון דאמרן דמתני' מחסרתא היא ואוסופי מוספינן עלה שפיר מיתני בה ל\"ע בין לרבה דקאמר ר\"ע אכולהו קאי וקאמר הן והיסטן לר' אלעזר נמי קאי אכולהו דהכי קאמר ר' עקיבא ע\"ז לענין היסט דהיינו משא כנכרי ונכרית וכולן הן והיסטן והכי קתני רבי עקיבא אומר נכרי ונכרית ע\"ז הן והיסטן ועוד מ\"ש דלא מיפלגי בין הסיטו להוסטו אלא בתרצתא דרב אשי ומאי דוחקיה לפלוגי בהו אי לאו דהן דברייתא משמע ליה שהוסטו והיסטן משמע ליה שהסיטו ועוד דסוף סוף בתירוצא דרב אשי לא מיתרצה אתקפתיה דאי הן משום מגע משמשיה קאמר הן ולא היסטן הוא ואילו רבי עקיבא הן והיסטן קאמר ואי אנכרי ונכרית הכא נמי ה\"מ לתרוצי כלישנא קמא ומאי אתקפתיה:"
+  },
+  "Rashi on Shabbat 83a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:30:41.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היכי משכחת לה</strong> - שהחפץ יסיט אדם או חפץ אחר:"
+  },
+  "Rashi on Shabbat 83a:6:2": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Shabbat 83a:15",
+      "Rashi on Shabbat 83a:6:1"
+    ],
+    "generatedAt": "2026-11-15T05:32:15.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרע הזב טמאין</strong> - שהרי הסיטן זב והיסטו של זב כי האי גוונא כתיב בין בכלים בין באדם בין באוכלין ומשקין בכלים כתיב וכלי חרש אשר יגע בו הזב ותניא בת\"כ יכול יטמאנו מאחוריו נאמר כאן בו ונאמר להלן אשר תבושל בו מה להלן מאוירו אף כאן מאוירו א\"כ למה נאמר אשר יגע בו פשיטא מי גרע משאר טומאות שמטמאין כלי חרס מאוירן כיון דכתיב גבי שרצים ל\"ל למכתבי' הכא אלא להביא מגעו שהוא ככולו ואפי' מאחוריו ואיזה וזה היסטו וגבי אדם נמי וכל אשר יגע בו הזב ואי משום מגע הא כתיב נוגע בבשר הזב אלא להביא מגעו שהוא ככולו ואפי' מאחוריו ואיזה זה היסטו וגבי אוכלין ומשקין תנא וכל כלי עץ ישטף במים אמר ר' שמעון ומה בא זה ללמדנו אם ללמד שיטמא הזב כלי שטף במגע והלא כבר נאמר הנוגע בבשר הזב יכבס בגדיו אם הנוגע בו יכבס בגדיו שהן כלי שטף במגע הוא עצמו לא יטמא כלי שטף במגע אלא למה נאמר וכל כלי עץ וגו' להביא אוכלין ומשקין וכלים הנישאין ע\"ג הזב דבסיפיה דקרא דאשר יגע בו הזב כתיב דאוקמינן דמשתעי בהיסט והיינו דתנן כל הנישא על גבי הזב טמא:"
+  },
+  "Tosafot on Shabbat 83a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:58:28.437Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי ע\"ז כשרץ ומשמשיה כשרץ</strong> - מברייתא אלים ליה למיפרך ממתני' משום דקתני בה משמשיה משמע דע\"ז דומיא דמשמשיה דלא מטמו במשא:"
+  },
+  "Tosafot on Shabbat 83a:4:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:4:2",
+      "Rashi on Shabbat 83a:4:3",
+      "Versions on Shabbat 83a:4",
+      "Shabbat 83a:4"
+    ],
+    "generatedAt": "2026-11-15T05:13:24.615Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי עקיבא</strong> - הרב פור\"ת לא גריס משמשיה במילתיה דר\"ע דלא פליג במשמשיה ארבנן:"
+  },
+  "Tosafot on Shabbat 83a:5:1": {
+    "dependsOn": [
+      "Shabbat 83a:5",
+      "Tosafot on Shabbat 83a:4:1",
+      "Rashi on Shabbat 83a:5:1",
+      "Rashi on Shabbat 83a:5:2",
+      "Rashi on Shabbat 83a:5:3",
+      "Rashi on Shabbat 83a:5:4",
+      "Rashi on Shabbat 83a:5:5",
+      "Rashi on Shabbat 83a:5:6"
+    ],
+    "generatedAt": "2026-11-15T05:30:23.298Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשמשיה בין הן שהסיטו כו'</strong> - בשנוייא קמא לא מדכר משמשיה משום דהוי בכלל הן ולא היסטן דברייתא אבל רב אשי הוצרך לפרש דמשמשיה לא הן ולא היסטן ולא הוי' בכלל הא דקתני בברייתא הן ולא היסטן:"
+  },
+  "Tosafot on Shabbat 83a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 83a:6:1",
+      "Rashi on Shabbat 83a:6:2",
+      "Mishnah Zavim 4:6",
+      "Mishnah Zavim 4:5"
+    ],
+    "generatedAt": "2026-11-15T05:33:36.126Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזב בכף מאזנים כו'</strong> - במס' זבים <span class=\"parenthesized\">(פ\"ר משנה ה)</span> גרסינן הזב בכף מאזנים ומשכב ומושב בכף שנייה כרע הזב טהורין פי' ממדרס ומ\"מ טמאין כדין היסט הזב כרעו הן טמאים פי' ממדרס כיון שהזב למעלה הרי נשען עליהן וגירסת <span class=\"rashi-quotation\">הקונט'</span> מיושב יותר אך לא נמצא כן אם לא שברייתא היא בשום מקום:"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "Rashi on Shabbat 43a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:13:46.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בצריך למקומו</strong> - להשתמש במקום הכלי ומתוך שיכול ליטלו לצורך מקומו מוליכו למקום שירצה:"
+  },
+  "Rashi on Shabbat 43a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:18:13.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכסות בה את הכלי</strong> - לסתום פי צלוחית:"
+  },
+  "Rashi on Shabbat 43a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:12:2",
+      "Steinsaltz on Shabbat 43a:12",
+      "Tosefta Kifshutah on Shabbat 14:2:6"
+    ],
+    "generatedAt": "2026-11-13T03:20:21.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי אבנים</strong> - מפני הגשמים שלא ימחו או לא יקבלו סיד מאחר ששרויות במים:"
+  },
+  "Rashi on Shabbat 43a:12:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:12:1",
+      "Jastrow, קִרְזֵל 1",
+      "Sefer HeArukh, Letter Mem 489"
+    ],
+    "generatedAt": "2026-11-13T03:21:26.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקורזלות</strong> - ראשן חד וראויות לקינוח דהוי דבר הניטל:"
+  },
+  "Rashi on Shabbat 43a:13:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:13:1"
+    ],
+    "generatedAt": "2026-11-13T03:22:14.890Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיזגא</strong> - להשען שכל הסבתן כך היתה יושב קצת ונשען קצת על שמאלו:"
+  },
+  "Rashi on Shabbat 43a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:1:1",
+      "Rashi on Shabbat 43a:1:2",
+      "Mishnah Shabbat 16:7"
+    ],
+    "generatedAt": "2026-11-13T02:40:33.554Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה כופין קערה</strong> - של חרס על גבי הנר כו':"
+  },
+  "Rashi on Shabbat 43a:1:2": {
+    "dependsOn": [
+      "Jastrow, גְּחַן 1"
+    ],
+    "generatedAt": "2026-11-13T02:42:38.721Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גחיני</strong> - נמוכין:"
+  },
+  "Rashi on Shabbat 43a:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:1:1",
+      "Rashi on Shabbat 43a:1:2",
+      "Rashi on Shabbat 43a:2:2"
+    ],
+    "generatedAt": "2026-11-13T02:44:03.505Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן קורה שנשברה כו'</strong> - משנה היא לקמן:"
+  },
+  "Rashi on Shabbat 43a:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:2:1"
+    ],
+    "generatedAt": "2026-11-13T02:44:27.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנשברה</strong> - בשבת:"
+  },
+  "Rashi on Shabbat 43a:2:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 43a:7:1",
+      "Rashi on Shabbat 43a:2:1",
+      "Rashi on Shabbat 43a:2:2",
+      "Rashi on Shabbat 43a:2:4",
+      "Rashi on Shabbat 43a:2:5",
+      "Rashi on Shabbat 42b:1:1"
+    ],
+    "generatedAt": "2026-11-13T02:46:31.770Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארוכות המטה</strong> - לימונ\"ש:"
+  },
+  "Rashi on Shabbat 43a:2:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:2:4"
+    ],
+    "generatedAt": "2026-11-13T02:46:59.106Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בספסל</strong> - דכלי הוא ומותר לטלטלו:"
+  },
+  "Rashi on Shabbat 43a:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:47:24.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכשורי חדתי</strong> - שלא נבדקו עדיין וכשמכביד משא הבית עליהן שהיו טחין על גגותיהן בטיט שכיחי דפקעי:"
+  },
+  "Rashi on Shabbat 43a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T02:47:45.321Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחת הדלף</strong> - לקבלו:"
+  },
+  "Rashi on Shabbat 43a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:4:1",
+      "Shabbat 43a:4"
+    ],
+    "generatedAt": "2026-11-13T02:48:14.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טעמא דרב חסדא</strong> - דאין נותנין כלי תחת התרנגולת:"
+  },
+  "Rashi on Shabbat 43a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:4:1",
+      "Rashi on Shabbat 42b:6:2",
+      "Rashi on Shabbat 43a:5:1",
+      "Rashi on Shabbat 42b:7:1",
+      "Rashi on Shabbat 42b:7:2"
+    ],
+    "generatedAt": "2026-11-13T02:49:40.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שמבטל כלי מהיכנו</strong> - שהיה מוכן מתחלה לטלטלו ועכשיו עושהו מוקצה:"
+  },
+  "Rashi on Shabbat 43a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:5:1"
+    ],
+    "generatedAt": "2026-11-13T02:54:11.183Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכן הוא</strong> - שאין בו מוקצה אלא איסורו ואם בא אחד ועבר על דברי חכמים שאסרו לתרום בשבת ותיקנו מתוקן ומותר לטלטלו ולאוכלו הלכך לאו מבטל כלי מהיכנו חשיב ליה:"
+  },
+  "Rashi on Shabbat 43a:6:1": {
+    "dependsOn": [
+      "Shabbat 43a:6",
+      "Steinsaltz on Shabbat 43a:6",
+      "Rashi on Shabbat 47b:4:1",
+      "Rashi on Shabbat 47b:4:2"
+    ],
+    "generatedAt": "2026-11-13T03:04:02.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בהן ממש</strong> - ומותר ליטלן אחר שנפלו לתוכו:"
+  },
+  "Rashi on Shabbat 43a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:04:31.273Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן קורה כו'</strong> - קס\"ד שמהדקו שם ואינו יכול שוב ליטלו:"
+  },
+  "Rashi on Shabbat 43a:8:1": {
+    "dependsOn": [
+      "Shabbat 43a:8",
+      "Rashi on Shabbat 43a:6:1",
+      "Rashi on Shabbat 43a:7:1"
+    ],
+    "generatedAt": "2026-11-13T03:05:20.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הראוי</strong> - לשתיה כל אלו משניות הן:"
+  },
+  "Rashi on Shabbat 43a:9:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 43a:9:1",
+      "Steinsaltz on Shabbat 43a:9"
+    ],
+    "generatedAt": "2026-11-13T03:06:18.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 43a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל בין השמשות</strong> - אבל נתנו שם משחשיכה מותר ליטלו אם אין האפרוחים עליו:"
+  },
+  "Tosafot on Shabbat 43a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:17:51.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושני ליה בצריך למקומו</strong> - ההיא דנותנין כלי תחת הדלף איכא נמי לשנויי בדלף הראוי כדשני לעיל ובפרק משילין <span class=\"parenthesized\">(ביצה לו. ושם)</span> משני ליה הכי לרבי יצחק תימה לר\"י מ\"ש דגבי שמן תנא אין נותנין וגבי ניצוצות נותנין בתרוייהו הוה מצי למתני נותנין בצריך למקומו או בתרוייהו אין נותנין באין צריך למקומו ונראה לר\"י דמעיקרא אשמעינן דאין כלי ניטל אלא לדבר הניטל בשבת וגבי ניצוצות דבתר הכי אשמעינן דבצריך למקומו שרי אי נמי ר' יצחק אית ליה נמי דאסור לבטל כלי מהיכנו ולהכי גבי שמן אין נותנין אפילו בצריך למקומו ולרב הונא נפרש בסמוך דאית ליה נמי תרוייהו אין כלי ניטל אלא לדבר הניטל ואסור לבטל כלי מהיכנו ואם נאמר דלרב יוסף לא אתיא מתניתין כר\"ש דכיון דלדידיה מותר לאחר שכבה לא חשיב ביטול כלי אם כן מצינן למימר דאפילו רבה אית ליה דאסור לבטל כלי מהיכנו ואיצטריך למימר דהצלה שאינה מצויה לא התירו כדי לאוקמה מתניתין כר\"ש וא\"ת מאי צריך בכל הני משניות לאשמעינן דבצריך למקומו שרי ויש לומר דלגבי ניצוצות איצטריך לאשמעינן דלא תימא אפילו בצריך. למקומו אסור משום דילמא אתי לכבויי וכן ההיא דכופין קערה שלא תאחוז כו' וההיא דקורה שנשברה נראה לרשב\"א דאיצטריך לאשמעינן דלא חיישינן שמא יעלה את הקורה דאסור להעלות כדתנן בפ' שואל <span class=\"parenthesized\">(לקמן שבת קנא:)</span> וכן קורה שנשברה סומכין אותה כו' לא שתעלה אלא שלא תוסיף:"
+  },
+  "Tosafot on Shabbat 43a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:18:39.254Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופה עליה כלי שלא תשבר כו'</strong> - כל הנהו דמייתי ידע המקשה דמצי לשנויי בצריך למקומו אלא שרוצה לידע אם יש לתרץ בענין אחר:"
+  },
+  "Tosafot on Shabbat 43a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:22:45.805Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאייתור מבניינא</strong> - כדאמר לקמן בפ' כל הכלים <span class=\"parenthesized\">(שבת דף קכד:)</span> הני לבני דאייתרי מבניינא שרי לטלטולינהו:"
+  },
+  "Tosafot on Shabbat 43a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 43a:4:1",
+      "Rashi on Shabbat 43a:4:2",
+      "Rashi on Shabbat 42b:6:2",
+      "Chidushei Halachot on Shabbat 43a:1",
+      "Steinsaltz In-Depth on Shabbat 43a:4",
+      "Steinsaltz comment #1 on Shabbat 43a:4",
+      "Tosafot on Shabbat 43a:5:1",
+      "Rashi on Shabbat 154b:4:2",
+      "Rashi on Shabbat 154b:9:2",
+      "Tosafot on Shabbat 2a:1:1",
+      "Shabbat 73a:9"
+    ],
+    "generatedAt": "2026-11-13T02:53:29.131Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמבטל כלי מהיכנו</strong> - בפרק בתרא <span class=\"rashi-quotation\">פירש בקונטרס</span> דאסור משום דמתחזי כסותר וכאן פירש דחשיב כאלו מחברו שם בטיט:"
+  },
+  "Tosafot on Shabbat 43a:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 43a:5:1"
+    ],
+    "generatedAt": "2026-11-13T02:58:03.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טבל מוכן הוא אצל שבת</strong> - אף על פי שאסור לטלטלו כדתנן בפרק מפנין <span class=\"parenthesized\">(לקמן שבת קכו:)</span> מ\"מ לא חשיב מבטל כלי מהיכנו כיון דאם עבר ותיקנו מתוקן ק' לרשב\"א דתנן במסכת תרומות בפ\"ב <span class=\"parenthesized\">(משנה ג)</span> ומייתי לה בהניזקין <span class=\"parenthesized\">(גיטין נד.)</span> המעשר בשבת בשוגג יאכל במזיד לא יאכל ולישנא דקאמר הכא אם עבר ותיקנו משמע במזיד מדלא קאמר שאם שגג ותיקנו ונראה דנקט עבר כגון דלית ליה פירי אחריני דאמר בביצה בפרק י\"ט <span class=\"parenthesized\">(דף יז:)</span> דאפילו במזיד יאכל עוד הקשה דבפרק בתרא <span class=\"parenthesized\">(דף קנד:)</span> תניא היתה בהמתו טעונה טבל ועששית מתיר את החבלים והשקים נופלים ואע\"פ שמשתברין משמע דאסור להניח תחתיהן כרים וכסתות אלמא טבל לאו מוכן הוא ואור\"י דאף על פי שמשתברין לא קאי אטבל אלא אעששית ועוד הקשה כי היכי דאמר דאם עבר ותיקנו מתוקן ה\"נ כשמניח כלי תחת תרנגולת לקבל ביצתה נימא שאם עבר והסיר הביצה מותר הכלי לטלטל ואם כן ביטלת תורת ביטול כלי מהיכנו ולאו פירכא היא דהא כמו שהכלי עם הביצה אין לה היתר אבל טבל יש לו היתר על ידי תיקון ועוד הקשה היכא דאית ליה פירי אחריני בשוגג אמאי יאכל נימא מגו דאיתקצאי לבין השמשות איתקצאי לכולי יומא ועוד מ\"ש דהכא אמר דאם עבר ותיקנו מתוקן ובביצה בפ' אין צדין <span class=\"parenthesized\">(ביצה דף כו: ושם)</span> גבי בכור לר\"ש דאמר אין רואין מומין בי\"ט אמר. שאם עבר וביקרו אינו מבוקר ואדא בר אוכמי דאמר בשוגג מבוקר אמרינן התם דליתא דמשבש ותני:"
+  },
+  "Tosafot on Shabbat 43a:9:1": {
+    "dependsOn": [
+      "Shabbat 43a:9",
+      "Shabbat 43a:4",
+      "Shabbat 42b:8"
+    ],
+    "generatedAt": "2026-11-13T03:07:18.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופין את הסל</strong> - לעיל לא מצי פריך מינה דהצלה מצויה היא:"
+  },
+  "Tosafot on Shabbat 43a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T03:11:57.003Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעודן עליו</strong> - אבל אחר שירדו מותר לטלטלו נראה לר\"י דקסבר דאין מוקצה לחצי שבת דלמ\"ד בפ' אין צדין <span class=\"parenthesized\">(ביצה כו: וסם)</span>. דיש מוקצה אסור לטלטלו אף אחר שירדו וקשה לרשב\"א למ\"ד יש מוקצה לחצי שבת אמאי כופין את הסל לפני האפרוחים והא מבטל כלי מהיכנו וקי\"ל דאסור לבטלו דבסוף פירקין פריך סתמא דהש\"ס והא קא מבטל כלי מהיכנו וכן בפ' מפנין <span class=\"parenthesized\">(לקמן שבת קכח:)</span> ובפ' בתרא <span class=\"parenthesized\">(דף קנד:)</span> פריך אליבא דרב הונא אע\"ג דלא מצינו שהיה סובר כן משמע דלכ\"ע אסור לבטל כלי מהיכנו וכן אפרש בסמוך וי\"ל דלמ\"ד יש מוקצה לחצי שבת הך דכופין את הסל מוקי כר\"ש דלדידיה ודאי שרי לטלטל הסל כשירדו דאפי' מיגו דאיתקצאי לבין השמשות איתקצאי לכולי יומא לית ליה דהא מתיר להסתפק מן הנר שכבה א\"נ הא דיש מוקצה לחצי שבת היינו לאכילה ולא לטלטול וא\"ת רב יוסף דמפרש מתני' משום דאסור לבטל כלי מהיכנו לא אתיא מתני' כר\"ש דלדידיה לא מבטל כלי מהיכנו כיון דשרי לאחר שכבה כי היכי דלא חשבינן הכא כפיית הסל ביטול כלי משום דשרי אחר שירדו וי\"ל דלא דמי דהכא. ודאי לא חשיב ביטול כלי כי מיד כשבאו על הסל בידו להפריחם ולהבריחם משם:"
+  },
+  "Tosafot on Shabbat 43a:9:3": {
+    "dependsOn": [
+      "Beitzah 26b:14",
+      "Beitzah 26b:15",
+      "Beitzah 26b:16",
+      "Beitzah 26b:20",
+      "Beitzah 26b:21",
+      "Beitzah 26b:22",
+      "Beitzah 27a:1",
+      "Beitzah 27a:2",
+      "Beitzah 27a:3"
+    ],
+    "generatedAt": "2026-11-13T03:13:20.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 43a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעודן עליו כל בין השמשות</strong> - תימה הא כיון דבידו להפריחם למטה הוי גמרו בידי אדם ולית לן למימר מיגו דאיתקצאי לבין השמשות כדמוכח בפ' אין צדין <span class=\"parenthesized\">(ביצה כו:)</span> דפריך ר' זירא למ\"ד יש מוקצה לחצי שבת והא פולין ועדשים דמבשלים בי\"ט דמעיקרא חזו לכוס כי שדינהו בקדרה חייתא אידחו להו גמר בישולייהו אישתרו להו א\"ל אביי ולטעמיך תקשי לך קדירות דעלמא דהא קדירות דשבתא בין השמשות רותחות הן ולאורתא קא אכלינן מינייהו אלא גמרו בידי אדם לא קמבעיא ליה כי קא מיבעיא ליה גמרו בידי שמים וי\"ל דשאני קדירות אם הוה צריך להו בין השמשות היה מקררן וכן פולין ועדשים רצונו שיתבשלו בלא שום דיחוי אבל הכא רצונו היה שיעלו האפרוחין על הסל שלכך כפאו והרי שעה אחת הקצה אותו לצרכן ומיגו דאיתקצאי לבין השמשות איתקצאי לכולי יומא:"
+  }
+}

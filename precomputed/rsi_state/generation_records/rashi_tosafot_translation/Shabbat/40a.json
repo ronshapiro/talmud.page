@@ -1,0 +1,400 @@
+{
+  "Rashi on Shabbat 40a:1:1": {
+    "dependsOn": [
+      "Shabbat 40a:1",
+      "Rashi on Shabbat 40a:1:2",
+      "Shabbat 29a:9",
+      "Shabbat 29b:1",
+      "Shabbat 29b:2",
+      "Shabbat 29b:3",
+      "Shabbat 39b:4"
+    ],
+    "generatedAt": "2026-11-12T22:58:43.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הדר ביה רבי עקיבא</strong> - כדאמרינן בפירקין דלעיל <span class=\"parenthesized\">(שבת דף כט:)</span> לשון מכריע מכביד מטה כף מאזנים ומכריע את שכנגדו כגון הכא בחמין אסור השתא הוה ליה ר' שמעון דמתיר בחמין יחיד במקום שנים נמצא ר' יהודה מכביד את כף המשקולת שהרי ר' יהודה עם רבי מאיר שוים לאיסור ובצונן מותר הוי ליה ר' מאיר בצונן יחיד במקום שנים נמצא ר' יהודה מכביד את כף המשקולת:"
+  },
+  "Rashi on Shabbat 40a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:1:1",
+      "Shabbat 39b:6",
+      "Rashi on Shabbat 39b:6:1",
+      "Rashi on Shabbat 39b:6:2",
+      "Rashi on Shabbat 40a:4:1",
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:6:1"
+    ],
+    "generatedAt": "2026-11-12T23:00:29.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"מ</strong> - דא\"ר יוחנן הלכה כדברי המכריע במכריע במשנה כי ההיא דמטלניות:"
+  },
+  "Rashi on Shabbat 40a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:04:17.418Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין פניו</strong> - כלומר כל אבר בפני עצמו:"
+  },
+  "Rashi on Shabbat 40a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:4:2"
+    ],
+    "generatedAt": "2026-11-12T23:04:53.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוחץ בהן כל גופו</strong> - ביחד אלא שמשייר אבר אחד:"
+  },
+  "Rashi on Shabbat 40a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:4:1"
+    ],
+    "generatedAt": "2026-11-12T23:05:35.738Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה כל הני</strong> - וליכא לשנויי כעין פניו ידיו ורגליו דהא כל גופו יחד קאמר חוץ מאבר אחד:"
+  },
+  "Rashi on Shabbat 40a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:06:00.525Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל רב יוסף לאביי</strong> - משום דגדל אביי בבית רבה בר נחמני שהיה ראש קודם לרב יוסף ומת היה שואלו רב יוסף איך היה רואהו נוהג:"
+  },
+  "Rashi on Shabbat 40a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:5:2",
+      "Rashi on Shabbat 40a:5:3",
+      "Rashi on Shabbat 40a:5:4"
+    ],
+    "generatedAt": "2026-11-12T23:06:46.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי עביד כשמעתי' דרב</strong> - בהא מילתא דרחיצה:"
+  },
+  "Rashi on Shabbat 40a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:5:2",
+      "Rashi on Shabbat 40a:5:3",
+      "Rashi on Shabbat 40a:5:4",
+      "Tosafot on Shabbat 12a:2:1"
+    ],
+    "generatedAt": "2026-11-12T23:12:17.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי תבעי ליה</strong> - שיטה דהש\"ס פרכא ליה:"
+  },
+  "Rashi on Shabbat 40a:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:12:40.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שמיע ליה</strong> - לרבה הא תיובתא משום הכי מספקא ליה לרב יוסף ברבה דדילמא עביד כרב:"
+  },
+  "Rashi on Shabbat 40a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:5:2",
+      "Rashi on Shabbat 40a:6:2",
+      "Rashi on Shabbat 40a:6:3"
+    ],
+    "generatedAt": "2026-11-12T23:13:08.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי לא שמיעא ליה</strong> - אמאי מספקא ליה לרב יוסף:"
+  },
+  "Rashi on Shabbat 40a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:6:1",
+      "Rashi on Shabbat 40a:6:2",
+      "Rashi on Shabbat 40a:6:3"
+    ],
+    "generatedAt": "2026-11-12T23:14:45.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ודאי עביד</strong> - רבה בכל מילי כרב:"
+  },
+  "Rashi on Shabbat 40a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:6:1",
+      "Rashi on Shabbat 40a:6:2"
+    ],
+    "generatedAt": "2026-11-12T23:15:20.772Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחומרי דרב הוה עביד</strong> - בר מהני תלת חומרי אבל כקולי דרב איכא דלא עביד והא קולא היא ודילמא לא עביד:"
+  },
+  "Rashi on Shabbat 40a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:26:48.745Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפקקו נקביו</strong> - שלא יצא חמימותו:"
+  },
+  "Rashi on Shabbat 40a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:7:1",
+      "Rashi on Shabbat 40a:7:2",
+      "Rashi on Shabbat 40a:7:3",
+      "Steinsaltz on Shabbat 40a:7",
+      "Tosafot on Shabbat 40a:7:1",
+      "Versions on Shabbat 40a:7",
+      "Steinsaltz comment #1 on Shabbat 40a:7",
+      "Steinsaltz comment #2 on Shabbat 40a:7",
+      "Tosefta Shabbat 4:2",
+      "Tosefta Shabbat (Lieberman) 3:3"
+    ],
+    "generatedAt": "2026-11-12T23:31:17.045Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוחץ בו מיד</strong> - ואין צריך להמתין בכדי שיעשה ל\"א שפקקו נקביו אותן נקבים שמרחץ מתחמם על ידיהן שאור ניסקת מבחוץ מתחתיו לוי\"ה ועיקר רוחץ בו מיד שהרי לא נתחמם בשבת אבל בשבת לא שהרי גזרו על הרחיצה:"
+  },
+  "Rashi on Shabbat 40a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:31:52.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשתטף בבית החיצון</strong> - שלפני המרחץ ולא בתוך המרחץ שלא יאמרו רוחץ הוא כדאמרן דאסרו את הרחיצה אבל הזיעה התירו והיאך היא זיעה עומד או יושב בבית המרחץ ואינו נותן מים עליו והוא מתחמם ומזיע:"
+  },
+  "Rashi on Shabbat 40a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:8:1",
+      "Rashi on Shabbat 40a:8:2",
+      "Rashi on Shabbat 40a:8:3",
+      "Rashi on Shabbat 40a:8:4",
+      "Rashi on Shabbat 40a:8:5",
+      "Shabbat 40a:7",
+      "Rashi on Shabbat 40a:7:1",
+      "Rashi on Shabbat 40a:7:2",
+      "Rashi on Shabbat 40a:7:3",
+      "Tosafot on Shabbat 40a:8:1",
+      "Steinsaltz comment #1 on Shabbat 40a:8"
+    ],
+    "generatedAt": "2026-11-12T23:36:55.079Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחופין בנסרים</strong> - ולא היו צריכין לחוש שמא נתחממו בשבת מחומו של מרחץ:"
+  },
+  "Rashi on Shabbat 40a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:37:11.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התחילו לאסור</strong> - את הזיעה:"
+  },
+  "Rashi on Shabbat 40a:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:8:2",
+      "Rashi on Shabbat 40a:8:3",
+      "Rashi on Shabbat 40a:8:4",
+      "Jastrow, אַמְבְּטִי 1",
+      "Steinsaltz on Shabbat 40a:8",
+      "Rashi on Shabbat 40a:1:1",
+      "Rashi on Shabbat 40a:1:2",
+      "Rashi on Shabbat 40a:4:1",
+      "Rashi on Shabbat 40a:4:2",
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:6:1",
+      "Rashi on Shabbat 40a:7:1",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 40a:8:1",
+      "Rashi on Shabbat 40a:8:5"
+    ],
+    "generatedAt": "2026-11-12T23:38:53.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמבטאות</strong> - בתי מרחץ גדולים:"
+  },
+  "Rashi on Shabbat 40a:8:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:8:1",
+      "Rashi on Shabbat 40a:8:2",
+      "Rashi on Shabbat 40a:8:3",
+      "Rashi on Shabbat 40a:8:5"
+    ],
+    "generatedAt": "2026-11-12T23:39:25.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטייל בהן</strong> - מהלך בתוכן לפי דרכו ולא להזיע:"
+  },
+  "Rashi on Shabbat 40a:8:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:8:1",
+      "Rashi on Shabbat 40a:8:2",
+      "Rashi on Shabbat 40a:8:3",
+      "Rashi on Shabbat 40a:8:4",
+      "Rashi on Shabbat 40a:8:5",
+      "Rashi on Shabbat 40a:5:1",
+      "Rashi on Shabbat 40a:5:2",
+      "Rashi on Shabbat 40a:6:1",
+      "Rashi on Shabbat 40a:7:1"
+    ],
+    "generatedAt": "2026-11-12T23:40:16.110Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:8:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו חושש</strong> - שמא יאמרו מזיע הוא ואע\"ג דאסרו את הזיעה:"
+  },
+  "Rashi on Shabbat 40a:9:1": {
+    "dependsOn": [
+      "Shabbat 40a:9"
+    ],
+    "generatedAt": "2026-11-12T23:42:25.822Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי עוברי עבירה</strong> - דקאמר לעיל שאסרו זיעה על ידיהן:"
+  },
+  "Rashi on Shabbat 40a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:42:44.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסרו להן את החמין</strong> - לגמרי:"
+  },
+  "Rashi on Shabbat 40a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:42:59.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדיין היו רוחצין בחמין</strong> - שהוחמו מבע\"י:"
+  },
+  "Rashi on Shabbat 40a:9:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:43:15.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין הדבר עומד</strong> - שלא היו ציבור יכולין לקבל מתוך שאסרו להם את הכל:"
+  },
+  "Rashi on Shabbat 40a:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T23:43:37.397Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 40a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקומה עומדת</strong> - לאיסור:"
+  },
+  "Tosafot on Shabbat 40a:1:1": {
+    "dependsOn": [
+      "Shabbat 40a:1",
+      "Rashi on Shabbat 40a:1:1",
+      "Rashi on Shabbat 40a:1:2",
+      "Rashba on Shabbat 40a:1",
+      "Gilyon HaShas on Shabbat 40a:1",
+      "Tosafot on Shabbat 40a:6:1",
+      "Tosafot on Shabbat 40a:7:1",
+      "Tosafot on Shabbat 40a:8:1"
+    ],
+    "generatedAt": "2026-11-12T23:03:55.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 40a:1:1"
+    ],
+    "sourceText": "דילמא ה\"מ במתני' אבל בברייתא לא אע\"ג דלא קאמר במשנתינו הכא משמע דאין הלכה כמותו משום דסתם מתני' דלא כוותיה:"
+  },
+  "Tosafot on Shabbat 40a:7:1": {
+    "dependsOn": [
+      "Shabbat 40a:7"
+    ],
+    "generatedAt": "2026-11-12T23:34:42.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 40a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למוצאי שבת רוחץ מיד</strong> - דוקא לרחוץ אבל להזיע נכנס אפי' בשבת ומזיע כמו בי\"ט כדאמר בסמוך דאפי' בשבת הוי זיעה שריא עד הגזירה ולאחר גזירה אפילו בי\"ט אסרו דאיום טוב קתני משרבו עוברי עבירה התחילו לאסור והוה מצי לערובינהו וליתנינהו מרחץ שפקקו נקביו מערב שבת או מערב יום טוב למחר נכנס ומזיע ולמוצאי שבת ויום טוב רוחץ מיד אלא אי עריב ותני להו הוה אמינא דדוקא בשבת אסרו הזיעה ולא ביום טוב דעובדא דמייתי בשבת הוה להכי מפליג להו השתא משרבו עוברי עבירה קאי איום טוב אבל לא אשבת דזיעה לא הוזכרה גבי שבת:"
+  },
+  "Tosafot on Shabbat 40a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 40a:8:1",
+      "Rashi on Shabbat 40a:8:2",
+      "Rashi on Shabbat 40a:8:3",
+      "Shabbat 40a:1",
+      "Shabbat 39b:4",
+      "Tosefta Shabbat 4:2"
+    ],
+    "generatedAt": "2026-11-12T23:41:40.913Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 40a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שחמין שלו מחופין בנסרים</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> שלא היו צריכין לחוש שהוחמו בשבת מחום המרחץ משמע שסובר שנשתטפו בחמין שהוחמו מע\"ש ולעיל אסר רבי יהודה גופיה ושמא יחלק בין שבת ליום טוב ומיהו בתוספתא גרסינן ונשתטפו בצונן אלא שחמין שלו מחופים ולא יסברו העולם שרחצו בחמין:"
+  }
+}

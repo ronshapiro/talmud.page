@@ -1,0 +1,454 @@
+{
+  "Rashi on Shabbat 73a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 72b:1:1",
+      "Rashi on Shabbat 72b:5:1",
+      "Rashi on Shabbat 73a:1:2",
+      "Rashi on Shabbat 72b:2:1"
+    ],
+    "generatedAt": "2026-11-14T16:05:52.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסבור שומן הוא ואכלו</strong> - והיינו דשגג דסבור שומן הוא ולא נתכוין לאכול חלב וחייב ואף על פי דמתעסק הוא לרבא דהא לא מתכוין לאכילת איסור חייב דאמר שמואל בכריתות <span class=\"parenthesized\">(פ\"ד דף יט:)</span> בחלבי' ועריות מתעסק חייב שכן נהנה אבל בשבת פטור דלא נהנה והיינו סייעתא לדידיה דאמר נתכוין לחתוך את התלוש וחתך את המחובר פטור:"
+  },
+  "Rashi on Shabbat 73a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:1:1"
+    ],
+    "generatedAt": "2026-11-14T16:06:45.355Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואביי</strong> - אמר לך לעולם כי האי גוונא אף בשבת חייב דלאו מתעסק הוא והיכי דמי מתעסק דשאר מצות חייב קסבר רוק הוא שהיה חלב נימוח ובלעו דלא איכוין לאכילה דרוק לאו בר אכילה הוא אלא בליעה דכתיב <span class=\"parenthesized\">(איוב ז׳:י״ט)</span> עד בלעי רוקי ועלתה בידו אכילה דהא לא איכוין לאכילה ודכוותייהו דשבת דפטור נתכוין להגביה ועלתה בידו חתיכה:"
+  },
+  "Rashi on Shabbat 73a:2:1": {
+    "dependsOn": [
+      "Shabbat 73a:2",
+      "Rashi on Shabbat 73a:1:1",
+      "Rashi on Shabbat 73a:1:2",
+      "Rashi on Shabbat 72b:14:1",
+      "Rashi on Shabbat 72b:14:2",
+      "Rashi on Shabbat 72b:14:3"
+    ],
+    "generatedAt": "2026-11-14T16:09:38.881Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא לא איכוין לזריקה דאיסור</strong> - ויהא שוגג בשבת או במלאכה אבל זה אינו שוגג לא בשבת ולא במלאכות אלא מתעסק בדבר אחד של היתר ועלתה בידו איסור:"
+  },
+  "Rashi on Shabbat 73a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:3:1",
+      "Rashi on Shabbat 73a:3:2",
+      "Rashi on Shabbat 73a:3:3",
+      "Rashi on Shabbat 73a:3:4"
+    ],
+    "generatedAt": "2026-11-14T16:10:27.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריכא</strong> - לאיפלוגי בכולהו אף על גב דדמי להדדי:"
+  },
+  "Rashi on Shabbat 73a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:3:1",
+      "Rashi on Shabbat 73a:3:3",
+      "Rashi on Shabbat 72b:1:2",
+      "Rashi on Shabbat 72b:1:3",
+      "Shabbat 72b:1"
+    ],
+    "generatedAt": "2026-11-14T16:11:37.211Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דארבע בלא תרתי לא מזדריק</strong> - וזה שנתכוין לשתים וזרק ארבע נעשית מחשבתו דהא יש בכלל ד' שתים הלכך לאו מתעסק הוא:"
+  },
+  "Rashi on Shabbat 73a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:3:3",
+      "Rashi on Shabbat 73a:3:1",
+      "Rashi on Shabbat 73a:3:2",
+      "Rashi on Shabbat 73a:3:4"
+    ],
+    "generatedAt": "2026-11-14T16:12:17.781Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא איכוין לזריקה דארבע</strong> - ובציר מהני לא שם זריקה עלה:"
+  },
+  "Rashi on Shabbat 73a:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:3:1",
+      "Rashi on Shabbat 73a:3:2",
+      "Rashi on Shabbat 73a:3:3"
+    ],
+    "generatedAt": "2026-11-14T16:12:49.081Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל כסבור רה\"י הוא וכו'</strong> - דנתכוין לזריקה גמורה:"
+  },
+  "Rashi on Shabbat 73a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:4:2"
+    ],
+    "generatedAt": "2026-11-14T16:13:48.643Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משכחת לה</strong> - להאי שנשתכחה תורת כל הלכות שבת ממנו ואפילו הכי חשיבא ליה כזדון שבת ושגגת מלאכות לחיוביה אכל חדא כגון דידע ליה לשבת באיסורין וטעה בשיעורין שנתכוין לפחות מכשיעור ועשה כשיעור דלכולן יש שיעור:"
+  },
+  "Rashi on Shabbat 73a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:4:1"
+    ],
+    "generatedAt": "2026-11-14T16:14:22.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לרבא דאמר פטור היכי משכחת לה</strong> - דמיחייב שום אדם על כל מלאכה ומלאכה שבהעלם אחד על כרחך בזדון שבת ושגגת מלאכות הוא דבעית לאשכוחיה והכא דאיעלימו כולהו מיניה מאי זדון שבת איכא במה ניכר לו שבת משאר ימים:"
+  },
+  "Rashi on Shabbat 73a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:6:1",
+      "Rashi on Shabbat 73a:6:2",
+      "Rashi on Shabbat 73a:6:3",
+      "Rashi on Shabbat 73a:6:4"
+    ],
+    "generatedAt": "2026-11-14T16:14:58.670Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזורה</strong> - ברחת לרוח:"
+  },
+  "Rashi on Shabbat 73a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:6:1",
+      "Rashi on Shabbat 73a:6:3",
+      "Rashi on Shabbat 73a:6:4"
+    ],
+    "generatedAt": "2026-11-14T16:15:41.762Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבורר</strong> - פסולת בידיו:"
+  },
+  "Rashi on Shabbat 73a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:16:08.197Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המרקד</strong> - בנפה ובגמ' פריך הני כולהו חדא היא דלהפריש פסולת מתוך אוכל נעשות שלשתן:"
+  },
+  "Rashi on Shabbat 73a:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:16:41.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האופה</strong> - לא הוה במשכן דלא שייך אלא בפת ופת לא שייכא במלאכת המשכן אבל כולהו קמייתא הואי בסממנין של צבע תכלת וארגמן ותולעת שני ובגמרא פריך דשביק תנא מבשל דהוי בסממנים ונקט אופה ושיעורן של אלו כגרוגרת חוץ מחורש דבכל שהוא לקמן בפרק הבונה <span class=\"parenthesized\">(שבת דף קג.)</span>:"
+  },
+  "Rashi on Shabbat 73a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:17:02.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגוזז צמר</strong> - וכל שאר מלאכות שייכי בצמר של מלאכת המשכן:"
+  },
+  "Rashi on Shabbat 73a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:17:33.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המלבנו</strong> - מכבסו בנהר:"
+  },
+  "Rashi on Shabbat 73a:7:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 73a:7:1",
+      "Rashi on Shabbat 73a:7:2",
+      "Rashi on Shabbat 73a:7:4",
+      "Rashi on Shabbat 73a:7:5",
+      "Rashi on Shabbat 73a:7:6",
+      "Rashi on Shabbat 73a:7:7",
+      "Rashi on Shabbat 73a:7:8"
+    ],
+    "generatedAt": "2026-11-14T16:19:50.562Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המנפצו</strong> - קרפי\"ר בלע\"ז:"
+  },
+  "Rashi on Shabbat 73a:7:4": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-14T16:20:43.011Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המיסך</strong> - אורדי\"ר:"
+  },
+  "Rashi on Shabbat 73a:7:5": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 73a:7:1",
+      "Rashi on Shabbat 73a:7:2",
+      "Rashi on Shabbat 73a:7:3",
+      "Rashi on Shabbat 73a:7:4",
+      "Rashi on Shabbat 73a:7:6",
+      "Rashi on Shabbat 105a:9:4",
+      "Steinsaltz on Shabbat 73a:7",
+      "Shabbat 105a:13",
+      "Rashi on Shabbat 105a:13:1",
+      "Rashi on Shabbat 105a:13:2"
+    ],
+    "generatedAt": "2026-11-14T16:22:22.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתי נירין</strong> - ליצ\"ש שנתן שני חוטין בתוך הבית ניר ובגוזז ובמלבן וכולהו אינך מפרש שיעורן לקמן בפרק האורג:"
+  },
+  "Rashi on Shabbat 73a:7:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:7:4",
+      "Rashi on Shabbat 73a:7:5",
+      "Rashi on Shabbat 73a:7:7",
+      "Shabbat 75b:3",
+      "Tosafot on Shabbat 73a:7:1",
+      "Steinsaltz on Shabbat 73a:7"
+    ],
+    "generatedAt": "2026-11-14T16:24:14.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפוצע</strong> - מנתק פעמים שיש בשני חוטין יותר מדאי ומנתק מהן ומקלישן לצורך והני כולהו ממיסך ואילך עד קושר ומתיר שייכי ביריעות ולקמן מפרש מאי קושר ומאי מתיר איכא:"
+  },
+  "Rashi on Shabbat 73a:7:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:7:6",
+      "Rashi on Shabbat 73a:7:7",
+      "Rashi on Shabbat 73a:7:8"
+    ],
+    "generatedAt": "2026-11-14T16:24:55.216Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותופר וקורע</strong> - ביריעות הוא:"
+  },
+  "Rashi on Shabbat 73a:7:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:25:30.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:7:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על מנת לתפור</strong> - פעמים שהנקב עגול ואינו יכול לתופרו יפה אא\"כ קורעו כדמפרש בגמרא אבל קורע שלא לתפור לא הוי במשכן:"
+  },
+  "Rashi on Shabbat 73a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:8:1",
+      "Rashi on Shabbat 73a:8:2",
+      "Rashi on Shabbat 73a:1:1",
+      "Rashi on Shabbat 73a:1:2",
+      "Rashi on Shabbat 73a:6:1",
+      "Rashi on Shabbat 73a:7:1",
+      "Shabbat 28a:4"
+    ],
+    "generatedAt": "2026-11-14T16:30:23.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הצד את הצבי</strong> - וכל מלאכת עורו נוהגת בתחשים למשכן בעורותיהן:"
+  },
+  "Rashi on Shabbat 73a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:8:1",
+      "Rashi on Shabbat 73a:8:2",
+      "Rashi on Shabbat 73a:8:3",
+      "Rashi on Shabbat 73a:8:4"
+    ],
+    "generatedAt": "2026-11-14T16:30:54.747Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המולחו</strong> - לעור:"
+  },
+  "Rashi on Shabbat 73a:8:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:8:1",
+      "Rashi on Shabbat 73a:8:2",
+      "Rashi on Shabbat 73a:8:4"
+    ],
+    "generatedAt": "2026-11-14T16:31:26.723Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממחקו</strong> - מגרר שערו:"
+  },
+  "Rashi on Shabbat 73a:8:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:8:4",
+      "Steinsaltz on Shabbat 73a:8",
+      "Rashi on Shabbat 75b:3:1",
+      "Rashi on Shabbat 75b:3:2",
+      "Rashi on Shabbat 75b:3:3",
+      "Rashi on Shabbat 75b:3:4",
+      "Rashi on Shabbat 75b:3:5",
+      "Rashi on Shabbat 73a:8:1",
+      "Rashi on Shabbat 73a:8:2",
+      "Rashi on Shabbat 73a:8:3",
+      "Rashi on Shabbat 73a:1:1",
+      "Rashi on Shabbat 73a:1:2",
+      "Rashi on Shabbat 73a:6:1",
+      "Shabbat 73a:8",
+      "Rashi on Shabbat 2a:1:1",
+      "Rashi on Shabbat 2a:1:2",
+      "Rashi on Shabbat 2a:1:3"
+    ],
+    "generatedAt": "2026-11-14T16:33:33.365Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחתכו</strong> - מקצעו ומחתכו לרצועות וסנדלים:"
+  },
+  "Rashi on Shabbat 73a:9:1": {
+    "dependsOn": [
+      "Shabbat 103a:1",
+      "Shabbat 103b:1",
+      "Shabbat 103b:2",
+      "Shabbat 103b:3",
+      "Rashi on Shabbat 73a:9:2",
+      "Rashi on Shabbat 73a:9:3",
+      "Rashi on Shabbat 73a:1:1",
+      "Rashi on Shabbat 73a:1:2",
+      "Rashi on Shabbat 73a:3:1"
+    ],
+    "generatedAt": "2026-11-14T16:35:11.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כותב ומוחק</strong> - לקמן <span class=\"parenthesized\">(שבת דף קג:)</span> מפרש למאי מיבעיא למשכן שכן רושמין על קרשי המשכן לידע איזה בן זוגו וכותב אות בזו ואות בזו ומוחק פעמים שטעה:"
+  },
+  "Rashi on Shabbat 73a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 73a:9:1",
+      "Rashi on Shabbat 73a:9:2",
+      "Rashi on Shabbat 73a:9:3",
+      "Rashi on Shabbat 73a:7:1",
+      "Rashi on Shabbat 73a:7:2",
+      "Rashi on Shabbat 73a:8:1"
+    ],
+    "generatedAt": "2026-11-14T16:36:12.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכבה ומבעיר</strong> - באש שתחת הדוד של סממנין:"
+  },
+  "Rashi on Shabbat 73a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T16:36:38.538Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 73a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכה בפטיש</strong> - הוא גמר כל מלאכה שכן אומן מכה בקורנס על הסדן להחליקו בגמר מלאכה ומתניתין נמי לא מיחייב ליה אלא בגמר מלאכה:"
+  },
+  "Tosafot on Shabbat 73a:1:1": {
+    "dependsOn": [
+      "Shabbat 73a:1",
+      "Shabbat 72b:6",
+      "Tosafot on Sanhedrin 62b:11:1"
+    ],
+    "generatedAt": "2026-11-14T16:08:39.671Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו רישא בע\"ז וסיפא בשאר מצות</strong> - תימה לר\"י דלוקמא כולה בשאר מצות ומאי מה שאין כן בשאר מצות כגון שחט וזרק בחוץ דאינו חייב אלא אחת כדאמר אביי בפרק אחד דיני ממונות <span class=\"parenthesized\">(סנהדרין לד:)</span> שם תעשה עשאן הכתוב עשיה אחת ור' אבהו נמי דפליג מודה דלרבי ישמעאל בשחיטה וזריקה ולר' עקיבא בהעלאה וזריקה דאינו חייב אלא אחת דמחד קרא נפקי ושגג בלא מתכוין כגון שנתכוין לשחוט בהמת חולין והיה צריך לשל חולין ונמצאת של קדשים דכוותה בשבת נתכוין לחתוך תלוש ונמצא מחובר ולא היה צריך אלא לתלוש דפטור דמלאכת מחשבת בעינן וי\"ל דלא מצינן לפרושי הכי דמשמע דפטור בשבת לפי ששגג בלא מתכוין דכה\"ג אפילו נתכוין למחובר זה ונמצא מחובר אחר פטור דאין זה מלאכת מחשבת וליכא לאוקמי נמי דמיירי כשנעשה מחשבתו כגון שהיה צריך לחתוך מה שחתך אלא שהיה סבור שהוא תלוש ונמצא שהוא מחובר הא ליכא למימר דכה\"ג אם פטור לענין שבת מאשר חטא בה פטור נמי לענין חוץ ומיהו עוד קשה דלוקמא כולה בשאר מצות כגון נרבע לזכר ורבע את הזכר והבא על הבהמה והביא בהמה עליו דבין לאביי ובין לר' אבהו לר' עקיבא אינו חייב אלא אחת והשתא שגג בלא מתכוין מיתוקם שפיר דמיפטר בשבת מאשר חטא בה וכגון שנעשית מחשבתו וגבי עריות לא מיפטר שכן נהנה:"
+  },
+  "Tosafot on Shabbat 73a:7:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 73a:7:1",
+      "Tosafot on Shabbat 73a:7:2"
+    ],
+    "generatedAt": "2026-11-14T16:26:33.277Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העושה שני בתי נירין</strong> - צריך לפרש למה פירש כאן ובאורג ובפוצע ובתופר ובכותב שיעור טפי מבשאר:"
+  },
+  "Tosafot on Shabbat 73a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 74b:8:6"
+    ],
+    "generatedAt": "2026-11-14T16:29:02.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 73a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקושר והמתיר</strong> - צ\"ע אי מיחייב במתיר שלא על מנת לקשור אי לא ומדלא תני ליה כדתני מוחק ע\"מ לכתוב אין לדקדק דהכי נמי לא קתני סותר ע\"מ לבנות ובפ' במה מדליקין <span class=\"parenthesized\">(לעיל שבת לא:)</span> אמרינן בהדיא דבעינן סותר ע\"מ לבנות ולפי מה שפירש רש\"י בגמרא <span class=\"parenthesized\">(דף עד:)</span> דאי מתרמי ליה תרי קיטרי בהדי הדדי בשני חוטין זה אצל זה שרי חד ומניח חד משמע דמיחייב בלא על מנת לקשור ולשון קטר לא משמע כפירושו אבל ר\"ח פירש וכן משמע בירושלמי כשנפסק חוט בשני מקומות ונקשר מתירין ב' הקשרים ומשליכין לחוץ האמצעי וחוזרין וקושרין שתי הראשים זה בזה ואין בו אלא קשר א' ולפי זה משמע דבעי מתיר ע\"מ לקשור והא דלא תני ליה במתיר ובסותר פירשתי בפרק ב' <span class=\"parenthesized\">(דף לא:)</span> ד\"ה וסותר:"
+  }
+}

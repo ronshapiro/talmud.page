@@ -1,0 +1,334 @@
+{
+  "Rashi on Shabbat 44a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:10:1",
+      "Rashi on Shabbat 44a:10:2"
+    ],
+    "generatedAt": "2026-11-13T04:24:11.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיחדה למעות</strong> - מיתסרא בהזמנה בעלמא ואע\"פ שלא הניח עליה מעולם:"
+  },
+  "Rashi on Shabbat 44a:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:10:1",
+      "Shabbat 44a:10",
+      "Rashi on Shabbat 44a:7:1",
+      "Rashi on Shabbat 44a:7:2",
+      "Rashi on Shabbat 44a:7:3"
+    ],
+    "generatedAt": "2026-11-13T04:25:11.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטלטלין נר חדש</strong> - והא רבי יהודה קאמר לה דאית ליה מוקצה אלמא לא מיתסר בהזמנה מדקאמר אבל לא ישן ולא קתני אבל לא המיוחד לכך:"
+  },
+  "Rashi on Shabbat 44a:1:1": {
+    "dependsOn": [
+      "Shabbat 44a:1"
+    ],
+    "generatedAt": "2026-11-13T04:04:48.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי לא שרית ליה וכו'</strong> - אבל במוטל לחמה לא שרי:"
+  },
+  "Rashi on Shabbat 44a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:3:2",
+      "Chokhmat Shlomo on Shabbat 44a:1"
+    ],
+    "generatedAt": "2026-11-13T04:07:20.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטלטלין נר חדש</strong> - שאינו מאוס וחזי לאישתמושי להדיא שלא דלק בו נר מעולם:"
+  },
+  "Rashi on Shabbat 44a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:3:1"
+    ],
+    "generatedAt": "2026-11-13T04:08:10.506Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא ישן</strong> - דמוקצה מחמת מיאוס הוא:"
+  },
+  "Rashi on Shabbat 44a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T04:08:48.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מן הנר שהדליקו</strong> - ואף על גב שכבה אסור דאית ליה לרבי מאיר מוקצה מחמת איסור ולית ליה מוקצה מחמת מיאוס:"
+  },
+  "Rashi on Shabbat 44a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T04:09:08.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מן הנר הדולק בשבת</strong> - בעוד שהוא דולק אסור שמא יכבה הנר:"
+  },
+  "Rashi on Shabbat 44a:4:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 44a:4:1",
+      "Rashi on Shabbat 44a:4:2",
+      "Rashi on Shabbat 44a:4:4",
+      "Rashi on Shabbat 44a:4:5"
+    ],
+    "generatedAt": "2026-11-13T04:10:44.850Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עששית</strong> - כוס גדול של זכוכית שקורין לנפ\"א:"
+  },
+  "Rashi on Shabbat 44a:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:4:1",
+      "Rashi on Shabbat 44a:4:2",
+      "Rashi on Shabbat 44a:4:3",
+      "Rashi on Shabbat 44a:4:4",
+      "Rashi on Shabbat 44a:4:5"
+    ],
+    "generatedAt": "2026-11-13T04:11:16.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יזיזם ממקומן</strong> - ואפילו כבה הנר ולקמן מפרש טעמא:"
+  },
+  "Rashi on Shabbat 44a:4:5": {
+    "dependsOn": [
+      "Shabbat 44a:4",
+      "Rashi on Shabbat 44a:4:1",
+      "Rashi on Shabbat 44a:4:2",
+      "Rashi on Shabbat 44a:4:3",
+      "Rashi on Shabbat 44a:4:4",
+      "Rashi on Shabbat 44a:4:5"
+    ],
+    "generatedAt": "2026-11-13T04:12:14.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן הנר הכבה</strong> - דכיון דכבה והולך לא מחייב תו משום מכבה:"
+  },
+  "Rashi on Shabbat 44a:5:1": {
+    "dependsOn": [
+      "Shabbat 44a:5"
+    ],
+    "generatedAt": "2026-11-13T04:12:58.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבה אין לא כבה לא</strong> - דלא שמעינן ליה לרבי שמעון דשרי במתני' אלא מותר שמן שבנר ושבקערה דמשמע לאחר שכבה:"
+  },
+  "Rashi on Shabbat 44a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T04:13:18.410Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי אבל</strong> - מדקאמר אבל מכלל דבנר מותר:"
+  },
+  "Rashi on Shabbat 44a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:7:1",
+      "Rashi on Shabbat 44a:7:2",
+      "Rashi on Shabbat 44a:7:3"
+    ],
+    "generatedAt": "2026-11-13T04:14:00.285Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזוטא</strong> - דדעתי' עליה מבע\"י סבר שיכלה השמן מהר ואשתמש בנר לכשיכבה:"
+  },
+  "Rashi on Shabbat 44a:7:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:7:1",
+      "Rashi on Shabbat 44a:7:2"
+    ],
+    "generatedAt": "2026-11-13T04:14:37.054Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל הני</strong> - לא אסיק אדעתיה שיכבו כל היום:"
+  },
+  "Rashi on Shabbat 44a:8:1": {
+    "dependsOn": [
+      "Shabbat 44a:8",
+      "Rashi on Shabbat 44a:8:2",
+      "Rashi on Shabbat 44a:7:1",
+      "Rashi on Shabbat 44a:7:2",
+      "Rashi on Shabbat 44a:7:3",
+      "Rashi on Shabbat 44a:4:1",
+      "Rashi on Shabbat 44a:4:2",
+      "Rashi on Shabbat 44a:4:3",
+      "Rashi on Shabbat 44a:4:4",
+      "Rashi on Shabbat 44a:4:5"
+    ],
+    "generatedAt": "2026-11-13T04:16:04.585Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' שמעון מתיר</strong> - וקערה נפישא קשיא קערה אקערה:"
+  },
+  "Rashi on Shabbat 44a:8:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:8:1"
+    ],
+    "generatedAt": "2026-11-13T04:16:43.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דומיא דנר</strong> - קתני לה דזוטרא:"
+  },
+  "Rashi on Shabbat 44a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:9:2",
+      "Rashi on Shabbat 44a:9:3"
+    ],
+    "generatedAt": "2026-11-13T04:17:32.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פמוט</strong> - מנורה של מתכת ואינה מאוסה:"
+  },
+  "Rashi on Shabbat 44a:9:2": {
+    "dependsOn": [
+      "Shabbat 44a:3",
+      "Rashi on Shabbat 44a:9:1",
+      "Rashi on Shabbat 44a:9:3"
+    ],
+    "generatedAt": "2026-11-13T04:18:33.069Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדברי המתיר</strong> - ר' מאיר המתיר בנר ישן:"
+  },
+  "Rashi on Shabbat 44a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:9:1",
+      "Rashi on Shabbat 44a:9:2",
+      "Rashi on Shabbat 44a:9:3",
+      "Rashi on Shabbat 44a:9:4",
+      "Shabbat 44a:4"
+    ],
+    "generatedAt": "2026-11-13T04:20:21.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוסר</strong> - בהאי דמוקצה מחמת איסור כדקתני לעיל חוץ מן הנר שהדליקו בו בשבת:"
+  },
+  "Rashi on Shabbat 44a:9:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:9:1",
+      "Rashi on Shabbat 44a:9:2",
+      "Rashi on Shabbat 44a:9:3",
+      "Rashi on Shabbat 44a:9:5"
+    ],
+    "generatedAt": "2026-11-13T04:21:03.452Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדברי האוסר</strong> - רבי יהודה האוסר בנר ישן של חרס התם הוא דמאיס אבל הכא שרי ולית ליה מוקצה מחמת איסור:"
+  },
+  "Rashi on Shabbat 44a:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T04:21:24.426Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 44a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נר של מתכת</strong> - לא מאיס כגון של נחשת דלא בלע:"
+  },
+  "Tosafot on Shabbat 44a:10:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 36a:1:1",
+      "Tosafot on Shabbat 44a:10:1"
+    ],
+    "generatedAt": "2026-11-13T04:26:34.306Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 44a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטה שיחדה למעות אסור לטלטלה</strong> - נראה דאפי' לצורך גופה או לצורך מקומה אסור דכיון שיחדה למעות שוב אין עושין ממנה שום תשמיש והויא כחצוצרות דאסור לטלטלה לרבי יהודה אפילו לצורך גופה ומקומה ולרבי שמעון לא אסור שום מוקצה לצורך גופו ומקומו אלא מוקצה מחמת חסרון כיס:"
+  },
+  "Tosafot on Shabbat 44a:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 44a:9:1"
+    ],
+    "generatedAt": "2026-11-13T04:06:16.547Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 44a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבנר ושבקערה אסור ור' שמעון מתיר</strong> - ואחר השבת מותר אפי' לר' יהודה וה\"נ תניא לקמן גבי נויי סוכה אסור להסתפק מהן עד מוצאי י\"ט האחרון אבל בתר הכי שרי וקשה לר\"י דמ\"ש מנר חנוכה דתניא כבה ליל ראשון מוסיף עליו בליל ב' ומדליק בו כבה ליל ח' עושה לו מדורה בפני עצמו מפני שהוקצה למצותו ואומר ר\"י דנר חנוכה עיקרו לא להנאתו בא אלא לפרסומי ניסא ומשום חביבותא דנס אינו מצפה שיכבה אלא מקצה לגמרי למצוה אבל נר שבת להנאתו בא יושב ומצפה שיכבה ולכך מותר וא\"ת ומ\"ש נר שכבה דאסור לטלטל לר' יהודה מסוכה רעועה דעלמא דמהני בה תנאי כדאמר לקמן בשמעתין ואם התנה עליה הכל לפי תנאו ומוקי לה במסכת ביצה <span class=\"parenthesized\">(דף ל:)</span> בסוכה דעלמא ורעועה דאתמול דעתיה עילויה שתפול ונר נמי דעתיה עילויה שיכבה ואמאי אין מועיל תנאי להסתפק ממותר השמן ולר\"ש נמי יועיל תנאי להסתפק מן השמן המטפטף בשעה שהנר דולק וי\"ל דהתם סוכה דעלמא היתה עשויה מזמן גדול ועתה ביה\"ש אינו בודל ממנה ויושב ומצפה מתי תפול אבל נר עיקר הקצאתו הוא ביה\"ש ודחייה בידי' לצורך שבת וחמיר טפי ולא מהני ביה תנאי:"
+  },
+  "Tosafot on Shabbat 44a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 44a:9:1",
+      "Rashi on Shabbat 44a:9:2",
+      "Rashi on Shabbat 44a:9:3",
+      "Chullin 15a:1",
+      "Chullin 15a:2",
+      "Chullin 15a:3",
+      "Chullin 15a:4",
+      "Chullin 15a:5",
+      "Chullin 15b:1",
+      "Chullin 15b:2",
+      "Chokhmat Shlomo on Shabbat 44a:7"
+    ],
+    "generatedAt": "2026-11-13T04:23:38.480Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 44a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדברי המתיר אסור</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> לדברי ר' מאיר וא\"ת מאי קמ\"ל הא בהדיא קאסר ר' מאיר נר שהדליקו בה באותו שבת וי\"ל דה\"א ה\"מ בנר של חרס דאית ביה תרתי מוקצה מחמת מיאוס ומחמת איסור קמ\"ל דאפי'. בשל מתכת דלא מאיס ולית ביה אלא מוקצה מחמת איסור אסר ר' מאיר ואין נראה לר\"ת דלפי זה הא דמסיק דברי הכל אסור לא הוי אלא ר' מאיר ור' יהודה דקאי עלייהו ולא ר\"ש ומפרש וכן פר\"ח לדברי המתיר היינו ר' שמעון אסר כאן בפמוט דהא פמוט גדול הוא ככוס וקערה ועששית כמו פמוטות של בית ר' דשילהי כל כתבי <span class=\"parenthesized\">(לקמן שבת קכא:)</span> לדברי האוסר היינו ר' מאיר ור' יהודה דאסרי בנר חרס שהדליקו בו באותו שבת וה\"מ בנר של חרס דאיכא תרתי מוקצה מחמת מיאוס ומחמת איסור אבל בנר מתכת שרו ומסיק דאפי' בשל מתכת אסר ר' מאיר וה\"נ אמרי' בפ\"ק דחולין <span class=\"parenthesized\">(דף טו.)</span> ע\"כ לא שרי רבי מאיר אלא במבשל דראוי לכוס אבל בשוחט לא:"
+  }
+}

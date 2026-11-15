@@ -1,0 +1,557 @@
+{
+  "Rashi on Shabbat 63a:10:1": {
+    "dependsOn": [
+      "Shabbat 63a:10",
+      "Rashi on Shabbat 63a:1:1",
+      "Rashi on Shabbat 63a:2:1"
+    ],
+    "generatedAt": "2026-11-14T04:11:52.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופליגא</strong> - הא דקתני בטלין לימות המשיח פליגא דשמואל דלשמואל אין בטלין לימות המשיח:"
+  },
+  "Rashi on Shabbat 63a:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:10:1"
+    ],
+    "generatedAt": "2026-11-14T04:12:48.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יחדל</strong> - משמע לעולם אלמא יש עניות ועשירות ש\"מ נחמות שנתנבאו הנביאים ולא יהיה כנעני עוד <span class=\"parenthesized\">(זכריה י״ד:כ״א)</span> לא לימות המשיח נתנבאו שהן מן העולם הזה דאם כן חדל לך אביון:"
+  },
+  "Rashi on Shabbat 63a:11:1": {
+    "dependsOn": [
+      "Shabbat 63a:11",
+      "Shabbat 63a:10",
+      "Rashi on Shabbat 63a:11:1",
+      "Rashi on Shabbat 63a:11:2",
+      "Rashi on Shabbat 63a:11:3",
+      "Rashi on Shabbat 63a:6:1",
+      "Rashi on Shabbat 63a:6:2",
+      "Rashi on Shabbat 63a:6:3",
+      "Rashi on Shabbat 63a:10:1",
+      "Rashi on Shabbat 63a:10:2"
+    ],
+    "generatedAt": "2026-11-14T04:14:08.258Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייע ליה</strong> - ברייתא דקתני בטלין לימות המשיח לרבי חייא בר אבא:"
+  },
+  "Rashi on Shabbat 63a:11:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:11:1",
+      "Rashi on Shabbat 63a:11:3"
+    ],
+    "generatedAt": "2026-11-14T04:14:35.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא נתנבאו</strong> - דברי נחמות שלהן:"
+  },
+  "Rashi on Shabbat 63a:11:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:11:1",
+      "Rashi on Shabbat 63a:11:2"
+    ],
+    "generatedAt": "2026-11-14T04:15:08.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עין לא ראתה</strong> - עין של נביאים לא שלטה לראותו:"
+  },
+  "Rashi on Shabbat 63a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:15:37.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדברי תורה כתיב</strong> - הוי זהיר לחזר על משנתך שתהא מזומנת לך בשעת הדין להביא ראיה כחרב על ירך גבור לנצח במלחמה והוא הודך והדרך:"
+  },
+  "Rashi on Shabbat 63a:15:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:15:2"
+    ],
+    "generatedAt": "2026-11-14T04:16:09.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דליגמר איניש</strong> - לגרוס שמעתא מרביה ואף על גב דלא ידע לכולהו טעמיה:"
+  },
+  "Rashi on Shabbat 63a:15:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:15:1"
+    ],
+    "generatedAt": "2026-11-14T04:16:42.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדר ליסבר</strong> - טעמיה דהא קשה ליה לרב כהנא ולא הוה ידע להאי טעמא ותלמודיה הוה קים ליה מדהוה בר תמני סרי:"
+  },
+  "Rashi on Shabbat 63a:17:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Shabbat 63a:2",
+      "Rashi on Shabbat 63a:17:2",
+      "Rashi on Shabbat 63a:17:3"
+    ],
+    "generatedAt": "2026-11-14T04:17:19.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המחדדין</strong> - שואלין ומשיבין ולא לקפח אלא להתחדד:"
+  },
+  "Rashi on Shabbat 63a:17:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:17:1",
+      "Rashi on Shabbat 63a:17:2",
+      "Rashi on Shabbat 63a:17:3",
+      "Chokhmat Shlomo on Shabbat 63a:1"
+    ],
+    "generatedAt": "2026-11-14T04:18:27.463Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והדרך</strong> - כמו וחדדך:"
+  },
+  "Rashi on Shabbat 63a:17:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:17:1",
+      "Rashi on Shabbat 63a:17:2"
+    ],
+    "generatedAt": "2026-11-14T04:19:24.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותורך</strong> - ותלמדך:"
+  },
+  "Rashi on Shabbat 63a:18:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:18:2",
+      "Rashi on Shabbat 63a:18:3"
+    ],
+    "generatedAt": "2026-11-14T04:20:22.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עושר וכבוד ליכא</strong> - בתמיה כיון דאיכא אורך ימים כ\"ש עושר וכבוד:"
+  },
+  "Rashi on Shabbat 63a:18:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:18:1",
+      "Rashi on Shabbat 63a:18:2",
+      "Rashi on Shabbat 63a:18:3",
+      "Steinsaltz on Shabbat 63a:18",
+      "Jastrow, יָמַן 1",
+      "Chidushei Agadot on Shabbat 63a:5",
+      "Chidushei Agadot on Shabbat 63a:6",
+      "Rashi on Shabbat 88b:4:1",
+      "Rashi on Shabbat 88b:4:2"
+    ],
+    "generatedAt": "2026-11-14T04:21:58.603Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיימינין</strong> - של תורה שמפשפשין טעמיהן בדקדוק ובוררין כימין המיומנת למלאכה:"
+  },
+  "Rashi on Shabbat 63a:18:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:18:1",
+      "Rashi on Shabbat 63a:18:2"
+    ],
+    "generatedAt": "2026-11-14T04:22:30.076Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למשמאלין בה</strong> - שאין יגעים בה כל צרכן אי נמי מיימינין בה עוסקין לשמה משמאילים שלא לשמה:"
+  },
+  "Rashi on Shabbat 63a:19:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Shabbat 63a:19:1",
+      "Rashi on Shabbat 63a:19:2"
+    ],
+    "generatedAt": "2026-11-14T04:23:04.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הנוחין זה לזה</strong> - נושאין ונותנין בה בנחת רוח מתעסקין כדי שילמדו זה מזה:"
+  },
+  "Rashi on Shabbat 63a:19:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:19:1",
+      "Rashi on Shabbat 63a:18:1",
+      "Rashi on Shabbat 63a:18:2",
+      "Rashi on Shabbat 63a:18:3"
+    ],
+    "generatedAt": "2026-11-14T04:24:07.006Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ידבר עמים תחתינו</strong> - ישפיל וכל שפלות בנחת ל\"א הנוחין מנהיגין זה את זה להבנתה של הלכה כמו לך נחה <span class=\"parenthesized\">(שמות ל״ב:ל״ד)</span> ידבר תרגום של ינהג:"
+  },
+  "Rashi on Shabbat 63a:1:1": {
+    "dependsOn": [
+      "Jastrow, חַרְדְּלִי 1",
+      "Rashi on Shabbat 63a:1:2",
+      "Rashi on Shabbat 63a:1:3",
+      "Rashi on Shabbat 63a:1:4",
+      "Shabbat 63a:1",
+      "Rashi on Shabbat 62b:23:4",
+      "Rashi on Shabbat 62b:23:5",
+      "Rashi on Shabbat 62b:23:6"
+    ],
+    "generatedAt": "2026-11-14T04:01:32.834Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביין חרדלי</strong> - שחור כלומר לבנה או שחורה:"
+  },
+  "Rashi on Shabbat 63a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:1:1",
+      "Rashi on Shabbat 63a:1:3",
+      "Rashi on Shabbat 63a:1:4"
+    ],
+    "generatedAt": "2026-11-14T04:02:12.162Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במסב רחב</strong> - מיסב מטה שמיסב עליה בשעת אכילה ולענין ניאוף אשה שמנה:"
+  },
+  "Rashi on Shabbat 63a:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:1:1",
+      "Rashi on Shabbat 63a:1:2",
+      "Rashi on Shabbat 63a:1:3",
+      "Rashi on Shabbat 63a:1:4",
+      "Rashi on Shabbat 62b:1:1",
+      "Rashi on Shabbat 62b:1:2"
+    ],
+    "generatedAt": "2026-11-14T04:05:46.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קצר</strong> - כחושה:"
+  },
+  "Rashi on Shabbat 63a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:1:1",
+      "Rashi on Shabbat 63a:1:2",
+      "Rashi on Shabbat 63a:1:3"
+    ],
+    "generatedAt": "2026-11-14T04:06:16.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבר טוב</strong> - אשה טובת מראה:"
+  },
+  "Rashi on Shabbat 63a:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:24:32.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי יאמר לו מה תעשה</strong> - שומר מצות יוכל לומר לו:"
+  },
+  "Rashi on Shabbat 63a:23:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:23:2",
+      "Rashi on Shabbat 63a:23:3"
+    ],
+    "generatedAt": "2026-11-14T04:25:10.650Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקשיבין</strong> - מלמדים זה את זה ומבינים זה מזה ולישנא דקרא נקט:"
+  },
+  "Rashi on Shabbat 63a:23:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:25:30.998Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגנים</strong> - בתי מדרשות:"
+  },
+  "Rashi on Shabbat 63a:23:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:23:1",
+      "Rashi on Shabbat 63a:23:2"
+    ],
+    "generatedAt": "2026-11-14T04:26:04.425Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:23:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבירים מקשיבים</strong> - זה לזה להם אני אומר שישמיעוני קולם ואענם:"
+  },
+  "Rashi on Shabbat 63a:24:1": {
+    "dependsOn": [
+      "Shabbat 63a:24",
+      "Rashi on Shabbat 63a:23:1",
+      "Rashi on Shabbat 63a:23:2",
+      "Rashi on Shabbat 63a:23:3",
+      "Rashi on Shabbat 63a:1:1"
+    ],
+    "generatedAt": "2026-11-14T04:27:12.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברח דודי</strong> - בתריה כתיב:"
+  },
+  "Rashi on Shabbat 63a:25:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:27:33.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המדגילים</strong> - מאספין זה את זה ואומרים בא ונלמוד ונבין בין שנינו הואיל ואין לנו רב ללמדנו:"
+  },
+  "Rashi on Shabbat 63a:25:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:25:1"
+    ],
+    "generatedAt": "2026-11-14T04:28:04.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:25:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צורתא</strong> - שורש הדבר קצת למדו מרבם:"
+  },
+  "Rashi on Shabbat 63a:26:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:26:2",
+      "Rashi on Shabbat 63a:26:1"
+    ],
+    "generatedAt": "2026-11-14T04:28:35.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדול המלוה</strong> - לפי שאין העני בוש בדבר:"
+  },
+  "Rashi on Shabbat 63a:26:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:26:1",
+      "Shabbat 63a:26",
+      "Rashi on Shabbat 63b:13:2"
+    ],
+    "generatedAt": "2026-11-14T04:29:59.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:26:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטיל לכיס</strong> - מעות ומלאי להשתכר בהן למחצית שכר ואיידי דאיירי רבי אבא אמר ריש לקיש נקט כל הני מילי דאגדתא דאמר להו ר' אבא משמיה:"
+  },
+  "Rashi on Shabbat 63a:27:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:27:2"
+    ],
+    "generatedAt": "2026-11-14T04:30:29.597Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:27:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוגרו</strong> - הדבק בו שסופך ליהנות מתלמודו:"
+  },
+  "Rashi on Shabbat 63a:27:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:27:2",
+      "Rashi on Shabbat 63a:27:1"
+    ],
+    "generatedAt": "2026-11-14T04:31:07.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:27:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תדור בשכונתו</strong> - שאינו יודע בדקדוקי מצות ואין חסידותו שלם וסופך ללמוד ממנו:"
+  },
+  "Rashi on Shabbat 63a:28:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:28:2"
+    ],
+    "generatedAt": "2026-11-14T04:31:42.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:28:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מונע חסד</strong> - שאינו מניח העניים לבא לפתחו:"
+  },
+  "Rashi on Shabbat 63a:28:2": {
+    "dependsOn": [
+      "Shabbat 63a:28",
+      "Rashi on Shabbat 63a:28:1",
+      "Steinsaltz on Shabbat 63a:28",
+      "Rashi on Shabbat 63a:23:1",
+      "Rashi on Shabbat 63a:25:1",
+      "Rashi on Shabbat 63b:1:1",
+      "Jastrow, *לַמָּס 1"
+    ],
+    "generatedAt": "2026-11-14T04:33:08.357Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:28:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למס</strong> - דהיינו כלב:"
+  },
+  "Rashi on Shabbat 63a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:06:33.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דצימצמאי מלכתא</strong> - כך שמה:"
+  },
+  "Rashi on Shabbat 63a:3:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 60a:1:2",
+      "Rashi on Shabbat 60a:6:1",
+      "Shabbat 63a:3",
+      "Rashi on Shabbat 60a:2:1",
+      "Rashi on Shabbat 62b:1:1",
+      "Rashi on Shabbat 62b:2:1"
+    ],
+    "generatedAt": "2026-11-14T04:08:01.860Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באלה</strong> - מפרש בגמ' קולפא מצוק\"ה בלע\"ז:"
+  },
+  "Rashi on Shabbat 63a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 63a:5:1"
+    ],
+    "generatedAt": "2026-11-14T04:08:33.558Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתתו חרבותם</strong> - ואי תכשיטין נינהו לא יהו בטלין לעתיד:"
+  },
+  "Rashi on Shabbat 63a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:09:04.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בירית</strong> - בגמרא מפרש:"
+  },
+  "Rashi on Shabbat 63a:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:09:26.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהורה</strong> - אינה מקבלת טומאה:"
+  },
+  "Rashi on Shabbat 63a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:09:45.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויוצאין בה</strong> - דלא שלפא ומחויא שלא יראה שוקה:"
+  },
+  "Rashi on Shabbat 63a:7:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 60a:7:7"
+    ],
+    "generatedAt": "2026-11-14T04:10:41.365Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבלין טמאין</strong> - בגמ' מפרש לה:"
+  },
+  "Rashi on Shabbat 63a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:11:09.855Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 63a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרגא בטיהרא</strong> - נר בצהרים מתוך שאינו צריך אינו נאה אבל בזמן הזה שהוא עת מלחמה תכשיטין הן:"
+  },
+  "Tosafot on Shabbat 63a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T04:13:10.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 63a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בין העוה\"ז לימות המשיח</strong> - אע\"ג דהשתא אין ירושלים ואין בהמ\"ק ואילו לימות המשיח יהיה הכל בנוי צ\"ל דהאי אין בין לאו דוקא:"
+  }
+}

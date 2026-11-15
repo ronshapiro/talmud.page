@@ -1,0 +1,508 @@
+{
+  "Rashi on Shabbat 81b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:1:1",
+      "Translation on Rashi on Shabbat 81b:1:1",
+      "Rashi on Shabbat 81a:10:1",
+      "Rashi on Shabbat 81b:1:2",
+      "Rashi on Shabbat 81b:2:1"
+    ],
+    "generatedAt": "2026-11-15T03:14:51.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו להעלותם אחריו לגג</strong> - אם עלה שם לפנות מי חיישינן לטירחא יתירתא או לא:"
+  },
+  "Rashi on Shabbat 81b:1:2": {
+    "dependsOn": [
+      "Translation on Rashi on Shabbat 81b:1:2"
+    ],
+    "generatedAt": "2026-11-15T03:15:47.870Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדוחה את לא תעשה</strong> - דכתיב <span class=\"parenthesized\">(דברים כ״ב:א׳)</span> והתעלמת מהם פרט לזקן ואינו לפי כבודו והכא נמי טלטול דרבנן אלאו דלא תסור אסמכוה רבנן ובמקום כבוד הבריות נדחה:"
+  },
+  "Rashi on Shabbat 81b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:16:08.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלפניו</strong> - קסמין המוטלין על גבי קרקע ולא אמרינן מוקצין נינהו:"
+  },
+  "Rashi on Shabbat 81b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:1:3",
+      "Rashi on Shabbat 81b:1:5"
+    ],
+    "generatedAt": "2026-11-15T03:16:54.301Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחצות</strong> - לטול הבשר שבין השינים ולחצות ביניהן:"
+  },
+  "Rashi on Shabbat 81b:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:1:4",
+      "Rashi on Shabbat 81b:1:5",
+      "Rashi on Shabbat 81b:1:6",
+      "Steinsaltz comment #1 on Shabbat 81b:1",
+      "Steinsaltz comment #2 on Shabbat 81b:1",
+      "Tosafot on Shabbat 81b:1:1",
+      "Tosafot on Shabbat 81b:1:2",
+      "Steinsaltz on Shabbat 81b:1"
+    ],
+    "generatedAt": "2026-11-15T03:18:28.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מן האבוס</strong> - שהוא מוכן אלמא העמידו דבריהם במקום כבוד הבריות שפעמים שנראה מבחוץ וגנאי הוא לו:"
+  },
+  "Rashi on Shabbat 81b:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:18:51.282Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם אדם קובע לסעודה</strong> - והיה לו להכין שם מאתמול:"
+  },
+  "Rashi on Shabbat 81b:1:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:1:5",
+      "Rashi on Shabbat 81b:1:6",
+      "Rashi on Shabbat 81b:1:1",
+      "Rashi on Shabbat 81b:1:2",
+      "Rashi on Shabbat 81b:1:3",
+      "Rashi on Shabbat 81b:1:4",
+      "Steinsaltz on Shabbat 81b:1"
+    ],
+    "generatedAt": "2026-11-15T03:20:54.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא אדם קובע לבה\"כ</strong> - בתמיה פעמים שמוצא אדם שם והולך למקום אחר בית הכסא לא היה מצוי להם בבתיהן שהיו דרין בבתיהן בעלייה מפני דוחק בתים:"
+  },
+  "Rashi on Shabbat 81b:2:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:2:1",
+      "Rashi on Shabbat 81b:2:2",
+      "Rashi on Shabbat 81b:2:3"
+    ],
+    "generatedAt": "2026-11-15T03:24:12.945Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשדה ניר</strong> - חרישה ראשונה ועומד לזריעה:"
+  },
+  "Rashi on Shabbat 81b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:2:1",
+      "Rashi on Shabbat 81b:2:2",
+      "Rashi on Shabbat 81b:2:3"
+    ],
+    "generatedAt": "2026-11-15T03:24:43.637Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דוושא</strong> - ובשדה חבירו מפני שדש את נירו ומתקשה <span class=\"parenthesized\">(את)</span> החרישה:"
+  },
+  "Rashi on Shabbat 81b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:25:01.698Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום עשבים</strong> - שמחמת לחלוחית הניר עשבים עולין על הצרור וכשהוא מקנח בו נתלשים:"
+  },
+  "Rashi on Shabbat 81b:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:25:35.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לקנח</strong> - דאינו מתכוין לתלוש ומותר דהלכה כר\"ש:"
+  },
+  "Rashi on Shabbat 81b:2:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:2:3",
+      "Rashi on Shabbat 81b:2:4"
+    ],
+    "generatedAt": "2026-11-15T03:26:06.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתולש ממנו</strong> - במתכוין חייב דמקום גידולו הוא אע\"פ שהוא צרור ואינו עפר:"
+  },
+  "Rashi on Shabbat 81b:2:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:2:5",
+      "Rashi on Shabbat 81b:2:7"
+    ],
+    "generatedAt": "2026-11-15T03:26:45.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקיל מעילאי</strong> - ממקום גבשושית:"
+  },
+  "Rashi on Shabbat 81b:2:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:27:07.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושדי לתתאי</strong> - למקום גומא ומשוה החרישה והוי תולדה דחורש:"
+  },
+  "Rashi on Shabbat 81b:2:8": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:2:7",
+      "Rashi on Shabbat 81b:2:8"
+    ],
+    "generatedAt": "2026-11-15T03:27:35.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:2:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבית</strong> - שייך בנין וזה שמשוה גומות בנין הרצפה הוא ובשדה מתקן החרישה:"
+  },
+  "Rashi on Shabbat 81b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:3:2"
+    ],
+    "generatedAt": "2026-11-15T03:28:33.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדריש לקיש</strong> - דאמר מותר לקנח בו ולא אמרינן צרור זה העשבים שעלו מלחלוחית הקרקע הן יוצאין וכשמגביהן הרי הוא כעוקרן מגידוליהן:"
+  },
+  "Rashi on Shabbat 81b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:29:24.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האי פרפיסא</strong> - עציץ נקוב שזרעו בו ובתשובת הגאונים מצאתי שעושין חותלות מכפות תמרים וממלאין אותם עפר וזבל בהמה וכ\"ב או ט\"ו יום לפני ר\"ה עושין כל אחד ואחד לשם כל קטן וקטנה שבבית וזורעים לתוכן פול המצרי או קיטנית וקורין לו פורפיסא וצומח ובערב ר\"ה נוטל כל אחד שלו ומחזירו סביבות ראשו שבעה פעמים ואומר זה תחת זה וזה חליפתי וזה תמורתי ומשליכו לנהר:"
+  },
+  "Rashi on Shabbat 81b:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:3:1",
+      "Rashi on Shabbat 81b:3:2",
+      "Rashi on Shabbat 81b:3:3",
+      "Rashi on Shabbat 81b:3:4",
+      "Rashi on Shabbat 81b:3:5"
+    ],
+    "generatedAt": "2026-11-15T03:29:56.954Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרי לטלטולי</strong> - ולא אמרינן תולש הוא:"
+  },
+  "Rashi on Shabbat 81b:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:3:1",
+      "Rashi on Shabbat 81b:3:2",
+      "Rashi on Shabbat 81b:3:3",
+      "Rashi on Shabbat 81b:3:5"
+    ],
+    "generatedAt": "2026-11-15T03:30:25.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לצורך</strong> - קינוח כבוד הבריות:"
+  },
+  "Rashi on Shabbat 81b:3:5": {
+    "dependsOn": [
+      "Sanhedrin 82a:8",
+      "Rashi on Shabbat 81b:3:1",
+      "Rashi on Shabbat 81b:3:2",
+      "Rashi on Shabbat 81b:3:3",
+      "Rashi on Shabbat 81b:3:4",
+      "Gilyon HaShas on Shabbat 81b:2"
+    ],
+    "generatedAt": "2026-11-15T03:32:19.011Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב משום תולש</strong> - דאינו נהנה שוב מריח הקרקע ול\"נ דהאי חייב לאו דווקא אלא אסור משום דדמי לתולש דאי חייב ממש קאמר לצורך היכי שרי רבנן איסור כרת וסקילה משום קינוח ודומה לו במסכת סנהדרין <span class=\"parenthesized\">(דף סב.)</span> הבא על הכותית חייב משום נשג\"ז דלאו מדאורייתא היא אלא מדרבנן:"
+  },
+  "Rashi on Shabbat 81b:4:1": {
+    "dependsOn": [
+      "Steinsaltz on Shabbat 81b:4",
+      "Steinsaltz comment #1 on Shabbat 81b:4",
+      "Rashi on Shabbat 81b:4:2",
+      "Rashi on Shabbat 81b:4:3",
+      "Rashi on Shabbat 81b:4:4",
+      "Rashi on Shabbat 81b:4:5",
+      "Rashi on Shabbat 81b:4:6",
+      "Rashi on Shabbat 81b:4:7",
+      "Shabbat 82a:2",
+      "Rashi on Shabbat 82a:2:1",
+      "Rashi on Shabbat 82a:2:2",
+      "Rashi on Shabbat 82a:2:3"
+    ],
+    "generatedAt": "2026-11-15T03:36:11.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום סכנה</strong> - שלא ינתק בו שיני הכרכשא שהיא תלויה בהן:"
+  },
+  "Rashi on Shabbat 81b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:36:39.953Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום כשפים</strong> - כדלקמן בשמעתין:"
+  },
+  "Rashi on Shabbat 81b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:37:00.969Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">השרת נימין</strong> - שמשיר את השיער מפני שהוא חדוד:"
+  },
+  "Rashi on Shabbat 81b:4:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:4:3",
+      "Rashi on Shabbat 81b:4:5"
+    ],
+    "generatedAt": "2026-11-15T03:38:13.787Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר שאין מתכוין הוא</strong> - ושמעינן ליה לר' יוחנן דאמר דבר שאינו מתכוין מותר לקמן בשמעתין:"
+  },
+  "Rashi on Shabbat 81b:4:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:4:4",
+      "Rashi on Shabbat 81b:4:5",
+      "Rashi on Shabbat 81b:4:6"
+    ],
+    "generatedAt": "2026-11-15T03:38:52.443Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מיבעיא בחול</strong> - שאין איסור טלטול בצרורות דאסור לקנח בחרס משום כשפים שהרי יכול לקנח בצרור:"
+  },
+  "Rashi on Shabbat 81b:4:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:39:16.997Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בשבת הואיל ואיכא תורת כלי עליו</strong> - לחתות בו אור או לחשוף מים מגבא אימא שפיר דמי דמוטב שיקנח בו מלטלטל צרור:"
+  },
+  "Rashi on Shabbat 81b:4:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:4:5",
+      "Rashi on Shabbat 81b:4:6"
+    ],
+    "generatedAt": "2026-11-15T03:40:08.686Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:4:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמ\"ל</strong> - דלא אי משום סכנה אי משום כשפים:"
+  },
+  "Rashi on Shabbat 81b:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:5:1",
+      "Rashi on Shabbat 81b:5:2",
+      "Rashi on Shabbat 81b:5:3",
+      "Rashi on Nazir 42a:8:1"
+    ],
+    "generatedAt": "2026-11-15T03:41:33.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חופף</strong> - מחליק שערו:"
+  },
+  "Rashi on Shabbat 81b:5:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 81b:5:1",
+      "Rashi on Shabbat 81b:5:3"
+    ],
+    "generatedAt": "2026-11-15T03:42:34.226Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומפספס</strong> - קרפיר:"
+  },
+  "Rashi on Shabbat 81b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:43:03.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא סורק</strong> - במסרק דודאי משיר שיער ומודה ר' שמעון בפסיק רישיה ולא ימות אבל חופף ומפספס פעמים שאינו משיר וכשמשיר דבר שאין מתכוין מותר:"
+  },
+  "Rashi on Shabbat 81b:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:6:2",
+      "Rashi on Shabbat 81b:6:3"
+    ],
+    "generatedAt": "2026-11-15T03:46:09.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטרוניתא</strong> - נכרית היתה:"
+  },
+  "Rashi on Shabbat 81b:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:6:1",
+      "Rashi on Shabbat 81b:6:2",
+      "Rashi on Shabbat 81b:6:3"
+    ],
+    "generatedAt": "2026-11-15T03:46:47.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרה מילתא</strong> - דכשפים ואסרתה לארבא ולא זזה ממקומה:"
+  },
+  "Rashi on Shabbat 81b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:47:03.542Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 81b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרי אינהו מילתא</strong> - על ידי שם טהרה:"
+  },
+  "Tosafot on Shabbat 81b:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:21:47.326Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 81b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו להעלותם לגג</strong> - <span class=\"rashi-quotation\">פי' בקונט'</span> מי חיישינן לטרחא יתירתא וקשה לר\"י א\"כ הא דפריך דאסור ליטול קיסם משלפניו תיקשי לכולה שמעתין דשרי לטלטל אבנים מקורזלות ונראה לר\"י דהכא מבעיא ליה משום דבית הכסא קרוב על הגג ויכול להכין שם מע\"ש ומהדר ליה דאפ\"ה שרי ולהכי פריך ליה דאסור לטלטל קיסם משלפניו לפי שהיה יכול להזמין מאתמול אבל אכולה שמעתא לא מצי פריך שדרכן היה לפנות בשדה ובית הכסא רחוק ולא אטרחוה רבנן להכניס שם מע\"ש וגם אם יזמינם שמא יקחם אחר:"
+  },
+  "Tosafot on Shabbat 81b:1:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 81b:1:2",
+      "Beitzah 33a:8",
+      "Tosafot on Shabbat 81b:1:1",
+      "Tosafot on Shabbat 81b:3:1",
+      "Tosafot on Shabbat 81b:5:1",
+      "Tosafot on Shabbat 81a:1:1",
+      "Tosafot on Shabbat 81a:6:1",
+      "Chokhmat Shlomo on Shabbat 81b:4",
+      "Chokhmat Shlomo on Shabbat 81b:5"
+    ],
+    "generatedAt": "2026-11-15T03:23:40.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 81b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים אומרים לא יטול אלא מן האבוס כו'</strong> - נראה לר\"י דלאו דוקא מן האבוס אלא מן הראוי לאבוס דליכא למימר דכשאינו באבוס אסור דבטל אגב קרקע דהא תנן בהמביא כדי יין <span class=\"parenthesized\">(ביצה דף לג:)</span> וחכמים אומרים מגבב משלפניו ומדליק אלמא לאו בטל הוא והא דלא שרו בקיסם לחצות שיניו אלא להדליק משום דסברי לא ניתנו עצים אלא להסקה אבל בדבר הראוי לאבוס בהמה שרי אפי' לחצות שיניו ור\"א דאמר התם נוטל אדם קיסם משלפניו לחצות שיניו ומגבב מן החצר ומדליק סבר דמה שבבית מוכן לכל מה שירצה אפי' לחצות שיניו אבל שבחצר אינו מוכן אלא להסקה:"
+  },
+  "Tosafot on Shabbat 81b:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 81b:3:1",
+      "Rashi on Shabbat 81b:3:2",
+      "Rashi on Shabbat 81b:3:3",
+      "Rashi on Shabbat 81b:3:4",
+      "Rashi on Shabbat 81b:3:5",
+      "Maharsha on Shabbat 81b:1",
+      "Maharam on Shabbat 81b:2",
+      "Tosafot on Shabbat 81b:1:1",
+      "Tosafot on Shabbat 81b:1:2",
+      "Tosafot on Shabbat 81b:5:1",
+      "Tosafot on Shabbat 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:34:41.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 81b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והניחו ע\"ג יתדות מיחייב משום תולש</strong> - האי מיחייב מכת מרדות מדרבנן <span class=\"rashi-quotation\">כדפירש בקונטרס</span> מדשרי ריש לקיש וקשה לר\"י דאמרי' בפ\"ק דגיטין <span class=\"parenthesized\">(דף ':)</span> א\"ר יוחנן עציץ נקוב המונח ע\"ג יתדות באנו למחלוקת ר\"י ורבנן דלר\"י פטור מן המעשר כדמפליג בין ספינה גוששת לשאינה גוששת ולרבנן חייב אמר רבא דילמא לא היא ע\"כ לא קאמרי רבנן אלא דספינה דלא מפסיק אויר אבל עציץ דמיפסיק אוירא אפילו רבנן מודו הא בשמעתין חשבינן ליה כמחובר מדאורייתא אפי' הניחו על גבי יתדות ולא מיחייב משום תולש אלא מדרבנן ונראה לר\"י דשמעתין לא סברא דחויא דרבא דהתם:"
+  },
+  "Tosafot on Shabbat 81b:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 81b:5:1",
+      "Avodah Zarah 7a:3",
+      "Avodah Zarah 7a:4",
+      "Yevamot 42b:8",
+      "Yevamot 42b:9",
+      "Chidushei Halachot on Shabbat 81b:3",
+      "Chokhmat Shlomo on Shabbat 81b:6"
+    ],
+    "generatedAt": "2026-11-15T03:45:39.304Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 81b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר ר' יוחנן הלכה כסתם משנה כו'</strong> - וא\"ת והא בהגוזל קמא <span class=\"parenthesized\">(ב\"ק קב.)</span> ובפ\"ק דמס' ע\"ז <span class=\"parenthesized\">(דף ז.)</span> אמר בתרי מסכתות אין סדר למשנה והכא סתם בנזיר ופלוגתא בפרק שני דביצה <span class=\"parenthesized\">(דף כג:)</span> ר' יהודה אומר כל הכלים אין נגררין חוץ מן העגלה שכובשת ואין הלכה כסתם דשמא סתם ואח\"כ מחלוקת היא ואין לומר דלר' יוחנן אפי' סתם ואח\"כ מחלוקת הלכה כסתם דהא מסקינן בהחולץ <span class=\"parenthesized\">(יבמות מב:)</span> אליבא דר' יוחנן דרמי לך לא חש לקימחיה סתם ואח\"כ מחלוקת היא ואין הלכה כסתם ותירץ רבינו שמואל מוורדון דבמחלוקת ואח\"כ סתם בחדא מסכת לכ\"ע הלכה כסתם כדפריש בפ\"ק דמס' ע\"ז <span class=\"parenthesized\">(דף ז.)</span> בהא דפסיק כר\"י דכל המשנה ידו על התחתונה פשיטא דמחלוקת ואח\"כ סתם הוא אבל בתרי מסכתות כל אמוראי סברי דאין הלכה כסתם ור' יוחנן אית ליה דאפי' בתרי מסכתות הלכה כסתם או סתם במתני' ומחלוקת בברייתא דמסתמא סתם לבסוף ואין לנו לומר שסתם רבי קודם ושוב חזר ממה שפסק ואמוראי נינהו אליבא דרבי יוחנן כדאמר באלו טרפות <span class=\"parenthesized\">(חולין דף מנ.)</span>:"
+  }
+}

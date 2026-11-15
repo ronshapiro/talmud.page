@@ -1,0 +1,423 @@
+{
+  "Rashi on Shabbat 48a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:10:2",
+      "Shabbat 48a:9"
+    ],
+    "generatedAt": "2026-11-13T08:41:42.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחדתי</strong> - שלא היו מעולם לתוכו אסור דהשתא עביד ליה מנא:"
+  },
+  "Rashi on Shabbat 48a:10:2": {
+    "dependsOn": [
+      "Shabbat 48a:10",
+      "Rashi on Shabbat 48a:10:1"
+    ],
+    "generatedAt": "2026-11-13T08:42:18.514Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעתיקי</strong> - להחזירו לכר זה שנפלו ממנו:"
+  },
+  "Rashi on Shabbat 48a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:12:2",
+      "Shabbat 48a:12",
+      "Shabbat 48a:9",
+      "Shabbat 48a:10",
+      "Rashi on Shabbat 48a:9:1",
+      "Rashi on Shabbat 48a:9:2"
+    ],
+    "generatedAt": "2026-11-13T08:44:10.210Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפותח בית הצואר</strong> - של חלוק לכתחילה:"
+  },
+  "Rashi on Shabbat 48a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:44:33.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב חטאת</strong> - דהשתא קמשוי ליה מנא וחייב משום מכה בפטיש והיינו גמר מלאכה:"
+  },
+  "Rashi on Shabbat 48a:1:1": {
+    "dependsOn": [
+      "Shabbat 48a:1"
+    ],
+    "generatedAt": "2026-11-13T08:13:10.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסוקי הבלא</strong> - כגון זה שהטמין בדבר אחר והניח קופה על הגפת דליכא אלא שהגפת מעלה הבל למעלה ומרתיח קדרה שבקופה:"
+  },
+  "Rashi on Shabbat 48a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:15:13.346Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפומא דקומקומא</strong> - מיחם של חמין והכוזא היתה מלאה צונן:"
+  },
+  "Rashi on Shabbat 48a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:15:31.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזהיה</strong> - גער בו:"
+  },
+  "Rashi on Shabbat 48a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:15:55.170Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא ממיחם על גבי מיחם</strong> - דתניא בברייתא בסוף פרקין דשרי:"
+  },
+  "Rashi on Shabbat 48a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:16:14.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם אוקומי מוקים</strong> - שהמיחם העליון גם בו יש מים חמין והתחתון אינו אלא מעמיד חומו שלא יפיג:"
+  },
+  "Rashi on Shabbat 48a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:3:2",
+      "Rashi on Shabbat 48a:1:1",
+      "Rashi on Shabbat 48a:2:1"
+    ],
+    "generatedAt": "2026-11-13T08:20:00.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דסתודר</strong> - סודר של ראש:"
+  },
+  "Rashi on Shabbat 48a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:3:1",
+      "Rashi on Shabbat 48a:2:1",
+      "Rashi on Shabbat 48a:2:2",
+      "Rashi on Shabbat 48a:3:3",
+      "Rashi on Shabbat 48a:3:4",
+      "Steinsaltz on Shabbat 48a:3"
+    ],
+    "generatedAt": "2026-11-13T08:21:26.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכובא</strong> - קנקן:"
+  },
+  "Rashi on Shabbat 48a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:21:48.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטלא</strong> - כלי ששואבין יין מן הכובא:"
+  },
+  "Rashi on Shabbat 48a:3:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:3:1",
+      "Rashi on Shabbat 48a:3:2",
+      "Rashi on Shabbat 48a:3:3",
+      "Rashi on Shabbat 48a:3:5",
+      "Rashi on Shabbat 48a:3:6"
+    ],
+    "generatedAt": "2026-11-13T08:22:25.291Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא עצר</strong> - שהיה סוחטו מן המים שנבלעו בו:"
+  },
+  "Rashi on Shabbat 48a:3:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:3:5",
+      "Rashi on Shabbat 48a:3:4",
+      "Rashi on Shabbat 48a:3:6"
+    ],
+    "generatedAt": "2026-11-13T08:23:07.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא מפרונקא</strong> - בגד העשוי לפרוס על הגיגית שפורסין אותו בשבת:"
+  },
+  "Rashi on Shabbat 48a:3:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:23:29.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:3:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קפיד עליה</strong> - אם שרוי במים שהרי לכך עשוי ולא אתי לידי סחיטה:"
+  },
+  "Rashi on Shabbat 48a:5:1": {
+    "dependsOn": [
+      "[",
+      "Shabbat 48a:5",
+      "Rashi on Shabbat 48a:5:2"
+    ],
+    "generatedAt": "2026-11-13T08:27:34.610Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכין</strong> - אינן אלא לעשות מהן לבדין שקורין פלט\"ר ומוקצין הן למלאכה ואסור לטלטלן ואלו שטמן בהן מי אמרינן יחדן להטמנה ואיכא תורת כלי עליהן ומותר לטלטלן בשבת או לא:"
+  },
+  "Rashi on Shabbat 48a:5:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:5:1"
+    ],
+    "generatedAt": "2026-11-13T08:28:27.590Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עומד ומפקיר לכך</strong> - קופה של מוכין שדמיה יקרין אין דרך בכך ולא בטלי להטמנה:"
+  },
+  "Rashi on Shabbat 48a:6:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:6:2"
+    ],
+    "generatedAt": "2026-11-13T08:32:14.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיזי של צמר</strong> - כמות שנגזזו:"
+  },
+  "Rashi on Shabbat 48a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:6:1",
+      "Rashi on Shabbat 48a:6:2",
+      "Rashi on Shabbat 48a:6:3",
+      "Rashi on Shabbat 48a:6:4",
+      "Sefer HeArukh, Letter Tzadi 138",
+      "Steinsaltz on Shabbat 48a:6"
+    ],
+    "generatedAt": "2026-11-13T08:33:37.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציפי צמר</strong> - לאחר שנפצוה ושטחוה כמין מחצלות משטיחין:"
+  },
+  "Rashi on Shabbat 48a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:6:1",
+      "Rashi on Shabbat 48a:6:2",
+      "Rashi on Shabbat 48a:6:4"
+    ],
+    "generatedAt": "2026-11-13T08:34:20.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשונות</strong> - לאחר שצבען וסורקין אותן כעין לשונות ארוכין לטוותן:"
+  },
+  "Rashi on Shabbat 48a:6:4": {
+    "dependsOn": [
+      "Shabbat 48a:6"
+    ],
+    "generatedAt": "2026-11-13T08:35:18.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מטלטלין אותן</strong> - קס\"ד דהכי קאמר ואע\"פ שטמן בהן אין מטלטלין אותן:"
+  },
+  "Rashi on Shabbat 48a:7:1": {
+    "dependsOn": [
+      "Shabbat 48a:7"
+    ],
+    "generatedAt": "2026-11-13T08:35:59.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם לא טמן בהן כו'</strong> - ומילי מילי קתני ברישא אשמועינן דטומנין בהן דלא מוספי הבלא ואשמועינן סיפא דסתם מוכין מוקצות נינהו אבל הני דטמן בהן הוי כמי שיחדן לכך:"
+  },
+  "Rashi on Shabbat 48a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:8:1"
+    ],
+    "generatedAt": "2026-11-13T08:38:45.250Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למזגא</strong> - להיסב עליהן:"
+  },
+  "Rashi on Shabbat 48a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:9:1",
+      "Rashi on Shabbat 48a:9:2",
+      "Rashi on Shabbat 48a:9:3"
+    ],
+    "generatedAt": "2026-11-13T08:39:16.814Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאהדורי אודרא לבי סדיא</strong> - להחזיר מוכין שנפלו מן הכר לתוכן:"
+  },
+  "Rashi on Shabbat 48a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:39:38.094Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתירין בית הצואר</strong> - שדרך הכובסים לקושרן:"
+  },
+  "Rashi on Shabbat 48a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:9:1",
+      "Rashi on Shabbat 48a:9:2"
+    ],
+    "generatedAt": "2026-11-13T08:41:00.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 48a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא פותחין</strong> - לכתחילה דהשתא עביד ליה מנא:"
+  },
+  "Tosafot on Shabbat 48a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:43:07.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא בחדתי הא בעתיקי</strong> - אומר ר\"י שאם נתקו חוטי הסרבל אם הנקב רחב ויכול להכניסם בלא טורח שרי כיון דעתיקי ובלבד שיתנם בענין זה שלא יהא לחוש שמא יתקע דבעניין שהוא רגילות לתקוע ולקשור נראה דאסורין להחזיר כדאסרינן בריש כל הכלים <span class=\"parenthesized\">(שבת דף קכב:)</span> החזרת שידה תיבה ומגדל גזירה שמא יתקע:"
+  },
+  "Tosafot on Shabbat 48a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T08:14:51.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דזיתים מסקי הבלא</strong> - מכאן יש לאסור להניח גחלים תחת הקדרה אפי' יתן עליהן אפר אין להטמין קדרה עליהם שהרי הגחלים מעלין הבל למעלה כמו גפת של זיתים ויש תימה היאך אנו מטמינין על כירות שלנו שקורין אשטר\"א ואע\"פ שגורפין אותו הוא מוסיף הבל כמו גפת של זיתים ואומר ר\"י שיש ליתן טעם לקיים המנהג דגבי גפת איכא למיחש שמא יטמין כולה בתוכה אבל בכירות שלנו לא שייך למיחש הכי ועוד יש שעושין חפירה גדולה ועושין בה בנין לבנים סביב מכל צד ומלמטה ומחמין אותה היטב וגורפין אותה ומטמינין בה את הקדרה ולא דמיא למטמין בדבר המוסיף הבל דלא אסרו אלא כשמטמין ומדביק סביב הקדרה דומיא דרמץ אבל תנור או חפירה שיש אויר בין הדפנות לקדרה אין לאסור יותר מהשהאה אף על פי שכל הקדרה בתוך התנור ורבינו ברוך פי' שיש לחלק בין תוספת הבל דגפת לתוספת הבל דכירה שלנו לפי שהכירה אין חומה אלא מחמת האש ולעולם מתקרר והולך אבל הגפת מוסיף הבל מעצמו אומר רבינו שמואל דמותר לשום תפוחים אצל האש סמוך לחשכה אע\"פ שלא יוכלו לצלות מבע\"י דנאכלין טפי כמו שהן חיין מתבשיל שנתבשל כמאכל בן דרוסאי דשרי ואע\"ג דבפ\"ק <span class=\"parenthesized\">(ד' יג:)</span> תנן אין צולין בשר בצל וביצה אלא כדי שיצולו מבע\"י אע\"פ שפעמים אוכלים בצל חי מ\"מ אינו ראוי לאכול חי כמו תפוחים ורוצה להפיג חריפותן ולמתקן בבישולו ואם הטמין תפוחים עם הקדרה אסור להחזיר כרים וכסתות על הקדרה. שעמהן או להוסיף על אותן כרים אע\"ג דאם אין שם תפוחים מותר להחזיר כדתנן בפירקין <span class=\"parenthesized\">(ד' נא.)</span> כסהו ונתגלה מותר לכסותו ולהוסיף נמי אמרינן בגמרא <span class=\"parenthesized\">(שם.)</span> אם בא להוסיף מוסיף כשיש עם הקדרה תפוחים אסור דאם מחזיר קודם שנתבשלו נמצא מבשל בשבת ומה שנהגו להסיר הקדרה מעל הכירה ומניחין על הקרקע עד שיגרפו הכירה שמא סבירא לן כהך לישנא דריש כירה <span class=\"parenthesized\">(לעיל דך לח:)</span> דשרי חזקיה משמיה דאביי הניחו על גבי קרקע אם דעתו להחזיר:"
+  },
+  "Tosafot on Shabbat 48a:2:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 48a:2:1",
+      "Tosafot on Shabbat 48a:1:1",
+      "Tosafot on Shabbat 48a:3:1",
+      "Tosafot on Shabbat 48a:5:1",
+      "Tosafot on Shabbat 2a:4:1"
+    ],
+    "generatedAt": "2026-11-13T08:19:21.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא ממיחם ע\"ג מיחם</strong> - קשה לר\"י דבבריתא גופה דשרי מיחם ע\"ג מיחם בסוף פרקין קתני בהדיא ולא בשביל שיחמו אלא בשביל שיהו משומרין ואומר ר\"י דברייתא לא שמיע ליה ולא מכח ברייתא פריך אלא ממעשים בכל יום שנותנין מיחם על גבי מיחם תימה דהיכי דמי אי יד סולדת בו היכי הוה בעי למישרי אע\"פ שמבשל מי לא ידע דתולדות האור כאור דתנן <span class=\"parenthesized\">(לעיל שבת דף לח:)</span> אין נותנין ביצה בצד המיחם ואמר אם גלגל חייב חטאת ותנן נמי <span class=\"parenthesized\">(דף מא.)</span> המיחם שפינהו לא יתן לתוכו צונן ואי להפשיר היכי מסיק דאסור והא תניא בפ' כירה <span class=\"parenthesized\">(שבת דף מ:)</span> נותן אדם קיתון של מים כנגד המדורה לא בשביל שיחמו אלא בשביל שתפוג צינתן והיינו הפשר כדמוכח סוגיא דהתם ורב יהודה נמי קאמר התם אחד מים ואחד שמן יד סולדת בו אסור אין יד סולדת בו מותר ואין לחלק דגבי מדורה יזהר שלא יבשל כיון שהוא אצל האש אבל הכא אפילו אין יד סולדת בו אסור דשמא יבא לטעות ויניח עד שיתבשל דהא גבי מיחם שרינן לתת לתוכו מים מרובין כדי להפשירן ולא גזרינן אטו מים מועטין אע\"פ שאינו אצל האש ונראה לרשב\"א דהא דשרינן לתת קיתון של מים כנגד המדורה היינו ברחוק מן המדורה שלעולם לא יוכל לבא לידי בשול אבל בקרוב אסור אפי' להפשיר דילמא משתלי ואתי להניחן שם עד שיתבשל ולהכי מסיק הכא דאסור ולא בשביל שיחמו דקתני התם היינו כלומר במקום שיכול לבא לידי שיחמו והלשון דחוק קצת:"
+  },
+  "Tosafot on Shabbat 48a:3:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 48a:3:5",
+      "Rashi on Shabbat 48a:3:6"
+    ],
+    "generatedAt": "2026-11-13T08:24:39.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא מפרונקא</strong> - פר\"ח דאמר רבא בפרק תולין <span class=\"parenthesized\">(לקמן שבת קלט:)</span> האי פרונקא אפלגא דכובא שרי דלא הוי אהל ולא חיישינן שמא יסחוט:"
+  },
+  "Tosafot on Shabbat 48a:3:2": {
+    "dependsOn": [
+      "Tosafot on Shabbat 48a:3:2",
+      "Tosafot on Shabbat 48a:3:1",
+      "Tosafot on Shabbat 47a:5:2"
+    ],
+    "generatedAt": "2026-11-13T08:26:27.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם לא קפיד</strong> - פר\"ת בפ\"ק דכתובות <span class=\"parenthesized\">(דף ו.)</span>:"
+  },
+  "Tosafot on Shabbat 48a:5:1": {
+    "dependsOn": [
+      "Shabbat 48a:5",
+      "Shabbat 48a:8",
+      "Shabbat 49a:11",
+      "Shabbat 49b:14",
+      "Tosafot on Shabbat 48a:3:1",
+      "Maharam on Shabbat 48a:5:1",
+      "Tosafot on Shabbat 48a:2:1"
+    ],
+    "generatedAt": "2026-11-13T08:31:47.360Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי מפני שאין לו קופה של תבן כו'</strong> - וא\"ת מאי קבעי הא תנן במתניתין טומנין בגיזי צמר ואין מטלטלין אותן והיינו אפילו טמן דהא קתני בהדיא כיצד עושה מנער את הכיסוי והן נופלות וכי מייתי מברייתא דמסייע ליה לייתי ממתניתין דלא מצי למדחי ממתניתין כדדחי ברייתא וליכא למימר דמתני' איכא לאוקומי בשל הפתק כדמוקי לקמן רבינא ע\"כ סוגיא דהכא לא סבירא כרבינא מדלא מוקי ברייתא דמייתי בשל הפתק ותירץ ר\"י דגיזי צמר. חשיבי טפי ממוכין ואסורים לטלטל יותר ואע\"ג דרבא קאמר לקמן דאפילו גיזי צמר טמן בהן מטלטלין אין לחוש אי פליגא אאביי דהכא כיון דלא קיימא לקמן מילתיה דרבא ולמאי דמשני רבינא מילתיה דרבא ומוקי מתניתין בשל הפתק ודרבא בשאין של הפתק אומר רשב\"א דה\"נ מיירי במוכין של הפתק ולא פליגא דרבא אדאביי אך ק\"ק דמאי משני בסמוך מהו דתימא חזי למזגא עלייהו כיון דמיירי בשל הפתק היכי ס\"ד דשרי לטלטל משום דחזי למזגא עלייהו:"
+  },
+  "Tosafot on Shabbat 48a:7:1": {
+    "dependsOn": [
+      "Shabbat 48a:6"
+    ],
+    "generatedAt": "2026-11-13T08:38:21.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 48a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ק אם לא טמן אין מטלטלין אותן</strong> - אמוכין קאי ולא אגיזי צמר דגיזי צמר אפי' טמן אין מטלטלין:"
+  }
+}

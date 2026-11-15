@@ -1,0 +1,608 @@
+{
+  "Rashi on Shabbat 53a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:48:18.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי שנא מאוכף</strong> - שאסור ליטול וכ\"ש להניחו:"
+  },
+  "Rashi on Shabbat 53a:10:2": {
+    "dependsOn": [
+      "Shabbat 53a:10",
+      "Rashi on Shabbat 53a:10:1"
+    ],
+    "generatedAt": "2026-11-13T15:49:01.442Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דנפיל ממילא</strong> - כדקתני מוליכו ומביאו לחצר והוא נופל מאליו:"
+  },
+  "Rashi on Shabbat 53a:11:1": {
+    "dependsOn": [
+      "Shabbat 53a:11",
+      "Rashi on Shabbat 53a:10:1",
+      "Rashi on Shabbat 53a:10:2"
+    ],
+    "generatedAt": "2026-11-13T15:49:54.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן לחממה</strong> - מרדעת צריך לחממה ומותר משום צער דצינה אבל נטילת אוכף אינו אלא שיצטנן שנתחממה ע\"י משאוי שנשאה מבעוד יום ואי לא שקיל ליה לא איכפת לן שהרי הוא יצטנן מאליו דאמרי אינשי וכו':"
+  },
+  "Rashi on Shabbat 53a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:12:2"
+    ],
+    "generatedAt": "2026-11-13T15:50:31.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזנב שועל</strong> - שתולין לו בין עיניו שלא ישלוט בו עין:"
+  },
+  "Rashi on Shabbat 53a:12:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:12:1",
+      "Rashi on Shabbat 53a:12:2"
+    ],
+    "generatedAt": "2026-11-13T15:51:31.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זהרורית</strong> - לנוי:"
+  },
+  "Rashi on Shabbat 53a:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:52:10.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכיס שלו</strong> - שתולין לו באמתו לקבל זוב ולבדוק מנין ראיותיו שאינו תכשיט לו:"
+  },
+  "Rashi on Shabbat 53a:12:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:12:1",
+      "Rashi on Shabbat 53a:12:2",
+      "Rashi on Shabbat 53a:12:3",
+      "Rashi on Shabbat 53a:12:5"
+    ],
+    "generatedAt": "2026-11-13T15:52:40.669Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכיס שבדדיהן</strong> - לקבל חלב הנוטף אי נמי שלא ישרטו דדיהן על הקוצים שהיו דדיהן גסין:"
+  },
+  "Rashi on Shabbat 53a:12:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:53:04.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחסום שבפיה</strong> - שחוסמין אותה שלא תרעה בשדות אחרים וכשמגיעין למקום מרעיתם נוטלין אותה הימנה:"
+  },
+  "Rashi on Shabbat 53a:12:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:53:21.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בסנדל שברגליה</strong> - שעושין לה סנדל של מתכת שלא יזיקוה האבנים:"
+  },
+  "Rashi on Shabbat 53a:12:7": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:53:38.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמיע</strong> - כתב לרפואת חולי:"
+  },
+  "Rashi on Shabbat 53a:12:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:54:00.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מומחה</strong> - שריפא כבר ג' פעמים:"
+  },
+  "Rashi on Shabbat 53a:12:9": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:12:8",
+      "Shabbat 53a:13",
+      "Shabbat 53a:14",
+      "Shabbat 53a:15",
+      "Rashi on Shabbat 53a:12:1",
+      "Rashi on Shabbat 53a:12:2",
+      "Rashi on Shabbat 53a:12:3",
+      "Rashi on Shabbat 53a:12:4",
+      "Rashi on Shabbat 53a:12:5",
+      "Rashi on Shabbat 53a:12:6",
+      "Rashi on Shabbat 53a:12:7",
+      "Rashi on Shabbat 53a:12:9"
+    ],
+    "generatedAt": "2026-11-13T15:56:15.798Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:12:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזה חומר בבהמה מבאדם</strong> - קס\"ד השתא דאקמיע קאי דאמרינן לקמן בפרק במה אשה יוצאה <span class=\"parenthesized\">(שבת ד' סא.)</span> שהאדם יוצא בקמיע מומחה וכל הני דקתני לא תצא הנך דלאו שמירת גופה הוא אלא משאוי וסנדל משום דדילמא מישתליף ואתי לאתויי:"
+  },
+  "Rashi on Shabbat 53a:13:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:13:1",
+      "Rashi on Shabbat 53a:13:2",
+      "Rashi on Shabbat 53a:13:3",
+      "Rashi on Shabbat 53a:12:7",
+      "Rashi on Shabbat 53a:12:8",
+      "Rashi on Shabbat 53a:12:9"
+    ],
+    "generatedAt": "2026-11-13T15:57:33.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגד שעל גבי המכה</strong> - ליכא למימר אתי לאתויי:"
+  },
+  "Rashi on Shabbat 53a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:57:58.147Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשישין שעל השבר</strong> - בהמה שנשבר בה עצם עושין לה דפין מכאן ומכאן וקושרים אותן שם והן מעמידין העצם שלא ינוד אנה ואנה עד שמתחבר:"
+  },
+  "Rashi on Shabbat 53a:13:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:13:1",
+      "Rashi on Shabbat 53a:13:2",
+      "Rashi on Shabbat 53a:13:3",
+      "Rashi on Shabbat 53a:13:4",
+      "Steinsaltz on Shabbat 53a:13"
+    ],
+    "generatedAt": "2026-11-13T15:58:53.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובשליא המדולדלת בה</strong> - שיצתה מקצתה:"
+  },
+  "Rashi on Shabbat 53a:13:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:59:20.519Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופוקקין לה זוג</strong> - אבל כשאינו פקוק אפי' בחצר לא תצא מפני שהעינבל שבתוכה מקשקש ומוליד קול לכך פוקק בצמר או במוכין שלא יקשקש העינבל שבתוכה:"
+  },
+  "Rashi on Shabbat 53a:13:5": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 53a:13:1",
+      "Rashi on Shabbat 53a:13:2",
+      "Rashi on Shabbat 53a:13:3",
+      "Rashi on Shabbat 53a:13:4",
+      "Rashi on Shabbat 53a:13:6",
+      "Rashi on Shabbat 53a:13:7"
+    ],
+    "generatedAt": "2026-11-13T16:00:43.652Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זוג</strong> - אישקלי\"ט:"
+  },
+  "Rashi on Shabbat 53a:13:6": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 53a:13:5",
+      "Rashi on Shabbat 53a:13:7",
+      "Rashi on Shabbat 53a:13:4"
+    ],
+    "generatedAt": "2026-11-13T16:02:26.843Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עינבל</strong> - בטדי\"ל:"
+  },
+  "Rashi on Shabbat 53a:13:7": {
+    "dependsOn": [
+      "Shabbat 54b:6"
+    ],
+    "generatedAt": "2026-11-13T16:03:20.927Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:13:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטיילת</strong> - באותו זוג בחצר אבל לא תצא בו לרה\"ר כדמפרש לקמן בפרקין <span class=\"parenthesized\">(שבת דף נד:)</span> דמיחזי כמאן דאזיל לחינגא:"
+  },
+  "Rashi on Shabbat 53a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:03:50.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו</strong> - בסייחים גדולים קאמר דצוארן ארוך ואין להם צער לשוח ולאכול מע\"ג הקרקע ותולה להן טרסקל לתענוג וקשיא לשמואל:"
+  },
+  "Rashi on Shabbat 53a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:05:10.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטנים</strong> - ארכובותיהן גבוהין וצוארן קטן ויש להם צער לשוח ע\"ג הקרקע ולאכול:"
+  },
+  "Rashi on Shabbat 53a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:04:06.540Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין נמי דיקא</strong> - לקמן בהאי פירקא:"
+  },
+  "Rashi on Shabbat 53a:3:1": {
+    "dependsOn": [
+      "Steinsaltz on Shabbat 53a:3",
+      "Rashi on Shabbat 53a:1:1",
+      "Shabbat 53a:3",
+      "Shabbat 53a:11",
+      "Rashi on Shabbat 53a:11:1"
+    ],
+    "generatedAt": "2026-11-13T15:13:09.958Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף באוכף</strong> - דאיהו נמי מהני לחממה:"
+  },
+  "Rashi on Shabbat 53a:3:2": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 53a:3:1",
+      "Rashi on Shabbat 53a:3:3",
+      "Steinsaltz on Shabbat 53a:3",
+      "Steinsaltz comment #1 on Shabbat 53a:3"
+    ],
+    "generatedAt": "2026-11-13T15:15:22.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יקשור לו מסריכן</strong> - פוטרא\"ל דמיחזי כמי שרוצה להטעינו משוי:"
+  },
+  "Rashi on Shabbat 53a:3:3": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 53a:3:1",
+      "Rashi on Shabbat 53a:3:2"
+    ],
+    "generatedAt": "2026-11-13T15:16:03.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רצועה תחת זנבו</strong> - פושל\"א שנותנים שם שלא תרד האוכף והמשוי על צוארה כשהיא יורדת לעמק והמסרך שלא תרד על זנבה כשהיא עולה על ההרים:"
+  },
+  "Rashi on Shabbat 53a:4:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:4:1",
+      "Rashi on Shabbat 53a:4:2",
+      "Rashi on Shabbat 53a:3:1",
+      "Rashi on Shabbat 53a:3:2",
+      "Rashi on Shabbat 53a:3:3",
+      "Shabbat 53a:4"
+    ],
+    "generatedAt": "2026-11-13T15:16:52.746Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו ליתן מרדעת</strong> - ולא לצאת לרה\"ר אלא בחצר ומפני הצינה:"
+  },
+  "Rashi on Shabbat 53a:4:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:4:1",
+      "Rashi on Shabbat 53a:4:2",
+      "Tosafot on Shabbat 53a:4:1",
+      "Steinsaltz on Shabbat 53a:4",
+      "Maharsha on Shabbat 53a:1",
+      "Shabbat 53a:4"
+    ],
+    "generatedAt": "2026-11-13T15:20:48.001Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:4:2"
+    ],
+    "sourceText": "ה\"ג אמר ליה מותר א\"ל וכי מה בין זה לאוכף אישתיק:"
+  },
+  "Rashi on Shabbat 53a:5:1": {
+    "dependsOn": [
+      "Shabbat 53a:5"
+    ],
+    "generatedAt": "2026-11-13T15:23:23.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתיביה כו'</strong> - כסבור הא דאישתיק משום דלא אשגח ביה דסבר אוכף נמי שרי ואותיביה מברייתא דאסור ליטלה והשתא ליטול אמרת לא להניח מיבעי' דדמי כאילו צריך להטעינה משוי:"
+  },
+  "Rashi on Shabbat 53a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:25:02.602Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרביה</strong> - רב:"
+  },
+  "Rashi on Shabbat 53a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:6:1",
+      "Rashi on Shabbat 53a:6:3",
+      "Rashi on Shabbat 53a:14:1",
+      "Jastrow, טְרַסְקָל 1"
+    ],
+    "generatedAt": "2026-11-13T15:26:12.522Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טרסקל</strong> - סל מלא שעורים תולין לה בצוארה ופיה נתון לתוכו ואוכלת ותענוג בעלמא הוא שלא תטרח לשוח צוארה לארץ:"
+  },
+  "Rashi on Shabbat 53a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:26:33.423Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צער</strong> - של צינה:"
+  },
+  "Rashi on Shabbat 53a:7:1": {
+    "dependsOn": [
+      "Shabbat 53a:7",
+      "Rashi on Shabbat 53a:7:1",
+      "Rashi on Shabbat 53a:7:2",
+      "Rashi on Shabbat 53a:7:3",
+      "Rashi on Shabbat 53a:4:1",
+      "Rashi on Shabbat 53a:4:2",
+      "Steinsaltz on Shabbat 53a:7"
+    ],
+    "generatedAt": "2026-11-13T15:35:25.566Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרדעת מותר</strong> - דצערא היא הלכך אורחה בהכי ולאו משוי הוא:"
+  },
+  "Rashi on Shabbat 53a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:35:55.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשמעתא דרב</strong> - דשרי בטרסקל:"
+  },
+  "Rashi on Shabbat 53a:7:3": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Shabbat 53a:1",
+      "Rashi on Shabbat 53a:7:1",
+      "Rashi on Shabbat 53a:7:2",
+      "Rashi on Chullin 45b:9:2"
+    ],
+    "generatedAt": "2026-11-13T15:37:21.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבא</strong> - חברי כמו אברך אבא למלכא <span class=\"parenthesized\">(בראשית מא)</span>:"
+  },
+  "Rashi on Shabbat 53a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:8:1",
+      "Rashi on Shabbat 53a:7:1",
+      "Rashi on Shabbat 53a:7:2",
+      "Jastrow, אַרְיוֹךְ 1",
+      "Rashi on Chullin 76b:16:2",
+      "Rashi on Shabbat 53a:1:1",
+      "Rashi on Shabbat 53a:5:1",
+      "Rashi on Shabbat 53a:9:1",
+      "Tosafot on Shabbat 53a:8:1",
+      "Rashi on Shabbat 53a:3:1",
+      "Rashi on Shabbat 53a:3:2",
+      "Rashi on Shabbat 53a:3:3"
+    ],
+    "generatedAt": "2026-11-13T15:41:55.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:8:1"
+    ],
+    "sourceText": "שמואל קרי אריוך על שם שהיה בקי בדינין ושופט כמלך השופט על הארץ לשון ריכא מלך <span class=\"parenthesized\">(ב\"ב דף ד.)</span>:"
+  },
+  "Rashi on Shabbat 53a:9:1": {
+    "dependsOn": [
+      "Shabbat 53a:9",
+      "Shabbat 53a:7"
+    ],
+    "generatedAt": "2026-11-13T15:45:31.492Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 53a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא רב נמי אמרה</strong> - דכיון דשרי בטרסקל כ\"ש מרדעת:"
+  },
+  "Tosafot on Shabbat 53a:14:1": {
+    "dependsOn": [
+      "Shabbat 53a:14",
+      "Shabbat 53a:12"
+    ],
+    "generatedAt": "2026-11-13T16:04:44.799Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי לאו בגדולים ומשום תענוג</strong> - וא\"ת ומאי קושיא דילמא הכא מיירי בטרסקל שנתלה מע\"ש אבל לתלות בשבת אפי' בחצר אסור ותירץ דדייק מדנקט רה\"ר גבי טרסקל טפי משאר דכולהו נמי ברה\"ר איירי אלא נקט רה\"ר דבחצר מותר בכל ענין:"
+  },
+  "Tosafot on Shabbat 53a:1:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 53b:15:1",
+      "Rashi on Shabbat 53a:1:1",
+      "Rashi on Shabbat 54b:2:1",
+      "Rashi on Shabbat 54b:2:2",
+      "Rashi on Shabbat 53a:3:1",
+      "Rashi on Shabbat 53a:3:2",
+      "Rashi on Shabbat 53a:3:3"
+    ],
+    "generatedAt": "2026-11-13T15:09:30.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא שקשורה לו מע\"ש</strong> - רש\"י פי' לקמן דבקשורה מע\"ש הוי מלבוש החמור אבל באינה קשורה מע\"ש הוי משאוי ועוד יש לפרש דבאינה קשורה מע\"ש מיחזי כמתכוין להוצאת המרדעת וה\"ר פור\"ת פירש דמיחזי כאילו מתכוין להוליך הבהמה למקום רחוק:"
+  },
+  "Tosafot on Shabbat 53a:2:1": {
+    "dependsOn": [
+      "Shabbat 53a:2"
+    ],
+    "generatedAt": "2026-11-13T15:11:58.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא שאינה קשורה לו כלל פשיטא</strong> - ולא בעי למפרך דמרישא שמעינן לה דקתני בזמן שהיא קשורה הא אינה קשורה לא דדרך משניות כן במסכת ע\"ז <span class=\"parenthesized\">(דף לה:)</span> אלו דברים אסורין באכילה כבשים שדרכן לתת לתוכן יין כו' ובסיפא <span class=\"parenthesized\">(שם דך לט:)</span> קתני ואלו מותרים באכילה כו' וכבשים שאין דרכן לתת כו' ובפרק אלו טרפות <span class=\"parenthesized\">(חולין דף נד.)</span> קתני אלו כשרות אע\"ג דאיכא מינייהו דשמעי' מרישא וא\"ת ונפשוט מרישא דבקשורה מערב שבת איירי מדאיצטריך למיתני בזמן שהיא קשורה דבלאו הכי הוה ידעי' דאיירי בקשורה דאי באינה קשורה פשיטא דאסור דילמא נפלה ואתי לאתויי כדקאמר הכא אילימא כו' אלא ודאי בזמן שקשורה מע\"ש קאמר וי\"ל דמרישא לא תפשוט דאדרבה ה\"א דלהכי תנא בזמן שהיא קשורה לאשמעי' דאפי' קשורה בשבת דאי לא תנא ליה ה\"א דוקא בקשורה לו מע\"ש אבל בקשורה בשבת לא קמ\"ל להכי דייק מסיפא:"
+  },
+  "Tosafot on Shabbat 53a:4:1": {
+    "dependsOn": [
+      "Shabbat 53a:4"
+    ],
+    "generatedAt": "2026-11-13T15:22:21.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו ליתן המרדעת ע\"ג חמור בשבת</strong> - ואין לאסור משום דאין כלי ניטל אלא לדבר הניטל דבהמה חשיבא כדבר הניטל כיון דיכול למושכה ולהוליכה בכל מקום ורב אסי בר נתן דבעי אם אסור אין לפרש משום דמיחזי כרוצה להוליך הבהמה למקום רחוק דא\"כ היכי דייק דמאן דשרי טרסקל כ\"ש מרדעת. ואין לפרש נמי דבעי למיסר בחצר אטו רה\"ר כדאמר גבי אשה בפ' במה אשה <span class=\"parenthesized\">(לקמן שבת דף סד:)</span> דגבי בהמה לא גזרו כדתניא בסמוך גבי זוג ומטיילת עמו בחצר אלא נראה לר\"י דטעמא משום טרחא דשבת ואע\"ג דשריא קרצוף בפ\"ב דביצה <span class=\"parenthesized\">(דף כנ.)</span> התם יש לה צער ביותר א\"נ לא שרי אלא בי\"ט אבל בשבת אסור:"
+  },
+  "Tosafot on Shabbat 53a:5:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 53a:4:1",
+      "Tosafot on Shabbat 53a:6:1",
+      "Tosafot on Shabbat 51b:8:1",
+      "Tosafot on Shabbat 52a:1:1",
+      "Tosafot on Shabbat 52b:1:1"
+    ],
+    "generatedAt": "2026-11-13T15:24:42.919Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוכף שע\"ג החמור</strong> - וא\"ת ויתיר האוכף וינער ויפול כדאמר בפ' כל כתבי גבי היתה בהמתו טעונה טבל כו' וי\"ל דהתם מיירי בשקין שתוכל הבהמה להתקלקל אבל מחמת האוכף לא תוכל הבהמה להתקלקל לכך לא התירו:"
+  },
+  "Tosafot on Shabbat 53a:6:1": {
+    "dependsOn": [
+      "Shabbat 53a:6",
+      "Tosafot on Shabbat 53a:4:1",
+      "Rashi on Shabbat 53a:4:1",
+      "Rashi on Shabbat 53a:4:2",
+      "Maharshal on Shabbat 53a:7:1",
+      "Meir Lublin on Shabbat 53a:6:1",
+      "Maharam on Shabbat 53a:1"
+    ],
+    "generatedAt": "2026-11-13T15:34:13.369Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תולין טרסקל</strong> - וא\"ת ותאסר משום דמשתמש בבע\"ח כי היכי דאסור להניח נר על גבי דקל בשבת משום דמשתמש במחובר וי\"ל דהתם מנענע הענפים אבל הכא אינו מנענע הבהמה בכך ורב אסי ברבי נתן דבעי למיסר אפסר משום דילמא אתי להשתמש בבע\"ח <span class=\"parenthesized\">(ת\".)</span>:"
+  },
+  "Tosafot on Shabbat 53a:8:1": {
+    "dependsOn": [
+      "Tosafot on Shabbat 53a:8:1",
+      "Rashi on Shabbat 53a:8:1"
+    ],
+    "generatedAt": "2026-11-13T15:44:54.710Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אריוך</strong> - שם מלך כדכתיב אריוך מלך אלסר <span class=\"parenthesized\">(בראסית יד)</span> ונקטי' טפי משאר מלכים לפי שמובלע בו לשון ארי:"
+  },
+  "Tosafot on Shabbat 53a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 53a:9:1",
+      "Shabbat 53a:9",
+      "Shabbat 53a:6",
+      "Rashi on Shabbat 53b:5:1",
+      "Shabbat 53b:5",
+      "Rashi on Shabbat 53b:5:3",
+      "Rashi on Shabbat 53b:5:4",
+      "Chokhmat Shlomo on Shabbat 53a:4",
+      "Maharam on Shabbat 53a:7"
+    ],
+    "generatedAt": "2026-11-13T15:47:47.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 53a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דשמעיה דקא מסיים בה כו'</strong> - אע\"ג דקיי\"ל. כרב באיסורי היינו לגבי שמואל לחודיה אבל הכא ר' יוחנן דקי\"ל כוותיה לגבי רב קאי כשמואל וברייתא דאוכף נמי קיימא כשמואל למאי דמשני כאן לחממה כאן לצננה ומתני' דאין סכין ומפרכסין לבהמה דמייתי לקמן נמי פליגא אדרב <span class=\"rashi-quotation\">כדפירש בקונטרס</span>:"
+  }
+}

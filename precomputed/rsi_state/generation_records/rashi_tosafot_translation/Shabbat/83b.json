@@ -1,0 +1,129 @@
+{
+  "Rashi on Shabbat 83b:1:1": {
+    "dependsOn": [
+      "Shabbat 83b:1",
+      "Rashi on Shabbat 83b:1:2",
+      "Rashi on Shabbat 83b:1:3"
+    ],
+    "generatedAt": "2026-11-15T05:34:36.813Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרעו הן</strong> - ונשאו הן את הזב:"
+  },
+  "Rashi on Shabbat 83b:1:2": {
+    "dependsOn": [
+      "Shabbat 83b:1",
+      "Rashi on Shabbat 83b:1:1",
+      "Rashi on Shabbat 82b:1:1"
+    ],
+    "generatedAt": "2026-11-15T05:35:45.805Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהורין</strong> - דתנן כל שהזב נישא עליו טהור חוץ מן הראוי למשכב ומושב האדם אבל כל שאר כלים ואוכלים אין מיטמאין מחמת משכב ומושב כדתניא <span class=\"parenthesized\">(לעיל שבת דף נט.)</span> מי שמיוחד לישיבה יצא זה שאומרים עמוד ונעשה מלאכתנו ולמהוי אפילו ראשון לטומאה מחמת משא הזב נמי לא דכי כתיב משא הזב באדם כתיב והנושא אותם וגו' והא דאמר לעיל נכרי ונכרית וע\"ז שהסיטום אחרים טמאים באדם קאמרינן:"
+  },
+  "Rashi on Shabbat 83b:1:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 83b:1:1",
+      "Rashi on Shabbat 83b:1:2",
+      "Rashi on Shabbat 83b:1:3",
+      "Rashi on Shabbat 83b:1:4",
+      "Rashi on Shabbat 83b:1:5",
+      "Shabbat 83b:1",
+      "Shabbat 83a:6",
+      "Chokhmat Shlomo on Shabbat 83b:1"
+    ],
+    "generatedAt": "2026-11-15T05:37:16.511Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל הטמאו' המסיטות</strong> - אחרים כגון בכף מאזנים או אדם טמא מת שהסיט את חברו טהורין:"
+  },
+  "Rashi on Shabbat 83b:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 83b:1:2",
+      "Rashi on Shabbat 83b:1:3",
+      "Rashi on Shabbat 83b:1:4",
+      "Rashi on Shabbat 83b:1:5"
+    ],
+    "generatedAt": "2026-11-15T05:37:59.213Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא מצינו לו</strong> - בשאר טומאות שבתורה אלא בזב:"
+  },
+  "Rashi on Shabbat 83b:1:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 83b:1:1",
+      "Rashi on Shabbat 83b:1:2",
+      "Rashi on Shabbat 83b:1:3",
+      "Rashi on Shabbat 83b:1:4"
+    ],
+    "generatedAt": "2026-11-15T05:38:33.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל דדמי ליה</strong> - דאתי מריבויא דזב וע\"ז מנדה גמרי דהיינו זב:"
+  },
+  "Rashi on Shabbat 83b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:38:50.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישנה לאברים</strong> - כגון של חוליות ישנה לטומאתה אבר אבר או לא:"
+  },
+  "Rashi on Shabbat 83b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83b:2:1"
+    ],
+    "generatedAt": "2026-11-15T05:39:53.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 83b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהדיוט יכול להחזירה</strong> - שאין צריך אומן לכך:"
+  },
+  "Tosafot on Shabbat 83b:2:1": {
+    "dependsOn": [
+      "Shabbat 83b:2",
+      "Shabbat 82b:3",
+      "Tosafot on Shabbat 83b:2:2"
+    ],
+    "generatedAt": "2026-11-15T05:42:45.169Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"ז ישנה לאיברים כו'</strong> - בשל חוליות מבעיא ליה אבל ע\"ז שנשתברה פשיטא ליה דלא מטמאה ולא משום היקישא דנדה פשיטא ליה בנשתברה דדמיא לגמרי לנדה שאין אדם יכול להחזירה דא\"כ אמאי קאמר לעיל דמבעיא ליה אליבא דר' עקיבא אליבא דרבנן נמי מצי למיבעי דהא דנפקא להו דע\"ז אינה לאיברים מנדה הני מילי כשנשתברה לגמרי אלא ודאי בלא נדה פשיטא ליה דנשתברה טהורה:"
+  },
+  "Tosafot on Shabbat 83b:2:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 83b:2:1",
+      "Rashi on Shabbat 83b:2:2",
+      "Tosafot on Shabbat 83b:2:1"
+    ],
+    "generatedAt": "2026-11-15T05:48:04.411Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 83b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי תבעי לך היכא דאין הדיוט כו'</strong> - לענין טומאה מבעיא ליה <span class=\"rashi-quotation\">כדפי' הקונט'</span> ולעיל נמי מייתי אפלוגתא דרבי עקיבא ורבנן אבל לענין איסורא דאורייתא לא שייך למילף מנדה ואע\"ג דאסור בהנאה בטומאה דרבנן מיבעיא ליה אי פרחה אי לאו משמע דבהדיוט יכול להחזירה פשיטא דאסירה אפילו ללישנא בתרא מדבעי לענין טומאה בהדיוט יכול להחזירה דאי איסור הנאה דאורייתא שרי כ\"ש דלא מטמא וקשה לר\"י דבפרק ג' דמסכת ע\"ז <span class=\"parenthesized\">(ד' כט:)</span> פליגי רב ושמואל בע\"ז שנשתברה מאליה דרב אמר צריכה לבטל כל קיסם וקיסם ושמואל אמר אין ע\"ז צריכה לבטל אלא דרך גדילתה ובעי לאוקמא פלוגתייהו בשברי שברים ומסיק דבע\"ז של חוליות עסקינן והדיוט יכול להחזירה קא מיפלגי דרב סבר כיון דהדיוט יכול להחזירה כו' לא בטלה משמע דבאין הדיוט יכול להחזירה אפי' רב מודה דשריא ונראה לר\"י דהתם פליגי בחוליות קטנים דכשמתפרקין הוו כעין שברי שברים דקאמר התם מעיקרא אבל הכא מיירי בחוליות גדולות דאפי' שמואל מודה דאסירי בהנאה אפי' אין הדיוט יכול להחזירה:"
+  }
+}

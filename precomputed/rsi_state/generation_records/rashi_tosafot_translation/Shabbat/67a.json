@@ -1,0 +1,865 @@
+{
+  "Rashi on Shabbat 67a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:10:2",
+      "Rashi on Shabbat 67a:9:1"
+    ],
+    "generatedAt": "2026-11-14T10:04:40.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן תנא</strong> - דקתני וכל אדם ואפילו עני שבישראל:"
+  },
+  "Rashi on Shabbat 67a:10:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:10:1",
+      "Rashi on Shabbat 67a:10:3",
+      "Rashi on Shabbat 67a:10:4"
+    ],
+    "generatedAt": "2026-11-14T10:05:16.206Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי שמעון</strong> - בפרק שמונה שרצים:"
+  },
+  "Rashi on Shabbat 67a:10:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:10:1",
+      "Rashi on Shabbat 67a:10:2",
+      "Rashi on Shabbat 67a:10:3",
+      "Rashi on Shabbat 67a:10:4",
+      "Tosafot on Shabbat 67a:10:1"
+    ],
+    "generatedAt": "2026-11-14T10:06:45.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בני מלכים</strong> - הלכך לעני נמי חזיא ולא גנותא דידיה דליתחזיא כיוהרא ושליף אי נמי דמגו דחידוש הוא שליף ומחוי:"
+  },
+  "Rashi on Shabbat 67a:10:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:07:12.663Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באריג בכסותו</strong> - דלא שליף ליה ומחוי:"
+  },
+  "Rashi on Shabbat 67a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:10:10.763Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרכי האמורי</strong> - ניחוש הוא וכתיב ובחוקותיהם לא תלכו <span class=\"parenthesized\">(ויקרא י״ח:ג׳)</span>:"
+  },
+  "Rashi on Shabbat 67a:12:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:12:2",
+      "Rashi on Shabbat 67a:12:3",
+      "Rashi on Shabbat 67a:12:4",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:2:1",
+      "Rashi on Shabbat 66b:1:1",
+      "Rashi on Shabbat 66b:2:1"
+    ],
+    "generatedAt": "2026-11-14T10:11:15.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשיחלא</strong> - לכאב האוזן ותולין באזנו:"
+  },
+  "Rashi on Shabbat 67a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:11:37.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשינתא</strong> - יש שעשאו כדי שיישן ויש כדי שלא יישן:"
+  },
+  "Rashi on Shabbat 67a:12:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:12:1",
+      "Rashi on Shabbat 67a:12:2",
+      "Rashi on Shabbat 67a:12:4"
+    ],
+    "generatedAt": "2026-11-14T10:12:20.251Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחייא</strong> - של שן שועל חי:"
+  },
+  "Rashi on Shabbat 67a:12:4": {
+    "dependsOn": [
+      "Jastrow, זִרְפָּא 1",
+      "Rashi on Shabbat 67a:12:1",
+      "Rashi on Shabbat 67a:12:2",
+      "Rashi on Shabbat 67a:12:3",
+      "Sefer HeArukh, Letter Zayin 182",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 66b:1:1",
+      "Rashi on Shabbat 66b:2:1",
+      "Rashi on Shabbat 66a:1:1"
+    ],
+    "generatedAt": "2026-11-14T10:14:22.220Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לזירפא</strong> - נפח מכה דכל פרזלא זריף והאי מסי לזירפא:"
+  },
+  "Rashi on Shabbat 67a:14:1": {
+    "dependsOn": [
+      "Shabbat 67a:14"
+    ],
+    "generatedAt": "2026-11-14T10:15:03.678Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש בו משום רפואה</strong> - שנראית רפואתו כגון שתיית כוס ותחבושת מכה ופרכינן הא אין בו כו' כגון לחש שאין ניכר שיהא מרפא יש בו משום דרכי האמורי בתמיה:"
+  },
+  "Rashi on Shabbat 67a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:15:25.735Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דליכחוש חיליה</strong> - שעל ידי שהוא שמן וכחו רב פירותיו נושרין:"
+  },
+  "Rashi on Shabbat 67a:16:1": {
+    "dependsOn": [
+      "Shabbat 67a:16"
+    ],
+    "generatedAt": "2026-11-14T10:15:50.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דליחזיוה אינשי</strong> - ולסימנא עבדי ליה לאודעי דמשיר פירותיו:"
+  },
+  "Rashi on Shabbat 67a:16:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:16:1",
+      "Rashi on Shabbat 67a:16:3",
+      "Rashi on Moed Katan 5a:16:1",
+      "Rashi on Moed Katan 5a:16:2",
+      "Rashi on Moed Katan 5a:17:1",
+      "Rashi on Moed Katan 5a:18:1",
+      "Rashi on Shabbat 67a:14:1",
+      "Rashi on Shabbat 67a:17:1",
+      "Rashi on Shabbat 67a:17:2",
+      "Rashi on Niddah 66a:14:1",
+      "Rashi on Niddah 66a:14:2"
+    ],
+    "generatedAt": "2026-11-14T10:17:30.030Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא טמא</strong> - הוא עצמו אומר טמא רחקו מעלי:"
+  },
+  "Rashi on Shabbat 67a:16:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:16:1",
+      "Rashi on Shabbat 67a:16:2",
+      "Rashi on Shabbat 67a:16:3",
+      "Shabbat 67a:16",
+      "Jastrow, כְּבָסָא 1",
+      "Rashi on Shabbat 67a:14:1",
+      "Rashi on Shabbat 67a:15:1"
+    ],
+    "generatedAt": "2026-11-14T10:19:09.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כובסי</strong> - אשכול תמרים וסימן הוא שמשיר פירותיו:"
+  },
+  "Rashi on Shabbat 67a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:19:26.307Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפרק אמוראי</strong> - בפרק אחד ששנוי בתוספתא דמסכת שבת בהלכות דרכי האמורי:"
+  },
+  "Rashi on Shabbat 67a:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:19:52.333Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל</strong> - רבי חייא לתנא:"
+  },
+  "Rashi on Shabbat 67a:17:3": {
+    "dependsOn": [
+      "Shabbat 67a:17",
+      "Rashi on Shabbat 67a:17:1",
+      "Rashi on Shabbat 67a:17:2",
+      "Rashi on Shabbat 67a:17:3",
+      "Rashi on Shabbat 67a:17:4",
+      "Rashi on Shabbat 67a:17:5",
+      "Rashi on Shabbat 67a:14:1",
+      "Rashi on Shabbat 67a:16:1"
+    ],
+    "generatedAt": "2026-11-14T10:21:00.446Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולהו אית בהו</strong> - כל השנויות שם אל תטעה לומר באחד מהן אין בו משום דרכי האמורי אלא בכולן אתה שונה יש בו לבר מהני ב' אלו שאפרש לך:"
+  },
+  "Rashi on Shabbat 67a:17:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:17:1",
+      "Rashi on Shabbat 67a:17:2",
+      "Rashi on Shabbat 67a:17:3",
+      "Rashi on Shabbat 67a:17:4",
+      "Rashi on Shabbat 67a:17:5",
+      "Shabbat 67a:17"
+    ],
+    "generatedAt": "2026-11-14T10:21:47.948Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שיש לו עצם וכו'</strong> - ולחש דנעצתה כמחט אלו ב' לבדם אין בהם:"
+  },
+  "Rashi on Shabbat 67a:17:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:17:1",
+      "Rashi on Shabbat 67a:17:2",
+      "Rashi on Shabbat 67a:17:3",
+      "Rashi on Shabbat 67a:17:4"
+    ],
+    "generatedAt": "2026-11-14T10:22:12.358Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:17:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד חד נחית</strong> - לחש הוא:"
+  },
+  "Rashi on Shabbat 67a:18:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:18:2",
+      "Rashi on Shabbat 67a:17:1",
+      "Rashi on Shabbat 67a:16:1",
+      "Rashi on Shabbat 66b:1:1"
+    ],
+    "generatedAt": "2026-11-14T10:23:02.238Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאדרא</strong> - עצם של דג שישב לאדם בושט:"
+  },
+  "Rashi on Shabbat 67a:18:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:18:1",
+      "Rashi on Shabbat 67a:18:2",
+      "Jastrow, שְׁיָיא 1",
+      "Steinsaltz on Shabbat 67a:18",
+      "Rashi on Shabbat 67a:17:5",
+      "Rashi on Shabbat 67a:6:3",
+      "Rashi on Shabbat 67a:6:4",
+      "Rashi on Shabbat 67a:7:2",
+      "Rashi on Shabbat 67a:8:1",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:2:1",
+      "Rashi on Shabbat 66b:1:1",
+      "Rashi on Shabbat 66a:1:1"
+    ],
+    "generatedAt": "2026-11-14T10:24:57.928Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שייא שייא</strong> - לחש הוא רד רד:"
+  },
+  "Rashi on Shabbat 67a:1:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 67a:1:3",
+      "Jastrow, *בּוּנָא 1"
+    ],
+    "generatedAt": "2026-11-14T09:32:26.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאשתא תילתא</strong> - שחפת שלישית שבאה מג' ימים לג' ימים:"
+  },
+  "Rashi on Shabbat 67a:1:10": {
+    "dependsOn": [
+      "Jastrow, *בּוּנָא 1",
+      "Sefer HeArukh, Letter Bet 120",
+      "Jastrow, כַּוְנָא 1",
+      "Rashi on Shabbat 67a:1:7",
+      "Rashi on Shabbat 67a:1:8",
+      "Rashi on Shabbat 67a:1:9",
+      "Rashi on Shabbat 67a:1:11",
+      "Steinsaltz on Shabbat 67a:1"
+    ],
+    "generatedAt": "2026-11-14T09:40:26.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבעה בוני כמוני</strong> - גרעיני כמון ל\"א בוני כמון גרסי' מלא אגרוף:"
+  },
+  "Rashi on Shabbat 67a:1:11": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:1:8",
+      "Rashi on Shabbat 67a:1:9",
+      "Rashi on Shabbat 67a:1:10",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 67a:1:3",
+      "Jastrow, בִּינָא III 1"
+    ],
+    "generatedAt": "2026-11-14T09:41:23.613Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:11"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבעה ביני מדיקנא דכלבא סבא</strong> - שבעה נימי מזקן כלב זקן:"
+  },
+  "Rashi on Shabbat 67a:1:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 67a:1:3",
+      "Jastrow, סִלְוָא 1",
+      "Sefer HeArukh, Letter Samekh 171",
+      "Steinsaltz on Shabbat 67a:1",
+      "Steinsaltz comment #1 on Shabbat 67a:1",
+      "Steinsaltz comment #2 on Shabbat 67a:1",
+      "Versions on Shabbat 67a:1"
+    ],
+    "generatedAt": "2026-11-14T09:34:08.690Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סילוי</strong> - ענבים קטנים:"
+  },
+  "Rashi on Shabbat 67a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:34:29.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבעה ציבי</strong> - קסמים:"
+  },
+  "Rashi on Shabbat 67a:1:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 67a:1:3",
+      "Rashi on Shabbat 67a:1:5",
+      "Shabbat 67a:1",
+      "Rashi on Shabbat 66b:1:1"
+    ],
+    "generatedAt": "2026-11-14T09:35:52.838Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כשורי</strong> - קורות:"
+  },
+  "Rashi on Shabbat 67a:1:5": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 67a:1:2",
+      "Rashi on Shabbat 67a:1:3",
+      "Rashi on Shabbat 67a:1:4",
+      "Rashi on Shabbat 67a:1:6",
+      "Rashi on Shabbat 60a:1:2",
+      "Rashi on Shabbat 60a:6:1"
+    ],
+    "generatedAt": "2026-11-14T09:37:17.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושבעה סיכי</strong> - יתידות קייבל\"ש בלע\"ז:"
+  },
+  "Rashi on Shabbat 67a:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:37:31.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משבעה גשורי</strong> - גשרים:"
+  },
+  "Rashi on Shabbat 67a:1:7": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:1:5",
+      "Rashi on Shabbat 67a:1:6",
+      "Rashi on Shabbat 67a:1:8"
+    ],
+    "generatedAt": "2026-11-14T09:38:03.539Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ז' סינרי</strong> - צנור הדלת חור האסקופה שציר הדלת סובב בו:"
+  },
+  "Rashi on Shabbat 67a:1:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:38:23.105Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופרי</strong> - זפת שזופתין הספינות:"
+  },
+  "Rashi on Shabbat 67a:1:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:38:47.862Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:1:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארבי</strong> - ספינות:"
+  },
+  "Rashi on Shabbat 67a:2:1": {
+    "dependsOn": [
+      "[",
+      "Steinsaltz on Shabbat 67a:2:1",
+      "Steinsaltz on Shabbat 67a:2"
+    ],
+    "generatedAt": "2026-11-14T09:42:37.578Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשתא צמירתא</strong> - חולי שמחממת וקודחת את הגוף:"
+  },
+  "Rashi on Shabbat 67a:2:2": {
+    "dependsOn": [
+      "Jastrow, וַרְדִּינָא I 1"
+    ],
+    "generatedAt": "2026-11-14T09:43:19.074Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וורדיני</strong> - סנה:"
+  },
+  "Rashi on Shabbat 67a:3:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 67a:3:1",
+      "Rashi on Shabbat 67a:3:2",
+      "Rashi on Shabbat 67a:3:3",
+      "Jastrow, חֲרַק 1",
+      "Chullin 54a:18",
+      "Chullin 54a:19",
+      "Chullin 54a:20",
+      "Chullin 54a:21",
+      "Chullin 54b:1"
+    ],
+    "generatedAt": "2026-11-14T09:45:38.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליחרוק</strong> - אישקרני\"ר כמו דמיבלע חירקייהו דאלו טריפות <span class=\"parenthesized\">(חולין דף נמ:)</span>: ויאמר משה משום סיפיה מדוע לא יבער הסנה:"
+  },
+  "Rashi on Shabbat 67a:3:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:3:1",
+      "Rashi on Shabbat 67a:3:3"
+    ],
+    "generatedAt": "2026-11-14T09:46:08.917Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויאמר משה</strong> - משום סיפיה מדוע לא יבער הסנה:"
+  },
+  "Rashi on Shabbat 67a:3:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:3:1",
+      "Rashi on Shabbat 67a:3:2",
+      "Rashi on Shabbat 67a:3:3",
+      "Rashi on Shabbat 66b:1:1",
+      "Rashi on Shabbat 67a:1:1",
+      "Rashi on Shabbat 65b:2:1"
+    ],
+    "generatedAt": "2026-11-14T09:47:24.709Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי סר</strong> - שיסור החולי:"
+  },
+  "Rashi on Shabbat 67a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:47:46.413Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל תקרב הלום</strong> - שלא יקרב זה החולי אלי:"
+  },
+  "Rashi on Shabbat 67a:5:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:5:1",
+      "Rashi on Shabbat 67a:5:2",
+      "Rashi on Shabbat 67a:5:3",
+      "Steinsaltz on Shabbat 67a:5",
+      "Sefer HeArukh, Letter Tav 254"
+    ],
+    "generatedAt": "2026-11-14T09:48:37.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליתתיה ולפסקיה</strong> - סמוך לקרקע ליתתיה ישפיל:"
+  },
+  "Rashi on Shabbat 67a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:49:11.053Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמייכת</strong> - שאתה שפילה:"
+  },
+  "Rashi on Shabbat 67a:5:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:5:1",
+      "Rashi on Shabbat 67a:5:2",
+      "Rashi on Shabbat 67a:5:3"
+    ],
+    "generatedAt": "2026-11-14T09:50:00.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דחמיתא אשתא</strong> - שראית האש:"
+  },
+  "Rashi on Shabbat 67a:6:1": {
+    "dependsOn": [
+      "[",
+      "Rashi on Shabbat 67a:1:5"
+    ],
+    "generatedAt": "2026-11-14T09:51:18.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לסימטא</strong> - שחין קרו\"ג בלע\"ז:"
+  },
+  "Rashi on Shabbat 67a:6:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:6:1",
+      "Rashi on Shabbat 67a:6:2",
+      "Rashi on Shabbat 67a:6:3",
+      "Rashi on Shabbat 67a:6:4",
+      "Rashi on Shabbat 67a:6:5",
+      "Rashi on Shabbat 67a:6:6",
+      "Rashi on Shabbat 67a:6:7",
+      "Jastrow, בַּזְבְּזַיָּה 1",
+      "Jastrow, כס 1"
+    ],
+    "generatedAt": "2026-11-14T09:52:45.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזבזיה מסמסייה כסכסייה</strong> - שמות המלאכים על שם שקורעים וממסמסים ומכסכסים אותו בז לשון בזעא:"
+  },
+  "Rashi on Shabbat 67a:6:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:6:1",
+      "Rashi on Shabbat 67a:6:2",
+      "Rashi on Shabbat 67a:6:3",
+      "Rashi on Shabbat 67a:6:4"
+    ],
+    "generatedAt": "2026-11-14T09:53:10.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מארעא דסדום</strong> - כך הוא הלחש ולא מסדום באו:"
+  },
+  "Rashi on Shabbat 67a:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:53:32.750Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזך בזיך</strong> - אין לו משמעות אלא כך הוא הלחש:"
+  },
+  "Rashi on Shabbat 67a:6:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:6:4",
+      "Rashi on Shabbat 67a:6:5",
+      "Rashi on Shabbat 67a:6:6"
+    ],
+    "generatedAt": "2026-11-14T09:54:16.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיניך ביך</strong> - מראיך ביך שלא תאדים יותר:"
+  },
+  "Rashi on Shabbat 67a:6:6": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:6:1",
+      "Rashi on Shabbat 67a:6:2",
+      "Rashi on Shabbat 67a:6:3",
+      "Rashi on Shabbat 67a:6:4",
+      "Rashi on Shabbat 67a:6:5",
+      "Rashi on Shabbat 67a:6:6",
+      "Rashi on Shabbat 67a:6:7"
+    ],
+    "generatedAt": "2026-11-14T09:54:53.230Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתריך ביך</strong> - שלא תרחיב:"
+  },
+  "Rashi on Shabbat 67a:6:7": {
+    "dependsOn": [
+      "Jastrow, קָלַט 1",
+      "Rashi on Shabbat 67a:6:6"
+    ],
+    "generatedAt": "2026-11-14T09:56:04.759Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:6:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כקלוט</strong> - שנקלט זרעו בשרירי בטנו שלא יוליד:"
+  },
+  "Rashi on Shabbat 67a:7:1": {
+    "dependsOn": [
+      "["
+    ],
+    "generatedAt": "2026-11-14T09:57:33.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכיפה</strong> - אונפול\"ש אבעבועות כך לשון רבי יצחק ברבי מנחם נ\"ע ולשון רבותי לכיפה למי שכופהו שד:"
+  },
+  "Rashi on Shabbat 67a:7:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:7:1"
+    ],
+    "generatedAt": "2026-11-14T09:57:55.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימא הכי</strong> - לחש בעלמא הוא:"
+  },
+  "Rashi on Shabbat 67a:8:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:8:2"
+    ],
+    "generatedAt": "2026-11-14T09:58:19.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוית דפקיק דפקיק הוית</strong> - לחש הוא:"
+  },
+  "Rashi on Shabbat 67a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T09:58:39.499Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליט תבר ומשומת</strong> - מקולל ונשבר ומשומת יהא שד זה ששמו בר טיט בר טינא:"
+  },
+  "Rashi on Shabbat 67a:9:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:9:2",
+      "Rashi on Shabbat 67a:6:1",
+      "Rashi on Shabbat 67a:8:1"
+    ],
+    "generatedAt": "2026-11-14T09:59:13.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשידא דבית הכסא</strong> - אם הזיק לימא לחש זה:"
+  },
+  "Rashi on Shabbat 67a:9:2": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:9:1",
+      "Rashi on Shabbat 67a:9:2",
+      "Rashi on Shabbat 67a:9:3",
+      "Rashi on Shabbat 67a:6:1",
+      "Rashi on Shabbat 67a:6:2",
+      "Rashi on Shabbat 66b:1:1",
+      "Rashi on Shabbat 66b:1:2"
+    ],
+    "generatedAt": "2026-11-14T10:00:08.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרקפי דארי</strong> - בראש הארי זכר:"
+  },
+  "Rashi on Shabbat 67a:9:3": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:9:1",
+      "Rashi on Shabbat 67a:9:2",
+      "Rashi on Shabbat 67a:9:3",
+      "Rashi on Shabbat 67a:9:4"
+    ],
+    "generatedAt": "2026-11-14T10:00:40.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואאוסי דגורייתא</strong> - ובחוטם לביאה נקבה:"
+  },
+  "Rashi on Shabbat 67a:9:4": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:9:1",
+      "Rashi on Shabbat 67a:9:2",
+      "Rashi on Shabbat 67a:9:3",
+      "Rashi on Shabbat 67a:9:4",
+      "Rashi on Shabbat 67a:9:5",
+      "Rashi on Shabbat 67a:9:6",
+      "Steinsaltz on Shabbat 67a:9",
+      "Jastrow, שֵׁדָא 1",
+      "Jastrow, *פַּנְדָּא II 1",
+      "Sefer HeArukh, Letter Alef 562",
+      "Rashi on Shabbat 66b:7:1"
+    ],
+    "generatedAt": "2026-11-14T10:03:06.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשכחתא לשידאי בר שריקאי פנדאי</strong> - כך שמו:"
+  },
+  "Rashi on Shabbat 67a:9:5": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:9:4",
+      "Rashi on Shabbat 67a:9:5",
+      "Rashi on Shabbat 67a:9:6"
+    ],
+    "generatedAt": "2026-11-14T10:03:31.440Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במישרא דכרתי חבטיה</strong> - בערוגת כרשין הפלתיו:"
+  },
+  "Rashi on Shabbat 67a:9:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T10:03:54.786Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shabbat 67a:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלועא דחמרא חטרתיה</strong> - בלחי החמור הלקיתיו:"
+  },
+  "Tosafot on Shabbat 67a:10:1": {
+    "dependsOn": [
+      "Rashi on Shabbat 67a:10:1",
+      "Rashi on Shabbat 67a:10:2",
+      "Rashi on Shabbat 67a:10:3",
+      "Rashi on Shabbat 67a:10:4",
+      "Shabbat 67a:10",
+      "Shabbat 66b:6",
+      "Rashi on Shabbat 66b:6:1",
+      "Rashi on Shabbat 66b:6:2",
+      "Maharsha: Chidushei Halachot on Shabbat 67a:1",
+      "Maharsha: Chidushei Halachot on Shabbat 67a:2",
+      "Steinsaltz comment #1 on Shabbat 67a:10",
+      "Steinsaltz comment #2 on Shabbat 67a:10"
+    ],
+    "generatedAt": "2026-11-14T10:09:36.863Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shabbat 67a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בני מלכים יוצאין בזגין מאן תנא ר\"ש היא כו'</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> וליכא למיחש דילמא מחייכי בהו ואתו לאתויי וא\"ת מכל מקום ליחוש דילמא איפסיק ואתי לאתויי כדאמרינן לעיל גבי עבד דלא יצא בחותם שבצוארו וי\"ל דהכא מיירי בתלוים בשלשלת דלא מיפסקי וריב\"א פירש דבירושלמי מוקי לה בקטנים דאפילו אי פסיק ומייתי לה ליכא איסור והכי איתא בירושלמי ר' זעירא אומר בזוג שבצוארו ומהו כל אדם דקתני במתניתין בין קטנים עשירים בין קטנים עניים מתניתין פליגא עליה דרבי זעירא ולא בזוג שבצוארו כאן בגדולים כאן בקטנים פירוש ההוא דלא יצא בזוג שבצוארו בגדולים דלמא מיפסיק ואתי לאתויי והא דשרי הכא בקטנים דליכא למיחש כדפי' מ\"מ יש לדקדק אמאי נקט בני מלכים כיון דליכא חששא אי מייתי להו קטן בידים וי\"ל דאי לאו בני מלכים הוו מחייכו עליה בני מלכים כל שעה ואי אפשר שלא ישמע אביו מעולם ויטלם אביו בידו ואתו לאתויי אבל אי בני מלכים לא מחייכי אם כן אפילו אי מיפסיק ליכא למיחש דילמא מייתי להו אבוה דלא שכיח שיהא אביו בצדו בשעה שיפסוק:"
+  }
+}

@@ -156,53 +156,40 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">ראשית דגנך תתן לו ולא לאורו</strong> - מכאן שאין תורמין מן הטמא על הטהור דכתיב תתן לו דבר הראוי לו לאכול ולא לתת לאורו להסיק ומדאיצטריך למעוטי מכלל דבת אורו היא להסקה:"
   },
   "Rashi on Shabbat 25b:3:1": {
-    "dependsOn": [
-      "Rashi on Shabbat 25b:3:1",
-      "Rashi on Shabbat 25b:3:2",
-      "Rashi on Shabbat 25b:3:3",
-      "Rashi on Shabbat 25b:3:4",
-      "Shabbat 25b:3",
-      "Shabbat 25b:5",
-      "Rashi on Shabbat 25b:5:1"
-    ],
-    "generatedAt": "2026-11-09T05:23:37.679Z",
+    "dependsOn": [],
+    "generatedAt": "2026-11-12T17:54:41.010Z",
     "model": "gemini-3.8-flash-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:1"
     ],
-    "sourceText": "הדלקת נר בשבת. שלא היה לו ממה להדליק ובמקום שאין נר אין שלום שהולך ונכשל והולך באפילה:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
   },
   "Rashi on Shabbat 25b:3:2": {
     "dependsOn": [
       "Rashi on Shabbat 25b:3:1",
       "Rashi on Shabbat 25b:3:3",
-      "Rashi on Shabbat 25a:1:1"
+      "Rashi on Shabbat 25a:7:1"
     ],
-    "generatedAt": "2026-11-09T05:25:49.019Z",
+    "generatedAt": "2026-11-12T17:55:59.343Z",
     "model": "gemini-3.8-flash-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
   },
   "Rashi on Shabbat 25b:3:3": {
     "dependsOn": [
-      "Rashi on Shabbat 25b:3:3",
-      "Rashi on Shabbat 25b:3:1",
-      "Rashi on Shabbat 25b:3:2",
-      "Rashi on Shabbat 25b:3:4",
-      "Rashi on Shabbat 25b:4:1",
-      "Rashi on Shabbat 25b:4:2"
+      "Translation on Rashi on Shabbat 25b:3:3"
     ],
-    "generatedAt": "2026-11-09T05:27:13.867Z",
+    "generatedAt": "2026-11-12T17:56:42.598Z",
     "model": "gemini-3.8-flash-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">רחיצת ידים ורגלים</strong> - ערבית ליל שבת:"
   },
   "Rashi on Shabbat 25b:3:4": {
     "dependsOn": [
