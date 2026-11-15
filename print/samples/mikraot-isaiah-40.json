@@ -1,0 +1,150 @@
+{
+  "id": "mikraot-isaiah-40",
+  "name": "Isaiah 40, A4",
+  "kind": "mikraot",
+  "schemaVersion": 1,
+  "createdAt": 1790812800000,
+  "updatedAt": 1790812800000,
+  "page": {
+    "preset": "a4",
+    "unit": "mm",
+    "width": 210,
+    "height": 297,
+    "margins": {
+      "top": 16,
+      "bottom": 16,
+      "inner": 18,
+      "outer": 14
+    },
+    "binding": "rtl"
+  },
+  "book": "Isaiah",
+  "sections": [
+    {
+      "id": "section-muu9edz3-h8nvgl",
+      "range": {
+        "kind": "chapters",
+        "startChapter": 40,
+        "endChapter": 40
+      },
+      "showMainText": true,
+      "commentators": [
+        {
+          "id": "targum-jonathan",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "rashi",
+          "tier": 1,
+          "english": "footnote"
+        },
+        {
+          "id": "ibn-ezra",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "radak",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "metzudat-david",
+          "tier": 1,
+          "english": "none"
+        },
+        {
+          "id": "metzudat-zion",
+          "tier": 2,
+          "english": "none"
+        },
+        {
+          "id": "malbim",
+          "tier": 0,
+          "english": "none"
+        },
+        {
+          "id": "ralbag",
+          "tier": 0,
+          "english": "none"
+        }
+      ]
+    }
+  ],
+  "hebrewOnly": false,
+  "englishLabels": {
+    "runningHead": true,
+    "chapterHeadings": true,
+    "sectionTitles": true,
+    "continuations": true,
+    "notes": true
+  },
+  "showAliyot": true,
+  "commentOverrides": {},
+  "typography": {
+    "mainFont": "keter-yg",
+    "commentaryFont": "noto-rashi",
+    "notesFont": "eb-garamond",
+    "englishFont": "eb-garamond",
+    "englishSizePt": 8.6,
+    "mainSizePt": 15,
+    "tier1SizePt": 9.6,
+    "tier2SizePt": 8.6,
+    "targumSizePt": 10,
+    "notesSizePt": 7.6,
+    "lineHeight": 1.45,
+    "mainLineHeight": 1.62,
+    "targumLineHeight": 1.5,
+    "mainEnglishLineHeight": 1.45,
+    "alignMainLines": true,
+    "commentaryEnglishLineHeight": 1.32,
+    "notesLineHeight": 1.3,
+    "headingLineHeight": 1.6,
+    "showTrope": false,
+    "verseLabel": {
+      "scale": 0.56,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": true,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "commentLabel": {
+      "scale": 0.92,
+      "color": "#7a1f1f",
+      "bold": true,
+      "superscript": false,
+      "prefix": "",
+      "suffix": "",
+      "numerals": "hebrew"
+    },
+    "chapterLabel": {
+      "scale": 0.82,
+      "color": "#7a1f1f",
+      "bold": false,
+      "superscript": false,
+      "prefix": "פרק ",
+      "suffix": "",
+      "numerals": "hebrew"
+    }
+  },
+  "layout": {
+    "tier1Columns": 2,
+    "tier2Columns": 3,
+    "notesColumns": 3,
+    "columnGapPt": 14,
+    "regionGapPt": 10,
+    "maxNotesFraction": 0.3,
+    "maxMainFraction": 0.45,
+    "maxCommentaryLag": 3,
+    "minPageFill": 0.88,
+    "showTargum": false,
+    "mainEnglish": "notes",
+    "columnRules": true,
+    "maxCommentLines": 0,
+    "continuationTranslationRefs": false,
+    "continuationHeading": "{n}. {name}, {ref} (מעמ׳ {page})"
+  }
+}

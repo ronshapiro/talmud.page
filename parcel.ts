@@ -24,6 +24,7 @@ const entryFiles = [
   "./templates/mishna.html",
   "./templates/mishneh_torah.html",
   "./templates/notes_redirecter.html",
+  "./templates/print.html",
   "./templates/peninei_halacha.html",
   "./templates/service_worker.html",
   "./templates/shulchan_arukh.html",
