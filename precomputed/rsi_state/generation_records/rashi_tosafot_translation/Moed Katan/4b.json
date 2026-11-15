@@ -1,0 +1,460 @@
+{
+  "Rashi on Moed Katan 4b:10:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:6:1",
+      "Rashi on Moed Katan 4b:7:1",
+      "Rashi on Moed Katan 4b:9:1",
+      "Rashi on Moed Katan 2a:13:2",
+      "Moed Katan 4b:10",
+      "Rashi on Moed Katan 4b:3:1",
+      "Rashi on Moed Katan 4b:4:1",
+      "Rashi on Moed Katan 4b:4:2",
+      "Rashi on Moed Katan 2a:2:1",
+      "Rashi on Moed Katan 2a:2:2"
+    ],
+    "generatedAt": "2026-11-13T19:28:57.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמימר מתני</strong> - בהדיא הא דאמר ר' אלעזר אין עושין את האמה בשביעית מפני שנראה כעודר:"
+  },
+  "Rashi on Moed Katan 4b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:29:22.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עושה אדם זבלו אוצר</strong> - שמכניס כל זבלו בשביעית בשדה ולא אמרינן דנראה כמזבל שדהו בשביעית:"
+  },
+  "Rashi on Moed Katan 4b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:29:55.415Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיעמיק שלשה טפחים</strong> - ומכניס הזבל לשם דמוכחא מלתא דלא עביד כדי לזבל שדהו בשביעית:"
+  },
+  "Rashi on Moed Katan 4b:11:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:11:1",
+      "Rashi on Moed Katan 4b:11:2"
+    ],
+    "generatedAt": "2026-11-13T19:30:32.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה לו מעט זבל</strong> - באותה שדה קודם שביעית מוסיף עליו זבל והולך בשביעית ואין צריך להעמיק:"
+  },
+  "Rashi on Moed Katan 4b:12:1": {
+    "dependsOn": [
+      "Moed Katan 4b:11",
+      "Rashi on Moed Katan 4b:12:2"
+    ],
+    "generatedAt": "2026-11-13T19:31:10.161Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אלעזר אוסר</strong> - אפילו אם היה שם מעט זבל קודם שביעית להוסיף עליו בשביעית:"
+  },
+  "Rashi on Moed Katan 4b:12:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:12:1",
+      "Moed Katan 4b:11",
+      "Moed Katan 4b:13"
+    ],
+    "generatedAt": "2026-11-13T19:32:54.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד שיעמיק שלשה</strong> - או שיתן הזבל על הסלע שבשדה דלא נראה כמזבל והיכי שרי רבי אלעזר לחפור ולהעמיק בשביעית ולא חייש לנראה כעודר:"
+  },
+  "Rashi on Moed Katan 4b:13:1": {
+    "dependsOn": [
+      "Moed Katan 4b:13"
+    ],
+    "generatedAt": "2026-11-13T19:34:40.160Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שהעמיק</strong> - קודם לכן כלומר הא דאמר רבי אלעזר עד שיעמיק לא אמר עד שיעמיק בשביעית אלא שהיה עמוק קודם שביעית:"
+  },
+  "Rashi on Moed Katan 4b:13:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:13:1"
+    ],
+    "generatedAt": "2026-11-13T19:35:33.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבלו מוכיח עליו</strong> - כלומר אע\"ג דמעמיק בשביעית הוא נראה כעודר ואסור הכא מותר שהרי זבלו שמניח לשם מוכיח עליו דלא עביד משום עודר:"
+  },
+  "Rashi on Moed Katan 4b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:42:24.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם היתה עמוקה טפח</strong> - כלומר שלכתחילה היה שם אמת המים בת ששה טפחים ונסתמה עד טפח מעמידה עד ששה טפחים כלומר חוזר ומעמיק אותן חמשה טפחים שנסתמה:"
+  },
+  "Rashi on Moed Katan 4b:15:1": {
+    "dependsOn": [
+      "Moed Katan 4b:14",
+      "Rashi on Moed Katan 4b:15:2",
+      "Rashi on Moed Katan 4b:15:3"
+    ],
+    "generatedAt": "2026-11-13T19:43:47.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חצי טפח על שלשה</strong> - אם היתה בתחלה בת שלשה טפחים ונסתמה עד חצי טפח דודאי אינו חוזר וחופר אותן שני טפחים ומחצה אע\"ג דהוי דומיא דהיתה עמוקה טפח ומעמידה על ו' טפחים:"
+  },
+  "Rashi on Moed Katan 4b:15:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:15:1",
+      "Rashi on Moed Katan 4b:15:2",
+      "Rashi on Moed Katan 4b:15:3"
+    ],
+    "generatedAt": "2026-11-13T19:44:49.412Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דמעיקרא לא עברי בה מיא</strong> - כלומר ודאי באמה בת שלשה טפחים לא עברי בה מיא שפיר לא קודם לכן ולא עכשיו הוי טירחא דלא צריך:"
+  },
+  "Rashi on Moed Katan 4b:15:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:15:1",
+      "Rashi on Moed Katan 4b:15:2",
+      "Moed Katan 4b:14",
+      "Steinsaltz on Moed Katan 4b:15",
+      "Steinsaltz comment #1 on Moed Katan 4b:15"
+    ],
+    "generatedAt": "2026-11-13T19:46:09.357Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפחיים על שנים עשר</strong> - דלכתחילה היתה של שנים עשר ונסתמה עד שני טפחים אסור להעמיק עוד עד י' טפחים על אותן שנים הראשונים משום דהוי טירחא יתירא דקא מעמיק כל כך ולהגביה קרקעית הגומא למעלה מששה טפחים:"
+  },
+  "Rashi on Moed Katan 4b:16:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:16:1",
+      "Rashi on Moed Katan 4b:16:2",
+      "Moed Katan 4b:16",
+      "Rashi on Moed Katan 4b:15:1",
+      "Rashi on Moed Katan 4b:15:2",
+      "Rashi on Moed Katan 4b:15:3",
+      "Rashi on Moed Katan 4b:14:1",
+      "Rashi on Moed Katan 4b:11:1",
+      "Rashi on Moed Katan 4b:11:2"
+    ],
+    "generatedAt": "2026-11-13T19:49:28.694Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפחיים על שבעה טפחים</strong> - ונסתמה עד שני טפחים:"
+  },
+  "Rashi on Moed Katan 4b:16:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:16:1"
+    ],
+    "generatedAt": "2026-11-13T19:50:47.471Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - להעמיק אותן חמשה שנשתיירו:"
+  },
+  "Rashi on Moed Katan 4b:1:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:1:2",
+      "Rashi on Moed Katan 4b:1:3"
+    ],
+    "generatedAt": "2026-11-13T19:07:01.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלופי</strong> - כשהירקות רצופין נוטל מהן מבינתיים לאוכלן מותר ליפותן אסור בשביל ליפותן אותם שנשארים:"
+  },
+  "Rashi on Moed Katan 4b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:07:34.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המידל</strong> - תולש בגפנים שישנן ביחד יותר מדאי:"
+  },
+  "Rashi on Moed Katan 4b:1:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:1:1",
+      "Rashi on Moed Katan 4b:1:2",
+      "Rashi on Moed Katan 4b:1:3",
+      "Steinsaltz on Moed Katan 4b:1"
+    ],
+    "generatedAt": "2026-11-13T19:08:33.957Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשל עניים</strong> - בפאה א\"נ עוללות שאין לו לא כתף ולא נטף:"
+  },
+  "Rashi on Moed Katan 4b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:11:48.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנכי</strong> - בורות תחת הגפנים וזיתים ונותן בהם מים:"
+  },
+  "Rashi on Moed Katan 4b:3:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:3:1",
+      "Rashi on Moed Katan 4b:1:1",
+      "Rashi on Moed Katan 4b:4:1",
+      "Rashi on Moed Katan 4b:6:1",
+      "Rashi on Moed Katan 2a:1:1",
+      "Tosafot on Moed Katan 2a:1:1"
+    ],
+    "generatedAt": "2026-11-13T19:13:45.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עוגיות</strong> - עגול סביב כמו עג עוגה ועמד בתוכה <span class=\"parenthesized\">(תענית דף יט.)</span> ובדידין נמי הן גומות:"
+  },
+  "Rashi on Moed Katan 4b:4:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:4:2",
+      "Rashi on Moed Katan 4b:4:3",
+      "Rashi on Moed Katan 4b:4:1",
+      "Jastrow, *בִּנְכֵּי 1"
+    ],
+    "generatedAt": "2026-11-13T19:15:10.935Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציתאי</strong> - מקום:"
+  },
+  "Rashi on Moed Katan 4b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:16:05.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למעבד בנכי</strong> - עוגיות והיכי שרי והא תנן אין עושין עוגיות:"
+  },
+  "Rashi on Moed Katan 4b:4:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:4:1",
+      "Rashi on Moed Katan 4b:4:2",
+      "Moed Katan 4b:1",
+      "Moed Katan 4b:3",
+      "Rashi on Moed Katan 4a:1:1",
+      "Rashi on Moed Katan 4a:2:1"
+    ],
+    "generatedAt": "2026-11-13T19:17:23.053Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא בחדתי</strong> - שמעולם לא היו שם עוגיות אסור לעשות בחולו של מועד דאיכא טירחא יתירא אבל עתיקי שכבר היו לו שם עוגיות ונסתמו מותר לחזור ולחופרן בחולו של מועד:"
+  },
+  "Rashi on Moed Katan 4b:6:1": {
+    "dependsOn": [
+      "Moed Katan 4b:6",
+      "Rashi on Moed Katan 4b:6:2",
+      "Tosafot on Moed Katan 4b:6:1"
+    ],
+    "generatedAt": "2026-11-13T19:18:22.219Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שנראה כעודר</strong> - לצורך שביעית שהרי חופר כעודר:"
+  },
+  "Rashi on Moed Katan 4b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:18:51.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמכשיר אגפיה לזריעה</strong> - כשחופר האמה ומניח העפר שבאמה על שפת האמה מתקן אגפיה לזריעה דעביד לה ארעא רכיכא:"
+  },
+  "Rashi on Moed Katan 4b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:23:14.214Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקא אתו מיא בתריה</strong> - דכי חפר באמה אתו לאלתר מים בהדי חפירה:"
+  },
+  "Rashi on Moed Katan 4b:7:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:7:1",
+      "Rashi on Moed Katan 4b:7:3"
+    ],
+    "generatedAt": "2026-11-13T19:23:58.893Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מ\"ד מפני שמכשיר אגפיה לזריעה איכא</strong> - אע\"ג דאתי מיא בתריה דהא שדא ארעא רכיכא אגפי האמה:"
+  },
+  "Rashi on Moed Katan 4b:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:24:44.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומ\"ד מפני שנראה כעודר ליכא</strong> - דהא אתי מיא ובעודר ליכא מים ולכך לא דמי לעודר:"
+  },
+  "Rashi on Moed Katan 4b:8:1": {
+    "dependsOn": [
+      "Moed Katan 4b:8"
+    ],
+    "generatedAt": "2026-11-13T19:25:21.581Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא</strong> - לעולם דלא אתו מיא בתריה ואיכא בינייהו דשקיל ושדי לבראי דחפיר באמה ושדי עפר לבראי רחוק מאגפי אמה דלא מכשיר אגפיה לזריעה:"
+  },
+  "Rashi on Moed Katan 4b:8:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:8:1"
+    ],
+    "generatedAt": "2026-11-13T19:26:16.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דאמר מפני שנראה כעודר איכא</strong> - דהא חפיר ולא אתו מיא בתריה:"
+  },
+  "Rashi on Moed Katan 4b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:26:52.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדוכתיה מנח ליה</strong> - דלא שדי ארעא לבראי דלא עביד אלא מרכך ארעא אבל הכא שדי לבראי לכך לא דמי לעודר:"
+  },
+  "Tosafot on Moed Katan 4b:13:1": {
+    "dependsOn": [
+      "Community Translation on Tosafot on Moed Katan 4b:13:1",
+      "Rashi on Moed Katan 4b:13:1",
+      "Rashi on Moed Katan 4b:13:2",
+      "Moed Katan 4b:13",
+      "Tosafot on Moed Katan 4b:6:1",
+      "Moed Katan 4b:6"
+    ],
+    "generatedAt": "2026-11-13T19:41:46.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבלו מוכיח עליו</strong> - דליכא למיחש להא דמאן דחזי החפירה <span class=\"parenthesized\">(. לא)</span> חזי ליה לזבל שבחפירה:"
+  },
+  "Tosafot on Moed Katan 4b:1:1": {
+    "dependsOn": [
+      "Moed Katan 4b:1",
+      "Rashi on Moed Katan 4b:1:1",
+      "Tosafot on Moed Katan 4b:1:2"
+    ],
+    "generatedAt": "2026-11-13T19:09:49.389Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדלין לירקות</strong> - ממקום עמוק קרי דילוי ואע\"ג דאיכא טירחא יתירא בשביל לאכול התירו אבל לייפות אפילו ליכא טירחא לא התירו:"
+  },
+  "Tosafot on Moed Katan 4b:1:2": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 4b:1:1",
+      "Tosafot on Moed Katan 4b:1:2",
+      "Rashi on Moed Katan 4b:1:1",
+      "Rashi on Moed Katan 4b:1:2",
+      "Rashi on Moed Katan 4b:1:3",
+      "Ritva on Moed Katan 4b:1",
+      "Steinsaltz comment #1 on Moed Katan 4b:1",
+      "Steinsaltz comment #2 on Moed Katan 4b:1",
+      "Steinsaltz comment #3 on Moed Katan 4b:1"
+    ],
+    "generatedAt": "2026-11-13T19:11:22.286Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כך מידל בשל עניים</strong> - דכי אסר רחמנא ליקח עוללות ה\"מ בשעת בצירה כדכתיב <span class=\"parenthesized\">(דברים כ״ד:כ״א)</span> כי תבצור כרמך לא תעולל איסור עוללות עלייהו:"
+  },
+  "Tosafot on Moed Katan 4b:6:1": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 4b:6:1",
+      "Rashi on Moed Katan 4b:6:1",
+      "Rashi on Moed Katan 4b:6:2",
+      "Moed Katan 4b:6",
+      "Moed Katan 4b:1",
+      "Moed Katan 2a:1",
+      "Moed Katan 2a:2"
+    ],
+    "generatedAt": "2026-11-13T19:22:48.252Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שמכשיר אגפיה לזריעה</strong> - ונראית חרישה ממש שסבורין הרואין שלכך מתכוין אי נמי חשיב ליה עבודת קרקע ממש ואע\"ג שאינו מתכוין לכך מיהו מלאכה היא ואע\"ג דאמר ר' שמעון דבר שאין מתכוין מותר הא אמרינן . מודה ר' שמעון בפסיק רישיה ולא ימות ורבנן סברי כיון דע\"י שינוי עביד ליה לאו מלאכה היא ומותר דלא שמיה חרישה:"
+  }
+}

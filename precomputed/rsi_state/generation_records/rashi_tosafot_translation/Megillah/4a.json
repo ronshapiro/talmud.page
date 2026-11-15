@@ -1,4 +1,34 @@
 {
+  "Rashi on Megillah 4a:10:1": {
+    "dependsOn": [
+      "Steinsaltz on Megillah 4a:10"
+    ],
+    "generatedAt": "2026-11-13T15:50:03.911Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביראה</strong> - דמן בירי:"
+  },
+  "Rashi on Megillah 4a:10:2": {
+    "dependsOn": [
+      "Rashi on Megillah 4a:10:1",
+      "Megillah 4a:9",
+      "Rashi on Megillah 4a:5:1",
+      "Rashi on Megillah 4a:5:2",
+      "Rashi on Megillah 4a:8:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 3b:1:1"
+    ],
+    "generatedAt": "2026-11-13T15:52:11.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יזמרך כבוד</strong> - ביום ולא ידום בלילה והאי קרא במזמור ארוממך ה' כי דליתני דרשינן בפסיקתא במרדכי ואסתר והמן ואחשורוש וקריאת מגילה שבח הוא שמפרסמין את הנס והכל מקלסין להקדוש ברוך הוא:"
+  },
   "Rashi on Megillah 4a:1:1": {
     "dependsOn": [
       "Megillah 4a:1",
@@ -194,6 +224,73 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שואלין ודורשין</strong> - מעמידין תורגמן לפני החכם לדרוש אגרת פורים ברבים:"
   },
+  "Rashi on Megillah 4a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:40:16.668Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דרבה</strong> - דגזר לקמן בקריאת מגילה שמא יעבירנה ארבע אמות ברשות הרבים אף כאן גזרו דרשה אטו קרייה:"
+  },
+  "Rashi on Megillah 4a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:40:42.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשנותה ביום</strong> - זכר לנס שהיו זועקין בימי צרתן יום ולילה:"
+  },
+  "Rashi on Megillah 4a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:41:53.184Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אקרא</strong> - במזמור למנצח על אילת השחר הוא שנאמר על אסתר כדאמרינן במסכת יומא <span class=\"parenthesized\">(דף כט.)</span> למה נמשלה אסתר כאילת כו':"
+  },
+  "Rashi on Megillah 4a:9:1": {
+    "dependsOn": [
+      "Megillah 4a:9",
+      "Rashi on Megillah 4a:9:2",
+      "Rashi on Megillah 4a:9:3"
+    ],
+    "generatedAt": "2026-11-13T15:47:50.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סבור מינה</strong> - בני הישיבה ששמעו שמועה זו בלה\"ק ולשנותה ביום היו סבורין דהאי ולשנותה לשון שונה משנה הוא:"
+  },
+  "Rashi on Megillah 4a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:48:44.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיתני מתני' דידה</strong> - משניות של מסכת מגילה:"
+  },
+  "Rashi on Megillah 4a:9:3": {
+    "dependsOn": [
+      "Rashi on Megillah 4a:9:1",
+      "Rashi on Megillah 4a:9:2"
+    ],
+    "generatedAt": "2026-11-13T15:49:29.564Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 4a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אעבור פרשתא הדא ואתניה</strong> - אסיים פרשה זו ואשנה אותה פעם שניה:"
+  },
   "Tosafot on Megillah 4a:1:1": {
     "dependsOn": [
       "Megillah 4a:1",
@@ -291,5 +388,59 @@
       "Tosafot on Megillah 4a:5:2"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">שאף הן היו באותו הנס</strong> - פירש רשב\"ם שעיקר הנס היה על ידן בפורים על ידי אסתר בחנוכה על ידי יהודית בפסח שבזכות צדקניות שבאותו הדור נגאלו וקשה דלשון שאף הן משמע שהן טפלות ולפירושו היה לו לומר שהן לכך נראה לי שאף הן היו בספק דלהשמיד ולהרוג וכן בפסח שהיו משועבדות לפרעה במצרים וכן בחנוכה הגזירה היתה מאד עליהן. גבי מצה יש מקשה למה לי היקשא דכל שישנו בבל תאכל חמץ ישנו בקום אכול מצה תיפוק ליה מטעם שהן היו באותו הנס וי\"ל דמשום האי טעמא לא מחייבא אלא מדרבנן אי לאו מהיקשא ורבינו יוסף איש ירושלים תירץ דסלקא דעתך למיפטרה מגזירה שוה דט\"ו ט\"ו דחג הסוכות כדפי' פרק אלו עוברין <span class=\"parenthesized\">(פסחים מג: ד\"ה סלקא:)</span>"
+  },
+  "Tosafot on Megillah 4a:5:3": {
+    "dependsOn": [
+      "Tosafot on Megillah 4a:5:3",
+      "Tosafot on Megillah 4a:5:1",
+      "Tosafot on Megillah 4a:5:2",
+      "Tosafot on Megillah 4a:5:4",
+      "Tosafot on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:1",
+      "Rashi on Megillah 2a:1:2",
+      "Rashi on Megillah 2a:1:3"
+    ],
+    "generatedAt": "2026-11-13T15:32:50.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 4a:5:3"
+    ],
+    "sourceText": "פסק ואומר על הנסים בתפלה ובהודאה ויש שאין אומרים כשם לפי שאמרו חכמים <span class=\"parenthesized\">(ברכות לד.)</span> לעולם לא ישאל אדם צרכיו לא בג' ראשונות ולא בג' ברכות אחרונות ושטות הוא שהרי האי טעמא לא הוי אלא למתפלל בלשון יחיד אבל בשביל הציבור שרי אבל נראה שאין לאומרו מטעם אחר משום דאמרו חכמים <span class=\"parenthesized\">(פסחיה קיז:)</span> דכל דבר דהוי בלהבא תקנו בלהבא ובדבר דהודאה הוי לשעבר ומשום הכי תקנו בה על הנסים דהוי לשעבר ובליל י\"ד לאחר תפלת מעריב אומר קדיש שלם ואחר כך קורא את המגילה ומברך לפניה ג' ברכות ואחריה ברכה אחת עד האל המושיע השלים עומד לפני התיבה ואומר ואתה קדוש ואין מתחילין ובא לציון לפי שאין גאולה בלילה ואם מוצאי שבת הוא יאמר ויהי נועם קודם וכשרוצה לקרות פושט את כולה קודם כאגרת אבל לא גולל וקורא כמו ס\"ת ובשחר מתפלל שמונה עשרה ברכות ואומר על הנסים בהודאה ואין אומר כשם לפי שכל הברכה אינה אלא לשעבר וא\"כ אין לומר בה דבר שלהבא ואחר כך אומר קדיש עד דאמירן ואוחז ס\"ת וקורא שלשה גברי פרשת ויבא עמלק אע\"פ שאין בה אלא ט' פסוקים ואין מחזיר הספר תורה למקומו אלא יושב ואוחז בידיו עד שקראו את המגילה ומברך עליה כאשר עשה בלילה כדפירש בפנים ואחר כך אומר תהלה ובא לציון ואין אומרים למנצח משום דכתיב ביה צרה וצרה בפורים לא מזכרינן וכן אין נופלים על פניהם בי\"ד ובט\"ו משום דכתיב ימי משתה ושמחה ואומר [<span class=\"parenthesized\">(תהילים כ״ב:א׳)</span> למנצח על אילת השחר] משום דכתיב ביה מפלה לעובדי כוכבים וכן בליל ארבעה עשר ואומר פטום הקטורת וכל הסדר כמו בחול:"
+  },
+  "Tosafot on Megillah 4a:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:34:23.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 4a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פורים שחל להיות בשבת</strong> - דווקא בשבת לפי שאין קורין המגילה משום גזירה דרבה אבל בחול א\"צ שהרי קורין המגילה וטפי איכא פרסומי ניסא:"
+  },
+  "Tosafot on Megillah 4a:6:1": {
+    "dependsOn": [
+      "Tosafot on Megillah 2a:1:1",
+      "Tosafot on Megillah 4a:5:1",
+      "Megillah 4a:6",
+      "Chidushei Halachot on Megillah 4a:5"
+    ],
+    "generatedAt": "2026-11-13T15:39:17.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 4a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איריא פורים אפילו י\"ט נמי</strong> - נראה לי דה\"פ מאי איריא פורים דאין דורשין בו מקודם לכן שלשים יום דמשום הכי לידרוש בו ביום אפילו בי\"ט דדרשינן שלשים יום לפניו ואפילו הכי דורשין בו ביום כדתניא <span class=\"parenthesized\">(לקמן מגילה לב.)</span> וידבר משה את מועדי ה' וכו':"
+  },
+  "Tosafot on Megillah 4a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T15:45:32.243Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב אדם לקרות את המגילה בלילה ולשנותה ביום</strong> - אומר ר\"י דאף על גב דמברך זמן בלילה חוזר ומברך אותו ביום דעיקר פרסומי ניסא הוי בקריאה דיממא וקרא נמי משמע כן דכתיב ולילה ולא דומיה לי כלומר אף על גב שקורא ביום חייב לקרות בלילה והעיקר הוי ביממא כיון שהזכירו הכתוב תחילה וגם עיקר הסעודה ביממא הוא כדאמר לקמן <span class=\"parenthesized\">(מגילה דף ז:)</span> דאם אכלה בלילה לא יצא י\"ח והכי נמי משמע מדכתיב נזכרים ונעשים ואיתקש זכירה לעשייה מה עיקר עשייה ביממא אף זכירה כן:"
   }
 }

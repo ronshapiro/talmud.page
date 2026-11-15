@@ -1,0 +1,464 @@
+{
+  "Rashi on Moed Katan 4a:11:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:11:2",
+      "Rashi on Moed Katan 2a:13:2"
+    ],
+    "generatedAt": "2026-11-13T18:43:24.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזירה מי גשמים</strong> - דלמא אתי למעבד מי קילון:"
+  },
+  "Rashi on Moed Katan 4a:11:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:11:1",
+      "Moed Katan 4a:11",
+      "Steinsaltz on Moed Katan 4a:11"
+    ],
+    "generatedAt": "2026-11-13T18:44:56.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי גשמים נמי אתי לידי מי קילון</strong> - כלומר כי מדלו מינה דלא הויא מליאה נעשית ממילא מי קילון שאינו מלא וטריחא מלתא:"
+  },
+  "Rashi on Moed Katan 4a:12:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:12:2",
+      "Moed Katan 4a:12",
+      "Rashi on Moed Katan 4a:11:1",
+      "Rashi on Moed Katan 4a:11:2",
+      "Moed Katan 4a:14",
+      "Moed Katan 4a:15"
+    ],
+    "generatedAt": "2026-11-13T18:46:19.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נהרות המושכין מן האגמים</strong> - השתא משמע ליה מי אגמים עבידא דפסקי:"
+  },
+  "Rashi on Moed Katan 4a:12:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:12:1",
+      "Moed Katan 4a:11",
+      "Rashi on Moed Katan 4a:11:1",
+      "Rashi on Moed Katan 4a:11:2",
+      "Moed Katan 4a:13",
+      "Rashi on Moed Katan 4a:13:1"
+    ],
+    "generatedAt": "2026-11-13T18:47:26.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר להשקות מהן בחולו של מועד</strong> - ולא גזרי דלמא פסיקא מי אגמים ואזל וטרח ואייתי מן נהר אחר:"
+  },
+  "Rashi on Moed Katan 4a:13:1": {
+    "dependsOn": [
+      "Moed Katan 4a:13",
+      "Rashi on Moed Katan 4a:12:1",
+      "Rashi on Moed Katan 4a:12:2",
+      "Rashi on Moed Katan 4a:13:1",
+      "Steinsaltz on Moed Katan 4a:13",
+      "Steinsaltz comment #1 on Moed Katan 4a:12",
+      "Steinsaltz comment #2 on Moed Katan 4a:12",
+      "Rashi on Moed Katan 4a:11:1",
+      "Rashi on Moed Katan 4a:11:2",
+      "Rashi on Moed Katan 4a:1:1",
+      "Rashi on Moed Katan 4a:4:1",
+      "Rashi on Moed Katan 4a:5:1"
+    ],
+    "generatedAt": "2026-11-13T18:52:32.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:13:1"
+    ],
+    "sourceText": "ר' אילעא אמר ר' יוחנן דאמר גזרינן מי גשמים אפילו היכא דלא פסקי אטו מי קילון מדקאמר רב אשי מי גשמים לידי קילון אתי מכלל דר' יוחנן אסר אפילו דלא אתיא לידי מי קילון לית ליה דר' זירא דלא גזר:"
+  },
+  "Rashi on Moed Katan 4a:15:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:15:2"
+    ],
+    "generatedAt": "2026-11-13T18:53:34.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיתיבי אבל לא מי קילון</strong> - דלמא מפסקי וטרח להוציא מן העמוק הכא נמי אמאי לא ניחוש דלמא מפסקי מי אגמים:"
+  },
+  "Rashi on Moed Katan 4a:15:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:15:1"
+    ],
+    "generatedAt": "2026-11-13T18:54:35.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל כמיא דלא פסקי דמו</strong> - וליכא למיחש:"
+  },
+  "Rashi on Moed Katan 4a:16:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:16:2",
+      "Jastrow, פְּסֵיקָה 1",
+      "Steinsaltz on Moed Katan 4a:16",
+      "Moed Katan 4a:17",
+      "Moed Katan 4a:18"
+    ],
+    "generatedAt": "2026-11-13T18:55:52.403Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסיקות ובריכות</strong> - חדא מילתא היא:"
+  },
+  "Rashi on Moed Katan 4a:16:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:16:1",
+      "Steinsaltz on Moed Katan 4a:16"
+    ],
+    "generatedAt": "2026-11-13T18:57:04.552Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם אמת המים עוברת ביניהן</strong> - בין הבריכות הללו מותר להשקות ממי גשמים דאי פסקי מי גשמים משקה מאמת המים:"
+  },
+  "Rashi on Moed Katan 4a:17:1": {
+    "dependsOn": [
+      "Moed Katan 4a:17",
+      "Rashi on Moed Katan 4a:16:1",
+      "Rashi on Moed Katan 4a:16:2",
+      "Rashi on Moed Katan 4a:17:2"
+    ],
+    "generatedAt": "2026-11-13T18:58:34.113Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא שרובה של אותה שדה שותה מאותה אמת המים כו'</strong> - שיכול להשקות רוב השדה בפעם אחת מאותה אמת המים אבל אם אינו יכול להשקות בפעם אחת מאותה אמת המים רוב של שדה אינו משקה מפסיקות ובריכות דלמא מפסיק ואזיל:"
+  },
+  "Rashi on Moed Katan 4a:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:59:08.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תישתי לתרי או תלתא יומי</strong> - מההיא אמת המים ולא טרח ומייתי מאמת המים אחרינא:"
+  },
+  "Rashi on Moed Katan 4a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:59:58.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בריכה שנטפה משדה בית השלחין זו מותר להשקות ממנה בית השלחין אחר</strong> - בית השלחין שהיה גבוה והיה מעיין נובע מצדו ובצד אחד היה בית השלחין נמוך ובין אלו בית השלחין היה בצד השלחין הנמוך בריכה קטנה וכשמשקים בית השלחין הגבוה מן המעיין נוטף טיפין מן בית השלחין הגבוה לבריכה הנמוכה מותר להשקות אותו בית השלחין הנמוך מאותה בריכה אע\"ג דבריכה עבידא דפסקא הואיל ומטפטף בו מבית השלחין הגבוה מים שבאו לו מחמת המעיין:"
+  },
+  "Rashi on Moed Katan 4a:19:1": {
+    "dependsOn": [
+      "Moed Katan 4a:19",
+      "Rashi on Moed Katan 4a:19:1",
+      "Rashi on Moed Katan 4a:19:2",
+      "Rashi on Moed Katan 4a:19:3"
+    ],
+    "generatedAt": "2026-11-13T19:00:56.048Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא עבידא דפסקא</strong> - בריכה ואזיל ומייתי:"
+  },
+  "Rashi on Moed Katan 4a:19:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:19:1",
+      "Rashi on Moed Katan 4a:19:3",
+      "Moed Katan 4a:18"
+    ],
+    "generatedAt": "2026-11-13T19:01:49.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדיין היא מטפטפת</strong> - מבית השלחין גבוה לתוך הבריכה דודאי לא פסקא:"
+  },
+  "Rashi on Moed Katan 4a:19:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:19:1",
+      "Rashi on Moed Katan 4a:19:2",
+      "Steinsaltz on Moed Katan 4a:19:1",
+      "Steinsaltz on Moed Katan 4a:19"
+    ],
+    "generatedAt": "2026-11-13T19:03:21.192Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אביי והוא שלא פסק מעיין</strong> - המטפטף מבית השלחין גבוה לבריכה מותר להשקות מבריכה לבית השלחין נמוך אבל אי פסיק מעיין אע\"ג דעדיין מטפטף מבית השלחין גבוה לתוך הבריכה אין משקין מן הבריכה לבית השלחין נמוך דלמא פסיק ואזיל וטרח ומייתי ממעיין אחר:"
+  },
+  "Rashi on Moed Katan 4a:1:1": {
+    "dependsOn": [
+      "Moed Katan 4a:1",
+      "Steinsaltz on Moed Katan 4a:1"
+    ],
+    "generatedAt": "2026-11-13T18:23:24.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנכנס לשביעית</strong> - כל שיש לו ליכנס לשביעית שאסור לחרוש לפני ר\"ה:"
+  },
+  "Rashi on Moed Katan 4a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T19:03:50.150Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ידלה מן התחתון וישקה לעליון</strong> - דאיכא טירחא יתירא:"
+  },
+  "Rashi on Moed Katan 4a:21:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:21:2"
+    ],
+    "generatedAt": "2026-11-13T19:04:29.631Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדלין לירקות</strong> - משמע שהוא דולה מים ומשקה לירקות כדי לאוכלן בחולו של מועד:"
+  },
+  "Rashi on Moed Katan 4a:21:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:21:1",
+      "Moed Katan 4a:21",
+      "Moed Katan 2a:9",
+      "Rashi on Moed Katan 2a:9:2"
+    ],
+    "generatedAt": "2026-11-13T19:05:35.294Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם בשביל ליפותן</strong> - שיגדלו הירקות אסור דהרווחה היא:"
+  },
+  "Rashi on Moed Katan 4a:22:1": {
+    "dependsOn": [
+      "Moed Katan 2a:1"
+    ],
+    "generatedAt": "2026-11-13T19:06:12.521Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהוה דלי דוולא</strong> - דולה דליות מים לירקות וחכמים לא התירו כי אם לבית השלחין בלבד:"
+  },
+  "Rashi on Moed Katan 4a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:25:07.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה חריש רשות</strong> - בכל מקום:"
+  },
+  "Rashi on Moed Katan 4a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:25:35.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קציר העומר</strong> - מותר לקצור בשבת:"
+  },
+  "Rashi on Moed Katan 4a:2:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:2:1",
+      "Rashi on Moed Katan 4a:2:2"
+    ],
+    "generatedAt": "2026-11-13T18:26:11.503Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיא של מצוה</strong> - אע\"פ שמצא קצור קוצר דבעינן קצירה לשמה אבל אם מצא חרוש אינו חורש:"
+  },
+  "Rashi on Moed Katan 4a:3:1": {
+    "dependsOn": [
+      "Moed Katan 4a:3",
+      "Rashi on Moed Katan 4a:3:2"
+    ],
+    "generatedAt": "2026-11-13T18:27:14.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכתא למישרא ילדה</strong> - עשר נטיעות עד ר\"ה:"
+  },
+  "Rashi on Moed Katan 4a:3:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:3:1",
+      "Moed Katan 4a:3",
+      "Moed Katan 3b:12",
+      "Rashi on Moed Katan 3b:12:3",
+      "Rashi on Moed Katan 3b:12:1",
+      "Rashi on Moed Katan 3b:12:2"
+    ],
+    "generatedAt": "2026-11-13T18:28:30.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קראי למיסר זקינה</strong> - שלשים יום קודם ראש השנה ואתו בית שמאי והלל וגזרו מפסח ועד עצרת:"
+  },
+  "Rashi on Moed Katan 4a:4:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 4a:4:1",
+      "Moed Katan 4a:4",
+      "Rashi on Moed Katan 4a:3:1",
+      "Rashi on Moed Katan 4a:3:2"
+    ],
+    "generatedAt": "2026-11-13T18:32:04.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממילא שמעת מינה</strong> - דזקינה אסור לחרוש:"
+  },
+  "Rashi on Moed Katan 4a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:32:48.483Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הלכתא לרבי ישמעאל</strong> - דלא נפיק ליה מקראי דדריש לקרא לדרשה אחרינא להוציא קציר העומר:"
+  },
+  "Rashi on Moed Katan 4a:6:1": {
+    "dependsOn": [
+      "Moed Katan 4a:6"
+    ],
+    "generatedAt": "2026-11-13T18:33:36.924Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדאורייתא בטלו</strong> - כלומר אשכחו סמך מן התורה להכי בטלו הלכתא:"
+  },
+  "Rashi on Moed Katan 4a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:35:26.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דאמר הלכתא</strong> - דלפני ר\"ה אסור:"
+  },
+  "Rashi on Moed Katan 4a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:38:25.427Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אתא גזירה שוה עקרה להלכתא</strong> - כלומר משום גזרה שוה דאינהו גמירו מנפשייהו משבת בטלו הלכתא הא אין אדם דן ג\"ש מעצמו:"
+  },
+  "Rashi on Moed Katan 4a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T18:39:23.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי גמירו הלכתא בזמן שבית המקדש קיים</strong> - וכי שרו רבן גמליאל ובית דינו בזמן שאין בית המקדש קיים:"
+  },
+  "Tosafot on Moed Katan 4a:10:1": {
+    "dependsOn": [
+      "Community Translation: Translation on Tosafot on Moed Katan 4a:10:1",
+      "Moed Katan 4a:10"
+    ],
+    "generatedAt": "2026-11-13T18:42:41.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא מי קילון כו' אלא מי גשמים</strong> - מיירי בכי האי גוונא דקים לן דלא פסקי ולית בהו איסור אלא מהאי טעמא דמפרש אבל אי פסקי אית להו איסורא כדלקמן דבכל מידי דפסיק איכא איסורא משום דאזיל ומייתי ממקום רחוק כיון שהתחיל להשקות שלא יפסיד שדהו הלכך איכא לאוקמי הכא דלא פסקי:"
+  },
+  "Tosafot on Moed Katan 4a:3:1": {
+    "dependsOn": [
+      "Moed Katan 4a:3",
+      "Moed Katan 3b:13",
+      "Maharsha: Chidushei Halachot on Moed Katan 4a:3",
+      "Rashi on Moed Katan 4a:3:1",
+      "Rashi on Moed Katan 4a:3:2"
+    ],
+    "generatedAt": "2026-11-13T18:30:38.025Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רב נחמן בר יצחק</strong> - האי אלא קאי אהאי דרבי יצחק לעיל כי גמירי הלכתא לשלשים יום לפני ראש השנה דהיינו באילנות זקנים לא תימא דלהכי אתיא הלכתא אלא סבר רב נחמן דאיסור שלשים לפי אומד חכמים ואף החמירו בהם בדבריהם ויש דמשבשי ליה להאי אלא דרב נחמן ואין להאריך בדבריהם:"
+  },
+  "Tosafot on Moed Katan 4a:7:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Moed Katan 4a:7:1"
+    ],
+    "generatedAt": "2026-11-13T18:34:41.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן היא אסורה לפניה ולאחריה מותרין</strong> - ואי קשיא והא מפקינן מקרא במס' יומא פרק בתרא <span class=\"parenthesized\">(דף פא:)</span> דצריך לעשות תוספת גבי שבת בין בכניסתה בין ביציאתה להוסיפה מחול על הקודש איכא למימר ההוא פורתא לא קא חשיב כיון דלא הוי אלא כל שהוא וכי ההוא שיעורא נמי יהא מודה רבן גמליאל דצריך להוסיף:"
+  },
+  "Tosafot on Moed Katan 4a:9:1": {
+    "dependsOn": [
+      "Translation on Tosafot on Moed Katan 4a:9:1",
+      "Moed Katan 4a:9"
+    ],
+    "generatedAt": "2026-11-13T18:41:00.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 4a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רב אשי רבן גמליאל כו'</strong> - כלומר ודאי מדאורייתא בטיל ולאו היינו טעמא כדקאמר אלא סבירא ליה כרבי ישמעאל וקא דייק רבן גמליאל מה שייכא תוספת שביעית גבי ניסוך שניתנו למשה גבי הדדי דבכל מקום שונה הני שלשה ביחד דכך ניתנו אלא ודאי למילף סמכינהו רחמנא:"
+  }
+}

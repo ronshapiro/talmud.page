@@ -1,0 +1,446 @@
+{
+  "Rashi on Moed Katan 2b:10:1": {
+    "dependsOn": [
+      "Moed Katan 2b:10"
+    ],
+    "generatedAt": "2026-11-13T16:38:59.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - מנכש אינו לוקה אלא משום מקיים:"
+  },
+  "Rashi on Moed Katan 2b:14:1": {
+    "dependsOn": [
+      "Moed Katan 2b:14",
+      "Steinsaltz on Moed Katan 2b:14",
+      "Steinsaltz comment #1 on Moed Katan 2b:14"
+    ],
+    "generatedAt": "2026-11-13T16:40:43.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר כלאים שדך לא</strong> - ואע\"ג דכתיב לא תזרע כלאים גורעין ודורשין לא כלאים לא יהא כלאים מכל מקום שחייב אתה לבטלו:"
+  },
+  "Rashi on Moed Katan 2b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:41:20.334Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא מועד</strong> - משום הכי שרי דלא אסיר בשום מלאכה אלא משום טירחא:"
+  },
+  "Rashi on Moed Katan 2b:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:41:57.482Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל מקום פסידא שרו רבנן</strong> - למיטרח בחולו של מועד במקום פסידא כדפרשינן לעיל:"
+  },
+  "Rashi on Moed Katan 2b:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:42:27.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין למאן דאמר משום חורש</strong> - דפליגי רבה ורב יוסף לעיל במשקה מים לזרעים דחד אמר משום חורש וחד אמר משום זורע:"
+  },
+  "Rashi on Moed Katan 2b:16:4": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:16:1",
+      "Rashi on Moed Katan 2b:16:2",
+      "Rashi on Moed Katan 2b:16:3"
+    ],
+    "generatedAt": "2026-11-13T16:43:22.363Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרישה בשביעית מי שרי</strong> - הא נפקא מבחריש ובקציר תשבות דאמרינן אם אינו ענין לשבת שאינו צריך שהרי כבר נאמר כל מלאכה תנהו ענין לשביעית:"
+  },
+  "Rashi on Moed Katan 2b:17:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:17:1",
+      "Rashi on Moed Katan 2b:17:2",
+      "Rashi on Moed Katan 2b:17:3"
+    ],
+    "generatedAt": "2026-11-13T16:44:07.894Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשביעית בזמן הזה</strong> - דרבנן:"
+  },
+  "Rashi on Moed Katan 2b:17:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:17:1",
+      "Rashi on Moed Katan 2b:17:3",
+      "Rashi on Moed Katan 2b:2:1",
+      "Rashi on Moed Katan 2b:3:1"
+    ],
+    "generatedAt": "2026-11-13T16:45:14.594Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי היא</strong> - דאמר דהוא מדרבנן ומילתא דפסידא שרו רבנן:"
+  },
+  "Rashi on Moed Katan 2b:17:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:17:1",
+      "Rashi on Moed Katan 2b:17:2",
+      "Rashi on Moed Katan 2b:14:1",
+      "Rashi on Moed Katan 2a:4:4"
+    ],
+    "generatedAt": "2026-11-13T16:49:30.159Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזה דבר השמטה שמוט</strong> - כתיב בהשמטת כספים אמאי כתיב תרי זימני שמטה שמוט:"
+  },
+  "Rashi on Moed Katan 2b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:49:54.484Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזמן שאי אתה משמט קרקע כו'</strong> - מכלל דאיכא זמן דלא משמט קרקע ואיזה זה בזמן הזה:"
+  },
+  "Rashi on Moed Katan 2b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:50:25.428Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו תימא רבנן</strong> - דפליגי עליה דרבי ואמרי דשביעית בזמן הזה דאורייתא:"
+  },
+  "Rashi on Moed Katan 2b:19:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:19:1",
+      "Rashi on Moed Katan 2b:19:2"
+    ],
+    "generatedAt": "2026-11-13T16:51:03.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבות מלאכות</strong> - אסר רחמנא בשביעית:"
+  },
+  "Rashi on Moed Katan 2b:1:1": {
+    "dependsOn": [
+      "Moed Katan 2b:1"
+    ],
+    "generatedAt": "2026-11-13T16:08:55.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא אתי לאינפולי</strong> - אבל ממעיין שלא יצא בתחילה אפילו בית הבעל נמי שרי רבי יהודה ומתניתין דקתני נמי ממעיין שלא יצא בתחילה בית השלחין אין בית הבעל לא לאו רבי יהודה היא:"
+  },
+  "Rashi on Moed Katan 2b:2:1": {
+    "dependsOn": [
+      "Moed Katan 2b:2",
+      "Rashi on Moed Katan 2b:2:2",
+      "Rashi on Moed Katan 2a:5:1"
+    ],
+    "generatedAt": "2026-11-13T16:10:27.510Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן מתניתין אמאן תרמייה</strong> - לא ר\"א בן יעקב כדאמרן ולא כר\"מ דשרי אפילו בית הבעל ולא כר' אלעזר בן עזריה דאפילו בית השלחין לא שרי ממעיין שיצא בתחילה:"
+  },
+  "Rashi on Moed Katan 2b:2:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:2:1",
+      "Rashi on Moed Katan 2a:1:1",
+      "Rashi on Moed Katan 2b:2:3"
+    ],
+    "generatedAt": "2026-11-13T16:12:07.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לרבי יהודה ולא שנא כו'</strong> - ומתניתין ר' יהודה היא:"
+  },
+  "Rashi on Moed Katan 2b:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:12:39.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להודיעך כחו דרבי מאיר</strong> - דאפילו ממעיין שיצא בתחילה שרי אפילו לבית הבעל:"
+  },
+  "Rashi on Moed Katan 2b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:16:50.549Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנכש</strong> - תולש עשבים רעים מתוך הטובים וכי עקרי להו צמחי הני טפי:"
+  },
+  "Rashi on Moed Katan 2b:3:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:3:1",
+      "Rashi on Moed Katan 2b:3:3"
+    ],
+    "generatedAt": "2026-11-13T16:17:45.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משקה מים בזרעים</strong> - שזורק מים בעיקרי העשבים:"
+  },
+  "Rashi on Moed Katan 2b:3:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:3:1",
+      "Rashi on Moed Katan 2b:3:2",
+      "Rashi on Moed Katan 2b:3:4"
+    ],
+    "generatedAt": "2026-11-13T16:19:11.357Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום מאי מתרינן ביה</strong> - דמאי מלאכה קא חשבינן ליה דודאי קוצר לא חשבינן שאינו מתכוין ליטול העשבים אלא לתקן עשבים הטובים שבשדה:"
+  },
+  "Rashi on Moed Katan 2b:3:4": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:3:1",
+      "Rashi on Moed Katan 2b:3:2",
+      "Rashi on Moed Katan 2b:3:3",
+      "Rashi on Moed Katan 2b:3:4",
+      "Moed Katan 2b:3",
+      "Rashi on Moed Katan 2b:8:1",
+      "Rashi on Moed Katan 2b:8:2",
+      "Rashi on Moed Katan 2b:8:3",
+      "Rashi on Moed Katan 2b:16:1",
+      "Rashi on Moed Katan 2b:16:2",
+      "Rashi on Moed Katan 2b:16:3",
+      "Rashi on Moed Katan 2b:16:4",
+      "Rashi on Moed Katan 2a:1:1",
+      "Rashi on Moed Katan 2a:1:2",
+      "Rashi on Moed Katan 2a:1:3",
+      "Rashi on Moed Katan 2b:2:1",
+      "Rashi on Moed Katan 2b:2:2",
+      "Rashi on Moed Katan 2b:2:3",
+      "Rashi on Moed Katan 2b:6:1",
+      "Rashi on Moed Katan 2b:6:2",
+      "Rashi on Moed Katan 3a:1:1",
+      "Rashi on Moed Katan 3a:1:2"
+    ],
+    "generatedAt": "2026-11-13T16:24:48.753Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:3:4"
+    ],
+    "sourceText": "חורש וזורע וקוצר אבות מלאכות הן בפרק כלל גדול <span class=\"parenthesized\">(שבת דף עג.)</span>:"
+  },
+  "Rashi on Moed Katan 2b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:26:01.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לריפויי</strong> - לרכך:"
+  },
+  "Rashi on Moed Katan 2b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:27:35.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום חורש אין משום זורע לא</strong> - אמאי לא מיחייב בתרווייהו הא עביד תרווייהו ואשכחינן במלאכה דמיחייב תרתי:"
+  },
+  "Rashi on Moed Katan 2b:6:1": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:6:2",
+      "Rashi on Moed Katan 2b:2:1",
+      "Rashi on Moed Katan 2b:3:1",
+      "Rashi on Moed Katan 2a:1:1",
+      "Rashi on Moed Katan 2a:1:2"
+    ],
+    "generatedAt": "2026-11-13T16:28:27.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זומר</strong> - בשבת:"
+  },
+  "Rashi on Moed Katan 2b:6:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:6:1"
+    ],
+    "generatedAt": "2026-11-13T16:29:11.820Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך לעצים חייב</strong> - משום קוצר שהרי צריך לעצים וחייב משום נוטע דמשום הזימור גדלי טפי:"
+  },
+  "Rashi on Moed Katan 2b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:32:57.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המחפה</strong> - שמכסה את הזרעים בעפר:"
+  },
+  "Rashi on Moed Katan 2b:8:2": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:8:1",
+      "Rashi on Moed Katan 2b:8:3",
+      "Rashi on Moed Katan 2a:1:5",
+      "Leviticus 19:19"
+    ],
+    "generatedAt": "2026-11-13T16:34:06.550Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לוקה</strong> - משום לא תזרע כלאים <span class=\"parenthesized\">(ויקרא י״ט:י״ט)</span>:"
+  },
+  "Rashi on Moed Katan 2b:8:3": {
+    "dependsOn": [
+      "Rashi on Moed Katan 2b:8:1",
+      "Rashi on Moed Katan 2b:8:2"
+    ],
+    "generatedAt": "2026-11-13T16:35:06.887Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף המקיים</strong> - שרואה כלאים זרוע ואינו מבטלו:"
+  },
+  "Rashi on Moed Katan 2b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:36:40.043Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לדידי דאמינא</strong> - דמנכש הוי משום זורע משום הכי מנכש בכלאים לוקה דהא אסירא זריעה בכלאים דכתיב לא תזרע:"
+  },
+  "Rashi on Moed Katan 2b:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:38:13.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 2b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חרישה</strong> - לצורך זריעת כלאים מי אסירא דבשעת חרישה ליכא כלאים כלל:"
+  },
+  "Tosafot on Moed Katan 2b:2:1": {
+    "dependsOn": [
+      "Moed Katan 2b:2",
+      "Moed Katan 2a:15",
+      "Moed Katan 2a:12"
+    ],
+    "generatedAt": "2026-11-13T16:14:44.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן אמאן תרמייה</strong> - ואם נפשך לומר ממאי דרמינן אליבא דר' יהודה יותר מר\"א כמו דאקשינן לעיל לר\"א הכי נמי פרכינן אליבא דרבי יהודה ומאי אלימא להש\"ס מילתא דרבי יהודה דמוכח מיניה דמתניתין אתיא אליביה יותר מדרבי אליעזר איכא למימר משום דבתרתי מילי אשכחן בהדיא במילתיה דר\"י כמו במתניתין דפסידא אין הרווחה לא ובמקום פסידא נמי מיטרח לא טרח אבל לר\"א ליכא לאוכוחי ממילתיה אלא חד מילתא כדלעיל דהרווחה אסיר הלכך ניחא ליה לאוקמי כר' יהודה ולא כרבי אליעזר:"
+  },
+  "Tosafot on Moed Katan 2b:2:2": {
+    "dependsOn": [
+      "Tosafot on Moed Katan 2b:2:1"
+    ],
+    "generatedAt": "2026-11-13T16:16:11.429Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחו דר' מאיר דמיקל</strong> - ואם תאמר וליתני שלא יצאו בתחילה להודיעך כחו דר' יהודה דמחמיר כח דהתירא עדיף:"
+  },
+  "Tosafot on Moed Katan 2b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:25:40.197Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום מאי מתרינן</strong> - דאין אדם לוקה ולא נהרג אלא בהתראה שמתרינן בו לא תעשה הך איסורא כדמפקינן בסנהדרין <span class=\"parenthesized\">(דף מא.)</span> מקרא דצריך לפרש שם האיסור בהדיא:"
+  },
+  "Tosafot on Moed Katan 2b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:26:56.667Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קא מרפויי ארעא</strong> - דבתר עיקר המלאכה אזלינן ודומה לחורש ורב יוסף אע\"ג דעיקר מלאכה דומה לחורש מחשבת הנפש לאו לרפויי ארעא ובהכי פליגי דרבה סבר לבתר המעשה מדמינן לה ולא אחר המחשבה ורב יוסף סבר בתר מחשבה אזלינן דהויא עיקר ולא אזלינן בתר הדמיון:"
+  },
+  "Tosafot on Moed Katan 2b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-13T16:30:02.223Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריך לעצים</strong> - אבל אם אין צריך לעצים לא נאמר בו דחייב משום קצירה דלא דמיא לקצירה דקוצרין למאכל או מידי שצריכין לאיזה דבר כגון רפואה וכיוצא בהן ואי לאו שקוצרין לצורך גופו פטור דלא מיחייב אפילו משום תולדה דתולדה צריך שתהא דמי לאב מלאכה:"
+  },
+  "Tosafot on Moed Katan 2b:6:2": {
+    "dependsOn": [
+      "Chidushei Halachot on Moed Katan 2b:4",
+      "Gilyon HaShas on Moed Katan 2b:1",
+      "Moed Katan 2b:6",
+      "Tosafot on Moed Katan 2b:6:1"
+    ],
+    "generatedAt": "2026-11-13T16:32:25.259Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 2b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב שתים</strong> - קשיא לרבה דאזיל בתר הדמיון דהכא זומר לא דמי כלל לנוטע ואעפ\"כ חייב משום נוטע וקשיא לרב יוסף דאפילי אינו מתכוין לצמוח הגפן כיון דודאי מצמחה מחמת הזימור חייב משום נוטע דהא סתם קאמר רב כהנא אפילו לא חישב ליטע ואי קשיא הא דאמרינן בדוכתא אחריתי <span class=\"parenthesized\">(כתובות דף לז.)</span> משום רשעה אחת אתה מחייבו ואי אתה מחייבו משום שתי רשעיות תריץ הכי כגון דאיכא מיתה ומלקות אבל תרתי מילי דאסירן דדמיין להדדי בשתי מלקיות תרוייהו חד רשעה הוא ולא ממעטי מרשעתו דכל שם מלקות חד רשעה הוא והכי נמי אמר במס' פסחים בפ' כל שעה <span class=\"parenthesized\">(פסחים דף כד. ושם)</span> אמר אביי אכל פוטיתא לוקה ארבע ואע\"ג דרב כהנא אמורא הוא מקשי מיניה לרבה ורב יוסף משום דגברא רבה הוה כדאשכחן <span class=\"parenthesized\">(ב\"ק דף קיז.)</span> במעשה דר' יוחנן דהוה חריף טובא וקשיא ל\"ג כיון דלאו תנא הוא לא חשיב לה כל כך ופליגי עליה:"
+  }
+}
