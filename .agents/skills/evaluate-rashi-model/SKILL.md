@@ -197,12 +197,16 @@ Once both blocks finish, write an analysis script in your scratch directory comb
    - **Local Hebrew verification rejections** (`verifyProposedHebrewWording` — e.g. modified source text outside `<span class="explanation">`, unclosed `<span>`, mismatched `<abbr>` tags, missing `<abbr title>`, or wrapping untouchable abbreviations like `וגו'`/`וכו'`/`הקב"ה`/`רש"י`/`חז"ל`): identifiable both from `[retry] feedback` in stdout and from consecutive `generate` calls in `context_usage_log` with no `critique` call in between.
    - **Malformed JSON / agent errors**: parse failures or CLI errors retried with feedback.
    - **Critique rejections**: count and categorize every `[critique] rejected: <reason>` line (abbreviation rule disputes, dibur hamatchil / punctuation, English translation accuracy/omission, explanation span usage, false-positive nitpicks vs valid catches).
-3. **Latency & Cost**:
-   - Wall-clock seconds per `generate` call, per `critique` call, and total per candidate (mean, median, p95, total block runtime) parsed from timestamped stdout logs.
-   - Cost (`costUsd`) when reported by the backend (`claude`, `gemini-api`).
-4. **Context Fetch Behavior** (use `computeContextReport` from `rsi_orchestrator/context_usage_report.ts` filtered to each block's pages, for both `callKind: "generate"` and `callKind: "critique"`):
-   - Compare `fetch%`, `refs/fetch`, `own-seg%`, `off-page%`, `off-book%`, `2a-3b%`, and subcommand counts (`get-refs`, `get-neighbors`, `search`, `get-comment-refs`, `get-prior-sugyot`, `wikipedia`).
-   - Check whether the critique model respected the no-lookup instruction (`fetch%` near 0% for critique, except rare Wikipedia checks).
+3. **Latency, Token Burn & Cost-Effectiveness**:
+   - **Wall-clock latency & throughput**: seconds per `generate` call, per `critique` call, and total per candidate (mean, median, p95, total block runtime) parsed from timestamped stdout logs.
+   - **Subscription / quota footprint (for CLI backends like `agy`)**: `callsPerSaved` (`gen` + `crit` calls divided by saved candidates) and total tool turns per call/block, distinguishing avoidable format/prompt-churn retries from genuine quality retries.
+   - **Direct API cost (`costUsd`)**: sum and average `costUsd` from `context_usage_log` when reported by the backend (`claude`, `gemini-api`).
+   - **Token & multi-turn probing (when `costUsd` is `undefined`, e.g. `agy`)**: `context_usage_log` omits `usage` token counts even though `runHeadlessAgy` receives `input_tokens`, `cache_read_tokens`, `output_tokens`, and `thinking_tokens` (counted toward billed output on Gemini models). Run a small controlled probe from your scratch script calling `agy -p --output-format stream-json --model <model>` with the real generator and critique prompts on 3–5 representative comments (e.g. a short Rashi, a context-fetch-heavy Rashi, and a Tosafot) parsed via `parseAgyStreamJsonLines` (from `rsi_orchestrator/agent_runner.ts`), and cross-check probed tool counts against full-block averages. Note any CLI system-prompt/tool-schema baseline overhead when extrapolating from `agy` probes to `--backend gemini-api`.
+   - **Cost per accepted edit & 2x2 pairing projection**: combine published per-1M pricing (uncached input, cached input read, and output *including* thinking tokens — checking both introductory/promotional rates and standard post-introductory rates, plus Batch/Flex if applicable) with per-call token profiles and observed `callsPerSaved` multipliers to estimate cost per saved comment and per 1,000 comments across all four pairings (`new+old`, `old+new`, `new+new`, `old+old`), including a normalized retry-rate comparison if one model suffered preventable prompt-rule churn.
+4. **Context Fetch & All-Tool Behavior**:
+   - Run `computeContextReport` (from `rsi_orchestrator/context_usage_report.ts`) filtered to each block's pages for both `callKind: "generate"` and `callKind: "critique"` to compare `fetch%`, `refs/fetch`, `own-seg%`, `off-page%`, `off-book%`, `2a-3b%`, and subcommand counts (`get-refs`, `get-neighbors`, `search`, `get-comment-refs`, `get-prior-sugyot`, `wikipedia`).
+   - Also tally **all** `toolUses` types directly from `context_usage_log` (`run_command` vs `read_file`, `search_web`, etc.), because `computeContextReport` only inspects `run_command` calls and `runHeadlessAgy`'s `allowedTools` filter does not block `read_file` wandering — unnecessary `read_file` loops inflate latency, multi-turn uncached input, and cache-read token cost.
+   - Check whether the critique model respected the no-lookup instruction (`0` disallowed `read_file`/`search_web` calls and `fetch%` near `0%`, except rare Wikipedia checks).
 
 ### Qualitative & Crossover Audit
 
@@ -216,9 +220,10 @@ Inspect actual Hebrew + English edits in `precomputed/ai_additions/<Book>/<page>
 Present a clear comparative summary covering:
 1. Side-by-side metrics table (`Block A: new gen / old crit` vs `Block B: old gen / new crit`)
 2. Rejection & failure breakdown (verification vs JSON vs critique categories, with genuine-catch vs false-positive assessment)
-3. Speed & context-fetch comparison
-4. Qualitative translation highlights & concrete examples (with exact `ref` links/citations)
-5. Recommendation on whether `new_model` improves over `old_model` as generator, as critique, both, or neither (and whether another effort level should be tested).
+3. Speed & context/all-tool fetch comparison (including any non-`run_command` tool wandering)
+4. Cost-effectiveness & token/tool-turn efficiency (per-comment and per-1,000-comment API-equivalent cost at current and standard pricing across pairings, token/thinking/tool-turn drivers, and subscription call/turn/wall-clock efficiency)
+5. Qualitative translation highlights & concrete examples (with exact `ref` links/citations)
+6. Recommendation on whether `new_model` improves over `old_model` as generator, as critique, both, or neither — weighing quality, speed, and cost-effectiveness (and whether another effort level should be tested).
 
 ---
 
