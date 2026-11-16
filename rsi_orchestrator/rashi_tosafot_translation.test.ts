@@ -966,6 +966,10 @@ describe("critiquePrompt", () => {
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
     expect(prompt).toContain('פ"ק for פרק קמא (not actually a chapter name)');
+    expect(prompt).toContain(
+      'In the proposed Hebrew, are any added explanatory words enclosed in `<span class="explanation">...</span>`',
+    );
+    expect(prompt).toContain("using square brackets `[...]` — not `<span class=\"explanation\">`");
   });
 
   test("places static rules and format requirements before dynamic candidate content for prefix caching", () => {
@@ -1036,6 +1040,7 @@ describe("generationPrompt", () => {
       expect(targetIndex).toBeGreaterThan(skeletonIndex);
       expect(feedbackIndex).toBeGreaterThan(targetIndex);
       expect(prompt).toContain("not actually a chapter name");
+      expect(prompt).toContain("`<span class=\"explanation\">` is for Hebrew only");
     } finally {
       buildPageSkeletonSpy.mockRestore();
     }
