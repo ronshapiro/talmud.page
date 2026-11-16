@@ -1,0 +1,444 @@
+{
+  "Rashi on Pesachim 10a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:44:33.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על ובדק ואשכח</strong> - נכנס העכבר בפנינו ובדק בעל הבית אחריו ואשכח פרוסה ואינו יודע אם זו היא אם לאו:"
+  },
+  "Rashi on Pesachim 10a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:45:04.481Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבד בה קבר</strong> - אין ידוע היכן מקומו:"
+  },
+  "Rashi on Pesachim 10a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:11:1"
+    ],
+    "generatedAt": "2026-11-15T03:45:58.612Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמצא בה קבר</strong> - לאחר זמן ואין ידוע אי זהו קבר האבוד בה:"
+  },
+  "Rashi on Pesachim 10a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:12:1",
+      "Rashi on Pesachim 10a:12:2",
+      "Rashi on Pesachim 10a:2:1",
+      "Rashi on Pesachim 10a:4:1"
+    ],
+    "generatedAt": "2026-11-15T03:46:52.414Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניח מנה</strong> - של מעשר שני:"
+  },
+  "Rashi on Pesachim 10a:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:12:1",
+      "Rashi on Pesachim 10a:11:1",
+      "Rashi on Pesachim 10a:11:2",
+      "Rashi on Pesachim 10a:10:1",
+      "Tosafot on Pesachim 10a:12:1",
+      "Steinsaltz on Pesachim 10a:12",
+      "Steinsaltz In-Depth on Pesachim 10a:12:1",
+      "Steinsaltz In-Depth on Pesachim 10a:12:2",
+      "Tosefta Maaser Sheni 5:5"
+    ],
+    "generatedAt": "2026-11-15T03:48:56.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעורבין</strong> - ומביא סלעים בשוה מנה ואומר כל מקום שהן מעות מעשר שני הרי הן מחוללים על הסלעים הללו ומעלה הסלעים לירושלים:"
+  },
+  "Rashi on Pesachim 10a:13:1": {
+    "dependsOn": [
+      "Pesachim 10a:13",
+      "Rashi on Pesachim 10a:12:1",
+      "Rashi on Pesachim 10a:12:2",
+      "Pesachim 9a:1",
+      "Rashi on Pesachim 9a:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:55:08.819Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכל חולין</strong> - שהמנה נטל ואלו הובאו אחרי כן וגבי חמץ נמי לרבנן הט' <span class=\"parenthesized\">(נמי)</span> שהניח אינן כאן וצריך לבדוק כל הבית שמא גררום חולדות והעשר הנמצאות איש אחר הביאן כאן:"
+  },
+  "Rashi on Pesachim 10a:14:1": {
+    "dependsOn": [
+      "Pesachim 10a:14",
+      "Rashi on Pesachim 10a:12:1",
+      "Rashi on Pesachim 10a:12:2",
+      "Rashi on Pesachim 10a:13:1",
+      "Rashi on Pesachim 10a:2:1",
+      "Rashi on Pesachim 10a:2:2"
+    ],
+    "generatedAt": "2026-11-15T03:57:40.712Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו סיפא</strong> - לרבי <span class=\"parenthesized\">(מאיר)</span> [דאמר] זה הנמצא זהו א' מן הראשונים הכא נמי א\"צ לבדוק ולחזר אלא על הפרוסה האבודה ולרבנן צריך לחזר אחר כולן שאין כאן א' מן הראשונים:"
+  },
+  "Rashi on Pesachim 10a:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:1:1",
+      "Pesachim 10a:1"
+    ],
+    "generatedAt": "2026-11-15T03:10:00.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרומה דרבנן</strong> - בזמן הזה:"
+  },
+  "Rashi on Pesachim 10a:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:2:1",
+      "Rashi on Pesachim 10a:2:2",
+      "Rashi on Pesachim 10a:2:3",
+      "Rashi on Pesachim 10a:2:4",
+      "Rashi on Pesachim 10a:2:5",
+      "Rashi on Pesachim 9a:1:1",
+      "Rashi on Pesachim 9b:1:1",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:11:17.376Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא ידעינן אי להאי על ואי להאי על</strong> - אי מצרכינן בדיקה לתרוייהו אי לא:"
+  },
+  "Rashi on Pesachim 10a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:12:30.271Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו שני שבילין</strong> - מהא דתנן גבי שני שבילין מצינו למיפשט:"
+  },
+  "Rashi on Pesachim 10a:2:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:2:3"
+    ],
+    "generatedAt": "2026-11-15T03:13:05.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחד טמא</strong> - קבר מוטל בו לרחבו וממלא את כולו ואין עובר בו שלא יאהיל:"
+  },
+  "Rashi on Pesachim 10a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:13:34.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלך ועשה טהרות</strong> - נגע בטהרות אח\"כ:"
+  },
+  "Rashi on Pesachim 10a:2:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:14:11.530Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלך בשני</strong> - יודעין הן שבשביל שהלך זה לא הלך זה דהשתא ודאי אחד מהן טמא:"
+  },
+  "Rashi on Pesachim 10a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:18:54.790Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם נשאלו</strong> - כל א' לחכם ספקו בפני עצמו טהור ואין ב\"ד יכול לטמאו כדקיימא לן בספק טומאה ברה\"ר ספקו טהור ואם באו בבת אחת הואיל ובהוראה אחת יש לנו לומר טמאין או טהורין אי אפשר לנו לומר להם טהורים אתם שהרי האחד ודאי טמא ר' יוסי אומר בין כך ובין כך טמאין גרס:"
+  },
+  "Rashi on Pesachim 10a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:4:2",
+      "Rashi on Pesachim 10a:4:3"
+    ],
+    "generatedAt": "2026-11-15T03:21:46.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בזה אחר זה דברי הכל טהורין</strong> - אע\"פ שכל אחד אומר לפנינו כך היה המעשה שלי ושל חבירי אבל איני נשאל אלא על עצמי מה תהא עלי:"
+  },
+  "Rashi on Pesachim 10a:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:4:1",
+      "Rashi on Pesachim 10a:4:3",
+      "Rashi on Pesachim 9a:2:1",
+      "Rashi on Pesachim 9a:3:1",
+      "Rashi on Pesachim 8b:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:24:15.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עליו ועל חבירו</strong> - מה תהא על שנינו ר' יוסי מדמי להו לבת אחת ואע\"פ שאין שניהן לפניך צריך אתה הוראה אחת לשניהן או טמאין אתם או טהורין אתם והרי אין אתה יכול לומר טהורין אתם:"
+  },
+  "Rashi on Pesachim 10a:4:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:4:1",
+      "Rashi on Pesachim 10a:4:2",
+      "Rashi on Pesachim 10a:2:1",
+      "Rashi on Pesachim 10a:2:2",
+      "Rashi on Pesachim 10a:2:3",
+      "Rashi on Pesachim 10a:2:4",
+      "Rashi on Pesachim 10a:2:5"
+    ],
+    "generatedAt": "2026-11-15T03:27:00.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה מדמי להו לזה אחר זה</strong> - הואיל ואין כאן שואל אלא אחד משיבין לו טהור אתה שהרי ספק ביאה הוא ומעצמו יבין שאף חבירו כמוהו אבל כששניהן שואלין בתוך כדי דיבור צריך אתה להשיב לשניהן כאחד וגבי בתים נמי אם באו לשאול זה לעצמו וזה בפני עצמו אמרינן ליה לכל חד אי אתה צריך לבדוק דכיון דבדיקת חמץ דרבנן תלינן לקולא ואמרינן ספקו מותר ואי בבת אחת באו שניהן צריכין בדיקה:"
+  },
+  "Rashi on Pesachim 10a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:27:36.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק על ספק לא על</strong> - ראה עכבר שנטל חמץ בחצר והבית בדוק ואין יודע אם נכנס או לא נכנס:"
+  },
+  "Rashi on Pesachim 10a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:28:45.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקעה</strong> - הרבה שדות הסמוכים יחד קרי בקעה:"
+  },
+  "Rashi on Pesachim 10a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:33:09.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימות הגשמים</strong> - הויא בקעה רשות היחיד לטומאה מפני שכבר צמח הזרע ואין רשות לכל אדם ליכנס לה וקי\"ל ספק טומאה ברשות היחיד ספקו טמא:"
+  },
+  "Rashi on Pesachim 10a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:6:1",
+      "Rashi on Pesachim 10a:6:3",
+      "Rashi on Pesachim 10a:6:4"
+    ],
+    "generatedAt": "2026-11-15T03:33:45.756Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשדה פלונית</strong> - כלומר באחת השדות ויודעין אנו באיזו היא וכל שדה ושדה מסויימת במצריה:"
+  },
+  "Rashi on Pesachim 10a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:34:03.468Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום הלז</strong> - בבקעה זו:"
+  },
+  "Rashi on Pesachim 10a:6:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:6:1",
+      "Rashi on Pesachim 10a:6:2",
+      "Rashi on Pesachim 10a:6:3"
+    ],
+    "generatedAt": "2026-11-15T03:35:25.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכמים מטמאין</strong> - דהויא ליה ספק טומאה ברה\"י ור\"א לא חשיב לה ספק טומאה אא\"כ נכנס לשדה אבל אינו יודע אם האהיל אם לא אבל השתא הוה ליה ספק ספיקא וגבי בתים אפילו רבנן מודו דכיון דבדיקת חמץ דרבנן תלינן לקולא:"
+  },
+  "Rashi on Pesachim 10a:8:1": {
+    "dependsOn": [
+      "Pesachim 10a:8",
+      "Tosafot on Pesachim 10a:8:1",
+      "Mishnah Niddah 9:5",
+      "Steinsaltz on Pesachim 10a:8",
+      "Steinsaltz comment #1 on Pesachim 10a:8",
+      "Maharshal on Pesachim 10a:10:1",
+      "Chokhmat Shlomo on Pesachim 10a:2"
+    ],
+    "generatedAt": "2026-11-15T03:41:22.283Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל דבר שבחזקת טומאה</strong> - במסכת נדה גל טמא שנתערב עם שני גלין טהורין בדקו אחד מהן ונמצא טהור הוא טהור ושנים טמאים שנים ומצאן טהורין הן טהורין והשלישי טמא שלשתן ומצאן טהורים כולן טמאים שהיה ר\"מ אומר כל דבר שבחזקת טומאה לעולם היא בטומאתה עד שיודע לך טומאה היכן היא וחכמים אומרים בודק בקרקע וחופר עד שיגיע לסלע או לקרקע בתולה שלא זזה ממקומה לעולם ואם לא מצא תולין ואומרים בא עורב ונטלה בא עכבר ונטלה וגבי בדיקת חמץ אפילו לר\"מ אמרינן עכבר אכלה דבדיקת חמץ דרבנן:"
+  },
+  "Tosafot on Pesachim 10a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:12:1",
+      "Rashi on Pesachim 10a:12:2",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 10a:3:1",
+      "Tosafot on Pesachim 10a:5:1",
+      "Tosafot on Pesachim 10a:8:1",
+      "Tosafot on Bava Metzia 45a:9:1",
+      "Chidushei Halachot on Pesachim 10a:4"
+    ],
+    "generatedAt": "2026-11-15T03:53:25.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חולין ומעשר שני מעורבים זה בזה</strong> - פ\"ה שיביא סלעים בשוה מנה ואומר כל מקום שהוא מעות מעשר שני יהיו מחוללים על מעות הללו ובחנם פירש כן דמינייהו גופייהו היה יכול ליקח שיעור מעות מעשר ואומר אם אלו מעות מעשר הרי טוב ואם לאו כל מקום שהן הרי הן מחוללין על אלו וריב\"א הקשה לפרש\"י דאיך יכול לחלל אסלעים ובפרק הזהב <span class=\"parenthesized\">(ב\"מ ד' מה.)</span> אמר טיבעא אטיבעא לא מחללין ושם פי':"
+  },
+  "Tosafot on Pesachim 10a:14:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:14:1",
+      "Beitzah 10b:13",
+      "Beitzah 10b:14",
+      "Beitzah 10b:9",
+      "Beitzah 10b:10",
+      "Beitzah 10b:11",
+      "Beitzah 10b:12",
+      "Pesachim 10a:14",
+      "Tosafot on Pesachim 10a:12:1",
+      "Pesachim 10a:11",
+      "Maharsha: Chidushei Halachot on Pesachim 10a:5",
+      "Meir Lublin: Maharam on Pesachim 10a:2"
+    ],
+    "generatedAt": "2026-11-15T04:02:51.703Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניח עשר ומצא תשע פלוגתא דרבי ורבנן</strong> - דר' לטעמיה דאמר הוא קבר שאבד הוא קבר שנמצא וכיון שמצא אחד א\"צ לבדוק ולרבנן עד שמצא עשר כדפ\"ה ומיירי שכל הככרות קשורים זה בזה דומיא דפלוגתא דרבי ורבנן דבפ\"ק דביצה <span class=\"parenthesized\">(דף י:)</span> אמר מחלוקת בכיסים קשורים אבל כשאין קשורים דברי הכל חולין ומע\"ש מעורבין זה בזה ואף על גב דהשתא אין לתלות בעכברים תלינן בקטנים:"
+  },
+  "Tosafot on Pesachim 10a:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:2:1",
+      "Rashi on Pesachim 10a:2:2",
+      "Rashi on Pesachim 10a:2:3",
+      "Rashi on Pesachim 10a:2:4",
+      "Rashi on Pesachim 10a:2:5",
+      "Tosafot on Niddah 60a:12:1",
+      "Steinsaltz comment #1 on Pesachim 10a:2",
+      "Steinsaltz comment #2 on Pesachim 10a:2"
+    ],
+    "generatedAt": "2026-11-15T03:16:55.462Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלך באחד מהן ועשה טהרות</strong> - הא דנקט טהרות ולא קאמר אדם טהור משום דלגברי אע\"ג דמוקמינן לה בחזקת טהורים מצריכין להו טבילה והזאה שלא יגעו שניהם בתרומה דאז התרומה טמאה ודאית והאוכל במיתה ואם נגעו שניהם באחד ונכנס למקדש חייב:"
+  },
+  "Tosafot on Pesachim 10a:3:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Pesachim 10a:1",
+      "Pesachim 10a:2",
+      "Tosafot on Pesachim 10a:2:1",
+      "Tosafot on Pesachim 10a:5:1",
+      "Tosafot on Pesachim 9a:1:1"
+    ],
+    "generatedAt": "2026-11-15T03:20:38.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבת אחת ד\"ה טמאים</strong> - נראה דהיינו מדרבנן דמדאוריית' אפי' בבת אחת טהורים:"
+  },
+  "Tosafot on Pesachim 10a:5:1": {
+    "dependsOn": [
+      "Pesachim 10a:5",
+      "Pesachim 10a:2",
+      "Pesachim 10a:1",
+      "Tosafot on Pesachim 9b:10:1",
+      "Tosafot on Pesachim 10a:2:1",
+      "Tosafot on Pesachim 10a:3:1",
+      "Maharsha: Chidushei Halachot on Pesachim 10a:1"
+    ],
+    "generatedAt": "2026-11-15T03:32:05.961Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק על ספק לא על היינו בקע'</strong> - תימה לר\"י מה שייך לדמויי לבקעה דהכא אפי' ליכא אלא ספק אחד אוקמא אחזקת בדוק כדאמרינן לעיל ולעיל דימה אותו לספק טומאה ברשות הרבים והכא מדמי לספק טומאה ברשות היחיד:"
+  },
+  "Tosafot on Pesachim 10a:7:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 10a:7:1",
+      "Avodah Zarah 70a:11"
+    ],
+    "generatedAt": "2026-11-15T03:38:51.853Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק ביאה טהור</strong> - פר\"י דבספק ספיקא פליגי וכן פר\"ת במסכת ע\"ז פרק בתרא <span class=\"parenthesized\">(ד' ע.)</span> אבל רש\"י פירש שם בע\"א ונראה לר\"י דטעמא דרבי אליעזר דמטהר בספק ספיקא משום דלא גמרינן מסוטה לטמא ברשות היחיד אלא ספיקא אחת כסוטה אבל תרי ספיקי לא ורבנן סברי כיון דמן הדין אפי' בספיקא אחת היה לטהר דאוקמא אחזקת טהרה ואפ\"ה טמא הוא הדין אפילו בתרי ספיקי:"
+  },
+  "Tosafot on Pesachim 10a:8:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10a:8:1",
+      "Maharsha: Chidushei Halachot on Pesachim 10a:3",
+      "Maharshal: Chokhmat Shlomo on Pesachim 10a:2",
+      "Tosafot on Pesachim 10a:3:1",
+      "Tosafot on Pesachim 10a:5:1",
+      "Pesachim 10a:8"
+    ],
+    "generatedAt": "2026-11-15T03:44:03.464Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על ובדק ולא אשכח פלוגתא דר' מאיר ורבנן</strong> - תימה אפי' לר\"מ דאמר לעולם היא בחזקת טומאה וכו' ונפקא מינה לטהרות שנעשו על גביו הכא גבי בדיקה כיון שבדק ולא מצא מה יעשה אם יצריכוהו לבדוק פעם שניה נמי לא ימצא ורש\"י פירש דאפי' לר' מאיר אמר אימר עכבר אכליה דבדיקת חמץ אינו אלא מדרבנן וקשה דהא בהדיא אמר פלוגתא דר' מאיר ורבנן וי\"ל דמיירי בשלא בטלה וקאמר דלר' מאיר לא סגי בבדיקה כיון דלא אשכח והוי בספק לאו דלא ימצא וצריך לבטלו וסגי אפילו לרבי מאיר דלא איירי אלא בספק טומאה דאורייתא אבל הכא דבדיקת חמץ דרבנן שרי:"
+  }
+}

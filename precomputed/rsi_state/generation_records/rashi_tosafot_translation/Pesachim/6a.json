@@ -1,0 +1,416 @@
+{
+  "Rashi on Pesachim 6a:10:1": {
+    "dependsOn": [
+      "Pesachim 6a:10"
+    ],
+    "generatedAt": "2026-11-15T00:43:54.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין מצוי בידך</strong> - שהרי אותה זוית מסורה לנכרי:"
+  },
+  "Rashi on Pesachim 6a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:44:53.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופה עליו את הכלי</strong> - דהא לא חזי לטלטולי ואפוקי ומיהו בבל יראה לא עבר דהא בטליה בליביה מאתמול כדאמרינן לקמן הבודק צריך שיבטל בלבו אלא משום שלא ישכח ויאכלנו צריך כפיית כלי:"
+  },
+  "Rashi on Pesachim 6a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:45:34.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיבדל בדילי מיניה</strong> - אפילו בחול למוד הוא לפרוש ממנו:"
+  },
+  "Rashi on Pesachim 6a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:12:2"
+    ],
+    "generatedAt": "2026-11-15T00:47:18.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמצו של נכרי</strong> - המופקד אצלו ולא קיבל עליו אחריות דמותר לשהותו:"
+  },
+  "Rashi on Pesachim 6a:12:2": {
+    "dependsOn": [
+      "Pesachim 6a:12",
+      "Rashi on Pesachim 6a:12:1"
+    ],
+    "generatedAt": "2026-11-15T00:48:11.673Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עושה לו מחיצה</strong> - בארבעה עשר משום היכר שלא ישכח ויאכלנו ולא סגי ליה בכפיית כלי כל שבעה שהכלי ניטל לצורך ומיהו ההוא דלעיל לא אפשר ליה במחיצה ומשום חד יומא סגי ליה בכפיית כלי ובלילה יבערנו:"
+  },
+  "Rashi on Pesachim 6a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:48:44.681Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המפרש</strong> - מן היבשה לים:"
+  },
+  "Rashi on Pesachim 6a:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:13:1"
+    ],
+    "generatedAt": "2026-11-15T00:49:06.665Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשיירא</strong> - למקום רחוק:"
+  },
+  "Rashi on Pesachim 6a:13:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:49:44.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שלשים יום</strong> - לפסח ולקמן מפרש כנגד ששואלין בהלכות הפסח קודם הפסח שלשים יום ומאז חל עליו להיזהר בצרכי הפסח:"
+  },
+  "Rashi on Pesachim 6a:13:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:13:1",
+      "Rashi on Pesachim 6a:13:2",
+      "Rashi on Pesachim 6a:13:3",
+      "Rashi on Pesachim 6a:13:4"
+    ],
+    "generatedAt": "2026-11-15T00:50:07.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעתו לחזור</strong> - בימי הפסח:"
+  },
+  "Rashi on Pesachim 6a:14:1": {
+    "dependsOn": [
+      "Pesachim 6a:13",
+      "Rashi on Pesachim 6a:13:1",
+      "Rashi on Pesachim 6a:13:2",
+      "Rashi on Pesachim 6a:13:3",
+      "Rashi on Pesachim 6a:13:4",
+      "Ritva on Pesachim 6a:14:1",
+      "Steinsaltz on Pesachim 6a:14"
+    ],
+    "generatedAt": "2026-11-15T00:51:44.680Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו מראש השנה נמי</strong> - דכי הדר ביה בימי הפסח עבר עליה וההיא שעתא לאו ברשותיה היא דליבטליה שהרי איסור הנאה הוא ואינו שלו וכשראהו עובר עליה:"
+  },
+  "Rashi on Pesachim 6a:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:15:1",
+      "Rashi on Pesachim 6a:15:2",
+      "Rashi on Pesachim 6a:15:3"
+    ],
+    "generatedAt": "2026-11-15T00:52:13.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוצר</strong> - שהכניס שם תבואה ותחתיה חמץ ואמרינן לקמן חמץ שנפלה עליו מפולת הרי הוא כמבוער:"
+  },
+  "Rashi on Pesachim 6a:15:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:15:1",
+      "Rashi on Pesachim 6a:15:3"
+    ],
+    "generatedAt": "2026-11-15T00:53:00.970Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך שלשים זקוק לבער</strong> - דלכתחלה לא זהו ביעורו:"
+  },
+  "Rashi on Pesachim 6a:15:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:15:1",
+      "Rashi on Pesachim 6a:15:2"
+    ],
+    "generatedAt": "2026-11-15T00:53:51.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שלשים</strong> - לא חלה חובת ביעור עליו וכי מטי ההיא שעתא לא מחוייב כדאמרן דהא נפלה עליו מפולת:"
+  },
+  "Rashi on Pesachim 6a:1:1": {
+    "dependsOn": [
+      "Pesachim 6a:1"
+    ],
+    "generatedAt": "2026-11-15T00:15:33.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להכי איצטריך לא ימצא</strong> - משום דבעלמא לאו כממון דמי איצטריך קרא למימר דגבי חמץ מיהא מתסר:"
+  },
+  "Rashi on Pesachim 6a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:1:1",
+      "Rashi on Pesachim 5b:14:1",
+      "Rashi on Pesachim 5b:15:1",
+      "Rashi on Pesachim 5b:16:2"
+    ],
+    "generatedAt": "2026-11-15T00:17:06.255Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל וכי איתיה הדר</strong> - הוא גופיה למריה בעיניה וזה עדיין לא נאבד וכי אמרה ר' שמעון לההוא היכא דאינו בעין כגון גבי גונב קדשים שהיו הבעלים חייבין באחריותן אמר רבי שמעון אף על פי שאין כפל להקדש דכתיב לרעהו ולא להקדש הכא חייב דכיון דזה חייב באחריותן רעהו קרינא ביה דהא גרם לו להתחייב ממון:"
+  },
+  "Rashi on Pesachim 6a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:17:46.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארנונא</strong> - המלך נוטל עישור מן הבהמה ומן התבואה:"
+  },
+  "Rashi on Pesachim 6a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:2:1",
+      "Rashi on Pesachim 6a:2:2"
+    ],
+    "generatedAt": "2026-11-15T00:18:55.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייבת בבכורה</strong> - דקיימא לן כל שיד נכרי באמצע פטורה מן הבכורה שנאמר <span class=\"parenthesized\">(במדבר ג׳:י״ג)</span> לי כל בכור בישראל אבל לא באחרים ועדר זה שעישורו של מלך בתוכו חייבת בבכורה לתת לכהן הבכורות שלהם או לא:"
+  },
+  "Rashi on Pesachim 6a:2:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:2:1",
+      "Rashi on Pesachim 6a:2:2",
+      "Rashi on Pesachim 6a:2:4"
+    ],
+    "generatedAt": "2026-11-15T00:20:02.728Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמצי מסלק ליה</strong> - לנכרי במעות:"
+  },
+  "Rashi on Pesachim 6a:2:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:2:1",
+      "Rashi on Pesachim 6a:2:2",
+      "Rashi on Pesachim 6a:2:3"
+    ],
+    "generatedAt": "2026-11-15T00:20:50.029Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תיבעי לן</strong> - כיון דאכתי לא זכה נכרי בהן ודינו אינו קבוע בהן יותר ממעות איכא למימר לא יתן לו בהמות אלא מעות:"
+  },
+  "Rashi on Pesachim 6a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:4:1",
+      "Rashi on Pesachim 6a:4:2"
+    ],
+    "generatedAt": "2026-11-15T00:23:34.976Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"ג דמצי מסלק ליה</strong> - דכל כמה דלא סלקיה ידו שייכא בבהמות:"
+  },
+  "Rashi on Pesachim 6a:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:4:1",
+      "Pesachim 6a:2",
+      "Pesachim 6a:3"
+    ],
+    "generatedAt": "2026-11-15T00:26:57.809Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיסת ארנונא חייבת</strong> - ואע\"ג דעיסת נכרי פטורה ואוכל ישראל בלא חלה דהא עריסותיכם כתיב זו חייבת דלית לה קלא והרואה אומר שלו היא ואוכלה בלא חלה אבל בבהמה אית לה קלא והדתניא חייבת בעיסה הוא דתניא:"
+  },
+  "Rashi on Pesachim 6a:6:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:6:2"
+    ],
+    "generatedAt": "2026-11-15T00:30:13.607Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יחד לו בית</strong> - כלומר לא קיבלו עליו אלא אמר ליה הרי הבית לפניך הנח באחת מן הזויות אין זקוק לבער:"
+  },
+  "Rashi on Pesachim 6a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:6:1",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:11:1",
+      "Rashi on Pesachim 6a:1:1",
+      "Rashi on Pesachim 6a:2:1",
+      "Rashi on Pesachim 5b:14:1",
+      "Rashi on Pesachim 5b:14:2"
+    ],
+    "generatedAt": "2026-11-15T00:32:14.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין זקוק לבער</strong> - לא הזקיקוהו להוציא את הנכרי מן הבית כדאמרן אבל אתה רואה של אחרים:"
+  },
+  "Rashi on Pesachim 6a:7:1": {
+    "dependsOn": [
+      "Pesachim 6a:7",
+      "Rashi on Pesachim 6a:7:2",
+      "Rashi on Pesachim 6a:4:1",
+      "Rashi on Pesachim 6a:6:1"
+    ],
+    "generatedAt": "2026-11-15T00:38:50.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קאמר</strong> - היכי יליף מלא ימצא:"
+  },
+  "Rashi on Pesachim 6a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:7:1"
+    ],
+    "generatedAt": "2026-11-15T00:39:20.405Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפקידו אצלו</strong> - וקביל עליה אחריות כדמפרש ואזיל זקוק לבער:"
+  },
+  "Rashi on Pesachim 6a:8:1": {
+    "dependsOn": [
+      "Pesachim 6a:8",
+      "Rashi on Pesachim 6a:6:1",
+      "Rashi on Pesachim 6a:6:2",
+      "Rashi on Pesachim 6a:7:1",
+      "Rashi on Pesachim 6a:7:2",
+      "Pesachim 6a:6",
+      "Steinsaltz on Pesachim 6a:8:1",
+      "Steinsaltz on Pesachim 6a:8",
+      "Rashi on Pesachim 5b:12:1",
+      "Pesachim 5b:13",
+      "Pesachim 5b:14",
+      "Ritva on Pesachim 6a:6:1",
+      "Tosafot on Pesachim 6a:6:1",
+      "Rashi on Pesachim 6a:11:1",
+      "Rashi on Pesachim 6a:11:2",
+      "Rashi on Pesachim 5b:3:1"
+    ],
+    "generatedAt": "2026-11-15T00:42:49.331Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם אסיפא</strong> - ולא ימצא משמע המצוי בידך לכל חפצך היינו דקביל עליה אחריות דהוי כדידיה:"
+  },
+  "Rashi on Pesachim 6a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:43:27.456Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף במקום שאמרו להשכיר</strong> - בפ\"ק דע\"א תנן אין משכירין בתים לנכרים בארץ ישראל אבל בסוריא משכירין וכל שכן בחוצה לארץ ואף במקום שהתירו להשכיר לא לבית דירה התיר אלא להעמיד בו בהמות ועצים ולא שידור הוא בה:"
+  },
+  "Tosafot on Pesachim 6a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:46:41.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופה עליו כלי</strong> - אע\"ג דאיכא למ\"ד בפ' כירה <span class=\"parenthesized\">(שבת מג.)</span> אין כלי ניטל אלא לדבר הניטל איכא לאוקמי בצריך למקומו אי נמי הכא שרי משום דילמא אתי למיכליה:"
+  },
+  "Tosafot on Pesachim 6a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:22:53.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התם דמצי מסלק ליה</strong> - הק' ר\"י דבפ' איזהו נשך <span class=\"parenthesized\">(ב\"מ דף ע: ושם)</span> אמר דהמקבל צאן ברזל מן הנכרי הוולדות פטורים מן הבכורה אף על גב דמצי מסלק ליה לנכרי בזוזי כדאמר התם כיון דאלו בעי נכרי זוזי ולא משכח שקול בהמה ותי' ר\"י דשאני התם שמתחלה היתה הבהמה של נכרי וכיון דאי בעי זוזי ולא משכח שקיל בהמה לא נפקא מרשותיה אבל כשהבהמה של ישראל ומצי מסלק ליה לנכרי בזוזי לא נכנסה לרשותו:"
+  },
+  "Tosafot on Pesachim 6a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6a:4:1",
+      "Rashi on Pesachim 6a:4:2",
+      "Tosafot on Pesachim 6a:2:1",
+      "Pesachim 6a:2",
+      "Pesachim 6a:3"
+    ],
+    "generatedAt": "2026-11-15T00:29:18.056Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהמת ארנונא פטורה מן הבכורה אע\"ג דמצי מסלק ליה</strong> - והא דתניא חייבת פ\"ה דגבי עיסה תניא וק' לרשב\"א דהא גבי בהמה תניא בהדיא בתוספתא דחייבת בבכורה וכן גבי עיסה תניא עיסת ארנונא חייבת בחלה אע\"ג דלא מצי מסלק ליה ואית ספרים דגרסי בהמת ארנונא פטורה והוא דלא מצי מסלק ליה ולפי זה מתיישבות שתי הברייתות:"
+  },
+  "Tosafot on Pesachim 6a:6:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 6a:4:1",
+      "Pesachim 6a:6",
+      "Rashi on Pesachim 6a:6:1",
+      "Rashi on Pesachim 6a:6:2",
+      "Tosafot on Pesachim 6a:2:1",
+      "Tosafot on Pesachim 6a:11:1"
+    ],
+    "generatedAt": "2026-11-15T00:37:21.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יחד לו בית</strong> - פ\"ה דלא קיבל עליו אחריות אלא אמר ליה הרי הבית לפניך וק' לר\"י מאי איריא יחד אפילו לא יחד נמי והכי נמי מסיק בסמוך למימר דשכירות קניא ופר\"ת דאפילו באחריות מיירי ומשום הכי מפיק מלא ימצא דלא חשיב מצוי כיון שיחד לו בית ורב פפא אית ליה מסברא כיון שיחד לו בית הוי כאלו קיבל עליו אחריות על חמצו של נכרי בביתו של נכרי:"
+  }
+}

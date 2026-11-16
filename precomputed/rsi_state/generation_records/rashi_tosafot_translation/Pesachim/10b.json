@@ -1,0 +1,337 @@
+{
+  "Rashi on Pesachim 10b:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10b:11:1",
+      "Pesachim 10b:11",
+      "Rashi on Pesachim 2a:2:2"
+    ],
+    "generatedAt": "2026-11-15T04:26:12.455Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר בפי נחש</strong> - בעיא באנפי נפשה היא ולא דמי להנך דלעיל ול\"ג את\"ל:"
+  },
+  "Rashi on Pesachim 10b:12:1": {
+    "dependsOn": [
+      "Pesachim 10b:12",
+      "Rashi on Pesachim 10b:12:2"
+    ],
+    "generatedAt": "2026-11-15T04:27:01.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אטרחוהו</strong> - ויבטל בלבו:"
+  },
+  "Rashi on Pesachim 10b:12:2": {
+    "dependsOn": [
+      "Pesachim 10b:12",
+      "Rashi on Pesachim 10b:12:1"
+    ],
+    "generatedAt": "2026-11-15T04:27:51.153Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בממוניה</strong> - לשכור חבר:"
+  },
+  "Rashi on Pesachim 10b:14:1": {
+    "dependsOn": [
+      "Pesachim 10b:14",
+      "Pesachim 10b:15",
+      "Pesachim 10b:16",
+      "Rashi on Pesachim 10b:14:2",
+      "Tosafot on Pesachim 10b:14:1"
+    ],
+    "generatedAt": "2026-11-15T04:33:32.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתוך המועד</strong> - בשעה ששית שהוא מועד הביעור:"
+  },
+  "Rashi on Pesachim 10b:14:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 10b:14:1",
+      "Pesachim 10b:15",
+      "Pesachim 10b:20",
+      "Pesachim 11a:1",
+      "Pesachim 11a:2",
+      "Pesachim 11a:3",
+      "Tosafot on Pesachim 10b:14:1"
+    ],
+    "generatedAt": "2026-11-15T04:35:05.260Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר המועד</strong> - משש שעות ולמעלה עד שתחשך:"
+  },
+  "Rashi on Pesachim 10b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:38:07.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלש השבתות</strong> - שלש לשונות של השבתה ראייה מציאה והשבתה:"
+  },
+  "Rashi on Pesachim 10b:16:1": {
+    "dependsOn": [
+      "Pesachim 10b:16",
+      "Pesachim 10b:13",
+      "Pesachim 10b:14",
+      "Rashi on Pesachim 10a:4:2"
+    ],
+    "generatedAt": "2026-11-15T04:41:23.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא במכאן ואילך הוא דפליגי</strong> - ולאו במידי אחרינא דר' יהודה לא מצריך שלש בדיקות אלא הכי קאמר או אור לארבעה עשר או שחרית או בשעה ששית ורבנן אמרי אם לא בדק בתוך המועד יבדוק לאחריו:"
+  },
+  "Rashi on Pesachim 10b:17:1": {
+    "dependsOn": [
+      "Pesachim 10b:17",
+      "Rashi on Pesachim 10b:16:1",
+      "Rashi on Pesachim 10b:14:1",
+      "Rashi on Pesachim 10b:14:2",
+      "Rashi on Pesachim 10b:12:1",
+      "Rashi on Pesachim 10b:12:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:1:3",
+      "Rashi on Pesachim 10b:6:1",
+      "Rashi on Pesachim 10b:6:2",
+      "Rashi on Pesachim 10b:8:1",
+      "Rashi on Pesachim 10b:11:1"
+    ],
+    "generatedAt": "2026-11-15T04:44:42.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומר זוטרא מתני</strong> - בהדיא באחד משלשה פרקים:"
+  },
+  "Rashi on Pesachim 10b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:45:13.876Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבתר איסורא</strong> - לא יבדוק דגזרינן דילמא איידי דעסיק ביה אתי למיכל מיניה:"
+  },
+  "Rashi on Pesachim 10b:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10b:1:1"
+    ],
+    "generatedAt": "2026-11-15T04:03:33.390Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבית טמא</strong> - כל כלי הבית טמאין שאני אומר אדם טמא נכנס לשם ומשמש בכל כלי הבית:"
+  },
+  "Rashi on Pesachim 10b:20:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Pesachim 10b:1"
+    ],
+    "generatedAt": "2026-11-15T04:46:15.127Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משקרב העומר</strong> - בו ביום יוצאים ומוצאים שוקי ירושלים מלאים קמח וקלי מן החדש למכור וקודם י\"ט נקטף ונטחן ונתייבש הקלי בתנור:"
+  },
+  "Rashi on Pesachim 10b:2:1": {
+    "dependsOn": [
+      "Pesachim 10b:2"
+    ],
+    "generatedAt": "2026-11-15T04:08:40.208Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זוית מאן דכר שמיה</strong> - פתח באבדו וסיים בנמצא בזוית אחרת:"
+  },
+  "Rashi on Pesachim 10b:3:1": {
+    "dependsOn": [
+      "Pesachim 10b:3",
+      "Pesachim 10b:1"
+    ],
+    "generatedAt": "2026-11-15T04:10:15.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חסורי מיחסרא והכי קתני</strong> - שאני אומר אדם טמא נכנס לשם ולקחו לאבוד וגבי מצא בזוית אחרת שמא אדם טמא הניחו שם רבן שמעון כו' וגבי חמץ נמי לרבנן חוששין שמא עכבר עשה וכיון דחוששין לעכבר יש לחוש נמי לא זהו אלא אחר ולרבן שמעון תולין באדם עצמו שהוא עשה ושכח וא\"צ בדיקה:"
+  },
+  "Rashi on Pesachim 10b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:10:58.318Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונכנס אחריו ומצא פירורין צריך בדיקה</strong> - ואין תולין הככר בו שאין דרכו של עכבר לפרר ולא זהו ככר שהכניס העכבר:"
+  },
+  "Rashi on Pesachim 10b:6:1": {
+    "dependsOn": [
+      "Pesachim 10b:6"
+    ],
+    "generatedAt": "2026-11-15T04:16:26.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תמצא לומר היינו האי כו'</strong> - דאי פשטת ליה דחיישינן דילמא אחרינא הואי תו לא צריכנא למיבעי שחור ולבן אבל אי פשטת ליה דלא חיישינן אכתי שחור ולבן מיבעיא לן:"
+  },
+  "Rashi on Pesachim 10b:6:2": {
+    "dependsOn": [
+      "Chagigah 15b:7",
+      "Rashi on Chagigah 15b:4:2"
+    ],
+    "generatedAt": "2026-11-15T04:22:03.973Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארמוייה</strong> - השליכו ממנו ונטלו הוא וחבירו בחגיגה <span class=\"parenthesized\">(ד' טו:)</span> אי נקטיה ביד מאן מרמי ליה מן ידי:"
+  },
+  "Rashi on Pesachim 10b:8:1": {
+    "dependsOn": [
+      "Pesachim 10b:8",
+      "Pesachim 10b:4"
+    ],
+    "generatedAt": "2026-11-15T04:22:54.679Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 10b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ככר ועכבר בפי חולדה</strong> - עכבר נכנס וככר בפיו וחולדה יוצא' כשנכנס בו לבדוק ובפיה ככר מכאן ועכבר מכאן:"
+  },
+  "Tosafot on Pesachim 10b:12:1": {
+    "dependsOn": [
+      "Pesachim 10b:12",
+      "Rashi on Pesachim 10b:11:1",
+      "Rashi on Pesachim 10b:12:1",
+      "Pesachim 4b:7"
+    ],
+    "generatedAt": "2026-11-15T04:29:31.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בממוניה לא אטרחוהו רבנן</strong> - פי' הכא דוק' דשמא יוציאנה או יאכלנה אבל היכא דאיכא חמץ אמר לעיל <span class=\"parenthesized\">(פסחים דף ד:)</span> דניחא ליה לאינש דליעבד מצוה בממוניה:"
+  },
+  "Tosafot on Pesachim 10b:14:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 10b:14:1",
+      "Rashi on Pesachim 10b:14:2",
+      "Maharsha: Chidushei Halachot on Pesachim 10b:1",
+      "Tosafot on Pesachim 10b:12:1",
+      "Pesachim 10b:14"
+    ],
+    "generatedAt": "2026-11-15T04:37:31.655Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לא בדק בתוך המועד</strong> - <span class=\"rashi-quotation\">פי' הקונטרס</span> בשעה ששית וקשה דלרבי יהודה קרי ליה שעת הביעור ולמה שינה לשונו אלא בתוך המועד היינו מתחלת שבע עד סוף הפסח ולאחר המועד יבדוק כדי שלא יתערב לו חמץ של איסור בשל היתר ויאכלנו ורש\"י לא רצה לפרש כן מפני שפירש במשנה דבודקים שלא יעבור בבל יראה:"
+  },
+  "Tosafot on Pesachim 10b:1:1": {
+    "dependsOn": [
+      "Pesachim 10b:1",
+      "Rashi on Pesachim 10b:1:1",
+      "Tosafot on Pesachim 10b:1:2",
+      "Pesachim 10a:15",
+      "Pesachim 10a:14",
+      "Pesachim 10a:11",
+      "Pesachim 10a:12",
+      "Pesachim 10a:10",
+      "Meir Lublin on Pesachim 10b:1:1",
+      "Maharam on Pesachim 10b:1",
+      "Steinsaltz on Pesachim 10b:1",
+      "Steinsaltz comment #1 on Pesachim 10b:1"
+    ],
+    "generatedAt": "2026-11-15T04:06:19.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניח בזוית זו ומצא בזוית אחרת פלוגתא דרבן שמעון בן גמליאל ורבנן</strong> - דלרבנן צריך בדיקה דחוששין שמא עכבר עשה ולא זהו שהניח ולית להו לרבנן הוא שאבד הוא שנמצא אלא כרשב\"ג דאמר תיבדק כל השדה כולה אי נמי אתי אפי' כר' ומיירי כגון שאין יודע כמה ככרות הניח וצריך בדיקה שמא לא מצא כולם:"
+  },
+  "Tosafot on Pesachim 10b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:08:03.267Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני אומר אדם טמא נכנס לשם</strong> - וא\"ת דהכא ובפרק קמא דחולין <span class=\"parenthesized\">(דף ט:)</span> גבי צלוחית תלינן באדם טמא ובפרק קמא דנדה <span class=\"parenthesized\">(דף ד.)</span> גבי ככר הנתון על גבי הדף ומדף טמא מונח תחתיה תלינן באדם טהור ותירץ ר\"ת דאמר בפ\"ק דשבת <span class=\"parenthesized\">(דף טו:)</span> גזרו על ספק כלים הנמצאים ולא גזרו על ספק אוכלין הנמצאים אי נמי גבי ככר רגלים לדבר שטהור הסירו שלא יפול על המדף ויטמא:"
+  },
+  "Tosafot on Pesachim 10b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:12:01.182Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שדרכו של תינוק לפרר</strong> - ומיירי שיש פירורין כדי כל הככר ולכך אין צריך בדיקה ואפי' לרבן שמעון בן גמליאל דאמר תיבדק כל השדה כולה הכא רגלים לדבר יש שהפרורים מן הככר שהרי מיד נכנס אחריו:"
+  },
+  "Tosafot on Pesachim 10b:5:1": {
+    "dependsOn": [
+      "Pesachim 10b:5",
+      "Pesachim 10a:11",
+      "Tosafot on Pesachim 10b:5:2",
+      "Steinsaltz on Pesachim 10b:5"
+    ],
+    "generatedAt": "2026-11-15T04:13:46.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי אמרינן היינו הא דעל היינו הא דנפק</strong> - ואפילו לרשב\"ג דאמר תיבדק כל השדה כולה הכא רגלים לדבר שהרי הוא עם הככר:"
+  },
+  "Tosafot on Pesachim 10b:5:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 10b:1:1",
+      "Tosafot on Pesachim 10b:5:1",
+      "Tosafot on Pesachim 10a:14:1",
+      "Rashi on Pesachim 10b:4:1",
+      "Rashi on Pesachim 10b:6:1"
+    ],
+    "generatedAt": "2026-11-15T04:15:55.197Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 10b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא אחרינא הוא</strong> - ואפי' לר' דאמר הוא שנמצא הוא שנאבד הכא חיישינן דמסתמא הראשונה נשאר בבית וזהו אחר שיצא:"
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "Rashi on Pesachim 32b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:10:2",
+      "Rashi on Pesachim 32b:10:3",
+      "Rashi on Pesachim 32b:10:4",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:2:1"
+    ],
+    "generatedAt": "2026-11-16T16:40:39.696Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחטאה בשגג'</strong> - במעיל' דהקדש כתיב:"
+  },
+  "Rashi on Pesachim 32b:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:3"
+    ],
+    "generatedAt": "2026-11-16T16:41:38.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלא דין הוא</strong> - דמזיד פטור מקרבן ולמה לי קרא:"
+  },
+  "Rashi on Pesachim 32b:10:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:2",
+      "Rashi on Pesachim 32b:10:4"
+    ],
+    "generatedAt": "2026-11-16T16:42:10.742Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחייב בהן הכתוב כרת</strong> - כגון חלב ודם:"
+  },
+  "Rashi on Pesachim 32b:10:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:2",
+      "Rashi on Pesachim 32b:10:3"
+    ],
+    "generatedAt": "2026-11-16T16:42:55.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטר בהן את המזיד</strong> - מקרבן דגבי חטאת שגגה כתיב:"
+  },
+  "Rashi on Pesachim 32b:11:1": {
+    "dependsOn": [
+      "Pesachim 32b:10"
+    ],
+    "generatedAt": "2026-11-16T16:46:36.736Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא חייב בהן מיתה</strong> - בידי שמים אבל מעילה חייב על זדונה מיתה כדלקמן ודילמא מיתה חמירא מכרת:"
+  },
+  "Rashi on Pesachim 32b:12:1": {
+    "dependsOn": [
+      "Pesachim 32b:12",
+      "Pesachim 32b:11",
+      "Chochmat Shlomo on Pesachim 32b:13:1",
+      "Chokhmat Shlomo on Pesachim 32b:2",
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:2",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:2:1",
+      "Rashi on Pesachim 2a:2:2"
+    ],
+    "generatedAt": "2026-11-16T16:49:12.630Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר ליה רב נחמן</strong> - גרסינן האי תנא אלימא ליה כרת ממיתה מעיקרא דקתני מעילה שלא חייב בה כרת אלא מיתה כו' אלמא כרת חמירא ולבסוף אלימא ליה מיתה דקתני תאמר במעילה כו':"
+  },
+  "Rashi on Pesachim 32b:13:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:13:2",
+      "Rashi on Pesachim 32b:13:3",
+      "Rashi on Pesachim 32b:1:1",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Rashi on Pesachim 32b:5:1",
+      "Pesachim 32b:13",
+      "Pesachim 33a:2",
+      "Chokhmat Shlomo on Pesachim 32b:2",
+      "Steinsaltz on Pesachim 32b:13",
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:2",
+      "Rashi on Pesachim 32b:10:3",
+      "Rashi on Pesachim 32b:10:4",
+      "Rashi on Pesachim 32b:12:1"
+    ],
+    "generatedAt": "2026-11-16T16:56:53.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וא\"ל</strong> - רבי חייא לעולם כרת אלימא ליה והך סיפא דמתני' הכי קאמר לא אם אמרת בשאר מצות שהרי לא חייב בהן אפילו מיתה בפחות מכזית תאמר מעילה שחייב בה מיהא מיתה בפחות מכזית בכולהו גרסינן ואמר ליה ומתקיף ליה רב פפא כו' עד הדר ביה:"
+  },
+  "Rashi on Pesachim 32b:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:13:1",
+      "Rashi on Pesachim 32b:13:3"
+    ],
+    "generatedAt": "2026-11-16T16:58:11.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי ניחותא</strong> - איכא דהא רבה ורב ששת שדו ביה נרגא בהאי תירוצא דתריצית ומקשו הכי היכי אמרי' דתנא אפחות מכזית מחייב מיתה:"
+  },
+  "Rashi on Pesachim 32b:13:3": {
+    "dependsOn": [
+      "Pesachim 32b:13",
+      "Rashi on Pesachim 32b:13:1",
+      "Rashi on Pesachim 32b:13:2",
+      "Rashi on Pesachim 32b:13:3",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:10:4"
+    ],
+    "generatedAt": "2026-11-16T16:59:52.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן שמעת ליה דאמר מעילה זדונה מיתה רבי</strong> - ועל כרחך מתרומה גמר לה כדמפרשינן וכיון דמתרומה גמר לא משכח בה מיתה אלא בכזית כתרומה דתרומה גבי מיתה כתיב בה אכילה דמיתה דתרומה נפקא לן מדסמיך וכל זר לא יאכל קדש גבי ומתו בו כי יחללוהו באלו הן הנשרפין בסנהדרין <span class=\"parenthesized\">(דף פג:)</span>:"
+  },
+  "Rashi on Pesachim 32b:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:8:1",
+      "Rashi on Pesachim 32a:9:1",
+      "Rashi on Pesachim 31b:7:1",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:2:1",
+      "Rashi on Pesachim 32a:3:1",
+      "Rashi on Pesachim 32a:9:4",
+      "Pesachim 32b:1",
+      "Pesachim 32a:9",
+      "Pesachim 32a:10",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Rashi on Pesachim 32b:5:1",
+      "Rashi on Pesachim 32b:6:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Bava Kamma 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T16:18:49.964Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר אביי ר' עקיבא ור' יוחנן בן נורי</strong> - אע\"ג דאיחייב בתשלומין סבירא להו דאין לו דמים ובהא פליגי רבי עקיבא ור' יוחנן בן נורי:"
+  },
+  "Rashi on Pesachim 32b:4:1": {
+    "dependsOn": [
+      "Pesachim 32b:4",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Pesachim 32b:2",
+      "Pesachim 32a:12",
+      "Pesachim 32a:13",
+      "Pesachim 32a:14",
+      "Rashi on Pesachim 32b:1:1"
+    ],
+    "generatedAt": "2026-11-16T16:21:22.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"כ</strong> - דסבירא ליה מותר ניהדר ליה ר' יוחנן לרבי עקיבא אף לזה יש לו היתר הסקה:"
+  },
+  "Rashi on Pesachim 32b:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:4:1",
+      "Pesachim 32b:4"
+    ],
+    "generatedAt": "2026-11-16T16:22:13.674Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כזית תרומה</strong> - בשאר ימות השנה קאי:"
+  },
+  "Rashi on Pesachim 32b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T16:22:59.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט למזיק</strong> - תרומה של כהן אפי' בשוגג שאינו משלם חומש אלא קרן כשאר מזיק חולין:"
+  },
+  "Rashi on Pesachim 32b:6:1": {
+    "dependsOn": [
+      "Pesachim 32b:6",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Rashi on Pesachim 32b:5:1",
+      "Tosafot on Pesachim 32b:6:1",
+      "Pesachim 32a:12",
+      "Rashi on Pesachim 32b:6:1"
+    ],
+    "generatedAt": "2026-11-16T16:27:53.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא מיבעי ליה דבר הראוי להיות קדש</strong> - וכוליה קרא משום סיפא אצטריך:"
+  },
+  "Rashi on Pesachim 32b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T16:33:01.669Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאית בה שוה פרוטה</strong> - וליכא כזית כגון שנת בצורת:"
+  },
+  "Rashi on Pesachim 32b:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:7:1",
+      "Steinsaltz on Pesachim 32b:7",
+      "Steinsaltz In-Depth on Pesachim 32b:7"
+    ],
+    "generatedAt": "2026-11-16T16:34:36.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דלית בה כזית כו'</strong> - דאכילה כתיבא בה:"
+  },
+  "Rashi on Pesachim 32b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T16:35:50.475Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרוה רבנן קמיה דרב פפא</strong> - דקדקו מלבן ואמרו לפניו דהא מתני' דקפדא אכזית דלא כאבא שאול דהא שמעינן ליה דקפיד אפרוט' ולא אכזית:"
+  },
+  "Rashi on Pesachim 32b:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:8:1",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:2:1"
+    ],
+    "generatedAt": "2026-11-16T16:36:46.158Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי בעי</strong> - שיהא בו כזית דהא אכילה כתיבא ביה ושיהא בדמיו פרוטה דהא כתיב ונתן:"
+  },
+  "Rashi on Pesachim 32b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T16:37:23.296Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב בתשלומין</strong> - אתרומת שוגג קאי וקרן וחומש קאמר:"
+  },
+  "Rashi on Pesachim 32b:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32b:9:1"
+    ],
+    "generatedAt": "2026-11-16T16:39:37.729Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענין מעילה</strong> - בנהנה מהקדש גבוה דהתם לא כתיב אכילה אבל לתרומה אפי' יש בו שוה פרוטה אין חייב חומש עד שיהא בו כזית מכלל לאבא שאול אע\"ג דליכא כזית דאם איתא דתרתי בעי וביש בו כזית קאי אבא שאול וקאמר דאע\"ג דאית ביה כזית בעינן פרוט' הכי הוה להו למימר כיון דיש בו כזית חייב:"
+  },
+  "Tosafot on Pesachim 32b:10:1": {
+    "dependsOn": [
+      "Pesachim 32b:10",
+      "Tosafot on Pesachim 32b:5:1"
+    ],
+    "generatedAt": "2026-11-16T16:45:18.847Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 32b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעילה שלא חייב בה כרת אינו דין שפטר בה את המזיד</strong> - תימה נימא היא הנותנת דשאר מצות שהן חמורות שהן בכרת אין לזדונה כפרה אבל מעילה שהיא קלה שאין בה כרת יש לזדונה כפרה וכה\"ג איכא בריש מכות <span class=\"parenthesized\">(דף ב:)</span> דקאמר ק\"ו ומה הוא שעושה מעשה במזיד אינו גולה עדים שלא עשו מעשה אינו דין שלא יגלו היא הנותנת הוא שעשה מעשה במזיד לא יגלה כי היכי דלא תיהוי ליה כפרה הן שלא עשו מעשה יגלו דתיהוי להו כפרה ועוד ארבעה המביאין על הזדון כשגגה יוכיחו דאין בהן כרת וחייבין על זדונם הבא על שפחה חרופה ונזיר טמא ושבועת העדות והפקדון <span class=\"parenthesized\">(תוספתא דכריתות פ\"א)</span> ואומר ר\"י דשפיר פריך בלאו הכי לא אם אמרת וכו' ומיהו קשה לר\"י אמאי איצטריך בכריתות <span class=\"parenthesized\">(דף ט.)</span> בשפחה חרופה אשר חטא לרבות זדון וגבי נזיר נמי דריש מפתאום לרבות זדון דאי משום דלא נילף ממעילה דאמעיט מזדון אדרבה משבועת העדות והפקדון אית לן למילף דלחומרא מקשינן:"
+  },
+  "Tosafot on Pesachim 32b:5:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 32b:6:1",
+      "Tosafot on Pesachim 32b:10:1",
+      "Tosafot on Pesachim 32a:4:1",
+      "Rashi on Pesachim 32b:5:1",
+      "Rashi on Pesachim 32b:7:1",
+      "Steinsaltz on Pesachim 32b:5",
+      "Maharsha: Chidushei Halachot on Pesachim 32b:1"
+    ],
+    "generatedAt": "2026-11-16T16:26:41.714Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 32b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין נתינה פחות משוה פרוטה</strong> - ורבנן נמי לא פליגי אלא משום דכתיב אכילה וא\"ת והא קיימא לן <span class=\"parenthesized\">(חולין דף קלז:)</span> דחטה אחת פוטרת את הכרי אע\"ג דכתיב בה נתינה דכתיב תתן לו ובהזהב <span class=\"parenthesized\">(ב\"מ מז.)</span> אמר קונין בכלי אע\"פ שאין בו שוה פרוטה אע\"ג דכתיב ונתן לרעהו וגבי גט נמי אמרינן <span class=\"parenthesized\">(גיטין דף כ)</span> כתבו על איסורי הנאה כשר אע\"ג דכתיב ונתן בידה ויש לומר דהכא ודאי בעינן שוה פרוטה דנתינה קיימא אתשלומין והוי כמו השבת גזילה שאין בפחות משוה פרוטה ולהכי משום דכתיב ונתן משמע שפיר נתינה חשובה אבל שאר מילי אע\"ג דכתיב בהן נתינה לא בעינן שוה פרוטה מיהו קשה לר\"י דרבי יהודה דריש בכריתות <span class=\"parenthesized\">(דף ו:)</span> ואשר יתן ממנו על זר בכזית ויליף נתינה נתינה מתרומה ואדיליף מתרומה בכזית לילף מכל נתינה לחומרא דהוו בכל שהוא כגון מתן דמים ומתן בהונות שאין בהן שיעור והוי נמי דומי' דסיכה דהוי בכל שהוא ולמ\"ד התם נתינה בכל שהוא א\"ש:"
+  },
+  "Tosafot on Pesachim 32b:6:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 32b:5:1",
+      "Tosafot on Pesachim 32b:10:1",
+      "Rashi on Pesachim 32b:6:1",
+      "Rashi on Pesachim 32b:4:1",
+      "Rashi on Pesachim 32b:4:2",
+      "Pesachim 32b:6",
+      "Pesachim 32a:12",
+      "Rashi on Pesachim 32a:12:1",
+      "Maharam on Pesachim 32b:3"
+    ],
+    "generatedAt": "2026-11-16T16:32:27.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 32b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא מיבעיא ליה לדבר הראוי להיות קודש</strong> - ואע\"ג דמאת הקודש דרשינן דבר הראוי להיות קודש אצטריך נמי ונתן דאי כתב את הקודש לחודיה ה\"א דלא אתא למעוטי אלא מעות אבל כל פירות ישלם להכי כתב ונתן דמשמע שהפירות של נתינה בעינן ראוי להיות קודש:"
+  }
+}

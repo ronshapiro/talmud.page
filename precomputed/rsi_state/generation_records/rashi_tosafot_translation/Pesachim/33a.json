@@ -1,0 +1,418 @@
+{
+  "Rashi on Pesachim 33a:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:10:2",
+      "Rashi on Pesachim 33a:10:3"
+    ],
+    "generatedAt": "2026-11-16T17:40:51.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין תורמין מן הטמא על הטהור</strong> - לכתחלה שמפסיד את הכהן:"
+  },
+  "Rashi on Pesachim 33a:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:10:1",
+      "Rashi on Pesachim 33a:10:3",
+      "Pesachim 33a:10",
+      "Steinsaltz on Pesachim 33a:10:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-11-16T17:42:19.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשוגג</strong> - שלא ידע שטבל זה טמא:"
+  },
+  "Rashi on Pesachim 33a:10:3": {
+    "dependsOn": [
+      "Pesachim 33a:10",
+      "Rashi on Pesachim 33a:10:1",
+      "Rashi on Pesachim 33a:10:2"
+    ],
+    "generatedAt": "2026-11-16T17:43:41.493Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיתה לו שעת הכושר</strong> - שנראית כבר לתרומה קודם שנטמא והא דלעיל בחמץ שלא היתה לו שעת הכושר לתרום ממנו דקודם שחל הפסח היה מחובר והחמיץ במחובר וכל זמן חיבורו לא היה ראוי לחול שם תרומה עליו דראשית דגנך כתיב משנדגן ודיגון לשון אסיפה והעמדת כרי הוא:"
+  },
+  "Rashi on Pesachim 33a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:44:09.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עירין</strong> - מלאכים כלומר תלמידי חכמים שהם כמלאכי השרת אמרי בבית המדרש כמותי דהא דקתני לעיל אינה קדושה בשהחמיץ במחובר קאמר:"
+  },
+  "Rashi on Pesachim 33a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:44:28.533Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמאמר קדישין שאילתא</strong> - מקרא הוא בדניאל:"
+  },
+  "Rashi on Pesachim 33a:11:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:11:1",
+      "Rashi on Pesachim 33a:11:2",
+      "Rashi on Pesachim 33a:11:4"
+    ],
+    "generatedAt": "2026-11-16T17:45:13.495Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מורין</strong> - מורין הוראה:"
+  },
+  "Rashi on Pesachim 33a:11:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:45:51.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוותי</strong> - כמותי:"
+  },
+  "Rashi on Pesachim 33a:12:1": {
+    "dependsOn": [
+      "Pesachim 33a:12",
+      "Rashi on Pesachim 33a:11:1",
+      "Rashi on Pesachim 33a:11:2",
+      "Rashi on Pesachim 33a:11:3",
+      "Rashi on Pesachim 33a:11:4"
+    ],
+    "generatedAt": "2026-11-16T17:46:59.374Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב הונא בריה דרב יהושע אמר</strong> - אפילו בשהחמיץ בתלוש נמי קאמר דאינה קדושה:"
+  },
+  "Rashi on Pesachim 33a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:03:11.875Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזיד</strong> - בהנאת קדש ששגגתה מעילה:"
+  },
+  "Rashi on Pesachim 33a:1:2": {
+    "dependsOn": [
+      "Pesachim 33a:1",
+      "Rashi on Pesachim 33a:1:1",
+      "Rashi on Pesachim 33a:1:3"
+    ],
+    "generatedAt": "2026-11-16T17:02:33.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' אומר במיתה</strong> - כדמפרש גמר חטא חטא הנאת קדש מאכילת תרומה כתיב הכא וחטאה בשגגה וכתיב בתרומה לא ישאו עליו חטא ומתו בו וגו' <span class=\"parenthesized\">(ויקרא כ״ב:ט׳)</span>:"
+  },
+  "Rashi on Pesachim 33a:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:1:1",
+      "Rashi on Pesachim 33a:1:2"
+    ],
+    "generatedAt": "2026-11-16T17:04:57.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכ\"א באזהרה</strong> - רבנן נמי אית להו גזירה שוה דרבי דהא עיקר מילתא דמעילה בהא גזירה שוה גמרי בפרק חמישי דמעילה <span class=\"parenthesized\">(דף יח:)</span> בברייתא גבי פגם ונהנה ובדבר שפגם נהנה ובתלוש מן הקרקע ובשליח שעשה שליחותו כל הני מתרומה גמרי בה ואזהרה נמי מתרומה גמרי מה אכילת תרומה הזהיר דכתיב לא יאכל קודש אף הנאת הקדש דמעילה הזהיר ומיהו מיתה לא גמרינן מינה כדמפרשי רבנן טעמייהו בסנהדרין דמיעט רחמנא בתרומה ומתו בו והאי בו מיעוטא בו ולא במעילה וכן עיקר:"
+  },
+  "Rashi on Pesachim 33a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:05:43.121Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא דרבי</strong> - גרסינן:"
+  },
+  "Rashi on Pesachim 33a:3:1": {
+    "dependsOn": [
+      "Pesachim 33a:3",
+      "Pesachim 32b:10",
+      "Pesachim 32b:11",
+      "Pesachim 33a:1",
+      "Rashi on Pesachim 32b:11:1",
+      "Rashi on Pesachim 33a:2:1",
+      "Rashi on Pesachim 33a:1:1",
+      "Rashi on Pesachim 33a:1:2",
+      "Rashi on Pesachim 33a:1:3",
+      "Pesachim 32b:13",
+      "Rashi on Pesachim 32b:13:2",
+      "Rashi on Pesachim 32b:10:1"
+    ],
+    "generatedAt": "2026-11-16T17:07:48.743Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומינה</strong> - היינו נרגא כלומר וכיון דמיתה מהכא נפקא לן על כרחיך הכי תילף ומינה מה תרומה מיתה הכתובה בה אאכילה כתובה דהוא כזית אף מעילה אין מיתה עד דאיכא כזית וליכא למימר דתנא הכי תאמר במעילה שחייב בה מיתה בפחות מכזית:"
+  },
+  "Rashi on Pesachim 33a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:4:1",
+      "Rashi on Pesachim 33a:4:2",
+      "Rashi on Pesachim 33a:4:3"
+    ],
+    "generatedAt": "2026-11-16T17:15:09.925Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתקיף לה</strong> - גרסינן:"
+  },
+  "Rashi on Pesachim 33a:4:2": {
+    "dependsOn": [
+      "Pesachim 33a:4",
+      "Rashi on Pesachim 33a:4:1",
+      "Rashi on Pesachim 33a:4:3"
+    ],
+    "generatedAt": "2026-11-16T17:16:06.136Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומתקיף לה רב פפא</strong> - להני דשדו ביה נרגא:"
+  },
+  "Rashi on Pesachim 33a:4:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:4:1",
+      "Rashi on Pesachim 33a:4:2",
+      "Pesachim 33a:4"
+    ],
+    "generatedAt": "2026-11-16T17:17:19.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממאי דרבי</strong> - בתרומה כרבנן דפליגי אדאבא שאול סבירא ליה דבעו כזית בתרומה דילמא כאבא שאול סבירא ליה ושפיר מצי למילף מינה מיתה במעילה דהיא בשוה פרוטה מתרומה אפילו לפחות מכזית:"
+  },
+  "Rashi on Pesachim 33a:6:1": {
+    "dependsOn": [
+      "Pesachim 33a:6",
+      "Pesachim 33a:1",
+      "Pesachim 33a:2",
+      "Pesachim 33a:3",
+      "Pesachim 33a:4"
+    ],
+    "generatedAt": "2026-11-16T17:18:44.932Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר בריה דרבנא אמר</strong> - הא מתניתא דלעיל בשיבושא איתני בבי מדרשא והכי קאמר סיפא לא אם אמרת בשאר מצות שכן לא חייב בהן קרבן בשוגג שאין מתכוין לאותה מלאכה כשוגג שמתכוין לאותה מלאכה:"
+  },
+  "Rashi on Pesachim 33a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:6:1",
+      "Rashi on Pesachim 33a:6:2",
+      "Rashi on Pesachim 33a:6:3",
+      "Pesachim 33a:6",
+      "Pesachim 33a:1",
+      "Rashi on Pesachim 33a:7:1"
+    ],
+    "generatedAt": "2026-11-16T17:22:03.926Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם נתכוון לחתוך את התלוש</strong> - שהוא מתכוין לדבר המותר וחתך את המחובר שאפילו בשבת פטור דמלאכת מחשבת בעינן שיתכוין לחתיכת מחובר ומיהו שגג בשבת שאינו יודע שהוא שבת או אינו יודע שהמלאכה זו אסורה:"
+  },
+  "Rashi on Pesachim 33a:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:26:48.412Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תאמר במעילה שאם נתכוון כו' שמעל</strong> - כגון היו כאן גיזי חולין וגיזי עולה ונתכוין ליטול של חולין והלכה ידו על של עולה ומכיר הוא מי עולה ומי חולין אלא שנסתכל במקום אחר דהיינו שאין מתכוין למעשה זה וחייב מעילה דוחטאה בשגגה כל דהו כתיב ולא כתב בה מיעוטא כדכתיב בשבת מלאכת מחשבת וכתיב בשאר מצות אשר חטא בה פרט למתעסק והיינו מתעסק שמתעסק בדבר אחר ובא זה לידו:"
+  },
+  "Rashi on Pesachim 33a:7:1": {
+    "dependsOn": [
+      "Pesachim 33a:7",
+      "Rashi on Pesachim 33a:6:1",
+      "Rashi on Pesachim 33a:6:2",
+      "Rashi on Pesachim 33a:6:3",
+      "Rashi on Pesachim 33a:7:2",
+      "Rashi on Pesachim 33a:7:3"
+    ],
+    "generatedAt": "2026-11-16T17:31:27.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"נ בר יצחק אמר</strong> - הא לא הוה ליה למיתני דהא בשאר מצות נמי אם היה מתעסק בחתיכה ואפי' בשל היתר ועלתה בידו חתיכת איסור ואע\"ג דאין מתכוין לזו מלאכת מחשבת היא וחייב אלא הכי קאמר לא אם אמרת בשאר מצות שכן לא חייב בהן שאין מתעסק בדבר היתר ושגג באיסור כיוצא בו כמתעסק בדבר היתר ועלה בידו איסור:"
+  },
+  "Rashi on Pesachim 33a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:7:1",
+      "Rashi on Pesachim 33a:7:3",
+      "Pesachim 33a:6",
+      "Rashi on Pesachim 33a:6:1",
+      "Rashi on Pesachim 33a:6:2",
+      "Rashi on Pesachim 33a:6:3",
+      "Rashi on Pesachim 33a:4:1",
+      "Rashi on Pesachim 33a:4:2",
+      "Rashi on Pesachim 33a:4:3"
+    ],
+    "generatedAt": "2026-11-16T17:32:58.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאם נתכוון להגביה את התלוש</strong> - דהיינו אין מתעסק בחתיכה לגמרי ואפי' בשל היתר וחתך מחובר שפטור ולא עשאו כמתעסק לחתוך תלוש וחתך מחובר:"
+  },
+  "Rashi on Pesachim 33a:7:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:7:1",
+      "Rashi on Pesachim 33a:7:2"
+    ],
+    "generatedAt": "2026-11-16T17:33:47.196Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תאמר במעילה שאם הושיט ידו כו'</strong> - ולא היה מתעסק בשום סיכה ואפילו בשל היתר וסך ידו בשמן של קודש שמעל:"
+  },
+  "Rashi on Pesachim 33a:8:1": {
+    "dependsOn": [
+      "Pesachim 33a:8",
+      "Pesachim 32a:11",
+      "Steinsaltz on Pesachim 33a:8:1",
+      "Steinsaltz on Pesachim 33a:9:1",
+      "Steinsaltz on Pesachim 33a:8"
+    ],
+    "generatedAt": "2026-11-16T17:35:39.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר מר במה דברים אמורים כו' דברי הכל</strong> - קאמר ואפי' למאן דשרי הנאת חמץ בפסח קאמר:"
+  },
+  "Rashi on Pesachim 33a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T17:36:47.632Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תתן לו</strong> - בתרומה כתיב ראשית דגנך וגו':"
+  },
+  "Rashi on Pesachim 33a:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 33a:9:1"
+    ],
+    "generatedAt": "2026-11-16T17:37:30.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 33a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לאורו</strong> - אפי' היא ראויה להסיק הואיל ואינה ראויה לאכילה:"
+  },
+  "Tosafot on Pesachim 33a:3:1": {
+    "dependsOn": [
+      "Pesachim 33a:3",
+      "Pesachim 33a:1"
+    ],
+    "generatedAt": "2026-11-16T17:10:00.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 33a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומינה מה תרומה בכזית</strong> - אע\"ג דבסוף כל התדיר <span class=\"parenthesized\">(זבחים צא:)</span> ובפרק בתרא דמנחות <span class=\"parenthesized\">(דף קז.)</span> איכא למ\"ד דרבי סבר דון מינה ואוקי באתרה הכא אין לומר אוקי באתרה מה מעילה דממון שוה פרוטה אף מעילה דאכילה כן דהא אכילה דהקדש מאכילה דתרומה יליף והיאך יהיה בו מיתה אם לא כשיעור אכילת תרומה דבשאר נהנה ליכא מיתה אלא אאכילה אפילו לרבי דומיא דתרומה ואם תאמר אמאי אין מפרש לא אם אמרת בשאר מצות שלא חייב מיתה עד דהוי כזית בכדי אכילת פרס תאמר במעילה דאפי' בעינן כזית הא תנן בפרק הנהנה <span class=\"parenthesized\">(מעילה יח:)</span> צירף את המעילה אפי' לזמן מרובה וי\"ל דאיכא נמי למיפרך דנילף מתרומה שלא יצטרף:"
+  },
+  "Tosafot on Pesachim 33a:3:2": {
+    "dependsOn": [
+      "Pesachim 33a:3",
+      "Tosafot on Pesachim 33a:3:1",
+      "Pesachim 32b:14",
+      "Pesachim 32b:15",
+      "Pesachim 33a:1",
+      "Pesachim 32b:13",
+      "Pesachim 32b:9",
+      "Rashi on Pesachim 32b:9:2",
+      "Tosafot on Pesachim 33a:6:1",
+      "Tosafot on Pesachim 33a:9:1",
+      "Rashi on Pesachim 33a:1:1",
+      "Rashi on Pesachim 33a:2:1",
+      "Rashi on Pesachim 32b:7:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Maharsha on Pesachim 33a:2:1"
+    ],
+    "generatedAt": "2026-11-16T17:14:22.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 33a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף מעילה בכזית</strong> - תימה לר\"י דהכא משמע דמאן דיליף חטא חטא סבירא ליה דמעילה בכזית כמו תרומה וכולהו אית להו גזירה שוה דפרק הנהנה <span class=\"parenthesized\">(גם זה שם)</span> יליף מעילה מתרומה למילי טובא ורבנן לא פליגי ארבי אלא לענין מיתה משום דכתיב בו ולא במעילה ואם כן מ\"ט דרבנן דלעיל דאמרי לא אמר שוה פרוטה אלא לענין מעילה אבל בתרומה עד שיהא בו כזית:"
+  },
+  "Tosafot on Pesachim 33a:6:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 33a:3:1",
+      "Tosafot on Pesachim 33a:3:2",
+      "Tosafot on Pesachim 33a:9:1"
+    ],
+    "generatedAt": "2026-11-16T17:28:56.037Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 33a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתכוין לחתוך את התלוש וחתך את המחובר</strong> - ר\"ת מפרש נמצא שהוא מחובר דאי נתכוון לחתוך תלוש זה וחתך מחובר אחר מאי איריא נתכוון לתלוש אפילו נתכוון לחתוך מחובר זה וחתך מחובר אחר פטור הואיל ולא איתעבידא מחשבתו דתניא בהדיא בפרק ספק אכל <span class=\"parenthesized\">(כריתות כ.)</span> היו לפניו שתי נרות ונתכוון לכבות את זה וכבה את זה פטור:"
+  },
+  "Tosafot on Pesachim 33a:9:1": {
+    "dependsOn": [
+      "Pesachim 33a:9",
+      "Chokhmat Shlomo on Pesachim 33a:1",
+      "Chokhmat Shlomo on Pesachim 33a:2",
+      "Maharam on Pesachim 33a:3",
+      "Maharam on Pesachim 33a:4"
+    ],
+    "generatedAt": "2026-11-16T17:40:01.372Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 33a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תתן לו ולא לאורו</strong> - אור\"י דלא איצטריך למידרש מלו אלא לר' יוסי הגלילי דאית ליה חמץ מותר בהנאה דלהנך תנאי דאסרי חמץ בהנאה נפקא לן מונתן לכהן את הקודש דבר הראוי להיות קודש או מתתן לחודיה שאין ליתן אלא מידי דשרי בהנאה לכל הפחות דשייכא ביה נתינה ולכך משמע ליה למידרש מתתן לו דבר הראוי לאכילה ולא דבר שאין ראוי אלא לאורו והיינו תרומה טמאה דלא חזיא אלא לאורו דאיסור הנאה מתתן נפקא ואם תאמר ובעל הגמרא דבעי מנהני מילי והא הנך תנאי דהך ברייתא דהפריש חמץ תרומה ד\"ה אינה קדושה כיון דסבירא להו דאסור בהנאה דבר פשוט הוא דאינו קדוש ומאי קבעי ליה יש לומר דפשיטא ליה לגמרא דלא איצטריך למיתני בברייתא ד\"ה אלא לרבי יוסי הגלילי דמשום דהנך דאסירי בהנאה לא איצטריך למיתני ולהכי בעי מנהני מילי לרבי יוסי הגלילי אי נמי רב נחמן גופיה דמפרש לו ולא לאורו קאמר מה\"מ לפי שהיה פשוט לו דאליבא דכ\"ע קתני הכי וכה\"ג איכא בכמה דוכתי:"
+  }
+}

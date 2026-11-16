@@ -1,0 +1,408 @@
+{
+  "Rashi on Pesachim 17a:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:10:2",
+      "Rashi on Pesachim 17a:11:1",
+      "Rashi on Pesachim 17a:13:1",
+      "Rashi on Pesachim 17a:8:1",
+      "Rashi on Pesachim 17a:9:1"
+    ],
+    "generatedAt": "2026-11-15T16:31:27.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויען חגי ויאמר וגו'</strong> - סיפיה דקרא וכן כל מעשה ידיהם ואשר יקריבו שם טמא הוא:"
+  },
+  "Rashi on Pesachim 17a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T16:32:13.354Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב</strong> - דאמר אישתבש כהני היינו דקרי למעשה ידיהם טמא:"
+  },
+  "Rashi on Pesachim 17a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T16:32:59.082Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתמוהי קא מתמה</strong> - מאחר שבקיאין הן בהלכות טומאה וכי כל מעשה ידיהם טמא הוא:"
+  },
+  "Rashi on Pesachim 17a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:11:1",
+      "Rashi on Pesachim 17a:11:3"
+    ],
+    "generatedAt": "2026-11-15T16:33:42.190Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכן</strong> - לאו תמיהא משמע:"
+  },
+  "Rashi on Pesachim 17a:11:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:11:1",
+      "Rashi on Pesachim 17a:11:2"
+    ],
+    "generatedAt": "2026-11-15T16:34:34.314Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שקלקלו מעשיהם</strong> - לאחר זמן היה מתנבא שיקלקלו מעשיהן בבית שני בשאר עבירות:"
+  },
+  "Rashi on Pesachim 17a:13:1": {
+    "dependsOn": [
+      "Pesachim 17a:13",
+      "Rashi on Pesachim 17a:7:1",
+      "Rashi on Pesachim 17a:11:1",
+      "Rashi on Pesachim 17a:10:1",
+      "Rashi on Pesachim 17a:15:1"
+    ],
+    "generatedAt": "2026-11-15T16:36:22.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וללוי</strong> - דתני מדבחיא והכא כתיב יין ושמן דמטמאו הא ניחא אי סבר ליה בהא מילתא כשמואל דדכן דיוסף בן יועזר דכן מלטמא אחרים הן אבל טומאת עצמן יש בהן משכחת לה להאי דכתיב אם יגע טמא נפש בכל אלה דקאמר יטמא דנגעו כולהו בראשון ולאו אסדרא קמא נקט ולא אישתבש כהני שבתחלה שאלם על הסדר ואמרו לו על האחרון לא יטמא מפני שהיין לא יכול לטמאו לשמן שאין משקין בי מדבחיא מטמאין שום דבר ולבסוף שאלם אם יגע הטמא עצמו בכל אלה כלומר או בזה או בזה ואמרו ליה יטמא:"
+  },
+  "Rashi on Pesachim 17a:14:1": {
+    "dependsOn": [
+      "Pesachim 17a:14"
+    ],
+    "generatedAt": "2026-11-15T16:37:28.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אי סבר ליה כרב דאמר דכן ממש היכי משכחת לה</strong> - להאי יטמא דקרא בשלמא לרב גופיה לא קשיא דאיהו תני מטבחיא אלא ללוי קשיא:"
+  },
+  "Rashi on Pesachim 17a:15:1": {
+    "dependsOn": [
+      "Pesachim 17a:15",
+      "Pesachim 17a:10",
+      "Pesachim 17a:11",
+      "Pesachim 17a:7",
+      "Pesachim 17a:8",
+      "Pesachim 16b:10",
+      "Pesachim 16b:11",
+      "Pesachim 16b:12",
+      "Pesachim 16b:13",
+      "Rashi on Pesachim 17a:13:1",
+      "Rashi on Pesachim 16b:10:2",
+      "Rashi on Pesachim 17a:15:1",
+      "Rashi on Pesachim 17a:15:2",
+      "Rashi on Pesachim 17a:15:3"
+    ],
+    "generatedAt": "2026-11-15T16:39:58.034Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולשמואל</strong> - דאמר לא אישתבש ופריש למילתיה משום דחמישי הוה השמן דמה שנגע בכנפו כתיב הא אי רביעי הוה האי שמן הוה טמא ואע\"ג דמן היין קבלה אלמא משקין מטמאין אחרים:"
+  },
+  "Rashi on Pesachim 17a:15:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:15:1",
+      "Rashi on Pesachim 17a:15:2",
+      "Rashi on Pesachim 17a:15:3",
+      "Pesachim 17a:15"
+    ],
+    "generatedAt": "2026-11-15T16:41:40.618Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ניחא</strong> - אי תנא בעדותו של יוסף משקה מטבחיא אבל משקה מדבחיא אפילו אחריני נמי מטמאו היינו דפריש למילתיה לעיל ואמר האי דלא הוי שיבוש משום דחמישי הוה והיין שהוא רביעי לא עביד ליה חמישי הא אי הוה יין שלישי הוה עביד ליה רביעי אלא אי תנא מדבחיא כלוי מאי איריא דפריש לעיל משום דחמישי הוה אפילו אי הוה יין שני שלישי לשמן לא עביד:"
+  },
+  "Rashi on Pesachim 17a:15:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:15:1",
+      "Rashi on Pesachim 17a:15:2"
+    ],
+    "generatedAt": "2026-11-15T16:42:47.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משקי בי מדבחיא</strong> - כלומר כל אלו של קודש נקראין על שם מזבח כגון דם לזריקה ומים ויין לנסך ושמן למנחות:"
+  },
+  "Rashi on Pesachim 17a:17:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:17:1",
+      "Rashi on Pesachim 17a:17:2",
+      "Rashi on Pesachim 17a:17:3"
+    ],
+    "generatedAt": "2026-11-15T16:43:25.726Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנטמאו בפנים</strong> - בעזרה והוציאן לחוץ ונפסלו ביוצא שאין ראויין עוד למזבח:"
+  },
+  "Rashi on Pesachim 17a:17:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:17:1",
+      "Rashi on Pesachim 17a:17:3",
+      "Pesachim 17a:20",
+      "Pesachim 17b:1",
+      "Rashi on Pesachim 17a:11:1",
+      "Rashi on Pesachim 17a:11:2"
+    ],
+    "generatedAt": "2026-11-15T16:44:37.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהורין</strong> - מלטמא אחרים שהרי לא ירדה להן תורת טומאה מתחלה לטמא אחרים והן עצמן ודאי טמאין כנבואת חגי:"
+  },
+  "Rashi on Pesachim 17a:17:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:17:1",
+      "Rashi on Pesachim 17a:17:2",
+      "Rashi on Pesachim 17a:7:1",
+      "Rashi on Pesachim 17a:7:2",
+      "Rashi on Pesachim 17a:7:3"
+    ],
+    "generatedAt": "2026-11-15T16:45:54.692Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל נטמאו בחוץ</strong> - קודם שיהא שם מדבחיא עליהן והכניסן לפנים טמאין ואפילו לטמא אחרים דטומאתן כבר ירדה בהן ומי הפקיעה:"
+  },
+  "Rashi on Pesachim 17a:18:1": {
+    "dependsOn": [
+      "Pesachim 17a:18",
+      "Rashi on Pesachim 17a:18:1",
+      "Rashi on Pesachim 17a:18:2",
+      "Rashi on Pesachim 17a:18:3"
+    ],
+    "generatedAt": "2026-11-15T16:46:33.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איני</strong> - ארישא פריך דקתני הוציאן לחוץ טהורין ולא אמרינן תחול טומאתן למפרע:"
+  },
+  "Rashi on Pesachim 17a:18:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:18:1",
+      "Rashi on Pesachim 17a:18:3"
+    ],
+    "generatedAt": "2026-11-15T16:47:00.947Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא במקומן</strong> - בפנים:"
+  },
+  "Rashi on Pesachim 17a:18:3": {
+    "dependsOn": [
+      "Pesachim 17a:18",
+      "Rashi on Pesachim 17a:18:1",
+      "Rashi on Pesachim 17a:18:2",
+      "Rashi on Pesachim 17a:18:3"
+    ],
+    "generatedAt": "2026-11-15T16:48:11.600Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:18:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא למעוטי נטמאו בחוץ והכניסן לפנים</strong> - כדמתרץ לישנא בסיפא דמילתא דהכי משמע אלא כשנטמאו במקומן ומשום דלא סיימיה לפרושא דמילתא פריך ליה והא במקומן קאמר דמשמע כל זמן שהן במקומן טהורין ותו לא:"
+  },
+  "Rashi on Pesachim 17a:1:1": {
+    "dependsOn": [
+      "Pesachim 17a:1",
+      "Rashi on Pesachim 17a:1:2",
+      "Rashi on Pesachim 17a:1:3",
+      "Rashi on Pesachim 16b:4:1"
+    ],
+    "generatedAt": "2026-11-15T16:08:22.142Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר רב</strong> - לקמן:"
+  },
+  "Rashi on Pesachim 17a:1:2": {
+    "dependsOn": [
+      "Pesachim 17a:1",
+      "Rashi on Pesachim 17a:1:1",
+      "Rashi on Pesachim 17a:1:2",
+      "Rashi on Pesachim 17a:1:3",
+      "Pesachim 16b:10",
+      "Pesachim 16b:9",
+      "Pesachim 16a:1",
+      "Pesachim 16a:2",
+      "Pesachim 16a:3",
+      "Pesachim 16a:4",
+      "Pesachim 16a:5",
+      "Pesachim 16a:6"
+    ],
+    "generatedAt": "2026-11-15T16:11:22.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אישתבש כהני</strong> - שטהרו רביעי בקודש אלמא יין ושמן דמשקי בית מטבחיא נינהו ומיטמאו ואי טומאת משקין דרבנן הא אמרת דלא גזור עלייהו ואי נמי בטומאות דרבנן קא בדיק להו חגי לכהני וכבר נגזר טומאה על המשקין בימי חגי הנביא שהיה מאנשי כנסת הגדולה קשיא לרב דהא אמר דכן ממש וכ\"ש אי בדאורייתא קא משתעי קשיא לרב והא ליכא למימר מדרבנן ודלא כיוסף בן יועזר דאקרא לא פליג דמשמע דאית עלייהו טומאה אי דאורייתא אי דרבנן:"
+  },
+  "Rashi on Pesachim 17a:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:1:1",
+      "Rashi on Pesachim 17a:1:2",
+      "Pesachim 17a:1"
+    ],
+    "generatedAt": "2026-11-15T16:13:31.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מידי הוא טעמא אלא לרב</strong> - כלום אתה מקשה אלא לרב רב לא קשיא ליה האי לעולם חגי בדרבנן בדיק להו וכבר נגזרה גזירת הטומאה על המשקין ולרב אליבא דיוסף בן יועזר לא תיקשי דרב משקי בי מטבחיא תני בעדותו של יוסף משקה המטבחים דם ומים אבל משקה מדבחיא היין והשמן שהם משקה המזבח גזרו רבנן טומאה עלייהו והיינו דבסדר טומאות דהאי קרא איכא אוכל מטמא אוכל ומשק' מטמא משקה דמדרבנן טומאה עושה כיוצא בה:"
+  },
+  "Rashi on Pesachim 17a:6:1": {
+    "dependsOn": [
+      "Pesachim 17a:6",
+      "Pesachim 17a:5",
+      "Rashi on Pesachim 17a:1:1",
+      "Rashi on Pesachim 17a:1:2",
+      "Rashi on Pesachim 17a:1:3",
+      "Rashi on Pesachim 17a:7:3",
+      "Steinsaltz on Pesachim 17a:6:1",
+      "Steinsaltz on Pesachim 17a:6",
+      "Pesachim 14a:8"
+    ],
+    "generatedAt": "2026-11-15T16:22:21.320Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי כתיב ונגע כנפו</strong> - אל הלחם דמשמע שהשרץ נגע בלחם דלחם הוי ראשון מה שנגע בכנפו נגע ללחם דה\"ל לחם שני:"
+  },
+  "Rashi on Pesachim 17a:7:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:7:2",
+      "Rashi on Pesachim 17a:7:3",
+      "Pesachim 17a:7"
+    ],
+    "generatedAt": "2026-11-15T16:23:49.727Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טמא נפש</strong> - קס\"ד טמא מת שהוא אב הטומאה כשרץ:"
+  },
+  "Rashi on Pesachim 17a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:7:1",
+      "Rashi on Pesachim 17a:7:3",
+      "Pesachim 17a:6",
+      "Rashi on Pesachim 17a:6:1",
+      "Pesachim 17a:5",
+      "Pesachim 17a:1",
+      "Pesachim 16b:15",
+      "Pesachim 16b:16",
+      "Rashi on Pesachim 17a:1:1",
+      "Rashi on Pesachim 16b:10:2"
+    ],
+    "generatedAt": "2026-11-15T16:25:23.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכל אלה</strong> - כסדר שפירשנו טמא מת בלחם ולחם בנזיד וכו':"
+  },
+  "Rashi on Pesachim 17a:7:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 17a:7:1",
+      "Rashi on Pesachim 17a:7:2",
+      "Pesachim 17a:7",
+      "Pesachim 17a:5"
+    ],
+    "generatedAt": "2026-11-15T16:27:02.435Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדהכא לא אישתבש</strong> - דאמרו ליה רביעי טמא כדכתיב ויאמרו יטמא הכא נמי לא אישתבש ואיהו במה שנגע בכנפו אמר להו דה\"ל שמן חמישי ומשום הכי אמרי ליה טהור אלא לרב דאמר גבי שרץ נמי רביעי בעא מינייהו מאי שנא דאמרו ליה טהור:"
+  },
+  "Rashi on Pesachim 17a:8:1": {
+    "dependsOn": [
+      "Pesachim 17a:8",
+      "Rashi on Pesachim 17a:7:1",
+      "Rashi on Pesachim 17a:7:2",
+      "Rashi on Pesachim 17a:7:3"
+    ],
+    "generatedAt": "2026-11-15T16:28:06.476Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקיאין הן בטומאת מת</strong> - ויודעים שהשלישי עושה בה רביעי ולא היו בקיאין בטומאת שרץ וסבורין שאין שלישי עושה בה רביעי:"
+  },
+  "Rashi on Pesachim 17a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T16:29:24.406Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 17a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא אמר</strong> - לא היו בקיאין ברביעי בקודש כלל וגבי מת שלישי בקודש בעא מינייהו דהאי טמא נפש דקרא לאו טמא מת אלא מת ממש כלומר טומאת נפש ומת אבי אבות ולחם אב ונזיד ראשון ויין שני ושמן שלישי:"
+  },
+  "Tosafot on Pesachim 17a:3:1": {
+    "dependsOn": [
+      "Pesachim 17a:3",
+      "Pesachim 17a:4",
+      "Pesachim 17a:2",
+      "Pesachim 17a:5",
+      "Pesachim 17a:6",
+      "Rashi on Pesachim 17a:1:1",
+      "Rashi on Pesachim 17a:1:2",
+      "Rashi on Pesachim 17a:1:3",
+      "Rashi on Pesachim 17a:6:1",
+      "Rashi on Pesachim 17a:7:1",
+      "Pesachim 17a:7",
+      "Pesachim 17a:8",
+      "Pesachim 17a:9",
+      "Pesachim 17a:10",
+      "Rashi on Pesachim 17a:9:1"
+    ],
+    "generatedAt": "2026-11-15T16:19:20.916Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 17a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רביעי בקודש בעא מינייהו</strong> - פ\"ה דנגע בכנפו היינו שרץ אל הלחם והלחם אל הנזיד וכו' וקשה לר\"ת דמאי שנא דואל כל מאכל יהיה פירוש או אל כל מאכל יותר מכולם ועוד למה דחק שמואל לתרץ במה שנגע בכנפו לימא אל כל מאכל דוקא ועוד למה קורא הכתוב לשרץ כנף ועוד דמפרש רבינא התם רביעי בקדש הכא שלישי שהלחם נעשה אב הטומאה כשנוגע במת והא קיימא לן בהמפלת <span class=\"parenthesized\">(נדה כח:)</span> דכל דבר שאין לו טהרה במקוה אינו נעשה אב הטומאה מיהו יש לומר דאין נעשה אב הטומאה היינו דווקא לטמא אדם וכלים אבל לאוכלין ומשקין נעשה אב הטומאה ומפר\"ת דהשרץ נגע בכנף ונעשה ראשון והכנף אל הלחם או אל הנזיד וחד מהנך אל היין או אל השמן הרי שלשה ואל כל מאכל הרי ארבעה ונקט סדר כנף מאכל משקה מאכל דלא בעי למינקט שיעשה כיוצא בו ולשמואל דייק מדכתיב בכנפו הרי חמש והשתא אתי שפיר לרבינא דאמר הכא שלישי שהכנף הנוגע במת נעשה אב הטומאה כדין כל הכלים:"
+  }
+}

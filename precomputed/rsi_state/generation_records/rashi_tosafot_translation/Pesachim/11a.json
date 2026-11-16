@@ -1,0 +1,606 @@
+{
+  "Rashi on Pesachim 11a:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:11:1",
+      "Rashi on Pesachim 11a:11:2",
+      "Rashi on Pesachim 11a:11:3",
+      "Rashi on Pesachim 11a:1:1",
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 11a:2:2",
+      "Steinsaltz on Pesachim 11a:11",
+      "Steinsaltz comment #1 on Pesachim 11a:11",
+      "Rashi on Pesachim 11a:10:1",
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:13:3"
+    ],
+    "generatedAt": "2026-11-15T05:23:49.895Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:11:1"
+    ],
+    "sourceText": "כל נר שבגמרא היינו הכלי קרויישי\"ל:"
+  },
+  "Rashi on Pesachim 11a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:24:34.583Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנטפת</strong> - טיפין דקות כשהפתילה מבערת:"
+  },
+  "Rashi on Pesachim 11a:11:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:11:1",
+      "Rashi on Pesachim 11a:11:2",
+      "Rashi on Shabbat 29b:3:1",
+      "Shabbat 29b:4"
+    ],
+    "generatedAt": "2026-11-15T05:25:52.565Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפי' היא של חרס</strong> - אותה שפופרת דמאיסא אפ\"ה אסור דילמא אתי למיכל מינה ותניא הנותן שמן לנר חייב משום מבעיר והמסתפק ממנו חייב משום מכבה:"
+  },
+  "Rashi on Pesachim 11a:12:1": {
+    "dependsOn": [
+      "Pesachim 11a:12",
+      "Rashi on Pesachim 11a:11:1",
+      "Rashi on Pesachim 11a:11:2",
+      "Rashi on Pesachim 11a:11:3",
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:1:1",
+      "Rashi on Pesachim 11a:1:2",
+      "Rashi on Pesachim 11a:2:1",
+      "Pesachim 11a:11"
+    ],
+    "generatedAt": "2026-11-15T05:27:41.407Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יהודה מתיר</strong> - ואע\"ג דשמן הכל תדירין בו ודרבנן אדרבנן ליכא לאקשויי דהא אוקימנא טעמא בחמץ משום דהוא עצמו מחזר עליו לשורפו:"
+  },
+  "Rashi on Pesachim 11a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:28:53.140Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשר של קיימא</strong> - שהוא עשוי שלא להתירו לעולם הוי אב מלאכה במסכת שבת:"
+  },
+  "Rashi on Pesachim 11a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:29:45.036Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יהא קושרו</strong> - דהוי קשר של קיימא אלא עונבו ולא גזרי' עניבה אטו קשירה:"
+  },
+  "Rashi on Pesachim 11a:13:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:13:4"
+    ],
+    "generatedAt": "2026-11-15T05:30:13.063Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כורך</strong> - כריכה בעלמא:"
+  },
+  "Rashi on Pesachim 11a:13:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:13:3",
+      "Rashi on Pesachim 11a:13:5",
+      "Rashi on Pesachim 11a:1:1",
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 11a:8:1"
+    ],
+    "generatedAt": "2026-11-15T05:32:35.432Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פונדא</strong> - אזור חלל:"
+  },
+  "Rashi on Pesachim 11a:13:5": {
+    "dependsOn": [
+      "Jastrow, פְּסִיקְיָא 1",
+      "Rashi on Shabbat 113a:4:1",
+      "Rashi on Shabbat 113a:4:2",
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:13:3",
+      "Rashi on Pesachim 11a:13:4",
+      "Rashi on Pesachim 11a:13:6",
+      "Rashi on Pesachim 11a:17:1",
+      "Steinsaltz on Pesachim 11a:13",
+      "Steinsaltz comment #1 on Pesachim 11a:13",
+      "Steinsaltz comment #2 on Pesachim 11a:13",
+      "Rashi on Pesachim 11a:13:5",
+      "Tosafot on Pesachim 11a:13:1",
+      "Pesachim 11a:13"
+    ],
+    "generatedAt": "2026-11-15T05:36:00.422Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסיקייא</strong> - פיישל\"א שכורכין סביבות שוקיים:"
+  },
+  "Rashi on Pesachim 11a:13:6": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:13:5",
+      "Steinsaltz on Pesachim 11a:13",
+      "Mishnah Shabbat 15:2",
+      "Rashi on Shabbat 113a:4:1",
+      "Rashi on Shabbat 113a:4:2",
+      "Rashi on Shabbat 113a:4:3",
+      "Rashi on Shabbat 113a:4:4"
+    ],
+    "generatedAt": "2026-11-15T05:37:20.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:13:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא יענבנו</strong> - גזירה משום קשירה הואיל ועסוק בכך:"
+  },
+  "Rashi on Pesachim 11a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:39:40.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשיא דרבנן</strong> - דשפופרת אדרבנן דחבל:"
+  },
+  "Rashi on Pesachim 11a:15:1": {
+    "dependsOn": [
+      "Pesachim 11a:15"
+    ],
+    "generatedAt": "2026-11-15T05:40:16.496Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמן</strong> - זה בשמן דכל שנה מיחלף ואתי למיכליה:"
+  },
+  "Rashi on Pesachim 11a:17:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:17:2",
+      "Rashi on Pesachim 11a:17:3"
+    ],
+    "generatedAt": "2026-11-15T05:40:55.330Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קושרין דלי בפסיקייא</strong> - דלאו קשר שעשוי להתקיים הוא דאינו מפסיד פסיקייא שלו בכך:"
+  },
+  "Rashi on Pesachim 11a:17:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:17:1",
+      "Rashi on Pesachim 11a:17:2",
+      "Rashi on Pesachim 11a:17:3"
+    ],
+    "generatedAt": "2026-11-15T05:41:18.865Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא בחבל</strong> - שמא יניחנו שם עולמית:"
+  },
+  "Rashi on Pesachim 11a:17:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:17:1",
+      "Rashi on Pesachim 11a:17:2",
+      "Pesachim 11a:17"
+    ],
+    "generatedAt": "2026-11-15T05:42:09.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי נימא חבל דעלמא</strong> - שתשמישו לכך ואיכא למיחש שמא יניחנו שם:"
+  },
+  "Rashi on Pesachim 11a:18:1": {
+    "dependsOn": [
+      "Pesachim 11a:18",
+      "Rashi on Pesachim 11a:17:1",
+      "Rashi on Pesachim 11a:17:2",
+      "Rashi on Pesachim 11a:17:3",
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:19:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Rashi on Pesachim 11a:18:1"
+    ],
+    "generatedAt": "2026-11-15T05:48:32.033Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבל דגרדי</strong> - שאינו ראוי למילוי מים תמיד ור' יהודה מתיר ולא גזר גבי שבת כדאוקימנא טעמא דמשום חומרא דשבת פרשי אינשי מאיסורא דיליה ונזכרין הן אבל דרבנן דהכא אדרבנן דעניבה קשיא:"
+  },
+  "Rashi on Pesachim 11a:19:1": {
+    "dependsOn": [
+      "Pesachim 11a:19",
+      "Rashi on Pesachim 11a:17:1",
+      "Rashi on Pesachim 11a:17:2",
+      "Rashi on Pesachim 11a:17:3",
+      "Rashi on Pesachim 11a:18:1",
+      "Rashi on Pesachim 11a:3:1",
+      "Rashi on Pesachim 11a:20:1",
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2"
+    ],
+    "generatedAt": "2026-11-15T05:51:31.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשנינן חבל בחבל מיחלף כו'</strong> - והשתא איתרצו כולהו דרבנן גזרו כל היכא דמיחלף בין בשבת בין בשאר איסורי הילכך בחדש לפני העומר גזרו וכן בשפופרת וכן בחבל אבל בחמץ לא משום דמוזהר עליו לשורפו ובעניבה נמי לא משום דלא מיחלפא ור' יהודה גזר בכל מילי דלא בדילי מיניה ובמידי דבדילי מיניה לא גזר הילכך בחמץ גזר אבל בחדש בדילי מיניה ובכל הנך דשבת משום דבדילי מינייהו ודקא מחמיר בעניבה משום דקסבר היא גופא קשירה היא:"
+  },
+  "Rashi on Pesachim 11a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:48:37.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא ברצון חכמים</strong> - דאיכא למיגזר דילמא כי מעסקי ביה אתי למיכל מיניה:"
+  },
+  "Rashi on Pesachim 11a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:1:1",
+      "Rashi on Pesachim 11a:11:1",
+      "Rashi on Pesachim 11a:11:2",
+      "Rashi on Pesachim 11a:17:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-11-15T04:51:03.785Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר' יהודה אומר כו' מתוך שלא התרתה לו</strong> - קצירה כדרך כל השנה אלא בידים קוטפין המלילות מן הקרקע דהא אסור לקצור לפני העומר דכתיב <span class=\"parenthesized\">(ויקרא כ״ג:י׳)</span> עומר ראשית קצירכם אל הכהן שהוא תחלה לקצירה זכור הוא את איסור החדש על ידי שינוי המעשה ולא אתי למיכל:"
+  },
+  "Rashi on Pesachim 11a:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:56:48.272Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכור</strong> - אסור להטיל בו מום ואפי' לגרום כדתניא מום לא יהיה בו אין לי אלא שלא יטיל בו מום מניין שלא יגרום לו ת\"ל כל מום במסכת ביצה <span class=\"parenthesized\">(ד' כז:)</span>:"
+  },
+  "Rashi on Pesachim 11a:20:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:20:1",
+      "Pesachim 11a:20",
+      "Tosafot on Pesachim 11a:20:1",
+      "Sifra, Emor, Section 7 10",
+      "Bekhorot 33b:5"
+    ],
+    "generatedAt": "2026-11-15T05:59:36.004Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מקיזין דם</strong> - אפי' במקום שאינו עושה בו מום דהיינו בכל מקום שבו אם אינו חותך ממנו עצם או פוגם שפתו או אזנו וכל דבר שאינו חוזר לקדמותו הוי מום אידך לא הוי מום וקא גזר ר' יהודה אטו מקום שעושה בו מום ואע\"ג דקדשים הכל בדילין מהן מחלוקת ר' שמעון ור' יהודה בתורת כהנים:"
+  },
+  "Rashi on Pesachim 11a:2:1": {
+    "dependsOn": [
+      "Pesachim 11a:2",
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 11a:2:2",
+      "Rashi on Pesachim 11a:2:3",
+      "Pesachim 10b:20",
+      "Rashi on Pesachim 10b:20:1"
+    ],
+    "generatedAt": "2026-11-15T04:52:13.638Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טחינה והרקדה</strong> - שהרי קמח תנינא דהיה בידים וכשטחנוהו והרקידוהו איזה שינוי היה שם דלא ליתי למיתב לפומיה ההיא שעתא:"
+  },
+  "Rashi on Pesachim 11a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 11a:2:2",
+      "Rashi on Pesachim 11a:2:3"
+    ],
+    "generatedAt": "2026-11-15T04:52:53.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשנינן טחינה</strong> - לא היו טוחנין אותו ברחים של מים אלא ברחים של יד דהוי שינוי לזכרון:"
+  },
+  "Rashi on Pesachim 11a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T04:53:31.898Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על גבי נפה</strong> - לצד התחתון של נפה הופך הנפה על פניה:"
+  },
+  "Rashi on Pesachim 11a:3:1": {
+    "dependsOn": [
+      "Pesachim 11a:3",
+      "Pesachim 11a:2",
+      "Rashi on Pesachim 11a:3:1",
+      "Rashi on Pesachim 11a:3:2",
+      "Rashi on Pesachim 11a:3:3"
+    ],
+    "generatedAt": "2026-11-15T04:54:57.021Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא דתנן</strong> - במנחות קוצרין בית השלחין כדרך חול קודם לעומר:"
+  },
+  "Rashi on Pesachim 11a:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:3:1",
+      "Rashi on Pesachim 11a:3:3",
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 11a:2:2",
+      "Rashi on Pesachim 10b:1:1",
+      "Rashi on Pesachim 10a:1:1"
+    ],
+    "generatedAt": "2026-11-15T04:56:48.181Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושל בית העמקים</strong> - תבואה הגדילה בין העמקים וטעמא מפרש התם כתוב אחד אומר וקצרתם את קצירה והבאתם אלמא מותר לקצור קודם לעומר וכתוב אחד אומר עומר ראשית קצירכם דמשמע שהוא קודם לכל קציר הא כיצד ממקום שאתה מביא עומר אי אתה קוצר קודם לו וממקום שאי אתה מביא עומר אתה קוצר ותנן בפרק כל הקרבנות <span class=\"parenthesized\">(מנחות פה.)</span> אין מביאין סולת למנחה לא מבית הזבלין ולא מבית השלחין ולא מבית העמקים מפני שתבואה שלהן אינה מן המובחר:"
+  },
+  "Rashi on Pesachim 11a:3:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:3:1",
+      "Rashi on Pesachim 11a:3:2",
+      "Pesachim 11a:3",
+      "Tosafot on Pesachim 11a:20:1",
+      "Menachot 71a:1",
+      "Menachot 71a:2",
+      "Menachot 71a:3",
+      "Menachot 71a:7",
+      "Rashi on Pesachim 11a:1:2",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T05:00:21.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא למימר</strong> - הא ליכא התם שינוייא דהא קוצרין קתני ובמגל ולא גזרינן דילמא אתי למיכל ואוקמיה לההיא כר' יהודה במסכת מנחות בפרק ר' ישמעאל <span class=\"parenthesized\">(מנחות דף עא.)</span> מדקתני סיפא אנשי יריחו קוצרין לפני העומר כו' ולא מיחו בידם חכמים ואמרינן מאן שמעת ליה דאמר מיחו ולא מיחו ר' יהודה:"
+  },
+  "Rashi on Pesachim 11a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:03:52.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדש מבדל בדילי מיניה</strong> - שהרי לא הורגלו לאוכלו כל השנה ואין למודין לפשוט יד להושיט לפיהם אבל חמץ למודין הן בכך כל השנה:"
+  },
+  "Rashi on Pesachim 11a:5:1": {
+    "dependsOn": [
+      "Pesachim 11a:5"
+    ],
+    "generatedAt": "2026-11-15T05:08:19.737Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרבנן אדרבנן לא קשיא</strong> - בתמיה דלא משנית אלא לר' יהודה והא דרבנן נמי קשיא דבמתני' לא גזרינן והתם קתני שלא ברצון חכמים דמשמע דגזר ר' מאיר דהוא מבני פלוגתיה דילמא אתי למיכל:"
+  },
+  "Rashi on Pesachim 11a:6:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:6:1",
+      "Rashi on Pesachim 11a:6:2"
+    ],
+    "generatedAt": "2026-11-15T05:08:53.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא עצמו מחזר עליו לשורפו</strong> - אע\"ג דבעלמא גזרינן בדבר שעסוק בו שלא יושיט לפיו הכא בבדיקת חמץ ליכא למיגזר דהוא עצמו כל עסקו זה בחמץ אינו אלא מחזר עליו לשורפו אין לך זכרון לאיסור גדול מזה:"
+  },
+  "Rashi on Pesachim 11a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:6:1",
+      "Rashi on Pesachim 11a:6:2"
+    ],
+    "generatedAt": "2026-11-15T05:10:06.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיכל קא אכיל מיניה</strong> - בתמיה:"
+  },
+  "Rashi on Pesachim 11a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T05:10:51.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קמח וקלי תנן</strong> - ואין אלו ראויין לאכילה:"
+  },
+  "Rashi on Pesachim 11a:8:1": {
+    "dependsOn": [
+      "Pesachim 11a:8",
+      "Rashi on Pesachim 11a:7:1",
+      "Rashi on Pesachim 11a:8:1",
+      "Rashi on Pesachim 11a:8:2"
+    ],
+    "generatedAt": "2026-11-15T05:11:29.287Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקלי ואילך</strong> - לאחר שנתייבש בתנור אין ראוי לאכול:"
+  },
+  "Rashi on Pesachim 11a:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:8:1",
+      "Pesachim 11a:8",
+      "Rashi on Pesachim 11a:7:1"
+    ],
+    "generatedAt": "2026-11-15T05:12:26.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעיקרא</strong> - בעודו רך בקליות קודם שיתיבש מאי איכא למימר:"
+  },
+  "Rashi on Pesachim 11a:9:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:9:1",
+      "Rashi on Pesachim 11a:9:2",
+      "Pesachim 11a:9",
+      "Pesachim 11a:2",
+      "Pesachim 11a:3"
+    ],
+    "generatedAt": "2026-11-15T05:15:32.560Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא</strong> - זכור הוא ע\"י הקיטוף כדשני רבא לעיל בית השלחים דליכא קיטוף מאי איכא למימר:"
+  },
+  "Rashi on Pesachim 11a:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:9:1",
+      "Rashi on Pesachim 11a:1:1",
+      "Rashi on Pesachim 11a:1:2",
+      "Rashi on Pesachim 11a:2:1",
+      "Rashi on Pesachim 10b:1:1",
+      "Rashi on Pesachim 10b:1:2",
+      "Rashi on Pesachim 10b:2:1",
+      "Tosafot on Pesachim 11a:3:1",
+      "Tosafot on Pesachim 11a:3:2",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Pesachim 11a:9",
+      "Pesachim 11a:4",
+      "Pesachim 11a:5",
+      "Rashi on Pesachim 11a:9:2"
+    ],
+    "generatedAt": "2026-11-15T05:19:01.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 11a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בדותא</strong> - וטעמא דר' יהודה משום דבדילא מיניה וחמץ לא בדיל מיניה שרגיל בו כל שעה:"
+  },
+  "Tosafot on Pesachim 11a:13:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:13:1",
+      "Rashi on Pesachim 11a:13:2",
+      "Rashi on Pesachim 11a:13:3",
+      "Rashi on Pesachim 11a:13:4",
+      "Rashi on Pesachim 11a:13:5",
+      "Rashi on Pesachim 11a:13:6"
+    ],
+    "generatedAt": "2026-11-15T05:38:36.196Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כורך עליו פונדא</strong> - לאו דוקא כורך דאפילו לקשור יכול דלא מבטל ליה ובלבד שלא יענבנו אחבל קאי:"
+  },
+  "Tosafot on Pesachim 11a:20:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 11a:3:1",
+      "Tosafot on Pesachim 11a:13:1",
+      "Bekhorot 33b:15",
+      "Pesachim 10b:20"
+    ],
+    "generatedAt": "2026-11-15T06:01:45.944Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 11a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל היכא דבדיל מיניה לא גזר ר' יהודה</strong> - דר' מאיר אדר\"מ לא רצה להקשות דלעיל גזר גבי חדש וגבי בכור לא גזר דבפרק כל פסולי המוקדשין <span class=\"parenthesized\">(בכורות לג: ושם)</span> תניא בכור שאחזו דם מקיזין לו במקום שאין עושין לו מום דברי ר' מאיר ורבי יהודה אומר וכו' משום דאיכא לשנויי שאני בכור דאיכא פסידא:"
+  },
+  "Tosafot on Pesachim 11a:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 11a:3:1",
+      "Rashi on Pesachim 11a:3:2",
+      "Rashi on Pesachim 11a:3:3"
+    ],
+    "generatedAt": "2026-11-15T05:01:20.357Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קוצרין בית השלחין</strong> - פירש רש\"י ממקום שאי אתה מביא אתה קוצר וכו' ובית השלחין וכל הנהו אע\"ג דתניא בפרק כל הקרבנות <span class=\"parenthesized\">(מנחות דף פה.)</span> אם הביא כשר כיון דלכתחלה לא יביא חשבינן ליה ממקום שאי אתה מביא ואין לתמוה מי איכא מידי דמדאורייתא לכתחלה אסור ובדיעבד שרי דאיכא מילי טובא דבעינן שישנה הכתוב עליו לעכב כגון קדשים:"
+  },
+  "Tosafot on Pesachim 11a:3:2": {
+    "dependsOn": [
+      "Pesachim 11a:3",
+      "Rashi on Pesachim 11a:3:1",
+      "Tosafot on Pesachim 11a:3:1",
+      "Pesachim 11a:1"
+    ],
+    "generatedAt": "2026-11-15T05:03:10.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 11a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לא גודשין</strong> - דבגדישה ליכא פסידא אם ימתין אחר העומר דדוקא משום פסידא התירו קצירה שממהרין ליקצר משאר פירות ואי לא קצרי להו פסדי והא דשרי רבי יהודה קמח וקלי לעיל יש לומר משום עולי רגלים הקילו ור' מאיר אוסר בקמח ושרי קצירה לקמן בפ' מקום שנהגו <span class=\"parenthesized\">(פסחים דף נו.)</span> דקתני במילתיה קוצרין ברצון חכמים והיינו משום פסידא וכן <span class=\"rashi-quotation\">פי' הקונטרס</span> במנחות ואם תאמר א\"כ מאי פריך דילמא הכא שרי רבי יהודה משום פסידא אבל גבי חמץ גזרינן ויש לומר משום מצות ביעור יש להתיר כמו משום פסידא:"
+  }
+}

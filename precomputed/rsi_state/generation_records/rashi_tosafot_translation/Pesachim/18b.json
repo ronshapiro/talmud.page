@@ -1,0 +1,335 @@
+{
+  "Rashi on Pesachim 18b:11:1": {
+    "dependsOn": [
+      "Pesachim 18b:11"
+    ],
+    "generatedAt": "2026-11-15T19:02:40.518Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אמר רבא לא רבי יוסי</strong> - דלקמן דדריש ק\"ו ממחוסר כפורים סבר לה כר' עקיבא שיהא שני עושה שלישי בחולין ולא רבי עקיבא סבר לה כרבי יוסי במאי דמייתי לקמן רביעי בקודש מקל וחומר ממחוסר כפורים ומלתיה דרבא פרשוה רב אשי ורב כהנא לקמן בסמוך וכיון דאית ליה לרבי יוסי משקין מטמאין אחרים דאורייתא לא משכח ראיה אלא מיטמא דדריש יטמא על כרחך אית ליה שני עושה שלישי בחולין דהא בין יטמא דאוכלין בין יטמא דמשקין אשני כתיבי:"
+  },
+  "Rashi on Pesachim 18b:13:1": {
+    "dependsOn": [
+      "Pesachim 18b:13",
+      "Rashi on Pesachim 18b:11:1",
+      "Rashi on Pesachim 18a:6:2"
+    ],
+    "generatedAt": "2026-11-15T19:04:31.137Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשיטת רבי עקיבא רבו אמרה</strong> - להא דאמר טומאת משקין לטמא אחרים דאורייתא מיבעי ליה למדרש יטמא יטמא אליבא דר\"ע אמרה דדריש ליה גבי אוכלין וקא\"ר יוסי הואיל ודריש ר\"ע יטמא יטמא אית ליה דמשקין מטמאין אחרים דאורייתא אבל רבי יוסי לא סבירא ליה טומאת משקין לטמא אחרים דאורייתא ולא דריש יטמא יטמא:"
+  },
+  "Rashi on Pesachim 18b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T19:05:35.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא רבי יוסי לא סבר ליה כר\"ע</strong> - דשני עושה שלישי בחולין:"
+  },
+  "Rashi on Pesachim 18b:14:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:14:1",
+      "Rashi on Pesachim 18b:14:3",
+      "Rashi on Pesachim 18b:3:1",
+      "Rashi on Pesachim 18b:6:1",
+      "Rashi on Pesachim 18b:8:1",
+      "Tosafot on Pesachim 2a:8:1",
+      "Yevamot 74b:7",
+      "Rashi on Pesachim 2a:5:3",
+      "Pesachim 18b:14",
+      "Pesachim 18b:15"
+    ],
+    "generatedAt": "2026-11-15T19:08:58.952Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דתניא אמר רבי יוסי מניין לרביעי בקודש שפסול ודין הוא מה מחוסר כפורים שמותר בתרומה</strong> - כדילפינן ביבמות פרק הערל <span class=\"parenthesized\">(יבמות ד' עד:)</span> מקראי טבל ועלה אוכל במעשר העריב שמשו אוכל בתרומה כדכתיב ובא השמש וטהר ואחר יאכל מן הקדשים:"
+  },
+  "Rashi on Pesachim 18b:14:3": {
+    "dependsOn": [
+      "Pesachim 18b:14",
+      "Rashi on Pesachim 18b:14:1",
+      "Rashi on Pesachim 18b:14:2",
+      "Pesachim 18b:15",
+      "Rashi on Pesachim 18b:1:1",
+      "Rashi on Pesachim 18b:3:1",
+      "Rashi on Pesachim 18b:4:1",
+      "Rashi on Pesachim 18b:6:1",
+      "Rashi on Pesachim 18b:8:1",
+      "Rashi on Pesachim 18b:8:2",
+      "Yevamot 74b:13",
+      "Yevamot 74b:16"
+    ],
+    "generatedAt": "2026-11-15T19:10:38.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור בקודש</strong> - כדיליף התם מוכפר עליה הכהן וטהרה מכלל שהיא טמאה עד עכשיו:"
+  },
+  "Rashi on Pesachim 18b:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:6:1",
+      "Rashi on Pesachim 18a:6:1",
+      "Pesachim 18b:14",
+      "Maharsha on Pesachim 18b:5",
+      "Tosafot on Pesachim 18b:15:1",
+      "Steinsaltz on Pesachim 18b:15",
+      "Rashi on Pesachim 18b:14:1",
+      "Rashi on Pesachim 18b:14:2",
+      "Rashi on Pesachim 18b:14:3",
+      "Rashi on Pesachim 18b:16:1",
+      "Sotah 29a:15",
+      "Rashi on Sotah 29a:15:1",
+      "Rashi on Sotah 29a:15:2",
+      "Rashi on Sotah 29a:15:3"
+    ],
+    "generatedAt": "2026-11-15T19:14:40.098Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלישי שפסול בתרומה</strong> - לרבנן דפליגי אדר' עקיבא ונפקא לן בקל וחומר מטבול יום ומה טבול יום דמותר בחולין אסור בתרומה שני שפסול בחולין אינו דין שיעשה שלישי בתרומה במסכת סוטה בפרק כשם שהמים בודקין ובקודש דין הוא שיעשה בה רביעי מקל וחומר ממחוסר כפורים:"
+  },
+  "Rashi on Pesachim 18b:16:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:16:1"
+    ],
+    "generatedAt": "2026-11-15T19:18:22.239Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולמדנו שלישי בקודש מן התורה</strong> - ודלא תימא דיו לבא מן הדין להיות כנדון מה תרומה עושה שלישי ותו לא אף זה קודש יעשה שלישי ותו לא דמשום שלישי לא איצטריך לן קל וחומר דמן התורה למדנו שלישי וכי אתא ק\"ו לרביעי הוא דאתא דקיימא לן בב\"ק פ' שני <span class=\"parenthesized\">(ד' כה.)</span> דהיכא דמיפרך ק\"ו לא אמרינן דיו:"
+  },
+  "Rashi on Pesachim 18b:1:1": {
+    "dependsOn": [
+      "Pesachim 18b:1",
+      "Pesachim 18a:16"
+    ],
+    "generatedAt": "2026-11-15T18:38:49.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשני משקין הבאין מחמת שרץ מי כתיבי</strong> - באוריית' ממשקין מחמת כלי הוא דאתו ומה כו' וכיון דמינייהו הוא דילפי דיו למשקין שנגעו בשרץ הבאין מן הדין דמשקין שנגעו בכלי להיות כנדון מה אלו אין מטמאין כלי אף אלו אין מטמאין כלי:"
+  },
+  "Rashi on Pesachim 18b:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:1:1"
+    ],
+    "generatedAt": "2026-11-15T18:46:11.196Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יטמא דרישא</strong> - גבי אוכל היכי דריש ליה ר\"ע:"
+  },
+  "Rashi on Pesachim 18b:4:1": {
+    "dependsOn": [
+      "Pesachim 18b:4",
+      "Pesachim 18b:1",
+      "Pesachim 18a:13",
+      "Chokhmat Shlomo on Pesachim 18b:1",
+      "Rashi on Pesachim 18a:12:1",
+      "Rashi on Pesachim 18a:13:1"
+    ],
+    "generatedAt": "2026-11-15T18:48:25.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משקה שמטמא אוכל</strong> - כדאמרן לעיל אינו מטמא כלי כדאמרן אוכל שאין מטמא אוכל דאין טומאה עושה כיוצא בה אינו דין כו' והוא הדין דמצי למימר נמי קל וחומר מיניה וביה כדאמרן גבי משקין דנימא הכי מה כלי שמטמא את האוכל הזה אינו מטמא כלי אוכל שבא מחמת כלי כו' אלא משום דהדר מצטריך ליה למימר כדלעיל ואימא הני מילי אוכל הבא מחמת כלי אבל אוכל הבא מחמת שרץ לטמא כלי וניחא ליה למילף ממשקה דאוקימנא בהו דלא שנא נגעו בשרץ לא שנא נטמאו מן הכלי לא מטמאו כלי:"
+  },
+  "Rashi on Pesachim 18b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:49:03.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא אוכל חמור</strong> - ממשקה דאילו משקה אין מטמא משקה ואילו אוכל קאמרת מטמא משקה הלכך אע\"ג דאין משקה מטמא כלי יהא אוכל מטמא כלי:"
+  },
+  "Rashi on Pesachim 18b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:49:56.812Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ההוא</strong> - דאוקימנא האי יטמא דאוכל לטמא משקה חומרא דמשקין היא דעלולין לקבל טומאה:"
+  },
+  "Rashi on Pesachim 18b:8:1": {
+    "dependsOn": [
+      "Pesachim 18b:8",
+      "Pesachim 18b:6",
+      "Rashi on Pesachim 18b:6:1",
+      "Rashi on Pesachim 18b:8:2",
+      "Rashi on Pesachim 18b:8:3",
+      "Rashi on Pesachim 18b:8:4",
+      "Rashi on Pesachim 18a:6:2",
+      "Rashi on Pesachim 18a:9:1"
+    ],
+    "generatedAt": "2026-11-15T18:55:32.940Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יטמא דאין עושה כיוצא בה</strong> - כלומר השתא דרשינן יטמא יטמא והאי דקרינן בתרוייהו יטמא ללמדך מיעוט דאין מטמא כיוצא בו כגון אוכל אוכל ומשקה משקה:"
+  },
+  "Rashi on Pesachim 18b:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:8:1",
+      "Rashi on Pesachim 18b:8:2",
+      "Rashi on Pesachim 18b:8:3",
+      "Rashi on Pesachim 18b:8:4"
+    ],
+    "generatedAt": "2026-11-15T18:56:54.042Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא</strong> - מיעוטא ואוכל דכוותיה קא ממעט:"
+  },
+  "Rashi on Pesachim 18b:8:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:8:1",
+      "Rashi on Pesachim 18b:8:2",
+      "Rashi on Pesachim 18b:8:3",
+      "Rashi on Pesachim 18b:8:4"
+    ],
+    "generatedAt": "2026-11-15T18:58:05.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חד</strong> - למעוטי משקין הבאין מחמת שרץ אע\"ג דלא כתיבי בהאי קרא משקין דכי יותן מים על זרע וגו' דמשמע אפילו שנגע בהן שרץ לאחר שניגבו מיהו גלי באוכל והוא הדין למשקה:"
+  },
+  "Rashi on Pesachim 18b:8:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:8:1",
+      "Rashi on Pesachim 18b:8:2",
+      "Rashi on Pesachim 18b:8:3"
+    ],
+    "generatedAt": "2026-11-15T18:59:02.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18b:8:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחד במשקין הבאין מחמת כלי</strong> - ההוא יטמא דלעיל איירי בבאין מחמת כלי:"
+  },
+  "Tosafot on Pesachim 18b:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:15:1"
+    ],
+    "generatedAt": "2026-11-15T19:16:17.231Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה מחוסר כפורים</strong> - אפי' מאן דאית ליה דיו אפילו היכא דמיפרך קל וחומר הכא מודה דבמה מצינו ילפינן שלישי ממחוסר כפורים דמחוסר כפורים כשלישי הוא שאינו עושה כלום בתרומה ופוסל בקודש והוא הדין בכל שלישי הלכך אלים קל וחומר דהכא ולא שייך למימר דיו מה התם שלישי ותו לא אף כאן שלישי ותו לא:"
+  },
+  "Tosafot on Pesachim 18b:16:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18b:16:1",
+      "Maharsha: Chidushei Halachot on Pesachim 18b:8"
+    ],
+    "generatedAt": "2026-11-15T19:21:44.187Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למדנו שלישי מן התורה</strong> - ניחא ליה להביא מקרא וה\"מ למידרש שלישי לקודש קל וחומר מטבול יום ורש\"י פירש דלהכי איצטריך למימר למדנו שלישי מן התורה דלא תימא דיו אבל השתא דלמדנו מן התורה לא אמרינן דיו משום דמיפרך קל וחומר:"
+  },
+  "Tosafot on Pesachim 18b:1:1": {
+    "dependsOn": [
+      "Pesachim 18b:1",
+      "Pesachim 18a:13",
+      "Steinsaltz on Pesachim 18b:1:1",
+      "Steinsaltz on Pesachim 18b:1",
+      "Rashi on Pesachim 18b:1:1",
+      "Tosafot on Pesachim 18b:2:1",
+      "Tosafot on Pesachim 17a:1:1",
+      "Tosafot on Pesachim 17b:1:1"
+    ],
+    "generatedAt": "2026-11-15T18:41:58.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולאו מק\"ו קאתי ומה משקין הבאין מחמת כלי</strong> - וא\"ת נילף מק\"ו דאוכל ומה אוכל הבא מחמת שרץ מטמא משקין שרץ גופיה לא כל שכן והשתא נימא דבין משקין ובין אוכל מטמא כלי וי\"ל דע\"כ אין אוכל מטמא כלי אפילו בא מחמת שרץ מק\"ו דמשקין הבאין מחמת כלי שמטמא אוכל ואין מטמא כלי אוכל הבא מחמת שרץ שאין מטמא אוכל [מהוא טמא] אינו דין שלא יטמא כלי:"
+  },
+  "Tosafot on Pesachim 18b:2:1": {
+    "dependsOn": [
+      "Pesachim 18b:2",
+      "Pesachim 18b:1",
+      "Tosafot on Pesachim 18b:1:1",
+      "Tosafot on Pesachim 18b:6:1",
+      "Bava Kamma 25b:4"
+    ],
+    "generatedAt": "2026-11-15T18:45:15.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיו לבא מן הדין להיות כנדון</strong> - הקשה הרב רבי יעקב דאורלינ\"ש אם כן יהיו משקין הבאין מחמת שרץ שניים כמשקין הבאין מחמת כלי ואהני קל וחומר דמטמו ואהני דיו דהוו שניים דכה\"ג אמרינן בכיצד הרגל <span class=\"parenthesized\">(ב\"ק כה:)</span> גבי קל וחומר דמפץ במת לימא אהני קל וחומר לטומאת ערב ואהני דיו לאפוקי מטומאת ז' וגבי קרן בחצר הניזק אמרינן נמי אהני קל וחומר לנזק שלם ואהני דיו למגופו ואומר ר\"י דלא קשה דהכא לא אשכחן מידי שנגע בשרץ שלא יהיה ראשון הלכך אין לחלק אבל גבי מת אשכחן דבר הנוגע בו שלא יהיה אלא ראשון כגון אוכלים וכלי חרס ונזק שלם מגופו תרי מילי נינהו אבל אין לתרץ משום דאיכא למימר ק\"ו הכי ומה אדם וכלים שאין מיטמא מאויר כלי חרס מיטמא משרץ משקין שמיטמא מאויר כלי חרס לא כל שכן שמיטמא משרץ דהשתא נמי איכא למימר דיו כדמוכח בכיצד הרגל <span class=\"parenthesized\">(שם)</span>:"
+  },
+  "Tosafot on Pesachim 18b:6:1": {
+    "dependsOn": [
+      "Pesachim 18b:6",
+      "Maharsha: Chidushei Halachot on Pesachim 18b:6:1"
+    ],
+    "generatedAt": "2026-11-15T18:50:51.157Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא אוכל חמור דמטמא משקין</strong> - הוי מצי למילף דאין אוכל מטמא כלי מקל וחומר ומה כלי שמטמא אוכל אין מטמא כלי אוכל שאינו מטמא אוכל אינו דין שלא יטמא כלי:"
+  },
+  "Tosafot on Pesachim 18b:7:1": {
+    "dependsOn": [
+      "Pesachim 18b:7",
+      "Tosafot on Pesachim 18b:6:1",
+      "Tosafot on Pesachim 18b:1:1",
+      "Tosafot on Pesachim 18a:8:1",
+      "Tosafot on Pesachim 18b:2:1",
+      "Tosafot on Pesachim 14a:10:1",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T18:53:49.854Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומהו עלילותן שמקבלין טומאה בלא הכשר</strong> - תימה לר\"י דאכתי לא הוי קל וחומר דהא עלילותן לא מהני להו לקבל טומאה ממשקין ולענין אוכל מהני להו א\"כ אוכל חמור ולעיל דיליף דמשקה לא מטמא כלי לא מצי למילף בק\"ו מאוכל שמטמא משקה ואין מטמא כלי משקה דלא מטמא משקה לא כ\"ש דהיא גופא מנלן דאוכל לא מטמא כלי ועוד דמשקין חמור מאוכל דמטמא אוכל והכא לא מצי למיעבד ק\"ו כדלעיל דמה כלי שמטמא אוכל אין מטמא כלי אוכל הבא מחמת כלי לא כ\"ש דמ\"מ אוכל הבא מחמת שרץ מנלן:"
+  }
+}

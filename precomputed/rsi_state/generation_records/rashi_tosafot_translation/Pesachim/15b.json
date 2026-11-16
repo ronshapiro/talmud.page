@@ -1,0 +1,358 @@
+{
+  "Rashi on Pesachim 15b:10:1": {
+    "dependsOn": [
+      "Pesachim 15b:10",
+      "Rashi on Pesachim 15b:9:1",
+      "Rashi on Pesachim 15b:12:1",
+      "Rashi on Pesachim 15b:10:2",
+      "Rashi on Pesachim 14b:1:1",
+      "Rashi on Pesachim 14b:2:1",
+      "Rashi on Pesachim 14b:3:1",
+      "Rashi on Pesachim 15a:1:1"
+    ],
+    "generatedAt": "2026-11-15T13:16:14.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא מסייע ליה</strong> - דבשבע מודה ר' יוסי:"
+  },
+  "Rashi on Pesachim 15b:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:10:1",
+      "Pesachim 15b:1"
+    ],
+    "generatedAt": "2026-11-15T13:25:08.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפיגול ונותר כו'</strong> - רבי יוסי א\"ל לעיל וקאמר ליה לר' מאיר בהא הוא דאמרי בית הלל נשרפין כאחת משום דפיגול ונותר אסירי מדאורייתא אבל באיסורא דרבנן לא שרו לטמויי בידים שמעינן מינה מיהא דבאיסור דאורייתא מודה רבי יוסי ואע\"ג דליכא שם טומאה עליה:"
+  },
+  "Rashi on Pesachim 15b:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:10:1",
+      "Rashi on Pesachim 15b:10:2",
+      "Rashi on Pesachim 14b:1:1",
+      "Rashi on Pesachim 15a:1:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T13:27:41.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאני התם כו'</strong> - מהא לא מיסתייעא לר' יוחנן ואפי' בשבע אימא לך דפליג ר' יוסי ואע\"ג דאסירא הואיל ואין עליה שם טומאה לא מטמינן ליה והא דמודה בפיגול ונותר משום דאית עלייהו שם טומאה דרבנן:"
+  },
+  "Rashi on Pesachim 15b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T13:28:52.647Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטמאה טומאת אוכלין</strong> - הואיל ומתחלה נראית לאדם ירדה לה תורת טומאה ואין עולה ממנה עד שתפסל מאכילת כלב:"
+  },
+  "Rashi on Pesachim 15b:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:12:1",
+      "Rashi on Pesachim 15b:14:1",
+      "Rashi on Pesachim 15b:14:2",
+      "Rashi on Pesachim 15b:10:1",
+      "Rashi on Pesachim 15b:10:2",
+      "Pesachim 15b:11"
+    ],
+    "generatedAt": "2026-11-15T13:31:14.225Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונשרפת עם הטמאה בפסח</strong> - ואפילו היא תרומה טהורה והא ודאי ר' יוסי קאמר לה דאי ר' מאיר אפילו פת מעלייתא שרי וש\"מ דמודה ר' יוסי היכא דלאו בת אכילה היא והוא הדין לפת מעלייתא בשבע שעות:"
+  },
+  "Rashi on Pesachim 15b:14:1": {
+    "dependsOn": [
+      "Pesachim 15b:14",
+      "Rashi on Pesachim 15b:14:2",
+      "Rashi on Pesachim 15b:3:1",
+      "Maharam on Pesachim 15b:2"
+    ],
+    "generatedAt": "2026-11-15T13:38:39.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דרבי מאיר מדרבי חנינא יליף מאי מודה ר' אליעזר דקאמר ליה ר' יוסי הא קא יליף רבי מאיר מדרבי חנינא מהדר ליה איהו מדרבי אליעזר ורבי יהושע:"
+  },
+  "Rashi on Pesachim 15b:14:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:14:1",
+      "Chokhmat Shlomo on Pesachim 15b:2",
+      "Rashi on Pesachim 15b:16:3",
+      "Pesachim 15a:3",
+      "Pesachim 15a:6",
+      "Pesachim 15a:4",
+      "Pesachim 15a:5"
+    ],
+    "generatedAt": "2026-11-15T13:40:29.672Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר ליה</strong> - הא דקא ילפת מדרבי חנינא אינה היא מן המדה כדמפרש לקמיה ואפילו לרבי יהושע נמי דשמעינן ליה דמיקל טפי גבי חבית דקאמר יטמאנה ביד מודה בשריפה בפסח דאין שורפין דהתם משום הפסד חולין הוא וכי איכא למימר דמיקל בשריפה בתלויה וטמאה הוא דאיכא למימר דמיקל כדשמען ליה גבי חבית שנולד לה ספק טומאה דאמר יגלנה ותנא גרמא והוא הדין בידים אבל בטהורה ליכא למימר דמיקל:"
+  },
+  "Rashi on Pesachim 15b:15:1": {
+    "dependsOn": [
+      "Pesachim 15b:15"
+    ],
+    "generatedAt": "2026-11-15T13:42:08.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דרבי מאיר מדרבי חנינא יליף אמאי אינה היא המדה מדה ומדה היא דהא בשש איכא איסורא דרבנן על הטהורה כי התם דאיכא טומאה דרבנן והא ר' יוסי לא שני ליה בין שם טומאה לשם איסור דהא אמרת דמודה רבי יוסי בשבע הואיל ואיכא איסור דאורייתא ואע\"פ דליכא עלה שם טומאה אלמא לא שני ליה וכיון דלא שני ליה שפיר יליף רבי מאיר מדרבי חנינא דאמר דמטמאינן טומאה מדרבנן בטומאה דאורייתא הכא נמי מטמינן איסור דרבנן בטמא טומאה דאורייתא:"
+  },
+  "Rashi on Pesachim 15b:16:1": {
+    "dependsOn": [
+      "Pesachim 15b:16",
+      "Rashi on Pesachim 15b:16:1",
+      "Rashi on Pesachim 15b:16:2",
+      "Rashi on Pesachim 15b:16:3",
+      "Rashi on Pesachim 15b:10:1",
+      "Rashi on Pesachim 15b:12:1"
+    ],
+    "generatedAt": "2026-11-15T13:43:22.357Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ר ירמיה הכא</strong> - בבשר שנטמא בוולד הטומאה דקתני כגון שנטמא במשקין שנטמאו בשרץ:"
+  },
+  "Rashi on Pesachim 15b:16:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:16:1",
+      "Rashi on Pesachim 15b:16:3",
+      "Rashi on Pesachim 15b:14:1"
+    ],
+    "generatedAt": "2026-11-15T13:45:43.339Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואזדא ר' מאיר לטעמיה</strong> - דאמר משקין אין מטמאין אחרים ואפילו אוכלין אלא מדרבנן והוה ליה מדאורייתא טהור מעליא ושרפי ליה בהדי בשר שנטמא באב הטומאה דטמא מדאורייתא וגבי תרומה טהורה בשש דאיכא נמי איסור דרבנן עלה לא שנא:"
+  },
+  "Rashi on Pesachim 15b:16:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:16:1",
+      "Rashi on Pesachim 15b:16:2",
+      "Pesachim 15b:16",
+      "Rashi on Pesachim 15b:1:1",
+      "Rashi on Pesachim 15b:1:2",
+      "Rashi on Pesachim 15a:1:1",
+      "Rashi on Pesachim 14a:1:1",
+      "Rashi on Pesachim 14b:1:1",
+      "Rashi on Pesachim 14b:4:1"
+    ],
+    "generatedAt": "2026-11-15T13:56:52.300Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי יוסי לטעמיה</strong> - דמשקין טימאוהו לבשר זה מדאורייתא הלכך אינה היא מן המדה דטמא וטמא הוא ולר' ירמיה איכא לאקשויי א\"כ בין לר\"מ בין לר' יוסי מאי מוסיפין לו טומאתו קא מסהיד ר' חנינא מעיקרא בראשון נגע וה\"ל שני והשתא נמי בהדי ראשון שרפינן להו ונראה בעיני דרבי ירמיה אוולד וולד דקאמר רב יהודה סמיך ולא חש למידק כולי האי ונקט מילתיה בתר לישנא דמתני' דתני בוולד הטומאה ולעולם בבשר שנטמא במשקין שנטמא בכלי שנטמא בשרץ דהוו להו משקין שניים והוא שלישי ואשמעינן דשלישי מותר לעשותו שני. ואכתי איכא לאקשויי סוף סוף כיון דאין אוכל מטמא אוכל אלא מדרבנן מאי קא מהני ליה האי בשר ראשון לבשר שלישי אי לשוויה שני מדרבנן מעיקרא נמי שני מדרבנן הוה דאילו משקין שנגע בהן תחלה היו מדרבנן דהא נגע בראשון ואפי' ע\"י שני הן נעשין תחלה אלא על כרחך ר' ירמיה כרב אדא או כאביי ס\"ל דאמרי קדשים עושין טומאה כיוצא בהן ואשמעינן ר' חנינא דשני דרבנן עבדינן ליה שני דאורייתא ולר' מאיר שמעינן מינה דשני דרבנן דהוא טהור מעליא דאורייתא מותר לעשותו שני דאורייתא והוא הדין לתרומה טהורה שנשרפת עם הטמאה ולר' יוסי אשמעינן דשני דרבנן דהוא שלישי דאורייתא עבדינן שני דאורייתא הלכך אינה היא מן המדה ורבינא דאית ליה מקרא מלא דבר הכתוב לא ס\"ל דרבי ירמיה ומוקי לה לתוספת טומאה דרבנן דמתניתין כדאוקימנא ברישא ומאי מדבריהן מדברי ר' אליעזר ורבי יהושע:"
+  },
+  "Rashi on Pesachim 15b:1:1": {
+    "dependsOn": [
+      "Pesachim 15b:1",
+      "Rashi on Pesachim 15b:1:2",
+      "Rashi on Pesachim 15b:1:3",
+      "Pesachim 15a:13"
+    ],
+    "generatedAt": "2026-11-15T12:45:17.981Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפיגול</strong> - לא צריך הכא אלא מסיים הברייתא:"
+  },
+  "Rashi on Pesachim 15b:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:1:1",
+      "Rashi on Pesachim 15b:1:3",
+      "Pesachim 14a:12",
+      "Pesachim 15a:1"
+    ],
+    "generatedAt": "2026-11-15T12:46:05.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הפיגול והנותר</strong> - של קדשים:"
+  },
+  "Rashi on Pesachim 15b:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:1:1",
+      "Rashi on Pesachim 15b:1:2"
+    ],
+    "generatedAt": "2026-11-15T12:49:31.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והטמא</strong> - בשר קודש שנטמא דקיימא לן בפ' אחרון <span class=\"parenthesized\">(ד' קכ:)</span> דגזרו עליהן שיטמאו את הידים ואע\"פ שאין אוכל מטמא אדם גזרו עליהן לטמא מיהת את הידים ולא לטמא את הגוף משום חשדי כהונה ועצלי כהונה כדמפרשין התם ואפילו הכי דאית עלייהו טומאה דרבנן אמרי ב\"ש דאין שורפין פיגול ונותר שאין טמאים מן התורה עם הטמאה שהוא טמא מן התורה וכ\"ש בתרומה טהורה וטמאה ואפי' ב\"ה לא קשרו אלא משום דאית לפיגול ונותר טומא' דרבנן:"
+  },
+  "Rashi on Pesachim 15b:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 15b:1:1",
+      "Rashi on Pesachim 15b:1:2",
+      "Rashi on Pesachim 15b:1:3",
+      "Pesachim 15b:3",
+      "Rashi on Pesachim 15a:1:1",
+      "Rashi on Pesachim 15a:2:1",
+      "Rashi on Pesachim 15a:3:1",
+      "Rashi on Pesachim 15b:4:1",
+      "Rashi on Pesachim 15b:6:1",
+      "Rashi on Pesachim 15b:7:1",
+      "Rashi on Pesachim 15b:8:1"
+    ],
+    "generatedAt": "2026-11-15T12:51:58.281Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וא\"ל</strong> - רבי יוסי לרבי מאיר כי ילפת ליה מדרבי יהושע נמי אינה היא המדה דמודין הן בזו ולקמן פריך אמאי אינה היא המדה:"
+  },
+  "Rashi on Pesachim 15b:4:1": {
+    "dependsOn": [
+      "Pesachim 15b:4",
+      "Rashi on Pesachim 15b:3:1"
+    ],
+    "generatedAt": "2026-11-15T12:54:56.204Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדה ומדה היא</strong> - דהא טהורה גמורה היא החבית הזאת ומשום דסופה לאיבוד שרי לטמויי בידים:"
+  },
+  "Rashi on Pesachim 15b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T12:55:26.104Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דעצים</strong> - שצריך להיסק שתי היסקות:"
+  },
+  "Rashi on Pesachim 15b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T12:56:57.857Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת בשש</strong> - שעדיין אין על הטהורה אלא איסור דרבנן אבל בשבע שנאסרה כבר מן התורה אין לך טומאה גדולה מזו ודברי הכל אף לר' יוסי שורפין:"
+  },
+  "Rashi on Pesachim 15b:8:1": {
+    "dependsOn": [
+      "Pesachim 15b:8",
+      "Rashi on Pesachim 15b:7:1",
+      "Rashi on Pesachim 15a:1:1",
+      "Rashi on Pesachim 14b:1:1",
+      "Rashi on Pesachim 15b:1:1",
+      "Rashi on Pesachim 15b:1:2",
+      "Rashi on Pesachim 15b:1:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 14b:2:1",
+      "Rashi on Pesachim 14b:3:1",
+      "Rashi on Pesachim 14b:4:1",
+      "Rashi on Pesachim 14b:5:1"
+    ],
+    "generatedAt": "2026-11-15T13:01:37.874Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא קסבר ר' יוחנן</strong> - דמתני' דרבי חנינא בולד הטומאה דרבנן ור\"מ מיניה יליף ודוקא נקט שש רבי יוחנן ומשום דאית עליה איסור דרבנן הוא טעמא דר' מאיר אבל אם בא לשורפ' בחמש וארבע מודה רבי מאיר דאין שורפין ואע\"ג דסופה לאיבוד דלאו מדרבי יהושע קא יליף דטעמי' דרבי יהושע התם משום הפסד חולין או דילמא לר' יוחנן נמי ר' מאיר מדרבי יהושע יליף וטעמא דרבי מאיר לאו משום איסורא דרבנן הוא דהוא הדין נמי לחמש וארבע והאי דקאמר ר' יוחנן שש אורחא דמילתא נקט:"
+  },
+  "Rashi on Pesachim 15b:9:1": {
+    "dependsOn": [
+      "Pesachim 15b:9",
+      "Rashi on Pesachim 15b:8:1",
+      "Rashi on Pesachim 15a:1:1",
+      "Rashi on Pesachim 15a:2:1",
+      "Rashi on Pesachim 14b:1:1",
+      "Rashi on Pesachim 14b:2:1",
+      "Rashi on Pesachim 15b:3:1"
+    ],
+    "generatedAt": "2026-11-15T13:13:36.102Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 15b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ל אין</strong> - ודווקא שש קאמר ולקמיה פריך אמאי קאמר ר' יוסי אינה היא המדה:"
+  },
+  "Tosafot on Pesachim 15b:12:1": {
+    "dependsOn": [
+      "Pesachim 15b:12",
+      "Tosafot on Pesachim 15b:8:1",
+      "Rashi on Pesachim 15b:12:2"
+    ],
+    "generatedAt": "2026-11-15T13:37:08.167Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 15b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונשרפת עם הטמאה</strong> - נראה לו לדמות האי דאזיל לאיבוד לז' אבל בו' אין שורפין כיון דלא אזיל לאיבוד אלא משום גזירה דרבנן:"
+  },
+  "Tosafot on Pesachim 15b:16:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 15b:8:1",
+      "Tosafot on Pesachim 15b:12:1",
+      "Tosafot on Pesachim 14b:1:1",
+      "Rashi on Pesachim 15b:16:1",
+      "Rashi on Pesachim 15b:16:2",
+      "Rashi on Pesachim 15b:16:3"
+    ],
+    "generatedAt": "2026-11-15T14:04:39.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 15b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יוסי לטעמיה</strong> - קשה רבי יוסי גופיה אית ליה לקמן <span class=\"parenthesized\">(פסחים דף יח:)</span> טומאת משקין לטמא אחרים דרבנן והא דאית ליה הכא דאורייתא בשיטת ר' עקיבא רבו אמר ואין זה לטעמיה ועוד קשה במה חולקין כיון דר' יוסי אליבא דרבי עקיבא אומר וכי אינו מודה ר' מאיר דלר' עקיבא משקין לטמא אחרים דאורייתא הא ר' עקיבא דריש בהדיא יטמא יטמא בההיא דבו ביום דרש ר' עקיבא ותי' ה\"ר יוסף מירושלים דסבירא לי' לר' מאיר דיטמא דכתיב גבי משקין היינו הכשר ומשקה דמקבל טומאה נפקא ליה מדדריש ר' עקיבא גבי חולין יטמא דשני עושה שלישי ובחולין לכ\"ע אין אוכל מטמא אוכל שלישי ע\"כ היינו משקין:"
+  },
+  "Tosafot on Pesachim 15b:8:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 15b:8:1",
+      "Rashi on Pesachim 15b:8:1"
+    ],
+    "generatedAt": "2026-11-15T13:11:11.297Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 15b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נימא קסבר ר' יוחנן כו' מדברי ר' חנינא</strong> - פ\"ה דמשמע ליה מדקאמר מחלוקת בשש דאי מדרבי יהושע מאי איריא בשש אפי' בד' וה' נמי כיון דאזיל לאיבוד ואין נראה לר\"י דדילמא הא דנקט שש לאו למעוטי ד' וה' אלא משום דבעי למימר אבל בז' ד\"ה שורפין ועוד דבד' וה' לא אזיל לאיבוד דכיון דשרי באכילה ימצא להן אוכלין הרבה ונראה לר\"י דדייק מדקאמר אבל בז' ד\"ה שורפין ואי מדברי רבי יהושע קאמר א\"כ מנלן דבז' שורפין לרבי יוסי כיון דסבירא ליה דהתם שאני דאיכא הפסד חולין אבל בעלמא לא אע\"ג דאזיל לאיבוד א\"כ אפי' בז' לא ישרפו עם הטמא וא\"ת הא דבז' שורפין אפילו לרבי יוסי משום דיליף מדברי רבי עקיבא דשרי לשרוף פסול עם הטמא וי\"ל כיון דמדרבי יהושע יליף ולא מצינו דר\"מ יליף איסור מטומאה מסברא אין לנו ללמוד איסור מטמא אבל אי מדבריה' היינו מדברי רבי חנינא ויליף ר\"מ איסור מטמא ורבי יוסי דאמר אינה היא המדה משום דסבירא ליה ולד טומאה דאורייתא ולא ילפינן מיניה איסור דרבנן דהיינו בשש אבל בז' איסור דאורייתא ילפינן מיניה:"
+  }
+}

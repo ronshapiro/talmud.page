@@ -1,0 +1,334 @@
+{
+  "Rashi on Pesachim 18a:10:1": {
+    "dependsOn": [
+      "Pesachim 18a:8",
+      "Pesachim 18a:9",
+      "Pesachim 18a:10",
+      "Rashi on Pesachim 18a:7:1",
+      "Rashi on Pesachim 18a:7:2",
+      "Rashi on Pesachim 18a:7:3",
+      "Rashi on Pesachim 18a:8:1",
+      "Rashi on Pesachim 18a:8:2",
+      "Pesachim 18a:11",
+      "Pesachim 18a:12",
+      "Rashi on Pesachim 18a:6:1",
+      "Rashi on Pesachim 18a:6:2"
+    ],
+    "generatedAt": "2026-11-15T18:24:07.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי ס\"ד</strong> - האי יטמא דכתיב במשקה בסיפיה דקרא לטמא משקים קאמר ויטמא דרישא דכתיב גבי אוכל ע\"כ לטמא משקין מוקמי ליה לקמיה דהכתיב לעיל מהאי קרא טמא הוא ואמרינן הוא טמא ואין עושה כיוצא בו ומדאיצטריך למעוטי אוכל מכלל דמשקין מטמאי א\"כ יטמא יטמא למה לי ליערבינהו ונכתבינהו כו':"
+  },
+  "Rashi on Pesachim 18a:12:1": {
+    "dependsOn": [
+      "Pesachim 18a:12",
+      "Pesachim 18a:6",
+      "Pesachim 18a:7",
+      "Rashi on Pesachim 18a:6:1",
+      "Rashi on Pesachim 18a:6:2",
+      "Rashi on Pesachim 18a:8:1",
+      "Rashi on Pesachim 18a:12:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3b:1:1",
+      "Rashi on Pesachim 18a:9:1"
+    ],
+    "generatedAt": "2026-11-15T18:30:36.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא</strong> - יטמא דסיפא לטמא את הכלים ואמאי קאמר רבי יוסי לכלים טהור:"
+  },
+  "Rashi on Pesachim 18a:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:12:1"
+    ],
+    "generatedAt": "2026-11-15T18:32:01.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה כלי</strong> - שטימא את המשקה הזה לא יוכל לטמא את הכלי כדאמר לקמן כל אשר בתוכו יטמא מכל האוכל אוכלין ומשקין מיטמאים מאויר כלי חרס ואין כלים מיטמאים מאויר כלי חרס משקין אלו שבאין מחמת כלי אינו דין כו':"
+  },
+  "Rashi on Pesachim 18a:13:1": {
+    "dependsOn": [
+      "Pesachim 18a:13",
+      "Rashi on Pesachim 18a:12:1",
+      "Rashi on Pesachim 18a:12:2",
+      "Rashi on Pesachim 18a:13:1",
+      "Rashi on Pesachim 18a:8:1",
+      "Rashi on Pesachim 18a:8:2"
+    ],
+    "generatedAt": "2026-11-15T18:35:18.521Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא כי לא מטמאו משקין הבאים מחמת כלי</strong> - דבהאי קל וחומר הוא דנפקא לן דאין משקה מטמא כלי <span class=\"parenthesized\">(אימא כי לא מטמאו משקין כלי)</span> הני מילי משקין הבאין מחמת כלי אבל משקין שנגעו בשרץ יטמאוהו:"
+  },
+  "Rashi on Pesachim 18a:1:1": {
+    "dependsOn": [
+      "Pesachim 18a:1"
+    ],
+    "generatedAt": "2026-11-15T17:38:01.720Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטלו במעיה</strong> - דאינן ראויין למי חטאת ואין עוד שמן עליהן ואי אית ליה לרבי יהודה משקין בעלמא מטמאו אוכל נהי דבטלי מתורת מי חטאת לענין דלא הוי טמא אב הטומאה לטמא אדם וכלים שם משקה טמא מי ליכא עלייהו כשאר משקין לטמא בשר זה שהוא אוכל ואמאי בטלו במעיה לגמרי אפילו מלטמא בשר זה דהיינו טומאת אוכלין קלה נהי דטומאה חמורה לא מטמאו אם נגעו אדם וכלים בהן בתוך המעים דהא אין שם מי חטאת עליהן טומאה קלה כגון את הבשר לטמאו דהא משקין בעלמא נינהו ושם טומאה לא פקע מינייהו דניטמאו מחמת עצמן דאין נגיעה גדולה ממה שהן נוגעין בעצמן וכי אזיל שם מי חטאת מינייהו הוו להו משקין שנגעו במי חטאת אלא ש\"מ מכולהו הדר ביה וכיון דבחוץ לא מטמאו משקין אוכלין אלא מדרבנן הכא דמילתא דלא שכיחא לא גזור:"
+  },
+  "Rashi on Pesachim 18a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T17:39:11.642Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טומאה חמורה</strong> - אדם וכלים טומאה קלה אוכלין:"
+  },
+  "Rashi on Pesachim 18a:3:1": {
+    "dependsOn": [
+      "Pesachim 18a:3"
+    ],
+    "generatedAt": "2026-11-15T17:40:05.713Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא בשרה טמא קאמר</strong> - דלא טימא אלא את הבשר ולא תנא אדם וכלים הנוגעין בהן טמאין:"
+  },
+  "Rashi on Pesachim 18a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:3:1",
+      "Rashi on Pesachim 18a:2:1"
+    ],
+    "generatedAt": "2026-11-15T17:44:38.996Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל טומאה חמורה</strong> - שיהא עדיין שמן עליהן לטמא אדם הנוגע בהן לא מטמאי שר' יהודה אומר בטלו במעיה מתורת מי חטאת:"
+  },
+  "Rashi on Pesachim 18a:5:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:7:2",
+      "Pesachim 18a:5",
+      "Rashi on Pesachim 18a:1:1",
+      "Rashi on Pesachim 18a:2:1",
+      "Rashi on Pesachim 18a:3:1",
+      "Rashi on Pesachim 18a:4:1"
+    ],
+    "generatedAt": "2026-11-15T17:57:14.198Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב אשי אמר לעולם לגמרי</strong> - דאפי' שם משקה בעלמא ליכא עלייהו דה\"ל משקה סרוח ותניא בת\"כ וכל משקה אשר ישתה בכל כלי יטמא פרט למשקה סרוח:"
+  },
+  "Rashi on Pesachim 18a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:04:34.646Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:6:1"
+    ],
+    "sourceText": "ר' יוסי תלמידו של ר' עקיבא היה כדתניא ביבמות בהבא על יבמתו <span class=\"parenthesized\">(יבמות דף סב:)</span> והיה העולם שמם עד שבא ר\"ע אצל רבותינו שבדרום ושנאה להן ואלו הן ר\"מ ורבי יהודה ור' יוסי ור\"ש ור\"א בן שמוע:"
+  },
+  "Rashi on Pesachim 18a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:6:1",
+      "Pesachim 18a:6",
+      "Rashi on Pesachim 18a:7:1",
+      "Rashi on Pesachim 18a:7:2",
+      "Rashi on Pesachim 18a:7:3",
+      "Rashi on Pesachim 18a:8:1"
+    ],
+    "generatedAt": "2026-11-15T18:06:20.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דדריש יטמא</strong> - דכתיב גבי אוכלין טמאין יטמא ואיהו נמי דריש יטמא דכתיב גבי משקין טמאין יטמא:"
+  },
+  "Rashi on Pesachim 18a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:06:47.356Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בו ביום</strong> - ביום שמינו את ר\"א בן עזריה לנשיאות:"
+  },
+  "Rashi on Pesachim 18a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:7:1",
+      "Rashi on Pesachim 18a:7:3",
+      "Rashi on Pesachim 18a:5:1"
+    ],
+    "generatedAt": "2026-11-15T18:08:20.825Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשר יפול מהם אל תוכו</strong> - ותניא בהכל שוחטין <span class=\"parenthesized\">(חולין כד:)</span> אע\"פ שלא נגע אלא נתלה באוירו ה\"ל כלי ראשון וכתיב כל אשר בתוכו יטמא מחמת הכלי ה\"ל אוכל שני ואינו אומר טמא אלא יטמא לדרוש ביה יטמא:"
+  },
+  "Rashi on Pesachim 18a:7:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:12:26.466Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימד על ככר שני</strong> - דהא קרא משתעי באוכלין כדכתיב בתריה מכל האוכל אשר יאכל והוא היה בתוך הכלי יטמא אלמא ככר שני עושה שלישי ואף בחולין דקרא סתמא כתיב והא ליכא למימר דאוכלין שבו מקבלין טומאה מן השרץ דליהוי אויר כלי כמאן דמלי טומאה וניהוו אוכל ראשון דא\"כ אף כלים שבאוירו יטמאו ובפרקין מפרשינן לה בהדיא דעל כרחך שני הוא ומן הכלי הוא מקבלה שמטמא את השלישי ואני שמעתי ככר עושה כיוצא בו ואית ליה לר\"ע אוכל מטמא אוכל וא\"א לומר כן משום דלא אשכחן לה בהדיא וע\"י הדחק נאמר וא\"כ כי אקשי לעיל והא אין אוכל מטמא אוכל ודחיק נפשיה ואוקמה מדרבנן טמא נימא כר\"ע ס\"ל דהא ר\"ע גופיה איירי ביה והוסיף עדות על עדותו ולקמן דקאמר לא כך היה ולא מצי לדחויה אלא ע\"י טעם זה לא מצינו טומאה עושה כיוצא בה הרי מצינו לר\"ע ועוד בהדיא אמר לקמן בההוא יטמא לטמא את המשקין ולא אוכל כיוצא בו:"
+  },
+  "Rashi on Pesachim 18a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:13:11.965Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא</strong> - גבי יטמא דמשקין דקאמר רבי יוסי דמטמא אוכל היכי דריש ליה רבי יוסי דמוקי ליה לטמא אוכל ולא לטמא משקה כיוצא בו ולא כלי:"
+  },
+  "Rashi on Pesachim 18a:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:8:1"
+    ],
+    "generatedAt": "2026-11-15T18:13:58.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל משקה אשר ישתה בכל כלי</strong> - אם היה המשקה הזה בתוכו של כלי חרס דהא עלה קאי יטמא ודריש ביה יטמא לטמא את האוכל:"
+  },
+  "Rashi on Pesachim 18a:9:1": {
+    "dependsOn": [
+      "Pesachim 18a:9"
+    ],
+    "generatedAt": "2026-11-15T18:15:14.769Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 18a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מצינו טומאה שעושה כיוצא בו</strong> - כדאמרינן לקמן דלהכי קרינא יטמא למימר דהוא טמא ואין עושה כיוצא בו:"
+  },
+  "Tosafot on Pesachim 18a:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:10:1",
+      "Tosafot on Pesachim 18a:9:1",
+      "Maharsha: Chidushei Halachot on Pesachim 18a:2",
+      "Pesachim 18a:11",
+      "Pesachim 18a:12",
+      "Tosafot on Pesachim 18a:12:1",
+      "Steinsaltz on Pesachim 18a:10",
+      "Steinsaltz on Pesachim 18a:9",
+      "Steinsaltz comment #1 on Pesachim 18a:7",
+      "Steinsaltz comment #2 on Pesachim 18a:7",
+      "Pesachim 18a:10",
+      "Rashi on Pesachim 18a:8:1",
+      "Rashi on Pesachim 18a:8:2",
+      "Rashi on Pesachim 18a:9:1"
+    ],
+    "generatedAt": "2026-11-15T18:27:33.782Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18a:10:1"
+    ],
+    "sourceText": "רבינא אמר מגופיה דקרא לא מצית אמרת דאי ס\"ד לטומאת משקין לא לכתוב אלא חד יטמא תרי זימני למה לי למעוטי שאין טומאה עושה כיוצא בה:"
+  },
+  "Tosafot on Pesachim 18a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T18:33:20.513Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה כלי שמטמא משקין</strong> - וא\"ת משקין הבאין מחמת אוכל לא יטמאו אוכל מהאי ק\"ו וכן אוכל הבא מחמת משקין לא יטמא משקין וי\"ל דהכא עביד שפיר ק\"ו דמה כלי שאין מטמא כלי משום שהוא קל שאינו אב הטומאה דכשהוא אב הטומאה מטמא כלי וכ\"ש משקין הבאים מחמת כלי דקילי טפי אבל מה שאין אוכל מטמא אוכל היינו לפי שאין עושה כיוצא בו וא\"ת משקין הבאים מחמת כלי שנגע במת מנלן דלא מטמאו כלי דמק\"ו דכלי לא אתי דכלי שנגע במת מטמא כלי וי\"ל דהאי קרא בשרץ כתיב אבל משקין שנגעו בכלי שנגע במת לא כתיב:"
+  },
+  "Tosafot on Pesachim 18a:3:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 18a:3:1",
+      "Chokhmat Shlomo on Pesachim 18a:3",
+      "Chullin 73b:10",
+      "Chullin 73b:11",
+      "Chullin 73b:12",
+      "Tosafot on Chullin 129a:6:1",
+      "Rashi on Chullin 129a:12:1"
+    ],
+    "generatedAt": "2026-11-15T17:43:37.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא בשרה טמא קתני</strong> - משמע דוקא בשרה אבל אדם וכלים לא והיינו משום דנפסלו בהיסח הדעת ואם תאמר כיון דפרחה מהן טומאה חמורה אפי' טומאה קלה לא לטמאו דהא אמרי' בפ' בא סימן <span class=\"parenthesized\">(נדה נא.)</span> ובפ' טבול יום <span class=\"parenthesized\">(זבחים קה.)</span> כל שסופו לטמא טומאה חמורה לא בעי הכשר שרץ וחשיב כאילו נגע בשרץ והיינו דוקא בעוד שסופו לטמא טומאה חמורה אבל כשאין ראוי כבר לטמא טומאה חמורה בעי הכשר כדאמרינן בפרק בהמה המקשה <span class=\"parenthesized\">(חולין עג:)</span> גבי בשר הפורש מאבר מן החי דלא מהני ליה מה שסופו לטמא טומאה חמורה כשהיה עם אביו לשויה מוכשר כיון דלאחר שפירש ממנו אין ראוי לטמא טומאה חמורה וי\"ל דשאני התם כששימש מעשה עץ שימש כדאמרינן בהעור והרוטב <span class=\"parenthesized\">(שם דף קכט.)</span> ולכך כשפירש מאביו בעי הכשר אבל מי חטאת צריך שיהו ראויין מתחלה לשתיה ונמצא טומאה חמורה שלהן אינו מעשה עץ אלא מטעם שיהיו ראויין לשתיית אדם דבע\"א לא היו ראויין להזאה ולכך אף כשנפסלו לא פרחה טומאת משקין:"
+  },
+  "Tosafot on Pesachim 18a:4:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 18a:4:1",
+      "Pesachim 18a:4",
+      "Gittin 53a:21",
+      "Rashi on Gittin 53a:21:1",
+      "Rashi on Gittin 53a:20:1",
+      "Rashi on Gittin 53a:20:2",
+      "Rashi on Gittin 53a:20:3",
+      "Rashi on Gittin 53a:19:1",
+      "Rashi on Gittin 53b:1:1",
+      "Rashi on Gittin 53b:1:2"
+    ],
+    "generatedAt": "2026-11-15T17:55:59.625Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטלו במעיה</strong> - אבל בעודם בפיה לא בטלו אע\"ג דאמרינן במסכת פרה <span class=\"parenthesized\">(פ\"ט מ\"ג)</span> דכל העופות פוסלין מי חטאת אור\"י דהתם מיירי קודם קדוש ונפסלים כדפ\"ה בהנזקין <span class=\"parenthesized\">(גיטין נג)</span> דבעינן שתהא חיותן בכלי או משום מלאכה והכא איירי לאחר קידוש מדחשיב להו סופו לטמא טומאה חמורה ומלאכה אינה פוסלת אחר קידוש כדתנן במסכת פרה <span class=\"parenthesized\">(פ\"ד מ\"ד)</span> מים מלאכה פוסלת בהן עד שיתן לתוכן אפר <span class=\"parenthesized\">(ובסיפא)</span> יליף לה מדכתיב למי נדה וכבר הם למי נדה ובטלו במעיה משום היסח הדעת ובתוספת' <span class=\"parenthesized\">(דמקוואות פ\"ח)</span> מפרש טעמ' דר\"י משום דכתיב למשמרת יצאו אלו שאינם למשמרת הואיל ששתתה מהן הפרה:"
+  },
+  "Tosafot on Pesachim 18a:9:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 18a:9:1",
+      "Maharsha: Chidushei Halachot on Pesachim 18a:1",
+      "Meir Lublin: Maharam on Pesachim 18a:5",
+      "Pesachim 18a:7",
+      "Pesachim 18a:8",
+      "Pesachim 18a:9",
+      "Pesachim 18a:10",
+      "Pesachim 14a:8",
+      "Pesachim 14a:9",
+      "Pesachim 18b:8",
+      "Tosafot on Pesachim 18a:3:1",
+      "Tosafot on Pesachim 18a:4:1",
+      "Tosafot on Pesachim 18a:10:1",
+      "Tosafot on Pesachim 18a:12:1"
+    ],
+    "generatedAt": "2026-11-15T18:19:00.815Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 18a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא מצינו טומאה עושה כיוצא בה</strong> - <span class=\"rashi-quotation\">פי' הקונט'</span> כדדרשינן לקמן יטמא שאין טומאה עושה כיוצא בה ואית ספרים דל\"ג לקמן ולשון לא מצינו לא משמע כן דמשמע דמעלמא נפקא לן ממשמעות ומפר\"י לא מצינו טומאה עושה כיוצא בה כדדרשינן לעיל <span class=\"parenthesized\">(פסחים דף יד.)</span> מטמא הוא:"
+  }
+}

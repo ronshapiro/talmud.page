@@ -1,4 +1,100 @@
 {
+  "Rashi on Pesachim 4a:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 4a:10:1",
+      "Rashi on Pesachim 4a:10:2",
+      "Rashi on Pesachim 4a:1:1",
+      "Rashi on Pesachim 4a:2:1",
+      "Rashi on Pesachim 4a:5:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-11-14T21:42:21.191Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חובת הדר</strong> - לפי שהיא משמרתו וכתיב ביתך ביאתך נכנס ויוצא בה אבל הכא בדיקת חמץ דרבנן דאי משום בל יראה ובל ימצא הא אמר לקמן דסגי ליה בבטול בעלמא אי מסיח דעתיה מיניה ומשוי ליה כעפרא ואמר כל חמירא דבביתא הדין כו' ורבנן הוא דאצרוך בדיקה והשתא כי האי גוונא מיבעיא לן טורח זה על מי מוטל:"
+  },
+  "Rashi on Pesachim 4a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T21:43:25.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסירת מפתח</strong> - הוא קנין השכירות ואם עד שלא מסר המפתח נכנס ליל ארבעה עשר חלה חובת הבדיקה על המשכיר שעדיין היתה ברשותו ואף על פי שמסר לו ביום כבר חלה חובה עליו:"
+  },
+  "Rashi on Pesachim 4a:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 4a:11:2",
+      "Rashi on Pesachim 4a:11:3",
+      "Rashi on Pesachim 4a:1:1",
+      "Rashi on Pesachim 4a:2:1",
+      "Rashi on Pesachim 4a:5:1"
+    ],
+    "generatedAt": "2026-11-14T21:47:09.608Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בארבעה עשר</strong> - שחרית מי מחזקינן ליה להאי משכיר דודאי בדקו אמש כמצות חכמים אי לא:"
+  },
+  "Rashi on Pesachim 4a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 4a:11:1",
+      "Rashi on Pesachim 4a:11:3"
+    ],
+    "generatedAt": "2026-11-14T21:48:00.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאי נפקא מיניה לישייליה</strong> - להאי אם בדקו אם לאו:"
+  },
+  "Rashi on Pesachim 4a:11:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 4a:11:1",
+      "Rashi on Pesachim 4a:11:2"
+    ],
+    "generatedAt": "2026-11-14T21:48:49.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון דליתיה להאי</strong> - משכיר למישייליה ומיבעי לן לאטרוחי להאי שוכר לבדוק מספק מאי:"
+  },
+  "Rashi on Pesachim 4a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 4a:12:2",
+      "Pesachim 4a:11"
+    ],
+    "generatedAt": "2026-11-14T21:49:25.460Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמנין על ביעור חמץ</strong> - להעיד בארבעה עשר שבדקו בעליו אמש:"
+  },
+  "Rashi on Pesachim 4a:12:2": {
+    "dependsOn": [
+      "Pesachim 4a:12",
+      "Rashi on Pesachim 4a:12:1"
+    ],
+    "generatedAt": "2026-11-14T21:50:35.349Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 4a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא נאמנין</strong> - הא לאו בני אסהודי נינהו לאו משום דבלאו אמירה דידהו נמי מחזקינן ליה בדוק דודאי לא עבר זה על דברי חכמים ואפילו הוא עם הארץ לשאר דברים חבר הוא לענין בדיקה דהכל זריזין:"
+  },
   "Rashi on Pesachim 4a:1:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-03T08:43:03.987Z",
@@ -208,6 +304,20 @@
       "Rashi on Pesachim 4a:9:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לעשות לו מזוזה</strong> - אלמא מידי דמצוה עליה רמיא:"
+  },
+  "Tosafot on Pesachim 4a:10:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 4a:10:1",
+      "Rashi on Pesachim 4a:10:1",
+      "Rashi on Pesachim 4a:10:2"
+    ],
+    "generatedAt": "2026-11-14T21:46:19.824Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם משמסר המפתח</strong> - פירש\"י דמסירת המפתחות קונה ואין נראה לר\"י דהא אמר במרובה <span class=\"parenthesized\">(ב\"ק עט.)</span> כשם שקרקע נקנית בכסף בשטר ובחזקה כך שכירות [קרקע] נקנה בכסף וכו' ולא אמרי' דמהני מסירת המפתח אלא כמאן דאמר לך חזק וקני כדאמרינן בהפרה <span class=\"parenthesized\">(ב\"ק נב. ושם)</span> ומפרש ר\"י דהכא שמסר לו המפתח ולא החזיק ומי שיש בידו מפתח כשחל י\"ד חייב לבדוק דאותו שאין בידו מפתח איך יכנס ויבדוק מיהו אם הפקיד אדם מפתח ביתו אצל אדם אחר אינו חייב הנפקד לבודקו אלא דוקא כשרוצה להחזיק בבית ולקנותו [וע\"ע תו' ב\"ק נב. ד\"ה כיון ותו' ב\"ב נב: ד\"ה נעל]:"
   },
   "Tosafot on Pesachim 4a:1:1": {
     "dependsOn": [],
