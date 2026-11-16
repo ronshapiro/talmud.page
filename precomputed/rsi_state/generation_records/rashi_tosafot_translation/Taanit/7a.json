@@ -1,0 +1,478 @@
+{
+  "Rashi on Taanit 7a:10:1": {
+    "dependsOn": [
+      "Taanit 7a:10",
+      "Rashi on Taanit 7a:10:1",
+      "Rashi on Taanit 7a:11:1",
+      "Rashi on Taanit 7a:11:2",
+      "Rashi on Berakhot 63b:12:1",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 7a:4:3",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 7a:2:2",
+      "Rashi on Taanit 7a:3:1",
+      "Chidushei Agadot on Taanit 7a:3",
+      "Rashi on Makkot 10a:20:1",
+      "Rashi on Makkot 10a:20:2",
+      "Rashi on Makkot 10a:20:3",
+      "Chokhmat Shlomo on Makkot 10a:2",
+      "Chokhmat Shlomo on Makkot 10a:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Megillah 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T07:12:53.677Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמוסיפין טפשות דכתיב נואלנו</strong> – אשר נואלנו מתרגם דאיטפשנא:"
+  },
+  "Rashi on Taanit 7a:11:1": {
+    "dependsOn": [
+      "Taanit 7a:11",
+      "Rashi on Taanit 7a:11:2"
+    ],
+    "generatedAt": "2026-11-16T07:13:40.587Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחוטאין</strong> – דכתיב נואלו גבי חטאנו:"
+  },
+  "Rashi on Taanit 7a:11:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:11:1",
+      "Steinsaltz on Taanit 7a:11"
+    ],
+    "generatedAt": "2026-11-16T07:14:38.832Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא מהכא נואלו שרי צוען וגו' והתעו את מצרים</strong> – ותועה היינו חוטא:"
+  },
+  "Rashi on Taanit 7a:12:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:11:1",
+      "Rashi on Taanit 7a:11:2",
+      "Rashi on Taanit 7a:12:2"
+    ],
+    "generatedAt": "2026-11-16T07:16:26.292Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תורה כעץ</strong> – דכתיב עץ חיים היא למחזיקים בה כשמדליק את האור מצית את העצים דקין תחלה:"
+  },
+  "Rashi on Taanit 7a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:18:39.051Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קטנים מחדדין</strong> – ששואלין כל שעה:"
+  },
+  "Rashi on Taanit 7a:13:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:13:1",
+      "Rashi on Taanit 7a:4:2"
+    ],
+    "generatedAt": "2026-11-16T07:22:29.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">התיו</strong> – משמע להוליך לו מים:"
+  },
+  "Rashi on Taanit 7a:13:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:13:1",
+      "Rashi on Taanit 7a:13:2",
+      "Rashi on Taanit 7a:13:3",
+      "Rashi on Taanit 7a:13:4",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 2a:1:1",
+      "Rashi on Taanit 2a:1:2"
+    ],
+    "generatedAt": "2026-11-16T07:23:49.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכתיב לכו למים</strong> – ילך הוא עצמו:"
+  },
+  "Rashi on Taanit 7a:13:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:13:1",
+      "Rashi on Taanit 7a:13:2",
+      "Rashi on Taanit 7a:13:3",
+      "Rashi on Taanit 7a:13:4"
+    ],
+    "generatedAt": "2026-11-16T07:26:52.420Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תלמיד <span class=\"parenthesized\">(חכם)</span> הגון</strong> – שרוצה ללמוד ממך מצוה לרב לילך אצלו במקומו:"
+  },
+  "Rashi on Taanit 7a:13:4": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:13:1",
+      "Rashi on Taanit 7a:13:2",
+      "Rashi on Taanit 7a:13:3",
+      "Rashi on Taanit 7a:13:4",
+      "Tosafot on Taanit 7a:7:1",
+      "Rashi on Taanit 7a:6:1",
+      "Rashi on Taanit 7a:6:2"
+    ],
+    "generatedAt": "2026-11-16T07:29:58.546Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו</strong> – ילך הוא אצל הרב:"
+  },
+  "Rashi on Taanit 7a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:30:21.706Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יפוצו מעינותיך חוצה</strong> – אם הגון הוא אמור לו סתרי תורה:"
+  },
+  "Rashi on Taanit 7a:14:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:14:1",
+      "Rashi on Taanit 7a:14:2"
+    ],
+    "generatedAt": "2026-11-16T07:34:49.937Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם לאו יהיו לך לבדך</strong> – ואין לזרים אתך:"
+  },
+  "Rashi on Taanit 7a:16:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:16:2",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 7a:2:2"
+    ],
+    "generatedAt": "2026-11-16T07:37:00.517Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה משקים הללו</strong> – מים יין וחלב זו התורה שאינו נותן בה כלום ויודעה ולומדה:"
+  },
+  "Rashi on Taanit 7a:16:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:37:29.247Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפחות שבכלים</strong> – במאני דפחרא:"
+  },
+  "Rashi on Taanit 7a:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:42:12.303Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאני דפחרא</strong> – בדרך שחוק אמר ומרמז מה את אומרת לי והלא אביך נותן יין בכלים מכוערין של חרס:"
+  },
+  "Rashi on Taanit 7a:17:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:17:1",
+      "Rashi on Taanit 7a:17:2",
+      "Rashi on Taanit 7a:18:1",
+      "Rashi on Taanit 7a:18:2"
+    ],
+    "generatedAt": "2026-11-16T07:47:35.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואלא במאי נירמיה</strong> – אם לא בשל חרס הא כולי עבדי הכי:"
+  },
+  "Rashi on Taanit 7a:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:48:13.758Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותקיף</strong> – החמיץ:"
+  },
+  "Rashi on Taanit 7a:18:2": {
+    "dependsOn": [
+      "Taanit 7a:17",
+      "Taanit 7a:18",
+      "Rashi on Taanit 7a:18:1",
+      "Rashi on Taanit 7a:18:2",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 7a:3:1",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Taanit 7a:17:1",
+      "Steinsaltz on Taanit 7a:18:1",
+      "Steinsaltz on Taanit 7a:18"
+    ],
+    "generatedAt": "2026-11-16T07:52:24.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי היכי דאמרה לי</strong> – אי חכמה מפוארה בכלי מכוער הכי אמרי לה דיין משתמר בכלי מכוער אף התורה מתקיימת בי יותר משאילו הייתי נאה:"
+  },
+  "Rashi on Taanit 7a:1:1": {
+    "dependsOn": [
+      "Taanit 7a:1",
+      "Rashi on Berakhot 59b:8:1",
+      "Rashi on Berakhot 59b:8:2",
+      "Rashi on Berakhot 59b:8:3",
+      "Rashi on Taanit 6b:17:1",
+      "Rabbeinu Chananel on Taanit 7a:1:1",
+      "Shulchan Arukh, Orach Chayim 221:2",
+      "Rabbeinu Chananel on Taanit 7a:1",
+      "Steinsaltz on Taanit 7a:1",
+      "Steinsaltz comment #1 on Taanit 7a:1"
+    ],
+    "generatedAt": "2026-11-16T06:33:37.486Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למימרינהו לתרוייהו</strong> – ברוך אתה ברוב ההודאות במרבית ההודאות האל של כל ההודאות משמע ומתחלה היה משמע רוב ממש ולא מרובות וכמו כן בישתבח אל מלך גדול בתשבחות אל ההודאות. מפי רבי:"
+  },
+  "Rashi on Taanit 7a:2:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:2",
+      "Rashi on Taanit 7a:3:1",
+      "Rashi on Taanit 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rabbeinu Chananel on Taanit 7a:2:1",
+      "Rabbeinu Chananel on Taanit 7a:2:2",
+      "Steinsaltz on Taanit 7a:2",
+      "Rabbeinu Chananel on Taanit 7a:2",
+      "Steinsaltz comment #1 on Taanit 7a:2",
+      "Steinsaltz comment #2 on Taanit 7a:2",
+      "Steinsaltz comment #3 on Taanit 7a:2"
+    ],
+    "generatedAt": "2026-11-16T06:40:46.175Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:2:1"
+    ],
+    "sourceText": "רשעי עובדי כוכבים אינן חיין כי תולעתם לא תמות ואשם לא תכבה <span class=\"parenthesized\">(ישעיהו ס״ו:כ״ד)</span>:"
+  },
+  "Rashi on Taanit 7a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T06:43:41.168Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופליגא דרב יוסף</strong> – דאיהו אמר כתחיית המתים ולא יותר שבה חיים בני אדם שהתבואה גדילה בו:"
+  },
+  "Rashi on Taanit 7a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T06:46:45.269Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמטר לקחי</strong> – השוה לקח למטר:"
+  },
+  "Rashi on Taanit 7a:4:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 7a:4:3"
+    ],
+    "generatedAt": "2026-11-16T06:47:51.005Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יערף</strong> – כמו אף שמיו יערפו טל <span class=\"parenthesized\">(דברים ל״ג:כ״ח)</span> ושחקים ירעפו טל <span class=\"parenthesized\">(משלי ג׳:כ׳)</span> שהיא מרבה הפירות:"
+  },
+  "Rashi on Taanit 7a:4:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 7a:4:3",
+      "Rashi on Taanit 7a:13:1"
+    ],
+    "generatedAt": "2026-11-16T06:48:55.765Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב תזל כטל</strong> – דמשמע נחת:"
+  },
+  "Rashi on Taanit 7a:4:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 7a:4:3",
+      "Rashi on Taanit 7a:6:1",
+      "Rashi on Taanit 7a:6:2",
+      "Rashi on Taanit 7a:8:1"
+    ],
+    "generatedAt": "2026-11-16T06:55:03.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערפיהו כמטר</strong> – הרגהו:"
+  },
+  "Rashi on Taanit 7a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T06:55:39.942Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשמה</strong> – משום כאשר צוני ה' אלהי ולא כדי להקרות רבי:"
+  },
+  "Rashi on Taanit 7a:6:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:6:2",
+      "Steinsaltz on Taanit 7a:6:1",
+      "Steinsaltz on Taanit 7a:6"
+    ],
+    "generatedAt": "2026-11-16T06:58:23.097Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יכילנא</strong> – למיגמר:"
+  },
+  "Rashi on Taanit 7a:6:2": {
+    "dependsOn": [
+      "Taanit 7a:6",
+      "Rashi on Taanit 7a:6:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:5:1"
+    ],
+    "generatedAt": "2026-11-16T07:00:03.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי אדם עץ השדה</strong> – אלא מקיש אדם לעץ השדה מה עץ השדה אם עץ מאכל הוא ממנו תאכל ואותו לא תכרות כך תלמידי חכמים אם הגון הוא ממנו תאכל למוד הימנו ואם לאו אותו תשחית סור מעליו:"
+  },
+  "Rashi on Taanit 7a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:04:57.986Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברזל בברזל יחד</strong> – ואיש יחד פני רעהו מה ברזל זה אחד מחדד את חבירו כגון סכין על גבי חבירתה:"
+  },
+  "Rashi on Taanit 7a:9:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:9:1",
+      "Rashi on Taanit 7a:9:2"
+    ],
+    "generatedAt": "2026-11-16T07:06:29.829Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה דולקת יחידי</strong> – עץ אחד אינה דולקת אלא ב' או ג' ביחד:"
+  },
+  "Rashi on Taanit 7a:9:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7a:9:1",
+      "Rashi on Taanit 7a:9:2",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Taanit 7a:4:2",
+      "Rashi on Taanit 7a:4:3"
+    ],
+    "generatedAt": "2026-11-16T07:07:45.391Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יחידי</strong> – בלא חבר שיחדדנו:"
+  },
+  "Tosafot on Taanit 7a:16:1": {
+    "dependsOn": [
+      "Eruvin 55a:2",
+      "Eruvin 55a:3",
+      "Eruvin 55a:1",
+      "Gilyon HaShas on Taanit 7a:1"
+    ],
+    "generatedAt": "2026-11-16T07:40:23.536Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף דברי תורה וכו'</strong> - וכן נמי אמרינן בעירובין פ' כיצד מעברין <span class=\"parenthesized\">(עירובין דף נה.)</span> לא בשמים היא ולא מעבר לים היא כלומר לא תמצא התורה במי שמגביה עצמו כשמים שדעתו גבוה ולא בסוחרים ההולכים במדינת הים בעבר הים דאי ספרא לא סייפא ואי סייפא לא ספרא והכי נמי איתא התם לא בסחרנין ולא בתגרין ולא באיסטרולגין כלומר באותן שרואין בכוכבים אמרו ליה לשמואל והא מר איסטרולגוס הוא אמר להו תיתי לי דלא מעיינא בהו אלא בעידן דנפקא למיא פירוש להטיל מים ולא אני מבטל לעצמי:"
+  },
+  "Tosafot on Taanit 7a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T06:57:07.897Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל העוסק בתורה שלא לשמה תורתו נעשית לו סם המות</strong> - וקשה והלא אמרינן <span class=\"parenthesized\">(פסחים דף נ:)</span> לעולם יעסוק אדם בתורה אע\"ג שאינה לשמה שמתוך שלא לשמה בא לשמה ויש לומר דתרי שלא לשמה הוי דמה שאמרינן לעולם יעסוק בתורה אפילו שלא לשמה היינו כלומר כדי שיקרא רבי או כדי שיכבדוהו ומה שאמרינן הכא כל העוסק בתורה שלא לשמה נעשה לו סם המות היינו מי שלומד לקנטר:"
+  },
+  "Tosafot on Taanit 7a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T07:03:51.336Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם תלמיד חכם הגון ממנו תאכל</strong> - פירוש למוד לפניו ואותו לא תכרות כלומר לא תפרד ממנו לילך לפני רב אחר ואם לאו לא תלמוד לפניו והא דאמרינן דלומדים מת\"ח אע\"פ שאינו הגון כר\"מ שהיה לומד לפני אחר במסכת חגיגה <span class=\"parenthesized\">(דף טו.)</span> היינו דוקא תלמיד חכם <span class=\"parenthesized\">(אחר)</span> יכול ללמוד לפניו לפי שלא ילמוד ממעשיו אבל אם אינו תלמיד חכם אינו רשאי ללמוד לפניו:"
+  }
+}
