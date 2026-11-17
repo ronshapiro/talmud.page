@@ -297,7 +297,8 @@ export async function commitAndPushPendingCandidates(
   const runPages = extractPagesFromPaths(parseStatusPaths(status));
   const task = options.task ?? "rashi_tosafot_translation";
   const backend = options.backend ?? "claude";
-  const commitMessage = options.message ?? `${task} | ${backend}: new pending translation candidates`;
+  const commitPages = (options.pages && options.pages.length > 0) ? options.pages : runPages;
+  const commitMessage = options.message ?? formatPrTitle(task, backend, commitPages);
 
   const preCommitSha = deps.getCurrentHeadSha ? await deps.getCurrentHeadSha() : undefined;
 
@@ -308,7 +309,7 @@ export async function commitAndPushPendingCandidates(
 
   const postCommitSha = deps.getCurrentHeadSha ? await deps.getCurrentHeadSha() : undefined;
 
-  let prPages = (options.pages && options.pages.length > 0) ? options.pages : runPages;
+  let prPages = commitPages;
   if (deps.getBranchChangedPaths) {
     try {
       const branchPaths = await deps.getBranchChangedPaths(BASE_BRANCH, branch);
