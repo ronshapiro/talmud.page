@@ -1,0 +1,368 @@
+{
+  "Rashi on Pesachim 25b:10:1": {
+    "dependsOn": [
+      "Pesachim 25b:10"
+    ],
+    "generatedAt": "2026-11-16T06:03:23.134Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא דאמרי</strong> - מודה רבא היכא דלא קא מיכוין אע\"ג שאפשר שרי ר' שמעון דבהכי פלוגתייהו דר' יהודה ור' שמעון ובין לאביי ובין לרבא לר' יהודה אסור לרבי שמעון שרי:"
+  },
+  "Rashi on Pesachim 25b:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:10:1",
+      "Rashi on Pesachim 25b:10:3"
+    ],
+    "generatedAt": "2026-11-16T06:04:00.641Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולי עלמא</strong> - אביי ורבא לא פליגי דשרי ואפילו לרבי יהודה:"
+  },
+  "Rashi on Pesachim 25b:10:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:10:1",
+      "Rashi on Pesachim 25b:10:2",
+      "Rashi on Pesachim 25b:10:4",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:4:1",
+      "Rashi on Pesachim 25b:5:1"
+    ],
+    "generatedAt": "2026-11-16T06:05:15.571Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי דלא אפשר וקא מיכוין</strong> - ומיהו אליבא דר' שמעון דחשיבא ליה כוונה דמתיר אפי' בדאפשר הואיל ולא קא מיכוין אלמא אכוונה קפיד היכא דקא מכוין אע\"ג דלא אפשר אסור:"
+  },
+  "Rashi on Pesachim 25b:10:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:10:1",
+      "Rashi on Pesachim 25b:10:2",
+      "Rashi on Pesachim 25b:10:3",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:2",
+      "Rashi on Pesachim 25b:3:3",
+      "Pesachim 25b:8",
+      "Pesachim 25b:9",
+      "Pesachim 25b:11",
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-11-16T06:08:21.903Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג כי פליגי אליבא דר' יהודה דאמר לא שנא מתכוין ולא שנא אין מתכוין אפשר אסור</strong> - ולא גרסינן ולא אפשר שרי דהא לא שמעינן ליה דאמר הכי דאי שמעינן ליה הכי היכי פליג רבא למיסר:"
+  },
+  "Rashi on Pesachim 25b:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:10:1",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:2",
+      "Pesachim 25b:10",
+      "Pesachim 25b:11",
+      "Tosafot on Pesachim 25b:11:1"
+    ],
+    "generatedAt": "2026-11-16T06:10:14.325Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי כר' יהודה</strong> - דקסבר כיון דאסר רבי יהודה בדאפשר אע\"ג דלא קא מיכוין שמע מינה לא חשבינן ליה כוונה אלא בדאפשר ולא אפשר תליא טעמא הלכך היכא דלא אפשר אע\"ג דקא מיכוין לא איכפת ליה לרבי יהודה:"
+  },
+  "Rashi on Pesachim 25b:1:1": {
+    "dependsOn": [
+      "Pesachim 25b:1",
+      "Rashi on Pesachim 25b:1:1",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:4:1",
+      "Pesachim 25b:4"
+    ],
+    "generatedAt": "2026-11-16T05:25:09.111Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושפיכות דמים</strong> - כגון אמרו לו הרוג ישראל חבירך ואם לאו תיהרג:"
+  },
+  "Rashi on Pesachim 25b:3:1": {
+    "dependsOn": [
+      "Pesachim 25b:3",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:2",
+      "Rashi on Pesachim 25b:3:3",
+      "Rashi on Pesachim 25b:2:1",
+      "Rashi on Pesachim 25b:4:1",
+      "Rashi on Pesachim 25b:5:1"
+    ],
+    "generatedAt": "2026-11-16T05:27:20.711Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה למדנו מרוצח לנערה המאורסה</strong> - והלא פירש בה אונס פטור כדכתיב ולנערה לא תעשה דבר אלא נראה כמי שרוצח בא ללמד כאן ונמצא שהוקש כאן להיות למד מכאן והכי קאמר כרוצח כנערה שניהן שוין כמו והיה כעם ככהן <span class=\"parenthesized\">(ישעיהו כד)</span> ולא נאמר והיה העם ככהן:"
+  },
+  "Rashi on Pesachim 25b:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:3",
+      "Rashi on Pesachim 25b:1:1",
+      "Rashi on Pesachim 25a:1:1",
+      "Rashi on Pesachim 24b:1:1"
+    ],
+    "generatedAt": "2026-11-16T05:28:48.653Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניתן להצילה</strong> - ניתן רשות לרואה שהוא רודף אחריה שיצילנה ממנו בנפשו של רודף כדכתיב <span class=\"parenthesized\">(דברים כב)</span> ואין מושיע לה הא אם יש מושיע צריך להושיעה בכל אשר יכול אפילו בהריגתו אם אין יכול להציל באחד מאבריו יהרגנו:"
+  },
+  "Rashi on Pesachim 25b:3:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:2",
+      "Rashi on Sanhedrin 74a:19:1",
+      "Rashi on Pesachim 25b:4:1",
+      "Rashi on Pesachim 25b:4:2",
+      "Rashi on Pesachim 25b:5:1",
+      "Pesachim 25b:4"
+    ],
+    "generatedAt": "2026-11-16T05:31:04.384Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יהרג</strong> - אם אמר לו עו\"ג הרוג או תיהרג יהרג ואל יעבור עבירה זו:"
+  },
+  "Rashi on Pesachim 25b:4:1": {
+    "dependsOn": [
+      "Jastrow, מָרֵי I 1",
+      "Jastrow, *דּוּרַאי 1",
+      "Steinsaltz on Pesachim 25b:4"
+    ],
+    "generatedAt": "2026-11-16T05:34:54.584Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרי דוראי</strong> - מושל עירי:"
+  },
+  "Rashi on Pesachim 25b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:37:08.707Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי חזית דדמא דידך סומק</strong> - כלומר כלום באתה לישאל על כך אלא מפני שאתה יודע שאין מצוה עומדת בפני פיקוח נפש וסבור אתה שאף זו תדחה מפני פיקוח נפשך אין זו דומה לשאר עבירות דמ\"מ יש כאן אבוד נפש והתורה לא התירה לדחות את המצוה אלא מפני חיבת נפשו של ישראל וכאן עבירה נעשית ונפש אבודה מי יאמר שנפשך חביבה לפני המקום יותר משל זה דילמא של זה חביבה טפי עליו ונמצא עבירה נעשית ונפש אבודה:"
+  },
+  "Rashi on Pesachim 25b:5:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:5:2",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:3:2"
+    ],
+    "generatedAt": "2026-11-16T05:37:46.784Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שייף</strong> - מושח:"
+  },
+  "Rashi on Pesachim 25b:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:5:1",
+      "Jastrow, גּוּהַרְקָא II 1"
+    ],
+    "generatedAt": "2026-11-16T05:39:11.059Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גוהרקי דערלה</strong> - בוסר זיתים קטנים משום רפואה דקסבר מותר להתרפאות באיסורי הנאה:"
+  },
+  "Rashi on Pesachim 25b:6:1": {
+    "dependsOn": [
+      "Jastrow, אִישְׁתָּא 1",
+      "Jastrow, צְמִירְתָּא 1",
+      "Steinsaltz In-Depth comment #1 on Pesachim 25b:6",
+      "Steinsaltz on Pesachim 25b:6",
+      "Sefer HeArukh, Letter Alef 946",
+      "Rashi on Avodah Zarah 28a:2:3",
+      "Rashi on Bava Kamma 60a:6:1",
+      "Rashi on Bava Kamma 60a:6:2",
+      "Rashi on Bava Kamma 60a:6:3",
+      "Rashi on Bava Kamma 60a:6:4",
+      "Rashi on Pesachim 25b:5:1",
+      "Rashi on Pesachim 25b:5:2",
+      "Rashi on Pesachim 25b:6:2",
+      "Rashi on Pesachim 25b:4:1"
+    ],
+    "generatedAt": "2026-11-16T05:42:38.224Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אישתא צמירתא</strong> - חולי שקורין מלוי\"י צמירתא חם כמו דצמרה צמורי בבבא קמא <span class=\"parenthesized\">(דף ס.)</span>:"
+  },
+  "Rashi on Pesachim 25b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:45:03.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך הנאתו</strong> - לאחר שיתבשלו ויוצא שמנן בבית הבד:"
+  },
+  "Rashi on Pesachim 25b:7:1": {
+    "dependsOn": [
+      "Pesachim 25b:7"
+    ],
+    "generatedAt": "2026-11-16T05:45:43.567Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותרת</strong> - אין צריך לפרוש הימנה כדמפרש:"
+  },
+  "Rashi on Pesachim 25b:8:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:8:2",
+      "Rashi on Pesachim 25b:8:3"
+    ],
+    "generatedAt": "2026-11-16T05:47:07.807Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי גרסינן אפשר וקא מיכוין לא אפשר וקא מיכוין כולי עלמא לא פליגי דאסיר</strong> - אפשר לו ליבדל וקא מיכוין להתקרב כדי ליהנות כגון ריח של ע\"ז או אפילו אי אפשר לו ליבדל ומיהו מתכוין הוא וחביב הוא לו ליהנות:"
+  },
+  "Rashi on Pesachim 25b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:47:39.399Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אפשר</strong> - לו ליבדל ולא קא מיכוין ליהנות דאיכא תרתי להיתר לכ\"ע שרי:"
+  },
+  "Rashi on Pesachim 25b:8:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:8:1",
+      "Rashi on Pesachim 25b:8:2"
+    ],
+    "generatedAt": "2026-11-16T05:48:14.601Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי דאפשר</strong> - לו ליבדל ולא נבדל ומיהו לא קא מיכוון:"
+  },
+  "Rashi on Pesachim 25b:9:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:9:1",
+      "Rashi on Pesachim 25b:9:2",
+      "Rashi on Pesachim 25b:8:1",
+      "Rashi on Pesachim 25b:8:2",
+      "Rashi on Pesachim 25b:1:1",
+      "Rashi on Pesachim 25b:3:1",
+      "Rashi on Pesachim 25b:4:1",
+      "Rashi on Pesachim 25b:5:1",
+      "Rashi on Pesachim 25b:6:1",
+      "Rashi on Pesachim 25b:7:1",
+      "Rashi on Pesachim 25a:1:1",
+      "Rashi on Pesachim 25a:2:1",
+      "Rashi on Pesachim 24b:1:1"
+    ],
+    "generatedAt": "2026-11-16T05:59:10.203Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:9:1"
+    ],
+    "sourceText": "פלוגתא דרבי יהודה ורבי שמעון במסכת שבת <span class=\"parenthesized\">(דף כב.)</span> בגרירת מטה וכסא וספסל ובמסכת ביצה <span class=\"parenthesized\">(דף כג:)</span>:"
+  },
+  "Rashi on Pesachim 25b:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25b:9:1",
+      "Rashi on Pesachim 25b:10:1",
+      "Rashi on Pesachim 25b:11:1",
+      "Rashi on Pesachim 25a:1:1",
+      "Rashi on Pesachim 25a:2:1",
+      "Rashi on Pesachim 24a:1:1",
+      "Rashi on Pesachim 2b:1:1",
+      "Pesachim 25b:9",
+      "Rashi on Pesachim 24b:2:1"
+    ],
+    "generatedAt": "2026-11-16T06:02:36.741Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא אפשר</strong> - כגון שצריך לאותן כלים ואין יכול להגביהן על כתיפו ואביי סבר בקטנים נמי שרי רבי שמעון אע\"פ שאפשר להגביהן על כתיפו והכי אמרינן במס' שבת ולרבא לא שרי ר' שמעון אלא בגדולים:"
+  },
+  "Tosafot on Pesachim 25b:11:1": {
+    "dependsOn": [
+      "Pesachim 25b:11",
+      "Shabbat 29b:8"
+    ],
+    "generatedAt": "2026-11-16T06:11:56.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אביי כרבי יהודה</strong> - נראה דסבר אביי הואיל ואפשר ולא מיכוין אסור ובלא אפשר ולא מיכוין שרי אלמא דאיסור משום דאפשר הוא ומה שהיה בספרים בבמה מדליקין <span class=\"parenthesized\">(שבת כט:)</span> ופליגא דעולא דאמר עולא מחלוקת בקטנים אבל בגדולים ד\"ה אסור שיבוש הוא דבכולי שמעתא שרי טפי לא אפשר מהיכא דאפשר וגדולים היינו לא אפשר אלא גרס ד\"ה מותר והיינו כלישנא בתרא דהכא דבלא אפשר ולא מיכוין כ\"ע ל\"פ דשרי:"
+  },
+  "Tosafot on Pesachim 25b:3:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 25b:3:1",
+      "Tosafot on Sanhedrin 74b:4:1",
+      "Tosafot on Pesachim 25b:8:1",
+      "Tosafot on Pesachim 24a:1:1"
+    ],
+    "generatedAt": "2026-11-16T05:34:00.071Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף נערה המאורסה יהרג ואל יעבור</strong> - פי' הבועל אבל היא תיבעל ולא תיהרג דקרקע עולם היא כדאמר בבן סורר ומורה <span class=\"parenthesized\">(סנהדרין עד:)</span> ובריש כתובות <span class=\"parenthesized\">(דף ג:)</span> נמי פריך ולידרוש להו דאונס שרי ור\"י אומר דשפיר גר' תיהרג דהא דמשמע בבן סורר ומורה ובריש כתובות דאונס שרי היינו היכא שהיא קרקע עולם ולא עבדה מעשה אבל לעשות מעשה כגון שאומר לה שתביא הערוה עליה תיהרג ואל תעשה מעשה דמרוצח ילפינן ורוצח לא מיחייב למימסר נפשיה אלא כשאומר לו להרוג בידים אבל אם אומר הנח לזרוק עצמך על התינוק או תיהרג אינו חייב למסור עצמו כדי להציל חבירו דאדרבה איכא למימר מאי חזית דדמיה דחבריה סומק טפי דילמא דמא דידי סומק טפי ומיהו לדידיה אם אומרים לו הנח לתקוע אותך בערוה יהרג ואל יעבור דלא מצי למימר לא עבידנא מעשה דכיון שתוקעין אותו ואין קישוי אלא לדעת כדאמרי' בריש הבא על יבמתו <span class=\"parenthesized\">(יבמות נג.)</span> ומה שהוא מתקשה הוי מעשה:"
+  },
+  "Tosafot on Pesachim 25b:8:1": {
+    "dependsOn": [
+      "Pesachim 25b:8"
+    ],
+    "generatedAt": "2026-11-16T05:56:23.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אפשר ולא מיכוין כולי עלמא לא פליגי</strong> - ללישנא קמא נראה לפרש דכ\"ע קאי אאביי ורבא ולא פליגי דשרי היינו לרבי שמעון דרבי יהודה אסר דהא רבא מוקי פלוגתא דרבי יהודה ור' שמעון בלא אפשר ולא מיכוון דבאפשר קאמר דמודה רבי שמעון דאסור ולאיכא דאמרי לא אפשר ולא מיכוין לכולי עלמא דשרי האי כולי עלמא היינו ר' יהודה ור' שמעון וא\"ש דבאיכא דאמרי לא הדר ונקיט אלא מה שמשנה מלשון ראשון ולהכי לא נקט בדאיכא דאמרי אפשר ומיכוין לכ\"ע אסור ומיירי כגון דלא הוי פסיק רישיה דבפסיק רישיה מודה רבי שמעון וליכא למימר דאפילו בפסיק רישיה שרי הכא ר' שמעון משום דהכא מיירי בגרירה דכלים דליכא אלא איסורא דרבנן שהוא חופר כלאחר יד כדאמר בבמה מדליקין <span class=\"parenthesized\">(שבת כט)</span> דהא בשמעתא מייתי עלה מידי דאורייתא כגון מעילה וכלאים ופסול פרה וצ\"ל דכל הנהו דמייתי לא הוי פסיק רישיה ולא אפשר דכולי שמעתא נראה לר\"י דלא אפשר כדרכו אלא בטורח גדול דהא שילשול האומנין בקופות חשיב לא אפשר והא דאמרינן בכתובות <span class=\"parenthesized\">(דף ה:)</span> גבי מהו לבעול בתחלה בשבת דקאמר לר' יהודה דאסור משום דבר שאין מתכוון אע\"ג דהוי לא אפשר ולא מיכוין וצריך לומר דההיא סוגיא כרבי ירמיה דבמה מדליקין דאסר לר' יהודה לא אפשר ולא מיכוון אע\"ג דאיתותב במאי דאמר קטנים אסורים אפילו לר\"ש <span class=\"parenthesized\">(איתותב)</span> מ\"מ במאי דאסר אפילו בגדולים לר' יהודה לא איתותב:"
+  }
+}

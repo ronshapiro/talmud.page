@@ -1,0 +1,441 @@
+{
+  "Rashi on Pesachim 6b:10:1": {
+    "dependsOn": [
+      "Pesachim 6b:10",
+      "Rashi on Pesachim 6b:10:1",
+      "Rashi on Pesachim 6b:10:2",
+      "Rashi on Pesachim 6b:10:3",
+      "Pesachim 6b:8"
+    ],
+    "generatedAt": "2026-11-15T01:12:47.479Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - קשיא לך אפילו בתרי ענייני תיקשי לך דהא דיינינן כלל ופרט כשנאמר אחד מהן בפרשה זו ואחד מהן בפרשה אחרת:"
+  },
+  "Rashi on Pesachim 6b:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:10:1",
+      "Rashi on Pesachim 6b:10:2",
+      "Rashi on Pesachim 6b:10:3",
+      "Chokhmat Shlomo on Pesachim 6b:3"
+    ],
+    "generatedAt": "2026-11-15T01:13:26.398Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ניחא</strong> - דלא קשיא לך:"
+  },
+  "Rashi on Pesachim 6b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:14:04.027Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן דאמר כלל ופרט המרוחקין אין דנין כו'</strong> - ופלוגתא היא במנחות בפרק כל המנחות באות מצה <span class=\"parenthesized\">(מנחות דף נה:)</span> ובבבא קמא בהחובל <span class=\"parenthesized\">(בבא קמא דף פה.)</span>:"
+  },
+  "Rashi on Pesachim 6b:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:12:2"
+    ],
+    "generatedAt": "2026-11-15T01:17:33.635Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבודק צריך שיבטל</strong> - בלבו סמוך לבדיקה מיד ואומר כל חמירא דאיכא בביתא הדין ליבטיל:"
+  },
+  "Rashi on Pesachim 6b:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:12:1"
+    ],
+    "generatedAt": "2026-11-15T01:18:06.660Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי טעמא</strong> - הרי מבער כל הנמצא:"
+  },
+  "Rashi on Pesachim 6b:13:1": {
+    "dependsOn": [
+      "Pesachim 6b:12",
+      "Rashi on Pesachim 6b:13:2",
+      "Rashi on Pesachim 6b:13:3",
+      "Rashi on Pesachim 6b:13:4",
+      "Rashi on Pesachim 6b:8:1",
+      "Rashi on Pesachim 6b:8:2"
+    ],
+    "generatedAt": "2026-11-15T01:19:49.229Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא כיון דמנטר להו אגב ביתיה</strong> - עם שאר ממונו הוא משמרן שכשהוא נועל ביתו לשומרו נמצא משמר כל מה שבתוכו הלכך חשיבי ושימור דלאו אדעתא דידיה הוא מי מחשבי ליה:"
+  },
+  "Rashi on Pesachim 6b:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:13:1",
+      "Rashi on Pesachim 6b:13:3"
+    ],
+    "generatedAt": "2026-11-15T01:21:47.275Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא סופי תאנים</strong> - סוף לקיטת תאנים נמצאים בתאנה תאנים שאינן מתבשלות כל צרכן עולמית:"
+  },
+  "Rashi on Pesachim 6b:13:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:13:1",
+      "Rashi on Pesachim 6b:13:2",
+      "Rashi on Pesachim 6b:13:3",
+      "Rashi on Pesachim 6b:13:4",
+      "Jastrow, מִקְשָׁה 1"
+    ],
+    "generatedAt": "2026-11-15T01:23:16.654Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומשמר שדהו מפני ענבים</strong> - ובעל הבית זה משמר שדה זו שלא יכנסו בני אדם לתוכה ואין דעתו מפני התאנים אלא מפני שיש בה ענבים שעדיין לא הגיע עת הבציר או סופי ענבים שלא יתבשלו עולמית ובעל הבית משמר שדהו זו שהן בתוכה ולא בשבילן אלא מפני מדלעות ומקשאות שבה:"
+  },
+  "Rashi on Pesachim 6b:13:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:13:1",
+      "Rashi on Pesachim 6b:13:2",
+      "Rashi on Pesachim 6b:13:3",
+      "Pesachim 6b:14",
+      "Tosefta Maasrot 3:13",
+      "Steinsaltz on Pesachim 6b:13",
+      "Jastrow, מִקְשָׁה 1",
+      "Ritva on Pesachim 6b:16:1",
+      "Maharshal on Pesachim 6b:8:1",
+      "Chokhmat Shlomo on Pesachim 6b:1",
+      "Jastrow, סוֹף 1",
+      "Jastrow, סוֹפֶת 1"
+    ],
+    "generatedAt": "2026-11-15T01:28:50.002Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקשאות ומדלעות</strong> - קרי כל האילנות:"
+  },
+  "Rashi on Pesachim 6b:14:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:14:2",
+      "Pesachim 6b:13"
+    ],
+    "generatedAt": "2026-11-15T01:29:33.323Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחייבין במעשר</strong> - אם ליקטן בעל הבית או נתנן לאחר:"
+  },
+  "Rashi on Pesachim 6b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:30:01.731Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופטורין מן המעשר</strong> - דהפקר פטור מן המעשר:"
+  },
+  "Rashi on Pesachim 6b:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:10:1",
+      "Rashi on Pesachim 6b:12:1"
+    ],
+    "generatedAt": "2026-11-15T01:31:04.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודעתו עליה</strong> - חשובה היא בעיניו וחס עליה לשורפה ומשהה אפילו רגע אחד ונמצא עובר עליה בבל יראה ובבל ימצא אבל משבטלה אינו עובר דלא כתב אלא תשביתו:"
+  },
+  "Rashi on Pesachim 6b:16:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:16:1",
+      "Rashi on Pesachim 6b:16:2",
+      "Rashi on Pesachim 6b:16:3"
+    ],
+    "generatedAt": "2026-11-15T01:35:33.469Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלאו ברשותיה הוא</strong> - אינו שלו:"
+  },
+  "Rashi on Pesachim 6b:16:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:16:1",
+      "Rashi on Pesachim 6b:16:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:3:1",
+      "Rashi on Pesachim 3a:1:1",
+      "Rashi on Pesachim 3b:1:1",
+      "Rashi on Pesachim 6b:7:1",
+      "Rashi on Pesachim 6b:7:2",
+      "Rashi on Pesachim 6b:8:1",
+      "Rashi on Pesachim 6b:8:2",
+      "Rashi on Pesachim 6b:8:3",
+      "Rashi on Pesachim 6b:9:1",
+      "Rashi on Pesachim 6b:10:1",
+      "Rashi on Pesachim 6b:10:2",
+      "Rashi on Pesachim 6b:10:3",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Rashi on Berakhot 2a:2:1"
+    ],
+    "generatedAt": "2026-11-15T01:37:43.768Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאמר ר' אלעזר ב' דברים אינן שלו ועשאן הכתוב כאילו הן ברשותו</strong> - להתחייב עליהן:"
+  },
+  "Rashi on Pesachim 6b:16:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:39:17.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בור ברשות הרבים</strong> - הפותחו חייב בניזקין ואין הבור שלו אלא של הפקר שהרי ברשות הרבים הוא ואף על פי שכרהו אין רשות הרבים קנויה לו:"
+  },
+  "Rashi on Pesachim 6b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:39:45.716Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניבטליה בארבע</strong> - כלומר למה הוצרכתו לבטל בלילה ליתקנו רבנן לכל אדם שיבטל קודם איסורו:"
+  },
+  "Rashi on Pesachim 6b:17:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:17:1"
+    ],
+    "generatedAt": "2026-11-15T01:40:20.248Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פשע</strong> - ישכח ויבא לידי פשיעה שעל ידי מה יזכר אבל עכשיו שעסוק בבדיקתו יזכר:"
+  },
+  "Rashi on Pesachim 6b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:54:29.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי משה רבינו עומד בפסח ראשון</strong> - ודורש להן בהלכות פסח השני דהיינו שלשים יום שהוא בארבעה עשר באייר:"
+  },
+  "Rashi on Pesachim 6b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:02:39.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה להלן ראש חדש</strong> - דכתיב ביה באחד לחדש השני:"
+  },
+  "Rashi on Pesachim 6b:7:1": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Pesachim 6b:2",
+      "Pesachim 6b:7",
+      "Rashi on Pesachim 6b:6:1",
+      "Rashi on Pesachim 6b:7:2",
+      "Rashi on Pesachim 6a:1:1",
+      "Rashi on Pesachim 6a:2:1",
+      "Rashi on Pesachim 6a:3:1",
+      "Rashi on Pesachim 6a:4:1",
+      "Rashi on Pesachim 6a:5:1"
+    ],
+    "generatedAt": "2026-11-15T01:04:38.931Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניכתוב ברישא כו'</strong> - לא אשמעתין פריך אלא אסדר פרשיות קפריך מכדי פרשת פסח נאמרה תחלה שהרי בחדש הראשון נאמר כדכתיב בחדש הראשון לאמר ופרשת פקודים נאמרה באייר ומאי טעמא אקדמה להאי בראש הספר ופרשת זו בפרשת בהעלותך:"
+  },
+  "Rashi on Pesachim 6b:7:2": {
+    "dependsOn": [
+      "Community Translation: Translation on Rashi on Pesachim 6b:7:2",
+      "Rashi on Pesachim 6b:7:1"
+    ],
+    "generatedAt": "2026-11-15T01:05:24.421Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוקדם ומאוחר בתורה</strong> - לא הקפידה תורה על סדר מוקדם ומאוחר ופרשיות דנאמרו תחלה הקדימו המאוחרות לה:"
+  },
+  "Rashi on Pesachim 6b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:05:55.014Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתרי ענייני</strong> - בשתי פרשיות:"
+  },
+  "Rashi on Pesachim 6b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:06:23.072Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחד עניינא</strong> - במקראות הסדורות בפרשה אחת:"
+  },
+  "Rashi on Pesachim 6b:8:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:8:1",
+      "Rashi on Pesachim 6b:8:2",
+      "Maharsha on Pesachim 6b:1"
+    ],
+    "generatedAt": "2026-11-15T01:07:56.980Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאי לא תימא הכי</strong> - דבסדר כתיבתן נאמרו הא דקיימא לן כל כלל ופרט אין בכלל אלא מה שהוא בפרט לפי שבא הפרט ופרט שזהו הכלל היכי סמכינן עלה דילמא פרט וכלל הוא:"
+  },
+  "Rashi on Pesachim 6b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:11:42.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 6b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נעשה כלל מוסף על הפרט</strong> - שלא תאמר אין כאן אלא פרט או כיוצא בו נביא בדינו בבנין אב לכן הוסיף הכתוב כלל אחריו להביא כל דבר ואפילו אינו דומה לפרט:"
+  },
+  "Tosafot on Pesachim 6b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:16:50.754Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בתרי ענייני אין דנין</strong> - והא דפריך בסוף הפרה <span class=\"parenthesized\">(ב\"ק ד' נד: ושם)</span> ואימא בהמתך דדברות ראשונות כלל שור וחמור פרט בהמתך דדברות האחרונות חזר וכלל אע\"ג דמרוחקין טובא היינו משום דעשרת הדברות חשיבי כחד עניינא דבדיבור אחד נאמרו:"
+  },
+  "Tosafot on Pesachim 6b:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 6b:15:1",
+      "Maharsha: Chidushei Halachot on Pesachim 6b:3",
+      "Rosh on Pesachim 1:9:1",
+      "Gilyon HaShas on Pesachim 6b:2",
+      "Tosafot on Pesachim 21a:13:1"
+    ],
+    "generatedAt": "2026-11-15T01:34:50.058Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודעתיה עילויה</strong> - פירוש ולא בטל מאיליו כמו פירורין ועל פ\"ה קשה מאי פריך כי משכחת ליה ניבטלה הא פי' ודעתיה עילויה שחס עליה לבטלה:"
+  },
+  "Tosafot on Pesachim 6b:1:1": {
+    "dependsOn": [
+      "Rashi on Gittin 60a:6:1",
+      "Rashi on Gittin 60a:6:2",
+      "Rashi on Gittin 60a:6:3",
+      "Rashi on Gittin 60a:6:4",
+      "Rashi on Gittin 60a:6:5",
+      "Rashi on Gittin 60a:17:1",
+      "Rashi on Gittin 60a:17:2",
+      "Rashi on Gittin 60a:17:3",
+      "Rashi on Gittin 60a:17:4",
+      "Rashi on Gittin 60a:17:5",
+      "Rashi on Gittin 60a:17:6",
+      "Rashi on Gittin 60a:17:7",
+      "Rashi on Gittin 60a:17:8",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 6b:1:2",
+      "Tosafot on Gittin 60a:17:1",
+      "Tosafot on Pesachim 6b:11:1",
+      "Tosafot on Pesachim 6a:1:1",
+      "Tosafot on Pesachim 6a:8:1",
+      "Rashi on Pesachim 6b:1:1"
+    ],
+    "generatedAt": "2026-11-15T00:57:48.983Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר ויהי אנשים</strong> - והא דאמר בהניזקין <span class=\"parenthesized\">(גיטין ד' ס. ושם)</span> שמונה פרשיות נאמרו ביום שהוקם המשכן והיינו בראש חדש ניסן פרשת טמאים לא כפ\"ה דפי' פרשת טמאים ויהי אנשים דזו הפרשה נאמרה בערב הפסח כדמשמע הכא אלא פרשת טמאים טומאת תרומה וקדשים:"
+  },
+  "Tosafot on Pesachim 6b:1:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 6b:1:1"
+    ],
+    "generatedAt": "2026-11-15T00:58:32.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומזהיר על פסח שני</strong> - אע\"ג שעל ידי שאילתו הוזקק לומר להן מ\"מ לא היה צריך להאריך אלא אל תעשו פסח ותו לא:"
+  },
+  "Tosafot on Pesachim 6b:4:1": {
+    "dependsOn": [
+      "Pesachim 6b:4",
+      "Tosafot on Pesachim 6b:1:1",
+      "Tosafot on Pesachim 6b:1:2",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:1:2",
+      "Rashi on Pesachim 6b:7:1",
+      "Rashi on Pesachim 6b:8:1"
+    ],
+    "generatedAt": "2026-11-15T01:01:59.430Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ממאי דבריש ירחא קאי</strong> - תימה דבשבת בפ\"ר עקיבא <span class=\"parenthesized\">(דף פו: ושם)</span> קאמר <span class=\"parenthesized\">(רבה)</span> דכ\"ע בר\"ח אתו למדבר סיני כתיב הכא ביום הזה באו מדבר סיני וכתיב התם החדש הזה וגו' מה להלן ר\"ח אף כאן ראש חדש אלמא פשיטא דהחדש הזה נאמר לו בר\"ח והיינו משום דאמר בהקומץ רבה <span class=\"parenthesized\">(מנחות כט.)</span> שנתקשה משה רבינו בראיית הלבנה עד שאמר לו הקב\"ה כזה ראה וקדש ותי' ר\"ת אע\"ג שאמר הקב\"ה למשה בריש ירחא דילמא משה לא אמר להם לישראל אלא בג' או בד' בירחא ומסיק דיליף מדבר ממדבר דבההיא דבאחד לחדש השני אמירת הקב\"ה ואמירת משה הוי בריש ירחא דכתיב באחד לחדש השני ויתילדו וגו' ור\"י מפרש אע\"ג דהחדש הזה הוה בריש ירחא מיהו דילמא הא דקאמר דברו אל כל עדת ישראל לא הוה בריש ירחא ואם תאמר אמאי לא יליף התם מדבר מבמדבר כי הכא וי\"ל דמדבר מבמדבר לא ילפינן:"
+  },
+  "Tosafot on Pesachim 6b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:10:59.978Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בחד עניינא מאי דמוקדם מוקדם</strong> - היינו דוקא היכא דליכא דרשה וטעם דהא תנן בפ' נגמר הדין <span class=\"parenthesized\">(סנהדרין מה. ושם)</span> דדחיית הנסקל קודם לסקילתו אע\"ג דסקילה כתיב ברישא דכתיב כי סקל יסקל או ירה יירה היינו משום דכתיב במקום אחר סקילה בגמר מיתה דכתיב וסקלתם באבנים ומתו:"
+  }
+}

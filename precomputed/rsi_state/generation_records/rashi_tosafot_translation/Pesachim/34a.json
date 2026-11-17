@@ -1,0 +1,407 @@
+{
+  "Rashi on Pesachim 34a:1:1": {
+    "dependsOn": [
+      "Pesachim 34a:1",
+      "Rashi on Pesachim 34a:1:2",
+      "Rashi on Pesachim 34a:1:3"
+    ],
+    "generatedAt": "2026-11-16T18:22:30.933Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשליקתא ומאיסתא</strong> - לאחר שנטמאו שולקן ואח\"כ זורקן לבין העצים והן נמאסות ורב הונא חייש דלמא אכיל לה מקמי דלישלקינהו או בשעה ששולקן:"
+  },
+  "Rashi on Pesachim 34a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T18:23:02.915Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והיו מחמין לו חמין בחיטין של תרומה טמאה</strong> - שהיו לוקחין אותם מכהנים בזול:"
+  },
+  "Rashi on Pesachim 34a:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:1:1",
+      "Rashi on Pesachim 34a:1:2"
+    ],
+    "generatedAt": "2026-11-16T18:23:44.685Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ללוש בהן עיסה בטהרה</strong> - כלומר אע\"פ שרבי אוכל חולין בטהרה היה לא חייש דילמא נגעו הני חטים טמאים בעיסה דבטלו להו מתורת אוכל ולא מטמאו:"
+  },
+  "Rashi on Pesachim 34a:2:1": {
+    "dependsOn": [
+      "Steinsaltz on Pesachim 34a:2:1",
+      "Steinsaltz on Pesachim 34a:2"
+    ],
+    "generatedAt": "2026-11-16T18:34:18.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנו תרומות</strong> - מס' תרומות:"
+  },
+  "Rashi on Pesachim 34a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T18:35:08.837Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי אמריתו</strong> - חידוש וטעמא בתרומות שאתם שונים בבית אדם גדול כרבה:"
+  },
+  "Rashi on Pesachim 34a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T18:35:40.149Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתילי תרומה</strong> - כגון שתילי כרוב וכרישין:"
+  },
+  "Rashi on Pesachim 34a:2:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:2:3",
+      "Rashi on Pesachim 34a:2:5"
+    ],
+    "generatedAt": "2026-11-16T18:36:29.537Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהרו מלטמא</strong> - אחרים שחיבורן לקרקע בטלן מתורת אוכל:"
+  },
+  "Rashi on Pesachim 34a:2:5": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:2:1",
+      "Rashi on Pesachim 34a:2:2",
+      "Rashi on Pesachim 34a:2:3",
+      "Rashi on Pesachim 34a:2:4",
+      "Pesachim 34a:2"
+    ],
+    "generatedAt": "2026-11-16T18:37:26.338Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואסורין מלאכול</strong> - וקא ס\"ד משום טומאה ולכהנים:"
+  },
+  "Rashi on Pesachim 34a:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:3:2"
+    ],
+    "generatedAt": "2026-11-16T18:42:04.840Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסורים לזרים</strong> - דלא אמרינן פקע שם תרומה מינייהו:"
+  },
+  "Rashi on Pesachim 34a:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:3:1",
+      "Pesachim 34a:2",
+      "Pesachim 34a:4",
+      "Tosafot on Pesachim 34a:4:1"
+    ],
+    "generatedAt": "2026-11-16T18:43:19.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומאי קא משמע לן גידולי תרומה כתרומה</strong> - אפילו בדבר שזרעו כלה כגון חיטין או צלעות שומין תנינא:"
+  },
+  "Rashi on Pesachim 34a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:4:2",
+      "Steinsaltz on Pesachim 34a:4"
+    ],
+    "generatedAt": "2026-11-16T18:47:37.233Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא</strong> - האי אסורין מלאכול בדבר שאין זרעו כלה קאמר כגון בצלים דקים שקורין ציבו\"ש וכששותלים אחת אחת לבדה הן נוספות ומתחברות ששה וד' יחד והיינו גידולי גידולין אותן הנוספות עליהן שלא היו תרומה מעולם וגידולין עצמן כגון שתילי כרוב שהולכים ומרחיבין העלין הראשונים ובדים החדשים העולין בקלח הוו גידולי גידולים:"
+  },
+  "Rashi on Pesachim 34a:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:4:1"
+    ],
+    "generatedAt": "2026-11-16T18:48:44.457Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הטבל גידוליו מותרין</strong> - אע\"פ שנתמרח בכרי והוקבע למעשר וחל עליו שם טבל וזרעו ולא הפריש מעשרותיו תחלה וצמח ונגמר וקצרו מותר לאכילת עראי עד שימרח בכרי ואף על גב דגידולי תרומה תרומה מדרבנן הוא ולחומרא שלא להפסיד את הכהנים אבל גידולי טבל חולין הן והרי הן כשקוצרן כשאר תבואה ואוכל מהן עראי עד שימרחם:"
+  },
+  "Rashi on Pesachim 34a:5:1": {
+    "dependsOn": [
+      "Pesachim 34a:5"
+    ],
+    "generatedAt": "2026-11-16T18:52:49.551Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהיסח הדעת</strong> - כשנטמאו מתחלה הסיח דעתו מהם שוב מלשומרן ונפסלין בהיסח הדעת דכתיב גבי תרומה <span class=\"parenthesized\">(במדבר י״ח:ד׳)</span> את משמרת תרומותי עביד לה שימור ולא תסיח דעתך:"
+  },
+  "Rashi on Pesachim 34a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T18:53:22.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסול הגוף הוי</strong> - מעלה היא בקדשים שנפסלין בכך ושם פסול הוא לעצמו ואפילו יבוא אליהו ויאמר שלא נטמאו כל אותן הימים שהסיח דעתו מהן אין שומעין לו:"
+  },
+  "Rashi on Pesachim 34a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:6:1",
+      "Rashi on Pesachim 34a:6:3",
+      "Rashi on Pesachim 34a:6:4",
+      "Pesachim 34a:2",
+      "Pesachim 34a:5"
+    ],
+    "generatedAt": "2026-11-16T18:54:10.990Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפיר</strong> - משום הכי אסורין שאין שתילתן מועלת להן להסיר שם פסול מעליהן:"
+  },
+  "Rashi on Pesachim 34a:6:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:6:1",
+      "Rashi on Pesachim 34a:6:2",
+      "Rashi on Pesachim 34a:6:4"
+    ],
+    "generatedAt": "2026-11-16T18:56:23.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא למ\"ד</strong> - כל מה שקדשים נפסלין בהיסח הדעת אינו אלא משום חשש טומאה שמא ע\"י שהסיח דעתו משמירתן נגעה בהן טומאה ואינו יודע:"
+  },
+  "Rashi on Pesachim 34a:6:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:6:1",
+      "Rashi on Pesachim 34a:6:2",
+      "Rashi on Pesachim 34a:6:3",
+      "Pesachim 34a:6"
+    ],
+    "generatedAt": "2026-11-16T18:57:16.545Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא למימר</strong> - הני אמאי מיפסלי משום חשש טומאה הא אפילו טומאה ודאית שבהן טיהרתם שתילתן:"
+  },
+  "Rashi on Pesachim 34a:8:1": {
+    "dependsOn": [
+      "Pesachim 34a:8"
+    ],
+    "generatedAt": "2026-11-16T19:01:52.611Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויטהרנו</strong> - ויאמר שלא נגעה בו טומאה כל ימי היסח:"
+  },
+  "Rashi on Pesachim 34a:9:1": {
+    "dependsOn": [
+      "Steinsaltz on Pesachim 34a:9"
+    ],
+    "generatedAt": "2026-11-16T19:02:32.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לול קטן</strong> - כעין גומא חלולה עשויה בבנין הרצפה:"
+  },
+  "Rashi on Pesachim 34a:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:9:1",
+      "Rashi on Pesachim 34a:9:3"
+    ],
+    "generatedAt": "2026-11-16T19:03:15.905Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין כבש למזבח</strong> - כלומר בקרן זוית סמוך לכבש וסמוך למזבח במקום שהם מתחברים:"
+  },
+  "Rashi on Pesachim 34a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T19:03:44.633Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במערבו של כבש</strong> - אצל שפת מערבית של כבש:"
+  },
+  "Rashi on Pesachim 34a:9:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:9:1",
+      "Rashi on Pesachim 34a:9:2",
+      "Rashi on Pesachim 34a:9:3",
+      "Rashi on Pesachim 34a:9:4",
+      "Rashi on Pesachim 34a:9:5"
+    ],
+    "generatedAt": "2026-11-16T19:04:40.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששם זורקין פסולי חטאת העוף</strong> - לפי שהיא נעשית בקרן מערבית דרומית למטה וכשאירע פסול בה שאינו פסול הגוף ממש ואין יכול לשורפה מיד משום בזיון קדשים נותנין אותה שם:"
+  },
+  "Rashi on Pesachim 34a:9:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T19:07:59.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 34a:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותעובר צורתה</strong> - היינו פסול לינה עיבור צורת מראית בשר בלינת לילה אחד הוא וכיון שלנה בלילה הרי היא נותר וטעון שריפה ונשרף ועל כרחך מדבעינן העברת צורה לאו כשפיגל בה או נטמאת או יצתה או מלקה שלא כמצותה קמיירי דהא פסול מעליא הוא ולמה לן לאהדורי אפסול לינה ואין לנו דניבעי לינה אי לאו פסול היסח הדעת וא\"א פסול חשש טומאה הוא איכא למימר דהאי פסול בהיסח הדעת קאמר וכיון דלא חזינן ליה דאיטמי אלא חששא בעלמא הוא בעי עיבור צורה דלא מצינן למשרפה להדיא שמא יבוא אליהו אחרי כן ויאמר טהורה היתה ונמצאת ששרפנו קדשים טהורין אלא אם שם פסול הוא לעצמו אפי' לא נטמא למה לי עיבור צורה:"
+  },
+  "Tosafot on Pesachim 34a:1:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 33b:6:1",
+      "Bekhorot 22a:11",
+      "Bekhorot 22a:12",
+      "Bekhorot 22b:1",
+      "Tosafot on Bekhorot 22b:1:1"
+    ],
+    "generatedAt": "2026-11-16T18:33:10.626Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשליקתא ומאיסתא</strong> - קצת נראה דוקא שהן כבר מאוסות מותר להשהותן אבל למאס אסור דבתוך כך אתי ביה לידי תקלה כמו בדריכת ענבים דבפרק הלוקח בהמה <span class=\"parenthesized\">(בכורות דף כב.)</span> אמרינן סאה תרומה טמאה שנפלה לתוך מאה חולין טהורים ר\"א אומר תרום ותרקב ובמס' תרומות בפ\"ה גרסינן תרום ותשרף ואומר ר\"ת דבמאיסתא תשרף ויהנה ממנו בשעת שריפה:"
+  },
+  "Tosafot on Pesachim 34a:1:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 34a:1:2"
+    ],
+    "generatedAt": "2026-11-16T18:30:09.810Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחמין לו חמין בחיטין של תרומה</strong> - אור\"ת דלכהנים של בית רבי היו עושין דלישראל לא שריא אלא הנאה שאינה של כילוי כמו עירוב דמערבין לישראל בתרומה אבל הנאה של כילוי כגון להאכיל לבהמתו או להדליק אסור לישראל כדאמרינן בפ\"ק דמס' ע\"ז <span class=\"parenthesized\">(טו.)</span> כהן ששכר פרה מישראל לא יאכילנה כרשיני תרומה ובמסכת תרומות <span class=\"parenthesized\">(פי\"א משנה י')</span> נמי אמרי'מדליקין בבתי כנסיות ובבתי מדרשות בשמן של תרומה שנטמא ברשות כהן פירוש אם יש שם כהן דנר לאחד נר למאה ור\"י אומר טעמא משום דדרשינן משמרת תרומותי מה תרומה טהורה וכו' ומה טהורה דוקא לכהן אף טמאה דוקא לכהן ובטמאה ליכא אלא הדלקה:"
+  },
+  "Tosafot on Pesachim 34a:2:1": {
+    "dependsOn": [
+      "Maharam on Pesachim 34a:5",
+      "Mishnah Bikkurim 2:2",
+      "Tosafot on Pesachim 34a:9:1",
+      "Tosafot on Pesachim 33b:1:1",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T18:41:26.400Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טהרו מלטמא</strong> - תימה לר\"י דבפ' קמא דשבת <span class=\"parenthesized\">(דף טז:)</span> מסקינן דהיינו טעמא דגזרו גידולי תרומה תרומה משום תרומה טמאה ביד כהן פי' שלא ישהה אותה לזריעה והשתא כיון דטהרו ישהה אותה לזריעה כדי לטהרה ואומר ר\"י דמשום ריוח פורתא לא ישהה אותה מאחר שעדיין היא תרומה ולא נעשית חולין הקשה רבינו נסים גאון דתניא בתוספתא גידולי תרומה ומעשר שני הרי הן כחולין ומצא תירוץ בירושלמי דמסכת תרומות דהרי הן כחולין היינו להתחייב בלקט ושכחה ופאה ועניי ישראל ועניי כהנים מלקטין אותן אלא שאסורין לזרים והיינו דתניא עניי ישראל מוכרין את שלהן לכהנים בדמי תרומה וטעמא לפי שמדאורייתא אין תרומה ומעשר חייבין בלקט שכחה ופאה ולא אתי גזירה דרבנן ומפקע ליה ועוד הקשה הר\"ר משה נבריי\"ש דתנן במסכת בכורים <span class=\"parenthesized\">(פ\"ב מ\"ב)</span> יש במעשר ובכורים מה שאין כן בתרומה שהמעשר ובכורים גידולן אסורים מלאכול בירושלים אף לזרים ולבהמה משא\"כ בתרומה משמע דגידולי תרומה שרו לזרים מיהו בלאו הכי לא א\"ש לישנא אף לזרים דאדרבה אף לכהנים מיבעי ליה למימר ונראה דזרים דהתם היינו נכרים וכן משמע בירושלמי:"
+  },
+  "Tosafot on Pesachim 34a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 34a:4:1",
+      "Rashi on Pesachim 34a:4:2",
+      "Rashi on Pesachim 34a:1:1",
+      "Rashi on Pesachim 34a:1:2",
+      "Rashi on Pesachim 34a:1:3",
+      "Rashi on Pesachim 34a:2:1",
+      "Rashi on Pesachim 34a:2:2",
+      "Rashi on Pesachim 34a:2:3",
+      "Rashi on Pesachim 34a:2:4",
+      "Rashi on Pesachim 34a:2:5",
+      "Maharam on Pesachim 34a:6:1",
+      "Chidushei Halachot on Pesachim 34a:3"
+    ],
+    "generatedAt": "2026-11-16T18:51:55.823Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידולי גידולין</strong> - פירש ריב\"א דגידולים היינו גידולי ראשון מן הזרע ואח\"כ חזר ונטע אותן גידולים זהו גידולי גידולין ומביא ראיה מירושלמי דמסיק התם אגידולי גידולין משיעשו שני גורנות דהיינו בכה\"ג שנזרע ונלקט שתי פעמים ולפ\"ה הכל הוי גידול ראשון ומה שפ\"ה דשומין הוי דבר שזרעו כלה לא משמע הכי דבמסכת תרומות תנן בפ\"ט <span class=\"parenthesized\">(מ\"ו)</span> איזהו דבר שאין זרעו כלה הלוף והשום והבצלים:"
+  },
+  "Tosafot on Pesachim 34a:6:1": {
+    "dependsOn": [
+      "Pesachim 20b:11",
+      "Pesachim 20b:12",
+      "Pesachim 20b:13",
+      "Pesachim 20b:10",
+      "Rashi on Pesachim 34a:6:1",
+      "Rashi on Pesachim 34a:6:2",
+      "Rashi on Pesachim 34a:6:3",
+      "Rashi on Pesachim 34a:6:4",
+      "Chokhmat Shlomo on Pesachim 34a:5",
+      "Tosafot on Pesachim 34a:2:1",
+      "Tosafot on Pesachim 34a:4:1",
+      "Tosafot on Pesachim 34a:1:1",
+      "Tosafot on Pesachim 34a:1:2",
+      "Tosafot on Pesachim 34a:9:1",
+      "Tosafot on Pesachim 20b:11:1"
+    ],
+    "generatedAt": "2026-11-16T19:00:47.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסול הגוף הוי</strong> - תימה דלעיל <span class=\"parenthesized\">(פסחים דף כ:)</span> אמרינן אם היתה במקום המוצנע יניחנה במקום התורפה ואמרי' גרמא אין בידים לא ואמאי אין מותר לשורפה מיד כשמסיח דעתו ממנה:"
+  },
+  "Tosafot on Pesachim 34a:9:1": {
+    "dependsOn": [
+      "Pesachim 34a:9",
+      "Rashi on Pesachim 34a:9:1",
+      "Rashi on Pesachim 34a:9:2",
+      "Rashi on Pesachim 34a:9:3",
+      "Rashi on Pesachim 34a:9:4",
+      "Rashi on Pesachim 34a:9:5",
+      "Tosafot on Pesachim 34a:1:1",
+      "Tosafot on Pesachim 34a:1:2",
+      "Tosafot on Pesachim 34a:2:1",
+      "Tosafot on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T19:10:28.502Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 34a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי עיבור צורה</strong> - קשה לר\"י דילמא האי פסול היינו בדם ובבעלים דבעי עיבור צורה וי\"ל מ\"מ אחר שנזרק בלול יש בו היסח הדעת הר\"ר אלחנן:"
+  }
+}

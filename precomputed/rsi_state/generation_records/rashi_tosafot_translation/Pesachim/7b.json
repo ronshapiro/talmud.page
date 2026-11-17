@@ -114,6 +114,16 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">תא שמע</strong> - מהאי קרא דבדיקה מעלייתא היא דכתיב חופש כל חדרי בטן:"
   },
+  "Rashi on Pesachim 7b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:22:37.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעיקרא משמע</strong> - על ביעור שביערתי והרי עדיין לא בדיק דהא ברכה קודם בדיקה היא ביעור היינו נמי בדיקה:"
+  },
   "Rashi on Pesachim 7b:3:1": {
     "dependsOn": [
       "Rashi on Pesachim 7b:3:1",
@@ -259,6 +269,25 @@
       "Tosafot on Pesachim 7b:13:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ונרות מנר</strong> - וקשה דהוה ליה למימר חיפוש מנר ולא נרות מנר וי\"ל דחיפוש לא קאי אנר לכך יש לפרש דיליף חיפוש דנר מחיפוש דירושלים שהיא בנרות ואותן נרות מנר ואתי שפיר דהשתא צריך לאתויי קרא דחיפוש נרות ולא סגי בקרא דנר ה' נשמת אדם וגו':"
+  },
+  "Tosafot on Pesachim 7b:1:1": {
+    "dependsOn": [
+      "Pesachim 7b:1",
+      "Rashi on Pesachim 7b:1:1",
+      "Tosafot on Pesachim 7b:6:1",
+      "Tosafot on Pesachim 7b:8:1",
+      "Tosafot on Pesachim 7a:16:1",
+      "Tosafot on Pesachim 7b:3:1",
+      "Tosafot on Pesachim 7b:7:1",
+      "Tosafot on Pesachim 7b:12:1"
+    ],
+    "generatedAt": "2026-11-15T02:24:29.744Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי פליגי בעל ביעור מר סבר לשעבר משמע</strong> - פירש ר\"ת לשעבר משמע טפי מלהבא אבל מ\"מ משמע נמי קצת להבא דאי לא משמע כלל להבא אלא לשעבר א\"כ היכי קאמר בסמוך נימא למול לא סגי דלאו איהו מהיל וכי בשביל שאין אנו יודעין לתקן יאמר שקר:"
   },
   "Tosafot on Pesachim 7b:3:1": {
     "dependsOn": [

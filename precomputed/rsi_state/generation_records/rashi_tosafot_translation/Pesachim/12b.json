@@ -1,0 +1,370 @@
+{
+  "Rashi on Pesachim 12b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:11:1",
+      "Rashi on Pesachim 12b:1:1",
+      "Rashi on Pesachim 12b:3:1",
+      "Rashi on Pesachim 12b:5:1",
+      "Rashi on Pesachim 11b:1:1",
+      "Rashi on Pesachim 11b:2:1"
+    ],
+    "generatedAt": "2026-11-15T07:57:10.621Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבא אמר</strong> - טעמא דר' יהודה בחמץ לאו משום טעותא היא דלא טעו אינשי בין חמש לשבע כדקאמר חמש חמה במזרח כו' והאי דקאמר תולין כל חמש ר' יהודה לטעמיה דאמר באידך פירקין <span class=\"parenthesized\">(דף כא.)</span> אין ביעור חמץ אלא שריפה הילכך אסרו רבנן באכילתו כדי שיהא לו פנאי ללקט עצים בינתיים ואי שרית ליה כל חמש אינו נזכר אבל עכשיו דתלי ליה רמי אנפשיה ומדכר ללקט:"
+  },
+  "Rashi on Pesachim 12b:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:10:1",
+      "Rashi on Pesachim 12b:11:2",
+      "Chokhmat Shlomo on Pesachim 12b:4",
+      "Rashi on Pesachim 12b:1:1",
+      "Rashi on Pesachim 12b:3:1",
+      "Rashi on Pesachim 12b:6:1",
+      "Rashi on Pesachim 12a:1:1",
+      "Rashi on Pesachim 12a:2:1"
+    ],
+    "generatedAt": "2026-11-15T07:58:48.227Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימתי</strong> - אני אומר אין ביעור חמץ אלא שריפה:"
+  },
+  "Rashi on Pesachim 12b:11:2": {
+    "dependsOn": [
+      "Pesachim 12b:11",
+      "Rashi on Pesachim 12b:11:1"
+    ],
+    "generatedAt": "2026-11-15T07:59:46.295Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא בשעת ביעורו</strong> - בתחילת שש וכל שש דאכתי מדאורייתא שרי אבל בשעת ביעורו בשבע שהוא מוזהר מן התורה השבתתו בכל דבר וטורח זה למה אם אין לו עצים ימתין עד שעת ביעורו וישביתנו בכל דבר:"
+  },
+  "Rashi on Pesachim 12b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T08:04:07.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יום המעונן</strong> - שאין חמה זורחת ואין יכולין לבדוק בחמה:"
+  },
+  "Rashi on Pesachim 12b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T08:04:32.872Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זמן סעודה לכל היא</strong> - והכל בקיאים בה:"
+  },
+  "Rashi on Pesachim 12b:13:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:13:1",
+      "Rashi on Pesachim 12b:13:2"
+    ],
+    "generatedAt": "2026-11-15T08:05:58.717Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לודים ולסטים</strong> - רעבתנים הן אלא שהליסטים נעורין כל הלילה וישנים שחרית שעה ראשונה ואוכלין בשניה:"
+  },
+  "Rashi on Pesachim 12b:13:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:13:1"
+    ],
+    "generatedAt": "2026-11-15T08:06:29.507Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יורשין</strong> - לאו משום רעבתנות אלא הואיל ולא עמלו בו:"
+  },
+  "Rashi on Pesachim 12b:16:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:11:1",
+      "Rashi on Pesachim 12b:12:1",
+      "Rashi on Pesachim 12b:13:1",
+      "Rashi on Pesachim 12b:13:2",
+      "Rashi on Pesachim 12b:16:2",
+      "Rashi on Pesachim 12a:1:1",
+      "Rashi on Pesachim 12a:2:1",
+      "Rashi on Pesachim 12a:3:1"
+    ],
+    "generatedAt": "2026-11-15T08:12:29.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמחלוקת</strong> - דרבי מאיר ור' יהודה בעדות משום דלר' יהודה טעי אינשי טפי כך מחלוקת במתניתין נמי בחמץ משום דלר' יהודה טעי אינשי טפי ובין לר' מאיר ובין לר' יהודה דלא מרחקי כולי טעותא כדאמרן בעדות למר שתי שעות ולמר שלש שעות:"
+  },
+  "Rashi on Pesachim 12b:16:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:16:1",
+      "Chokhmat Shlomo on Pesachim 12b:5",
+      "Rashi on Pesachim 12b:11:1",
+      "Rashi on Pesachim 12b:11:2",
+      "Rashi on Pesachim 12b:16:2"
+    ],
+    "generatedAt": "2026-11-15T08:16:19.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום שינוייא דשנינן</strong> - חמץ לכל מסור דלא תימא תנאי היא כי קשיא לך מתני' דסנהדרין ומתני' דהכא לא תימא תנאי היא אליבא דר' מאיר ור' יהודה דתנא דמתני' סבר לר' מאיר אדם טועה שעה אחת ולר' יהודה אדם טועה שתים ותנא דסנהדרין סבר לר\"מ אדם טועה שתים ולר' יהודה שלש אלא ודאי כאותו מחלוקת של שם כך הוא כאן אלא משום דחמץ לכל מסור הוא א\"נ כי קשה לך לר' יהודה דאמר התם אין טעות בין חמש לשבע משום חמה והכא אמר טעו לא תימא תנאי היא אלא כטעמו שם כך טעמו כאן אלא שהחמץ לכל מסור אי נמי משום יום המעונן:"
+  },
+  "Rashi on Pesachim 12b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T08:17:04.114Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא שנו</strong> - הך דסנהדרין אלא שהעידו על השעות אבל הוציאו בפיהם שם הנץ החמה אין כאן טעות אלא כזב:"
+  },
+  "Rashi on Pesachim 12b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T08:17:25.179Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתוך הנץ</strong> - כשמתחיל הנץ:"
+  },
+  "Rashi on Pesachim 12b:1:1": {
+    "dependsOn": [
+      "Pesachim 12b:1",
+      "Rashi on Pesachim 12a:12:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Pesachim 12a:10:1",
+      "Rashi on Pesachim 12a:11:1",
+      "Rashi on Pesachim 11b:11:1",
+      "Rashi on Pesachim 12b:3:1"
+    ],
+    "generatedAt": "2026-11-15T07:36:28.780Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בין יממא לליליא לא טעו אינשי</strong> - ולבתריה יהבינן ליה רביעית חמישית וששית ולבעל חמש יהבינן לקמיה רביעית ושלישית ושניה ולבתריה ששית ואכתי הוה לן למיתב ליה אלא הא פריש ר' יהודה בהדיא דבין חמש לשבע לא טעו שבחמש חמה במזרח ובשבע במערב וכל הנך טעותא דיהבינן להו ה\"מ לאצולינהו ולמפטרינהו מקטלא אבל מ\"מ משעה כשהוזם אחד מהן באותה שעה לבדה ובשל אחריה מיד בטלה העדות ואפי' לא הוזם בטעות שלפניו דהא כי אמרו ליה לבעל ג' שלישית ורביעית וחמישית עמנו היית והוצרך לומר בשניה היה אלא שטעיתי הרי נחלקה עדותן שאם בשניה היה המעשה אין כאן אלא עד אחד דהא חבירו אמר בחמש ובין שנייה לחמישית לא טעו:"
+  },
+  "Rashi on Pesachim 12b:3:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:1:1",
+      "Rashi on Pesachim 12b:3:1",
+      "Rashi on Pesachim 11b:1:1",
+      "Rashi on Pesachim 11b:2:1",
+      "Rashi on Pesachim 11b:3:1",
+      "Rashi on Pesachim 11b:4:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:1:3"
+    ],
+    "generatedAt": "2026-11-15T07:38:34.751Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניכול עד סוף ששית</strong> - דהא מן התורה אינו אסור אלא משעברו שש ורבנן למה הוא דעבוד הרחקה במידי דלא טעו אינשי ביה:"
+  },
+  "Rashi on Pesachim 12b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T07:41:42.288Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדות מסורה לזריזים</strong> - אין אדם בא להעיד על הנפש אא\"כ בקי בשעות לפי שיודע הוא שסופו להדרש בדרישה וחקירה אבל חמץ על הכל מוטל ושאינו בקי בשעות טועה בהן:"
+  },
+  "Rashi on Pesachim 12b:6:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:6:1"
+    ],
+    "generatedAt": "2026-11-15T07:42:28.771Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחמש חמה במזרח ובשבע במערב</strong> - וחמץ אינו אסור אלא בשבע ואין טעות בין חמש לשבע:"
+  },
+  "Rashi on Pesachim 12b:7:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:7:2",
+      "Rashi on Pesachim 12b:7:3"
+    ],
+    "generatedAt": "2026-11-15T07:43:25.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי בשש נמי ניכול</strong> - דהא בשש עדיין לא נטתה חמה לצד מערב אלא באמצע הרקיע וזריחתה תחתיה בראש כל אדם ואין צל נוטה לא לכאן ולא לכאן אלא תחתיו:"
+  },
+  "Rashi on Pesachim 12b:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:7:1",
+      "Rashi on Pesachim 12b:7:3",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 4a:1:1",
+      "Rashi on Pesachim 4b:1:1"
+    ],
+    "generatedAt": "2026-11-15T07:44:12.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יומא</strong> - חמה:"
+  },
+  "Rashi on Pesachim 12b:7:3": {
+    "dependsOn": [
+      "Chokhmat Shlomo on Pesachim 12b:3"
+    ],
+    "generatedAt": "2026-11-15T07:45:30.880Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בי קרנתא קאי</strong> - באמצע הרקיע קרובה לנטות למזרח וקרובה לנטות למערב ואין עומדין עליה ולהכי נקט לישנא דבי קרנתא ולא נקט בי מיצעי דדרום קאי לפי שגלגל חמה שחמה סובבת בו עגול הוא ודבר עגול אין חילוק ארבע רוחות ניכר בו ומזרחו מתעגל עד חצי דרומו וחצי צפונו ומיחזי פלגי דרום בסוף מזרח וראש מערב:"
+  },
+  "Rashi on Pesachim 12b:8:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:8:1",
+      "Rashi on Pesachim 12b:8:2"
+    ],
+    "generatedAt": "2026-11-15T07:51:19.907Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתחילת ארבע לא ניכול</strong> - דהא טעי שש וחמש וארבע:"
+  },
+  "Rashi on Pesachim 12b:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:8:1",
+      "Steinsaltz on Pesachim 12b:8",
+      "Rashi on Pesachim 12b:1:1",
+      "Rashi on Pesachim 12b:5:1",
+      "Rashi on Pesachim 12b:6:1",
+      "Rashi on Pesachim 12b:9:1"
+    ],
+    "generatedAt": "2026-11-15T07:53:37.265Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:8:2"
+    ],
+    "sourceText": "ומשני שמעי' ליה לרבי יהודה דאמר בין חמש לשבע לא טעו וכ\"ש ארבע:"
+  },
+  "Rashi on Pesachim 12b:9:1": {
+    "dependsOn": [
+      "Pesachim 12b:9"
+    ],
+    "generatedAt": "2026-11-15T07:55:15.577Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 12b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עדות מסורה לזריזין</strong> - והילכך מודי בה ר' יהודה דלא טעו בין חמש לשבע אבל חמץ לכל מסור וטעו מיהו כולי האי לא טעו ואע\"ג דטעו בין תחילת שלש לסוף חמש דהיינו שלש שעות לא טעו בין סוף ארבע לתחיל' שבע לאסרינהו בד' משום שבע אע\"ג דאיכא בציר משלש משום דאיכא היכירא בחמה:"
+  },
+  "Tosafot on Pesachim 12b:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 12b:11:1",
+      "Rashi on Pesachim 12b:11:2",
+      "Pesachim 12b:11",
+      "Tosafot on Pesachim 12a:3:1",
+      "Tosafot on Pesachim 10b:14:1",
+      "Tosafot on Pesachim 10b:20:1"
+    ],
+    "generatedAt": "2026-11-15T08:03:38.715Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 12b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימתי שלא בשעת ביעורו</strong> - <span class=\"rashi-quotation\">פירש הקונטרס</span> שלא בשעת ביעורו בשש ובשעת ביעורו מכאן ואילך ופריך הואיל ובשעת ביעורו השבתתו בכל דבר ימתין עד שבע וקשה לר\"ת היכי ימתין עד שבע לבערו הא אסקינן לעיל <span class=\"parenthesized\">(פסחים ד' י:)</span> דגזר ר' יהודה בשעת איסורו לבדוק דילמא אתי למיכל מיניה ועוד שעת ביעורו דמתני' היינו בשש ועוד דמנותר יליף ר' יהודה דחמץ בשריפה ונותר אחר שיעורו טעון שריפה וכמו כן חמץ ומפר\"ת דשלא בשעת ביעורו היינו אחר שש שרוב העולם מבערין בשש כתיקון חכמים וטעם משום דיליף מנותר והיינו לאחר איסורו אבל בשעת ביעורו דהיינו בשש כיון שאינה מצוה לבערו אלא מדרבנן השבתתו בכל דבר וכן איתא בירושלמי פרק כל שעה:"
+  },
+  "Tosafot on Pesachim 12b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T08:05:03.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 12b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארבע זמן סעודה לכל היא</strong> - לא שייך האי טעמא אלא לענין אכילה אבל לענין עדות לא:"
+  },
+  "Tosafot on Pesachim 12b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T07:39:07.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 12b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ניכול כולה שית</strong> - לאו דוקא כולה שית דהא צריך לשרוף תוך שש:"
+  },
+  "Tosafot on Pesachim 12b:3:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 12b:3:1",
+      "Maharsha: Chidushei Halachot on Pesachim 12b:1",
+      "Pesachim 12b:3"
+    ],
+    "generatedAt": "2026-11-15T07:40:28.086Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 12b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולהך לישנא דאדם טועה שעה ומשהו ניכול עד סוף חמש</strong> - אפי' טעה בשתי שעות היה יכול להקשות ניכול עד סוף חמש שבחמש חמה במזרח ובשבע חמה במערב:"
+  },
+  "Tosafot on Pesachim 12b:7:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 12b:3:1",
+      "Tosafot on Pesachim 12b:3:2",
+      "Tosafot on Pesachim 12a:3:1",
+      "Tosafot on Pesachim 12b:11:1",
+      "Tosafot on Pesachim 12b:12:1",
+      "Pesachim 12b:7",
+      "Pesachim 11b:14",
+      "Pesachim 11b:15",
+      "Pesachim 11b:16",
+      "Maharam on Pesachim 12b:3:1",
+      "Rashi on Pesachim 12b:7:1",
+      "Rashi on Pesachim 12b:7:2",
+      "Rashi on Pesachim 12b:7:3"
+    ],
+    "generatedAt": "2026-11-15T07:50:10.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 12b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשית חמה בי קרנתא קאי</strong> - הקשה ריב\"א לאביי דאמר לר' יהודה דאמר אדם טועה חצי שעה ותלינן הטעות בשניהן אם כן אחד אומר בה' ואחד אומר בשבע אמאי עדותן בטלה כיון דאין הכירא בתחילת שש לז' נימא האי דקאמר ה' בסוף ה' והאי דקאמר ז' בתחילת ז' ועובדא הוה בפלגא דשית וטעה כל אחד חצי שעה וי\"ל דהא דקאמר שית חמה בי קרנתא קאי וטעו בין תחילת שש לז' היינו חמץ דלכל מסור אבל עדות מסורה לזריזין אי נמי הך שינויא דקאמר בי קרנתא קאי לית ליה לאביי:"
+  }
+}

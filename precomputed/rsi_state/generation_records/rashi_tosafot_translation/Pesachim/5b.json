@@ -1,0 +1,402 @@
+{
+  "Rashi on Pesachim 5b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:10:2",
+      "Rashi on Pesachim 5b:10:3",
+      "Rashi on Pesachim 5b:2:1",
+      "Rashi on Pesachim 5b:4:1",
+      "Rashi on Pesachim 5a:1:1",
+      "Rashi on Pesachim 5a:2:1"
+    ],
+    "generatedAt": "2026-11-14T23:57:10.009Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלפי לייא</strong> - שתי מלות כלפי היכן נוטה דבר זה הא איפכא מסתברא נכרי שכבשתו מסתברא דאסור טפי:"
+  },
+  "Rashi on Pesachim 5b:10:2": {
+    "dependsOn": [
+      "Rashi on Berakhot 58a:10:1",
+      "Rashi on Berakhot 58a:10:2",
+      "Rashi on Berakhot 58a:10:3",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:10:3",
+      "Jastrow, כְּגַן"
+    ],
+    "generatedAt": "2026-11-14T23:59:01.936Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לייא</strong> - היכן וחבירו בברכות בפרק הרואה <span class=\"parenthesized\">(ברכות דף נח.)</span> חצבי לנהרא כגני לייא חרסים שבורים להיכן הולכין:"
+  },
+  "Rashi on Pesachim 5b:10:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:10:2",
+      "Pesachim 5b:10",
+      "Rashi on Pesachim 5b:4:1",
+      "Rashi on Pesachim 5b:6:1",
+      "Rashi on Pesachim 5b:11:1",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T00:00:30.188Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איפוך</strong> - אין לי דאסור אלא בנכרי שכיבשתו דהוי דומיא דשלך נכרי שלא כיבשתו מניין תלמוד לומר לא ימצא ולא כתב לא תמצא אבל לא ימצא לגמרי משמע:"
+  },
+  "Rashi on Pesachim 5b:11:1": {
+    "dependsOn": [
+      "Pesachim 5b:11",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:10:2",
+      "Rashi on Pesachim 5b:10:3"
+    ],
+    "generatedAt": "2026-11-15T00:01:19.902Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וארישא קאי</strong> - להיתירא אין לי דמותר לראות של אחרים בדלא קביל עליה אחריות כדלקמיה אלא שלא כיבשתו נכרי שכיבשתו מנין דמותר ת\"ל לא ימצא:"
+  },
+  "Rashi on Pesachim 5b:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:12:1",
+      "Pesachim 5b:12",
+      "Rashi on Pesachim 5b:11:1",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:10:2",
+      "Rashi on Pesachim 5b:10:3",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:3:2",
+      "Rashi on Pesachim 5b:3:3",
+      "Rashi on Pesachim 5b:3:4",
+      "Rashi on Pesachim 5a:16:1",
+      "Rashi on Pesachim 5b:15:1",
+      "Rashi on Pesachim 5b:15:2"
+    ],
+    "generatedAt": "2026-11-15T00:06:12.341Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:12:1"
+    ],
+    "sourceText": "ופרכינן לרבא תנא מהדר אהיתירא ונסיב לה למילתיה קרא לאיסורא ומשני להיתירא קא נסיב לה משום שנאמר בגבולין בשאור לך לך תרי זימני לא יראה לך שאור בכל גבולך שבעת ימים בפרשת ראה וכתיב לא יראה לך חמץ ולא יראה לך שאור בכל גבולך בפרשת בא ואם אינו ענין להאי לך בגבולין גבי ראייה דהא כבר אמור תניהו ענין ללא ימצא ודרוש ביה לא ימצא לך אף במצוי אצלך והיינו שרוי עמך קאמינא לך דאין חמץ אסור אלא אם כן שלך אבל אתה מוצא את שלו וההיא לך דחמץ לא קחשיב דשאור וחמץ מיצרך צריכי כדאמר בביצה <span class=\"parenthesized\">(דף ז:)</span> דחד מחבריה לא יליף:"
+  },
+  "Rashi on Pesachim 5b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T00:11:45.024Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחוזא</strong> - עירו של רבא:"
+  },
+  "Rashi on Pesachim 5b:15:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:15:1"
+    ],
+    "generatedAt": "2026-11-15T00:12:25.370Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבני חילא</strong> - גייס של בית המלך ומטילין תיקון טורח מזונותיהן על העיירות:"
+  },
+  "Rashi on Pesachim 5b:16:1": {
+    "dependsOn": [
+      "Pesachim 5b:16"
+    ],
+    "generatedAt": "2026-11-15T00:13:05.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא</strong> - הא דאמרינן דמשום אחריות אסור:"
+  },
+  "Rashi on Pesachim 5b:16:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:16:1",
+      "Bava Kamma 71b:1",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:1:2",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-11-15T00:14:53.135Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למאן דאמר כו'</strong> - רבי שמעון קאמר ליה בבבא קמא <span class=\"parenthesized\">(דף עא:)</span> קדשים שחייב באחריותן חייב:"
+  },
+  "Rashi on Pesachim 5b:1:1": {
+    "dependsOn": [
+      "Pesachim 5b:1",
+      "Pesachim 5a:19",
+      "Rashi on Pesachim 5b:1:2",
+      "Rashi on Pesachim 5a:20:1"
+    ],
+    "generatedAt": "2026-11-14T23:24:08.459Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ש\"מ</strong> - מדלא נפקא ליה דהאי יום הראשון ערב יום טוב הוא אלא משום דאסור להבעיר ביום טוב שמע מינה סבירא ליה כר' יהודה דאמר לקמן בפרק כל שעה [פסחים כא. וכז:] אין ביעור חמץ אלא שריפה ויליף לה מנותר דאי השבתתו בכל דבר סבירא ליה לוקמיה ביו\"ט ויבערנו בדבר אחר יאכילנו לכלבים או ישליכנו לים:"
+  },
+  "Rashi on Pesachim 5b:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:1:1",
+      "Rashi on Pesachim 5b:2:1",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5a:1:1",
+      "Rashi on Pesachim 4b:1:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-14T23:32:40.574Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וש\"מ</strong> - מדקאמר שהוא אב מלאכה סבירא ליה כר' נתן דאמר הבערה לחלק יצאתה דתניא <span class=\"parenthesized\">(שבת דף ע.)</span> הבערה ללאו יצאת שהיתה בכלל לא תעשה כל מלאכה חזר והוציאה מכללו ופרט בה לאו לעצמה לומר לך שאינה במיתת בית דין כשאר מלאכות אלא בלאו זה לבדו ר' נתן אומר לחלק יצאתה שלא תאמר העושה ארבעה או חמשה אבות מלאכות בשוגג בשבת אינו חייב אלא אחת דהא חד לאו איכא בכולהו וחד כרת לפיכך פרט בה בפני עצמה להקיש אליה מה היא מיוחדת שהיא אב מלאכה וחייבין עליה לעצמה כו' אלמא לר' יוסי לאו אב מלאכה היא:"
+  },
+  "Rashi on Pesachim 5b:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:2:1",
+      "Steinsaltz on Pesachim 5b:2",
+      "Pesachim 5b:3",
+      "Rashi on Pesachim 5b:3:1"
+    ],
+    "generatedAt": "2026-11-14T23:39:21.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והלא כבר נאמר ולא יראה לך שאור בכל גבולך</strong> - הרי בתים במשמע:"
+  },
+  "Rashi on Pesachim 5b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-14T23:40:12.691Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפי שנאמר ולא יראה לך</strong> - דמדכתב לך משמע מינה שלך אי אתה רואה אבל אתה רואה בגבולין של אחרים כגון נכרי ושל גבוה אם הקדישם לבדק הבית:"
+  },
+  "Rashi on Pesachim 5b:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:3:2",
+      "Rashi on Pesachim 5b:3:3",
+      "Rashi on Pesachim 5b:3:4",
+      "Rashi on Pesachim 5b:1:1",
+      "Rashi on Pesachim 5b:1:2",
+      "Rashi on Pesachim 5a:3:1",
+      "Rashi on Pesachim 5a:4:1"
+    ],
+    "generatedAt": "2026-11-14T23:41:51.995Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יכול</strong> - נלמוד ממקרא זה שיטמין את שלו ביד שלא יראנו ודיו דהא לא יראה כתיב:"
+  },
+  "Rashi on Pesachim 5b:3:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:3:2",
+      "Rashi on Pesachim 5b:3:4"
+    ],
+    "generatedAt": "2026-11-14T23:42:43.891Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויקבל פקדונות מן הנכרי</strong> - דהא כתיב לך:"
+  },
+  "Rashi on Pesachim 5b:3:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:3:2",
+      "Rashi on Pesachim 5b:3:3",
+      "Rashi on Pesachim 5b:3:4"
+    ],
+    "generatedAt": "2026-11-14T23:43:57.040Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ת\"ל לא ימצא</strong> - אסר לך הטמנה שאף היא בכלל מציאה ואסר לך של אחרים דהכא לא כתיב לך:"
+  },
+  "Rashi on Pesachim 5b:4:1": {
+    "dependsOn": [
+      "Pesachim 5b:4"
+    ],
+    "generatedAt": "2026-11-14T23:48:41.487Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין לי</strong> - מלא ימצא דאסור אלא נכרי שלא כבשתו תחת ידיך ואינו שרוי עמך בחצר ולקמיה פריך איפכא מסתברא:"
+  },
+  "Rashi on Pesachim 5b:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:4:1",
+      "Pesachim 5b:5",
+      "Pesachim 5b:6",
+      "Pesachim 5b:10",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:10:2",
+      "Rashi on Pesachim 5b:10:3"
+    ],
+    "generatedAt": "2026-11-14T23:49:59.901Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נכרי שכיבשתו תחת ידך</strong> - דהוי ממונו כממונך או שלא כיבשתו אבל שרוי בחצרך מנין תלמוד לומר לא ימצא לקמיה מפרש לה:"
+  },
+  "Rashi on Pesachim 5b:5:1": {
+    "dependsOn": [
+      "Pesachim 5b:5",
+      "Rashi on Pesachim 5b:5:2",
+      "Rashi on Pesachim 5b:4:1",
+      "Rashi on Pesachim 5b:4:2",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:3:2"
+    ],
+    "generatedAt": "2026-11-14T23:51:02.910Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין לי אלא בבתים</strong> - כלומר ואם נאמר זה ולא נאמר ולא יראה לך שאור הייתי אומר אין לי שאסור לשהות חמץ אלא בבתים מפני שהוא מצוי אצלו תמיד דהא בהאי קרא בתים הוא דכתיב:"
+  },
+  "Rashi on Pesachim 5b:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:5:1",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:4:1",
+      "Rashi on Pesachim 5b:4:2",
+      "Rashi on Pesachim 5a:1:1",
+      "Rashi on Pesachim 5a:2:1",
+      "Rashi on Pesachim 5a:3:1"
+    ],
+    "generatedAt": "2026-11-14T23:52:04.761Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תלמוד לומר בכל גבולך</strong> - בקרא דלא יראה כתיב:"
+  },
+  "Rashi on Pesachim 5b:6:1": {
+    "dependsOn": [
+      "Pesachim 5b:6",
+      "Pesachim 5b:10",
+      "Pesachim 5b:12",
+      "Pesachim 5b:13",
+      "Rashi on Pesachim 5b:10:1",
+      "Rashi on Pesachim 5b:11:1",
+      "Rashi on Pesachim 5b:12:1"
+    ],
+    "generatedAt": "2026-11-14T23:53:50.589Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 5b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועדיין</strong> - אע\"פ שנאמר שניהם יש לי לומר בבתים עובר בכל אלו דהא לא ימצא דמשמע אפילו הטמנה לא כתב אלא בבתים ולא כתב בהו נמי לך להוציא של אחרים אבל בגבולין בורות שיחין ומערות כתב לך ואני אומר אבל אתה רואה בהן של אחרים מנין ליתן קולו של זה בזה וחומרו של זה בזה ת\"ל כו' ולקמיה פריך מאי קאמר דמייתי לה של אחרים ושל גבוה לאיסורא ולהתירא הכא והכא:"
+  },
+  "Tosafot on Pesachim 5b:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 5b:12:1",
+      "Tosafot on Pesachim 5b:1:1",
+      "Tosafot on Pesachim 5b:1:2",
+      "Tosafot on Pesachim 5b:3:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:3:2",
+      "Tosafot on Pesachim 4a:1:1",
+      "Rashi on Pesachim 5b:2:1",
+      "Rashi on Pesachim 5b:3:1",
+      "Rashi on Pesachim 5b:4:1",
+      "Pesachim 5b:12",
+      "Chullin 135b:15",
+      "Chullin 135b:16",
+      "Tosafot on Pesachim 2a:4:1",
+      "Tosafot on Pesachim 2b:1:1",
+      "Tosafot on Pesachim 3a:1:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-15T00:10:59.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 5b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום דכתיב לך לך תרי זימני</strong> - פ\"ה כיון דמייתר לך שדייה אלא ימצא וקשה לרשב\"א דמיתורא דלך גופיה אפילו בלא [לא] ימצא מצינו למעוטי נכרי שכיבשתו ואור\"י דאי לאו מלא ימצא מלך לא ממעטינן נכרי שכיבשתו דההוא נמי לך חשיבא וה\"א דאתי לדרשה אחרינא אבל השתא דשדינא אלא ימצא ממשמעותיה ממעטינן נכרי שכיבשתו דלא ימצא לך משמע אפילו במצוי בעינא לך אבל עוד קשה לו כיון דשדינא אלא ימצא אמאי איצטריך ליה לעיל למדרש מה שאור האמור בגבולים וכו' אף שאור האמור בבתים שלך אי אתה רואה וכו' ותירץ ר\"י דאי לאו דרשה דשאור שאור הוה מוקי לה למעוטי של אחרים ושל גבוה בבתים כמו בגבולים ולא למעוטי נכרי שכיבשתו ודוחק הקשה רבינו תם דבשום דוכתא לא מצריכנא תרי קראי לכיבשתו ושלא כיבשתו בראשית הגז <span class=\"parenthesized\">(חולין קלה:)</span> גבי ביתך דגנך שדך וטובא דמייתי התם בכולהו לא מצריך אלא חד קרא לכיבשתו ולשלא כיבשתו ותי' רשב\"א דכיון דגלי לן הכא נכרי שכיבשתו לא חשיב שלך בשום דוכתא תו לא צריך תרי קראי וממעטינן תרוייהו מחד קרא וכן יש לתרץ מה שהקשה ה\"ר יעקב דאורליינ\"ש מעריסותיכם:"
+  },
+  "Tosafot on Pesachim 5b:1:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 5b:1:2",
+      "Pesachim 5b:1",
+      "Rashi on Pesachim 5b:1:1",
+      "Rashi on Pesachim 5b:1:2",
+      "Pesachim 5a:19"
+    ],
+    "generatedAt": "2026-11-14T23:36:51.039Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 5b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לחלק יצאת</strong> - מדקרי לה אב מלאכה ועוד אומר ריב\"א דלמ\"ד ללאו יצאתה לא היה אסור ביו\"ט כיון דאין שם מלאכה עליה:"
+  },
+  "Tosafot on Pesachim 5b:1:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 5b:1:1"
+    ],
+    "generatedAt": "2026-11-14T23:38:07.057Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 5b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרינן מתוך</strong> - דאי אמרינן מתוך שרי אע\"ג דבעינן צורך היום קצת הכא מה שמבער הוי צורך:"
+  },
+  "Tosafot on Pesachim 5b:3:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 5b:3:1"
+    ],
+    "generatedAt": "2026-11-14T23:47:30.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 5b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אתה רואה של אחרים ושל גבוה</strong> - הקשה הרב ר' יעקב דאורליי\"נש דהכא לא מצריך תרי קראי למעוטי נכרי וגבוה דמחד לך ממעטינן תרוייהו אע\"ג דתלתא לך כתיבי ובפ' כל שעה <span class=\"parenthesized\">(לקמן פסחים כג.)</span> משמע דצריכי כולהו ובמנחות בפרק רבי ישמעאל <span class=\"parenthesized\">(מנחות דף סז. ושם)</span> קאמר תרי עריסותיכם כתיבי חד למעוטי נכרי וחד למעוטי הקדש ומיהו בספרים מדויקים גרס חד כדי עריסותיכם פירוש כשיעור עיסת מדבר וחד לעיסת הקדש וכן נראה דבראשית הגז <span class=\"parenthesized\">(חולין קלה:)</span> דרשינן מעריסותיכם כדי עיסתכם:"
+  }
+}

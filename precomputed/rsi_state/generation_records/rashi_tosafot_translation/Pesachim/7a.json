@@ -1,0 +1,314 @@
+{
+  "Rashi on Pesachim 7a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:12:34.884Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מוכיח עליה</strong> - שהרי הוא זה ימים רבים וחמץ הוא:"
+  },
+  "Rashi on Pesachim 7a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:11:1",
+      "Pesachim 7a:11"
+    ],
+    "generatedAt": "2026-11-15T02:13:40.116Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרבו ימי המצה</strong> - וראוי להיות מעופש משנכנס הפסח:"
+  },
+  "Rashi on Pesachim 7a:12:1": {
+    "dependsOn": [
+      "Pesachim 7a:12",
+      "Rashi on Pesachim 7a:11:1",
+      "Rashi on Pesachim 7a:11:2",
+      "Pesachim 7a:11",
+      "Pesachim 7a:8",
+      "Pesachim 7a:7",
+      "Rashi on Pesachim 7a:6:1"
+    ],
+    "generatedAt": "2026-11-15T02:14:39.044Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי פשיטא</strong> - אפי' ספק ליכא דמסתמא ודאי בדקה והא מצה היא:"
+  },
+  "Rashi on Pesachim 7a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:15:20.570Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם רוב חולין</strong> - נשתמשו בה חולין אלמא בתר רובא אזלינן ולא בתר בתרא:"
+  },
+  "Rashi on Pesachim 7a:15:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:15:1",
+      "Rashi on Pesachim 7a:15:2",
+      "Pesachim 7a:15"
+    ],
+    "generatedAt": "2026-11-15T02:16:10.046Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציבורין ציבורין</strong> - של מעשר בזוית זו ושל חולין בזוית זו וביום אחד:"
+  },
+  "Rashi on Pesachim 7a:15:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:15:1"
+    ],
+    "generatedAt": "2026-11-15T02:16:55.359Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגומא</strong> - דליכא למימר זיל בתר בתרא דקמאי הא שקלינהו משום דיש לחוש שמא בגומא נטמן ולא ראוהו:"
+  },
+  "Rashi on Pesachim 7a:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:17:30.955Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלבער כולי עלמא לא פליגי דלהבא משמע</strong> - ושפיר דמי דברכה קודם עשיית המצוה בעינן כדלקמן:"
+  },
+  "Rashi on Pesachim 7a:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:1:2",
+      "Pesachim 7a:1"
+    ],
+    "generatedAt": "2026-11-15T01:41:08.972Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וניבטליה בשית</strong> - ליתקנו רבנן לכל אדם ליבטל בלבו בתחלת שש דהשתא לא פשע דאיכא זכרון טובא שהרי עסוק בשריפתו:"
+  },
+  "Rashi on Pesachim 7a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:1:1",
+      "Pesachim 7a:1",
+      "Rashi on Pesachim 6b:15:1",
+      "Steinsaltz on Pesachim 7a:1"
+    ],
+    "generatedAt": "2026-11-15T01:42:54.141Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאיסורא דרבנן</strong> - דמשעברו חמש אסור בחמץ לדברי הכל כדאורייתא דמי ואינו שלו ולא מצי מבטל ליה בלבו וכיון דחס עליה ומשהי ליה פורתא עבר עליה:"
+  },
+  "Rashi on Pesachim 7a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:43:13.920Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקדש</strong> - אשה:"
+  },
+  "Rashi on Pesachim 7a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:2:1",
+      "Rashi on Pesachim 7a:2:3"
+    ],
+    "generatedAt": "2026-11-15T01:44:06.943Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משש שעות ולמעלה</strong> - מתחלת שש דאיסורא דרבנן הוא:"
+  },
+  "Rashi on Pesachim 7a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:45:19.343Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו בחיטי קורדנייתא</strong> - הצומחים בהרי אררט קשין הם מאד ואפילו הכי אין חוששין לקדושין אם באו עליהם מים ואף על גב דאתי איסור הנאת חמץ דרבנן דשש ומפקע קידושי תורה ושרי אשת איש לעלמא הא מתרצינן בכמה דוכתין כל דמקדש אדעתא דרבנן מקדש והפקר ב\"ד הפקר והם הפקירו ממונו:"
+  },
+  "Rashi on Pesachim 7a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:58:22.705Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיסה מגולגלת</strong> - שלא החמיצה ומפני אימת כבוד רבו אין יכול לקום ולילך ולאפותה:"
+  },
+  "Rashi on Pesachim 7a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T01:58:53.118Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקדים ומבטל לה</strong> - בלבו דעדיין היא ברשותו שלא נאסרה עליו:"
+  },
+  "Rashi on Pesachim 7a:5:1": {
+    "dependsOn": [
+      "Pesachim 7a:5",
+      "Pesachim 7a:4",
+      "Rashi on Pesachim 7a:4:1",
+      "Rashi on Pesachim 7a:2:1",
+      "Rashi on Pesachim 6b:8:1",
+      "Rashi on Pesachim 6b:9:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2"
+    ],
+    "generatedAt": "2026-11-15T02:00:25.614Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיקא נמי</strong> - דעדיין לא החמיצה דקתני היה יושב בבית המדרש דמשמע מפני שאין יכול לקום ולילך משם הוא מבטלה בלבו ואי בחמץ גמור למה לי יושב בבית המדרש ואפילו אם היה פנוי מה בידו לעשות יותר השבתה בלב זהו ביעורו אלא ודאי כשיש בידו לתקן קאי ובידו לאפותה אם היה פנוי הואיל ולא החמיצה עדיין ומשום יום טוב נקט יושב בבית המדרש ודשבת מתוקמא בחמץ גמור ובארבעה עשר שחל להיות בשבת:"
+  },
+  "Rashi on Pesachim 7a:6:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 2a:3:1"
+    ],
+    "generatedAt": "2026-11-15T02:02:14.337Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון שרבתה מצה</strong> - קס\"ד אם נשתמשו בתיבה זו מצה יותר מחמץ אזלינן בתר רובא ומותרת:"
+  },
+  "Rashi on Pesachim 7a:8:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:8:1",
+      "Rashi on Pesachim 7a:8:2",
+      "Rashi on Pesachim 7a:1:1",
+      "Rashi on Pesachim 7a:2:1",
+      "Rashi on Pesachim 7a:2:2",
+      "Tosafot on Pesachim 7a:8:1",
+      "Rashi on Pesachim 6b:1:1"
+    ],
+    "generatedAt": "2026-11-15T02:04:28.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:8:1"
+    ],
+    "sourceText": "רוב אוכלי בשר בירושלים כל ימות השנה ממעות מעשר שני הן לפי שלא היו מספיקין לאכול כל מעות מעשר שני שלהן ברגל ונותנין אותם לבני העיר בטובת הנאה והן אוכלים אותם בקדושתן ועיקר אכילת מעות מעשר שלמים היו מביאין מהן כדקיימא לן במנחות <span class=\"parenthesized\">(דף פב.)</span> הלכך לוקחין מהן בהמות דכל זמן שיש לו מעות מעשר אינו מוציא מעות חולין ואע\"ג דאיכא למימר שמא מיד המוכר נפלו ומעות חולין הן ספק איסורא לחומרא:"
+  },
+  "Rashi on Pesachim 7a:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:8:1",
+      "Pesachim 7a:8"
+    ],
+    "generatedAt": "2026-11-15T02:06:11.395Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 7a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהר הבית לעולם חולין</strong> - ואפילו בשעת הרגל שיש מעות מעשר מרובין בירושלים ממעות חולין לא מספקינן להו במעשר דאזלינן בתר רובא דשתא ואמרינן לאו האידנא נפול אלא קודם הרגל ובירושלים בשאר ימות השנה חולין דרוב מעות העיר חולין ובשעת הרגל מעשר כדמפרש טעמא מה טעם בשעת הרגל מעשר ולא אמרי' קודם הרגל נפול כדאמרן בנמצאין בהר הבית הואיל ושווקי ירושלים עשויים להתכבד בכל יום מפני הטיט ואי נפול קודם הרגל הוו משתכחי בשעת כיבוד אבל הר הבית מתוך שהוא משופע והרוח מכבדתו מעפרו ועוד שאין אדם נכנס באבק שעל גבי רגליו ואינו עשוי להתכבד אלמא בכל דבר העשוי להתכבד אמרינן קמאי קמאי אזדו וסתם תיבות שמשתמשין בהן אוכלין נוטלין ראשון ראשון כדי שלא יתעפשו וכל שכן דמסתמא בדקה זה אור לארבעה עשר והאי דבתרא היא ומצה היא:"
+  },
+  "Tosafot on Pesachim 6b:16:1": {
+    "dependsOn": [
+      "Pesachim 6b:16",
+      "Rashi on Pesachim 6b:16:1",
+      "Rashi on Pesachim 6b:16:2",
+      "Rashi on Pesachim 6b:16:3",
+      "Pesachim 4b:8",
+      "Pesachim 7a:2",
+      "Tosafot on Pesachim 7a:2:1",
+      "Pesachim 7a:1"
+    ],
+    "generatedAt": "2026-11-15T01:57:50.767Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 6b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משש שעות ולמעלה</strong> - פ\"ה מתחלת שש ולא נהירא לר\"ת דע\"כ הא דאמר לעיל חמץ מו' שעות ולמעלה אסור היינו מסוף שש ופר\"ת דמסוף שש קאמר ומייתי ראיה מחיטי קורדנייתא שהן קשין והוה חמץ נוקשה שאינו אסור נמי אלא מדרבנן:"
+  },
+  "Tosafot on Pesachim 7a:10:1": {
+    "dependsOn": [
+      "Tosafot on Niddah 56b:8:1",
+      "Niddah 56b:1"
+    ],
+    "generatedAt": "2026-11-15T02:11:00.473Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עשויין להתכבד בכל יום</strong> - קשה לר\"י דמסקי' בפרק דם הנדה <span class=\"parenthesized\">(נדה נו: ושם)</span> גבי שרץ שנמצא במבוי אין חזקתו מתכבד אלא על ידי בדיקה ותירץ דשרץ שהוא בכעדשה אין חזקתו כל כך מתכבד כמו במעות:"
+  },
+  "Tosafot on Pesachim 7a:16:1": {
+    "dependsOn": [
+      "Shabbat 137b:7",
+      "Shabbat 137b:6",
+      "Maharsha on Pesachim 7a:3",
+      "Chokhmat Shlomo on Pesachim 7a:1",
+      "Chokhmat Shlomo on Pesachim 7a:2",
+      "Tosafot on Shabbat 137b:6:1",
+      "Tosafot on Pesachim 6b:16:1",
+      "Tosafot on Pesachim 7a:2:1",
+      "Tosafot on Pesachim 7a:8:1",
+      "Tosafot on Pesachim 7a:10:1",
+      "Rashi on Pesachim 7a:16:1",
+      "Tosafot on Pesachim 7b:1:1",
+      "Tosafot on Pesachim 4a:1:1",
+      "Rosh on Pesachim 1:10:1",
+      "Ritva on Pesachim 7a:6",
+      "Ritva on Pesachim 7a:5"
+    ],
+    "generatedAt": "2026-11-15T02:21:50.409Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 7a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בלבער כ\"ע לא פליגי דלהבא משמע</strong> - מכאן היה מצריך רשב\"א לברך לפני המילה להכניסו דאי לאחר המילה ישקר בברכתו דלהכניסו להבא משמע ועוד שצריך לברך עובר לעשייתו ולא נראה לר\"ת דבפרק ר' אליעזר דמילה <span class=\"parenthesized\">(שבת דף קלז: ושם)</span> תניא המל אומר אקב\"ו על המילה אבי הבן אומר להכניסו משמע לאחר המילה מקומו אע\"ג דלהכניסו משמע להבא לא קשה דלא על זאת הנעשה עכשיו מברך אלא משבח ומודה להקב\"ה שצונו על המילה כשתבא לידו ותיקנוה כאן לגלות ולהודיע שזו המילה נעשה לשם יוצרנו ולא לשם ע\"ג ולא לשם מורנא ולא לשם הר גרזים ואין צריך לברך עובר לעשייתו אלא במקום שהעושה המצוה הוא מברך אבל כשמברך אחר לא ותדע שהרי ברכת אירוסין אינו מברך אלא אחר אירוסין:"
+  },
+  "Tosafot on Pesachim 7a:8:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 7a:8:1",
+      "Rashi on Pesachim 7a:8:2"
+    ],
+    "generatedAt": "2026-11-15T02:07:17.424Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפני סוחרי בהמה לעולם מעשר</strong> - פ\"ה אע\"פ דאיכא למתלי במוכר כמו בלוקח מספיקא תלינן לחומרא ואין נראה לר\"י דסמוך מיעוטא דחולין דשאר מעות לפלגא דמוכר וה\"ל רובא להיתר ואור\"י דלוקחים הוו רובא דכמה בני אדם עומדים על בהמה אחת לקנות:"
+  },
+  "Tosafot on Pesachim 7a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:08:29.629Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 7a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהר הבית לעולם חולין</strong> - מקשה ר\"י היאך נמצאו שם הא אמר בפ' הרואה <span class=\"parenthesized\">(ברכות סב:)</span> לא יכנס בהר הבית במעות הצרורות בסדינו ואור\"י דאינו אסור אלא היכא דנושאן בפרהסיא בסדינו דגנאי הוא דנראה כהולך שם לסחורה אבל בצינעא לא:"
+  }
+}

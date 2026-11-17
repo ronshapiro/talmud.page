@@ -1,0 +1,384 @@
+{
+  "Rashi on Pesachim 28a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:32:09.139Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום שנאמר לא יראה לך</strong> - בגמרא מפרש לה משום קנסא דעבר עליה משום בל יראה:"
+  },
+  "Rashi on Pesachim 28a:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:11:1",
+      "Rashi on Pesachim 28a:11:2",
+      "Rashi on Pesachim 28a:11:3",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T10:34:39.289Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בין לפני זמנו</strong> - משש שעות עד שתחשך:"
+  },
+  "Rashi on Pesachim 28a:11:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:11:1",
+      "Rashi on Pesachim 28a:11:3"
+    ],
+    "generatedAt": "2026-11-16T10:35:25.684Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר זמנו</strong> - משעבר הפסח עובר עליו בלאו ואם אכלו אינו ענוש כרת ולקמן מפרש ללאו:"
+  },
+  "Rashi on Pesachim 28a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:35:49.444Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך זמנו</strong> - במועד:"
+  },
+  "Rashi on Pesachim 28a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T09:42:12.802Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמץ ישנו בבל תותירו</strong> - לא יראה ולא ימצא:"
+  },
+  "Rashi on Pesachim 28a:2:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:2:1",
+      "Rashi on Pesachim 28a:2:2",
+      "Rashi on Pesachim 28a:2:3",
+      "Rashi on Pesachim 28a:1:1",
+      "Rashi on Pesachim 27b:1:1",
+      "Rashi on Pesachim 27b:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:2:1",
+      "Rashi on Pesachim 27b:4:2",
+      "Keritot 2a:4:2"
+    ],
+    "generatedAt": "2026-11-16T09:51:50.885Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשם תלוי</strong> - בא על ספק כרת כגון חלב ושומן לפניו ושגג באחד מהן ואינו יודע איזה מהן אכל ואם שחטו ואירע בו פסול או נותר פליגי ר' יהודה ורבנן בשילהי פרק בתרא דתמורה לר' יהודה בקבורה לרבנן בשריפה:"
+  },
+  "Rashi on Pesachim 28a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:2:1",
+      "Rashi on Pesachim 28a:2:3",
+      "Rashi on Pesachim 28a:1:1"
+    ],
+    "generatedAt": "2026-11-16T09:53:16.680Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חטאת העוף הבא על הספק</strong> - כגון הפילה ספק ולד ספק אינו ולד אינה אוכלת בקדשים שמא ולד הוא עד שתביא כפרתה העולה באה על תנאי אם ילדתי הרי היא לחובתי ואם לאו הרי היא נדבה וחטאת העוף מביאתו על הספק ואין כאן משום חולין בעזרה דמקראי נפיק במסכת נזיר בפרק מי שאמר <span class=\"parenthesized\">(נזיר דף כט.)</span> ואסורה באכילה שמא חולין היא ומליקתה שויה נבילה ופליגי בה רבי יהודה ורבנן בפרק בתרא דתמורה חטאת העוף הבא על הספק תשרף רבי יהודה אומר יטילנה לאמה:"
+  },
+  "Rashi on Pesachim 28a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T09:54:22.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתה אומר בקבורה</strong> - אאשם תלוי קאי דקאמר ר' יהודה יקבר ואע\"ג שהנותר ממנו אסור באכילה ובהנאה וענוש כרת והוא בבל תותירו:"
+  },
+  "Rashi on Pesachim 28a:3:1": {
+    "dependsOn": [
+      "Jastrow, חֲטַט I 1",
+      "Jastrow, כַּף ² 1"
+    ],
+    "generatedAt": "2026-11-16T10:02:22.217Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כפא דחטא נגרא</strong> - כף בזך שחקק האומן בתוכו ישרוף את לשונו ואת חכו בחרדל לישנא אחרינא ישרוף הומי\"ר בלע\"ז כמו שורפה חיה בע\"ז <span class=\"parenthesized\">(דף כט:)</span>:"
+  },
+  "Rashi on Pesachim 28a:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:4:1",
+      "Rashi on Pesachim 28a:4:2",
+      "Jastrow, סַדָּנָא II 1",
+      "Steinsaltz on Pesachim 28a:4",
+      "Sefer HeArukh, Letter Samekh 73",
+      "Rashi on Pesachim 28a:10:1",
+      "Rashi on Pesachim 28a:11:1",
+      "Rashi on Pesachim 28a:11:2",
+      "Rashi on Pesachim 28a:11:3",
+      "Rashi on Pesachim 28a:7:1",
+      "Rashi on Pesachim 28a:7:2",
+      "Rashi on Pesachim 28a:7:3",
+      "Rashi on Pesachim 28a:2:1",
+      "Rashi on Pesachim 28a:2:2",
+      "Rashi on Pesachim 28a:2:3"
+    ],
+    "generatedAt": "2026-11-16T10:09:31.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סדנא</strong> - נגר עושה סד לשום בו רגלי אסירים כמו ותשם בסד רגלי <span class=\"parenthesized\">(איוב י״ג:כ״ז)</span>:"
+  },
+  "Rashi on Pesachim 28a:4:2": {
+    "dependsOn": [
+      "Pesachim 28a:4",
+      "Rashi on Pesachim 28a:4:1",
+      "Rashi on Pesachim 28a:5:1"
+    ],
+    "generatedAt": "2026-11-16T10:10:54.659Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדויל ידיה משתלים</strong> - מהרמת ידו וממלאכתו משתלם שכרו כשנמצא גנב:"
+  },
+  "Rashi on Pesachim 28a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:11:17.362Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גיראה</strong> - עושה חצים:"
+  },
+  "Rashi on Pesachim 28a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:12:08.620Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דילמא</strong> - לרוח הוא דבעי פירור שמא יזרקנו שלם וימצאנה אחר ויאכלנו אבל לים מטיל בעיניה דממיס ונימוק מאליו. לשון שחיקה שייך במתכת ולשון פירור שייך בפת:"
+  },
+  "Rashi on Pesachim 28a:7:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:7:2",
+      "Rashi on Pesachim 28a:7:3"
+    ],
+    "generatedAt": "2026-11-16T10:19:26.205Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ים המלח</strong> - אין ספינה עוברת בו:"
+  },
+  "Rashi on Pesachim 28a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:7:1",
+      "Rashi on Pesachim 28a:7:2",
+      "Rashi on Pesachim 28a:7:3",
+      "Chokhmat Shlomo on Pesachim 28a:3"
+    ],
+    "generatedAt": "2026-11-16T10:20:10.293Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בעי פירור</strong> - שמא תפגע בו ספינה ותטלנו ולאו אדעתייהו:"
+  },
+  "Rashi on Pesachim 28a:7:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:7:3",
+      "Rashi on Pesachim 28a:7:1",
+      "Rashi on Pesachim 28a:7:2"
+    ],
+    "generatedAt": "2026-11-16T10:20:53.541Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא ממסה</strong> - אין המים ממסות אותו:"
+  },
+  "Rashi on Pesachim 28a:8:1": {
+    "dependsOn": [
+      "Pesachim 28a:8",
+      "Rashi on Pesachim 28a:8:2",
+      "Rashi on Pesachim 28a:7:1",
+      "Rashi on Pesachim 28a:7:2",
+      "Rashi on Pesachim 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T10:29:04.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא כוותיה דרבה</strong> - דחמץ בעי פירור:"
+  },
+  "Rashi on Pesachim 28a:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 28a:8:1",
+      "Rashi on Pesachim 28a:7:1",
+      "Rashi on Pesachim 28a:7:2",
+      "Rashi on Pesachim 28a:7:3",
+      "Pesachim 28a:8"
+    ],
+    "generatedAt": "2026-11-16T10:30:51.394Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תניא כוותיה דרב יוסף</strong> - דע\"ז בעי שחיקה:"
+  },
+  "Rashi on Pesachim 28a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:31:22.973Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 28a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחיטי</strong> - שהחמיצו בעי פירור כלומר פיזור שלא יתנם בשק ויזרקם אלא יפזרם על פני המים שלא יוכל אדם ללקטן מעל פני המים:"
+  },
+  "Tosafot on Pesachim 28a:1:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 27b:1:1",
+      "Tosafot on Pesachim 28a:1:2",
+      "Pesachim 28a:1"
+    ],
+    "generatedAt": "2026-11-16T09:45:35.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חזר ר' יהודה ודנו דין אחר</strong> - הא דקרי ליה השתא דין אחר טפי מהני דלעיל אומר ריב\"א משום דהשתא אין צריך לאיסור אכילה והנאה וענוש כרת אלא בצד דבל תותירו לחודיה מצינו למילף דליתיה בכולהו:"
+  },
+  "Tosafot on Pesachim 28a:1:2": {
+    "dependsOn": [
+      "Pesachim 28a:1",
+      "Tosafot on Pesachim 28a:1:1",
+      "Pesachim 27b:12",
+      "Pesachim 27b:11",
+      "Pesachim 27b:10",
+      "Pesachim 27b:8",
+      "Rashi on Pesachim 28a:1:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:1:2",
+      "Tosafot on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-11-16T09:47:48.669Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחמץ הרי הוא בבל תותירו</strong> - תימה לר\"י היכי עביד לעיל קל וחומר מנותר שאינו בבל יראה ובל ימצא והא חשיב הכא בל תותירו כמו בל יראה ואומר ר\"י דמכל מקום נראה דעביד שפיר קל וחומר דנותר אינו בבל יראה דמיד שהותיר עובר ושוב אינו עובר אבל חמץ אפי' לאחר שהותיר עובר בכל שעה בבל יראה:"
+  },
+  "Tosafot on Pesachim 28a:2:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 28a:2:2",
+      "Tosafot on Pesachim 27b:6:2",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T09:58:36.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמרו לו אשם תלוי יוכיח</strong> - תימה לרשב\"א לדבריהם דרבנן דאמרו שהם בשריפה אמאי לא ילפינן חמץ מנותר שהוא בשריפה ואומר ר\"י דמשמע להו הנותר בשריפה ולא כל איסורין שבתורה בשריפה ואפי' חמץ:"
+  },
+  "Tosafot on Pesachim 28a:2:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 28a:2:1",
+      "Maharsha: Chidushei Halachot on Pesachim 28a:1",
+      "Rashi on Pesachim 28a:2:1",
+      "Rashi on Pesachim 28a:2:2",
+      "Rashi on Pesachim 28a:2:3",
+      "Malbim on Leviticus, Tzav 127:1"
+    ],
+    "generatedAt": "2026-11-16T10:00:35.666Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתה אומר בקבורה</strong> - טעמא דר' יהודה דריש בת\"כ מכי קדש הוא הוא בשריפה ולא חטאת עוף ואשם תלוי בשריפה:"
+  },
+  "Tosafot on Pesachim 28a:6:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 28a:6:1"
+    ],
+    "generatedAt": "2026-11-16T10:18:54.760Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותנן נמי גבי ע\"ז</strong> - אומר ר\"י דרבנן דמתניתין היינו רבי יוסי דפרק כל הצלמים <span class=\"parenthesized\">(ע\"ז מג:)</span> אי נמי מתני' דהכא א\"ש כרבנן דהתם דאמרו לו אף היא נעשה זבל ומגדל צמחים ורחמנא אמר לא ידבק בידך וגו' והא דשרו הכא היינו משום דבחמץ כתיב לא יאכל ואינו אסור אלא כדרך הנאה וכי האי גוונא לאו דרך הנאה היא אבל בע\"ז לא כתיב אכילה ואסור אפי' שלא כדרך הנאה:"
+  },
+  "Tosafot on Pesachim 28a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T10:22:04.555Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חמץ דלשאר נהרות</strong> - דלא מצינו שהיה שונה בשום מקום גבי חמץ ים המלח אבל גבי ע\"ז אשכחן בכמה דוכתין כי האי דלעיל יוליך הנאה לים המלח הלכך סתם ים דתני גבי ע\"ז הוי ים המלח מיהו לרבה מועלת שחיקה בשאר נהרות כדקאמר בסמוך כאן בים המלח כאן בשאר נהרות:"
+  },
+  "Tosafot on Pesachim 28a:7:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 28a:7:1",
+      "Tosafot on Pesachim 28a:7:3",
+      "Chokhmat Shlomo on Pesachim 28a:4"
+    ],
+    "generatedAt": "2026-11-16T10:23:13.123Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איפכא מסתברא</strong> - לשון איפכא אינו מיושב דמה שייך איפכא כיון שרבה משוה אותם:"
+  },
+  "Tosafot on Pesachim 28a:7:3": {
+    "dependsOn": [
+      "Pesachim 28a:7",
+      "Tosafot on Pesachim 28a:7:1",
+      "Tosafot on Pesachim 28a:7:2",
+      "Tosafot on Pesachim 28a:6:1",
+      "Tosafot on Pesachim 28a:2:1",
+      "Tosafot on Pesachim 28a:2:2",
+      "Tosafot on Pesachim 21a:1:1",
+      "Tosafot on Pesachim 21a:2:1"
+    ],
+    "generatedAt": "2026-11-16T10:27:04.922Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 28a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ע\"ז דלא ממיסה בעי שחיקה</strong> - לכאורה משמע דלרב יוסף בעי שחיקה אפילו בים המלח דמסתמא אמאי דקאמר רבה אין צריך שחיקה דהיינו בים המלח קאמר רב יוסף דבעי שחיקה ועוד אי בשאר נהרות דוקא קאמר רב יוסף דבעי שחיקה ולא בים המלח ולא פליג ארבה בע\"ז אלא בחמץ א\"כ מאי קאמר תניא כוותיה דרב יוסף ומאי קאמר נמי שחיקה קשיא לרבה ולפי זה לרב יוסף בשאר נהרות לא מהני שחיקה מדקמצריך להוליך לים המלח ואין נראה דהא ר' יוסי מייתי ראיה מויזר על פני המים משמע דמהניא שחיקה בשאר נהרות ועוד דבכל מקום דמזכיר ים המלח בע\"ז ובשאר דוכתין לא מזכיר שחיקה ובכמה דוכתין מצינו דקתני ים המלח ואפי' הכי מהני בשאר נהרות דבסוף כל הצלמים <span class=\"parenthesized\">(ע\"ז מט:)</span> תנן ר' אליעזר אומר יוליך הנאה לים המלח ואמרינן התם בגמרא גבי חבית שקול ד' זוזי ושדי לנהרא וכן בנזיר <span class=\"parenthesized\">(דף כד.)</span> ובמעילה <span class=\"parenthesized\">(דף יא.)</span> תנן גבי מפריש מעות לנזיר ומת יוליך לים המלח אלמא הקדש בעי ים המלח ובערכין <span class=\"parenthesized\">(דף כט.)</span> אמרינן גבי הקדש שקול ארבעה זוזי ושדי בנהרא לכך נראה דגם לרב יוסף לא בעי שחיקה אלא בשאר נהרות כמו לרבה אלא דרבה סבירא ליה דמטיל לים סתם דע\"ז היינו ים המלח ובלא שחיקה כדתנא רישא גבי צורת לבנה וצורת חמה ובכמה דוכתי יוליך לים המלח ורב יוסף מוקי לה בשאר נהרות ועל ידי שחיקה מדלא תני בהדיא יטיל לים המלח וליכא בין רבה לרב יוסף אלא חמץ בשאר נהרות וא\"ת לרבנן דלית להו בע\"ז <span class=\"parenthesized\">(מפרר)</span> [שוחק] וזורה לרוח מה יעשו מע\"ז אטו כל שעה יוליך לים המלח דלרבנן לא מהני שחיקה בשאר נהרות דקתני התם אמרו לו משם ראיה הרי הוא אומר ויזר על פני המים לא נתכוין משה אלא לבודקן כסוטה ומדאיצטריך להאי טעמא מכלל דלא מהני שחיקה בשאר נהרות וטעמא לפי שהמים מוליכים אותו על ידות הנהר ויש לומר דלרבנן מפרר וזורה לרוח במקום שאין מגדל צמחים וכן אמרינן התם:"
+  }
+}

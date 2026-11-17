@@ -1,0 +1,375 @@
+{
+  "Rashi on Pesachim 24a:11:1": {
+    "dependsOn": [
+      "Yevamot 73b:15-18",
+      "Yevamot 73b:10-14",
+      "Yevamot 73b:6-10",
+      "Pesachim 24a:10-12",
+      "Rashi on Pesachim 24a:12:1",
+      "Rashi on Pesachim 24a:12:2",
+      "Rashi on Pesachim 24a:3:1",
+      "Rashi on Pesachim 24a:4:1",
+      "Rashi on Pesachim 24a:5:1",
+      "Rashi on Pesachim 23b:1:1",
+      "Rashi on Pesachim 23b:2:1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:2:1"
+    ],
+    "generatedAt": "2026-11-16T03:42:52.617Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא בערתי</strong> - אזהרה נפקא לן ביה ביבמות בהערל <span class=\"parenthesized\">(יבמות דף עג:)</span>:"
+  },
+  "Rashi on Pesachim 24a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:45:13.977Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מזהירין</strong> - מדין קל וחומר אף על פי שאדם דן קל וחומר מעצמו אינה אזהרה ללאו במסכת מכות <span class=\"parenthesized\">(דף ה:)</span> נפקא לן:"
+  },
+  "Rashi on Pesachim 24a:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:12:1",
+      "Yevamot 73b:7",
+      "Rashi on Yevamot 73b:7:1"
+    ],
+    "generatedAt": "2026-11-16T03:47:07.438Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היקשא הוא</strong> - ולאו קל וחומר דאיתקש נדריך ונדבותיך דהיינו שלמים למעשר דגן דכתיב ביה לא בערתי ממנו בטמא ותייתי לן מינה דאף קדשים לא יאכלו בטומאה ולא בערתי ממנו בטמא אע\"ג דוידוי בעלמא הוא ואינו לאו הא נפקא לן ביה איסור לאו ביבמות בהערל מהאי קרא דלא תוכל לאכול בשעריך ולהלן הוא אומר בפסולי המוקדשים שנפדו <span class=\"parenthesized\">(דברים ט״ו:כ״ב)</span> בשעריך תאכלנו הטמא והטהור יחדיו טמא וטהור אוכלין בקערה אחת יש כאן טומאת בשר לטהור וטומאת הגוף לטמא וקא אמר רחמנא גבי מעשר וקדשים ההוא בשעריך דשראי לך ביה טומאה התם בפסולי המוקדשין הכא לא תאכל:"
+  },
+  "Rashi on Pesachim 24a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:51:24.966Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכל פוטיתא</strong> - שרץ המים:"
+  },
+  "Rashi on Pesachim 24a:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:52:14.028Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לוקה ארבע</strong> - חד לאו בשרץ המים בתורת כהנים דהוא ספר ויקרא וחד במשנה תורה ושני לאוין כתובים בתורת כהנים בשקצים סתם לא תשקצו את נפשותיכם בכל השרץ השורץ ולא תטמאו בהן והכא לא כתיב על הארץ ומשמע בין שרץ המים ובין שרץ הארץ הרי ארבע:"
+  },
+  "Rashi on Pesachim 24a:16:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:16:1",
+      "Rashi on Pesachim 24a:16:2"
+    ],
+    "generatedAt": "2026-11-16T03:52:43.752Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נמלה</strong> - שהוא שרץ הארץ:"
+  },
+  "Rashi on Pesachim 24a:16:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:16:1",
+      "Pesachim 24a:15",
+      "Rashi on Pesachim 24a:15:1",
+      "Rashi on Pesachim 24a:15:2",
+      "Rashi on Pesachim 24a:6:1",
+      "Rashi on Pesachim 24a:6:2",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 2a:2:1",
+      "Rashi on Pesachim 23b:13:1",
+      "Rashi on Pesachim 2a:4:1",
+      "Rashi on Pesachim 2a:4:2",
+      "Rashi on Berakhot 2a:5:2",
+      "Rashi on Berakhot 2a:5:7",
+      "Leviticus 11:41",
+      "Leviticus 11:42",
+      "Leviticus 11:44"
+    ],
+    "generatedAt": "2026-11-16T03:55:38.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:16:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לוקה חמש</strong> - הני תרי דסתם שרצים וחד וכל השרץ השורץ על הארץ שקץ הוא לא יאכל וחד לכל השרץ השורץ על הארץ לא תאכלום כי שקץ הם וחד ולא תטמאו את נפשותיכם בכל השרץ הרומש על הארץ:"
+  },
+  "Rashi on Pesachim 24a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:19:47.498Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אינו ענין</strong> - לאוסרם באכילה דהא איסור אכילה בגופייהו כתיב זו מדה בתורה דבר שלא הוצרך לגופו תנהו ענין לענין אחר ותלמוד דבר לדבר אחר וכל המדות הלכה למשה מסיני:"
+  },
+  "Rashi on Pesachim 24a:3:1": {
+    "dependsOn": [
+      "Pesachim 24a:1",
+      "Pesachim 24a:2",
+      "Rashi on Pesachim 24a:3:2",
+      "Rashi on Pesachim 23b:13:1",
+      "Rashi on Pesachim 24a:1:1",
+      "Rashi on Pesachim 24a:3:1",
+      "Rashi on Pesachim 24a:4:1",
+      "Rashi on Pesachim 24a:5:1"
+    ],
+    "generatedAt": "2026-11-16T03:23:00.826Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לימד על חטאת</strong> - פסולה ששריפתה בקדש בעזרה דמוהנה שורף לא הוה שמעינן מקום שריפתה היכן:"
+  },
+  "Rashi on Pesachim 24a:3:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:3:1",
+      "Rashi on Pesachim 24a:5:1",
+      "Rashi on Pesachim 24a:5:2",
+      "Rashi on Pesachim 24a:6:1",
+      "Rashi on Pesachim 24a:4:1",
+      "Rashi on Pesachim 24a:7:1",
+      "Rashi on Pesachim 24a:7:2",
+      "Rashi on Pesachim 24a:7:3",
+      "Rashi on Pesachim 24a:8:1"
+    ],
+    "generatedAt": "2026-11-16T03:26:03.883Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסולי</strong> - כל שאר קדשי קדשים כגון מנחה ועולה ואשם שנטמאו או שנשפך דמן ומנחה שלא נקטר קומצה ואימורי קדשים קלים שנטמאו ודוקא נקט הני שמחיצתן בתוך חומת העזרה אבל פסולי בשר קדשים קלים שאכילתן בכל העיר אף שריפתן אם נפסלו חוץ לעזרה הן והכי נמי תנן באלו עוברין <span class=\"parenthesized\">(לקמן פסחים מט.)</span> שורפין לפני הבירה והיינו חוץ לעזרה ושם היה בית הדשן לכך וכן מפורש בזבחים בפר' טבול יום <span class=\"parenthesized\">(זבחים ד' קד:)</span>:"
+  },
+  "Rashi on Pesachim 24a:4:1": {
+    "dependsOn": [
+      "Pesachim 24a:4"
+    ],
+    "generatedAt": "2026-11-16T03:27:34.520Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה</strong> - ההוא מרבנן לר' שמואל בר נחמני דאקשי ליה האי קושיא ר' יונתן רבך נמי לא הוה מייתי איסור הנאה לכל איסורין מבקדש באש תשרף דמבעי ליה לכדאמרת שתשרף בעזרה אלא מהאי קרא אמר להו:"
+  },
+  "Rashi on Pesachim 24a:5:1": {
+    "dependsOn": [
+      "Pesachim 24a:4",
+      "Pesachim 24a:5",
+      "Rashi on Pesachim 24a:4:1",
+      "Rashi on Pesachim 24a:5:1",
+      "Rashi on Pesachim 24a:5:2"
+    ],
+    "generatedAt": "2026-11-16T03:28:26.702Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהא כתיב ושרפת</strong> - אלמא לאו בר אכילה הוא:"
+  },
+  "Rashi on Pesachim 24a:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:5:1",
+      "Pesachim 24a:5",
+      "Steinsaltz on Pesachim 24a:5",
+      "Rashi on Pesachim 24a:3:1",
+      "Rashi on Pesachim 24a:3:2",
+      "Rashi on Pesachim 24a:4:1"
+    ],
+    "generatedAt": "2026-11-16T03:29:41.899Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכל איסורין</strong> - דוגמתן שנאמר בהן לאו באכילתן:"
+  },
+  "Rashi on Pesachim 24a:6:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:5:1",
+      "Rashi on Pesachim 24a:5:2",
+      "Rashi on Pesachim 24a:6:2",
+      "Rashi on Pesachim 24a:7:1",
+      "Tosafot on Pesachim 23a:7:1",
+      "Rashi on Pesachim 22a:3:2",
+      "Pesachim 24a:5",
+      "Pesachim 24a:6",
+      "Pesachim 24a:7"
+    ],
+    "generatedAt": "2026-11-16T03:31:22.047Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיבעי ליה לכדר' אלעזר</strong> - ליתן לא תעשה דאי מושרפת לא הוה ידעינן ביה איסור לאו למלקות:"
+  },
+  "Rashi on Pesachim 24a:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:6:1",
+      "Meilah 17b:9",
+      "Rashi on Pesachim 24a:3:1",
+      "Rashi on Pesachim 24a:5:1",
+      "Rashi on Pesachim 23b:1:1"
+    ],
+    "generatedAt": "2026-11-16T03:34:04.879Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שבקודש פסול</strong> - מדכתיב כי קודש הוא יתירה לרבות על שאר פסולי קדשי קדשים בלאו כגון פיגול ויוצא ונשפך דמו:"
+  },
+  "Rashi on Pesachim 24a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:35:11.215Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקרא קמא</strong> - וכל חטאת ולאו מבאש תשרף דאיצטריך לומר שישרף בעזרה אלא מלא תאכל ליכתוב באש תשרף אלמא לאו בר אכילה הוא וממילא נפקא לן ביה נמי איסור לאו מהא דרבי אלעזר דמפיק מלא יאכל כי קודש הוא כל פסולי קדשים:"
+  },
+  "Rashi on Pesachim 24a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:7:1",
+      "Rashi on Pesachim 24a:7:2",
+      "Rashi on Pesachim 24a:7:3",
+      "Rashi on Pesachim 23a:1:1",
+      "Rashi on Pesachim 23b:1:1",
+      "Rashi on Pesachim 24a:5:2"
+    ],
+    "generatedAt": "2026-11-16T03:36:25.792Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכל איסורין</strong> - דוגמתן שנאמר בהן לאו באכילתן:"
+  },
+  "Rashi on Pesachim 24a:7:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 24a:7:1",
+      "Rashi on Pesachim 24a:7:2"
+    ],
+    "generatedAt": "2026-11-16T03:37:04.276Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אינו ענין לאכילה</strong> - דהא בגופייהו כתיב תנהו ענין להנאה:"
+  },
+  "Rashi on Pesachim 24a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:37:44.234Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא והנותר</strong> - דהוה ליה למכתב ושרפתו באש:"
+  },
+  "Rashi on Pesachim 24a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T03:38:14.869Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 24a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאו שבכללות</strong> - כגון זה שנכלל כל הפסולין יחד:"
+  },
+  "Tosafot on Pesachim 24a:11:1": {
+    "dependsOn": [
+      "Pesachim 24a:11"
+    ],
+    "generatedAt": "2026-11-16T03:44:07.779Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 24a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם אינו ענין לגופו דאתי בקל וחומר ממעשר</strong> - ואם תאמר והא איצטריך לרביעי בקודש כדאמרינן בפרק קמא <span class=\"parenthesized\">(דף יט.)</span> וי\"ל דלא ליכתוב לא יאכל אלא ישרף:"
+  },
+  "Tosafot on Pesachim 24a:12:1": {
+    "dependsOn": [
+      "Pesachim 24a:12",
+      "Rashi on Pesachim 24a:12:1",
+      "Rashi on Pesachim 24a:12:2",
+      "Tosafot on Pesachim 24a:12:2",
+      "Shabbat 25a:1",
+      "Shabbat 25a:2",
+      "Shabbat 25a:3",
+      "Shabbat 25a:4",
+      "Tosafot on Pesachim 24a:1:1",
+      "Tosafot on Pesachim 24a:9:1",
+      "Tosafot on Pesachim 24a:11:1"
+    ],
+    "generatedAt": "2026-11-16T03:49:42.699Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 24a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקישא הוא</strong> - תימה אמאי קרי ליה הקישא תיפוק ליה דקודש כתיב בהדיא בקרא ובכורות בקרך וצאנך ואזהרה למעשר נמי יליף מהאי קרא וי\"ל דצריך הקישא משום איסור הנאה דלא תוקי קרא דוהבשר לאיסור הנאה שיהא בלאו דבפ' שני דשבת <span class=\"parenthesized\">(דף כה.)</span> לא ילפי' איסור הנאה בשמן קדש שנטמא אלא ממעשר:"
+  },
+  "Tosafot on Pesachim 24a:12:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 24a:12:1",
+      "Maharsha: Chidushei Halachot on Pesachim 24a:2"
+    ],
+    "generatedAt": "2026-11-16T03:50:40.129Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 24a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דכתיב לא תוכל לאכול בשעריך</strong> - האי לא חשיב לאו שבכללות מדלא כתיב מעשר דגנך ובכורות בקרך לא תוכל לאכלם ש\"מ ליחודי לאו אכל חד דכתי' בקרא אתא:"
+  },
+  "Tosafot on Pesachim 24a:1:1": {
+    "dependsOn": [
+      "Pesachim 24a:1",
+      "Tosafot on Pesachim 24a:1:1",
+      "Rashi on Pesachim 24a:1:1",
+      "Gilyon HaShas on Pesachim 24a:12:1"
+    ],
+    "generatedAt": "2026-11-16T03:21:14.961Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 24a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם אינו ענין לאכילה</strong> - לא אתי שפיר דהיכי מצי לאוקמי' באיסור אכילה דהא כתיב באש תשרף:"
+  },
+  "Tosafot on Pesachim 24a:9:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 24a:9:1"
+    ],
+    "generatedAt": "2026-11-16T03:39:58.171Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 24a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אין לוקין על לאו שבכללות</strong> - הקשה הר\"ר אליעזר ממיץ דבאלו הן הלוקין <span class=\"parenthesized\">(מכות יג.)</span> אמר דלאו דנותר ופיגול הוה בכלל הלוקין ואמאי והא לאו שבכללות הוא ותירץ דלגבי נותר שמפורש בהדיא דכתיב ושרפת את הנותר באש לא יאכל כי קדש הוא לא חשיב לאו שבכללות ופיגול נמי גמרינן עון עון מנותר אך קשה דבפרק בתרא דמכות <span class=\"parenthesized\">(דף יז: יח.)</span> גבי זר שאכל עולה לפני זריקה לוקה חמש פריך ולילקי נמי מדרבי אלעזר דאמר כל שבקודש פסול ומאי קושיא והא לאו שבכללות הוא:"
+  }
+}

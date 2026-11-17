@@ -1,0 +1,304 @@
+{
+  "Rashi on Pesachim 32a:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:9:1",
+      "Rashi on Pesachim 32a:9:2",
+      "Rashi on Pesachim 32a:10:2",
+      "Rashi on Pesachim 32a:2:2",
+      "Rashi on Pesachim 2b:1:2",
+      "Shabbat 25a:2"
+    ],
+    "generatedAt": "2026-11-16T16:05:00.235Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היתר הסקה</strong> - דכתיב <span class=\"parenthesized\">(במדבר י״ח:ח׳)</span> ואני הנה נתתי לך את משמרת תרומותי שתי תרומות במשמע אחת טהורה ואחת טמאה וכתיב לך תהיה להסקה:"
+  },
+  "Rashi on Pesachim 32a:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:10:1",
+      "Rashi on Pesachim 32a:10:2"
+    ],
+    "generatedAt": "2026-11-16T16:06:46.313Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרומת תותים וענבים</strong> - משקה הן ואינן ראויין להסקה ולזלף נמי לא כדאמרינן בפ\"ק <span class=\"parenthesized\">(דף כ:)</span> משום תקלה ובההוא נמי סבירא ליה דזר האוכלה פטור מלשלם ור' יוחנן בן נורי מחייב דקסבר לפי מדה משלם:"
+  },
+  "Rashi on Pesachim 32a:11:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:11:2",
+      "Rashi on Pesachim 32a:10:1",
+      "Rashi on Pesachim 32a:10:2"
+    ],
+    "generatedAt": "2026-11-16T16:08:18.576Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בד\"א</strong> - דמשכחת תרומת חמץ בפסח דקדשה בהפריש תרומה והחמיצה והוא הדין להפרישה חמץ קודם הפסח:"
+  },
+  "Rashi on Pesachim 32a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T16:09:30.500Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל מפריש תרומת חמץ</strong> - בפסח כגון חטים שהחמיצו דברי הכל אפי' לרבי יוסי הגלילי דשרי חמץ בפסח בהנאה וחזיא ליה להסקה אינה קדושה ולקמן מפרש טעמא בשילהי שמעתין:"
+  },
+  "Rashi on Pesachim 32a:12:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:12:2",
+      "Rashi on Pesachim 32a:12:3"
+    ],
+    "generatedAt": "2026-11-16T16:10:14.923Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">את הקדש</strong> - משמע את הקדש שאכל אלמא ראוי להיות קדש היה שכשישלם דוגמתן יהא שם קדש חל עליו:"
+  },
+  "Rashi on Pesachim 32a:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:12:1",
+      "Rashi on Pesachim 32a:12:2",
+      "Rashi on Pesachim 32a:12:3"
+    ],
+    "generatedAt": "2026-11-16T16:10:56.368Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פרט לאוכל תרומת חמץ בפסח</strong> - שכשמשלם דוגמתן אין שם קדש חל עליו:"
+  },
+  "Rashi on Pesachim 32a:12:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:12:1",
+      "Rashi on Pesachim 32a:12:2"
+    ],
+    "generatedAt": "2026-11-16T16:11:46.649Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי מה הנאה יש לו</strong> - לכהן בה ומה הפסידו נהי נמי דלית לך הא דרשה מיהו מה ישלם הואיל ואין לו דמים:"
+  },
+  "Rashi on Pesachim 32a:1:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:1:2",
+      "Rashi on Pesachim 31b:13:1",
+      "Rashi on Pesachim 31b:14:1"
+    ],
+    "generatedAt": "2026-11-16T15:42:43.796Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחד הסך</strong> - דאמרי' בפ' בתרא דיומא <span class=\"parenthesized\">(דף עו:)</span> סיכה כשתיה ושתיה בכלל אכילה והכא כתיב כי יאכל קדש בשגגה דאילו גזלה והשליכה לנהר אפי' בשוגג דלא ידע שהיא תרומה אינו משלם חומש אלא קרן כשאר מזיק חולין דעלמא דאמר מר <span class=\"parenthesized\">(לקמן ע\"ב)</span> כי יאכל פרט למזיק:"
+  },
+  "Rashi on Pesachim 32a:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:1:1"
+    ],
+    "generatedAt": "2026-11-16T15:43:39.871Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחומש חומשא</strong> - שהתשלומין נעשין תרומה ואם חזר ואכל בשוגג אותו חומש ראשון חוזר ומשלם חומשו עליו:"
+  },
+  "Rashi on Pesachim 32a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:45:35.133Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איבעיא להו</strong> - כיון דגבי תרומה בשוגג קפיד רחמנא אתשלומי פירות ולא מעות כדכתיב ונתן לכהן את הקודש לפי מדה משלם או לפי דמים משלם בגזלן דחולין שוגג או מזיד וכן גזלן דתרומת מזיד לא איבעיא לן כיון דלא קפיד רחמנא אתשלומין דידהו דאמר ישיב לרבות אפילו שוה כסף ואפילו סובין ודאי לפי דמים משלם אבל בתרומה שוגג איבעיא לן הואיל והקפידה התורה לשלם פירות:"
+  },
+  "Rashi on Pesachim 32a:2:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:2:1"
+    ],
+    "generatedAt": "2026-11-16T15:47:53.693Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל היכא דמעיקרא</strong> - כשאכלה הויא שויא הך גריוא ד' זוזי והשתא כשמשלם שויא זוזא ותו לא לא מיבעיא לן נהי נמי דאיכפר ליה אכילת תרומה בתשלומי מדה מיהו ממונא דכהן [אוכל] <span class=\"parenthesized\">(ממונא)</span> הוא ולא גרע משאר ממונא דחולין שהדיינין גובין ממנו כשעת גזילה כדכתיב <span class=\"parenthesized\">(ויקרא ה)</span> אשר גזל כמו שגזל:"
+  },
+  "Rashi on Pesachim 32a:3:1": {
+    "dependsOn": [
+      "Pesachim 32a:3",
+      "Jastrow, גְּרִיוָא 1",
+      "Steinsaltz on Pesachim 32a:3",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:1:2"
+    ],
+    "generatedAt": "2026-11-16T15:50:05.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גריוא משלם</strong> - ואע\"ג דשויא השתא טפי או דילמא לפי דמים משלם דאע\"ג דהקפידה התורה לשלם פירות לא הקפידה אלא לפי הדמים כשאר תשלומין ומה שישלם ישלם בפירות:"
+  },
+  "Rashi on Pesachim 32a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:51:14.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרוגרות</strong> - תאנים יבשים:"
+  },
+  "Rashi on Pesachim 32a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:51:51.050Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תמרים</strong> - חשובין מתאנים ודמיהן מרובים:"
+  },
+  "Rashi on Pesachim 32a:4:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:4:1",
+      "Rashi on Pesachim 32a:4:2",
+      "Rashi on Pesachim 32a:4:3"
+    ],
+    "generatedAt": "2026-11-16T15:52:39.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכל גרוגרות</strong> - דתרומה שוגג:"
+  },
+  "Rashi on Pesachim 32a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:53:13.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זבינא</strong> - לוקחים:"
+  },
+  "Rashi on Pesachim 32a:7:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:5:1",
+      "Rashi on Pesachim 32a:8:1",
+      "Pesachim 32a:6",
+      "Pesachim 32a:7",
+      "Pesachim 32a:8",
+      "Rashi on Pesachim 32a:9:1",
+      "Rashi on Pesachim 32a:10:1",
+      "Rashi on Pesachim 32a:11:1",
+      "Tosafot on Pesachim 31b:1:2"
+    ],
+    "generatedAt": "2026-11-16T15:55:18.529Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אימא סיפא במזיד פטור מן התשלומין ואי ר' יוסי הגלילי אמאי פטור</strong> - אי אמרת בשלמא רבנן וטעמא דרישא משום דלפי מדה משלם סיפא דאינו אלא כשאר גזלן דמשלם מעות ולפי דמים פטור מן התשלומין דחמץ בפסח לאו בר דמים הוא אלא אי אמרת ר' יוסי הגלילי ובר דמים הוא אמאי פטור:"
+  },
+  "Rashi on Pesachim 32a:8:1": {
+    "dependsOn": [
+      "Pesachim 32a:8",
+      "Pesachim 32a:4",
+      "Rashi on Pesachim 32a:7:1"
+    ],
+    "generatedAt": "2026-11-16T15:57:12.172Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי נחוניא בן הקנה</strong> - דאמר המתחייב כרת פטור מן התשלומין ויליף טעמא מאסון אסון והוא הדין למתחייב מיתת שמים כגון אוכל תרומה מזיד וסיפא דמתני' בהזיד בתרומה ולא בחמץ ופטור משום מיתה ובדין הוא דלישמעי' במזיד דתרומה דעלמא דלאו חמץ בפסח דפטור מתשלומין משום מיתה ומשום רישא נקט מילתא בחמץ בפסח דאשמועינן דהיכא דשגג בשתיהם חייב דחמץ בר דמים הוא ושוגג דרישא דשגג בשתיהן דאי שגג בחמץ והזיד בתרומה מאי חומש איכא ואי שגג בתרומה והזיד בחמץ אמאי משלם הא איחייב ליה כרת וסיפא אשמועינן דהזיד בתרומה אפילו שגג בחמץ פטור דמיתה בידי שמים כי כרת דאי הזיד בחמץ והא דפטר ליה משום כרת הוא דפטר ליה לשמעינן כולה מתני' בחמץ חולין של חבירו וניתני שוגג חייב ומזיד פטור משום כרת:"
+  },
+  "Rashi on Pesachim 32a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:57:45.366Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתנאי</strong> - לפי מדה או לפי דמים:"
+  },
+  "Rashi on Pesachim 32a:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:9:1",
+      "Rashi on Pesachim 32a:9:3",
+      "Rashi on Pesachim 32a:9:4"
+    ],
+    "generatedAt": "2026-11-16T15:58:20.683Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור מתשלומין</strong> - בין שוגג בין מזיד:"
+  },
+  "Rashi on Pesachim 32a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T15:59:07.892Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה הנאה יש לו</strong> - לכהן בה ומה הפסידו זה הרי אסור בהנאה:"
+  },
+  "Rashi on Pesachim 32a:9:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 32a:9:1",
+      "Rashi on Pesachim 32a:9:2",
+      "Rashi on Pesachim 32a:9:3",
+      "Rashi on Pesachim 32a:9:4",
+      "Rashi on Pesachim 32a:1:1",
+      "Rashi on Pesachim 32a:2:1",
+      "Rashi on Pesachim 31b:1:1",
+      "Rashi on Pesachim 31b:2:1"
+    ],
+    "generatedAt": "2026-11-16T16:00:43.200Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 32a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה הנאה יש לו</strong> - לכהן בתרומה טמאה שאסורה באכילה לכהן ואי אכלה זר שוגג משלם קרן וחומש דליכא למאן דפליג אסתמא דתנן לעיל אחד תרומה טהורה ואחד תרומה טמאה וטעמא משום דלפי מדה משלם ואע\"ג דלאו בר דמים הוא:"
+  },
+  "Tosafot on Pesachim 32a:12:1": {
+    "dependsOn": [
+      "Pesachim 32a:12",
+      "Pesachim 32a:13"
+    ],
+    "generatedAt": "2026-11-16T16:14:06.628Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 32a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דבר הראוי להיות קודש פרט לאוכל תרומת חמץ</strong> - פי' הפסוק משמע שיתן לו דבר הראוי להיות קודש כמו שאכל וא\"כ מה שאכל בעינן דבר הראוי להיות קודש וחמץ בפסח אינו ראוי להיות קודש כדתניא לעיל אבל מפריש חמץ ד\"ה אין קדוש אע\"ג דבכל ענין פטור הכא מתשלומין אפי' שהיה לה שעת הכושר ולקמן מוקמא הא דלד\"ה אין קדוש היינו שלא היה לה שעת הכושר אור\"ת היינו לרבי יוסי הגלילי אבל לראב\"י הואיל וסבירא ליה דחמץ בפסח אסור בהנאה אפילו היה לה שעת הכושר אין ראוי להיות קודש דאין כאן נתינה והיינו דקאמר ליה ראב\"י מה הנאה יש לו בה כלומר הואיל ואין לו הנאה בה אית ליה למעוטי מקרא כדפרישית:"
+  }
+}

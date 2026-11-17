@@ -1,4 +1,152 @@
 {
+  "Rashi on Pesachim 9b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:10:1",
+      "Rashi on Pesachim 9b:10:2",
+      "Steinsaltz on Pesachim 9b:10",
+      "Rashi on Pesachim 9b:10:3",
+      "Rashi on Pesachim 9b:10:4",
+      "Rashi on Pesachim 9b:10:5"
+    ],
+    "generatedAt": "2026-11-15T02:54:01.163Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשע ציבורין כו'</strong> - פיסקי הלכות הן:"
+  },
+  "Rashi on Pesachim 9b:10:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:10:1",
+      "Rashi on Pesachim 9b:10:2",
+      "Rashi on Pesachim 9b:10:3",
+      "Rashi on Pesachim 9b:4:1",
+      "Rashi on Pesachim 9b:4:2",
+      "Rashi on Pesachim 9b:7:1"
+    ],
+    "generatedAt": "2026-11-15T02:54:52.166Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתא עכבר ושקל</strong> - ונכנס לבית בפנינו ולא ידעינן אי חמץ שקל וכיון דחזינא צריכין אנו לבדוק או דילמא מצה שקל:"
+  },
+  "Rashi on Pesachim 9b:10:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:55:28.382Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:10:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו תשע חנויות</strong> - דקיימא לן בהו לקמיה דכל קבוע שנטלו ממקום קבוע אין הולכין בו אחר הרוב אלא הרי הוא כמחצה על מחצה וספק איסורא לחומרא:"
+  },
+  "Rashi on Pesachim 9b:10:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:10:1",
+      "Rashi on Pesachim 9b:10:2",
+      "Rashi on Pesachim 9b:10:3",
+      "Rashi on Pesachim 9b:10:4",
+      "Rashi on Pesachim 9b:10:5"
+    ],
+    "generatedAt": "2026-11-15T02:56:40.613Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:10:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פירש</strong> - פרוסה מאחת מן הציבורין לאחת מן הזויות ולא ידענא מהי מינייהו פירש ואתא עכבר ושקליה ונכנס לבית:"
+  },
+  "Rashi on Pesachim 9b:10:5": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:10:1",
+      "Rashi on Pesachim 9b:10:2",
+      "Rashi on Pesachim 9b:10:3",
+      "Rashi on Pesachim 9b:10:4"
+    ],
+    "generatedAt": "2026-11-15T02:57:55.534Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:10:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו סיפא</strong> - דמתניתין דתשע חנויות דהיכא דלא לקחו במקום קבועו הולכין בו אחר הרוב:"
+  },
+  "Rashi on Pesachim 9b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:02:18.866Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולקח מאחת מהנה</strong> - בתוך החנות ספקו אסור דכל קבוע כמחצה על מחצה נידון דנפקא לן מן וארב לו וקם עליו <span class=\"parenthesized\">(בפ' בתרא דיומא)</span> <span class=\"parenthesized\">(פד:)</span> ובפ\"ק דכתובות <span class=\"parenthesized\">(טו.)</span>:"
+  },
+  "Rashi on Pesachim 9b:12:1": {
+    "dependsOn": [
+      "Pesachim 9b:11",
+      "Pesachim 9b:12",
+      "Rashi on Pesachim 9b:11:1"
+    ],
+    "generatedAt": "2026-11-15T03:03:18.176Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובנמצא</strong> - בשר הנמצא בקרקע בין החנויות. הלך אחר הרוב דכל דפריש מרובה פריש דכיון דפריש אין כאן תורת קבוע:"
+  },
+  "Rashi on Pesachim 9b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T03:03:41.988Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שתי קופות</strong> - דבר זה אנו יכולין ללמדו ממשנת שתי קופות דתלינן לקולא:"
+  },
+  "Rashi on Pesachim 9b:14:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:14:2",
+      "Rashi on Pesachim 9b:14:3"
+    ],
+    "generatedAt": "2026-11-15T03:06:17.361Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולפניהן שני סאין</strong> - של פירות:"
+  },
+  "Rashi on Pesachim 9b:14:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:14:1",
+      "Rashi on Pesachim 9b:14:3"
+    ],
+    "generatedAt": "2026-11-15T03:07:04.878Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפלו אלו לתוך אלו</strong> - הסאין לתוך אלו הקופות וידוע לנו שהאחד נפל בזו ואחד בזו ואין ידוע אי זה בזו ואי זה בזו:"
+  },
+  "Rashi on Pesachim 9b:14:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:14:1",
+      "Rashi on Pesachim 9b:14:2"
+    ],
+    "generatedAt": "2026-11-15T03:08:58.830Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי אלו מותרין</strong> - פירות של קופות החולין מותרין לזר כבתחלה אפי' אין בקופה כדי להעלות הסאה באחד ומאה שאנו אומרים חולין לתוך חולין נפלו אלמא תלינן לקולא היתר בהיתר ואיסור באיסור ואע\"ג דאיכא למימר איפכא הכא נמי לקולא תלינן ואמרינן החמץ נכנס לשאינו בדוק והמצה לבדוק:"
+  },
   "Rashi on Pesachim 9b:1:1": {
     "dependsOn": [
       "Rashi on Pesachim 9b:1:2",
@@ -11,5 +159,247 @@
       "Rashi on Pesachim 9b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ובא כהן והציץ</strong> - על שפת הבור:"
+  },
+  "Rashi on Pesachim 9b:1:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:1:1",
+      "Rashi on Pesachim 9b:1:3",
+      "Rashi on Pesachim 9b:4:1",
+      "Rashi on Pesachim 9b:4:2"
+    ],
+    "generatedAt": "2026-11-15T02:26:04.800Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לידע אם זכר אם נקבה</strong> - וכהן קרוב או מבני הבית היה ושלחוהו שם להגיד לאמו מה טיבו ותבחין בין טומאת וטהרת זכר לימי טומאת וטהרת נקבה ולא נזכר אותו כהן על אזהרת לנפש לא יטמא והציץ בו בבור והנפל לא ראה וטיהרוהו ממאהיל על המת:"
+  },
+  "Rashi on Pesachim 9b:1:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:1:1",
+      "Rashi on Pesachim 9b:1:2",
+      "Pesachim 9b:1",
+      "Tosafot on Pesachim 9b:2:1",
+      "Steinsaltz In-Depth on Pesachim 9b:1:1",
+      "Steinsaltz In-Depth on Pesachim 9b:1:2",
+      "Steinsaltz In-Depth on Pesachim 9b:1:3",
+      "Steinsaltz comment #3 on Pesachim 9b:1",
+      "Steinsaltz on Pesachim 9b:1",
+      "Pesachim 8b:20"
+    ],
+    "generatedAt": "2026-11-15T02:28:01.806Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שחולדה וברדלס מצויין שם</strong> - וסתם חור חולדה וברדלס פותח טפח הוא וגיררוהו לחורן ולא האהיל:"
+  },
+  "Rashi on Pesachim 9b:3:1": {
+    "dependsOn": [
+      "Pesachim 9b:3",
+      "Pesachim 9a:11",
+      "Pesachim 9a:12",
+      "Tosafot on Pesachim 9a:11:1"
+    ],
+    "generatedAt": "2026-11-15T02:34:04.393Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוח הפילה</strong> - שפיר מלא רוח ואם תמצא לומר נפל היה כלומר לכל אלה הוצרך שמא רוח הוא ואגיד ואין כאן לא טומאת זכר ולא טומאת נקבה ואם אראה שהוא וולד צריכני לראות אם זכר אם נקבה:"
+  },
+  "Rashi on Pesachim 9b:4:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:4:2",
+      "Pesachim 9b:4",
+      "Steinsaltz on Pesachim 9b:4",
+      "Maharshal on Pesachim 9b:4:1",
+      "Chokhmat Shlomo on Pesachim 9b:1"
+    ],
+    "generatedAt": "2026-11-15T02:35:49.007Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ודאי גררוהו</strong> - מוחזקין הן בכך ולא דמי למתניתין דקתני הא חזינא חיישינן דנהי דודאי אכלה לא אמר אבל גיררוהו לחור שלהן אמר:"
+  },
+  "Rashi on Pesachim 9b:4:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:4:1",
+      "Steinsaltz on Pesachim 9b:4",
+      "Rashi on Bava Kamma 16a:19:1",
+      "Rashi on Pesachim 9b:4:2",
+      "Chokhmat Shlomo on Pesachim 9b:1",
+      "Jastrow, בַּרְדְּלִיס 1",
+      "Rashi on Pesachim 2a:1:1",
+      "Rashi on Pesachim 2a:1:2",
+      "Rashi on Pesachim 9b:3:1",
+      "Rashi on Pesachim 9b:1:3"
+    ],
+    "generatedAt": "2026-11-15T02:44:27.999Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברדלס</strong> - אלנמ\"ס פוטוייש\"י:"
+  },
+  "Rashi on Pesachim 9b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:45:00.396Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה שמשייר</strong> - אחר בדיקה מאכילתו יניחנו בצנעה:"
+  },
+  "Rashi on Pesachim 9b:6:1": {
+    "dependsOn": [
+      "Pesachim 9b:6",
+      "Rashi on Pesachim 9b:5:1",
+      "Pesachim 10b:1",
+      "Pesachim 10b:2",
+      "Pesachim 9b:14",
+      "Pesachim 8b:12",
+      "Pesachim 8b:13",
+      "Pesachim 9a:1",
+      "Pesachim 9a:2",
+      "Pesachim 10b:11",
+      "Pesachim 10b:12",
+      "Pesachim 10b:13"
+    ],
+    "generatedAt": "2026-11-15T02:48:54.478Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלשה עשר</strong> - רישא דקתני אין חוששין בבודק בשלשה עשר שמצוי פת הרבה לחולדה בתוך הבתים ואינה חוששת לשייר וסיפא בהדיא תנן בה בי\"ד וכיון דלא חזיא החולדה פת הרבה בבתים כמות שהיא רגילה משיירא:"
+  },
+  "Rashi on Pesachim 9b:7:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:6:1"
+    ],
+    "generatedAt": "2026-11-15T02:51:43.791Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי חולדה נביאה היא</strong> - לתת לב על כך ולראות את הנולד ויודעת שלא יאפו עוד היום:"
+  },
+  "Rashi on Pesachim 9b:8:1": {
+    "dependsOn": [
+      "Pesachim 9b:8",
+      "Rashi on Pesachim 9b:7:1",
+      "Pesachim 9b:7",
+      "Rosh on Pesachim 1:9:1"
+    ],
+    "generatedAt": "2026-11-15T02:52:35.441Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותיטול בפנינו</strong> - והיכא דחזינן על כרחיך חיישינן:"
+  },
+  "Rashi on Pesachim 9b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:52:57.151Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 9b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וימצא תשע</strong> - דהכא ודאי איכא למיחש דהא מוכחא מילתא שנטלה פרוסה אחת:"
+  },
+  "Tosafot on Pesachim 9b:10:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 9b:10:1",
+      "Rashi on Pesachim 9b:10:2",
+      "Rashi on Pesachim 9b:10:3",
+      "Rashi on Pesachim 9b:10:4",
+      "Rashi on Pesachim 9b:10:5",
+      "Tosafot on Pesachim 9b:2:1",
+      "Tosafot on Pesachim 9b:5:1",
+      "Tosafot on Pesachim 9b:6:1",
+      "Tosafot on Pesachim 9a:1:1",
+      "Tosafot on Pesachim 9a:2:1",
+      "Zevachim 73b:1",
+      "Zevachim 73b:2",
+      "Zevachim 73b:3"
+    ],
+    "generatedAt": "2026-11-15T03:00:44.527Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 9b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו תשע חנויות</strong> - לפי מה שפ\"ה לענין בדיקה לא נהירא לר\"י דהיכי מייתי ראיה מתשע חנויות דהוי ספיקא דאוריית' ואזלינן לחומרא והכא ספיקא דרבנן הוא כדאמרינן בסמוך מיהו י\"ל דאיירי כגון שלא ביטל ועוד קשה דגבי תשע חנויות ליכא חזקת היתר אבל הכא אוקמא אחזקת בדוק דהא בבדוק מיירי דאי לאו הכי פשיטא דבעי בדיקה ונראה לר\"י דלענין שהביא עכבר לבית ונמצא קבעי אי שרי לאכילה אי לאו ואם תאמר כי אתא עכבר ושקל מהני ציבורין אמאי חשיב ליה קבוע מאי שנא נמצא בפי עכבר מנמצא ביד נכרי דבפ' גיד הנשה <span class=\"parenthesized\">(חולין צה. ושם)</span> פריך לרב דאמר בשר שנתעלם מן העין אסור מבנמצא הלך אחר הרוב ומשני שנמצא ביד נכרי ואומר ר\"י דהכא מיירי כשראינו שלקח מן הקבוע שנולד הספק במקום קביעות אבל אם לא ראינו הוה ליה כפירש ואזלינן בתר רובא והא דפריך בתערובות <span class=\"parenthesized\">(זבחים דף עג:)</span> גבי זבחים שנתערבו בחטאות המתות או בשור הנסקל אמאי ימותו כולם נכבשינהו וניידינהו ונימא כל דפריש מרובא פריש אע\"פ שכבר נולד הספק במקום קביעות שאני התם דלא הוי קבוע גמור שהאיסור מעורב בהיתר ואינו ניכר ומדרבנן אסרו בקבוע זה דמדאורייתא לא חשיב קבוע אלא כשהאיסור ידוע במקומו ולהכי נמי גזרינן התם טפי שמא יקח מן הקבוע מבנמצא כיון שאין האיסור ידוע:"
+  },
+  "Tosafot on Pesachim 9b:13:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 9b:13:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Rashi on Pesachim 9b:13:1",
+      "Tosafot on Pesachim 9b:10:1",
+      "Yevamot 82a:11",
+      "Yevamot 82a:12",
+      "Yevamot 82a:13",
+      "Yevamot 82a:14"
+    ],
+    "generatedAt": "2026-11-15T03:05:46.075Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 9b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו שתי קופות</strong> - הך סוגיא דמדמה בדיקת חמץ לשתי קופות לא אתי כר\"ל דמוקי בשילהי הערל <span class=\"parenthesized\">(יבמות פט.)</span> להך דשתי קופות כשרבו חולין על התרומה אלא כר' יוחנן דלא בעי התם רבייה דלדידיה א\"ש דמדמי חמץ לההיא וכולה שמעתא מיירי שהככר כל כך גדול דליכא למימר אכלתיה:"
+  },
+  "Tosafot on Pesachim 9b:2:1": {
+    "dependsOn": [
+      "Pesachim 9b:2",
+      "Tosafot on Pesachim 9a:4:1",
+      "Tosafot on Pesachim 9a:6:1",
+      "Tosafot on Pesachim 9a:1:1"
+    ],
+    "generatedAt": "2026-11-15T02:30:48.404Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 9b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ספק גררוהו ההיא שעתא</strong> - ואם תאמר האי בור היכא קאי אי ברשות הרבים אפי' בספיקא אחת טהור ואי ברשות היחיד מאי משני שהטילה כמין נפל לבור והתנן <span class=\"parenthesized\">(טהרות פ\"ו מ\"ד)</span> כל ספיקות וספיקי דספיקות שאתה יכול להרבות ברשות היחיד טמא ויש לומר דגרירת חולדה וברדלס הוי ספק הרגיל כדפי' לעיל אומר ר\"י דצ\"ל דרגלי הכהן היו ברשות הרבים דע\"כ בחורייהו ליכא פותח טפח דאי איכא פותח טפח <span class=\"parenthesized\">(מפני)</span> מה מועלת גרירה והא פותח טפח מביא את הטומאה ואי רגליו ברשו' היחיד ניחוש שמא גררוהו נגד רגליו וטומאה בוקעת ועולה ועוד י\"ל דרגלי כהן ברשות היחיד היו וגררוהו ואכלוהו הוי ספק הרגיל:"
+  },
+  "Tosafot on Pesachim 9b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-15T02:46:46.373Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 9b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא חיישינן לחולדה</strong> - הא לא פריך דניחוש לחולדה אפילו מבית לבית דא\"כ אין לדבר סוף דאי אפשר שלא יבדוק אחד קודם חבירו ואיכא למיחש שמא הביאה חולדה מבית שאין בדוק לבדוק אלא ממקום למקום פריך דהיינו באותו הבית עצמו כלומר ולא חיישינן לחולדה באותו בית עצמו:"
+  },
+  "Tosafot on Pesachim 9b:6:1": {
+    "dependsOn": [
+      "Pesachim 9b:6",
+      "Pesachim 9a:5",
+      "Tosafot on Pesachim 9b:2:1",
+      "Tosafot on Pesachim 9b:5:1",
+      "Rashi on Pesachim 9b:6:1"
+    ],
+    "generatedAt": "2026-11-15T02:51:01.941Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 9b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלשה עשר לא משיירא</strong> - פי' פעם שאינה משיירת ולהכי היכא דלא חזינן לא חיישינן כיון דאפי' גררה פעם שאין משיירת אבל היכא דחזינן חיישינן כיון דפעמים משיירת ובי\"ד לעולם משיירת ואפי' לא חזינן חיישינן וגבי בשר אפילו חזינן לא חיישינן דלעולם לא משיירת וא\"ש אביי כרבי זירא:"
   }
 }

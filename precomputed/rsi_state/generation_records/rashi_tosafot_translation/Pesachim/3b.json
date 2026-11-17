@@ -180,6 +180,18 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מפני מה בוצרים בטהרה</strong> - בכלים טהורים:"
   },
+  "Rashi on Pesachim 3b:6:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 3b:6:1"
+    ],
+    "generatedAt": "2026-11-14T21:33:59.535Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 3b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מוסקין בטהרה</strong> - בזיתים קא קרי מסיקה ואין צריך למוסקן בטהרה כדאמר במסכת שבת ביציאות שבת <span class=\"parenthesized\">(ד' יז.)</span> דלא חשיב מוהל היוצא מהן להכשיר שאינו שמן גמור אלא היוצא ע\"י הבד אבל יין הזב על הענבים מכשירן דניחא ליה ביה:"
+  },
   "Rashi on Pesachim 3b:7:1": {
     "dependsOn": [],
     "generatedAt": "2026-11-03T08:32:00.621Z",
@@ -285,6 +297,26 @@
       "Tosafot on Pesachim 3b:4:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">רכבת כתיב</strong> - וא\"ת לכתוב נמי ישבת ואומר ר\"י דלא מצי למיכתב ישבת דכל היכא דכתב ישב בלא וי\"ו אתא לדרשה כדדרשינן ולוט ישב בשער סדום אותו היום מינוהו שופט <span class=\"parenthesized\">(בראשית רבה פרשה נ)</span>:"
+  },
+  "Tosafot on Pesachim 3b:6:1": {
+    "dependsOn": [
+      "Shabbat 17a:4",
+      "Shabbat 17a:5",
+      "Shabbat 17a:6",
+      "Shabbat 17a:7",
+      "Shabbat 17a:8",
+      "Shabbat 17a:9",
+      "Shabbat 17a:10",
+      "Shabbat 17a:11",
+      "Tosafot on Pesachim 2a:4:1"
+    ],
+    "generatedAt": "2026-11-14T21:40:31.212Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 3b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מוסקין בטהרה</strong> - מפרש ה\"ר יוסף דטעמא דבצירה דפ\"ק דשבת <span class=\"parenthesized\">(ד' יז. ושם)</span> לא שייכי במסיקה דשמא יבצרנו בקופה מזופפת וההיא נמי פעמים שאדם הולך לכרמו ורואה אשכול שביכרה סוחטו ומזלפו ע\"ג ענבים ובשעת בצירה עדיין משקה טופח עליהן דבזיתים אינו רגיל לעשות כן שאינו משקה ואינו חשוב כדאמר התם ואינו רוצה בקיומה:"
   },
   "Tosafot on Pesachim 3b:7:1": {
     "dependsOn": [],

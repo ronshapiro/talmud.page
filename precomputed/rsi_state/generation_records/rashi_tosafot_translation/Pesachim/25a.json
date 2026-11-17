@@ -1,0 +1,329 @@
+{
+  "Rashi on Pesachim 25a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:19:30.914Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכל מתרפאין</strong> - אפילו באיסורי הנאה:"
+  },
+  "Rashi on Pesachim 25a:11:1": {
+    "dependsOn": [
+      "Pesachim 25a:11"
+    ],
+    "generatedAt": "2026-11-16T05:23:52.310Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה נאמר בכל מאודך</strong> - יאמר החביב משניהן ודיו ומפרש לפי שפעמים שזה חביב ופעמים שזה חביב לכך הוצרכו שניהן לומר אהוב את בוראך יותר מן החביב עליך והמתרפא בעצי אשירה נראה כמודה בה:"
+  },
+  "Rashi on Pesachim 25a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T04:45:56.268Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ערלה לא היתה לה שעת הכושר</strong> - שהפרי הזה חנט באיסור ונגמר באיסור תאמר בבשר בחלב שיש לו שעת הכושר קודם שניתן בחלב:"
+  },
+  "Rashi on Pesachim 25a:2:1": {
+    "dependsOn": [
+      "Pesachim 25a:2",
+      "Rashi on Pesachim 25a:1:1",
+      "Rashi on Pesachim 25a:3:1",
+      "Rashi on Pesachim 25a:7:1",
+      "Tosafot on Pesachim 25a:2:2"
+    ],
+    "generatedAt": "2026-11-16T04:51:30.497Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאי הכרם יוכיחו</strong> - ובשחיטת חולין פריך ונימא ערלה תוכיח וחזר הדין והתם מתרץ לה בכל הבשר ולקמן פריך ונימא מה לכלאי הכרם שכן לא היתה להם שעת הכושר:"
+  },
+  "Rashi on Pesachim 25a:3:1": {
+    "dependsOn": [
+      "Pesachim 25a:3",
+      "Rashi on Pesachim 25a:3:1"
+    ],
+    "generatedAt": "2026-11-16T04:56:10.803Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם איתא</strong> - דכלאי הכרם חלוקין להחמיר משאר איסורין ליפרוך האי:"
+  },
+  "Rashi on Pesachim 25a:4:1": {
+    "dependsOn": [
+      "Pesachim 25a:4"
+    ],
+    "generatedAt": "2026-11-16T05:00:27.848Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואביי</strong> - אמר לך היכי ניפרוך היכי נסיימה למילתיה דלא נילף בשר בחלב מיניה נימא תאמר בבשר בחלב כו' אטו בשר בחלב אכילה כתיבה ביה התם נמי לוקין עליו אפי' שלא כדרך הנאתה:"
+  },
+  "Rashi on Pesachim 25a:5:1": {
+    "dependsOn": [
+      "Pesachim 25a:5",
+      "Rashi on Pesachim 25a:4:1",
+      "Rashi on Pesachim 25a:5:2",
+      "Pesachim 25a:4",
+      "Steinsaltz In-Depth on Pesachim 25a:5:1",
+      "Steinsaltz on Pesachim 25a:5",
+      "Rashi on Pesachim 25a:1:1"
+    ],
+    "generatedAt": "2026-11-16T05:02:38.451Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואידך</strong> - אביי אמר לך להכי לא כתיב אכילה בגופו ללמדך שלוקין כו' הלכך לא מצי פריך תאמר בבשר בחלב כו':"
+  },
+  "Rashi on Pesachim 25a:5:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:5:1",
+      "Pesachim 25a:5",
+      "Tosafot on Pesachim 25a:7:1",
+      "Tosafot on Pesachim 25a:7:2",
+      "Chullin 73b:12",
+      "Chullin 73b:13",
+      "Chullin 73b:14",
+      "Pesachim 25a:1",
+      "Pesachim 24b:12"
+    ],
+    "generatedAt": "2026-11-16T05:05:18.553Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנבילה</strong> - ונבילה אכילה כתיבא ביה נבילה לאו דוקא קאמר דהא מטריפה גמרינן לה ויש מפרשים דמשום דהאי טריפה דקרא איירי באבר ובבשר המדולדל בה ושחטה כדאמרינן בבהמה המקשה לילד <span class=\"parenthesized\">(חולין עג:)</span> קרי ליה נבילה דדמי לנבילה דלא מישתרו בשחיטה ואין נראה לי דטריפה נמי לא מישתריא בשחיטה ואי משום דלא מיטמיא הנך נמי לא מיטמאו:"
+  },
+  "Rashi on Pesachim 25a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:05:58.657Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וליפרוך מה לכלאי הכרם שכן לא היתה להם שעת הכושר</strong> - וקא סלקא דעתך שאין נאסרין אלא גידוליהן ולכן לא היתה להן שעת הכושר:"
+  },
+  "Rashi on Pesachim 25a:7:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:7:1",
+      "Pesachim 25a:7"
+    ],
+    "generatedAt": "2026-11-16T05:07:52.512Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זאת אומרת</strong> - מדלא פריך הכי שמע מינה כלאי הכרם עיקרן נאסר אף עיקר הזריעה עצמה נאסרה וזריעה היתה לה שעת הכושר כל ימיה עד שנשרשה י\"מ דהאי מקשה נמי ידע שאף הזריעה נאסרת אלא סבור שמשעת זריעה נאסרת וכך שמעתי אבל א\"א להעמידה דמיבעי לן לפרושי הכי מה לכלאי הכרם שכן לא היתה להן שעת הכושר משעה שבאו לכלל כלאים תאמר בבשר בחלב שהיתה לו שעת הכושר משעה שבא לכלל זה דאם שורהו כל היום בחלב אינו נאסר בכך ומשני עיקרן נאסרו משנשרשו ולא משנזרעו וכמה גמגומים יש בה חדא דטעמא דלא מיתסר משום דאכתי לא בשר בחלב חשיב ליה והרי הוא כאילו זה לבד וזה לבד וכן כלאים כ\"ז שלא נשרשו הרי הן כמונחין בכדא ועוד כי אמר לעיל חמץ בפסח יוכיח מיבעי ליה למימר שהיתה לו שעת הכושר משנקרא חמץ בפסח והא ליתא ועוד מדמותיב רב שמעיה הוסיף אין לא הוסיף לא מכלל דליכא מאן דסליק אדעתיה משעת זריעה אלא הוה סלקא דעתיה תוספת אין עיקר לא ולשון עיקרן משמע כדפרישית דללישנא בתרא הכי הוה ליה למימר זאת אומרת כלאי הכרם בהשרשה נאסרו:"
+  },
+  "Rashi on Pesachim 25a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T05:14:13.941Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המעביר עציץ נקוב בכרם</strong> - וזרעים בתוכו שכבר צמחו הוסיף הצמח בכרם מאתים אחד מן המאתים שיש בו עכשיו שמתחלה היו בו קצ\"ט שיעורים כתוספת זו ועכשיו יש בו מאתים אסורין לפי שאין בהיתר הראשון כדי לבטל התוספת האסור שהערלה וכלאים אין בטלין אלא במאתים של היתר לבד האיסור לא הוסיף מאתים אלא פחות כל שהוא מותר דיש בו כדי להעלות באחד ומאתים ובספרי יליף ליה מתרומה שעולה באחד ומאה וכלאים שכפל את אסוריו שאסורין בהנאה כפל את עלייתן ודוקא נקט נקוב דיונק מקרקע דרך אויר:"
+  },
+  "Rashi on Pesachim 25a:8:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:8:1",
+      "Pesachim 25a:7"
+    ],
+    "generatedAt": "2026-11-16T05:14:51.714Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא הוסיף לא</strong> - אלמא אין הזריעה נאסרת:"
+  },
+  "Rashi on Pesachim 25a:9:1": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:9:2",
+      "Rashi on Pesachim 25a:9:3",
+      "Rashi on Pesachim 25a:9:4"
+    ],
+    "generatedAt": "2026-11-16T05:15:31.128Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מליאה</strong> - גידולין:"
+  },
+  "Rashi on Pesachim 25a:9:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:9:1",
+      "Rashi on Pesachim 25a:9:2",
+      "Rashi on Pesachim 25a:9:3",
+      "Rashi on Pesachim 25a:9:4",
+      "Rashi on Pesachim 24b:1:1",
+      "Rashi on Pesachim 24b:2:1"
+    ],
+    "generatedAt": "2026-11-16T05:16:23.173Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזרע</strong> - הראשון:"
+  },
+  "Rashi on Pesachim 25a:9:3": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:9:1",
+      "Rashi on Pesachim 25a:9:2",
+      "Rashi on Pesachim 25a:9:4",
+      "Rashi on Pesachim 25a:5:1",
+      "Rashi on Pesachim 25a:7:1"
+    ],
+    "generatedAt": "2026-11-16T05:17:44.640Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרוע מעיקרו</strong> - בכרם בהשרשה כדכתיב הזרע משמע שאף הזריעה נאסרת מיהו קודם השרשה כמאן דמנחא בכדא דמי:"
+  },
+  "Rashi on Pesachim 25a:9:4": {
+    "dependsOn": [
+      "Rashi on Pesachim 25a:9:1",
+      "Rashi on Pesachim 25a:9:2",
+      "Rashi on Pesachim 25a:9:3"
+    ],
+    "generatedAt": "2026-11-16T05:18:53.604Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 25a:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זרוע ובא</strong> - קודם לכן הוסיף אין לא הוסיף לא דכתיב מלאה:"
+  },
+  "Tosafot on Pesachim 25a:10:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 25a:7:1",
+      "Maharsha on Pesachim 25a:5",
+      "Rashi on Pesachim 25a:10:1",
+      "Pesachim 25a:10",
+      "Tosafot on Avodah Zarah 27b:8:1",
+      "Avodah Zarah 28a:11"
+    ],
+    "generatedAt": "2026-11-16T05:23:08.599Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חוץ מעצי אשירה</strong> - נראה לר\"י דמיירי כגון שאין יכול להתרפא משאר עצים אלא בזה כגון על ידי שדים או שום דבר אחר משום דאתי למיטעי בתר ע\"ז וגבי בן דמא בע\"ז פרק שני <span class=\"parenthesized\">(דף כז: ושם)</span> שנשכו נחש ובא יעקב איש כפר סכניא לרפאותו ולא הניחו ר' ישמעאל משום דאפיקורסות משכא ומפרש בירושלמי בפ' שמנה שרצים שהיה רוצה ללחוש לו בשם זר אבל ע\"י תחבושת שרי כדאמרי' התם <span class=\"parenthesized\">(דף כח.)</span> דר' אבהו רמא ליה יעקב אפיקורסא סמא אשקיה:"
+  },
+  "Tosafot on Pesachim 25a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T04:49:10.645Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לערלה שכן לא היתה לה שעת הכושר</strong> - הקשה ריב\"א נילף מערלה שהיתה לה שעת הכושר כגון נטל ענף מאילן של היתר שלא נגמרו פירותיו והרכיבו או נטעו ואומר ר\"י דאינו אוסר אלא מה שגדל אחר שהרכיבו או נטעו וזה לא היה לו שעת הכושר והענף עצמו אינו נאסר אלא מפני תערובת האיסור ואם היה יכול להבדיל אותו הענף ממה שגדל אחרי כן היה מותר וכן כלאי הכרם אי לא היה עיקרו נאסר או מעביר עציץ נקוב חשוב לא היה לו שעת הכושר שהאיסור הגדל אחרי כן לא היה לו מעולם שעת הכושר:"
+  },
+  "Tosafot on Pesachim 25a:2:1": {
+    "dependsOn": [
+      "Pesachim 25a:2",
+      "Pesachim 25a:1",
+      "Tosafot on Pesachim 25a:1:1",
+      "Chidushei Halachot on Pesachim 25a:1"
+    ],
+    "generatedAt": "2026-11-16T04:53:19.256Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לחמץ בפסח שכן ענוש כרת</strong> - ומשור הנסקל לא מצי למימר יוכיח דמה לערלה ולשור הנסקל שכן לא היה להם שעת הכושר לאכילה:"
+  },
+  "Tosafot on Pesachim 25a:2:2": {
+    "dependsOn": [
+      "Tosafot on Pesachim 25a:2:1",
+      "Pesachim 25a:2",
+      "Chullin 115b:14",
+      "Chullin 115b:15",
+      "Tosafot on Pesachim 24b:12:1"
+    ],
+    "generatedAt": "2026-11-16T04:55:24.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלאי הכרם יוכיחו</strong> - בפ' כל הבשר <span class=\"parenthesized\">(חולין קטו:)</span> פריך ונימא ערלה תוכיח ומשני ונראה לר\"י דהוה מצי למילף במה מצינו מכלאי הכרם לחודייהו דמה כלאי הכרם שכן נעבדה בו עבירה ואסורה באכילה ובהנאה אף אני אביא בשר בחלב וכו' אלא ניחא ליה למילף מכל הני בק\"ו דאלים טפי:"
+  },
+  "Tosafot on Pesachim 25a:3:1": {
+    "dependsOn": [
+      "Pesachim 25a:3",
+      "Maharsha: Chidushei Halachot on Pesachim 25a:2",
+      "Tosafot on Pesachim 25a:2:1",
+      "Tosafot on Pesachim 25a:2:2",
+      "Tosafot on Pesachim 22a:7:1",
+      "Tosafot on Pesachim 2a:1:1",
+      "Tosafot on Pesachim 2a:3:2"
+    ],
+    "generatedAt": "2026-11-16T04:59:34.609Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מה לכלאי הכרם שכן לוקים עליו שלא כדרך כו'</strong> - תימה לרשב\"א היא גופא נילף במה מצינו מכלאי הכרם שילקו על בשר בחלב שלא כדרך הנאה ואומר ר\"י דליכא למילף דאיכא למימר דשור הנסקל וחמץ שעבר עליו בבל יראה יוכיח שנעבד בו עבירה ואסור באכילה ואינו אסור אלא כדרך הנאתו דאכילה כתיב בהו:"
+  },
+  "Tosafot on Pesachim 25a:7:1": {
+    "dependsOn": [
+      "Tosafot on Pesachim 25a:1:1",
+      "Tosafot on Pesachim 25a:2:1",
+      "Tosafot on Pesachim 25a:3:1",
+      "Tosafot on Pesachim 24b:1:1",
+      "Tosafot on Pesachim 24b:2:1",
+      "Tosafot on Pesachim 24b:3:1",
+      "Ketubot 80a:3",
+      "Maharsha on Pesachim 25a:4",
+      "Chidushei Halachot on Pesachim 25a:3"
+    ],
+    "generatedAt": "2026-11-16T05:11:11.266Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עיקרן נאסרין</strong> - אומר ר\"י שגם הגבעולים והקש שגדל ממנו נאסר כדאמרינן לקמן <span class=\"parenthesized\">(פסחים ד' כו:)</span> תנור שהסיקו בקליפי ערלה או בקשין של כלאי הכרם חדש יותץ וקשה לר\"י דבפרק האשה שנפלו <span class=\"parenthesized\">(כתובות דף פ. ושם)</span> גבי מוציא הוצאות על נכסי אשתו וכו' מפרש רב יהודה אפי' לא אכל אלא חבילי זמורות רב יהודה לטעמיה דאמר אכלה ערלה וכלאים ושביעית הוי חזקה פי' אע\"פ שבכל אלו אין יכול לאכול רק העצים שהפירות אסורין אלמא עצי כלאים שרו ואומר ר\"ת דהתם מיירי באותן עצים שהיו קודם זריעת כלאים וקודם שהוסיף מאתים אבל אותן שגדילין אחרי כן אסורין מאחר שהוסיף מאתים:"
+  },
+  "Tosafot on Pesachim 25a:7:2": {
+    "dependsOn": [
+      "Menachot 6a:15-17",
+      "Chokhmat Shlomo on Pesachim 25a:3"
+    ],
+    "generatedAt": "2026-11-16T05:12:52.556Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 25a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הואיל והיתה לו שעת הכושר קודם השרשה</strong> - והא דאמרינן בפ\"ק דמנחות <span class=\"parenthesized\">(דף ו. ושם)</span> גבי טריפה דכלאים לא היה להם שעת הכושר התם קאי על משקה ישראל ומשקה לא היה לו לעולם שעת הכושר:"
+  }
+}
