@@ -74,6 +74,10 @@ describe("continuation prompts", () => {
     expect(prompt).toContain('{"valid": true}');
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("No lookups or arbitrary scripts/tools are permitted.");
+    expect(prompt).toContain(
+      'In the proposed Hebrew, are any added explanatory words enclosed in `<span class="explanation">...</span>`',
+    );
+    expect(prompt).toContain("using square brackets `[...]` — not `<span class=\"explanation\">`");
   });
 
   test("replaces base64 images with placeholders in continuation generation and critique prompts", () => {

@@ -20,7 +20,7 @@ You're translating and punctuating a single commentary comment on the Talmud, fo
    - **Explanations**: If brief explanatory or contextual words are needed in the Hebrew to make the thought coherent (e.g. an implied subject or verb), wrap them in `<span class="explanation">...</span>`. Do NOT use brackets (`[...]`) for explanations, because brackets are used in printed editions for textual emendations.
    - **Fidelity**: Outside of `<span class="explanation">...</span>`, preserve the exact source text wording without adding, removing, or changing any words. Preserve existing HTML tags around the same words.
    - Omit the Hebrew field entirely if it would be identical to the source.
-2. Write an accurate, readable English translation.
+2. Write an accurate, readable English translation. Use square brackets `[...]` — NOT `<span class="explanation">...</span>` — for brief implied or explanatory words in English (as shown in the example below); `<span class="explanation">` is for Hebrew only.
 3. If the existing translation is in French, German, or Spanish rather than English, translate that into English instead of writing a fresh translation.
 
 ## Rules on tools and external lookups

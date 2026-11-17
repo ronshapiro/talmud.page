@@ -1,0 +1,505 @@
+{
+  "Rashi on Taanit 7b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T08:42:34.704Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ימך</strong> – כמי שאין בו כח להוריד טל ומטר:"
+  },
+  "Rashi on Taanit 7b:11:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:11:2",
+      "Rashi on Taanit 7b:10:1",
+      "Rashi on Taanit 7b:9:1"
+    ],
+    "generatedAt": "2026-11-16T08:43:33.202Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועתה לא ראו אור</strong> – מפני שלא ראו אור של תורה:"
+  },
+  "Rashi on Taanit 7b:11:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:11:1",
+      "Rashi on Taanit 7b:11:2",
+      "Rashi on Taanit 7b:3:1",
+      "Rashi on Taanit 7b:3:2",
+      "Rashi on Taanit 7b:3:3",
+      "Rashi on Taanit 7b:4:1",
+      "Rashi on Taanit 7b:6:1",
+      "Rashi on Taanit 7b:7:1",
+      "Jastrow, בָּהִיר 1"
+    ],
+    "generatedAt": "2026-11-16T08:45:40.889Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו כשהשמים בהורין</strong> – כמו בהרת מנומר בעבים ורוצה להוריד גשמים רוח עברה ותטהרם מפזרת העבים:"
+  },
+  "Rashi on Taanit 7b:12:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:12:1",
+      "Job 37:11",
+      "Steinsaltz on Taanit 7b:12",
+      "Rashi on Taanit 7b:11:1",
+      "Rashi on Taanit 7b:11:2",
+      "Rashi on Taanit 7b:13:1"
+    ],
+    "generatedAt": "2026-11-16T08:59:46.261Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:12:1"
+    ],
+    "sourceText": "המלאך אף ברי שמו יפיץ ענן אורו גשם שלו:"
+  },
+  "Rashi on Taanit 7b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T09:01:41.509Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויצו</strong> – הקדוש ברוך הוא:"
+  },
+  "Rashi on Taanit 7b:13:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:13:1",
+      "Rashi on Taanit 7b:13:2",
+      "Rashi on Taanit 7b:13:3"
+    ],
+    "generatedAt": "2026-11-16T09:02:29.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עליה</strong> – על הגשם שתרד:"
+  },
+  "Rashi on Taanit 7b:13:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:13:1",
+      "Rashi on Taanit 7b:13:2",
+      "Rashi on Taanit 7a:4:1",
+      "Tosafot on Taanit 2a:13:1",
+      "Rashi on Taanit 7b:2:1",
+      "Tosafot on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T09:05:27.096Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במפגיע</strong> – כשיתפלל עליה כמו ואל תפגע בי:"
+  },
+  "Rashi on Taanit 7b:14:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:14:1",
+      "Rashi on Taanit 7b:14:2",
+      "Rashi on Taanit 7b:7:1",
+      "Rashi on Taanit 7b:13:3",
+      "Rashi on Taanit 7a:4:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T09:07:33.900Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קהה הברזל</strong> – כמו הקהה את שיניו ושיני בנים תקהינה <span class=\"parenthesized\">(ירמיהו ל״א:כ״ט)</span>:"
+  },
+  "Rashi on Taanit 7b:14:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:14:1"
+    ],
+    "generatedAt": "2026-11-16T09:08:11.586Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והוא לא פנים קלקל</strong> – שקלקלו הדור:"
+  },
+  "Rashi on Taanit 7b:15:1": {
+    "dependsOn": [
+      "Taanit 7b:15",
+      "Rashi on Taanit 7b:14:1",
+      "Rashi on Taanit 7b:14:2"
+    ],
+    "generatedAt": "2026-11-16T09:09:59.055Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכ\"ש אם הוכשרו מעשיהן</strong> – קודם לכן והכי משמע ויתרון הכשיר ויתרון שהכשיר לחכמה אם הכשירו מעשיהן מתחילה שיבואו הגשמים יותר מבחיילים יגבר שהן מגבירין חיילים ועומדין בתפלה בזמן שקלקלו:"
+  },
+  "Rashi on Taanit 7b:1:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:1:1"
+    ],
+    "generatedAt": "2026-11-16T07:56:30.697Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הוו סנו</strong> – אותם נאים שהם חכמים:"
+  },
+  "Rashi on Taanit 7b:1:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:1:1",
+      "Rashi on Taanit 7b:1:2"
+    ],
+    "generatedAt": "2026-11-16T07:57:14.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טפי הוו גמירי</strong> – שאי אפשר לנאה להשפיל דעתו ובא לידי שכחה:"
+  },
+  "Rashi on Taanit 7b:1:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:1:2",
+      "Rashi on Taanit 7b:1:4",
+      "Tosafot on Taanit 7b:11:1"
+    ],
+    "generatedAt": "2026-11-16T07:59:09.491Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהיסח הדעת</strong> – שאם לא ישמרם יפה יהו נשפכין או נופל לתוכן דבר מאוס ונפסלים מלשתות בדבר קל יותר משמן ודבש שמתוך שהן עבים צפה הפסולת למעלה ואפשר אדם נוטל העליון וזורקו לחוץ והתחתון בר ונקי מה שאין כן במשקה צלול שאינו עב קליי\"ר בלע\"ז:"
+  },
+  "Rashi on Taanit 7b:1:4": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:1:4",
+      "Rashi on Taanit 7b:1:1",
+      "Rashi on Taanit 7b:1:2",
+      "Rashi on Taanit 7b:1:3"
+    ],
+    "generatedAt": "2026-11-16T07:59:57.066Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בהיסח הדעת</strong> – אם אינו מחזירם תמיד:"
+  },
+  "Rashi on Taanit 7b:2:1": {
+    "dependsOn": [
+      "Tosafot on Taanit 7b:2:1",
+      "Steinsaltz on Taanit 7b:2"
+    ],
+    "generatedAt": "2026-11-16T08:02:50.755Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שנאמר הרעיפו שמים ממעל ושחקים יזלו צדק תפתח ארץ ויפרו ישע וצדקה תצמיח יחד אני ה' בראתיו בראתים לא נאמר</strong> – דמשמע אשחקים יזלו קאי אלא אני ה' בראתיו לטל ומטר שמע מינה שמשתבח ומתפאר הקב\"ה במטר השמים:"
+  },
+  "Rashi on Taanit 7b:3:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:3:1",
+      "Rashi on Taanit 7b:3:2",
+      "Rashi on Taanit 7b:3:3",
+      "Rashi on Taanit 7b:2:1",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 7b:4:1",
+      "Rashi on Taanit 7b:4:2"
+    ],
+    "generatedAt": "2026-11-16T08:08:43.095Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ישועה פרה ורבה בו</strong> – מליצי זכות נכנסין לפניו ביום הגשמים שנזכר לישועה מתוך שעת רצון הוא לישנא דקרא ויפרו ישע ואימתי בזמן שהשחקים יזלו צדק:"
+  },
+  "Rashi on Taanit 7b:3:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:3:1",
+      "Rashi on Taanit 7b:3:3"
+    ],
+    "generatedAt": "2026-11-16T08:09:21.627Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רצית ה' ארצך</strong> – במים:"
+  },
+  "Rashi on Taanit 7b:3:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:3:1",
+      "Rashi on Taanit 7b:3:2",
+      "Rashi on Taanit 7b:3:3",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:1:2",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2"
+    ],
+    "generatedAt": "2026-11-16T08:12:34.846Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נשאת עון עמך</strong> – מיד:"
+  },
+  "Rashi on Taanit 7b:4:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:4:2"
+    ],
+    "generatedAt": "2026-11-16T08:14:25.164Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג א\"ל מר זעירי מדיהבת לרבינא כו'</strong> – זעירי סתם היה מן הראשונים ורבינא סוף הוראה לא ראו זה את זה:"
+  },
+  "Rashi on Taanit 7b:4:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:4:1",
+      "Rashi on Taanit 7b:4:2",
+      "Rashi on Taanit 7b:3:1",
+      "Rashi on Taanit 7b:3:2",
+      "Rashi on Taanit 7b:3:3",
+      "Rashi on Taanit 7b:2:1",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Berakhot 2a:1:1",
+      "Rashi on Berakhot 2a:1:2",
+      "Steinsaltz on Taanit 7b:4:1",
+      "Steinsaltz on Taanit 7b:4"
+    ],
+    "generatedAt": "2026-11-16T08:17:34.241Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואתה תשמע השמים וגו'</strong> – ואומר ונתת מטר על ארצם בתפלה דשלמה:"
+  },
+  "Rashi on Taanit 7b:5:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:5:2",
+      "Rashi on Taanit 7b:1:1",
+      "Rashi on Taanit 7b:1:2",
+      "Rashi on Taanit 7b:2:1",
+      "Rashi on Taanit 2a:1:1",
+      "Rashi on Taanit 2a:1:2"
+    ],
+    "generatedAt": "2026-11-16T08:22:14.967Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציה גם חום יגזלו מימי שלג</strong> – כשציה גם חום גוזלין מימות השלג שאינן יורדין מטר כמשפטם בידוע ששאול חטאו:"
+  },
+  "Rashi on Taanit 7b:5:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:5:1",
+      "Rashi on Taanit 7b:5:2",
+      "Rashi on Taanit 7b:2:1",
+      "Rashi on Taanit 7b:4:1",
+      "Rashi on Taanit 7b:4:2",
+      "Rashi on Taanit 7b:6:1",
+      "Rashi on Taanit 7b:7:1",
+      "Rashi on Taanit 7b:8:1",
+      "Rashi on Taanit 7a:1:1",
+      "Rashi on Taanit 7a:2:1",
+      "Rashi on Taanit 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T08:23:53.951Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא יהיה מטר</strong> – וסמיך ליה ואבדתם:"
+  },
+  "Rashi on Taanit 7b:6:1": {
+    "dependsOn": [
+      "Steinsaltz on Taanit 7b:6",
+      "Job 24:19"
+    ],
+    "generatedAt": "2026-11-16T08:25:19.185Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציה</strong> – דריש לשון צווי דברים שצויתי אתכם בימות החמה תרומות ומעשרות גזלו מימי שלג את המטר:"
+  },
+  "Rashi on Taanit 7b:7:1": {
+    "dependsOn": [
+      "Yevamot 72a:2",
+      "Yevamot 72a:1",
+      "Yevamot 72a:3",
+      "Rashi on Yevamot 72a:1:1",
+      "Rashi on Yevamot 72a:3:1",
+      "Rashi on Yevamot 72a:3:2",
+      "Rashi on Proverbs 25:23:1",
+      "Rashi on Proverbs 25:23:2",
+      "Rashi on Taanit 7b:6:1",
+      "Rashi on Taanit 7b:8:1"
+    ],
+    "generatedAt": "2026-11-16T08:27:31.777Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רוח צפון תחולל גשם ופנים נזעמים לשון שקר</strong> – תחולל תבטל כמו לא יחל דברו <span class=\"parenthesized\">(במדבר ל׳:ג׳)</span> כדאמרי' ביבמות <span class=\"parenthesized\">(דף עב.)</span> דרוח צפון ברור הוא ומביא אורה לעולם מה שגשמים נעצרין ופנים נזעמין שמראה הקב\"ה שאינו מביא מטר לעולם מפני לשון שקר רכילות ופשט המקרא כשם שרוח צפון תחולל גשם כך פנים נזעמים מפני לשון שקר:"
+  },
+  "Rashi on Taanit 7b:8:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:8:1",
+      "Rashi on Taanit 7b:8:2",
+      "Rashi on Taanit 7b:6:1",
+      "Rashi on Taanit 7b:7:1"
+    ],
+    "generatedAt": "2026-11-16T08:29:20.419Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וימנעו רביבים</strong> – משום דמאנת הכלם שהיה בך עזות:"
+  },
+  "Rashi on Taanit 7b:8:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:8:1",
+      "Rashi on Taanit 7b:2:1"
+    ],
+    "generatedAt": "2026-11-16T08:31:19.322Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היה</strong> – משמע כבר נכשל:"
+  },
+  "Rashi on Taanit 7b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T08:32:34.367Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העז איש</strong> – שיש בו עזות פנים אמור לו רשע בפניו ואין בו משום מלקות כדאמרי' במסכת קדושין <span class=\"parenthesized\">(דף כח.)</span> ומשום דבר זה בלבד מותר לקרותו רשע:"
+  },
+  "Rashi on Taanit 7b:9:2": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:9:1",
+      "Rashi on Berakhot 2a:1:1"
+    ],
+    "generatedAt": "2026-11-16T08:34:30.436Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לשנאותו</strong> – אע\"ג דכתיב ואהבת לרעך כמוך:"
+  },
+  "Rashi on Taanit 7b:9:3": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:9:1",
+      "Rashi on Taanit 7b:9:2",
+      "Rashi on Taanit 7b:9:3",
+      "Ecclesiastes 8:1",
+      "Steinsaltz on Taanit 7b:9",
+      "Tosafot on Taanit 7b:9:1",
+      "Jastrow, שָׂנֵא 1"
+    ],
+    "generatedAt": "2026-11-16T08:38:17.240Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Taanit 7b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועז פניו ישונא</strong> – ועז כתיב חסר ו' מי שהוא עז פנים ישנא בשו\"א:"
+  },
+  "Tosafot on Taanit 7b:11:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:11:1",
+      "Rashi on Taanit 7b:11:2",
+      "Jastrow, בָּהִיר 1",
+      "Rashi on Taanit 7b:1:3"
+    ],
+    "generatedAt": "2026-11-16T08:48:03.249Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7b:11:1"
+    ],
+    "sourceText": "בהורין לשון בהרות טרוק\"ש בלע\"ז:"
+  },
+  "Tosafot on Taanit 7b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T08:01:18.461Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הוו סנו הוו חכימי</strong> - פ' אם היו שונאים היופי הוו תלמידי חכמים ביותר:"
+  },
+  "Tosafot on Taanit 7b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-16T08:03:37.026Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בראתים לא נאמר אלא בראתיו</strong> - פי' דמשמע דמהדר אגשם ואם כן משום דגדול יום הגשמים כיום שנברא בו שמים וארץ משתבח ביה הקב\"ה אי הוה כתיב בראתים הוה משמע דאהדר אשמים וארץ:"
+  },
+  "Tosafot on Taanit 7b:7:1": {
+    "dependsOn": [
+      "Rashi on Taanit 7b:7:1"
+    ],
+    "generatedAt": "2026-11-16T08:28:21.109Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פנים נזעמים לשון סתר</strong> - פירוש בשביל לשון שקר שאומר לשון הרע הרוח צפון תבטל הגשם והיינו פנים נזעמים:"
+  },
+  "Tosafot on Taanit 7b:9:1": {
+    "dependsOn": [
+      "Kiddushin 28a:6",
+      "Kiddushin 28a:5",
+      "Rashi on Kiddushin 28a:5:4",
+      "Taanit 7b:9",
+      "Rashi on Taanit 7b:9:1"
+    ],
+    "generatedAt": "2026-11-16T08:42:07.324Z",
+    "model": "gemini-3.8-flash-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Taanit 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מותר לקרותו רשע</strong> - אף על גב דאמרי' בקדושין <span class=\"parenthesized\">(דף כח.)</span> הקורא לחבירו רשע יורד עמו לחייו לזה מותר דודאי נכשל בעבירה ועומד במורדו דהכרת פניו ענתה בו:"
+  }
+}
