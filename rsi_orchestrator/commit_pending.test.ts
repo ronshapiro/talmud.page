@@ -498,6 +498,75 @@ describe("commitAndPushPendingCandidates", () => {
     );
   });
 
+  test("formats commit message like PR title when message is omitted", async () => {
+    const commitPendingState = jest.fn(async (_message: string) => true);
+    const openPr = jest.fn(async (_branch: string, _title: string, _body: string) => 123);
+
+    await commitAndPushPendingCandidates({
+      task: "rashi_tosafot_translation",
+      backend: "agy",
+    }, fakeDeps({
+      gitStatusPorcelain: async () => [
+        " M precomputed/ai_additions/Pesachim/3b.json",
+        " M precomputed/ai_additions/Pesachim/4a.json",
+      ].join("\n"),
+      currentBranch: async () => "rsi-pesachim",
+      commitPendingState,
+      openPr,
+    }));
+
+    expect(commitPendingState).toHaveBeenCalledWith(
+      "rashi_tosafot_translation | agy: Pesachim 3b-4a",
+    );
+    expect(openPr).toHaveBeenCalledWith(
+      "rsi-pesachim",
+      "rashi_tosafot_translation | agy: Pesachim 3b-4a",
+      expect.any(String),
+    );
+  });
+
+  test("uses only current run pages in commit message while PR title uses branch pages", async () => {
+    const commitPendingState = jest.fn(async (_message: string) => true);
+    const updatePrTitle = jest.fn();
+
+    await commitAndPushPendingCandidates({
+      task: "rashi_tosafot_translation",
+      backend: "agy",
+    }, fakeDeps({
+      gitStatusPorcelain: async () => " M precomputed/ai_additions/Zevachim/16b.json",
+      currentBranch: async () => "rsi-zevachim",
+      findOpenPr: async () => ({number: 42, title: "rashi_tosafot_translation | agy: Zevachim 16a"}),
+      commitPendingState,
+      updatePrTitle,
+      getBranchChangedPaths: async () => [
+        "precomputed/ai_additions/Zevachim/16a.json",
+        "precomputed/ai_additions/Zevachim/16b.json",
+      ],
+    }));
+
+    expect(commitPendingState).toHaveBeenCalledWith(
+      "rashi_tosafot_translation | agy: Zevachim 16b",
+    );
+    expect(updatePrTitle).toHaveBeenCalledWith(
+      42,
+      "rashi_tosafot_translation | agy: Zevachim 16a-16b",
+    );
+  });
+
+  test("falls back to task and backend in commit message when no pages match", async () => {
+    const commitPendingState = jest.fn(async (_message: string) => true);
+
+    await commitAndPushPendingCandidates({
+      task: "rashi_tosafot_translation",
+      backend: "claude",
+    }, fakeDeps({
+      gitStatusPorcelain: async () => " M precomputed/rsi_state/context_usage_log.jsonl",
+      commitPendingState,
+    }));
+
+    expect(commitPendingState).toHaveBeenCalledWith("rashi_tosafot_translation | claude");
+  });
+
   test("does not push or open PR if worktree has nothing to commit", async () => {
     const push = jest.fn();
     const openPr = jest.fn();

@@ -175,7 +175,6 @@ async function main(): Promise<void> {
     await commitAndPushPendingCandidates({
       task: "rashi_tosafot_translation",
       backend: effectiveBackend,
-      message: `New pending translation candidates (${scopeLabel})`,
     }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
   };
 

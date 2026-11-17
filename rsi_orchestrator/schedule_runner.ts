@@ -106,7 +106,6 @@ async function main(): Promise<void> {
   await commitAndPushPendingCandidates({
     task: "rashi_tosafot_translation",
     backend: "claude",
-    message: "new pending translation candidates",
   }, realCommitPendingDeps);
 }
 
