@@ -1,6 +1,14 @@
 {
   "agy": {
     "default": {
+      "generateModel": "gemini-4-hydrogen-medium",
+      "critiqueModel": "gemini-4-hydrogen-medium"
+    },
+    "hydrogen": {
+      "generateModel": "gemini-4-hydrogen-medium",
+      "critiqueModel": "gemini-4-hydrogen-medium"
+    },
+    "flash": {
       "generateModel": "gemini-3.8-flash-medium",
       "critiqueModel": "gemini-3.8-flash-medium"
     },

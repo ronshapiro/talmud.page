@@ -43,36 +43,24 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">כדעולא</strong> - דאמר מחיצה היא לקרות רה\"י אלא שמחוסרת דירה לכך אסורה לטלטל מדרבנן והא דקתני רה\"ר לטומאה כגון שיש פתחים במחיצותיה ונכנסין בזו ויוצאין בזו:"
   },
   "Rashi on Shabbat 7a:2:1": {
-    "dependsOn": [
-      "Community Translation on Rashi on Shabbat 7a:2:1",
-      "Shabbat 7a:2",
-      "Shabbat 6b:11",
-      "Rashi on Shabbat 7a:1:1",
-      "Rashi on Shabbat 7a:2:2",
-      "Rashi on Shabbat 7a:2:3"
-    ],
-    "generatedAt": "2026-11-12T17:50:13.144Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-17T14:04:42.802Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 7a:2:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">כדעולא</strong> - דאמר מחיצה היא לקרות רה\"י אלא שמחוסרת דירה לכך אסורה לטלטל מדרבנן והא דקתני רה\"ר לטומאה כגון שיש פתחים במחיצותיה ונכנסין בזו ויוצאין בזו:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">עולא</strong> - דאמר אמאי קרי לה רה\"י כו' מ\"ט לא אמר כגון דאית לה מחיצות ורה\"י גמורה קאמר וניזיל בתר שמעתיה דאמר הזורק לתוכו חייב:"
   },
   "Rashi on Shabbat 7a:2:2": {
-    "dependsOn": [
-      "Rashi on Shabbat 7a:2:1",
-      "Rashi on Shabbat 7a:2:2",
-      "Shabbat 7a:2",
-      "Shabbat 7a:1"
-    ],
-    "generatedAt": "2026-11-12T17:52:49.028Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-17T14:05:01.061Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 7a:2:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">עולא</strong> - דאמר אמאי קרי לה רה\"י כו' מ\"ט לא אמר כגון דאית לה מחיצות ורה\"י גמורה קאמר וניזיל בתר שמעתיה דאמר הזורק לתוכו חייב:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורב אשי</strong> - אמר לך רה\"י קתני וכרמלית לא קרי לה תנא רה\"י:"
   },
   "Rashi on Shabbat 7a:2:3": {
     "dependsOn": [
@@ -719,23 +707,14 @@
     "sourceText": "<strong class=\"dibur-hamatchil\">וזרק</strong> - מר\"ה ונח על גביו:"
   },
   "Rashi on Shabbat 7a:9:5": {
-    "dependsOn": [
-      "Rashi on Shabbat 7a:9:4",
-      "Rashi on Shabbat 7a:9:5",
-      "Rashi on Shabbat 7a:9:6",
-      "Rashi on Shabbat 7a:9:3",
-      "Shabbat 7a:9",
-      "Shabbat 7b:10",
-      "Rashi on Shabbat 7b:10:1",
-      "Shabbat 8a:1"
-    ],
-    "generatedAt": "2026-11-12T17:54:17.024Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-17T14:05:29.182Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 7a:9:5"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - כמונח ע\"ג קרקע דלא בעי הנחה על גבי מקום ד' ברה\"י כדמפרש לקמיה בשמעתין:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב</strong> - כמונח ע\"ג קרקע דלא בעי הנחה על גבי מקום ד' ברה\"י כדמפרש לקמיה בשמעתין. עד לרקיע. כל אויר שכנגד רה\"י בין אויר חצר בין אויר עמוד בר\"ה גבוה י' ורחב ד' כנגדו עד לרקיע שם רה\"י עליו:"
   },
   "Rashi on Shabbat 7a:9:6": {
     "dependsOn": [

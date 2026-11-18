@@ -25,7 +25,7 @@ Confirm or resolve these four parameters from the user's request:
    - For `agy`, verify exact model IDs (including effort suffix like `-medium`, `-high`) via `agy models`.
    - Check `precomputed/rsi_state/model_routing_config.json` to match existing effort conventions (currently `-medium` across active `agy` presets).
 2. **`old_model`** (and its critique/generator backend):
-   - Defaults to the current `agy` baseline in `precomputed/rsi_state/model_routing_config.json` (`gemini-3.8-flash-medium`) if unspecified.
+   - Defaults to the current `agy` baseline in `precomputed/rsi_state/model_routing_config.json` (`gemini-4-hydrogen-medium`) if unspecified.
 3. **`masechet`**:
    - Tractate name or alias (e.g. `Taanit`, `Shevuot`). Canonical name lookup is handled by `books.canonicalNameOrUndefined(...)`.
 4. **`num_pages` (`N`)**:
