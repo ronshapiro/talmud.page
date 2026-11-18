@@ -157,39 +157,35 @@
   },
   "Rashi on Shabbat 25b:3:1": {
     "dependsOn": [],
-    "generatedAt": "2026-11-12T17:54:41.010Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-17T14:05:49.820Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:1"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
+    "sourceText": "הדלקת נר בשבת. שלא היה לו ממה להדליק ובמקום שאין נר אין שלום שהולך ונכשל והולך באפילה:"
   },
   "Rashi on Shabbat 25b:3:2": {
-    "dependsOn": [
-      "Rashi on Shabbat 25b:3:1",
-      "Rashi on Shabbat 25b:3:3",
-      "Rashi on Shabbat 25a:7:1"
-    ],
-    "generatedAt": "2026-11-12T17:55:59.343Z",
-    "model": "gemini-3.8-flash-medium",
+    "dependsOn": [],
+    "generatedAt": "2026-11-17T14:06:06.429Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:2"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויצא</strong> - מאי איכפת לן:"
   },
   "Rashi on Shabbat 25b:3:3": {
     "dependsOn": [
       "Translation on Rashi on Shabbat 25b:3:3"
     ],
-    "generatedAt": "2026-11-12T17:56:42.598Z",
-    "model": "gemini-3.8-flash-medium",
+    "generatedAt": "2026-11-17T14:06:48.026Z",
+    "model": "gemini-4-hydrogen-medium",
     "promptVersion": "v3",
     "sourceRefs": [
       "Rashi on Shabbat 25b:3:3"
     ],
-    "sourceText": "<strong class=\"dibur-hamatchil\">רחיצת ידים ורגלים</strong> - ערבית ליל שבת:"
+    "sourceText": "<strong class=\"dibur-hamatchil\">חובה</strong> - כבוד שבת הוא שאין סעודה חשובה אלא במקום אור כעין יממא בפרק בתרא דיומא <span class=\"parenthesized\">(דף עה:)</span>:"
   },
   "Rashi on Shabbat 25b:3:4": {
     "dependsOn": [
