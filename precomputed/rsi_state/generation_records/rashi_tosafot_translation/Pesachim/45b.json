@@ -1,0 +1,405 @@
+{
+  "Rashi on Pesachim 45b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:17:22.966Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן דמתני הא</strong> - משמיה דרב לא מתני הא ואמוראי נינהו ואליבא דרב:"
+  },
+  "Rashi on Pesachim 45b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:17:34.598Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני חצאי זיתים</strong> - בסידקי העריבה:"
+  },
+  "Rashi on Pesachim 45b:12:2": {
+    "dependsOn": [
+      "Pesachim 45b:12",
+      "Rashi on Pesachim 45b:12:1",
+      "Rashi on Pesachim 45b:13:1"
+    ],
+    "generatedAt": "2026-11-18T18:18:19.373Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייב לבער</strong> - דחוט מצרפן והוי כזית במקום אחד ובדפנות קאי:"
+  },
+  "Rashi on Pesachim 45b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:18:37.970Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא אמרן</strong> - דאם אין ניטלין עמו אינו חייב לבער אלא בעריבה דקביעי בה:"
+  },
+  "Rashi on Pesachim 45b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:18:52.271Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בבית</strong> - אפילו שני חצאי זיתים שאין חוט מצרפן חייב לבער:"
+  },
+  "Rashi on Pesachim 45b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:19:12.036Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זימנין דכניש להו</strong> - מכבד הבית ונפלי אהדדי:"
+  },
+  "Rashi on Pesachim 45b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:19:42.308Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בית ועלייה</strong> - חצי זית בבית וחצי זית בעלייה מי חיישינן לכנושי דילמא כניש להו ומחברן או לא אם תמצא לומר בית ועלייה לא חיישינן דהא לא מקרי דאי נפול נהוי מכוון כנגד התחתון בית ואכסדרה מהו ואם תמצא לומר בית ואכסדרה שדרך האכסדרה נכנסים ויוצאין לבית תמיד ואין מחיצות שלימות חוצצות ביניהם שיש חלונות ופתחים לאכסדרה הרבה מכל צד והוי כחד ביתא וחיישינן דכניש כיבודי בית ואכסדרה:"
+  },
+  "Rashi on Pesachim 45b:15:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 45b:15:1"
+    ],
+    "generatedAt": "2026-11-18T18:20:07.264Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שני בתים זה לפנים מזה</strong> - ונכנסין לפנימי דרך החיצון אבל אין תשמישן שוה תדיר מזה לזה כבית ואכסדרה מהו מי חיישינן דכניש כיבודי בית זה בזה או לא:"
+  },
+  "Rashi on Pesachim 45b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:20:21.133Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונפסלה מלאכול לאדם</strong> - ונתקלקלה בעיפושה ממאכל אדם:"
+  },
+  "Rashi on Pesachim 45b:17:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:20:35.976Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטמאה טומאת אוכלין</strong> - דכל זמן שהיא ראויה לכלב לא פקע תורת אוכל מינה:"
+  },
+  "Rashi on Pesachim 45b:17:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:20:59.497Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונשרפת עם הטמאה בפסח</strong> - אם תרומה טהורה היא דכיון דלא חזיא לאדם מותר לטמאה בידים ואפילו לר' יוסי דאמר בפרק קמא <span class=\"parenthesized\">(דף יד.)</span> זו לעצמה וזו לעצמה:"
+  },
+  "Rashi on Pesachim 45b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:21:19.484Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המיוחד לאוכל אדם</strong> - וחל עליו שם אוכל טמא לעולם ואפילו נתקלקל מאכילת אדם עד שיפסל מאכילת כלב:"
+  },
+  "Rashi on Pesachim 45b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:21:35.269Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">העבדנין</strong> - שנותנין בה עורות לעבד ונותנין שם קמח:"
+  },
+  "Rashi on Pesachim 45b:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:21:53.676Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תוך שלשה ימים</strong> - לפסח נתן קמח לתוכה עדיין שם חמץ עליה וכשבא הפסח חייב לבער ואפילו היו בה עורות:"
+  },
+  "Rashi on Pesachim 45b:19:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:22:10.718Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קודם שלשה ימים</strong> - כבר נתקלקלה ע\"י ריח הכלי ואף על פי שלא נתן לתוכה עורות:"
+  },
+  "Rashi on Pesachim 45b:19:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:22:31.307Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי נתן אומר</strong> - לא נתן לתוכה עורות מודינא לך דתוך שלשה ימים חייב לבער ואחר שלשה ימים לא שנתקלקלה מריח הכלי אבל נתן לתוכה עורות בקמח ביטלה מתורת חמץ:"
+  },
+  "Rashi on Pesachim 45b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:08:40.022Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו חוצץ</strong> - אם נטמאת ובא להטבילה דבטיל לגבי עריבה:"
+  },
+  "Rashi on Pesachim 45b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:08:57.317Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו עובר</strong> - לענין חמץ בפסח:"
+  },
+  "Rashi on Pesachim 45b:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:09:29.489Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במה דברים אמורים</strong> - דבמקום שאין עשוי לחזק עובר בכזית והיינו כלישנא קמא דאוקמה למתני' בשאין עשוי לחזק קתני בה נמי הכי דבכזית עובר ובפחות מכזית בטל אבל אי עשוי לחזק אפילו כזית בטל:"
+  },
+  "Rashi on Pesachim 45b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:22:50.369Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם מקפיד עליו</strong> - שעתיד ליטלו חוצץ ואין טבילה עולה לה:"
+  },
+  "Rashi on Pesachim 45b:21:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:23:08.678Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בקיומו</strong> - שיתקיים בסדקיו לסתום:"
+  },
+  "Rashi on Pesachim 45b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:23:26.398Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי דמי</strong> - דקתני וכן התם גבי פסח בשיעורא בכזית ובפחות מכזית תליא מילתא והכא תליא מילתא בקפידא לא שנא פורתא ולא שנא טובא:"
+  },
+  "Rashi on Pesachim 45b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:09:48.378Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קילתא מקמי חמירתא</strong> - קמייתא דאינה משנה:"
+  },
+  "Rashi on Pesachim 45b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:10:05.505Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב יוסף אמר</strong> - תרוייהו איתנו בי מדרשא ומשנה הן ותנאי נינהו ופליגי בהכי:"
+  },
+  "Rashi on Pesachim 45b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:10:26.200Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנאי שקלת לך מעלמא</strong> - דלא משכחת תנאי דפליגי בהכי דקאמרת סמי דאינה משנה:"
+  },
+  "Rashi on Pesachim 45b:4:1": {
+    "dependsOn": [
+      "Steinsaltz on Pesachim 45b:4:1",
+      "Sefer HeArukh, Letter Kaf 286",
+      "Steinsaltz on Pesachim 45b:4",
+      "Steinsaltz comment #1 on Pesachim 45b:4"
+    ],
+    "generatedAt": "2026-11-18T18:11:14.474Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופת</strong> - מטו\"ן:"
+  },
+  "Rashi on Pesachim 45b:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:11:35.601Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שייחדה לישיבה</strong> - גרסינן וכופת שם דבר הוא ובסדר טהרות טובא איכא כופת של עץ וכופת של אבן:"
+  },
+  "Rashi on Pesachim 45b:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:11:59.865Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטלה</strong> - אלמא איכא דסבירא ליה אפי' כזית מכי מבטיל לה בטל ומתני' קמייתא דקתני נמי במקום העשוי לחזק אפילו כזית בטל ר' שמעון בן אלעזר היא דכיון דאינה מקויימת לאכילה בטלה:"
+  },
+  "Rashi on Pesachim 45b:5:1": {
+    "dependsOn": [
+      "Pesachim 45b:5",
+      "Pesachim 45b:4"
+    ],
+    "generatedAt": "2026-11-18T18:13:36.443Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרצת כזית</strong> - שבמקום העשוי לחזק דר\"ש היא:"
+  },
+  "Rashi on Pesachim 45b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:14:01.972Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פחות מכזית</strong> - במקום שאין עשוי לחזק דקשו נמי אהדדי דקמייתא תני אף במקום שאין עשוי לחזק אין חייב לבער ובתרייתא תני חייב במקום שאין עשוי לחזק מי קא תרצת הא לא שמעינן ליה לרבי שמעון דמיקל אלא בשאינה מקויימת לאכילה אבל במקויימת לאכילה לא שמעינן דשני ליה בין כזית לפחות מכזית:"
+  },
+  "Rashi on Pesachim 45b:5:3": {
+    "dependsOn": [
+      "Pesachim 45b:5",
+      "Pesachim 45b:1",
+      "Pesachim 45b:2",
+      "Pesachim 45b:3"
+    ],
+    "generatedAt": "2026-11-18T18:14:58.993Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא הא והא רבי שמעון בן אלעזר ולא קשיא כאן במקום לישה כאן שלא במקום לישה</strong> - מתניתין בתרייתא לא קרי מקום שאין עשוי לחזק אלא מקום שאינו מקום לישה כלל כגון שפה העליונה אבל דפנות קרי מקום העשוי לחזק וקמייתא קרי אף דפנות מקום שאין עשוי לחזק ואף על גב דבמקום לישה הוא ומקום העשוי לחזק קרי שוליים והכי קאמר תנא קמא במקום העשוי לחזק כגון שוליים שמקבלין את המים אפילו כזית אינו עובר מקום שאינו עשוי לחזק מים כגון דפנות דמקום לישה הוא ולאו מקום מים חוצץ ועובר ופחות מכזית אפילו בדפנות נמי אינו חוצץ דכיון דמהני פורתא לחזק עיסה כשמשפשפין ולשין שם בטיל ובשלא במקום לישה כגון שפה עליונה לא איירי האי תנא מידי ומודה הוא בה דאפילו פחות מכזית לא בטיל ביה ותנא בתרא הכי קאמר מקום העשוי לחזק עיסה כגון דפנות אינו חוצץ בפחות מכזית והכי נמי אמרן בקמייתא מקום שאין עשוי לחזק כגון שפה העליונה חוצץ ואף על גב דליכא כזית והכי נמי אמרן בקמייתא וכזית אפילו בדפנות חוצץ והכי נמי תניא בקמייתא:"
+  },
+  "Rashi on Pesachim 45b:6:1": {
+    "dependsOn": [
+      "Pesachim 45b:6"
+    ],
+    "generatedAt": "2026-11-18T18:15:38.447Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא תימא שלא במקום לישה</strong> - דאמרן ביה דאפילו בציר מכזית חוצץ היינו גבה דאגנא מבחוץ אבל שיפתא דאגנא קרי מקום לישה ובטיל ביה פחות מכזית:"
+  },
+  "Rashi on Pesachim 45b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:15:56.378Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא שיפתא דאגנא</strong> - נמי קרי שלא מקום לישה ולא בטיל ביה בציר מכזית:"
+  },
+  "Rashi on Pesachim 45b:6:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:16:15.679Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:6:3"
+    ],
+    "sourceText": "כללא דתרווייהו תנאי שפה עליונה אפילו פחות מכזית עובר שוליים אפילו כזית אינו עובר דפנות כזית עובר פחות מכזית אינו עובר:"
+  },
+  "Rashi on Pesachim 45b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:16:31.710Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זימנין דאטיף</strong> - פעמים שהיא צפה על שפה עליונה והוי מקום לישה:"
+  },
+  "Rashi on Pesachim 45b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:16:47.020Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כרבי שמעון בן אלעזר</strong> - דכיון דבטלה בטלה ואפילו טובא:"
+  },
+  "Rashi on Pesachim 45b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-18T18:17:04.447Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 45b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טח פניה</strong> - של כופת שאור לתקנה לישיבה:"
+  },
+  "Tosafot on Pesachim 45b:4:1": {
+    "dependsOn": [
+      "Chullin 129a:13"
+    ],
+    "generatedAt": "2026-11-18T18:12:56.721Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 45b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כופת שאור שיחדה לישיבה בטלה</strong> - אע\"פ שראוי לאכילה כיון שאין מקיימין אותו לאכילה בטלה כמו לענין טומאה דאמרינן בהעור והרוטב <span class=\"parenthesized\">(חולין דף קכט.)</span> דבטלה אע\"פ שראוי לאכילה כדאמרינן התם בית שסיככו בזרעים טהרו וטומאתו לאו דאורייתא דאי דאורייתא א\"כ מצינו אוכלים דמטמאי טומאה חמורה ומשני כששימש מעשה עץ שימש משמע דמיירי בראוי לאכילה ונראה לר\"י דכי היכי דפליגי לענין טומאה בפרק במה בהמה <span class=\"parenthesized\">(שבת דף נב:)</span> דרבנן סברי דכל הכלים עולין מטומאתם בשינוי מעשה ורבי יהודה סבר דלא אמרינן שינוי מעשה לתקן אלא לקלקל הכי נמי פליגי גבי חמץ:"
+  }
+}
