@@ -190,6 +190,104 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - להעמיק אותן חמשה שנשתיירו:"
   },
+  "Rashi on Moed Katan 4b:16:3": {
+    "costUsd": 0.0263355,
+    "dependsOn": [
+      "Moed Katan 4b:16"
+    ],
+    "generatedAt": "2026-11-19T19:04:24.178Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא חמשה קא מעמיק</strong> - דהיתה עמוקה טפח ומעמידה על ששה ולא הוי טירחא יתירא להעמיק כל כך בקרקע:"
+  },
+  "Rashi on Moed Katan 4b:16:4": {
+    "costUsd": 0.0239715,
+    "dependsOn": [
+      "Moed Katan 4b:16"
+    ],
+    "generatedAt": "2026-11-19T19:04:34.655Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והכא</strong> - נמי לא מעמיק במועד אלא חמשה טפחים:"
+  },
+  "Rashi on Moed Katan 4b:16:5": {
+    "costUsd": 0.0483438,
+    "dependsOn": [
+      "Rashi on Moed Katan 4b:16:4",
+      "Rashi on Moed Katan 4b:16:6",
+      "Moed Katan 4b:16"
+    ],
+    "generatedAt": "2026-11-19T19:05:00.171Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיון דאיכא טפח יתירא</strong> - דלא צריך כל הטפח [דסגי בד']:"
+  },
+  "Rashi on Moed Katan 4b:16:6": {
+    "costUsd": 0.017379,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T19:05:08.070Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:16:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא טירחא טפי</strong> - ששוחה עצמו בשביל אותו טפח יותר מדאי:"
+  },
+  "Rashi on Moed Katan 4b:17:1": {
+    "costUsd": 0.0177825,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T19:05:15.877Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לשחופי נהרא</strong> - לעקור ענפי אילנות הגדלים בנהר:"
+  },
+  "Rashi on Moed Katan 4b:17:2": {
+    "costUsd": 0.018370499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T19:05:24.109Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיכרא נהרא טמימא</strong> - לפנות מקור המעיין שנסתם:"
+  },
+  "Rashi on Moed Katan 4b:17:3": {
+    "costUsd": 0.0193035,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T19:05:33.796Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאקדוחי נהרא</strong> - לפנות שירטון שבאמצע הנהר:"
+  },
+  "Rashi on Moed Katan 4b:17:4": {
+    "costUsd": 0.020553,
+    "dependsOn": [
+      "Moed Katan 4b:17"
+    ],
+    "generatedAt": "2026-11-19T19:05:42.713Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 4b:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בורניץ</strong> - שם הנהר:"
+  },
   "Rashi on Moed Katan 4b:1:1": {
     "dependsOn": [
       "Rashi on Moed Katan 4b:1:2",
