@@ -10,8 +10,6 @@ import {
   PageCommentaryIndex,
 } from "./translation_progress_data";
 
-export {extractPageCommentaryIndex, PageCommentaryIndex};
-
 export function generateRashiTosafotCommentsPerPage(): Record<string, PageCommentaryIndex> {
   const result: Record<string, PageCommentaryIndex> = {};
 
