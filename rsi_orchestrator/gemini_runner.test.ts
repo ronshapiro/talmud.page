@@ -1,5 +1,6 @@
 import {
   calculateGeminiCostUsd,
+  parseGeminiModelAndThinkingLevel,
   runGeminiApi,
   setGenAiClientFactoryForTesting,
 } from "./gemini_runner";
@@ -132,6 +133,76 @@ describe("gemini_runner", () => {
     const expectedTotal = expectedUncachedCost + expectedCachedCost + expectedOutputCost;
 
     expect(cost).toBeCloseTo(expectedTotal, 6);
+  });
+
+  test("calculates Gemini 4 Hydrogen cost accurately for both bare and effort-suffixed models", () => {
+    // 100k cached tokens ($0.075/1M), 20k uncached ($1.50/1M), 1k output ($7.50/1M)
+    const usage = {
+      promptTokenCount: 120000,
+      cachedContentTokenCount: 100000,
+      candidatesTokenCount: 400,
+      thoughtsTokenCount: 600,
+      totalTokenCount: 121000,
+    };
+    const expectedTotal = (20000 * 1.5) / 1_000_000
+      + (100000 * 0.075) / 1_000_000
+      + (1000 * 7.5) / 1_000_000;
+
+    expect(calculateGeminiCostUsd("gemini-4-hydrogen", usage)).toBeCloseTo(expectedTotal, 6);
+    expect(calculateGeminiCostUsd("gemini-4-hydrogen-medium", usage)).toBeCloseTo(expectedTotal, 6);
+    expect(calculateGeminiCostUsd("unknown-gemini-model", usage)).toBeUndefined();
+  });
+
+  test("parseGeminiModelAndThinkingLevel parses effort suffixes and defaults to MEDIUM", () => {
+    expect(parseGeminiModelAndThinkingLevel("gemini-4-hydrogen-medium")).toEqual({
+      apiModel: "gemini-4-hydrogen",
+      thinkingLevel: "MEDIUM",
+    });
+    expect(parseGeminiModelAndThinkingLevel("gemini-4-hydrogen-xhigh")).toEqual({
+      apiModel: "gemini-4-hydrogen",
+      thinkingLevel: "XHIGH",
+    });
+    expect(parseGeminiModelAndThinkingLevel("gemini-4-hydrogen-low")).toEqual({
+      apiModel: "gemini-4-hydrogen",
+      thinkingLevel: "LOW",
+    });
+    expect(parseGeminiModelAndThinkingLevel("gemini-3.8-flash")).toEqual({
+      apiModel: "gemini-3.8-flash",
+      thinkingLevel: "MEDIUM",
+    });
+  });
+
+  test("defaults to gemini-4-hydrogen-medium and strips suffix when calling generateContent", async () => {
+    process.env.GEMINI_API_KEY = "test-api-key";
+
+    let capturedParameters: any;
+    setGenAiClientFactoryForTesting(() => ({
+      models: {
+        generateContent: async (parameters: unknown) => {
+          capturedParameters = parameters;
+          return {
+            text: '{"english": "translated text"}',
+            usageMetadata: {
+              promptTokenCount: 1200,
+              cachedContentTokenCount: 1000,
+              candidatesTokenCount: 50,
+              thoughtsTokenCount: 150,
+              totalTokenCount: 1400,
+            },
+          };
+        },
+      },
+    }));
+
+    const result = await runGeminiApi("Translate this comment");
+
+    expect(result.model).toBe("gemini-4-hydrogen-medium");
+    expect(capturedParameters.model).toBe("gemini-4-hydrogen");
+    expect(capturedParameters.config.thinkingConfig.thinkingLevel).toBe("MEDIUM");
+    expect(result.costUsd).toBeCloseTo(
+      (200 * 1.5) / 1_000_000 + (1000 * 0.075) / 1_000_000 + (200 * 7.5) / 1_000_000,
+      8,
+    );
   });
 
   test("maps 429 quota exhaustion to isRateLimited error", async () => {

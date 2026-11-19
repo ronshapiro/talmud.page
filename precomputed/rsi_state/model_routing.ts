@@ -37,18 +37,24 @@ function normalizeKey(s: string): string {
   return s.toLowerCase().replace(/[\s._]/g, "-");
 }
 
+function stripModelFamilyPrefix(normalizedName: string): string {
+  return normalizedName.replace(/^(?:claude-|gemini-[\d-]+-)/, "");
+}
+
+function matchesNormalizedAlias(candidate: string, normalizedQuery: string): boolean {
+  return candidate === normalizedQuery
+    || stripModelFamilyPrefix(candidate) === stripModelFamilyPrefix(normalizedQuery);
+}
+
 function matchesConfig(key: string, query: string, cfg?: ModelConfig): boolean {
   const normKey = normalizeKey(key);
   const normQuery = normalizeKey(query);
-  if (normKey === normQuery) return true;
-  if (normKey.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
+  if (matchesNormalizedAlias(normKey, normQuery)) return true;
   if (cfg) {
     const normGen = normalizeKey(cfg.generateModel);
-    if (normGen === normQuery) return true;
-    if (normGen.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
-    const normGenNoEffort = normGen.replace(/-(?:high|medium|low)$/, "");
-    if (normGenNoEffort === normQuery) return true;
-    if (normGenNoEffort.replace(/^claude-/, "") === normQuery.replace(/^claude-/, "")) return true;
+    if (matchesNormalizedAlias(normGen, normQuery)) return true;
+    const normGenNoEffort = normGen.replace(/-(?:minimal|low|medium|high|xhigh)$/, "");
+    if (matchesNormalizedAlias(normGenNoEffort, normQuery)) return true;
   }
   return false;
 }
