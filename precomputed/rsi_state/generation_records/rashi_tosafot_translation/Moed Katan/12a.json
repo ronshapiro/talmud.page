@@ -1,0 +1,61 @@
+{
+  "Rashi on Moed Katan 12a:1:1": {
+    "costUsd": 0.039944999999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:53:17.965Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקבלי קיבולת בתוך התחום אסור</strong> - ליתן מלאכה לנכרי בקיבולת כי עבדי ליה בשבתא דידעי כולי עלמא ואמרי היום בשבת יהב ליה והא דשרי בית הלל בפ\"ק דשבת <span class=\"parenthesized\">(ד' יז:)</span> ליתן כלים לכובס בע\"ש עם חשיכה ואפי' בתוך התחום משום דכביסה בנכרי מידי דלא מינכר וליכא חשדא אבל מידי דמינכר בתוך התחום אסור משום חשדא:"
+  },
+  "Rashi on Moed Katan 12a:2:1": {
+    "costUsd": 0.026283,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:54:13.030Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אי איכא מתא דמקרבא להתם</strong> - אותן פועלים נכרים אסורים דאינהו ידעי דהני נכרים עבדי ליה מלאכה ואמרי בשבתא יהב להו:"
+  },
+  "Rashi on Moed Katan 12a:2:2": {
+    "costUsd": 0.028807199999999998,
+    "dependsOn": [
+      "Moed Katan 12a:2"
+    ],
+    "generatedAt": "2026-11-19T22:54:28.186Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - דאמרי היום יהבו ליה:"
+  },
+  "Rashi on Moed Katan 12a:5:1": {
+    "costUsd": 0.024870000000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:54:39.512Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיועי הוה מסייע בתיבנא</strong> - שהיה נותן להם תבן למלאכה דהואיל והוא מסייע בהדייהו אסור:"
+  },
+  "Tosafot on Moed Katan 12a:1:1": {
+    "costUsd": 0.0935568,
+    "dependsOn": [
+      "Moed Katan 12a:1"
+    ],
+    "generatedAt": "2026-11-19T22:53:59.122Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר שמואל מקבלי קיבולת בתוך התחום</strong> - הא דשרינן כלים לכובס נכרי <span class=\"rashi-quotation\">פירש בקונט'</span> דלא מינכר שהוא של ישראל ור' יעקב לא היה מחלק ואומר דשרי במועד וגם בשבת דהא ריחים של מים איכא השמעת קול ושרינן בפ\"ק דשבת <span class=\"parenthesized\">(דף יח. ושם)</span> ובפ\"ק דע\"ז <span class=\"parenthesized\">(דף כא: ושם)</span> שרינן להשכיר שדה לנכרי משום דאריסותיה קעביד וכ\"ש קבלנות שאין הבית מתעלה בכך אלא ממהר לעשות ואע\"ג דר' שמעון בן אלעזר פליג מסתמא הלכה כר' שמעון בן גמליאל דקא אסר התם מרחץ במשנה משמע הא שדה שרי כדדייק התם ותניא בפ\"ק דשבת <span class=\"parenthesized\">(דף יט.)</span> גבי ספינה פוסק עמו על מנת לשבות ואינו שובת אלמא אין הנכרי מניח לעשות קבלנותו בשביל ישראל ואיכא מאן דאמר אפי' לפסוק אין צריך ובשמעתין דאסר שמואל מפרש רבינו יעקב כאותו פירוש שמעמידין כולהו שמעתתא באבל וכדרב שישא דאמר <span class=\"parenthesized\">(לעיל מועד קטן יא:)</span> דברים המותרי' בחש\"מ אסורין בימי אבלו דהוי דאורייתא או כעין דאורייתא אבל במועד הקילו וכ\"ש שיש להן להקל בשבת דלא חיישינן כל כך דלא ליזלזל ביה וא\"ת כיון דבאבילות איירי שמואל היכי קאמר וכי ליכא מתא דמיקרבא להתם לא אמרן אלא בשבתות וימים טובים דלא שכיחי דאזלי מדוכתא אבל בחולו של מועד אסור וצריך עיון:"
+  }
+}

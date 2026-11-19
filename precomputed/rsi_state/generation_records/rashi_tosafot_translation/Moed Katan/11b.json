@@ -1,4 +1,131 @@
 {
+  "Rashi on Moed Katan 11b:10:1": {
+    "costUsd": 0.0283065,
+    "dependsOn": [
+      "Moed Katan 11b:10"
+    ],
+    "generatedAt": "2026-11-19T22:50:16.534Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קיבולת</strong> - לעשות בכך וכך <span class=\"parenthesized\">(שרי)</span>:"
+  },
+  "Rashi on Moed Katan 11b:10:2": {
+    "costUsd": 0.0201915,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:50:25.686Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כדידיה דמיא</strong> - ואסור אבל שאינה קיבולת דלא הוה כדידיה שרי:"
+  },
+  "Rashi on Moed Katan 11b:11:1": {
+    "costUsd": 0.021735,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:50:35.737Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בביתו</strong> - של אבל לא יעשו אותו משום חשד שיאמרו הוא בעצמו מסייע במלאכה אי נמי שלא יאמרו בימי אבלו השכירו לזה הפועל:"
+  },
+  "Rashi on Moed Katan 11b:12:1": {
+    "costUsd": 0.0209805,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:50:49.560Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גמלא</strong> - צמד בקר בין שניהם שור אחד לזה ושור אחד לזה:"
+  },
+  "Rashi on Moed Katan 11b:12:2": {
+    "costUsd": 0.022177500000000003,
+    "dependsOn": [
+      "Moed Katan 11b:12"
+    ],
+    "generatedAt": "2026-11-19T22:51:14.392Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איתרע ביה מילתא</strong> - אבילות:"
+  },
+  "Rashi on Moed Katan 11b:12:3": {
+    "costUsd": 0.0298485,
+    "dependsOn": [
+      "Moed Katan 11b:12"
+    ],
+    "generatedAt": "2026-11-19T22:51:31.589Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסקיה לגמליה</strong> - הפסיק שורו מן הצמד ולא שלחו לחרוש בשדה לפי שהיה אבל ומצווה על שביתת בהמתו מדרבנן:"
+  },
+  "Rashi on Moed Katan 11b:12:4": {
+    "costUsd": 0.031902,
+    "dependsOn": [
+      "Moed Katan 11b:12",
+      "Rashi on Moed Katan 11b:12:3",
+      "Rashi on Moed Katan 11b:12:4",
+      "Rashi on Moed Katan 11b:12:5"
+    ],
+    "generatedAt": "2026-11-19T22:51:47.547Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להפסד דידיה לא חייש</strong> - דלא קא מעבד ארעא מגמליה משום דאבל הוא:"
+  },
+  "Rashi on Moed Katan 11b:12:5": {
+    "costUsd": 0.03894,
+    "dependsOn": [
+      "Moed Katan 11b:12"
+    ],
+    "generatedAt": "2026-11-19T22:52:06.464Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:12:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפסידא דאחריני</strong> - כגון מריון לא חייש דלא קא משדר לגמליה הוי ליה פסידא דלא הוה ליה בהמה לחרוש וכיון דשרי כדתניא אם היו מוחכרין וכו' הוה ליה למיחש אפסידא דחבריה:"
+  },
+  "Rashi on Moed Katan 11b:13:1": {
+    "costUsd": 0.020313,
+    "dependsOn": [
+      "Moed Katan 11b:13"
+    ],
+    "generatedAt": "2026-11-19T22:52:18.183Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוא סבר</strong> - מר בריה דרב אחא:"
+  },
+  "Rashi on Moed Katan 11b:13:2": {
+    "costUsd": 0.024484275,
+    "dependsOn": [
+      "Moed Katan 11b:13"
+    ],
+    "generatedAt": "2026-11-19T22:52:55.722Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם חשוב שאני</strong> - דהא והא אסור לדידיה למיעבד:"
+  },
   "Rashi on Moed Katan 11b:1:1": {
     "costUsd": 0.019622999999999998,
     "dependsOn": [],
@@ -254,6 +381,110 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">והגיע עת הרגל</strong> - שהכל צריכין לו הרי זה יעשה כיון דאית ליה פסידא ואיכא נמי צורך רבים ול\"ג הכא בצינעא דהא רבים הוא:"
   },
+  "Rashi on Moed Katan 11b:9:1": {
+    "costUsd": 0.022809,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:48:06.199Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האריסין</strong> - מקבלי השדות לשנים לשליש ולרביע:"
+  },
+  "Rashi on Moed Katan 11b:9:2": {
+    "costUsd": 0.026994,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:48:20.055Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">החכירים</strong> - שקיבל לשמירה ולעובדה לסכום כך וכך כורין אני נותן לך ממנה:"
+  },
+  "Rashi on Moed Katan 11b:9:3": {
+    "costUsd": 0.021103499999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:48:28.043Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והקבלנים</strong> - שקיבלו לשומרה לזמן פלוני בסכום כך וכך בין יהיה הרבה או מעט הרי אלו יעשו אחרים בשבילם:"
+  },
+  "Rashi on Moed Katan 11b:9:4": {
+    "costUsd": 0.0288594,
+    "dependsOn": [
+      "Rashi on Moed Katan 11b:9:3",
+      "Rashi on Moed Katan 11b:9:5"
+    ],
+    "generatedAt": "2026-11-19T22:48:47.704Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הגמלים והספנים הרי אלו לא יעשו</strong> - לא ישכירו לכתחילה לפי שהמלאכה שלהם הוא:"
+  },
+  "Rashi on Moed Katan 11b:9:5": {
+    "costUsd": 0.027594,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:48:57.896Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם היו מוחכרין או מושכרין</strong> - הם או בהמתם אצל אחרים למהלך חדש או חדשים הרי אלו יעשו הם לעצמן ולא יפסידו כל שכרן ובעלים נמי לא יפסידו והכא לא קתני על ידי אחרים שהרי הן בעצמן מושכרין אבל אריסים אפשר להם על ידי אחרים בעבודת קרקע:"
+  },
+  "Rashi on Moed Katan 11b:9:6": {
+    "costUsd": 0.0336795,
+    "dependsOn": [
+      "Moed Katan 11b:9"
+    ],
+    "generatedAt": "2026-11-19T22:49:13.682Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכיר יום</strong> - אחד ואפילו בעיר אחרת ואין יודעין שם שהוא אבל וליכא משום מראית העין:"
+  },
+  "Rashi on Moed Katan 11b:9:7": {
+    "costUsd": 0.028015500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:49:30.004Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יעשה</strong> - הואיל ובידו לחזור כדאמרינן <span class=\"parenthesized\">(ב\"ק דף קט\"ז:)</span> פועל כחוזר ואפילו בחצי היום וליכא פסידא כולי האי:"
+  },
+  "Rashi on Moed Katan 11b:9:8": {
+    "costUsd": 0.02433,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:49:48.113Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם היתה מלאכת אחרים בידו</strong> - בביתו כגון בגד לארוג הואיל וברשותיה לגומרו לאחר זמן הרי אלו לא יעשו:"
+  },
+  "Rashi on Moed Katan 11b:9:9": {
+    "costUsd": 0.028347,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:49:58.872Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11b:9:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואע\"פ שבקיבולת</strong> - אחרים היא שקיבל עליו לצמיתות אותו בגד לאורגו בכך וכך:"
+  },
   "Tosafot on Moed Katan 11b:2:1": {
     "costUsd": 0.055091850000000005,
     "dependsOn": [
@@ -302,5 +533,23 @@
       "Tosafot on Moed Katan 11b:7:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בורו לגוף</strong> - ספרים אחרים כדו:"
+  },
+  "Tosafot on Moed Katan 11b:8:1": {
+    "costUsd": 0.12162674999999999,
+    "dependsOn": [
+      "Moed Katan 11b:8",
+      "Moed Katan 11b:1",
+      "Moed Katan 11b:2",
+      "Moed Katan 11b:3",
+      "Rashi on Moed Katan 11b:8:1",
+      "Rashi on Moed Katan 11b:8:2"
+    ],
+    "generatedAt": "2026-11-19T22:47:54.383Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 11b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבן שמעון בן גמליאל אומר כו'</strong> - ואף על גב דרבן שמעון בן גמליאל נמי מודה לדרב שישא בריה דרב אידי דאסורין בימי אבלו מודה היכא דאין שם אומן אלא הוא דשרי ובצינעא יעשו ע\"י אחרים משום פסידא דמשכיר שרינן וגבי אבלו דשרינן הוא עצמו באין שם שיעשה כמותו ואומן לרבים וספר וכו' משום דצורך דרבים ורגילא שריא לעיל ויש מפרשים דהא דשרינן לאבל עצמו כשלא ימצא אחרים כדמשמע הלשון ואין שם אומן אלא הוא אבל לכתחילה צריך לעשות על ידי אחרים מיהו לפי הטעם הזה לא ידענא בחמרין וספרין כשמושכרין אצל אחרים למה אין מצריך בסמוך על ידי אחרים ולפי טעם קמא ניחא דאין מי שיעשה דבר זה באותו שיש אומנות דחמר וגמל וספן:"
   }
 }
