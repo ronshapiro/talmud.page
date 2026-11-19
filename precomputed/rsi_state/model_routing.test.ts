@@ -184,10 +184,18 @@ test("getTaskModelConfig preserves critiqueBackend when defined in preset", () =
   expect(resolved.critiqueBackend).toBe("agy");
 });
 
-test("getTaskModelConfig resolves gemini-api backend with default config", () => {
+test("getTaskModelConfig resolves gemini-api backend with default, hydrogen, and flash configs", () => {
   const geminiConfig = {
     "gemini-api": {
       default: {
+        generateModel: "gemini-4-hydrogen-medium",
+        critiqueModel: "gemini-4-hydrogen-medium",
+      },
+      hydrogen: {
+        generateModel: "gemini-4-hydrogen-medium",
+        critiqueModel: "gemini-4-hydrogen-medium",
+      },
+      flash: {
         generateModel: "gemini-3.8-flash",
         critiqueModel: "gemini-3.8-flash",
       },
@@ -195,11 +203,35 @@ test("getTaskModelConfig resolves gemini-api backend with default config", () =>
   };
   writeJson(CONFIG_PATH, geminiConfig);
 
-  const resolved = getTaskModelConfig("any_task", {
+  const resolvedDefault = getTaskModelConfig("any_task", {
     configPath: CONFIG_PATH,
     backend: "gemini-api",
   });
-  expect(resolved.backend).toBe("gemini-api");
-  expect(resolved.generateModel).toBe("gemini-3.8-flash");
-  expect(resolved.critiqueModel).toBe("gemini-3.8-flash");
+  expect(resolvedDefault.backend).toBe("gemini-api");
+  expect(resolvedDefault.generateModel).toBe("gemini-4-hydrogen-medium");
+  expect(resolvedDefault.critiqueModel).toBe("gemini-4-hydrogen-medium");
+
+  const resolvedHydrogenMedium = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "gemini-api",
+    configName: "hydrogen-medium",
+  });
+  expect(resolvedHydrogenMedium.backend).toBe("gemini-api");
+  expect(resolvedHydrogenMedium.generateModel).toBe("gemini-4-hydrogen-medium");
+  expect(resolvedHydrogenMedium.critiqueModel).toBe("gemini-4-hydrogen-medium");
+
+  const resolvedHydrogenBare = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "gemini-api",
+    configName: "gemini-4-hydrogen",
+  });
+  expect(resolvedHydrogenBare.generateModel).toBe("gemini-4-hydrogen-medium");
+
+  const resolvedFlash = getTaskModelConfig("any_task", {
+    configPath: CONFIG_PATH,
+    backend: "gemini-api",
+    configName: "flash",
+  });
+  expect(resolvedFlash.generateModel).toBe("gemini-3.8-flash");
+  expect(resolvedFlash.critiqueModel).toBe("gemini-3.8-flash");
 });

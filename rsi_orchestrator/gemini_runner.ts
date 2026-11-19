@@ -23,24 +23,79 @@ export interface GeminiUsageMetadata {
   totalTokenCount?: number;
 }
 
+export const DEFAULT_GEMINI_MODEL = "gemini-4-hydrogen-medium";
+
+export type GeminiThinkingLevel = "MINIMAL" | "LOW" | "MEDIUM" | "HIGH" | "XHIGH";
+
+const EFFORT_SUFFIX_TO_THINKING_LEVEL: Record<string, GeminiThinkingLevel> = {
+  minimal: "MINIMAL",
+  low: "LOW",
+  medium: "MEDIUM",
+  high: "HIGH",
+  xhigh: "XHIGH",
+};
+
+export interface ParsedGeminiModel {
+  apiModel: string;
+  thinkingLevel: GeminiThinkingLevel;
+}
+
+/**
+ * Splits an optional effort suffix (e.g. "-medium", "-xhigh") from a configured Gemini model
+ * identifier into the underlying Gemini API model ID and its `thinkingLevel`, defaulting to
+ * `"MEDIUM"` when no suffix is present.
+ */
+export function parseGeminiModelAndThinkingLevel(model: string): ParsedGeminiModel {
+  const match = /^(.*)-(minimal|low|medium|high|xhigh)$/i.exec(model);
+  if (!match || !match[1]) {
+    return {
+      apiModel: model,
+      thinkingLevel: "MEDIUM",
+    };
+  }
+  return {
+    apiModel: match[1],
+    thinkingLevel: EFFORT_SUFFIX_TO_THINKING_LEVEL[match[2].toLowerCase()],
+  };
+}
+
+interface GeminiModelPricing {
+  uncachedInputRatePerMillion: number;
+  cachedInputRatePerMillion: number;
+  outputRatePerMillion: number;
+}
+
+const GEMINI_MODEL_PRICING: Record<string, GeminiModelPricing> = {
+  "gemini-4-hydrogen": {
+    uncachedInputRatePerMillion: 1.5,
+    cachedInputRatePerMillion: 0.075,
+    outputRatePerMillion: 7.5,
+  },
+  "gemini-3.8-flash": {
+    // Introductory pricing for gemini-3.8-flash (Standard Paid Tier through Dec 31, 2026)
+    uncachedInputRatePerMillion: 0.75,
+    cachedInputRatePerMillion: 0.075,
+    outputRatePerMillion: 3.75,
+  },
+};
+
 export function calculateGeminiCostUsd(
   model: string,
   usage?: GeminiUsageMetadata,
 ): number | undefined {
   if (!usage) return undefined;
+  const {apiModel} = parseGeminiModelAndThinkingLevel(model);
+  const pricing = GEMINI_MODEL_PRICING[apiModel];
+  if (!pricing) return undefined;
+
   const cachedInputTokens = usage.cachedContentTokenCount ?? 0;
   const uncachedInputTokens = Math.max(0, (usage.promptTokenCount ?? 0) - cachedInputTokens);
   const outputTokens = (usage.candidatesTokenCount ?? 0) + (usage.thoughtsTokenCount ?? 0);
 
-  // Introductory pricing for gemini-3.8-flash (Standard Paid Tier through Dec 31, 2026)
-  const uncachedInputRatePerMillion = 0.75;
-  const cachedInputRatePerMillion = 0.075;
-  const outputRatePerMillion = 3.75;
-
   return (
-    (uncachedInputTokens * uncachedInputRatePerMillion) / 1_000_000
-    + (cachedInputTokens * cachedInputRatePerMillion) / 1_000_000
-    + (outputTokens * outputRatePerMillion) / 1_000_000
+    (uncachedInputTokens * pricing.uncachedInputRatePerMillion) / 1_000_000
+    + (cachedInputTokens * pricing.cachedInputRatePerMillion) / 1_000_000
+    + (outputTokens * pricing.outputRatePerMillion) / 1_000_000
   );
 }
 
@@ -315,10 +370,11 @@ export const runGeminiApi: AgentRunner = async (
     );
   }
 
-  const model = options.model ?? "gemini-3.8-flash";
+  const requestedModel = options.model ?? DEFAULT_GEMINI_MODEL;
+  const {apiModel, thinkingLevel} = parseGeminiModelAndThinkingLevel(requestedModel);
   if (options.debug) {
     // eslint-disable-next-line no-console
-    console.log(`  [agent] Running gemini-api (model: ${model})...`);
+    console.log(`  [agent] Running gemini-api (model: ${requestedModel})...`);
   }
 
   const contentParts: Array<{
@@ -383,12 +439,12 @@ export const runGeminiApi: AgentRunner = async (
     try {
       // eslint-disable-next-line no-await-in-loop
       response = await client.models.generateContent({
-        model,
+        model: apiModel,
         contents: conversationContents,
         config: {
           ...(toolsConfig ? {tools: toolsConfig} : {}),
           thinkingConfig: {
-            thinkingLevel: "MEDIUM",
+            thinkingLevel,
           },
           responseMimeType: "application/json",
           abortSignal: options.signal,
@@ -405,7 +461,7 @@ export const runGeminiApi: AgentRunner = async (
     }
 
     const usage = response.usageMetadata;
-    const turnCost = calculateGeminiCostUsd(model, usage);
+    const turnCost = calculateGeminiCostUsd(requestedModel, usage);
     if (turnCost !== undefined) {
       totalCostUsd += turnCost;
     }
@@ -464,7 +520,7 @@ export const runGeminiApi: AgentRunner = async (
 
   return {
     text: finalResponseText,
-    model,
+    model: requestedModel,
     costUsd: totalCostUsd > 0 ? totalCostUsd : undefined,
     toolUses,
     durationSeconds,
