@@ -1,5 +1,12 @@
+import {Amud} from "../apiTypes";
+import {readUtf8} from "../files";
+import {aiEditsForPage} from "./ai_edits";
 import {
+  countPageTranslations,
+  extractPageCommentaryIndex,
   getTranslationProgress,
+  PageCommentaryIndex,
+  RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH,
   SEDER_ORDER,
   TALMUD_TRACTATE_NAMES,
   TranslationProgressData,
@@ -95,5 +102,110 @@ describe("translation_progress", () => {
         progressData.timeline[i].cumulativeCount >= progressData.timeline[i - 1].cumulativeCount,
       ).toBe(true);
     }
+  });
+
+  test("skips empty-Hebrew stub comments when indexing a page", () => {
+    const amudFixture: Amud = {
+      id: "Eruvin 44a",
+      sections: [
+        {
+          ref: "Eruvin 44a:1",
+          he: "גמרא",
+          en: "Gemara",
+          commentary: {
+            Rashi: {
+              comments: [
+                {
+                  ref: "Rashi on Eruvin 44a:1:1",
+                  he: "ד\"ה א",
+                  en: "",
+                  sourceRef: "Rashi on Eruvin 44a:1:1",
+                  sourceHeRef: "רש\"י",
+                },
+                {
+                  ref: "Rashi on Eruvin 44a:1:2",
+                  he: "",
+                  en: "",
+                  sourceRef: "Rashi on Eruvin 44a:1:2",
+                  sourceHeRef: "רש\"י",
+                },
+              ],
+            },
+            Tosafot: {
+              comments: [
+                {
+                  ref: "Tosafot on Eruvin 44a:1:1",
+                  he: ["ד\"ה ב"],
+                  en: "Translated by Sefaria",
+                  sourceRef: "Tosafot on Eruvin 44a:1:1",
+                  sourceHeRef: "תוספות",
+                },
+                {
+                  ref: "Tosafot on Eruvin 44a:1:2",
+                  he: [],
+                  en: "",
+                  sourceRef: "Tosafot on Eruvin 44a:1:2",
+                  sourceHeRef: "תוספות",
+                },
+                {
+                  ref: "Tosafot on Eruvin 44a:1:3",
+                  he: ["   "],
+                  en: "",
+                  sourceRef: "Tosafot on Eruvin 44a:1:3",
+                  sourceHeRef: "תוספות",
+                },
+              ],
+            },
+          },
+        },
+      ],
+    };
+
+    expect(extractPageCommentaryIndex(amudFixture)).toEqual({
+      refs: ["Rashi on Eruvin 44a:1:1", "Tosafot on Eruvin 44a:1:1"],
+      sefariaTranslatedRefs: ["Tosafot on Eruvin 44a:1:1"],
+    });
+  });
+
+  test("counts Sefaria and AI translations without double-counting", () => {
+    const pageIndex: PageCommentaryIndex = {
+      refs: [
+        "Rashi on Eruvin 44a:1:1",
+        "Tosafot on Eruvin 44a:1:1",
+        "Rashi on Eruvin 44a:2:1",
+      ],
+      sefariaTranslatedRefs: ["Tosafot on Eruvin 44a:1:1"],
+    };
+    const counts = countPageTranslations(pageIndex, {
+      "Rashi on Eruvin 44a:1:1": {english: "English 1", status: "pending"},
+      "Tosafot on Eruvin 44a:1:1": {english: "AI override", status: "pending"},
+      "Rashi on Eruvin 44a:2:1": {hebrew: "Hebrew only"},
+    });
+
+    expect(counts).toEqual({
+      totalComments: 3,
+      translatedComments: 2,
+    });
+  });
+
+  test("excludes empty-Hebrew Sefaria stubs on Eruvin 44a in commentary index", () => {
+    const commentaryIndex = JSON.parse(
+      readUtf8(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH),
+    ) as Record<string, PageCommentaryIndex>;
+    const pageIndex = commentaryIndex["Eruvin 44a"];
+
+    expect(pageIndex).toBeDefined();
+    expect(pageIndex.refs).not.toContain("Tosafot on Eruvin 44a:1:2");
+    expect(pageIndex.refs).not.toContain("Tosafot on Eruvin 44a:2:2");
+    expect(pageIndex.refs).not.toContain("Tosafot on Eruvin 44a:2:3");
+    expect(pageIndex.refs).not.toContain("Tosafot on Eruvin 44a:2:4");
+    expect(pageIndex.refs).not.toContain("Rashi on Eruvin 44a:9:2");
+    expect(pageIndex.refs).toHaveLength(25);
+
+    const counts = countPageTranslations(pageIndex, aiEditsForPage("Eruvin 44a"));
+    expect(counts).toEqual({
+      totalComments: 25,
+      translatedComments: 25,
+    });
   });
 });

@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
+import {Amud} from "../apiTypes";
 import {books} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {readUtf8} from "../files";
 import {writeJson} from "../util/json_files";
-
-export interface PageCommentaryIndex {
-  refs: string[];
-  sefariaTranslatedRefs?: string[];
-}
+import {
+  extractPageCommentaryIndex,
+  PageCommentaryIndex,
+} from "./translation_progress_data";
 
 export function generateRashiTosafotCommentsPerPage(): Record<string, PageCommentaryIndex> {
   const result: Record<string, PageCommentaryIndex> = {};
@@ -27,27 +27,8 @@ export function generateRashiTosafotCommentsPerPage(): Record<string, PageCommen
       }
 
       try {
-        const amudData = JSON.parse(readUtf8(filePath));
-        const refs: string[] = [];
-        const sefariaTranslatedRefs: string[] = [];
-
-        for (const segment of amudData.sections) {
-          for (const commentator of ["Rashi", "Tosafot"]) {
-            const comments = segment.commentary?.[commentator]?.comments ?? [];
-            for (const comment of comments) {
-              refs.push(comment.ref);
-              if (comment.en && comment.en.length > 0) {
-                sefariaTranslatedRefs.push(comment.ref);
-              }
-            }
-          }
-        }
-
-        const pageIndex: PageCommentaryIndex = {refs};
-        if (sefariaTranslatedRefs.length > 0) {
-          pageIndex.sefariaTranslatedRefs = sefariaTranslatedRefs;
-        }
-        result[pageRef] = pageIndex;
+        const amudData = JSON.parse(readUtf8(filePath)) as Amud;
+        result[pageRef] = extractPageCommentaryIndex(amudData);
       } catch (error) {
         console.error(`Failed to process ${pageRef}: ${error}`);
         result[pageRef] = {refs: []};

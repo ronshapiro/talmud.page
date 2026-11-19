@@ -1,10 +1,17 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
-import {books} from "../books";
+import {Amud} from "../apiTypes";
+import {Book, books} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
-import {aiEditsForPage} from "./ai_edits";
+import {toFlatArray} from "../sefariaTextType";
+import {aiEditsForPage, Edit} from "./ai_edits";
 import {writeJson} from "../util/json_files";
 import {readUtf8} from "../files";
+
+export interface PageCommentaryIndex {
+  refs: string[];
+  sefariaTranslatedRefs?: string[];
+}
 
 export type PageProgressStatus = "complete" | "partial" | "not_started" | "no_comments";
 
@@ -167,15 +174,93 @@ export const RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH = (
   "precomputed/rashiTosafotCommentsPerPage.json"
 );
 
+/**
+ * Extracts Rashi and Tosafot comment refs from a cached amud, skipping empty-Hebrew stub
+ * comments (e.g. Sefaria placeholders where Community Translation was split across multiple
+ * sub-refs while all Hebrew text lives in the first comment) so counts match the translator.
+ */
+export function extractPageCommentaryIndex(amudData: Amud): PageCommentaryIndex {
+  const refs: string[] = [];
+  const sefariaTranslatedRefs: string[] = [];
+
+  for (const segment of amudData.sections) {
+    for (const commentator of ["Rashi", "Tosafot"]) {
+      const comments = segment.commentary?.[commentator]?.comments ?? [];
+      for (const comment of comments) {
+        if (!toFlatArray(comment.he).join(" ").trim()) {
+          continue;
+        }
+        refs.push(comment.ref);
+        if (toFlatArray(comment.en).join(" ").trim()) {
+          sefariaTranslatedRefs.push(comment.ref);
+        }
+      }
+    }
+  }
+
+  const pageIndex: PageCommentaryIndex = {refs};
+  if (sefariaTranslatedRefs.length > 0) {
+    pageIndex.sefariaTranslatedRefs = sefariaTranslatedRefs;
+  }
+  return pageIndex;
+}
+
+function resolvePageCommentaryIndex(
+  book: Book,
+  section: string,
+  pageRef: string,
+  commentaryIndex: Record<string, PageCommentaryIndex> | undefined,
+): PageCommentaryIndex | undefined {
+  if (commentaryIndex) {
+    return commentaryIndex[pageRef];
+  }
+  const outputFilePath = cachedOutputFilePath(book, section);
+  if (!fs.existsSync(outputFilePath)) {
+    return undefined;
+  }
+  try {
+    const amudData = JSON.parse(readUtf8(outputFilePath)) as Amud;
+    return extractPageCommentaryIndex(amudData);
+  } catch {
+    return undefined;
+  }
+}
+
+/** Counts total and translated Rashi/Tosafot comments for a single page index entry. */
+export function countPageTranslations(
+  pageEntry: PageCommentaryIndex | undefined,
+  aiAdditions: Record<string, Edit> | undefined,
+): {totalComments: number; translatedComments: number} {
+  const pageRefs = pageEntry?.refs ?? [];
+  const sefariaTranslatedSet = new Set(pageEntry?.sefariaTranslatedRefs ?? []);
+  const edits = aiAdditions ?? {};
+  let translatedComments = 0;
+
+  for (const ref of pageRefs) {
+    if (sefariaTranslatedSet.has(ref)) {
+      translatedComments++;
+    } else {
+      const aiAddition = edits[ref];
+      if (aiAddition && aiAddition.english && aiAddition.english.length > 0) {
+        translatedComments++;
+      }
+    }
+  }
+
+  return {
+    totalComments: pageRefs.length,
+    translatedComments,
+  };
+}
+
 export function computeTranslationProgress(): TranslationProgressData {
   const masechtotProgress: MasechetProgress[] = [];
 
-  const commentaryIndex: Record<
-    string,
-    {refs: string[]; sefariaTranslatedRefs?: string[]}
-  > | undefined = fs.existsSync(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH)
-    ? JSON.parse(readUtf8(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH))
-    : undefined;
+  const commentaryIndex: Record<string, PageCommentaryIndex> | undefined = (
+    fs.existsSync(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH)
+      ? JSON.parse(readUtf8(RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH))
+      : undefined
+  );
 
   let overallTotalPages = 0;
   let overallCompletePages = 0;
@@ -211,56 +296,11 @@ export function computeTranslationProgress(): TranslationProgressData {
       overallTotalPages++;
 
       const pageRef = `${book.canonicalName} ${section}`;
-      let pageCommentCount = 0;
-      let pageTranslatedCount = 0;
-
-      if (commentaryIndex) {
-        const pageEntry = commentaryIndex[pageRef];
-        const pageRefs = pageEntry?.refs ?? [];
-        pageCommentCount = pageRefs.length;
-
-        const sefariaTranslatedSet = new Set(pageEntry?.sefariaTranslatedRefs ?? []);
-        pageTranslatedCount += sefariaTranslatedSet.size;
-
-        const aiAdditions = aiEditsForPage(pageRef) ?? {};
-        for (const ref of pageRefs) {
-          if (!sefariaTranslatedSet.has(ref)) {
-            const aiAddition = aiAdditions[ref];
-            if (aiAddition && aiAddition.english && aiAddition.english.length > 0) {
-              pageTranslatedCount++;
-            }
-          }
-        }
-      } else {
-        const outputFilePath = cachedOutputFilePath(book, section);
-        if (fs.existsSync(outputFilePath)) {
-          try {
-            const amudData = JSON.parse(readUtf8(outputFilePath));
-            const aiAdditions = aiEditsForPage(pageRef) ?? {};
-
-            for (const segment of amudData.sections) {
-              for (const commentator of ["Rashi", "Tosafot"]) {
-                const commentaryComments = segment.commentary?.[commentator]?.comments ?? [];
-                for (const comment of commentaryComments) {
-                  pageCommentCount++;
-                  const hasCachedTranslation = comment.en && comment.en.length > 0;
-                  const aiAddition = aiAdditions[comment.ref];
-                  const hasAiTranslation = (
-                    aiAddition
-                    && aiAddition.english
-                    && aiAddition.english.length > 0
-                  );
-                  if (hasCachedTranslation || hasAiTranslation) {
-                    pageTranslatedCount++;
-                  }
-                }
-              }
-            }
-          } catch {
-            // Keep count as 0 if file reading or parsing fails
-          }
-        }
-      }
+      const pageEntry = resolvePageCommentaryIndex(book, section, pageRef, commentaryIndex);
+      const {
+        totalComments: pageCommentCount,
+        translatedComments: pageTranslatedCount,
+      } = countPageTranslations(pageEntry, aiEditsForPage(pageRef));
 
       masechetTotalComments += pageCommentCount;
       masechetTranslatedComments += pageTranslatedCount;
