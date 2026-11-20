@@ -1,0 +1,498 @@
+{
+  "Rashi on Moed Katan 12a:10:1": {
+    "costUsd": 0.0205155,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:56:35.939Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מדיירין</strong> - מכניסין בהמה לשדה כדי שיוציאו זבל ומזבלין השדה:"
+  },
+  "Rashi on Moed Katan 12a:11:1": {
+    "costUsd": 0.033131324999999996,
+    "dependsOn": [
+      "Moed Katan 12a:11"
+    ],
+    "generatedAt": "2026-11-19T23:56:51.335Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מסייעין אותן</strong> - לבהמה לבא בשדה או אם נכרים הם אין מסייעין להם להסיען ממקום למקום כדי שתזבל כל השדה אפילו בבאין מעצמם:"
+  },
+  "Rashi on Moed Katan 12a:11:2": {
+    "costUsd": 0.0321099,
+    "dependsOn": [
+      "Rashi on Moed Katan 12a:11:1",
+      "Moed Katan 12a:11"
+    ],
+    "generatedAt": "2026-11-19T23:57:07.262Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לנער</strong> - לשמור כגון אם נכרים הם:"
+  },
+  "Rashi on Moed Katan 12a:11:3": {
+    "costUsd": 0.020251500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:57:16.697Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכיר שבת</strong> - ששכרו כל השבוע לדייר שדהו:"
+  },
+  "Rashi on Moed Katan 12a:11:4": {
+    "costUsd": 0.023274,
+    "dependsOn": [
+      "Moed Katan 12a:11"
+    ],
+    "generatedAt": "2026-11-19T23:57:56.260Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבוע</strong> - שמיטה:"
+  },
+  "Rashi on Moed Katan 12a:11:5": {
+    "costUsd": 0.032399250000000004,
+    "dependsOn": [
+      "Rashi on Moed Katan 12a:11:1",
+      "Rashi on Moed Katan 12a:11:2",
+      "Rashi on Moed Katan 12a:11:3",
+      "Rashi on Moed Katan 12a:11:4",
+      "Moed Katan 12a:11"
+    ],
+    "generatedAt": "2026-11-19T23:58:12.637Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מסייעין</strong> - כאילו של נכרים הוא:"
+  },
+  "Rashi on Moed Katan 12a:11:6": {
+    "costUsd": 0.03807465,
+    "dependsOn": [
+      "Moed Katan 12a:11",
+      "Rashi on Moed Katan 12a:11:4",
+      "Rashi on Moed Katan 12a:11:5",
+      "Rashi on Moed Katan 12a:11:7"
+    ],
+    "generatedAt": "2026-11-19T23:58:32.099Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג ועושה נכרי בשבת וי\"ט ומסייעין במועד</strong> - דלא טרח מלאכה כלומר יכולין לסייע לאותו שכיר לדייר:"
+  },
+  "Rashi on Moed Katan 12a:11:7": {
+    "costUsd": 0.0264405,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:58:48.166Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומוסרין לו רועה אחד לנער צאנו</strong> - שמדיירין אותה הואיל ואינו שכיר לשבת ממש:"
+  },
+  "Rashi on Moed Katan 12a:11:8": {
+    "costUsd": 0.022662,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:58:57.341Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:11:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אומר בשבת בטובה</strong> - אם רוצה שום אדם לסייע לאותו שכיר בטובתו עושה כלומר בחנם ולא בשכר:"
+  },
+  "Rashi on Moed Katan 12a:12:1": {
+    "costUsd": 0.0180525,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:59:04.158Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בתוך הבור</strong> - שלפני הגת אותו כלי שהיין נופל בו מן הגת קרוי בור:"
+  },
+  "Rashi on Moed Katan 12a:12:2": {
+    "costUsd": 0.022122000000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:59:14.464Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זולף וגומר כדרכו</strong> - כלומר מריק אותו בחבית וגף החבית במגופה גמורה:"
+  },
+  "Rashi on Moed Katan 12a:12:3": {
+    "costUsd": 0.033741,
+    "dependsOn": [
+      "Moed Katan 12a:12"
+    ],
+    "generatedAt": "2026-11-19T23:59:28.614Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עושה לו למודים</strong> - אינו יכול לגוף כדרכו אלא שיתפס היינו לימודין בשביל שלא יחמיץ שאם אינו סותמו מחמיץ:"
+  },
+  "Rashi on Moed Katan 12a:13:1": {
+    "costUsd": 0.0292269,
+    "dependsOn": [
+      "Moed Katan 12a:13"
+    ],
+    "generatedAt": "2026-11-20T01:00:20.609Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וצריכא</strong> - למימר בתרוייהו בשני בבי דמתני' דמשחא ודחמרא ר' יוסי אומר זולף כו':"
+  },
+  "Rashi on Moed Katan 12a:13:2": {
+    "costUsd": 0.028333499999999998,
+    "dependsOn": [
+      "Moed Katan 12a:13"
+    ],
+    "generatedAt": "2026-11-20T01:00:30.672Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:13:2"
+    ],
+    "sourceText": "בההיא רישא דמתניתין:"
+  },
+  "Rashi on Moed Katan 12a:13:3": {
+    "costUsd": 0.0363765,
+    "dependsOn": [
+      "Moed Katan 12a:13"
+    ],
+    "generatedAt": "2026-11-20T01:00:41.051Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קאמר רבי יוסי</strong> - זולף כדרכו:"
+  },
+  "Rashi on Moed Katan 12a:13:4": {
+    "costUsd": 0.0260625,
+    "dependsOn": [
+      "Moed Katan 12a:13"
+    ],
+    "generatedAt": "2026-11-20T01:00:50.382Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:13:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דמשחא</strong> - יקיר ואיכא פסידא יתירא:"
+  },
+  "Rashi on Moed Katan 12a:13:5": {
+    "costUsd": 0.03985762500000001,
+    "dependsOn": [
+      "Moed Katan 12a:13",
+      "Rashi on Moed Katan 12a:12:1",
+      "Rashi on Moed Katan 12a:12:2",
+      "Rashi on Moed Katan 12a:12:3"
+    ],
+    "generatedAt": "2026-11-20T01:01:06.012Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:13:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה ליה לר' יהודה</strong> - דאינו זולף וגף ממש אלא עושה לימודים עראי:"
+  },
+  "Rashi on Moed Katan 12a:14:1": {
+    "costUsd": 0.022774500000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:01:13.265Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא כר' יוסי</strong> - דאמר גומר כדרכו ואינו צריך שינוי:"
+  },
+  "Rashi on Moed Katan 12a:15:1": {
+    "costUsd": 0.042274950000000006,
+    "dependsOn": [
+      "Moed Katan 12a:15"
+    ],
+    "generatedAt": "2026-11-20T01:01:29.382Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למישע</strong> - לגוף החבית:"
+  },
+  "Rashi on Moed Katan 12a:15:2": {
+    "costUsd": 0.0171375,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:01:35.680Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:15:2"
+    ],
+    "sourceText": "סיני. רב יוסף:"
+  },
+  "Rashi on Moed Katan 12a:15:3": {
+    "costUsd": 0.029990025,
+    "dependsOn": [
+      "Moed Katan 12a:15"
+    ],
+    "generatedAt": "2026-11-20T01:01:47.559Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה כר' יוסי</strong> - דגף כדרכו:"
+  },
+  "Rashi on Moed Katan 12a:16:1": {
+    "costUsd": 0.0243105,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:01:57.714Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר שית סאוי ושייע מבר תמני ולא שייע</strong> - כלומר יפה שכר מוגף שמחזיק ששה סאין משכר שהוא בכלי גדול שמחזיק שמונה סאין:"
+  },
+  "Rashi on Moed Katan 12a:17:1": {
+    "costUsd": 0.024144,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:02:07.353Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהלכות כותים</strong> - דאמרינן <span class=\"parenthesized\">(חולין דף ד.)</span> היכא דאחזיק אחזיק היכא דלא אחזיק לא אחזיק:"
+  },
+  "Rashi on Moed Katan 12a:17:2": {
+    "costUsd": 0.019545,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:02:23.892Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עקורות</strong> - כאשה עקרה שאין לאדם ממנה פרי אלא גופה:"
+  },
+  "Rashi on Moed Katan 12a:17:3": {
+    "costUsd": 0.0327015,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:02:39.882Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין למידין זו מזו</strong> - דאימא כשם שזו מותרת כך זו מותרת כמו בכותים ולא אמרינן כי היכי דמחזיק בהאי מחזיק בהאי אלא לא ילפי הני מהני:"
+  },
+  "Rashi on Moed Katan 12a:18:1": {
+    "costUsd": 0.027499499999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:02:51.698Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר</strong> - דאמר זופתין חביתא חייש לפסידא ובחביתא איכא פסידא יתירא אי לא זפתי לה משום דנפיש יינא ובכוזתא ליכא פסידא יתירא כוזא כלי קטן:"
+  },
+  "Rashi on Moed Katan 12a:18:2": {
+    "costUsd": 0.025675499999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:03:10.520Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מר</strong> - דאמר זופתין לכוזא דחייש לטירחא יתירא ובכוזא ליכא טירחא יתירא ובחביתא איכא טירחא יתירא:"
+  },
+  "Rashi on Moed Katan 12a:1:1": {
+    "costUsd": 0.039944999999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:53:17.965Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקבלי קיבולת בתוך התחום אסור</strong> - ליתן מלאכה לנכרי בקיבולת כי עבדי ליה בשבתא דידעי כולי עלמא ואמרי היום בשבת יהב ליה והא דשרי בית הלל בפ\"ק דשבת <span class=\"parenthesized\">(ד' יז:)</span> ליתן כלים לכובס בע\"ש עם חשיכה ואפי' בתוך התחום משום דכביסה בנכרי מידי דלא מינכר וליכא חשדא אבל מידי דמינכר בתוך התחום אסור משום חשדא:"
+  },
+  "Rashi on Moed Katan 12a:2:1": {
+    "costUsd": 0.026283,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:54:13.030Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אי איכא מתא דמקרבא להתם</strong> - אותן פועלים נכרים אסורים דאינהו ידעי דהני נכרים עבדי ליה מלאכה ואמרי בשבתא יהב להו:"
+  },
+  "Rashi on Moed Katan 12a:2:2": {
+    "costUsd": 0.028807199999999998,
+    "dependsOn": [
+      "Moed Katan 12a:2"
+    ],
+    "generatedAt": "2026-11-19T22:54:28.186Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - דאמרי היום יהבו ליה:"
+  },
+  "Rashi on Moed Katan 12a:5:1": {
+    "costUsd": 0.024870000000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T22:54:39.512Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סיועי הוה מסייע בתיבנא</strong> - שהיה נותן להם תבן למלאכה דהואיל והוא מסייע בהדייהו אסור:"
+  },
+  "Rashi on Moed Katan 12a:6:1": {
+    "costUsd": 0.0161205,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:55:06.068Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבוגנגרי</strong> - מסדרי שולחנות:"
+  },
+  "Rashi on Moed Katan 12a:6:2": {
+    "costUsd": 0.020061,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:55:17.936Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למיעבד עבידיתייהו</strong> - אם נשבר השלחן שרי לתקנו:"
+  },
+  "Rashi on Moed Katan 12a:6:3": {
+    "costUsd": 0.027944999999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:55:33.795Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שרשויי</strong> - ריוח בעלמא כדי סעודתם דקא אכלי בהדייהו ולא קא חשיב מלאכה:"
+  },
+  "Rashi on Moed Katan 12a:7:1": {
+    "costUsd": 0.0241425,
+    "dependsOn": [
+      "Moed Katan 12a:7"
+    ],
+    "generatedAt": "2026-11-19T23:55:44.178Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מקבלין קיבולת</strong> - נותנה לנכרי לעשותה אחר המועד:"
+  },
+  "Rashi on Moed Katan 12a:8:1": {
+    "costUsd": 0.015996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:55:51.003Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מרביעין בהמה</strong> - משום דעביד מלאכה בחולו של מועד:"
+  },
+  "Rashi on Moed Katan 12a:8:2": {
+    "costUsd": 0.018018,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:55:57.472Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין מרביעין</strong> - אין אוחזין הבהמה ומביאין עליה זכר:"
+  },
+  "Rashi on Moed Katan 12a:8:3": {
+    "costUsd": 0.023067,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T23:56:07.404Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בבכור</strong> - דקעביד ביה מלאכה וכתיב <span class=\"parenthesized\">(דברים ט״ו:י״ט)</span> לא תעבוד בבכור שורך:"
+  },
+  "Rashi on Moed Katan 12a:9:1": {
+    "costUsd": 0.0254985,
+    "dependsOn": [
+      "Moed Katan 12a:9"
+    ],
+    "generatedAt": "2026-11-19T23:56:24.439Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבקרות</strong> - מקום שיש שם בהמות והיא רובעת מעצמה:"
+  },
+  "Tosafot on Moed Katan 12a:12:1": {
+    "costUsd": 0.05013,
+    "dependsOn": [],
+    "generatedAt": "2026-11-20T01:00:10.544Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דברי רבי יוסי</strong> - בשמן תניא מילתא דר' יהודה ברישא וכיון דאתחיל מילתא דרבי יוסי מסיים לה וגף ביין לא ידענא אי אבור אי אחבית קאי מיהו לכאורה אחבית קאי דשייך בה מגופה ומדקתני בה זולף וגומר משמע דאבור קאי דאחבית לא שייך משמע דגף אחרי כן וגם עושין לו לימודין משמע דקאי אבור ולית ליה זולף וגומר דאחבית לא שייך לימודין דסגי בכיסוי קטן:"
+  },
+  "Tosafot on Moed Katan 12a:1:1": {
+    "costUsd": 0.0935568,
+    "dependsOn": [
+      "Moed Katan 12a:1"
+    ],
+    "generatedAt": "2026-11-19T22:53:59.122Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר שמואל מקבלי קיבולת בתוך התחום</strong> - הא דשרינן כלים לכובס נכרי <span class=\"rashi-quotation\">פירש בקונט'</span> דלא מינכר שהוא של ישראל ור' יעקב לא היה מחלק ואומר דשרי במועד וגם בשבת דהא ריחים של מים איכא השמעת קול ושרינן בפ\"ק דשבת <span class=\"parenthesized\">(דף יח. ושם)</span> ובפ\"ק דע\"ז <span class=\"parenthesized\">(דף כא: ושם)</span> שרינן להשכיר שדה לנכרי משום דאריסותיה קעביד וכ\"ש קבלנות שאין הבית מתעלה בכך אלא ממהר לעשות ואע\"ג דר' שמעון בן אלעזר פליג מסתמא הלכה כר' שמעון בן גמליאל דקא אסר התם מרחץ במשנה משמע הא שדה שרי כדדייק התם ותניא בפ\"ק דשבת <span class=\"parenthesized\">(דף יט.)</span> גבי ספינה פוסק עמו על מנת לשבות ואינו שובת אלמא אין הנכרי מניח לעשות קבלנותו בשביל ישראל ואיכא מאן דאמר אפי' לפסוק אין צריך ובשמעתין דאסר שמואל מפרש רבינו יעקב כאותו פירוש שמעמידין כולהו שמעתתא באבל וכדרב שישא דאמר <span class=\"parenthesized\">(לעיל מועד קטן יא:)</span> דברים המותרי' בחש\"מ אסורין בימי אבלו דהוי דאורייתא או כעין דאורייתא אבל במועד הקילו וכ\"ש שיש להן להקל בשבת דלא חיישינן כל כך דלא ליזלזל ביה וא\"ת כיון דבאבילות איירי שמואל היכי קאמר וכי ליכא מתא דמיקרבא להתם לא אמרן אלא בשבתות וימים טובים דלא שכיחי דאזלי מדוכתא אבל בחולו של מועד אסור וצריך עיון:"
+  }
+}

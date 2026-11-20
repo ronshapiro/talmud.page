@@ -1,0 +1,646 @@
+{
+  "Rashi on Moed Katan 11a:10:1": {
+    "costUsd": 0.0287475,
+    "dependsOn": [
+      "Moed Katan 11a:10"
+    ],
+    "generatedAt": "2026-11-19T20:36:55.620Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדנפחי</strong> - דפטיש היינו קורנס אסור דהוי קלא רבה ואולודי קלא אסור:"
+  },
+  "Rashi on Moed Katan 11a:10:2": {
+    "costUsd": 0.024528,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:37:06.656Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתניתין דמתקנין אלו בחוש\"מ בדנגרי</strong> - במנעול של עץ שרי דלא הוי קלא רבה:"
+  },
+  "Rashi on Moed Katan 11a:11:1": {
+    "costUsd": 0.027318225,
+    "dependsOn": [
+      "Moed Katan 11a:11"
+    ],
+    "generatedAt": "2026-11-19T20:37:17.909Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגלי</strong> - מסר הגדול שרי דלא מוליד קלא כלום:"
+  },
+  "Rashi on Moed Katan 11a:11:2": {
+    "costUsd": 0.070031475,
+    "dependsOn": [
+      "Rashi on Moed Katan 11a:11:1",
+      "Moed Katan 11a:11",
+      "Rashi on Moed Katan 11a:10:1",
+      "Rashi on Moed Katan 11a:10:2",
+      "Steinsaltz on Moed Katan 11a:11"
+    ],
+    "generatedAt": "2026-11-19T20:37:58.185Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בחציני</strong> - ברר\"א אסיר דהוי אולודי קלא טפי:"
+  },
+  "Rashi on Moed Katan 11a:11:3": {
+    "costUsd": 0.0255615,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:38:09.186Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאחר שגזר</strong> - יוחנן כ\"ג:"
+  },
+  "Rashi on Moed Katan 11a:12:1": {
+    "costUsd": 0.032589,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:38:23.378Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא ר' יהודה הא ר' יוסי</strong> - בפירקא דלקמן <span class=\"parenthesized\">(מועד קטן דף יב.)</span> דרבי יוסי לא בעי לשנויי לדבר האבד ומתני' דשרי הכא כל הני בלא שינוי ר' יוסי היא:"
+  },
+  "Rashi on Moed Katan 11a:13:1": {
+    "costUsd": 0.028221000000000003,
+    "dependsOn": [
+      "Moed Katan 11a:13"
+    ],
+    "generatedAt": "2026-11-19T21:38:53.995Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמאן מדלינן האידנא קביותא דדשא</strong> - כשיוצאין מסמרים של עץ מן הקורה שעל הפתח דשרי למיעבד בלא שינוי:"
+  },
+  "Rashi on Moed Katan 11a:14:1": {
+    "costUsd": 0.013932,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:38:58.191Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדיתא</strong> - שם נהר:"
+  },
+  "Rashi on Moed Katan 11a:14:2": {
+    "costUsd": 0.0180735,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:39:04.642Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לבאי</strong> - שם מקום:"
+  },
+  "Rashi on Moed Katan 11a:14:3": {
+    "costUsd": 0.028821900000000004,
+    "dependsOn": [
+      "Rashi on Moed Katan 11a:14:1",
+      "Rashi on Moed Katan 11a:14:2"
+    ],
+    "generatedAt": "2026-11-19T21:39:16.175Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוורי</strong> - הכי עשו דרך לנהר שיצאו מימיו ונשתיירו שם דגים הרבה:"
+  },
+  "Rashi on Moed Katan 11a:14:4": {
+    "costUsd": 0.022524,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:39:24.609Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:14:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למימלח</strong> - הרבה אע\"פ שאין יכולים לאוכלן במועד שהרי היו מלוחין הרבה:"
+  },
+  "Rashi on Moed Katan 11a:15:1": {
+    "costUsd": 0.036441,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:39:38.638Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כבשין</strong> - בחומץ ובמלח שקורין קונפושט\"א והכא נמי כיון שמלחן הרבה כדי להצניען תו לא חזו במועד:"
+  },
+  "Rashi on Moed Katan 11a:17:1": {
+    "costUsd": 0.0231705,
+    "dependsOn": [
+      "Moed Katan 11a:17"
+    ],
+    "generatedAt": "2026-11-19T21:39:47.342Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה הני נמי</strong> - דמלחינהו:"
+  },
+  "Rashi on Moed Katan 11a:17:2": {
+    "costUsd": 0.0209685,
+    "dependsOn": [
+      "Moed Katan 11a:17"
+    ],
+    "generatedAt": "2026-11-19T21:39:54.510Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתאכלי</strong> - במועד:"
+  },
+  "Rashi on Moed Katan 11a:17:3": {
+    "costUsd": 0.0257115,
+    "dependsOn": [
+      "Moed Katan 11a:17"
+    ],
+    "generatedAt": "2026-11-19T21:40:05.041Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:17:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אגב איצצא</strong> - שמושך המלח מהן:"
+  },
+  "Rashi on Moed Katan 11a:17:4": {
+    "costUsd": 0.027176325,
+    "dependsOn": [
+      "Rashi on Moed Katan 11a:17:3"
+    ],
+    "generatedAt": "2026-11-19T21:40:15.401Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:17:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיתין איצצי</strong> - כלומר רוחצין אותו הרבה פעמים מצצי ליה ששים זימני:"
+  },
+  "Rashi on Moed Katan 11a:18:1": {
+    "costUsd": 0.018058499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:40:21.739Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב איקלע</strong> - במועד:"
+  },
+  "Rashi on Moed Katan 11a:18:2": {
+    "costUsd": 0.024306,
+    "dependsOn": [
+      "Moed Katan 11a:18"
+    ],
+    "generatedAt": "2026-11-19T21:40:31.653Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תילתא מילחא</strong> - אגב איצצא:"
+  },
+  "Rashi on Moed Katan 11a:19:1": {
+    "costUsd": 0.0232425,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:40:42.230Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סמוך למיסרחיה מעלי</strong> - כלומר יפה הוא לאחר זמן שניצוד יותר מההיא שעתה דניצוד:"
+  },
+  "Rashi on Moed Katan 11a:19:2": {
+    "costUsd": 0.0175875,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:40:50.044Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טוויא באחוה</strong> - במלח שהמלח נברא מן המים כדגים:"
+  },
+  "Rashi on Moed Katan 11a:19:3": {
+    "costUsd": 0.023958,
+    "dependsOn": [
+      "Moed Katan 11a:19"
+    ],
+    "generatedAt": "2026-11-19T21:40:59.126Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסקיה באבוה</strong> - לאחר שצלאו נותנו במים צונן:"
+  },
+  "Rashi on Moed Katan 11a:19:4": {
+    "costUsd": 0.021271500000000002,
+    "dependsOn": [
+      "Moed Katan 11a:19"
+    ],
+    "generatedAt": "2026-11-19T21:41:08.339Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכליה בבריה</strong> - מטילין אותו בציר היוצא מן הדגים ואוכלין אותו:"
+  },
+  "Rashi on Moed Katan 11a:19:5": {
+    "costUsd": 0.021912,
+    "dependsOn": [
+      "Moed Katan 11a:19"
+    ],
+    "generatedAt": "2026-11-19T21:41:15.841Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:19:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משתיא עליה אבוה</strong> - ששותין עליו מים שדגים נבראו מן המים:"
+  },
+  "Rashi on Moed Katan 11a:1:1": {
+    "costUsd": 0.020185500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:31:57.793Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יריד של עכו\"ם</strong> - יומא דשוקא:"
+  },
+  "Rashi on Moed Katan 11a:1:2": {
+    "costUsd": 0.021034499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:32:06.335Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומעלה בערכאות</strong> - לקיימן בחתימתן דכיון דהשתא הוא דמשכח להו וליומא אחרינא לא שרי:"
+  },
+  "Rashi on Moed Katan 11a:20:1": {
+    "costUsd": 0.0225225,
+    "dependsOn": [
+      "Moed Katan 11a:20"
+    ],
+    "generatedAt": "2026-11-19T21:41:44.385Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטעון גופא</strong> - כלומר לאחר אכילתו מהלך הרבה קודם שישן:"
+  },
+  "Rashi on Moed Katan 11a:20:2": {
+    "costUsd": 0.022767000000000003,
+    "dependsOn": [
+      "Moed Katan 11a:20"
+    ],
+    "generatedAt": "2026-11-19T21:41:53.397Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא לטעון פוריא</strong> - לא ישן לאלתר אחריהם:"
+  },
+  "Rashi on Moed Katan 11a:20:3": {
+    "costUsd": 0.015775499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:41:58.826Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:20:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תחלי</strong> - שחלים:"
+  },
+  "Rashi on Moed Katan 11a:20:4": {
+    "costUsd": 0.0172005,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:42:04.339Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:20:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיא ולא שכרא</strong> - מוטב לשתות אחריהן מים ולא שכר:"
+  },
+  "Rashi on Moed Katan 11a:2:1": {
+    "costUsd": 0.034110375,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:32:23.744Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אוהרי</strong> - שצדין בו דגים שקורין רוש\"א:"
+  },
+  "Rashi on Moed Katan 11a:2:2": {
+    "costUsd": 0.0173175,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:32:31.634Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איזלי</strong> - רשתות שצדין בו עופות:"
+  },
+  "Rashi on Moed Katan 11a:3:1": {
+    "costUsd": 0.016205999999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:32:38.109Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למגדל תנורא</strong> - לעשות התנור מחדש:"
+  },
+  "Rashi on Moed Katan 11a:3:2": {
+    "costUsd": 0.016722,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:32:46.889Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהולתא</strong> - נפה:"
+  },
+  "Rashi on Moed Katan 11a:3:3": {
+    "costUsd": 0.0292425,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:02.454Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימות החמה</strong> - כלומר כשיש ימות החמה כגון בפסח דחבול עלמא שאין יורדין בו גשמים מותר לעשות בו תנור לפי שלאלתר יבש ויכולין לאפות בו פת ברגל לצורך הרגל:"
+  },
+  "Rashi on Moed Katan 11a:3:4": {
+    "costUsd": 0.02323725,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:13.923Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כאן בימות הגשמים</strong> - כלומר כשיורדין הגשמים ברגל כגון בסוכות אין עושין תנור לפי שאינו יבש לאלתר עד לאחר הרגל ועבד טירחא שלא לצורך הרגל:"
+  },
+  "Rashi on Moed Katan 11a:4:1": {
+    "costUsd": 0.020211,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:23.622Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעקה למרפסת</strong> - כותל קטנה העושין על האיצטבות שלפני העליות גדולות כעין שיש על שפת נהר רייניס:"
+  },
+  "Rashi on Moed Katan 11a:4:2": {
+    "costUsd": 0.0168465,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:31.025Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שפין את הסדקין</strong> - שבתנור:"
+  },
+  "Rashi on Moed Katan 11a:4:3": {
+    "costUsd": 0.021702,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:43.879Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומעגילין אותן במעגילה</strong> - שגוללין על קרקעות התנור עץ גדול עגול כדי לסתום הסדקין:"
+  },
+  "Rashi on Moed Katan 11a:4:4": {
+    "costUsd": 0.02214525,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:33:56.829Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביד וברגל</strong> - שלוקח בידו עץ ובועטין ביד על התנור לסתום הסדקים או בועט ברגלו על קרקעות התנור:"
+  },
+  "Rashi on Moed Katan 11a:4:5": {
+    "costUsd": 0.028546500000000002,
+    "dependsOn": [
+      "Moed Katan 11a:4"
+    ],
+    "generatedAt": "2026-11-19T20:34:07.632Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:4:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מחלצים</strong> - עץ כעין רגל שדוחקו במעזיבה לסתום הסדקין ויש בו מעשה אומן יותר ממעגילה:"
+  },
+  "Rashi on Moed Katan 11a:5:1": {
+    "costUsd": 0.019944,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:34:15.774Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ציר</strong> - רגל הדלת כמו הדלת תסוב על צירה <span class=\"parenthesized\">(משלי כ״ו:י״ד)</span>:"
+  },
+  "Rashi on Moed Katan 11a:5:2": {
+    "costUsd": 0.0261255,
+    "dependsOn": [
+      "Moed Katan 11a:5"
+    ],
+    "generatedAt": "2026-11-19T20:34:27.210Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צינור</strong> - הוא החור שבאסקופא התחתונה כמו צינורא דדשא:"
+  },
+  "Rashi on Moed Katan 11a:5:3": {
+    "costUsd": 0.027923700000000003,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:34:41.503Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקורה</strong> - מה שעל הפתח שתחזור בו הדלת וקורין אוברטו\"ר:"
+  },
+  "Rashi on Moed Katan 11a:5:4": {
+    "costUsd": 0.03985575,
+    "dependsOn": [
+      "Moed Katan 11a:5"
+    ],
+    "generatedAt": "2026-11-19T20:35:06.871Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנעול</strong> - בלבדור\"א:"
+  },
+  "Rashi on Moed Katan 11a:5:5": {
+    "costUsd": 0.0204135,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:35:17.907Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובלבד שלא יתכוין לעשות מלאכתו במועד</strong> - כשיש לו לתקן כל אילו בשאר ימות השנה ומניחו עד המועד:"
+  },
+  "Rashi on Moed Katan 11a:6:1": {
+    "costUsd": 0.01984305,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:35:28.563Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכבשין</strong> - של ציר כלומר דגים ושאר דברים שכובשים במלח שיכול לאוכלן במועד שלא יהא צריך להמתין באכילתן עד לאחר המועד שיהו נכבשין מהר וראויין לאכול מיד:"
+  },
+  "Rashi on Moed Katan 11a:7:1": {
+    "costUsd": 0.018897825,
+    "dependsOn": [
+      "Moed Katan 11a:7"
+    ],
+    "generatedAt": "2026-11-19T20:35:41.380Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הוצא</strong> - הוצי דקל:"
+  },
+  "Rashi on Moed Katan 11a:7:2": {
+    "costUsd": 0.034019325,
+    "dependsOn": [
+      "Rashi on Moed Katan 11a:7:1",
+      "Moed Katan 11a:7"
+    ],
+    "generatedAt": "2026-11-19T20:35:55.205Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דופנא</strong> - עבדי לחיים של גדר:"
+  },
+  "Rashi on Moed Katan 11a:7:3": {
+    "costUsd": 0.017223,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:36:01.725Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואינו טח בטיט</strong> - זה הוא מעשה הדיוט:"
+  },
+  "Rashi on Moed Katan 11a:8:1": {
+    "costUsd": 0.019302975,
+    "dependsOn": [
+      "Moed Katan 11a:8"
+    ],
+    "generatedAt": "2026-11-19T20:36:10.666Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעגילה</strong> - דרך אומנות יותר:"
+  },
+  "Rashi on Moed Katan 11a:8:2": {
+    "costUsd": 0.023424,
+    "dependsOn": [
+      "Moed Katan 11a:8"
+    ],
+    "generatedAt": "2026-11-19T20:36:20.849Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ביד וברגל</strong> - דלאו מעשה אומן הוא לא כל שכן:"
+  },
+  "Rashi on Moed Katan 11a:8:3": {
+    "costUsd": 0.019861499999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:36:27.754Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעין מעגילה</strong> - ולא מעגילה ממש אלא כעין מעגילה ביד וברגל:"
+  },
+  "Rashi on Moed Katan 11a:9:1": {
+    "costUsd": 0.0273405,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T20:36:39.820Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Moed Katan 11a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד ימיו</strong> - של יוחנן כ\"ג היה פטיש מכה בירושלים בחולו של מועד והוא גזר עליו ובטלו אלמא אסור ומתני' קתני ומתקנין מנעול ומפתח:"
+  },
+  "Tosafot on Moed Katan 11a:19:1": {
+    "costUsd": 0.0441705,
+    "dependsOn": [],
+    "generatedAt": "2026-11-19T21:41:35.785Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Moed Katan 11a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוורא סמוך למסרחיה מעלי</strong> - ובזמן הזה תופסים סכנה למיכל סמוך לסירחון וגם משתי עלה אבוה דאמר בסמוך דמעלי ושמא נשתנו כמו הרפואות שבש\"ס שאינן טובות בזמן הזה או שמא נהרות דבבל מעלו לו טפי ויש מפרשים דכוורא לא בכלל דגים מיירי ושם דג ששמו כוורא ומשונה בדברים האלו משאר דגים כדאמרינן פ' כל הבשר <span class=\"parenthesized\">(חולין דף קט:)</span> אסר לן גירותא שרא לן לישנא דכוורא ואין נראה שיהא בכל הלשונות של דגים טעם אחד:"
+  }
+}
