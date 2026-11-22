@@ -20,7 +20,10 @@ import {
   showTranslationButtonPreference,
   siteLanguage,
   SiteLanguage,
+  TRANSLATION_PROGRESS_SORT_OPTIONS,
   translationOptionPreference,
+  translationProgressSortOrder,
+  translationProgressSortOrderPreference,
   wrapTranslationsPreference,
 } from "../settings";
 
@@ -111,6 +114,7 @@ describe("preference-backed settings", () => {
     [rsiReviewKeyPreference, "rsiReviewKey", "secret123"],
     [rsiReviewerIdentityPreference, "rsiReviewerIdentity", "ron@example.com"],
     [rsiReviewPrNumberPreference, "rsiReviewPrNumber", "42"],
+    [translationProgressSortOrderPreference, "translationProgressSortOrder", "alphabetical"],
   ];
 
   test.each(cases)("%#: is undefined when unset, and round trips through its own key", (
@@ -134,5 +138,23 @@ describe("preferredVersionPreference", () => {
     expect(preferredVersionPreference("Tanakh").get()).toBe("default");
     expect(localStorage.preferredVersion_Talmud).toBe("Koren");
     expect(localStorage.preferredVersion_Tanakh).toBe("default");
+  });
+});
+
+describe("translationProgressSortOrder", () => {
+  test("defaults to traditional when unset", () => {
+    expect(translationProgressSortOrder()).toBe("traditional");
+  });
+
+  test("defaults to traditional for any unrecognized value", () => {
+    localStorage.translationProgressSortOrder = "not a real sort option";
+
+    expect(translationProgressSortOrder()).toBe("traditional");
+  });
+
+  test.each(TRANSLATION_PROGRESS_SORT_OPTIONS)("reads stored sort option %s", (option) => {
+    translationProgressSortOrderPreference.set(option);
+
+    expect(translationProgressSortOrder()).toBe(option);
   });
 });

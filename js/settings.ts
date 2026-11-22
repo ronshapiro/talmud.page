@@ -138,3 +138,34 @@ export const rsiReviewerIdentityPreference = preference<string>("rsiReviewerIden
  * with a different reviewer's (see rsi_review_pr.ts's `knownPrNumber`).
  */
 export const rsiReviewPrNumberPreference = preference<string>("rsiReviewPrNumber");
+
+/**
+ * Sort order for the `/translation-progress` dashboard. Not exposed in `Preferences.tsx`;
+ * persisted directly when the user changes the sort selector in `TranslationProgressDashboard`.
+ */
+export const TRANSLATION_PROGRESS_SORT_OPTIONS = [
+  "traditional",
+  "percent_descending",
+  "percent_ascending",
+  "complete_pages_descending",
+  "total_pages_descending",
+  "alphabetical",
+] as const;
+
+export type TranslationProgressSortOption = (typeof TRANSLATION_PROGRESS_SORT_OPTIONS)[number];
+
+export const translationProgressSortOrderPreference = preference<TranslationProgressSortOption>(
+  "translationProgressSortOrder",
+);
+
+const VALID_TRANSLATION_PROGRESS_SORT_OPTIONS: ReadonlySet<string> = new Set(
+  TRANSLATION_PROGRESS_SORT_OPTIONS,
+);
+
+/** Anything other than a recognized sort option — including unset — defaults to `"traditional"`. */
+export function translationProgressSortOrder(): TranslationProgressSortOption {
+  const storedValue = translationProgressSortOrderPreference.get();
+  return storedValue && VALID_TRANSLATION_PROGRESS_SORT_OPTIONS.has(storedValue)
+    ? storedValue
+    : "traditional";
+}
