@@ -1,0 +1,200 @@
+{
+  "Rashi on Keritot 12a:10:1": {
+    "costUsd": 0.021186,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:04:26.749Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתודה</strong> - אשר חטא עליה גבי טומאת מקדש כתיב בויקרא:"
+  },
+  "Rashi on Keritot 12a:12:1": {
+    "costUsd": 0.030786,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:04:42.721Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודים חכמים לר' יהודה</strong> - ופליגי אדר\"מ בחלבין כגון אכלת חלב והוא אומר לא אכלתי ובביאת מקדש אמרו לו נכנסת למקדש טמא והוא אומר לא נכנסתי:"
+  },
+  "Rashi on Keritot 12a:12:2": {
+    "costUsd": 0.047909549999999995,
+    "dependsOn": [
+      "Rashi on Keritot 12a:12:1",
+      "Keritot 12a:12"
+    ],
+    "generatedAt": "2026-11-22T21:05:06.626Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בטומאה</strong> - כגון היכא דאמר לא נטמאתי לא מודו ליה ולא סבירא להו דפטור. אלמא טעמייהו דרבנן משום מיגו דמיתריץ דיבוריה כגון לא עשיתי שוגג אלא מזיד אבל גבי לא נטמאתי דליכא למימר לא נטמאתי לא מודו לר' יהודה ואיפשיט בעיין דטעמא משום מיגו ותו לא מידי:"
+  },
+  "Rashi on Keritot 12a:3:1": {
+    "costUsd": 0.019002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:01:36.792Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם נאמן על עצמו</strong> - בדברים שיש בהם כפרה לא מימנע לאיתויי חטאת להתכפר נגד קונו:"
+  },
+  "Rashi on Keritot 12a:3:2": {
+    "costUsd": 0.0249765,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:01:47.638Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מיגו דאי בעי כו'</strong> - אם היה רוצה לשקר יכול לומר מזיד הייתי ומה שאמרתי לא אכלתי לא אכלתי שוגג אלא מזיד:"
+  },
+  "Rashi on Keritot 12a:4:1": {
+    "costUsd": 0.02265,
+    "dependsOn": [
+      "Keritot 12a:4"
+    ],
+    "generatedAt": "2026-11-22T21:02:31.090Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לטומאה</strong> - כגון אמרו לו נטמאת ומיד באת למקדש:"
+  },
+  "Rashi on Keritot 12a:5:1": {
+    "costUsd": 0.01919775,
+    "dependsOn": [
+      "Keritot 12a:5"
+    ],
+    "generatedAt": "2026-11-22T21:02:47.871Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טומאה ישנה</strong> - אתמול נטמאת והיום נכנסת:"
+  },
+  "Rashi on Keritot 12a:5:2": {
+    "costUsd": 0.0475185,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:03:09.021Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טומאה חדשה</strong> - ליכא משום מיגו דטבלתי ליכא למימר דהאמרו לו בשעת טומאה נכנסת ואי נמי טבלת לא העריב שמשך וטבול יום הנכנס למקדש בשוגג חייב חטאת כדאמר במנחות בהקומץ רבה <span class=\"parenthesized\">(מנחות דף כז:)</span> מחוסר כיפורים שנכנס למקדש חייב חטאת ואין צריך לומר טבול יום וליכא למימר נמי מזיד דבעי' דליתרץ דיבוריה ואי הוה אמר להו לא נכנסתי הוה מתרץ דיבוריה לא נכנסתי שוגג אלא מזיד אבל כיון דאמר להו לא נטמאתי כי אמר נמי לא נטמאתי שוגג אלא מזיד לא מיפטר מקרבן דטומאה לא איכפת לן אי שוגג אי מזיד הוה דביאת מקדש הואי שוגג:"
+  },
+  "Rashi on Keritot 12a:7:1": {
+    "costUsd": 0.017347500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:03:16.664Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נטמאת</strong> - ובאת למקדש:"
+  },
+  "Rashi on Keritot 12a:7:2": {
+    "costUsd": 0.025617,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:03:28.154Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פטור</strong> - כדאמר לקמן והתודה מודה בדבר חייב שאינו מודה בדבר פטור:"
+  },
+  "Rashi on Keritot 12a:8:1": {
+    "costUsd": 0.0263115,
+    "dependsOn": [
+      "Keritot 12a:8"
+    ],
+    "generatedAt": "2026-11-22T21:03:49.629Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם טעמייהו דרבנן משום מיגו</strong> - ובטומאה ישנה הוא דפליגי. והכי קתני גרסינן:"
+  },
+  "Rashi on Keritot 12a:8:2": {
+    "costUsd": 0.0258495,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:04:00.124Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">א\"ה</strong> - גבי טומאה בהא פליגי דר' מאיר לית ליה מיגו ורבנן אית להו מיגו היינו חלב דמתני' ותרתי למה לי:"
+  },
+  "Rashi on Keritot 12a:9:1": {
+    "costUsd": 0.034422,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:04:16.257Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 12a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אכלת חלב</strong> - אית להו לרבנן מיגו משום דמתריץ דיבוריה כו' אבל טומאה דליכא למימר לא נטמאתי שוגג אלא מזיד אימא לא מיתריץ דיבוריה קמ\"ל דמיתריץ בגוונא אחריתי לא עמדתי בטומאתי:"
+  },
+  "Tosafot on Keritot 12a:12:1": {
+    "costUsd": 0.11597984999999998,
+    "dependsOn": [
+      "Keritot 12a:12"
+    ],
+    "generatedAt": "2026-11-22T21:06:06.692Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Keritot 12a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומודים חכמים לר' יהודה בחלבין ובביאת מקדש אבל בטומאה לא מודו דפטור</strong> - רש\"י פירש שתי לשונות ור\"י פירש שיטה אחרת ומודים חכמים לר' יהודה כו' אבל בטומאה לא מודו ליה כמו נטמאת והוא אמר לא נטמאתי ומפרש הש\"ס במאי אילימא בטומאה ישנה מ\"ש הכא ומ\"ש הכא אלא שמע מינה בטומאה חדשה ומשום הכי לא מודו דלא שייך מיגו וטעמייהו דרבנן משום מיגו ודווקא בחלבים ובעריות מודו משום דשייך מיגו אבל בטומאה לא מודו דלא שייך מיגו אבל לר' יהודה דטעמא משום אדם נאמן על כו' פטר הכא והכא ומיפשט בעיא דטעמייהו דרבנן דפליגי עליה דר\"מ הוי מטעם מתרץ דיבוריה כדמשמע הכא ואי רבנן דר\"מ היינו רבי יהודה טעמיה משום דאדם נאמן על עצמו ודחי רבינא לעולם אימא לך בטומאה ישנה כלומר מהכא לא מוכח מידי דמצינו למימר דאפילו ר' יהודה לא מהימנא רק מטעם מיגו והא דפליגי הכא בטומאה ישנה וקאמרי רבנן דחייב כגון דקאמרי עדים אכלת קדשים בטומאת הגוף והוא אמר לא נטמאתי דלא חשבי רבנן דמיתריץ דיבוריה בהא דאמר דר\"ל לא עמדתי בטומאתי אלא טבלתי דאי הוה אמר לא אכלתי מצינן למיתריץ דיבוריה שר\"ל לא עמדתי בטומאתי אלא טבלתי תחלה אבל כשאומר לא נטמאתי כבר איתכחיש ליה מיגו קמא בטומאת מגע שאמר לא נטמאתי דמשמע לא שוגג ולא מזיד כיון שלא השיב להם על האכילה כמו שאמרו לו והך סוגיא דהכא קשה להא דפר\"ק דבבא מציעא <span class=\"parenthesized\">(דף ג:)</span> דקאמר לא תהא הודאת פיו גדולה מהעדאת עדים מק\"ו וקאמר ק\"ו ומה פיו כו' ופריך מה לפיו שכן מחייבו קרבן תאמר בעדים שאין מחייבין אותו קרבן ומאי פריך הא דפיו מחייבו קרבן היינו כשאין עדים מכחישין דאם אמר אכלתי חלב בשוגג והעדים מעידים שבאותו היום שאומר שאכל ובאותה שעה התרו בו או שמעידין שהיה שומן לא מחייב קרבן <span class=\"parenthesized\">(מטותיה)</span> [מפומיה] ובעדים שאין פיו מכחישן חייב דאפילו בעד אחד חייב כדמשמע הכא ועוד אדרבה עדים חמירי טפי מפיו שהרי עדים מחייבין אותו אפילו פיו מכחישן דעד כאן לא פטרי רבנן רק מטעם מיגו אבל אי מכחיש להו בהדיא חייב קרבן ותו מאי משני ר' חייא כר\"מ ס\"ל אפילו כרבנן נמי שהרי מחייבין היכא דלא מתרץ דיבוריה:"
+  },
+  "Tosafot on Keritot 12a:1:1": {
+    "costUsd": 0.032607,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:01:29.005Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Keritot 12a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו בחד וקתני כי אין מכחיש מהימן ש\"מ</strong> - אבל אי מכחיש לא מהימן ור\"ל ע\"כ שאמר איני יודע דאי אמר בהדיא לא אכלתי פשיטא דפטור דעד אחד אינו קם רק לשבועה כדפרישית במתניתין:"
+  },
+  "Tosafot on Keritot 12a:3:1": {
+    "costUsd": 0.084393,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:02:21.933Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Keritot 12a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא טעמייהו דרבנן משום מיגו דאי בעי אמר מזיד הייתי וכו'</strong> - משמע לפום ריהטא שהוא נאמן מטעם מיגו שיכול לומר מזיד <span class=\"parenthesized\">(אני)</span> הייתי וקשה שהרי מיגו במקום עדים הוא דיש עדים שאכל והוא אמר לא אכלתי וא\"כ מהימנא ליה במקום עדים מכח מיגו ואמרינן בב\"מ <span class=\"parenthesized\">(דף פא:)</span> מיגו במקום עדים לא אמרינן גבי ההיא דלא תיזיל באורחא דנהר פקוד זיל באורחא דנרש ותו אין זה מיגו דלא משוי איניש נפשיה רשיעא כדאמרינן <span class=\"parenthesized\">(קדושין דף נ.)</span> גבי ההיא הבא מן החלון והביא לו מן הדלוסקמא <span class=\"parenthesized\">(והביא לו)</span> אע\"פ שאומר בעל הבית לא היה בלבי מזה אלא מזה בעל הבית כו' דדברים שבלב אינן דברים והתם מוכח ליה ופריך ודלמא למיפטר נפשיה מקרבן קאמר ומשני דא\"כ הוה אמר מזיד הייתי ופריך והא לא משוי איניש נפשיה רשיעא לכך יש לומר דהא דנאמן הכא דמיתריץ דיבוריה דאיכא למימר הא דאמר לא אכלתי רוצה לומר לא אכלתי שוגג אלא מזיד והכי פירושא מיגו דאי בעי אמר מזיד הייתי פטור השתא נמי מה שאמר לא אכלתי כך רצה לומר והכי מתרצינן מילתיה דבהכי היה דעתו ואף על גב דלא משוי איניש נפשיה רשיעא כדאמר <span class=\"parenthesized\">(סנהדרין דף ט:)</span> גבי פלוני רבעני דאינו נאמן משום דאין אדם משים עצמו רשע היינו ליפסל נפשיה לא מהימן אבל אי אמר מזיד אכלתי חלב מהימן דאומר מתכוין לטובה שאינו רוצה להביא חולין בעזרה וא\"ת ונישייליה אם היה דעתו לכך ויש לומר דאפי' הדר אמר הכי לא אכלתי שוגג אלא מזיד כיון שלא אמר כך באותה שעה מחייב ר\"מ והכי איתא בתורת כהנים אומר ר' מאיר אם בתחלה אומר מזיד הייתי שומעין לו אבל אם היה דן עמהם כל היום שאומר לא אכלתי ולא אמר יותר ואפילו אומר אח\"כ לא אכלתי שוגג אלא מזיד חייב וא\"ת היאך מחייב ר' מאיר והאמר לא אכלתי ובע\"כ לא יביא חטאת כדאמר ב\"ק <span class=\"parenthesized\">(דף מ.)</span> חייבי חטאות אין ממשכנין אותן וי\"ל דהתם מיירי כשאמר דלא ניחא ליה בכפרה אבל האי ניחא ליה בכפרה אלא שהוא סבור להיות פטור ממשכנין אותו:"
+  },
+  "Tosafot on Keritot 12a:4:1": {
+    "costUsd": 0.0247005,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T21:02:40.880Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Keritot 12a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפקא מינה לטומאה</strong> - וה\"נ מצי למימר נפקא מינה היכא שאמר לא אכלתי לא שוגג ולא מזיד:"
+  }
+}
