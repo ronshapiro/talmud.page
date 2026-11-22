@@ -118,6 +118,77 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אפשר לברר איסורו</strong> - דאשם תלוי אינו בא אלא להגין מן הייסורין עד שיוודע לו ויביא חטאת כדמפרש בפרק בתרא <span class=\"parenthesized\">(לקמן כריתות כה.)</span> הילכך שתי חתיכות [ואכל אחת] ונשארה האחת אפשר שיבוא לאחר זמן בקי שיכיר אם זו הנותרת שומן ודאי חלב אכל ויביא חטאת אבל חתיכה אחת ואכלה אי אפשר לבררה:"
   },
+  "Rashi on Keritot 17b:22:1": {
+    "costUsd": 0.022717499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T23:18:09.462Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי איכא בין רבא</strong> - דאמר לעיל טעמיה דרב משום יש אם למקרא:"
+  },
+  "Rashi on Keritot 17b:22:2": {
+    "costUsd": 0.03139665,
+    "dependsOn": [
+      "Rashi on Keritot 17b:22:1",
+      "Rashi on Keritot 17b:22:3"
+    ],
+    "generatedAt": "2026-11-22T23:18:20.685Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר' זירא</strong> - דמפרש טעמיה דרב לברר איסורו:"
+  },
+  "Rashi on Keritot 17b:22:3": {
+    "costUsd": 0.0266055,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T23:18:30.354Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:22:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג איכא בינייהו כזית ומחצה</strong> - כגון ב' חתיכות בזו כזית ובזו כחצי זית ואכל את של כזית ואין ידוע אם הוא חלב או שומן:"
+  },
+  "Rashi on Keritot 17b:23:1": {
+    "costUsd": 0.0219705,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T23:18:39.118Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לרבא ליכא מצוות</strong> - ליכא ב' זיתים ופחות מכזית כמאן דליתיה:"
+  },
+  "Rashi on Keritot 17b:23:2": {
+    "costUsd": 0.023239499999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T23:18:47.837Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לר' זירא אפשר לברר האיסור</strong> - בחצי זית זה הנשאר:"
+  },
+  "Rashi on Keritot 17b:24:1": {
+    "costUsd": 0.025146,
+    "dependsOn": [
+      "Keritot 17b:24"
+    ],
+    "generatedAt": "2026-11-22T23:18:57.838Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 17b:24:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוי חייבים כו'</strong> - והא אי אפשר לברר איסורו:"
+  },
   "Rashi on Keritot 17b:2:1": {
     "costUsd": 0.026438999999999997,
     "dependsOn": [],
