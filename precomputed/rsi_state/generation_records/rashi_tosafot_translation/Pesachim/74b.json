@@ -19,6 +19,49 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">חלייה</strong> - מוהל היוצא ממנו כשחותכו לישנא אחרינא שחולטין אותו בחומץ לאחר צלייתו ודמו נסחט לתוכו:"
   },
+  "Rashi on Pesachim 74b:12:2": {
+    "dependsOn": [
+      "Rashi on Pesachim 74b:12:1",
+      "Pesachim 74b:12"
+    ],
+    "generatedAt": "2026-11-21T16:10:19.870Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 74b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסמיק חלייה אסיר</strong> - לא גרס הוא וחלייה ורב אחא קאמר לה דמיקל ובחלייה מודי דאסיר:"
+  },
+  "Rashi on Pesachim 74b:12:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-21T16:10:35.851Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 74b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגמע לה</strong> - לההוא חלה:"
+  },
+  "Rashi on Pesachim 74b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-21T16:11:54.281Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 74b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלא</strong> - חומץ דחלט ביה צלי האידנא כדי להוציא דמו לא חליט ביה זימנא אחריתי לפי שאין בו כח עוד:"
+  },
+  "Rashi on Pesachim 74b:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-21T16:12:37.619Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Pesachim 74b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתמהא</strong> - חלש מעקרו דחלטינן ביה:"
+  },
   "Rashi on Pesachim 74b:1:1": {
     "dependsOn": [
       "Pesachim 74b:1"
@@ -247,6 +290,16 @@
       "Tosafot on Pesachim 74b:10:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">וכן ביעי</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> דאסמיקו ובחנם פי' כן משום דפירש רבינו חננאל דאיכא עלייהו קרמא דאסור משום דמא כדאמרינן בגיד הנשה <span class=\"parenthesized\">(חולין צג.)</span> ה' קרמי הוו דביעי כו' משום דמא:"
+  },
+  "Tosafot on Pesachim 74b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-21T16:11:33.864Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Pesachim 74b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסמיק חלייה אסור</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> מוהל היוצא ממנו כשחותכו ולא גרסינן הוא וחלייה וקשה לר\"י דהיכי דמי אי נצלה בשר כל צרכו אף המוהל מותר דלא גרע ממלחיה דאמרינן לעיל דאפילו לקדירה שפיר דמי ואי לא נצלה כל צרכו אמאי בשר מותר מדלא גריס הוא משמע דבעי למימר דבשר שרי ותימה למה יהא מותר אע\"ג דדם האברים שרי היכא דאסמיק אסור דהא אליבא דמ\"ד גומרי מצמית צמתי אסור על כרחיך צריכין לחלק דאסיר משום דאסמיק וע\"י חתיכה אי אפשר שהיה יוצא כולו ועוד מדמייתי בסמוך האי חלא דחליט חדא זימנא מכלל דעד השתא איירי בחלא ממש ולשון אחר שפירש חלא שחולטים אותו בו אחר צלייתו והוא נסחט לתוכו קשה דאית לן למימר דאי חלייה אסור איהו נמי אסור כדמסקינן בכל הבשר <span class=\"parenthesized\">(שם קיא.)</span> גבי כבד שהבאתי למעלה ועוד דהתם משמע שהחלא מצמית ולא מפליט ונראה לר\"י כמו שפירש ריב\"א בשם ה\"ג דבבשר חי איירי ומנהג הוא כשנותנים בשר חי לתוך החומץ ואינו שוהה בתוכו לא מפליט מידי ונצמת הדם בתוך הבשר והכל מותר דאכתי לא פירש הדם וכי שוהה בתוכו עד דאסמיק נעקר ממנו הדם ונפלט לתוכו והיינו דקאמר אומצא דאסמיק שנשתהה בחומץ עד דאסמיק הוא וחלייה אסור אבל אי לא אסמיק שרי וההיא דכל הבשר בדלא אישתהי ורבינא כי לא אסמיק נמי חלייה אסיר סבירא ליה אפילו לא אישתהי בגו חלא אלא פורתא הוא נפלט מחמת השורייקי מיהו לא כ\"כ שתהא הבשר נאסר בפליטה מועטת כזו ורב אשי מגמע גמועי כמסקנא דכל הבשר דחלייה נמי שרי:"
   },
   "Tosafot on Pesachim 74b:3:1": {
     "dependsOn": [
