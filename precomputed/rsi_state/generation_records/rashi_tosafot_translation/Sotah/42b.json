@@ -1,0 +1,408 @@
+{
+  "Rashi on Sotah 42b:10:1": {
+    "costUsd": 0.024573,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:49.429Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חץ</strong> - לשון חצי הודיעך הכתוב שלא סיפר בחצי גבורתו:"
+  },
+  "Rashi on Sotah 42b:10:2": {
+    "costUsd": 0.01825575,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:58.333Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לאודועי שבחיה דדוד</strong> - שנלחם עם גבור כמוהו:"
+  },
+  "Rashi on Sotah 42b:11:1": {
+    "costUsd": 0.021208499999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:05:07.310Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב שובך</strong> - בספר שמואל <span class=\"parenthesized\">(ב' י)</span> וכתיב שופך בדברי הימים <span class=\"parenthesized\">(א' יט)</span>:"
+  },
+  "Rashi on Sotah 42b:12:1": {
+    "costUsd": 0.02027475,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:05:16.487Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אשפתו כקבר פתוח</strong> - בחיילות של נבוכדנצר כתיב ואיידי דנקט פלוגתא דרב ושמואל בדרשות דקראי נקט לה:"
+  },
+  "Rashi on Sotah 42b:12:2": {
+    "costUsd": 0.023044500000000002,
+    "dependsOn": [
+      "Sotah 42b:12"
+    ],
+    "generatedAt": "2026-11-22T13:05:25.577Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שאומנים</strong> - אבל אינם גבורים:"
+  },
+  "Rashi on Sotah 42b:12:3": {
+    "costUsd": 0.0228795,
+    "dependsOn": [
+      "Sotah 42b:12"
+    ],
+    "generatedAt": "2026-11-22T13:05:36.578Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">של זבל</strong> - מחמת שאוכלין הרבה בגבורה:"
+  },
+  "Rashi on Sotah 42b:13:1": {
+    "costUsd": 0.02717145,
+    "dependsOn": [
+      "Sotah 42b:13"
+    ],
+    "generatedAt": "2026-11-22T13:05:49.050Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמע מינה</strong> - מדקאמר שמא תאמר חולי מעיים הם:"
+  },
+  "Rashi on Sotah 42b:13:2": {
+    "costUsd": 0.018231,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:05:57.204Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ליטרח בנפשיה</strong> - לבקש לו רפואות טרם יכבד חוליו עליו:"
+  },
+  "Rashi on Sotah 42b:14:1": {
+    "costUsd": 0.022251149999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:06:08.204Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאגה בלב איש ישחנה</strong> - יסחנה מדעתו. ישיחנה לאחרים:"
+  },
+  "Rashi on Sotah 42b:15:1": {
+    "costUsd": 0.031314,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:06:24.545Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכל כך למה</strong> - אומר להם ומה היא הבטחה הזו שהבטיחן כי ה' אלהיכם ההולך ולא אמר כי ה' אלהיכם עמכם ומה היא הליכה זו דמשמע הולך ממש:"
+  },
+  "Rashi on Sotah 42b:15:2": {
+    "costUsd": 0.019049999999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:06:32.510Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהשם וכל כינויו עומדין בארון</strong> - היוצא עמהם במלחמה:"
+  },
+  "Rashi on Sotah 42b:1:1": {
+    "costUsd": 0.0272445,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:00.288Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שמעו דברי מערכי מלחמה</strong> - מי ראוי לחזור ומי ראוי לילך וחזרו הראוים לחזור כגון בנה בית ונטע כרם ואירש אשה וירא ורך הלבב ואע\"ג דכתיב בהן ודברו השוטרים לקמן אמרינן דכהן קאמר להו אלא שהשוטרים משמיעין דבריו לעם:"
+  },
+  "Rashi on Sotah 42b:1:2": {
+    "costUsd": 0.02859,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:13.019Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אל ירך לבבכם אל תיראו ואל תחפזו ואל תערצו</strong> - ארבעה אזהרות כנגד ארבעה דברים שהעובדי כוכבים היו עושין לאיים מגיפין בתריסין ומריעין בקרנות וצווחין בקולם ורומסין בצהלת סוסיהן ודהרותם אבל צחצוח חרבות ושפעת קלגסים הן עיקר המלחמה ואינן לאיים:"
+  },
+  "Rashi on Sotah 42b:2:1": {
+    "costUsd": 0.0183735,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:21.772Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בגילוי פנים</strong> - בחוצפה:"
+  },
+  "Rashi on Sotah 42b:2:2": {
+    "costUsd": 0.020599499999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:30.380Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ברו</strong> - בחרו:"
+  },
+  "Rashi on Sotah 42b:3:1": {
+    "costUsd": 0.0159825,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:36.593Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לכדו פיו</strong> - אמר פיו את כשלונו:"
+  },
+  "Rashi on Sotah 42b:3:2": {
+    "costUsd": 0.023703000000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:45.917Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וירד אלי</strong> - משמע עלי שהוא יגבר דהוה ליה למימר וילחם אתי:"
+  },
+  "Rashi on Sotah 42b:3:3": {
+    "costUsd": 0.0266175,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:00:58.025Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואידך והכני</strong> - ואע\"ג דהדר אמר ואם אני אוכל לו והכיתיו מכל מקום פתיחת פיו לרעתו:"
+  },
+  "Rashi on Sotah 42b:3:4": {
+    "costUsd": 0.0251685,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:01:16.633Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:3:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דוד הדר קאמר ליה ואני בא</strong> - ואין זו פתיחת פה לרעה דאמר ליה אתה בא למשול בי על ידי דבר שאין בו ממש ואני בא למשול בך בשם שהנצחנות שלו:"
+  },
+  "Rashi on Sotah 42b:4:1": {
+    "costUsd": 0.020645999999999998,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:01:25.267Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כנגד ארבעים יום</strong> - שאיחרה תורה להתקבל ניתן לו כח להתיצב:"
+  },
+  "Rashi on Sotah 42b:5:1": {
+    "costUsd": 0.0239535,
+    "dependsOn": [
+      "Sotah 42b:5"
+    ],
+    "generatedAt": "2026-11-22T13:01:35.573Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכל מום</strong> - מתוקן ומנוקה מכל מום של כיעור:"
+  },
+  "Rashi on Sotah 42b:5:2": {
+    "costUsd": 0.028377,
+    "dependsOn": [
+      "Sotah 42b:5"
+    ],
+    "generatedAt": "2026-11-22T13:01:48.781Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שבאחיו</strong> - ארבעה היו <span class=\"parenthesized\">(לו)</span> כדלקמן:"
+  },
+  "Rashi on Sotah 42b:5:3": {
+    "costUsd": 0.030285,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:02:03.238Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בר מאה פאפי וחד נאנאי</strong> - בן התערובת שבאו הרבה אנשים על אמו בלילה אחת ונתעברה מן אחד נמצא האחד אביו וכולן מנאפים:"
+  },
+  "Rashi on Sotah 42b:5:4": {
+    "costUsd": 0.014371275,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:02:11.164Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאנאי</strong> - זהו אב בלשון פרסי:"
+  },
+  "Rashi on Sotah 42b:5:5": {
+    "costUsd": 0.06707977500000001,
+    "dependsOn": [
+      "Rashi on Sotah 42b:5:4",
+      "Jastrow, פָּאפֵי 1",
+      "Jastrow, נָאנָאי 1",
+      "Tosafot on Sotah 42b:5:1",
+      "Chidushei Agadot on Sotah 42b:4",
+      "Sotah 42b:5"
+    ],
+    "generatedAt": "2026-11-22T13:02:44.690Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פאפי</strong> - פרשטרא ולשון איש הבינים שיצא מבין אנשים הרבה:"
+  },
+  "Rashi on Sotah 42b:6:1": {
+    "costUsd": 0.0225135,
+    "dependsOn": [
+      "Sotah 42b:6"
+    ],
+    "generatedAt": "2026-11-22T13:03:28.386Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב מערות</strong> - ממערות פלשתים:"
+  },
+  "Rashi on Sotah 42b:7:1": {
+    "costUsd": 0.0318945,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:03:43.812Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כתיב ערפה</strong> - שם האחת ערפה <span class=\"parenthesized\">(רות א׳:ד׳)</span> וכתיב הרפה אשר בילידי הרפה והיא ערפה כדאמרי' לקמן שנגזר עליה שיפלו בניה בחרב ביד בני רות שדבקה בשכינה:"
+  },
+  "Rashi on Sotah 42b:7:2": {
+    "costUsd": 0.025766999999999998,
+    "dependsOn": [
+      "Sotah 42b:7"
+    ],
+    "generatedAt": "2026-11-22T13:03:55.276Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עורפין אותה</strong> - הפקירה עצמה כבהמה פנים כנגד עורף:"
+  },
+  "Rashi on Sotah 42b:7:3": {
+    "costUsd": 0.015324,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:01.141Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כהריפות</strong> - חטין כתושין:"
+  },
+  "Rashi on Sotah 42b:8:1": {
+    "costUsd": 0.0161175,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:07.658Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סף ומדון וגלית וישבי</strong> - כולם בספר שמואל:"
+  },
+  "Rashi on Sotah 42b:9:1": {
+    "costUsd": 0.0208755,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:17.568Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בני הנשוקה</strong> - שנשקה לחמותה להפרד מעמה שלא נתגיירה:"
+  },
+  "Rashi on Sotah 42b:9:2": {
+    "costUsd": 0.024906000000000005,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:28.218Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ותבכינה עוד</strong> - פעם שניה דלעיל מיני' כתי' ותשאנה קולן ותבכינה:"
+  },
+  "Rashi on Sotah 42b:9:3": {
+    "costUsd": 0.0179295,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:04:36.278Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Sotah 42b:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ארבע דמעות</strong> - שתי בכיות משתי עינים:"
+  },
+  "Tosafot on Sotah 42b:15:1": {
+    "costUsd": 0.045646500000000007,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:06:57.127Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sotah 42b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מפני שהשם וכל כנויו מונחים בארון</strong> - תוספתא <span class=\"parenthesized\">(פ\"ז ע\"ש)</span> כי ה' אלהיכם ההולך עמכם זה השם הנתון בארון שנאמר וישלח אותם משה וגו' מלמד שהיה פנחס משוח מלחמה וכלי הקודש זה הארון ויש אומרים אלו בגדי כהונה שנא' ובגדי הקודש אשר לאהרן [רבי יהודה בן לקיש] אומר ב' ארונות היו עמהם זה שיוצא עמהן למלחמה היו בו שברי לוחות שנאמר ויסעו מהר ה' וגו' זה שהיה עמהן היה בו ס\"ת שנאמר ויעפילו לעלות וגו' ובירושלמי אמרי' ארון אחד היה:"
+  },
+  "Tosafot on Sotah 42b:5:1": {
+    "costUsd": 0.0796215,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T13:03:17.958Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Sotah 42b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאה פפי וחד נאנאי</strong> - בירושלמי בפרק החולץ אגמרא וחייבין אשם תלוי את ש\"מ [שהאשה] מתעברת וחוזרת ומתעברת את ש\"מ שאין האשה מתעברת משני בני אדם כאחת ופליגי על רבנן דאגדתא דרבנן דאגדתא אומרים ויצא איש הבינים ממערכות פלשתים ממאה ערלות פלשתים שהערו בה מאה ערלות פלשתים אמר רבי מתניא ולא פליגין עד שלא נסרחה הזרע האשה מתעברת משני בני אדם כאחת משנסרח הזרע אין האשה מתעברת משני בני אדם כאחת זה משמע שכולן מאה היו אבותיו שהרי מכולן נתעברה אמו ולא כפי' רש\"י שפירש וחד נאנאי שאחד מהן אביו ופי' הערוך נאנאי כלב שבאו עליה מאה אנשים וכלב אחד וכן מפורש בויקרא רבה ובאגדה דשמואל אמר ר' יצחק אותה הלילה שפירשה ערפה מחמותה נתערבו בה גייס של מאה בני אדם הדא דכתיב והוא מדבר עמם והנה איש הבינים וגו' ממערכות פלשתים ממערות כתיב ממאה ערלות פלשתים רבי תנחומא אמר אף כלב אחד שנאמר ויאמר הפלשתי אל דוד הכלב אנכי וגו' ותו התם ויתיצב ארבעים יום אמר רבי ברכיה ב\"ר יצחק בשכר ארבעים פסיעות שהלכה ערפה עם חמותה נתלה לבנה ארבעים יום:"
+  }
+}
