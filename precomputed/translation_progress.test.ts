@@ -2,9 +2,11 @@ import {Amud} from "../apiTypes";
 import {readUtf8} from "../files";
 import {aiEditsForPage} from "./ai_edits";
 import {
+  computeProgressSummary,
   countPageTranslations,
   extractPageCommentaryIndex,
   getTranslationProgress,
+  MasechetProgress,
   PageCommentaryIndex,
   RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH,
   SEDER_ORDER,
@@ -22,7 +24,8 @@ describe("translation_progress", () => {
   test("contains progress summary with all expected fields", () => {
     const {summary} = progressData;
     expect(summary).toBeDefined();
-    expect(summary.totalPages).toBe(5392);
+    expect(summary.totalPages).toBe(5333);
+    expect(summary.noCommentsPages).toBe(12);
     expect(summary.completePages).toBeGreaterThan(0);
     expect(summary.partialPages).toBeGreaterThan(0);
     expect(summary.notStartedPages).toBeGreaterThan(0);
@@ -36,6 +39,90 @@ describe("translation_progress", () => {
       + summary.noCommentsPages
     );
     expect(pagesSum).toBe(summary.totalPages);
+  });
+
+  test("keeps zero-comment tractates visible while excluding them from summary totals", () => {
+    const tamid = progressData.masechtot.find(masechet => masechet.canonicalName === "Tamid");
+    const shekalim = progressData.masechtot.find(
+      masechet => masechet.canonicalName === "Shekalim",
+    );
+
+    expect(tamid).toBeDefined();
+    expect(tamid!.totalComments).toBe(0);
+    expect(tamid!.notStartedPages).toBe(0);
+    expect(tamid!.noCommentsPages).toBe(tamid!.totalPages);
+
+    expect(shekalim).toBeDefined();
+    expect(shekalim!.totalComments).toBe(0);
+    expect(shekalim!.notStartedPages).toBe(0);
+    expect(shekalim!.noCommentsPages).toBe(shekalim!.totalPages);
+
+    const candidateTractates = progressData.masechtot.filter(
+      masechet => masechet.totalComments > 0,
+    );
+    const expectedTotalPages = candidateTractates.reduce(
+      (sum, masechet) => sum + masechet.totalPages,
+      0,
+    );
+    const expectedNoCommentsPages = candidateTractates.reduce(
+      (sum, masechet) => sum + masechet.noCommentsPages,
+      0,
+    );
+    expect(progressData.summary.totalPages).toBe(expectedTotalPages);
+    expect(progressData.summary.noCommentsPages).toBe(expectedNoCommentsPages);
+  });
+
+  test("computeProgressSummary skips zero-comment tractates", () => {
+    const candidateMasechet: MasechetProgress = {
+      canonicalName: "Horayot",
+      hebrewName: "הוריות",
+      seder: "Nezikin",
+      sederHebrew: "נזיקין",
+      totalPages: 25,
+      completePages: 10,
+      partialPages: 5,
+      notStartedPages: 9,
+      noCommentsPages: 1,
+      totalComments: 100,
+      translatedComments: 50,
+      percentCompletePages: 40,
+      percentTranslatedComments: 50,
+      pages: [],
+    };
+    const zeroCommentMasechet: MasechetProgress = {
+      canonicalName: "Tamid",
+      hebrewName: "תמיד",
+      seder: "Kodashim",
+      sederHebrew: "קדשים",
+      totalPages: 17,
+      completePages: 0,
+      partialPages: 0,
+      notStartedPages: 0,
+      noCommentsPages: 17,
+      totalComments: 0,
+      translatedComments: 0,
+      percentCompletePages: 0,
+      percentTranslatedComments: 0,
+      pages: [],
+    };
+
+    const computedSummary = computeProgressSummary(
+      [candidateMasechet, zeroCommentMasechet],
+      "2026-11-22T00:00:00.000Z",
+    );
+
+    expect(computedSummary).toEqual({
+      totalPages: 25,
+      completePages: 10,
+      partialPages: 5,
+      notStartedPages: 9,
+      noCommentsPages: 1,
+      totalComments: 100,
+      translatedComments: 50,
+      percentCompletePages: 40,
+      percentTranslatedComments: 50,
+      updatedAt: "2026-11-22T00:00:00.000Z",
+    });
   });
 
   test("contains all 38 Talmud tractates in correct order", () => {

@@ -9,7 +9,7 @@ import {
 import {
   MasechetProgress,
   TranslationProgressData,
-} from "../../precomputed/translation_progress_data";
+} from "../../precomputed/translation_progress_summary";
 import {flush, mount, query, texts, unmountAll} from "./testing/dom";
 import {clearPageEnvironment, installPageEnvironment} from "./testing/page_environment";
 
@@ -229,5 +229,167 @@ describe("TranslationProgressDashboard sort order persistence", () => {
     expect(selectElement.value).toBe("alphabetical");
     expect(selectElement.selectedOptions[0].textContent).toBe("סדר א״ב (אנגלית)");
     expect(renderedTractates(container)).toEqual(["Berakhot", "Eruvin", "Pesachim", "Shabbat"]);
+  });
+});
+
+function buildZeroCommentMasechet({
+  canonicalName,
+  hebrewName,
+  seder,
+  sederHebrew,
+  totalPages,
+}: {
+  canonicalName: string;
+  hebrewName: string;
+  seder: string;
+  sederHebrew: string;
+  totalPages: number;
+}): MasechetProgress {
+  return {
+    canonicalName,
+    hebrewName,
+    seder,
+    sederHebrew,
+    totalPages,
+    completePages: 0,
+    partialPages: 0,
+    notStartedPages: 0,
+    noCommentsPages: totalPages,
+    totalComments: 0,
+    translatedComments: 0,
+    percentCompletePages: 0,
+    percentTranslatedComments: 0,
+    pages: [],
+  };
+}
+
+function buildMixedCandidateProgressData(): TranslationProgressData {
+  const masechtot: MasechetProgress[] = [
+    buildMasechet({
+      canonicalName: "Meilah",
+      hebrewName: "מעילה",
+      seder: "Kodashim",
+      sederHebrew: "קדשים",
+      totalPages: 41,
+      completePages: 0,
+    }),
+    buildZeroCommentMasechet({
+      canonicalName: "Shekalim",
+      hebrewName: "שקלים",
+      seder: "Moed",
+      sederHebrew: "מועד",
+      totalPages: 42,
+    }),
+    buildMasechet({
+      canonicalName: "Berakhot",
+      hebrewName: "ברכות",
+      seder: "Zeraim",
+      sederHebrew: "זרעים",
+      totalPages: 59,
+      completePages: 59,
+    }),
+    buildZeroCommentMasechet({
+      canonicalName: "Tamid",
+      hebrewName: "תמיד",
+      seder: "Kodashim",
+      sederHebrew: "קדשים",
+      totalPages: 17,
+    }),
+  ];
+
+  // Deliberately pass unadjusted summary totals (including Shekalim 42 + Tamid 17)
+  // to verify the dashboard excludes zero-comment tractates from summary totals.
+  return {
+    summary: {
+      totalPages: 159,
+      completePages: 59,
+      partialPages: 0,
+      notStartedPages: 41,
+      noCommentsPages: 59,
+      totalComments: 100,
+      translatedComments: 59,
+      percentCompletePages: 37.1,
+      percentTranslatedComments: 59,
+      updatedAt: "2026-11-22T00:00:00.000Z",
+    },
+    masechtot,
+    timeline: [],
+  };
+}
+
+describe("TranslationProgressDashboard zero-comment tractates", () => {
+  test("keeps Tamid and Shekalim visible without a 0% bar and excludes them from totals", () => {
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildMixedCandidateProgressData()} />,
+    );
+
+    expect(renderedTractates(container)).toEqual(["Meilah", "Shekalim", "Berakhot", "Tamid"]);
+
+    const overallStats = query(container, ".overall-progress-stats").textContent;
+    expect(overallStats).toBe("59 / 100 pages (59%)");
+
+    const cards = Array.from(container.querySelectorAll(".masechet-card"));
+    const tamidCard = cards.find(
+      card => card.querySelector(".masechet-english-name")?.textContent === "Tamid",
+    )!;
+    const shekalimCard = cards.find(
+      card => card.querySelector(".masechet-english-name")?.textContent === "Shekalim",
+    )!;
+    const meilahCard = cards.find(
+      card => card.querySelector(".masechet-english-name")?.textContent === "Meilah",
+    )!;
+
+    expect(tamidCard.classList.contains("masechet-card-no-comments")).toBe(true);
+    expect(tamidCard.querySelector(".masechet-completion-badge")?.textContent).toBe(
+      "No Rashi/Tosafot",
+    );
+    expect(tamidCard.querySelector(".badge-not-started")).toBeNull();
+    expect(tamidCard.querySelector(".mini-stacked-progress-bar")).toBeNull();
+    expect(tamidCard.querySelector(".masechet-page-counts")?.textContent).toContain(
+      "No Rashi/Tosafot comments",
+    );
+
+    expect(shekalimCard.classList.contains("masechet-card-no-comments")).toBe(true);
+    expect(shekalimCard.querySelector(".masechet-completion-badge")?.textContent).toBe(
+      "No Rashi/Tosafot",
+    );
+    expect(shekalimCard.querySelector(".mini-stacked-progress-bar")).toBeNull();
+
+    expect(meilahCard.classList.contains("masechet-card-no-comments")).toBe(false);
+    expect(meilahCard.querySelector(".masechet-completion-badge")?.textContent).toBe("0%");
+    expect(meilahCard.querySelector(".mini-stacked-progress-bar")).not.toBeNull();
+  });
+
+  test("renders Hebrew badge for zero-comment tractates", () => {
+    setSiteLanguage(SiteLanguage.Hebrew);
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildMixedCandidateProgressData()} />,
+    );
+
+    const cards = Array.from(container.querySelectorAll(".masechet-card"));
+    const tamidCard = cards.find(
+      card => card.querySelector(".masechet-english-name")?.textContent === "Tamid",
+    )!;
+    expect(tamidCard.querySelector(".masechet-completion-badge")?.textContent).toBe(
+      "אין רש״י/תוספות",
+    );
+  });
+
+  test("sorts zero-comment tractates after candidates under progress sort orders", () => {
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildMixedCandidateProgressData()} />,
+    );
+
+    selectSortOrder(container, "percent_ascending");
+    expect(renderedTractates(container)).toEqual(["Meilah", "Berakhot", "Shekalim", "Tamid"]);
+
+    selectSortOrder(container, "percent_descending");
+    expect(renderedTractates(container)).toEqual(["Berakhot", "Meilah", "Shekalim", "Tamid"]);
+
+    selectSortOrder(container, "complete_pages_descending");
+    expect(renderedTractates(container)).toEqual(["Berakhot", "Meilah", "Shekalim", "Tamid"]);
+
+    selectSortOrder(container, "alphabetical");
+    expect(renderedTractates(container)).toEqual(["Berakhot", "Meilah", "Shekalim", "Tamid"]);
   });
 });

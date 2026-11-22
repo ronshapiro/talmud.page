@@ -7,62 +7,29 @@ import {toFlatArray} from "../sefariaTextType";
 import {aiEditsForPage, Edit} from "./ai_edits";
 import {writeJson} from "../util/json_files";
 import {readUtf8} from "../files";
+import {
+  computeProgressSummary,
+  MasechetProgress,
+  PageCommentaryIndex,
+  PageProgress,
+  PageProgressStatus,
+  roundPercentage,
+  TranslationProgressData,
+  TranslationTimelinePoint,
+} from "./translation_progress_summary";
 
-export interface PageCommentaryIndex {
-  refs: string[];
-  sefariaTranslatedRefs?: string[];
-}
-
-export type PageProgressStatus = "complete" | "partial" | "not_started" | "no_comments";
-
-export interface PageProgress {
-  section: string;
-  status: PageProgressStatus;
-  totalComments: number;
-  translatedComments: number;
-}
-
-export interface MasechetProgress {
-  canonicalName: string;
-  hebrewName: string;
-  seder: string;
-  sederHebrew: string;
-  totalPages: number;
-  completePages: number;
-  partialPages: number;
-  notStartedPages: number;
-  noCommentsPages: number;
-  totalComments: number;
-  translatedComments: number;
-  percentCompletePages: number;
-  percentTranslatedComments: number;
-  pages: PageProgress[];
-}
-
-export interface TranslationProgressSummary {
-  totalPages: number;
-  completePages: number;
-  partialPages: number;
-  notStartedPages: number;
-  noCommentsPages: number;
-  totalComments: number;
-  translatedComments: number;
-  percentCompletePages: number;
-  percentTranslatedComments: number;
-  updatedAt: string;
-}
-
-export interface TranslationTimelinePoint {
-  date: string;
-  dailyCount: number;
-  cumulativeCount: number;
-}
-
-export interface TranslationProgressData {
-  summary: TranslationProgressSummary;
-  masechtot: MasechetProgress[];
-  timeline: TranslationTimelinePoint[];
-}
+export {
+  computeProgressSummary,
+  hasTranslatableComments,
+  MasechetProgress,
+  PageCommentaryIndex,
+  PageProgress,
+  PageProgressStatus,
+  roundPercentage,
+  TranslationProgressData,
+  TranslationProgressSummary,
+  TranslationTimelinePoint,
+} from "./translation_progress_summary";
 
 export const SEDER_ORDER: Record<string, {seder: string; sederHebrew: string}> = {
   Berakhot: {seder: "Zeraim", sederHebrew: "זרעים"},
@@ -113,11 +80,6 @@ export const SEDER_ORDER: Record<string, {seder: string; sederHebrew: string}> =
 export const TALMUD_TRACTATE_NAMES: string[] = Object.keys(SEDER_ORDER);
 
 export const TRANSLATION_PROGRESS_PATH = "precomputed/translation_progress.json";
-
-function roundPercentage(numerator: number, denominator: number): number {
-  if (denominator === 0) return 0;
-  return Math.round((numerator / denominator) * 1000) / 10;
-}
 
 export function computeTranslationTimeline(): TranslationTimelinePoint[] {
   const recordsDirectory = (
@@ -262,14 +224,6 @@ export function computeTranslationProgress(): TranslationProgressData {
       : undefined
   );
 
-  let overallTotalPages = 0;
-  let overallCompletePages = 0;
-  let overallPartialPages = 0;
-  let overallNotStartedPages = 0;
-  let overallNoCommentsPages = 0;
-  let overallTotalComments = 0;
-  let overallTranslatedComments = 0;
-
   for (const tractateName of TALMUD_TRACTATE_NAMES) {
     const book = books.byCanonicalName[tractateName];
     if (!book) {
@@ -293,7 +247,6 @@ export function computeTranslationProgress(): TranslationProgressData {
 
     for (const section of book.sections) {
       masechetTotalPages++;
-      overallTotalPages++;
 
       const pageRef = `${book.canonicalName} ${section}`;
       const pageEntry = resolvePageCommentaryIndex(book, section, pageRef, commentaryIndex);
@@ -304,26 +257,20 @@ export function computeTranslationProgress(): TranslationProgressData {
 
       masechetTotalComments += pageCommentCount;
       masechetTranslatedComments += pageTranslatedCount;
-      overallTotalComments += pageCommentCount;
-      overallTranslatedComments += pageTranslatedCount;
 
       let pageStatus: PageProgressStatus;
       if (pageCommentCount === 0) {
         pageStatus = "no_comments";
         masechetNoCommentsPages++;
-        overallNoCommentsPages++;
       } else if (pageTranslatedCount === pageCommentCount) {
         pageStatus = "complete";
         masechetCompletePages++;
-        overallCompletePages++;
       } else if (pageTranslatedCount > 0) {
         pageStatus = "partial";
         masechetPartialPages++;
-        overallPartialPages++;
       } else {
         pageStatus = "not_started";
         masechetNotStartedPages++;
-        overallNotStartedPages++;
       }
 
       pageProgressList.push({
@@ -352,18 +299,7 @@ export function computeTranslationProgress(): TranslationProgressData {
     });
   }
 
-  const summary: TranslationProgressSummary = {
-    totalPages: overallTotalPages,
-    completePages: overallCompletePages,
-    partialPages: overallPartialPages,
-    notStartedPages: overallNotStartedPages,
-    noCommentsPages: overallNoCommentsPages,
-    totalComments: overallTotalComments,
-    translatedComments: overallTranslatedComments,
-    percentCompletePages: roundPercentage(overallCompletePages, overallTotalPages),
-    percentTranslatedComments: roundPercentage(overallTranslatedComments, overallTotalComments),
-    updatedAt: new Date().toISOString(),
-  };
+  const summary = computeProgressSummary(masechtotProgress, new Date().toISOString());
 
   const timeline = computeTranslationTimeline();
 
@@ -383,9 +319,13 @@ export function getTranslationProgress(): TranslationProgressData {
 
   if (fs.existsSync(TRANSLATION_PROGRESS_PATH)) {
     try {
-      cachedProgressData = (
+      const loadedData = (
         JSON.parse(readUtf8(TRANSLATION_PROGRESS_PATH)) as TranslationProgressData
       );
+      cachedProgressData = {
+        ...loadedData,
+        summary: computeProgressSummary(loadedData.masechtot, loadedData.summary.updatedAt),
+      };
       return cachedProgressData;
     } catch {
       // Fall through to compute

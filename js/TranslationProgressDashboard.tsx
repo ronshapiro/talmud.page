@@ -9,12 +9,15 @@ import {
   translationProgressSortOrderPreference,
 } from "./settings";
 import {
+  computeProgressSummary,
+  hasTranslatableComments,
   MasechetProgress,
   PageProgress,
+  roundPercentage,
   TranslationProgressData,
   TranslationProgressSummary,
   TranslationTimelinePoint,
-} from "../precomputed/translation_progress_data";
+} from "../precomputed/translation_progress_summary";
 
 type TimelineDisplayMode = "cumulative" | "daily";
 
@@ -50,15 +53,9 @@ function SummaryCards({
   summary: TranslationProgressSummary;
   isHebrew: boolean;
 }): React.ReactElement {
-  const completePercentage = (
-    Math.round((summary.completePages / summary.totalPages) * 1000) / 10
-  );
-  const partialPercentage = (
-    Math.round((summary.partialPages / summary.totalPages) * 1000) / 10
-  );
-  const notStartedPercentage = (
-    Math.round((summary.notStartedPages / summary.totalPages) * 1000) / 10
-  );
+  const completePercentage = roundPercentage(summary.completePages, summary.totalPages);
+  const partialPercentage = roundPercentage(summary.partialPages, summary.totalPages);
+  const notStartedPercentage = roundPercentage(summary.notStartedPages, summary.totalPages);
 
   return (
     <div className="metrics-grid">
@@ -140,9 +137,15 @@ function OverallProgressBar({
   summary: TranslationProgressSummary;
   isHebrew: boolean;
 }): React.ReactElement {
-  const completeWidthPercentage = (summary.completePages / summary.totalPages) * 100;
-  const partialWidthPercentage = (summary.partialPages / summary.totalPages) * 100;
-  const toGoWidthPercentage = (summary.notStartedPages / summary.totalPages) * 100;
+  const completeWidthPercentage = summary.totalPages > 0
+    ? (summary.completePages / summary.totalPages) * 100
+    : 0;
+  const partialWidthPercentage = summary.totalPages > 0
+    ? (summary.partialPages / summary.totalPages) * 100
+    : 0;
+  const toGoWidthPercentage = summary.totalPages > 0
+    ? (summary.notStartedPages / summary.totalPages) * 100
+    : 0;
 
   return (
     <div className="overall-progress-section">
@@ -509,14 +512,18 @@ function MasechetRow({
   isExpanded: boolean;
   onToggleExpand: () => void;
 }): React.ReactElement {
-  const completeWidth = (masechet.completePages / masechet.totalPages) * 100;
-  const partialWidth = (masechet.partialPages / masechet.totalPages) * 100;
-  const toGoWidth = (masechet.notStartedPages / masechet.totalPages) * 100;
+  const hasComments = hasTranslatableComments(masechet);
+  const completeWidth = hasComments ? (masechet.completePages / masechet.totalPages) * 100 : 0;
+  const partialWidth = hasComments ? (masechet.partialPages / masechet.totalPages) * 100 : 0;
+  const toGoWidth = hasComments ? (masechet.notStartedPages / masechet.totalPages) * 100 : 0;
 
   let badgeClass = "masechet-completion-badge badge-not-started";
   let badgeText = `${masechet.percentCompletePages}%`;
 
-  if (masechet.completePages === masechet.totalPages && masechet.totalPages > 0) {
+  if (!hasComments) {
+    badgeClass = "masechet-completion-badge badge-no-comments";
+    badgeText = isHebrew ? "אין רש״י/תוספות" : "No Rashi/Tosafot";
+  } else if (masechet.completePages === masechet.totalPages && masechet.totalPages > 0) {
     badgeClass = "masechet-completion-badge badge-complete";
     badgeText = isHebrew ? "100% הושלם" : "100% Complete";
   } else if (masechet.completePages > 0 || masechet.partialPages > 0) {
@@ -525,7 +532,7 @@ function MasechetRow({
   }
 
   return (
-    <div className="masechet-card">
+    <div className={`masechet-card${hasComments ? "" : " masechet-card-no-comments"}`}>
       <div className="masechet-card-header">
         <div className="masechet-names">
           <span className="masechet-english-name">{masechet.canonicalName}</span>
@@ -540,47 +547,63 @@ function MasechetRow({
         </div>
       </div>
 
-      <div className="masechet-progress-bar-container">
-        <div className="mini-stacked-progress-bar">
-          <div
-            className="progress-segment progress-segment-complete"
-            style={{width: `${completeWidth}%`}}
-          />
-          <div
-            className="progress-segment progress-segment-partial"
-            style={{width: `${partialWidth}%`}}
-          />
-          <div
-            className="progress-segment progress-segment-to-go"
-            style={{width: `${toGoWidth}%`}}
-          />
+      {hasComments && (
+        <div className="masechet-progress-bar-container">
+          <div className="mini-stacked-progress-bar">
+            <div
+              className="progress-segment progress-segment-complete"
+              style={{width: `${completeWidth}%`}}
+            />
+            <div
+              className="progress-segment progress-segment-partial"
+              style={{width: `${partialWidth}%`}}
+            />
+            <div
+              className="progress-segment progress-segment-to-go"
+              style={{width: `${toGoWidth}%`}}
+            />
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="masechet-stats-row">
-        <div className="masechet-page-counts">
-          <span className="page-count-complete">
-            {masechet.completePages} {isHebrew ? "הושלמו" : "complete"}
-          </span>
-          <span className="page-count-divider">&bull;</span>
-          <span className="page-count-partial">
-            {masechet.partialPages} {isHebrew ? "חלקי" : "partial"}
-          </span>
-          <span className="page-count-divider">&bull;</span>
-          <span className="page-count-to-go">
-            {masechet.notStartedPages} {isHebrew ? "נותרו" : "to go"}
-          </span>
-          <span className="page-count-divider">&bull;</span>
-          <span>
-            {masechet.totalPages} {isHebrew ? "דפים סה״כ" : "pages total"}
-          </span>
-          <span className="page-count-divider">&bull;</span>
-          <span>
-            {masechet.translatedComments.toLocaleString()} /{" "}
-            {masechet.totalComments.toLocaleString()}{" "}
-            {isHebrew ? "פירושים" : "comments"} ({masechet.percentTranslatedComments}%)
-          </span>
-        </div>
+        {hasComments ? (
+          <div className="masechet-page-counts">
+            <span className="page-count-complete">
+              {masechet.completePages} {isHebrew ? "הושלמו" : "complete"}
+            </span>
+            <span className="page-count-divider">&bull;</span>
+            <span className="page-count-partial">
+              {masechet.partialPages} {isHebrew ? "חלקי" : "partial"}
+            </span>
+            <span className="page-count-divider">&bull;</span>
+            <span className="page-count-to-go">
+              {masechet.notStartedPages} {isHebrew ? "נותרו" : "to go"}
+            </span>
+            <span className="page-count-divider">&bull;</span>
+            <span>
+              {masechet.totalPages} {isHebrew ? "דפים סה״כ" : "pages total"}
+            </span>
+            <span className="page-count-divider">&bull;</span>
+            <span>
+              {masechet.translatedComments.toLocaleString()} /{" "}
+              {masechet.totalComments.toLocaleString()}{" "}
+              {isHebrew ? "פירושים" : "comments"} ({masechet.percentTranslatedComments}%)
+            </span>
+          </div>
+        ) : (
+          <div className="masechet-page-counts">
+            <span>
+              {masechet.totalPages} {isHebrew ? "דפים" : "pages"}
+            </span>
+            <span className="page-count-divider">&bull;</span>
+            <span className="page-count-no-comments">
+              {isHebrew
+                ? "אין פירושי רש״י או תוספות (לא נכלל בספירה)"
+                : "No Rashi/Tosafot comments (excluded from totals)"}
+            </span>
+          </div>
+        )}
 
         <button
           type="button"
@@ -723,6 +746,17 @@ export function TranslationProgressDashboard({
   });
 
   const sortedMasechtot = [...filteredMasechtot].sort((firstMasechet, secondMasechet) => {
+    const firstHasComments = hasTranslatableComments(firstMasechet);
+    const secondHasComments = hasTranslatableComments(secondMasechet);
+    if (
+      (sortOption === "percent_descending"
+        || sortOption === "percent_ascending"
+        || sortOption === "complete_pages_descending")
+      && firstHasComments !== secondHasComments
+    ) {
+      return firstHasComments ? -1 : 1;
+    }
+
     switch (sortOption) {
       case "percent_descending":
         return secondMasechet.percentCompletePages - firstMasechet.percentCompletePages;
@@ -739,6 +773,10 @@ export function TranslationProgressDashboard({
         return 0; // Preserves traditional order from array
     }
   });
+
+  const effectiveSummary = progressData.masechtot.length > 0
+    ? computeProgressSummary(progressData.masechtot, progressData.summary.updatedAt)
+    : progressData.summary;
 
   const handleSortOptionChange = (nextSortOption: TranslationProgressSortOption) => {
     translationProgressSortOrderPreference.set(nextSortOption);
@@ -773,9 +811,9 @@ export function TranslationProgressDashboard({
           </p>
         </div>
 
-        <SummaryCards summary={progressData.summary} isHebrew={isHebrew} />
+        <SummaryCards summary={effectiveSummary} isHebrew={isHebrew} />
 
-        <OverallProgressBar summary={progressData.summary} isHebrew={isHebrew} />
+        <OverallProgressBar summary={effectiveSummary} isHebrew={isHebrew} />
 
         {progressData.timeline && progressData.timeline.length > 0 && (
           <TranslationTimelineChart timeline={progressData.timeline} isHebrew={isHebrew} />
