@@ -64,6 +64,56 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">זה נוטל כו'</strong> - דמאי דתפיס דידיה הוא כדקתני לעיל זה נוטל עד מקום שידו מגעת כו' ולקמן מפרש למאי מיבעי ליה:"
   },
+  "Rashi on Bava Metzia 7b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:42:10.661Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפילו אחד אדוק כו'</strong> - בתמיה:"
+  },
+  "Rashi on Bava Metzia 7b:14:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:42:30.538Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:14:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא תניא עד מקום שידו מגעת</strong> - שלו:"
+  },
+  "Rashi on Bava Metzia 7b:14:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:42:46.029Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:14:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דקאי תורף בי מצעי</strong> - ומר אמר חדא ומר אמר חדא ולא פליגי:"
+  },
+  "Rashi on Bava Metzia 7b:17:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:43:02.837Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדמי</strong> - מעלין בדמים כמה תורף יפה מן הטופס:"
+  },
+  "Rashi on Bava Metzia 7b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:43:31.305Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שטרא דאית ביה זמן כמה שוה</strong> - דתורף עדיף מטופס דאית ביה מקום הזמן דאילו שם המלוה והלוה והמעות כתובין אף בטופס שצריך לחזור מעניינו של שטר בשיטה אחרונה והוא עיקר כדתנן <span class=\"parenthesized\">(ב\"ב דף קסה:)</span> כתוב בו [מלמעלה מנה ומלמטה מאתים] מלמעלה מאתים ומלמטה מנה הכל הולך אחר התחתון אבל זמן לא מיהדר ואי משום חתימת עדים דהוא תחת הטופס הא אית ליה לרשב\"ג מודה בשטר שכתבו אין צריך לקיימו והאי מודה שכתבו הוא:"
+  },
   "Rashi on Bava Metzia 7b:1:1": {
     "dependsOn": [
       "Bava Metzia 7b:1"
@@ -213,6 +263,26 @@
       "Tosafot on Bava Metzia 7b:13:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">מחלוקת</strong> - פרש\"י דהיינו יחלוקו דקאמר רשב\"ג והדין עמו שלא רצה לפרש פלוגתא דרבי ורשב\"ג משום דהיכי קאמר אבל אחד אדוק בטופס כו' משמע דהתם לא פליגי וזה אינו דגם שם אם אינו מקוים לא שקיל לרבי מידי:"
+  },
+  "Tosafot on Bava Metzia 7b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:44:14.999Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאית ביה זמן כמה שוה</strong> - פרש\"י דמעות ולוה ומלוה לא שיימינן דכתיבי נמי בשיטה אחרונה בטופס והוא עיקר דתנן <span class=\"parenthesized\">(ב\"ב דף קסה:)</span> כתוב [בו] מלמעלה מנה כו' ותימה הא אין למידין משיטה אחרונה ולכך עושין חזרת השטר ומתני' דכתוב למעלה מנה לא מיירי בשיטה אחרונה וגם פי' דבעדים לא שיימינן דרשב\"ג אית ליה מודה בשטר שכתבו אין צריך לקיימו ופירושו תימה דאם חשב אותו שאינו תופס עדים כאילו יש לו שטר בלא עדים א\"כ לרשב\"ג נמי לא א\"ש דנהי דסבר דאין צריך לקיימו מ\"מ כשאין כלל עדי חתימה פסול ועוד במה עדיף תורף מטופס כך השטר פסול בלא טופס כמו בלא תורף דאם נמחק אפי' שיטה אחת מן השטר הוא פסול אלא ודאי יש לומר דבמה שהשטר נפסל אין שמין דכך שוה כשתופס שיטה אחת מן הטופס כמו תופס לוה ומלוה ומעות ועדים והשטר אינו כשר בלא זה כמו בלא זה אבל זמן שהשטר כשר בלא זמנו שמין כמה שוה ובירושלמי איכא א\"ר אלעזר הכל הולך אחר מי שתפוס עדים ופליג אגמ' שלנו דמזכיר זמן וסובר דעדי מסירה כרתי והשטר כשר בלא עדי חתימה ושמין כמה שוה שאין צריך לחזור אחר עדי מסירה ולית ליה ההוא לישנא דג\"פ <span class=\"parenthesized\">(ב\"ב דף קע.)</span> דסבר רשב\"ג עדי חתימה כרתי:"
+  },
+  "Tosafot on Bava Metzia 7b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T10:44:46.121Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ויחלוקו נמי לדמי</strong> - ואין חולקין את החוב כמו שכתוב בשטר אלא כמו ששוה לו למכור מזה יפרע החצי דאי לא תימא הכי אלא חצי החוב ממש גבי טלית מי חולקין ממש הא אפסדוה ולא גרסי' לא דפסקינן לשטרא דא\"כ מה מביא מטלית אדרבה בטלית אם יחתכנו לשנים אין פסידא כל כך ואם יחתוך השטר לא ישוה לכלום ועוד דפשיטא הוא דלא יחלוקו השטר לשנים דאוקימנא לעיל פלוגתא דרבי ורבי שמעון בן גמליאל במודה בשטר שכתבו אלא כדפרישית:"
   },
   "Tosafot on Bava Metzia 7b:1:1": {
     "dependsOn": [
