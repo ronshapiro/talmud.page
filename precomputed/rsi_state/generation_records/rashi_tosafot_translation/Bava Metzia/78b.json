@@ -1,0 +1,298 @@
+{
+  "Rashi on Bava Metzia 78b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:34:11.434Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נהוריתא</strong> - מוליי\"א בלע\"ז היוצאת בשחור העין:"
+  },
+  "Rashi on Bava Metzia 78b:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:34:24.750Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבזקא</strong> - התולעים התליעו רגליה:"
+  },
+  "Rashi on Bava Metzia 78b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:34:41.205Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבזקא במילתא דמלכא</strong> - ראיתי עש שאוכל שיראים של אוצר המלך:"
+  },
+  "Rashi on Bava Metzia 78b:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:34:59.782Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטלי כסף</strong> - כלי פשתן:"
+  },
+  "Rashi on Bava Metzia 78b:12:3": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 78b:12:1",
+      "Rashi on Bava Metzia 78b:12:2",
+      "Sefer HeArukh, Letter Tet 82",
+      "Steinsaltz on Bava Metzia 78b:12"
+    ],
+    "generatedAt": "2026-11-23T10:35:53.083Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בטלי זהב</strong> - כלי צמר צבועין אדום:"
+  },
+  "Rashi on Bava Metzia 78b:12:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:36:09.330Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:12:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וקטלוה</strong> - שאין עש אוכל כלי פשתן:"
+  },
+  "Rashi on Bava Metzia 78b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:36:52.901Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל אנגריא שאינה חוזרת</strong> - הוה ליה כמתה או נשברה:"
+  },
+  "Rashi on Bava Metzia 78b:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:37:30.612Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם בדרך הליכתה ניטלה</strong> - שהאנגריא מוליכתה לדרך שהיה זה רוצה להלך:"
+  },
+  "Rashi on Bava Metzia 78b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:37:44.719Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הבריקה או שנשתטית</strong> - עדיין היא ראויה למשאו:"
+  },
+  "Rashi on Bava Metzia 78b:15:2": {
+    "dependsOn": [
+      "Bava Metzia 78b:15",
+      "Rashi on Bava Metzia 78b:15:1",
+      "Rashi on Bava Metzia 78b:16:1"
+    ],
+    "generatedAt": "2026-11-23T10:38:21.430Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אומר לו הרי שלך לפניך</strong> - שכן דרך אנגריא נוטל חמורו של זה ומהלך בעליה אחריה וכל חמור שפוגע בו ראשון נוטלו ומחזיר לו את שלו והשני חוזר אחר חמורו עד שפוגע באחר הלכך אומר לו הואיל ואף מזלך גרם שכור חמור אחר ולך אחריו עד שיפגע בחמור אחר:"
+  },
+  "Rashi on Bava Metzia 78b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:38:38.359Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לרב לא קשיא</strong> - רומיא דמתניתין אהדדי דמצי לשנויי כאן בחוזרת וכו':"
+  },
+  "Rashi on Bava Metzia 78b:1:1": {
+    "dependsOn": [
+      "Bava Metzia 78b:1"
+    ],
+    "generatedAt": "2026-11-23T10:30:09.705Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נקרא גזלן</strong> - וקמה ליה ברשותיה להתחייב בכל אונסיה וסיפא רבנן:"
+  },
+  "Rashi on Bava Metzia 78b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:30:27.283Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נותן לו דמי צמרו</strong> - בדמים שצמר לבן נמכר בשוק דקנייה בגזלו לשלם כשעת הגזילה:"
+  },
+  "Rashi on Bava Metzia 78b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:30:41.488Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היציאה</strong> - דמי עצים וסממנין ולא שכר שלם:"
+  },
+  "Rashi on Bava Metzia 78b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:31:00.345Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשינוי</strong> - ששינהו מכמות שהיה ואיכא למאן דאמר שינוי קונה בהגוזל קמא <span class=\"parenthesized\">(ב\"ק ק:)</span> אבל גבי החמור לא נשתנה החמור:"
+  },
+  "Rashi on Bava Metzia 78b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:31:12.720Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגבת פורים לפורים</strong> - מעות שגובין הגבאין מבני העיר לחלק לעניים לסעודת פורים:"
+  },
+  "Rashi on Bava Metzia 78b:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:31:25.145Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לפורים</strong> - כולה יתנוה לעניים דפורים:"
+  },
+  "Rashi on Bava Metzia 78b:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:31:38.999Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין מדקדקין</strong> - לומר דיים בפחות והמותר יפול לכיס של צדקה:"
+  },
+  "Rashi on Bava Metzia 78b:5:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:31:54.594Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:5:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל לוקחין את העגלים</strong> - לרוב בכל המעות:"
+  },
+  "Rashi on Bava Metzia 78b:5:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:32:08.665Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:5:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והמותר</strong> - שלא יספיקו לאכול בפורים ימכור ויפול לכיס של צדקה:"
+  },
+  "Rashi on Bava Metzia 78b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:33:25.022Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדעתא דמידי אחרינא לא יהיב ליה</strong> - וכיון דלאו אדעתא דהכי יהיב נמצא מעות בחזקת בעלים חוץ מן היוצאין בסעודת פורים:"
+  },
+  "Rashi on Bava Metzia 78b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:33:40.587Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Bava Metzia 78b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דאתו למיחשדיה</strong> - לבעל הבית בנודר ואינו מקיים ששמעו עליו שאמר ליקח טלית לפלוני עני ולא קנה לו:"
+  },
+  "Tosafot on Bava Metzia 78b:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:36:37.433Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במילתא דמלכא</strong> - אית דגרס במולתא פירוש היינו פרדס כמו <span class=\"parenthesized\">(שבת ד' נב.)</span> מולאות של בית רבי בטלי זהב או בטלי כסף כלומר פרדות אדומות או לבנות ואין נראה לר\"י דבלשון ארמי לא קרי להו אלא כודנייתא:"
+  },
+  "Tosafot on Bava Metzia 78b:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:37:14.893Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">באנגריא חוזרת</strong> - דיכול לעשות מלאכתו כשתחזור אע\"פ שתתאחר במלאכתו שבשביל איחור אין חייב להעמיד לו חמור אחר כמו הבריקה או נשתטתה שמתאחרת נמי במלאכתה ולא חיישינן:"
+  },
+  "Tosafot on Bava Metzia 78b:18:1": {
+    "dependsOn": [
+      "Rashi on Bava Metzia 78b:14:1"
+    ],
+    "generatedAt": "2026-11-23T10:39:33.706Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם בדרך הליכתה ניטלה אומר לו הרי שלך לפניך</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> שמוליכה בדרך שגם הוא רוצה לילך אומר לו משכיר הרי שלך לפניך ושכור בהמה אחרת עד שם ותימה דלמה ישכור בהמה אחרת ואם השוכר אין צריך החמור בהליכה אלא בחזרה הוי א\"ש אבל אם כן בגופה ה\"ל לפלוגי בין צריך חמור לאלתר לאין צריך אלא בחזרה ונראה כפי' ר\"ח דמפרש אם בדרך הליכה שהאנגריא אין מחפשין בבתים אלא כשפוגעים בדרך והיינו דרך הליכתה אומר לו משכיר הרי שלך לפניך דמצי א\"ל מזלך גרם שאילו היתה בבית לא היתה ניטלת ואפילו אינה חוזרת דלא דמי למתה דהכא מוכח דמזלא דידיה גורם ואם שלא בדרך הליכתה ניטלת דהיינו שמחפשין גם בבתים שאז לא מזלו של שוכר גורם חייב להעמיד לו חמור אחר לעשות מלאכתו לאלתר דאפילו חוזרת האנגריא את החמור לכאן בעוד שתועיל חזרתה לשוכר אין לו לשוכר להתעכב ממלאכתו ולא דמי להבריקה או נשתטתה:"
+  },
+  "Tosafot on Bava Metzia 78b:18:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:39:52.028Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכלל דתנא קמא לא שני ליה</strong> - ות\"ק עדיף דהוי רבים לגבי יחיד:"
+  },
+  "Tosafot on Bava Metzia 78b:5:1": {
+    "dependsOn": [
+      "Arakhin 6b:2",
+      "Arakhin 6b:3"
+    ],
+    "generatedAt": "2026-11-23T10:32:50.944Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מגבת פורים לפורים</strong> - וא\"ת דאמרינן בערכין <span class=\"parenthesized\">(ד' ו:)</span> מעות של צדקה מותר לשנותן בכל מה שירצה ואפילו באו לידי גבאי ואפילו אמר מנורה זו לבד\"ה מותר לשנותה למצוה אחרת וי\"ל דדוקא בפורים אמרינן הכא דאין לשנות ומגבת העיר לאותה העיר נמי דפורים דוקא:"
+  },
+  "Tosafot on Bava Metzia 78b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T10:33:09.415Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Bava Metzia 78b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר מגבת פורים לפורים</strong> - ת\"ק לא איירי אלא בגבאי דלא ישנה ור' אליעזר איירי בעני שנתנו לו מעות לצורך סעודת פורים שאינו רשאי העני לשנות:"
+  }
+}
