@@ -654,6 +654,15 @@
   border-color: rgba(37, 99, 235, 0.3);
 }
 
+.masechet-card-no-comments {
+  background-color: var(--surface-secondary);
+  border-style: dashed;
+}
+
+.masechet-card-no-comments:hover {
+  border-color: var(--surface-border);
+}
+
 .masechet-card-header {
   display: flex;
   justify-content: space-between;
@@ -723,6 +732,12 @@
   border: 1px solid var(--not-started-border);
 }
 
+.badge-no-comments {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--surface-border);
+}
+
 .masechet-progress-bar-container {
   margin-bottom: 14px;
 }
@@ -767,6 +782,11 @@
 .page-count-to-go {
   color: var(--not-started-faint);
   font-weight: 500;
+}
+
+.page-count-no-comments {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .page-count-divider {
