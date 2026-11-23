@@ -239,6 +239,19 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אשת איש שיש לה היתר בחיי אוסרה</strong> - שמתגרשת בגט הלכך לא גמרי לה מאחותו ולא משכחת בה בחטאת בהעלם:"
   },
+  "Rashi on Keritot 2b:26:1": {
+    "costUsd": 0.0326595,
+    "dependsOn": [
+      "Keritot 2b:26"
+    ],
+    "generatedAt": "2026-11-22T19:16:35.711Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 2b:26:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בפני עצמה</strong> - אפי' עשאה עם האחרים:"
+  },
   "Rashi on Keritot 2b:27:1": {
     "dependsOn": [
       "Keritot 2b:27"
@@ -336,6 +349,17 @@
       "Rashi on Keritot 2b:30:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הרי שמות וגופים מוחלקין</strong> - מואל אשה נפקא מקראות מוחלקין דמתלתא קראי נפקי אחותו ואחות אביו ואחות אמו:"
+  },
+  "Rashi on Keritot 2b:30:2": {
+    "costUsd": 0.0335085,
+    "dependsOn": [],
+    "generatedAt": "2026-11-22T19:16:51.766Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Keritot 2b:30:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אחותו שהיא אחות אביו ואחות אמו</strong> - מפרש לקמן בפ' אמרו לו <span class=\"parenthesized\">(כריתות דף טו.)</span> ברשיעא בר רשיעא <span class=\"parenthesized\">(כותי)</span> הבא על אמו והוליד שתי בנות ובא על אחת מהן והוליד בן ובא הבן על אחותו שהיא אחות אביו ואחות אמו ועלה איצטריך קרא לחלק משום דגוף אחד הוא:"
   },
   "Rashi on Keritot 2b:32:1": {
     "dependsOn": [
