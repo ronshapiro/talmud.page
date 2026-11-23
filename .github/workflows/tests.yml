@@ -7,6 +7,10 @@ on:
   push:
     branches: [base]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && format('pr-{0}', github.event.pull_request.number) || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   PrecommitTests:
     runs-on: ubuntu-latest

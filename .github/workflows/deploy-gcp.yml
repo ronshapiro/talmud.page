@@ -79,27 +79,110 @@ jobs:
     if: needs.check_deployment.outputs.should_deploy == 'true'
     runs-on: ubuntu-latest
 
+    # App Engine deployments run asynchronously on GCP once submitted by gcloud,
+    # so cancelling an active job mid-deploy cannot safely abort the server-side
+    # rollout. Serialize all deployments with queue: max so the active deploy
+    # finishes first without later triggers evicting queued base or PR deploys,
+    # and skip superseded commits once a run acquires the lock.
+    concurrency:
+      group: ${{ needs.check_deployment.outputs.should_deploy == 'true' && 'deploy-gcp' || format('deploy-gcp-skip-{0}', github.run_id) }}
+      cancel-in-progress: false
+      queue: max
+
     permissions:
+      actions: 'read'
       contents: 'read'
       id-token: 'write'
       issues: 'write'
       pull-requests: 'write'
 
     steps:
-    - uses: actions/checkout@v4
+    - id: check-superseded
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        IS_BASE: ${{ needs.check_deployment.outputs.is_base }}
+        PULL_REQUEST_NUMBER: ${{ needs.check_deployment.outputs.pull_request_number }}
+        WORKFLOW_RUN_HEAD_COMMIT: ${{ github.event.workflow_run.head_sha }}
+      run: |
+        if [ "$IS_BASE" = "true" ]; then
+          BASE_HEAD_COMMIT=$(gh api "repos/${{ github.repository }}/git/ref/heads/base" --jq '.object.sha')
+          if [ "$WORKFLOW_RUN_HEAD_COMMIT" = "$BASE_HEAD_COMMIT" ]; then
+            echo "Commit ${WORKFLOW_RUN_HEAD_COMMIT} is the latest commit on base."
+            echo "superseded=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          COMPARISON_LINES=$(gh api "repos/${{ github.repository }}/compare/${WORKFLOW_RUN_HEAD_COMMIT}...base" \
+            --jq '.status, .commits[].sha')
+          COMPARISON_STATUS=$(echo "$COMPARISON_LINES" | head -n 1)
+          NEWER_COMMITS=$(echo "$COMPARISON_LINES" | tail -n +2)
+
+          if [ "$COMPARISON_STATUS" = "identical" ]; then
+            echo "Commit ${WORKFLOW_RUN_HEAD_COMMIT} is the latest commit on base."
+            echo "superseded=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          elif [ "$COMPARISON_STATUS" != "ahead" ]; then
+            echo "Commit ${WORKFLOW_RUN_HEAD_COMMIT} is no longer an ancestor of base (status=${COMPARISON_STATUS}). Skipping deployment."
+            echo "superseded=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          PASSING_TEST_COMMITS=$(gh api "repos/${{ github.repository }}/actions/workflows/tests.yml/runs?branch=base&event=push&status=success&per_page=100" \
+            --jq '.workflow_runs[] | select(.conclusion == "success") | .head_sha')
+
+          SUPERSEDING_COMMIT=""
+          if echo "$PASSING_TEST_COMMITS" | grep -Fxq "$BASE_HEAD_COMMIT"; then
+            SUPERSEDING_COMMIT="$BASE_HEAD_COMMIT"
+          else
+            while IFS= read -r candidate_commit; do
+              if [ -n "$candidate_commit" ] && echo "$PASSING_TEST_COMMITS" | grep -Fxq "$candidate_commit"; then
+                SUPERSEDING_COMMIT="$candidate_commit"
+              fi
+            done <<< "$NEWER_COMMITS"
+          fi
+
+          if [ -n "$SUPERSEDING_COMMIT" ]; then
+            echo "Commit ${WORKFLOW_RUN_HEAD_COMMIT} is superseded by newer passing base commit ${SUPERSEDING_COMMIT}. Skipping deployment."
+            echo "superseded=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Newer commits exist on base, but none have passed Tests yet. Proceeding with deployment of ${WORKFLOW_RUN_HEAD_COMMIT}."
+            echo "superseded=false" >> "$GITHUB_OUTPUT"
+          fi
+        else
+          PULL_REQUEST_LINES=$(gh pr view "$PULL_REQUEST_NUMBER" --json state,headRefOid --jq '.state, .headRefOid' -R "${{ github.repository }}")
+          PULL_REQUEST_STATE=$(echo "$PULL_REQUEST_LINES" | head -n 1)
+          PULL_REQUEST_HEAD_COMMIT=$(echo "$PULL_REQUEST_LINES" | tail -n +2)
+
+          if [ "$PULL_REQUEST_STATE" != "OPEN" ]; then
+            echo "PR #${PULL_REQUEST_NUMBER} is ${PULL_REQUEST_STATE}. Skipping preview deployment."
+            echo "superseded=true" >> "$GITHUB_OUTPUT"
+          elif [ "$PULL_REQUEST_HEAD_COMMIT" != "$WORKFLOW_RUN_HEAD_COMMIT" ]; then
+            echo "PR #${PULL_REQUEST_NUMBER} commit ${WORKFLOW_RUN_HEAD_COMMIT} is superseded by ${PULL_REQUEST_HEAD_COMMIT}. Skipping preview deployment."
+            echo "superseded=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "PR #${PULL_REQUEST_NUMBER} commit ${WORKFLOW_RUN_HEAD_COMMIT} is still the latest open PR head. Proceeding with preview deployment."
+            echo "superseded=false" >> "$GITHUB_OUTPUT"
+          fi
+        fi
+
+    - if: steps.check-superseded.outputs.superseded != 'true'
+      uses: actions/checkout@v4
       with:
         repository: ${{ github.event.workflow_run.head_repository.full_name }}
         ref: ${{ github.event.workflow_run.head_sha }}
 
-    - uses: actions/setup-node@v4
+    - if: steps.check-superseded.outputs.superseded != 'true'
+      uses: actions/setup-node@v4
       with:
         node-version: 24
         cache: 'npm'
         cache-dependency-path: package-lock.json
 
-    - run: 'npm install --no-audit'
+    - if: steps.check-superseded.outputs.superseded != 'true'
+      run: 'npm install --no-audit'
 
     - id: configure-secrets
+      if: steps.check-superseded.outputs.superseded != 'true'
       env:
         MAILJET_API_KEY: ${{ secrets.MAILJET_API_KEY }}
         MAILJET_API_SECRET: ${{ secrets.MAILJET_API_SECRET }}
@@ -116,9 +199,11 @@ jobs:
         echo "  CREATE_ISSUE_ACCESS_TOKEN: '${CREATE_ISSUE_ACCESS_TOKEN}'" >> app.yaml
 
     - id: 'build'
+      if: steps.check-superseded.outputs.superseded != 'true'
       run: 'npm run parcel-prod'
 
     - id: 'auth'
+      if: steps.check-superseded.outputs.superseded != 'true'
       # Note: make sure that the roles are configured in the IAM tab and not under the
       # Service Accounts > Permissions page. This is confusing!
       uses: 'google-github-actions/auth@v2'
@@ -129,19 +214,22 @@ jobs:
         credentials_json: '${{ secrets.GCP_DEPLOY_SERVICE_ACCOUNT }}'
 
     - id: 'verify-gcloud'
+      if: steps.check-superseded.outputs.superseded != 'true'
       run: 'gcloud --version'
 
     - id: 'verify-auth'
+      if: steps.check-superseded.outputs.superseded != 'true'
       run: 'gcloud auth list'
 
     - id: 'deploy'
+      if: steps.check-superseded.outputs.superseded != 'true'
       uses: 'google-github-actions/deploy-appengine@v2'
       with:
         version: ${{ needs.check_deployment.outputs.version }}
         promote: ${{ needs.check_deployment.outputs.promote == 'true' }}
 
     - name: Comment Preview URL on PR
-      if: needs.check_deployment.outputs.is_base == 'false'
+      if: steps.check-superseded.outputs.superseded != 'true' && needs.check_deployment.outputs.is_base == 'false'
       continue-on-error: true
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
