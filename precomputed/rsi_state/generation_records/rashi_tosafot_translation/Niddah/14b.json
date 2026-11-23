@@ -443,6 +443,83 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אף אתה עשיתו כתם</strong> - נוהג אתה בו דין כתם דשיעורו כגריס ועוד ובפחות מכאן לאו כלום הלכך טומאתו נמי ספק דאי ודאי ראיה הואי מגופה כדקאמרת האמר בפ' יוצא דופן <span class=\"parenthesized\">(לקמן נדה דף מ.)</span> אפי' כעין החרדל ובפחות מכן:"
   },
+  "Rashi on Niddah 14b:20:1": {
+    "costUsd": 0.0537986,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:53:38.522Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא עלה קתני כו'</strong> - אלמא אטמאין מספק קאי משום שמטמאה את בועלה אפי' לרבנן:"
+  },
+  "Rashi on Niddah 14b:21:1": {
+    "costUsd": 0.0603986,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:53:52.621Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכי קאמר</strong> - חסורי מחסרא והכי קתני איזהו אחר זמן שהן טמאין מספק כדי שתושיט אבל שהתה כדי שתרד מטמאה מעת לעת ואינה מטמאה את בועלה רבי עקיבא אומר מטמאה את בועלה ואפילו כל מעת לעת:"
+  },
+  "Rashi on Niddah 14b:22:1": {
+    "costUsd": 0.0567646,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:54:04.772Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והא אח\"כ קתני</strong> - דקתני במתני' ואח\"כ מטמאה מעת לעת ואינה מטמאה כו' אלמא כששהתה יותר מכדי שתרד הוא דפליגי אבל בכדי שתרד טומאה אפילו לרבה וקשיא ברייתא דכדי שתושיט:"
+  },
+  "Rashi on Niddah 14b:22:2": {
+    "costUsd": 0.0539786,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:54:15.891Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזהו אח\"כ</strong> - האי שיעורא דכדי שתרד זהו אח\"כ שנחלקו בו ר\"ע וחכמים:"
+  },
+  "Rashi on Niddah 14b:23:1": {
+    "costUsd": 0.0539766,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:54:26.810Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">עד בידה</strong> - שאינה צריכה להושיט ידה תחת הכר הוי שיעורא בכדי שתרד ותדיח באותו עד:"
+  },
+  "Rashi on Niddah 14b:23:2": {
+    "costUsd": 0.1093112,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:54:49.260Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין עד בידה</strong> - דבעיא להושיט ידה תחת הכר:"
+  },
+  "Rashi on Niddah 14b:23:3": {
+    "costUsd": 0.058966599999999994,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:55:03.363Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 14b:23:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכדי שתושיט</strong> - ותבדוק ועודה במטה ולרב חסדא אפי' עד בידה נפיש כדי שתרד מכדי שתושיט הילכך אחר אחר הוא:"
+  },
   "Rashi on Niddah 14b:2:1": {
     "dependsOn": [
       "Niddah 14b:2",
@@ -549,6 +626,17 @@
       "Tosafot on Niddah 14b:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">בעינן חתיכה מב' חתיכות</strong> - וא\"ת בריש פ' ספק אכל <span class=\"parenthesized\">(כריתות דף יז:)</span> דפריך לר' חייא בר רב דבעי חתיכה מב' חתיכות מברייתא דהכא ומשני רבי אליעזר היא דאמר כוי חייבין על חלבו אשם תלוי אדמקשה מברייתא לסייעיה ממתני' דהכא דפטרה מקרבן וי\"ל דשמא מתניתין לא פטריה אלא מחטאת ולא פליג אברייתא והא דקאמר ותנא דידן ה\"ק את\"ל דמתניתין פוטר אף מאשם תלוי היינו טעמא דסבר בעינן חתיכה מב' חתיכות:"
+  },
+  "Tosafot on Niddah 14b:19:1": {
+    "costUsd": 0.0593946,
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T08:53:27.295Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 14b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי אחר אחר אחר</strong> - ותימה כיון דתנא כדי שתושיט ידה ותטול עד תחת הכר דהוי טמא בועלה שבעה וחייב אשם תלוי ממילא ידעינן דאם תשהה יותר עד שתרד מן המטה דאחר אחר הוא ואינה מטמאה בועלה טומאת שבעה [עיין ברשב\"א]:"
   },
   "Tosafot on Niddah 14b:3:1": {
     "dependsOn": [
