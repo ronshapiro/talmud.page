@@ -1,0 +1,125 @@
+{
+  "Rashi on Nedarim 47a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:21:32.263Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:1:1"
+    ],
+    "sourceText": "ה\"ג בעי אבימי קונם בית זה שאתה נכנס ומת או שמכרו לאחר מהו:"
+  },
+  "Rashi on Nedarim 47a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:21:47.507Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אדם אוסר דבר וכו'</strong> - ואפילו לאחר שמת או שמכרו לאחר הוי נמי אסור או לא:"
+  },
+  "Rashi on Nedarim 47a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:22:44.753Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן התם</strong> - לקמן בפרק הנודר מן הירק:"
+  },
+  "Rashi on Nedarim 47a:3:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 47a:3:1",
+      "Rashi on Nedarim 47a:3:3"
+    ],
+    "generatedAt": "2026-11-24T07:23:25.440Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קונם פירות האלו עלי או קונם הן לפי או קונם הן על פי אסור בחילופיהן</strong> - אם נתחלפו בפירות אחרות ודבר שלא בא לעולם הוא:"
+  },
+  "Rashi on Nedarim 47a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:23:38.058Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גידוליהן</strong> - שנטען והגדילו:"
+  },
+  "Rashi on Nedarim 47a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:24:25.014Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על פלוני</strong> - שאסרן על חבירו:"
+  },
+  "Rashi on Nedarim 47a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:24:54.168Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 47a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מהו</strong> - אי הוי אסור בחילופיהן כמו שהוא אסור אי לא מי אמרינן גביה דיליה כי אמר קונם הן לפי או על פי אסור בחילופיהן אף על גב דהוי דבר שלב\"ל הואיל ואשכחן גבי דיליה כי האי חומרא דאיהו אוס' פירות חבירו עליו ואהכי מחמירי' לגביה דאוסר נמי עליו דבר שלב\"ל אבל גבי חבירו הואיל ואינו אוסר פירות חבירו על חבירו דאי אמר לחבירו קונם פירות של פלוני עליך לא הוי כלום לא אמרינן נמי דאית בידו למיסר ליה בחליפין דהוי דבר שלא בא לעולם:"
+  },
+  "Tosafot on Nedarim 47a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:22:01.180Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 47a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מת או מכרו לאחר מותר</strong> - לפי שלא נתכוין לאסור אלא בעודו שלו:"
+  },
+  "Tosafot on Nedarim 47a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:22:32.743Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 47a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שדה זה שאני לוקח בית זו שאני נכנס והבית שלו מת או מכרו מהו</strong> - מי אמרי' כיון דדידיה הוא אינו יכול לאסור אלא בעודו שלו דנהי דתנן בית זה שאני נכנס ומכרו אסור ה\"מ כשמדיר עצמו מבית חבירו דעתו לאוסרו עליו <span class=\"parenthesized\">(שהרי אסרו עליו)</span> כשאינו שלו ומיבעיא לאבימי כשאמר בהדיא בחייו ובמותו: ת\"ש כו' הכא לא דחי שאני הכא דקאמר בחייו ובמותו כדאמר לעיל דהכא כי נמי אמר בחייו ובמותו מיבעיא ליה משום דאין אדם אוסר דבר שברשותו לכשיצא מרשותו:"
+  },
+  "Tosafot on Nedarim 47a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:23:50.905Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 47a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן התם</strong> - לקמן בפרק הנודר מן הירק:"
+  },
+  "Tosafot on Nedarim 47a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:24:10.872Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 47a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור בחילופיהן</strong> - אם מכרם או החליפם אסורין [דמיהן וחלופיהן] דחשבינן להן כהקדש ותופס דמיו וגידולי הקדש הקדש:"
+  },
+  "Tosafot on Nedarim 47a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:26:53.225Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 47a:4:1"
+    ],
+    "sourceText": "אמר קונם פירות אלו על פלוני מהו בחילופיהן וה״ה דמיבעיא ליה <span class=\"parenthesized\">(בשאר איסורין)</span> אם מכר מהו שיהנה המודר מן החילופין דשמא אסור כי ההוא דלעיל דאסור בחלופיהן וה״ה דמיבעיא ליה בשאר איסורי הנאה כגון ערלה וכלאי הכרם מדקמייתי למפשט בעיין ממתני' דמקדש בערלה וכלאי הכרם וליכא לפרושי דמיבעיא ליה באיסורי הנאה מהו בחילופיהן אם מותר למוכרם בתחילה דפשיט' דאסור כדמוכח פרק כל שעה <span class=\"parenthesized\">(פסחים דף כא:)</span> למ״ד לא תאכלו איסורי הנאה משמע מדאיצטרי' קרא למישרי נבילה למכרה לעובד כוכבים אלמא דאסור למכור איסורי הנאה משום דבשעת מכירה הוא נהנה מגוף האיסור וה״ל כשרשיפא מעצי איסור וגם אם מכרם בדיעבד פשיטא ליה דמותרין מן התורה כדמפרש בשלהי פרק שני דקדושין <span class=\"parenthesized\">(דף נח -)</span> דאין לך דבר שתופס דמיו אלא עבודת כוכבים ושביעית וקאמר התם דהוו להו שני כתובים הבאים כאחד ואין מלמדין מהם שאר איסורין וכי קמיבעיא אם החליפן אסורין מדרבנן כדקאמר במתניתין קונם פירות אלו עלי אסור בחילופיהן דחילופיהן כגידוליהן או שמא גבי דידיה הואיל ואדם אוסר כו' אבל גבי חבירו דאין אדם אוסר פירות חבירו על חבירו אין אדם אוסר דבר שלא בא לעולם על חבירו וה״ה בכל איסורי הנאה ושרי ונראה דלהכי לא קמיבעיא ליה בחליפין איסורי הנאה [לאסור לאותן] שלא החליפם דפשיטא דשרי כדאמר <span class=\"parenthesized\">(חולין דף ד -)</span> חמצן של עוברי עבירה אחר הפסח מותר מיד מפני שהם מחליפין ולא מיבעיא ליה אלא לאותו עצמו שהחליפן ומבעיא בהחלפתם אי קנסינן ליה ואסור ליהנות מדרבנן:"
+  }
+}

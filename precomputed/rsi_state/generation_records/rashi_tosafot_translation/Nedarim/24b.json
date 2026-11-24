@@ -1,0 +1,152 @@
+{
+  "Rashi on Nedarim 24b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:46:50.851Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' בקמייתא</strong> - הנך דלעיל ש\"מ:"
+  },
+  "Rashi on Nedarim 24b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:47:07.371Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הוי עלה</strong> - אי הוי הלכתא כוותיה דר' אליעזר דהוי נדרי זרוזין ומותר:"
+  },
+  "Rashi on Nedarim 24b:6:1": {
+    "dependsOn": [
+      "Nedarim 24b:6",
+      "Rashi on Nedarim 24b:6:2"
+    ],
+    "generatedAt": "2026-11-24T01:49:15.459Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רבא</strong> - א\"כ מתניתא דאמר שבועה שראיתי בדרך הזה:"
+  },
+  "Rashi on Nedarim 24b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:49:35.965Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה לי למימר</strong> - דאסור דהיינו שבועה גמורה ודאי כאילו אמר שבועה שאכלתי:"
+  },
+  "Rashi on Nedarim 24b:6:3": {
+    "dependsOn": [
+      "Nedarim 24b:6"
+    ],
+    "generatedAt": "2026-11-24T01:50:00.000Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:6:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועודי דומיא דנדר קתני</strong> - שבועות <span class=\"parenthesized\">(נדרי)</span> הבאי אסורין דמשמע דקאמר בלשון נדר ושבועה:"
+  },
+  "Rashi on Nedarim 24b:6:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:50:19.918Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:6:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבא</strong> - קאמר הכי יאסרו כל פירות העולם עלי בשבועה:"
+  },
+  "Rashi on Nedarim 24b:6:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:50:33.915Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:6:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם לא ראיתי</strong> - ולא קאמר שראיתי:"
+  },
+  "Rashi on Nedarim 24b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:51:07.459Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ליה רבינא</strong> - אמאי אסורות ודלמא שפיר אישתבע לדעתיה דידיה:"
+  },
+  "Rashi on Nedarim 24b:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:51:20.588Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 24b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלמא קינא דשומשמני</strong> - נמלות מקובצות הרבה ראה ביחד כעולי מצרים דאפשר:"
+  },
+  "Tosafot on Nedarim 24b:2:1": {
+    "dependsOn": [
+      "Nedarim 24b:2"
+    ],
+    "generatedAt": "2026-11-24T01:47:28.561Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 24b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי הויא עלה</strong> - וא\"ת והא פשיטנא כבר דפליגי רבנן עליה לכן נראה לפרש הלכה כרבי אליעזר ב\"י או לא:"
+  },
+  "Tosafot on Nedarim 24b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:47:50.240Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 24b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדרי הבאי אם לא ראיתי</strong> - פירוש שאמר קונם פירות העולם עלי אם לא ראיתי וכו' מותרין מטעם דעבידי אינשי דמשתעי הכי כדי לאמת ולצדק את דבריהן כשרואין מעשה אחד יותר ממה שרגיל להיות ואין בלבו לאסור ואנן סהדי כדפרישית לעיל:"
+  },
+  "Tosafot on Nedarim 24b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:48:04.090Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 24b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כעולי מצרים</strong> - לפי שראה עם רב יותר ממה שרגיל:"
+  },
+  "Tosafot on Nedarim 24b:3:3": {
+    "dependsOn": [
+      "Tosafot on Nedarim 24b:3:1",
+      "Tosafot on Nedarim 24b:3:2"
+    ],
+    "generatedAt": "2026-11-24T01:48:39.491Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 24b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נחש טרוף</strong> - לפי שראוהו טרוף - יותר משאר נחשים ודווקא כשראה כדפרישית אבל אם לא ראה שום אדם ולא שום נחש ודאי לא הוי נדר הבאי ואסור משום דעבידי אינשי דמישתעו הכי כיון שלא ראה כלל:"
+  },
+  "Tosafot on Nedarim 24b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T01:50:48.683Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 24b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא אמר רבא דאמר יאסרו כל פירות שבעולם וכו'</strong> - [בשבועות פירשו התוספות באורך]:"
+  }
+}

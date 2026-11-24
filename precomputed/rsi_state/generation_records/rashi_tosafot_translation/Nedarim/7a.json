@@ -1,4 +1,14 @@
 {
+  "Rashi on Nedarim 7a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:32:06.528Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בנדינא ממך</strong> - דמשמע בפירוש אהא מנודה לך דהיינו ודאי לכולי עלמא אסור: שמתא אינו כל כך כנידוי:"
+  },
   "Rashi on Nedarim 7a:1:1": {
     "dependsOn": [
       "Rashi on Nedarim 7a:3:1",
@@ -48,6 +58,76 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">או דלמא שאני צדקה</strong> - להכי אית לה יד דלא חזיא אלא לעניים אבל הפקר דהא נמי אפי' לעשירים חזי מי אמרת דיש להן יד:"
   },
+  "Rashi on Nedarim 7a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:26:08.929Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש יד לבית הכסא</strong> - היכא דלא אמר בפירוש דלהוי בית הכסא מי הוי הזמנה ואסור להתפלל בו:"
+  },
+  "Rashi on Nedarim 7a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:28:45.270Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדא מגו חדא קא מיבעיא ליה</strong> - מגו דקא מיבעיא ליה אי זימון מועיל בעי נמי אי אית ליה יד או לא:"
+  },
+  "Rashi on Nedarim 7a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:29:30.053Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנודה אני לך</strong> - כלומר כמנודה שאסור לההנותו כך אהא אסור ליהנות ממך:"
+  },
+  "Rashi on Nedarim 7a:9:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:29:44.306Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר׳ עקיבא היה חוכך בזה להחמיר</strong> - כאדם שמתחכך אילך ואילך כך איהו לא בריר ליה שיהא ודאי אסור:"
+  },
+  "Rashi on Nedarim 7a:9:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:29:58.663Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 7a:9:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לענין מלקות</strong> - שאם עבר אינו לוקה כל כך ודאי לא היה מחמיר:"
+  },
+  "Tosafot on Nedarim 7a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:32:34.022Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדינא מנך כ\"ע ל\"פ דאסור</strong> - פי' משום דל' נע ונד הוא א\"כ מועיל שפיר בלא שאני אוכל לך ושפיר הוי ידים מוכיחות טפי ממודרני ממך דאין לספקו בהרחקת ד\"א משום דלשון נדינא לא משמע כלל ל' הרחקה אלא משמע שאני נע ונד מליהנות ממך:"
+  },
+  "Tosafot on Nedarim 7a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:32:54.861Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משמתנא כ\"ע לא פליגי דשרי</strong> - דלשון קללה הוא כמו מקוללני ממך ואפילו את\"ל שמנדה עצמו מלעמוד בד' אמותיו מכ\"מ איסור הנאה לא משמע:"
+  },
   "Tosafot on Nedarim 7a:5:1": {
     "dependsOn": [],
     "generatedAt": "2026-10-30T12:15:55.509Z",
@@ -80,5 +160,87 @@
       "Tosafot on Nedarim 7a:5:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הפקר היינו צדקה</strong> - דסתם מפקיר בשביל שיזכו בה עניים ומסיק מ\"מ הפקר הוי לעניים ולעשירים:"
+  },
+  "Tosafot on Nedarim 7a:6:1": {
+    "dependsOn": [
+      "Nedarim 7a:6",
+      "Tosafot on Nedarim 7a:5:1",
+      "Tosafot on Nedarim 7a:5:2",
+      "Tosafot on Nedarim 7a:5:3"
+    ],
+    "generatedAt": "2026-11-23T21:26:57.406Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">יש יד לבית הכסא</strong> - ה\"נ לא מספקא ליה דאורייתא אלא חומרא בעלמא מדרבנן מספקא ליה אם החמירו לענין לאסור כך לדבר ק\"ש כיון דביה\"כ [שאמרו] שאין בו צואה <span class=\"parenthesized\">(אי נמי)</span> כיון דיש זימון כדמסיק אם כן תאסור ע\"י דבור בעלמא כמו אינך הפקר וצדקה דמ\"מ מדרבנן מיבעי ליה דהא לא איתקש:"
+  },
+  "Tosafot on Nedarim 7a:7:1": {
+    "dependsOn": [
+      "Shabbat 10a:12",
+      "Shabbat 10a:13",
+      "Berakhot 26a:4",
+      "Nedarim 7a:7"
+    ],
+    "generatedAt": "2026-11-23T21:27:55.397Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מכלל דיש זימון</strong> - כאן משמע דאפי בדיבור בעלמא בעיא ליה דשמא יש זימון ובשבח מוכח דגם בעשיה מבעיא [דשמא] אין זימון ומוקי התם בחדתי שבנאו לכך וכן האמת והבעיא הויא בין בדבור בין במעשה:"
+  },
+  "Tosafot on Nedarim 7a:7:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:28:31.522Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הזמינו לבית הכסא הזמינו לבית המרחץ מהו</strong> - בשבת <span class=\"parenthesized\">(פ\"א דף י)</span> פ\"ה ול\"ג למרחץ דקמייתי התם בעיא דרבינא הזמינו לבית הכסא וקאמר התם מאי לאו ה\"ה למרחץ מיהו יש לישבו דגריס ליה הכא אע\"ג דרבינא לא הזכיר בבעיא רק בית הכסא כדמוכח בשבת מ\"מ התלמוד הזכיר כאן המרחץ לפי מה דס\"ד התם ה\"ה למרחץ:"
+  },
+  "Tosafot on Nedarim 7a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:29:00.665Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חדא מגו חדא קא מיבעיא ליה</strong> - מגו דקא מיבעיא ליה אי זימון מועיל בעי נמי אי אית ליה יד או לא:"
+  },
+  "Tosafot on Nedarim 7a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:29:15.126Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תיבעי לך</strong> - פי' כמו תיקו ולשון נדרים משונה:"
+  },
+  "Tosafot on Nedarim 7a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T21:30:52.068Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנודה אני לך</strong> - פי' ריצב\"א דלשמואל דאמר גבי מודרני מופרשני דבעי שיאמר עמו שאני אוכל ה\"ה הכא גבי מנודה אני לך דבעי שיאמר עמו שאיני אוכל לך דאל\"כ אמרי' דלמא דלא קיימא בד' אמות דילך קאמר ליה כמו כי מרוחקני ממך דטפי משנינן לישנא דמנודה מלישנא דמרוחקני ול\"נ דא\"כ שמואל היה לו להמתין לומר דבריו עד כאן והוה קאי אכולה מילתא דמתני' לכ\"נ לר\"י דהכא ודאי מודה שמואל דלא בעינן שאני אוכל לך דאין לספקו בהרחקת ד\"א דאמר ליה בלשון נידוי לפי שאין אדם רגיל להזכיר לשון נידוי על עצמו כשא\"ל לחבירו לא אעמוד בד\"א שלך לפי שגנאי הוא לו להזכיר לשון נידוי לעצמו אלא אומר בפירוש להרחיק ד\"א ממנו והלכך כיון דאין לספק מנודה אני לך בהרחקת ד\"א א\"כ ודאי לשון נדר הוא ר\"ל לשון נע ונד ומרוחק מהנאתו כדמסיק בגמרא שאינו לוקה:"
+  },
+  "Tosafot on Nedarim 7a:9:2": {
+    "dependsOn": [
+      "Nedarim 2a:1-4"
+    ],
+    "generatedAt": "2026-11-23T21:31:43.926Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 7a:9:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מודה ר\"ע וכו'</strong> - דא\"כ ליתני ר\"ע מחמיר תימא תלמודא דדייק מאריכות הלשון דמילתיה דר\"ע דקתני חוכך בזה להחמיר וע\"ז הוא אומר שהיה די לומר ר\"ע מחמיר ולישתוק מחוכך והיא גופה אין להקשות אמאי אין התלמוד מדקדק משינוי הל' לאסור להחמיר איכא למימר אין זה דיוק משינוי ל' כמו מאריכות הל':"
   }
 }

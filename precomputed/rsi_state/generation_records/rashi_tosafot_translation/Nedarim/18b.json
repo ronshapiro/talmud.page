@@ -1,0 +1,289 @@
+{
+  "Rashi on Nedarim 18b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:20:58.862Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם נדרים</strong> - דאינו יודע באיזה ענין נדר:"
+  },
+  "Rashi on Nedarim 18b:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:21:14.519Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להחמיר</strong> - דאזלינן לחומרא ואמרינן על כל דבר הנדור נדר:"
+  },
+  "Rashi on Nedarim 18b:1:3": {
+    "dependsOn": [
+      "Rashi on Nedarim 18b:1:2",
+      "Rashi on Nedarim 18b:1:4"
+    ],
+    "generatedAt": "2026-11-24T00:21:42.958Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופירושן</strong> - אבל אי מפרש ואמר דבדבר איסור נדר:"
+  },
+  "Rashi on Nedarim 18b:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:21:55.954Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">להקל</strong> - דהכי הוא כדקאמר:"
+  },
+  "Rashi on Nedarim 18b:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:22:15.724Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כיצד האומר ככר זו עלי בבשר מליח אם בשל שלמים נדר</strong> - כי שיילינן ליה אמר על של שלמים נדרתי על שם בשר שלמים שצריכין מלח דכתיב וכל קרבן מנחתך במלח תמלח <span class=\"parenthesized\">(ויקרא ב׳:י״ג)</span> ועל יין המתנסך על גבי המזבח לשמים:"
+  },
+  "Rashi on Nedarim 18b:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:22:31.966Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - שהרי נדר בדבר הנדור, ואם על שם יין נסך של עבודת כוכבים וכבשר מליח דעבודת כוכבים מותר שהרי נדר בדבר האסור:"
+  },
+  "Rashi on Nedarim 18b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:23:40.165Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם סתם</strong> - דאמר אין ידוע לי אם על שם שמים או על שם טומאה נדרתי:"
+  },
+  "Rashi on Nedarim 18b:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:24:07.052Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אסור</strong> - דאמרינן לא נתכוון זה אלא בדבר הנדור והיינו סתם להחמיר ופירושן להקל דאם פי' ואמר לשם עבודת כוכבים נדרנא מותר. ל\"א סתם נדרים דאמר ככר זו עלי כבשר מליח וכיין נסך דלא הזכיר לא לשם שמים ולא לשם עבודת כוכבים להחמיר ופירושן דאם מפרש בשעה שנדר ואמר כבשר מליח של שלמים משלמים ודאי קאמר שצריכות מלח יותר משאר קרבנות שהרי נאכלין לשני ימים ולילה אחת וכיין נסך שעל המזבח דהיינו בדבר הנדור ואם כיין נסך של עבודת כוכבים וכבשר מליח של עבודת כוכבים להקל:"
+  },
+  "Rashi on Nedarim 18b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:24:53.101Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כחרם של שמים</strong> - נדר כגון שהתפיס במה שהקדיש לגבוה לקדשי בדק הבית הלכך אסור דלא ניתן לפדות כדכתיב <span class=\"parenthesized\">(ויקרא כ״ז:כ״ח)</span> כל חרם קדש קדשים הוא:"
+  },
+  "Rashi on Nedarim 18b:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:25:14.518Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כחרם של כהנים</strong> - שהתפיס כחרם של חרמי כהנים דכתיב כל חרם בישראל לך יהיה <span class=\"parenthesized\">(במדבר י״ח:י״ד)</span> דהאי הוי ממון כהנים והוי מותר כחולין לכל דבריהן לאחר שבא ליד כהן ודין חרמים מפרש במסכת תמורה <span class=\"parenthesized\">(דף לב.)</span>:"
+  },
+  "Rashi on Nedarim 18b:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:25:27.874Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כחרם של כהנים</strong> - שמותר בהנאה לאחר שבא ליד כהנים:"
+  },
+  "Rashi on Nedarim 18b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:26:05.870Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמעשר בהמה</strong> - היינו דבר הנדור שאינו אסור עד שיקרא עליו שם מעשר:"
+  },
+  "Rashi on Nedarim 18b:4:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 18b:4:1"
+    ],
+    "generatedAt": "2026-11-24T00:26:34.962Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[ואם של גורן]</strong> - מעשר דגן דבר האסור שמעשר ותרומה בשבלין אסור:"
+  },
+  "Rashi on Nedarim 18b:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:27:06.337Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרומת הלשכה</strong> - דהיינו דבר הנדור מעיקרא דמפריש להו לשקלים:"
+  },
+  "Rashi on Nedarim 18b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:27:20.000Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין אנשי גליל מכירין בתרומת הלשבה</strong> - [לפי שהיו] רחוקים מירושלים:"
+  },
+  "Rashi on Nedarim 18b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:27:33.372Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין אנשי גליל מכירין חרמי כהנים</strong> - שלא היו כהנים ביניהם וכשמחרימין אין מחרימין אלא לשמים:"
+  },
+  "Rashi on Nedarim 18b:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:28:23.547Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתנן ספק נזירות להקל</strong> - דאמרינן במסכת נזיר <span class=\"parenthesized\">(דף לב:)</span> הריני נזיר אם זהו פלוני שבא נגדי נזיר והלך לו אותו שאין יודע אם נזיר אם לא אינו נזיר ונזירות היינו כנדרים והיכי קתני סתם נדרים להחמיר:"
+  },
+  "Rashi on Nedarim 18b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:28:41.192Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקדיש חייתו ובהמתו</strong> - שהקדיש כל חיות ובהמות שיש לו ואם היה לו כוי ביניהן הקדיש נמי דכוי בכלל חיה ובהמה:"
+  },
+  "Rashi on Nedarim 18b:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:29:02.048Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר לא הקדיש את הכוי</strong> - דלא מעייל איניש ממוניה לספיקא דכוי דספק הוא אי מין בהמה אי מין חיה מאותה ספיקא לא עייליה להקדיש בכלל חיה ובהמה וכי היכי דסבירא ליה דלא מעייל ממוניה לספיקא כל שכן דסבירא ליה דלא מעייל גופיה לספיקא דהיכא דנדר ויש בנזירות ספק לא הוי נזיר ולדידיה סבירא ליה דסתם נזירות להקל:"
+  },
+  "Rashi on Nedarim 18b:9:1": {
+    "dependsOn": [
+      "Nedarim 18b:9"
+    ],
+    "generatedAt": "2026-11-24T00:30:07.178Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 18b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי אליעזר אומר לא הקדיש את הכוי</strong> - דלא מעייל איניש ממוניה לספיקא. דכוי דספק הוא אי מין בהמה אי מין חיה מאותה ספיקא לא עייליה להקדיש בכלל חיה ובהמה וכי היכי דסבירא ליה דלא מעייל ממוניה לספיקא"
+  },
+  "Tosafot on Nedarim 18b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:23:24.638Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם נדרים להחמיר ופירושן להקל</strong> - כדמפרש ואזיל אמר הרי עלי כבשר מליח אם של שלמים נדר אסור פי' שפירש בשעת נדרו הרי עלי כבשר מליח של גבוה שרגילות היה למלוח בשר גבוה כדכתיב על כל קרבנך תקריב מלח אסור ואם של עבודת כוכבים נדר שפי' בשעת נדרו הרי עלי כבשר מליח של עבודת כוכבים דגם לעבודת כוכבים רגילות הוא למלוח מותר דדבר האסור הוא מותר ולהכי לא קתני של חולין משום דאין רגילות לקרות בשר מליח אלא אלו דקתני של שמים ושל עבודת כוכבים ולא של חולין ואם סתם פי' שאמר כבשר מליח סתם ולא פי' שום דבר פי' שנתכוין למה שמשמע בשר מליח ואסור ול\"נ חדא דאם כן לא הוי ופירושן להקל שום חידוש ועוד דל' של שמים ושל עבוד' כוכבים לא משמע כדפירש' וה\"ל למימר אם אמר הרי עלי כבשר מליח של שמים אסור ואם אמר כבשר מליח של עבודת כוכבים מותר כיון דאשעת נדרו קאי לכ\"נ כפי' ר\"ת דאיירי לעולם שלא הוציא בשפתים כ\"א האי לישנא כבשר מליח ותו לא ואם של שמים כלומר שאילנא ליה אחרי כן אם אמר שנתכוין בלבו לומר בשר מליח של שמים אסור ואם אמר נתכוין של עבודת כוכבים מותר הוי פי' לשפתיו כמו דנתכוון בלבו לפת חיטין והוציא משפתיו פת סתם בשבועה ובין ת\"ח ובין ע\"ה מהימן כדאמר דנתכוון לשם עבודת כוכבים ולא בעי התרה כלל ולא דמי להא דאמר בסמוך נדר בקרבן ואמר לא נדרתי אלא בקרבנות מלכים וכן בחרם ואמר בחרמו של ים והאמרי' לכ\"ע מחמרינן עליה להצריכו לבקש לו פתח להתיר דהתם היינו טעמא משום שנראה כנודר נדר גמור ואח\"כ אמר שלא נתכוון אלא לדברי הבאי דלא שייכא כלל לנדר אבל בשר מליח דעבודת כוכבים וכל שכן הני דבתר הכי שייך קצת להתפיס בהם אלא מכל מקום אין הנדר חל דלא הוי נדר גמור ולהכי מהימן שפיר בלא כלום:"
+  },
+  "Tosafot on Nedarim 18b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:24:29.968Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם סתם אסור</strong> - פירוש שאמר שנתכוין סתם למה שהלשון משמע והשתא ניחא בכולה מתניתין משתמעי חידוש בין סתם להחמיר בין פירושן להקל:"
+  },
+  "Tosafot on Nedarim 18b:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:25:49.595Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם של כהנים מותר</strong> - ואף על גב דכל זמן שהן בבית הבעלים הרי הן כהקדש לכל דבריהם מ\"מ דעתו להתרה ואפילו את\"ל דבעיקרא מתפיס דברו דתלה נדרו בשל כהנים שמא דעתו לאחר שהן באו לידי הגזבר שהן כחולין לכל דבריהם:"
+  },
+  "Tosafot on Nedarim 18b:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:26:53.538Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם של מעשר סתמא נדר אסור</strong> - ואם תאמר והלא עשירי מאיליו הוי קדוש ואם כן לא הוי דבר הנדור וי״ל דבעי העברת מנין ואם היו עשרה ונטל אחד בלא מנין אינו קדוש כדאמר בפ' מעשר בהמה <span class=\"parenthesized\">(בכורות דף נח:)</span> מיקרי שפיר דבר הנדור:"
+  },
+  "Tosafot on Nedarim 18b:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:27:47.292Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאין אנשי גליל מכירין בתרומת הלשכה</strong> - לפי שהן רחוקין מירושלים וסתם תרומות דמקומן תרומת דגן:"
+  },
+  "Tosafot on Nedarim 18b:6:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:28:02.191Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתם חרמים וכו' שאין אנשי גליל מכירין חרמי כהנים</strong> - לפי שהכהנים היה עיקר דירתם ביהודה סמוך לירושלים ולא היו רגילין בחרמי כהנים בגליל כמו ביהודה ובגמרא פריך רישא לסיפא ומשני לה:"
+  },
+  "Tosafot on Nedarim 18b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:29:35.895Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתנן ספק נזירות להקל וכו' רבי אליעזר אמר לא הקדיש הכוי</strong> - פירש הריב\"א דמיירי דמקדיש חייתו או בהמתו ובהא פליגי דת\"ק סבר מכל מקום קדיש מספק ולא ודאי ור' אליעזר סבר דאפי' ספיקא נמי לא קדיש אבל אם הקדיש שניהם אפילו רבי אליעזר מודה דקדוש ממה נפשך מיהו במס' ביכורים <span class=\"parenthesized\">(פ\"ב מי\"א)</span> תנן כיצד אינו שוה לא לחיה ולא לבהמה וכן הכותב חיתו ובהמתו לא כתב הכוי משמע דאפי' בכותב תרווייהו מיירי <span class=\"parenthesized\">(והכא לא כ\"ש)</span> לכן נראה לר\"י דפליגי בכל ענין בין הקדיש את שניהן בין לא הקדיש אלא אחד מהם דתנא קמא סבר דאם הקדיש אחד מהם קדוש מספק ואם הקדיש שניהם קדוש בודאי ורבי אליעזר סבר דאפילו אם הקדיש שניהן לא הקדיש דאין דעתו אלא לחיה ובהמה ודאי:"
+  },
+  "Tosafot on Nedarim 18b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T00:30:30.193Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 18b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למ\"ד ממונו עייל לספיקא גופיה נמי מעייל לספיקא</strong> - ולית ליה ההיא דספק נזירות להקל אלא סבירא ליה כרבי שמעון דבסמוך ומתני' דסתם נדרים להחמיר מיתוקמא כוותיה:"
+  }
+}
