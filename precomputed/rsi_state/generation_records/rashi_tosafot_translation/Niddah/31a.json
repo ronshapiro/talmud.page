@@ -403,6 +403,30 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">זיריתני</strong> - מן הברור ואח\"כ זירזתני:"
   },
+  "Rashi on Niddah 31a:1:1": {
+    "costUsd": 0.018801,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T15:03:22.635Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קרא</strong> - דמשביעין אותו ביום הלידה:"
+  },
+  "Rashi on Niddah 31a:1:2": {
+    "costUsd": 0.022206,
+    "dependsOn": [
+      "Niddah 31a:1"
+    ],
+    "generatedAt": "2026-11-24T15:03:32.672Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נזרך</strong> - לשון נזירות דהיינו נדר דדמי לשבועה:"
+  },
   "Rashi on Niddah 31a:20:1": {
     "dependsOn": [
       "Niddah 31a:20",
@@ -521,6 +545,63 @@
       "Rashi on Niddah 31a:24:3"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">נקבות בזכרים</strong> - ואת דינה בתו משום הך דרשה איש מזריע תחלה יולדת נקבה:"
+  },
+  "Rashi on Niddah 31a:2:1": {
+    "costUsd": 0.0206655,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T15:03:42.911Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:2:1"
+    ],
+    "sourceText": "למה ולד דומה:"
+  },
+  "Rashi on Niddah 31a:5:1": {
+    "costUsd": 0.0205545,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T15:03:52.821Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רקמתי</strong> - היינו יצירה ראשונה וכתיב בתחתיות דהיינו מדור תחתון:"
+  },
+  "Rashi on Niddah 31a:6:1": {
+    "costUsd": 0.0208005,
+    "dependsOn": [
+      "Niddah 31a:6"
+    ],
+    "generatedAt": "2026-11-24T15:04:03.340Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חבלי</strong> - צערה:"
+  },
+  "Rashi on Niddah 31a:6:2": {
+    "costUsd": 0.030045000000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T15:04:18.118Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דרך תשמישן</strong> - האיש פניו למטה כן זכר נולד פניו למטה ונקבה פניה למעלה הילכך נקבה צריכה להתהפך דהא כשהיא במעי אמה פניה למטה כדאמרינן לעיל [ראשו לו בין ברכיו] אבל זכר אין צריך להתהפך:"
+  },
+  "Rashi on Niddah 31a:7:1": {
+    "costUsd": 0.027215999999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T15:04:33.534Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 31a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשה לאשה וקשה לולד</strong> - מפני שדר במדור התחתון. קשה לאשה לא ידענא למאי: זרע מלבן את הולד מגיעוליו:"
   },
   "Rashi on Niddah 31a:7:2": {
     "dependsOn": [

@@ -362,6 +362,65 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ושטו אטום</strong> - סתום:"
   },
+  "Rashi on Niddah 23b:1:1": {
+    "costUsd": 0.022218,
+    "dependsOn": [
+      "Niddah 23b:1"
+    ],
+    "generatedAt": "2026-11-24T13:25:03.643Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 23b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף אנן נמי תנינא</strong> - דלא חיי:"
+  },
+  "Rashi on Niddah 23b:1:2": {
+    "costUsd": 0.027639000000000004,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:25:15.741Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 23b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המפלת מין בהמה וחיה ועוף דברי ר\"מ</strong> - רישא במסכת בכורות <span class=\"parenthesized\">(דף מו.)</span> והכי קתני יש בכור לנחלה ואין בכור לכהן וקא חשיב ואזיל המפלת מין בהמה וחיה ועוף הבא אחריו בכור לנחלה דהאי לאו בכור הוא לגבי נחלה דלא חיי:"
+  },
+  "Rashi on Niddah 23b:1:3": {
+    "costUsd": 0.022989,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:25:27.536Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 23b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וחכ\"א עד שיהיה בו מצורת אדם</strong> - אינו פוטר את הבא אחריו מבכורת כהן:"
+  },
+  "Rashi on Niddah 23b:2:1": {
+    "costUsd": 0.0219105,
+    "dependsOn": [
+      "Niddah 23b:2"
+    ],
+    "generatedAt": "2026-11-24T13:25:41.322Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 23b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בכור לכהן</strong> - שהרי זה פטר את הרחם:"
+  },
+  "Rashi on Niddah 23b:2:2": {
+    "costUsd": 0.028879500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:25:53.815Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 23b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סנדל</strong> - צורה פחותה שאין צורת פניו ניכרת שאין סנדל בלא ולד אחר ומתוך דוחק חבירו הוא נמעך כדמפרש בפירקין <span class=\"parenthesized\">(לקמן נדה דף כה:)</span> משל לאדם שסטר את חבירו והחזיר צורתו לאחוריו. ואם יוצא סנדל ראשון פוטר את אחיו מפדיון כהן:"
+  },
   "Rashi on Niddah 23b:2:3": {
     "dependsOn": [
       "Rashi on Niddah 23b:2:1",
