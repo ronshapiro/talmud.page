@@ -43,14 +43,13 @@ When running from Antigravity:
 
 ## 4. Graceful Stopping & PR Creation
 
-To stop a running translation runner early, finish the active comment, commit/push all pending candidates, and create or update the PR:
+To stop a running translation runner early, terminate all active agents, commit/push all pending candidates, and create or update the PR:
 - Send `SIGINT` to the process:
   ```bash
   kill -INT <PID>
   ```
-- On the first `SIGINT`, the runner will:
-  1. Finish translating and recording the current in-progress comment without starting the next one
-  2. Commit/push pending candidates and create/update the GitHub PR
-  3. Exit cleanly with status 0
-- Sending a second `SIGINT` immediately cancels active LLM agent processes and forces an immediate exit (status 130).
-- Sending `SIGTERM`, `SIGUSR1`, or `SIGUSR2` immediately stops active agents, creates/updates the PR, and exits cleanly (a second signal forces immediate exit).
+- The runner will:
+  1. Immediately terminate any active LLM agent processes
+  2. Create/update the GitHub PR.
+  3. Exit cleanly with status 0.
+- Sending a second signal while shutdown/push is in progress forces an immediate exit.
