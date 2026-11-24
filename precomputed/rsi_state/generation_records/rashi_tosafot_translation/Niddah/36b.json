@@ -1,0 +1,110 @@
+{
+  "Rashi on Niddah 36b:1:1": {
+    "costUsd": 0.020338500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:12:52.277Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">המקשה</strong> - וראתה דם הרי זו נדה. ובגמרא פריך ומתרץ לה:"
+  },
+  "Rashi on Niddah 36b:1:2": {
+    "costUsd": 0.0208575,
+    "dependsOn": [
+      "Niddah 36b:1"
+    ],
+    "generatedAt": "2026-11-24T16:13:31.310Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קשתה</strong> - מחמת ולד:"
+  },
+  "Rashi on Niddah 36b:1:3": {
+    "costUsd": 0.0228675,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:13:40.739Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ג' ימים בתוך אחד עשר יום</strong> - שבין נדה לנדה וראתה כל שלשתן הימים רצופין:"
+  },
+  "Rashi on Niddah 36b:1:4": {
+    "costUsd": 0.018813,
+    "dependsOn": [
+      "Niddah 36b:1"
+    ],
+    "generatedAt": "2026-11-24T16:13:49.741Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושפתה</strong> - מצערה:"
+  },
+  "Rashi on Niddah 36b:1:5": {
+    "costUsd": 0.019995000000000002,
+    "dependsOn": [
+      "Niddah 36b:1",
+      "Rashi on Niddah 36b:1:4",
+      "Rashi on Niddah 36b:1:5",
+      "Rashi on Niddah 36b:1:6"
+    ],
+    "generatedAt": "2026-11-24T16:14:10.210Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מעת לעת</strong> - ברביעי:"
+  },
+  "Rashi on Niddah 36b:1:6": {
+    "costUsd": 0.030412500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:14:24.545Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וילדה</strong> - איגלאי מילתא דדמים שראתה לא באו מחמת ולד הלכך הרי זו יולדת בזוב אבל אם לא שפתה סמוך ללידתה כל דמים שראתה מחמת ולד הוא ורחמנא טהרינהו מזיבה דכתיב זוב דמה דמה מחמת עצמה ולא דמה מחמת ולד:"
+  },
+  "Rashi on Niddah 36b:2:1": {
+    "costUsd": 0.0260265,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:14:37.338Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לילה ויום</strong> - דאם שפתה בחצי יום שלישי וילדה יום רביעי דשפתה מעת לעת אין זו שופי אלא אם כן שפתה לילה ויום שלאחר הלילה כלילי שבת ויומו:"
+  },
+  "Rashi on Niddah 36b:2:2": {
+    "costUsd": 0.023289,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:14:48.254Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ששפתה מן הצער ולא מן הדם</strong> - דאע\"ג דחזיא דם הוי שופי:"
+  },
+  "Tosafot on Niddah 36b:2:1": {
+    "costUsd": 0.025197,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T16:15:02.630Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 36b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כלילי שבת ויומו</strong> - קים ליה לרבי יהושע דאם לא שפתה לילה ויום אע\"פ ששפתה מעת לעת מחמת ולד היה:"
+  }
+}
