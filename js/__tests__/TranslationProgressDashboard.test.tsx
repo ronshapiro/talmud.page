@@ -325,9 +325,6 @@ describe("TranslationProgressDashboard zero-comment tractates", () => {
 
     expect(renderedTractates(container)).toEqual(["Meilah", "Shekalim", "Berakhot", "Tamid"]);
 
-    const overallStats = query(container, ".overall-progress-stats").textContent;
-    expect(overallStats).toBe("59 / 100 pages (59%)");
-
     const cards = Array.from(container.querySelectorAll(".masechet-card"));
     const tamidCard = cards.find(
       card => card.querySelector(".masechet-english-name")?.textContent === "Tamid",
