@@ -1,0 +1,66 @@
+{
+  "Rashi on Nedarim 45a:1:1": {
+    "dependsOn": [
+      "Nedarim 45a:1"
+    ],
+    "generatedAt": "2026-11-24T07:03:30.718Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 45a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - כי פליג ר' יוסי עלייהו דרבנן דאמרי לא הוי הפקר:"
+  },
+  "Rashi on Nedarim 45a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:03:51.766Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 45a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון דילא אפקריה אלא באפי תרי</strong> - ואדהכי הכי קתני ר' יוסי במתניתין דאסור דלא הוי הפקר כל זמן דלא אתא ליד זוכה אבל היכא דאפקריה באפי בי תלתא הוי הפקר ואע\"ג דלא אתא ליד זוכה וכי קתני דפטור מן המעשר דאפקריה באפי בי תלתא:"
+  },
+  "Rashi on Nedarim 45a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:04:31.608Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 45a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ור' יהושע בן לוי אמר דבר תורה אפי' בחד הוי הפקר</strong> - דאע\"ג דלא הגיע לרשות זוכה הוי הפקר לאלתר:"
+  },
+  "Rashi on Nedarim 45a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:04:51.872Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 45a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומה טעם אמרו כו' ושנים מעידין</strong> - דאי ליכא אלא תרי כי זכי חד מאן מעיד עליה דהלה הפקירו ולעולם לאלתר הוי הפקר והיינו כרבנן דרבי יהושע בן לוי סבירא ליה כרבנן:"
+  },
+  "Tosafot on Nedarim 45a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T07:04:18.146Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 45a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא כגון דאפקריה בפני שלשה ואינו יכול לחזור בו</strong> - ודמי כאילו אתי לרשות זוכה והא דאית ליה דאינו הפקר עד דאתי לרשות זוכה באפי תרי דיכול לחזור בו דאמר רבי יוחנן בפני שנים איכא למיחש לרמאי וגם סתם הפקר מועיל אפי' שלא בפני שלשה:"
+  },
+  "Tosafot on Nedarim 45a:2:1": {
+    "dependsOn": [
+      "Tosafot on Nedarim 45a:1:1"
+    ],
+    "generatedAt": "2026-11-24T07:05:55.926Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 45a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהושע בן לוי אומר דבר תורה אפי' באחד הוי הפקר</strong> - פר\"ת דר' יוחנן סבר לה כרבי יוסי ורבי יהושע בן לוי כרבנן ומן התורה הוי הפקר לאלתר וזו היא כפר\"ת דלעיל דמדאוריי' אמר רבי יוסי דלא הוי הפקר אבל לפר\"י דלעיל מצי סבר כר' יוסי דלא פליג אר' יוחנן מידי <span class=\"parenthesized\">(אלא)</span> - מהכא שמעינן דדוקא [בקרקעות הוא דשייך] רמאות אבל במטלטלין הוי הפקר לאלתר אפי' בפני שנים ואפי' לפירוש ר\"ת הלכתא כר' יהושע בן לוי דקיימי רבנן כוותיה ועוד ר' יהושע בן לוי ור' יוחנן הלכה כרבי יהושע בן לוי בכל מקום לשון הרב ר\"א מדפסקינן בפ' תפלת השחר <span class=\"parenthesized\">(ברכות כח:)</span> דלית <span class=\"parenthesized\">(ליה)</span> הלכתא כוותיה אלא בתרי והתם מפרש להו אבל באחריני הלכתא כוותיה דרבי יהושע בן לוי דלא מצריך תלתא מדרבנן אלא גבי מעשר וכדפרישית טעמא שלא יפקיענו ממעשר אבל לא להפקיר כליו בשבת שלא יעבור על שביתת כלים וכן בהמתו לא בעי תלתא אלא כדפריש בינו לבין עצמו שפיר דמי כדאמר פ\"ק דשבת <span class=\"parenthesized\">(דף יח:)</span> גבי כלים דמפקר אפקוריה וסתמא קאמר בכל עניינים:"
+  }
+}

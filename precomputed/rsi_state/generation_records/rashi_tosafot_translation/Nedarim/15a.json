@@ -1,0 +1,314 @@
+{
+  "Rashi on Nedarim 15a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:40:31.204Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם הלכה</strong> - לבית אביה קודם הפסח אסורה להנות ממנו קודם הפסח כמו שנדר:"
+  },
+  "Rashi on Nedarim 15a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:40:50.074Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אם לא הלכה</strong> - לפני הפסח אינה אסורה עד הפסח ולא חיישינן שמא תלך לאחר הפסח ונמצאת למפרע נהנית באיסור וקשה לרב יהודה דאמר אל יישן היום שמא יישן למחר דאם איתא לדרב יהודה הוה אסר לה מתני' עד הפסח אפי' אם לא הלכה עד הפסח דחיישינן שמא תלך לאחר הפסח ונמצאת נהנית ממנו באיסורא:"
+  },
+  "Rashi on Nedarim 15a:11:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:41:13.474Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר ר' אבא</strong> - תריץ הכי למתניתין הלכה לפני הפסח אסורה בהנאתו ולוקה דעוברת על בל יחל ואם לא הלכה לפני הפסח ואפילו הכי אסורה בהנאתו עד הפסח איסורא בעלמא דחיישינן שמא תלך לאחר הפסח ונמצאת נהנית למפרע באיסורא:"
+  },
+  "Rashi on Nedarim 15a:11:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:41:35.005Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הלכה</strong> - חייבת מלקות דהא עברה: הכי מסקנא דמתני' הלכה לאחר הפסח עוברת משום בל יחל:"
+  },
+  "Rashi on Nedarim 15a:12:1": {
+    "dependsOn": [
+      "Rashi on Nedarim 15a:11:2"
+    ],
+    "generatedAt": "2026-11-23T23:42:07.189Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:12:1"
+    ],
+    "sourceText": "ומקשינן מינה ואי דלא איתהני לפני הפסח מי איכא בל יחל:"
+  },
+  "Rashi on Nedarim 15a:12:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:42:23.339Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לאו פשיטא דאיתהני</strong> - לפני הפסח וסברה לא אלך אחר הפסח והלכה לאחר הפסח:"
+  },
+  "Rashi on Nedarim 15a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:30:42.874Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי לא מיזדהר בתנאיה</strong> - דכיון דיום של מחר הוי תנאיה ליום אתמול כגון דאמר קונם עיני בשינה היום אם אישן למחר הוי אותו היום דלמחר תנאי לאותו היום דאתמול דאם יישן למחר הוי לקי מאותו שינה דאתמול ואם לא יישן לא לקי משום הכי אמרינן דלא יישן היום דשמא כי אתי למחר לא מיזדהר בתנאי ונמצא עובר בבל יחל:"
+  },
+  "Rashi on Nedarim 15a:1:2": {
+    "dependsOn": [
+      "Rashi on Nedarim 15a:1:1",
+      "Maharsha: Chidushei Halachot on Nedarim 15a:1"
+    ],
+    "generatedAt": "2026-11-23T23:31:27.092Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל באיסורא</strong> - דאמר קונם עיני בשינה מחר אם אישן היום דאותו יום של מחר נטוי לאיסורא ודאי מיזהר זהיר ביה דאי לא מקיים תנאי שישן באותו היום ודאי כי אתי למחר לא הוי ישן דהא איתסר בנדר:"
+  },
+  "Rashi on Nedarim 15a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:31:44.010Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אילימא כדקתני שאני ישן מי הוי נדר</strong> - הא שינה דבר שאין בו ממש הוא:"
+  },
+  "Rashi on Nedarim 15a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:32:00.737Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דקאמר קונם עיני בשינה</strong> - ועין שנדר בו יש בו ממש:"
+  },
+  "Rashi on Nedarim 15a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:33:51.236Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי דלא יהיב שיעורא</strong> - עד כמה זמן אינו ישן:"
+  },
+  "Rashi on Nedarim 15a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:34:07.170Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מי שבקינן ליה</strong> - הא עבר ודאי באיסור לא יחל דלא מצי למיקם בנפשיה דלא יישן:"
+  },
+  "Rashi on Nedarim 15a:3:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:34:21.650Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאמר ר' יוחנן וכו'</strong> - לאלתר מלקין אותו שיישן הואיל דנדר בדבר שאין יכול לעמוד בו:"
+  },
+  "Rashi on Nedarim 15a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:34:57.624Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי לא ניים היום כי ניים למחר מאי איסור בל יחל איכא</strong> - דקתני אסור והרי לא ישן אתמול כלום:"
+  },
+  "Rashi on Nedarim 15a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:35:13.017Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא בדניים</strong> - אתמול דהכי מיירי מתניתין אם יישן היום ויישן למחר אסור:"
+  },
+  "Rashi on Nedarim 15a:5:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:35:29.844Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:5:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמא אית ליה דניים</strong> - אלמא דשבקינן ליה לישן היום ולא חיישינן שמא יישן למחר ותיובתא דרב יהודה:"
+  },
+  "Rashi on Nedarim 15a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:36:19.202Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:6:1"
+    ],
+    "sourceText": "אמר לך רב יהודה הכי קתני מתני' קונם שאני בשינה היום אם אישן למחר דאסור כי ניים למחר דאי ניים מאתמול דיעבד אבל לכתחילה אין מניחין אותו לישן היום דחיישינן שמא יישן למחר:"
+  },
+  "Rashi on Nedarim 15a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:37:23.936Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם כדקתני</strong> - שאיני ישן והאי דקאמר והא שינה דבר שאין בו ממש וליכא בל יחל ודאי מדאורייתא ליכא בל יחל ומאי בל יחל איכא דקתני מתניתין דאסור מדרבנן:"
+  },
+  "Rashi on Nedarim 15a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:38:29.312Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומי אכא בל יחל מדרבנן</strong> - דמלקין ליה מדרבנן:"
+  },
+  "Rashi on Nedarim 15a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:38:47.291Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי אתה רשאי לנהוג בהן היתר לפניהם</strong> - לבטל מנהגם דעובר משום בל יחל ומן התורה אינו בבל יחל אלא מדרבנן:"
+  },
+  "Rashi on Nedarim 15a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:39:37.473Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 15a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">קונם שאת נהנית לי עד הפסח אם תלכי לבית אביך מכאן עדי החג</strong> - בפ' הנודר מן הירק כגון דקאי באדר ואמר קונם תהא הנאתי עליך מאכל ומשקה עד הפסח אם תלכי לבית אביך מכאן עד החג עד סוכות:"
+  },
+  "Tosafot on Nedarim 15a:2:1": {
+    "dependsOn": [
+      "Nedarim 15a:2",
+      "Tosafot on Nedarim 15a:2:2",
+      "Nedarim 15a:8",
+      "Nedarim 15a:9"
+    ],
+    "generatedAt": "2026-11-23T23:32:58.378Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן שאת נהנית לי עד הפסח וכו'</strong> - תימה הא משעבד לה והיכי מצי מדיר לה וי\"ל באומר קונם תשמישך עלי ושאת נהנית לי לאו דוקא אי נמי שאני הכא כיון שתולה הנדר בדבר שיכולה לקיים שפיר חייל הנדר אף כי מדירה כשאמר קונם תשמישי עליך שהרי לא תלך לבית אביה ולא תיאסר: הלכה אין לא הלכה לא:"
+  },
+  "Tosafot on Nedarim 15a:2:2": {
+    "dependsOn": [
+      "Nedarim 15a:2"
+    ],
+    "generatedAt": "2026-11-23T23:33:38.742Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דאמר קונם עיני היום וכו' אלמא איתא דניים</strong> - והיא גופ' אשמעי' דאתיא לידי אסור בל יחל מתוך שמותר לישן היום וא\"ת ולוקמיה כגון דאמר קונם עיני בשינה למחר אם אישן - היום דבההיא מודה רב יהודה וי\"ל דהא נמי מילתא דפשיטא היא ולא איצטריך לאשמוע':"
+  },
+  "Tosafot on Nedarim 15a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:34:43.512Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואי דלא יהיב שיעורא מי שבקיניה עד דעבר איסורא בל יחל והא א\"ר יוחנן שבועה שלא אישן שלשה ימים וכו'</strong> - מכאן פר\"י דנדר שאי אפשר לקיים אינו חל דהכא מדמי נדר שא\"א לקיימו לשבועת שוא וההוא דנדר מכל פרי דעלמא <span class=\"parenthesized\">(דף עט:)</span> לאו דוקא כל פרי דא\"כ לא הוה חייל כיון דאי אפשר לקיים:"
+  },
+  "Tosafot on Nedarim 15a:5:1": {
+    "dependsOn": [
+      "Nedarim 15a:5"
+    ],
+    "generatedAt": "2026-11-23T23:35:58.914Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא דאמר קונם עיני היום וכו' אלמא איתא דניים</strong> - והיא גופ' אשמעי' דאתיא לידי אסור בל יחל מתוך שמותר לישן היום וא\"ת ולוקמיה כגון דאמר קונם עיני בשינה למחר אם אישן היום דבההיא מודה רב יהודה וי\"ל דהא נמי מילתא דפשיטא היא ולא איצטריך לאשמועי':"
+  },
+  "Tosafot on Nedarim 15a:6:1": {
+    "dependsOn": [
+      "Nedarim 15a:6",
+      "Tosafot on Nedarim 15a:5:1",
+      "Tosafot on Nedarim 15a:3:1"
+    ],
+    "generatedAt": "2026-11-23T23:37:05.155Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי קתני דאי ניים</strong> - וא\"ת פשיטא דאם ניים דהוה בבל יחל ויש לומר דההיא גופא אתא לאשמועינן דאסור לישן היום כדרב יהודה וה\"ק הרי זה בלא יחל דברו כלומר יש לו ליזהר שלא ישן שאם ישן יבא לידי בל יחל דברו דשמא ישן למחר דמתנאי לא מזדהר כדר' יהודה לכך אם ישן היום קרוב לודאי הוא שיבא לידי בל יחל דברו לפי שרגילות הוא שישן למחר כדפרישי' דבתנאי לא מזדהר וא\"ת ולוקמא כגון דיהיב שיעורא לשינתו ועכשיו לא קשיא ההיא דרבי יוחנן וי\"ל דהאי נמי פשיטא:"
+  },
+  "Tosafot on Nedarim 15a:7:1": {
+    "dependsOn": [
+      "Nedarim 15a:7"
+    ],
+    "generatedAt": "2026-11-23T23:38:14.450Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבינא אמר לעולם כדקתני</strong> - שאני ישן ואע\"ג דהוי דבר שאין בו ממש מ\"מ אסור מדרבנן ובל יחל דקתני אסמכתא בעלמא ומיהו גבי קונם שאני משמשך מודה רבינא דאיכא בל יחל מדאורייתא והוי מתני' לצדדין גבי שאני ישן הוי בל יחל מדרבנן וגבי קונם שאני משמשך הוי בל יחל מדאורייתא ונראה דהלכה כרבינא דאמר דאפילו דבר שאין בו ממש איכא בל יחל מדרבנן חדא דרבינא בתראה ועוד כ\"ע סבירא להו כרבינא והא דדחיק הש\"ס לשנויי דאי ניים ולא מתרץ כרבינא לא משום דלית ליה דרבינא אלא משום דמשמע ליה מתניתין דקתני בל יחל גבי שאני ישן דוקא קאמר מדאורייתא דומיא דגבי שאני משמשך דתני בהדייהו ורבינא לא חייש להכי הלכך הנודר שאני ישן שאני מדבר וכן כל דבר שאין בו ממש צריך התרת חכם:"
+  },
+  "Tosafot on Nedarim 15a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:39:16.164Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואחרים נהגו בו איסור</strong> - תימה מה ענין זה לנהגו בו איסור וי\"ל דהאי נמי שנדר ונתכוון לאסור עצמו גם בדבר שאין בו ממש אין לך נהגו גדול מזה כ\"נ למשי\"ח:"
+  },
+  "Tosafot on Nedarim 15a:9:1": {
+    "dependsOn": [
+      "Nedarim 15a:9"
+    ],
+    "generatedAt": "2026-11-23T23:40:15.224Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 15a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנן שאת נהנית לי עד הפסח וכו'</strong> - תימה הא משעבד לה והיכי מצי מדיר לה וי\"ל באומר קונם תשמישך עלי ושאת נהנית לי לאו דוקא אי נמי שאני הכא כיון שתולה הנדר בדבר שיכולה לקיים שפיר חייל הנדר אף כי מדירה כשאמר קונם תשמישי עליך שהרי לא תלך לבית אביה ולא תיאסר: הלכה אין לא הלכה לא:"
+  }
+}

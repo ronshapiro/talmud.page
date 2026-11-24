@@ -1,0 +1,251 @@
+{
+  "Rashi on Nedarim 13a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:02:37.270Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן שמעינן ליה דלא שאני ליה בין אימרא לאימרא כאימרא</strong> - דכולן שאוכל לך אסור:"
+  },
+  "Rashi on Nedarim 13a:10:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:02:58.245Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:10:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ר\"מ היא</strong> - דפליג עליה דר\"י דאי ר\"י לית ליה אימרא דאמר האומר ירושלים לא אמר כלום:"
+  },
+  "Rashi on Nedarim 13a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:03:16.495Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן לא אוכל לך מותרין</strong> - אפילו אמר לאימרא לא אוכל לך:"
+  },
+  "Rashi on Nedarim 13a:11:2": {
+    "dependsOn": [
+      "Nedarim 13a:11",
+      "Rashi on Nedarim 13a:11:1"
+    ],
+    "generatedAt": "2026-11-23T23:03:42.657Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:11:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאן שמעינן ליה דילא שאני ליה בין אימרא לאימרא כאימרא</strong> - דכולן שאוכל לך אסור:"
+  },
+  "Rashi on Nedarim 13a:11:3": {
+    "dependsOn": [
+      "Nedarim 13a:11"
+    ],
+    "generatedAt": "2026-11-23T23:04:05.639Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:11:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכולן לא אוכל לך מותח</strong> - אפילו אמר לאימרא לא אוכל לך:"
+  },
+  "Rashi on Nedarim 13a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:04:33.103Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא קשיא הא דאמר לאימרא</strong> - מתני' דתנן לקמן וכו' דאמר לאימרא לא אוכל לך דהיינו לקרבן דמשמע לקרבן יהא לפיכך לא אוכל לך וברייתא דקתני מותר תריץ לה הכי דאמר לא לאימרא לא אוכל לך הא אם אוכל לך יהא כאימרא דהיינו מכלל לאו הן ולהכי מותר דלר\"מ לית ליה מכלל לאו [הן]:"
+  },
+  "Rashi on Nedarim 13a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:04:50.536Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר עולה</strong> - יהא שאוכל לך או מנחה כו' אסור:"
+  },
+  "Rashi on Nedarim 13a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:05:08.448Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה מתיר</strong> - דלא אמר כעולה כחטאת:"
+  },
+  "Rashi on Nedarim 13a:14:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:07:30.978Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">סתמא תנא כרבי מאיר דלא שאני ליה בין אימרא לאימרא</strong> - דאסר היכא דאמר ירושלים כמאן דאמר כירושלים ולהכי אסור היכא דאמר קרבן כהיכא דאמר כקרבן:"
+  },
+  "Rashi on Nedarim 13a:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:07:49.251Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי רבי מאיר היא</strong> - רישא דקתני הקרבן שאוכל לך אסור:"
+  },
+  "Rashi on Nedarim 13a:15:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:08:07.674Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא מודים חכמים לרבי יהודה</strong> - דהיינו רבי מאיר דפליג עליה:"
+  },
+  "Rashi on Nedarim 13a:15:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:08:24.745Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:15:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלא נדר זה אלא בחיי קרבן</strong> - דכי אמר הא קרבן שאוכל לך משמע כמאן דאמר חיי קרבן שאוכל לך ולא כלום קאמר:"
+  },
+  "Rashi on Nedarim 13a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:59:11.548Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואמר זה כזה</strong> - ובהא קא מיפלגי מר סבר בעיקרו מתפיס ומר סבר בהיתר קא מתפיס לאחר זריקת דמים:"
+  },
+  "Rashi on Nedarim 13a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:59:29.007Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא כי ידור נדר כי ידור בדבר הנדור</strong> - הוי נדר ואסור לאפוקי בכור דדבר האסור דממילא מיתסר:"
+  },
+  "Rashi on Nedarim 13a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:59:45.351Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא לה' לרבות דבר האסור</strong> - דכל דבר שהוא אסור ולגבוה הוא מתפיסו נמי בנדר אע\"פ שהוא אסור בלא נדר כגון בכור:"
+  },
+  "Rashi on Nedarim 13a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:00:24.165Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרבה אני חטאת ואשם</strong> - שהם מתפיסים מפני שהוא מתפיסן בנדר אע\"ג דעל חטא באין ולא משום נדר אפ\"ה איהו מתפיסו שאומר הרי זו לחטאתי ולאשמי אבל בכור אינו מתפיס כלל שממעי אמו קדש עצמו:"
+  },
+  "Rashi on Nedarim 13a:7:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:01:01.519Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כי לא מקדיש ליה</strong> - אם לא הקדישו מי לא מיקדיש בלאו הכי משום הכי לא חשיב כלל כי מתפיס ליה בנדר אבל חטאת ואשם לא מיקדשי לעולם אי לא מקדיש להו:"
+  },
+  "Rashi on Nedarim 13a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:01:17.637Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כולן שאוכל לך אסור</strong> - דכי אמר כאימרא שאוכל לך דמי כמאן דאמר יאסר עלי מה שאוכל לך אבל אמר כאימרא לא אוכל לך מותר דמשמע אבל אם אוכל לך לא יהא כאימרא ומותר:"
+  },
+  "Tosafot on Nedarim 13a:13:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:05:29.376Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">האומר קרבן עולה ומנחה וכו'</strong> - אשמעי' אע\"ג דליכא כ\"ף:"
+  },
+  "Tosafot on Nedarim 13a:13:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:05:55.900Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:13:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי יהודה מתיר</strong> - משום דלא אמר בכ\"ף וה\"ה בלשון קונם בלא כ\"ף דמותר טפי דלא עדיף מלשון קרבן עצמו וקונם בכל הש\"ס בלא כ\"ף דלא כרבי יהודה ור\"י פי' דאמר קונם יש לפרש לשון פעולה כמו מקונם ובלשון פעולה מודה רבי יהודה כקרבן הקרבן:"
+  },
+  "Tosafot on Nedarim 13a:13:3": {
+    "dependsOn": [
+      "Nedarim 13a:13"
+    ],
+    "generatedAt": "2026-11-23T23:07:11.768Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:13:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הקרבן כקרבן קרבן אוכל לך אסור</strong> - תימה בשלמא הקרבן אשמעינן דלא הא קרבן קאמר כיון שאמר הקרבן תיבה אחת אבל אינך תרתי למה לי ואי משום קרבן בלא כ\"ף כבר אשמעינן <span class=\"parenthesized\">(ונראה דא\"ל)</span> דוקא שאוכל לך הוא דאסור אבל לא אוכל לך מותר דלא מפרש קרבן יהא לפיכך לא אוכל לך כך נראה למהר\"ף נ\"ע:"
+  },
+  "Tosafot on Nedarim 13a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:00:01.786Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר קרא לה' לרבות דבר האסור</strong> - פי' דבר האסור כי האי דבכור לפי שנחשב קצת דבר הנדור כדמפרש ואזיל:"
+  },
+  "Tosafot on Nedarim 13a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T23:00:40.989Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מרבה אני חטאת ואשם שהוא מתפיס בנדר</strong> - אע\"ג שהוא חייב אותן בלא נדר מ\"מ אין קדושה חל עליהן ממילא:"
+  },
+  "Tosafot on Nedarim 13a:9:1": {
+    "dependsOn": [
+      "Nedarim 13a:9"
+    ],
+    "generatedAt": "2026-11-23T23:02:19.471Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 13a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנא אימרא לאימרא וכו' הא דאמר לאימרא</strong> - בפתח דלאימרא בפתח מפרשינן ליה לאימרא יהא לפיכך לא אוכל לך כמו לקרבן בפתח והא דתניא בהך ברייתא לאימרא לא אוכל לך מותר מיירי שאמר לא אימרא כפר\"ת וא\"ת אי לאימרא דהך ברייתא מיירי דאמר לא אימרא אם כן שאוכל לך אמאי משמע איסורא וי\"ל דודאי לאימרא דרישא <span class=\"parenthesized\">(דלא)</span> דאוכל לך מיירי בלאימרא בפתח ולאימרא דלא אוכל מיירי שאמר לא אימרא וא\"ת אם כן אדמפליג בלא אימרא בין אוכל ללא אוכל ליפלוג כולה בלא אוכל בין לאימרא בפתח ללא אימרא דהשתא נמי דמפליג בין אוכל ללא אוכל הוי לאימרא גבי אוכל בפתח וגבי לא אוכל לא אימרא וי\"ל דאה\"נ אלא כיון דאימרא כאימרא לא ליתני ליה לאיסורא רק באוכל לך תני נמי באוכל לך גבי לאימרא ואע\"ג דגבי לאימרא הוי מתסר נמי גם בלא אוכל לך כך צריך לדחוק לפר\"ת ור\"י גרס הא דאמר לאימרא בחטף התם מפרש ליה לאימרא יהא לפיכך לא אוכל לך דומיא דלקרבן לא אוכל לך דהתם נמי לקרבן בחטף הא ברייתא דלעיל דשרי מיירי בלאימרא בפתח בין ברישא גבי שאוכל בין גבי לא אוכל לך:"
+  }
+}

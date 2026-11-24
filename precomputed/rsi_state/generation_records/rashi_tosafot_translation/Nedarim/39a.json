@@ -1,0 +1,366 @@
+{
+  "Rashi on Nedarim 39a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:33:46.676Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במאי עסקינן</strong> - נכנס לבקרו:"
+  },
+  "Rashi on Nedarim 39a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:34:00.966Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו יושב נמי</strong> - יהא מותר שהרי נכסי חולה אין אסורין על המבקר ומותר ליהנות משלו:"
+  },
+  "Rashi on Nedarim 39a:1:3": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:1:1",
+      "Rashi on Nedarim 39a:1:2",
+      "Rashi on Nedarim 39a:1:4"
+    ],
+    "generatedAt": "2026-11-24T05:34:31.919Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי בשנכסי כו'</strong> - ולהכי אינו יושב בישיבה שלא יהנה משלו:"
+  },
+  "Rashi on Nedarim 39a:1:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:34:52.137Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' עומד לא</strong> - דהנאה היא לו שנהנה:"
+  },
+  "Rashi on Nedarim 39a:1:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:35:06.597Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובמקום שנוטלין שכר על הישיבה</strong> - שכר שהולך לבקר את החולה ויושב עמו לצוותא ומשכירין אותו:"
+  },
+  "Rashi on Nedarim 39a:1:6": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:35:22.505Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:1:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואין נוטלין על העמידה</strong> - ולהכי אינו יושב שאם היה יושב שם המבקר בחנם מוותר היה לו שכרו ומהנהו אם לא יטול שכר אבל עומד הואיל ואין נוטלין שכר על העמידה מותר:"
+  },
+  "Rashi on Nedarim 39a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:36:11.147Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי פסקא</strong> - דעל זה נוטלין שכר ולא על זה:"
+  },
+  "Rashi on Nedarim 39a:2:10": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:39:59.770Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:10"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי פסקא</strong> - הא קמ\"ל אע\"ג דאיכא דוכתא שנוטלין שכר על הישיבה נוטלין אבל לא על העמידה והיינו טעמא דבעמידה מותר אבל לא בישיבה כדאמר ר\"ש בן אליקים בשילהי פירקין גבי שביעית:"
+  },
+  "Rashi on Nedarim 39a:2:11": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:2:10",
+      "Rashi on Nedarim 39a:2:12"
+    ],
+    "generatedAt": "2026-11-24T05:40:26.099Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:11"
+    ],
+    "sourceText": "<span class=\"parenthesized\">(חס\"ר כא\"ן)</span>"
+  },
+  "Rashi on Nedarim 39a:2:12": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:2:11",
+      "Maharsha: Chidushei Halachot on Nedarim 39a:8",
+      "Rashi on Nedarim 39a:2:9",
+      "Rashi on Nedarim 39a:2:10"
+    ],
+    "generatedAt": "2026-11-24T05:41:25.210Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:12"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהרי עומד ואוכל</strong> - גזירה שמא ישהא בישיבה מרובה והוי הנאת חולה וא\"ת נגזור בעמידה כי היכי דגזרינן התם בעמידה הא לא קשה דאילו התם גזרי' בעמידה אבל הכא דלא מטיא ליה הנאה בעמידה ליכא למיגזר שמא ירבה בעמידה אבל לא בישיבה שנוח לו לזה לישב גזירה שמא ישהא בישיבה:"
+  },
+  "Rashi on Nedarim 39a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:36:29.094Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על העמידה לא בעי למשקל</strong> - דעראי הוא דכך הוא בכל מקום ולהכי עומד אבל לא יושב דכיון דליכא שכר [על העמידה] לא מהני ליה כלל:"
+  },
+  "Rashi on Nedarim 39a:2:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:37:00.660Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבעית אימא</strong> - לעולם בשנכסי מבקר אסורין על החולה ואפילו במקום שאין נוטלין שכר על הישיבה ודקאמרת אפי' יושב נמי כדקאמר רבי שמעון בן אליקים לקמן <span class=\"parenthesized\">(נדרים דף מב:)</span> לענין שביעי':"
+  },
+  "Rashi on Nedarim 39a:2:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:37:33.599Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גזירה שמא ישהא בעמידה הכא נמי שמא ישהא בישיבה</strong> - ושהייה דישיבה ודאי הנאה היא לחולה ולהכי לא ישב עמו ואי קשיא אפילו עומד נמי לא גזירה שמא ישהא בעמידה הא לא קשיא דהתם כיון דאכל מפירי דשדה איכא למימר דלמא אגב דאכיל שהייה תמן אע\"ג דקאי והכא דלא אכל משום הכי קאי: <span class=\"parenthesized\">(לא מצאתי יותר מזה הלשון וזהו אמר ליה)</span>:"
+  },
+  "Rashi on Nedarim 39a:2:5": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:2:3",
+      "Rashi on Nedarim 39a:2:4",
+      "Rashi on Nedarim 39a:2:1",
+      "Rashi on Nedarim 39a:2:2",
+      "Nedarim 39a:2"
+    ],
+    "generatedAt": "2026-11-24T05:38:11.022Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו יושב נמי</strong> - להוי דהא מבקר מותר בנכסי חולה:"
+  },
+  "Rashi on Nedarim 39a:2:6": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:2:5"
+    ],
+    "generatedAt": "2026-11-24T05:38:35.006Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:6"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו עומד</strong> - דהא אסור בדריסת הרגל:"
+  },
+  "Rashi on Nedarim 39a:2:7": {
+    "dependsOn": [
+      "Rashi on Nedarim 39a:2:6"
+    ],
+    "generatedAt": "2026-11-24T05:39:05.362Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:7"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם בשנכסי מבקר אסורין על החולה</strong> - ומשום הכי עומד אבל לא יושב כדמפרש בגמרא:"
+  },
+  "Rashi on Nedarim 39a:2:8": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:39:23.836Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:8"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום שנוטלין שכר על הישיבה</strong> - דהיושב לפני החולה משתכר פורתא משום דקעביד ליה צוותא בעלמא והלכך בישיבה אסור משום דקא מהני ליה ההוא אגרא דניתיב לאיניש אחרינא דיתיב קמיה:"
+  },
+  "Rashi on Nedarim 39a:2:9": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:39:37.941Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:2:9"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אבל בעמידה דמותר</strong> - משום דלא קמהני ליה ולא מידי דהא לא עביד למיתב אגרא אעמידה:"
+  },
+  "Rashi on Nedarim 39a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:42:03.003Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לעולם בשנכסי חולה אסורין על המבקר</strong> - וכשאין נוטלין שכר על העמידה ולהכי מותר בעמידה דהא לאו מן חיותיה נדר כדאמר לקמן כל המבקר את החולה גורם לו שיחיה ואהכי מותר:"
+  },
+  "Rashi on Nedarim 39a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:42:17.202Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא אפשר בעמידה</strong> - מבקרו בעמידה דמהא לא אדריה אבל בישיבה אדריה:"
+  },
+  "Rashi on Nedarim 39a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:43:09.410Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלה הוא</strong> - המדיר מותר לבקרו:"
+  },
+  "Rashi on Nedarim 39a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:43:26.893Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלה בנו</strong> - מודר שואלו בשוק על עסקי בנו:"
+  },
+  "Rashi on Nedarim 39a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:43:45.916Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">היינו דשני בין הוא לבנו</strong> - דאילו בשחלה הוא מותר ליכנס לשם דהא לא אדריה מן חיותיה אבל כשחלה בנו אינו נכנס לבקרו דהא ליכא חיותא דמדיר:"
+  },
+  "Rashi on Nedarim 39a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:44:51.705Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלא לשמואל דאמר כו' מאי שנא הוא</strong> - דמותר ומ\"ש בנו דאסור הא בעמידה ליכא הנאה כלל אלא ודאי בנכסי חולה אסורין על המבקר מיירי וכדעולא וקשיא לשמואל:"
+  },
+  "Rashi on Nedarim 39a:5:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:45:19.497Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר לך שמואל כו' וברייתא</strong> - מודינא דהכי הוא כדמוקי לה עולא בשנכסי חולה אסורין על המבקר מיהו בהא פליגנא עליה דאיהו מוקי לה בעומד אבל לא ביושב דהא אפשר בעמידה ואנא אמינא דברייתא אפי' יושב שפיר דמי דאמר דלא אדריה מן חיותיה ל\"ש עומד ול\"ש יושב ודיקא נמי מדקתני סתמא חלה הוא נכנס לבקרו אפי' יושב:"
+  },
+  "Rashi on Nedarim 39a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:45:35.286Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Nedarim 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי פסקא</strong> - דמתני' בשנכסי מבקר אסורין על החולה:"
+  },
+  "Tosafot on Nedarim 39a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:35:37.837Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפי' עומד</strong> - דקא מתהני מדריסת הרגל:"
+  },
+  "Tosafot on Nedarim 39a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:35:53.895Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">במקום שנוטלין שכר על הישיבה</strong> - לכך אסור לבקר בחנם אבל בעמידה דאין נוטלין שכר עליה מותר בחנם דמצוה קעביד:"
+  },
+  "Tosafot on Nedarim 39a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:41:45.209Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">על העמידה לא בעי למשקל</strong> - כיון דמצוה הוא ויש לו לעשות בחנם - על הישיבה בעי למשקל ואסור לעשות לו בחנם:"
+  },
+  "Tosafot on Nedarim 39a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:42:39.186Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דלא אדריה מחיותיה</strong> - כלומר היינו טעמא דעומד ואע\"ג דאדריה מן ביתיה לא היה דעתו לאסור עליו ביתו לבא כאן בשביל חיותו לבקרו:"
+  },
+  "Tosafot on Nedarim 39a:3:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:42:52.953Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפשר בעמידה</strong> - והלכך בישיבה לא הוי חיותא שאפשר למבקר להיות בעמידה:"
+  },
+  "Tosafot on Nedarim 39a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:44:07.776Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חלה בנו שואלו בשוק</strong> - דאסור ליכנס בביתו [כיון שהדירו] וס\"ד דברייתא מתפרשת כפי' דמתני':"
+  },
+  "Tosafot on Nedarim 39a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T05:44:29.726Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשלמא לעולא ניחא</strong> - דשרי לבקרו הוא ולבנו אסור אחיותיה דבנו אדרה אלא לשמואל כי היכי דלאביו שרי בעמידה ה\"נ בנו מותר בעמידה:"
+  },
+  "Tosafot on Nedarim 39a:6:1": {
+    "dependsOn": [
+      "Nedarim 39a:6"
+    ],
+    "generatedAt": "2026-11-24T05:46:05.920Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Nedarim 39a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">פסקת</strong> - הדבר [דמתני' בשנכסי] מבקר אסור וברייתא כשחולה אסור הוה ליה לשנות התנא הברייתא בענין דמתניתין:"
+  }
+}
