@@ -23,7 +23,8 @@ import {stripHebrewNonletters} from "../hebrew";
 import {stripAbbreviationMarkup, stripExplanations} from "../js/rashi_tosafot_formatting";
 import {extractRequestedRefs, findBaseSegment, getCommentRefs} from "./context_fetch";
 import {renderPrompt} from "./prompt_template";
-import {AgentError, AgentBackend, getAgentRunner} from "./agent_runner";
+import {AgentError, AgentBackend, getAgentRunner, stopAllActiveAgents} from "./agent_runner";
+import {RsiSignalHandler, setupRsiSignalHandler} from "./signal_handler";
 import {
   extractBase64Images,
   extractBase64ImagesForCritique,
@@ -1017,4 +1018,192 @@ export function recordGenerationForCandidate(
     dependsOn: generated.contextRefsUsed,
     costUsd: generated.costUsd,
   });
+}
+
+export interface ManagedTranslationSignalOptions {
+  signals?: NodeJS.Signals[];
+  gracefulSignals?: NodeJS.Signals[];
+  stopAgents?: (signal?: NodeJS.Signals) => number;
+  logger?: {
+    log: (message: string) => void;
+    error: (message: string) => void;
+  };
+  exit?: (code: number) => void;
+  now?: () => number;
+  duplicateNpmSigintWindowMilliseconds?: number;
+}
+
+export interface ManagedTranslationOptions {
+  isContinuous: boolean;
+  listCandidates: () => TranslationCandidate[];
+  isFresh: (candidate: TranslationCandidate) => boolean;
+  generate: (
+    candidate: TranslationCandidate,
+    executionControl: {
+      signal: AbortSignal;
+      shouldStop: () => boolean;
+    },
+  ) => Promise<GeneratedEdit | undefined>;
+  writeEdit: (candidate: TranslationCandidate, edit: Edit) => void;
+  recordGeneration: (candidate: TranslationCandidate, generated: GeneratedEdit) => void;
+  commitAndPush?: () => Promise<void>;
+  continuous?: {
+    durationMilliseconds: number;
+    checkIntervalMilliseconds?: number;
+    now?: () => number;
+    sleep?: (milliseconds: number) => Promise<void>;
+  };
+  signalOptions?: ManagedTranslationSignalOptions;
+  onSignalHandlerReady?: (signalHandler: RsiSignalHandler) => void;
+}
+
+/**
+ * Coordinates batch or continuous Rashi/Tosafot translation with two-phase SIGINT handling:
+ * a first SIGINT finishes translating the current comment before committing/opening the PR and
+ * exiting, whereas a second SIGINT (or SIGTERM/SIGUSR1/SIGUSR2) immediately cancels active work.
+ */
+export async function runTranslationWithSignalHandling(
+  options: ManagedTranslationOptions,
+): Promise<void> {
+  let stopRequested = false;
+  let cancelRequested = false;
+  const stopAbortController = new AbortController();
+  const cancelAbortController = new AbortController();
+  let activeRunPromise: Promise<unknown> | undefined;
+  let commitLock: Promise<void> = Promise.resolve();
+  let finalCommitPromise: Promise<void> | undefined;
+
+  const logger = options.signalOptions?.logger ?? console;
+  const stopAgents = options.signalOptions?.stopAgents ?? stopAllActiveAgents;
+
+  const serializeCommitAndPush = async (): Promise<void> => {
+    if (!options.commitAndPush) {
+      return;
+    }
+    const commitAction = options.commitAndPush;
+    const nextCommit = commitLock.then(commitAction, commitAction);
+    commitLock = nextCommit.catch(() => {});
+    await nextCommit;
+  };
+
+  const commitFinalPendingWork = (): Promise<void> => {
+    if (!finalCommitPromise) {
+      finalCommitPromise = serializeCommitAndPush();
+    }
+    return finalCommitPromise;
+  };
+
+  const cancelActiveWork = (logPrefix: "Stopped" | "Cancelled") => {
+    stopRequested = true;
+    cancelRequested = true;
+    stopAbortController.abort();
+    cancelAbortController.abort();
+    const stoppedCount = stopAgents();
+    if (logPrefix === "Stopped" || stoppedCount > 0) {
+      logger.log(`[Signal] ${logPrefix} ${stoppedCount} active agent process(es).`);
+    }
+  };
+
+  const signalHandler = setupRsiSignalHandler({
+    signals: options.signalOptions?.signals,
+    gracefulSignals: options.signalOptions?.gracefulSignals,
+    logger,
+    exit: options.signalOptions?.exit,
+    now: options.signalOptions?.now,
+    duplicateNpmSigintWindowMilliseconds:
+      options.signalOptions?.duplicateNpmSigintWindowMilliseconds,
+    onGracefulStop: async () => {
+      stopRequested = true;
+      stopAbortController.abort();
+      if (activeRunPromise) {
+        try {
+          await activeRunPromise;
+        } catch {
+          // Ignore errors during graceful shutdown; completed work will still be committed
+        }
+      }
+    },
+    onStopAgents: async () => {
+      cancelActiveWork("Stopped");
+      if (activeRunPromise) {
+        let fallbackTimer: ReturnType<typeof global.setTimeout> | undefined;
+        try {
+          await Promise.race([
+            activeRunPromise,
+            new Promise<void>(resolve => {
+              fallbackTimer = global.setTimeout(resolve, 5000);
+            }),
+          ]);
+        } catch {
+          // Ignore cancellation errors from stopped agents
+        } finally {
+          if (fallbackTimer !== undefined) {
+            global.clearTimeout(fallbackTimer);
+          }
+        }
+      }
+    },
+    onForceCancel: () => {
+      cancelActiveWork("Cancelled");
+    },
+    onCreatePr: async () => {
+      await commitFinalPendingWork();
+    },
+  });
+
+  options.onSignalHandlerReady?.(signalHandler);
+
+  const sharedDeps = {
+    isFresh: options.isFresh,
+    generate: (candidate: TranslationCandidate) => options.generate(candidate, {
+      signal: cancelAbortController.signal,
+      shouldStop: () => cancelRequested,
+    }),
+    writeEdit: options.writeEdit,
+    recordGeneration: options.recordGeneration,
+    shouldStop: () => stopRequested,
+  };
+
+  function runTranslation(): Promise<unknown> {
+    if (options.isContinuous) {
+      if (!options.continuous) {
+        throw new Error("Continuous translation options are required in continuous mode");
+      }
+      return runContinuousTranslation({
+        ...sharedDeps,
+        listCandidates: options.listCandidates,
+        onProgress: options.commitAndPush ? serializeCommitAndPush : undefined,
+        durationMs: options.continuous.durationMilliseconds,
+        checkIntervalMs: options.continuous.checkIntervalMilliseconds,
+        now: options.continuous.now,
+        sleep: options.continuous.sleep,
+        logger,
+        signal: stopAbortController.signal,
+      });
+    }
+    return translateRashiTosafotComments({
+      ...sharedDeps,
+      listCandidates: options.listCandidates,
+    });
+  }
+
+  try {
+    activeRunPromise = runTranslation();
+    try {
+      await activeRunPromise;
+    } catch (error) {
+      if (!signalHandler.isShuttingDown()) {
+        throw error;
+      }
+    }
+
+    if (!signalHandler.isShuttingDown() && options.commitAndPush) {
+      await commitFinalPendingWork();
+    }
+  } finally {
+    if (signalHandler.isShuttingDown()) {
+      await signalHandler.waitForShutdown();
+    }
+    signalHandler.uninstall();
+  }
 }

@@ -41,11 +41,13 @@ billing.
   file this way. `--section`/`--limit` bound a run to one page / a handful of candidates. Supports
   a continuous mode (`--continuous`, `--duration-hours 24`) that runs as much as possible, pausing
   and checking hourly when quota is exhausted and resuming when available. Listens for termination
-  signals (`SIGINT`, `SIGTERM`, `SIGUSR1`, `SIGUSR2`) to stop all active agents, commit and push
-  pending candidates, create or update the PR, and exit cleanly.
+  signals (`SIGINT`, `SIGTERM`, `SIGUSR1`, `SIGUSR2`): a first `SIGINT` finishes translating the
+  current comment, commits and pushes pending candidates, creates or updates the PR, and exits
+  cleanly; a second `SIGINT` (or `SIGTERM`/`SIGUSR1`/`SIGUSR2`) cancels active agents immediately.
 - `signal_handler.ts` — graceful process shutdown coordinator for RSI runners. Intercepts OS signals,
-  terminates active agent child processes immediately via `agent_runner.ts`, triggers PR creation and
-  pushes for pending work, and finishes the process cleanly (with double-signal immediate force exit).
+  draining the active comment on first `SIGINT` before committing/pushing PR work and exiting cleanly,
+  and immediately cancelling active agent child processes via `agent_runner.ts` and forcing exit
+  on a second `SIGINT` (or immediate-stop signals).
 - `precomputed/rsi_state/triage_log.json` (created on first run) — tracks which issue numbers have
   already been triaged, so re-running doesn't re-comment on the same issue.
 - `precomputed/rsi_state/model_routing.ts` + `model_routing_config.json` — per-task-type model

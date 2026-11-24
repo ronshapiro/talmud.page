@@ -237,6 +237,20 @@ describe("active agent process registry and cancellation", () => {
     expect(getActiveAgentCount()).toBe(0);
   });
 
+  test("stopAllActiveAgents signals the process group when child was registered detached", () => {
+    const processKillSpy = jest.spyOn(process, "kill").mockImplementation(() => true);
+    const detachedChild: any = {pid: 987654, kill: jest.fn(), once: jest.fn()};
+
+    registerActiveChildProcess(detachedChild, {detached: true});
+    const stoppedCount = stopAllActiveAgents("SIGTERM");
+
+    expect(stoppedCount).toBe(1);
+    expect(processKillSpy).toHaveBeenCalledWith(-987654, "SIGTERM");
+    expect(detachedChild.kill).not.toHaveBeenCalled();
+
+    processKillSpy.mockRestore();
+  });
+
   test("isCancelledError correctly detects signal and killed errors", () => {
     expect(isCancelledError(new AgentError("Cancelled", undefined, "claude", true))).toBe(true);
     expect(isCancelledError({killed: true})).toBe(true);
@@ -416,6 +430,40 @@ describe("execFileWithStreaming", () => {
     );
     expect(stdout).toContain("first\nSTOP");
     expect(lines).toContain("STOP");
+  });
+
+  if (process.platform !== "win32") {
+    test("spawns child in its own detached process group so terminal SIGINT does not kill it", async () => {
+      let childProcessId: number | undefined;
+      const {stdout} = await execFileWithStreaming(
+        "node",
+        ["-e", "const {execFileSync} = require('child_process'); console.log(execFileSync('ps', ['-o', 'pgid=', '-p', String(process.pid)], {encoding: 'utf8'}).trim());"],
+        {
+          onChild: child => {
+            childProcessId = child.pid;
+          },
+        },
+      );
+      expect(childProcessId).toBeDefined();
+      expect(stdout.trim()).toBe(String(childProcessId));
+      expect(childProcessId).not.toBe(process.pid);
+    });
+  }
+
+  test("rejects with ETIMEDOUT when command exceeds timeout", async () => {
+    let caughtError: unknown;
+    try {
+      await execFileWithStreaming(
+        "node",
+        ["-e", "setTimeout(() => {}, 5000);"],
+        {timeout: 50},
+      );
+    } catch (error) {
+      caughtError = error;
+    }
+    expect(caughtError).toBeDefined();
+    expect((caughtError as {code?: string}).code).toBe("ETIMEDOUT");
+    expect(isCancelledError(caughtError)).toBe(false);
   });
 });
 
