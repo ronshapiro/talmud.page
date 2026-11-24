@@ -416,6 +416,28 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">אין ידוע אם ולד היה אם לאו תשב לזכר ולנקבה ולנדה</strong> - כלומר כשתראה תהא נדה שאין לה ימי טוהר דשמא לאו ולד הוא. ובגמרא מפרש למה הוזכר זכר הואיל ואין לה דם טוהר דאי משום טומאת לידה הא קתני נקבה:"
   },
+  "Rashi on Niddah 29a:18:1": {
+    "costUsd": 0.0191295,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:35:48.541Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והפילה</strong> - ואינה יודעת מה אם נפל אם רוח שהרי נפל למים:"
+  },
+  "Rashi on Niddah 29a:19:1": {
+    "costUsd": 0.023388,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:36:00.315Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמאי תשב לנדה</strong> - ניתיב לה מיהא ימי טוהר דזכר:"
+  },
   "Rashi on Niddah 29a:1:1": {
     "dependsOn": [
       "Niddah 29a:1",
@@ -431,6 +453,91 @@
       "Rashi on Niddah 29a:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לחלק</strong> - הילכך אי לאו ה\"א ואם לא ממעט טומטום אבל הכא מדה\"ל למכתב אדם תשלחו וכתיב זכר ונקבה ש\"מ לדרשא:"
+  },
+  "Rashi on Niddah 29a:21:1": {
+    "costUsd": 0.021331500000000003,
+    "dependsOn": [
+      "Niddah 29a:21"
+    ],
+    "generatedAt": "2026-11-24T13:36:09.393Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיצאה מלאה</strong> - כשהיתה מעוברת יצתה לאפר:"
+  },
+  "Rashi on Niddah 29a:21:2": {
+    "costUsd": 0.0219045,
+    "dependsOn": [
+      "Niddah 29a:21"
+    ],
+    "generatedAt": "2026-11-24T13:36:20.142Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ובאה</strong> - בו ביום ריקנית:"
+  },
+  "Rashi on Niddah 29a:21:3": {
+    "costUsd": 0.0269685,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:36:31.386Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בכור מספק</strong> - שמא זה היה ולד והבא אחריו אינו בכור או שמא רוח הפילה והבא אחריו בכור מעליא הוא הילכך ספק הוא ויאכל במומו לבעלים ולא לכהן דהמוציא מחבירו עליו הראיה:"
+  },
+  "Rashi on Niddah 29a:22:1": {
+    "costUsd": 0.019575,
+    "dependsOn": [
+      "Niddah 29a:22"
+    ],
+    "generatedAt": "2026-11-24T13:36:40.059Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והאי פשוט הוא</strong> - ויאכל בלא מום:"
+  },
+  "Rashi on Niddah 29a:23:1": {
+    "costUsd": 0.025911075000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:36:52.970Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מטנפות</strong> - יום אחד קודם לידה כעין גלייר\"א:"
+  },
+  "Rashi on Niddah 29a:25:1": {
+    "costUsd": 0.023496,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:37:10.505Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:25:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתיב רבי יוסי</strong> - אדר' יהושע בן לוי:"
+  },
+  "Rashi on Niddah 29a:25:2": {
+    "costUsd": 0.024984,
+    "dependsOn": [
+      "Niddah 29a:25"
+    ],
+    "generatedAt": "2026-11-24T13:37:29.341Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 29a:25:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">טועה</strong> - ממתניתא דמיירי באשה טועה שלא ידעה עת לידתה:"
   },
   "Rashi on Niddah 29a:2:1": {
     "dependsOn": [
@@ -587,5 +694,16 @@
       "Tosafot on Niddah 29a:17:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">תשב לזכר ולנקבה ולנדה</strong> - אע\"ג דהוי ספק ספקא תשב לנקבה דאי מטהרת לה מטומאת נקבה משום ספק ספקא הכי נמי נטהרנה אם ראתה בל\"ד ומ\"א מספק ספקא ולא ניחוש לזכר והוי תרי קולי דסתרן אהדדי כדפרשינן לעיל <span class=\"parenthesized\">(נדה ד' כד:)</span> ומיהו בטועה בגמ' מחמרינן אע\"ג דאיכא כמה ספיקי:"
+  },
+  "Tosafot on Niddah 29a:23:1": {
+    "costUsd": 0.020277,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T13:37:00.869Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 29a:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזו הואיל ולא טנפה</strong> - וכגון שלא שהתה הבהמה בחוץ דאם שהתה אימור טנפה וילדה:"
   }
 }
