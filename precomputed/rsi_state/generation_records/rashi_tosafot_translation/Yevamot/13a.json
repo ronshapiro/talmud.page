@@ -142,6 +142,68 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ב\"ש מתירים</strong> - צרת ערוה להתייבם לאחיו דלית להו הך דרשה דלצרור:"
   },
+  "Rashi on Yevamot 13a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:46:06.843Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בנים בלא סימנים</strong> - והיולדת בקטנות חזקה הביאה סימנים ומשהביאה סימנים בתוך י\"ב לא תמאן דהני סימנים גמורים נינהו דס\"ל לרב זביד תוך זמן כלאחר זמן לענין סימן ולא אמרינן שומא נינהו:"
+  },
+  "Rashi on Yevamot 13a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:46:24.485Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הניחא למ\"ד כו'</strong> - פלוגתא בפ' יוצא דופן <span class=\"parenthesized\">(נדה דף מו.)</span>:"
+  },
+  "Rashi on Yevamot 13a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:48:34.678Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מנא הני מילי</strong> - דצרת צרתה פטורה:"
+  },
+  "Rashi on Yevamot 13a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:49:27.251Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכנסה המגרש ומת</strong> - ונפלה נכרית לפני שלישי שנשוי אחות אשתו של זו הראשונה דהויא להו צרת אחות אשה משנתגרשה צרותיהן מותרות הואיל ולא היתה אחות אשתו של זה צרה לנכרית זו שקודם נשואים של זו נתגרשה:"
+  },
+  "Rashi on Yevamot 13a:6:2": {
+    "dependsOn": [
+      "Rashi on Yevamot 13a:6:1"
+    ],
+    "generatedAt": "2026-11-23T22:49:54.736Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:6:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נתגרשו צרותיהן מותרות</strong> - ואפי' כנס אחיו את הנכרית ולבסוף גירש את בת אחיו דהוו להו צרות זו לזו קודם גירושין אפ\"ה קשרינן ליה לייבומי כדקתני ומתה בתו או נתגרשה הואיל ובשעת נפילה לא הוו צרות זו לזו:"
+  },
+  "Rashi on Yevamot 13a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:50:26.368Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yevamot 13a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תברא</strong> - קשיין אהדדי:"
+  },
   "Rashi on Yevamot 13a:8:2": {
     "dependsOn": [],
     "generatedAt": "2026-10-22T02:54:50.501Z",
@@ -204,6 +266,56 @@
       "Tosafot on Yevamot 13a:13:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לא צרת ערוה שאני כו'</strong> - ה\"נ בשעת נפילה נראית כצרת בתו וא\"ת ומנא ליה דטעמא דרמי בר יחזקאל משום דבשעת נפילה נראית ככלתו דלמא טעמא דרמי בר יחזקאל גופיה משום דרבי אושעיא דאינה ממאנת לזיקתו וי\"ל דע\"כ טעמא דרמי בר יחזקאל משום דבשעת נפילה נראית ככלתו מדנקט אסורה לאביו מכלל דלעלמא שריא ואי טעמא משום דאינה ממאנת לזיקתו אסורה נמי לעלמא וא\"ת א\"כ תקשה ברייתא דרמי בר יחזקאל לר' אושעיא ותירץ הר\"ר משה כהן דאיכא למימר דמיירי כשחלצה ולהכי שריא לעלמא ולא משום דממאנת לזיקתו א\"נ כשמיאנה ביבם אחר שנתייבמה דליכא זיקה ומ\"מ אסורה לאביו משום דבשעת נפילה נראית ככלתו:"
+  },
+  "Tosafot on Yevamot 13a:1:1": {
+    "dependsOn": [
+      "Yevamot 13a:1",
+      "Rashi on Yevamot 13a:1:1",
+      "Rashi on Yevamot 13a:1:2"
+    ],
+    "generatedAt": "2026-11-23T22:47:22.847Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Yevamot 13a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רב זביד אמר אין בנים בלא סימנים</strong> - אומר ר\"י דצריך לפרש דאין עיבור בנים של קיימא מצוי להיות בלא סימנים ומיהו זמנין אתו מדפריך וניבדוק וכן אלא למ\"ד אין חוששין מאי איכא למימר ואם אין בנים כלל בלא סימנים ודאי נשרו וגם לשון חוששין נמי משמע דליכא אלא חששא בעלמא ולא שודאי נשרו ומשום דלא שכיח עיבור בלא סימנים לא מצינו חמותו ממאנת דחוששים לסימנים כדמסיק ואזיל ולהכי קאמר נמי רבה בר ליואי תוך הזמן הזה היא מתה ועוברה מת אע\"פ דפעמים חיה כיון דלא שכיח ובברייתא דרב ביבי דנקט שמא תמות בשביל המיעוט ואע\"ג דרבה בר ליואי לא חש למינקט שמא בשביל מיעוטא וא\"ת ומנין לו לגמרא דרב זביד לא בעי למימר דאין בנים כלל בלא סימנים כדמשמע במילתיה וי\"ל דאם אין בנים כלל בלא סימנים בא למימר א\"כ במאי אתא לפלוגי אדרב ספרא כיון דלדידיה נמי אין בנים כלל בלא סימנים כמו לרב ספרא אלא ודאי אתא למימר דאין הבנים סימן גדלות אלא השערות וכי ליכא שערות לא מחזקינן לה ודאי גדולה ולהכי פריך ולבדוק ומשני חוששין שמא נשרו וחוששין לה בספק גדולה לענין חליצה וקדושין דאורייתא ולענין עונשין ומילי טובא ו<span class=\"rashi-quotation\">בקונטרס</span> פי' דסבר רב זביד דתוך הזמן כלאחר הזמן דלא כהלכתא נראה לר\"י דבעלמא מודה רב זביד דתוך הזמן כלפני הזמן ושאני הכא דע\"י בנים חשבינן לסימנים כאילו הם לאחר זמן כדפרישית נמי לרב ספרא:"
+  },
+  "Tosafot on Yevamot 13a:2:1": {
+    "dependsOn": [
+      "Yevamot 13a:2",
+      "Yevamot 13a:1",
+      "Maharsha: Chidushei Halachot on Yevamot 13a:2",
+      "Yevamot 12b:7",
+      "Yevamot 12b:8"
+    ],
+    "generatedAt": "2026-11-23T22:48:23.139Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Yevamot 13a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משום צער לידה חיישינן</strong> - וא\"ת כיון דאין בנים בלא סימנים משעת העיבור נבדוק קמי לידה ואי ליכא סימנין ליכא למיחש שמא נשרו דאכתי לא בא צער לידה וי\"ל דלאו דוקא נקט צער לידה דה\"ה נמי דמשום צער עיבור חיישינן שמא נשרו ולא נקט צער לידה אלא משום דאקשי ליה ונבדוק את החמות כדי למאן דהיינו אחר לידה להכי נקט צער לידה וה\"ה דאי בדקנה קמי לידה ולא אשכחן דאיכא למיחש דנשרו משום צער עיבור ואי היה מפרש מילתיה דרב זביד דאין לידת בנים בלא סימנים קאמר הוי אתי שפיר הא דנקט צער לידה ולא היינו צריכים לומר משום צער עיבור חיישינן אבל אי אפשר לומר כן דא\"כ לא הוי משני מידי לרבה בר ליואי:"
+  },
+  "Tosafot on Yevamot 13a:5:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:48:59.700Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Yevamot 13a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מתה בתו או נתגרשה</strong> - הא דלא נקט מיאנה או שנמצאת אילונית משום דמתני' אתא לאשמועינן אפילו כנס ולבסוף גירש ומיאנה או שנמצאת אילונית אין שום חדוש דבטלו להו קידושי קמאי וכך לי כנס ולבסוף מיאנה כמו מיאנה ולבסוף כנס א\"נ משום דקאי אאחת מכל העריות האלו ומיאנה או שנמצאת אילונית לא שייך בכל העריות:"
+  },
+  "Tosafot on Yevamot 13a:6:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-23T22:50:13.071Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Yevamot 13a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שלשה אחים שנים וכו'</strong> - לקמן בפרק ד' אחים <span class=\"parenthesized\">(יבמות דף ל. ד\"ה גירש)</span> אפרש לה אמאי נקט שלשה אחים:"
   },
   "Tosafot on Yevamot 13a:9:1": {
     "dependsOn": [],
