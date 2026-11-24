@@ -54,8 +54,6 @@ function SummaryCards({
   isHebrew: boolean;
 }): React.ReactElement {
   const completePercentage = roundPercentage(summary.completePages, summary.totalPages);
-  const partialPercentage = roundPercentage(summary.partialPages, summary.totalPages);
-  const notStartedPercentage = roundPercentage(summary.notStartedPages, summary.totalPages);
 
   return (
     <div className="metrics-grid">
