@@ -2,10 +2,8 @@ import * as yargs from "yargs";
 import {hideBin} from "yargs/helpers";
 import {books} from "../books";
 import {splitOnBookName} from "../refs";
-import {Edit, writeAiEdit} from "../precomputed/ai_edits";
-import {stopAllActiveAgents} from "./agent_runner";
+import {writeAiEdit} from "../precomputed/ai_edits";
 import {commitAndPushPendingCandidates, makeRealCommitPendingDeps} from "./commit_pending";
-import {setupRsiSignalHandler} from "./signal_handler";
 import {getTaskModelConfig} from "../precomputed/rsi_state/model_routing";
 import {
   generateAndRecord,
@@ -13,9 +11,8 @@ import {
   listCandidatesForAllBooks,
   listCandidatesForBook,
   recordGenerationForCandidate,
-  runContinuousTranslation,
+  runTranslationWithSignalHandling,
   TASK_TYPE,
-  translateRashiTosafotComments,
   TranslationCandidate,
 } from "./rashi_tosafot_translation";
 import {LongThreadSessionManager} from "./long_thread_session";
@@ -167,9 +164,6 @@ async function main(): Promise<void> {
 
   const sessionManager = new LongThreadSessionManager();
 
-  let stopRequested = false;
-  let activeRunPromise: Promise<unknown> | undefined;
-
   const performCommitAndPush = async () => {
     console.log("\nCommitting and pushing pending candidates...");
     await commitAndPushPendingCandidates({
@@ -178,57 +172,10 @@ async function main(): Promise<void> {
     }, makeRealCommitPendingDeps({debug: FLAGS.debug}));
   };
 
-  const signalHandler = setupRsiSignalHandler({
-    onStopAgents: async () => {
-      stopRequested = true;
-      const stoppedCount = stopAllActiveAgents();
-      console.log(`[Signal] Stopped ${stoppedCount} active agent process(es).`);
-      if (activeRunPromise) {
-        try {
-          await Promise.race([
-            activeRunPromise,
-            new Promise(resolve => setTimeout(resolve, 5000)),
-          ]);
-        } catch {
-          // Ignore cancellation errors from stopped agents
-        }
-      }
-    },
-    onCreatePr: async () => {
-      await performCommitAndPush();
-    },
-    logger: console,
-  });
-
   console.log(
-    `[Signal] Process PID: ${process.pid}. Send SIGINT, SIGTERM, SIGUSR1, or SIGUSR2 to stop agents and create PR.`);
-
-  const sharedDeps = {
-    isFresh: isFreshTranslation,
-    generate: (candidate: TranslationCandidate) => {
-      if (FLAGS.debug) {
-        console.log(`\n[Candidate] ${candidate.ref}`);
-      }
-      return generateAndRecord(candidate, {
-        backend: effectiveBackend,
-        critiqueBackend: FLAGS.critiqueBackend,
-        critiqueModel: FLAGS.critiqueModel,
-        model: FLAGS.model,
-        modelConfig: FLAGS.modelConfig,
-        debug: FLAGS.debug,
-        sessionManager,
-        shouldStop: () => stopRequested,
-      });
-    },
-    writeEdit: (candidate: TranslationCandidate, edit: Edit) => {
-      if (FLAGS.debug) {
-        console.log(`Saved pending edit for ${candidate.ref}`);
-      }
-      writeAiEdit(candidate.page, candidate.ref, edit);
-    },
-    recordGeneration: recordGenerationForCandidate,
-    shouldStop: () => stopRequested,
-  };
+    `[Signal] Process PID: ${process.pid}. Send SIGINT to finish the current comment and `
+    + "create PR (send SIGINT twice to cancel and quit immediately), or SIGTERM/SIGUSR1/SIGUSR2 "
+    + "to stop immediately.");
 
   function listBatchCandidates(): TranslationCandidate[] {
     let candidates = getCandidates();
@@ -246,39 +193,44 @@ async function main(): Promise<void> {
     return sliced;
   }
 
-  function runTranslation(): Promise<unknown> {
-    if (isContinuous) {
-      return runContinuousTranslation({
-        ...sharedDeps,
-        listCandidates: getCandidates,
-        onProgress: FLAGS.push ? performCommitAndPush : undefined,
-        durationMs: durationHours * 60 * 60 * 1000,
-        checkIntervalMs,
+  await runTranslationWithSignalHandling({
+    isContinuous,
+    listCandidates: isContinuous ? getCandidates : listBatchCandidates,
+    isFresh: isFreshTranslation,
+    generate: (candidate, executionControl) => {
+      if (FLAGS.debug) {
+        console.log(`\n[Candidate] ${candidate.ref}`);
+      }
+      return generateAndRecord(candidate, {
+        backend: effectiveBackend,
+        critiqueBackend: FLAGS.critiqueBackend,
+        critiqueModel: FLAGS.critiqueModel,
+        model: FLAGS.model,
+        modelConfig: FLAGS.modelConfig,
+        debug: FLAGS.debug,
+        sessionManager,
+        signal: executionControl.signal,
+        shouldStop: executionControl.shouldStop,
       });
-    }
-    return translateRashiTosafotComments({
-      ...sharedDeps,
-      listCandidates: listBatchCandidates,
-    });
-  }
-
-  try {
-    activeRunPromise = runTranslation();
-    await activeRunPromise;
-
-    if (FLAGS.push && !signalHandler.isShuttingDown()) {
-      await performCommitAndPush();
-    }
-
-    if (signalHandler.isShuttingDown()) {
-      // Signal handler is in the middle of creating PR and exiting cleanly
-      await new Promise(() => {});
-    }
-  } finally {
-    if (!signalHandler.isShuttingDown()) {
-      signalHandler.uninstall();
-    }
-  }
+    },
+    writeEdit: (candidate, edit) => {
+      if (FLAGS.debug) {
+        console.log(`Saved pending edit for ${candidate.ref}`);
+      }
+      writeAiEdit(candidate.page, candidate.ref, edit);
+    },
+    recordGeneration: recordGenerationForCandidate,
+    commitAndPush: FLAGS.push ? performCommitAndPush : undefined,
+    continuous: isContinuous
+      ? {
+        durationMilliseconds: durationHours * 60 * 60 * 1000,
+        checkIntervalMilliseconds: checkIntervalMs,
+      }
+      : undefined,
+    signalOptions: {
+      logger: console,
+    },
+  });
 }
 
 main().catch(error => {

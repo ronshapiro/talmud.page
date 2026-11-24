@@ -1,4 +1,4 @@
-import {ChildProcess, execFile} from "child_process";
+import {ChildProcess, spawn} from "child_process";
 import * as fs from "fs";
 import * as os from "os";
 import * as path from "path";
@@ -69,15 +69,50 @@ export class AgentError extends Error {
 }
 
 const activeChildProcesses = new Set<ChildProcess>();
+const detachedChildProcessIds = new Set<number>();
+
+/**
+ * Terminates a tracked child process, signaling its entire process group if it was spawned
+ * detached on a POSIX platform so subprocesses (e.g. context fetches) are also stopped.
+ */
+export function terminateChildProcess(
+  child: ChildProcess,
+  signal: NodeJS.Signals = "SIGTERM",
+  isDetached = child.pid !== undefined && detachedChildProcessIds.has(child.pid),
+): void {
+  if (isDetached && child.pid !== undefined) {
+    try {
+      process.kill(-child.pid, signal);
+      return;
+    } catch {
+      // Fall back to signaling the direct child if the process group has already exited
+    }
+  }
+  try {
+    child.kill(signal);
+  } catch {
+    // ignore
+  }
+}
 
 /**
  * Registers an active agent child process in the global tracking registry.
  * Returns an unregister cleanup function.
  */
-export function registerActiveChildProcess(child: ChildProcess): () => void {
+export function registerActiveChildProcess(
+  child: ChildProcess,
+  options?: {detached?: boolean},
+): () => void {
   activeChildProcesses.add(child);
+  const childProcessId = child.pid;
+  if (options?.detached && childProcessId !== undefined) {
+    detachedChildProcessIds.add(childProcessId);
+  }
   const cleanup = () => {
     activeChildProcesses.delete(child);
+    if (childProcessId !== undefined) {
+      detachedChildProcessIds.delete(childProcessId);
+    }
   };
   child.once("close", cleanup);
   child.once("exit", cleanup);
@@ -91,14 +126,11 @@ export function registerActiveChildProcess(child: ChildProcess): () => void {
 export function stopAllActiveAgents(signal: NodeJS.Signals = "SIGTERM"): number {
   let count = 0;
   for (const child of Array.from(activeChildProcesses)) {
-    try {
-      child.kill(signal);
-      count++;
-    } catch {
-      // ignore
-    }
+    terminateChildProcess(child, signal);
+    count++;
   }
   activeChildProcesses.clear();
+  detachedChildProcessIds.clear();
   return count;
 }
 
@@ -114,6 +146,7 @@ export function getActiveAgentCount(): number {
  */
 export function clearActiveAgentRegistry(): void {
   activeChildProcesses.clear();
+  detachedChildProcessIds.clear();
 }
 
 /**
@@ -405,21 +438,80 @@ export function execFileWithStreaming(
     let lineBuffer = "";
     let accumulatedStdout = "";
     let accumulatedStderr = "";
+    let accumulatedStdoutBytes = 0;
+    let accumulatedStderrBytes = 0;
     let streamError: Error | undefined;
     let terminatedDueToCompletion = false;
+    let settled = false;
+    let timedOut = false;
+    let maxBufferExceeded = false;
+    let killedBySignal: NodeJS.Signals | undefined;
+    let timeoutTimer: NodeJS.Timeout | undefined;
     let forceKillTimer: NodeJS.Timeout | undefined;
 
-    const child = execFile(file, args, {
+    // Isolate agent subprocesses into their own process group on POSIX so a first terminal Ctrl-C
+    // (SIGINT to the foreground process group) only hits the orchestrator and lets the active
+    // comment finish instead of killing the agent mid-flight.
+    const useDetachedGroup = process.platform !== "win32";
+    const maxBufferBytes = options.maxBuffer ?? 1024 * 1024;
+
+    const child = spawn(file, args, {
       cwd: options.cwd,
       env: options.env,
-      timeout: options.timeout,
-      maxBuffer: options.maxBuffer,
-    }, (error, stdout, stderr) => {
+      detached: useDetachedGroup,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+
+    const killSpawnedChild = (signal: NodeJS.Signals) => {
+      terminateChildProcess(child, signal, useDetachedGroup);
+    };
+
+    const clearTimers = () => {
+      if (timeoutTimer) {
+        clearTimeout(timeoutTimer);
+        timeoutTimer = undefined;
+      }
       if (forceKillTimer) {
         clearTimeout(forceKillTimer);
         forceKillTimer = undefined;
       }
-      if (options.onStdoutLine && lineBuffer.trim() && !streamError) {
+    };
+
+    if (options.timeout && options.timeout > 0) {
+      timeoutTimer = setTimeout(() => {
+        timedOut = true;
+        killedBySignal = "SIGTERM";
+        killSpawnedChild("SIGTERM");
+        forceKillTimer = setTimeout(() => {
+          killSpawnedChild("SIGKILL");
+        }, 1500);
+        if (typeof forceKillTimer?.unref === "function") {
+          forceKillTimer.unref();
+        }
+      }, options.timeout);
+      if (typeof timeoutTimer?.unref === "function") {
+        timeoutTimer.unref();
+      }
+    }
+
+    options.onChild?.(child);
+
+    child.on("error", spawnError => {
+      if (settled) return;
+      settled = true;
+      clearTimers();
+      const executionError = spawnError as Error & {stdout?: string; stderr?: string};
+      executionError.stdout = accumulatedStdout;
+      executionError.stderr = accumulatedStderr;
+      reject(executionError);
+    });
+
+    child.on("close", (exitCode, terminationSignal) => {
+      if (settled) return;
+      settled = true;
+      clearTimers();
+
+      if (options.onStdoutLine && lineBuffer.trim() && !streamError && !maxBufferExceeded) {
         try {
           options.onStdoutLine(lineBuffer);
         } catch (lineError) {
@@ -427,24 +519,63 @@ export function execFileWithStreaming(
         }
         lineBuffer = "";
       }
-      const finalStdout = stdout || accumulatedStdout;
-      const finalStderr = stderr || accumulatedStderr;
 
       if (streamError) {
         reject(streamError);
       } else if (terminatedDueToCompletion) {
-        resolve({stdout: finalStdout, stderr: finalStderr});
-      } else if (error) {
-        const executionError = error as Error & {stdout?: string; stderr?: string};
-        executionError.stdout = finalStdout;
-        executionError.stderr = finalStderr;
+        resolve({stdout: accumulatedStdout, stderr: accumulatedStderr});
+      } else if (timedOut) {
+        const timeoutError = new Error(
+          `Command timed out after ${options.timeout}ms`,
+        ) as Error & {
+          code?: string;
+          killed?: boolean;
+          signal?: NodeJS.Signals;
+          stdout?: string;
+          stderr?: string;
+        };
+        timeoutError.code = "ETIMEDOUT";
+        timeoutError.killed = true;
+        timeoutError.signal = killedBySignal ?? "SIGTERM";
+        timeoutError.stdout = accumulatedStdout;
+        timeoutError.stderr = accumulatedStderr;
+        reject(timeoutError);
+      } else if (maxBufferExceeded) {
+        const bufferError = new Error("stdout/stderr maxBuffer length exceeded") as Error & {
+          code?: string;
+          killed?: boolean;
+          signal?: NodeJS.Signals;
+          stdout?: string;
+          stderr?: string;
+        };
+        bufferError.code = "ERR_CHILD_PROCESS_STDIO_MAXBUFFER";
+        bufferError.killed = true;
+        bufferError.signal = killedBySignal ?? "SIGTERM";
+        bufferError.stdout = accumulatedStdout;
+        bufferError.stderr = accumulatedStderr;
+        reject(bufferError);
+      } else if (exitCode !== 0 || terminationSignal !== null) {
+        const signalDescription = terminationSignal ? ` with signal ${terminationSignal}` : "";
+        const exitDescription = exitCode !== null ? ` with exit code ${exitCode}` : "";
+        const executionError = new Error(
+          `Command failed${exitDescription}${signalDescription}: ${file}`,
+        ) as Error & {
+          code?: number | null;
+          killed?: boolean;
+          signal?: NodeJS.Signals | null;
+          stdout?: string;
+          stderr?: string;
+        };
+        executionError.code = exitCode;
+        executionError.killed = terminationSignal !== null;
+        executionError.signal = terminationSignal;
+        executionError.stdout = accumulatedStdout;
+        executionError.stderr = accumulatedStderr;
         reject(executionError);
       } else {
-        resolve({stdout: finalStdout, stderr: finalStderr});
+        resolve({stdout: accumulatedStdout, stderr: accumulatedStderr});
       }
     });
-
-    options.onChild?.(child);
 
     const handleStdoutLine = (line: string) => {
       if (!line.trim()) return;
@@ -456,17 +587,9 @@ export function execFileWithStreaming(
       }
       if (options.shouldTerminateOnStdoutLine?.(line) && !terminatedDueToCompletion) {
         terminatedDueToCompletion = true;
-        try {
-          child.kill("SIGTERM");
-        } catch {
-          // Process already ended
-        }
+        killSpawnedChild("SIGTERM");
         forceKillTimer = setTimeout(() => {
-          try {
-            child.kill("SIGKILL");
-          } catch {
-            // Process already ended
-          }
+          killSpawnedChild("SIGKILL");
         }, 1500);
         if (typeof forceKillTimer?.unref === "function") {
           forceKillTimer.unref();
@@ -476,6 +599,14 @@ export function execFileWithStreaming(
 
     child.stdout?.on("data", (chunk: Buffer | string) => {
       const text = chunk.toString();
+      const chunkByteLength = Buffer.isBuffer(chunk) ? chunk.length : Buffer.byteLength(text);
+      accumulatedStdoutBytes += chunkByteLength;
+      if (accumulatedStdoutBytes > maxBufferBytes) {
+        maxBufferExceeded = true;
+        killedBySignal = "SIGTERM";
+        killSpawnedChild("SIGTERM");
+        return;
+      }
       accumulatedStdout += text;
       if (streamError) return;
       lineBuffer += text;
@@ -488,7 +619,16 @@ export function execFileWithStreaming(
     });
 
     child.stderr?.on("data", (chunk: Buffer | string) => {
-      accumulatedStderr += chunk.toString();
+      const text = chunk.toString();
+      const chunkByteLength = Buffer.isBuffer(chunk) ? chunk.length : Buffer.byteLength(text);
+      accumulatedStderrBytes += chunkByteLength;
+      if (accumulatedStderrBytes > maxBufferBytes) {
+        maxBufferExceeded = true;
+        killedBySignal = "SIGTERM";
+        killSpawnedChild("SIGTERM");
+        return;
+      }
+      accumulatedStderr += text;
     });
   });
 }
@@ -641,7 +781,9 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
   let childProcess: ChildProcess | undefined;
   let unregisterChild: (() => void) | undefined;
   const abortListener = () => {
-    childProcess?.kill("SIGTERM");
+    if (childProcess) {
+      terminateChildProcess(childProcess, "SIGTERM");
+    }
   };
   if (options.signal) {
     options.signal.addEventListener("abort", abortListener, {once: true});
@@ -664,8 +806,13 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
       },
       onChild: (child) => {
         childProcess = child;
-        unregisterChild = registerActiveChildProcess(child);
+        unregisterChild = registerActiveChildProcess(child, {
+          detached: process.platform !== "win32",
+        });
         options.onChild?.(child);
+        if (options.signal?.aborted) {
+          terminateChildProcess(child, "SIGTERM");
+        }
       },
       onStdoutLine: (line) => {
         let parsed: AgyStreamLine;
@@ -695,7 +842,9 @@ export const runHeadlessAgy: AgentRunner = async (prompt, options = {}) => {
                 if (options.debug) {
                   console.log(`    [subcommand blocked] ${cmd}`);
                 }
-                childProcess?.kill("SIGKILL");
+                if (childProcess) {
+                  terminateChildProcess(childProcess, "SIGKILL");
+                }
                 throw new AgentError(
                   `Disallowed command attempted: "${cmd}". Python scripts and external lookups to sefaria.org are blocked.`,
                   undefined,
@@ -892,7 +1041,9 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
   let childProcess: ChildProcess | undefined;
   let unregisterChild: (() => void) | undefined;
   const abortListener = () => {
-    childProcess?.kill("SIGTERM");
+    if (childProcess) {
+      terminateChildProcess(childProcess, "SIGTERM");
+    }
   };
   if (options.signal) {
     options.signal.addEventListener("abort", abortListener, {once: true});
@@ -910,8 +1061,13 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
         maxBuffer: 1024 * 1024 * 32,
         onChild: (child) => {
           childProcess = child;
-          unregisterChild = registerActiveChildProcess(child);
+          unregisterChild = registerActiveChildProcess(child, {
+            detached: process.platform !== "win32",
+          });
           options.onChild?.(child);
+          if (options.signal?.aborted) {
+            terminateChildProcess(child, "SIGTERM");
+          }
         },
         onStdoutLine: (line) => {
           let parsed: {type?: string};
@@ -930,7 +1086,9 @@ export const runHeadlessClaude: AgentRunner = async (prompt, options = {}) => {
                     if (options.debug) {
                       console.log(`    [subcommand blocked] ${cmd}`);
                     }
-                    childProcess?.kill("SIGKILL");
+                    if (childProcess) {
+                      terminateChildProcess(childProcess, "SIGKILL");
+                    }
                     throw new AgentError(
                       `Disallowed command attempted: "${cmd}". Python scripts and external lookups to sefaria.org are blocked.`,
                       undefined,

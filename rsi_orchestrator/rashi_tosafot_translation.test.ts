@@ -6,6 +6,7 @@ import {Edit} from "../precomputed/ai_edits";
 import * as agentRunner from "./agent_runner";
 import * as contextFetch from "./context_fetch";
 import {AgentError} from "./agent_runner";
+import {RsiSignalHandler} from "./signal_handler";
 import {
   CritiqueOutcome,
   CritiqueVerdict,
@@ -25,6 +26,7 @@ import {
   MAX_GENERATION_ATTEMPTS,
   parseJsonResponse,
   runContinuousTranslation,
+  runTranslationWithSignalHandling,
   TranslationCandidate,
   TranslationDeps,
   translateRashiTosafotComments,
@@ -1274,5 +1276,302 @@ describe("base64 image decoding, placeholders, and restoration", () => {
         upsertSpy.mockRestore();
       }
     });
+  });
+});
+
+describe("runTranslationWithSignalHandling", () => {
+  test("first SIGINT finishes the active comment (including critique retry) before committing and exiting 0", async () => {
+    const writtenRefs: string[] = [];
+    const recordedRefs: string[] = [];
+    const startedRefs: string[] = [];
+    const exitCalls: number[] = [];
+    const stopAgents = jest.fn(() => 0);
+    const commitAndPush = jest.fn(async () => {});
+
+    let signalHandler!: RsiSignalHandler;
+    let firstAttemptResolve!: () => void;
+    const firstAttemptGate = new Promise<void>(resolve => {
+      firstAttemptResolve = resolve;
+    });
+    let generationAttemptCount = 0;
+
+    const runPromise = runTranslationWithSignalHandling({
+      isContinuous: false,
+      listCandidates: () => [candidate({ref: "comment-1"}), candidate({ref: "comment-2"})],
+      isFresh: () => false,
+      generate: (currentCandidate, executionControl) => {
+        startedRefs.push(currentCandidate.ref);
+        return generateWithSelfCritique(currentCandidate, {
+          shouldStop: executionControl.shouldStop,
+          generate: async () => {
+            generationAttemptCount++;
+            if (generationAttemptCount === 1) {
+              await firstAttemptGate;
+            }
+            expect(executionControl.signal.aborted).toBe(false);
+            expect(executionControl.shouldStop()).toBe(false);
+            return generated();
+          },
+          critique: async () => (
+            generationAttemptCount === 1 ? invalidOutcome : validOutcome
+          ),
+        });
+      },
+      writeEdit: currentCandidate => {
+        writtenRefs.push(currentCandidate.ref);
+      },
+      recordGeneration: currentCandidate => {
+        recordedRefs.push(currentCandidate.ref);
+      },
+      commitAndPush,
+      signalOptions: {
+        signals: [],
+        stopAgents,
+        logger: {log: () => {}, error: () => {}},
+        exit: code => {
+          exitCalls.push(code);
+        },
+      },
+      onSignalHandlerReady: handler => {
+        signalHandler = handler;
+      },
+    });
+
+    // Wait for first generate attempt to enter firstAttemptGate
+    await Promise.resolve();
+    await Promise.resolve();
+    expect(startedRefs).toEqual(["comment-1"]);
+
+    // Send first SIGINT while comment-1 is mid-translation
+    const sigintPromise = signalHandler.handleSignal("SIGINT");
+    expect(stopAgents).not.toHaveBeenCalled();
+    expect(commitAndPush).not.toHaveBeenCalled();
+
+    // Release first attempt; critique rejects once, then retry succeeds to finish comment-1
+    firstAttemptResolve();
+    await Promise.all([runPromise, sigintPromise]);
+
+    expect(generationAttemptCount).toBe(2);
+    expect(startedRefs).toEqual(["comment-1"]);
+    expect(writtenRefs).toEqual(["comment-1"]);
+    expect(recordedRefs).toEqual(["comment-1"]);
+    expect(stopAgents).not.toHaveBeenCalled();
+    expect(commitAndPush).toHaveBeenCalledTimes(1);
+    expect(exitCalls).toEqual([0]);
+  });
+
+  test("second SIGINT cancels the active comment immediately and exits 130 without committing", async () => {
+    const writtenRefs: string[] = [];
+    const exitCalls: number[] = [];
+    const stopAgents = jest.fn(() => 1);
+    const commitAndPush = jest.fn(async () => {});
+
+    let signalHandler!: RsiSignalHandler;
+    let capturedAbortSignal!: AbortSignal;
+    let capturedShouldStop!: () => boolean;
+
+    const runPromise = runTranslationWithSignalHandling({
+      isContinuous: false,
+      listCandidates: () => [candidate({ref: "comment-1"}), candidate({ref: "comment-2"})],
+      isFresh: () => false,
+      generate: (_currentCandidate, executionControl) => {
+        capturedAbortSignal = executionControl.signal;
+        capturedShouldStop = executionControl.shouldStop;
+        return new Promise((_resolve, reject) => {
+          executionControl.signal.addEventListener("abort", () => {
+            reject(new AgentError("Agent execution was cancelled", undefined, "claude", true));
+          }, {once: true});
+        });
+      },
+      writeEdit: currentCandidate => {
+        writtenRefs.push(currentCandidate.ref);
+      },
+      recordGeneration: () => {},
+      commitAndPush,
+      signalOptions: {
+        signals: [],
+        stopAgents,
+        logger: {log: () => {}, error: () => {}},
+        exit: code => {
+          exitCalls.push(code);
+        },
+      },
+      onSignalHandlerReady: handler => {
+        signalHandler = handler;
+      },
+    });
+
+    await Promise.resolve();
+    await Promise.resolve();
+
+    // First SIGINT starts graceful drain without aborting active comment
+    const firstSigint = signalHandler.handleSignal("SIGINT");
+    expect(capturedAbortSignal.aborted).toBe(false);
+    expect(capturedShouldStop()).toBe(false);
+    expect(stopAgents).not.toHaveBeenCalled();
+
+    // Second SIGINT immediately cancels active comment and forces exit 130
+    await signalHandler.handleSignal("SIGINT");
+    expect(capturedAbortSignal.aborted).toBe(true);
+    expect(capturedShouldStop()).toBe(true);
+    expect(stopAgents).toHaveBeenCalledTimes(1);
+    expect(exitCalls).toEqual([130]);
+
+    await Promise.all([runPromise, firstSigint]);
+
+    expect(writtenRefs).toEqual([]);
+    expect(commitAndPush).not.toHaveBeenCalled();
+    expect(exitCalls).toEqual([130]);
+  });
+
+  test("first SIGINT wakes continuous translation from rate-limit sleep immediately and exits 0", async () => {
+    const exitCalls: number[] = [];
+    const stopAgents = jest.fn(() => 0);
+    const commitAndPush = jest.fn(async () => {});
+    let signalHandler!: RsiSignalHandler;
+    let enteredSleepResolve!: () => void;
+    const enteredSleep = new Promise<void>(resolve => {
+      enteredSleepResolve = resolve;
+    });
+
+    const startTimestamp = Date.now();
+    const runPromise = runTranslationWithSignalHandling({
+      isContinuous: true,
+      listCandidates: () => [candidate({ref: "comment-1"})],
+      isFresh: () => false,
+      generate: async () => {
+        enteredSleepResolve();
+        throw new AgentError("quota exceeded", 429, "claude");
+      },
+      writeEdit: () => {},
+      recordGeneration: () => {},
+      commitAndPush,
+      continuous: {
+        durationMilliseconds: 24 * 60 * 60 * 1000,
+        checkIntervalMilliseconds: 60 * 60 * 1000,
+      },
+      signalOptions: {
+        signals: [],
+        stopAgents,
+        logger: {log: () => {}, error: () => {}},
+        exit: code => {
+          exitCalls.push(code);
+        },
+      },
+      onSignalHandlerReady: handler => {
+        signalHandler = handler;
+      },
+    });
+
+    await enteredSleep;
+    // Let runContinuousTranslation enter its rate-limit sleep
+    await new Promise(resolve => setTimeout(resolve, 10));
+
+    await signalHandler.handleSignal("SIGINT");
+    await runPromise;
+
+    expect(Date.now() - startTimestamp).toBeLessThan(2000);
+    expect(stopAgents).not.toHaveBeenCalled();
+    expect(exitCalls).toEqual([0]);
+  });
+
+  test("SIGTERM immediately cancels active comment, commits earlier completed work, and exits 0", async () => {
+    const writtenRefs: string[] = [];
+    const exitCalls: number[] = [];
+    const stopAgents = jest.fn(() => 1);
+    const commitAndPush = jest.fn(async () => {});
+    let signalHandler!: RsiSignalHandler;
+    let secondStartedResolve!: () => void;
+    const secondStarted = new Promise<void>(resolve => {
+      secondStartedResolve = resolve;
+    });
+
+    const runPromise = runTranslationWithSignalHandling({
+      isContinuous: false,
+      listCandidates: () => [candidate({ref: "comment-1"}), candidate({ref: "comment-2"})],
+      isFresh: () => false,
+      generate: async (currentCandidate, executionControl) => {
+        if (currentCandidate.ref === "comment-1") {
+          return generated();
+        }
+        secondStartedResolve();
+        return new Promise((_resolve, reject) => {
+          executionControl.signal.addEventListener("abort", () => {
+            reject(new AgentError("Agent execution was cancelled", undefined, "claude", true));
+          }, {once: true});
+        });
+      },
+      writeEdit: currentCandidate => {
+        writtenRefs.push(currentCandidate.ref);
+      },
+      recordGeneration: () => {},
+      commitAndPush,
+      signalOptions: {
+        signals: [],
+        stopAgents,
+        logger: {log: () => {}, error: () => {}},
+        exit: code => {
+          exitCalls.push(code);
+        },
+      },
+      onSignalHandlerReady: handler => {
+        signalHandler = handler;
+      },
+    });
+
+    await secondStarted;
+    await signalHandler.handleSignal("SIGTERM");
+    await runPromise;
+
+    expect(writtenRefs).toEqual(["comment-1"]);
+    expect(stopAgents).toHaveBeenCalledTimes(1);
+    expect(commitAndPush).toHaveBeenCalledTimes(1);
+    expect(exitCalls).toEqual([0]);
+  });
+
+  test("serializes commitAndPush if SIGINT arrives while final commit is already in progress", async () => {
+    const exitCalls: number[] = [];
+    let signalHandler!: RsiSignalHandler;
+    let commitStartedResolve!: () => void;
+    const commitStarted = new Promise<void>(resolve => {
+      commitStartedResolve = resolve;
+    });
+    let commitFinishResolve!: () => void;
+    const commitFinish = new Promise<void>(resolve => {
+      commitFinishResolve = resolve;
+    });
+    const commitAndPush = jest.fn(async () => {
+      commitStartedResolve();
+      await commitFinish;
+    });
+
+    const runPromise = runTranslationWithSignalHandling({
+      isContinuous: false,
+      listCandidates: () => [candidate({ref: "comment-1"})],
+      isFresh: () => false,
+      generate: async () => generated(),
+      writeEdit: () => {},
+      recordGeneration: () => {},
+      commitAndPush,
+      signalOptions: {
+        signals: [],
+        logger: {log: () => {}, error: () => {}},
+        exit: code => {
+          exitCalls.push(code);
+        },
+      },
+      onSignalHandlerReady: handler => {
+        signalHandler = handler;
+      },
+    });
+
+    await commitStarted;
+    const sigintPromise = signalHandler.handleSignal("SIGINT");
+    commitFinishResolve();
+
+    await Promise.all([runPromise, sigintPromise]);
+
+    expect(commitAndPush).toHaveBeenCalledTimes(1);
+    expect(exitCalls).toEqual([0]);
   });
 });
