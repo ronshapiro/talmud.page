@@ -76,39 +76,6 @@ function SummaryCards({
         </span>
       </div>
 
-      <div className="metric-card card-partial">
-        <div className="metric-card-top-bar" />
-        <div className="metric-header">
-          <span className="metric-label">
-            {isHebrew ? "דפים בתהליך" : "Partially Complete"}
-          </span>
-          <span className="metric-pill" />
-        </div>
-        <span className="metric-value">
-          {summary.partialPages.toLocaleString()}
-        </span>
-        <span className="metric-subtext">
-          <span className="metric-subtext-highlight">{partialPercentage}%</span>{" "}
-          {isHebrew ? "עם תרגום חלקי" : "in active translation"}
-        </span>
-      </div>
-
-      <div className="metric-card card-to-go">
-        <div className="metric-card-top-bar" />
-        <div className="metric-header">
-          <span className="metric-label">
-            {isHebrew ? "דפים שנותרו" : "Not Started Yet"}
-          </span>
-          <span className="metric-pill" />
-        </div>
-        <span className="metric-value">
-          {summary.notStartedPages.toLocaleString()}
-        </span>
-        <span className="metric-subtext">
-          {notStartedPercentage}% {isHebrew ? "טרם תורגמו" : "to be translated"}
-        </span>
-      </div>
-
       <div className="metric-card card-comments">
         <div className="metric-card-top-bar" />
         <div className="metric-header">
@@ -125,71 +92,6 @@ function SummaryCards({
           {summary.totalComments.toLocaleString()} (
           <span className="metric-subtext-highlight">{summary.percentTranslatedComments}%</span>)
         </span>
-      </div>
-    </div>
-  );
-}
-
-function OverallProgressBar({
-  summary,
-  isHebrew,
-}: {
-  summary: TranslationProgressSummary;
-  isHebrew: boolean;
-}): React.ReactElement {
-  const completeWidthPercentage = summary.totalPages > 0
-    ? (summary.completePages / summary.totalPages) * 100
-    : 0;
-  const partialWidthPercentage = summary.totalPages > 0
-    ? (summary.partialPages / summary.totalPages) * 100
-    : 0;
-  const toGoWidthPercentage = summary.totalPages > 0
-    ? (summary.notStartedPages / summary.totalPages) * 100
-    : 0;
-
-  return (
-    <div className="overall-progress-section">
-      <div className="overall-progress-title">
-        <span className="overall-progress-heading">
-          {isHebrew ? "התקדמות כוללת בש״ס" : "Overall Talmud Bavli Progress"}
-        </span>
-        <span className="overall-progress-stats">
-          {summary.completePages.toLocaleString()} / {summary.totalPages.toLocaleString()}{" "}
-          {isHebrew ? "דפים" : "pages"} ({summary.percentCompletePages}%)
-        </span>
-      </div>
-
-      <div className="stacked-progress-bar">
-        <div
-          className="progress-segment progress-segment-complete"
-          style={{width: `${completeWidthPercentage}%`}}
-          title={`${summary.completePages} complete pages (${Math.round(completeWidthPercentage * 10) / 10}%)`}
-        />
-        <div
-          className="progress-segment progress-segment-partial"
-          style={{width: `${partialWidthPercentage}%`}}
-          title={`${summary.partialPages} partial pages (${Math.round(partialWidthPercentage * 10) / 10}%)`}
-        />
-        <div
-          className="progress-segment progress-segment-to-go"
-          style={{width: `${toGoWidthPercentage}%`}}
-          title={`${summary.notStartedPages} pages to go (${Math.round(toGoWidthPercentage * 10) / 10}%)`}
-        />
-      </div>
-
-      <div className="progress-legend">
-        <div className="legend-item">
-          <span className="legend-swatch legend-swatch-complete" />
-          <span>{isHebrew ? "הושלם (100%)" : "Complete (100%)"}</span>
-        </div>
-        <div className="legend-item">
-          <span className="legend-swatch legend-swatch-partial" />
-          <span>{isHebrew ? "חלקי (1-99%)" : "In Progress (1-99%)"}</span>
-        </div>
-        <div className="legend-item legend-item-to-go">
-          <span className="legend-swatch legend-swatch-to-go" />
-          <span>{isHebrew ? "טרם החל (0%)" : "Not Started (0%)"}</span>
-        </div>
       </div>
     </div>
   );
@@ -812,8 +714,6 @@ export function TranslationProgressDashboard({
         </div>
 
         <SummaryCards summary={effectiveSummary} isHebrew={isHebrew} />
-
-        <OverallProgressBar summary={effectiveSummary} isHebrew={isHebrew} />
 
         {progressData.timeline && progressData.timeline.length > 0 && (
           <TranslationTimelineChart timeline={progressData.timeline} isHebrew={isHebrew} />
