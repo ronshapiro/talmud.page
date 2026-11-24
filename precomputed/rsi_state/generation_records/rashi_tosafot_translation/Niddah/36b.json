@@ -1,4 +1,123 @@
 {
+  "Rashi on Niddah 36b:10:1": {
+    "costUsd": 0.033215999999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:19:45.331Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל שחל קישויה</strong> - לאו לשון התחלה הוא אלא הכי קאמר כל שקשתה בשלישי אפי' שעה אחת בליל כניסת שלישי אפילו כל היום כולו בשופי ושפתה מליל ד' שעה אחת להשלמת מעת לעת אין זו יולדת בזוב דבעינן שופי כל יום ג' המביאה לידי זבה:"
+  },
+  "Rashi on Niddah 36b:13:1": {
+    "costUsd": 0.023066999999999997,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:19:57.285Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:13:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי יזוב זוב</strong> - זוב משמע זוב מ\"מ ואפי' באונס:"
+  },
+  "Rashi on Niddah 36b:14:1": {
+    "costUsd": 0.017931000000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:20:04.717Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:14:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שיש טהרה אחריו</strong> - דם טוהר:"
+  },
+  "Rashi on Niddah 36b:15:1": {
+    "costUsd": 0.0232605,
+    "dependsOn": [
+      "Niddah 36b:15"
+    ],
+    "generatedAt": "2026-11-24T17:20:15.284Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואונס באשה לא אשכחן</strong> - דטהור:"
+  },
+  "Rashi on Niddah 36b:17:1": {
+    "costUsd": 0.028083,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:20:28.709Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:17:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זובה</strong> - דם יהיה זובה ובנדה משתעי דפרשה ראשונה נאמרה בנדה ושניה בזבה כדכתיב בשניה בלא עת נדתה:"
+  },
+  "Rashi on Niddah 36b:17:2": {
+    "costUsd": 0.024577500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:20:40.453Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:17:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ולא מחמת ולד</strong> - אלמה אמרינן לעיל בימי נדה נדה:"
+  },
+  "Rashi on Niddah 36b:19:1": {
+    "costUsd": 0.029261999999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:20:54.790Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תשב על דמי טהרה</strong> - דהוה ליה למכתב וששים יום וששת ימים דמי טהרה:"
+  },
+  "Rashi on Niddah 36b:19:2": {
+    "costUsd": 0.0183135,
+    "dependsOn": [
+      "Niddah 36b:19"
+    ],
+    "generatedAt": "2026-11-24T17:21:04.030Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שהיא כזו</strong> - שדמיה טהורים:"
+  },
+  "Rashi on Niddah 36b:19:3": {
+    "costUsd": 0.0216975,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:21:12.758Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:19:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיזו זו</strong> - כלומר היכא משכחת זיבה טהורה:"
+  },
+  "Rashi on Niddah 36b:19:4": {
+    "costUsd": 0.043580999999999995,
+    "dependsOn": [
+      "Rashi on Niddah 36b:19:1",
+      "Rashi on Niddah 36b:19:2",
+      "Rashi on Niddah 36b:19:3",
+      "Niddah 36b:19"
+    ],
+    "generatedAt": "2026-11-24T17:21:35.342Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:19:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זו קושי בימי זיבה</strong> - דסמיך אדכתיב דמה מחמת עצמה ולא מחמת ולד:"
+  },
   "Rashi on Niddah 36b:1:1": {
     "costUsd": 0.020338500000000002,
     "dependsOn": [],
@@ -74,6 +193,89 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">וילדה</strong> - איגלאי מילתא דדמים שראתה לא באו מחמת ולד הלכך הרי זו יולדת בזוב אבל אם לא שפתה סמוך ללידתה כל דמים שראתה מחמת ולד הוא ורחמנא טהרינהו מזיבה דכתיב זוב דמה דמה מחמת עצמה ולא דמה מחמת ולד:"
   },
+  "Rashi on Niddah 36b:21:1": {
+    "costUsd": 0.0231525,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:22:00.018Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואפי' בשופי</strong> - ואפי' הפסיק שופי בין קושי ללידה נימא טהורה הואיל ודם בקושי בא:"
+  },
+  "Rashi on Niddah 36b:22:1": {
+    "costUsd": 0.021816000000000002,
+    "dependsOn": [
+      "Niddah 36b:22"
+    ],
+    "generatedAt": "2026-11-24T17:22:08.224Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כוותיה דרב</strong> - נדה ליומא:"
+  },
+  "Rashi on Niddah 36b:22:2": {
+    "costUsd": 0.0212025,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:22:16.708Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:22:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">צנעיה</strong> - הסתר אותו דבר אמור לו שיחזור בו דטהור לגמרי:"
+  },
+  "Rashi on Niddah 36b:22:3": {
+    "costUsd": 0.022695,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:22:26.310Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:22:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גרייה</strong> - ברי\"ש. כלומר גרור ומשוך אותו בדברי טעם וראיות שיחזור בו:"
+  },
+  "Rashi on Niddah 36b:22:4": {
+    "costUsd": 0.028287,
+    "dependsOn": [
+      "Niddah 36b:22"
+    ],
+    "generatedAt": "2026-11-24T17:22:44.665Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:22:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדייה</strong> - הכריתו בשמתא כמו <span class=\"parenthesized\">(דניאל ד)</span> גודו אילנא:"
+  },
+  "Rashi on Niddah 36b:23:1": {
+    "costUsd": 0.0156675,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:23:10.916Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:23:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדידי הוה אמר לי</strong> - דתלמידיה אנא:"
+  },
+  "Rashi on Niddah 36b:23:2": {
+    "costUsd": 0.021946499999999997,
+    "dependsOn": [
+      "Niddah 36b:23"
+    ],
+    "generatedAt": "2026-11-24T17:23:19.994Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:23:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדייה</strong> - שמתיה:"
+  },
   "Rashi on Niddah 36b:2:1": {
     "costUsd": 0.0260265,
     "dependsOn": [],
@@ -96,6 +298,177 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ששפתה מן הצער ולא מן הדם</strong> - דאע\"ג דחזיא דם הוי שופי:"
   },
+  "Rashi on Niddah 36b:3:1": {
+    "costUsd": 0.0195465,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:15:34.846Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כמה הוא קישויה</strong> - דלא אתיא לידי זיבה בכל דמים שתראה:"
+  },
+  "Rashi on Niddah 36b:3:2": {
+    "costUsd": 0.023316,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:15:45.436Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו ארבעים או חמשים יום</strong> - אם לא שפתה יום אחד סמוך ללידה לא אתיא לידי זיבה ולא הויא יולדת בזוב:"
+  },
+  "Rashi on Niddah 36b:3:3": {
+    "costUsd": 0.0300375,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:15:59.154Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:3:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דיה חדשה</strong> - דיה אם נטהר את הקושי חדש אחד היינו תשיעי אבל קשתה שלשה בתוך י\"א ימי זיבה בחדש השמיני ואפי' מקשה והולכת כל תשיעי הרי זו יולדת בזוב מחמת שלשה ימים של שמיני:"
+  },
+  "Rashi on Niddah 36b:4:1": {
+    "costUsd": 0.023604,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:16:09.082Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אטו כל המקשה נדה היא</strong> - אילו קשתה בימי זיבה מי הויא נדה והא אין נדות בימי זוב:"
+  },
+  "Rashi on Niddah 36b:5:1": {
+    "costUsd": 0.029038500000000002,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:16:21.829Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב נדה ליומא</strong> - וה\"ק המקשה ורואה דם בימי זיבה אע\"ג דלא אתיא ביה לידי זיבה מיהו באותו היום אסורה לשמש אבל לערב טובלת ואינה צריכה לשמור יום כנגד יום דרחמנא טהריה לדם קושי:"
+  },
+  "Rashi on Niddah 36b:5:2": {
+    "costUsd": 0.0264285,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:17:49.567Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושמואל אמר</strong> - אף צריכה לשמור יום כנגד יום מדרבנן דחיישינן שמא תשפה ונמצא שלא היה דם קושי מחמת ולד ונמצא משמש עם זבה קטנה דאורייתא וענוש כרת:"
+  },
+  "Rashi on Niddah 36b:6:1": {
+    "costUsd": 0.0213405,
+    "dependsOn": [
+      "Niddah 36b:6"
+    ],
+    "generatedAt": "2026-11-24T17:18:11.880Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינה כלום</strong> - ואפילו באותו היום משמשת:"
+  },
+  "Rashi on Niddah 36b:7:1": {
+    "costUsd": 0.0159495,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:18:17.909Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:7:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימי נדה</strong> - בימים הראוים לנדות:"
+  },
+  "Rashi on Niddah 36b:7:2": {
+    "costUsd": 0.023298,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:18:28.848Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:7:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדה</strong> - דקושי לא טהריה רחמנא אלא מזיבה אבל מנדה לא טהריה כדאמרי' לקמן:"
+  },
+  "Rashi on Niddah 36b:7:3": {
+    "costUsd": 0.01863,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:18:36.853Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:7:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בימי זיבה</strong> - בתוך אחד עשר יום טהורה:"
+  },
+  "Rashi on Niddah 36b:7:4": {
+    "costUsd": 0.0173595,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:18:45.311Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:7:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">והתניא</strong> - בניחותא:"
+  },
+  "Rashi on Niddah 36b:8:1": {
+    "costUsd": 0.024375,
+    "dependsOn": [
+      "Niddah 36b:8"
+    ],
+    "generatedAt": "2026-11-24T17:18:57.385Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ושפתה</strong> - שנים מן הצער ולא מן הדם:"
+  },
+  "Rashi on Niddah 36b:8:2": {
+    "costUsd": 0.0209535,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:19:07.167Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Niddah 36b:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הרי זו יולדת בזוב</strong> - אם ראתה כל שלש הואיל ושופי סמוך ללידה נמצא דם הקושי שלא מחמת ולד:"
+  },
+  "Tosafot on Niddah 36b:19:1": {
+    "costUsd": 0.034965,
+    "dependsOn": [
+      "Niddah 36b:19"
+    ],
+    "generatedAt": "2026-11-24T17:21:50.789Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 36b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואימא קושי בימי נדה</strong> - ור\"ל ס\"ד דמסתבר טפי לאוקומיה בזיבה משום דאשכחן זב אונס דטהור הוא:"
+  },
+  "Tosafot on Niddah 36b:22:1": {
+    "costUsd": 0.042357,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:23:04.939Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 36b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">גדייה</strong> - פרש\"י דרב אסי טעה בין רי\"ש לדלי\"ת ואין נראה אלא נראה דאיהו אמר ליה גדייה בדלי\"ת רפה כלומר משכהו בדברי טעם עד שיחזור כמו <span class=\"parenthesized\">(שמות יב)</span> משכו דמתרגמינן נגודו וכמו <span class=\"parenthesized\">(ב\"ב דף יג.)</span> גוד או איגוד והוא סבר גדייה בדגש כמו גודו אילנא:"
+  },
   "Tosafot on Niddah 36b:2:1": {
     "costUsd": 0.025197,
     "dependsOn": [],
@@ -106,5 +479,29 @@
       "Tosafot on Niddah 36b:2:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">כלילי שבת ויומו</strong> - קים ליה לרבי יהושע דאם לא שפתה לילה ויום אע\"פ ששפתה מעת לעת מחמת ולד היה:"
+  },
+  "Tosafot on Niddah 36b:5:1": {
+    "costUsd": 0.028332,
+    "dependsOn": [],
+    "generatedAt": "2026-11-24T17:18:02.690Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 36b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נדה ליומא</strong> - נראה דאף לבעלה לא חיישינן שמא תשפה דאזלינן בתר רוב נשים מקשות דאינן שפות לילה ויום דהא עובדא דשילא בר אבינא נראה דלבעלה הוי ולא לטהרות:"
+  },
+  "Tosafot on Niddah 36b:8:1": {
+    "costUsd": 0.04807665,
+    "dependsOn": [
+      "Niddah 36b:8"
+    ],
+    "generatedAt": "2026-11-24T17:19:29.796Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Niddah 36b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">או ששפתה וקשתה וחזרה ושפתה</strong> - כדי נסבה דהא מרישא שמעינן לה דקתני קשתה שנים ושפתה יום אחד וכ\"ש הא דטמאה וכן בסיפא לא היה צריך למתני קשתה ושפתה וקשתה כיון דתנא שפתה שנים וקשתה יום אחד דטהורה אי נמי אתא לאשמועינן אע\"ג דלא קשתה כל יום הסמוך ללידה אלא מקצתו וכן ברישא בכי האי גוונא:"
   }
 }
