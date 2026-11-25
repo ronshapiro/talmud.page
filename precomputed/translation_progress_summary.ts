@@ -59,6 +59,42 @@ export function roundPercentage(numerator: number, denominator: number): number 
   return Math.round((numerator / denominator) * 1000) / 10;
 }
 
+const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
+const SEVEN_DAY_WINDOW_DAYS = 7;
+
+function parseUtcDateMilliseconds(dateString: string): number {
+  const [year, month, day] = dateString.split("-").map(Number);
+  return Date.UTC(year, month - 1, day);
+}
+
+/**
+ * Computes the 7-day rolling daily pace (comments/day) for each chronologically ordered timeline
+ * point by summing `dailyCount` across the trailing 7 calendar days (`[date - 6d, date]`) and
+ * dividing by 7 so zero-activity gaps lower the rolling pace accurately.
+ */
+export function computeSevenDayRollingPace(
+  timeline: Pick<TranslationTimelinePoint, "date" | "dailyCount">[],
+): number[] {
+  const dateTimestamps = timeline.map(point => parseUtcDateMilliseconds(point.date));
+  let windowStartIndex = 0;
+  let rollingWindowSum = 0;
+
+  return timeline.map((point, index) => {
+    const windowStartTimestamp = (
+      dateTimestamps[index] - (SEVEN_DAY_WINDOW_DAYS - 1) * MILLISECONDS_PER_DAY
+    );
+    rollingWindowSum += point.dailyCount;
+    while (
+      windowStartIndex <= index
+      && dateTimestamps[windowStartIndex] < windowStartTimestamp
+    ) {
+      rollingWindowSum -= timeline[windowStartIndex].dailyCount;
+      windowStartIndex++;
+    }
+    return rollingWindowSum / SEVEN_DAY_WINDOW_DAYS;
+  });
+}
+
 /**
  * Returns whether a tractate has any Rashi or Tosafot comments to translate. Tractates with zero
  * comments (such as Tamid and Shekalim) are excluded from candidate and overall page totals.

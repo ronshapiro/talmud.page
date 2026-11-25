@@ -68,6 +68,7 @@
   --chart-grid: #f1f5f9;
   --chart-line: #2563eb;
   --chart-line-daily: #f59e0b;
+  --chart-line-seven-day: #059669;
   --chart-gradient-start: rgba(37, 99, 235, 0.16);
   --chart-gradient-end: rgba(37, 99, 235, 0.0);
   --chart-axis: #64748b;
@@ -123,6 +124,7 @@
   --chart-grid: #27272a;
   --chart-line: #60a5fa;
   --chart-line-daily: #fbbf24;
+  --chart-line-seven-day: #10b981;
   --chart-gradient-start: rgba(96, 165, 250, 0.22);
   --chart-gradient-end: rgba(96, 165, 250, 0.0);
   --chart-axis: #a1a1aa;
@@ -453,8 +455,17 @@
   font-weight: 800;
 }
 
+.live-stat-value.live-stat-value-seven-day {
+  color: var(--complete-text);
+}
+
+.live-stat-value.live-stat-value-daily {
+  color: var(--partial-text);
+}
+
 .timeline-toggle-group {
   display: inline-flex;
+  flex-wrap: wrap;
   background-color: var(--surface-secondary);
   border-radius: 10px;
   padding: 3px;
@@ -516,6 +527,14 @@
   fill: none;
   stroke: var(--chart-line-daily);
   stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-line-path-seven-day {
+  fill: none;
+  stroke: var(--chart-line-seven-day);
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }

@@ -1,5 +1,8 @@
 import * as React from "react";
-import {TranslationProgressDashboard} from "../TranslationProgressDashboard";
+import {
+  buildSmoothSvgPath,
+  TranslationProgressDashboard,
+} from "../TranslationProgressDashboard";
 import {
   setSiteLanguage,
   SiteLanguage,
@@ -9,8 +12,18 @@ import {
 import {
   MasechetProgress,
   TranslationProgressData,
+  TranslationTimelinePoint,
 } from "../../precomputed/translation_progress_summary";
-import {flush, mount, query, texts, unmountAll} from "./testing/dom";
+import {
+  click,
+  flush,
+  mount,
+  query,
+  queryAll,
+  queryOrNull,
+  texts,
+  unmountAll,
+} from "./testing/dom";
 import {clearPageEnvironment, installPageEnvironment} from "./testing/page_environment";
 
 function buildMasechet({
@@ -388,5 +401,150 @@ describe("TranslationProgressDashboard zero-comment tractates", () => {
 
     selectSortOrder(container, "alphabetical");
     expect(renderedTractates(container)).toEqual(["Berakhot", "Meilah", "Shekalim", "Tamid"]);
+  });
+});
+
+function buildTimelineProgressData(
+  timeline: TranslationTimelinePoint[],
+): TranslationProgressData {
+  return {
+    ...buildProgressData(),
+    timeline,
+  };
+}
+
+describe("TranslationTimelineChart 7-day rolling pace", () => {
+  const sampleTimeline: TranslationTimelinePoint[] = [
+    {date: "2026-10-10", dailyCount: 700, cumulativeCount: 700},
+    {date: "2026-10-11", dailyCount: 1400, cumulativeCount: 2100},
+    {date: "2026-10-12", dailyCount: 2100, cumulativeCount: 4200},
+    {date: "2026-10-13", dailyCount: 700, cumulativeCount: 4900},
+    {date: "2026-10-14", dailyCount: 0, cumulativeCount: 4900},
+    {date: "2026-10-15", dailyCount: 1400, cumulativeCount: 6300},
+    {date: "2026-10-16", dailyCount: 700, cumulativeCount: 7000},
+    {date: "2026-10-17", dailyCount: 7000, cumulativeCount: 14000},
+  ];
+
+  test("defaults to smooth 7-day pace graph and allows switching between all 3 modes", () => {
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildTimelineProgressData(sampleTimeline)} />,
+    );
+
+    const toggleButtons = queryAll(container, ".timeline-toggle-button");
+    expect(toggleButtons.map(button => button.textContent)).toEqual([
+      "7-Day Pace",
+      "Daily Pace",
+      "Cumulative",
+    ]);
+    expect(toggleButtons[0].classList.contains("active")).toBe(true);
+    expect(toggleButtons[0].getAttribute("aria-pressed")).toBe("true");
+    expect(toggleButtons[1].getAttribute("aria-pressed")).toBe("false");
+    expect(toggleButtons[2].getAttribute("aria-pressed")).toBe("false");
+
+    // 7-day pace on 2026-10-17: (1400 + 2100 + 700 + 0 + 1400 + 700 + 7000) / 7 = 1900
+    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7-day pace");
+    expect(query(container, ".live-stat-value").textContent).toBe("1,900 comments/day");
+
+    const sevenDayPath = queryOrNull(container, ".chart-line-path-seven-day");
+    expect(sevenDayPath).not.toBeNull();
+    expect(sevenDayPath!.getAttribute("d")).toContain(" C ");
+    expect(queryOrNull(container, "path[fill='url(#chartGradientSevenDay)']")).not.toBeNull();
+
+    // Switch to Daily Pace
+    click(toggleButtons[1]);
+    expect(toggleButtons[1].classList.contains("active")).toBe(true);
+    expect(toggleButtons[1].getAttribute("aria-pressed")).toBe("true");
+    expect(query(container, ".live-stat-date").textContent).toBe("Latest day");
+    expect(query(container, ".live-stat-value").textContent).toBe("+7,000 comments");
+
+    const dailyPath = queryOrNull(container, ".chart-line-path-daily");
+    expect(dailyPath).not.toBeNull();
+    expect(dailyPath!.getAttribute("d")).not.toContain(" C ");
+    expect(dailyPath!.getAttribute("d")).toContain(" L ");
+
+    // Switch to Cumulative
+    click(toggleButtons[2]);
+    expect(toggleButtons[2].classList.contains("active")).toBe(true);
+    expect(toggleButtons[2].getAttribute("aria-pressed")).toBe("true");
+    expect(query(container, ".live-stat-date").textContent).toBe("Current total");
+    expect(query(container, ".live-stat-value").textContent).toBe("14,000 comments");
+
+    const cumulativePath = queryOrNull(container, ".chart-line-path");
+    expect(cumulativePath).not.toBeNull();
+    expect(queryOrNull(container, "path[fill='url(#chartGradientCumulative)']")).not.toBeNull();
+  });
+
+  test("updates live stat readout when hovering across points in 7-day mode", () => {
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildTimelineProgressData(sampleTimeline)} />,
+    );
+    const svgElement = query(container, ".timeline-svg");
+    svgElement.getBoundingClientRect = () => ({
+      left: 0,
+      top: 0,
+      width: 840,
+      height: 260,
+      right: 840,
+      bottom: 260,
+      x: 0,
+      y: 0,
+      toJSON: () => ({}),
+    });
+
+    // Hover at the rightmost plot position (index 7 -> 2026-10-17 -> 1,900/day)
+    flush(() => {
+      svgElement.dispatchEvent(new MouseEvent("mousemove", {bubbles: true, clientX: 815}));
+    });
+    expect(query(container, ".live-stat-date").textContent).toBe("Oct 17, 2026");
+    expect(query(container, ".live-stat-value").textContent).toBe(
+      "1,900 comments/day (7-day avg)",
+    );
+
+    flush(() => {
+      svgElement.dispatchEvent(new MouseEvent("mouseout", {bubbles: true}));
+    });
+    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7-day pace");
+  });
+
+  test("renders Hebrew toggle labels and single-point timeline cleanly", () => {
+    setSiteLanguage(SiteLanguage.Hebrew);
+    const singlePointTimeline: TranslationTimelinePoint[] = [
+      {date: "2026-11-01", dailyCount: 700, cumulativeCount: 700},
+    ];
+    const container = mount(
+      <TranslationProgressDashboard initialData={buildTimelineProgressData(singlePointTimeline)} />,
+    );
+
+    const toggleButtons = queryAll(container, ".timeline-toggle-button");
+    expect(toggleButtons.map(button => button.textContent)).toEqual([
+      "ממוצע 7 ימים",
+      "יומי",
+      "מצטבר",
+    ]);
+    expect(query(container, ".live-stat-date").textContent).toBe("קצב 7 ימים אחרון");
+    expect(query(container, ".live-stat-value").textContent).toBe("100 פירושים ליום");
+
+    const pathData = query(container, ".chart-line-path-seven-day").getAttribute("d")!;
+    expect(pathData).not.toContain("NaN");
+    for (const axisLabel of texts(container, ".chart-axis-text")) {
+      expect(axisLabel).not.toContain("NaN");
+    }
+  });
+
+  test("buildSmoothSvgPath preserves monotonicity without overshooting extrema", () => {
+    const pathData = buildSmoothSvgPath([
+      {x: 0, y: 200},
+      {x: 100, y: 50},
+      {x: 200, y: 200},
+      {x: 300, y: 200},
+    ]);
+
+    expect(pathData).toContain(" C ");
+    const coordinatePairs = pathData.match(/-?\d+\.\d+\s+-?\d+\.\d+/g) ?? [];
+    for (const pair of coordinatePairs) {
+      const yValue = Number(pair.split(/\s+/)[1]);
+      expect(yValue).toBeGreaterThanOrEqual(50);
+      expect(yValue).toBeLessThanOrEqual(200);
+    }
   });
 });
