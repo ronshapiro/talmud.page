@@ -68,6 +68,7 @@
   --chart-grid: #f1f5f9;
   --chart-line: #2563eb;
   --chart-line-daily: #f59e0b;
+  --chart-line-seven-day: #059669;
   --chart-gradient-start: rgba(37, 99, 235, 0.16);
   --chart-gradient-end: rgba(37, 99, 235, 0.0);
   --chart-axis: #64748b;
@@ -123,6 +124,7 @@
   --chart-grid: #27272a;
   --chart-line: #60a5fa;
   --chart-line-daily: #fbbf24;
+  --chart-line-seven-day: #10b981;
   --chart-gradient-start: rgba(96, 165, 250, 0.22);
   --chart-gradient-end: rgba(96, 165, 250, 0.0);
   --chart-axis: #a1a1aa;
@@ -404,10 +406,15 @@
 .timeline-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.timeline-title-group {
+  flex: 1 1 280px;
+  min-width: 0;
 }
 
 .timeline-title-group h2 {
@@ -416,45 +423,74 @@
   margin: 0 0 4px 0;
   color: var(--text-primary);
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .timeline-subtitle {
   font-size: 0.88rem;
   color: var(--text-muted);
   margin: 0;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
-/* Live dynamic readout in the header — NEVER blocks data points */
-.timeline-live-stat {
+.timeline-stat-row {
   display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+/* Live dynamic readout in its own row — NEVER blocks data points, reflows controls, or overflows */
+.timeline-live-stat {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   background-color: var(--surface-secondary);
   border: 1px solid var(--surface-border);
   border-radius: 10px;
   padding: 6px 14px;
   font-size: 0.88rem;
   font-feature-settings: "tnum";
+  overflow-wrap: break-word;
 }
 
 .live-stat-date {
   color: var(--text-muted);
   font-weight: 600;
+  min-width: 0;
 }
 
 .live-stat-divider {
   width: 1px;
   height: 14px;
+  flex-shrink: 0;
   background-color: var(--surface-border);
 }
 
 .live-stat-value {
   color: var(--blue-text);
   font-weight: 800;
+  min-width: 0;
+}
+
+.live-stat-value.live-stat-value-seven-day {
+  color: var(--complete-text);
+}
+
+.live-stat-value.live-stat-value-daily {
+  color: var(--partial-text);
 }
 
 .timeline-toggle-group {
   display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
   background-color: var(--surface-secondary);
   border-radius: 10px;
   padding: 3px;
@@ -516,6 +552,14 @@
   fill: none;
   stroke: var(--chart-line-daily);
   stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-line-path-seven-day {
+  fill: none;
+  stroke: var(--chart-line-seven-day);
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -892,5 +936,21 @@
   .timeline-header-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .timeline-title-group {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .timeline-live-stat {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 100%;
+  }
+  .live-stat-divider {
+    display: none;
   }
 }

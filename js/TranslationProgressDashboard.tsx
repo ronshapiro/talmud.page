@@ -10,6 +10,7 @@ import {
 } from "./settings";
 import {
   computeProgressSummary,
+  computeSevenDayRollingPace,
   hasTranslatableComments,
   MasechetProgress,
   PageProgress,
@@ -19,7 +20,7 @@ import {
   TranslationTimelinePoint,
 } from "../precomputed/translation_progress_summary";
 
-type TimelineDisplayMode = "cumulative" | "daily";
+export type TimelineDisplayMode = "seven_day" | "daily" | "cumulative";
 
 function BackButton({onClick}: {onClick: () => void}): React.ReactElement {
   const useHebrew = isSiteLanguageHebrew();
@@ -113,6 +114,198 @@ function formatDateLabel(dateString: string, isHebrew: boolean): string {
   return `${monthName} ${year}`;
 }
 
+interface ChartCoordinate {
+  x: number;
+  y: number;
+  value: number;
+  point: TranslationTimelinePoint;
+}
+
+const Y_GRID_STEPS = 4;
+const NICE_AXIS_STEP_FACTORS = [1, 1.2, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10];
+
+function computeNiceYAxisMaximum(maxDataValue: number): number {
+  const effectiveMax = Math.max(maxDataValue, 100);
+  const rawStep = effectiveMax / Y_GRID_STEPS;
+  const stepMagnitude = 10 ** Math.floor(Math.log10(rawStep));
+  const normalizedStep = rawStep / stepMagnitude;
+  const matchingFactor = (
+    NICE_AXIS_STEP_FACTORS.find(factor => factor >= normalizedStep) ?? 10
+  );
+  return matchingFactor * stepMagnitude * Y_GRID_STEPS;
+}
+
+function formatYAxisLabel(value: number): string {
+  if (value >= 1000) {
+    return `${Number((value / 1000).toFixed(2))}k`;
+  }
+  return value.toLocaleString();
+}
+
+function formatSevenDayPaceValue(value: number): string {
+  if (value > 0 && value < 1) {
+    return (Math.round(value * 10) / 10).toLocaleString();
+  }
+  return Math.round(value).toLocaleString();
+}
+
+function buildLinearSvgPath(coordinates: Pick<ChartCoordinate, "x" | "y">[]): string {
+  return coordinates.map((coordinate, index) => (
+    `${index === 0 ? "M" : "L"} ${coordinate.x.toFixed(1)} ${coordinate.y.toFixed(1)}`
+  )).join(" ");
+}
+
+/**
+ * Generates an SVG path using Fritsch-Carlson monotone cubic Hermite interpolation so the
+ * smoothed curve passes through every data point without overshooting extrema or dipping below 0.
+ */
+export function buildSmoothSvgPath(coordinates: Pick<ChartCoordinate, "x" | "y">[]): string {
+  const pointCount = coordinates.length;
+  if (pointCount <= 2) {
+    return buildLinearSvgPath(coordinates);
+  }
+
+  const segmentWidths: number[] = [];
+  const segmentSlopes: number[] = [];
+  for (let i = 0; i < pointCount - 1; i++) {
+    const segmentWidth = coordinates[i + 1].x - coordinates[i].x;
+    const heightDelta = coordinates[i + 1].y - coordinates[i].y;
+    segmentWidths.push(segmentWidth);
+    segmentSlopes.push(segmentWidth === 0 ? 0 : heightDelta / segmentWidth);
+  }
+
+  const tangents = new Array<number>(pointCount).fill(0);
+  const [firstSlope] = segmentSlopes;
+  tangents[0] = firstSlope;
+  tangents[pointCount - 1] = segmentSlopes[pointCount - 2];
+
+  for (let i = 1; i < pointCount - 1; i++) {
+    const previousSlope = segmentSlopes[i - 1];
+    const nextSlope = segmentSlopes[i];
+    if (previousSlope * nextSlope <= 0) {
+      tangents[i] = 0;
+    } else {
+      const previousWidth = segmentWidths[i - 1];
+      const nextWidth = segmentWidths[i];
+      const previousWeight = 2 * nextWidth + previousWidth;
+      const nextWeight = nextWidth + 2 * previousWidth;
+      tangents[i] = (
+        (previousWeight + nextWeight)
+        / (previousWeight / previousSlope + nextWeight / nextSlope)
+      );
+    }
+  }
+
+  // Clamp adjacent tangent ratios to the Fritsch-Carlson circle (radius 3) for monotonicity.
+  for (let i = 0; i < pointCount - 1; i++) {
+    const slope = segmentSlopes[i];
+    if (slope === 0) {
+      tangents[i] = 0;
+      tangents[i + 1] = 0;
+    } else {
+      const previousRatio = tangents[i] / slope;
+      const nextRatio = tangents[i + 1] / slope;
+      const squaredMagnitude = previousRatio * previousRatio + nextRatio * nextRatio;
+      if (squaredMagnitude > 9) {
+        const scaleFactor = 3 / Math.sqrt(squaredMagnitude);
+        tangents[i] = scaleFactor * previousRatio * slope;
+        tangents[i + 1] = scaleFactor * nextRatio * slope;
+      }
+    }
+  }
+
+  const commands = [`M ${coordinates[0].x.toFixed(1)} ${coordinates[0].y.toFixed(1)}`];
+  for (let i = 0; i < pointCount - 1; i++) {
+    const thirdSegmentWidth = segmentWidths[i] / 3;
+    const firstControlX = coordinates[i].x + thirdSegmentWidth;
+    const firstControlY = coordinates[i].y + thirdSegmentWidth * tangents[i];
+    const secondControlX = coordinates[i + 1].x - thirdSegmentWidth;
+    const secondControlY = coordinates[i + 1].y - thirdSegmentWidth * tangents[i + 1];
+    commands.push(
+      `C ${firstControlX.toFixed(1)} ${firstControlY.toFixed(1)}, `
+      + `${secondControlX.toFixed(1)} ${secondControlY.toFixed(1)}, `
+      + `${coordinates[i + 1].x.toFixed(1)} ${coordinates[i + 1].y.toFixed(1)}`,
+    );
+  }
+  return commands.join(" ");
+}
+
+interface TimelineModeConfig {
+  labelEnglish: string;
+  labelHebrew: string;
+  lineClassName: string;
+  pointColor: string;
+  gradientId?: string;
+  liveStatClassName: string;
+  smooth: boolean;
+  ariaDescriptionEnglish: string;
+  ariaDescriptionHebrew: string;
+  formatHoveredStat: (coordinate: ChartCoordinate, isHebrew: boolean) => string;
+  formatLatestDateLabel: (isHebrew: boolean) => string;
+  formatLatestValueLabel: (coordinate: ChartCoordinate, isHebrew: boolean) => string;
+}
+
+const TIMELINE_MODE_ORDER: TimelineDisplayMode[] = ["seven_day", "daily", "cumulative"];
+
+const TIMELINE_MODE_CONFIG: Record<TimelineDisplayMode, TimelineModeConfig> = {
+  seven_day: {
+    labelEnglish: "7-Day Pace",
+    labelHebrew: "ממוצע 7 ימים",
+    lineClassName: "chart-line-path-seven-day",
+    pointColor: "var(--chart-line-seven-day)",
+    gradientId: "chartGradientSevenDay",
+    liveStatClassName: "live-stat-value live-stat-value-seven-day",
+    smooth: true,
+    ariaDescriptionEnglish: "7-day rolling average daily translation pace over time",
+    ariaDescriptionHebrew: "קצב התרגום היומי הממוצע בחלונות של 7 ימים לאורך זמן",
+    formatHoveredStat: (coordinate, isHebrew) => (
+      `${formatSevenDayPaceValue(coordinate.value)} `
+      + `${isHebrew ? "פירושים ליום (ממוצע 7 ימים)" : "comments/day (7-day avg)"}`
+    ),
+    formatLatestDateLabel: isHebrew => (isHebrew ? "קצב 7 ימים אחרון" : "Latest 7-day pace"),
+    formatLatestValueLabel: (coordinate, isHebrew) => (
+      `${formatSevenDayPaceValue(coordinate.value)} `
+      + `${isHebrew ? "פירושים ליום" : "comments/day"}`
+    ),
+  },
+  daily: {
+    labelEnglish: "Daily Pace",
+    labelHebrew: "יומי",
+    lineClassName: "chart-line-path-daily",
+    pointColor: "var(--chart-line-daily)",
+    gradientId: undefined,
+    liveStatClassName: "live-stat-value live-stat-value-daily",
+    smooth: false,
+    ariaDescriptionEnglish: "Daily translation count over time",
+    ariaDescriptionHebrew: "כמות התרגומים היומית לאורך זמן",
+    formatHoveredStat: (coordinate, isHebrew) => (
+      `+${coordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "ביום זה" : "on this day"}`
+    ),
+    formatLatestDateLabel: isHebrew => (isHebrew ? "יום אחרון" : "Latest day"),
+    formatLatestValueLabel: (coordinate, isHebrew) => (
+      `+${coordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "פירושים" : "comments"}`
+    ),
+  },
+  cumulative: {
+    labelEnglish: "Cumulative",
+    labelHebrew: "מצטבר",
+    lineClassName: "chart-line-path",
+    pointColor: "var(--chart-line)",
+    gradientId: "chartGradientCumulative",
+    liveStatClassName: "live-stat-value",
+    smooth: false,
+    ariaDescriptionEnglish: "Cumulative translated comments over time",
+    ariaDescriptionHebrew: "סך הפירושים המתורגמים המצטבר לאורך זמן",
+    formatHoveredStat: (coordinate, isHebrew) => (
+      `${coordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים" : "comments"}`
+    ),
+    formatLatestDateLabel: isHebrew => (isHebrew ? "סך הכל עד כה" : "Current total"),
+    formatLatestValueLabel: (coordinate, isHebrew) => (
+      `${coordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים" : "comments"}`
+    ),
+  },
+};
+
 function TranslationTimelineChart({
   timeline,
   isHebrew,
@@ -120,8 +313,13 @@ function TranslationTimelineChart({
   timeline: TranslationTimelinePoint[];
   isHebrew: boolean;
 }): React.ReactElement {
-  const [displayMode, setDisplayMode] = React.useState<TimelineDisplayMode>("cumulative");
+  const [displayMode, setDisplayMode] = React.useState<TimelineDisplayMode>("seven_day");
   const [hoveredIndex, setHoveredIndex] = React.useState<number | undefined>(undefined);
+
+  const sevenDayPaceValues = React.useMemo(
+    () => (timeline ? computeSevenDayRollingPace(timeline) : []),
+    [timeline],
+  );
 
   if (!timeline || timeline.length === 0) {
     return <></>;
@@ -137,25 +335,30 @@ function TranslationTimelineChart({
   const plotWidth = chartViewBoxWidth - paddingLeft - paddingRight;
   const plotHeight = chartViewBoxHeight - paddingTop - paddingBottom;
 
-  const values = timeline.map(point => (
-    displayMode === "cumulative" ? point.cumulativeCount : point.dailyCount
-  ));
+  const values = timeline.map((point, index) => {
+    if (displayMode === "seven_day") {
+      return sevenDayPaceValues[index];
+    }
+    if (displayMode === "cumulative") {
+      return point.cumulativeCount;
+    }
+    return point.dailyCount;
+  });
 
-  const maxDataValue = Math.max(...values, 100);
-  const niceMultiplier = 10 ** Math.floor(Math.log10(maxDataValue));
-  const yAxisMaximum = Math.ceil(maxDataValue / niceMultiplier) * niceMultiplier;
+  const yAxisMaximum = computeNiceYAxisMaximum(Math.max(...values, 100));
 
   const pointsCount = timeline.length;
-  const coordinates = timeline.map((point, index) => {
-    const value = displayMode === "cumulative" ? point.cumulativeCount : point.dailyCount;
+  const coordinates: ChartCoordinate[] = timeline.map((point, index) => {
+    const value = values[index];
     const x = paddingLeft + (index / Math.max(pointsCount - 1, 1)) * plotWidth;
     const y = paddingTop + plotHeight - (value / yAxisMaximum) * plotHeight;
     return {x, y, value, point};
   });
 
-  const pathCommands = coordinates.map((coordinate, index) => (
-    `${index === 0 ? "M" : "L"} ${coordinate.x.toFixed(1)} ${coordinate.y.toFixed(1)}`
-  )).join(" ");
+  const modeConfig = TIMELINE_MODE_CONFIG[displayMode];
+  const pathCommands = modeConfig.smooth
+    ? buildSmoothSvgPath(coordinates)
+    : buildLinearSvgPath(coordinates);
 
   const areaCommands = (
     `${pathCommands} `
@@ -163,11 +366,10 @@ function TranslationTimelineChart({
     + `L ${coordinates[0].x.toFixed(1)} ${(paddingTop + plotHeight).toFixed(1)} Z`
   );
 
-  const yGridSteps = 4;
   const yGridLines = [];
-  for (let step = 0; step <= yGridSteps; step++) {
-    const valueAtStep = Math.round((yAxisMaximum / yGridSteps) * step);
-    const yPosition = paddingTop + plotHeight - (step / yGridSteps) * plotHeight;
+  for (let step = 0; step <= Y_GRID_STEPS; step++) {
+    const valueAtStep = Math.round((yAxisMaximum / Y_GRID_STEPS) * step);
+    const yPosition = paddingTop + plotHeight - (step / Y_GRID_STEPS) * plotHeight;
     yGridLines.push({
       value: valueAtStep,
       y: yPosition,
@@ -177,10 +379,12 @@ function TranslationTimelineChart({
   const xGridLines = [];
   const xLabelSteps = Math.min(5, pointsCount);
   for (let step = 0; step < xLabelSteps; step++) {
-    const targetIndex = Math.min(
-      Math.round((step / (xLabelSteps - 1)) * (pointsCount - 1)),
-      pointsCount - 1,
-    );
+    const targetIndex = xLabelSteps <= 1
+      ? 0
+      : Math.min(
+        Math.round((step / (xLabelSteps - 1)) * (pointsCount - 1)),
+        pointsCount - 1,
+      );
     const point = timeline[targetIndex];
     const xPosition = paddingLeft + (targetIndex / Math.max(pointsCount - 1, 1)) * plotWidth;
     xGridLines.push({
@@ -217,12 +421,34 @@ function TranslationTimelineChart({
           </h2>
           <p className="timeline-subtitle">
             {isHebrew
-              ? "מעקב אחר צמיחת התרגומים מאז תחילת הפרויקט"
-              : "Tracking cumulative and daily translation milestones"}
+              ? "מעקב אחר ממוצע 7 ימים, הספק יומי והתקדמות מצטברת"
+              : "Tracking 7-day rolling pace, daily output, and cumulative progress"}
           </p>
         </div>
 
-        {/* Dynamic header readout: NEVER overlays or blocks chart data */}
+        <div
+          className="timeline-toggle-group"
+          role="group"
+          aria-label={isHebrew ? "סוג תצוגת ציר הזמן" : "Timeline display mode"}>
+          {TIMELINE_MODE_ORDER.map(mode => {
+            const buttonConfig = TIMELINE_MODE_CONFIG[mode];
+            const isActive = displayMode === mode;
+            return (
+              <button
+                key={mode}
+                type="button"
+                className={`timeline-toggle-button ${isActive ? "active" : ""}`}
+                aria-pressed={isActive}
+                onClick={() => setDisplayMode(mode)}>
+                {isHebrew ? buttonConfig.labelHebrew : buttonConfig.labelEnglish}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Dedicated readout row so variable-width stats never reflow header controls or overflow */}
+      <div className="timeline-stat-row">
         <div className="timeline-live-stat">
           {activeCoordinate ? (
             <>
@@ -230,52 +456,42 @@ function TranslationTimelineChart({
                 {formatDateLabel(activeCoordinate.point.date, isHebrew)}
               </span>
               <span className="live-stat-divider" />
-              <span className="live-stat-value">
-                {displayMode === "cumulative"
-                  ? `${activeCoordinate.point.cumulativeCount.toLocaleString()} ${isHebrew ? "פירושים" : "comments"}`
-                  : `+${activeCoordinate.point.dailyCount.toLocaleString()} ${isHebrew ? "ביום זה" : "on this day"}`}
+              <span className={modeConfig.liveStatClassName}>
+                {modeConfig.formatHoveredStat(activeCoordinate, isHebrew)}
               </span>
             </>
           ) : (
             <>
               <span className="live-stat-date">
-                {isHebrew ? "סך הכל עד כה" : "Current total"}
+                {modeConfig.formatLatestDateLabel(isHebrew)}
               </span>
               <span className="live-stat-divider" />
-              <span className="live-stat-value">
-                {latestCoordinate.point.cumulativeCount.toLocaleString()}{" "}
-                {isHebrew ? "פירושים" : "comments"}
+              <span className={modeConfig.liveStatClassName}>
+                {modeConfig.formatLatestValueLabel(latestCoordinate, isHebrew)}
               </span>
             </>
           )}
-        </div>
-
-        <div className="timeline-toggle-group">
-          <button
-            type="button"
-            className={`timeline-toggle-button ${displayMode === "cumulative" ? "active" : ""}`}
-            onClick={() => setDisplayMode("cumulative")}>
-            {isHebrew ? "מצטבר" : "Cumulative"}
-          </button>
-          <button
-            type="button"
-            className={`timeline-toggle-button ${displayMode === "daily" ? "active" : ""}`}
-            onClick={() => setDisplayMode("daily")}>
-            {isHebrew ? "יומי" : "Daily Pace"}
-          </button>
         </div>
       </div>
 
       <div className="timeline-svg-container">
         <svg
+          role="img"
+          aria-label={isHebrew
+            ? modeConfig.ariaDescriptionHebrew
+            : modeConfig.ariaDescriptionEnglish}
           viewBox={`0 0 ${chartViewBoxWidth} ${chartViewBoxHeight}`}
           className="timeline-svg"
           onMouseMove={handleMouseMove}
           onMouseLeave={() => setHoveredIndex(undefined)}>
           <defs>
-            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+            <linearGradient id="chartGradientCumulative" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="var(--chart-line)" stopOpacity="0.18" />
               <stop offset="100%" stopColor="var(--chart-line)" stopOpacity="0.0" />
+            </linearGradient>
+            <linearGradient id="chartGradientSevenDay" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--chart-line-seven-day)" stopOpacity="0.18" />
+              <stop offset="100%" stopColor="var(--chart-line-seven-day)" stopOpacity="0.0" />
             </linearGradient>
           </defs>
 
@@ -294,25 +510,30 @@ function TranslationTimelineChart({
                 y={gridLine.y + 4}
                 textAnchor="end"
                 className="chart-axis-text">
-                {gridLine.value >= 1000
-                  ? `${Math.round(gridLine.value / 1000)}k`
-                  : gridLine.value.toLocaleString()}
+                {formatYAxisLabel(gridLine.value)}
               </text>
             </g>
           ))}
 
           {/* Area under curve */}
-          {displayMode === "cumulative" && (
-            <path d={areaCommands} fill="url(#chartGradient)" />
+          {modeConfig.gradientId && coordinates.length > 1 && (
+            <path d={areaCommands} fill={`url(#${modeConfig.gradientId})`} />
           )}
 
           {/* Main trend line */}
           <path
             d={pathCommands}
-            className={
-              displayMode === "cumulative" ? "chart-line-path" : "chart-line-path-daily"
-            }
+            className={modeConfig.lineClassName}
           />
+
+          {coordinates.length === 1 && (
+            <circle
+              cx={coordinates[0].x}
+              cy={coordinates[0].y}
+              r="4"
+              fill={modeConfig.pointColor}
+            />
+          )}
 
           {/* Vertical Crosshair and Active Point on hover */}
           {activeCoordinate && (
@@ -328,7 +549,7 @@ function TranslationTimelineChart({
                 cx={activeCoordinate.x}
                 cy={activeCoordinate.y}
                 r="5"
-                fill="var(--chart-line)"
+                fill={modeConfig.pointColor}
                 stroke="var(--surface-background)"
                 strokeWidth="2.5"
               />

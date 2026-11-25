@@ -20,6 +20,7 @@ import {
 
 export {
   computeProgressSummary,
+  computeSevenDayRollingPace,
   hasTranslatableComments,
   MasechetProgress,
   PageCommentaryIndex,

@@ -3,6 +3,7 @@ import {readUtf8} from "../files";
 import {aiEditsForPage} from "./ai_edits";
 import {
   computeProgressSummary,
+  computeSevenDayRollingPace,
   countPageTranslations,
   extractPageCommentaryIndex,
   getTranslationProgress,
@@ -189,6 +190,28 @@ describe("translation_progress", () => {
         progressData.timeline[i].cumulativeCount >= progressData.timeline[i - 1].cumulativeCount,
       ).toBe(true);
     }
+  });
+
+  test("computes 7-day rolling daily pace across consecutive days and calendar gaps", () => {
+    expect(computeSevenDayRollingPace([])).toEqual([]);
+
+    const syntheticTimeline = [
+      {date: "2026-01-01", dailyCount: 700},
+      {date: "2026-09-01", dailyCount: 70},
+      {date: "2026-09-02", dailyCount: 70},
+      {date: "2026-09-07", dailyCount: 350},
+      {date: "2026-09-08", dailyCount: 0},
+      {date: "2026-09-10", dailyCount: 140},
+    ];
+
+    expect(computeSevenDayRollingPace(syntheticTimeline)).toEqual([
+      100, // 700 / 7
+      10, // 70 / 7 (Jan 1 is outside the 7-day window)
+      20, // (70 + 70) / 7
+      70, // (70 + 70 + 350) / 7 (2026-09-01 is 6 days prior, included)
+      60, // (70 + 350 + 0) / 7 (2026-09-01 drops out on 2026-09-08)
+      70, // (350 + 0 + 140) / 7
+    ]);
   });
 
   test("skips empty-Hebrew stub comments when indexing a page", () => {
