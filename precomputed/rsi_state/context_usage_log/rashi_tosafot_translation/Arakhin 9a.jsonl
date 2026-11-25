@@ -43,3 +43,14 @@
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Arakhin 9a:6:1","callKind":"generate","toolUses":[{"name":"run_command","input":{"CommandLine":"npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"Arakhin 9a:6\" --before 2 --after 2","command":"npx ts-node rsi_orchestrator/context_fetch_cli.ts get-neighbors \"Arakhin 9a:6\" --before 2 --after 2"}},{"name":"manage_task","input":{"Action":"status","TaskId":"448a4eb8-f241-4b9a-aa09-8d9a79ed3d97/task-2"}}],"model":"gemini-3.8-flash-high","timestamp":"2026-10-12T16:48:42.180Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Arakhin 9a:6:1","callKind":"critique","toolUses":[],"model":"gemini-3.8-flash-medium","timestamp":"2026-10-12T16:49:22.622Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:4:1","callKind":"generate","toolUses":[],"model":"gemini-3.8-flash-high","timestamp":"2026-10-20T16:33:07.258Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:4:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:38:13.544Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:4:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-25T09:38:25.351Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:38:39.956Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-25T09:38:55.830Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:39:19.422Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-25T09:39:37.337Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:40:04.548Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-25T09:40:21.353Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:40:48.740Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-25T09:40:57.375Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Tosafot on Arakhin 9a:5:1","callKind":"generate","toolUses":[],"model":"claude-sonnet-5-5-medium","timestamp":"2026-11-25T09:41:21.754Z"}
