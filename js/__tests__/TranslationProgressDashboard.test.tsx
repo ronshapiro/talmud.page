@@ -432,7 +432,7 @@ describe("TranslationTimelineChart 7-day rolling pace", () => {
 
     const toggleButtons = queryAll(container, ".timeline-toggle-button");
     expect(toggleButtons.map(button => button.textContent)).toEqual([
-      "7d Pace",
+      "7-Day Pace",
       "Daily Pace",
       "Cumulative",
     ]);
@@ -442,7 +442,7 @@ describe("TranslationTimelineChart 7-day rolling pace", () => {
     expect(toggleButtons[2].getAttribute("aria-pressed")).toBe("false");
 
     // 7-day pace on 2026-10-17: (1400 + 2100 + 700 + 0 + 1400 + 700 + 7000) / 7 = 1900
-    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7d pace");
+    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7-day pace");
     expect(query(container, ".live-stat-value").textContent).toBe("1,900 comments/day");
 
     const sevenDayPath = queryOrNull(container, ".chart-line-path-seven-day");
@@ -497,13 +497,13 @@ describe("TranslationTimelineChart 7-day rolling pace", () => {
     });
     expect(query(container, ".live-stat-date").textContent).toBe("Oct 17, 2026");
     expect(query(container, ".live-stat-value").textContent).toBe(
-      "1,900 comments/day (7d avg)",
+      "1,900 comments/day (7-day avg)",
     );
 
     flush(() => {
       svgElement.dispatchEvent(new MouseEvent("mouseout", {bubbles: true}));
     });
-    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7d pace");
+    expect(query(container, ".live-stat-date").textContent).toBe("Latest 7-day pace");
   });
 
   test("renders Hebrew toggle labels and single-point timeline cleanly", () => {
