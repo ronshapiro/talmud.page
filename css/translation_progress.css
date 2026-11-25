@@ -406,10 +406,15 @@
 .timeline-header-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 20px;
+  gap: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.timeline-title-group {
+  flex: 1 1 280px;
+  min-width: 0;
 }
 
 .timeline-title-group h2 {
@@ -418,41 +423,59 @@
   margin: 0 0 4px 0;
   color: var(--text-primary);
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 .timeline-subtitle {
   font-size: 0.88rem;
   color: var(--text-muted);
   margin: 0;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
-/* Live dynamic readout in the header — NEVER blocks data points */
-.timeline-live-stat {
+.timeline-stat-row {
   display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+/* Live dynamic readout in its own row — NEVER blocks data points, reflows controls, or overflows */
+.timeline-live-stat {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   background-color: var(--surface-secondary);
   border: 1px solid var(--surface-border);
   border-radius: 10px;
   padding: 6px 14px;
   font-size: 0.88rem;
   font-feature-settings: "tnum";
+  overflow-wrap: break-word;
 }
 
 .live-stat-date {
   color: var(--text-muted);
   font-weight: 600;
+  min-width: 0;
 }
 
 .live-stat-divider {
   width: 1px;
   height: 14px;
+  flex-shrink: 0;
   background-color: var(--surface-border);
 }
 
 .live-stat-value {
   color: var(--blue-text);
   font-weight: 800;
+  min-width: 0;
 }
 
 .live-stat-value.live-stat-value-seven-day {
@@ -466,6 +489,8 @@
 .timeline-toggle-group {
   display: inline-flex;
   flex-wrap: wrap;
+  max-width: 100%;
+  box-sizing: border-box;
   background-color: var(--surface-secondary);
   border-radius: 10px;
   padding: 3px;
@@ -911,5 +936,21 @@
   .timeline-header-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .timeline-title-group {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .timeline-live-stat {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 100%;
+  }
+  .live-stat-divider {
+    display: none;
   }
 }

@@ -504,6 +504,11 @@ describe("TranslationTimelineChart 7-day rolling pace", () => {
       svgElement.dispatchEvent(new MouseEvent("mouseout", {bubbles: true}));
     });
     expect(query(container, ".live-stat-date").textContent).toBe("Latest 7-day pace");
+
+    const headerRow = query(container, ".timeline-header-row");
+    const statRow = query(container, ".timeline-stat-row");
+    expect(queryOrNull(headerRow, ".timeline-live-stat")).toBeNull();
+    expect(queryOrNull(statRow, ".timeline-live-stat")).not.toBeNull();
   });
 
   test("renders Hebrew toggle labels and single-point timeline cleanly", () => {

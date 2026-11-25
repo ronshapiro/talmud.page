@@ -426,7 +426,29 @@ function TranslationTimelineChart({
           </p>
         </div>
 
-        {/* Dynamic header readout: NEVER overlays or blocks chart data */}
+        <div
+          className="timeline-toggle-group"
+          role="group"
+          aria-label={isHebrew ? "סוג תצוגת ציר הזמן" : "Timeline display mode"}>
+          {TIMELINE_MODE_ORDER.map(mode => {
+            const buttonConfig = TIMELINE_MODE_CONFIG[mode];
+            const isActive = displayMode === mode;
+            return (
+              <button
+                key={mode}
+                type="button"
+                className={`timeline-toggle-button ${isActive ? "active" : ""}`}
+                aria-pressed={isActive}
+                onClick={() => setDisplayMode(mode)}>
+                {isHebrew ? buttonConfig.labelHebrew : buttonConfig.labelEnglish}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Dedicated readout row so variable-width stats never reflow header controls or overflow */}
+      <div className="timeline-stat-row">
         <div className="timeline-live-stat">
           {activeCoordinate ? (
             <>
@@ -449,26 +471,6 @@ function TranslationTimelineChart({
               </span>
             </>
           )}
-        </div>
-
-        <div
-          className="timeline-toggle-group"
-          role="group"
-          aria-label={isHebrew ? "סוג תצוגת ציר הזמן" : "Timeline display mode"}>
-          {TIMELINE_MODE_ORDER.map(mode => {
-            const buttonConfig = TIMELINE_MODE_CONFIG[mode];
-            const isActive = displayMode === mode;
-            return (
-              <button
-                key={mode}
-                type="button"
-                className={`timeline-toggle-button ${isActive ? "active" : ""}`}
-                aria-pressed={isActive}
-                onClick={() => setDisplayMode(mode)}>
-                {isHebrew ? buttonConfig.labelHebrew : buttonConfig.labelEnglish}
-              </button>
-            );
-          })}
         </div>
       </div>
 
