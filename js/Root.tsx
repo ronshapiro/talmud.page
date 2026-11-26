@@ -67,12 +67,13 @@ export function Root({
       lastRemovable={i !== 0 && i === baseAmudim.length - 1} />));
 
 
-  const updateSearchQuery = (color: string, query: string) => {
+  const updateSearchQuery = (color: string, query: string, isTemporary?: boolean) => {
     if (!context.searchQueryRegex) {
       context.searchQueryRegex = {};
     }
     context.searchQueryRegex[color] = (
       (query.length < 2) ? undefined : query);
+    context.temporarySearchColor = isTemporary ? color : undefined;
     incrementQueryCount();
   };
 

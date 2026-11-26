@@ -357,29 +357,50 @@ class Buttons {
     };
   }
 
-  searchButton(): Button {
+  searchButton(color?: string): Button {
+    const iconClass = color ? `material-icons icon-highlight-${color}` : "material-icons";
     return {
-      text: '<i class="material-icons">search</i>',
+      text: `<i class="${iconClass}">search</i>`,
       onClick: () => {
         this.selectionState.capture();
         (window as any).SEARCH(this.selectionState.getSelectedText());
-        document.getSelection()?.empty();
+        const selection = document.getSelection();
+        if (selection?.empty) {
+          selection.empty();
+        } else {
+          selection?.removeAllRanges();
+        }
       },
     };
   }
 }
 
-const onSelectionChange = () => {
-  if ($(document.getSelection()!.anchorNode).closest("#preferences-container").length > 0) {
+const onSelectionChange = (): void => {
+  const selection = document.getSelection();
+  if (!selection || !selection.anchorNode) {
+    (window as any).CLEAR_TEMPORARY_SEARCH?.();
     return;
   }
+  const {anchorNode, focusNode} = selection;
+  const $anchorElement = $(anchorNode as any);
+  const $focusElement = $(focusNode as any);
+  if ($anchorElement.closest("#preferences-container, #snackbar, #snackbarHost, .modal").length > 0
+      || $focusElement.closest("#preferences-container, #snackbar, #snackbarHost, .modal").length > 0) {
+    return;
+  }
+
+  const selectedText = selection.type === "Range" ? selection.toString().trim() : "";
+  if (!selectedText) {
+    (window as any).CLEAR_TEMPORARY_SEARCH?.();
+    hideSelectionChangeSnackbar();
+    return;
+  }
+
+  lastSelection = selectedText;
+  (window as any).SET_TEMPORARY_SEARCH?.(selectedText);
+
   if (DO_DEBUG) {
-    const selection = document.getSelection()!;
     DEBUG_ERRORS.push(selection.type);
-    const selectedText = selection.toString().trim();
-    if (selection.type === "Range" && selectedText !== "") {
-      lastSelection = selectedText;
-    }
   }
   renderDebug();
 
@@ -401,7 +422,8 @@ const onSelectionChange = () => {
 
   const buttonsImpl = new Buttons(sefariaRef, new SelectionState(sefariaRef));
   if ((window as any).SEARCH) {
-    buttons.push(buttonsImpl.searchButton());
+    const temporarySearchColor = (window as any).GET_TEMPORARY_SEARCH_COLOR?.();
+    buttons.push(buttonsImpl.searchButton(temporarySearchColor));
   }
 
   if (driveClient.allowCommenting() && ref !== "ignore-drive") {
@@ -433,8 +455,13 @@ const onSelectionChange = () => {
   snackbars.textSelection.show(hideRef ? "" : ref, buttons);
 };
 
+export const registerRefSelectionSnackbarListener = (): void => {
+  document.addEventListener("selectionchange", debounce(onSelectionChange, 30));
+};
+
+export const onSelectionChangeForTesting = onSelectionChange;
+
 module.exports = {
-  registerRefSelectionSnackbarListener: () => {
-    document.addEventListener("selectionchange", debounce(onSelectionChange, 30));
-  },
+  registerRefSelectionSnackbarListener,
+  onSelectionChangeForTesting: onSelectionChange,
 };
