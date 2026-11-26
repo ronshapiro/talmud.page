@@ -1,4 +1,96 @@
 {
+  "Rashi on Megillah 7b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:37:13.122Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בין יום טוב לשבת</strong> - להיות מותר לכתחלה ביום טוב מה שאסור בשבת אבל לענין עונשין יש הרבה שזה בסקילה ובכרת וזה בלאו גרידא:"
+  },
+  "Rashi on Megillah 7b:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:37:42.169Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">זה וזה שוין</strong> - אסורין ביום טוב כשבת:"
+  },
+  "Rashi on Megillah 7b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:37:55.791Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאפשר</strong> - כגון סכין שנפגם מערב יום טוב:"
+  },
+  "Rashi on Megillah 7b:15:2": {
+    "dependsOn": [
+      "Translation on Rashi on Megillah 7b:15:2"
+    ],
+    "generatedAt": "2026-11-26T07:38:13.129Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:15:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שאי אפשר</strong> - כגון סכין שנפגמה ביום טוב:"
+  },
+  "Rashi on Megillah 7b:16:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:39:04.469Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:16:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בידי אדם</strong> - יש בה מיתת ב\"ד:"
+  },
+  "Rashi on Megillah 7b:18:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:39:19.368Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:18:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אף יום הכפורים מתחייב בנפשו</strong> - דאיסור כרת כמיתת בית דין דמי:"
+  },
+  "Rashi on Megillah 7b:18:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:39:39.689Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:18:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ופטורים מלשלם</strong> - אם הדליק גדישו של חבירו ביום הכפורים שאין תשלומין אצל חיוב מיתה שנאמר ולא יהיה אסון ענש יענש <span class=\"parenthesized\">(שמות כא)</span> הא אם יהיה אסון לא יענש:"
+  },
+  "Rashi on Megillah 7b:19:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:39:54.054Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:19:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל חייבי כריתות שלקו</strong> - שהתרו בהן עדים על לאו שעמו כרת ולקו בבית דין:"
+  },
+  "Rashi on Megillah 7b:19:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:40:07.715Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:19:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נפטרו מידי כריתתן</strong> - שוב אין בית דין של מעלה נפרעין:"
+  },
   "Rashi on Megillah 7b:1:1": {
     "dependsOn": [
       "Megillah 7b:1",
@@ -13,6 +105,86 @@
       "Rashi on Megillah 7b:1:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">ה\"ג קיימת בנו רבינו ומשלוח מנות</strong> - דהא תרי מנות איכא:"
+  },
+  "Rashi on Megillah 7b:20:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:40:22.203Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:20:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תנינא</strong> - דחלוקין:"
+  },
+  "Rashi on Megillah 7b:20:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:40:39.633Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:20:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואם איתא</strong> - דנפטרו אידי ואידי בידי אדם הוא אף ביום הכפורים יש מלקות על לאו שבו ובית דין פוטרין אותו מכרת:"
+  },
+  "Rashi on Megillah 7b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:40:54.485Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב נחמן</strong> - לעולם אינן חלוקין עליו חביריו והא דקתני דאין זדונו בידי אדם:"
+  },
+  "Rashi on Megillah 7b:21:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:41:10.705Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:21:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא מני ר' יצחק היא</strong> - דאמר במסכת מכות דאין מלקין בלאו הניתן לאזהרת כרת אפילו התרו בו למלקות ויליף טעמיה מהאי קרא:"
+  },
+  "Rashi on Megillah 7b:21:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:41:27.067Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:21:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כל חייבי כריתות</strong> - של עריות היו בכלל ונכרתו הנפשות העושות וגו' שכתוב בפרשת עריות <span class=\"parenthesized\">(ויקרא י״ח:כ״ט)</span>:"
+  },
+  "Rashi on Megillah 7b:21:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:41:40.911Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:21:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">למה יצאת כרת באחותו</strong> - דכתיב בקדושים תהיו ואיש כי יקח את אחותו וגו':"
+  },
+  "Rashi on Megillah 7b:21:5": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:41:59.622Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:21:5"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לדונה בכרת ולא במלקות</strong> - אם התרו בהן ואף על גב דנדה נמי נשנית באותה פרשה לדבר שנתחדש בה נשנית להעראה:"
+  },
+  "Rashi on Megillah 7b:22:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:42:51.229Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:22:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אפילו תימא רבנן היא</strong> - דאמרי מלקות אצל כרת ואפילו הכא ליכא למילף מינה שחלוקין על רבי חנניה והכי קאמר מתניתין שבת עיקר חומר זדונו בידי אדם וזה עיקר חומר זדונו בהכרת ומיהו אם התרו בו ולקה מיפטר:"
   },
   "Rashi on Megillah 7b:2:1": {
     "dependsOn": [
@@ -174,6 +346,56 @@
       "Rashi on Megillah 7b:7:1"
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">לאבסומי</strong> - להשתכר ביין:"
+  },
+  "Rashi on Megillah 7b:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:36:41.446Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואיבסום</strong> - נשתכרו:"
+  },
+  "Rashi on Megillah 7b:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:36:56.361Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Megillah 7b:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נגה ולא אתו רבנן</strong> - איחר היום ולא באו התלמידים לבית המדרש:"
+  },
+  "Tosafot on Megillah 7b:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:37:30.201Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 7b:10:1"
+    ],
+    "sourceText": "<b>אין בין יו\"ט לשבת.</b> צריך לומר דה\"פ אין שום מלאכה אסורה לשבת שלא תהא אסורה ליום טוב אלא אוכל נפש בלבד אבל שאר חלוקים יש ביניהן שזה בסקילה וזה בלאו:"
+  },
+  "Tosafot on Megillah 7b:15:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:38:50.681Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 7b:15:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אן במכשירין שאי אפשר לעשות מערב יו\"ט</strong> - משמע מדלא פליגי אלא במכשירין מכלל דגוף המאכל שרי לעשות ביום טוב אע\"ג דאפשר לעשות מערב יו\"ט ומדרבי יהודה נשמע לרבנן דהא לא פליגי עליה אלא במכשירין וא\"כ קשיא דאמר בפרק המצניע <span class=\"parenthesized\">(שבת דף צה. ושם)</span> החולב והמגבן והמחבץ והרודה חלות דבש בשבת חייב חטאת הזיד ביו\"ט לוקה את הארבעים אע\"ג דהוי אוכל נפש ואפי' לרבנן דאמרי התם אחד זה ואחד זה אין בו אלא משום שבות מ\"מ מודו היכא דאיכא אב מלאכה דלוקה ויש לומר דודאי אוכל נפש המתקלקל אם עושהו מאתמול מותר לעשות ביו\"ט אבל אוכל נפש דעדיף טפי כשהוא עשוי מאתמול כגון ההוא דהמצניע אסור לעשותו ביו\"ט אבל מכשירין דלא מתקלקל כשנעשו מאתמול בהא ודאי יש לחלק [בין] היכא דאפשר ללא אפשר:"
+  },
+  "Tosafot on Megillah 7b:21:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T07:42:30.837Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Megillah 7b:21:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">חייבי כריתות בכלל היו</strong> - פירוש <span class=\"rashi-quotation\">הקונטרס</span> בכלל ונכרתו הנפשות העושות וקשה דאם כן הוי ליה למימר אחותו בכלל היתה כלומר בכלל ונכרתו הנפשות ולא היה לו לכתוב כרת בה ויש לומר דהכי פירושו חייבי כריתות בכלל היו פירוש בכלל המלקיות דבכל אחת ואחת יש לאו ולמה יצאת כרת באחותו בלא לאו שהרי הכרת לא איצטריך שהרי היתה בכלל ונכרתו אלא ודאי יצתה לדונה בכרת ומינה נגמר לכל האחרים כדין דבר שהיה בכלל:"
   },
   "Tosafot on Megillah 7b:7:1": {
     "dependsOn": [
