@@ -1,0 +1,45 @@
+{
+  "Rashi on Chullin 109b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-27T05:43:18.321Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 109b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אמר רב אינו עובר עליו</strong> - מדאורייתא ומותר לכתחלה באכילה אם בשלו ולא אמרינן אסור מיהא מדרבנן דהא אפילו נסחט ממנו ויצא אמרינן לקמן <span class=\"parenthesized\">(חולין דף קיא.)</span> חלב שחוטה מדרבנן הוא והאי כיון דמובלע ולא פירש אפי' איסור דרבנן ליכא:"
+  },
+  "Rashi on Chullin 109b:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-27T05:44:45.402Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Chullin 109b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">דהתם מיעבר הוא דלא עבר</strong> - ללקות דאין בו כזית:"
+  },
+  "Tosafot on Chullin 109b:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-27T05:43:52.043Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 109b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אינו עובר עליו ומותר</strong> - <span class=\"rashi-quotation\">פירש בקונטרס</span> דמותר אם בשלו משום דחלב שחוטה דרבנן הוא והאי כיון דאבלע ולא פירש אפילו איסורא דרבנן ליכא משמע שרוצה להעמיד כולה שמעתתא דכחל לצלי דאי לקדרה אמאי מותר הא יצא חלב וחזר ונבלע וכן פירש לקמן בהדיא גבי זויקו לה כחלי דפריך והא בשלו קתני בדיעבד ו<span class=\"rashi-quotation\">פירש בקונטרס</span> והא ודאי בצלי הוא מדקתני מותר דאי בקדרה אמאי מותר הא יצא החלב וחזר ונבלע ולקמן בתר שמעתתא דכבד <span class=\"rashi-quotation\">פי' בקונטרס</span> והלכות כחל כבר אמרנו למעלה דלצלי בעי קריעה שתי או ערב ואי לא קרעו מותר כלישנא קמא דרב דהא תניא כוותיה ולקדרה קורעו שתי וערב וטחו בכותל ומה שכתוב בספרים בפ' גיד הנשה <span class=\"parenthesized\">(לעיל חולין דף צז:)</span> כחל עצמו אסור היכא דלא קרעיה ובשליה בהדי בשרא ל\"ג ליה דאפי' בשליה לחודיה אסור לפירוש <span class=\"rashi-quotation\">הקונטרס</span> לפי שפירש וחזר ונבלע ומיהא גם לפירוש <span class=\"rashi-quotation\">הקונטרס</span> היכא דאיכא ס' במים שנתבשל בהן הכחל לא היה נאסר הכחל היכא שבשלו לחודיה לפי שהחלב הנפלט נתבטל במים אבל היכא דבשלו עם בשר אסור משום טעם בשר הנבלע בחלב שבכחל וכן יש ספרים דגרסי בסמוך כחל שבשלו בחלבו מותר היכא דבשליה לחודיה בלא בשר ויש להעמידו לפירוש <span class=\"rashi-quotation\">הקונטרס</span> שיש במים ששים כדפרישית שמתבטל בהן חלב היוצא מן הכחל:"
+  },
+  "Tosafot on Chullin 109b:1:2": {
+    "dependsOn": [
+      "Rashi on Chullin 109b:1:1",
+      "Tosafot on Chullin 109b:1:1"
+    ],
+    "generatedAt": "2026-11-27T05:44:29.973Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Chullin 109b:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הא איסורא איכא</strong> - וא\"ת לפירוש <span class=\"rashi-quotation\">הקונטרס</span> דלמא הא איסורא איכא לקדרה אבל לצלי מותר וי\"ל דא\"כ ה\"ל למתני דאם לא קרעו מותר דהוי חדוש וממילא הוה מוקמינן ליה בצלי:"
+  }
+}
