@@ -1,0 +1,246 @@
+{
+  "Rashi on Gittin 49a:10:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:46:57.535Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אי הכי</strong> - דר\"ע כר\"ש אוקמת ליה מאי דוחקיך דאוקמת פלוגתא דרישא בשומא דניזק ומזיק דלמא לגבות מן העידית דקאמר ר\"ע נמי מעידית דניזק קאמר דהיא זיבורית דמזיק כר' ישמעאל ואמינא לא פליג עליה אלא בק\"ו להקדש דר' ישמעאל לא סבירא ליה דר\"ש בן מנסיא:"
+  },
+  "Rashi on Gittin 49a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:47:51.686Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אם כן</strong> - דלא פליג עליה דרישא מאי לא בא הכתוב דקאמר דמשמע לא בא לכך אלא לכך:"
+  },
+  "Rashi on Gittin 49a:12:2": {
+    "dependsOn": [
+      "Rashi on Gittin 49a:12:1",
+      "Rashi on Gittin 49a:12:3",
+      "Gittin 49a:12"
+    ],
+    "generatedAt": "2026-11-26T21:48:24.031Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:12:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועוד</strong> - אי ר\"ע קולא קאמר לגבי מזיק כר' ישמעאל:"
+  },
+  "Rashi on Gittin 49a:12:3": {
+    "dependsOn": [
+      "Gittin 49a:12",
+      "Rashi on Gittin 49a:12:1",
+      "Rashi on Gittin 49a:12:2",
+      "Gittin 49a:9",
+      "Gittin 49a:10"
+    ],
+    "generatedAt": "2026-11-26T21:48:59.206Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:12:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאי קל וחומר להקדש</strong> - דקאמר הואיל וקולא היא היכי מצי למימר וק\"ו דמקילינן נמי גבי הקדש:"
+  },
+  "Rashi on Gittin 49a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:40:45.285Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">הכא במאי עסקינן כגון שהיתה עידית דניזק כזיבורית דמזיק</strong> - ולרבי ישמעאל נמי אין שמין אכילת ערוגה אלא לפי מה שהיתה אם שמינה שמינה אם כחושה כחושה ולאחר שנישומה בבית דין ואמר אין לי מעות לפורעו יטול קרקע בדמי מעות נזקו ובא להגבותו מזיבורית שלו והיא טובה כעידית של ניזק והלה אומר מעידית שלך הגביני לפי דמי נזקי שכן אמרה תורה מיטב שדהו וגו':"
+  },
+  "Rashi on Gittin 49a:1:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:41:07.413Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:1:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">רבי ישמעאל סבר בדניזק שיימינן</strong> - ומיטב שאמרה תורה שאם בא להגבותו קרקע גרוע מעידיתו של ניזק ויש לו להגבותו ערוגה במיטב של ניזק על כרחו יגבהו ממיטב אבל טובה מעידיתו של ניזק אין לנו לכוף את המזיק לפרוע ואפילו יש לו:"
+  },
+  "Rashi on Gittin 49a:1:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:41:22.238Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:1:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בדמזיק שיימינן</strong> - ממיטב שדותיו אמרה תורה שיגבנו:"
+  },
+  "Rashi on Gittin 49a:2:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:42:05.924Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נאמרה שדה למעלה</strong> - לענין נזק ובער בשדה אחר:"
+  },
+  "Rashi on Gittin 49a:2:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:42:20.548Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:2:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ונאמרה שדה למטה</strong> - לענין תשלומין מיטב שדהו וגו':"
+  },
+  "Rashi on Gittin 49a:3:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:42:39.227Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי עקיבא</strong> - שדהו ישלם כתיב במשלם הכתוב מדבר דהיינו מזיק והכי קאמר ר\"ע לא בא הכתוב להקל על המזיק להפטר בזיבורית שלו אם היא כעידית של ניזק אלא להגבות לניזקין מן העידית של מזיק:"
+  },
+  "Rashi on Gittin 49a:4:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:42:49.711Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:4:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי ישמעאל</strong> - אמר לך:"
+  },
+  "Rashi on Gittin 49a:4:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:43:02.054Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:4:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אהני גזירה שוה</strong> - דשדה שדה דבניזק שיימינן:"
+  },
+  "Rashi on Gittin 49a:4:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:43:16.227Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:4:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ואהני קרא</strong> - דשדהו ישלם דמשמע דבמזיק שיימינן:"
+  },
+  "Rashi on Gittin 49a:4:4": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:43:36.910Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:4:4"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וזיבורית דידיה לא שויא כעידית דניזק</strong> - אהני קרא לשלומי מעידית דידיה דאי לאו קרא הוה אמינא לא חייביה רחמנא טפי ממיטב דניזק ולא רמי דיניה דניזק אעידית דמזיק ולישקול מאי דמשכח גביה כאילו לא הוה ליה עידית:"
+  },
+  "Rashi on Gittin 49a:5:1": {
+    "dependsOn": [
+      "Gittin 49a:5"
+    ],
+    "generatedAt": "2026-11-26T21:44:17.450Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וק\"ו להקדש</strong> - וקא סלקא דעתך בניזקין נמי קאי:"
+  },
+  "Rashi on Gittin 49a:8:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:45:42.222Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:8:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">לא יהא אלא בעל חוב</strong> - בדבורא בעלמא דקביל עליה מי עדיף מחוב דתנן בבינונית דאם החמירה תורה בניזקין לא ילפינן חוב מיניה:"
+  },
+  "Rashi on Gittin 49a:8:2": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:46:00.223Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:8:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">איכא למיפרך</strong> - כלומר אפילו סבירא ליה הכי לא ילפינן הקדש מיניה דאיכא למיפרך מה לבעל חוב שהוא הדיוט דינא הוא דלישקול בעידית:"
+  },
+  "Rashi on Gittin 49a:8:3": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:46:13.352Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:8:3"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שכן יפה הכתוב כחו בניזקין</strong> - שחברו חייב בנזקו:"
+  },
+  "Rashi on Gittin 49a:9:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:46:35.755Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Gittin 49a:9:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">משלם נזק שלם</strong> - ודריש רעהו הכי רעהו הוא דמשלם חצי נזק אבל להקדש נזק שלם ולגבי הזיק הקדש דריש הכי לרעהו הוא דמחייב אבל הקדש שהזיקה פטור:"
+  },
+  "Tosafot on Gittin 49a:11:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:47:35.598Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Gittin 49a:11:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ורבי עקיבא סבר לה כר\"ש בן מנסיא</strong> - ואם תאמר בפ\"ק דבבא קמא <span class=\"parenthesized\">(דף ה.)</span> דפרכינן וליתני תרי גווני שור ומשני הא תבריה ר\"ע לגזיזיה אכתי תיקשי לו דליתני שור דאזיק הדיוט ושור דאזיק הקדש דדינייהו חלוקין אליביה וי\"ל דבהקדש לא קמיירי וא\"ת אכתי איכא למיפרך מה להדיוט שכן יפה כחו בנזקי אדם ובור תאמר בהקדש שהורע כחו באדם המזיק דכי יאכל פרט למזיק ובור דכתיב <span class=\"parenthesized\">(שמות כ״א:ל״ד)</span> והמת יהיה לו שהמת שלו וי\"ל דאיכא למיעבד ק\"ו הכי מה קרן הדיוט דקיל דתם אינו משלם אלא ח\"נ גובה במועד מן העידית קרן הקדש דחמיר לא כ\"ש:"
+  },
+  "Tosafot on Gittin 49a:12:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:49:42.913Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Gittin 49a:12:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ועוד מאי ק\"ו להקדש</strong> - <span class=\"rashi-quotation\">פי' בקונטרס</span> הואיל ומן העידית דקאמר ר\"ע אניזק קאי ולאקולי אתא דיהיב ליה מזיק מזיבורית אם כן מאי ק\"ו להקדש גריעותא הוא וקשה דמ\"מ איצטריך ק\"ו דמשלם ממיטב דניזק ולא מזיבורית דניזק ונראה דה\"פ מאי קל וחומר להקדש דלענין לחיובי מזיק בהקדש לא קאמר דהא מרעהו נפקא כדדריש ר\"ש בן מנסיא אלא לענין מיטב קאמר ולא הוה ליה לר\"ע לאהדורי לרבי ישמעאל ק\"ו כיון שר' ישמעאל עצמו היה מודה בכך אי לאו משום דפטר ליה לגמרי וה\"ר שלמה מרודוש תירץ דה\"פ מאי ק\"ו להקדש דשיימינן בעידית דניזק ולא בדמזיק מי ידעינן עידית דהקדש שמא יש להקדש עידית בסוף העולם טובה שאין כמוה ועל כרחיך בדמזיק שיימינן דלא שייך כלל למישם בדניזק:"
+  },
+  "Tosafot on Gittin 49a:1:1": {
+    "dependsOn": [],
+    "generatedAt": "2026-11-26T21:41:53.331Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Gittin 49a:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">כגון שהיתה עידית דניזק כזיבורית דמזיק</strong> - ואיפכא לא מצי למימר דכ\"ע מודו דאינו נותן אלא מעידית שיש לו ואינו חייב לקנות כדאמרינן בפ\"ק דבבא קמא <span class=\"parenthesized\">(דף ז:)</span> אין לו אלא זיבורית כולן גובין מן הזיבורית ומיהו אי בשל עולם הן שמין לר\"ע הוה מצי למימר כגון דאית ליה למזיק עידית בינונית וזיבורית וזיבורית דידיה כעידית דעלמא ועידית דידיה כעידית דניזק ואפילו למאן דאמר בשלו הן שמין הוה מצי למימר דאיכא בינייהו כגון דעידית דמזיק כזיבורית דניזק דלמ\"ד או כסף או מיטב משלם כסף לר' ישמעאל ולר\"ע משלם מיטב שלו:"
+  },
+  "Tosafot on Gittin 49a:6:1": {
+    "dependsOn": [
+      "Gittin 49a:6"
+    ],
+    "generatedAt": "2026-11-26T21:45:21.613Z",
+    "model": "gemini-4-hydrogen-medium",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Gittin 49a:6:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">שור רעהו אמר רחמנא ולא שור של הקדש</strong> - תימה אמאי לא מוקי לה בשן ורגל שהזיק את ההקדש דהתם לא כתיב רעהו ומקרן ליכא למילף שכן אינה מועדת מתחילתה וגזירה שוה דתחת נתינה ישלם כסף לא נתקבלה אלא לענין מיטב דוקא ולא לענין תשלומין דאי לכל מילי א\"כ נפטרו כולהו ברשות הרבים וכלים ושור פסולי המוקדשים וטמון וי\"ל כיון דכתיב רעהו תו ליכא למילף מיטב בשן ורגל שהזיק את ההקדש מק\"ו דהדיוט דאיכא למיפרך מה להדיוט שכן יפה כחו לענין קרן וכה\"ג פריך בסמוך שכן יפה כחו בניזקין וכי קאמר אלא באומר הרי עלי מנה וכו' לא בעי לאוקמא בשן ורגל משום דמנזקין אנזקין אסיק אדעתיה שפיר דאיכא למיפרך שכן יפה כחו אבל מנזקין אמלוה לא הוה סלקא דעתיה למיפרך דהא כי מוקי לה כר\"ש בן מנסיא לא פרכינן מה להדיוט שכן יפה כחו לענין ריבית ואונאה אנזקין ועוד יש לומר דכולהו נזקין פטורין בהקדש כדמוכח בירושלמי בריש פרקא דאמר במה אנן קיימין אי בהכשר נזקין הא תנינא שור רעהו ולא שור של הקדש ואי בנזקי גופו הא תני רבי חייא נזקין להדיוט ואין נזקין לגבוה אלא באומר הרי עלי מנה כו' משמע דלא משכח נזקין להקדש לא בשן ורגל ולא באדם המזיק ובפ\"ק דבבא קמא <span class=\"parenthesized\">(דף ט:)</span> נמי תנן נכסים שאין בהן מעילה ואכולהו ד' אבות קאי ואפילו אנזקי אדם למ\"ד מבעה זה אדם והא דמשמע בפרק השואל <span class=\"parenthesized\">(ב\"מ דף צט:)</span> דאדם המזיק את ההקדש חייב לשלם קרן היינו מדרבנן וא\"ת והא הקדש יליף מתרומה דכתיב בה <span class=\"parenthesized\">(ויקרא כב)</span> כי יאכל פרט למזיק והתם בתרומה חייב לשלם קרן דמזיק ממון כהן הוא וי\"ל דאע\"ג דבתרומה חייב לשלם מ\"מ לא מהאי קרא מפיק אלא מקרא אחרינא דהוי כגוזל חבירו ומזיקו והשתא כולהו נזקין דפטירי בו בהקדש ילפינן מאדם דיותר ראוי לחייב אדם המזיק בידים ממזיק ע\"י כריית בור או שולח בעירו וא\"ת א\"כ רעהו דכתב רחמנא למה לי וי\"ל דאי לאו דאשכחן בחד דוכתא דפטר רחמנא להדיוט בהקדש לגמרי לא הוה דרשינן כי יאכל פרט למזיק אלא לפטור מחומש לחודיה:"
+  }
+}
