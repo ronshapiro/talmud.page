@@ -5,11 +5,14 @@ import {Book, books} from "../books";
 import {cachedOutputFilePath} from "../cached_outputs";
 import {toFlatArray} from "../sefariaTextType";
 import {aiEditsForPage, Edit} from "./ai_edits";
+import {listNeedsHumanRecords} from "./rsi_state/generation_record";
+import {splitOnBookName} from "../refs";
 import {writeJson} from "../util/json_files";
 import {readUtf8} from "../files";
 import {
   computeProgressSummary,
   MasechetProgress,
+  NeedsHumanComment,
   PageCommentaryIndex,
   PageProgress,
   PageProgressStatus,
@@ -23,6 +26,7 @@ export {
   computeSevenDayRollingPace,
   hasTranslatableComments,
   MasechetProgress,
+  NeedsHumanComment,
   PageCommentaryIndex,
   PageProgress,
   PageProgressStatus,
@@ -99,7 +103,7 @@ export function computeTranslationTimeline(): TranslationTimelinePoint[] {
           const fileContent = JSON.parse(readUtf8(`${tractateDirectory}/${fileName}`));
           for (const commentRef of Object.keys(fileContent)) {
             const record = fileContent[commentRef];
-            if (record && record.generatedAt) {
+            if (record && record.generatedAt && !record.needsHumanAttention) {
               const dateString = record.generatedAt.slice(0, 10);
               const currentCount = dailyCountsMap.get(dateString) ?? 0;
               dailyCountsMap.set(dateString, currentCount + 1);
@@ -131,6 +135,22 @@ export function computeTranslationTimeline(): TranslationTimelinePoint[] {
   }
 
   return timeline;
+}
+
+export function computeNeedsHumanComments(
+  taskType = "rashi_tosafot_translation",
+): NeedsHumanComment[] {
+  return listNeedsHumanRecords(taskType).map(({page, ref, record}) => {
+    const [book, section] = page.includes(" ") ? splitOnBookName(page) : [page, ""];
+    return {
+      book,
+      section,
+      ref,
+      ...(record.failureReason ? {failureReason: record.failureReason} : {}),
+      model: record.model,
+      generatedAt: record.generatedAt,
+    };
+  });
 }
 
 export const RASHI_TOSAFOT_COMMENTS_PER_PAGE_PATH = (
@@ -302,12 +322,11 @@ export function computeTranslationProgress(): TranslationProgressData {
 
   const summary = computeProgressSummary(masechtotProgress, new Date().toISOString());
 
-  const timeline = computeTranslationTimeline();
-
   return {
     summary,
     masechtot: masechtotProgress,
-    timeline,
+    timeline: computeTranslationTimeline(),
+    needsHumanAttention: computeNeedsHumanComments(),
   };
 }
 
@@ -326,6 +345,7 @@ export function getTranslationProgress(): TranslationProgressData {
       cachedProgressData = {
         ...loadedData,
         summary: computeProgressSummary(loadedData.masechtot, loadedData.summary.updatedAt),
+        needsHumanAttention: loadedData.needsHumanAttention ?? computeNeedsHumanComments(),
       };
       return cachedProgressData;
     } catch {

@@ -1,5 +1,6 @@
 import {BudgetConfig, isPaused, readBudgetConfig} from "../precomputed/rsi_state/budget";
 import {ContextUsageEntry, readContextUsageLog} from "../precomputed/rsi_state/context_usage_log";
+import {listNeedsHumanRecords, NeedsHumanRecord} from "../precomputed/rsi_state/generation_record";
 import {computeContextReport, formatContextReport} from "./context_usage_report";
 
 /**
@@ -11,6 +12,9 @@ import {computeContextReport, formatContextReport} from "./context_usage_report"
  *
  * `status_cli.ts context [--since YYYY-MM-DD] [--task <taskType>]` instead prints per-model
  * context_fetch usage (see context_usage_report.ts).
+ *
+ * `status_cli.ts needs-human [--task <taskType>]` lists comments skipped after exhausting
+ * automated retries so a human can address them.
  */
 
 export interface TaskStatus {
@@ -76,6 +80,18 @@ export function formatStatus(
   return lines.join("\n");
 }
 
+export function formatNeedsHumanReport(records: NeedsHumanRecord[]): string {
+  if (records.length === 0) {
+    return "No comments currently marked as needing human attention.";
+  }
+  const lines = [`${records.length} comment(s) marked as needing human attention:`];
+  for (const {ref, record} of records) {
+    const reason = record.failureReason ? ` — ${record.failureReason}` : "";
+    lines.push(`- ${ref} (${record.model}, ${record.generatedAt})${reason}`);
+  }
+  return lines.join("\n");
+}
+
 function flagValue(args: string[], flag: string): string | undefined {
   const index = args.indexOf(flag);
   return index === -1 ? undefined : args[index + 1];
@@ -89,6 +105,11 @@ function main(): void {
       since: since ? new Date(since) : undefined,
       taskType: flagValue(args, "--task"),
     })));
+    return;
+  }
+  if (subcommand === "needs-human") {
+    const taskType = flagValue(args, "--task") ?? "rashi_tosafot_translation";
+    console.log(formatNeedsHumanReport(listNeedsHumanRecords(taskType)));
     return;
   }
   const config = readBudgetConfig();

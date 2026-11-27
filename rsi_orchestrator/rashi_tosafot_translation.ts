@@ -106,10 +106,18 @@ export interface GeneratedEdit {
   durationSeconds?: number;
 }
 
+export interface ExhaustedAttemptsInfo {
+  reason: string;
+  attempts: number;
+  costUsd: number | undefined;
+  model: string | undefined;
+}
+
 export interface GenerationDeps {
   generate: (candidate: TranslationCandidate, priorFeedback?: string) => Promise<GeneratedEdit>;
   critique: (candidate: TranslationCandidate, edit: Edit) => Promise<CritiqueOutcome>;
   shouldStop?: () => boolean;
+  onExhaustedAttempts?: (failure: ExhaustedAttemptsInfo) => void;
 }
 
 function sumCost(...costs: (number | undefined)[]): number | undefined {
@@ -229,6 +237,7 @@ export async function generateWithSelfCritique(
 ): Promise<GeneratedEdit | undefined> {
   let feedback: string | undefined;
   let totalCost: number | undefined;
+  let lastModel: string | undefined;
   let lastReason = "unknown error";
   const {images: candidateImages} = extractBase64Images(
     candidate.hebrewSource,
@@ -244,6 +253,7 @@ export async function generateWithSelfCritique(
     try {
       // eslint-disable-next-line no-await-in-loop
       generated = await deps.generate(candidate, feedback);
+      lastModel = generated.model ?? lastModel;
       if (candidateImages.length > 0) {
         generated = {
           ...generated,
@@ -286,14 +296,25 @@ export async function generateWithSelfCritique(
     lastReason = outcome.verdict.reason ?? "Critique rejected the edit";
     feedback = lastReason;
   }
+  if (deps.shouldStop?.()) {
+    return undefined;
+  }
   console.error(
-    `Giving up on ${candidate.ref} after ${MAX_GENERATION_ATTEMPTS} attempts: ${lastReason}`);
+    `Giving up on ${candidate.ref} after ${MAX_GENERATION_ATTEMPTS} attempts `
+    + `(marking for human attention): ${lastReason}`);
+  deps.onExhaustedAttempts?.({
+    reason: lastReason,
+    attempts: MAX_GENERATION_ATTEMPTS,
+    costUsd: totalCost,
+    model: lastModel,
+  });
   return undefined;
 }
 
 export interface TranslationRunResult {
   rateLimited: boolean;
   rateLimitError?: AgentError;
+  rateLimitedRef?: string;
   candidatesProcessed: number;
   stoppedDueToDeadline?: boolean;
   stoppedDueToSignal?: boolean;
@@ -341,7 +362,12 @@ export async function translateRashiTosafotComments(
         // burn through it logging the identical failure. Subscription usage limits are the
         // expected budget signal under self-hosted billing; see RecursiveSelfImprovingAgentPlan.md.
         console.error(`Stopping: hit the usage limit (${e.message})`);
-        return {rateLimited: true, rateLimitError: e, candidatesProcessed};
+        return {
+          rateLimited: true,
+          rateLimitError: e,
+          rateLimitedRef: candidate.ref,
+          candidatesProcessed,
+        };
       }
       console.error(`Skipping ${candidate.ref}: ${e}`);
       continue;
@@ -427,6 +453,7 @@ export async function runContinuousTranslation(
   const deadline = startTime + deps.durationMs;
   let totalProcessed = 0;
   let totalPauses = 0;
+  let resumeFromRef: string | undefined;
 
   logger.log(
     `Starting continuous translation mode for ${deps.durationMs / 3600000} hours `
@@ -449,9 +476,20 @@ export async function runContinuousTranslation(
       return {totalProcessed, totalPauses, stoppedReason: "all_completed"};
     }
 
+    let candidatesForPass = unFreshCandidates;
+    let startedFromOrigin = true;
+    const targetResumeRef = resumeFromRef;
+    if (targetResumeRef) {
+      const resumeIndex = unFreshCandidates.findIndex(c => c.ref === targetResumeRef);
+      if (resumeIndex > 0) {
+        candidatesForPass = unFreshCandidates.slice(resumeIndex);
+        startedFromOrigin = false;
+      }
+    }
+
     // eslint-disable-next-line no-await-in-loop
     const result = await translateRashiTosafotComments({
-      listCandidates: () => unFreshCandidates,
+      listCandidates: () => candidatesForPass,
       isFresh: deps.isFresh,
       generate: deps.generate,
       writeEdit: deps.writeEdit,
@@ -477,7 +515,8 @@ export async function runContinuousTranslation(
     }
 
     if (result.rateLimited) {
-      if (deps.onProgress) {
+      resumeFromRef = result.rateLimitedRef ?? resumeFromRef;
+      if (deps.onProgress && result.candidatesProcessed === 0) {
         // eslint-disable-next-line no-await-in-loop
         await deps.onProgress();
       }
@@ -503,10 +542,13 @@ export async function runContinuousTranslation(
         logger.log("Duration limit reached while paused. Stopping.");
         return {totalProcessed, totalPauses, stoppedReason: "duration_elapsed"};
       }
-      logger.log(`Resuming at ${new Date(now()).toISOString()} and checking quota availability...`);
+      logger.log(
+        `Resuming at ${new Date(now()).toISOString()}`
+        + `${resumeFromRef ? ` from ${resumeFromRef}` : ""} and checking quota availability...`);
     } else {
+      resumeFromRef = undefined;
       const remaining = deps.listCandidates().filter(c => !deps.isFresh(c));
-      if (remaining.length === 0) {
+      if (remaining.length === 0 || (startedFromOrigin && result.candidatesProcessed === 0)) {
         logger.log("All candidates have been translated and recorded. Exiting.");
         if (deps.onProgress) {
           // eslint-disable-next-line no-await-in-loop
@@ -668,6 +710,7 @@ function findWorkedExamples(commentator: Commentator, excludeRef: string): Worke
     if (!edits) continue;
     const records = readGenerationRecordsForPage(TASK_TYPE, page);
     for (const [ref, record] of Object.entries(records)) {
+      if (record.needsHumanAttention) continue;
       if (ref === excludeRef || !ref.startsWith(`${commentator} on `)) continue;
       const edit = edits[ref];
       if (!edit) continue;
@@ -788,6 +831,7 @@ export interface TaskExecutionOptions {
   sessionManager?: LongThreadSessionManager;
   signal?: AbortSignal;
   shouldStop?: () => boolean;
+  onExhaustedAttempts?: (failure: ExhaustedAttemptsInfo) => void;
 }
 
 export async function generateViaAgent(
@@ -962,6 +1006,26 @@ export async function critiqueViaAgent(
   return outcome;
 }
 
+/**
+ * Records a comment that failed all automated retry attempts so subsequent passes and runs skip
+ * it instead of cycling on it, while flagging it for human attention along with the failure reason.
+ */
+export function recordNeedsHumanForCandidate(
+  candidate: TranslationCandidate, failure: ExhaustedAttemptsInfo,
+): void {
+  upsertGenerationRecord(TASK_TYPE, candidate.page, candidate.ref, {
+    sourceRefs: [candidate.ref],
+    sourceText: candidate.hebrewSource,
+    model: failure.model ?? "unknown",
+    promptVersion: PROMPT_VERSION,
+    generatedAt: new Date().toISOString(),
+    dependsOn: [],
+    costUsd: failure.costUsd,
+    needsHumanAttention: true,
+    failureReason: failure.reason,
+  });
+}
+
 export async function generateAndRecord(
   candidate: TranslationCandidate,
   options?: TaskExecutionOptions,
@@ -977,6 +1041,13 @@ export async function generateAndRecord(
   try {
     return await generateWithSelfCritique(candidate, {
       shouldStop: options?.shouldStop,
+      onExhaustedAttempts: (failure) => {
+        if (options?.onExhaustedAttempts) {
+          options.onExhaustedAttempts(failure);
+        } else {
+          recordNeedsHumanForCandidate(candidate, failure);
+        }
+      },
       generate: (currentCandidate, priorFeedback) => {
         if (effectiveOptions.debug && priorFeedback) {
           console.log(`  [retry] feedback from previous attempt: ${priorFeedback}`);

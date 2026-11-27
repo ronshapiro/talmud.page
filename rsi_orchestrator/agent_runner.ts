@@ -44,6 +44,23 @@ export type AgentRunner = (prompt: string, options?: AgentOptions) => Promise<Ag
 
 export const DEFAULT_AGENT_TIMEOUT_MS = 10 * 60 * 1000;
 
+const RATE_LIMIT_MESSAGE_PATTERN = new RegExp(
+  [
+    "rate.?limit",
+    "quota.?(?:exceeded|reached)",
+    "resource.?exhausted",
+    "(?:session|usage|5-hour|weekly|spending)\\s+limit",
+    "hit\\s+your\\s+limit",
+    "limit\\s+reached",
+    "out\\s+of\\s+extra\\s+usage",
+  ].join("|"),
+  "i",
+);
+
+export function isRateLimitMessage(message: string): boolean {
+  return RATE_LIMIT_MESSAGE_PATTERN.test(message);
+}
+
 /**
  * Unified error thrown when an agent runner CLI fails.
  * `isRateLimited` flags whether the error is due to session limits, quotas, or 429 status.
@@ -63,8 +80,7 @@ export class AgentError extends Error {
     Object.setPrototypeOf(this, AgentError.prototype);
     this.name = "AgentError";
     this.isCancelled = isCancelled;
-    this.isRateLimited = !isCancelled && (apiErrorStatus === 429
-      || /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message));
+    this.isRateLimited = !isCancelled && (apiErrorStatus === 429 || isRateLimitMessage(message));
   }
 }
 
@@ -259,7 +275,7 @@ export function asAgyCliError(error: unknown): AgentError | undefined {
     }
   }
   const message = stderr || (error as Error | undefined)?.message;
-  if (message && /rate.?limit|quota.?(?:exceeded|reached)|resource.?exhausted|session limit/i.test(message)) {
+  if (message && isRateLimitMessage(message)) {
     return new AgentError(message, 429, "agy");
   }
   return undefined;
@@ -977,10 +993,18 @@ export function parseClaudeStreamJsonLines(stdout: string): {
 
 export function asClaudeCliError(error: unknown): AgentError | undefined {
   const stdout = (error as {stdout?: string} | undefined)?.stdout;
-  if (!stdout) return undefined;
-  const {result} = parseClaudeStreamJsonLines(stdout);
-  if (!result) return undefined;
-  return new AgentError(result.result, result.api_error_status, "claude");
+  const stderr = (error as {stderr?: string} | undefined)?.stderr;
+  if (stdout) {
+    const {result} = parseClaudeStreamJsonLines(stdout);
+    if (result) {
+      return new AgentError(result.result, result.api_error_status, "claude");
+    }
+  }
+  const message = stderr || (error as Error | undefined)?.message;
+  if (message && isRateLimitMessage(message)) {
+    return new AgentError(message, 429, "claude");
+  }
+  return undefined;
 }
 
 const DEFAULT_CLAUDE_ALLOWED_TOOLS = ["Read", "Grep", "Glob"];

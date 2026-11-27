@@ -1,7 +1,10 @@
+import * as fs from "fs";
 import {Amud} from "../apiTypes";
 import {readUtf8} from "../files";
 import {aiEditsForPage} from "./ai_edits";
+import {upsertGenerationRecord} from "./rsi_state/generation_record";
 import {
+  computeNeedsHumanComments,
   computeProgressSummary,
   computeSevenDayRollingPace,
   countPageTranslations,
@@ -317,5 +320,45 @@ describe("translation_progress", () => {
       totalComments: 25,
       translatedComments: 25,
     });
+  });
+
+  test("computeNeedsHumanComments extracts book, section, ref, and failureReason for flagged records", () => {
+    const testTaskType = "__test_needs_human_dashboard__";
+    try {
+      upsertGenerationRecord(testTaskType, "Moed Katan 13a", "Rashi on Moed Katan 13a:11:1", {
+        sourceRefs: ["Rashi on Moed Katan 13a:11:1"],
+        sourceText: "מקור",
+        model: "claude-sonnet-5-5",
+        promptVersion: "v3",
+        generatedAt: "2026-11-27T01:00:00.000Z",
+        dependsOn: [],
+        needsHumanAttention: true,
+        failureReason: "Modified source wording",
+      });
+      upsertGenerationRecord(testTaskType, "Moed Katan 13a", "Rashi on Moed Katan 13a:11:2", {
+        sourceRefs: ["Rashi on Moed Katan 13a:11:2"],
+        sourceText: "מקור תקין",
+        model: "claude-sonnet-5-5",
+        promptVersion: "v3",
+        generatedAt: "2026-11-27T01:05:00.000Z",
+        dependsOn: [],
+      });
+
+      expect(computeNeedsHumanComments(testTaskType)).toEqual([
+        {
+          book: "Moed Katan",
+          section: "13a",
+          ref: "Rashi on Moed Katan 13a:11:1",
+          failureReason: "Modified source wording",
+          model: "claude-sonnet-5-5",
+          generatedAt: "2026-11-27T01:00:00.000Z",
+        },
+      ]);
+    } finally {
+      fs.rmSync(
+        `precomputed/rsi_state/generation_records/${testTaskType}`,
+        {recursive: true, force: true},
+      );
+    }
   });
 });

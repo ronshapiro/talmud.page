@@ -13,6 +13,7 @@ import {
   computeSevenDayRollingPace,
   hasTranslatableComments,
   MasechetProgress,
+  NeedsHumanComment,
   PageProgress,
   roundPercentage,
   TranslationProgressData,
@@ -757,6 +758,85 @@ function MasechetRow({
   );
 }
 
+function formatNeedsHumanBadgeLabel(count: number, isHebrew: boolean): string {
+  if (isHebrew) {
+    return count === 1 ? "פירוש 1 דורש טיפול ידני" : `${count.toLocaleString()} דורשים טיפול ידני`;
+  }
+  return count === 1
+    ? "1 Comment Needs Human Attention"
+    : `${count.toLocaleString()} Comments Need Human Attention`;
+}
+
+function NeedsHumanAttentionSection({
+  comments,
+  isHebrew,
+  isExpanded,
+  onToggleExpand,
+}: {
+  comments: NeedsHumanComment[];
+  isHebrew: boolean;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
+}): React.ReactElement {
+  const sectionLabel = isHebrew ? "פירושים הדורשים טיפול ידני" : "Comments Needing Human Attention";
+  const summaryLabel = formatNeedsHumanBadgeLabel(comments.length, isHebrew);
+  const toggleHint = isExpanded
+    ? (isHebrew ? "הסתר רשימה" : "Hide list")
+    : (isHebrew ? "הצג רשימה" : "Show list");
+
+  return (
+    <section
+      id="needs-human-attention"
+      className="needs-human-section"
+      aria-label={sectionLabel}>
+      <details className="needs-human-details" open={isExpanded}>
+        {/* <summary> is natively interactive (mouse/Enter/Space); older jsx-a11y flags it. */}
+        {/* eslint-disable jsx-a11y/click-events-have-key-events */}
+        {/* eslint-disable jsx-a11y/no-static-element-interactions */}
+        <summary
+          className="needs-human-summary"
+          onClick={event => {
+            event.preventDefault();
+            onToggleExpand();
+          }}>
+          {/* eslint-enable jsx-a11y/click-events-have-key-events */}
+          {/* eslint-enable jsx-a11y/no-static-element-interactions */}
+          <span className="needs-human-summary-title">{summaryLabel}</span>
+          <span className="needs-human-summary-hint">{toggleHint}</span>
+        </summary>
+        {isExpanded && (
+          <ul className="needs-human-list">
+            {comments.map(comment => {
+              const pageHref = comment.section
+                ? `/${comment.book}/${comment.section}`
+                : `/${comment.book}`;
+              return (
+                <li key={comment.ref} className="needs-human-item">
+                  <div className="needs-human-item-header">
+                    <a
+                      href={pageHref}
+                      className="needs-human-link"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      {comment.ref}
+                    </a>
+                    <span className="needs-human-meta">
+                      {comment.model} &bull; {comment.generatedAt.slice(0, 10)}
+                    </span>
+                  </div>
+                  {comment.failureReason && (
+                    <div className="needs-human-reason">{comment.failureReason}</div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </details>
+    </section>
+  );
+}
+
 const SEDARIM: {key: string; english: string; hebrew: string}[] = [
   {key: "All", english: "All Tractates", hebrew: "כל המסכתות"},
   {key: "Zeraim", english: "Zeraim", hebrew: "זרעים"},
@@ -813,6 +893,7 @@ export function TranslationProgressDashboard({
     translationProgressSortOrder,
   );
   const [expandedMasechtot, setExpandedMasechtot] = React.useState<Record<string, boolean>>({});
+  const [isNeedsHumanExpanded, setIsNeedsHumanExpanded] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     if (!progressData) {
@@ -908,6 +989,17 @@ export function TranslationProgressDashboard({
     window.location.assign("/");
   };
 
+  const needsHumanComments = progressData.needsHumanAttention ?? [];
+
+  const handleNeedsHumanBadgeClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setIsNeedsHumanExpanded(true);
+    const targetElement = document.getElementById("needs-human-attention");
+    if (targetElement && typeof targetElement.scrollIntoView === "function") {
+      targetElement.scrollIntoView({behavior: "smooth"});
+    }
+  };
+
   const containerThemeClass = isDarkMode ? "theme-dark" : "theme-light";
 
   return (
@@ -918,9 +1010,20 @@ export function TranslationProgressDashboard({
 
       <div className={`translation-dashboard-container ${containerThemeClass}`} dir={isHebrew ? "rtl" : "ltr"}>
         <div className="translation-dashboard-header">
-          <div className="translation-dashboard-badge">
-            <span className="metric-pill" />
-            <span>Talmud Bavli Project</span>
+          <div className="translation-dashboard-badges">
+            <div className="translation-dashboard-badge">
+              <span className="metric-pill" />
+              <span>Talmud Bavli Project</span>
+            </div>
+            {needsHumanComments.length > 0 && (
+              <a
+                href="#needs-human-attention"
+                className="translation-dashboard-badge needs-human-badge"
+                onClick={handleNeedsHumanBadgeClick}>
+                <span className="metric-pill needs-human-pill" />
+                <span>{formatNeedsHumanBadgeLabel(needsHumanComments.length, isHebrew)}</span>
+              </a>
+            )}
           </div>
           <h1 className="translation-dashboard-title">
             {isHebrew ? "התקדמות תרגום רש״י ותוספות" : "Rashi & Tosafot Translation Progress"}
@@ -993,6 +1096,15 @@ export function TranslationProgressDashboard({
             />
           ))}
         </div>
+
+        {needsHumanComments.length > 0 && (
+          <NeedsHumanAttentionSection
+            comments={needsHumanComments}
+            isHebrew={isHebrew}
+            isExpanded={isNeedsHumanExpanded}
+            onToggleExpand={() => setIsNeedsHumanExpanded(previous => !previous)}
+          />
+        )}
       </div>
     </>
   );
