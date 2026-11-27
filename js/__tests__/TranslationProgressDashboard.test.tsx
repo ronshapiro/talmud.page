@@ -11,6 +11,7 @@ import {
 } from "../settings";
 import {
   MasechetProgress,
+  NeedsHumanComment,
   TranslationProgressData,
   TranslationTimelinePoint,
 } from "../../precomputed/translation_progress_summary";
@@ -551,5 +552,103 @@ describe("TranslationTimelineChart 7-day rolling pace", () => {
       expect(yValue).toBeGreaterThanOrEqual(50);
       expect(yValue).toBeLessThanOrEqual(200);
     }
+  });
+});
+
+describe("TranslationProgressDashboard needs human attention section", () => {
+  const sampleNeedsHuman: NeedsHumanComment[] = [
+    {
+      book: "Moed Katan",
+      section: "13a",
+      ref: "Rashi on Moed Katan 13a:11:1",
+      failureReason: "Verification failed after 5 attempts",
+      model: "claude-sonnet-5-5",
+      generatedAt: "2026-11-27T00:00:00.000Z",
+    },
+    {
+      book: "Bava Metzia",
+      section: "79b",
+      ref: "Tosafot on Bava Metzia 79b:6:1",
+      failureReason: "Critique rejected brackets",
+      model: "claude-sonnet-5-5",
+      generatedAt: "2026-11-27T05:30:00.000Z",
+    },
+  ];
+
+  test("omits badge and section when there are no comments needing human attention", () => {
+    const container = mount(
+      <TranslationProgressDashboard
+        initialData={{...buildProgressData(), needsHumanAttention: []}}
+      />,
+    );
+
+    expect(queryOrNull(container, ".needs-human-badge")).toBeNull();
+    expect(queryOrNull(container, ".needs-human-section")).toBeNull();
+  });
+
+  test("shows top badge and keeps bottom list collapsed on page load until expanded", () => {
+    const container = mount(
+      <TranslationProgressDashboard
+        initialData={{...buildProgressData(), needsHumanAttention: sampleNeedsHuman}}
+      />,
+    );
+
+    const badge = query(container, ".needs-human-badge");
+    expect(badge.textContent).toContain("2 Comments Need Human Attention");
+    expect(badge.getAttribute("href")).toBe("#needs-human-attention");
+
+    // Collapsed on page load so the page stays compact
+    const details = query(container, ".needs-human-details") as HTMLDetailsElement;
+    expect(details.open).toBe(false);
+    expect(queryOrNull(container, ".needs-human-list")).toBeNull();
+
+    // Expanding via summary reveals the list with clickable page links and reasons
+    click(query(container, ".needs-human-summary"));
+    expect(details.open).toBe(true);
+    const links = queryAll(container, ".needs-human-link");
+    expect(links.map(link => ({
+      text: link.textContent,
+      href: link.getAttribute("href"),
+    }))).toEqual([
+      {text: "Rashi on Moed Katan 13a:11:1", href: "/Moed Katan/13a"},
+      {text: "Tosafot on Bava Metzia 79b:6:1", href: "/Bava Metzia/79b"},
+    ]);
+    expect(texts(container, ".needs-human-reason")).toEqual([
+      "Verification failed after 5 attempts",
+      "Critique rejected brackets",
+    ]);
+
+    // Clicking summary again collapses the list
+    click(query(container, ".needs-human-summary"));
+    expect(details.open).toBe(false);
+    expect(queryOrNull(container, ".needs-human-list")).toBeNull();
+  });
+
+  test("clicking the top badge expands the bottom list", () => {
+    const container = mount(
+      <TranslationProgressDashboard
+        initialData={{...buildProgressData(), needsHumanAttention: sampleNeedsHuman}}
+      />,
+    );
+
+    expect(queryOrNull(container, ".needs-human-list")).toBeNull();
+    click(query(container, ".needs-human-badge"));
+
+    expect(queryAll(container, ".needs-human-item")).toHaveLength(2);
+    expect((query(container, ".needs-human-details") as HTMLDetailsElement).open).toBe(true);
+  });
+
+  test("renders Hebrew labels for badge and collapsible section", () => {
+    setSiteLanguage(SiteLanguage.Hebrew);
+    const container = mount(
+      <TranslationProgressDashboard
+        initialData={{...buildProgressData(), needsHumanAttention: [sampleNeedsHuman[0]]}}
+      />,
+    );
+
+    expect(query(container, ".needs-human-badge").textContent).toContain("פירוש 1 דורש טיפול ידני");
+    expect(query(container, ".needs-human-summary-hint").textContent).toBe("הצג רשימה");
+    click(query(container, ".needs-human-summary"));
+    expect(query(container, ".needs-human-summary-hint").textContent).toBe("הסתר רשימה");
   });
 });

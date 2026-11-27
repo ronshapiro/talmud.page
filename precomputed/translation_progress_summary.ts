@@ -48,10 +48,20 @@ export interface TranslationTimelinePoint {
   cumulativeCount: number;
 }
 
+export interface NeedsHumanComment {
+  book: string;
+  section: string;
+  ref: string;
+  failureReason?: string;
+  model: string;
+  generatedAt: string;
+}
+
 export interface TranslationProgressData {
   summary: TranslationProgressSummary;
   masechtot: MasechetProgress[];
   timeline: TranslationTimelinePoint[];
+  needsHumanAttention?: NeedsHumanComment[];
 }
 
 export function roundPercentage(numerator: number, denominator: number): number {
