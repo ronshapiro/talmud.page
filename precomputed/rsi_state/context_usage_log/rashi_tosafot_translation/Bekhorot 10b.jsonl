@@ -72,3 +72,5 @@
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Bekhorot 10b:29:2","callKind":"critique","toolUses":[],"model":"gemini-3.8-flash-medium","timestamp":"2026-11-05T19:33:02.360Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Bekhorot 10b:29:3","callKind":"generate","toolUses":[],"model":"gemini-3.8-flash-medium","timestamp":"2026-11-05T19:33:24.394Z"}
 {"taskType":"rashi_tosafot_translation","ref":"Rashi on Bekhorot 10b:29:3","callKind":"critique","toolUses":[],"model":"gemini-3.8-flash-medium","timestamp":"2026-11-05T19:33:38.291Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Bekhorot 10b:5:1","callKind":"generate","toolUses":[{"name":"run_command","input":{"CommandLine":"npm run get-neighbors \"Bekhorot 10b:5\" --before 3","command":"npm run get-neighbors \"Bekhorot 10b:5\" --before 3"}}],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-27T10:32:53.683Z"}
+{"taskType":"rashi_tosafot_translation","ref":"Rashi on Bekhorot 10b:5:1","callKind":"critique","toolUses":[],"model":"gemini-4-hydrogen-medium","timestamp":"2026-11-27T10:33:02.410Z"}
