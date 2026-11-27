@@ -21,6 +21,7 @@ import {
   isFreshTranslation,
   TASK_TYPE,
   recordGenerationForCandidate,
+  recordNeedsHumanForCandidate,
   compareAmudim,
   filterSectionsFromStartPage,
   MAX_GENERATION_ATTEMPTS,
@@ -124,15 +125,54 @@ describe("generateWithSelfCritique", () => {
     expect(result!.contextRefsUsed).toEqual(["Zevachim 2a:1"]);
   });
 
-  test(`retries up to ${MAX_GENERATION_ATTEMPTS} times, then gives up`, async () => {
+  test(`retries up to ${MAX_GENERATION_ATTEMPTS} times, then gives up and invokes onExhaustedAttempts`, async () => {
     const generate = jest.fn(async () => generated({edit: {hebrew: "מקור.", english: "wrong"}}));
     const critique = jest.fn(async () => invalidOutcome);
+    const onExhaustedAttempts = jest.fn();
 
-    const result = await generateWithSelfCritique(candidate(), {generate, critique});
+    const result = await generateWithSelfCritique(
+      candidate(), {generate, critique, onExhaustedAttempts},
+    );
 
     expect(result).toBeUndefined();
     expect(generate).toHaveBeenCalledTimes(MAX_GENERATION_ATTEMPTS);
     expect(critique).toHaveBeenCalledTimes(MAX_GENERATION_ATTEMPTS);
+    expect(onExhaustedAttempts).toHaveBeenCalledTimes(1);
+    const [failure] = onExhaustedAttempts.mock.calls[0];
+    expect(failure.reason).toBe("changed a word");
+    expect(failure.attempts).toBe(MAX_GENERATION_ATTEMPTS);
+    expect(failure.costUsd).toBeCloseTo(MAX_GENERATION_ATTEMPTS * 0.012);
+    expect(failure.model).toBe("claude-sonnet-5");
+  });
+
+  test("does not invoke onExhaustedAttempts when stopped early by shouldStop", async () => {
+    const generate = jest.fn(async () => generated());
+    const critique = jest.fn(async () => validOutcome);
+    const onExhaustedAttempts = jest.fn();
+
+    const result = await generateWithSelfCritique(candidate(), {
+      generate,
+      critique,
+      shouldStop: () => true,
+      onExhaustedAttempts,
+    });
+
+    expect(result).toBeUndefined();
+    expect(onExhaustedAttempts).not.toHaveBeenCalled();
+  });
+
+  test("does not invoke onExhaustedAttempts when rate-limited", async () => {
+    const rateLimitError = new AgentError("You've hit your limit", 429, "claude");
+    const generate = jest.fn(async () => { throw rateLimitError; });
+    const critique = jest.fn(async () => validOutcome);
+    const onExhaustedAttempts = jest.fn();
+
+    await expect(generateWithSelfCritique(candidate(), {
+      generate,
+      critique,
+      onExhaustedAttempts,
+    })).rejects.toBe(rateLimitError);
+    expect(onExhaustedAttempts).not.toHaveBeenCalled();
   });
 
   test("succeeds on the final allowed attempt rather than giving up early", async () => {
@@ -276,6 +316,14 @@ describe("verifyProposedHebrewWording", () => {
     const proposedHebrew = '<strong class="dibur-hamatchil">מתני\'</strong> - '
       + 'כ"א תקיעות, <span class="explanation">הגמרא</span> מפרש להו בפ\' החליל:';
     const verification = verifyProposedHebrewWording(sourceHebrew, proposedHebrew);
+    expect(verification.valid).toBe(true);
+  });
+
+  test("accepts preserving square brackets that appear in the source Hebrew text", () => {
+    const sourceWithBrackets = 'כסותו - ר"ח גריס כסתו כדתנן במסכת [כלים] (פכ"ח מ"ה)';
+    const proposedWithBrackets = '<strong class="dibur-hamatchil">כסותו</strong> - '
+      + '<abbr title="רבינו חננאל">ר"ח</abbr> גריס כסתו, כדתנן במסכת [כלים] (פכ"ח מ"ה):';
+    const verification = verifyProposedHebrewWording(sourceWithBrackets, proposedWithBrackets);
     expect(verification.valid).toBe(true);
   });
 
@@ -560,7 +608,7 @@ describe("translateRashiTosafotComments", () => {
     expect(result).toEqual({rateLimited: false, candidatesProcessed: 2});
   });
 
-  test("returns rateLimited: true and the error when rate limit is encountered", async () => {
+  test("returns rateLimited: true, rateLimitedRef, and the error when rate limit is encountered", async () => {
     const rateLimitErr = new AgentError("Resource exhausted", 429, "claude");
     const result = await translateRashiTosafotComments(fakeGenerationDeps({
       listCandidates: () => [candidate({ref: "a"})],
@@ -569,6 +617,7 @@ describe("translateRashiTosafotComments", () => {
     expect(result).toEqual({
       rateLimited: true,
       rateLimitError: rateLimitErr,
+      rateLimitedRef: "a",
       candidatesProcessed: 0,
     });
   });
@@ -900,6 +949,152 @@ describe("runContinuousTranslation", () => {
     expect(elapsed).toBeLessThan(2000); // Definitely didn't wait 1 hour!
     expect(summary.stoppedReason).toBe("stopped_by_signal");
   });
+
+  test("waits in-process on quota exhaustion and resumes from the rate-limited ref instead of restarting from the origin", async () => {
+    const freshSet = new Set<string>();
+    const candidates = [
+      candidate({ref: "a"}),
+      candidate({ref: "b"}),
+      candidate({ref: "c"}),
+      candidate({ref: "d"}),
+    ];
+    let currentTime = 0;
+    const checkIntervalMs = 60 * 60 * 1000;
+    const sleepCalls: number[] = [];
+    const attemptedOrder: string[] = [];
+    let quotaRestored = false;
+
+    const summary = await runContinuousTranslation({
+      listCandidates: () => candidates,
+      isFresh: current => freshSet.has(current.ref),
+      generate: async (current) => {
+        attemptedOrder.push(current.ref);
+        if (current.ref === "a") {
+          // Simulate a skipped candidate that fails 5 rounds and is marked skipped
+          freshSet.add("a");
+          return undefined;
+        }
+        if (current.ref === "c" && !quotaRestored) {
+          throw new AgentError("You've hit your limit · resets 5pm", undefined, "claude");
+        }
+        return generated();
+      },
+      writeEdit: current => freshSet.add(current.ref),
+      recordGeneration: () => {},
+      durationMs: 24 * 60 * 60 * 1000,
+      checkIntervalMs,
+      now: () => currentTime,
+      sleep: async (milliseconds) => {
+        sleepCalls.push(milliseconds);
+        currentTime += milliseconds;
+        quotaRestored = true;
+      },
+      logger: {log: () => {}, error: () => {}},
+    });
+
+    expect(summary).toEqual({
+      totalProcessed: 3,
+      totalPauses: 1,
+      stoppedReason: "all_completed",
+    });
+    expect(sleepCalls).toEqual([checkIntervalMs]);
+    // Resumed directly at "c" after quota reset, never cycling back to "a"
+    expect(attemptedOrder).toEqual(["a", "b", "c", "c", "d"]);
+  });
+
+  test("does not restart from an earlier skipped candidate while waiting for quota reset", async () => {
+    const freshSet = new Set<string>();
+    const candidates = [
+      candidate({ref: "a"}),
+      candidate({ref: "b"}),
+      candidate({ref: "c"}),
+    ];
+    let currentTime = 0;
+    const checkIntervalMs = 60 * 60 * 1000;
+    const attemptedOrder: string[] = [];
+    let quotaRestored = false;
+
+    const summary = await runContinuousTranslation({
+      listCandidates: () => candidates,
+      isFresh: current => freshSet.has(current.ref),
+      generate: async (current) => {
+        attemptedOrder.push(current.ref);
+        if (current.ref === "a") {
+          // Even if an earlier candidate remained non-fresh (e.g. transient error),
+          // waking from quota sleep should resume at "b" instead of restarting at "a".
+          return undefined;
+        }
+        if (current.ref === "b" && !quotaRestored) {
+          throw new AgentError("You've hit your limit · resets 5pm", undefined, "claude");
+        }
+        return generated();
+      },
+      writeEdit: current => freshSet.add(current.ref),
+      recordGeneration: () => {},
+      durationMs: 24 * 60 * 60 * 1000,
+      checkIntervalMs,
+      now: () => currentTime,
+      sleep: async (milliseconds) => {
+        currentTime += milliseconds;
+        quotaRestored = true;
+      },
+      logger: {log: () => {}, error: () => {}},
+    });
+
+    expect(summary.totalPauses).toBe(1);
+    expect(summary.totalProcessed).toBe(2);
+    expect(summary.stoppedReason).toBe("all_completed");
+    // Immediately after quota pause, resumed at "b" -> "c" (not "a")
+    expect(attemptedOrder.slice(0, 4)).toEqual(["a", "b", "b", "c"]);
+  });
+});
+
+describe("recordNeedsHumanForCandidate", () => {
+  test("marks a failed candidate with needsHumanAttention so isFreshTranslation skips it until source changes", () => {
+    const failedCandidate = candidate({
+      page: "__Test_Needs_Human__ 2a",
+      ref: "Rashi on __Test_Needs_Human__ 2a:1:1",
+      hebrewSource: "מקור בעייתי",
+    });
+    const storedRecords = new Map<string, generationRecordModule.GenerationRecord>();
+    const upsertSpy = jest.spyOn(generationRecordModule, "upsertGenerationRecord")
+      .mockImplementation((_taskType, _page, ref, record) => {
+        storedRecords.set(ref, record);
+      });
+    const readSpy = jest.spyOn(generationRecordModule, "readGenerationRecord")
+      .mockImplementation((_taskType, _page, ref) => storedRecords.get(ref));
+
+    try {
+      expect(isFreshTranslation(failedCandidate)).toBe(false);
+
+      recordNeedsHumanForCandidate(failedCandidate, {
+        reason: "Critique rejected all attempts",
+        attempts: MAX_GENERATION_ATTEMPTS,
+        costUsd: 0.25,
+        model: "claude-sonnet-5-5",
+      });
+
+      const saved = storedRecords.get(failedCandidate.ref);
+      expect(saved).toMatchObject({
+        sourceRefs: [failedCandidate.ref],
+        sourceText: "מקור בעייתי",
+        model: "claude-sonnet-5-5",
+        needsHumanAttention: true,
+        failureReason: "Critique rejected all attempts",
+        costUsd: 0.25,
+      });
+      // Treated as fresh so automated runs skip it instead of cycling on it
+      expect(isFreshTranslation(failedCandidate)).toBe(true);
+      // If Sefaria updates the underlying Hebrew source significantly, it becomes stale again
+      expect(isFreshTranslation({
+        ...failedCandidate,
+        hebrewSource: "טקסט מקור אחר לגמרי לאחר תיקון בספריא",
+      })).toBe(false);
+    } finally {
+      upsertSpy.mockRestore();
+      readSpy.mockRestore();
+    }
+  });
 });
 
 describe("filterSectionsFromStartPage", () => {
@@ -969,7 +1164,10 @@ describe("critiquePrompt", () => {
     expect(prompt).toContain("Keep any rejection reason to a single brief sentence.");
     expect(prompt).toContain('פ"ק for פרק קמא (not actually a chapter name)');
     expect(prompt).toContain(
-      'In the proposed Hebrew, are any added explanatory words enclosed in `<span class="explanation">...</span>`',
+      'In the proposed Hebrew, are any newly added explanatory words enclosed in `<span class="explanation">...</span>`',
+    );
+    expect(prompt).toContain(
+      "while any square brackets `[...]` that already appeared in the original Hebrew source text (textual emendations) are allowed and preserved as-is",
     );
     expect(prompt).toContain("using square brackets `[...]` — not `<span class=\"explanation\">`");
   });

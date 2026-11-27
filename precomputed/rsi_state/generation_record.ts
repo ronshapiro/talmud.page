@@ -23,6 +23,16 @@ export interface GenerationRecord {
   // sugya depends on every ref in that sugya, not just the one it's attached to).
   dependsOn: string[];
   confidence?: number;
+  // Set when automated generation exhausted all retry attempts so future automated runs skip this
+  // comment until addressed by a human (or until the underlying sourceText changes).
+  needsHumanAttention?: boolean;
+  failureReason?: string;
+}
+
+export interface NeedsHumanRecord {
+  page: string;
+  ref: string;
+  record: GenerationRecord;
 }
 
 export type PageGenerationRecords = Record<string, GenerationRecord>; // keyed by ref
@@ -131,4 +141,23 @@ export function findGenerationRecord(
     }
   }
   return undefined;
+}
+
+/**
+ * Lists every generation record flagged with `needsHumanAttention` for a task type, sorted by
+ * page and ref so humans can inspect and address comments that exhausted automated retries.
+ */
+export function listNeedsHumanRecords(taskType: string): NeedsHumanRecord[] {
+  const needsHuman: NeedsHumanRecord[] = [];
+  for (const page of listPagesWithGenerationRecords(taskType).sort()) {
+    const records = readGenerationRecordsForPage(taskType, page);
+    const sortedEntries = Object.entries(records)
+      .sort(([left], [right]) => left.localeCompare(right));
+    for (const [ref, record] of sortedEntries) {
+      if (record.needsHumanAttention) {
+        needsHuman.push({page, ref, record});
+      }
+    }
+  }
+  return needsHuman;
 }

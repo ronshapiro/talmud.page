@@ -184,6 +184,11 @@ describe("AgentError", () => {
 
     const quotaErr = new AgentError("Individual quota reached. Please upgrade your subscription.");
     expect(quotaErr.isRateLimited).toBe(true);
+
+    expect(new AgentError("You've hit your limit · resets 5pm (Asia/Jerusalem)").isRateLimited).toBe(true);
+    expect(new AgentError("Claude AI usage limit reached").isRateLimited).toBe(true);
+    expect(new AgentError("5-hour limit reached").isRateLimited).toBe(true);
+    expect(new AgentError("You are out of extra usage").isRateLimited).toBe(true);
   });
 
   test("sets isCancelled when passed", () => {
@@ -378,6 +383,24 @@ describe("asClaudeCliError", () => {
       resultLine({is_error: true, result: "boom", api_error_status: 429}),
     ].join("\n");
     expect(asClaudeCliError({stdout})!.isRateLimited).toBe(true);
+  });
+
+  test("recognizes Claude hit-your-limit stdout response even without api_error_status 429", () => {
+    const stdout = resultLine({
+      is_error: true,
+      result: "You've hit your limit · resets 5pm (Asia/Jerusalem)",
+    });
+    const recovered = asClaudeCliError({stdout});
+    expect(recovered).toBeInstanceOf(AgentError);
+    expect(recovered!.isRateLimited).toBe(true);
+    expect(recovered!.backend).toBe("claude");
+  });
+
+  test("identifies rate limit from stderr when stdout has no result line", () => {
+    const recovered = asClaudeCliError({stderr: "You've hit your limit · resets 5pm"});
+    expect(recovered).toBeInstanceOf(AgentError);
+    expect(recovered!.isRateLimited).toBe(true);
+    expect(recovered!.backend).toBe("claude");
   });
 });
 

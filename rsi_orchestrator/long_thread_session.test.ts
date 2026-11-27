@@ -75,7 +75,10 @@ describe("continuation prompts", () => {
     expect(prompt).toContain('{"valid": false, "reason": "<brief one-sentence reason>"}');
     expect(prompt).toContain("No lookups or arbitrary scripts/tools are permitted.");
     expect(prompt).toContain(
-      'In the proposed Hebrew, are any added explanatory words enclosed in `<span class="explanation">...</span>`',
+      'In the proposed Hebrew, are any newly added explanatory words enclosed in `<span class="explanation">...</span>`',
+    );
+    expect(prompt).toContain(
+      "while any square brackets `[...]` that already appeared in the original Hebrew source text are allowed and preserved as-is",
     );
     expect(prompt).toContain("using square brackets `[...]` — not `<span class=\"explanation\">`");
   });

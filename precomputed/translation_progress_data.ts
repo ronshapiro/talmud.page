@@ -99,7 +99,7 @@ export function computeTranslationTimeline(): TranslationTimelinePoint[] {
           const fileContent = JSON.parse(readUtf8(`${tractateDirectory}/${fileName}`));
           for (const commentRef of Object.keys(fileContent)) {
             const record = fileContent[commentRef];
-            if (record && record.generatedAt) {
+            if (record && record.generatedAt && !record.needsHumanAttention) {
               const dateString = record.generatedAt.slice(0, 10);
               const currentCount = dailyCountsMap.get(dateString) ?? 0;
               dailyCountsMap.set(dateString, currentCount + 1);

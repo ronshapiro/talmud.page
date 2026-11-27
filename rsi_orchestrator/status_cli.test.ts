@@ -1,6 +1,7 @@
 import {BudgetConfig} from "../precomputed/rsi_state/budget";
 import {ContextUsageEntry} from "../precomputed/rsi_state/context_usage_log";
-import {computeTaskStatuses, formatStatus} from "./status_cli";
+import {NeedsHumanRecord} from "../precomputed/rsi_state/generation_record";
+import {computeTaskStatuses, formatNeedsHumanReport, formatStatus} from "./status_cli";
 
 const NOW = new Date("2026-01-15T12:00:00.000Z");
 
@@ -87,5 +88,35 @@ describe("formatStatus", () => {
     const empty = config({taskTypes: {}});
     const output = formatStatus(empty, [], NOW);
     expect(output).toContain("No task types configured");
+  });
+});
+
+describe("formatNeedsHumanReport", () => {
+  test("reports when no comments need human attention", () => {
+    expect(formatNeedsHumanReport([])).toBe("No comments currently marked as needing human attention.");
+  });
+
+  test("lists flagged comments with model, timestamp, and failure reason", () => {
+    const records: NeedsHumanRecord[] = [
+      {
+        page: "Moed Katan 13a",
+        ref: "Rashi on Moed Katan 13a:11:1",
+        record: {
+          sourceRefs: ["Rashi on Moed Katan 13a:11:1"],
+          sourceText: "מקור",
+          model: "claude-sonnet-5-5",
+          promptVersion: "v3",
+          generatedAt: "2026-11-27T00:00:00.000Z",
+          dependsOn: [],
+          needsHumanAttention: true,
+          failureReason: "Unclosed tag",
+        },
+      },
+    ];
+    const output = formatNeedsHumanReport(records);
+    expect(output).toContain("1 comment(s) marked as needing human attention:");
+    expect(output).toContain(
+      "- Rashi on Moed Katan 13a:11:1 (claude-sonnet-5-5, 2026-11-27T00:00:00.000Z) — Unclosed tag",
+    );
   });
 });

@@ -4,6 +4,7 @@ import {
   findGenerationRecord,
   GenerationRecord,
   generationRecordPath,
+  listNeedsHumanRecords,
   listPagesWithGenerationRecords,
   readGenerationRecord,
   readGenerationRecordsForPage,
@@ -87,4 +88,28 @@ test("findGenerationRecord finds record across task types", () => {
   expect(findGenerationRecord(PAGE, "Test 2a:1")).toBeUndefined();
   upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:1", record({model: "claude-sonnet-5"}));
   expect(findGenerationRecord(PAGE, "Test 2a:1")?.model).toBe("claude-sonnet-5");
+});
+
+test("listNeedsHumanRecords lists only records flagged with needsHumanAttention sorted by page and ref", () => {
+  upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:1", record());
+  upsertGenerationRecord(TASK_TYPE, PAGE, "Test 2a:2", record({
+    sourceRefs: ["Test 2a:2"],
+    needsHumanAttention: true,
+    failureReason: "Verification failed after 5 attempts",
+  }));
+  upsertGenerationRecord(TASK_TYPE, "__Test_Page__ 2b", "Test 2b:1", record({
+    sourceRefs: ["Test 2b:1"],
+    needsHumanAttention: true,
+    failureReason: "Critique rejected all attempts",
+  }));
+
+  const needsHuman = listNeedsHumanRecords(TASK_TYPE);
+  expect(needsHuman.map(item => ({
+    page: item.page,
+    ref: item.ref,
+    failureReason: item.record.failureReason,
+  }))).toEqual([
+    {page: PAGE, ref: "Test 2a:2", failureReason: "Verification failed after 5 attempts"},
+    {page: "__Test_Page__ 2b", ref: "Test 2b:1", failureReason: "Critique rejected all attempts"},
+  ]);
 });
