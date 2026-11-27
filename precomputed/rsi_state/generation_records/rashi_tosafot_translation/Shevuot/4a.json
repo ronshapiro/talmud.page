@@ -1,4 +1,17 @@
 {
+  "Rashi on Shevuot 4a:10:1": {
+    "costUsd": 0.1031048,
+    "dependsOn": [],
+    "failureReason": "Proposed Hebrew modified the source text outside of <span class=\"explanation\">. Original abbreviations must be preserved inside <abbr title=\"expansion\">abbreviation</abbr>, and any added explanatory words must be wrapped in <span class=\"explanation\">...</span>.",
+    "generatedAt": "2026-11-27T11:14:11.194Z",
+    "model": "claude-sonnet-5-5",
+    "needsHumanAttention": true,
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 4a:10:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">תרתי הוא דהויין</strong> - דאין מלקות אלא א\"כ הזכירו את הטומאה והקודש או את הטומאה והמקדש ותרתי הוא דאיכא מלקות לקודש ומלקות למקדש דבשלמא לקרבן איכא ארבע העלם טומאה ואכל קודש וזכור הוא לו העלם טומאה ובא למקדש וזכור הוא לו העלם קודש ואכלו העלם מקדש ונכנס לו וזכור הוא את הטומאה:"
+  },
   "Rashi on Shevuot 4a:10:2": {
     "costUsd": 0.1424585,
     "dependsOn": [],
