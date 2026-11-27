@@ -322,14 +322,11 @@ export function computeTranslationProgress(): TranslationProgressData {
 
   const summary = computeProgressSummary(masechtotProgress, new Date().toISOString());
 
-  const timeline = computeTranslationTimeline();
-  const needsHumanAttention = computeNeedsHumanComments();
-
   return {
     summary,
     masechtot: masechtotProgress,
-    timeline,
-    needsHumanAttention,
+    timeline: computeTranslationTimeline(),
+    needsHumanAttention: computeNeedsHumanComments(),
   };
 }
 
