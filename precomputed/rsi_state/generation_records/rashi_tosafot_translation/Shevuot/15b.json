@@ -1,0 +1,81 @@
+{
+  "Rashi on Shevuot 15b:1:1": {
+    "costUsd": 0.0568526,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:23.493Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:1:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">וכי תימא דמחמץ לשיריים</strong> - דלא קפיד קרא אלא אקודם קמיצה שלא יקטיר קומץ מחמץ למזבח כדכתיב סיפיה דקרא כל שאור וכל דבש לא תקטירו:"
+  },
+  "Rashi on Shevuot 15b:2:1": {
+    "costUsd": 0.0570726,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:28.807Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:2:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אלמה לא</strong> - בתמיה וכי לא אפשר לקדשה במנחת חמץ הא אפשר דניקדשה בשתי הלחם הבאים בעצרת שהן חמץ כדכתיב <span class=\"parenthesized\">(ויקרא כג)</span> חמץ תאפינה:"
+  },
+  "Rashi on Shevuot 15b:3:1": {
+    "costUsd": 0.054146599999999996,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:33.819Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">מאתמול</strong> - מערב יו\"ט:"
+  },
+  "Rashi on Shevuot 15b:3:2": {
+    "costUsd": 0.0661546,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:43.448Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">בשחיטת כבשים הוא דמיקדשי</strong> - אף על פי שבאים מתרומת הלשכה קדושת דמים היא זו אבל קדושת הגוף לפסול ביוצא לא קדשי אלא בשחיטת שני כבשי עצרת שהלחם בא עמהם דגמרינן מלחמי תודה ששחיטת הזבח מקדשתן כדאמרינן במנחות <span class=\"parenthesized\">(דף עח:)</span> קרבנו על זבח תודת שלמיו מלמד שאין הלחם קדוש לקרותו קרבן אלא על ידי זביחת התודה והכי נמי בזביחת כבשים קדשי ואין הכבשים נשחטין אלא ביום טוב:"
+  },
+  "Rashi on Shevuot 15b:5:1": {
+    "costUsd": 0.0536886,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:54.747Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:5:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">נבנייה ביום טוב</strong> - יגמור את הבנין ביום טוב:"
+  },
+  "Rashi on Shevuot 15b:5:2": {
+    "costUsd": 0.1000916,
+    "dependsOn": [],
+    "failureReason": "Proposed Hebrew modified the source text outside of <span class=\"explanation\">. Original abbreviations must be preserved inside <abbr title=\"expansion\">abbreviation</abbr>, and any added explanatory words must be wrapped in <span class=\"explanation\">...</span>.",
+    "generatedAt": "2026-11-28T19:03:17.953Z",
+    "model": "claude-sonnet-5-5",
+    "needsHumanAttention": true,
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Shevuot 15b:5:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">אין בנין בית המקדש דוחה את יום טוב</strong> - כדאמרינן ביבמות בפרק קמא <span class=\"parenthesized\">(דף ו.)</span> יכול יהא בנין בית המקדש דוחה שבת ת\"ל את שבתותי תשמורו ומקדשי תיראו אני ה' כולכם חייבין בכבודי אתם והמקדש חייבין בכבודי שהזהרתי על השבת וימים טובים נמי שבתות איקרו:"
+  },
+  "Tosafot on Shevuot 15b:3:1": {
+    "costUsd": 0.0726306,
+    "dependsOn": [],
+    "generatedAt": "2026-11-28T19:02:49.631Z",
+    "model": "claude-sonnet-5-5",
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Tosafot on Shevuot 15b:3:1"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">[שייך לע\"ב] בשחיטת כבשים הוא דקדשי</strong> - ולמאן דאמר תנור מקדש נמי לא מצי אפי להו מאתמול דלא ליפסלו בלינה ופלוגתא היא בפרק שתי הלחם <span class=\"parenthesized\">(מנחות דף צה:)</span>:"
+  }
+}
