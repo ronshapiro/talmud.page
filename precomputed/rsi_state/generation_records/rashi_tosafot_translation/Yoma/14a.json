@@ -87,6 +87,19 @@
     ],
     "sourceText": "<strong class=\"dibur-hamatchil\">הוא זורק את הדם</strong> - של תמידין כדי שיהא רגיל ומזומן בעבודת יוה\"כ:"
   },
+  "Rashi on Yoma 14a:3:2": {
+    "costUsd": 0.09078840000000002,
+    "dependsOn": [],
+    "failureReason": "Proposed Hebrew modified the source text outside of <span class=\"explanation\">. Original abbreviations must be preserved inside <abbr title=\"expansion\">abbreviation</abbr>, and any added explanatory words must be wrapped in <span class=\"explanation\">...</span>.",
+    "generatedAt": "2026-11-27T11:13:16.339Z",
+    "model": "claude-sonnet-5-5",
+    "needsHumanAttention": true,
+    "promptVersion": "v3",
+    "sourceRefs": [
+      "Rashi on Yoma 14a:3:2"
+    ],
+    "sourceText": "<strong class=\"dibur-hamatchil\">ומטיב את הנרות</strong> - מדשן מן אפר הפתילות שכבו וכן כל יום ויום מטיבן בבקר שנאמר בבקר בבקר בהטיבו את הנרות וכל יום מקטירין קטורת בהיכל פרס בשחרית ופרס בין הערבים:"
+  },
   "Rashi on Yoma 14a:3:3": {
     "costUsd": 0.0560566,
     "dependsOn": [],
